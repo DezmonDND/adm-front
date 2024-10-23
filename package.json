@@ -1,0 +1,21 @@
+{
+  "name": "surgut-site",
+  "version": "1.0.0",
+  "description": "Официальнй сайт города Сургута",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "npx gulp default"
+  },
+  "author": "Denis Nedoseikin",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "del": "^8.0.0",
+    "gulp": "^5.0.0",
+    "gulp-include": "^2.4.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "pug": "^3.0.3",
+    "sass": "^1.80.3"
+  }
+}

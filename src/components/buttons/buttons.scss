@@ -1,0 +1,78 @@
+@mixin default-button() {
+    all: unset;
+    background-color: $primary-button-background;
+    color: #ffffff;
+    border-radius: 8px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #0A5FE7;
+    }
+
+    &:active {
+        background-color: #003EA2;
+    }
+
+    &:disabled {
+        background-color: #C2D8FF;
+    }
+}
+
+// XS
+
+.button__xs-no-icon {
+    @include default-button();
+    padding: 8px 20px;
+
+}
+
+.button__icon-left {
+    margin-right: 8px;
+}
+
+.button__icon-right {
+    margin-left: 8px;
+}
+
+// S
+
+.button__s-no-icon {
+    @include default-button();
+    padding: 12px 24px 12px 20px
+}
+
+.button__icon-left-s {
+    margin-right: 12px;
+}
+
+.button__icon-right-s {
+    margin-right: 12px;
+}
+
+// M
+.button__m-no-icon {
+    @include default-button();
+    padding: 16px 32px;
+}
+
+.button__m-left-icon {
+    display: flex;
+    align-items: center;
+    padding: 16px 32px 16px 28px;
+}
+
+.button__m-right-icon {
+    display: flex;
+    align-items: center;
+    padding: 16px 28px 16px 32px;
+}
+
+.button__icon-left-m {
+    margin-right: 12px;
+    width: 20px
+}
+
+.button__icon-right-m {
+    margin-left: 12px;
+    width: 20px;
+}
