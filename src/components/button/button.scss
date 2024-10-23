@@ -1,4 +1,7 @@
 $green-button-background: #14BC30;
+$secondary-button-background: #ffffff;
+
+// Primary
 
 .button {
   all: unset;
@@ -100,4 +103,58 @@ $green-button-background: #14BC30;
 
 .button-with-icon-right-m {
   padding: 16px 28px 16px 32px;
+}
+
+// Secondary
+
+.button_secondary {
+  color: $primary-button-background;
+  background-color: $secondary-button-background;
+  border: 1px solid $primary-button-background;
+  border-radius: 12px;
+  padding: 16px 20px;
+
+  &:hover {
+    cursor: pointer;
+    color: #0a5fe7;
+    border-color: #0a5fe7;
+  }
+
+  &:active {
+    color: #003ea2;
+    border-color: #003ea2;
+  }
+
+  &:disabled {
+    color: #c2d8ff;
+    border-color: #c2d8ff;
+  }
+}
+
+.button_secondary_m {
+  padding: 16px 20px;
+}
+
+.button-secondary-with-icon-left-xs {
+  padding: 8px 12px 8px 16px;
+}
+
+.button-secondary-with-icon-right-xs {
+  padding: 8px 16px 8px 12px;
+}
+
+.button-secondary-with-icon-left-s {
+  padding: 12px 20px 12px 24px;
+}
+
+.button-secondary-with-icon-right-s {
+  padding: 12px 24px 12px 20px;
+}
+
+.button-secondary-with-icon-left-m {
+  padding: 16px 16px 16px 20px;
+}
+
+.button-secondary-with-icon-right-m {
+  padding: 16px 20px 16px 16px;
 }

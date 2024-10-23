@@ -1,4 +1,4 @@
-mixin ui_button(text, href, event, icon, iconPosition, color, size)
+mixin ui_button(type, text, href, event, icon, iconPosition, color, size)
   if href
     a.button(href=href class=`button_${size} ${icon ? `button-with-icon-${iconPosition}-${size}` : ''}`)
       if icon && iconPosition === 'left'
@@ -7,17 +7,25 @@ mixin ui_button(text, href, event, icon, iconPosition, color, size)
       if icon && iconPosition === 'right'
         img(src=icon class=`icon_right icon_right-${size}`).icon
   else 
-  if color === '#004cc4' 
-    button.button.button_blue(onclick=event class=`button_${size} button-with-left-icon-${size} ${icon ? `button-with-icon-${iconPosition}-${size}` : ''}`)
-      if icon && iconPosition === 'left'
-        img(src=icon class=`icon_left icon_left-${size}`).icon
-      | #{text}
-      if icon && iconPosition === 'right'
-        img(src=icon class=`icon_right icon_right-${size}`).icon
-  else if color === '#14BC30' 
-    button.button.button_green(onclick=event class=`button_${size} ${icon ? `button-with-icon-${iconPosition}-${size}` : ''}`)
-      if icon && iconPosition === 'left'
-        img(src=icon class=`icon_left icon_left-${size}`).icon
-      | #{text}
-      if icon && iconPosition === 'right'
-        img(src=icon class=`icon_right icon_right-${size}`).icon
+    if type === 'primary'
+      if color === '#004cc4' 
+        button.button.button_blue(onclick=event class=`button_${size} ${icon ? `button-with-icon-${iconPosition}-${size}` : ''}`)
+          if icon && iconPosition === 'left'
+            img(src=icon class=`icon_left icon_left-${size}`).icon
+          | #{text}
+          if icon && iconPosition === 'right'
+            img(src=icon class=`icon_right icon_right-${size}`).icon
+      else if color === '#14BC30' 
+        button.button.button_green(onclick=event class=`button_${size} ${icon ? `button-with-icon-${iconPosition}-${size}` : ''}`)
+          if icon && iconPosition === 'left'
+            img(src=icon class=`icon_left icon_left-${size}`).icon
+          | #{text}
+          if icon && iconPosition === 'right'
+            img(src=icon class=`icon_right icon_right-${size}`).icon
+    else if type === 'secondary'
+      button.button.button_secondary(onclick=event class=`button-secondary-${size} ${icon ? `button-secondary-with-icon-${iconPosition}-${size}` : ''}`)
+        if icon && iconPosition === 'left'
+          img(src=icon class=`icon_left icon_left-${size}`).icon
+        | #{text}
+        if icon && iconPosition === 'right'
+          img(src=icon class=`icon_right icon_right-${size}`).icon

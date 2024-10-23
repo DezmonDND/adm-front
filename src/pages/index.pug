@@ -6,5 +6,6 @@ html(lang="ru")
     title= "Официальнй сайт города Сургута"
     link(rel='stylesheet' href='./css/style.css')
   body
-    +ui_button("Подробнее","#",null,"/../resources/plus_icon.svg","right", '#004cc4', 'xs')
-    +ui_button("Подробнее","#",null,"/../resources/arrow_icon.svg","right", '#14BC30', 'l')
+    +ui_button('primary', "Подробнее","",null,"/../resources/plus_icon.svg","left", '#004cc4', 'xs')
+    +ui_button('primary', "Подробнее",'', null,"/../resources/arrow_icon.svg","right", '#14BC30', 'l')
+    +ui_button('secondary', "Показать еще",'', null,"/../resources/dots_icon.svg","right", '#14BC30', 'm')
