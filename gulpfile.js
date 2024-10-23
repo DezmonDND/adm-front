@@ -14,21 +14,20 @@ function styles() {
 
 function pugToHtml() {
   return src("./src/pages/*.pug")
-    .pipe(pug())
+    .pipe(
+      pug().on("error", function (err) {
+        console.error(err);
+        this.emit("end");
+      })
+    )
     .pipe(dest("./public"))
     .pipe(browserSync.stream());
 }
 
 function watch_dev() {
   watch(["./src/js/script.js", "./src/components/**/*.js"], scripts);
-  watch(["./src/styles/style.scss", "./src/components/**/*.scss"], styles).on(
-    "change",
-    browserSync.reload
-  );
-  watch(["./src/pages/*.pug", "./src/components/**/*.pug"], pugToHtml).on(
-    "change",
-    browserSync.reload
-  );
+  watch(["./src/styles/style.scss", "./src/components/**/*.scss"], styles);
+  watch(["./src/pages/*.pug", "./src/components/**/*.pug"], pugToHtml);
 }
 
 function browsersync() {
@@ -41,7 +40,7 @@ function browsersync() {
     },
     port: 8080,
     ui: { port: 8081 },
-    open: true,
+    open: false, // или true, если хотите, чтобы браузер открывался автоматически
   });
 }
 
@@ -53,15 +52,17 @@ function pages() {
       })
     )
     .pipe(dest("./public/"))
-    .pipe(browserSync.reload({ stream: true }));
+    .pipe(browserSync.stream());
 }
 
 async function clean() {
-  return del.sync("./public/", { force: true });
+  return del("./public/", { force: true });
 }
 
 function scripts() {
-  return src("./src/js/script.js").pipe(dest("./public/js/"));
+  return src("./src/js/script.js")
+    .pipe(dest("./public/js/"))
+    .pipe(browserSync.stream()); // Добавлено stream для перезагрузки
 }
 
 function copyResources() {
@@ -77,7 +78,6 @@ exports.copyResources = copyResources;
 exports.pugToHtml = pugToHtml;
 
 exports.default = parallel(
-  //   clean,
   styles,
   scripts,
   copyResources,

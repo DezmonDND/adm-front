@@ -10,8 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^3.0.3",
-    "del": "^8.0.0",
-    "gulp": "^5.0.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
     "gulp-include": "^2.4.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",

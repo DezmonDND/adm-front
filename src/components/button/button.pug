@@ -1,0 +1,15 @@
+mixin ui_button(text, href, event, icon, iconPosition)
+  if href
+    a.button(href=href)
+      if icon && iconPosition === 'left'
+        i.icon(class=icon) 
+      | #{text}
+      if icon && iconPosition === 'right'
+        i.icon(class=icon)
+  else
+    button.button(onclick=event)
+      if icon && iconPosition === 'left'
+        i.icon(class=icon)
+      | #{text}
+      if icon && iconPosition === 'right'
+        i.icon(class=icon)
