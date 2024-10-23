@@ -1,15 +1,23 @@
-mixin ui_button(text, href, event, icon, iconPosition)
+mixin ui_button(text, href, event, icon, iconPosition, color, size)
   if href
-    a.button(href=href)
+    a.button(href=href class=`button_${size} ${icon ? `button-with-icon-${iconPosition}-${size}` : ''}`)
       if icon && iconPosition === 'left'
-        i.icon(class=icon) 
+        img(src=icon class=`icon_left icon_left-${size}`).icon 
       | #{text}
       if icon && iconPosition === 'right'
-        i.icon(class=icon)
-  else
-    button.button(onclick=event)
+        img(src=icon class=`icon_right icon_right-${size}`).icon
+  else 
+  if color === '#004cc4' 
+    button.button.button_blue(onclick=event class=`button_${size} button-with-left-icon-${size} ${icon ? `button-with-icon-${iconPosition}-${size}` : ''}`)
       if icon && iconPosition === 'left'
-        i.icon(class=icon)
+        img(src=icon class=`icon_left icon_left-${size}`).icon
       | #{text}
       if icon && iconPosition === 'right'
-        i.icon(class=icon)
+        img(src=icon class=`icon_right icon_right-${size}`).icon
+  else if color === '#14BC30' 
+    button.button.button_green(onclick=event class=`button_${size} ${icon ? `button-with-icon-${iconPosition}-${size}` : ''}`)
+      if icon && iconPosition === 'left'
+        img(src=icon class=`icon_left icon_left-${size}`).icon
+      | #{text}
+      if icon && iconPosition === 'right'
+        img(src=icon class=`icon_right icon_right-${size}`).icon
