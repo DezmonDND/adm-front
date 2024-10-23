@@ -1,11 +1,17 @@
-$green-button-background: #14BC30;
-$secondary-button-background: #ffffff;
+$primary-button-background-default: #004cc4;
+$primary-button-background-hover: #0a5fe7;
+$primary-button-background-click: #003ea2;
+$primary-button-background-disabled: #c2d8ff;
+$primary-button-content: #ffffff;
+$green-button-background-default: #14BC30;
+$green-button-background-hover: #10CD30;
+$green-button-background-click: #0C9022;
+$green-button-background-disabled: #DBDBDB;
 
 // Primary
-
 .button {
   all: unset;
-  color: #ffffff;
+  color: $primary-button-content;
   border-radius: 8px;
   display: flex;
 
@@ -35,32 +41,32 @@ $secondary-button-background: #ffffff;
 
   &:hover {
     cursor: pointer;
-    background-color: #0a5fe7;
+    background-color: $primary-button-background-hover;
   }
 
   &:active {
-    background-color: #003ea2;
+    background-color: $primary-button-background-click;
   }
 
   &:disabled {
-    background-color: #c2d8ff;
+    background-color: $primary-button-background-disabled;
   }
 }
 
 .button_green {
-  background-color: $green-button-background;
+  background-color: $green-button-background-default;
 
   &:hover {
     cursor: pointer;
-    background-color: #10CD30;
+    background-color: $green-button-background-hover;
   }
 
   &:active {
-    background-color: #0C9022;
+    background-color: $green-button-background-click;
   }
 
   &:disabled {
-    background-color: #DBDBDB;
+    background-color: $green-button-background-disabled;
   }
 }
 
@@ -106,7 +112,6 @@ $secondary-button-background: #ffffff;
 }
 
 // Secondary
-
 .button_secondary {
   color: $primary-button-background;
   background-color: $secondary-button-background;
@@ -116,18 +121,18 @@ $secondary-button-background: #ffffff;
 
   &:hover {
     cursor: pointer;
-    color: #0a5fe7;
-    border-color: #0a5fe7;
+    color: $primary-button-background-hover;
+    border-color: $primary-button-background-hover;
   }
 
   &:active {
-    color: #003ea2;
-    border-color: #003ea2;
+    color: $primary-button-background-click;
+    border-color: $primary-button-background-click;
   }
 
   &:disabled {
-    color: #c2d8ff;
-    border-color: #c2d8ff;
+    color: $primary-button-background-disabled;
+    border-color: $primary-button-background-disabled;
   }
 }
 
