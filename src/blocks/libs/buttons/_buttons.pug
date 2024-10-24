@@ -1,6 +1,6 @@
 mixin icon(icon, size, text)
     span.button_span #{text}
-    img(src = `./icons/${icon}` class=`icon icon_-${size}`)
+    img(src = `./icons/${icon}` class=`icon icon_-${size}` alt=`${icon}`)
 
 mixin button-with-link(options)
     if options.icon
@@ -20,16 +20,6 @@ mixin button-without-link(options)
 
 mixin button(options)
     if options.type === 'link'
-        if options.class === 'button_blue' 
-            +button-with-link(options)
-        else if options.class === 'button_green' 
-            +button-with-link(options)
-        else if options.class === 'button_white' 
-            +button-with-link(options)    
+        +button-with-link(options)  
     else 
-        if options.class === 'button_blue' 
-            +button-without-link(options)
-        else if options.class === 'button_green' 
-            +button-without-link(options)
-        else if options.class === 'button_white' 
-            +button-without-link(options)    
+        +button-without-link(options)  
