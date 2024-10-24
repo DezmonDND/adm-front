@@ -4,6 +4,9 @@
 @use "../../blocks/libs/inputs/inputs.scss";
 @use '../../blocks/libs/ui-buttons/ui-buttons.scss';
 @use '../../blocks/libs/ui-inputs/ui-inputs.scss';
+@use '../../blocks//libs/links/links.scss';
+@use '../../blocks/components/breadcrumbs/breadcrumbs.scss';
+@use '../../blocks/libs/tags/tags.scss';
 
 * {
   font-family: "GolosText", sans-serif;

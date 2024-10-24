@@ -1,0 +1,21 @@
+$tertiary-text: #78839C;
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    color: $tertiary-text;
+
+    .breadcrumbs__icon {
+        margin-right: 16px;
+        width: 24px;
+    }
+
+    .breadcrumbs__container {
+        display: flex;
+        gap: 16px;
+    }
+
+    .span {
+        color: $tertiary-text;
+    }
+}

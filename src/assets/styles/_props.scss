@@ -1,106 +1,119 @@
-:root {
-  /* ЦВЕТА */
+  // ЦВЕТА
 
-  /* Типографика */
-  --main-text: #101010;
-  --muted-text: #666666;
-  --strong-muted-text: #878787;
-  --inactive-elems-text: #bbbbbb;
-  --light-text: #ffffff;
-  --title: #5b0000;
-  --title-hover: #990000;
-  --title-click: #b64b4b;
+  // Типографика
+  $main-text: #000448;
+  $main-text-dark-bg: #FFFFFF;
+  $second-text: #15195A;
+  $tertiary-text: #78839C;
+  $tertiary-text-dark-bg: #E9E9E9;
+  $fourth-text: #C0C2CC;
+  $fourth-text-inverse: #EBEDF4;
 
-  /* Фон */
-  --background: #ffffff;
-  --footer-plate: #f9f9f9;
-  --footer-plate-hover: #f1f1f1;
+  // Фон
+  $cards-background: #FAFAFA;
 
-  /* Обводка */
-  --outline-plate: #d6d6d6;
-  --outline-footer: #f9f9f9;
+  // Иконки
+  $icons-color: #1A2D82;
+  $icons-background: #F7FBFE;
 
-  /* Иконки */
-  --icon: #990000;
-  --icon-hover: #ffdbd7;
-  --icon-click: #b64b4b;
+  // Календарь
+  $event-color: #E7EDFB;
+  $event-color-hover: #E7EDFB;
 
-  /* Погода */
-  --sun: #ffc300;
-  --clouds: #c6efff;
+  // Кнопки
+  $primary-color: #004CC4;
+  $primary-color-hover: #0A5FE7;
+  $primary-color-active: #003EA2;
+  $primary-color-disabled: #C2D8FF;
+  $content-color: #FFFFFF;
 
-  /* Кнопки */
-  --button: #5b0000;
-  --button-hover: #990000;
-  --button-click: #b64b4b;
-  --button-text: #ffdbd7;
+  // Категории
+  $health-color: linear-gradient(#8EEC87 0%, #447ECB 100%);
+  $finance-color: linear-gradient(#E8AAEF 0%, #3172C6 100%);
+  $projects-color: linear-gradient(#8EDCD6 0%, #1679B7 100%);
+  $social-color: linear-gradient(#F97A7C 0%, #5280EA 100%);
 
-  /* ТИПОГРАФИКА */
-  --lh: 1.2;
-  /* Десктоп */
-  --desk-h1: 44px;
-  --desk-h1-lh: 1.1;
-  --desk-h2: 30px;
-  --desk-h3: 20px;
-  --desk-h4: 18px;
-  --desk-h5: 17px;
-  --desk-h6: 16px;
-  --desk-h7: 14px;
-  --desk-h8: 13px;
+  // Опросы
+  $interview-color: #2DBB45;
+  $interview-end-color: #D10404;
 
-  --desk-s1: 40px;
-  --desk-s2: 36px;
-  --desk-s3: 26px;
-  --desk-s4: 20px;
-  --desk-s5: 16px;
-  --desk-s6: 14px;
-  --desk-s7: 12px;
+  // Шрифты
 
-  --desk-t1: 18px;
-  --desk-t2: 17px;
-  --desk-t3: 16px;
-  --desk-t4: 14px;
-  --desk-t5: 14px;
-  --desk-t6: 12px;
+  // Десктоп
+  $desk-h1: 40px;
+  $desk-h2: 32px;
+  $desk-h3: 24px;
+  $desk-h4: 20px;
+  $desk-h5: 16px;
+  $desk-h6: 13px;
 
-  --desk-b1: 16px;
+  $desk-lh1: 52px;
+  $desk-lh2: 40px;
+  $desk-lh3: 32px;
+  $desk-lh4: 28px;
+  $desk-lh5: 24px;
+  $desk-lh6: 18px;
 
-  --btn-text-size: 16px;
-  /* Планшет */
-  --tab-h1: 36px;
-  --tab-h2: 26px;
-  --tab-h3: 20px;
-  --tab-h4: 18px;
-  --tab-h5: 16px;
-  --tab-h6: 14px;
+  $desc-title: 14px;
+  $desc-title-lh: 20px;
 
-  --tab-s1: 22px;
-  --tab-s2: 18px;
-  --tab-s3: 16px;
-  --tab-s4: 15px;
-  --tab-s5: 12px;
+  $desk-text1: 24px;
+  $desk-text2: 20px;
+  $desk-text3: 16px;
+  $desk-text4: 14px;
 
-  --tab-t1: 15px;
-  --tab-t2: 14px;
+  $desk-text1-lh: 32px;
+  $desk-text1-lh: 28px;
+  $desk-text1-lh: 24px;
+  $desk-text1-lh: 20px;
 
-  /* Мобильное устройство */
-  --mb-h1: 24px;
-  --mb-h2: 22px;
-  --mb-h3: 18px;
-  --mb-h4: 16px;
-  --mb-h5: 14px;
+  $desc-label-number-l: 28px;
+  $desc-label-number-m: 18px;
+  $desc-label-number-s: 11px;
 
-  --mb-s1: 22px;
-  --mb-s2: 16px;
-  --mb-s3: 14px;
-  --mb-s4: 10px;
+  $desc-label-number-lh-l: 36px;
+  $desc-label-number-lh-m: 24px;
+  $desc-label-number-lh-s: 14px;
 
-  --mb-t1: 16px;
-  --mb-t2: 14px;
-  --mb-t3: 13px;
-  --mb-t4: 12px;
-  --mb-t5: 10px;
+  $desc-label-services-m: 13px;
+  $desc-label-services-lh-m: 18px;
 
-  --mb-b1: 16px;
-  --mb-b2: 15px;
-}
+  $desc-label-tags-m: 11px;
+  $desc-label-tags-m: 14px;
+
+  $desc-link-m: 20px;
+  $desc-link-lh-m: 32px;
+
+  // Планшет
+  $tab-h1: 20px;
+  $tab-h2: 16px;
+  $tab-h3: 14px;
+  $tab-h4: 12px;
+
+  $tab-lh1: 28px;
+  $tab-lh2: 22px;
+  $tab-lh3: 20px;
+  $tab-lh4: 18px;
+
+  $tab-title1: 16px;
+  $tab-title2: 12px;
+
+  $tab-title1-lh: 24px;
+  $tab-title2-lh: 18px;
+
+  $tab-text1: 13px;
+  $tab-text2: 11px;
+  $tab-text3: 16px;
+
+  $tab-text1-lh: 18px;
+  $tab-text2-lh: 16px;
+  $tab-text3-lh: 24px;
+
+  $tab-link-m: 13px;
+  $tab-link-m-lh: 18px;
+  $tab-link-m-hover: 12px;
+  $tab-link-m-lh-hover: 16px;
+
+  // Мобильное устройство
+  $mobile-h1: 24px;
+  $mobile-h1-lh: 32px;

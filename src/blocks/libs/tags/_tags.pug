@@ -1,0 +1,7 @@
+mixin tag(text, event, status, isGoing)
+    if status === 'live' || status === 'RSS'
+        button(onclick=event class=`tag tag_record tag_${status}`) 
+            img(src = `../../icons/${status}_icon.svg` class=`tag_icon`)
+            span.tag_span #{text}
+    else 
+        button(onclick=event class=`tag tag_${status} ${isGoing ? 'tag_event_true': 'tag_event_false'}` type='button') #{text}

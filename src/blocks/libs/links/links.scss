@@ -1,0 +1,28 @@
+$primary-color: #004CC4;
+$primary-color-hover: #0A5FE7;
+$primary-color-active: #003EA2;
+$primary-color-disabled: #C2D8FF;
+$tertiary-text: #78839C;
+
+.link {
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+        text-decoration: underline;
+        color: $primary-color-hover;
+    }
+
+    &:active {
+        text-decoration: underline;
+        color: $primary-color-active;
+    }
+
+    &:disabled {
+        color: $primary-color-disabled;
+    }
+}
+
+.breadcrumb_link {
+    color: $tertiary-text;
+}

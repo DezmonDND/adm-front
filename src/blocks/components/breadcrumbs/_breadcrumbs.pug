@@ -1,0 +1,9 @@
+mixin breadcrumbs(links = [])
+  .breadcrumbs
+    img(src=`../../icons/arrow-left_link-icon.svg` alt='Стрелка').breadcrumbs__icon
+    if links.length !== 0 
+      .breadcrumbs__container
+        each value, index in links 
+          +link(value.href, index, value.text, 'crumb', links) // Передаем links в link
+          if index < links.length - 1
+            span.span /
