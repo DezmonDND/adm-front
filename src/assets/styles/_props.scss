@@ -1,0 +1,106 @@
+:root {
+  /* ЦВЕТА */
+
+  /* Типографика */
+  --main-text: #101010;
+  --muted-text: #666666;
+  --strong-muted-text: #878787;
+  --inactive-elems-text: #bbbbbb;
+  --light-text: #ffffff;
+  --title: #5b0000;
+  --title-hover: #990000;
+  --title-click: #b64b4b;
+
+  /* Фон */
+  --background: #ffffff;
+  --footer-plate: #f9f9f9;
+  --footer-plate-hover: #f1f1f1;
+
+  /* Обводка */
+  --outline-plate: #d6d6d6;
+  --outline-footer: #f9f9f9;
+
+  /* Иконки */
+  --icon: #990000;
+  --icon-hover: #ffdbd7;
+  --icon-click: #b64b4b;
+
+  /* Погода */
+  --sun: #ffc300;
+  --clouds: #c6efff;
+
+  /* Кнопки */
+  --button: #5b0000;
+  --button-hover: #990000;
+  --button-click: #b64b4b;
+  --button-text: #ffdbd7;
+
+  /* ТИПОГРАФИКА */
+  --lh: 1.2;
+  /* Десктоп */
+  --desk-h1: 44px;
+  --desk-h1-lh: 1.1;
+  --desk-h2: 30px;
+  --desk-h3: 20px;
+  --desk-h4: 18px;
+  --desk-h5: 17px;
+  --desk-h6: 16px;
+  --desk-h7: 14px;
+  --desk-h8: 13px;
+
+  --desk-s1: 40px;
+  --desk-s2: 36px;
+  --desk-s3: 26px;
+  --desk-s4: 20px;
+  --desk-s5: 16px;
+  --desk-s6: 14px;
+  --desk-s7: 12px;
+
+  --desk-t1: 18px;
+  --desk-t2: 17px;
+  --desk-t3: 16px;
+  --desk-t4: 14px;
+  --desk-t5: 14px;
+  --desk-t6: 12px;
+
+  --desk-b1: 16px;
+
+  --btn-text-size: 16px;
+  /* Планшет */
+  --tab-h1: 36px;
+  --tab-h2: 26px;
+  --tab-h3: 20px;
+  --tab-h4: 18px;
+  --tab-h5: 16px;
+  --tab-h6: 14px;
+
+  --tab-s1: 22px;
+  --tab-s2: 18px;
+  --tab-s3: 16px;
+  --tab-s4: 15px;
+  --tab-s5: 12px;
+
+  --tab-t1: 15px;
+  --tab-t2: 14px;
+
+  /* Мобильное устройство */
+  --mb-h1: 24px;
+  --mb-h2: 22px;
+  --mb-h3: 18px;
+  --mb-h4: 16px;
+  --mb-h5: 14px;
+
+  --mb-s1: 22px;
+  --mb-s2: 16px;
+  --mb-s3: 14px;
+  --mb-s4: 10px;
+
+  --mb-t1: 16px;
+  --mb-t2: 14px;
+  --mb-t3: 13px;
+  --mb-t4: 12px;
+  --mb-t5: 10px;
+
+  --mb-b1: 16px;
+  --mb-b2: 15px;
+}

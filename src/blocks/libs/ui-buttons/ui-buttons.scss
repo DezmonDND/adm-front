@@ -1,0 +1,170 @@
+$primary-button-background-default: #004cc4;
+$primary-button-background-hover: #0a5fe7;
+$primary-button-background-click: #003ea2;
+$primary-button-background-disabled: #c2d8ff;
+$primary-button-content: #ffffff;
+$green-button-background-default: #14BC30;
+$green-button-background-hover: #10CD30;
+$green-button-background-click: #0C9022;
+$green-button-background-disabled: #DBDBDB;
+
+// Primary
+.button {
+    all: unset;
+    color: $primary-button-content;
+    border-radius: 8px;
+    display: flex;
+
+    .icon {
+        width: 20px;
+    }
+
+    .icon_left-xs {
+        margin-right: 8px;
+    }
+
+    .icon_right-xs {
+        margin-left: 8px;
+    }
+
+    .icon_left {
+        margin-right: 12px;
+    }
+
+    .icon_right {
+        margin-left: 12px;
+    }
+}
+
+.button_blue {
+    background-color: $primary-button-background-default;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-button-background-hover;
+    }
+
+    &:active {
+        background-color: $primary-button-background-click;
+    }
+
+    &:disabled {
+        background-color: $primary-button-background-disabled;
+    }
+}
+
+.button_green {
+    background-color: $green-button-background-default;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $green-button-background-hover;
+    }
+
+    &:active {
+        background-color: $green-button-background-click;
+    }
+
+    &:disabled {
+        background-color: $green-button-background-disabled;
+    }
+}
+
+.button_xs {
+    padding: 8px 20px;
+}
+
+.button_s {
+    padding: 12px 24px;
+}
+
+.button_m {
+    padding: 16px 32px;
+}
+
+.button_l {
+    padding: 20px 40px;
+    border-radius: 12px;
+}
+
+.button-with-icon-left-xs {
+    padding: 8px 20px 8px 16px;
+}
+
+.button-with-icon-right-xs {
+    padding: 8px 16px 8px 20px;
+}
+
+.button-with-icon-left-s {
+    padding: 12px 24px 12px 20px;
+}
+
+.button-with-icon-right-s {
+    padding: 12px 20px 12px 24px;
+}
+
+.button-with-icon-left-m {
+    padding: 16px 32px 16px 28px;
+}
+
+.button-with-icon-right-m {
+    padding: 16px 28px 16px 32px;
+}
+
+// Secondary
+.button_secondary {
+    color: $primary-button-background-default;
+    background-color: $primary-button-content;
+    border: 1px solid $primary-button-background-default;
+    border-radius: 12px;
+    padding: 16px 20px;
+
+    &:hover {
+        cursor: pointer;
+        color: $primary-button-background-hover;
+        border-color: $primary-button-background-hover;
+    }
+
+    &:active {
+        color: $primary-button-background-click;
+        border-color: $primary-button-background-click;
+    }
+
+    &:disabled {
+        color: $primary-button-background-disabled;
+        border-color: $primary-button-background-disabled;
+    }
+}
+
+.button_secondary_m {
+    padding: 16px 20px;
+}
+
+.button-secondary-with-icon-left-xs {
+    padding: 8px 12px 8px 16px;
+}
+
+.button-secondary-with-icon-right-xs {
+    padding: 8px 16px 8px 12px;
+}
+
+.button-secondary-with-icon-left-s {
+    padding: 12px 20px 12px 24px;
+}
+
+.button-secondary-with-icon-right-s {
+    padding: 12px 24px 12px 20px;
+}
+
+.button-secondary-with-icon-left-m {
+    padding: 16px 16px 16px 20px;
+}
+
+.button-secondary-with-icon-right-m {
+    padding: 16px 20px 16px 16px;
+}
+
+// Link
+.button_link {
+    display: inline-flex;
+}

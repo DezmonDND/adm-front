@@ -1,0 +1,22 @@
+.inp, .sel{
+    box-sizing: border-box;
+    padding: 14px 20px;
+    color: var(--main-text);
+    border:1px solid var(--outline-plate);
+    font-size: var(--desk-t3);
+    border-radius: 8px;
+}
+
+.inp:hover, .sel:hover {
+    background-color: var(--footer-plate-hover);
+}
+
+.inp[type = text] {
+    width: 300px;
+}
+.inp[type = date] {
+    width: 150px;
+}
+input {
+    outline:none;
+}
