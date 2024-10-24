@@ -1,0 +1,97 @@
+$primary-color-green: #14BC30;
+$primary-color-green-hover: #10CD30;
+$primary-color-green-click: #0C9022;
+$primary-color-green-disabled: #DBDBDB;
+$primary-color: #004CC4;
+$primary-color-hover: #0A5FE7;
+$primary-color-active: #003EA2;
+$primary-color-disabled: #C2D8FF;
+$content-color: #FFFFFF;
+
+.button {
+    all: unset;
+    color: $content-color;
+    border-radius: 8px;
+    display: flex;
+
+    .icon {
+        width: 20px;
+        margin-left: 8px;
+    }
+
+    .icon_m {
+        width: 24px;
+    }
+}
+
+.button_blue {
+    background-color: $primary-color;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-color-hover;
+    }
+
+    &:active {
+        background-color: $primary-color-active;
+    }
+
+    &:disabled {
+        background-color: $primary-color-disabled;
+    }
+}
+
+.button_green {
+    background-color: $primary-color-green;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-color-green-hover;
+    }
+
+    &:active {
+        background-color: $primary-color-green-click;
+    }
+
+    &:disabled {
+        background-color: $primary-color-green-disabled;
+    }
+}
+
+.button_xs {
+    padding: 8px 16px;
+}
+
+.button_s {
+    padding: 12px 20px;
+}
+
+.button_m {
+    padding: 16px 28px;
+}
+
+.button_white {
+    color: $primary-color;
+    background-color: $content-color;
+    border: 1px solid $primary-color;
+
+    &:hover {
+        cursor: pointer;
+        color: $primary-color-hover;
+        border-color: $primary-color-hover;
+    }
+
+    &:active {
+        color: $primary-color-active;
+        border-color: $primary-color-active;
+    }
+
+    &:disabled {
+        color: $primary-color-disabled;
+        border-color: $primary-color-disabled;
+    }
+}
+
+.button_link {
+    display: inline-flex;
+}

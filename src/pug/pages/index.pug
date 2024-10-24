@@ -2,10 +2,10 @@ extends ../layout
 
 block content 
 
-    //- +ui_buttons({'type': 'primary', 'text': "Подробнее", 'href': "/", 'event': null, 'icon': "arrow_icon.svg", 'iconPosition': "right", 'color': '#004cc4', 'size': 'm'})
-    //- +ui_buttons({'type': 'link', 'text': "Подробнее", 'href': "/", 'event': null, 'icon': "plus_icon.svg", 'iconPosition': "left", 'color': '#004cc4', 'size': 'xs'})
-    //- +ui_buttons({'type': 'secondary', 'text': "Подробнее", 'href': "/", 'event': null, 'icon': "dots_icon.svg", 'iconPosition': "right", 'color': '#004cc4', 'size': 's'})
-    //- +ui_buttons({'type': 'primary', 'text': "Подробнее", 'href': "/", 'event': null, 'icon': "plus_icon.svg", 'iconPosition': "right", 'color': '#14BC30', 'size': 's'})
+    +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас' })
+    +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
+    +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
+    +button({ type: 'button', class: 'button_white', event: 'anotherFunction()', icon: '', size: 's', text: 'Готово' })
 
     //- +ui_input('s')
     //- +input()
@@ -15,4 +15,4 @@ block content
     //-     { href: '/about', text: 'О нас' },
     //-     { href: '/contact', text: 'Контакты' }
     //-     ])
-    +tag('Новости', null, 'RSS', 'false')
+    //- +tag('Новости', null, 'RSS', 'false')

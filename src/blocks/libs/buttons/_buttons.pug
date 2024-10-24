@@ -1,0 +1,35 @@
+mixin icon(icon, size, text)
+    span.button_span #{text}
+    img(src = `./icons/${icon}` class=`icon icon_-${size}`)
+
+mixin button-with-link(options)
+    if options.icon
+        a.button.button_link(href=options.href target='_blank' class=`button_${options.size} ${options.class}`)
+            +icon(options.icon, options.size, options.text)
+    else 
+        a.button.button_link(href=options.href target='_blank' class=`button_${options.size} ${options.class}`)
+            span.button_span #{options.text} 
+
+mixin button-without-link(options)
+    if options.icon
+        button.button(onclick=options.event class=`button_${options.size} ${options.class}`)
+            +icon(options.icon, options.size, options.text)
+    else 
+        button.button(onclick=options.event class=`button_${options.size} ${options.class}`)
+            span.button_span #{options.text}
+
+mixin button(options)
+    if options.type === 'link'
+        if options.class === 'button_blue' 
+            +button-with-link(options)
+        else if options.class === 'button_green' 
+            +button-with-link(options)
+        else if options.class === 'button_white' 
+            +button-with-link(options)    
+    else 
+        if options.class === 'button_blue' 
+            +button-without-link(options)
+        else if options.class === 'button_green' 
+            +button-without-link(options)
+        else if options.class === 'button_white' 
+            +button-without-link(options)    
