@@ -5,6 +5,7 @@ $input-color-default: #C6CBD9;
 $interview-end-color: #D10404;
 
 .input {
+    box-sizing: border-box;
     max-width: 520px;
     padding: 16px 22px;
     width: 100%;
@@ -37,4 +38,18 @@ $interview-end-color: #D10404;
 
 .input-search-l {
     padding: 23px 20px;
+}
+
+.input-xs {
+    background: url(../icons/input_icon.svg) center no-repeat;
+    background-position: 5%;
+    margin: 0;
+    border-radius: 4px;
+    max-width: 332px;
+    padding: 18px 20px 18px 45px;
+}
+
+.input-xl {
+    border-radius: 4px;
+    max-width: 1232px;
 }

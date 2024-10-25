@@ -1,2 +1,3 @@
-mixin input(size, placeholder, type, error)
-  input(placeholder=placeholder, class=`input input-${size} input-${type} input-search-${size} ${error ? 'input-error' : '' }`)
+mixin input(input_options, error)
+    input(placeholder=input_options.placeholder,
+        class=`input input-${input_options.size} input-${input_options.type} input-search-${input_options.size} ${error ? 'input-error' : '' }`)

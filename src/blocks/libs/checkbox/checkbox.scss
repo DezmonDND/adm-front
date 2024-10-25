@@ -23,8 +23,8 @@ $fourth-text-inverse: #EBEDF4;
             content: "";
             position: absolute;
             border-radius: 8px;
-            background-color: $content-color;
-            background-image: url(../../icons/circle_icon.svg);
+            background-color: $primary-color;
+            background-image: url(../../icons/checkbox-checked_icon.svg);
             background-position: center;
             background-repeat: no-repeat;
         }

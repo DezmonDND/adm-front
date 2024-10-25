@@ -1,0 +1,15 @@
+mixin search-form(isFull, input_options_full, input_options, error, value, iconPosition, size, options)
+    if isFull
+        form(class=`search-full-form`)
+            +input(input_options_full, error)
+            div(class=`search-form`)
+                +input(input_options, error)
+                +select(size, value, iconPosition)
+                +calender()
+                +button(options)
+    else
+        form(class=`search-form`)
+            +input(input_options, error)
+            +select(size, value, iconPosition)
+            +calender()
+            +button(options)

@@ -28,3 +28,15 @@ $input-color-default: #C6CBD9;
     padding: 13px 34px 13px 16px;
     max-width: 336px;
 }
+
+.select-xs {
+    max-width: 332px;
+    padding: 18px 20px;
+    border-radius: 4px;
+}
+
+.select-icon-left {
+    background: url(../../icons/folder_icon.svg) center no-repeat;
+    background-position: 5%;
+    padding: 18px 20px 18px 50px;
+}

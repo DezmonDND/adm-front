@@ -13,6 +13,7 @@ $content-color: #FFFFFF;
     color: $content-color;
     border-radius: 8px;
     display: flex;
+    align-items: center;
 
     .icon {
         width: 20px;
@@ -59,7 +60,7 @@ $content-color: #FFFFFF;
 }
 
 .button_xs {
-    padding: 8px 16px;
+    padding: 16px 52px;
 }
 
 .button_s {

@@ -1,5 +1,5 @@
-mixin form-field(name, span, error, placeholder, type, size)
+mixin form-field(name, span, error, input_options)
     .form-field     
         label.form-field__label #{name}    
-        +input(size, placeholder, type, error)
+        +input(input_options, error)
         span(class=`form-field__span ${error ? 'span_error' : ''}`) #{span}

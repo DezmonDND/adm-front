@@ -1,4 +1,4 @@
-mixin search(size, placeholder, type, error, event)
+mixin search(input_options, error, size, event)
     form.search
-        +input(size, placeholder, type, error)
-        +search-button(size, placeholder, type, error, event)
+        +input(input_options, error)
+        +search-button(size, event)
