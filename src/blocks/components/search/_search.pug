@@ -1,7 +1,4 @@
-mixin search()
-    div.search-pc
-        input.search__input(type = "search", placeholder = "Поиск по сайту", id = "focusInput")
-        button.search__btn(type = "submit") 
-            i.material-icons search
-    div.search-mb(onclick = "setFocus()") 
-        //- +btn("", 'search.svg', false)
+mixin search(size, placeholder, type, error, event)
+    form.search
+        +input(size, placeholder, type, error)
+        +search-button(size, placeholder, type, error, event)

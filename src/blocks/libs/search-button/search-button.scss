@@ -1,0 +1,25 @@
+$primary-color: #004CC4;
+
+.search {
+    display: flex;
+    max-width: 624px;
+    width: 100%;
+
+    .search__button {
+        width: 48px;
+        height: 48px;
+        background: url(../icons/search_icon.svg) center no-repeat;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 0 8px 8px 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .search__button_l {
+width: 72px;
+height: 72px;
+    }
+}
