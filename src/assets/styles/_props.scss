@@ -16,6 +16,9 @@
   $icons-color: #1A2D82;
   $icons-background: #F7FBFE;
 
+  // Инпуты
+  $input-color-default: #C6CBD9;
+
   // Календарь
   $event-color: #E7EDFB;
   $event-color-hover: #E7EDFB;
@@ -30,7 +33,7 @@
   $primary-color-green-hover: #10CD30;
   $primary-color-green-click: #0C9022;
   $primary-color-green-disabled: #DBDBDB;
-  
+
   // Категории
   $health-color: linear-gradient(#8EEC87 0%, #447ECB 100%);
   $finance-color: linear-gradient(#E8AAEF 0%, #3172C6 100%);
@@ -67,9 +70,9 @@
   $desk-text4: 14px;
 
   $desk-text1-lh: 32px;
-  $desk-text1-lh: 28px;
-  $desk-text1-lh: 24px;
-  $desk-text1-lh: 20px;
+  $desk-text2-lh: 28px;
+  $desk-text3-lh: 24px;
+  $desk-text4-lh: 20px;
 
   $desc-label-number-l: 28px;
   $desc-label-number-m: 18px;

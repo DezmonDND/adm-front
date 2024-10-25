@@ -1,0 +1,5 @@
+mixin checkbox(sort, status)
+    if sort === 'radio'
+        div(class=`checkbox`)
+            input(type='checkbox' class=`${sort}__input` checked=status)
+

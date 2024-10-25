@@ -3,10 +3,14 @@
 
 @use "../../blocks/libs/inputs/inputs.scss";
 @use '../../blocks/libs/buttons/buttons.scss';
-@use '../../blocks/libs/ui-inputs/ui-inputs.scss';
 @use '../../blocks//libs/links/links.scss';
 @use '../../blocks/components/breadcrumbs/breadcrumbs.scss';
 @use '../../blocks/libs/tags/tags.scss';
+@use '../../blocks/libs/textarea/textarea.scss';
+@use '../../blocks/libs/select/select.scss';
+@use '../../blocks/libs//checkbox/checkbox.scss';
+@use '../../blocks/libs/switch/switch.scss';
+@use '../../blocks/components/form-field/form-field.scss';
 
 * {
   font-family: "GolosText", sans-serif;

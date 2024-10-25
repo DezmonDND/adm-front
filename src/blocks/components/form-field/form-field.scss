@@ -1,0 +1,26 @@
+$desk-h4: 20px;
+$desk-lh4: 28px;
+$interview-end-color: #D10404;
+
+@mixin desc-caption1 {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+
+    .form-field__label {
+        font-size: $desk-h4;
+        line-height: $desk-lh4;
+    }
+
+    .form-field__span {
+        @include desc-caption1();
+    }
+
+    .span_error {
+        color: $interview-end-color;
+    }
+}

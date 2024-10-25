@@ -1,0 +1,7 @@
+mixin textarea(size)
+    .container
+        textarea(class=`textarea textarea-${size}` placeholder='Введите ваш ответ')
+        .counter
+            span.current 0
+            span /
+            span.max 900

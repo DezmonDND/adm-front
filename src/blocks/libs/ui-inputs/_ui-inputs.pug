@@ -1,7 +1,0 @@
-mixin ui_input(size, placeholder, type)
-    if type === 'withouticon'
-        input(placeholder=placeholder, class=`input input-${size}`)
-    if type === 'withicon'
-        form.input
-            i(class=`input__icon input__icon_${size}`)
-            input(type="text" placeholder=placeholder class=`input input-${size}`)

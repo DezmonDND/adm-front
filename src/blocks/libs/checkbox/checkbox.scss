@@ -1,0 +1,82 @@
+$primary-color: #004CC4;
+$primary-color-hover: #0A5FE7;
+$content-color: #FFFFFF;
+$fourth-text-inverse: #EBEDF4;
+
+.checkbox {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    .checkbox__input {
+        appearance: none;
+        position: relative;
+        border-radius: 8px;
+        border: 1px solid #CDD0DF;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            border-radius: 8px;
+            background-color: $content-color;
+            background-image: url(../../icons/circle_icon.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &:checked::after {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover {
+            border-color: $primary-color;
+        }
+
+        &:checked:hover {
+            border-color: $primary-color-hover;
+        }
+    }
+}
+
+.radio__input {
+    appearance: none;
+    position: relative;
+    border: 1px solid #CDD0DF;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background-color: $content-color;
+        background-image: url(../../icons/circle_icon.svg);
+        border: 1px solid $primary-color-hover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &:checked::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover {
+        border-color: $primary-color;
+    }
+
+    &:checked:hover {
+        border-color: $primary-color-hover;
+    }
+
+}
+
+

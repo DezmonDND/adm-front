@@ -1,0 +1,4 @@
+mixin select(size, value)
+    select(class=`select select-${size}` defaultValue=value)
+        each option in value
+            option(class=`select__option` value=option.value) #{option.text}

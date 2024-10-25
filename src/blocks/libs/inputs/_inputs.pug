@@ -1,2 +1,2 @@
-mixin input(text = "Введите", type = "text")
-    input.inp(type = `${type}`, placeholder = `${text}`)
+mixin input(size, placeholder, type, error)
+  input(placeholder=placeholder, class=`input input-${size} input-${type} ${error ? 'input-error' : '' }`)
