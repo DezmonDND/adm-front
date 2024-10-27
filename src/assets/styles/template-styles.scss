@@ -14,6 +14,10 @@
 @use '../../blocks/libs/search-button/search-button.scss';
 @use '../../blocks/components/search-form/search-form.scss';
 @use '../../blocks/libs/calender/calender.scss';
+@use '../../blocks/libs/tab-buttons/tab-buttons.scss';
+@use '../../blocks/components/tabs/tabs.scss';
+@use '../../blocks/libs/pag-buttons/pag-buttons.scss';
+@use '../../blocks/components/pagination/pagination.scss';
 
 * {
   font-family: "GolosText", sans-serif;

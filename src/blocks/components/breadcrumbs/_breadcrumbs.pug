@@ -4,6 +4,6 @@ mixin breadcrumbs(links = [])
     if links.length !== 0 
       .breadcrumbs__container
         each value, index in links 
-          +link(value.href, index, value.text, 'crumb', links) // Передаем links в link
+          +link(value.href, index, value.text, 'crumb', links)
           if index < links.length - 1
             span.span /

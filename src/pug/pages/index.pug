@@ -6,9 +6,13 @@ block content
     +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
     +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
     +button({ type: 'button', class: 'button_white', event: 'anotherFunction()', icon: '', size: 's', text: 'Готово' })
+    +checkbox(
+        { id: 'radio', sort: 'radio', status: false }
+        )
 
-    +checkbox('radio', true)
-    +checkbox('checkbox', true)
+    +checkbox(
+        { id: 'сheckbox', sort: 'сheckbox', status: true }
+        )
     +input(
         {size: 'l', placeholder: 'Введите ваш ответ'}
         )
@@ -71,3 +75,21 @@ block content
         'left', 'xs',
         { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
         )    
+    +tab-button({ size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'})
+    +tabs([
+        { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+        { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+        { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+        { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+        ])
+    +pag-button({ size: 'm', title: '', onclick: '' , value: 'Назад', iconPosition: 'right'})      
+    +pagination([
+        { size: 'l', title: 'Назад', onclick: '' , value: 'Назад', iconPosition: 'left'},
+        [
+            { size: 'l', num: '1', onclick: '' , value: '1'},
+            { size: 'l', num: '2', onclick: '' , value: '2'},
+            { size: 'l', num: '3', onclick: '' , value: '3'},
+            { size: 'l', num: '4', onclick: '' , value: '4' },
+        ],
+        { size: 'l', title: 'Вперед', onclick: '' , value: 'Вперед', iconPosition: 'right'}
+        ])

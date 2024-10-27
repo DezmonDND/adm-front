@@ -1,0 +1,7 @@
+mixin pagination(buttons = [])
+    div(class=`pagination`)
+        +pag-button(buttons[0])
+        div(class=`pagination__pages`)
+            each button in buttons[1] 
+                +pag-button(button)
+        +pag-button(buttons[2])

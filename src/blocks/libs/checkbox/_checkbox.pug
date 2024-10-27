@@ -1,3 +1,3 @@
-mixin checkbox(sort, status)
-    div(class=`checkbox`)
-        input(type='checkbox' class=`${sort}__input` checked=status)
+mixin checkbox(options)
+    input(type='checkbox' id=`${options.id}` class=`сheckbox ${options.sort === 'radio' ? 'radio' : ''}` checked=options.status)
+    label(for=`${options.id}`) 
