@@ -3,6 +3,11 @@ $primary-color-hover: #0A5FE7;
 $primary-color-active: #003EA2;
 $primary-color-disabled: #C2D8FF;
 $tertiary-text: #78839C;
+$main-text: #040528;
+@mixin desc-title5 {
+    font-size: 14px;
+    line-height: 16px;
+  }
 
 .link {
     text-decoration: none;
@@ -25,4 +30,10 @@ $tertiary-text: #78839C;
 
 .breadcrumb_link {
     color: $tertiary-text;
+}
+
+.header__eye-link {
+    color: $main-text;
+    font-weight: 500;
+    @include desc-title5();
 }

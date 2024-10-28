@@ -9,11 +9,22 @@ $content-color: #FFFFFF;
 $main-text: #000448;
 $icons-color: #1A2D82;
 
+@mixin desc-h5() {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin mob-h4() {
+    font-size: 12px;
+    line-height: 14px;
+}
+
 .tag {
     all: unset;
     border-radius: 1000px;
     padding: 4px 12px;
     color: $content-color;
+    font-weight: 600;
 
     &:hover {
         cursor: pointer;
@@ -76,4 +87,14 @@ $icons-color: #1A2D82;
     color: $icons-color;
     padding: 10px 20px;
     border-radius: 4px;
+}
+
+.tag_s {
+    padding: 4px 20px;
+    @include mob-h4();
+}
+
+.tag_m {
+    padding: 8px 44px;
+    @include desc-h5();
 }

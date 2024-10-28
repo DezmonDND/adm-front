@@ -7,6 +7,16 @@ $primary-color-hover: #0A5FE7;
 $primary-color-active: #003EA2;
 $primary-color-disabled: #C2D8FF;
 $content-color: #FFFFFF;
+$main-text: #040528;
+@mixin desc-h4() {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+@mixin desc-title {
+    font-size: 14px;
+    line-height: 20px;
+}
 
 .button {
     all: unset;
@@ -14,10 +24,10 @@ $content-color: #FFFFFF;
     border-radius: 8px;
     display: flex;
     align-items: center;
+    gap: 8px;
 
     .icon {
         width: 20px;
-        margin-left: 8px;
     }
 
     .icon_m {
@@ -60,7 +70,9 @@ $content-color: #FFFFFF;
 }
 
 .button_xs {
-    padding: 16px 52px;
+    padding: 8px 16px;
+    @include desc-title();
+
 }
 
 .button_s {
@@ -68,6 +80,8 @@ $content-color: #FFFFFF;
 }
 
 .button_m {
+    font-weight: 600;
+    @include desc-h4();
     padding: 16px 28px;
 }
 
@@ -95,4 +109,9 @@ $content-color: #FFFFFF;
 
 .button_link {
     display: inline-flex;
+}
+
+.button_burger {
+   padding: 0;
+   gap: 0;
 }

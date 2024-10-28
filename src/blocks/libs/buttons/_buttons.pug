@@ -1,6 +1,6 @@
 mixin icon(icon, size, text)
     span.button_span #{text}
-    img(src = `./icons/${icon}` class=`icon icon_-${size}` alt=`${icon}`)
+    img(src = `./icons/${icon}` class=`icon icon_${size}` alt=`${icon}`)
 
 mixin button-with-link(options)
     if options.icon

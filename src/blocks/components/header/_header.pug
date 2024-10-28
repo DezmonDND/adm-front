@@ -1,0 +1,37 @@
+mixin header()
+    header.header 
+        .header__top-content
+            .header__top-links
+                .header_links
+                    a(href='/').header__link Быстрый доступ
+                    a(href='/').header__link Быстрый доступ
+                    a(href='/').header__link Быстрый доступ
+                    a(href='/').header__link Быстрый доступ
+                    a(href='/').header__link Быстрый доступ
+                .header__socials
+                    a(href='/').header__social__icon 
+                        img(src=`../icons/vk_icon.svg`)
+                    a(href='/').header__social__icon 
+                        img(src=`../icons/ok_icon.svg`)
+                    a(href='/').header__social__icon 
+                        img(src=`../icons/tg_icon.svg`)
+            .header__buttons  
+                .header__eye-block
+                    img(src='../icons/eye-outlined_icon.svg').header__eye-link-icon   
+                    +link('header__eye-link', '/',  '', 'Версия для слабовидящих' , 'link')
+                +button({ type: 'button', class: 'button_blue', event: 'anotherFunction()', icon: '', size: 'xs', text: 'Войти' })     
+        .header__bottom-content
+            .header__main-links
+                img(class=`header__logo` src=`../icons/footer-logo_icon.svg` alt='Логотип')
+                .header__main-links__block 
+                    span.header__title Администрация Сургута
+                    a.header__main-link(href="/") Официальный портал
+            +search(
+                {name: 'number', size: 's', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+                    false, 's', 'getValues()',) 
+            .header__bottom-links 
+                a(href='/').header__link Быстрый доступ
+                a(href='/').header__link Быстрый доступ
+                a(href='/').header__link Быстрый доступ
+                a(href='/').header__link Быстрый доступ  
+            +button({ type: 'button', class: 'button_burger', event: 'anotherFunction()', icon: 'menu-outlined_icon.svg', size: 'xs', text: '' })        

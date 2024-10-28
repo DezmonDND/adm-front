@@ -1,7 +1,7 @@
   // ЦВЕТА
 
   // Типографика
-  $main-text: #000448;
+  $main-text: #040528;
   $main-text-dark-bg: #FFFFFF;
   $second-text: #15195A;
   $tertiary-text: #78839C;
@@ -73,13 +73,23 @@
   }
 
   @mixin desc-h6() {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  @mixin mob-h2() {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @mixin mob-h3() {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  @mixin mob-h4() {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   $desk-h1: 40px;
@@ -96,18 +106,47 @@
   $desk-lh5: 24px;
   $desk-lh6: 18px;
 
+  @mixin desc-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @mixin desc-title5 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   $desc-title: 14px;
   $desc-title-lh: 20px;
 
   $desk-text1: 24px;
   $desk-text2: 20px;
-  $desk-text3: 16px;
-  $desk-text4: 14px;
+
+
+  @mixin desc-text3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @mixin desc-text4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @mixin mob-text2 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @mixin mob-title3 {
+    font-size: 12px;
+    line-height: 14px;
+  }
 
   $desk-text1-lh: 32px;
   $desk-text2-lh: 28px;
-  $desk-text3-lh: 24px;
-  $desk-text4-lh: 20px;
+
+
 
   $desc-label-number-l: 28px;
   $desc-label-number-m: 18px;
@@ -117,8 +156,11 @@
   $desc-label-number-lh-m: 24px;
   $desc-label-number-lh-s: 14px;
 
-  $desc-label-services-m: 13px;
-  $desc-label-services-lh-m: 18px;
+
+  @mixin desc-label-services {
+    font-size: 13px;
+    line-height: 18px;
+  }
 
   $desc-label-tags-m: 11px;
   $desc-label-tags-m: 14px;
