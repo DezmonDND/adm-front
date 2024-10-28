@@ -43,11 +43,11 @@ block content
         ], )
     +switch()
     +form-field('Вопрос', 'Вспомогательный текст', true, 
-        {size: 'medium', placeholder: 'Введите текст', type: 'text'}
+        {size: 'medium', placeholder: 'Введите текст', type: 'text', name: 'answer'}
         ) 
     +search(
-        {size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
-        false, 'l', 'searchFunction()'
+        {name: 'number', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+        false, 'l', 'getValues()',
         )
     +search-form(
         true, 
@@ -92,4 +92,4 @@ block content
             { size: 'l', num: '4', onclick: '' , value: '4' },
         ],
         { size: 'l', title: 'Вперед', onclick: '' , value: 'Вперед', iconPosition: 'right'}
-        ])
+        ])         

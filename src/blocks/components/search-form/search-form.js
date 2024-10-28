@@ -11,5 +11,5 @@ function getValues(e) {
 
   values.push(select.value);
 
-  console.log(1);
+  console.log(values);
 }
