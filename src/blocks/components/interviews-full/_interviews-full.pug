@@ -1,0 +1,11 @@
+mixin interview-full(data)   
+    .interview-full
+        .interview-full__container 
+            .interview-full__info 
+                +tag('s', `${data.status}` , null, '', 'true')
+                span.interview-full__date #{data.date}
+                span.interview-full__votes #{data.votes}
+            .interview-full__description 
+                h2.interview-full__title #{data.title}
+                p.interview-full__text #{data.description}
+

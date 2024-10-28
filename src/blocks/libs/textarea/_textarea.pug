@@ -1,6 +1,6 @@
-mixin textarea(size)
+mixin textarea(options, error)
     .container
-        textarea(class=`textarea textarea-${size}` placeholder='Введите ваш ответ')
+        textarea(class=`textarea textarea-${options.size}` placeholder=options.placeholder)
         .counter
             span.current 0
             span /

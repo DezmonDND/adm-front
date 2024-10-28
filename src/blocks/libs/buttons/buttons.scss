@@ -8,10 +8,20 @@ $primary-color-active: #003EA2;
 $primary-color-disabled: #C2D8FF;
 $content-color: #FFFFFF;
 $main-text: #040528;
+@mixin desc-h6() {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+@mixin desc-title5 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
 @mixin desc-h4() {
     font-size: 20px;
     line-height: 24px;
-  }
+}
 
 @mixin desc-title {
     font-size: 14px;
@@ -25,6 +35,7 @@ $main-text: #040528;
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 16px 32px;
 
     .icon {
         width: 20px;
@@ -35,7 +46,13 @@ $main-text: #040528;
     }
 }
 
+.button_burger {
+    display: none;
+}
+
 .button_blue {
+    @include desc-h4();
+    font-weight: 600;
     background-color: $primary-color;
 
     &:hover {
@@ -69,22 +86,6 @@ $main-text: #040528;
     }
 }
 
-.button_xs {
-    padding: 8px 16px;
-    @include desc-title();
-
-}
-
-.button_s {
-    padding: 12px 20px;
-}
-
-.button_m {
-    font-weight: 600;
-    @include desc-h4();
-    padding: 16px 28px;
-}
-
 .button_white {
     color: $primary-color;
     background-color: $content-color;
@@ -112,6 +113,25 @@ $main-text: #040528;
 }
 
 .button_burger {
-   padding: 0;
-   gap: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.button_header {
+    @include desc-title5();
+    padding: 8px 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .button_interview {
+        @include desc-h6();
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .button_burger {
+        display: block;
+    }
 }

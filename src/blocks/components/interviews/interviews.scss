@@ -6,8 +6,8 @@ $tertiary-text: #78839C;
 }
 
 @mixin desc-h3() {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 @mixin desc-text3 {
@@ -54,11 +54,12 @@ $content-color: #FFFFFF;
 $primary-color: #004CC4;
 
 .interviews_array {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
     max-width: 1311px;
     width: 100%;
     align-items: center;
+    justify-content: center;
     gap: 24px;
     margin: 40px 0 40px;
 
@@ -127,39 +128,50 @@ $primary-color: #004CC4;
 
 
 @media screen and (max-width: 1000px) {
+    .interviews_array {
+        grid-template-columns: auto auto;
+        gap: 8px;
 
-    .interview {
-        max-width: 360px;
-        border-radius: 8px;
+        .interview {
+            border-radius: 8px;
 
-        .interview__content {
-            padding: 20px;
+            .interview__content {
+                padding: 20px;
 
-            .iinterview__dates {
                 .iinterview__dates {
-                    @include mob-h4();
-                }
-            }
-
-            .iinterview__description {
-                .iinterview__title {
-                    @include mob-h2();
+                    .iinterview__dates {
+                        @include mob-h4();
+                    }
                 }
 
-                .interview__text {
-                    @include desc-label-services();
-                }
-            }
+                .iinterview__description {
+                    .iinterview__title {
+                        @include mob-h2();
+                    }
 
-            .iinterview__infos {
-                .iinterview__votes {
-                    @include mob-text2();
+                    .interview__text {
+                        @include desc-label-services();
+                    }
                 }
 
-                .iinterview__user-status {
-                    @include mob-title3();
+                .iinterview__infos {
+                    .iinterview__votes {
+                        @include mob-text2();
+                    }
+
+                    .iinterview__user-status {
+                        @include mob-title3();
+                    }
                 }
             }
         }
     }
+
+}
+
+@media screen and (max-width: 600px) {
+    .interviews_array {
+        grid-template-columns: auto;
+    }
+
 }

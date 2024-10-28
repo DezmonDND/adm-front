@@ -14,6 +14,7 @@ $fourth-text-inverse: #EBEDF4;
     cursor: pointer;
     user-select: none;
     height: 20px;
+    padding-left: 20px;
 
     &:before {
         content: "";
@@ -64,6 +65,5 @@ $fourth-text-inverse: #EBEDF4;
 
 .radio:checked+label::before {
     background-color: $content-color;
-    border-color: $primary-color-hover;
-    background-image: url(../../icons/circle_icon.svg);
+    background-image: url(../../icons/radiobtns_icon.svg);
 }

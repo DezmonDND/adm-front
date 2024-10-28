@@ -1,26 +1,87 @@
 $desk-h4: 20px;
 $desk-lh4: 28px;
 $interview-end-color: #D10404;
+@mixin desc-text3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+@mixin desc-h5 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin desc-h4 {
+    font-size: 20px;
+    line-height: 24px;
+}
 
 @mixin desc-caption1 {
     font-size: 13px;
     line-height: 18px;
+
 }
 
 .form-field {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
 
-    .form-field__label {
-        font-size: $desk-h4;
-        line-height: $desk-lh4;
+
+    .form-field__title {
+        @include desc-h4;
+
     }
 
-    .form-field__span {
-        @include desc-caption1();
+    .form-field__answers {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .form-field__input {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .form-field__span {
+            @include desc-caption1;
+        }
     }
+
+
 
     .span_error {
         color: $interview-end-color;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .form-field {
+
+
+
+        .form-field__title {
+            @include desc-h5;
+        }
+
+        .form-field__answers {
+
+
+            .form-field__input {
+
+                .form-field__text {
+                    @include desc-text3;
+                }
+
+            }
+
+            .form-field__span {}
+        }
+
+
+
+        .span_error {}
     }
 }

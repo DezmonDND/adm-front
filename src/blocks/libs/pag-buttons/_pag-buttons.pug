@@ -1,6 +1,7 @@
 mixin pag-button(button)
     if button.iconPosition
-        .button(class=`pag-button pag-button-with-icon-${button.size} pag-button_${button.iconPosition}` onclick=button.onclick value=button.value) #{button.title}
+        .button(class=`pag-button pag-button-with-icon pag-button_${button.iconPosition}` onclick=button.onclick value=button.value) 
+            span.pag-button__title #{button.title}
             img(src=`../../icons/arrow-${button.iconPosition}_icon.svg` class=`pag-button__icon` alt='Стрелка')
     else
-        .button(class=`pag-button pag-button-${button.size}` onclick=button.onclick value=button.value) #{button.num}
+        .button(class=`pag-button` onclick=button.onclick value=button.value) #{button.num}

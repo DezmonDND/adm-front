@@ -19,10 +19,10 @@ $primary-color: #004CC4;
     all: unset;
     color: $second-text;
     border: 1px solid $num-button-text;
-    padding: 12px 26px;
-    border-radius: 4px;
+    padding: 12px 25px;
+    border-radius: 8px;
     font-weight: 600;
-    @include mob-h3();
+    @include desc-h5();
 
     &:hover {
         cursor: pointer;
@@ -48,35 +48,34 @@ $primary-color: #004CC4;
     }
 }
 
-.pag-button-l {
-    border-radius: 8px;
-    @include desc-h5();
-}
-
-.pag-button-m {
-    padding: 10px 16px;
-}
-
-.pag-button-s {
-    padding: 6px 12px;
+.pag-button-with-icon {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 26px;
 }
 
 .pag-button_left {
     flex-direction: row-reverse;
 }
 
-.pag-button-with-icon-l {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    border-radius: 8px;
+@media screen and (max-width: 1000px) {
+    .pag-button {
+        @include mob-h3();
+        padding: 10px 15px;
+        border-radius: 4px;
+
+        .pag-button__title {
+            display: none;
+        }
+
+    }
+
+    .pag-button-with-icon {
+        padding: 0;
+        border: none;
+    }
 }
 
-.pag-button-with-icon-s,
-.pag-button-with-icon-m {
-    padding: 0;
-    border: none;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
+
+@media screen and (max-width: 600px) {}
