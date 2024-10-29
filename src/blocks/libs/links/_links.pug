@@ -1,0 +1,8 @@
+mixin link(sort, href, index, text, type, links)
+    if type === 'link'
+        a(href=href target='_blank' class=`link ${sort}`) #{text}
+    if type === 'crumb'
+        if index < links.length - 1
+            a(href=href target='_blank' class='link breadcrumb_link') #{text}
+        else
+            span.breadcrumb_link #{text}

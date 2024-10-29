@@ -1,0 +1,185 @@
+extends ../layout
+
+block content 
+
+    //- +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас' })
+    //- +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
+    //- +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
+    //- +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 's', text: 'Готово' })
+    //- +checkbox(
+    //-     { id: 'radio', sort: 'radio', status: false }
+    //-     )
+
+    //- +checkbox(
+    //-     { id: 'сheckbox', sort: 'сheckbox', status: true }
+    //-     )
+    //- +input(
+    //-     {size: 'l', placeholder: 'Введите ваш ответ'}
+    //-     )
+    //- +link( '/',  '', 'Ссылка' , 'link')
+    //- +breadcrumbs([
+    //-     { href: '/', text: 'Главная' },
+    //-     { href: '/about', text: 'О нас' },
+    //-     { href: '/contact', text: 'Контакты' }
+    //-     ])
+    //- +tag('RSS', null, 'RSS', 'false')
+    //- +tag('Новости', null, 'live', 'true')
+    //- +tag('Новости', null, '', 'true')
+    //- +textarea() 
+    //- +select('s', [
+    //-     { value: 'Филатов Андрей Сергеевич, Глава города Сургута', text: 'Филатов Андрей Сергеевич, Глава города Сургута' },
+    //-     { value: 'Филатов', text: 'Филатов' },
+    //-     { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+    //-     ])
+    //- +select('xs', [
+    //-     { value: 'Раздел', text: 'Раздел' },
+    //-     { value: 'Филатов', text: 'Филатов' },
+    //-     { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+    //-     ], 'left')
+    //- +select('xs', [
+    //-     { value: 'Статус', text: 'Статус' },
+    //-     { value: 'Филатов', text: 'Филатов' },
+    //-     { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+    //-     ], )
+    //- +switch()
+    //- +form-field('Вопрос', 'Вспомогательный текст', true, 
+    //-     {size: 'medium', placeholder: 'Введите текст', type: 'text', name: 'answer'}
+    //-     ) 
+    //- +search(
+    //-     {name: 'number', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+    //-     false, 'l', 'getValues()',
+    //-     )
+    //- +search-form(
+    //-     true, 
+    //-     {size: 'xl', placeholder: 'Название законопроекта', type: 'text'},
+    //-     {size: 'xs', placeholder: 'Номер регистрации', type: 'text'},
+    //-     false,
+    //-     [
+    //-         { value: 'Раздел', text: 'Раздел' },
+    //-         { value: 'Филатов', text: 'Филатов' },
+    //-         { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+    //-     ], 
+    //-     'left', 'xs',
+    //-     { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
+    //-     )
+    //- +search-form(
+    //-     false, 
+    //-     {size: 'xl', placeholder: 'Название законопроекта', type: 'text'},
+    //-     {size: 'xs', placeholder: 'Номер регистрации', type: 'text'},
+    //-     false,
+    //-     [
+    //-         { value: 'Раздел', text: 'Раздел' },
+    //-         { value: 'Филатов', text: 'Филатов' },
+    //-         { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+    //-     ], 
+    //-     'left', 'xs',
+    //-     { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
+    //-     )    
+    //- +tab-button({ size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'})
+    //- +tabs([
+    //-     { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+    //-     { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+    //-     { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+    //-     { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+    //-     ])
+    //- +pag-button({ size: 'm', title: '', onclick: '' , value: 'Назад', iconPosition: 'right'})      
+    //- +pagination([
+    //-     { size: 'l', title: 'Назад', onclick: '' , value: 'Назад', iconPosition: 'left'},
+    //-     [
+    //-         { size: 'l', num: '1', onclick: '' , value: '1'},
+    //-         { size: 'l', num: '2', onclick: '' , value: '2'},
+    //-         { size: 'l', num: '3', onclick: '' , value: '3'},
+    //-         { size: 'l', num: '4', onclick: '' , value: '4' },
+    //-     ],
+    //-     { size: 'l', title: 'Вперед', onclick: '' , value: 'Вперед', iconPosition: 'right'}
+    //-     ])
+
+    +header()
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Опросы'},
+                { sort: '', href: '/', text: 'Создание агломераций на территории Ханты-Мансийского автономного округа-Югры'},
+            ],
+        )
+        +interview-full(
+            { 
+            sort: 'interview-full',    
+            status: 'Идет',
+            date: 'до 29 сентября',
+            votes: '319 голосов',
+            title: 'Cоздание агломераций на территории Ханты-Мансийского автономного округа – Югры',
+            description: 'Просим Вас принять участие в опросе и высказать своё мнение о создании агломерации на территории автономного округа. Создание агломераций предусмотрено Стратегией социально-экономического развития Ханты-Мансийского автономного округа – Югры до 2020 года и на период до 2030 года и позволит решить ряд важнейших задач, среди них: повышение эффективности использования ресурсов и человеческого капитала; развитие межмуниципального сотрудничества по приоритетным направлениям, выравнивание экономического потенциала городов и районов, развитие промышленных и социальных объектов и другие.Ваше мнение позволит оценить степень востребованности подобных изменений.',
+            })
+        form.interview-form
+            +form-field(
+            {
+                type: 'radio',
+                title: '1. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
+                checkboxes: [
+                    { id: 1, text: 'Да', sort: 'radio' },
+                    { id: 2, text: 'Нет', sort: 'radio' },
+                    ],
+            }
+            ) 
+            +form-field(
+            {
+                type: 'checkbox',
+                title: '2. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
+                checkboxes: [
+                    { id: 3, text: 'Первый вариант' },
+                    { id: 4, text: 'Второй вариант' },
+                    { id: 5, text: 'Третий вариант' },
+                    ],
+                }
+            )
+            +form-field(
+        {
+        title: '3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+        span: 'Вспомогательный текст',
+        error: false,
+        options: {
+            placeholder: 'Введите ваш ответ',
+            }
+        }
+        )
+            +form-field(
+        {
+            type: 'textarea',
+        title: '4. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+        span: 'Вспомогательный текст',
+        error: false,
+        options: {
+            placeholder: 'Введите ваш ответ',
+            }
+        }
+        )
+            +button({ type: 'button', class: 'button_blue button_interview', event: 'someFunction()', icon: 'arrow_icon.svg', text: `Очистить форму` }) 
+
+    +thanks({
+        title: 'Благодарим вас за принятие участия в опросе!',
+        description: 'Ваш вклад помогает городу становиться лучше. Примите участие и в других опросах - вместе мы сделаем город Сургут лучше!',
+        options: {
+            type: 'button', class: 'button_blue button_interview', event: 'someFunction()', icon: 'arrow_icon.svg', text: `Перейти к опросам` }
+        }
+    )           
+    +footer(
+    {
+        about: [
+            {href: '/', title: 'Сургут сегодня'},
+            {href: '/', title: 'История Сургута '}
+        ],
+        city: [
+            {href: '/', title: 'Сургут сегодня'},
+            {href: '/', title: 'История Сургута '}
+        ],
+        documents: [
+            {href: '/', title: 'Сургут сегодня'},
+            {href: '/', title: 'История Сургута '}
+        ],
+        category: [
+            {href: '/', title: 'Сургут сегодня'},
+            {href: '/', title: 'История Сургута '}
+        ],
+    })    

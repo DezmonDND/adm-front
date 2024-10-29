@@ -1,0 +1,56 @@
+$primary-color: #004CC4;
+$primary-color-hover: #0A5FE7;
+$primary-color-active: #003EA2;
+$primary-color-disabled: #C2D8FF;
+$tertiary-text: #78839C;
+$main-text: #040528;
+
+@mixin desc-title5 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@mixin text-link2 {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.link {
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+        text-decoration: underline;
+        color: $primary-color-hover;
+    }
+
+    &:active {
+        text-decoration: underline;
+        color: $primary-color-active;
+    }
+
+    &:disabled {
+        color: $primary-color-disabled;
+    }
+}
+
+.breadcrumb_link {
+    color: $tertiary-text;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header__eye-link {
+    color: $main-text;
+    font-weight: 500;
+    @include desc-title5();
+}
+
+@media screen and (max-width: 600px) {
+    .breadcrumb_link {
+        @include text-link2;
+
+    }
+
+}

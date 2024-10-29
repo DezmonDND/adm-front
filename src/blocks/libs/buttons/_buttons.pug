@@ -1,0 +1,25 @@
+mixin icon(icon, text)
+    span.button_span #{text}
+    img(src = `./icons/${icon}` class=`icon` alt=`${icon}`)
+
+mixin button-with-link(options)
+    if options.icon
+        a.button.button_link(href=options.href target='_blank' class=`${options.class}`)
+            +icon(options.icon, options.text)
+    else 
+        a.button.button_link(href=options.href target='_blank' class=`${options.class}`)
+            span.button_span #{options.text} 
+
+mixin button-without-link(options)
+    if options.icon
+        button.button(onclick=options.event class=`${options.class}`)
+            +icon(options.icon, options.text)
+    else 
+        button.button(onclick=options.event class=`${options.class}`)
+            span.button_span #{options.text}
+
+mixin button(options)
+    if options.type === 'link'
+        +button-with-link(options)  
+    else
+        +button-without-link(options)  

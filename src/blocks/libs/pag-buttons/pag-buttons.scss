@@ -1,0 +1,81 @@
+$second-text: #15195A;
+$num-button-text: #CDD0DF;
+$num-button-text-hover: #E7EDFB;
+$num-button-text-click: #DAE1F1;
+$content-color: #FFFFFF;
+$primary-color: #004CC4;
+
+@mixin desc-h5() {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin mob-h3() {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.pag-button {
+    all: unset;
+    color: $second-text;
+    border: 1px solid $num-button-text;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    @include desc-h5();
+
+    &:hover {
+        cursor: pointer;
+        background-color: $num-button-text-hover;
+        border-color: transparent;
+    }
+
+    &:active {
+        border-color: transparent;
+        background-color: $num-button-text-click;
+    }
+
+    &:focus {
+        color: $content-color;
+        background-color: $primary-color;
+    }
+
+    .pag-button__icon {
+        object-fit: cover;
+        object-position: center;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.pag-button-with-icon {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 26px;
+}
+
+.pag-button_left {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1000px) {
+    .pag-button {
+        @include mob-h3();
+        padding: 10px 15px;
+        border-radius: 4px;
+
+        .pag-button__title {
+            display: none;
+        }
+
+    }
+
+    .pag-button-with-icon {
+        padding: 0;
+        border: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {}

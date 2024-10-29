@@ -1,0 +1,100 @@
+$green-color-default: #14BC30;
+$green-color-hover: #10CD30;
+$green-color-click: #0C9022;
+$green-color-disabled: #DBDBDB;
+$red-color: #D10404;
+$primary-color: #004CC4;
+$fourth-text-inverse: #EBEDF4;
+$content-color: #FFFFFF;
+$main-text: #000448;
+$icons-color: #1A2D82;
+
+@mixin desc-h5() {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin mob-h4() {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.tag {
+    all: unset;
+    border-radius: 1000px;
+    padding: 4px 12px;
+    color: $content-color;
+    font-weight: 600;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .tag_span {
+        margin-left: 12px;
+    }
+
+    .tag_icon {
+        width: 24px;
+    }
+}
+
+.tag_video {
+    background-color: $primary-color;
+}
+
+.tag_news {
+    background-color: $fourth-text-inverse;
+    color: $main-text;
+}
+
+.tag_event {
+    padding: 6px 44px;
+    color: $main-text;
+}
+
+.tag_event_true {
+    background-color: $green-color-default;
+}
+
+.tag_event_true_false {
+    background-color: $red-color;
+}
+
+.tag_date {
+    padding: 6px 34px;
+    color: $main-text;
+}
+
+.tag_time {
+    padding: 6px 34px;
+    color: $content-color;
+    background-color: $primary-color;
+}
+
+.tag_record {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba($main-text, .25);
+}
+
+.tag_live {
+    color: $icons-color;
+    padding: 10px 20px;
+}
+
+.tag_RSS {
+    color: $icons-color;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.tag_s {
+    padding: 4px 20px;
+    @include mob-h4();
+}
+
+.tag_m {
+    padding: 8px 44px;
+    @include desc-h5();
+}

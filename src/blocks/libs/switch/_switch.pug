@@ -1,0 +1,4 @@
+mixin switch(status)
+  label.switch(class=`switch ${status ? 'switch_on' : 'switch_off'}`)
+    input(type='checkbox' class='switch__input' checked=status)
+    span.slider.round 

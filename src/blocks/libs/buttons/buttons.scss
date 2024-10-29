@@ -1,0 +1,137 @@
+$primary-color-green: #14BC30;
+$primary-color-green-hover: #10CD30;
+$primary-color-green-click: #0C9022;
+$primary-color-green-disabled: #DBDBDB;
+$primary-color: #004CC4;
+$primary-color-hover: #0A5FE7;
+$primary-color-active: #003EA2;
+$primary-color-disabled: #C2D8FF;
+$content-color: #FFFFFF;
+$main-text: #040528;
+@mixin desc-h6() {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+@mixin desc-title5 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@mixin desc-h4() {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@mixin desc-title {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.button {
+    all: unset;
+    color: $content-color;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+
+    .icon {
+        width: 20px;
+    }
+
+    .icon_m {
+        width: 24px;
+    }
+}
+
+.button_burger {
+    display: none;
+}
+
+.button_blue {
+    @include desc-h4();
+    font-weight: 600;
+    background-color: $primary-color;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-color-hover;
+    }
+
+    &:active {
+        background-color: $primary-color-active;
+    }
+
+    &:disabled {
+        background-color: $primary-color-disabled;
+    }
+}
+
+.button_green {
+    background-color: $primary-color-green;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-color-green-hover;
+    }
+
+    &:active {
+        background-color: $primary-color-green-click;
+    }
+
+    &:disabled {
+        background-color: $primary-color-green-disabled;
+    }
+}
+
+.button_white {
+    color: $primary-color;
+    background-color: $content-color;
+    border: 1px solid $primary-color;
+
+    &:hover {
+        cursor: pointer;
+        color: $primary-color-hover;
+        border-color: $primary-color-hover;
+    }
+
+    &:active {
+        color: $primary-color-active;
+        border-color: $primary-color-active;
+    }
+
+    &:disabled {
+        color: $primary-color-disabled;
+        border-color: $primary-color-disabled;
+    }
+}
+
+.button_link {
+    display: inline-flex;
+}
+
+.button_burger {
+    padding: 0;
+    gap: 0;
+}
+
+.button_header {
+    @include desc-title5();
+    padding: 8px 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .button_interview {
+        @include desc-h6();
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .button_burger {
+        display: block;
+    }
+}

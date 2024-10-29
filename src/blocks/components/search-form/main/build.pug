@@ -1,0 +1,19 @@
+include ../_search-form.pug 
+include ../../../libs/inputs/_inputs.pug 
+include ../../../libs/select/_select.pug 
+include ../../../libs/calender/_calender.pug 
+include ../../../libs/buttons/_buttons.pug 
+
++search-form(
+    true, 
+    {size: 'xl', placeholder: 'Название законопроекта', type: 'text'},
+    {size: 'xs', placeholder: 'Номер регистрации', type: 'text'},
+    false,
+    [
+        { value: 'Раздел', text: 'Раздел' },
+        { value: 'Филатов', text: 'Филатов' },
+        { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+    ], 
+    'left', 'xs',
+    { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
+    )

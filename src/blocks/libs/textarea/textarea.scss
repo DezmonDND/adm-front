@@ -1,0 +1,49 @@
+$tertiary-text: #78839C;
+$desk-text3: 16px;
+$desk-text3-lh: 24px;
+$input-color-default: #C6CBD9;
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 20px 0 12px;
+
+    .textarea {
+        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
+        padding: 16px;
+        border-radius: 8px;
+        font-size: $desk-text3;
+        line-height: $desk-text3-lh;
+        border: 1px solid $input-color-default;
+        outline: none;
+        resize: none;
+
+
+        &:focus {
+            border: 1px solid #78A4F4;
+        }
+
+        &::placeholder {
+            color: $tertiary-text;
+        }
+    }
+
+    .textarea-m {
+        max-width: 520px;
+    }
+
+    .counter {
+        display: flex;
+        gap: 2px;
+        font-size: $desk-text3;
+        line-height: $desk-text3-lh;
+        color: $tertiary-text;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+    }
+}

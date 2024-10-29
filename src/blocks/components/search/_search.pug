@@ -1,0 +1,4 @@
+mixin search(input_options, error, size, event, sort)
+    form(class=`search search-${sort}`)
+        +input(input_options, error)
+        +search-button(size, event)      

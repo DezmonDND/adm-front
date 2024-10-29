@@ -1,0 +1,18 @@
+mixin interview(value)
+    .interview
+        .interview__content 
+            .iinterview__dates 
+                +tag('s', `${value.status}` , null, '', 'true')
+                span.iinterview__date #{value.date}
+            .iinterview__description 
+                h3.iinterview__title #{value.title}
+                p.interview__text #{value.description}
+            .iinterview__infos 
+                span.iinterview__votes #{value.votes}
+                span.iinterview__user-status #{value.result}
+            +button({ type: 'button', class: 'button_blue button_interview', event: 'someFunction()', icon: 'arrow_icon.svg', text: `${value.buttonText}` })    
+
+mixin interviews_array(datas= [])
+    .interviews_array
+        each value in datas 
+            +interview(value)
