@@ -10,12 +10,12 @@ $main-text: #040528;
     line-height: 20px;
 }
 
-@mixin desc-h5() {
+@mixin desc-h5 {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
 }
 
-@mixin desc-h6() {
+@mixin desc-h6 {
     font-size: 13px;
     line-height: 16px;
 }
@@ -29,7 +29,7 @@ $main-text: #040528;
 
     .header__top-content {
         display: flex;
-        padding: 13px 64px;
+        padding: 7px 65px;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
@@ -40,11 +40,12 @@ $main-text: #040528;
 
             .header_links {
                 display: flex;
+                align-items: center;
                 justify-content: center;
-                gap: 40px;
+                gap: 22px;
 
                 .header__link {
-                    font-weight: 600;
+                    font-weight: 500;
                     text-decoration: none;
                     color: $main-text;
                     @include desc-h6();
@@ -56,6 +57,14 @@ $main-text: #040528;
             display: flex;
             gap: 12px;
             align-items: center;
+
+            .header__social__icon {
+                width: 20px;
+                height: 20px;
+                object-position: center;
+                object-fit: cover;
+
+            }
         }
 
         .header__buttons {
@@ -66,6 +75,9 @@ $main-text: #040528;
                 display: flex;
                 align-items: center;
                 gap: 8px;
+
+                .header__eye-link-icon {
+                    width: 18px;             }
             }
         }
     }
@@ -74,7 +86,7 @@ $main-text: #040528;
         display: flex;
         align-items: center;
         padding: 20px 64px;
-        gap: 24px;
+        gap: 27px;
 
         .header__main-links {
             display: flex;
@@ -87,10 +99,10 @@ $main-text: #040528;
             .header__main-links__block {
                 display: flex;
                 flex-direction: column;
-                gap: 4px;
+                gap: 5px;
 
                 .header__title {
-                    font-weight: 600;
+                    font-weight: 500;
                     @include desc-h6();
                     text-wrap: nowrap;
                 }
@@ -107,10 +119,10 @@ $main-text: #040528;
         .header__bottom-links {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 17px;
 
             .header__link {
-                font-weight: 600;
+                font-weight: 500;
                 text-decoration: none;
                 color: $main-text;
                 @include desc-h6();

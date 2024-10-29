@@ -1,0 +1,202 @@
+// ЦВЕТА
+
+// Типографика
+$main-text: #040528;
+$main-text-dark-bg: #FFFFFF;
+$second-text: #15195A;
+$tertiary-text: #78839C;
+$tertiary-text-dark-bg: #E9E9E9;
+$fourth-text: #C0C2CC;
+$fourth-text-inverse: #EBEDF4;
+
+// Фон
+$cards-background: #FAFAFA;
+
+// Иконки
+$icons-color: #1A2D82;
+$icons-background: #F7FBFE;
+
+// Инпуты
+$input-color-default: #C6CBD9;
+
+// Календарь
+$event-color: #E7EDFB;
+$event-color-hover: #E7EDFB;
+
+// Кнопки
+$primary-color: #004CC4;
+$primary-color-hover: #0A5FE7;
+$primary-color-active: #003EA2;
+$primary-color-disabled: #C2D8FF;
+$content-color: #FFFFFF;
+$primary-color-green: #14BC30;
+$primary-color-green-hover: #10CD30;
+$primary-color-green-click: #0C9022;
+$primary-color-green-disabled: #DBDBDB;
+
+// Категории
+$health-color: linear-gradient(#8EEC87 0%, #447ECB 100%);
+$finance-color: linear-gradient(#E8AAEF 0%, #3172C6 100%);
+$projects-color: linear-gradient(#8EDCD6 0%, #1679B7 100%);
+$social-color: linear-gradient(#F97A7C 0%, #5280EA 100%);
+
+// Опросы
+$interview-color: #2DBB45;
+$interview-end-color: #D10404;
+
+// Шрифты
+
+// Десктоп
+@mixin desc-h1 {
+    font-size: 40px;
+    line-height: 52px;
+}
+
+@mixin desc-h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@mixin desc-h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin desc-h4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@mixin desc-h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin desc-h6 {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@mixin desc-title {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin desc-title5 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@mixin desc-text1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin desc-text2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@mixin desc-text3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin desc-text4 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin desc-caption1 {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+@mixin desc-calender {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@mixin desc-label1 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+@mixin desc-label2 {
+    font-size: 11px;
+    line-height: 14px;
+}
+
+@mixin desc-ser-label {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+@mixin desc-tags-label {
+    font-size: 11px;
+    line-height: 14px;
+}
+
+@mixin desc-link {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+// Планшет
+@mixin tab-h1 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@mixin tab-h2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@mixin tab-h3 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin tab-h4 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@mixin tab-title1 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin tab-title2 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@mixin tab-text1 {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+@mixin tab-text2 {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+@mixin tab-text3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin tab-link {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+// Мобильный
+@mixin mob-h1 {
+    font-size: 24px;
+    line-height: 32px;
+}

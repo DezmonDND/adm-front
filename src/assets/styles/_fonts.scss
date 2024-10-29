@@ -1,35 +1,27 @@
 @font-face {
-  font-family: "GolosText";
-  font-style: normal;
-  font-weight: 300;
-  src: local("GolosText"),
-    url("../fonts/GolosText/golos-text_vw.woff2") format("woff2"),
-    url("../fonts/GolosText/golos-text_vw.woff") format("woff");
-}
-
-@font-face {
-  font-family: "GolosText";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: local("GolosText"),
-    url("../fonts/GolosText/golos-text_regular.woff2") format("woff2"),
-    url("../fonts/GolosText/golos-text_regular.woff") format("woff");
+  src: local("Inter"),
+    url("../fonts/Inter/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "GolosText";
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Inter"),
+    url("../fonts/Inter/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: local("GolosText"),
-    url("../fonts/GolosText/golos-text_demibold.woff2") format("woff2"),
-    url("../fonts/GolosText/golos-text_demibold.woff") format("woff");
+  src: local("Inter"),
+    url("../fonts/Inter/Inter-Black.woff2") format("woff2"),
+    url("../fonts/Inter/Inter-Black.woff") format("woff");
 }
 
-@font-face {
-  font-family: "GolosText";
-  font-style: normal;
-  font-weight: 800;
-  src: local("GolosText"),
-    url("../fonts/GolosText/golos-text_bold.woff2") format("woff2"),
-    url("../fonts/GolosText/golos-text_bold.woff") format("woff");
-}

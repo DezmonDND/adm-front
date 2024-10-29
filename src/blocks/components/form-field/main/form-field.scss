@@ -1,10 +1,11 @@
 $desk-h4: 20px;
 $desk-lh4: 28px;
 $interview-end-color: #D10404;
+
 @mixin desc-text3 {
     font-size: 16px;
     line-height: 24px;
-  }
+}
 
 @mixin desc-h5 {
     font-size: 16px;
@@ -30,6 +31,7 @@ $interview-end-color: #D10404;
 
 
     .form-field__title {
+        font-weight: 600;
         @include desc-h4;
 
     }
@@ -37,12 +39,13 @@ $interview-end-color: #D10404;
     .form-field__answers {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 24px;
+        align-items: flex-start;
 
         .form-field__input {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 17px;
         }
 
         .form-field__span {

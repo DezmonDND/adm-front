@@ -1,17 +1,27 @@
 $cards-background: #FAFAFA;
+$content-color: #FFFFFF;
+$tertiary-text: #78839C;
+
 @mixin desc-h2() {
     font-size: 32px;
     line-height: 38px;
-  }
-  @mixin desc-text3 {
+}
+
+@mixin desc-text3 {
     font-size: 16px;
     line-height: 24px;
-  }
+}
 
-  @mixin mob-text2 {
+@mixin mob-text2 {
     font-size: 12px;
     line-height: 18px;
-  }
+}
+
+@mixin desc-h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
 
 .interview-full {
     display: flex;
@@ -23,7 +33,7 @@ $cards-background: #FAFAFA;
     margin: 20px 0;
     padding: 0 32px;
 
-    .interview-full__container  {
+    .interview-full__container {
         display: flex;
         flex-direction: column;
         max-width: 866px;
@@ -33,13 +43,26 @@ $cards-background: #FAFAFA;
 
         .interview-full__info {
             display: flex;
+            align-items: center;
             gap: 24px;
+
+            .interview-full__date {
+                @include desc-h5;
+            }
+
+
+            .interview-full__votes {
+                @include desc-h5;
+                color: $tertiary-text;
+            }
         }
 
         .interview-full__description {
             display: flex;
             flex-direction: column;
             gap: 32px;
+            max-width: 782px;
+            width: 100%;
 
             .interview-full__title {
                 font-weight: 700;
@@ -52,15 +75,19 @@ $cards-background: #FAFAFA;
             }
         }
     }
+}
 
+.tag_interview-full {
+    @include desc-h5;
+    padding: 2px 24px;
 }
 
 @media screen and (max-width: 1000px) {
     .interview-full {
 
         border-radius: 8px;
-    
-        .interview-full__container  {
+
+        .interview-full__container {
 
             .interview-full__description {
                 .interview-full__title {
@@ -68,16 +95,17 @@ $cards-background: #FAFAFA;
                     line-height: 28px;
                 }
             }
-        }}
-    
+        }
+    }
+
 }
 
 @media screen and (max-width: 600px) {
     .interview-full {
 
 
-    
-        .interview-full__container  {
+
+        .interview-full__container {
 
             .interview-full__description {
                 .interview-full__title {
@@ -89,7 +117,7 @@ $cards-background: #FAFAFA;
                     @include mob-text2;
                 }
             }
-        }}
-    
-}
+        }
+    }
 
+}

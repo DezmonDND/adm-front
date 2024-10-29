@@ -1,7 +1,7 @@
 {
-  "name": "serpuhov-site",
+  "name": "surgut-site",
   "version": "1.0.0",
-  "description": "Официальнй города Сургут",
+  "description": "Официальный города Сургут",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "npx gulp default"

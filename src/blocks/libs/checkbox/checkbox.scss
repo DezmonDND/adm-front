@@ -13,8 +13,8 @@ $fourth-text-inverse: #EBEDF4;
     align-items: center;
     cursor: pointer;
     user-select: none;
-    height: 20px;
-    padding-left: 20px;
+    height: 21px;
+    padding-left: 21px;
 
     &:before {
         content: "";
@@ -22,8 +22,8 @@ $fourth-text-inverse: #EBEDF4;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 20px;
-        height: 20px;
+        width: 21px;
+        height: 21px;
         border: 1px solid $fourth-text-inverse;
         border-radius: 4px;
     }

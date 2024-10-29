@@ -5,6 +5,8 @@ $tertiary-text: #78839C;
     align-items: center;
     color: $tertiary-text;
     padding: 20px 0;
+    font-size: 14px;
+    line-height: 16px;
     
 
     .breadcrumbs__icon {
@@ -14,7 +16,7 @@ $tertiary-text: #78839C;
 
     .breadcrumbs__container {
         display: flex;
-        gap: 16px;
+        gap: 9px;
         overflow: hidden;
     }
 

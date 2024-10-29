@@ -1,7 +1,7 @@
     +breadcrumbs([
-        { sort: '', href: '/', text: 'Главная' },
-        { sort: '', href: '/about', text: 'Опросы'},
-        ])
+            { sort: 'crumb', href: '/', text: 'Главная' },
+            { sort: 'crumb', href: '/about', text: 'Опросы'},
+                ])
     h2.main__title Опросы  
     +tabs([
         { size: 'm', title: 'Национальные проекты', onclick: '' , value: 'Национальные проекты'},

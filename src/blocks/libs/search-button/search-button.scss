@@ -10,6 +10,7 @@ $primary-color: #004CC4;
         height: 48px;
         background: url(../icons/search_icon.svg) center no-repeat;
         background-color: $primary-color;
+        background-size: 24px;
         border: none;
         border-radius: 0 8px 8px 0;
 
@@ -22,4 +23,8 @@ $primary-color: #004CC4;
         width: 72px;
         height: 72px;
     }
+}
+
+.search-header {
+    max-width: 693px;
 }
