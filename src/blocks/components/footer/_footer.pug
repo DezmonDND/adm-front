@@ -1,4 +1,4 @@
-mixin footer()
+mixin footer(links=[])
     footer.footer
         .footer__header 
             .footer__header-links
@@ -23,20 +23,20 @@ mixin footer()
             ul.footer__category-content
                 h5.footer__categorie-title О Сургуте 
                 li.footer__categorie-links
-                    a(href='/').footer__categorie-link Сургут сегодня
-                    a(href='/').footer__categorie-link История Сургута             
+                    each link in links.about
+                        a(href=`${link.href}`).footer__categorie-link #{link.title}            
             ul.footer__category-content
                 h5.footer__categorie-title О Сургуте
                 li.footer__categorie-links
-                    a(href='/').footer__categorie-link Сургут сегодня
-                    a(href='/').footer__categorie-link История Сургута 
+                    each link in links.city
+                        a(href=`${link.href}`).footer__categorie-link #{link.title}             
             ul.footer__category-content
                 h5.footer__categorie-title О Сургуте
                 li.footer__categorie-links
-                    a(href='/').footer__categorie-link Сургут сегодня
-                    a(href='/').footer__categorie-link История Сургута 
+                    each link in links.documents
+                        a(href=`${link.href}`).footer__categorie-link #{link.title}            
             ul.footer__category-content
                 h5.footer__categorie-title О Сургуте
                 li.footer__categorie-links
-                    a(href='/').footer__categorie-link Сургут сегодня
-                    a(href='/').footer__categorie-link История Сургута                         
+                    each link in links.category
+                        a(href=`${link.href}`).footer__categorie-link #{link.title}                                    

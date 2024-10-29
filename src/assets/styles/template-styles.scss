@@ -15,7 +15,7 @@
 @use '../../blocks/libs/tab-buttons/tab-buttons.scss';
 @use '../../blocks/libs/pag-buttons/pag-buttons.scss';
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
-@use '../../blocks/components/form-field/main/form-field.scss';
+@use '../../blocks/components/form-field/form-field.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
 @use '../../blocks/components/tabs/tabs.scss';
 @use '../../blocks/components/pagination/main/pagination.scss';
@@ -23,7 +23,7 @@
 @use '../../blocks/components/header/main/header.scss';
 @use '../../blocks/components/interviews/main/interviews.scss';
 @use '../../blocks/components/interviews-full/main/interviews-full.scss';
-@use '../../blocks/components/thanks/main/thanks.scss';
+@use '../../blocks/components/thanks/thanks.scss';
 
 * {
   font-family: "Inter", sans-serif;
