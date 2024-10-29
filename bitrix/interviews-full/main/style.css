@@ -19,15 +19,15 @@
 .interview-full .interview-full__container .interview-full__info {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 29px;
 }
 .interview-full .interview-full__container .interview-full__info .interview-full__date {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
 .interview-full .interview-full__container .interview-full__info .interview-full__votes {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #78839C;
@@ -50,8 +50,13 @@
   line-height: 24px;
 }
 
+.input-interview-full {
+  padding: 22px;
+  margin: 25px 0 10px;
+}
+
 .tag_interview-full {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   padding: 2px 24px;
@@ -61,17 +66,53 @@
   .interview-full {
     border-radius: 8px;
   }
+  .interview-full .interview-full__container {
+    padding: 33px;
+    gap: 24px;
+  }
+  .interview-full .interview-full__container .interview-full__description {
+    gap: 12px;
+  }
   .interview-full .interview-full__container .interview-full__description .interview-full__title {
     font-size: 24px;
     line-height: 28px;
   }
+  .interview-full .interview-full__container .interview-full__info {
+    gap: 22px;
+  }
+  .interview-full .interview-full__container .interview-full__info .interview-full__date {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .interview-full .interview-full__container .interview-full__info .interview-full__votes {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .tag_interview-full {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 17px;
+  }
 }
 @media screen and (max-width: 600px) {
+  .interview-full {
+    padding: 0 21px;
+  }
+  .interview-full .interview-full__container {
+    padding: 12px 0;
+  }
   .interview-full .interview-full__container .interview-full__description .interview-full__title {
     font-size: 20px;
     line-height: 28px;
   }
   .interview-full .interview-full__container .interview-full__description .interview-full__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .input-interview-full {
+    border-radius: 4px;
+    padding: 12px;
+    margin: 12px 0 3px;
     font-size: 12px;
     line-height: 18px;
   }

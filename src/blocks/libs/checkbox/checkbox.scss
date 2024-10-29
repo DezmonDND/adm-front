@@ -38,6 +38,7 @@ $fourth-text-inverse: #EBEDF4;
 
 .сheckbox:not(:disabled):not(:checked)+label:hover::before {
     border-color: $primary-color;
+
 }
 
 .сheckbox:disabled+label {
@@ -51,7 +52,6 @@ $fourth-text-inverse: #EBEDF4;
 
 .сheckbox:disabled:checked+label::before {
     background-color: $content-color;
-    border: none;
     background-image: url(../../icons/checkbox-disabled_icon.svg);
 }
 

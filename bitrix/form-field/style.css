@@ -20,7 +20,7 @@
   align-items: center;
   gap: 17px;
 }
-.form-field .form-field__answers .form-field__span {
+.form-field .form-field__span {
   font-size: 13px;
   line-height: 18px;
 }
@@ -28,13 +28,44 @@
   color: #D10404;
 }
 
+.form-field_inputs {
+  gap: 0;
+}
+
 @media screen and (max-width: 1000px) {
   .form-field .form-field__title {
     font-size: 16px;
     line-height: 20px;
   }
+  .form-field .form-field__answers {
+    gap: 15px;
+  }
   .form-field .form-field__answers .form-field__input .form-field__text {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-field {
+    gap: 13px;
+  }
+  .form-field .form-field__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .form-field .form-field__answers {
+    gap: 9px;
+  }
+  .form-field .form-field__answers .form-field__input .form-field__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .form-field .form-field__span {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .form-field_inputs {
+    gap: 5px;
   }
 }

@@ -3,8 +3,15 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+  align-self: flex-start;
 }
 .pagination .pagination__pages {
   display: flex;
   gap: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .pagination {
+    align-self: center;
+  }
 }
