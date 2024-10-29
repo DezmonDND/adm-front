@@ -45,6 +45,12 @@ $content-color: #FFFFFF;
             .footer__main-links {
                 display: flex;
                 gap: 8px;
+                text-decoration: none;
+                color: #FFFFFF;
+
+                &:hover {
+                    color: #C0C2CC;
+                }
 
                 .footer__header-links__block {
                     display: flex;
@@ -58,22 +64,25 @@ $content-color: #FFFFFF;
                     }
 
                     .footer__link {
-                        text-decoration: none;
-                        color: $content-color;
                         font-size: 12px;
                         line-height: 14px;
                     }
                 }
-
             }
 
             .footer__social-links {
                 display: flex;
                 gap: 16px;
                 margin-left: 40px;
+                transition: all;
+
+                .footer__link-icon {
+                    &:hover {
+                        opacity: .6;
+                    }
+                }
             }
         }
-
     }
 
     .footer__contacts {
@@ -87,11 +96,24 @@ $content-color: #FFFFFF;
 
         .footer__address {
             @include desc-h5();
+            text-decoration: none;
+            color: $content-color;
+
+            &:hover {
+                opacity: 0.6;
+            }
         }
 
         .footer__email {
             display: flex;
+            align-items: center;
             gap: 8px;
+            text-decoration: none;
+            color: $content-color;
+
+            &:hover {
+                opacity: .6;
+            }
 
             .footer__email-title {
                 @include desc-text3();

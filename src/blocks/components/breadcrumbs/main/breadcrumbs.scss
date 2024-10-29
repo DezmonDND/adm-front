@@ -9,9 +9,15 @@ $tertiary-text: #78839C;
     line-height: 16px;
     gap: 3px;
 
-    .breadcrumbs__icon {
-        margin-right: 16px;
-        width: 24px;
+    .breadcrumbs__icon-link {
+        &:hover {
+            filter: invert(57%) sepia(63%) saturate(8%) hue-rotate(202deg) brightness(91%) contrast(89%);
+        }
+
+        .breadcrumbs__icon {
+            margin-right: 16px;
+            width: 24px;
+        }
     }
 
     .breadcrumbs__container {

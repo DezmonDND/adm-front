@@ -3,11 +3,11 @@ mixin footer(links=[])
         .footer_container
             .footer__header 
                 .footer__header-links
-                    .footer__main-links
+                    a(href=`/`).footer__main-links
                         img(class=`footer__logo` src=`../icons/footer-logo_icon.svg` alt='Логотип')
                         .footer__header-links__block 
                             span.footer__title Администрация Сургута
-                            a.footer__link(href="/") Официальный портал
+                            span.footer__link Официальный портал
                     .footer__social-links
                         a.footer__link-icon(href='/')
                             img(src=`../icons/vk-footer_icon.svg`)
@@ -16,8 +16,8 @@ mixin footer(links=[])
                         a.footer__link-icon(href='/')
                             img(src=`../icons/tg-footer_icon.svg`)
             .footer__contacts 
-                span.footer__address 628400, г. Сургут, ул. Энгельса, 8
-                .footer__email 
+                a(href='https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&z=17' target='_blank').footer__address 628400, г. Сургут, ул. Энгельса, 8
+                a(href='mailto:gorod@admsurgut.ru').footer__email 
                     img(src=`../icons/mail-footer_icon.svg`).footer__email-icon
                     span.footer__email-title gorod@admsurgut.ru   
             .footer__categories
