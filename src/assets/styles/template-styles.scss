@@ -72,6 +72,21 @@ body {
 @media screen and (max-width: 1000px) {
   .main {
     padding: 0 20px 40px;
-  }
 
+
+    .interview-form {
+      margin-top: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 0 27px 40px;
+
+    .interview-form {
+      margin-top: 6px;
+      gap: 27px;
+    }
+  }
 }

@@ -16,12 +16,12 @@ mixin form-field(field)
                         +checkbox(checkbox)
                         span.form-field__text #{checkbox.text} 
     else if field.type === 'textarea'
-        .form-field
+        .form-field.form-field_inputs
             h3.form-field__title #{field.title}
             +textarea(field.options, field.error)
             span(class=`form-field__span ${field.error ? 'span_error' : ''}`) #{field.span}              
     else
-        .form-field
+        .form-field.form-field_inputs
             h3.form-field__title #{field.title}
             +input(field.options, field.error)
             span(class=`form-field__span ${field.error ? 'span_error' : ''}`) #{field.span}

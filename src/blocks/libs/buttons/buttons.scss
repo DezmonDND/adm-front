@@ -126,12 +126,19 @@ $main-text: #040528;
 @media screen and (max-width: 1000px) {
     .button_interview {
         @include desc-h6();
-        padding: 8px 20px;
+        padding: 13px 20px;
     }
 }
 
 @media screen and (max-width: 880px) {
     .button_burger {
         display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .button_interview {
+
+        margin-top: 12px;
     }
 }

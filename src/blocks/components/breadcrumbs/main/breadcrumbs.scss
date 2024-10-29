@@ -7,7 +7,7 @@ $tertiary-text: #78839C;
     padding: 20px 0;
     font-size: 14px;
     line-height: 16px;
-    
+    gap: 3px;
 
     .breadcrumbs__icon {
         margin-right: 16px;
@@ -27,7 +27,6 @@ $tertiary-text: #78839C;
 
 @media screen and (max-width: 1000px) {
     .breadcrumbs {
-
         padding: 12px 0;
 
         .breadcrumbs__container {
@@ -38,11 +37,8 @@ $tertiary-text: #78839C;
 
 @media screen and (max-width: 600px) {
     .breadcrumbs {
-
-
-        .breadcrumbs__icon {}
-
-        .breadcrumbs__container {}
+        .breadcrumbs__icon {
+            display: none;
+        }
     }
 }
-
