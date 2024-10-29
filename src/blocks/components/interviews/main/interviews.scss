@@ -53,6 +53,11 @@ $tertiary-text: #78839C;
 $content-color: #FFFFFF;
 $primary-color: #004CC4;
 
+.interview__info {
+    display: flex;
+    flex-direction: column;
+}
+
 .interviews_array {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -65,22 +70,29 @@ $primary-color: #004CC4;
 
     .interview {
         display: flex;
+        flex-direction: column;
+        align-items: baseline;
         max-width: 421px;
         width: 100%;
         border-radius: 20px;
         background-color: #F9F9F9;
+        justify-content: space-between;
+        height: 100%;
+        min-height: 428px;
 
         .interview__content {
-            padding: 24px 32px 36px;
+            padding: 13px 32px 36px;
             display: flex;
             flex-direction: column;
             align-items: baseline;
-            gap: 20px;
+            gap: 28px;
+            height: 100%;
+            justify-content: space-between;
 
             .iinterview__dates {
                 display: flex;
                 align-items: center;
-                gap: 12px;
+                gap: 25px;
 
                 .iinterview__date {
                     @include desc-h5();
@@ -88,65 +100,78 @@ $primary-color: #004CC4;
                     border-radius: 100px;
                     background-color: $content-color;
                     padding: 4px 16px;
+                    margin: 10px 0 10px;
                 }
             }
 
             .iinterview__description {
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
+                gap: 23px;
+                height: 100%;
 
                 .iinterview__title {
                     @include desc-h3();
                     font-weight: 600;
+                    max-height: 72px;
+                    height: 100%;
+                    margin-top: 19px;
                 }
 
                 .interview__text {
                     @include desc-text3();
                 }
             }
+        }
 
-            .iinterview__infos {
-                display: flex;
-                align-items: center;
-                gap: 16px;
+        .iinterview__infos {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 20px;
 
-                .iinterview__votes {
-                    color: $tertiary-text;
-                    @include desc-text4();
-                }
+            .iinterview__votes {
+                color: $tertiary-text;
+                @include desc-text4();
+            }
 
-                .iinterview__user-status {
-                    font-weight: 500;
-                    @include desc-title5();
-                    color: $primary-color;
-                }
+            .iinterview__user-status {
+                font-weight: 500;
+                @include desc-title5();
+                color: $primary-color;
             }
         }
     }
 }
 
-
 @media screen and (max-width: 1000px) {
     .interviews_array {
         grid-template-columns: auto auto;
         gap: 8px;
+        margin: 22px 0 40px;
 
         .interview {
             border-radius: 8px;
+            min-height: 288px;
 
             .interview__content {
-                padding: 20px;
+                padding: 11px 20px 20px;
+                gap: 25px;
 
                 .iinterview__dates {
-                    .iinterview__dates {
+                    gap: 11px;
+
+                    .iinterview__date {
                         @include mob-h4();
                     }
                 }
 
                 .iinterview__description {
+                    gap: 12px;
+
                     .iinterview__title {
                         @include mob-h2();
+                        margin-top: 13px;
                     }
 
                     .interview__text {
@@ -155,8 +180,11 @@ $primary-color: #004CC4;
                 }
 
                 .iinterview__infos {
+                    margin-top: 13px;
+
                     .iinterview__votes {
                         @include mob-text2();
+
                     }
 
                     .iinterview__user-status {
@@ -166,12 +194,21 @@ $primary-color: #004CC4;
             }
         }
     }
-
 }
 
 @media screen and (max-width: 600px) {
     .interviews_array {
         grid-template-columns: auto;
+
+        .interview {
+            .interview__content {
+                gap: 0;
+
+                .iinterview__description {
+                    margin: 0;
+                }
+            }
+        }
     }
 
 }

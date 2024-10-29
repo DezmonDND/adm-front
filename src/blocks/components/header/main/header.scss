@@ -1,4 +1,5 @@
 $main-text: #040528;
+$primary-color: #004CC4;
 
 @mixin desc-text3 {
     font-size: 16px;
@@ -49,6 +50,10 @@ $main-text: #040528;
                     text-decoration: none;
                     color: $main-text;
                     @include desc-h6();
+
+                    &:hover {
+                        color: $primary-color;
+                    }
                 }
             }
         }
@@ -61,9 +66,35 @@ $main-text: #040528;
             .header__social__icon {
                 width: 20px;
                 height: 20px;
-                object-position: center;
-                object-fit: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
 
+            .vk_icon {
+                background-image: url(../icons/vk_icon_default.svg);
+
+                &:hover {
+                    background-image: url(../icons/vk_icon.svg);
+                    background-size: 20px;
+                }
+            }
+
+            .ok_icon {
+                background-image: url(../icons/ok_icon_default.svg);
+
+                &:hover {
+                    background-size: 20px;
+                    background-image: url(../icons/ok_icon.svg);
+                }
+            }
+
+            .tg_icon {
+                background-image: url(../icons/tg_icon_default.svg);
+
+                &:hover {
+                    background-size: 20px;
+                    background-image: url(../icons/tg_icon.svg);
+                }
             }
         }
 
@@ -71,17 +102,23 @@ $main-text: #040528;
             display: flex;
             gap: 29px;
 
-            .header__eye-block {
+            .header__eye-link {
                 display: flex;
                 align-items: center;
-                gap: 8px;
+                text-decoration: none;
+                background-image: url(../icons/eye-outlined_icon.svg);
+                background-size: 18px;
+                background-repeat: no-repeat;
+                background-position: left;
 
-                .header__eye-link {
-                    font-weight: 600;
+                &:hover {
+                    color: #004CC4;
+                    background-image: url(../icons/eye-hover_icon.svg);
                 }
 
-                .header__eye-link-icon {
-                    width: 18px;
+                .header__eye-link-title {
+                    font-weight: 600;
+                    margin-left: 28px;
                 }
             }
         }
@@ -97,6 +134,12 @@ $main-text: #040528;
         .header__main-links {
             display: flex;
             gap: 8px;
+            text-decoration: none;
+            color: $main-text;
+
+            &:hover {
+                color: $primary-color;
+            }
 
             .header__logo {
                 max-width: 28px;
@@ -110,12 +153,10 @@ $main-text: #040528;
                 .header__title {
                     font-weight: 600;
                     @include desc-h6();
-                    text-wrap: nowrap;
                 }
 
                 .header__main-link {
                     text-decoration: none;
-                    color: $main-text;
                     font-size: 12px;
                     line-height: 14px;
                 }
@@ -132,6 +173,10 @@ $main-text: #040528;
                 text-decoration: none;
                 color: $main-text;
                 @include desc-h6();
+
+                &:hover {
+                    color: $primary-color;
+                }
             }
         }
     }

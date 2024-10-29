@@ -19,6 +19,15 @@
 @font-face {
   font-family: "Inter";
   font-style: normal;
+  font-weight: 500;
+  src: local("Inter"),
+    url("../fonts/Inter/Inter_24pt-Medium-500.woff2") format("woff2"),
+    url("../fonts/Inter/Inter_24pt-Medium-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 600;
   src: local("Inter"),
     url("../fonts/Inter/Inter_28pt-SemiBold-600.woff2") format("woff2"),

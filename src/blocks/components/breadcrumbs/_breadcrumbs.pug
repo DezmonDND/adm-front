@@ -1,6 +1,7 @@
 mixin breadcrumbs(links = [])
   .breadcrumbs
-    img(src=`../../icons/arrow-left_link-icon.svg` alt='Стрелка').breadcrumbs__icon
+    a(href='/')
+      img(src=`../../icons/arrow-left_link-icon.svg` alt='Стрелка').breadcrumbs__icon
     if links.length !== 0 
       .breadcrumbs__container
         each value, index in links 

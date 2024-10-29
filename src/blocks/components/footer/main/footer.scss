@@ -125,8 +125,12 @@ $content-color: #FFFFFF;
 
                 .footer__categorie-link {
                     text-decoration: none;
-                    color: $content-color;
-                    @include desc-text4()
+                    color: #C0C2CC;
+                    @include desc-text4();
+
+                    &:hover {
+                        color: $content-color;
+                    }
                 }
             }
         }

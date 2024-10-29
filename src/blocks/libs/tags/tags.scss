@@ -98,3 +98,18 @@ $icons-color: #1A2D82;
     padding: 8px 44px;
     @include desc-h5();
 }
+
+.tag_interviews-array {
+    padding: 4px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .tag_interviews-array {
+font-size: 12px;
+line-height: 14px;
+padding: 4px 16px;
+    }
+}

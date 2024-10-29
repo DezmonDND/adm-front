@@ -8,10 +8,11 @@ $primary-color-active: #003EA2;
 $primary-color-disabled: #C2D8FF;
 $content-color: #FFFFFF;
 $main-text: #040528;
+
 @mixin desc-h6() {
     font-size: 13px;
     line-height: 16px;
-  }
+}
 
 @mixin desc-title5 {
     font-size: 14px;
@@ -122,11 +123,11 @@ $main-text: #040528;
     padding: 8px 20px;
 }
 
-
 @media screen and (max-width: 1000px) {
     .button_interview {
         @include desc-h6();
-        padding: 13px 20px;
+        padding: 7px 18px;
+        border-radius: 4px;
     }
 }
 
@@ -138,7 +139,6 @@ $main-text: #040528;
 
 @media screen and (max-width: 600px) {
     .button_interview {
-
         margin-top: 12px;
     }
 }

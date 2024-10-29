@@ -1,7 +1,7 @@
 mixin thanks(data)
     .thanks
         .thanks__container
-            img(src="../icons/check_icon.svg", alt="Иконка Успех")
+            img(src="../icons/check_icon.svg", class=`thanks__icon` alt="Иконка Успех")
             .thanks__description 
                 h2.thanks__title #{data.title}
                 p.thanks__text #{data.description}

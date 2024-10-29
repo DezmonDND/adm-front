@@ -21,6 +21,12 @@ $input-color-default: #C6CBD9;
         border: 1px solid $input-color-default;
         outline: none;
         resize: none;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #858C9C;
+        }
+
 
         &:focus {
             border: 1px solid #78A4F4;
