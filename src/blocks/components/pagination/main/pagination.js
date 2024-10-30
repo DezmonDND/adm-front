@@ -5,6 +5,8 @@ const prevButton = document.querySelector(".pag-button_left");
 function clickPage(event) {
   const currentButton = event.target;
 
+  console.log(buttons);
+  
   buttons.forEach((button) => button.classList.remove("pag-button_active"));
   currentButton.classList.add("pag-button_active");
 
@@ -30,6 +32,7 @@ function prevPage() {
     clickPage({ target: prevButton });
   }
 }
+
 function updateButtonStates() {
   const activeButton = document.querySelector(".pag-button_active");
   const firstPage = activeButton === buttons[0];
@@ -52,3 +55,4 @@ function updateButtonStates() {
 }
 
 updateButtonStates();
+

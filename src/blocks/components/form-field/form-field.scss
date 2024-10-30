@@ -65,6 +65,17 @@ $interview-end-color: #D10404;
     gap: 0;
 }
 
+.virtual-reception__form-field {
+
+}
+
+.form-field__input-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
 @media screen and (max-width: 1000px) {
     .form-field {
         .form-field__title {

@@ -5,92 +5,124 @@ block content
     main.main
         +breadcrumbs(
             [
-                { sort: '', href: '/', text: 'Главная' },
-                { sort: '', href: '/', text: 'Опросы'},
-                { sort: '', href: '/', text: 'Создание агломераций на территории Ханты-Мансийского автономного округа-Югры'},
-            ],
-        )
-        h2.main__title Опросы  
-        +tabs('interviews', 
-            [
-                { size: 'm', title: 'Национальные проекты', onclick: '' , value: 'Национальные проекты'},
-                { size: 'm', title: 'Администрация', onclick: '' , value: 'Администрация'},
-                { size: 'm', title: 'Прочие', onclick: '' , value: 'Прочие'},
-            ])  
-        +interview-full(
-            { 
-                date: 'до 29 сентября',
-                votes: '319 голосов',
-                title: 'Cоздание агломераций на территории Ханты-Мансийского автономного округа – Югры',
-                description: 'Просим Вас принять участие в опросе и высказать своё мнение о создании агломерации на территории автономного округа. Создание агломераций предусмотрено Стратегией социально-экономического развития Ханты-Мансийского автономного округа – Югры до 2020 года и на период до 2030 года и позволит решить ряд важнейших задач, среди них: повышение эффективности использования ресурсов и человеческого капитала; развитие межмуниципального сотрудничества по приоритетным направлениям, выравнивание экономического потенциала городов и районов, развитие промышленных и социальных объектов и другие.Ваше мнение позволит оценить степень востребованности подобных изменений.',
-                tag: {
-                    sort: 'interview-full',    
-                    text: 'Идет',
-                    isGoing: true,
-                    },   
-            })
-        form.interview-form
-            +form-field(
-                {
-                    type: 'radio',
-                    title: '1. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
-                    checkboxes: [
-                        { 
-                            id: 1, 
-                            text: 'Да', 
-                            sort: 'radio',
-                            status: true,
-                            },
-                        { 
-                            id: 2, 
-                            text: 'Нет', 
-                            sort: 'radio',
-                            status: false, 
-                            },
+                { sort: 'crumb', href: '/', text: 'Главная' },
+                { sort: 'crumb', href: '/about', text: 'Опросы'},
+            ])
+        h2.main__title Виртуальная приемная
+        span.main__description Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных. 
+        form.virtual-receprion__form
+            .virtual-receprion__content 
+                h3.virtual-reception__title Основные данные
+                .virtual-reception__select
+                    +form-field(
+                    {
+                        type: 'select',
+                        title: 'Кому направляете электронную анкету',
+                        span: '',
+                        error: false,   
+                    })
+                    +select('virtual-reception', 
+                    [
+                        { value: 'Филатов Андрей Сергеевич, Глава города Сургута', text: 'Филатов Андрей Сергеевич, Глава города Сургута' },
+                        { value: 'Филатов', text: 'Филатов' },
+                        { value: 'Глава города Сургута', text: 'Глава города Сургута' }
                         ],
-                }) 
-            +form-field(
+                )
+                +form-field(
                 {
-                    type: 'checkbox',
-                    title: '2. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
-                    checkboxes: [
-                        { id: 3, text: 'Первый вариант' },
-                        { id: 4, text: 'Второй вариант' },
-                        { id: 5, text: 'Третий вариант' },
-                        ],
+                    cls: 'virtual-reception__form-field',
+                    cls_title: 'virtual-reception__field-title',
+                    type: '',
+                    title: 'Наименование вашей организации (юридического лица)',
+                    span: '',
+                    error: false,
+                    inputs: [
+                        {
+                            placeholder: 'Наименование организации',
+                            name: 'companyName', 
+                            sort: 'virtual-reception_input',
+                        },
+                        ]    
                 })
-            +form-field(
+                +form-field(
                 {
-                    title: '3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+                    cls: 'virtual-reception__form-field',
+                    cls_title: 'virtual-reception__field-title',
+                    type: '',
+                    title: 'Ваши данные',
                     span: 'Вспомогательный текст',
                     error: false,
-                    options: {
-                        sort: 'interview-full',
-                        placeholder: 'Введите ваш ответ',
-                            }
+                    inputs: [
+                        {
+                            placeholder: 'Фамилия',
+                            name: 'firstName', 
+                            sort: 'virtual-reception_input',
+                        },
+                        {
+                            placeholder: 'Имя',
+                            name: 'secondName',
+                            sort: 'virtual-reception_input',
+                        },
+                        {
+                            placeholder: 'Отчество',
+                            name: 'thirdName',
+                            sort: 'virtual-reception_input',
+                        }
+                        ]    
                 })
-            +form-field(
+                +button({ type: 'button', class: 'button_white', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Добавить соавтора` })    
+                +form-field(
                 {
+                    cls: 'virtual-reception__form-field',
+                    cls_title: 'virtual-reception__field-title',
+                    type: '',
+                    title: 'Данные для контакта',
+                    span: 'Вспомогательный текст',
+                    error: false,
+                    inputs: [
+                        {
+                            placeholder: 'your_email@mail.ru',
+                            name: 'email', 
+                            sort: 'virtual-reception_input',
+                        },
+                        {
+                            placeholder: '892343567',
+                            name: 'phone',
+                            sort: 'virtual-reception_input',
+                        },
+                        ]    
+                })
+                +form-field(
+                {
+                    cls: 'virtual-reception__form-field',
+                    cls_title: 'virtual-reception__field-title',
                     type: 'textarea',
-                    title: '4. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
-                    span: 'Вспомогательный текст',
+                    title: 'Обращение',
+                    span: '',
                     error: false,
                     options: {
                         placeholder: 'Введите ваш ответ',
                             }
                 })
-            +button({ type: 'button', class: 'button_blue button_interview', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить форму` }) 
-    +thanks({
-        title: 'Благодарим вас за принятие участия в опросе!',
-        description: 'Ваш вклад помогает городу становиться лучше. Примите участие и в других опросах - вместе мы сделаем город Сургут лучше!',
-        options: {
-            type: 'link', 
-            class: 'button_blue button_thanks', 
-            href: '/', 
-            icon: '', 
-            text: `Перейти к опросам` }
-        }
-    )           
+            ul.virtual-reception__documents__list
+                li.virtual-reception__document
+                    +button({ type: 'button', class: 'button virtual-reception__delete-button', event: 'getValues(event)', icon: 'close-btn_icon.svg' })
+                    .virtual-reception__document-description 
+                        img(src="../icons/doc-2_icon.svg" alt="").virtual-reception__document-icon  
+                        span.virtual-reception__document-title Отчёт о деятельности постоянных комитетов в 2023 году.pdf
+                li.virtual-reception__document
+                    +button({ type: 'button', class: 'button virtual-reception__delete-button', event: 'getValues(event)', icon: 'close-btn_icon.svg' })
+                    .virtual-reception__document-description 
+                        img(src="../icons/doc-2_icon.svg" alt="").virtual-reception__document-icon  
+                        span.virtual-reception__document-title Отчёт о деятельности постоянных комитетов в 2023 году.pdf                   
+                li.virtual-reception__document
+                    +button({ type: 'button', class: 'button virtual-reception__delete-button', event: 'getValues(event)', icon: 'close-btn_icon.svg' })
+                    .virtual-reception__document-description 
+                        img(src="../icons/doc-2_icon.svg" alt="").virtual-reception__document-icon  
+                        span.virtual-reception__document-title Отчёт о деятельности постоянных комитетов в 2023 году.pdf                                              
+            .virtual-reception__buttons    
+                +button({ type: 'button', class: 'button_white virtual-reception__add-button', event: 'getValues(event)', icon: 'add-document_icon.svg', text: `Вложить документ` })            
+                +button({ type: 'button', class: 'button_blue virtual-reception__send-button', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить обращение` })    
     +footer(
         {
             about: [
@@ -142,4 +174,4 @@ block content
                 {href: '/', title: 'Ссылка'},
                 {href: '/', title: 'Ссылка'},
                 ],
-        })    
+        })          

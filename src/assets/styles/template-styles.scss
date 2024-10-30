@@ -57,6 +57,14 @@ body {
     line-height: 38px;
   }
 
+  .main__description {
+    max-width: 866px;
+    margin-bottom: 38px;
+    font-size: 16px;
+    line-height: 24px;
+
+  }
+
   .interview-form {
     display: flex;
     flex-direction: column;
@@ -67,6 +75,74 @@ body {
     align-items: baseline;
   }
 
+  .virtual-receprion__form {
+    .virtual-receprion__content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      max-width: 866px;
+      width: 100%;
+
+      .virtual-reception__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      .virtual-reception__select {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+      }
+
+      .virtual-reception__field-title {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.virtual-reception__documents__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  max-width: 866px;
+  margin: 24px 0 24px;
+  gap: 8px;
+
+  .virtual-reception__document {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:hover {
+
+      .virtual-reception__delete-button {
+        display: block;
+      }
+    }
+
+    .virtual-reception__document-description {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 12px;
+      border-radius: 8px;
+      background-color: #FAFAFA;
+      width: 100%;
+
+      .virtual-reception__document-icon {}
+
+      .virtual-reception__document-title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+
+      }
+    }
+  }
 }
 
 .main__title {
@@ -76,6 +152,13 @@ body {
 .main__interviews {
   display: flex;
   margin: 40px 0 40px;
+}
+
+.virtual-reception__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 40px;
 }
 
 @media screen and (max-width: 1000px) {

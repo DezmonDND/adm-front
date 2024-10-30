@@ -2,19 +2,16 @@ include ../blocks/libs/_libs
 include ../blocks/blocks
 
 doctype html 
-html(lang="en")
+html(lang="ru")
     head
-        link(rel="stylesheet", href="./css/template-styles.css")
-        link(rel="stylesheet", href="./css/other.css")
-        
+        link(rel="stylesheet" href="./css/template-styles.css")
+        link(rel="stylesheet" href="./css/other.css")
+
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
         title Document
     body 
-        block content
-            h1 Hello from pug
         script(src = './js/script.js')
-        script(src = './scripts/search.js')
+        block content
 
-    

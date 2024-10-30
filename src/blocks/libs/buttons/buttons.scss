@@ -123,6 +123,25 @@ $main-text: #040528;
     padding: 8px 20px;
 }
 
+.virtual-reception__add-button {
+    padding: 11px 15px;
+    flex-direction: row-reverse;
+}
+
+.virtual-reception__send-button {
+    padding: 17px 38px;
+
+}
+
+.virtual-reception__delete-button {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    padding: 0;
+    gap: 0;
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .button_interview {
         @include desc-h6();
