@@ -11,6 +11,10 @@
   gap: 26px;
 }
 
+.tabs_projects {
+  gap: 25px;
+}
+
 @media screen and (max-width: 1000px) {
   .tabs_interviews {
     font-size: 14px;

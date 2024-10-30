@@ -58,9 +58,14 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: 600;
-  max-height: 72px;
+  max-height: 84px;
   height: 100%;
   margin-top: 19px;
+  -webkit-line-clamp: 3;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 .interviews_array .interview .interview__content .iinterview__description .interview__text {
   font-size: 16px;

@@ -80,6 +80,17 @@ $primary-color: #004CC4;
 
 .pag-button_left {
     flex-direction: row-reverse;
+    background-image: url(../icons/arrow-left_icon.svg);
+    background-position: 9%;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+}
+
+.pag-button_right {
+    background-image: url(../icons/arrow-right_icon.svg);
+    background-position: 91%;
+    background-repeat: no-repeat;
+    padding-right: 35px;
 }
 
 .pag-button_active {
@@ -88,9 +99,18 @@ $primary-color: #004CC4;
     border: none;
 }
 
-.pag-button-with-icon_disabled {
-    background-color: #004CC4;
-    color: $content-color;
+.pag-button-with-icon_left_disabled {
+    background-image: url(../icons/arrow-left_icon_disabled.svg);
+    color: #C2D8FF;
+    border-color: #C2D8FF;
+    background-color: $content-color;
+}
+
+.pag-button-with-icon_right_disabled {
+    background-image: url(../icons/arrow-right_icon_disabled.svg);
+    color: #C2D8FF;
+    border-color: #C2D8FF;
+    background-color: $content-color;
 }
 
 @media screen and (max-width: 1000px) {
@@ -115,5 +135,15 @@ $primary-color: #004CC4;
 
     .pag-button-with-icon_disabled {
         background-color: $content-color;
+    }
+
+    .pag-button_left {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pag-button_right {
+        width: 20px;
+        height: 20px;
     }
 }

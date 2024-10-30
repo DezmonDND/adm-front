@@ -39,15 +39,15 @@ function updateButtonStates() {
   nextButton.disabled = lastPage;
 
   if (firstPage) {
-    prevButton.classList.add("pag-button-with-icon_disabled");
+    prevButton.classList.add("pag-button-with-icon_left_disabled");
   } else {
-    prevButton.classList.remove("pag-button-with-icon_disabled");
+    prevButton.classList.remove("pag-button-with-icon_left_disabled");
   }
 
   if (lastPage) {
-    nextButton.classList.add("pag-button-with-icon_disabled");
+    nextButton.classList.add("pag-button-with-icon_right_disabled");
   } else {
-    nextButton.classList.remove("pag-button-with-icon_disabled");
+    nextButton.classList.remove("pag-button-with-icon_right_disabled");
   }
 }
 

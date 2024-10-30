@@ -113,9 +113,15 @@ $primary-color: #004CC4;
                 .iinterview__title {
                     @include desc-h3();
                     font-weight: 600;
-                    max-height: 72px;
+                    max-height: 84px;
                     height: 100%;
                     margin-top: 19px;
+                    -webkit-line-clamp: 3;
+                    position: relative;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+
                 }
 
                 .interview__text {
