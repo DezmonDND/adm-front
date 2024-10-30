@@ -1,0 +1,36 @@
+.projects-array {
+  margin: 40px 0 0;
+}
+.projects-array .projects-array__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.projects-array .projects-array__content .projects-array__edit-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.projects-array .projects-array__content .projects-array__edit-buttons .projects-array__button {
+  flex-direction: row-reverse;
+  padding: 11px 28px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.projects-array .projects-array__content .projects-array__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.projects-array .projects-array__content .projects-array__save-buttons {
+  display: flex;
+  gap: 24px;
+}
+.projects-array .projects-array__content .projects-array__save-buttons .projects-array__button {
+  flex-direction: row-reverse;
+  padding: 16px 36px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.projects-array .projects-array__content .projects-array__save-buttons .projects-array__button_save_button {
+  padding: 16px 21px;
+}

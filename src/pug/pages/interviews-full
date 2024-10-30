@@ -39,35 +39,53 @@ block content
                             id: 1, 
                             text: 'Да', 
                             sort: 'radio',
-                            status: true,
+                            status: false,
+                            name: 'radio'
                             },
                         { 
                             id: 2, 
                             text: 'Нет', 
                             sort: 'radio',
-                            status: false, 
+                            status: false,
+                            name: 'radio'
                             },
                         ],
-                }) 
+                })  
             +form-field(
                 {
                     type: 'checkbox',
                     title: '2. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
                     checkboxes: [
-                        { id: 3, text: 'Первый вариант' },
-                        { id: 4, text: 'Второй вариант' },
-                        { id: 5, text: 'Третий вариант' },
+                        { 
+                            id: 3, 
+                            text: 'Первый вариант',
+                            sort: 'checkbox',
+                        },
+                        { 
+                            id: 4,
+                            text: 'Второй вариант',
+                            sort: 'checkbox',
+                        },
+                        { 
+                            id: 5, 
+                            text: 'Третий вариант',
+                            sort: 'checkbox', 
+                        },
                         ],
                 })
             +form-field(
                 {
+                    type: '',
                     title: '3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
                     span: 'Вспомогательный текст',
                     error: false,
-                    options: {
-                        sort: 'interview-full',
-                        placeholder: 'Введите ваш ответ',
-                            }
+                    inputs: [
+                        {
+                            placeholder: 'Введите ваш ответ',
+                            name: 'answer3', 
+                            sort: 'interview-full',
+                        },
+                        ] 
                 })
             +form-field(
                 {

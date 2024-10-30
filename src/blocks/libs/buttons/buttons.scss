@@ -134,12 +134,50 @@ $main-text: #040528;
 }
 
 .virtual-reception__delete-button {
+    all: unset;
     width: 15px;
     height: 15px;
     cursor: pointer;
     padding: 0;
     gap: 0;
     display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    position: relative;
+}
+
+.custom-file-upload label {
+    outline: 0;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 11px 15px 11px 43px;
+    background-image: url(../icons/add-document_icon.svg);
+    background-position: 8%;
+    background-repeat: no-repeat;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    border-radius: 8px;
+
+    &:hover {
+      color: $primary-color-hover;
+      border-color: $primary-color-hover;  
+    }
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.button_add-author {
+    max-width: 205px;
+    flex-direction: row-reverse;
+
+    .icon {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 1000px) {
