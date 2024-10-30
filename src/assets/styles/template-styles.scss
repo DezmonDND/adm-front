@@ -79,7 +79,6 @@ body {
     .virtual-receprion__content {
       display: flex;
       flex-direction: column;
-      gap: 32px;
       max-width: 866px;
       width: 100%;
 
@@ -87,6 +86,7 @@ body {
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
+        margin-bottom: 30px;
       }
 
       .virtual-reception__select {
@@ -102,19 +102,23 @@ body {
   }
 }
 
+.virtual-reception__job-field {
+  margin: 34px 0 33px;
+}
+
 .virtual-reception__documents__list {
   display: flex;
   flex-direction: column;
   list-style: none;
   max-width: 866px;
-  margin: 24px 0 24px;
+  margin: 11px 0 36px;
   gap: 8px;
 
   .virtual-reception__document {
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 8px;
+    gap: 18px;
     cursor: pointer;
 
     &:hover {
@@ -133,16 +137,23 @@ body {
       background-color: #FAFAFA;
       width: 100%;
 
-      .virtual-reception__document-icon {}
-
       .virtual-reception__document-title {
         font-weight: 500;
         font-size: 12px;
         line-height: 16px;
-
       }
     }
   }
+}
+
+.virtual-reception__user-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.virtual-reception__field-title_email {
+  margin: 2px 0 28px;
 }
 
 .main__title {
@@ -158,23 +169,48 @@ body {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  gap: 40px;
+  gap: 53px;
+}
+
+.virtual-reception__feedback {
+  margin: 45px 0 0;
+}
+
+.virtual-reception__feedback-title {
+  margin: 0;
 }
 
 @media screen and (max-width: 1000px) {
   .main {
     padding: 0 20px 40px;
 
+    .main__description {
+      margin-bottom: 30px;
+    }
 
     .main__title {
+      font-weight: 600;
       font-size: 24px;
       line-height: 28px;
-
     }
 
     .interview-form {
       margin-top: 26px;
     }
+
+    .virtual-receprion__form {
+      .virtual-receprion__content {
+        .virtual-reception__title {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .virtual-reception__buttons {
+    gap: 47px;
   }
 }
 
@@ -189,9 +225,42 @@ body {
 
     }
 
+    .main__description {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 26px;
+    }
+
     .interview-form {
       margin-top: 6px;
       gap: 27px;
+    }
+
+    .virtual-receprion__form {
+      .virtual-receprion__content {
+        .virtual-reception__title {
+          font-size: 16px;
+          line-height: 12px;
+        }
+        .virtual-reception__select {
+          gap: 16px;
+        }
+        .virtual-reception__field-title {
+          margin-bottom: 13px;
+        }
+      }
+    }
+
+    .virtual-reception__job-field {
+      margin: 34px 0 27px;
+    }
+
+    .virtual-reception__feedback {
+      margin: 38px 0 0;
+    }
+
+    .virtual-reception__buttons {
+      gap: 38px;
     }
   }
 }

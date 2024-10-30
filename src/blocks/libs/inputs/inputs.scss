@@ -55,3 +55,13 @@ $interview-end-color: #D10404;
     border-radius: 4px;
     max-width: 1232px;
 }
+
+@media screen and (max-width: 600px) {
+    .input-virtual-reception_input {
+        padding: 10px 13px;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+}

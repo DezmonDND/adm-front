@@ -1,12 +1,10 @@
-const buttons = document.querySelectorAll(".pag-button");
 const nextButton = document.querySelector(".pag-button_right");
 const prevButton = document.querySelector(".pag-button_left");
 
 function clickPage(event) {
+  const buttons = document.querySelectorAll(".pag-button");
   const currentButton = event.target;
 
-  console.log(buttons);
-  
   buttons.forEach((button) => button.classList.remove("pag-button_active"));
   currentButton.classList.add("pag-button_active");
 
@@ -55,4 +53,3 @@ function updateButtonStates() {
 }
 
 updateButtonStates();
-

@@ -1,10 +1,9 @@
-const submitButton = document.querySelector(".button_interview");
-const inputs = document.querySelectorAll(
-  ".input, .textarea, .сheckbox, .radio"
-);
-let values = [];
-
 function getValues(e) {
+  const submitButton = document.querySelector(".button_interview");
+  const inputs = document.querySelectorAll(
+    ".input, .textarea, .сheckbox, .radio"
+  );
+  let values = [];
   e.preventDefault();
 
   values = [];

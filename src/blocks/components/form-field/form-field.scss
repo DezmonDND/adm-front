@@ -20,7 +20,6 @@ $interview-end-color: #D10404;
 @mixin desc-caption1 {
     font-size: 13px;
     line-height: 18px;
-
 }
 
 .form-field {
@@ -33,7 +32,6 @@ $interview-end-color: #D10404;
     .form-field__title {
         font-weight: 600;
         @include desc-h4;
-
     }
 
     .form-field__answers {
@@ -47,14 +45,11 @@ $interview-end-color: #D10404;
             align-items: center;
             gap: 17px;
         }
-
     }
 
     .form-field__span {
-
         @include desc-caption1;
     }
-
 
     .span_error {
         color: $interview-end-color;
@@ -63,10 +58,6 @@ $interview-end-color: #D10404;
 
 .form-field_inputs {
     gap: 0;
-}
-
-.virtual-reception__form-field {
-
 }
 
 .form-field__input-list {
@@ -80,6 +71,17 @@ $interview-end-color: #D10404;
     .form-field {
         .form-field__title {
             @include desc-h5;
+        }
+
+        .virtual-reception__field-title_email {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0 0 26px;
+        }
+
+        .virtual-reception__feedback-title {
+            font-size: 20px;
+            line-height: 24px;
         }
 
         .form-field__answers {
@@ -99,9 +101,14 @@ $interview-end-color: #D10404;
         gap: 13px;
 
         .form-field__title {
-            font-weight: 500;
             font-size: 12px;
             line-height: 16px;
+        }
+
+        .virtual-reception__field-title_email {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 14px;
         }
 
         .form-field__answers {
@@ -114,12 +121,12 @@ $interview-end-color: #D10404;
                 }
             }
         }
+
         .form-field__span {
             font-size: 10px;
             line-height: 16px;
         }
     }
-
 
     .form-field_inputs {
         gap: 5px;
