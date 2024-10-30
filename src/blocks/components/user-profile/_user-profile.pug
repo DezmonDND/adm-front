@@ -1,0 +1,7 @@
+mixin user_profile(data)
+    .user-profile 
+        button(onclick=data.onclick type='button').user-profile__button 
+            img.user-profile__avatar(src=`./img/${data.icon}`, alt="Аватар")
+        .user-profile__info 
+            h2.user-profile__name #{data.name}
+            span.user-profile_job #{data.job}     

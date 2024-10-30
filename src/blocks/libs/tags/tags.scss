@@ -53,7 +53,7 @@ $icons-color: #1A2D82;
     background-color: $green-color-default;
 }
 
-.tag_event_true_false {
+.tag_event_false {
     background-color: $red-color;
 }
 
@@ -104,8 +104,8 @@ $icons-color: #1A2D82;
 
 @media screen and (max-width: 1000px) {
     .tag_interviews-array {
-font-size: 12px;
-line-height: 14px;
-padding: 4px 16px;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 4px 16px;
     }
 }

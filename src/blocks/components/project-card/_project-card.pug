@@ -1,0 +1,16 @@
+mixin project_card(isEdit, data)
+    if isEdit
+        .project-card 
+            .project-card__content 
+                +checkbox(data.checkbox)
+                .project-card__info 
+                    h4.project-card__title #{data.title}
+                    span.project-card__date #{data.date}
+                    +tag(data.tag)
+    else 
+        .project-card 
+            .project-card__content 
+                .project-card__info 
+                    h4.project-card__title #{data.title}
+                    span.project-card__date #{data.date}
+                    +tag(data.tag)                

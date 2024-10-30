@@ -1,0 +1,13 @@
+mixin projects_array(isEdit, projects = [])
+    .projects-array
+        .projects-array__content
+            .projects-array__edit-buttons
+                +button({ type: 'button', class: 'button_blue projects-array__button', event: 'addProject()', icon: 'plus_icon.svg', text: `Добавить инициативный проект` })
+                +button({ type: 'button', class: 'button_white projects-array__button', event: 'editProject()', text: `Редактировать текущие` })
+            .projects-array__list
+                each project in projects 
+                    +project_card(isEdit, project)
+            if isEdit                     
+                .projects-array__save-buttons
+                    +button({ type: 'button', class: 'button_blue projects-array__button', event: 'deleteProject()', icon: 'delete_icon.svg', text: `Удалить` })
+                    +button({ type: 'button', class: 'button_white projects-array__button projects-array__button_save_button', event: 'cancelEdit()', text: `Отмена` })
