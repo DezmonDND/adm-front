@@ -1982,6 +1982,14 @@ body {
   margin: 0;
 }
 
+.components {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+  margin: 20px 0 20px;
+}
+
 @media screen and (max-width: 1000px) {
   .main {
     padding: 0 20px 40px;

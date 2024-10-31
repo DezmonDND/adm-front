@@ -21,12 +21,12 @@
 @use '../../blocks/components/pagination/main/pagination.scss';
 @use '../../blocks/components/footer/main/footer.scss';
 @use '../../blocks/components/header/main/header.scss';
-@use '../../blocks/components/interviews/main/interviews.scss';
-@use '../../blocks/components/interviews-full/main/interviews-full.scss';
+@use '../../blocks/components/interview/list/interviews.scss';
+@use '../../blocks/components/interview/form/interviews-full.scss';
 @use '../../blocks/components/thanks/thanks.scss';
 @use '../../blocks/components/user-profile/user-profile.scss';
-@use '../../blocks/components/project-card/project-card.scss';
-@use '../../blocks/components/projects-array/projects-array.scss';
+@use '../../blocks/components/projects/project-card.scss';
+@use '../../blocks/components/projects/projects-array.scss';
 @use '../../blocks/components/title/title.scss';
 
 * {
@@ -179,6 +179,14 @@ body {
 
 .virtual-reception__feedback-title {
   margin: 0;
+}
+
+.components {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+  margin: 20px 0 20px;
 }
 
 @media screen and (max-width: 1000px) {

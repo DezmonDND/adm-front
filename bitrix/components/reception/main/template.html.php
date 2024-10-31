@@ -37,7 +37,7 @@
         <h3 class="virtual-reception__field-title form-field__title">Обращение</h3>
         <div class="container">
           <textarea class="textarea textarea-undefined" placeholder="Введите ваш ответ" oninput="getLength(this)"></textarea>
-          <div class="counter"><span class="current">0</span><span>/</span><span class="max">900</span></div>
+          <div class="undefined counter"><span class="current">0</span><span>/</span><span class="max"></span></div>
         </div>
       </div>
     </div>

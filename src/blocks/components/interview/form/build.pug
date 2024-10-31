@@ -1,4 +1,6 @@
-include ../_form-field.pug 
+include ../_form.pug 
+include ../../../components/form-field/_form-field.pug 
+include ../../../libs/tags/_tags.pug 
 include ../../../libs/checkbox/_checkbox.pug
 include ../../../libs/textarea/_textarea.pug 
 include ../../../libs/inputs/_inputs.pug 
@@ -70,6 +72,7 @@ form.interview-form
             error: false,
             options: {
                 placeholder: 'Введите ваш ответ',
+                value: '900'
                     }
         })
     +button({ type: 'button', class: 'button_blue button_interview', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить форму` }) 

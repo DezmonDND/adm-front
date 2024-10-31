@@ -1,7 +1,6 @@
 extends ../layout
 
-block content   
-    +header()
+block content
     main.main
         +breadcrumbs(
             [
@@ -77,35 +76,4 @@ block content
                     status: true,
                 }
             }   
-        ])  
-        +pagination([
-            { title: 'Назад', value: 'Назад', iconPosition: 'left'},
-            [
-                { num: '1', value: '1' },
-                { num: '2', value: '2' },
-                { num: '3', value: '3' },
-                { num: '4', value: '4' },
-                { num: '5', value: '5' },
-                { num: '6', value: '6' },
-            ],
-            { title: 'Вперед', value: 'Вперед', iconPosition: 'right'}
-            ])            
-    +footer(
-    {
-        about: [
-            {href: '/', title: 'Сургут сегодня'},
-            {href: '/', title: 'История Сургута '}
-        ],
-        city: [
-            {href: '/', title: 'Сургут сегодня'},
-            {href: '/', title: 'История Сургута '}
-        ],
-        documents: [
-            {href: '/', title: 'Сургут сегодня'},
-            {href: '/', title: 'История Сургута '}
-        ],
-        category: [
-            {href: '/', title: 'Сургут сегодня'},
-            {href: '/', title: 'История Сургута '}
-        ],
-    })    
+        ])          

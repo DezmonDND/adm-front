@@ -29,83 +29,88 @@
         </button>
       </div>
     </header>
-    <main class="main">
+    <main class="components"><a class="button button_link button_blue" href="/" target="_blank"><span class="button_span">О нас</span><img class="icon" src="./icons/plus_icon.svg" alt="plus_icon.svg"/></a><a class="button button_link button_green" href="/" target="_blank"><span class="button_span">Контакты</span><img class="icon" src="./icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
+      <button class="button button_blue" onclick="someFunction()"><span class="button_span">Далее</span><img class="icon" src="./icons/arrow_icon.svg" alt="arrow_icon.svg"/>
+      </button>
+      <button class="button button_white" onclick="getValues()"><span class="button_span">Готово</span></button>
+      <input class="сheckbox radio" type="radio" id="radio" name="undefined"/>
+      <label for="radio"></label>
+      <input class="сheckbox " type="сheckbox" id="сheckbox" name="undefined" checked="checked"/>
+      <label for="сheckbox"></label>
+      <input class="input input-undefined input-undefined input-search-l " placeholder="Введите ваш ответ" value=""/>
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"><img class="breadcrumbs__icon" src="../../icons/arrow-left_link-icon.svg" alt="Стрелка"/></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Опросы</span>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/about" target="_blank">О нас</a><span class="span">/</span><span class="breadcrumb_link">Контакты</span>
         </div>
       </div>
-      <h2 class="main__title">Виртуальная приемная</h2><span class="main__description">Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных. </span>
-      <form class="virtual-receprion__form">
-        <div class="virtual-receprion__content"> 
-          <h3 class="virtual-reception__title">Основные данные</h3>
-          <div class="virtual-reception__select">
-            <div class="undefined form-field form-field_inputs">
-              <h3 class="undefined form-field__title">Кому направляете электронную анкету</h3>
-            </div>
-            <select class="select select-virtual-reception select-icon-right">
-              <option class="select__option" value="Филатов Андрей Сергеевич, Глава города Сургута">Филатов Андрей Сергеевич, Глава города Сургута</option>
-              <option class="select__option" value="Филатов">Филатов</option>
-              <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
-            </select>
-          </div>
-          <div class="virtual-reception__job-field form-field form-field_inputs">
-            <h3 class="virtual-reception__field-title form-field__title">Наименование вашей организации (юридического лица)</h3>
-            <div class="form-field__input-list">
-              <input class="input input-virtual-reception_input input-undefined input-search-undefined " placeholder="Наименование организации" name="companyName" value=""/>
-            </div>
-          </div>
-          <div class="virtual-reception__user-contacts">
-            <div class="virtual-reception__form-field form-field form-field_inputs">
-              <h3 class="virtual-reception__field-title form-field__title">Ваши данные</h3>
-              <div class="form-field__input-list">
-                <input class="input input-virtual-reception_input input-undefined input-search-undefined " placeholder="Фамилия" name="firstName" value=""/>
-                <input class="input input-virtual-reception_input input-undefined input-search-undefined " placeholder="Имя" name="secondName" value=""/>
-                <input class="input input-virtual-reception_input input-undefined input-search-undefined " placeholder="Отчество" name="thirdName" value=""/>
-              </div>
-            </div>
-          </div>
-          <button class="button button_white button_add-author" onclick="addFormField(event)"><span class="button_span">Добавить соавтора</span></button>
-          <div class="virtual-reception__form-field form-field form-field_inputs">
-            <h3 class="virtual-reception__field-title_email form-field__title">Данные для контакта</h3>
-            <div class="form-field__input-list">
-              <input class="input input-virtual-reception_input input-undefined input-search-undefined " placeholder="your_email@mail.ru" name="email" value=""/>
-              <input class="input input-virtual-reception_input input-undefined input-search-undefined " placeholder="892343567" name="phone" value=""/>
-            </div>
-          </div>
-          <div class="virtual-reception__feedback form-field form-field_inputs">
-            <h3 class="virtual-reception__feedback-title form-field__title">Обращение</h3>
-            <div class="container">
-              <textarea class="textarea textarea-undefined" placeholder="Введите ваш ответ" oninput="getLength(this)"></textarea>
-              <div class="reception counter"><span class="current">0</span><span>/</span><span class="max">900</span></div>
-            </div>
-          </div>
+      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
+      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
+      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
+      <div class="container">
+        <textarea class="textarea textarea-undefined" placeholder="Введите ваш ответ" oninput="getLength(this)"></textarea>
+        <div class="undefined counter"><span class="current">0</span><span>/</span><span class="max">900</span></div>
+      </div>
+      <select class="select select-s select-icon-[object Object],[object Object],[object Object]">
+      </select>
+      <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
+        <option class="select__option"></option>
+        <option class="select__option"></option>
+        <option class="select__option"></option>
+        <option class="select__option"></option>
+      </select>
+      <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
+      </select>
+      <label class="switch switch switch_off">
+        <input class="switch__input" type="checkbox"/><span class="slider round"> </span>
+      </label>
+      <div class="undefined form-field form-field_inputs">
+        <h3 class="undefined form-field__title">3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
+        <div class="form-field__input-list">
+          <input class="input input-interview-full input-undefined input-search-undefined " placeholder="Введите ваш ответ" name="answer3" value=""/>
         </div>
-        <ul class="virtual-reception__documents__list">
-          <li class="virtual-reception__document">
-            <button class="button button virtual-reception__delete-button" onclick="getValues(event)"><span class="button_span"></span></button>
-            <div class="virtual-reception__document-description"> <img class="virtual-reception__document-icon" src="../icons/doc-2_icon.svg" alt=""/><span class="virtual-reception__document-title">Отчёт о деятельности постоянных комитетов в 2023 году.pdf</span></div>
-          </li>
-          <li class="virtual-reception__document">
-            <button class="button button virtual-reception__delete-button" onclick="getValues(event)"><span class="button_span"></span><img class="icon" src="./icons/close-btn_icon.svg" alt="close-btn_icon.svg"/>
-            </button>
-            <div class="virtual-reception__document-description"> <img class="virtual-reception__document-icon" src="../icons/doc-2_icon.svg" alt=""/><span class="virtual-reception__document-title">Отчёт о деятельности постоянных комитетов в 2023 году.pdf                   </span></div>
-          </li>
-          <li class="virtual-reception__document">
-            <button class="button button virtual-reception__delete-button" onclick="getValues(event)"><span class="button_span"></span><img class="icon" src="./icons/close-btn_icon.svg" alt="close-btn_icon.svg"/>
-            </button>
-            <div class="virtual-reception__document-description"> <img class="virtual-reception__document-icon" src="../icons/doc-2_icon.svg" alt=""/><span class="virtual-reception__document-title">Отчёт о деятельности постоянных комитетов в 2023 году.pdf                                              </span></div>
-          </li>
-        </ul>
-        <div class="virtual-reception__buttons">
-          <div class="custom-file-upload">
-            <label for="file" id="file-label">Вложить документ
-              <input type="file" id="file" name="addDocument" value=""/>
-            </label>
-          </div>
-          <button class="button button_blue virtual-reception__send-button" onclick="getValues(event)"><span class="button_span">Отправить обращение</span><img class="icon" src="./icons/arrow_icon.svg" alt="arrow_icon.svg"/>
-          </button>
+      </div>
+      <form class="search search-undefined">
+        <input class="input input-undefined input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="number" value=""/>
+        <button class="search__button search__button_l" type="submit" onclick="getValues()">       </button>
+      </form>
+      <form class="search-full-form">
+        <input class="input input-undefined input-text input-search-xl " placeholder="Название законопроекта" value=""/>
+        <div class="search-form">
+          <input class="input input-undefined input-text input-search-xs " placeholder="Номер регистрации" value=""/>
+          <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
+            <option class="select__option"></option>
+            <option class="select__option"></option>
+            <option class="select__option"></option>
+            <option class="select__option"></option>
+          </select>
+          <button class="calender" type="button">Период публикации</button>
+          <button class="button button_blue"><span class="button_span">Искать</span></button>
         </div>
       </form>
+      <form class="search-form">
+        <input class="input input-undefined input-text input-search-xs " placeholder="Номер регистрации" value=""/>
+        <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
+          <option class="select__option"></option>
+          <option class="select__option"></option>
+          <option class="select__option"></option>
+          <option class="select__option"></option>
+        </select>
+        <button class="calender" type="button">Период публикации</button>
+        <button class="button button_blue"><span class="button_span">Искать</span></button>
+      </form>
+      <button class="tab-button tab-button-l" onclick="" type="button" value="Самые важные">Самые важные</button>
+      <div class="tabs tabs_[object Object],[object Object],[object Object],[object Object]">
+      </div>
+      <button class="pag-button-with-icon pag-button_[object Object]" onclick="nextPage(event) "><span class="pag-button__title">Вперед</span></button>
+      <div class="project-card"> 
+        <div class="project-card__content"> 
+          <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
+          <label for="1"></label>
+          <div class="project-card__info"> 
+            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
+            <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer_container">
