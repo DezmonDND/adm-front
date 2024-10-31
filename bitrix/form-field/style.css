@@ -44,6 +44,15 @@
     font-size: 16px;
     line-height: 20px;
   }
+  .form-field .virtual-reception__field-title_email {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 26px;
+  }
+  .form-field .virtual-reception__feedback-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .form-field .form-field__answers {
     gap: 15px;
   }
@@ -57,9 +66,13 @@
     gap: 13px;
   }
   .form-field .form-field__title {
-    font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+  }
+  .form-field .virtual-reception__field-title_email {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 14px;
   }
   .form-field .form-field__answers {
     gap: 9px;

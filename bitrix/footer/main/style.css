@@ -123,6 +123,10 @@
   color: #FFFFFF;
 }
 
+.footer_container-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 @media screen and (max-width: 1000px) {
   .footer .footer__header .footer__header-links {
     width: 100%;
