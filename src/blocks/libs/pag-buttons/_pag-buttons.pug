@@ -1,6 +1,6 @@
-mixin pag-button(button)
-    if button.iconPosition
-        .button(class=`pag-button-with-icon pag-button_${button.iconPosition}` onclick=`${button.iconPosition === 'left' ? 'prevPage(event)' : 'nextPage(event)'} ` value=button.value) 
-            span.pag-button__title #{button.title}
+mixin pag-button(iconPosition, page)
+    if iconPosition
+        button(class=`pag-button-with-icon pag-button_${iconPosition}` onclick=`${iconPosition === 'left' ? 'prevPage(event)' : 'nextPage(event)'} `)
+            span.pag-button__title #{iconPosition === 'left' ? 'Назад' : 'Вперед'}
     else
-        .button(class=`pag-button` onclick='clickPage(event)' value=button.value) #{button.num}
+        a(href="#" class=`pag-button` onclick=`clickPage(event, ${page})`) #{page}
