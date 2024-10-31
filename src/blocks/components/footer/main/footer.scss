@@ -159,6 +159,10 @@ $content-color: #FFFFFF;
     }
 }
 
+.footer_container-top {
+    border-bottom: 1px solid rgba($content-color, .2);
+}
+
 @media screen and (max-width: 1000px) {
     .footer {
         .footer__header {

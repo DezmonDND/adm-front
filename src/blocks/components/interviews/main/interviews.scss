@@ -60,7 +60,7 @@ $primary-color: #004CC4;
 
 .interviews_array {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 33%);
     max-width: 1311px;
     width: 100%;
     align-items: center;
@@ -72,7 +72,6 @@ $primary-color: #004CC4;
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        max-width: 421px;
         width: 100%;
         border-radius: 20px;
         background-color: #F9F9F9;
@@ -152,7 +151,7 @@ $primary-color: #004CC4;
 
 @media screen and (max-width: 1000px) {
     .interviews_array {
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, 50%);
         gap: 8px;
         margin: 22px 0 40px;
 
@@ -203,7 +202,7 @@ $primary-color: #004CC4;
 
 @media screen and (max-width: 600px) {
     .interviews_array {
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
 
         .interview {
             .interview__content {
