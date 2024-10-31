@@ -1,7 +1,19 @@
-mixin pagination(buttons = [])
-    div(class=`pagination`)
-        +pag-button(buttons[0])
-        div(class=`pagination__pages`)
-            each button in buttons[1] 
-                +pag-button(button)
-        +pag-button(buttons[2])
+mixin pagination(pages, current, link)
+    if pages > 1
+        .pagination
+            if current == 1
+                a.pag-button_left.pag-button-with-icon.pag-button-with-icon_left_disabled Назад
+            else
+                a.pag-button-with-icon.pag-button_left(href=`/${link}/1`) Назад
+            - let start = Math.max(1, current - 2)
+            - let end = Math.min(pages, current + 2)
+            - for (let i = start; i <= end; i++)
+                if i == current
+                    a.pag-button.pag-button_active(href=`/${link}/${i}`) #{i}
+                else
+                    a.pag-button(href=`/${link}/${i}`) #{i}
+            if current == pages
+                a.pag-button-with-icon.pag-button_right.pag-button-with-icon_right_disabled Вперед
+            else
+                a.pag-button-with-icon.pag-button_right(href=`/${link}/${pages}`) Вперед
+

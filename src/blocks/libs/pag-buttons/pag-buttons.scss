@@ -97,7 +97,7 @@ $primary-color: #004CC4;
 .pag-button_active {
     background-color: #004CC4;
     color: $content-color;
-    border: none;
+    border: 1px solid transparent;
 }
 
 .pag-button-with-icon_left_disabled {
