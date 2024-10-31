@@ -8,10 +8,11 @@ $primary-color-active: #003EA2;
 $primary-color-disabled: #C2D8FF;
 $content-color: #FFFFFF;
 $main-text: #040528;
+
 @mixin desc-h6() {
     font-size: 13px;
     line-height: 16px;
-  }
+}
 
 @mixin desc-title5 {
     font-size: 14px;
@@ -122,16 +123,116 @@ $main-text: #040528;
     padding: 8px 20px;
 }
 
+.virtual-reception__add-button {
+    padding: 11px 15px;
+    flex-direction: row-reverse;
+}
+
+.virtual-reception__send-button {
+    padding: 17px 38px;
+}
+
+.virtual-reception__delete-button {
+    all: unset;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    padding: 0;
+    background-image: url(../icons/close-btn_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+
+    &:hover {
+        background-image: url(../icons/close-hover_icon.svg);
+    }
+}
+
+.custom-file-upload {
+    display: inline-block;
+    position: relative;
+}
+
+.custom-file-upload label {
+    outline: 0;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 11px 15px 11px 43px;
+    background-image: url(../icons/add-document_icon.svg);
+    background-position: 8%;
+    background-repeat: no-repeat;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    border-radius: 8px;
+
+    &:hover {
+        color: $primary-color-hover;
+        border-color: $primary-color-hover;
+    }
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.button_add-author {
+    flex-direction: row-reverse;
+    align-self: flex-start;
+    background-image: url(../icons/add-author_icon.svg);
+    background-position: 8%;
+    background-repeat: no-repeat;
+    padding-left: 47px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 38px 0 40px;
+    padding: 13px 25px 13px 47px;
+    
+    &:disabled {
+        background-image: url(../icons/add-author-disabled_icon.svg);
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .button_interview {
         @include desc-h6();
-        padding: 8px 20px;
+        padding: 7px 18px;
+        border-radius: 4px;
+    }
+
+    .button_add-author {
+        border-radius: 4px;
+        margin: 38px 0 40px;
+        padding: 6px 17px 6px 42px;
+    }
+
+    .custom-file-upload label {
+        border-radius: 8px;
+        padding: 5px 7px 5px 33px;
+        background-position: 6%;
+    }
+
+    .virtual-reception__send-button {
+        padding: 12px 27px;
+        font-size: 14px;
+        line-height: 18px;
+    
     }
 }
 
 @media screen and (max-width: 880px) {
     .button_burger {
         display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .button_interview {
+        margin-top: 12px;
+    }
+
+    .button_add-author {
+margin: 27px 0 35px;
     }
 }

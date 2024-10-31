@@ -8,7 +8,7 @@ $input-color-default: #C6CBD9;
     border: 1px solid $input-color-default;
     appearance: none;
     background: url(../../icons/select-down_icon.svg) center no-repeat;
-    background-position: 97%;
+    background-position: 98%;
     background-size: 24px;
     outline: none;
     overflow: hidden;
@@ -39,4 +39,19 @@ $input-color-default: #C6CBD9;
     background: url(../../icons/folder_icon.svg) center no-repeat;
     background-position: 5%;
     padding: 18px 20px 18px 50px;
+}
+
+.select-virtual-reception {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px 34px 17px 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .select-virtual-reception {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 11px 34px 11px 16px;
+        border-radius: 4px;
+    }
 }

@@ -4,10 +4,10 @@ mixin icon(icon, text)
 
 mixin button-with-link(options)
     if options.icon
-        a.button.button_link(href=options.href target='_blank' class=`${options.class}`)
+        a.button.button_link(href='/' target='_blank' class=`${options.class}`)
             +icon(options.icon, options.text)
     else 
-        a.button.button_link(href=options.href target='_blank' class=`${options.class}`)
+        a.button.button_link(href='/' target='_blank' class=`${options.class}`)
             span.button_span #{options.text} 
 
 mixin button-without-link(options)

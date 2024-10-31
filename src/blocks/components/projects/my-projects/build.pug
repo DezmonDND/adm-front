@@ -1,0 +1,65 @@
+include ../_projects-array.pug
+include ../_project-card.pug
+include ../../../components/user-profile/_user-profile.pug
+include ../../../components/tabs/_tabs.pug 
+include ../../../libs/tab-buttons/_tab-buttons.pug 
+include ../../../libs/tags/_tags.pug 
+include ../../../libs/checkbox/_checkbox.pug
+include ../../../libs/buttons/_buttons.pug 
+
++projects_array( true, [
+    {
+        title: 'Название инициативного проекта',
+        date: 'Создан 23 сентября 2024',
+        sort: 'project-card',
+        status: 'Не заполнен',
+        isGoing: false,
+        tag: {
+            sort: 'project-card',
+            text: 'Не заполнен',
+            isGoing: false,
+            status: ''
+        },
+        checkbox: {
+            id: '1',
+            sort: 'checkbox',
+            status: true,
+        }
+    },
+    {
+        title: 'Название инициативного проекта',
+        date: 'Создан 23 сентября 2024',
+        sort: 'project-card',
+        status: 'Не заполнен',
+        isGoing: false,
+        tag: {
+            sort: 'project-card',
+            text: 'Не заполнен',
+            isGoing: false,
+            status: ''
+        },
+        checkbox: {
+            id: '2',
+            sort: 'checkbox',
+            status: true,
+        }
+    },
+    {
+        title: 'Название инициативного проекта',
+        date: 'Создан 23 сентября 2024',
+        sort: 'project-card',
+        status: 'Не заполнен',
+        isGoing: false,
+        tag: {
+            sort: 'project-card',
+            text: 'Выполнен',
+            isGoing: true,
+            status: ''
+        },
+        checkbox: {
+            id: '3',
+            sort: 'checkbox',
+            status: true,
+        }
+    }   
+])          

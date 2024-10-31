@@ -1,7 +1,6 @@
-mixin pag-button(button)
-    if button.iconPosition
-        .button(class=`pag-button pag-button-with-icon pag-button_${button.iconPosition}` onclick=button.onclick value=button.value) 
-            span.pag-button__title #{button.title}
-            img(src=`../../icons/arrow-${button.iconPosition}_icon.svg` class=`pag-button__icon` alt='Стрелка')
+mixin pag-button(iconPosition, page)
+    if iconPosition
+        button(class=`pag-button-with-icon pag-button_${iconPosition}` onclick=`${iconPosition === 'left' ? 'prevPage(event)' : 'nextPage(event)'} `)
+            span.pag-button__title #{iconPosition === 'left' ? 'Назад' : 'Вперед'}
     else
-        .button(class=`pag-button` onclick=button.onclick value=button.value) #{button.num}
+        a(href="#" class=`pag-button` onclick=`clickPage(event, ${page})`) #{page}

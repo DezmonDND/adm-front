@@ -15,29 +15,42 @@ $content-color: #FFFFFF;
     line-height: 20px;
 }
 
-.footer {
+.footer_container {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
     width: 100%;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
     background-color: #0D0F43;
     color: $content-color;
     font-weight: 400;
-    position: relative;
+    justify-content: center;
 
     .footer__header {
         display: flex;
-        border-bottom: 1px solid $content-color;
+        border-bottom: 1px solid rgba($content-color, .2);
         padding: 24px 64px;
         justify-content: space-between;
 
         .footer__header-links {
             display: flex;
             align-items: center;
+            gap: 5px;
 
             .footer__main-links {
                 display: flex;
                 gap: 8px;
+                text-decoration: none;
+                color: #FFFFFF;
+
+                &:hover {
+                    color: #C0C2CC;
+                }
 
                 .footer__header-links__block {
                     display: flex;
@@ -51,40 +64,56 @@ $content-color: #FFFFFF;
                     }
 
                     .footer__link {
-                        text-decoration: none;
-                        color: $content-color;
                         font-size: 12px;
                         line-height: 14px;
                     }
                 }
-
             }
 
             .footer__social-links {
                 display: flex;
                 gap: 16px;
                 margin-left: 40px;
+                transition: all;
+
+                .footer__link-icon {
+                    &:hover {
+                        opacity: .6;
+                    }
+                }
             }
         }
-
     }
 
     .footer__contacts {
         display: flex;
         align-items: center;
-        gap: 32px;
+        gap: 37px;
         font-weight: 600;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 64px;
 
         .footer__address {
             @include desc-h5();
+            text-decoration: none;
+            color: $content-color;
+
+            &:hover {
+                opacity: 0.6;
+            }
         }
 
         .footer__email {
             display: flex;
+            align-items: center;
             gap: 8px;
+            text-decoration: none;
+            color: $content-color;
+
+            &:hover {
+                opacity: .6;
+            }
 
             .footer__email-title {
                 @include desc-text3();
@@ -94,7 +123,7 @@ $content-color: #FFFFFF;
 
     .footer__categories {
         display: flex;
-        padding: 64px 56px;
+        padding: 56px 63px;
         gap: 24px;
         color: $content-color;
 
@@ -118,12 +147,20 @@ $content-color: #FFFFFF;
 
                 .footer__categorie-link {
                     text-decoration: none;
-                    color: $content-color;
-                    @include desc-text4()
+                    color: #C0C2CC;
+                    @include desc-text4();
+
+                    &:hover {
+                        color: $content-color;
+                    }
                 }
             }
         }
     }
+}
+
+.footer_container-top {
+    border-bottom: 1px solid rgba($content-color, .2);
 }
 
 @media screen and (max-width: 1000px) {
@@ -146,8 +183,15 @@ $content-color: #FFFFFF;
 
         .footer__contacts {
             position: static;
-            padding: 20px 20px 40px;
+            padding: 17px 20px 20px;
             justify-content: space-between;
+            flex-direction: row-reverse;
+
+            .footer__address {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+            }
         }
 
         .footer__categories {
@@ -172,10 +216,10 @@ $content-color: #FFFFFF;
         }
 
         .footer__contacts {
-            padding: 0 27px 32px;
-            flex-direction: column;
-            gap: 44px;
+            padding: 0 27px 28px;
+            gap: 21px;
             align-items: flex-start;
+            flex-direction: column-reverse;
         }
 
         .footer__categories {

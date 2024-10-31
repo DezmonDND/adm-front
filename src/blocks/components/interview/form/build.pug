@@ -1,0 +1,78 @@
+include ../_form.pug 
+include ../../../components/form-field/_form-field.pug 
+include ../../../libs/tags/_tags.pug 
+include ../../../libs/checkbox/_checkbox.pug
+include ../../../libs/textarea/_textarea.pug 
+include ../../../libs/inputs/_inputs.pug 
+include ../../../libs/buttons/_buttons.pug 
+
+form.interview-form
+    +form-field(
+        {
+            type: 'radio',
+            title: '1. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
+            checkboxes: [
+                { 
+                    id: 1, 
+                    text: 'Да', 
+                    sort: 'radio',
+                    status: false,
+                    name: 'radio'
+                    },
+                { 
+                    id: 2, 
+                    text: 'Нет', 
+                    sort: 'radio',
+                    status: false,
+                    name: 'radio'
+                    },
+                ],
+        })  
+    +form-field(
+        {
+            type: 'checkbox',
+            title: '2. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
+            checkboxes: [
+                { 
+                    id: 3, 
+                    text: 'Первый вариант',
+                    sort: 'checkbox',
+                },
+                { 
+                    id: 4,
+                    text: 'Второй вариант',
+                    sort: 'checkbox',
+                },
+                { 
+                    id: 5, 
+                    text: 'Третий вариант',
+                    sort: 'checkbox', 
+                },
+                ],
+        })
+    +form-field(
+        {
+            type: '',
+            title: '3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+            span: 'Вспомогательный текст',
+            error: false,
+            inputs: [
+                {
+                    placeholder: 'Введите ваш ответ',
+                    name: 'answer3', 
+                    sort: 'interview-full',
+                },
+                ] 
+        })
+    +form-field(
+        {
+            type: 'textarea',
+            title: '4. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+            span: 'Вспомогательный текст',
+            error: false,
+            options: {
+                placeholder: 'Введите ваш ответ',
+                value: '900'
+                    }
+        })
+    +button({ type: 'button', class: 'button_blue button_interview', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить форму` }) 

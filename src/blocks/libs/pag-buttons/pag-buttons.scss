@@ -15,6 +15,17 @@ $primary-color: #004CC4;
     line-height: 16px;
 }
 
+.pag-button_right,
+.pag-button_left {
+    all: unset;
+    color: $second-text;
+    border: 1px solid $num-button-text;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    @include desc-h5();
+}
+
 .pag-button {
     all: unset;
     color: $second-text;
@@ -23,6 +34,7 @@ $primary-color: #004CC4;
     border-radius: 8px;
     font-weight: 600;
     @include desc-h5();
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
@@ -52,11 +64,54 @@ $primary-color: #004CC4;
     display: flex;
     gap: 12px;
     align-items: center;
-    padding: 12px 26px;
+    padding: 12px 21px;
+    cursor: pointer;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $num-button-text-hover;
+        border-color: transparent;
+    }
+
+    &:active {
+        border-color: transparent;
+        background-color: $num-button-text-click;
+    }
 }
 
 .pag-button_left {
     flex-direction: row-reverse;
+    background-image: url(../icons/arrow-left_icon.svg);
+    background-position: 9%;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+}
+
+.pag-button_right {
+    background-image: url(../icons/arrow-right_icon.svg);
+    background-position: 91%;
+    background-repeat: no-repeat;
+    padding-right: 35px;
+}
+
+.pag-button_active {
+    background-color: #004CC4;
+    color: $content-color;
+    border: 1px solid transparent;
+}
+
+.pag-button-with-icon_left_disabled {
+    background-image: url(../icons/arrow-left_icon_disabled.svg);
+    color: #C2D8FF;
+    border-color: #C2D8FF;
+    background-color: $content-color;
+}
+
+.pag-button-with-icon_right_disabled {
+    background-image: url(../icons/arrow-right_icon_disabled.svg);
+    color: #C2D8FF;
+    border-color: #C2D8FF;
+    background-color: $content-color;
 }
 
 @media screen and (max-width: 1000px) {
@@ -68,14 +123,28 @@ $primary-color: #004CC4;
         .pag-button__title {
             display: none;
         }
-
     }
 
     .pag-button-with-icon {
         padding: 0;
         border: none;
+
+        .pag-button__title {
+            display: none;
+        }
+    }
+
+    .pag-button-with-icon_disabled {
+        background-color: $content-color;
+    }
+
+    .pag-button_left {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pag-button_right {
+        width: 20px;
+        height: 20px;
     }
 }
-
-
-@media screen and (max-width: 600px) {}

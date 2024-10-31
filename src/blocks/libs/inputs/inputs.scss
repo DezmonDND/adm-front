@@ -13,14 +13,18 @@ $interview-end-color: #D10404;
     outline: none;
     font-size: $desk-text3;
     line-height: $desk-text3-lh;
+    cursor: pointer;
 
     &:focus {
         border: 1px solid #78A4F4;
-        cursor: pointer;
     }
 
     &::placeholder {
         color: $tertiary-text;
+    }
+
+    &:hover {
+        border-color: #858C9C;
     }
 }
 
@@ -50,4 +54,14 @@ $interview-end-color: #D10404;
 .input-xl {
     border-radius: 4px;
     max-width: 1232px;
+}
+
+@media screen and (max-width: 600px) {
+    .input-virtual-reception_input {
+        padding: 10px 13px;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
 }

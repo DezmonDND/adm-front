@@ -7,6 +7,11 @@ const pug = require("gulp-pug");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const concat = require("gulp-concat");
+const gulpIf = require("gulp-if");
+const fs = require("fs");
+const path = require("path");
+const replace = require("gulp-replace");
+const through2 = require("through2");
 
 function styles() {
   // Создаем массив с файлами для компиляции
@@ -82,7 +87,7 @@ function pages() {
 }
 
 async function clean() {
-  return del("./public/", { force: true });
+  return del(["./public/", "./bitrix/"], { force: true });
 }
 
 /*function scripts() {
@@ -142,56 +147,170 @@ exports.default = parallel(
 
 exports.build = series(clean, styles, scripts, copyResources, pugToHtml);
 
-// Путь к компонентам
-const componentsPath = "./src/blocks/components/";
-const publicPath = "./bitrix/";
+class BitrixBuilder {
+  constructor() {
+    this.componentsPath = "./src/blocks/components/";
+    this.publicComponentsPath = "./bitrix/components";
+    this.publicTemplatePath = "./bitrix/template";
+    this.publicPagePath = "./bitrix";
+    this.paths = {
+      resources: {
+        src: "./src/assets/resources/**/*",
+        dest: "./bitrix/resources",
+      },
+      icons: {
+        src: "./src/assets/icons/**/*",
+        dest: "./bitrix/template/icons",
+      },
+      img: { src: "./src/assets/img/**/*", dest: "./bitrix/template/img" },
+      fonts: {
+        src: "./src/assets/fonts/**/*",
+        dest: "./bitrix/template/fonts",
+      },
+    };
+  }
 
-// Задача для компиляции SCSS
-function compileStyles() {
-  return src(`${componentsPath}/**/*.scss`) // Находим все SCSS файлы
-    .pipe(plumber({ errorHandler: (err) => console.error(err.message) })) // Обработка ошибок
-    .pipe(sass().on("error", sass.logError)) // Компилируем SCSS в CSS
-    .pipe(rename({ basename: "style" }))
-    .pipe(
-      dest((file) => {
-        const outputPath = publicPath;
-        return outputPath; // Сохраняем в аналогичную структуру
-      })
+  // Универсальная функция копирования
+  copyAssets(done) {
+    Object.values(this.paths).forEach(({ src: source, dest: destination }) => {
+      src(source).pipe(dest(destination));
+    });
+    done();
+  }
+
+  // Проверка на наличие build.pug в папке
+  hasBuildPug(file) {
+    const directory = path.dirname(file.path);
+    return fs.existsSync(path.join(directory, "build.pug"));
+  }
+
+  // Компиляция SCSS с фильтрацией
+  // Проверка на наличие build.pug в папке
+  hasBuildPug(file) {
+    const directory = path.dirname(file.path);
+    return fs.existsSync(path.join(directory, "build.pug"));
+  }
+
+  // Компиляция SCSS с фильтрацией
+  compileStylesComponents() {
+    return src(`${this.componentsPath}/**/*.scss`)
+      .pipe(plumber({ errorHandler: (err) => console.error(err.message) }))
+      .pipe(
+        // Проверка наличия build.pug с помощью через поток
+        through2.obj((file, _, cb) => {
+          if (this.hasBuildPug(file)) {
+            cb(null, file); // Пропускаем файл, если build.pug существует
+          } else {
+            cb(); // Пропускаем файл, если build.pug не существует
+          }
+        })
+      )
+      .pipe(sass().on("error", sass.logError)) // Компилируем SCSS в CSS
+      .pipe(rename({ basename: "style" }))
+      .pipe(dest(this.publicComponentsPath)); // Сохраняем в целевую папку
+  }
+
+  // Компиляция Pug файлов
+  compilePugComponents() {
+    return src(`${this.componentsPath}/**/build.pug`)
+      .pipe(plumber({ errorHandler: (err) => console.error(err.message) }))
+      .pipe(replace(/\.\/resources/g, "/resources")) // Заменяем ./resources на /resources
+      .pipe(pug({ pretty: true }))
+      .pipe(rename({ basename: "template", extname: ".html.php" })) // Переименовываем в template.html.php
+      .pipe(
+        dest((file) => {
+          return this.publicComponentsPath;
+        })
+      );
+  }
+
+  // Обработка JavaScript с фильтрацией
+  processScriptsComponents() {
+    return src(`${this.componentsPath}/**/*.js`)
+      .pipe(plumber({ errorHandler: (err) => console.error(err.message) }))
+      .pipe(gulpIf(this.hasBuildPug.bind(this), rename({ basename: "script" })))
+      .pipe(
+        dest((file) => {
+          return this.publicComponentsPath;
+        })
+      );
+  }
+
+  // Сборка страниц
+  pugPages() {
+    return src("./src/pug/pages/*.pug")
+      .pipe(replace(/\.\/resources/g, "/resources")) // Заменяем ./resources на /resources
+      .pipe(
+        pug({ pretty: true }).on("error", function (err) {
+          console.error(err);
+          this.emit("end");
+        })
+      )
+      .pipe(dest(this.publicPagePath));
+  }
+
+  templateScripts() {
+    return src([
+      "./src/blocks/libs/**/*.js", // Все JS файлы из libs
+    ])
+      .pipe(plumber({ errorHandler: (err) => console.error(err.message) })) // Обработка ошибок
+      .pipe(concat("script.js")) // Объединяем все в один файл script.js
+      .pipe(dest(this.publicTemplatePath)); // Сохраняем результат в ./public/js/
+  }
+
+  templateStyles() {
+    // Создаем массив с файлами для компиляции
+    const scssFiles = [
+      "./src/assets/styles/template-styles.scss",
+      "./src/assets/styles/styles.scss",
+    ];
+
+    return src(scssFiles) // Загружаем все SCSS файлы из массива
+      .pipe(sass().on("error", sass.logError)) // Компилируем SCSS в CSS
+      .pipe(
+        replace(/url\(\s*['"]?(\.\.\/)+([^'")]+)['"]?\s*\)/g, 'url("./$2")')
+      )
+      .pipe(
+        rename((path) => {
+          // Переименовываем файл
+          if (path.basename === "template-styles") {
+            path.basename = "template_styles"; // Изменяем базовое имя
+          }
+        })
+      )
+      .pipe(dest(this.publicTemplatePath)); // Сохраняем скомпилированные файлы
+  }
+
+  // Сборка всех задач
+  get buildTasks() {
+    return series(
+      this.copyAssets.bind(this),
+
+      this.pugPages.bind(this),
+      this.templateScripts.bind(this),
+      this.templateStyles.bind(this),
+
+      this.compileStylesComponents.bind(this),
+      this.compilePugComponents.bind(this),
+      this.processScriptsComponents.bind(this)
     );
+  }
 }
 
-// Задача для обработки build.pug
-function compilePug() {
-  return src(`${componentsPath}/**/build.pug`) // Находим все build.pug файлы
-    .pipe(plumber({ errorHandler: (err) => console.error(err.message) })) // Обработка ошибок
-    .pipe(pug())
-    .pipe(
-      dest((file) => {
-        const outputPath = publicPath;
-        return outputPath; // Сохраняем в аналогичную структуру
-      })
-    );
-}
-
-// Задача для обработки JavaScript
-function processScripts() {
-  return src(`${componentsPath}/**/*.js`) // Находим все JS файлы
-    .pipe(plumber({ errorHandler: (err) => console.error(err.message) })) // Обработка ошибок
-    .pipe(rename({ basename: "script" })) // Переименовываем файл в script.js
-    .pipe(
-      dest((file) => {
-        const outputPath = publicPath;
-        return outputPath; // Сохраняем в аналогичную структуру
-      })
-    );
-}
-
-// Задача по умолчанию
-const bitrix = series(compileStyles, compilePug, processScripts);
+const bitrixBuilder = new BitrixBuilder();
 
 // Экспортируем задачи
-exports.styles = compileStyles;
-exports.pug = compilePug;
-exports.scripts = processScripts;
-
-exports.bitrix = bitrix;
+exports.styles = series(
+  bitrixBuilder.compileStylesComponents.bind(bitrixBuilder),
+  bitrixBuilder.templateStyles.bind(bitrixBuilder)
+);
+exports.copyAssets = bitrixBuilder.copyAssets.bind(bitrixBuilder);
+exports.pug = series(
+  bitrixBuilder.compilePugComponents.bind(bitrixBuilder),
+  bitrixBuilder.pugPages.bind(bitrixBuilder)
+);
+exports.scripts = series(
+  bitrixBuilder.templateScripts.bind(bitrixBuilder),
+  bitrixBuilder.processScriptsComponents.bind(bitrixBuilder)
+);
+exports.bitrix = bitrixBuilder.buildTasks;

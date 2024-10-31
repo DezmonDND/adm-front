@@ -1,0 +1,118 @@
+extends ../layout
+
+block content   
+   main.components
+
+      +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас' })
+      +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
+      +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
+      +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 's', text: 'Готово' })
+      +checkbox(
+      { id: 'radio', sort: 'radio', status: false }
+      )
+      +checkbox(
+      { id: 'сheckbox', sort: 'сheckbox', status: true }
+      )
+      +input(
+      {size: 'l', placeholder: 'Введите ваш ответ'}
+      )
+      +link( '/',  '', 'Ссылка' , 'link')
+      +breadcrumbs([
+      { href: '/', text: 'Главная' },
+      { href: '/about', text: 'О нас' },
+      { href: '/contact', text: 'Контакты' }
+      ])
+      +tag('RSS', null, 'RSS', 'false')
+      +tag('Новости', null, 'live', 'true')
+      +tag('Новости', null, '', 'true')
+      +textarea({
+         placeholder: 'Введите ваш ответ',
+         value: '900'
+            }) 
+      +select('s', [
+      { value: 'Филатов Андрей Сергеевич, Глава города Сургута', text: 'Филатов Андрей Сергеевич, Глава города Сургута' },
+      { value: 'Филатов', text: 'Филатов' },
+      { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+      ])
+      +select('xs', [
+      { value: 'Раздел', text: 'Раздел' },
+      { value: 'Филатов', text: 'Филатов' },
+      { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+      ], 'left')
+      +select('xs', [
+      { value: 'Статус', text: 'Статус' },
+      { value: 'Филатов', text: 'Филатов' },
+      { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+      ], )
+      +switch()
+      +form-field(
+      {
+         type: '',
+         title: '3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+         span: 'Вспомогательный текст',
+         error: false,
+         inputs: [
+            {
+               placeholder: 'Введите ваш ответ',
+               name: 'answer3', 
+               sort: 'interview-full',
+            },
+            ] 
+      })
+      +search(
+      {name: 'number', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+      false, 'l', 'getValues()',
+      )
+      +search-form(
+      true, 
+      {size: 'xl', placeholder: 'Название законопроекта', type: 'text'},
+      {size: 'xs', placeholder: 'Номер регистрации', type: 'text'},
+      false,
+      [
+         { value: 'Раздел', text: 'Раздел' },
+         { value: 'Филатов', text: 'Филатов' },
+         { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+      ], 
+      'left', 'xs',
+      { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
+      )
+      +search-form(
+      false, 
+      {size: 'xl', placeholder: 'Название законопроекта', type: 'text'},
+      {size: 'xs', placeholder: 'Номер регистрации', type: 'text'},
+      false,
+      [
+         { value: 'Раздел', text: 'Раздел' },
+         { value: 'Филатов', text: 'Филатов' },
+         { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+      ], 
+      'left', 'xs',
+      { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
+      )    
+      +tab-button({ size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'})
+      +tabs([
+      { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+      { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+      { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+      { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+      ])
+      +pag-button({ size: 'm', title: '', onclick: '' , value: 'Назад', iconPosition: 'right'})      
+      +project_card( true, {
+         title: 'Название инициативного проекта',
+         date: 'Создан 23 сентября 2024',
+         sort: 'project-card',
+         status: 'Не заполнен',
+         isGoing: false,
+         tag: {
+            sort: 'project-card',
+            text: 'Не заполнен',
+            isGoing: false,
+            status: ''
+         },
+         checkbox: {
+            id: '1',
+            sort: 'checkbox',
+            status: true,
+         }
+         })
+         +pagination(30, 5, 2) 

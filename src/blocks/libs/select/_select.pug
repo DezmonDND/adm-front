@@ -1,4 +1,5 @@
-mixin select(size, value, iconPosition)
-  select(class=`select select-${size} select-icon-${iconPosition}`)
-    each option in value
-      option(class=`select__option` value=option.value)= option.text
+mixin select(cls, iconPosition, options)
+  select(class=`select select-${cls} select-icon-${iconPosition}`)
+    if options
+      each option in options
+        option(class=`select__option` value=option.value)= option.text

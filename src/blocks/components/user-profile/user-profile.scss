@@ -1,0 +1,71 @@
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 36px 0 40px;
+
+    .user-profile__button {
+        all: unset;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+
+        .user-profile__avatar {
+            max-width: 100px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+    }
+
+    .user-profile__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .user-profile__name {
+            margin: 0;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .user-profile_job {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #6E7383;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .user-profile {
+        .user-profile__button {
+            .user-profile__avatar {}
+        }
+
+        .user-profile__info {
+            .user-profile__name {}
+
+            .user-profile_job {}
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .user-profile {
+        .user-profile__button {
+            .user-profile__avatar {}
+        }
+
+        .user-profile__info {
+            .user-profile__name {}
+
+            .user-profile_job {}
+        }
+    }
+}

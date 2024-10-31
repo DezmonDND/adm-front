@@ -7,11 +7,17 @@ $tertiary-text: #78839C;
     padding: 20px 0;
     font-size: 14px;
     line-height: 16px;
-    
+    gap: 3px;
 
-    .breadcrumbs__icon {
-        margin-right: 16px;
-        width: 24px;
+    .breadcrumbs__icon-link {
+        &:hover {
+            filter: invert(33%) sepia(80%) saturate(5801%) hue-rotate(214deg) brightness(92%) contrast(99%);
+        }
+
+        .breadcrumbs__icon {
+            margin-right: 16px;
+            width: 24px;
+        }
     }
 
     .breadcrumbs__container {
@@ -27,7 +33,6 @@ $tertiary-text: #78839C;
 
 @media screen and (max-width: 1000px) {
     .breadcrumbs {
-
         padding: 12px 0;
 
         .breadcrumbs__container {
@@ -38,11 +43,8 @@ $tertiary-text: #78839C;
 
 @media screen and (max-width: 600px) {
     .breadcrumbs {
-
-
-        .breadcrumbs__icon {}
-
-        .breadcrumbs__container {}
+        .breadcrumbs__icon {
+            display: none;
+        }
     }
 }
-
