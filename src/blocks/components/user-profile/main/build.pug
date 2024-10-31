@@ -1,0 +1,16 @@
+include ../_user-profile.pug
+include ../../../components/tabs/_tabs.pug 
+include ../../../libs/tab-buttons/_tab-buttons.pug 
+
++user_profile({
+    icon: 'user_avatar.png',
+    name: 'Валентинов Георгий Викторович',
+    job: 'Должность',
+    onclick: 'changeAvatar()',
+})
++tabs('projects', [
+    { size: 'm', title: 'Настройки', onclick: '' , value: 'Настройки'},
+    { size: 'm', title: 'Мои подписки', onclick: '' , value: 'Мои подписки'},
+    { size: 'm', title: 'Мои инициативные проекты', onclick: '' , value: 'Мои инициативные проекты'},
+    { size: 'm', title: 'Мои обращения', onclick: '' , value: 'Мои обращения'},
+    ]) 

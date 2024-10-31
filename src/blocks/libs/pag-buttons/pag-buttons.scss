@@ -34,6 +34,7 @@ $primary-color: #004CC4;
     border-radius: 8px;
     font-weight: 600;
     @include desc-h5();
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;

@@ -7,18 +7,6 @@ include ../../../libs/tags/_tags.pug
 include ../../../libs/checkbox/_checkbox.pug
 include ../../../libs/buttons/_buttons.pug 
 
-+user_profile({
-    icon: 'user_avatar.png',
-    name: 'Валентинов Георгий Викторович',
-    job: 'Должность',
-    onclick: 'changeAvatar()',
-})
-+tabs('projects', [
-    { size: 'm', title: 'Настройки', onclick: '' , value: 'Настройки'},
-    { size: 'm', title: 'Мои подписки', onclick: '' , value: 'Мои подписки'},
-    { size: 'm', title: 'Мои инициативные проекты', onclick: '' , value: 'Мои инициативные проекты'},
-    { size: 'm', title: 'Мои обращения', onclick: '' , value: 'Мои обращения'},
-    ]) 
 +projects_array( true, [
     {
         title: 'Название инициативного проекта',
