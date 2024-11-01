@@ -12,6 +12,7 @@ const fs = require("fs");
 const path = require("path");
 const replace = require("gulp-replace");
 const through2 = require("through2");
+const config = require("./gulp.config.js");
 
 function styles() {
   // Создаем массив с файлами для компиляции
@@ -90,12 +91,6 @@ async function clean() {
   return del(["./public/", "./bitrix/"], { force: true });
 }
 
-/*function scripts() {
-  return src("./src/assets/js/script.js")
-    .pipe(dest("./public/js/"))
-    .pipe(browserSync.stream()); // Добавлено stream для перезагрузки
-}*/
-
 function scripts() {
   return src([
     "./src/blocks/libs/**/*.js", // Все JS файлы из libs
@@ -153,6 +148,8 @@ class BitrixBuilder {
     this.publicComponentsPath = "./bitrix/components";
     this.publicTemplatePath = "./bitrix/template";
     this.publicPagePath = "./bitrix";
+    this.templatePath = config.templatePath;
+
     this.paths = {
       resources: {
         src: "./src/assets/resources/**/*",
@@ -185,13 +182,6 @@ class BitrixBuilder {
   }
 
   // Компиляция SCSS с фильтрацией
-  // Проверка на наличие build.pug в папке
-  hasBuildPug(file) {
-    const directory = path.dirname(file.path);
-    return fs.existsSync(path.join(directory, "build.pug"));
-  }
-
-  // Компиляция SCSS с фильтрацией
   compileStylesComponents() {
     return src(`${this.componentsPath}/**/*.scss`)
       .pipe(plumber({ errorHandler: (err) => console.error(err.message) }))
@@ -214,14 +204,18 @@ class BitrixBuilder {
   compilePugComponents() {
     return src(`${this.componentsPath}/**/build.pug`)
       .pipe(plumber({ errorHandler: (err) => console.error(err.message) }))
-      .pipe(replace(/\.\/resources/g, "/resources")) // Заменяем ./resources на /resources
       .pipe(pug({ pretty: true }))
-      .pipe(rename({ basename: "template", extname: ".html.php" })) // Переименовываем в template.html.php
+      .pipe(replace(/\.\/resources/g, "/resources")) // Заменяем ./resources на /resources
       .pipe(
-        dest((file) => {
-          return this.publicComponentsPath;
-        })
-      );
+        replace(
+          /(<img[^>]+src=["'])(\.\/|\.\.\/)*?(icons|img)\//g,
+          (match, prefix, p1, folder) => {
+            return `${prefix}${this.templatePath}/${folder}/`;
+          }
+        )
+      )
+      .pipe(rename({ basename: "template", extname: ".html.php" })) // Переименовываем в template.html.php
+      .pipe(dest(this.publicComponentsPath));
   }
 
   // Обработка JavaScript с фильтрацией
@@ -239,12 +233,20 @@ class BitrixBuilder {
   // Сборка страниц
   pugPages() {
     return src("./src/pug/pages/*.pug")
-      .pipe(replace(/\.\/resources/g, "/resources")) // Заменяем ./resources на /resources
       .pipe(
         pug({ pretty: true }).on("error", function (err) {
           console.error(err);
           this.emit("end");
         })
+      )
+      .pipe(replace(/\.\/resources/g, "/resources")) // Заменяем ./resources на /resources
+      .pipe(
+        replace(
+          /(<img[^>]+src=["'])(\.\/|\.\.\/)*?(icons|img)\//g,
+          (match, prefix, p1, folder) => {
+            return `${prefix}${this.templatePath}/${folder}/`;
+          }
+        )
       )
       .pipe(dest(this.publicPagePath));
   }
