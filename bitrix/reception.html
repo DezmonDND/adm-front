@@ -80,26 +80,11 @@
             </div>
           </div>
         </div>
-        <ul class="virtual-reception__documents__list">
-          <li class="virtual-reception__document">
-            <button class="button button virtual-reception__delete-button" onclick="getValues(event)"><span class="button_span"></span></button>
-            <div class="virtual-reception__document-description"> <img class="virtual-reception__document-icon" src="/local/templates/surgut/icons/doc-2_icon.svg" alt=""/><span class="virtual-reception__document-title">Отчёт о деятельности постоянных комитетов в 2023 году.pdf</span></div>
-          </li>
-          <li class="virtual-reception__document">
-            <button class="button button virtual-reception__delete-button" onclick="getValues(event)"><span class="button_span"></span><img class="icon" src="/local/templates/surgut/icons/close-btn_icon.svg" alt="close-btn_icon.svg"/>
-            </button>
-            <div class="virtual-reception__document-description"> <img class="virtual-reception__document-icon" src="/local/templates/surgut/icons/doc-2_icon.svg" alt=""/><span class="virtual-reception__document-title">Отчёт о деятельности постоянных комитетов в 2023 году.pdf                   </span></div>
-          </li>
-          <li class="virtual-reception__document">
-            <button class="button button virtual-reception__delete-button" onclick="getValues(event)"><span class="button_span"></span><img class="icon" src="/local/templates/surgut/icons/close-btn_icon.svg" alt="close-btn_icon.svg"/>
-            </button>
-            <div class="virtual-reception__document-description"> <img class="virtual-reception__document-icon" src="/local/templates/surgut/icons/doc-2_icon.svg" alt=""/><span class="virtual-reception__document-title">Отчёт о деятельности постоянных комитетов в 2023 году.pdf                                              </span></div>
-          </li>
-        </ul>
+        <ul class="virtual-reception__documents__list"></ul>
         <div class="virtual-reception__buttons">
-          <div class="custom-file-upload">
+          <div class="custom-file-upload" onclick="addDocument()">
             <label for="file" id="file-label">Вложить документ
-              <input type="file" id="file" name="addDocument" value=""/>
+              <input class="input__add-document" type="file" id="file" name="addDocument" value=""/>
             </label>
           </div>
           <button class="button button_blue virtual-reception__send-button" onclick="getValues(event)"><span class="button_span">Отправить обращение</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/>

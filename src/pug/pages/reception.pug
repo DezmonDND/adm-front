@@ -107,23 +107,8 @@ block content
                             }
                 })
             ul.virtual-reception__documents__list
-                li.virtual-reception__document
-                    +button({ type: 'button', class: 'button virtual-reception__delete-button', event: 'getValues(event)'})
-                    .virtual-reception__document-description 
-                        img(src="../icons/doc-2_icon.svg" alt="").virtual-reception__document-icon  
-                        span.virtual-reception__document-title Отчёт о деятельности постоянных комитетов в 2023 году.pdf
-                li.virtual-reception__document
-                    +button({ type: 'button', class: 'button virtual-reception__delete-button', event: 'getValues(event)', icon: 'close-btn_icon.svg' })
-                    .virtual-reception__document-description 
-                        img(src="../icons/doc-2_icon.svg" alt="").virtual-reception__document-icon  
-                        span.virtual-reception__document-title Отчёт о деятельности постоянных комитетов в 2023 году.pdf                   
-                li.virtual-reception__document
-                    +button({ type: 'button', class: 'button virtual-reception__delete-button', event: 'getValues(event)', icon: 'close-btn_icon.svg' })
-                    .virtual-reception__document-description 
-                        img(src="../icons/doc-2_icon.svg" alt="").virtual-reception__document-icon  
-                        span.virtual-reception__document-title Отчёт о деятельности постоянных комитетов в 2023 году.pdf                                              
             .virtual-reception__buttons
-                .custom-file-upload
+                .custom-file-upload(onclick='addDocument()')
                     label(for="file" id="file-label") Вложить документ
-                        input(type="file" id="file" name="addDocument" value="")   
+                        input(type="file" id="file" name="addDocument" value="" class='input__add-document')   
                 +button({ type: 'button', class: 'button_blue virtual-reception__send-button', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить обращение` })

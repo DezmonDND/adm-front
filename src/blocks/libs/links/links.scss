@@ -36,9 +36,7 @@ $main-text: #040528;
 
 .breadcrumb_link {
     color: $tertiary-text;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    text-wrap: nowrap;
 }
 
 .header__eye-link {

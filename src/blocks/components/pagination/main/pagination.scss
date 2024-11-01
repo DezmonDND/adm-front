@@ -16,3 +16,10 @@
         align-self: center;
     }
 }
+
+@media screen and (max-width: 370px) {
+    .pagination{
+        gap: 4px;
+    }
+    
+}

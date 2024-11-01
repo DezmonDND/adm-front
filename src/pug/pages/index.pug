@@ -1,79 +1,97 @@
 extends ../layout
 
-block content
+block content   
     main.main
         +breadcrumbs(
             [
-                { sort: '', href: '/', text: 'Главная' },
-                { sort: '', href: '/', text: 'Специальное событие'},
-                { sort: '', href: '/', text: 'В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй'},
-            ],
-        )
-        +user_profile({
-            icon: 'user_avatar.png',
-            name: 'Валентинов Георгий Викторович',
-            job: 'Должность',
-            onclick: 'changeAvatar()',
-        })
-        +tabs('projects', [
-            { size: 'm', title: 'Настройки', onclick: '' , value: 'Настройки'},
-            { size: 'm', title: 'Мои подписки', onclick: '' , value: 'Мои подписки'},
-            { size: 'm', title: 'Мои инициативные проекты', onclick: '' , value: 'Мои инициативные проекты'},
-            { size: 'm', title: 'Мои обращения', onclick: '' , value: 'Мои обращения'},
-            ]) 
-        +projects_array( true, [
-            {
-                title: 'Название инициативного проекта',
-                date: 'Создан 23 сентября 2024',
-                sort: 'project-card',
-                status: 'Не заполнен',
-                isGoing: false,
-                tag: {
-                    sort: 'project-card',
-                    text: 'Не заполнен',
-                    isGoing: false,
-                    status: ''
+                { sort: 'crumb', href: '/', text: 'Главная' },
+                { sort: 'crumb', href: '/about', text: 'Опросы'},
+            ])
+        h2.main__title Опросы  
+            +tabs( 
+                [
+                    { isActive: true, title: 'Национальные проекты', href: '/' , value: 'Национальные проекты'},
+                    { title: 'Администрация', href: '/' , value: 'Администрация'},
+                    { title: 'Прочие', href: '/' , value: 'Прочие'},
+                ])   
+            +interviews_array([
+                {
+                    date: 'до 29 сентября', 
+                    title: 'Здравоохранение в Сургуте Здравоохранение в Сургуте Работа местных властей и общественные инициативы', 
+                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услугОцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                    votes: '319 голосов', 
+                    result: 'Вы участвовали', 
+                    buttonText: 'Участвовать', 
+                    tag: {
+                        sort: 'interviews-array',
+                        isGoing: true,
+                        text: 'Идет', 
+                        },
                 },
-                checkbox: {
-                    id: '1',
-                    sort: 'checkbox',
-                    status: true,
-                }
-            },
-            {
-                title: 'Название инициативного проекта',
-                date: 'Создан 23 сентября 2024',
-                sort: 'project-card',
-                status: 'Не заполнен',
-                isGoing: false,
-                tag: {
-                    sort: 'project-card',
-                    text: 'Не заполнен',
-                    isGoing: false,
-                    status: ''
+                {
+                    date: 'до 29 сентября', 
+                    title: 'Здравоохранение в Сургуте', 
+                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                    votes: '319 голосов', 
+                    result: 'Вы участвовали', 
+                    buttonText: 'Участвовать', 
+                    tag: {
+                        sort: 'interviews-array',
+                        isGoing: true,
+                        text: 'Идет', 
+                        },
                 },
-                checkbox: {
-                    id: '2',
-                    sort: 'checkbox',
-                    status: true,
-                }
-            },
-            {
-                title: 'Название инициативного проекта',
-                date: 'Создан 23 сентября 2024',
-                sort: 'project-card',
-                status: 'Не заполнен',
-                isGoing: false,
-                tag: {
-                    sort: 'project-card',
-                    text: 'Выполнен',
-                    isGoing: true,
-                    status: ''
+                {
+                    date: 'до 29 сентября', 
+                    title: 'Здравоохранение в Сургуте', 
+                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                    votes: '319 голосов', 
+                    result: 'Вы участвовали', 
+                    buttonText: 'Участвовать', 
+                    tag: {
+                        sort: 'interviews-array',
+                        isGoing: true,
+                        text: 'Идет', 
+                        },
                 },
-                checkbox: {
-                    id: '3',
-                    sort: 'checkbox',
-                    status: true,
-                }
-            }   
-        ])          
+                {
+                    date: 'до 29 сентября', 
+                    title: 'Здравоохранение в Сургуте', 
+                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                    votes: '319 голосов', 
+                    result: 'Вы участвовали', 
+                    buttonText: 'Результаты', 
+                    tag: {
+                        sort: 'interviews-array',
+                        isGoing: false,
+                        text: 'Завершен', 
+                        },
+                },
+                {
+                    date: 'до 29 сентября', 
+                    title: 'Работа местных властей и общественные инициативы', 
+                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                    votes: '319 голосов', 
+                    result: 'Вы участвовали', 
+                    buttonText: 'Результаты', 
+                    tag: {
+                        sort: 'interviews-array',
+                        isGoing: false,
+                        text: 'Завершен',
+                        },
+                },
+                {
+                    date: 'до 29 сентября', 
+                    title: 'Здравоохранение в Сургуте', 
+                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                    votes: '319 голосов', 
+                    result: 'Вы участвовали', 
+                    buttonText: '', 
+                    tag: {
+                        sort: 'interviews-array',
+                        isGoing: false,
+                        text: 'Завершен', 
+                        },
+                },
+                ])             
+        +pagination(30, 5, 2)

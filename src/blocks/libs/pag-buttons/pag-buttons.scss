@@ -147,4 +147,15 @@ $primary-color: #004CC4;
         width: 20px;
         height: 20px;
     }
+
+    .pag-button__span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .pag-button {
+        padding: 6px 12px;
+    }
+    
 }

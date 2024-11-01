@@ -7,6 +7,14 @@ $fourth-text-inverse: #EBEDF4;
     display: none;
 }
 
+.сheckbox.сheckbox-label+label {
+    padding-left: 30px;
+
+    &:before {
+        left: 0;
+    }
+}
+
 .сheckbox+label {
     position: relative;
     display: flex;

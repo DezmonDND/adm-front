@@ -4,12 +4,12 @@
     <h3 class="undefined form-field__title">1. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
     <div class="form-field__answers">
       <div class="form-field__input">
-        <input class="сheckbox radio" type="radio" id="1" name="radio"/>
-        <label for="1"></label><span class="form-field__text">Да </span>
+        <input class="сheckbox сheckbox-label radio" type="radio" id="1" name="radio"/>
+        <label for="1">Да</label><span class="form-field__text"> </span>
       </div>
       <div class="form-field__input">
-        <input class="сheckbox radio" type="radio" id="2" name="radio"/>
-        <label for="2"></label><span class="form-field__text">Нет </span>
+        <input class="сheckbox сheckbox-label radio" type="radio" id="2" name="radio"/>
+        <label for="2">Нет</label><span class="form-field__text"> </span>
       </div>
     </div>
   </div>
@@ -17,16 +17,16 @@
     <h3 class="form-field__title">2. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
     <div class="form-field__answers">
       <div class="form-field__input">
-        <input class="сheckbox " type="checkbox" id="3" name="undefined"/>
-        <label for="3"></label><span class="form-field__text">Первый вариант </span>
+        <input class="сheckbox сheckbox-label " type="checkbox" id="3" name="undefined"/>
+        <label for="3">Первый вариант</label><span class="form-field__text"> </span>
       </div>
       <div class="form-field__input">
-        <input class="сheckbox " type="checkbox" id="4" name="undefined"/>
-        <label for="4"></label><span class="form-field__text">Второй вариант </span>
+        <input class="сheckbox сheckbox-label " type="checkbox" id="4" name="undefined"/>
+        <label for="4">Второй вариант</label><span class="form-field__text"> </span>
       </div>
       <div class="form-field__input">
-        <input class="сheckbox " type="checkbox" id="5" name="undefined"/>
-        <label for="5"></label><span class="form-field__text">Третий вариант </span>
+        <input class="сheckbox сheckbox-label " type="checkbox" id="5" name="undefined"/>
+        <label for="5">Третий вариант</label><span class="form-field__text"> </span>
       </div>
     </div>
   </div>
