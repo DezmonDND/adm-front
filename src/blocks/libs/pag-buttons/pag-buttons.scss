@@ -40,6 +40,7 @@ $primary-color: #004CC4;
         cursor: pointer;
         background-color: $num-button-text-hover;
         border-color: transparent;
+
     }
 
     &:active {
@@ -105,6 +106,12 @@ $primary-color: #004CC4;
     color: #C2D8FF;
     border-color: #C2D8FF;
     background-color: $content-color;
+
+    &:disabled {
+        color: #C2D8FF;
+        border-color: #C2D8FF;
+        background-color: $content-color;
+    }
 }
 
 .pag-button-with-icon_right_disabled {
@@ -112,6 +119,12 @@ $primary-color: #004CC4;
     color: #C2D8FF;
     border-color: #C2D8FF;
     background-color: $content-color;
+
+    &:disabled {
+        color: #C2D8FF;
+        border-color: #C2D8FF;
+        background-color: $content-color;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -157,5 +170,5 @@ $primary-color: #004CC4;
     .pag-button {
         padding: 6px 12px;
     }
-    
+
 }

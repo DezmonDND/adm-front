@@ -188,7 +188,7 @@ $main-text: #040528;
     line-height: 16px;
     margin: 38px 0 40px;
     padding: 13px 25px 13px 47px;
-    
+
     &:disabled {
         background-image: url(../icons/add-author-disabled_icon.svg);
     }
@@ -196,9 +196,9 @@ $main-text: #040528;
 
 @media screen and (max-width: 1000px) {
     .button_interview {
-        @include desc-h6();
-        padding: 7px 18px;
-        border-radius: 4px;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px 24px;
     }
 
     .button_add-author {
@@ -217,7 +217,7 @@ $main-text: #040528;
         padding: 12px 27px;
         font-size: 14px;
         line-height: 18px;
-    
+
     }
 }
 
@@ -233,6 +233,6 @@ $main-text: #040528;
     }
 
     .button_add-author {
-margin: 27px 0 35px;
+        margin: 27px 0 35px;
     }
 }
