@@ -35,7 +35,13 @@ $tertiary-text: #78839C;
 
 @media screen and (max-width: 1000px) {
     .breadcrumbs {
-        padding: 12px 0;
+        padding: 14px 0;
+
+        .breadcrumbs__icon-link {
+            .breadcrumbs__icon {
+                margin-right: 12px;
+            }
+        }
 
         .breadcrumbs__container {
             gap: 8px;

@@ -164,11 +164,11 @@ $primary-color: #004CC4;
             min-height: 288px;
 
             .interview__content {
-                padding: 11px 20px 20px;
+                padding: 12px 24px 19px;
                 gap: 25px;
 
                 .iinterview__dates {
-                    gap: 11px;
+                    gap: 9px;
 
                     .iinterview__date {
                         @include mob-h4();
@@ -177,10 +177,11 @@ $primary-color: #004CC4;
 
                 .iinterview__description {
                     gap: 12px;
+                    margin-top: 14px;
 
                     .iinterview__title {
                         @include mob-h2();
-                        margin-top: 13px;
+                        margin-top: 0;
                     }
 
                     .interview__text {
@@ -211,9 +212,10 @@ $primary-color: #004CC4;
         .interview {
             .interview__content {
                 gap: 0;
+                padding: 12px 20px 19px;
 
                 .iinterview__description {
-                    margin: 0;
+                    margin: 13 0 0;
                 }
             }
         }

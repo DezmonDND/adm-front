@@ -8,10 +8,10 @@ $fourth-text-inverse: #EBEDF4;
 }
 
 .сheckbox.сheckbox-label+label {
-    padding-left: 30px;
+    padding-left: 38px;
 
     &:before {
-        left: 0;
+        left: 10px;
     }
 }
 
@@ -74,4 +74,38 @@ $fourth-text-inverse: #EBEDF4;
 .radio:checked+label::before {
     background-color: $content-color;
     background-image: url(../../icons/radiobtns_icon.svg);
+}
+
+@media screen and (max-width: 1000px) {
+    .сheckbox.сheckbox-label+label {
+        padding-left: 35px;
+
+        &:before {
+            left: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .сheckbox+label {
+        height: 16px;
+
+        &:before {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .сheckbox.сheckbox-label+label {
+        padding-left: 30px;
+
+        &:before {
+            left: 8px;
+        }
+    }
+
+    .сheckbox__label {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }

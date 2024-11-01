@@ -14,9 +14,12 @@
     .tabs {
         font-size: 14px;
         line-height: 18px;
+        margin-top: 32px;
     }
 }
 
 @media screen and (max-width: 600px) {
-
+    .tabs {
+        margin-top: 26px;
+    }
 }

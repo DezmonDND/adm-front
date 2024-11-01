@@ -85,7 +85,7 @@ $interview-end-color: #D10404;
         }
 
         .form-field__answers {
-            gap: 15px;
+            gap: 20px;
 
             .form-field__input {
                 .form-field__text {
@@ -98,7 +98,7 @@ $interview-end-color: #D10404;
 
 @media screen and (max-width: 600px) {
     .form-field {
-        gap: 13px;
+        gap: 11px;
 
         .form-field__title {
             font-size: 12px;
@@ -112,7 +112,7 @@ $interview-end-color: #D10404;
         }
 
         .form-field__answers {
-            gap: 9px;
+            gap: 14px;
 
             .form-field__input {
                 .form-field__text {
