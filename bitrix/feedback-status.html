@@ -29,76 +29,21 @@
         </button>
       </div>
     </header>
-    <main class="components"><a class="button button_link button_blue" href="/" target="_blank"><span class="button_span">О нас</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/></a><a class="button button_link button_green" href="/" target="_blank"><span class="button_span">Контакты</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
-      <button class="button button_blue" onclick="someFunction()"><span class="button_span">Далее</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/>
-      </button>
-      <button class="button button_white" onclick="getValues()"><span class="button_span">Готово</span></button>
-      <input class="сheckbox radio" type="radio" id="radio" name="undefined"/>
-      <label for="radio"> </label>
-      <input class="сheckbox " type="сheckbox" id="сheckbox" name="undefined" checked="checked"/>
-      <label for="сheckbox"> </label>
-      <input class="input   input-search-l " placeholder="Введите ваш ответ" value=""/>
-      <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"><img class="breadcrumbs__icon" src="/local/templates/surgut/icons/arrow-left_link-icon.svg" alt="Стрелка"/></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/about" target="_blank">О нас</a><span class="span">/</span><span class="breadcrumb_link">Контакты</span>
-        </div>
+    <div class="title"> 
+      <div class="title__container"> 
+        <div class="title__name">Узнать статус обращения</div>
+        <div class="title__description">            </div>
       </div>
-      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
-      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
-      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
-      <div class="container">
-        <textarea class="textarea  " placeholder="Введите ваш ответ" oninput="getLength(this)"></textarea>
-        <div class="counter "><span class="current">0</span><span>/</span><span class="max">900 </span></div>
-      </div>
-      <select class="select select-s select-icon-[object Object],[object Object],[object Object]">
-      </select>
-      <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
-      </select>
-      <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
-      </select>
-      <label class="switch switch switch_off">
-        <input class="switch__input" type="checkbox"/><span class="slider round"> </span>
-      </label>
-      <div class="form-field form-field_inputs ">
-        <h3 class="form-field__title ">3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
-        <div class="form-field__input-list">
-          <input class="input input-interview-full   " placeholder="Введите ваш ответ" name="answer3" value=""/>
-        </div>
-      </div>
-      <form class="search search-undefined">
-        <input class="input  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="number" value=""/>
-        <button class="search__button search__button_l" type="submit" onclick="getValues()">       </button>
-      </form>
-      <form class="search-full-form">
-        <input class="input  input-text input-search-xl " placeholder="Название законопроекта" value=""/>
-        <div class="search-form">
-          <input class="input  input-text input-search-xs " placeholder="Номер регистрации" value=""/>
-          <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
-          </select>
-          <button class="calender" type="button">Период публикации</button>
+    </div>
+    <div class="feedback-status">
+      <div class="feedback-status__container"> 
+        <div class="feedback-status__title">Введите выданный номер обращения</div>
+        <form class="feedback-status__form">
+          <input class="input    " placeholder="Номер обращения" value=""/>
           <button class="button button_blue"><span class="button_span">Искать</span></button>
-        </div>
-      </form>
-      <form class="search-form">
-        <input class="input  input-text input-search-xs " placeholder="Номер регистрации" value=""/>
-        <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
-        </select>
-        <button class="calender" type="button">Период публикации</button>
-        <button class="button button_blue"><span class="button_span">Искать</span></button>
-      </form><a class="tab-button " value="Самые важные">Самые важные</a>
-      <div class="tabs"><a class="tab-button " value="Самые важные">Самые важные</a><a class="tab-button " value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " value="Областная дума">Областная дума</a>
+        </form>
       </div>
-      <button class="pag-button-with-icon pag-button_[object Object]" onclick="nextPage(event) "><span class="pag-button__title">Вперед</span></button>
-      <div class="project-card"> 
-        <div class="project-card__content"> 
-          <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
-          <label for="1"> </label>
-          <div class="project-card__info"> 
-            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-            <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
-          </div>
-        </div>
-      </div>
-    </main>
+    </div>
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_container-top">

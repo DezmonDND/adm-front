@@ -40,7 +40,36 @@
     <h3 class="form-field__title ">4. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
     <div class="container">
       <textarea class="textarea  " placeholder="Введите ваш ответ" oninput="getLength(this)"></textarea>
-      <div class="counter "><span class="current">0</span><span>/</span><span class="max"> </span></div>
+      <div class="counter "><span class="current">0</span><span>/</span><span class="max">900 </span></div>
+    </div>
+  </div>
+  <div class="form-field form-field_inputs ">
+    <h3 class="form-field__title ">5. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
+  </div>
+  <select class="select select-virtual-reception select-icon-right">
+    <option class="select__option" value="Филатов Андрей Сергеевич, Глава города Сургута">Филатов Андрей Сергеевич, Глава города Сургута</option>
+    <option class="select__option" value="Филатов">Филатов</option>
+    <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
+  </select>
+  <div class="form-field form-field_inputs ">
+    <h3 class="form-field__title ">6. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
+  </div>
+  <div class="select_multiple_container">
+    <div class="select select_multiple virtual-reception" onclick="openSelect()">
+      <button class="button virtual-reception__delete-button" onclick="deleteAllOptions()"><span class="button_span"></span></button>
+      <ul class="select_multiple_options"> 
+        <div class="select_multiple_option"><span>Опция </span>
+          <button class="button virtual-reception__delete-button" onclick="deleteOption()"><span class="button_span"></span></button>
+        </div>
+        <div class="select_multiple_option"> <span>Опция </span>
+          <button class="button virtual-reception__delete-button" onclick="deleteOption()"><span class="button_span"></span></button>
+        </div>
+      </ul>
+    </div>
+    <div class="select_multiple-menu" style="display: none;">
+      <li class="select_multiple-list-item " value="Филатов Андрей Сергеевич, Глава города Сургута" onclick="selectOption(this)">Филатов Андрей Сергеевич, Глава города Сургута</li>
+      <li class="select_multiple-list-item " value="Филатов" onclick="selectOption(this)">Филатов</li>
+      <li class="select_multiple-list-item " value="Глава города Сургута" onclick="selectOption(this)">Глава города Сургута</li>
     </div>
   </div>
   <button class="button button_blue button_interview" onclick="getValues(event)"><span class="button_span">Отправить форму</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/>
