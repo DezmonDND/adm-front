@@ -232,6 +232,13 @@ $main-text: #040528;
 }
 
 @media screen and (max-width: 600px) {
+.button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 16px;
+}
+
     .button_interview {
         margin-top: 12px;
     }

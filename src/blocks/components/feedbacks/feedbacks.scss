@@ -43,7 +43,10 @@
         .feedback-status__container {
             .feedback-status__title {}
 
-            .feedback-status__form {}
+            .feedback-status__form {
+                flex-direction: column;
+                align-items: baseline;
+            }
 
         }
     }
