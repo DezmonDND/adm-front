@@ -198,6 +198,12 @@ $main-text: #040528;
 }
 
 @media screen and (max-width: 1000px) {
+    .button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px 20px;
+    }
+
     .button_interview {
         font-size: 14px;
         line-height: 18px;
