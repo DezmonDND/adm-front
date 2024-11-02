@@ -14,16 +14,17 @@ $interview-end-color: #D10404;
     font-size: $desk-text3;
     line-height: $desk-text3-lh;
 
+    &:hover {
+        border-color: #858C9C;
+    }
+
+
     &:focus {
         border: 1px solid #78A4F4;
     }
 
     &::placeholder {
         color: $tertiary-text;
-    }
-
-    &:hover {
-        border-color: #858C9C;
     }
 }
 
@@ -62,5 +63,5 @@ $interview-end-color: #D10404;
         font-size: 12px;
         line-height: 18px;
     }
-    
+
 }

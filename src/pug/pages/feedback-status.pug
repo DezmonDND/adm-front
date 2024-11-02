@@ -1,0 +1,18 @@
+extends ../layout
+
+block content 
+    +title({
+        title: 'Узнать статус обращения'
+    })
+    .feedback-status
+        .feedback-status__container 
+            .feedback-status__title Введите выданный номер обращения
+            form.feedback-status__form
+                +input({
+                    placeholder: 'Номер обращения'
+                })
+                +button({
+                    type: 'button',
+                    class: 'button_blue',
+                    text: 'Искать'
+                })
