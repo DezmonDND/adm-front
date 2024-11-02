@@ -232,18 +232,20 @@ $main-text: #040528;
 }
 
 @media screen and (max-width: 880px) {
-    .button_burger {
+    .button.button_burger {
         display: block;
+        padding-right: 0;
     }
+
 }
 
 @media screen and (max-width: 600px) {
-.button {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 8px 16px;
-}
+    .button {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 8px 16px;
+    }
 
     .button_interview {
         margin-top: 12px;

@@ -58,6 +58,7 @@ $interview-end-color: #D10404;
 
 @media screen and (max-width: 1000px) {
     .input-search-l {
+        width: calc(100% - 48px);
         padding: 11px 20px;
     }
 }
