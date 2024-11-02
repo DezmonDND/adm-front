@@ -28,6 +28,7 @@
 @use '../../blocks/components/projects/project-card.scss';
 @use '../../blocks/components/projects/projects-array.scss';
 @use '../../blocks/components/title/title.scss';
+@use '../../blocks/components/fieldset/fieldset.scss';
 
 * {
   font-family: "Inter", sans-serif;
@@ -62,7 +63,7 @@ body {
 
   .main__description {
     max-width: 866px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     font-size: 16px;
     line-height: 24px;
 
@@ -86,16 +87,16 @@ body {
       width: 100%;
 
       .virtual-reception__title {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 24px;
         line-height: 28px;
-        margin-bottom: 30px;
+        margin-bottom: 32px;
       }
 
       .virtual-reception__select {
         display: flex;
         flex-direction: column;
-        gap: 26px;
+        gap: 25px;
       }
 
       .virtual-reception__field-title {
@@ -110,7 +111,7 @@ body {
 }
 
 .virtual-reception__documents__list {
-  display: flex;
+  display: none;
   flex-direction: column;
   list-style: none;
   max-width: 866px;
@@ -121,7 +122,7 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 18px;
+    gap: 11px;
     cursor: pointer;
 
     &:hover {
@@ -172,7 +173,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  gap: 53px;
+  gap: 50px;
+  margin-top: 24px;
 }
 
 .virtual-reception__feedback {
@@ -203,6 +205,7 @@ body {
       font-weight: 600;
       font-size: 24px;
       line-height: 28px;
+      margin-bottom: 18px;
     }
 
     .interview-form {
@@ -220,8 +223,13 @@ body {
     }
   }
 
+  .virtual-reception__feedback {
+    margin-top: 40px;
+  }
+
   .virtual-reception__buttons {
     gap: 47px;
+    margin-top: 20px;
   }
 }
 
@@ -232,16 +240,13 @@ body {
     .main__title {
       font-size: 20px;
       line-height: 24px;
-      margin: 11px 0 20px;
-
+      margin: 11px 0 16px;
     }
-
-   
 
     .main__description {
       font-size: 12px;
       line-height: 18px;
-      margin-bottom: 26px;
+      margin-bottom: 32px;
     }
 
     .interview-form {
@@ -254,10 +259,13 @@ body {
         .virtual-reception__title {
           font-size: 16px;
           line-height: 12px;
+          margin-bottom: 28px;
         }
+
         .virtual-reception__select {
           gap: 16px;
         }
+
         .virtual-reception__field-title {
           margin-bottom: 13px;
         }
@@ -265,7 +273,7 @@ body {
     }
 
     .virtual-reception__job-field {
-      margin: 34px 0 27px;
+      margin: 26px 0 26px;
     }
 
     .virtual-reception__feedback {

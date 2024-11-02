@@ -2,7 +2,7 @@ $input-color-default: #C6CBD9;
 
 .select {
     box-sizing: border-box;
-    padding: 22px 34px 22px 16px;
+    padding: 20px 34px 20px 16px;
     width: 100%;
     border-radius: 8px;
     border: 1px solid $input-color-default;
@@ -14,25 +14,12 @@ $input-color-default: #C6CBD9;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 24px;
 
     &:hover {
         cursor: pointer;
     }
-}
-
-.select-m {
-    max-width: 520px;
-}
-
-.select-s {
-    padding: 13px 34px 13px 16px;
-    max-width: 336px;
-}
-
-.select-xs {
-    max-width: 332px;
-    padding: 18px 20px;
-    border-radius: 4px;
 }
 
 .select-icon-left {
@@ -41,14 +28,8 @@ $input-color-default: #C6CBD9;
     padding: 18px 20px 18px 50px;
 }
 
-.select-virtual-reception {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 24px 34px 17px 16px;
-}
-
 @media screen and (max-width: 600px) {
-    .select-virtual-reception {
+    .select {
         font-size: 12px;
         line-height: 18px;
         padding: 11px 34px 11px 16px;

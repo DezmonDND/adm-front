@@ -1,0 +1,38 @@
+mixin fieldset(field)
+    if field.type === 'checkbox'
+        fieldset(class=`${field.cls}`).fieldset
+            h3(class=`fieldset__title`) #{field.title}
+            .fieldset__answers
+                each checkbox in field.checkboxes
+                    .fieldset__checkboxes
+                        +checkbox(checkbox)
+                        span.fieldset__span #{checkbox.text} 
+    else if field.type === 'radio'
+        fieldset(class=`${field.cls}`).fieldset
+            h3(class=`${field.cls_title}`).fieldset__title #{field.title}
+            .fieldset__answers
+                each checkbox in field.checkboxes
+                    .fieldset__checkboxes
+                        +checkbox(checkbox)
+                        span.fieldset__span #{checkbox.text} 
+    else if field.type === 'textarea'
+        fieldset(class=`${field.cls}`).fieldset
+            h3(class=`${field.cls_title}`).fieldset__title #{field.title}
+            .fieldset__answers
+                +textarea(field.options, field.error)
+                if field.error
+                    span(class=`fieldset__span ${field.error ? 'fieldset_error' : ''}`) #{field.span}              
+    else if field.type === 'select'
+        fieldset(class=`${field.cls}`).fieldset
+            h3(class=`${field.cls_title}`).fieldset__title #{field.title}
+            .fieldset__answers
+            //- +select(field.options, field.error, field.iconPosition)
+            //- span(class=`form-field__span ${field.error ? 'span_error' : ''}`) #{field.span}              
+    else
+        fieldsetiv(class=`${field.cls}`).fieldset
+            h3(class=`${field.cls_title}`).fieldset__title #{field.title}
+            .fieldset__answers
+                each input in field.inputs
+                    +input(input, input.error)
+                    if input.error
+                        span(class=`fieldset__span ${input.error ? 'fieldset_error' : ''}`) #{input.span}
