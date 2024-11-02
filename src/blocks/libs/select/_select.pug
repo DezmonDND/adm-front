@@ -1,7 +1,7 @@
-mixin select(cls, iconPosition, type, options)
+mixin select(iconPosition, options, type)
   if type === 'multiple'  
     .select_multiple_container
-      div(class=`select select_multiple ${cls ? cls : ''}` onclick='openSelect()')
+      div(class=`select select_multiple` onclick='openSelect()')
         +button({ type: 'button', class: 'virtual-reception__delete-button', event: 'deleteAllOptions()',})
         ul.select_multiple_options 
           div.select_multiple_option
@@ -15,7 +15,7 @@ mixin select(cls, iconPosition, type, options)
           each option in options
             li(class=`select_multiple-list-item ${option.selected ? 'select_multiple-option_selected' : ''}` value=option.value onclick='selectOption(this)')= option.text
   else
-    select(class=`select select-${cls} select-icon-${iconPosition}`)
+    select(class=`select ${iconPosition ? `select-icon-${iconPosition}` : ''}`)
       if options
         each option in options
           option(class=`select__option` value=option.value)= option.text

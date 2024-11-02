@@ -9,28 +9,22 @@ block content
             ])
         h2.main__title Виртуальная приемная
         span.main__description Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных. 
-        form.virtual-receprion__form
-            .virtual-receprion__content 
-                h3.virtual-reception__title Основные данные
-                .virtual-reception__select
-                    +form-field(
+        form.reception__form
+            .reception__content 
+                h3.reception__main_title Основные данные
+                +fieldset(
                     {
-                        type: 'select',
-                        title: 'Кому направляете электронную анкету',
-                        span: '',
-                        error: false,   
-                    })
-                    +select('virtual-reception', 'right', '',
-                    [
-                        { value: 'Филатов Андрей Сергеевич, Глава города Сургута', text: 'Филатов Андрей Сергеевич, Глава города Сургута' },
-                        { value: 'Филатов', text: 'Филатов' },
-                        { value: 'Глава города Сургута', text: 'Глава города Сургута' }
-                        ],
-                )
-                +form-field(
+                        type: 'select', 
+                        title: 'Кому направляете электронную анкету', 
+                        cls_title: 'reception__sender', 
+                        options: [
+                            { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
+                            { text: 'Филатов', value: 'Филатов' }, 
+                            { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
+                        iconPosition: 'right'})
+                +fieldset(
                 {
-                    cls: 'virtual-reception__job-field',
-                    cls_title: 'virtual-reception__field-title',
+                    cls_title: 'reception__job',
                     type: '',
                     title: 'Наименование вашей организации (юридического лица)',
                     span: '',
@@ -43,11 +37,10 @@ block content
                         },
                         ]    
                 })
-                .virtual-reception__user-contacts
-                    +form-field(
+                +fieldset(
                     {
-                        cls: 'virtual-reception__form-field',
-                        cls_title: 'virtual-reception__field-title',
+                        cls: 'user-contacts',
+                        cls_title: 'reception__user',
                         type: '',
                         title: 'Ваши данные',
                         span: 'Вспомогательный текст',
@@ -70,11 +63,10 @@ block content
                             }
                             ]    
                     })
-                +button({ type: 'button', class: 'button_white button_add-author', event: 'addFormField(event)', text: `Добавить соавтора` })    
-                +form-field(
+                +button({ type: 'button', class: 'button_white reception_add-author-btn', event: 'addFormField(event)', text: `Добавить соавтора` })    
+                +fieldset(
                 {
-                    cls: 'virtual-reception__form-field',
-                    cls_title: 'virtual-reception__field-title_email',
+                    cls_title: 'reception__email',
                     type: '',
                     title: 'Данные для контакта',
                     span: 'Вспомогательный текст',
@@ -92,10 +84,9 @@ block content
                         },
                         ]    
                 })
-                +form-field(
+                +fieldset(
                 {
-                    cls: 'virtual-reception__feedback',
-                    cls_title: 'virtual-reception__feedback-title',
+                    cls_title: 'reception__feedback',
                     type: 'textarea',
                     title: 'Обращение',
                     span: '',
@@ -106,8 +97,8 @@ block content
                         cls: 'reception'
                             }
                 })
-            ul.virtual-reception__documents__list
-            .virtual-reception__buttons
+            ul.reception__documents-list
+            .reception__buttons
                 .custom-file-upload(onclick='addDocument()')
                     label(for="file" id="file-label") Вложить документ
                         input(type="file" id="file" name="addDocument" value="" class='input__add-document')   

@@ -1,36 +1,33 @@
 mixin fieldset(field)
     if field.type === 'checkbox'
         fieldset(class=`${field.cls}`).fieldset
-            h3(class=`fieldset__title`) #{field.title}
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
                 each checkbox in field.checkboxes
                     .fieldset__checkboxes
                         +checkbox(checkbox)
-                        span.fieldset__span #{checkbox.text} 
     else if field.type === 'radio'
         fieldset(class=`${field.cls}`).fieldset
-            h3(class=`${field.cls_title}`).fieldset__title #{field.title}
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
                 each checkbox in field.checkboxes
                     .fieldset__checkboxes
                         +checkbox(checkbox)
-                        span.fieldset__span #{checkbox.text} 
     else if field.type === 'textarea'
-        fieldset(class=`${field.cls}`).fieldset
-            h3(class=`${field.cls_title}`).fieldset__title #{field.title}
+        fieldset.fieldset
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
-                +textarea(field.options, field.error)
+                +textarea(field.options, field.error).fieldset__textarea
                 if field.error
                     span(class=`fieldset__span ${field.error ? 'fieldset_error' : ''}`) #{field.span}              
     else if field.type === 'select'
-        fieldset(class=`${field.cls}`).fieldset
-            h3(class=`${field.cls_title}`).fieldset__title #{field.title}
+        fieldset.fieldset
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
-            //- +select(field.options, field.error, field.iconPosition)
-            //- span(class=`form-field__span ${field.error ? 'span_error' : ''}`) #{field.span}              
+                +select(field.iconPosition, field.options)
     else
-        fieldsetiv(class=`${field.cls}`).fieldset
-            h3(class=`${field.cls_title}`).fieldset__title #{field.title}
+        fieldset(class=`fieldset ${field.cls ? `fieldset_${field.cls}` : ""}`)
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
                 each input in field.inputs
                     +input(input, input.error)

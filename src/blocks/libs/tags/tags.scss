@@ -102,3 +102,10 @@ $icons-color: #1A2D82;
     line-height: 20px;
 }
 
+@media screen and (width: 600px) {
+    .tag_interviews-array {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+}

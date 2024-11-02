@@ -146,6 +146,11 @@
     gap: 0;
     padding: 12px 20px 19px;
   }
+  .interviews_array .interview .interview__content .interview__info .iinterview__dates .tag_interviews-array {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 16px;
+  }
   .interviews_array .interview .interview__content .iinterview__description {
     margin: 13 0 0;
   }

@@ -1,4 +1,4 @@
-include ../../../components/form-field/_form-field.pug 
+include ../../../components/fieldset/_fieldset.pug 
 include ../../../libs/checkbox/_checkbox.pug
 include ../../../libs/textarea/_textarea.pug 
 include ../../../libs/inputs/_inputs.pug 
@@ -6,107 +6,98 @@ include ../../../libs/buttons/_buttons.pug
 include ../../../libs/select/_select.pug 
 
 h2.main__title Виртуальная приемная
-    span.main__description Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных. 
-    form.virtual-receprion__form
-        .virtual-receprion__content 
-            h3.virtual-reception__title Основные данные
-            .virtual-reception__select
-                +form-field(
-                {
-                    type: 'select',
-                    title: 'Кому направляете электронную анкету',
-                    span: '',
-                    error: false,   
-                })
-                +select('virtual-reception', 'right', '',
-                [
-                    { value: 'Филатов Андрей Сергеевич, Глава города Сургута', text: 'Филатов Андрей Сергеевич, Глава города Сургута' },
-                    { value: 'Филатов', text: 'Филатов' },
-                    { value: 'Глава города Сургута', text: 'Глава города Сургута' }
-                    ],
-            )
-            +form-field(
+span.main__description Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных. 
+form.reception__form
+    .reception__content 
+        h3.reception__main_title Основные данные
+        +fieldset(
             {
-                cls: 'virtual-reception__job-field',
-                cls_title: 'virtual-reception__field-title',
-                type: '',
-                title: 'Наименование вашей организации (юридического лица)',
-                span: '',
-                error: false,
-                inputs: [
-                    {
-                        placeholder: 'Наименование организации',
-                        name: 'companyName', 
-                        sort: 'virtual-reception_input',
-                    },
-                    ]    
-            })
-            .virtual-reception__user-contacts
-                +form-field(
+                type: 'select', 
+                title: 'Кому направляете электронную анкету', 
+                cls_title: 'reception__sender', 
+                options: [
+                    { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
+                    { text: 'Филатов', value: 'Филатов' }, 
+                    { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
+                iconPosition: 'right'})
+        +fieldset(
+        {
+            cls_title: 'reception__job',
+            type: '',
+            title: 'Наименование вашей организации (юридического лица)',
+            span: '',
+            error: false,
+            inputs: [
                 {
-                    cls: 'virtual-reception__form-field',
-                    cls_title: 'virtual-reception__field-title',
-                    type: '',
-                    title: 'Ваши данные',
-                    span: 'Вспомогательный текст',
-                    error: false,
-                    inputs: [
-                        {
-                            placeholder: 'Фамилия',
-                            name: 'firstName', 
-                            sort: 'virtual-reception_input',
-                        },
-                        {
-                            placeholder: 'Имя',
-                            name: 'secondName',
-                            sort: 'virtual-reception_input',
-                        },
-                        {
-                            placeholder: 'Отчество',
-                            name: 'thirdName',
-                            sort: 'virtual-reception_input',
-                        }
-                        ]    
-                })
-            +button({ type: 'button', class: 'button_white button_add-author', event: 'addFormField(event)', text: `Добавить соавтора` })    
-            +form-field(
+                    placeholder: 'Наименование организации',
+                    name: 'companyName', 
+                    sort: 'virtual-reception_input',
+                },
+                ]    
+        })
+        +fieldset(
             {
-                cls: 'virtual-reception__form-field',
-                cls_title: 'virtual-reception__field-title_email',
+                cls: 'user-contacts',
+                cls_title: 'reception__user',
                 type: '',
-                title: 'Данные для контакта',
+                title: 'Ваши данные',
                 span: 'Вспомогательный текст',
                 error: false,
                 inputs: [
                     {
-                        placeholder: 'your_email@mail.ru',
-                        name: 'email', 
+                        placeholder: 'Фамилия',
+                        name: 'firstName', 
                         sort: 'virtual-reception_input',
                     },
                     {
-                        placeholder: '892343567',
-                        name: 'phone',
+                        placeholder: 'Имя',
+                        name: 'secondName',
                         sort: 'virtual-reception_input',
                     },
+                    {
+                        placeholder: 'Отчество',
+                        name: 'thirdName',
+                        sort: 'virtual-reception_input',
+                    }
                     ]    
             })
-            +form-field(
-            {
-                cls: 'virtual-reception__feedback',
-                cls_title: 'virtual-reception__feedback-title',
-                type: 'textarea',
-                title: 'Обращение',
-                span: '',
-                error: false,
-                options: {
-                    placeholder: 'Введите ваш ответ',
-                    value: '900',
-                    cls: 'reception'
-                        }
-            })
-        ul.virtual-reception__documents__list
-        .virtual-reception__buttons
-            .custom-file-upload(onclick='addDocument()')
-                label(for="file" id="file-label") Вложить документ
-                    input(type="file" id="file" name="addDocument" value="" class='input__add-document')   
-            +button({ type: 'button', class: 'button_blue virtual-reception__send-button', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить обращение` })
+        +button({ type: 'button', class: 'button_white reception_add-author-btn', event: 'addFormField(event)', text: `Добавить соавтора` })    
+        +fieldset(
+        {
+            cls_title: 'reception__email',
+            type: '',
+            title: 'Данные для контакта',
+            span: 'Вспомогательный текст',
+            error: false,
+            inputs: [
+                {
+                    placeholder: 'your_email@mail.ru',
+                    name: 'email', 
+                    sort: 'virtual-reception_input',
+                },
+                {
+                    placeholder: '892343567',
+                    name: 'phone',
+                    sort: 'virtual-reception_input',
+                },
+                ]    
+        })
+        +fieldset(
+        {
+            cls_title: 'reception__feedback',
+            type: 'textarea',
+            title: 'Обращение',
+            span: '',
+            error: false,
+            options: {
+                placeholder: 'Введите ваш ответ',
+                value: '900',
+                cls: 'reception'
+                    }
+        })
+    ul.reception__documents-list
+    .reception__buttons
+        .custom-file-upload(onclick='addDocument()')
+            label(for="file" id="file-label") Вложить документ
+                input(type="file" id="file" name="addDocument" value="" class='input__add-document')   
+        +button({ type: 'button', class: 'button_blue virtual-reception__send-button', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить обращение` })

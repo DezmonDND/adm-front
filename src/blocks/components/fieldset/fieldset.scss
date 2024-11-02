@@ -1,0 +1,64 @@
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: none;
+
+    .fieldset__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .fieldset__answers {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .fieldset__checkboxes {
+            .fieldset__span {}
+        }
+
+        .fieldset__textarea {}
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .fieldset {
+        .fieldset__title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .fieldset__answers {
+            .fieldset__checkboxes {
+                .fieldset__span {}
+            }
+
+            .fieldset__textarea {}
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fieldset {
+        gap: 16px;
+        .fieldset__title {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .fieldset__answers {
+            gap: 8px;
+            .fieldset__checkboxes {
+                .fieldset__span {}
+            }
+
+            .fieldset__textarea {}
+        }
+
+    }
+}
