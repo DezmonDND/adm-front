@@ -22,6 +22,10 @@
             gap: 24px;
         }
 
+        .search-feedbacks {
+            max-width: none;
+        }
+
     }
 }
 
@@ -29,6 +33,13 @@
     .feedback-status {
 
         .feedback-status__container {
+
+            .search-feedbacks {
+                .search__button_l {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
             .feedback-status__title {}
 
             .feedback-status__form {}
@@ -41,6 +52,12 @@
     .feedback-status {
 
         .feedback-status__container {
+
+            .search-feedbacks {
+                .search__button_l {
+border-radius: 0 4px 4px 0;
+                }
+            }
             .feedback-status__title {}
 
             .feedback-status__form {

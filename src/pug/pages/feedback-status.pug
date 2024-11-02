@@ -16,11 +16,14 @@ block content
             .feedback-status__container 
                 .feedback-status__title Введите выданный номер обращения
                 form.feedback-status__form
-                    +input({
-                        placeholder: 'Номер обращения'
-                    })
-                    +button({
-                        type: 'button',
-                        class: 'button_blue',
-                        text: 'Искать'
-                    })
+                    //- +input({
+                    //-     placeholder: 'Номер обращения'
+                    //- })
+                    //- +button({
+                    //-     type: 'button',
+                    //-     class: 'button_blue',
+                    //-     text: 'Искать'
+                    //- })
+                +search(
+                {name: 'number', size: 'l', placeholder: 'Номер обращения', type: 'search'},
+                    false, 'l', 'getValues()', 'feedbacks',)     
