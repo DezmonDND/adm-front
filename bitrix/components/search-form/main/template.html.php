@@ -1,8 +1,8 @@
 
 <form class="search-full-form">
-  <input class="input input-undefined input-text input-search-xl " placeholder="Название законопроекта" value=""/>
+  <input class="input  input-text input-search-xl " placeholder="Название законопроекта" value=""/>
   <div class="search-form">
-    <input class="input input-undefined input-text input-search-xs " placeholder="Номер регистрации" value=""/>
+    <input class="input  input-text input-search-xs " placeholder="Номер регистрации" value=""/>
     <select class="select select-xs select-icon-[object Object],[object Object],[object Object]">
       <option class="select__option"></option>
       <option class="select__option"></option>
