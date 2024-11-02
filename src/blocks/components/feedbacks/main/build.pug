@@ -1,0 +1,19 @@
+include ../../title/_title.pug 
+include ../../../libs/inputs/_inputs.pug 
+include ../../../libs/buttons/_buttons.pug 
+
++title({
+    title: 'Узнать статус обращения'
+})
+.feedback-status
+    .feedback-status__container 
+        .feedback-status__title Введите выданный номер обращения
+        form.feedback-status__form
+            +input({
+                placeholder: 'Номер обращения'
+            })
+            +button({
+                type: 'button',
+                class: 'button_blue',
+                text: 'Искать'
+            })

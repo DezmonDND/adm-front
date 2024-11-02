@@ -1929,12 +1929,14 @@
 }
 
 .title {
-  padding: 20px 64px;
+  max-width: 1440px;
+  width: 100%;
 }
 .title .title__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px 64px;
 }
 .title .title__container .title__name {
   font-weight: 700;
@@ -1973,6 +1975,28 @@
     line-height: 18px;
   }
 }
+.feedback-status {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+}
+.feedback-status .feedback-status__container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 64px 60px;
+  gap: 24px;
+}
+.feedback-status .feedback-status__container .feedback-status__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+.feedback-status .feedback-status__container .feedback-status__form {
+  display: flex;
+  gap: 24px;
+}
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
