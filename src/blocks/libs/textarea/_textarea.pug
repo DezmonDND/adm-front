@@ -1,9 +1,11 @@
 mixin textarea(options, error)
     .container
         textarea(class=`textarea ${options.size ? `textarea-${options.size}` : ''} ${error ? 'textarea-error' : ''}` 
-            placeholder=options.placeholder 
+            placeholder=options.placeholder
+            name=options.name
+            maxlength=options.value 
             oninput='getLength(this)')
-        div(class=`counter ${options.cls ? options.cls : ''}`)
+        div(class=`counter ${options.cls ? `${options.cls}_counter` : ''}`)
             span.current 0
             span /
             span.max #{options.value} 

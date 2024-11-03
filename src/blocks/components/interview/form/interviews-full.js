@@ -1,22 +1,30 @@
 function getValues(e) {
-  const submitButton = document.querySelector(".button_interview");
-  const inputs = document.querySelectorAll(
-    ".input, .textarea, .сheckbox, .radio"
-  );
-  let values = [];
   e.preventDefault();
 
-  values = [];
+  const inputs = document.querySelectorAll(
+    ".input, .textarea, .checkbox, .radio"
+  );
+  let values = {};
 
   inputs.forEach((input) => {
     if (input.type === "checkbox") {
-      values.push(input.checked);
+      values[input.name] = input.checked;
     } else if (input.type === "radio") {
-      values.push(input.checked);
+      values[input.name] = input.checked;
     } else {
-      values.push(input.value);
+      values[input.name] = input.value;
     }
   });
 
-  console.log(values);
+  console.log("Собранные значения:", values);
+}
+
+document.addEventListener("input", getValues);
+
+function isValid(input) {
+  if (!input.value) {
+    options.error = true;
+    span = "Ошибка";
+    return;
+  }
 }

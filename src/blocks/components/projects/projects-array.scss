@@ -44,16 +44,31 @@
 
 @media screen and (max-width: 1000px) {
     .projects-array {
+        margin-top: 8px;
+
         .projects-array__content {
+            margin-top: 12px;
 
             .projects-array__edit-buttons {
 
-                .projects-array__button {}
+                .projects-array__button {
+                    padding: 8px 14px;
+                    border-radius: 8px;
+                }
+            }
+
+            .projects-array__list {
+                gap: 19px;
             }
 
             .projects-array__save-buttons {
+                gap: 14px;
 
-                .projects-array__button {}
+                .projects-array__button {
+                    padding: 12px 24px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
             }
         }
     }
@@ -65,12 +80,19 @@
 
             .projects-array__edit-buttons {
 
-                .projects-array__button {}
+                .projects-array__button {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
             }
 
             .projects-array__save-buttons {
 
-                .projects-array__button {}
+                .projects-array__button {
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 13px 20px;
+                }
             }
         }
     }

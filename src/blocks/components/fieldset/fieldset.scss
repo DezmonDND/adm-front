@@ -39,6 +39,12 @@
         flex-direction: column;
         gap: 12px;
 
+        .container {
+            .reception_counter {
+                display: none;
+            }
+        }
+
         .fieldset__textarea {}
 
         .fieldset__span {
