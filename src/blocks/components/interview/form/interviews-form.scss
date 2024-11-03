@@ -76,14 +76,20 @@ $tertiary-text: #78839C;
     }
 }
 
-.input-interview-full {
-    padding: 22px;
-    margin: 25px 0 10px;
-}
-
 .tag_interview-full {
     @include desc-h5;
     padding: 2px 24px;
+}
+
+.interview-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 864px;
+    width: 100%;
+    margin: auto;
+    align-items: baseline;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -156,13 +162,4 @@ $tertiary-text: #78839C;
 
         padding: 6px 17px;
     }
-
-    .input-interview-full {
-        border-radius: 4px;
-        padding: 12px;
-        margin: 12px 0 3px;
-        font-size: 12px;
-        line-height: 18px;
-    }
-
 }

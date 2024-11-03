@@ -2,14 +2,14 @@ mixin fieldset(field)
     if field.type === 'checkbox'
         fieldset(class=`${field.cls}`).fieldset
             h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
-            .fieldset__answers
+            .fieldset__answers_checkboxes
                 each checkbox in field.checkboxes
                     .fieldset__checkboxes
                         +checkbox(checkbox)
     else if field.type === 'radio'
         fieldset(class=`${field.cls}`).fieldset
             h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
-            .fieldset__answers
+            .fieldset__answers_checkboxes
                 each checkbox in field.checkboxes
                     .fieldset__checkboxes
                         +checkbox(checkbox)
@@ -24,7 +24,12 @@ mixin fieldset(field)
         fieldset.fieldset
             h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
-                +select(field.iconPosition, field.options)
+                +select(field.iconPosition, field.options, 'select')
+    else if field.type === 'multiple'
+        fieldset.fieldset
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            .fieldset__answers
+                +select(field.iconPosition, field.options, 'multiple')            
     else
         fieldset(class=`fieldset ${field.cls ? `fieldset_${field.cls}` : ""}`)
             h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}

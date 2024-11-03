@@ -34,6 +34,7 @@ $main-text: #000448;
     flex-direction: column;
     width: 100%;
     gap: 4px;
+    
 
     .select_multiple {
         display: flex;
@@ -42,6 +43,7 @@ $main-text: #000448;
         justify-content: space-between;
         width: 100%;
         padding: 14px 50px 14px 16px;
+        white-space: normal;
 
         &:hover {
             border: 1px solid #858C9C;
@@ -59,10 +61,27 @@ $main-text: #000448;
                 line-height: 16px;
                 border-radius: 100px;
                 background-color: #E7EDFB;
-                padding: 8px 20px;
+                padding: 6px 10px 6px 20px;
                 display: flex;
                 gap: 8px;
                 align-items: center;
+
+                .select__delete-button {
+                    all: unset;
+                    width: 23px;
+                    height: 23px;
+                    cursor: pointer;
+                    padding: 0;
+                    background-image: url(../icons/close-btn_icon.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 23px;
+                    border-radius: 50%;
+    
+                    &:hover {
+                        background-image: url(../icons/close-hover_icon.svg);
+                    }
+                }
             }
         }
     }
@@ -88,8 +107,6 @@ $main-text: #000448;
         }
     }
 }
-
-
 
 @media screen and (max-width: 600px) {
     .select {

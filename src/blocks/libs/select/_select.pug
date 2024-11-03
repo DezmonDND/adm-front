@@ -5,11 +5,11 @@ mixin select(iconPosition, options, type)
         +button({ type: 'button', class: 'virtual-reception__delete-button', event: 'deleteAllOptions()',})
         ul.select_multiple_options 
           div.select_multiple_option
-            span Опция 
-            +button({ type: 'button', class: 'virtual-reception__delete-button', event: 'deleteOption()',})
+            span Филатов Андрей Сергеевич, Глава города Сургута 
+            +button({ type: 'button', class: 'select__delete-button', event: 'deleteOption()',})
           div.select_multiple_option  
-            span Опция 
-            +button({ type: 'button', class: 'virtual-reception__delete-button', event: 'deleteOption()',})
+            span Филатов Андрей Сергеевич 
+            +button({ type: 'button', class: 'select__delete-button', event: 'deleteOption()',})
       if options
         .select_multiple-menu(style='display: none;')
           each option in options

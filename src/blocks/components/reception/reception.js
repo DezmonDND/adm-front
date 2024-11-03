@@ -1,8 +1,6 @@
 function addFormField(e) {
   const formField = document.querySelector(".fieldset");
-  const userFormContainer = document.querySelector(
-    ".fieldset_user-contacts"
-  );
+  const userFormContainer = document.querySelector(".fieldset_user-contacts");
   let counter = 0;
 
   e.preventDefault();
@@ -31,13 +29,15 @@ function addFormField(e) {
 
   const newFormField = formField.cloneNode(true);
   newFormField.innerHTML = `
-    <h3 class="${newFormFieldData.cls_title}">${newFormFieldData.title}</h3>
+    <div class='fieldset_new-author'>
+      <h3 class="${newFormFieldData.cls_title}">${newFormFieldData.title}</h3>
+      <button class="fieldset__delete-button" onclick="deleteFormField(this)"></button>
+    </div>
     <div class="fieldset__answers">
       ${newFormFieldData.inputs
         .map(
           (input) => `
           <input class="input" type="text" placeholder="${input.placeholder}" name="${input.name}">
-          <span class="fieldset__span">${newFormFieldData.span}</span>
       `
         )
         .join("")}
@@ -46,6 +46,21 @@ function addFormField(e) {
 
   counter++;
   userFormContainer.appendChild(newFormField);
+}
+
+function isFormFieldFilled(formField) {
+  const inputs = formField.querySelectorAll(".input");
+  for (const input of inputs) {
+    if (input.value.trim() === "") {
+      return false;
+    }
+  }
+  return true;
+}
+
+function deleteFormField(button) {
+  const fieldset = button.closest(".fieldset");
+  fieldset.remove();
 }
 
 function addDocument() {
@@ -60,7 +75,7 @@ function addDocument() {
     for (let i = 0; i < curFiles.length; i++) {
       const listItem = document.createElement("li");
       listItem.classList.add("reception__document");
-      list.style.display = 'flex';
+      list.style.display = "flex";
 
       const button = document.createElement("button");
       button.classList.add("button", "reception__delete-button");

@@ -22,7 +22,7 @@
 @use '../../blocks/components/footer/main/footer.scss';
 @use '../../blocks/components/header/main/header.scss';
 @use '../../blocks/components/interview/list/interviews.scss';
-@use '../../blocks/components/interview/form/interviews-full.scss';
+@use '../../blocks/components/interview/form/interviews-form.scss';
 @use '../../blocks/components/thanks/thanks.scss';
 @use '../../blocks/components/user-profile/user-profile.scss';
 @use '../../blocks/components/projects/project-card.scss';
@@ -72,122 +72,58 @@ body {
   }
 }
 
-  .interview-form {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 864px;
-    width: 100%;
-    margin: auto;
-    align-items: baseline;
-  }
+.main__title {
+  margin: 20px 0 20px;
+}
 
-  .main__title {
-    margin: 20px 0 20px;
-  }
+.main__interviews {
+  display: flex;
+  margin: 40px 0 40px;
+}
 
-  .main__interviews {
-    display: flex;
-    margin: 40px 0 40px;
-  }
+.components {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+  margin: 20px 0 20px;
+}
 
-  .components {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 20px;
-    margin: 20px 0 20px;
-  }
+@media screen and (max-width: 1000px) {
+  .main {
+    padding: 0 20px 40px;
 
-  @media screen and (max-width: 1000px) {
-    .main {
-      padding: 0 20px 40px;
-
-      .main__description {
-        margin-bottom: 30px;
-      }
-
-      .main__title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 28px;
-        margin-bottom: 18px;
-      }
-
-      .interview-form {
-        margin-top: 32px;
-      }
-
-      .virtual-receprion__form {
-        .virtual-receprion__content {
-          .virtual-reception__title {
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-          }
-        }
-      }
+    .main__description {
+      margin-bottom: 30px;
     }
 
-    .virtual-reception__feedback {
-      margin-top: 40px;
+    .main__title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 18px;
     }
 
-    .virtual-reception__buttons {
-      gap: 47px;
-      margin-top: 20px;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .main {
-      padding: 0 27px 40px;
-
-      .main__title {
-        font-size: 20px;
-        line-height: 24px;
-        margin: 11px 0 16px;
-      }
-
-      .main__description {
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 32px;
-      }
-
-      .interview-form {
-        margin-top: 3px;
-        gap: 33px;
-      }
-
-      .virtual-receprion__form {
-        .virtual-receprion__content {
-          .virtual-reception__title {
-            font-size: 16px;
-            line-height: 12px;
-            margin-bottom: 28px;
-          }
-
-          .virtual-reception__select {
-            gap: 16px;
-          }
-
-          .virtual-reception__field-title {
-            margin-bottom: 13px;
-          }
-        }
-      }
-
-      .virtual-reception__job-field {
-        margin: 26px 0 26px;
-      }
-
-      .virtual-reception__feedback {
-        margin: 38px 0 0;
-      }
-
-      .virtual-reception__buttons {
-        gap: 38px;
-      }
+    .interview-form {
+      margin-top: 32px;
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 0 27px 40px;
+
+    .main__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 11px 0 16px;
+    }
+
+    .main__description {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 32px;
+    }
+  }
+}
