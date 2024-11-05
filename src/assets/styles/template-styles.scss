@@ -35,6 +35,9 @@
 @use '../../blocks/components/biography/biography.scss';
 @use '../../blocks/libs/multiselect/multi-select.scss';
 @use '../../blocks/components/news/news.scss';
+@use '../../blocks/components/main-title/main-title.scss';
+@use '../../blocks/components/main-services/main-services.scss';
+@use '../../blocks/components/main-links/main-links.scss';
 
 * {
   font-family: "Inter", sans-serif;
@@ -53,8 +56,9 @@ body {
 }
 
 .main {
-  box-sizing: border-box;
   max-width: 1440px;
+  box-sizing: border-box;
+  align-items: center;
   width: 100%;
   display: flex;
   flex-direction: column;

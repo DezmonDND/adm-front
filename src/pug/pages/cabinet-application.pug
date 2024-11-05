@@ -12,25 +12,24 @@ block content
         +user_profile({
             icon: 'user_avatar.png',
             name: 'Валентинов Георгий Викторович',
-            job: 'Должность',
             onclick: 'changeAvatar()',
         })
         +tabs([
             { title: 'Настройки', href: '/' , value: 'Настройки'},
             { title: 'Мои подписки', href: '/' , value: 'Мои подписки'},
             { title: 'Мои инициативные проекты', href: '/' , value: 'Мои инициативные проекты'},
-            { title: 'Мои обращения', href: '/' , value: 'Мои обращения'},
+            { title: 'Мои обращения', href: '/' , value: 'Мои обращения', isActive: true},
             ]) 
-        +projects_array( true, 'projects', [
+        +projects_array( false, 'cabinet', [
             {
-                title: 'Название инициативного проекта',
+                title: 'Номер обращения',
                 date: 'Создан 23 сентября 2024',
                 sort: 'project-card',
                 status: 'Не заполнен',
                 isGoing: false,
                 tag: {
                     sort: 'project-card',
-                    text: 'Не заполнен',
+                    text: 'Состояние обращения',
                     isGoing: 'undefined',
                     status: ''
                 },
@@ -41,14 +40,14 @@ block content
                 }
             },
             {
-                title: 'Название инициативного проекта',
+                title: 'Название подписки',
                 date: 'Создан 23 сентября 2024',
                 sort: 'project-card',
                 status: 'Не заполнен',
                 isGoing: false,
                 tag: {
                     sort: 'project-card',
-                    text: 'Не заполнен',
+                    text: 'На рассмотрении',
                     isGoing: 'false',
                     status: ''
                 },
@@ -59,14 +58,14 @@ block content
                 }
             },
             {
-                title: 'Название инициативного проекта',
+                title: 'Название подписки',
                 date: 'Создан 23 сентября 2024',
                 sort: 'project-card',
                 status: 'Не заполнен',
                 isGoing: false,
                 tag: {
                     sort: 'project-card',
-                    text: 'Выполнен',
+                    text: 'Исполнена',
                     isGoing: 'true',
                     status: ''
                 },
