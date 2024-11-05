@@ -4,17 +4,17 @@
     &-description {
         display: flex;
         padding: 40px 20px;
-        @include desc-text2;
+        @include text-2;
         &-label {
-            @include desc-text3;
             color: $tertiary-text;
+            @include text-3;
             &:nth-of-type(2) {
                 margin-top: 20px;
             }
         }
         &-meta {
-            @include desc-title3;
             display: flex;
+            @include title-3;
             &-item {
                 padding-left: 40px;
                 &:nth-of-type(1) {

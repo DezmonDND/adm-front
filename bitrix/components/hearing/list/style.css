@@ -1,26 +1,42 @@
-/*** START - Desktop-heading ***/
-/*** END - Desktop-heading ***/
-/*** START - Desktop-title ***/
-/*** END - Desktop-title ***/
+/*** Start - FontWeight ***/
+/*** End - FontWeight ***/
+/*** Start - Heading ***/
+/*** Start - Title ***/
+/*** Finish - Title ***/
+/*** Start - Text ***/
+/*** Finish - Text ***/
 .hearing-list {
   padding: 40px 0 0 0;
 }
 .hearing-list h3 {
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .hearing-list h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .hearing-item {
-  font-size: 20px;
-  line-height: 24px;
   display: flex;
   height: 300px;
   border-radius: 12px;
   background: #ebedf4;
   margin-bottom: 24px;
   overflow: hidden;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .hearing-item {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 .hearing-item-title {
   height: 190px;
@@ -42,11 +58,18 @@
   padding-right: 24px;
 }
 .hearing-item-labels span {
-  font-size: 16px;
-  line-height: 24px;
   color: #78839c;
   font-weight: 300;
   display: block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .hearing-item-labels span {
+    font-size: 10px;
+    line-height: 16px;
+  }
 }
 .hearing-item-link {
   width: 533px;

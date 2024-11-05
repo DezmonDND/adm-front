@@ -1,7 +1,10 @@
-/*** START - Desktop-heading ***/
-/*** END - Desktop-heading ***/
-/*** START - Desktop-title ***/
-/*** END - Desktop-title ***/
+/*** Start - FontWeight ***/
+/*** End - FontWeight ***/
+/*** Start - Heading ***/
+/*** Start - Title ***/
+/*** Finish - Title ***/
+/*** Start - Text ***/
+/*** Finish - Text ***/
 .hearing-preview {
   max-height: 738px;
   position: relative;
@@ -24,13 +27,20 @@
   top: 0;
 }
 .hearing-preview-title {
-  font-size: 32px;
-  line-height: 38px;
   max-width: 890px;
   color: #fff;
   position: absolute;
   bottom: 44px;
   left: 40px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+@media (max-width: 768px) {
+  .hearing-preview-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .hearing-preview-play {
   position: absolute;

@@ -1,25 +1,49 @@
-/*** START - Desktop-heading ***/
-/*** END - Desktop-heading ***/
-/*** START - Desktop-title ***/
-/*** END - Desktop-title ***/
+/*** Start - FontWeight ***/
+/*** End - FontWeight ***/
+/*** Start - Heading ***/
+/*** Start - Title ***/
+/*** Finish - Title ***/
+/*** Start - Text ***/
+/*** Finish - Text ***/
 .hearing-detail-description {
   display: flex;
   padding: 40px 20px;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .hearing-detail-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 .hearing-detail-description-label {
+  color: #78839c;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  color: #78839c;
+}
+@media (max-width: 768px) {
+  .hearing-detail-description-label {
+    font-size: 10px;
+    line-height: 16px;
+  }
 }
 .hearing-detail-description-label:nth-of-type(2) {
   margin-top: 20px;
 }
 .hearing-detail-description-meta {
+  display: flex;
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  display: flex;
+}
+@media (max-width: 768px) {
+  .hearing-detail-description-meta {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 .hearing-detail-description-meta-item {
   padding-left: 40px;

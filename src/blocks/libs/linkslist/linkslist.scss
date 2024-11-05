@@ -7,10 +7,10 @@
         border-radius: 8px;
         margin-bottom: 12px;
         background: $grey-adm;
-        @include desc-h4;
         color: $main-text;
         padding: 20px;
         text-decoration: none;
+        @include desc-h4;
         &:hover {
             transition: box-shadow 0.3s ease-in-out;
             background: $services-hover;

@@ -19,12 +19,12 @@
         @include img-bg();
     }
     &-title {
-        @include desc-title1;
         max-width: 890px;
         color: #fff;
         position: absolute;
         bottom: 44px;
         left: 40px;
+        @include title-1;
     }
     &-play {
         position: absolute;
