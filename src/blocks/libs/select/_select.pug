@@ -1,5 +1,10 @@
-mixin select(cls, iconPosition, options)
-  select(class=`select select-${cls} select-icon-${iconPosition}`)
-    if options
-      each option in options
-        option(class=`select__option` value=option.value)= option.text
+include ../multiselect/_multi-select.pug
+
+mixin select(iconPosition, options, type)
+  if type === 'multiple'  
+    +multi_select()
+  else
+    select(class=`select ${iconPosition ? `select-icon-${iconPosition}` : ''}`)
+      if options
+        each option in options
+          option(class=`select__option` value=option.value)= option.text

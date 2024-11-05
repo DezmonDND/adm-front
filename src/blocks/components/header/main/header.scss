@@ -43,7 +43,7 @@ $primary-color: #004CC4;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 28px;
+                gap: 20px;
 
                 .header__link {
                     font-weight: 600;
@@ -100,7 +100,7 @@ $primary-color: #004CC4;
 
         .header__buttons {
             display: flex;
-            gap: 29px;
+            gap: 21px;
 
             .header__eye-link {
                 display: flex;
@@ -129,7 +129,7 @@ $primary-color: #004CC4;
         align-items: center;
         justify-content: space-between;
         padding: 20px 64px;
-        gap: 27px;
+        gap: 24px;
 
         .header__main-links {
             display: flex;
@@ -166,7 +166,7 @@ $primary-color: #004CC4;
         .header__bottom-links {
             display: flex;
             align-items: center;
-            gap: 21px;
+            gap: 16px;
 
             .header__link {
                 font-weight: 600;

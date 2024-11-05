@@ -1,6 +1,6 @@
 mixin form-field(field)
     if field.type === 'checkbox'
-        div(class=`${field.cls}`).form-field
+        div(class=`form-field ${field.cls ? field.cls : ''}`)
             h3(class=`form-field__title`) #{field.title}
             .form-field__answers
                 each checkbox in field.checkboxes
@@ -8,27 +8,27 @@ mixin form-field(field)
                         +checkbox(checkbox)
                         span.form-field__text #{checkbox.text} 
     else if field.type === 'radio'
-        div(class=`${field.cls}`).form-field
-            h3(class=`${field.cls_title}`).form-field__title #{field.title}
+        div(class=`form-field ${field.cls ? field.cls : ''}`)
+            h3(class=`form-field__title ${field.cls_title ? field.cls_title : ''}`) #{field.title}
             .form-field__answers
                 each checkbox in field.checkboxes
                     .form-field__input
                         +checkbox(checkbox)
                         span.form-field__text #{checkbox.text} 
     else if field.type === 'textarea'
-        div(class=`${field.cls}`).form-field.form-field_inputs
-            h3(class=`${field.cls_title}`).form-field__title #{field.title}
+        div(class=`form-field form-field_inputs ${field.cls ? field.cls : ''}`)
+            h3(class=`form-field__title ${field.cls_title ? field.cls_title : ''}`) #{field.title}
             +textarea(field.options, field.error)
             if field.error
                 span(class=`form-field__span ${field.error ? 'span_error' : ''}`) #{field.span}              
     else if field.type === 'select'
-        div(class=`${field.cls}`).form-field.form-field_inputs
-            h3(class=`${field.cls_title}`).form-field__title #{field.title}
+        div(class=`form-field form-field_inputs ${field.cls ? field.cls : ''}`)
+            h3(class=`form-field__title ${field.cls_title ? field.cls_title : ''}`) #{field.title}
             //- +select(field.options, field.error, field.iconPosition)
             //- span(class=`form-field__span ${field.error ? 'span_error' : ''}`) #{field.span}              
     else
-        div(class=`${field.cls}`).form-field.form-field_inputs
-            h3(class=`${field.cls_title}`).form-field__title #{field.title}
+        div(class=`form-field form-field_inputs ${field.cls ? field.cls : ''}`)
+            h3(class=`form-field__title ${field.cls_title ? field.cls_title : ''}`) #{field.title}
             .form-field__input-list
                 each input in field.inputs
                     +input(input, input.error)

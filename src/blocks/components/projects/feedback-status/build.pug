@@ -1,0 +1,22 @@
+include ../_project-card.pug
+include ../../../components/user-profile/_user-profile.pug
+include ../../../components/title/_title.pug
+include ../../../components/tabs/_tabs.pug 
+include ../../../components/search/_search.pug 
+include ../../../libs/inputs/_inputs.pug
+include ../../../libs/tab-buttons/_tab-buttons.pug
+include ../../../libs/search-button/_search-button.pug 
+include ../../../libs/tags/_tags.pug 
+include ../../../libs/checkbox/_checkbox.pug
+include ../../../libs/buttons/_buttons.pug 
+
++title({
+    title: 'Узнать статус обращения'
+    })
+.feedback-status
+    .feedback-status__container 
+        .feedback-status__title Введите выданный номер обращения
+        form.feedback-status__form
+        +search(
+        {name: 'number', size: 'l', placeholder: 'Номер обращения', type: 'search'},
+            false, 'l', 'getValues()', 'feedbacks',)   

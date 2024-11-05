@@ -1,0 +1,40 @@
+mixin fieldset(field)
+    if field.type === 'checkbox'
+        fieldset(class=`${field.cls}`).fieldset
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            .fieldset__answers_checkboxes
+                each checkbox in field.checkboxes
+                    .fieldset__checkboxes
+                        +checkbox(checkbox)
+    else if field.type === 'radio'
+        fieldset(class=`${field.cls}`).fieldset
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            .fieldset__answers_checkboxes
+                each checkbox in field.checkboxes
+                    .fieldset__checkboxes
+                        +checkbox(checkbox)
+    else if field.type === 'textarea'
+        fieldset.fieldset
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            .fieldset__answers
+                +textarea(field.options, field.error).fieldset__textarea
+                if field.error
+                    span(class=`fieldset__span ${field.error ? 'fieldset_error' : ''}`) #{field.span}              
+    else if field.type === 'select'
+        fieldset.fieldset
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            .fieldset__answers
+                +select(field.iconPosition, field.options, 'select')
+    else if field.type === 'multiple'
+        fieldset.fieldset
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            .fieldset__answers
+                +select(field.iconPosition, field.options, 'multiple')            
+    else
+        fieldset(class=`fieldset ${field.cls ? `fieldset_${field.cls}` : ""}`)
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            .fieldset__answers
+                each input in field.inputs
+                    +input(input, input.error)
+                    if input.error
+                        span(class=`fieldset__span ${input.error ? 'fieldset_error' : ''}`) #{input.span}

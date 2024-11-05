@@ -1,7 +1,7 @@
 mixin tag(options)
     if options.status === 'live' || options.status === 'RSS'
-        button(onclick=options.onclick class=`tag tag_${options.sort} tag_record tag_${options.status}`) 
+        a(href=options.href class=`tag tag_${options.sort} tag_record tag_${options.status}`) 
             img(src = `../../icons/${options.status}_icon.svg` class=`tag_icon`)
             span.tag_span #{options.text}
     else 
-        button(class=`tag tag_${options.sort} tag_${options.status} ${options.isGoing ? 'tag_event_true': 'tag_event_false'}` type='button') #{options.text}
+        button(class=`tag tag_${options.sort} tag_${options.status} ${options.isGoing ? `tag_event_${options.isGoing}` : ''}` type='button') #{options.text}

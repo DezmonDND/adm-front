@@ -5,7 +5,7 @@
 
 .interviews_array {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 32%);
   max-width: 1311px;
   width: 100%;
   align-items: center;
@@ -36,7 +36,7 @@
 .interviews_array .interview .interview__content .iinterview__dates {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 .interviews_array .interview .interview__content .iinterview__dates .iinterview__date {
   font-size: 16px;
@@ -52,24 +52,26 @@
   flex-direction: column;
   gap: 23px;
   height: 100%;
+  overflow: hidden;
+  margin-top: 20px;
 }
 .interviews_array .interview .interview__content .iinterview__description .iinterview__title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 600;
-  max-height: 84px;
-  height: 100%;
-  margin-top: 19px;
-  -webkit-line-clamp: 3;
-  position: relative;
-  overflow: hidden;
   display: -webkit-box;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .interviews_array .interview .interview__content .iinterview__description .interview__text {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .interviews_array .interview .iinterview__infos {
   display: flex;
@@ -81,6 +83,7 @@
   color: #78839C;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
 }
 .interviews_array .interview .iinterview__infos .iinterview__user-status {
   font-weight: 500;
@@ -100,11 +103,11 @@
     min-height: 288px;
   }
   .interviews_array .interview .interview__content {
-    padding: 11px 20px 20px;
+    padding: 12px 24px 19px;
     gap: 25px;
   }
   .interviews_array .interview .interview__content .iinterview__dates {
-    gap: 11px;
+    gap: 9px;
   }
   .interviews_array .interview .interview__content .iinterview__dates .iinterview__date {
     font-size: 12px;
@@ -112,11 +115,12 @@
   }
   .interviews_array .interview .interview__content .iinterview__description {
     gap: 12px;
+    margin-top: 14px;
   }
   .interviews_array .interview .interview__content .iinterview__description .iinterview__title {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 13px;
+    margin-top: 0;
   }
   .interviews_array .interview .interview__content .iinterview__description .interview__text {
     font-size: 13px;
@@ -140,8 +144,14 @@
   }
   .interviews_array .interview .interview__content {
     gap: 0;
+    padding: 12px 20px 19px;
+  }
+  .interviews_array .interview .interview__content .interview__info .iinterview__dates .tag_interviews-array {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 16px;
   }
   .interviews_array .interview .interview__content .iinterview__description {
-    margin: 0;
+    margin: 13 0 0;
   }
 }

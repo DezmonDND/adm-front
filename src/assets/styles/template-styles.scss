@@ -22,17 +22,28 @@
 @use '../../blocks/components/footer/main/footer.scss';
 @use '../../blocks/components/header/main/header.scss';
 @use '../../blocks/components/interview/list/interviews.scss';
-@use '../../blocks/components/interview/form/interviews-full.scss';
+@use '../../blocks/components/interview/form/interviews-form.scss';
 @use '../../blocks/components/thanks/thanks.scss';
 @use '../../blocks/components/user-profile/user-profile.scss';
 @use '../../blocks/components/projects/project-card.scss';
 @use '../../blocks/components/projects/projects-array.scss';
 @use '../../blocks/components/title/title.scss';
+@use '../../blocks/components/fieldset/fieldset.scss';
+@use '../../blocks/components/feedbacks/feedbacks.scss';
+@use '../../blocks/components/reception/reception.scss';
+@use '../../blocks/components/biography/biography-card.scss';
+@use '../../blocks/components/biography/biography.scss';
+@use '../../blocks/libs/multiselect/multi-select.scss';
+@use '../../blocks/components/news/news.scss';
+@use '../../blocks/components/main-title/main-title.scss';
+@use '../../blocks/components/main-services/main-services.scss';
+@use '../../blocks/components/main-links/main-links.scss';
 
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }
 
 body {
@@ -41,11 +52,13 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  color: #000000;
 }
 
 .main {
-  box-sizing: border-box;
   max-width: 1440px;
+  box-sizing: border-box;
+  align-items: center;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -60,101 +73,11 @@ body {
 
   .main__description {
     max-width: 866px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     font-size: 16px;
     line-height: 24px;
 
   }
-
-  .interview-form {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 866px;
-    width: 100%;
-    margin: auto;
-    align-items: baseline;
-  }
-
-  .virtual-receprion__form {
-    .virtual-receprion__content {
-      display: flex;
-      flex-direction: column;
-      max-width: 866px;
-      width: 100%;
-
-      .virtual-reception__title {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        margin-bottom: 30px;
-      }
-
-      .virtual-reception__select {
-        display: flex;
-        flex-direction: column;
-        gap: 26px;
-      }
-
-      .virtual-reception__field-title {
-        margin-bottom: 24px;
-      }
-    }
-  }
-}
-
-.virtual-reception__job-field {
-  margin: 34px 0 33px;
-}
-
-.virtual-reception__documents__list {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  max-width: 866px;
-  margin: 11px 0 36px;
-  gap: 8px;
-
-  .virtual-reception__document {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 18px;
-    cursor: pointer;
-
-    &:hover {
-
-      .virtual-reception__delete-button {
-        display: block;
-      }
-    }
-
-    .virtual-reception__document-description {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 16px 12px;
-      border-radius: 8px;
-      background-color: #FAFAFA;
-      width: 100%;
-
-      .virtual-reception__document-title {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 16px;
-      }
-    }
-  }
-}
-
-.virtual-reception__user-contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.virtual-reception__field-title_email {
-  margin: 2px 0 28px;
 }
 
 .main__title {
@@ -164,21 +87,6 @@ body {
 .main__interviews {
   display: flex;
   margin: 40px 0 40px;
-}
-
-.virtual-reception__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 53px;
-}
-
-.virtual-reception__feedback {
-  margin: 45px 0 0;
-}
-
-.virtual-reception__feedback-title {
-  margin: 0;
 }
 
 .components {
@@ -201,25 +109,12 @@ body {
       font-weight: 600;
       font-size: 24px;
       line-height: 28px;
+      margin-bottom: 18px;
     }
 
     .interview-form {
-      margin-top: 26px;
+      margin-top: 32px;
     }
-
-    .virtual-receprion__form {
-      .virtual-receprion__content {
-        .virtual-reception__title {
-          font-weight: 600;
-          font-size: 20px;
-          line-height: 24px;
-        }
-      }
-    }
-  }
-
-  .virtual-reception__buttons {
-    gap: 47px;
   }
 }
 
@@ -230,46 +125,13 @@ body {
     .main__title {
       font-size: 20px;
       line-height: 24px;
-      margin: 16px 0 20px;
-
+      margin: 11px 0 16px;
     }
 
     .main__description {
       font-size: 12px;
       line-height: 18px;
-      margin-bottom: 26px;
-    }
-
-    .interview-form {
-      margin-top: 6px;
-      gap: 27px;
-    }
-
-    .virtual-receprion__form {
-      .virtual-receprion__content {
-        .virtual-reception__title {
-          font-size: 16px;
-          line-height: 12px;
-        }
-        .virtual-reception__select {
-          gap: 16px;
-        }
-        .virtual-reception__field-title {
-          margin-bottom: 13px;
-        }
-      }
-    }
-
-    .virtual-reception__job-field {
-      margin: 34px 0 27px;
-    }
-
-    .virtual-reception__feedback {
-      margin: 38px 0 0;
-    }
-
-    .virtual-reception__buttons {
-      gap: 38px;
+      margin-bottom: 32px;
     }
   }
 }

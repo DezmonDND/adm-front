@@ -19,7 +19,7 @@
 .interview-full .interview-full__container .interview-full__info {
   display: flex;
   align-items: center;
-  gap: 29px;
+  gap: 25px;
 }
 .interview-full .interview-full__container .interview-full__info .interview-full__date {
   font-weight: 600;
@@ -50,11 +50,6 @@
   line-height: 24px;
 }
 
-.input-interview-full {
-  padding: 22px;
-  margin: 25px 0 10px;
-}
-
 .tag_interview-full {
   font-weight: 600;
   font-size: 16px;
@@ -62,12 +57,22 @@
   padding: 2px 24px;
 }
 
+.interview-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 864px;
+  width: 100%;
+  margin: auto;
+  align-items: baseline;
+}
+
 @media screen and (max-width: 1000px) {
   .interview-full {
     border-radius: 8px;
   }
   .interview-full .interview-full__container {
-    padding: 33px;
+    padding: 28px;
     gap: 24px;
   }
   .interview-full .interview-full__container .interview-full__description {
@@ -96,10 +101,15 @@
 }
 @media screen and (max-width: 600px) {
   .interview-full {
-    padding: 0 21px;
+    padding: 10px 20px;
+    margin-top: 7px;
   }
   .interview-full .interview-full__container {
-    padding: 12px 0;
+    padding: 10px 0;
+    gap: 20px;
+  }
+  .interview-full .interview-full__container .interview-full__info {
+    gap: 20px;
   }
   .interview-full .interview-full__container .interview-full__description .interview-full__title {
     font-size: 20px;
@@ -109,11 +119,7 @@
     font-size: 12px;
     line-height: 18px;
   }
-  .input-interview-full {
-    border-radius: 4px;
-    padding: 12px;
-    margin: 12px 0 3px;
-    font-size: 12px;
-    line-height: 18px;
+  .tag_interview-full {
+    padding: 6px 17px;
   }
 }

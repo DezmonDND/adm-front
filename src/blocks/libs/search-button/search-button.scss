@@ -28,3 +28,13 @@ $primary-color: #004CC4;
 .search-header {
     max-width: 693px;
 }
+
+@media screen and (width: 1000px) {
+    .search {
+        .search__button_l {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+}

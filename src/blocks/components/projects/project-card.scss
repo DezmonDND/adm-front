@@ -7,7 +7,7 @@
         display: flex;
         align-items: center;
         gap: 24px;
-        padding: 26px 24px;
+        padding: 24px 24px;
 
         .project-card__info {
             display: flex;
@@ -17,7 +17,7 @@
                 margin: 0;
                 font-weight: 600;
                 font-size: 20px;
-                line-height: 24px;
+                line-height: 28px;
             }            
 
             .project-card__date {
@@ -41,15 +41,25 @@
 @media screen and (max-width: 1000px) {
     .project-card {
         .project-card__content {
+            padding: 19px 20px;
 
             .checkbox {}
 
             .project-card__info {
-                .project-card__title {}
+                .project-card__title {
+                    font-size: 16px;
+                }
 
-                .project-card__date {}
+                .project-card__date {
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin: 9px 0 20px;
+                }
 
-                .project-card__statu {}
+                .project-card__statu {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
 
             }
         }
@@ -59,15 +69,24 @@
 @media screen and (max-width: 600px) {
     .project-card {
         .project-card__content {
+            padding: 20px;
 
             .checkbox {}
 
             .project-card__info {
-                .project-card__title {}
+                .project-card__title {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
 
-                .project-card__date {}
+                .project-card__date {
+                    margin: 4px 0 16px;
+                }
 
-                .project-card__statu {}
+                .project-card__statu {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
 
             }
         }

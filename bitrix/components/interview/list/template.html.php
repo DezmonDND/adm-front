@@ -46,7 +46,7 @@
     <div class="interview__content">
       <div class="interview__info"> 
         <div class="iinterview__dates"> 
-          <button class="tag tag_interviews-array tag_undefined tag_event_false" type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
+          <button class="tag tag_interviews-array tag_undefined " type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
@@ -60,7 +60,7 @@
     <div class="interview__content">
       <div class="interview__info"> 
         <div class="iinterview__dates"> 
-          <button class="tag tag_interviews-array tag_undefined tag_event_false" type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
+          <button class="tag tag_interviews-array tag_undefined " type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Работа местных властей и общественные инициативы">Работа местных властей и общественные инициативы</h3>
@@ -74,7 +74,7 @@
     <div class="interview__content">
       <div class="interview__info"> 
         <div class="iinterview__dates"> 
-          <button class="tag tag_interviews-array tag_undefined tag_event_false" type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
+          <button class="tag tag_interviews-array tag_undefined " type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>

@@ -4,10 +4,13 @@ $tertiary-text: #78839C;
     display: flex;
     align-items: center;
     color: $tertiary-text;
-    padding: 20px 0;
+    padding: 20px 0 10px;
     font-size: 14px;
     line-height: 16px;
     gap: 3px;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
 
     .breadcrumbs__icon-link {
         &:hover {
@@ -16,14 +19,16 @@ $tertiary-text: #78839C;
 
         .breadcrumbs__icon {
             margin-right: 16px;
-            width: 24px;
+            width: 21px;
         }
     }
 
     .breadcrumbs__container {
         display: flex;
         gap: 9px;
-        overflow: hidden;
+        overflow: scroll;
+        scrollbar-width: none;
+        
     }
 
     .span {
@@ -33,7 +38,13 @@ $tertiary-text: #78839C;
 
 @media screen and (max-width: 1000px) {
     .breadcrumbs {
-        padding: 12px 0;
+        padding: 14px 0;
+
+        .breadcrumbs__icon-link {
+            .breadcrumbs__icon {
+                margin-right: 12px;
+            }
+        }
 
         .breadcrumbs__container {
             gap: 8px;

@@ -21,7 +21,7 @@
       <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input-undefined input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+          <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
           <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
         </form>
         <div class="header__bottom-links"> <a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты </a></div>
@@ -31,66 +31,102 @@
     </header>
     <main class="main">
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"><img class="breadcrumbs__icon" src="/local/templates/surgut/icons/arrow-left_link-icon.svg" alt="Стрелка"/></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Специальное событие</a><span class="span">/</span><span class="breadcrumb_link">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</span>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Опросы</span>
         </div>
       </div>
-      <div class="user-profile"> 
-        <button class="user-profile__button" onclick="changeAvatar()" type="button"> <img class="user-profile__avatar" src="/local/templates/surgut/img/user_avatar.png" alt="Аватар"/></button>
-        <div class="user-profile__info"> 
-          <h2 class="user-profile__name">Валентинов Георгий Викторович</h2><span class="user-profile_job">Должность     </span>
+      <h2 class="main__title">Опросы  
+        <div class="tabs"><a class="tab-button tab-button_active" href="/" value="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочие">Прочие</a>
         </div>
-      </div>
-      <div class="tabs tabs_projects">
-        <button class="tab-button tab-button-m" onclick="" type="button" value="Настройки">Настройки</button>
-        <button class="tab-button tab-button-m" onclick="" type="button" value="Мои подписки">Мои подписки</button>
-        <button class="tab-button tab-button-m" onclick="" type="button" value="Мои инициативные проекты">Мои инициативные проекты</button>
-        <button class="tab-button tab-button-m" onclick="" type="button" value="Мои обращения">Мои обращения</button>
-      </div>
-      <div class="projects-array">
-        <div class="projects-array__content">
-          <div class="projects-array__edit-buttons">
-            <button class="button button_blue projects-array__button" onclick="addProject()"><span class="button_span">Добавить инициативный проект</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/>
-            </button>
-            <button class="button button_white projects-array__button" onclick="editProject()"><span class="button_span">Редактировать текущие</span></button>
-          </div>
-          <div class="projects-array__list">
-            <div class="project-card"> 
-              <div class="project-card__content"> 
-                <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
-                <label for="1"></label>
-                <div class="project-card__info"> 
-                  <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-                  <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
+        <div class="interviews_array">
+          <div class="interview">
+            <div class="interview__content">
+              <div class="interview__info"> 
+                <div class="iinterview__dates"> 
+                  <button class="tag tag_interviews-array tag_undefined tag_event_true" type="button">Идет</button><span class="iinterview__date">до 29 сентября</span>
                 </div>
-              </div>
-            </div>
-            <div class="project-card"> 
-              <div class="project-card__content"> 
-                <input class="сheckbox " type="checkbox" id="2" name="undefined" checked="checked"/>
-                <label for="2"></label>
-                <div class="project-card__info"> 
-                  <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-                  <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
+                <div class="iinterview__description"> 
+                  <h3 class="iinterview__title" title="Здравоохранение в Сургуте Здравоохранение в Сургуте Работа местных властей и общественные инициативы">Здравоохранение в Сургуте Здравоохранение в Сургуте Работа местных властей и общественные инициативы</h3>
+                  <p class="interview__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услугОцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
                 </div>
-              </div>
-            </div>
-            <div class="project-card"> 
-              <div class="project-card__content"> 
-                <input class="сheckbox " type="checkbox" id="3" name="undefined" checked="checked"/>
-                <label for="3"></label>
-                <div class="project-card__info"> 
-                  <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-                  <button class="tag tag_project-card tag_ tag_event_true" type="button">Выполнен</button>
-                </div>
-              </div>
+                <div class="iinterview__infos"> <span class="iinterview__votes">319 голосов</span><span class="iinterview__user-status">Вы участвовали</span></div>
+              </div><a class="button button_link button_blue button_interview" href="/" target="_blank"><span class="button_span">Участвовать</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
             </div>
           </div>
-          <div class="projects-array__save-buttons">
-            <button class="button button_blue projects-array__button" onclick="deleteProject()"><span class="button_span">Удалить</span><img class="icon" src="/local/templates/surgut/icons/delete_icon.svg" alt="delete_icon.svg"/>
-            </button>
-            <button class="button button_white projects-array__button projects-array__button_save_button" onclick="cancelEdit()"><span class="button_span">Отмена</span></button>
+          <div class="interview">
+            <div class="interview__content">
+              <div class="interview__info"> 
+                <div class="iinterview__dates"> 
+                  <button class="tag tag_interviews-array tag_undefined tag_event_true" type="button">Идет</button><span class="iinterview__date">до 29 сентября</span>
+                </div>
+                <div class="iinterview__description"> 
+                  <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
+                  <p class="interview__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
+                </div>
+                <div class="iinterview__infos"> <span class="iinterview__votes">319 голосов</span><span class="iinterview__user-status">Вы участвовали</span></div>
+              </div><a class="button button_link button_blue button_interview" href="/" target="_blank"><span class="button_span">Участвовать</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
+            </div>
+          </div>
+          <div class="interview">
+            <div class="interview__content">
+              <div class="interview__info"> 
+                <div class="iinterview__dates"> 
+                  <button class="tag tag_interviews-array tag_undefined tag_event_true" type="button">Идет</button><span class="iinterview__date">до 29 сентября</span>
+                </div>
+                <div class="iinterview__description"> 
+                  <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
+                  <p class="interview__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
+                </div>
+                <div class="iinterview__infos"> <span class="iinterview__votes">319 голосов</span><span class="iinterview__user-status">Вы участвовали</span></div>
+              </div><a class="button button_link button_blue button_interview" href="/" target="_blank"><span class="button_span">Участвовать</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
+            </div>
+          </div>
+          <div class="interview">
+            <div class="interview__content">
+              <div class="interview__info"> 
+                <div class="iinterview__dates"> 
+                  <button class="tag tag_interviews-array tag_undefined " type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
+                </div>
+                <div class="iinterview__description"> 
+                  <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
+                  <p class="interview__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
+                </div>
+                <div class="iinterview__infos"> <span class="iinterview__votes">319 голосов</span><span class="iinterview__user-status">Вы участвовали</span></div>
+              </div><a class="button button_link button_blue button_interview" href="/" target="_blank"><span class="button_span">Результаты</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
+            </div>
+          </div>
+          <div class="interview">
+            <div class="interview__content">
+              <div class="interview__info"> 
+                <div class="iinterview__dates"> 
+                  <button class="tag tag_interviews-array tag_undefined " type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
+                </div>
+                <div class="iinterview__description"> 
+                  <h3 class="iinterview__title" title="Работа местных властей и общественные инициативы">Работа местных властей и общественные инициативы</h3>
+                  <p class="interview__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
+                </div>
+                <div class="iinterview__infos"> <span class="iinterview__votes">319 голосов</span><span class="iinterview__user-status">Вы участвовали</span></div>
+              </div><a class="button button_link button_blue button_interview" href="/" target="_blank"><span class="button_span">Результаты</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
+            </div>
+          </div>
+          <div class="interview">
+            <div class="interview__content">
+              <div class="interview__info"> 
+                <div class="iinterview__dates"> 
+                  <button class="tag tag_interviews-array tag_undefined " type="button">Завершен</button><span class="iinterview__date">до 29 сентября</span>
+                </div>
+                <div class="iinterview__description"> 
+                  <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
+                  <p class="interview__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
+                </div>
+                <div class="iinterview__infos"> <span class="iinterview__votes">319 голосов</span><span class="iinterview__user-status">Вы участвовали</span></div>
+              </div>
+            </div>
           </div>
         </div>
+      </h2>
+      <div class="pagination">
+        <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><span>...</span><a class="pag-button" href="/2/4">4</a><a class="pag-button pag-button_active" href="/2/5">5</a><a class="pag-button" href="/2/6">6</a><span>...</span><a class="pag-button" href="/2/30">30</a>
+        <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
       </div>
     </main>
     <footer class="footer">
@@ -111,17 +147,17 @@
             </li>
           </ul>
           <ul class="footer__category-content">
-            <h5 class="footer__categorie-title">О Сургуте</h5>
+            <h5 class="footer__categorie-title">Городская власть</h5>
             <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Глава города             </a><a class="footer__categorie-link" href="/">Дума города             </a><a class="footer__categorie-link" href="/">Администрация             </a><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a><a class="footer__categorie-link" href="/">Законодательная карта             </a><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a><a class="footer__categorie-link" href="/">Государственные органы             </a>
             </li>
           </ul>
           <ul class="footer__category-content">
-            <h5 class="footer__categorie-title">О Сургуте</h5>
+            <h5 class="footer__categorie-title">Документы</h5>
             <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Важные документы для горожан            </a><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a><a class="footer__categorie-link" href="/">Решения Думы города            </a><a class="footer__categorie-link" href="/">Постановления Главы города            </a><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a><a class="footer__categorie-link" href="/">Постановления Администрации города            </a><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Муниципальные программы            </a><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a>
             </li>
           </ul>
           <ul class="footer__category-content">
-            <h5 class="footer__categorie-title">О Сургуте</h5>
+            <h5 class="footer__categorie-title">Категория</h5>
             <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a>
             </li>
           </ul>
@@ -129,5 +165,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
   </body>
 </html>

@@ -88,11 +88,11 @@ $content-color: #FFFFFF;
     .footer__contacts {
         display: flex;
         align-items: center;
-        gap: 37px;
+        gap: 31px;
         font-weight: 600;
         position: absolute;
-        top: 29px;
-        right: 64px;
+        top: 31px;
+        right: 62px;
 
         .footer__address {
             @include desc-h5();

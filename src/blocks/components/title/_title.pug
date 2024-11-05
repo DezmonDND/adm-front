@@ -2,4 +2,5 @@ mixin title(data)
     .title 
         .title__container 
             .title__name #{data.title}
-            .title__description #{data.description}            
+            if data.description
+                .title__description #{data.description}            

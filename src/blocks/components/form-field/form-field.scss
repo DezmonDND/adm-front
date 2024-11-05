@@ -34,6 +34,17 @@ $interview-end-color: #D10404;
         @include desc-h4;
     }
 
+    .virtual-reception__field-title_email{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 22px;
+    }
+
+    .virtual-reception__feedback-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
     .form-field__answers {
         display: flex;
         flex-direction: column;
@@ -63,7 +74,7 @@ $interview-end-color: #D10404;
 .form-field__input-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
     width: 100%;
 }
 
@@ -85,7 +96,7 @@ $interview-end-color: #D10404;
         }
 
         .form-field__answers {
-            gap: 15px;
+            gap: 20px;
 
             .form-field__input {
                 .form-field__text {
@@ -98,12 +109,21 @@ $interview-end-color: #D10404;
 
 @media screen and (max-width: 600px) {
     .form-field {
-        gap: 13px;
+        gap: 11px;
 
         .form-field__title {
             font-size: 12px;
             line-height: 16px;
         }
+
+        .form-field__input-list {
+            gap: 12px;
+        }
+
+.virtual-reception__feedback-title {
+    font-size: 16px;
+    line-height: 20px;
+}
 
         .virtual-reception__field-title_email {
             font-size: 16px;
@@ -112,7 +132,7 @@ $interview-end-color: #D10404;
         }
 
         .form-field__answers {
-            gap: 9px;
+            gap: 14px;
 
             .form-field__input {
                 .form-field__text {

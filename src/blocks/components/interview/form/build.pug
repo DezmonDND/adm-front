@@ -5,6 +5,7 @@ include ../../../libs/checkbox/_checkbox.pug
 include ../../../libs/textarea/_textarea.pug 
 include ../../../libs/inputs/_inputs.pug 
 include ../../../libs/buttons/_buttons.pug 
+include ../../../libs/select/_select.pug 
 
 form.interview-form
     +form-field(
@@ -14,14 +15,14 @@ form.interview-form
             checkboxes: [
                 { 
                     id: 1, 
-                    text: 'Да', 
+                    label: 'Да', 
                     sort: 'radio',
                     status: false,
                     name: 'radio'
                     },
                 { 
                     id: 2, 
-                    text: 'Нет', 
+                    label: 'Нет', 
                     sort: 'radio',
                     status: false,
                     name: 'radio'
@@ -35,17 +36,17 @@ form.interview-form
             checkboxes: [
                 { 
                     id: 3, 
-                    text: 'Первый вариант',
+                    label: 'Первый вариант',
                     sort: 'checkbox',
                 },
                 { 
                     id: 4,
-                    text: 'Второй вариант',
+                    label: 'Второй вариант',
                     sort: 'checkbox',
                 },
                 { 
                     id: 5, 
-                    text: 'Третий вариант',
+                    label: 'Третий вариант',
                     sort: 'checkbox', 
                 },
                 ],
@@ -58,9 +59,9 @@ form.interview-form
             error: false,
             inputs: [
                 {
-                    placeholder: 'Введите ваш ответ',
-                    name: 'answer3', 
-                    sort: 'interview-full',
+                    placeholder: `Введите ваш ответ`,
+                    name: `answer3`, 
+                    sort: `interview-full`,
                 },
                 ] 
         })
@@ -75,4 +76,38 @@ form.interview-form
                 value: '900'
                     }
         })
+    +form-field(
+        {
+            type: 'select',
+            title: '5. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+            span: 'Вспомогательный текст',
+            error: false,
+            options: {
+                placeholder: 'Введите ваш ответ',
+                value: '900'
+                    }
+        })
+    +select('virtual-reception', 'right', '',
+        [
+            { value: 'Филатов Андрей Сергеевич, Глава города Сургута', text: 'Филатов Андрей Сергеевич, Глава города Сургута' },
+            { value: 'Филатов', text: 'Филатов' },
+            { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+            ],)   
+    +form-field(
+        {
+            type: 'select',
+            title: '6. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+            span: 'Вспомогательный текст',
+            error: false,
+            options: {
+                placeholder: 'Введите ваш ответ',
+                value: '900'
+                    }
+        })
+    +select('virtual-reception', 'right', 'multiple',
+        [
+            { value: 'Филатов Андрей Сергеевич, Глава города Сургута', text: 'Филатов Андрей Сергеевич, Глава города Сургута' },
+            { value: 'Филатов', text: 'Филатов' },
+            { value: 'Глава города Сургута', text: 'Глава города Сургута' }
+            ],)           
     +button({ type: 'button', class: 'button_blue button_interview', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить форму` }) 

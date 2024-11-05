@@ -21,7 +21,7 @@
       <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input-undefined input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+          <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
           <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
         </form>
         <div class="header__bottom-links"> <a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты </a></div>
@@ -40,14 +40,10 @@
           <h2 class="user-profile__name">Валентинов Георгий Викторович</h2><span class="user-profile_job">Должность     </span>
         </div>
       </div>
-      <div class="tabs tabs_projects">
-        <button class="tab-button tab-button-m" onclick="" type="button" value="Настройки">Настройки</button>
-        <button class="tab-button tab-button-m" onclick="" type="button" value="Мои подписки">Мои подписки</button>
-        <button class="tab-button tab-button-m" onclick="" type="button" value="Мои инициативные проекты">Мои инициативные проекты</button>
-        <button class="tab-button tab-button-m" onclick="" type="button" value="Мои обращения">Мои обращения</button>
+      <div class="tabs"><a class="tab-button " href="/" value="Настройки">Настройки</a><a class="tab-button " href="/" value="Мои подписки">Мои подписки</a><a class="tab-button " href="/" value="Мои инициативные проекты">Мои инициативные проекты</a><a class="tab-button " href="/" value="Мои обращения">Мои обращения</a>
       </div>
       <div class="projects-array">
-        <div class="projects-array__content">
+        <div class="projects-array__content projects-array__content">
           <div class="projects-array__edit-buttons">
             <button class="button button_blue projects-array__button" onclick="addProject()"><span class="button_span">Добавить инициативный проект</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/>
             </button>
@@ -57,17 +53,17 @@
             <div class="project-card"> 
               <div class="project-card__content"> 
                 <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
-                <label for="1"></label>
+                <label for="1"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-                  <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
+                  <button class="tag tag_project-card tag_ tag_event_undefined" type="button">Не заполнен</button>
                 </div>
               </div>
             </div>
             <div class="project-card"> 
               <div class="project-card__content"> 
                 <input class="сheckbox " type="checkbox" id="2" name="undefined" checked="checked"/>
-                <label for="2"></label>
+                <label for="2"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
                   <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
@@ -77,7 +73,7 @@
             <div class="project-card"> 
               <div class="project-card__content"> 
                 <input class="сheckbox " type="checkbox" id="3" name="undefined" checked="checked"/>
-                <label for="3"></label>
+                <label for="3"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
                   <button class="tag tag_project-card tag_ tag_event_true" type="button">Выполнен</button>
@@ -111,17 +107,17 @@
             </li>
           </ul>
           <ul class="footer__category-content">
-            <h5 class="footer__categorie-title">О Сургуте</h5>
+            <h5 class="footer__categorie-title">Городская власть</h5>
             <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Глава города             </a><a class="footer__categorie-link" href="/">Дума города             </a><a class="footer__categorie-link" href="/">Администрация             </a><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a><a class="footer__categorie-link" href="/">Законодательная карта             </a><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a><a class="footer__categorie-link" href="/">Государственные органы             </a>
             </li>
           </ul>
           <ul class="footer__category-content">
-            <h5 class="footer__categorie-title">О Сургуте</h5>
+            <h5 class="footer__categorie-title">Документы</h5>
             <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Важные документы для горожан            </a><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a><a class="footer__categorie-link" href="/">Решения Думы города            </a><a class="footer__categorie-link" href="/">Постановления Главы города            </a><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a><a class="footer__categorie-link" href="/">Постановления Администрации города            </a><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Муниципальные программы            </a><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a>
             </li>
           </ul>
           <ul class="footer__category-content">
-            <h5 class="footer__categorie-title">О Сургуте</h5>
+            <h5 class="footer__categorie-title">Категория</h5>
             <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a>
             </li>
           </ul>
@@ -129,5 +125,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
   </body>
 </html>

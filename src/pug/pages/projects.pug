@@ -15,13 +15,13 @@ block content
             job: 'Должность',
             onclick: 'changeAvatar()',
         })
-        +tabs('projects', [
-            { size: 'm', title: 'Настройки', onclick: '' , value: 'Настройки'},
-            { size: 'm', title: 'Мои подписки', onclick: '' , value: 'Мои подписки'},
-            { size: 'm', title: 'Мои инициативные проекты', onclick: '' , value: 'Мои инициативные проекты'},
-            { size: 'm', title: 'Мои обращения', onclick: '' , value: 'Мои обращения'},
+        +tabs([
+            { title: 'Настройки', href: '/' , value: 'Настройки'},
+            { title: 'Мои подписки', href: '/' , value: 'Мои подписки'},
+            { title: 'Мои инициативные проекты', href: '/' , value: 'Мои инициативные проекты'},
+            { title: 'Мои обращения', href: '/' , value: 'Мои обращения'},
             ]) 
-        +projects_array( true, [
+        +projects_array( true, 'projects', [
             {
                 title: 'Название инициативного проекта',
                 date: 'Создан 23 сентября 2024',
@@ -31,7 +31,7 @@ block content
                 tag: {
                     sort: 'project-card',
                     text: 'Не заполнен',
-                    isGoing: false,
+                    isGoing: 'undefined',
                     status: ''
                 },
                 checkbox: {
@@ -49,7 +49,7 @@ block content
                 tag: {
                     sort: 'project-card',
                     text: 'Не заполнен',
-                    isGoing: false,
+                    isGoing: 'false',
                     status: ''
                 },
                 checkbox: {
@@ -67,7 +67,7 @@ block content
                 tag: {
                     sort: 'project-card',
                     text: 'Выполнен',
-                    isGoing: true,
+                    isGoing: 'true',
                     status: ''
                 },
                 checkbox: {

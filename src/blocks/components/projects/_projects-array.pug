@@ -1,9 +1,12 @@
-mixin projects_array(isEdit, projects = [])
+mixin projects_array(isEdit, type, projects = [])
     .projects-array
-        .projects-array__content
-            .projects-array__edit-buttons
-                +button({ type: 'button', class: 'button_blue projects-array__button', event: 'addProject()', icon: 'plus_icon.svg', text: `Добавить инициативный проект` })
-                +button({ type: 'button', class: 'button_white projects-array__button', event: 'editProject()', text: `Редактировать текущие` })
+        div(class=`projects-array__content ${type}-array__content`)
+            if type === 'projects'
+                .projects-array__edit-buttons
+                    +button({ type: 'button', class: 'button_blue projects-array__button', event: 'addProject()', icon: 'plus_icon.svg', text: `Добавить инициативный проект` })
+                    +button({ type: 'button', class: 'button_white projects-array__button', event: 'editProject()', text: `Редактировать текущие` })
+            else if type === 'cabinet' 
+                    +button({ type: 'button', class: 'button_blue cabinet-array__button', event: 'addProject()', icon: 'plus_icon.svg', text: `Создать новое обращение` })
             .projects-array__list
                 each project in projects 
                     +project_card(isEdit, project)

@@ -1,0 +1,106 @@
+.main-services {
+    max-width: 1440px;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 1);
+
+    .main-services__container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 64px 48px;
+        gap: 60px;
+
+        .main-services__search {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 24px;
+
+            .main-services__search-content {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .main-services__label {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+    
+                .search-main-services {
+                    width: 100%;
+                    max-width: none;
+                }
+            }
+
+        }
+
+        .main-services__buttons {
+            display: flex;
+            flex-direction: column;
+
+            .main-services__buttons-title {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 24px;
+            }
+
+            .main-services__buttons-container {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 20px;
+
+                .main-services__button {
+                    justify-content: center;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .main-services {
+
+        .main-services__container {
+
+            .main-services__search {
+                .main-services__label {}
+
+                .search-main-services {}
+
+            }
+
+            .main-services__buttons {
+                .main-services__buttons-title {}
+
+                .main-services__buttons-container {}
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-services {
+
+        .main-services__container {
+
+            .main-services__search {
+                .main-services__label {}
+
+                .search-main-services {}
+
+            }
+
+            .main-services__buttons {
+                .main-services__buttons-title {}
+
+                .main-services__buttons-container {}
+
+            }
+        }
+
+    }
+}

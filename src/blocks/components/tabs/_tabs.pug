@@ -1,4 +1,4 @@
-mixin tabs(sort, buttons_array = [])
-  div(class=`tabs tabs_${sort}`)
-    each button in buttons_array
-      +tab-button(button)      
+mixin tabs(tabs = [])
+  .tabs
+    each tab in tabs
+      +tab-button(tab)      

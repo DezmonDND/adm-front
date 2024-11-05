@@ -1,0 +1,78 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Специальное событие'},
+                { sort: '', href: '/', text: 'В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй'},
+            ],
+        )
+        +user_profile({
+            icon: 'user_avatar.png',
+            name: 'Валентинов Георгий Викторович',
+            onclick: 'changeAvatar()',
+        })
+        +tabs([
+            { title: 'Настройки', href: '/' , value: 'Настройки'},
+            { title: 'Мои подписки', href: '/' , value: 'Мои подписки'},
+            { title: 'Мои инициативные проекты', href: '/' , value: 'Мои инициативные проекты'},
+            { title: 'Мои обращения', href: '/' , value: 'Мои обращения', isActive: true},
+            ]) 
+        +projects_array( false, 'cabinet', [
+            {
+                title: 'Номер обращения',
+                date: 'Создан 23 сентября 2024',
+                sort: 'project-card',
+                status: 'Не заполнен',
+                isGoing: false,
+                tag: {
+                    sort: 'project-card',
+                    text: 'Состояние обращения',
+                    isGoing: 'undefined',
+                    status: ''
+                },
+                checkbox: {
+                    id: '1',
+                    sort: 'checkbox',
+                    status: true,
+                }
+            },
+            {
+                title: 'Название подписки',
+                date: 'Создан 23 сентября 2024',
+                sort: 'project-card',
+                status: 'Не заполнен',
+                isGoing: false,
+                tag: {
+                    sort: 'project-card',
+                    text: 'На рассмотрении',
+                    isGoing: 'false',
+                    status: ''
+                },
+                checkbox: {
+                    id: '2',
+                    sort: 'checkbox',
+                    status: true,
+                }
+            },
+            {
+                title: 'Название подписки',
+                date: 'Создан 23 сентября 2024',
+                sort: 'project-card',
+                status: 'Не заполнен',
+                isGoing: false,
+                tag: {
+                    sort: 'project-card',
+                    text: 'Исполнена',
+                    isGoing: 'true',
+                    status: ''
+                },
+                checkbox: {
+                    id: '3',
+                    sort: 'checkbox',
+                    status: true,
+                }
+            }   
+        ])          

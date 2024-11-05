@@ -12,7 +12,7 @@
   <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
       <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
     <form class="search search-header">
-      <input class="input input-undefined input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+      <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
       <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
     </form>
     <div class="header__bottom-links"> <a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты </a></div>
