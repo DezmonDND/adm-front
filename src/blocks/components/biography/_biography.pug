@@ -1,0 +1,48 @@
+mixin biography(data)
+    .biography 
+        .biography__container
+            .biography__contacts-content         
+                img(src=`../resources/${data.avatar}` class=`biography__avatar`)
+                .biography__contacts 
+                    .biography__phones
+                        h4.biography__phones-title Секретарь приемной
+                        span.biography__phone тел. +7 (3462) 52-20-01
+                        a(href='mailto:priemnaya@admsurgut.ru').biography__phone.biography__link e-mail: priemnaya@admsurgut.ru  
+                    .biography__phones
+                        h4.biography__phones-title Отдел делопроизводства
+                        span.biography__phone тел. +7 (3462) 52 21 57
+                        span.biography__phone тел. +7 (3462) 52 21 75
+                        span.biography__phone факс +7 (3462) 52-21-82
+                        a(href='mailto:gorod@admsurgut.ru').biography__phone.biography__link e-mail: gorod@admsurgut.ru
+                    .biography__phones
+                        h4.biography__phones-title Страницы в социальных сетях
+                        a(href='https://vk.com/filatov_surgut').biography__phone.biography__link https://vk.com/filatov_surgut
+                        a(href='https://t.me/filatov_surgut ').biography__phone.biography__link https://t.me/filatov_surgut   
+            .biography__info
+                .biography__info-content
+                    .biography__user                        
+                        .biography__user-info
+                            h2.biography__name #{data.name}
+                            span.biography__job #{data.job}
+                    .biography__description 
+                        p Родился 1 июня 1973 года в Курске, в 1988 году после окончания 8-го класса вместе с родителями переехал в Югру. Здесь получил первое образование в #[span.biography__description-span Нижневартовском нефтяном техникуме] по специальности «Бурение нефтяных и газовых скважин». 
+                        p В 2004 году закончил Уральскую академию государственной службы по специальности «Государственное и муниципальное управление». Имеет квалификационную степень в сфере управления #[span.biography__description-span MBA (Master of Business Administration)] Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации. 
+                        p.biography__description-span  Кандидат социологических наук. 
+                        p До 2012 года занимался предпринимательской деятельностью. 
+                        p Начиная с 2006 года дважды избирался депутатом муниципального уровня и дважды – депутатом Думы Югры. 
+                        p С 2013 по 2015 год работал заместителем Губернатора ХМАО – Югры. 
+                        p Курировал внутриполитический блок. 
+                        p С 2016 по 2021 год возглавлял Комитет по бюджету, финансам и налоговой политике Думы Югры. 
+                        p 27 февраля 2021 года избран Главой города Сургута. 
+                        p.biography__description-span Член партии «ЕДИНАЯ РОССИЯ».
+                        p Женат, воспитывает двоих сыновей. 
+                        .biography__more-contacts
+                            .biography__more-contacts-content
+                                h5.biography__more-contacts-title Помощник Главы города
+                                p Журавская Татьяна Владимировна, 8 (3462) 522-400
+                            .biography__more-contacts-content
+                                h5.biography__more-contacts-title Советник Главы города
+                                p Ванькова Мария Николаевна, 8 (3462) 522-275
+                            .biography__more-contacts-content
+                                h5.biography__more-contacts-title Советник Главы города
+                                p Фомагин Валерий Борисович, 8 (3462) 522-404        

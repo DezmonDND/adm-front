@@ -31,6 +31,9 @@
 @use '../../blocks/components/fieldset/fieldset.scss';
 @use '../../blocks/components/feedbacks/feedbacks.scss';
 @use '../../blocks/components/reception/reception.scss';
+@use '../../blocks/components/biography/biography-card.scss';
+@use '../../blocks/components/biography/biography.scss';
+@use '../../blocks/libs/multiselect/multi-select.scss';
 
 * {
   font-family: "Inter", sans-serif;

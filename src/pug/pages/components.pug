@@ -2,19 +2,22 @@ extends ../layout
 
 block content   
    main.components
-
+      +multi_select()
       +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас' })
       +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
       +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
       +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 's', text: 'Готово' })
       +checkbox(
-      { id: 'radio', sort: 'radio', status: false }
+         { id: 'radio', sort: 'radio', status: false }
       )
-      +checkbox(
-      { id: 'сheckbox', sort: 'сheckbox', status: true }
+      +checkbox({
+         id: '1',
+         sort: 'checkbox',
+         status: true,
+      }
       )
       +input(
-      {size: 'l', placeholder: 'Введите ваш ответ'}
+         {size: 'l', placeholder: 'Введите ваш ответ'}
       )
       +link( '/',  '', 'Ссылка' , 'link')
       +breadcrumbs([
@@ -22,9 +25,49 @@ block content
       { href: '/about', text: 'О нас' },
       { href: '/contact', text: 'Контакты' }
       ])
-      +tag('RSS', null, 'RSS', 'false')
-      +tag('Новости', null, 'live', 'true')
-      +tag('Новости', null, '', 'true')
+      +tag(
+         {
+            status: 'RSS', 
+            onclick: null, 
+            sort: 'RSS',
+            text: 'RSS',
+            href: '/'
+            })
+      +tag(
+         {
+            status: 'live', 
+            onclick: null, 
+            sort: 'live',
+            text: 'Прямая трансляция',
+            href: '/'
+            })
+      +tag(
+         {
+            isGoing: 'false',
+            status: '', 
+            onclick: null, 
+            sort: '',
+            text: 'Завершен',
+            href: '/'
+            })
+      +tag(
+         {
+            isGoing: 'true',
+            status: '', 
+            onclick: null, 
+            sort: '',
+            text: 'Идет',
+            href: '/'
+            })     
+      +tag(
+         {
+            isGoing: 'undefined',
+            status: '', 
+            onclick: null, 
+            sort: '',
+            text: 'Не определен',
+            href: '/'
+            })              
       +textarea({
          placeholder: 'Введите ваш ответ',
          value: '900'
@@ -96,7 +139,6 @@ block content
       { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
       { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
       ])
-      +pag-button({ size: 'm', title: '', onclick: '' , value: 'Назад', iconPosition: 'right'})      
       +project_card( true, {
          title: 'Название инициативного проекта',
          date: 'Создан 23 сентября 2024',
@@ -115,4 +157,4 @@ block content
             status: true,
          }
          })
-         +pagination(30, 5, 2) 
+         +pagination(6, 3, 2) 

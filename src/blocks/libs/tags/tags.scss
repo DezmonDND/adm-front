@@ -57,6 +57,14 @@ $icons-color: #1A2D82;
     background-color: $red-color;
 }
 
+.tag_event_true {
+    background-color: $green-color-default;
+}
+
+.tag_event_undefined {
+    background-color: $primary-color;
+}
+
 .tag_date {
     padding: 6px 34px;
     color: $main-text;
@@ -77,12 +85,14 @@ $icons-color: #1A2D82;
 .tag_live {
     color: $icons-color;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .tag_RSS {
     color: $icons-color;
     padding: 10px 20px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .tag_s {

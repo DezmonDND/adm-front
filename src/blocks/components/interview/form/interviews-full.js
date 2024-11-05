@@ -1,8 +1,10 @@
 function getValues(e) {
-  e.preventDefault();
+  if (e) {
+    e.preventDefault();
+  }
 
   const inputs = document.querySelectorAll(
-    ".input, .textarea, .checkbox, .radio"
+    ".input, .textarea, .checkbox, .radio, .input__add-document, .ms__input"
   );
   let values = {};
 
@@ -11,6 +13,8 @@ function getValues(e) {
       values[input.name] = input.checked;
     } else if (input.type === "radio") {
       values[input.name] = input.checked;
+    } else if (input.name === "multiSelect") {
+      values[input.name] = selectedValues.join(", ");
     } else {
       values[input.name] = input.value;
     }
