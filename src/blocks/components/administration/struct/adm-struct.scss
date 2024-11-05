@@ -1,0 +1,21 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.admstruct-contact {
+    margin: 20px;
+    display: flex;
+    gap: 24px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &-item {
+        flex: 1;
+        @include desc-text2;
+    }
+
+    .admstruct-contact-item-label {
+        display: block;
+        margin-bottom: 8px;
+        @include heading-h4();
+    }
+}

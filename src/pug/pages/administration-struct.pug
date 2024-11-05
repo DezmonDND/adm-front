@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Администрация'},
+                { sort: '', href: '/', text: 'Управление документационного и организационного обеспечения'},
+            ],
+            )
+        +adm-struct()

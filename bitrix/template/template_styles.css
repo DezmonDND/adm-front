@@ -29,6 +29,14 @@
   font-weight: 700;
   src: local("Inter"), url("./fonts/Inter/Inter-Bold.woff2") format("woff2");
 }
+/*** Start - FontWeight ***/
+/*** End - FontWeight ***/
+/*** Start - Heading ***/
+/*** Finish - Heading ***/
+/*** Start - Title ***/
+/*** Finish - Title ***/
+/*** Start - Text ***/
+/*** Finish - Text ***/
 .input {
   box-sizing: border-box;
   padding: 16px 15px;
@@ -753,42 +761,6 @@
   cursor: pointer;
 }
 
-.tab-button {
-  all: unset;
-  color: #78839C;
-  padding: 0 0 8px;
-  border: 2px solid transparent;
-}
-.tab-button:hover {
-  cursor: pointer;
-  border-bottom: 2px solid #78839C;
-}
-
-.tab-button_active {
-  border-bottom: 2px solid #22232C;
-  color: #22232C;
-}
-
-.tab-button_l {
-  font-size: 40px;
-  line-height: 48px;
-}
-
-.tab-button_m {
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.tab-button_s {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.tab-button_xs {
-  font-size: 14px;
-  line-height: 16px;
-}
-
 .pag-button_right,
 .pag-button_left {
   all: unset;
@@ -1117,6 +1089,57 @@
   width: 100%;
   box-sizing: border-box;
 }
+.tabs .tab-button {
+  all: unset;
+  color: #78839c;
+  padding: 0 0 8px;
+  border: 2px solid transparent;
+}
+.tabs .tab-button:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #78839c;
+}
+.tabs .tab-button_active {
+  border-bottom: 2px solid #22232c;
+  color: #22232c;
+}
+.tabs .tab-button_l {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
+@media (max-width: 768px) {
+  .tabs .tab-button_l {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.tabs .tab-button_m {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+@media (max-width: 768px) {
+  .tabs .tab-button_m {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.tabs .tab-button_s {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .tabs .tab-button_s {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+.tabs .tab-button_xs {
+  font-size: 14px;
+  line-height: 16px;
+}
 
 @media screen and (max-width: 1000px) {
   .tabs {
@@ -1130,6 +1153,35 @@
     margin-top: 26px;
   }
 }
+.tabs-tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.tabs-tag .tab-button {
+  background: #ebedf4;
+  color: #15195a;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  border-radius: 1000px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .tabs-tag .tab-button {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+.tabs-tag .tab-button_active {
+  background: #004cc4;
+  color: #ffffff;
+}
+
 .pagination {
   display: flex;
   align-items: center;
@@ -2924,11 +2976,47 @@
   width: 24px;
   height: 24px;
 }
+.admstruct-contact {
+  margin: 20px;
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .admstruct-contact {
+    flex-direction: column;
+  }
+}
+.admstruct-contact-item {
+  flex: 1;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .admstruct-contact-item {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.admstruct-contact .admstruct-contact-item-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+@media (max-width: 768px) {
+  .admstruct-contact .admstruct-contact-item-label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 body {
@@ -3010,4 +3098,9 @@ body {
     line-height: 18px;
     margin-bottom: 32px;
   }
+}
+.grey-block {
+  background: #fafafa;
+  border-radius: 12px;
+  width: 100%;
 }
