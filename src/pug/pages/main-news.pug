@@ -1,0 +1,92 @@
+extends ../layout
+
+block content
+    main.main
+        .news 
+            .news__container
+                +news-card-with-image()
+                .news__list    
+                    +news-card-without-image()
+                    +news-card-without-image()
+                    +news-card-without-image()
+                    +news-card-without-image()
+        .main-news 
+            .main-news__container 
+                h1.main-news__title Главные новости
+                .main-news__card-list 
+                    +main-news-card(
+                    {
+                        image: 'image_1.jpg',
+                        date: '10 июня 2023',
+                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                        tags: [
+                                {
+                                    isGoing: 'undefined',
+                                    status: '', 
+                                    onclick: null, 
+                                    sort: 'main-news-card',
+                                    text: 'история',
+                                    href: '/'
+                            }                     
+                        ]
+                    },
+                    )
+                    +main-news-card(
+                    {
+                        image: 'image_2.jpg',
+                        date: '10 июня 2023',
+                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                        tags: [
+                                {
+                                    isGoing: 'undefined',
+                                    status: '', 
+                                    onclick: null, 
+                                    sort: 'main-news-card',
+                                    text: 'Медицина',
+                                    href: '/'
+                                },
+                                {
+                                    isGoing: 'undefined',
+                                    status: '', 
+                                    onclick: null, 
+                                    sort: 'main-news-card',
+                                    text: 'Награды',
+                                    href: '/'
+                                }                      
+                        ]
+                    },
+                    )
+                    +main-news-card(
+                    {
+                        image: 'image_3.jpg',
+                        date: '10 июня 2023',
+                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                        tags: [
+                                {
+                                    isGoing: 'undefined',
+                                    status: '', 
+                                    onclick: null, 
+                                    sort: 'main-news-card',
+                                    text: 'Пожары',
+                                    href: '/'
+                            }                     
+                        ]
+                    },
+                    )
+                    +main-news-card(
+                    {
+                        image: 'image_4.jpg',
+                        date: '10 июня 2023',
+                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                        tags: [
+                                {
+                                    isGoing: 'undefined',
+                                    status: '', 
+                                    onclick: null, 
+                                    sort: 'main-news-card',
+                                    text: 'Экономика',
+                                    href: '/'
+                            }                     
+                        ]
+                    },
+                    )     

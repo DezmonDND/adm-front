@@ -1,0 +1,11 @@
+mixin main-news-card(data = [])
+    .main-news-card
+        .main-news-card__container
+            .main-news-card__image-block 
+                img(class='main-news-card__image' src=`../resources/${data.image}` alt='Изображения')
+                .main-news-card__tags
+                    each tag in data.tags 
+                        +tag(tag) 
+            .main-news-card__content 
+                span.main-news-card__date #{data.date}
+                h5.main-news-card__title #{data.title}
