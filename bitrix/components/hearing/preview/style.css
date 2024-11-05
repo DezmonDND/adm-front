@@ -1,0 +1,61 @@
+/*** START - Desktop-heading ***/
+/*** END - Desktop-heading ***/
+/*** START - Desktop-title ***/
+/*** END - Desktop-title ***/
+.hearing-preview {
+  max-height: 738px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.hearing-preview img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hearing-preview-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+}
+.hearing-preview-title {
+  font-size: 32px;
+  line-height: 38px;
+  max-width: 890px;
+  color: #fff;
+  position: absolute;
+  bottom: 44px;
+  left: 40px;
+}
+.hearing-preview-play {
+  position: absolute;
+  top: 328px;
+  background-color: #004cc4;
+  border: none;
+  border-radius: 50%;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.hearing-preview-play:hover {
+  background-color: #0a5fe7;
+}
+.hearing-preview-play-icon {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 16.4px solid white;
+  border-top: 10.988px solid transparent;
+  border-bottom: 10.988px solid transparent;
+  border-radius: 2px;
+  margin-left: +4.1px;
+}

@@ -1,0 +1,13 @@
+extends ../layout
+
+block content   
+    main.main
+        +breadcrumbs(
+            [
+                { sort: 'crumb', href: '/', text: 'Главная' },
+                { sort: 'crumb', href: '/about', text: 'Публичные слушания'},
+                {sort: 'crumb', href: '/about', text: 'Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818'},
+                    
+            ])
+        +hearing-detail()
+        

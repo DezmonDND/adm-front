@@ -1,0 +1,6 @@
+mixin linkslist(items)
+    .links-list
+        each item, index in items
+            a.links-list-item(href=item.href)
+                | #{item.title}
+                img(src="/icons/arrow-left_link-icon.svg")

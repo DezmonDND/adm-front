@@ -1,0 +1,12 @@
+mixin hearing-preview(light=false, href = true)
+    div.hearing-preview
+        img(src="./resources/hearing.jpg")
+        .hearing-preview-bg
+        if href
+            a(href="/hearing-detail.html").hearing-preview-play
+                span.hearing-preview-play-icon
+        else
+            button.hearing-preview-play
+                span.hearing-preview-play-icon
+        if !light
+            div.hearing-preview-title Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818

@@ -1,52 +1,56 @@
 // ЦВЕТА
 
+// Services
+$services-hover: #f2f3f5;
+
 // Типографика
-$main-text: #040528;
-$main-text-dark-bg: #FFFFFF;
-$second-text: #15195A;
-$tertiary-text: #78839C;
-$tertiary-text-dark-bg: #E9E9E9;
-$fourth-text: #C0C2CC;
-$fourth-text-inverse: #EBEDF4;
+$main-text: #040528; //primary
+$main-text-dark-bg: #ffffff;
+$second-text: #15195a;
+$tertiary-text: #78839c;
+$tertiary-text-dark-bg: #e9e9e9;
+$fourth-text: #c0c2cc;
+$fourth-text-inverse: #ebedf4;
 
 // Фон
-$cards-background: #FAFAFA;
+$cards-background: #fafafa;
+$grey-adm: #fafafa;
 
 // Иконки
-$icons-color: #1A2D82;
-$icons-background: #F7FBFE;
+$icons-color: #1a2d82;
+$icons-background: #f7fbfe;
 
 // Инпуты
-$input-color-default: #C6CBD9;
+$input-color-default: #c6cbd9;
 
 // Календарь
-$event-color: #E7EDFB;
-$event-color-hover: #E7EDFB;
+$event-color: #e7edfb;
+$event-color-hover: #e7edfb;
 
 // Кнопки
-$primary-color: #004CC4;
-$primary-color-hover: #0A5FE7;
-$primary-color-active: #003EA2;
-$primary-color-disabled: #C2D8FF;
-$content-color: #FFFFFF;
-$primary-color-green: #14BC30;
-$primary-color-green-hover: #10CD30;
-$primary-color-green-click: #0C9022;
-$primary-color-green-disabled: #DBDBDB;
+$primary-color: #004cc4;
+$primary-color-hover: #0a5fe7;
+$primary-color-active: #003ea2;
+$primary-color-disabled: #c2d8ff;
+$content-color: #ffffff;
+$primary-color-green: #14bc30;
+$primary-color-green-hover: #10cd30;
+$primary-color-green-click: #0c9022;
+$primary-color-green-disabled: #dbdbdb;
 
 // Категории
-$health-color: linear-gradient(#8EEC87 0%, #447ECB 100%);
-$finance-color: linear-gradient(#E8AAEF 0%, #3172C6 100%);
-$projects-color: linear-gradient(#8EDCD6 0%, #1679B7 100%);
-$social-color: linear-gradient(#F97A7C 0%, #5280EA 100%);
+$health-color: linear-gradient(#8eec87 0%, #447ecb 100%);
+$finance-color: linear-gradient(#e8aaef 0%, #3172c6 100%);
+$projects-color: linear-gradient(#8edcd6 0%, #1679b7 100%);
+$social-color: linear-gradient(#f97a7c 0%, #5280ea 100%);
 
 // Опросы
-$interview-color: #2DBB45;
-$interview-end-color: #D10404;
+$interview-color: #2dbb45;
+$interview-end-color: #d10404;
 
 // Шрифты
 
-// Десктоп
+/*** START - Desktop-heading ***/
 @mixin desc-h1 {
     font-size: 40px;
     line-height: 52px;
@@ -58,11 +62,13 @@ $interview-end-color: #D10404;
 }
 
 @mixin desc-h3 {
+    font-weight: 500;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 28px;
 }
 
 @mixin desc-h4 {
+    font-weight: 500;
     font-size: 20px;
     line-height: 28px;
 }
@@ -78,15 +84,36 @@ $interview-end-color: #D10404;
     line-height: 16px;
 }
 
+/*** END - Desktop-heading ***/
+
 @mixin desc-title {
     font-size: 14px;
     line-height: 20px;
+}
+
+/*** START - Desktop-title ***/
+
+@mixin desc-title1 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+@mixin desc-title3 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+@mixin desc-title4 {
+    font-size: 20px;
+    line-height: 24px;
 }
 
 @mixin desc-title5 {
     font-size: 14px;
     line-height: 16px;
 }
+
+/*** END - Desktop-title ***/
 
 @mixin desc-text1 {
     font-size: 24px;
@@ -112,7 +139,6 @@ $interview-end-color: #D10404;
     font-size: 13px;
     line-height: 18px;
 }
-
 
 @mixin desc-calender {
     font-size: 18px;
