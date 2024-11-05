@@ -1,0 +1,46 @@
+extends ../layout
+
+block content
+    main.main
+    .main-usefull-links
+        +main-title({
+            href: '/',
+            title: 'Самое важное',
+        })
+        .main-usefull-links__container
+            +main-link({
+                sort: 'important',
+                href: '/',
+                icon: 'circle_icon_main.svg',
+                title: 'Лицам с ограниченными возможностями',
+            })
+            +main-link({
+                sort: 'important',
+                href: '/',
+                icon: 'arrow-in-cub_icon_main.svg',
+                title: 'Афиша на Культуре.РФ',
+            })
+            +main-link({
+                sort: 'important',
+                href: '/',
+                icon: 'arrow-in-cub_icon_main.svg',
+                title: 'Инициативые проекты',
+            })
+            +main-link({
+                sort: 'important',
+                href: '/',
+                icon: 'arrow-in-cub_icon_main.svg',
+                title: 'Бюджет для граждан Сургута',
+            })
+            +main-link({
+                sort: 'important',
+                href: '/',
+                icon: 'circle_icon_main.svg',
+                title: 'Налоговая политика',
+            })
+            +main-link({
+                sort: 'important',
+                href: '/',
+                icon: 'arrow-in-cub_icon_main.svg',
+                title: 'Национальные проекты',
+            })
