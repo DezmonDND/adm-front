@@ -104,23 +104,17 @@
         <fieldset class="fieldset">
           <h3 class="fieldset__title reception__sender_title">Кому направляете электронную анкету</h3>
           <div class="fieldset__answers">
-            <div class="select_multiple_container">
-              <div class="select select_multiple" onclick="openSelect()">
-                <button class="button virtual-reception__delete-button" onclick="deleteAllOptions()"><span class="button_span"></span></button>
-                <ul class="select_multiple_options"> 
-                  <div class="select_multiple_option"><span>Филатов Андрей Сергеевич, Глава города Сургута </span>
-                    <button class="button select__delete-button" onclick="deleteOption()"><span class="button_span"></span></button>
-                  </div>
-                  <div class="select_multiple_option"> <span>Филатов Андрей Сергеевич </span>
-                    <button class="button select__delete-button" onclick="deleteOption()"><span class="button_span"></span></button>
-                  </div>
-                </ul>
-              </div>
-              <div class="select_multiple-menu" style="display: none;">
-                <li class="select_multiple-list-item select_multiple-option_selected" value="Филатов Андрей Сергеевич, Глава города Сургута" onclick="selectOption(this)">Филатов Андрей Сергеевич, Глава города Сургута</li>
-                <li class="select_multiple-list-item " value="Филатов" onclick="selectOption(this)">Филатов</li>
-                <li class="select_multiple-list-item " value="Глава города Сургута" onclick="selectOption(this)">Глава города Сургута</li>
-              </div>
+            <div class="ms">
+              <ul class="ms__chose">
+                <li>
+                  <input class="input ms__input" id="name" name="multiSelect" value="" type="text"/>
+                </li>
+              </ul>
+              <ul class="ms__dropdown ms__dropdown_hidden" id="multiSelectDropdown">
+                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
+                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
+                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
+              </ul>
             </div>
           </div>
         </fieldset>
@@ -172,5 +166,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
   </body>
 </html>

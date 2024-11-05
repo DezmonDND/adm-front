@@ -1,7 +1,8 @@
+let counterReception = 1;
+
 function addFormField(e) {
   const formField = document.querySelector(".fieldset");
   const userFormContainer = document.querySelector(".fieldset_user-contacts");
-  let counter = 0;
 
   e.preventDefault();
 
@@ -14,19 +15,20 @@ function addFormField(e) {
     inputs: [
       {
         placeholder: "Фамилия",
-        name: `firstName-${counter}`,
+        name: `surname${counterReception}`,
       },
       {
         placeholder: "Имя",
-        name: `secondName-${counter}`,
+        name: `name${counterReception}`,
       },
       {
         placeholder: "Отчество",
-        name: `thirdName-${counter}`,
+        name: `patronymic${counterReception}`,
       },
     ],
   };
 
+  counterReception++;
   const newFormField = formField.cloneNode(true);
   newFormField.innerHTML = `
     <div class='fieldset_new-author'>
@@ -44,7 +46,6 @@ function addFormField(e) {
     </div>
   `;
 
-  counter++;
   userFormContainer.appendChild(newFormField);
 }
 
@@ -63,13 +64,18 @@ function deleteFormField(button) {
   fieldset.remove();
 }
 
+window.onload = function () {
+  addDocument();
+};
+
 function addDocument() {
   const input = document.querySelector(".input__add-document");
   const list = document.querySelector(".reception__documents-list");
 
-  input.removeEventListener("change", addDocument);
-
   input.addEventListener("change", () => {
+    while (list.firstChild) {
+      list.removeChild(list.firstChild);
+    }
     const curFiles = input.files;
 
     for (let i = 0; i < curFiles.length; i++) {
@@ -103,6 +109,11 @@ function addDocument() {
 
       list.appendChild(listItem);
     }
-    input.value = "";
+    console.log(curFiles);
   });
+}
+
+if (window.jQuery) {
+  var vJq = jQuery.fn.jquery;
+  console.log(vJq);
 }

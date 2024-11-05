@@ -29,22 +29,34 @@
         </button>
       </div>
     </header>
-    <main class="components"><a class="button button_link button_blue" href="/" target="_blank"><span class="button_span">О нас</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/></a><a class="button button_link button_green" href="/" target="_blank"><span class="button_span">Контакты</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
+    <main class="components">
+      <div class="ms">
+        <ul class="ms__chose">
+          <li>
+            <input class="input ms__input" id="name" name="multiSelect" value="" type="text"/>
+          </li>
+        </ul>
+        <ul class="ms__dropdown ms__dropdown_hidden" id="multiSelectDropdown">
+          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
+          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
+          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
+        </ul>
+      </div><a class="button button_link button_blue" href="/" target="_blank"><span class="button_span">О нас</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/></a><a class="button button_link button_green" href="/" target="_blank"><span class="button_span">Контакты</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
       <button class="button button_blue" onclick="someFunction()"><span class="button_span">Далее</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/>
       </button>
       <button class="button button_white" onclick="getValues()"><span class="button_span">Готово</span></button>
       <input class="сheckbox radio" type="radio" id="radio" name="undefined"/>
       <label for="radio"> </label>
-      <input class="сheckbox " type="сheckbox" id="сheckbox" name="undefined" checked="checked"/>
-      <label for="сheckbox"> </label>
+      <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
+      <label for="1"> </label>
       <input class="input   input-search-l " placeholder="Введите ваш ответ" value=""/>
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"><img class="breadcrumbs__icon" src="/local/templates/surgut/icons/arrow-left_link-icon.svg" alt="Стрелка"/></a>
         <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/about" target="_blank">О нас</a><span class="span">/</span><span class="breadcrumb_link">Контакты</span>
         </div>
-      </div>
-      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
-      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
-      <button class="tag tag_undefined tag_undefined tag_event_false" type="button"></button>
+      </div><a class="tag tag_RSS tag_record tag_RSS" href="/"> <img class="tag_icon" src="/local/templates/surgut/icons/RSS_icon.svg"/><span class="tag_span">RSS</span></a><a class="tag tag_live tag_record tag_live" href="/"> <img class="tag_icon" src="/local/templates/surgut/icons/live_icon.svg"/><span class="tag_span">Прямая трансляция</span></a>
+      <button class="tag tag_ tag_ tag_event_false" type="button">Завершен</button>
+      <button class="tag tag_ tag_ tag_event_true" type="button">Идет</button>
+      <button class="tag tag_ tag_ tag_event_undefined" type="button">Не определен</button>
       <div class="container">
         <textarea class="textarea  " placeholder="Введите ваш ответ" maxlength="900" oninput="getLength(this)"></textarea>
         <div class="counter "><span class="current">0</span><span>/</span><span class="max">900 </span></div>
@@ -102,14 +114,13 @@
       </form><a class="tab-button " value="Самые важные">Самые важные</a>
       <div class="tabs"><a class="tab-button " value="Самые важные">Самые важные</a><a class="tab-button " value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " value="Областная дума">Областная дума</a>
       </div>
-      <button class="pag-button-with-icon pag-button_[object Object]" onclick="nextPage(event) "><span class="pag-button__title">Вперед</span></button>
       <div class="project-card"> 
         <div class="project-card__content"> 
           <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
           <label for="1"> </label>
           <div class="project-card__info"> 
             <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-            <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
+            <button class="tag tag_project-card tag_ " type="button">Не заполнен</button>
           </div>
         </div>
       </div>
@@ -150,5 +161,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
   </body>
 </html>
