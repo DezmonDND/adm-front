@@ -36,6 +36,13 @@
 @use '../../blocks/components/hearing/preview/hearing-preview.scss';
 @use '../../blocks/components/hearing/list/hearing-list.scss';
 @use '../../blocks/components/hearing/detail/hearing-detail.scss';
+@use '../../blocks/components/biography/biography-card.scss';
+@use '../../blocks/components/biography/biography.scss';
+@use '../../blocks/libs/multiselect/multi-select.scss';
+@use '../../blocks/components/news/news.scss';
+@use '../../blocks/components/main-title/main-title.scss';
+@use '../../blocks/components/main-services/main-services.scss';
+@use '../../blocks/components/main-links/main-links.scss';
 
 * {
     font-family: 'Inter', sans-serif;

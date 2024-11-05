@@ -102,5 +102,5 @@ block content
             .reception__buttons
                 .custom-file-upload(onclick='addDocument()')
                     label(for="file" id="file-label") Вложить документ
-                        input(type="file" id="file" name="addDocument" value="" class='input__add-document' multiple)   
+                        input(type="file" id="file" name="files" class='input__add-document' multiple)   
                 +button({ type: 'button', class: 'button_blue virtual-reception__send-button', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить обращение` })

@@ -1,19 +1,8 @@
+include ../multiselect/_multi-select.pug
+
 mixin select(iconPosition, options, type)
   if type === 'multiple'  
-    .select_multiple_container
-      div(class=`select select_multiple` onclick='openSelect()')
-        +button({ type: 'button', class: 'virtual-reception__delete-button', event: 'deleteAllOptions()',})
-        ul.select_multiple_options 
-          div.select_multiple_option
-            span Филатов Андрей Сергеевич, Глава города Сургута 
-            +button({ type: 'button', class: 'select__delete-button', event: 'deleteOption()',})
-          div.select_multiple_option  
-            span Филатов Андрей Сергеевич 
-            +button({ type: 'button', class: 'select__delete-button', event: 'deleteOption()',})
-      if options
-        .select_multiple-menu(style='display: none;')
-          each option in options
-            li(class=`select_multiple-list-item ${option.selected ? 'select_multiple-option_selected' : ''}` value=option.value onclick='selectOption(this)')= option.text
+    +multi_select()
   else
     select(class=`select ${iconPosition ? `select-icon-${iconPosition}` : ''}`)
       if options

@@ -21,7 +21,7 @@ block content
             { title: 'Мои инициативные проекты', href: '/' , value: 'Мои инициативные проекты'},
             { title: 'Мои обращения', href: '/' , value: 'Мои обращения'},
             ]) 
-        +projects_array( true, [
+        +projects_array( true, 'projects', [
             {
                 title: 'Название инициативного проекта',
                 date: 'Создан 23 сентября 2024',
@@ -31,7 +31,7 @@ block content
                 tag: {
                     sort: 'project-card',
                     text: 'Не заполнен',
-                    isGoing: false,
+                    isGoing: 'undefined',
                     status: ''
                 },
                 checkbox: {
@@ -49,7 +49,7 @@ block content
                 tag: {
                     sort: 'project-card',
                     text: 'Не заполнен',
-                    isGoing: false,
+                    isGoing: 'false',
                     status: ''
                 },
                 checkbox: {
@@ -67,7 +67,7 @@ block content
                 tag: {
                     sort: 'project-card',
                     text: 'Выполнен',
-                    isGoing: true,
+                    isGoing: 'true',
                     status: ''
                 },
                 checkbox: {

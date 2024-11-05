@@ -117,6 +117,10 @@ function copyFont() {
   return src("./src/assets/fonts/**/*").pipe(dest("./public/fonts"));
 }
 
+function copyJS() {
+  return src("./src/assets/js/*").pipe(dest("./public/js"));
+}
+
 exports.browsersync = browsersync;
 exports.clean = clean;
 exports.scripts = scripts;
@@ -126,6 +130,7 @@ exports.copyResources = copyResources;
 exports.copyImage = copyImage;
 exports.copyIcons = copyIcons;
 exports.copyFont = copyFont;
+exports.copyJS = copyJS;
 exports.pugToHtml = pugToHtml;
 
 exports.default = parallel(
@@ -135,6 +140,7 @@ exports.default = parallel(
   copyImage,
   copyIcons,
   copyFont,
+  copyJS,
   pugToHtml,
   browsersync,
   watch_dev
@@ -163,6 +169,10 @@ class BitrixBuilder {
       fonts: {
         src: "./src/assets/fonts/**/*",
         dest: "./bitrix/template/fonts",
+      },
+      js: {
+        src: "./src/assets/js/*",
+        dest: "./bitrix/template/js",
       },
     };
   }

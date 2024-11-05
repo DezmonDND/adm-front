@@ -43,7 +43,7 @@
       <div class="tabs"><a class="tab-button " href="/" value="Настройки">Настройки</a><a class="tab-button " href="/" value="Мои подписки">Мои подписки</a><a class="tab-button " href="/" value="Мои инициативные проекты">Мои инициативные проекты</a><a class="tab-button " href="/" value="Мои обращения">Мои обращения</a>
       </div>
       <div class="projects-array">
-        <div class="projects-array__content">
+        <div class="projects-array__content projects-array__content">
           <div class="projects-array__edit-buttons">
             <button class="button button_blue projects-array__button" onclick="addProject()"><span class="button_span">Добавить инициативный проект</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/>
             </button>
@@ -56,7 +56,7 @@
                 <label for="1"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-                  <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
+                  <button class="tag tag_project-card tag_ tag_event_undefined" type="button">Не заполнен</button>
                 </div>
               </div>
             </div>
@@ -125,5 +125,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
   </body>
 </html>
