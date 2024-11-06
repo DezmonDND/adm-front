@@ -10,13 +10,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+            padding-right: 24px;
+
             .main-events__selects-container {
-                display: flex;
-                gap: 130px;
+                display: grid;
+                grid-template-columns: 23% 27% 30% 16%;
+                gap: 12px;
+                max-width: 902px;
+                width: 100%;
             }
         }
-
+        
         .main-events__news {
             display: grid;
             grid-template-columns: repeat(4, calc((100% - 72px)/4));
