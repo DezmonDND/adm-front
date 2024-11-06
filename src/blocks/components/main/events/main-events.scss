@@ -1,0 +1,26 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.main-events {
+    .main-events__container {
+        .main-events__calender {
+
+        }
+
+        .main-events__selects {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .main-events__selects-container {
+                display: flex;
+                gap: 130px;
+            }
+        }
+
+        .main-events__news {
+            display: grid;
+            grid-template-columns: repeat(4, calc((100% - 72px)/4));
+            gap: 24px;
+        }
+    }
+}
