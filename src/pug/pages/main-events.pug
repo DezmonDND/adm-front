@@ -6,10 +6,30 @@ block content
             .main-events__container 
                 +main-title({
                     href: '/',
-                    title: 'Самое важное',
+                    title: 'Анонсы и события',
                     link_text: 'Все события'
                 })
                 .main-events__calender
+                    .main-events__calender-links
+                        .main-events__calender-link-content 
+                            a(href='/' class=`main-events__calender-link main-events__calender-link_active`) 24                        
+                            span.main-events__calender-span Пн
+                            div.main-events__calender-icon
+                                span 2
+                        .main-events__calender-link-content 
+                            a(href='/' class=`main-events__calender-link main-events__calender-link_active`) 24                        
+                            span.main-events__calender-span Пн
+                        .main-events__calender-link-content 
+                            a(href='/' class=`main-events__calender-link main-events__calender-link_active`) 24                        
+                            span.main-events__calender-span Пн    
+                        .main-events__calender-link-content 
+                            a(href='/' class=`main-events__calender-link`) 24                        
+                            span.main-events__calender-span Пн 
+                        .main-events__calender-link-content 
+                            a(href='/' class=`main-events__calender-link main-events__calender-link_clicked`) 24                        
+                            span.main-events__calender-span Пн  
+                                div.main-events__calender-icon
+                                span 2           
                 .main-events__selects
                     .main-events__selects-container
                         +select('right', [
