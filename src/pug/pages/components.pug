@@ -3,10 +3,34 @@ extends ../layout
 block content   
    main.components
       +multi_select()
-      +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас', iconPosition: 'left' })
-      +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
-      +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
-      +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 's', text: 'Готово' })
+      123
+      +button({ type: 'link', href: '/about', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', href: '/about', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'tag', href: '/about', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', size: 'l', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', size: 'm', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', size: 's', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', size: 's', href: '/about', class: 'button_white', icon: 'add-outline'})
+      +button({ type: 'button', class: 'button_white button_white_no-border button_radius', icon: 'logo-rss', iconPosition: 'left', text: 'RSS' })
+      +button({ type: 'button', class: 'button_white button_white_no-border button_radius', icon: 'radio-button-on-outline', iconPosition: 'left', text: 'Прямая трансляция' })
+      +button({ type: 'link', href:'/',  class: 'button_white button_white_no-border button_radius' , iconPosition: 'left', icon: 'mail', text: 'Подписаться на главное' })
+      +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: 'Идет' })
+      +button({ type: 'button', size: 'xs', class: 'button_red button_radius', text: 'Не определен' })
+      +button({ type: 'button', size: 'xs', class: 'button_green button_radius', text: 'Завершен' })
+
+      123
+      +button({ size: 'l', type: 'link', class: 'button_blue', href: '/about', icon: 'add-outline', text: 'О нас', iconPosition: 'left' })
+      +button({ size: 'm', type: 'button', class: 'button_blue', href: '/about', icon: 'arrow-back-outline', text: 'О нас', iconPosition: 'left', disabled: true})
+      +button({ size: 's', type: 'link', class: 'button_green', href: '/contact', icon: 'arrow-forward-outline', text: 'Контакты' })
+      +button({ size: 'l', type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow-forward-outline', text: 'Далее' })
+      +button({ size: 'l', type: 'button', class: 'button_white button_withiout-text', event: 'someFunction()', icon: 'download-outline' })
+      +button({ size: 'm', type: 'button', class: 'button_white', event: 'getValues()', text: 'Готово' })
+      +button({ type: 'tag-link-with-icon', icon: 'logo-rss', text: 'RSS' })
+      +button({ type: 'tag-button-with-icon', class: 'tag-button-with-icon', icon: 'radio-button-on-outline', text: 'Прямая трансляция' })
+      +button({ type: 'tag-link-with-icon', icon: 'mail', text: 'Подписаться на главное' })
+      +button({ type: 'button', class: 'tag-button-blue', text: 'Идет' })
+      +button({ type: 'button', class: 'button_red button_radius', text: 'Не определен' })
+      +button({ type: 'button', class: 'button_green button_radius', text: 'Завершен' })
       +checkbox(
          { id: 'radio', sort: 'radio', status: false }
       )
@@ -24,50 +48,7 @@ block content
       { href: '/', text: 'Главная' },
       { href: '/about', text: 'О нас' },
       { href: '/contact', text: 'Контакты' }
-      ])
-      +tag(
-         {
-            status: 'RSS', 
-            onclick: null, 
-            sort: 'RSS',
-            text: 'RSS',
-            href: '/'
-            })
-      +tag(
-         {
-            status: 'live', 
-            onclick: null, 
-            sort: 'live',
-            text: 'Прямая трансляция',
-            href: '/'
-            })
-      +tag(
-         {
-            isGoing: 'false',
-            status: '', 
-            onclick: null, 
-            sort: '',
-            text: 'Завершен',
-            href: '/'
-            })
-      +tag(
-         {
-            isGoing: 'true',
-            status: '', 
-            onclick: null, 
-            sort: '',
-            text: 'Идет',
-            href: '/'
-            })     
-      +tag(
-         {
-            isGoing: 'undefined',
-            status: '', 
-            onclick: null, 
-            sort: '',
-            text: 'Не определен',
-            href: '/'
-            })              
+      ])          
       +textarea({
          placeholder: 'Введите ваш ответ',
          value: '900'
@@ -146,6 +127,7 @@ block content
          status: 'Не заполнен',
          isGoing: false,
          tag: {
+            size: "xs",
             sort: 'project-card',
             text: 'Не заполнен',
             isGoing: false,

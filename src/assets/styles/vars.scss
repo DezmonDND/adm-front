@@ -33,6 +33,17 @@ $primary-color-green: #14bc30;
 $primary-color-green-hover: #10cd30;
 $primary-color-green-click: #0c9022;
 $primary-color-green-disabled: #dbdbdb;
+$padding-button-l: 16px 28px;
+$padding-button-m: 12px 20px;
+$padding-button-s: 8px 16px;
+$padding-button-xs: 4px 24px;
+
+$padding-button-without-text-desc: 12px;
+$padding-button-without-text-tab: 8px;
+$padding-tag-link-desc: 12px 20px;
+$padding-tag-link-tab: 8px 16px;
+$padding-tag-button-desc: 4px 24px;
+$padding-tag-button-tab: 4px 16px;
 
 // Категории
 $health-color: linear-gradient(#8eec87 0%, #447ecb 100%);
@@ -58,6 +69,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 40px;
     line-height: 48px;
+
     @media (max-width: 768px) {
         font-size: 20px;
         line-height: 24px;
@@ -68,6 +80,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 32px;
     line-height: 38px;
+
     @media (max-width: 768px) {
         font-size: 16px;
         line-height: 20px;
@@ -78,6 +91,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 24px;
     line-height: 28px;
+
     @media (max-width: 768px) {
         font-size: 14px;
         line-height: 18px;
@@ -88,6 +102,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 20px;
     line-height: 28px;
+
     @media (max-width: 768px) {
         font-size: 12px;
         line-height: 16px;
@@ -98,6 +113,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 16px;
     line-height: 24px;
+
     @media (max-width: 768px) {
         font-size: 10px;
         line-height: 12px;
@@ -118,6 +134,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 32px;
     line-height: 38px;
+
     @media (max-width: 768px) {
         font-size: 16px;
         line-height: 20px;
@@ -128,6 +145,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 28px;
     line-height: 36px;
+
     @media (max-width: 768px) {
         font-size: 14px;
         line-height: 18px;
@@ -138,6 +156,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 24px;
     line-height: 28px;
+
     @media (max-width: 768px) {
         font-size: 12px;
         line-height: 16px;
@@ -148,6 +167,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 20px;
     line-height: 24px;
+
     @media (max-width: 768px) {
         font-size: 10px;
         line-height: 14px;
@@ -158,6 +178,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 16px;
     line-height: 20px;
+
     @media (max-width: 768px) {
         // Спросить, что тут должно быть
     }
@@ -167,10 +188,12 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 14px;
     line-height: 16px;
+
     @media (max-width: 768px) {
         // Спросить, что тут должно быть
     }
 }
+
 /*** Finish - Title ***/
 
 /*** Start - Text ***/
@@ -179,6 +202,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-regular;
     font-size: 24px;
     line-height: 32px;
+
     @media (max-width: 768px) {
         // Спросить, что тут должно быть
     }
@@ -188,6 +212,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-regular;
     font-size: 20px;
     line-height: 30px;
+
     @media (max-width: 768px) {
         font-size: 12px;
         line-height: 18px;
@@ -198,6 +223,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-regular;
     font-size: 16px;
     line-height: 24px;
+
     @media (max-width: 768px) {
         font-size: 10px;
         line-height: 16px;
@@ -208,6 +234,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-regular;
     font-size: 14px;
     line-height: 20px;
+
     @media (max-width: 768px) {
         // Спросить, что тут должно быть
     }

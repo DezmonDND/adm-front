@@ -1,4 +1,3 @@
-
 const msDropdownList = document.querySelector(".ms__dropdown");
 const msDropdownItems = document.querySelectorAll(".ms__dropdown-item");
 const multiSelect = document.querySelector('input[name="multiSelect"]');
