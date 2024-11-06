@@ -45,6 +45,7 @@
 @use '../../blocks/components/main-services/main-services.scss';
 @use '../../blocks/components/main-links/main-links.scss';
 @use '../../blocks/components/administration/struct/adm-struct.scss';
+@use './bootstrap-grid.scss';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -144,5 +145,10 @@ body {
 .grey-block {
     background: $cards-background;
     border-radius: 12px;
+    width: 100%;
+}
+
+hr {
+    border-color: #ebedf4;
     width: 100%;
 }

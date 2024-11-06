@@ -2,11 +2,90 @@ extends ../layout
 
 block content   
    main.components
+      hr
+      .row
+         .col-12
+            h4 Кнопки
+         .col-3
+            h5 Ссылка с иконкой
+            h5 (синяя - button_blue)
+            h6 size: 's' + iconPosition: 'left'
+            +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас', iconPosition: 'left' })
+            h6 size: 'm'
+            +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 'm', text: 'О нас', iconPosition: 'left' })
+         .col-3
+            h5 Ссылка с иконкой
+            h5 (зеленая - button_green)
+            h6 size: 's'
+            +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 's', text: 'Контакты' })
+            h6 size: 'm'
+            +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
+         .col-3
+            h5 Кнопка с иконкой
+            h5 (синяя - button_blue)
+            h6 size: 's'
+            +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 's', text: 'Далее' })
+            h6 size: 'm'
+            +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
+         .col-3
+            h5 Кнопка с иконкой
+            h5 (белая - button_white)
+            h6 size: 's'
+            +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 's', text: 'Готово' })
+            h6 size: 'm'
+            +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 'm', text: 'Готово' })
+      hr
+      .row
+         .col-12
+            h4 Навигация
+         .col-6
+            +pagination(6, 3, 2)
+         .col-6
+            +pagination(30, 1, 2)
+         .col-6
+            +pagination(30, 2, 2)
+         .col-6
+            +pagination(30, 15, 2)
+         .col-6
+            +pagination(30, 30, 2)
+         .col-6
+            +pagination(30, 29, 2)
+      hr
+      .row
+         .col-12
+            h4 Табы переключатели
+         .col-6
+            h5 Слайдер
+            +tabs([
+               { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+               { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+               { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+               { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+               ]
+            )
+         .col-6
+            h5 В виде тегов
+            +tabs-tag([
+               { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+               { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+               { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+               { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+               ]
+            )
+      hr
+      .row
+         .col-12
+            h4 Список ссылок
+         .col-6
+            h5 Обычный
+            +linkslist([{title:"Назначающий НПА",  href:"#"},{title:"Объявление с материалами", href:"#"},])
+         .col-6
+            h5 С описанием
+            +linkslist([{title:"Назначающий НПА", desc:"14 услуг", href:"#"},{title:"Объявление с материалами", desc:"15 товаров", href:"#"},])
+      hr
+      h4 Другое
       +multi_select()
-      +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас', iconPosition: 'left' })
-      +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
-      +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
-      +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 's', text: 'Готово' })
+      
       +checkbox(
          { id: 'radio', sort: 'radio', status: false }
       )
@@ -133,12 +212,7 @@ block content
       { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
       )    
       +tab-button({ size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'})
-      +tabs([
-      { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
-      { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
-      { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
-      { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
-      ])
+      
       +project_card( true, {
          title: 'Название инициативного проекта',
          date: 'Создан 23 сентября 2024',
@@ -157,4 +231,3 @@ block content
             status: true,
          }
          })
-         +pagination(6, 3, 2) 

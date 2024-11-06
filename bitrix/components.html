@@ -30,6 +30,118 @@
       </div>
     </header>
     <main class="components">
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Кнопки</h4>
+        </div>
+        <div class="col-3">
+          <h5>Ссылка с иконкой</h5>
+          <h5>(синяя - button_blue)</h5>
+          <h6>size: 's' + iconPosition: 'left'</h6><a class="button button_link button_blue" href="/" target="_blank"><span class="button_span">О нас</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/></a>
+          <h6>size: 'm'</h6><a class="button button_link button_blue" href="/" target="_blank"><span class="button_span">О нас</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/></a>
+        </div>
+        <div class="col-3">
+          <h5>Ссылка с иконкой</h5>
+          <h5>(зеленая - button_green)</h5>
+          <h6>size: 's'</h6><a class="button button_link button_green" href="/" target="_blank"><span class="button_span">Контакты</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
+          <h6>size: 'm'</h6><a class="button button_link button_green" href="/" target="_blank"><span class="button_span">Контакты</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
+        </div>
+        <div class="col-3">
+          <h5>Кнопка с иконкой</h5>
+          <h5>(синяя - button_blue)</h5>
+          <h6>size: 's'</h6>
+          <button class="button button_blue" onclick="someFunction()"><span class="button_span">Далее</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/>
+          </button>
+          <h6>size: 'm'</h6>
+          <button class="button button_blue" onclick="someFunction()"><span class="button_span">Далее</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/>
+          </button>
+        </div>
+        <div class="col-3">
+          <h5>Кнопка с иконкой</h5>
+          <h5>(белая - button_white)</h5>
+          <h6>size: 's'</h6>
+          <button class="button button_white" onclick="getValues()"><span class="button_span">Готово</span></button>
+          <h6>size: 'm'</h6>
+          <button class="button button_white" onclick="getValues()"><span class="button_span">Готово</span></button>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Навигация</h4>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/2">2</a><a class="pag-button pag-button_active" href="/2/3">3</a><a class="pag-button" href="/2/4">4</a><a class="pag-button" href="/2/6">6</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/6"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button_left pag-button-with-icon pag-button-with-icon_left_disabled" disabled="disabled"><span class="pag-button__span">Назад</span></button><a class="pag-button pag-button_active" href="/2/1">1</a><a class="pag-button" href="/2/2">2</a><span>...</span><a class="pag-button" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><a class="pag-button pag-button_active" href="/2/2">2</a><a class="pag-button" href="/2/3">3</a><span>...</span><a class="pag-button" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><span>...</span><a class="pag-button" href="/2/14">14</a><a class="pag-button pag-button_active" href="/2/15">15</a><a class="pag-button" href="/2/16">16</a><span>...</span><a class="pag-button" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><span>...</span><a class="pag-button" href="/2/29">29</a><a class="pag-button pag-button_active" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right pag-button-with-icon_right_disabled"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><span>...</span><a class="pag-button" href="/2/28">28</a><a class="pag-button pag-button_active" href="/2/29">29</a><a class="pag-button" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Табы переключатели</h4>
+        </div>
+        <div class="col-6">
+          <h5>Слайдер</h5>
+          <div class="tabs"><a class="tab-button " value="Самые важные">Самые важные</a><a class="tab-button " value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " value="Областная дума">Областная дума</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <h5>В виде тегов</h5>
+          <div class="tabs-tag"><a class="tab-button " value="Самые важные">Самые важные</a><a class="tab-button " value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " value="Областная дума">Областная дума</a>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Список ссылок</h4>
+        </div>
+        <div class="col-6">
+          <h5>Обычный</h5>
+          <div class="links-list"><a class="links-list-item" href="#">Назначающий НПА<img src="/icons/arrow-left_link-icon.svg"/></a><a class="links-list-item" href="#">Объявление с материалами<img src="/icons/arrow-left_link-icon.svg"/></a>
+          </div>
+        </div>
+        <div class="col-6">
+          <h5>С описанием</h5>
+          <div class="links-list"><a class="links-list-item" href="#">Назначающий НПА<span>14 услуг</span><img src="/icons/arrow-left_link-icon.svg"/></a><a class="links-list-item" href="#">Объявление с материалами<span>15 товаров</span><img src="/icons/arrow-left_link-icon.svg"/></a>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <h4>Другое</h4>
       <div class="ms">
         <ul class="ms__chose">
           <li>
@@ -41,10 +153,7 @@
           <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
           <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
         </ul>
-      </div><a class="button button_link button_blue" href="/" target="_blank"><span class="button_span">О нас</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/></a><a class="button button_link button_green" href="/" target="_blank"><span class="button_span">Контакты</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/></a>
-      <button class="button button_blue" onclick="someFunction()"><span class="button_span">Далее</span><img class="icon" src="/local/templates/surgut/icons/arrow_icon.svg" alt="arrow_icon.svg"/>
-      </button>
-      <button class="button button_white" onclick="getValues()"><span class="button_span">Готово</span></button>
+      </div>
       <input class="сheckbox radio" type="radio" id="radio" name="undefined"/>
       <label for="radio"> </label>
       <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
@@ -112,8 +221,6 @@
         <button class="calender" type="button">Период публикации</button>
         <button class="button button_blue"><span class="button_span">Искать</span></button>
       </form><a class="tab-button " value="Самые важные">Самые важные</a>
-      <div class="tabs"><a class="tab-button " value="Самые важные">Самые важные</a><a class="tab-button " value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " value="Областная дума">Областная дума</a>
-      </div>
       <div class="project-card"> 
         <div class="project-card__content"> 
           <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
