@@ -1,33 +1,4 @@
-$primary-color-green: #14BC30;
-$primary-color-green-hover: #10CD30;
-$primary-color-green-click: #0C9022;
-$primary-color-green-disabled: #DBDBDB;
-$primary-color: #004CC4;
-$primary-color-hover: #0A5FE7;
-$primary-color-active: #003EA2;
-$primary-color-disabled: #C2D8FF;
-$content-color: #FFFFFF;
-$main-text: #040528;
-
-@mixin desc-h6() {
-    font-size: 13px;
-    line-height: 16px;
-}
-
-@mixin desc-title5 {
-    font-size: 14px;
-    line-height: 16px;
-}
-
-@mixin desc-h4() {
-    font-size: 20px;
-    line-height: 28px;
-}
-
-@mixin desc-title {
-    font-size: 14px;
-    line-height: 20px;
-}
+@use '../../../assets/styles/vars.scss' as *;
 
 .button {
     all: unset;
@@ -40,6 +11,7 @@ $main-text: #040528;
 
     .icon {
         width: 20px;
+        font-size: 20px;
     }
 
     .icon_m {
@@ -111,43 +83,44 @@ $main-text: #040528;
     }
 }
 
-.button_size_m {
+.button_size_l {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    padding: 16px 28px;
+    @include heading-h4;
+    padding: $padding-button-l;
 
     @media screen and (max-width: 1000px) {
-        font-size: 14px;
-        line-height: 18px;
-        padding: 12px 20px;
+        padding: $padding-button-m;
     }
 
     @media screen and (max-width: 600px) {
-        font-weight: 500;
-        line-height: 16px;
-        padding: 8px 16px;
+        padding: $padding-button-s;
+    }
+}
+
+.button_size_m {
+    font-weight: 600;
+    @include heading-h5;
+    padding: $padding-button-m;
+
+    @media screen and (max-width: 600px) {
+        padding: $padding-button-s
     }
 }
 
 .button_size_s {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    padding: 12px 20px;
-
-    @media screen and (max-width: 600px) {
-        font-weight: 500;
-        line-height: 16px;
-        padding: 8px 16px;
-    }
+    font-weight: 500;
+    @include heading-h6;
+    padding: $padding-button-s;
 }
 
-.button_size_xs {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 8px 16px;
+.button_withiout-text {
+    gap: 0;
+    padding: $padding-button-without-text-desc;
+
+    @media screen and (max-width: 1000px) {
+        padding: $padding-button-without-text-tab;
+
+    }
 }
 
 .button_link {

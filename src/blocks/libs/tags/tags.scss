@@ -1,3 +1,5 @@
+@use '../../../assets/styles/vars.scss' as *;
+
 $green-color-default: #14BC30;
 $green-color-hover: #10CD30;
 $green-color-click: #0C9022;
@@ -32,6 +34,24 @@ $icons-color: #1A2D82;
 
     .tag_icon {
         width: 24px;
+    }
+}
+
+.tag-link {
+    @include heading-h5;
+    padding: $padding-tag-link-desc;
+
+    @media screen and (max-width: 1000px) {
+        padding: $padding-tag-link-tab;
+    }
+}
+
+.tag-button {
+    @include heading-h5;
+    padding: $padding-tag-button-desc;
+
+    @media screen and (max-width: 1000px) {
+        padding: $padding-tag-button-tab;
     }
 }
 
@@ -120,5 +140,5 @@ $icons-color: #1A2D82;
         font-size: 12px;
         line-height: 16px;
     }
-    
+
 }

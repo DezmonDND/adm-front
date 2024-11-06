@@ -3,11 +3,12 @@ extends ../layout
 block content   
    main.components
       +multi_select()
-      +button({ size: 'm', type: 'link', class: 'button_blue', href: '/about', icon: 'add-outline', text: 'О нас', iconPosition: 'left' })
+      +button({ size: 'l', type: 'link', class: 'button_blue', href: '/about', icon: 'add-outline', text: 'О нас', iconPosition: 'left' })
       +button({ size: 'm', type: 'button', class: 'button_blue', href: '/about', icon: 'arrow-back-outline', text: 'О нас', iconPosition: 'left', disabled: true})
       +button({ size: 's', type: 'link', class: 'button_green', href: '/contact', icon: 'arrow-forward-outline', text: 'Контакты' })
-      +button({ size: 'xs', type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow-forward-outline', text: 'Далее' })
-      +button({ size: 's', type: 'button', class: 'button_white', event: 'getValues()', icon: '', text: 'Готово' })
+      +button({ size: 'l', type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow-forward-outline', text: 'Далее' })
+      +button({ size: 'l', type: 'button', class: 'button_white button_withiout-text', event: 'someFunction()', icon: 'download-outline' })
+      +button({ size: 'm', type: 'button', class: 'button_white', event: 'getValues()', icon: '', text: 'Готово' })
       +button({ type: 'RSS', sort: 'RSS', status: 'RSS', icon: 'logo-rss', text: 'RSS' })
       +button({ type: 'live', sort: 'live', status: 'live', icon: 'radio-button-on-outline', text: 'Прямая трансляция' })
       +button({ type: 'RSS', sort: 'round', status: 'RSS', icon: 'mail', text: 'Подписаться на главное' })
