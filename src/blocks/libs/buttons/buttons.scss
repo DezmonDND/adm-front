@@ -171,6 +171,78 @@
     display: none;
 }
 
+// Тэги
+@mixin tag-with-icon() {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba($main-text, .25);
+}
+
+.tag {
+    all: unset;
+    border-radius: 1000px;
+    padding: 4px 12px;
+    color: $content-color;
+    font-weight: 600;
+    color: $content-color;
+
+    .tag_span {
+        margin-left: 12px;
+    }
+
+    .tag_icon {
+        width: 24px;
+    }
+}
+
+.tag-link {
+    @include heading-h5;
+    padding: $padding-tag-link-desc;
+    @include tag-with-icon();
+    color: $primary-color;
+    cursor: pointer;
+
+    @media screen and (max-width: 1000px) {
+        padding: $padding-tag-link-tab;
+    }
+}
+
+.tag-button-with-icon {
+    @include heading-h5;
+    padding: $padding-tag-link-desc;
+    @include tag-with-icon();
+    color: $primary-color;
+}
+
+.tag-link-with-icon {
+    @include heading-h5;
+    padding: $padding-tag-link-desc;
+    @include tag-with-icon();
+    color: $primary-color;
+    cursor: pointer;
+}
+
+.tag-button {
+    @include heading-h5;
+    padding: $padding-tag-button-desc;
+
+    @media screen and (max-width: 1000px) {
+        padding: $padding-tag-button-tab;
+    }
+}
+
+.tag-button-red {
+    background-color: $interview-end-color;
+}
+
+.tag-button-green {
+    background-color: $primary-color-green;
+}
+
+.tag-button-blue {
+    background-color: $primary-color;
+}
+
 @media screen and (max-width: 1000px) {
     .button {
         font-size: 14px;
