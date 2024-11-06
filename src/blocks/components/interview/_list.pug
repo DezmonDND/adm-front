@@ -3,7 +3,7 @@ mixin interview(value)
         .interview__content
             .interview__info 
                 .iinterview__dates 
-                    +tag(value.tag)
+                    +button(value.tag)
                     span.iinterview__date #{value.date}
                 .iinterview__description 
                     h3(title=`${value.title}`).iinterview__title #{value.title}

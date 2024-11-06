@@ -1,33 +1,63 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-@mixin tag-with-icon() {
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 4px rgba($main-text, .25);
+@mixin size_L() {
+    padding: $padding-button-l;
+    @include heading-h4;
+
+    @media screen and (max-width: 1000px) {
+        padding: $padding-button-m;
+    }
+
+    .icon {
+        font-size: 23px; // Размер от шрифта
+    }
+}
+
+@mixin size_M() {
+    padding: $padding-button-m;
+    @include heading-h5;
+
+    @media screen and (max-width: 1000px) {
+        padding: $padding-button-s;
+    }
+
+    .icon {
+        font-size: 20px; // Размер от шрифта
+    }
+}
+
+@mixin size_S() {
+    padding: $padding-button-s;
+    @include heading-h6;
+
+    .icon {
+        font-size: 16px; // Размер от шрифта
+    }
+}
+
+@mixin size_XS() {
+    padding: $padding-button-xs;
+    @include heading-h5;
+
+    .icon {
+        font-size: 16px; // Размер от шрифта
+    }
 }
 
 .button {
     all: unset;
+    cursor: pointer;
     color: $content-color;
     border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 8px;
 
-    .icon {
-        font-size: 20px;
-    }
-}
-
-.button_burger {
-    display: none;
-}
-
-.button_blue {
+    /*** Описание цветов кнопки ***/
+    /*** default blue ***/
     background-color: $primary-color;
 
     &:hover {
-        cursor: pointer;
         background-color: $primary-color-hover;
     }
 
@@ -38,213 +68,156 @@
     &:disabled {
         background-color: $primary-color-disabled;
     }
-}
 
-.button_green {
-    background-color: $primary-color-green;
+    &_green {
+        background-color: $primary-color-green;
 
-    &:hover {
-        cursor: pointer;
-        background-color: $primary-color-green-hover;
+        &:hover {
+            background-color: $primary-color-green-hover;
+        }
+
+        &:active {
+            background-color: $primary-color-green-click;
+        }
+
+        &:disabled {
+            background-color: $primary-color-green-disabled;
+        }
     }
 
-    &:active {
-        background-color: $primary-color-green-click;
+    &_red {
+        background-color: $interview-end-color;
     }
 
-    &:disabled {
-        background-color: $primary-color-green-disabled;
+    &_white {
+        color: $primary-color;
+        background-color: $content-color;
+        border: 1px solid $primary-color;
+
+        &:hover {
+            background-color: $content-color;
+            color: $primary-color-hover;
+            border-color: $primary-color-hover;
+        }
+
+        &:active {
+            background-color: $content-color;
+            color: $primary-color-active;
+            border-color: $primary-color-active;
+        }
+
+        &:disabled {
+            color: $primary-color-disabled;
+            border-color: $primary-color-disabled;
+        }
+
+        &_no-border {
+            box-shadow: 0 4px 4px rgba($main-text, .25);
+            border: none;
+        }
+    }
+
+    /** Описание размеров кнопки ***/
+    /** default size M **/
+    @include size_M;
+
+    &_size {
+        &_l {
+            @include size_L;
+        }
+
+        &_s {
+            @include size_S;
+        }
+
+        &_xs {
+            @include size_XS;
+        }
+    }
+
+    /** Позиционирование иконки ***/
+    &_icon-left {
+        flex-direction: row-reverse;
+    }
+
+    /** Вариант c закруглением ***/
+    &_radius {
+        border-radius: 1000px;
+    }
+
+    /** Вариант без текста ***/
+    &_without-text {
+        gap: 0;
+        padding: $padding-button-without-text-desc;
+
+        @media screen and (max-width: 1000px) {
+            padding: $padding-button-without-text-tab;
+
+        }
+    }
+
+    /** Вариант без действия ***/
+    &_without-event {
+        cursor: default;
+        pointer-events: none; // Отключает взаимодействие с элементом
+
+        &:hover {
+            background-color: inherit; // Убирает стили при наведении
+        }
     }
 }
 
-.button_white {
-    color: $primary-color;
-    background-color: $content-color;
-    border: 1px solid $primary-color;
-
-    &:hover {
-        cursor: pointer;
-        color: $primary-color-hover;
-        border-color: $primary-color-hover;
-    }
-
-    &:active {
-        color: $primary-color-active;
-        border-color: $primary-color-active;
-    }
-
-    &:disabled {
-        color: $primary-color-disabled;
-        border-color: $primary-color-disabled;
-    }
-}
-
-.button_size_l {
-    font-weight: 600;
-    padding: $padding-button-l;
-    @include heading-h4;
-
-    @media screen and (max-width: 1000px) {
-        padding: $padding-button-m;
-    }
-
-    @media screen and (max-width: 600px) {
-        padding: $padding-button-s;
-    }
-}
-
-.button_size_m {
-    font-weight: 600;
-    padding: $padding-button-m;
-    @include heading-h5;
-
-    @media screen and (max-width: 600px) {
-        padding: $padding-button-s
-    }
-}
-
-.button_size_s {
-    font-weight: 500;
-    padding: $padding-button-s;
-    @include heading-h6;
-}
-
-.button_withiout-text {
-    gap: 0;
-    padding: $padding-button-without-text-desc;
-
-    @media screen and (max-width: 1000px) {
-        padding: $padding-button-without-text-tab;
-
-    }
-}
-
-.button_link {
-    display: inline-flex;
-}
-
-.button_icon-left {
-    flex-direction: row-reverse;
-}
-
-.button_burger {
-    padding: 0;
-    gap: 0;
-}
-
-.button_header {
-    padding: 8px 20px;
-    @include heading-h6;
-}
-
+// Не в кнопках должно быть
 .custom-file-upload {
     display: inline-block;
     position: relative;
     font-size: 14px;
     line-height: 18px;
-}
 
-.custom-file-upload label {
-    outline: 0;
-    border: 0;
-    font-family: inherit;
-    cursor: pointer;
-    padding: 11px 22px 11px 47px;
-    background-image: url(../icons/add-document_icon.svg);
-    background-position: 8%;
-    background-repeat: no-repeat;
-    border: 1px solid $primary-color;
-    color: $primary-color;
-    border-radius: 8px;
+    label {
+        outline: 0;
+        border: 0;
+        font-family: inherit;
+        cursor: pointer;
+        padding: 11px 22px 11px 47px;
+        background-image: url(../icons/add-document_icon.svg);
+        background-position: 8%;
+        background-repeat: no-repeat;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        border-radius: 8px;
 
-    &:hover {
-        color: $primary-color-hover;
-        border-color: $primary-color-hover;
+        &:hover {
+            color: $primary-color-hover;
+            border-color: $primary-color-hover;
+        }
+    }
+
+    input {
+        display: none;
     }
 }
 
-.custom-file-upload input {
-    display: none;
-}
-
-// Тэги
-.tag {
-    all: unset;
-    border-radius: 1000px;
-
-    .tag_span {
-        margin-left: 12px;
+// Не в кнопках должно быть
+@media screen and (max-width: 600px) {
+    .button_interview {
+        margin-top: 12px;
     }
 
-    .tag_icon {
-        width: 24px;
+    .button_add-author {
+        margin: 27px 0 35px;
     }
-}
 
-.tag-link {
-    padding: $padding-tag-link-desc;
-    color: $primary-color;
-    cursor: pointer;
-    @include heading-h5;
-    @include tag-with-icon();
-
-    @media screen and (max-width: 1000px) {
-        padding: $padding-tag-link-tab;
+    .custom-file-upload label {
+        padding-left: 41px;
     }
-}
 
-.tag-button-with-icon {
-    padding: $padding-tag-link-desc;
-    color: $primary-color;
-    @include heading-h5;
-    @include tag-with-icon();
-}
-
-.tag-link-with-icon {
-    padding: $padding-tag-link-desc;
-    color: $primary-color;
-    cursor: pointer;
-    @include heading-h5;
-    @include tag-with-icon();
-}
-
-.tag-button {
-    @include heading-h5;
-    padding: $padding-tag-button-desc;
-    color: $content-color;
-
-    @media screen and (max-width: 1000px) {
-        padding: $padding-tag-button-tab;
+    .virtual-reception__send-button {
+        padding: 12px 20px;
     }
-}
-
-.tag-button-red {
-    background-color: $interview-end-color;
-}
-
-.tag-button-green {
-    background-color: $primary-color-green;
-}
-
-.tag-button-blue {
-    background-color: $primary-color;
 }
 
 @media screen and (max-width: 1000px) {
-    .button {
-        font-size: 14px;
-        line-height: 18px;
-        padding: 12px 20px;
-    }
-
-    .button_white {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 16px;
-        padding: 8px 16px;
-
-    }
-
     .button_interview {
         font-size: 14px;
         line-height: 18px;
@@ -272,35 +245,27 @@
     }
 }
 
+// Перенести в шапку
+
+
+.button_burger {
+    display: none;
+}
+
+.button_burger {
+    padding: 0;
+    gap: 0;
+}
+
+.button_header {
+    padding: 8px 20px;
+    @include heading-h6;
+}
+
 @media screen and (max-width: 880px) {
     .button.button_burger {
         display: block;
         padding-right: 0;
     }
 
-}
-
-@media screen and (max-width: 600px) {
-    .button {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        padding: 8px 16px;
-    }
-
-    .button_interview {
-        margin-top: 12px;
-    }
-
-    .button_add-author {
-        margin: 27px 0 35px;
-    }
-
-    .custom-file-upload label {
-        padding-left: 41px;
-    }
-
-    .virtual-reception__send-button {
-        padding: 12px 20px;
-    }
 }

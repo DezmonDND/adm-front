@@ -1,41 +1,18 @@
 mixin icon(icon, text)
-    span.button_span #{text}
-    ion-icon(name=`${icon}` class=`icon`)
-
-mixin button-with-link(options)
-    if options.icon
-        a.button.button_link(href='/' target='_blank' class=`${options.class} ${options.iconPosition ? `button_icon-${options.iconPosition}` : '' } ${options.size ? `button_size_${options.size}` : ''}` )
-            +icon(options.icon, options.text)
-    else 
-        a.button.button_link(href='/' target='_blank' class=`${options.class} ${options.size ? `button_size_${options.size}` : ''}`)
-            span.button_span #{options.text} 
-
-mixin button-without-link(options)
-    if options.icon
-        button.button(onclick=options.event class=`${options.class} ${options.iconPosition ? `button_icon-${options.iconPosition}` : '' } ${options.size ? `button_size_${options.size}` : ''}` disabled=options.disabled)
-            +icon(options.icon, options.text)
-    else 
-        button.button(onclick=options.event class=`${options.class} ${options.size ? `button_size_${options.size}` : ''}` disabled=options.disabled)
-            span.button_span #{options.text}
-
-mixin tag-icon(options)
-    ion-icon(name=`${options.icon}` class=`tag_icon`)
-    span.tag_span #{options.text} 
-
-mixin tag(options)
-    if options.type === 'tag-button-with-icon'
-        button(class=`tag ${options.class ? options.class : ''}`)
-            +tag-icon(options)        
-    else if options.type === 'tag-link-with-icon'
-        a(href=options.href class=`tag tag-link-with-icon ${options.class ? options.class : ''}`)
-            +tag-icon(options)       
-    else if options.type === 'tag-colored'
-        button(class=`tag tag-button ${options.class ? options.class : ''}` type='button') #{options.text}
+    if text
+        span.button_span #{text}
+    if icon
+        ion-icon(name=`${icon}` class=`icon`)
 
 mixin button(options)
+    - const classSize = options.size ? 'button_size_'+options.size : ''
+    - const classHasText = options.text ? '' : 'button_without-text'
+    - const classIconPosition = options.iconPosition ? 'button_icon-'+options.iconPosition : ''
+    - const classHasEvent = options.event ? '' : 'button_without-event'
+    
     if options.type === 'link'
-        +button-with-link(options)  
-    else if options.type === 'button'
-        +button-without-link(options) 
-    else  
-        +tag(options)
+        a.button.button_link( href='/' class=[options.class, classSize, classHasText, classIconPosition].join(' ') attributes=(options.target ? { target: '_blank' } : {}))
+            +icon(options.icon, options.text)
+    if options.type === 'button'
+        button.button(onclick=options.event class=[options.class, classSize, classHasText, classIconPosition, classHasEvent].join(' ') disabled=options.disabled)
+            +icon(options.icon, options.text)
