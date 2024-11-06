@@ -1,10 +1,11 @@
 @use 'fonts';
 @use 'props';
-
 @use '../styles/vars.scss' as *;
+
 @use '../../blocks/libs/inputs/inputs.scss';
 @use '../../blocks/libs/buttons/buttons.scss';
 @use '../../blocks//libs/links/links.scss';
+@use '../../blocks//libs/linkslist/linkslist.scss';
 @use '../../blocks/libs/textarea/textarea.scss';
 @use '../../blocks/libs/select/select.scss';
 @use '../../blocks/libs//checkbox/checkbox.scss';
@@ -13,6 +14,7 @@
 @use '../../blocks/libs/calender/calender.scss';
 @use '../../blocks/libs/tab-buttons/tab-buttons.scss';
 @use '../../blocks/libs/pag-buttons/pag-buttons.scss';
+@use '../../blocks/libs/fullwidth/fullwidth.scss';
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
 @use '../../blocks/components/form-field/form-field.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
@@ -31,6 +33,9 @@
 @use '../../blocks/components/fieldset/fieldset.scss';
 @use '../../blocks/components/feedbacks/feedbacks.scss';
 @use '../../blocks/components/reception/reception.scss';
+@use '../../blocks/components/hearing/preview/hearing-preview.scss';
+@use '../../blocks/components/hearing/list/hearing-list.scss';
+@use '../../blocks/components/hearing/detail/hearing-detail.scss';
 @use '../../blocks/components/biography/biography-card.scss';
 @use '../../blocks/components/biography/biography.scss';
 @use '../../blocks/libs/multiselect/multi-select.scss';
@@ -39,6 +44,7 @@
 @use '../../blocks/components/main-services/main-services.scss';
 @use '../../blocks/components/main-links/main-links.scss';
 @use '../../blocks/components/administration/struct/adm-struct.scss';
+@use './bootstrap-grid.scss';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -57,8 +63,8 @@ body {
 }
 
 .main {
-    max-width: 1440px;
     box-sizing: border-box;
+    max-width: 1440px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -138,5 +144,10 @@ body {
 .grey-block {
     background: $cards-background;
     border-radius: 12px;
+    width: 100%;
+}
+
+hr {
+    border-color: #ebedf4;
     width: 100%;
 }

@@ -32,6 +32,155 @@
       </div>
     </header>
     <main class="components">
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Кнопки</h4>
+          <h4>Типы кнопок [link/button]</h4>
+        </div>
+        <div class="col-6">
+          <h5>type: 'link', size: 'm', class: 'button_blue', href: '/about'</h5>
+          <h5>Если нужно открывать в новом окне, то передавать target=true</h5><a class="button button_link button_blue   " href="/" attributes="{}"><span class="button_span">Ccылка</span></a>
+        </div>
+        <div class="col-6">
+          <h5>type: 'button',  size: 'm',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"</h5>
+          <h5>Если не передать event, то будет некликабельной (тегом)</h5>
+          <button class="button button_blue    " onclick="console.log(1);"><span class="button_span">Кнопка</span>
+          </button>
+        </div>
+        <div class="col-12">
+          <h4>Цвета кнопок (добавляем в класс)</h4>
+        </div>
+        <div class="col-3">
+          <h5>button_blue (default)</h5><a class="button button_link button_blue   " href="/" attributes="{}"><span class="button_span">Синяя</span></a>
+        </div>
+        <div class="col-3">
+          <h5>button_green</h5><a class="button button_link button_green   " href="/" attributes="{}"><span class="button_span">Зеленая</span></a>
+        </div>
+        <div class="col-3">
+          <h5>button_red</h5><a class="button button_link button_red   " href="/" attributes="{}"><span class="button_span">Красная</span></a>
+        </div>
+        <div class="col-3">
+          <h5>button_white</h5><a class="button button_link button_white   " href="/" attributes="{}"><span class="button_span">Белая</span></a>
+        </div>
+        <div class="col-12">
+          <h4>Размеры кнопок</h4>
+        </div>
+        <div class="col-3">
+          <h5> Size: l</h5><a class="button button_link button_blue button_size_l  " href="/" attributes="{}"><span class="button_span">Большая</span></a>
+        </div>
+        <div class="col-3">
+          <h5> Size: m (default)</h5><a class="button button_link button_green button_size_m  " href="/" attributes="{}"><span class="button_span">Средняя</span></a>
+        </div>
+        <div class="col-3">
+          <h5> Size: s</h5><a class="button button_link button_red button_size_s  " href="/" attributes="{}"><span class="button_span">Маленькая</span></a>
+        </div>
+        <div class="col-3">
+          <h5> Size: xs</h5><a class="button button_link button_red button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">для тегов</span></a>
+        </div>
+        <div class="col-12">
+          <h4>Кнопки с иконками</h4>
+        </div>
+        <div class="col-4">
+          <h5>iconPosition: 'left'</h5><a class="button button_link button_white   button_icon-left" href="/" attributes="{}"><span class="button_span">Example</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-4">
+          <h5>iconPosition: 'right'</h5><a class="button button_link button_white   button_icon-right" href="/" attributes="{}"><span class="button_span">Example</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-4">
+          <h5>Без текста</h5><a class="button button_link button_white  button_without-text " href="/" attributes="{}">
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-12">
+          <h4>Дополнительные опции</h4>
+        </div>
+        <div class="col-6">
+          <h5>Закругленная кнопка - class: button_radius</h5><a class="button button_link button_white button_radius   " href="/" attributes="{}"><span class="button_span">Example</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-6">
+          <h5>Кнопка без обводки(для белой) - class: button_white_no-border</h5><a class="button button_link button_white button_white_no-border button_radius   " href="/" attributes="{}"><span class="button_span">Example</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Навигация</h4>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/2">2</a><a class="pag-button pag-button_active" href="/2/3">3</a><a class="pag-button" href="/2/4">4</a><a class="pag-button" href="/2/6">6</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/6"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button_left pag-button-with-icon pag-button-with-icon_left_disabled" disabled="disabled"><span class="pag-button__span">Назад</span></button><a class="pag-button pag-button_active" href="/2/1">1</a><a class="pag-button" href="/2/2">2</a><span>...</span><a class="pag-button" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><a class="pag-button pag-button_active" href="/2/2">2</a><a class="pag-button" href="/2/3">3</a><span>...</span><a class="pag-button" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><span>...</span><a class="pag-button" href="/2/14">14</a><a class="pag-button pag-button_active" href="/2/15">15</a><a class="pag-button" href="/2/16">16</a><span>...</span><a class="pag-button" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><span>...</span><a class="pag-button" href="/2/29">29</a><a class="pag-button pag-button_active" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right pag-button-with-icon_right_disabled"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="pagination">
+            <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1">1</a><span>...</span><a class="pag-button" href="/2/28">28</a><a class="pag-button pag-button_active" href="/2/29">29</a><a class="pag-button" href="/2/30">30</a>
+            <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Табы переключатели</h4>
+        </div>
+        <div class="col-6">
+          <h5>Слайдер</h5>
+          <div class="tabs"><a class="tab-button " value="Самые важные">Самые важные</a><a class="tab-button " value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " value="Областная дума">Областная дума</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <h5>В виде тегов</h5>
+          <div class="tabs-tag"><a class="tab-button " value="Самые важные">Самые важные</a><a class="tab-button " value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " value="Областная дума">Областная дума</a>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Список ссылок</h4>
+        </div>
+        <div class="col-6">
+          <h5>Обычный</h5>
+          <div class="links-list"><a class="links-list-item" href="#">Назначающий НПА<img src="/icons/arrow-left_link-icon.svg"/></a><a class="links-list-item" href="#">Объявление с материалами<img src="/icons/arrow-left_link-icon.svg"/></a>
+          </div>
+        </div>
+        <div class="col-6">
+          <h5>С описанием</h5>
+          <div class="links-list"><a class="links-list-item" href="#">Назначающий НПА<span>14 услуг</span><img src="/icons/arrow-left_link-icon.svg"/></a><a class="links-list-item" href="#">Объявление с материалами<span>15 товаров</span><img src="/icons/arrow-left_link-icon.svg"/></a>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <h4>Другое</h4>
       <div class="ms">
         <ul class="ms__chose">
           <li>
@@ -160,8 +309,6 @@
         <button class="button button_blue button_size_xs   button_without-event"><span class="button_span">Искать</span>
         </button>
       </form><a class="tab-button " value="Самые важные">Самые важные</a>
-      <div class="tabs"><a class="tab-button " value="Самые важные">Самые важные</a><a class="tab-button " value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " value="Областная дума">Областная дума</a>
-      </div>
       <div class="project-card"> 
         <div class="project-card__content"> 
           <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>

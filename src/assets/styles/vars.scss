@@ -1,7 +1,10 @@
 // ЦВЕТА
 
+// Services
+$services-hover: #f2f3f5;
+
 // Типографика
-$main-text: #040528;
+$main-text: #040528; //primary
 $main-text-dark-bg: #ffffff;
 $second-text: #15195a;
 $tertiary-text: #78839c;
@@ -11,6 +14,7 @@ $fourth-text-inverse: #ebedf4;
 
 // Фон
 $cards-background: #fafafa;
+$grey-adm: #fafafa;
 
 // Иконки
 $icons-color: #1a2d82;
@@ -57,14 +61,14 @@ $interview-end-color: #d10404;
 
 // Шрифты
 
-/*** Start - FontWeight ***/
+//Start - FontWeight
 $font-weight-regular: 300;
 $font-weight-medium: 400;
 $font-weight-semi-bold: 500;
 $font-weight-bold: 600;
-/*** End - FontWeight ***/
+//End - FontWeight
 
-/*** Start - Heading ***/
+//Start - Heading
 @mixin heading-h1 {
     font-weight: $font-weight-semi-bold;
     font-size: 40px;
@@ -127,9 +131,7 @@ $font-weight-bold: 600;
     // Спросить, что тут должно быть
 }
 
-/*** Finish - Heading ***/
-
-/*** Start - Title ***/
+// Start - Title
 @mixin title-1 {
     font-weight: $font-weight-semi-bold;
     font-size: 32px;
@@ -194,9 +196,9 @@ $font-weight-bold: 600;
     }
 }
 
-/*** Finish - Title ***/
+// Finish - Title
 
-/*** Start - Text ***/
+// Start - Text
 
 @mixin text-1 {
     font-weight: $font-weight-regular;
@@ -240,7 +242,7 @@ $font-weight-bold: 600;
     }
 }
 
-/*** Finish - Text ***/
+//Finish - Text
 
 // Устаревшее
 @mixin desc-h1 {

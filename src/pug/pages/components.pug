@@ -2,6 +2,116 @@ extends ../layout
 
 block content   
    main.components
+      hr
+      .row
+         .col-12
+            h4 Кнопки
+            h4 Типы кнопок [link/button]
+         .col-6
+            h5 type: 'link', size: 'm', class: 'button_blue', href: '/about'
+            h5 Если нужно открывать в новом окне, то передавать target=true
+            +button({ type: 'link', class: 'button_blue', href: '/about', text: "Ccылка"})
+         .col-6
+            h5 type: 'button',  size: 'm',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"
+            h5 Если не передать event, то будет некликабельной (тегом)
+            +button({ type: 'button',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"})
+         .col-12
+            h4 Цвета кнопок (добавляем в класс)
+         .col-3
+            h5 button_blue (default)
+            +button({ type: 'link', class: 'button_blue', href: '/about', text: "Синяя"})
+         .col-3
+            h5 button_green
+            +button({ type: 'link', class: 'button_green', href: '/about', text: "Зеленая"})
+         .col-3
+            h5 button_red
+            +button({ type: 'link', class: 'button_red', href: '/about', text: "Красная"})
+         .col-3
+            h5 button_white
+            +button({ type: 'link', class: 'button_white', href: '/about', text: "Белая"})
+         .col-12
+            h4 Размеры кнопок
+         .col-3
+            h5  Size: l
+            +button({ type: 'link', size: 'l', class: 'button_blue', href: '/about', text: "Большая"})
+         .col-3
+            h5  Size: m (default)
+            +button({ type: 'link', size: 'm', class: 'button_green', href: '/about', text: "Средняя"})
+         .col-3
+            h5  Size: s
+            +button({ type: 'link', size: 's', class: 'button_red', href: '/about', text: "Маленькая"})
+         .col-3
+            h5  Size: xs
+            +button({ type: 'link', size: 'xs', class: 'button_red button_radius', text: "для тегов"})
+         .col-12
+            h4 Кнопки с иконками
+         .col-4
+            h5 iconPosition: 'left'
+            +button({ type: 'link', iconPosition: 'left',href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+         .col-4
+            h5 iconPosition: 'right'
+            +button({ type: 'link', iconPosition: 'right', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+         .col-4
+            h5 Без текста
+            +button({ type: 'link', href: '/about', class: 'button_white', icon: 'add-outline'})
+         .col-12
+            h4 Дополнительные опции
+         .col-6
+            h5 Закругленная кнопка - class: button_radius
+            +button({ type: 'link', href: '/about', class: 'button_white button_radius', icon: 'add-outline', text: 'Example'})
+         .col-6
+            h5 Кнопка без обводки(для белой) - class: button_white_no-border
+            +button({ type: 'link', href: '/about', class: 'button_white button_white_no-border button_radius', icon: 'add-outline', text: 'Example'})
+      hr
+      .row
+         .col-12
+            h4 Навигация
+         .col-6
+            +pagination(6, 3, 2)
+         .col-6
+            +pagination(30, 1, 2)
+         .col-6
+            +pagination(30, 2, 2)
+         .col-6
+            +pagination(30, 15, 2)
+         .col-6
+            +pagination(30, 30, 2)
+         .col-6
+            +pagination(30, 29, 2)
+      hr
+      .row
+         .col-12
+            h4 Табы переключатели
+         .col-6
+            h5 Слайдер
+            +tabs([
+               { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+               { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+               { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+               { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+               ]
+            )
+         .col-6
+            h5 В виде тегов
+            +tabs-tag([
+               { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+               { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+               { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+               { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+               ]
+            )
+      hr
+      .row
+         .col-12
+            h4 Список ссылок
+         .col-6
+            h5 Обычный
+            +linkslist([{title:"Назначающий НПА",  href:"#"},{title:"Объявление с материалами", href:"#"},])
+         .col-6
+            h5 С описанием
+            +linkslist([{title:"Назначающий НПА", desc:"14 услуг", href:"#"},{title:"Объявление с материалами", desc:"15 товаров", href:"#"},])
+      hr
+      h4 Другое
       +multi_select()
       123
       +button({ type: 'link', href: '/about', icon: 'add-outline', text: 'Example'})
@@ -114,12 +224,7 @@ block content
       { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
       )    
       +tab-button({ size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'})
-      +tabs([
-      { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
-      { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
-      { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
-      { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
-      ])
+      
       +project_card( true, {
          title: 'Название инициативного проекта',
          date: 'Создан 23 сентября 2024',
@@ -139,4 +244,3 @@ block content
             status: true,
          }
          })
-         +pagination(6, 3, 2) 

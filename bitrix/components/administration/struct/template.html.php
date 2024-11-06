@@ -1,7 +1,7 @@
 
 <div class="title"> 
   <div class="title__container"> 
-    <div class="title__name">Управление документационного и организационного обеспечения</div>
+    <h2>Управление документационного и организационного обеспечения</h2>
   </div>
 </div>
 <div class="tabs-tag"><a class="tab-button tab-button_active" href="/">О департаменте</a><a class="tab-button " href="/">Дороги и транспорт</a><a class="tab-button " href="/">Предприятия и организации</a><a class="tab-button " href="/">Муниципальные услуги населению</a><a class="tab-button " href="/">ЖКУ</a><a class="tab-button " href="/">Оплата ЖКУ</a><a class="tab-button " href="/">Жилье</a><a class="tab-button " href="/">Капитальный ремонт многоквартирныздомов</a><a class="tab-button " href="/">Приспособленные для проживания строения</a><a class="tab-button " href="/">Обращение с отходами</a><a class="tab-button " href="/">Энергосбережение</a><a class="tab-button " href="/">Природопользование</a><a class="tab-button " href="/">Оценка выполнения муниципальных зданий</a><a class="tab-button " href="/">Информация о вырубке лесных нассаждений и лессовосстановлении</a><a class="tab-button " href="/">Догазификация</a><a class="tab-button " href="/">МКД</a>

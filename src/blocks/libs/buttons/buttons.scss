@@ -46,6 +46,7 @@
 
 .button {
     all: unset;
+    inline-size: max-content;
     cursor: pointer;
     color: $content-color;
     border-radius: 8px;

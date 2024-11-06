@@ -1,0 +1,43 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+@mixin img-bg() {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+}
+
+@mixin play($size) {
+    background-color: $primary-color; // Цвет кнопки
+    border: none; // Убираем рамку
+    border-radius: 50%; // Делаем кнопку круглой
+    width: #{$size}px; // Ширина кнопки
+    height: #{$size}px; // Высота кнопки
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; // Указатель при наведении
+    transition: background-color 0.3s; // Плавный переход цвета
+
+    &:hover {
+        background-color: $primary-color-hover; // Цвет кнопки при наведении
+    }
+
+    &-icon {
+        position: relative;
+        // Центруем иконку, задаем размер
+        width: 0; // Задаем ширину и высоту 0, так как будем использовать границы
+        height: 0;
+
+        // Определяем размеры треугольника
+        border-left: #{$size * 0.1 * 2}px solid white; // Левая граница треугольника, 10% от размера кнопки
+        border-top: #{$size * 0.067 * 2}px solid transparent; // Верхняя граница треугольника, 6.7% от размера кнопки
+        border-bottom: #{$size * 0.067 * 2}px solid transparent; // Нижняя граница треугольника, 6.7% от размера кнопки
+
+        border-radius: 2px; // Задаем небольшое закругление
+
+        // Для центрирования треугольника в кнопке
+        margin-left: +#{$size * 0.05}px; // Сдвигаем на 5% влево для центрирования
+    }
+}
