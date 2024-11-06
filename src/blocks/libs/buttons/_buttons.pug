@@ -4,7 +4,7 @@ mixin icon(icon, text)
 
 mixin button-with-link(options)
     if options.icon
-        a.button.button_link(href='/' target='_blank' class=`${options.class} button_icon-${options.iconPosition} ${options.size ? `button_size_${options.size}` : ''}` )
+        a.button.button_link(href='/' target='_blank' class=`${options.class} ${options.iconPosition ? `button_icon-${options.iconPosition}` : '' } ${options.size ? `button_size_${options.size}` : ''}` )
             +icon(options.icon, options.text)
     else 
         a.button.button_link(href='/' target='_blank' class=`${options.class} ${options.size ? `button_size_${options.size}` : ''}`)
@@ -12,7 +12,7 @@ mixin button-with-link(options)
 
 mixin button-without-link(options)
     if options.icon
-        button.button(onclick=options.event class=`${options.class}` class=`${options.class} button_icon-${options.iconPosition} ${options.size ? `button_size_${options.size}` : ''}` disabled=options.disabled)
+        button.button(onclick=options.event class=`${options.class} ${options.iconPosition ? `button_icon-${options.iconPosition}` : '' } ${options.size ? `button_size_${options.size}` : ''}` disabled=options.disabled)
             +icon(options.icon, options.text)
     else 
         button.button(onclick=options.event class=`${options.class} ${options.size ? `button_size_${options.size}` : ''}` disabled=options.disabled)
