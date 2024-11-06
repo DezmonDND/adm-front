@@ -23,13 +23,13 @@ mixin tag-icon(options)
     span.tag_span #{options.text} 
 
 mixin tag(options)
-    if options.status === 'tag-button-with-icon'
+    if options.type === 'tag-button-with-icon'
         button(class=`tag ${options.class ? options.class : ''}`)
             +tag-icon(options)        
-    else if options.status === 'tag-link-with-icon'
+    else if options.type === 'tag-link-with-icon'
         a(href=options.href class=`tag tag-link-with-icon ${options.class ? options.class : ''}`)
             +tag-icon(options)       
-    else if options.type === 'tag'
+    else if options.type === 'tag-colored'
         button(class=`tag tag-button ${options.class ? options.class : ''}` type='button') #{options.text}
 
 mixin button(options)
