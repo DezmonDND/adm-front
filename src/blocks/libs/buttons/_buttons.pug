@@ -24,7 +24,7 @@ mixin tag-icon(options)
 
 mixin tag(options)
     if options.status === 'tag-button-with-icon'
-        button(class=`tag tag-button ${options.class ? options.class : ''}`)
+        button(class=`tag ${options.class ? options.class : ''}`)
             +tag-icon(options)        
     else if options.status === 'tag-link-with-icon'
         a(href=options.href class=`tag tag-link-with-icon ${options.class ? options.class : ''}`)
