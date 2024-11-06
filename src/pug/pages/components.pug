@@ -6,34 +6,62 @@ block content
       .row
          .col-12
             h4 Кнопки
+            h4 Типы кнопок [link/button]
+         .col-6
+            h5 type: 'link', size: 'm', class: 'button_blue', href: '/about'
+            h5 Если нужно открывать в новом окне, то передавать target=true
+            +button({ type: 'link', class: 'button_blue', href: '/about', text: "Ccылка"})
+         .col-6
+            h5 type: 'button',  size: 'm',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"
+            h5 Если не передать event, то будет некликабельной (тегом)
+            +button({ type: 'button',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"})
+         .col-12
+            h4 Цвета кнопок (добавляем в класс)
          .col-3
-            h5 Ссылка с иконкой
-            h5 (синяя - button_blue)
-            h6 size: 's' + iconPosition: 'left'
-            +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас', iconPosition: 'left' })
-            h6 size: 'm'
-            +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 'm', text: 'О нас', iconPosition: 'left' })
+            h5 button_blue (default)
+            +button({ type: 'link', class: 'button_blue', href: '/about', text: "Синяя"})
          .col-3
-            h5 Ссылка с иконкой
-            h5 (зеленая - button_green)
-            h6 size: 's'
-            +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 's', text: 'Контакты' })
-            h6 size: 'm'
-            +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
+            h5 button_green
+            +button({ type: 'link', class: 'button_green', href: '/about', text: "Зеленая"})
          .col-3
-            h5 Кнопка с иконкой
-            h5 (синяя - button_blue)
-            h6 size: 's'
-            +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 's', text: 'Далее' })
-            h6 size: 'm'
-            +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
+            h5 button_red
+            +button({ type: 'link', class: 'button_red', href: '/about', text: "Красная"})
          .col-3
-            h5 Кнопка с иконкой
-            h5 (белая - button_white)
-            h6 size: 's'
-            +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 's', text: 'Готово' })
-            h6 size: 'm'
-            +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 'm', text: 'Готово' })
+            h5 button_white
+            +button({ type: 'link', class: 'button_white', href: '/about', text: "Белая"})
+         .col-12
+            h4 Размеры кнопок
+         .col-3
+            h5  Size: l
+            +button({ type: 'link', size: 'l', class: 'button_blue', href: '/about', text: "Большая"})
+         .col-3
+            h5  Size: m (default)
+            +button({ type: 'link', size: 'm', class: 'button_green', href: '/about', text: "Средняя"})
+         .col-3
+            h5  Size: s
+            +button({ type: 'link', size: 's', class: 'button_red', href: '/about', text: "Маленькая"})
+         .col-3
+            h5  Size: xs
+            +button({ type: 'link', size: 'xs', class: 'button_red button_radius', text: "для тегов"})
+         .col-12
+            h4 Кнопки с иконками
+         .col-4
+            h5 iconPosition: 'left'
+            +button({ type: 'link', iconPosition: 'left',href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+         .col-4
+            h5 iconPosition: 'right'
+            +button({ type: 'link', iconPosition: 'right', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+         .col-4
+            h5 Без текста
+            +button({ type: 'link', href: '/about', class: 'button_white', icon: 'add-outline'})
+         .col-12
+            h4 Дополнительные опции
+         .col-6
+            h5 Закругленная кнопка - class: button_radius
+            +button({ type: 'link', href: '/about', class: 'button_white button_radius', icon: 'add-outline', text: 'Example'})
+         .col-6
+            h5 Кнопка без обводки(для белой) - class: button_white_no-border
+            +button({ type: 'link', href: '/about', class: 'button_white button_white_no-border button_radius', icon: 'add-outline', text: 'Example'})
       hr
       .row
          .col-12

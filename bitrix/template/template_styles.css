@@ -99,6 +99,7 @@
 }
 .button {
   all: unset;
+  inline-size: max-content;
   cursor: pointer;
   color: #ffffff;
   border-radius: 8px;
@@ -2166,7 +2167,8 @@
 }
 .title .title__container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 20px;
   padding: 13px 0 20px 0;
 }
@@ -2177,9 +2179,15 @@
   margin: 0;
 }
 .title .title__container .title__description {
+  flex-basis: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+.title .title__container .title__buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -2525,6 +2533,11 @@
   border-bottom: 10.988px solid transparent;
   border-radius: 2px;
   margin-left: +4.1px;
+}
+.hearing-preview .live_stream {
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 .hearing-list {

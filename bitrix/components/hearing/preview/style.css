@@ -62,3 +62,8 @@
   border-radius: 2px;
   margin-left: +4.1px;
 }
+.hearing-preview .live_stream {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}

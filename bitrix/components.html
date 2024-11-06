@@ -36,44 +36,73 @@
       <div class="row">
         <div class="col-12">
           <h4>Кнопки</h4>
+          <h4>Типы кнопок [link/button]</h4>
         </div>
-        <div class="col-3">
-          <h5>Ссылка с иконкой</h5>
-          <h5>(синяя - button_blue)</h5>
-          <h6>size: 's' + iconPosition: 'left'</h6><a class="button button_link button_blue button_size_s  button_icon-left" href="/" attributes="{}"><span class="button_span">О нас</span>
-            <ion-icon class="icon" name="plus_icon.svg"></ion-icon></a>
-          <h6>size: 'm'</h6><a class="button button_link button_blue button_size_m  button_icon-left" href="/" attributes="{}"><span class="button_span">О нас</span>
-            <ion-icon class="icon" name="plus_icon.svg"></ion-icon></a>
+        <div class="col-6">
+          <h5>type: 'link', size: 'm', class: 'button_blue', href: '/about'</h5>
+          <h5>Если нужно открывать в новом окне, то передавать target=true</h5><a class="button button_link button_blue   " href="/" attributes="{}"><span class="button_span">Ccылка</span></a>
         </div>
-        <div class="col-3">
-          <h5>Ссылка с иконкой</h5>
-          <h5>(зеленая - button_green)</h5>
-          <h6>size: 's'</h6><a class="button button_link button_green button_size_s  " href="/" attributes="{}"><span class="button_span">Контакты</span>
-            <ion-icon class="icon" name="arrow_icon.svg"></ion-icon></a>
-          <h6>size: 'm'</h6><a class="button button_link button_green button_size_m  " href="/" attributes="{}"><span class="button_span">Контакты</span>
-            <ion-icon class="icon" name="arrow_icon.svg"></ion-icon></a>
-        </div>
-        <div class="col-3">
-          <h5>Кнопка с иконкой</h5>
-          <h5>(синяя - button_blue)</h5>
-          <h6>size: 's'</h6>
-          <button class="button button_blue button_size_s   " onclick="someFunction()"><span class="button_span">Далее</span>
-            <ion-icon class="icon" name="arrow_icon.svg"></ion-icon>
-          </button>
-          <h6>size: 'm'</h6>
-          <button class="button button_blue button_size_m   " onclick="someFunction()"><span class="button_span">Далее</span>
-            <ion-icon class="icon" name="arrow_icon.svg"></ion-icon>
+        <div class="col-6">
+          <h5>type: 'button',  size: 'm',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"</h5>
+          <h5>Если не передать event, то будет некликабельной (тегом)</h5>
+          <button class="button button_blue    " onclick="console.log(1);"><span class="button_span">Кнопка</span>
           </button>
         </div>
+        <div class="col-12">
+          <h4>Цвета кнопок (добавляем в класс)</h4>
+        </div>
         <div class="col-3">
-          <h5>Кнопка с иконкой</h5>
-          <h5>(белая - button_white)</h5>
-          <h6>size: 's'</h6>
-          <button class="button button_white button_size_s   " onclick="getValues()"><span class="button_span">Готово</span>
-          </button>
-          <h6>size: 'm'</h6>
-          <button class="button button_white button_size_m   " onclick="getValues()"><span class="button_span">Готово</span>
-          </button>
+          <h5>button_blue (default)</h5><a class="button button_link button_blue   " href="/" attributes="{}"><span class="button_span">Синяя</span></a>
+        </div>
+        <div class="col-3">
+          <h5>button_green</h5><a class="button button_link button_green   " href="/" attributes="{}"><span class="button_span">Зеленая</span></a>
+        </div>
+        <div class="col-3">
+          <h5>button_red</h5><a class="button button_link button_red   " href="/" attributes="{}"><span class="button_span">Красная</span></a>
+        </div>
+        <div class="col-3">
+          <h5>button_white</h5><a class="button button_link button_white   " href="/" attributes="{}"><span class="button_span">Белая</span></a>
+        </div>
+        <div class="col-12">
+          <h4>Размеры кнопок</h4>
+        </div>
+        <div class="col-3">
+          <h5> Size: l</h5><a class="button button_link button_blue button_size_l  " href="/" attributes="{}"><span class="button_span">Большая</span></a>
+        </div>
+        <div class="col-3">
+          <h5> Size: m (default)</h5><a class="button button_link button_green button_size_m  " href="/" attributes="{}"><span class="button_span">Средняя</span></a>
+        </div>
+        <div class="col-3">
+          <h5> Size: s</h5><a class="button button_link button_red button_size_s  " href="/" attributes="{}"><span class="button_span">Маленькая</span></a>
+        </div>
+        <div class="col-3">
+          <h5> Size: xs</h5><a class="button button_link button_red button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">для тегов</span></a>
+        </div>
+        <div class="col-12">
+          <h4>Кнопки с иконками</h4>
+        </div>
+        <div class="col-4">
+          <h5>iconPosition: 'left'</h5><a class="button button_link button_white   button_icon-left" href="/" attributes="{}"><span class="button_span">Example</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-4">
+          <h5>iconPosition: 'right'</h5><a class="button button_link button_white   button_icon-right" href="/" attributes="{}"><span class="button_span">Example</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-4">
+          <h5>Без текста</h5><a class="button button_link button_white  button_without-text " href="/" attributes="{}">
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-12">
+          <h4>Дополнительные опции</h4>
+        </div>
+        <div class="col-6">
+          <h5>Закругленная кнопка - class: button_radius</h5><a class="button button_link button_white button_radius   " href="/" attributes="{}"><span class="button_span">Example</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-6">
+          <h5>Кнопка без обводки(для белой) - class: button_white_no-border</h5><a class="button button_link button_white button_white_no-border button_radius   " href="/" attributes="{}"><span class="button_span">Example</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
       </div>
       <hr/>

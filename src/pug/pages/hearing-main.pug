@@ -7,7 +7,10 @@ block content
                 { sort: 'crumb', href: '/', text: 'Главная' },
                 { sort: 'crumb', href: '/about', text: 'Публичные слушания'},
             ])
-        +title({title: "Публичные слушания", buttons:[{"type":"link", "text":"RSS", "icon":"1"}, {"type":"link", "text":"Подписаться", "icon":"1"}]})
+        +title({title: "Публичные слушания", buttons:[
+            { type: 'link', href:"/", target:true, class: 'button_white button_white_no-border button_radius', icon: 'logo-rss', iconPosition: 'left', text: 'RSS' },
+            { type: 'link', href:'/',  target:true, class: 'button_white button_white_no-border button_radius' , iconPosition: 'left', icon: 'mail', text: 'Подписаться на главное' }
+        ]})
         +tabs( 
             [
                 { isActive: true, title: 'Главная', href: '/hearing-main.html' , value: 'Национальные проекты'},

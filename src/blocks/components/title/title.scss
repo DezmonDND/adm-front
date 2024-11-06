@@ -4,7 +4,8 @@
 
     .title__container {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         gap: 20px;
         padding: 13px 0 20px 0;
 
@@ -16,9 +17,16 @@
         }
 
         .title__description {
+            flex-basis: 100%;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+        }
+
+        .title__buttons {
+            display: flex;
+            gap: 8px;
+            margin-left: auto;
         }
     }
 }
