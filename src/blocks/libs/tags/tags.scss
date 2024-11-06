@@ -42,7 +42,7 @@ $icons-color: #1A2D82;
     padding: $padding-tag-link-desc;
 
     @media screen and (max-width: 1000px) {
-        padding: $padding-tag-link-tab;
+        padding: $padding-tag-link-tab;       
     }
 }
 
@@ -51,7 +51,7 @@ $icons-color: #1A2D82;
     padding: $padding-tag-button-desc;
 
     @media screen and (max-width: 1000px) {
-        padding: $padding-tag-button-tab;
+        padding: $padding-tag-button-tab;       
     }
 }
 
@@ -140,5 +140,5 @@ $icons-color: #1A2D82;
         font-size: 12px;
         line-height: 16px;
     }
-
+    
 }
