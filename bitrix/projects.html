@@ -25,7 +25,7 @@
           <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
         </form>
         <div class="header__bottom-links"> <a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты </a></div>
-        <button class="button button_burger button_burger button_icon-undefined button_size_xs" onclick="anotherFunction()"><span class="button_span"></span>
+        <button class="button button_burger  button_size_xs" onclick="anotherFunction()"><span class="button_span"></span>
           <ion-icon class="icon" name="menu-outlined_icon.svg"></ion-icon>
         </button>
       </div>
@@ -46,10 +46,10 @@
       <div class="projects-array">
         <div class="projects-array__content projects-array__content">
           <div class="projects-array__edit-buttons">
-            <button class="button button_blue projects-array__button button_blue projects-array__button button_icon-undefined " onclick="addProject()"><span class="button_span">Добавить инициативный проект</span>
-              <ion-icon class="icon" name="plus_icon.svg"></ion-icon>
+            <button class="button button_blue button_icon-left button_size_m" onclick="addProject()"><span class="button_span">Добавить инициативный проект</span>
+              <ion-icon class="icon" name="add-outline"></ion-icon>
             </button>
-            <button class="button button_white projects-array__button " onclick="editProject()"><span class="button_span">Редактировать текущие</span></button>
+            <button class="button button_white button_size_m" onclick="editProject()"><span class="button_span">Редактировать текущие</span></button>
           </div>
           <div class="projects-array__list">
             <div class="project-card"> 
@@ -58,6 +58,7 @@
                 <label for="1"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
+                  <button class="tag tag-button tag-button-blue" type="button">Не заполнен</button>
                 </div>
               </div>
             </div>
@@ -67,6 +68,7 @@
                 <label for="2"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
+                  <button class="tag tag-button tag-button-red" type="button">Выполнен</button>
                 </div>
               </div>
             </div>
@@ -76,15 +78,16 @@
                 <label for="3"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
+                  <button class="tag tag-button tag-button-green" type="button">Выполнен</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="projects-array__save-buttons">
-            <button class="button button_blue projects-array__button button_blue projects-array__button button_icon-undefined " onclick="deleteProject()"><span class="button_span">Удалить</span>
-              <ion-icon class="icon" name="delete_icon.svg"></ion-icon>
+            <button class="button button_blue button_icon-left button_size_m" onclick="deleteProject()"><span class="button_span">Удалить</span>
+              <ion-icon class="icon" name="trash-outline"></ion-icon>
             </button>
-            <button class="button button_white projects-array__button projects-array__button_save_button " onclick="cancelEdit()"><span class="button_span">Отмена</span></button>
+            <button class="button button_white button_size_m" onclick="cancelEdit()"><span class="button_span">Отмена</span></button>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@
       <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
     </form>
     <div class="header__bottom-links"> <a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты </a></div>
-    <button class="button button_burger button_burger button_icon-undefined button_size_xs" onclick="anotherFunction()"><span class="button_span"></span>
+    <button class="button button_burger  button_size_xs" onclick="anotherFunction()"><span class="button_span"></span>
       <ion-icon class="icon" name="menu-outlined_icon.svg"></ion-icon>
     </button>
   </div>

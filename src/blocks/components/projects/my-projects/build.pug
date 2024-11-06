@@ -7,7 +7,7 @@ include ../../../libs/tags/_tags.pug
 include ../../../libs/checkbox/_checkbox.pug
 include ../../../libs/buttons/_buttons.pug 
 
-+projects_array( true, [
++projects_array( true, 'projects', [
     {
         title: 'Название инициативного проекта',
         date: 'Создан 23 сентября 2024',
@@ -15,10 +15,9 @@ include ../../../libs/buttons/_buttons.pug
         status: 'Не заполнен',
         isGoing: false,
         tag: {
-            sort: 'project-card',
+            type: 'tag-colored',
             text: 'Не заполнен',
-            isGoing: false,
-            status: ''
+            class: 'tag-button-blue',
         },
         checkbox: {
             id: '1',
@@ -33,10 +32,9 @@ include ../../../libs/buttons/_buttons.pug
         status: 'Не заполнен',
         isGoing: false,
         tag: {
-            sort: 'project-card',
-            text: 'Не заполнен',
-            isGoing: false,
-            status: ''
+            type: 'tag-colored',
+            text: 'Выполнен',
+            class: 'tag-button-red',
         },
         checkbox: {
             id: '2',
@@ -51,10 +49,9 @@ include ../../../libs/buttons/_buttons.pug
         status: 'Не заполнен',
         isGoing: false,
         tag: {
-            sort: 'project-card',
+            type: 'tag-colored',
             text: 'Выполнен',
-            isGoing: true,
-            status: ''
+            class: 'tag-button-green',
         },
         checkbox: {
             id: '3',
