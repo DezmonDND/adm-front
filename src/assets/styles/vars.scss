@@ -61,14 +61,14 @@ $interview-end-color: #d10404;
 
 // Шрифты
 
-/*** Start - FontWeight ***/
+//Start - FontWeight
 $font-weight-regular: 300;
 $font-weight-medium: 400;
 $font-weight-semi-bold: 500;
 $font-weight-bold: 600;
-/*** End - FontWeight ***/
+//End - FontWeight
 
-/*** Start - Heading ***/
+//Start - Heading
 @mixin heading-h1 {
     font-weight: $font-weight-semi-bold;
     font-size: 40px;
@@ -131,7 +131,7 @@ $font-weight-bold: 600;
     // Спросить, что тут должно быть
 }
 
-/*** Start - Title ***/
+// Start - Title
 @mixin title-1 {
     font-weight: $font-weight-semi-bold;
     font-size: 32px;
@@ -196,9 +196,9 @@ $font-weight-bold: 600;
     }
 }
 
-/*** Finish - Title ***/
+// Finish - Title
 
-/*** Start - Text ***/
+// Start - Text
 
 @mixin text-1 {
     font-weight: $font-weight-regular;
@@ -242,7 +242,7 @@ $font-weight-bold: 600;
     }
 }
 
-/*** Finish - Text ***/
+//Finish - Text
 
 // Устаревшее
 @mixin desc-h1 {

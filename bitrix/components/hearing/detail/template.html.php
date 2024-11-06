@@ -25,7 +25,8 @@
               <div class="hearing-detail-description-label">Время</div>18:00
             </div>
             <div class="hearing-detail-description-meta-item">
-              <button class="button button_white" onclick="console.log(&quot;Шаринг&quot;)"><span class="button_span">Поделиться</span><img class="icon" src="/local/templates/surgut/icons/link-outlined_icon.svg" alt="link-outlined_icon.svg"/>
+              <button class="button button_white button_size_s   " onclick="console.log(&quot;Шаринг&quot;)"><span class="button_span">Поделиться</span>
+                <ion-icon class="icon" name="link-outlined_icon.svg"></ion-icon>
               </button>
             </div>
           </div>
