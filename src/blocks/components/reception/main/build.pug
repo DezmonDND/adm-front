@@ -21,20 +21,20 @@ form.reception__form
                     { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
                 iconPosition: 'right'})
         +fieldset(
-        {
-            cls_title: 'reception__job',
-            type: '',
-            title: 'Наименование вашей организации (юридического лица)',
-            span: '',
-            error: false,
-            inputs: [
-                {
-                    placeholder: 'Наименование организации',
-                    name: 'companyName', 
-                    sort: 'virtual-reception_input',
-                },
-                ]    
-        })
+            {
+                cls_title: 'reception__job',
+                type: '',
+                title: 'Наименование вашей организации (юридического лица)',
+                span: '',
+                error: false,
+                inputs: [
+                    {
+                        placeholder: 'Наименование организации',
+                        name: 'companyName', 
+                        sort: 'virtual-reception_input',
+                    },
+                    ]    
+            })
         +fieldset(
             {
                 cls: 'user-contacts',
@@ -61,43 +61,44 @@ form.reception__form
                     }
                     ]    
             })
-        +button({ type: 'button', class: 'button_white reception_add-author-btn', event: 'addFormField(event)', text: `Добавить соавтора` })    
+        +button({ type: 'button', class: 'button_white reception_add-author-btn', event: 'addFormField(event)', text: `Добавить соавтора`, })    
         +fieldset(
-        {
-            cls_title: 'reception__email',
-            type: '',
-            title: 'Данные для контакта',
-            span: 'Вспомогательный текст',
-            error: false,
-            inputs: [
-                {
-                    placeholder: 'your_email@mail.ru',
-                    name: 'email', 
-                    sort: 'virtual-reception_input',
-                },
-                {
-                    placeholder: '892343567',
-                    name: 'phone',
-                    sort: 'virtual-reception_input',
-                },
-                ]    
-        })
+            {
+                cls_title: 'reception__email',
+                type: '',
+                title: 'Данные для контакта',
+                span: 'Вспомогательный текст',
+                error: false,
+                inputs: [
+                    {
+                        placeholder: 'your_email@mail.ru',
+                        name: 'email', 
+                        sort: 'virtual-reception_input',
+                    },
+                    {
+                        placeholder: '892343567',
+                        name: 'phone',
+                        sort: 'virtual-reception_input',
+                    },
+                    ]    
+            })
         +fieldset(
-        {
-            cls_title: 'reception__feedback',
-            type: 'textarea',
-            title: 'Обращение',
-            span: '',
-            error: false,
-            options: {
-                placeholder: 'Введите ваш ответ',
-                value: '900',
-                cls: 'reception'
-                    }
-        })
+            {
+                cls_title: 'reception__feedback',
+                type: 'textarea',
+                title: 'Обращение',
+                span: '',
+                error: false,
+                options: {
+                    placeholder: 'Введите ваш ответ',
+                    value: 'none',
+                    cls: 'reception',
+                    name: 'feedback',
+                        }
+            })
     ul.reception__documents-list
     .reception__buttons
         .custom-file-upload(onclick='addDocument()')
             label(for="file" id="file-label") Вложить документ
-                input(type="file" id="file" name="addDocument" value="" class='input__add-document')   
-        +button({ type: 'button', class: 'button_blue virtual-reception__send-button', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить обращение` })
+                input(type="file" id="file" name="files" class='input__add-document' multiple)   
+        +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })

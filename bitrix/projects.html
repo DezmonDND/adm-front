@@ -15,7 +15,8 @@
           <div class="header__socials"><a class="header__social__icon vk_icon" href="/"> </a><a class="header__social__icon ok_icon" href="/"> </a><a class="header__social__icon tg_icon" href="/"></a></div>
         </div>
         <div class="header__buttons"> <a class="header__eye-link" href="/"><span class="header__eye-link-title">Версия для слабовидящих</span></a>
-          <button class="button button_blue button_header" onclick="anotherFunction()"><span class="button_span">Войти</span></button>
+          <button class="button button_blue button_header button_size_xs   " onclick="anotherFunction()"><span class="button_span">Войти</span>
+          </button>
         </div>
       </div>
       <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
@@ -25,7 +26,8 @@
           <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
         </form>
         <div class="header__bottom-links"> <a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты </a></div>
-        <button class="button button_burger" onclick="anotherFunction()"><span class="button_span"></span><img class="icon" src="/local/templates/surgut/icons/menu-outlined_icon.svg" alt="menu-outlined_icon.svg"/>
+        <button class="button button_burger button_size_xs button_without-text  " onclick="anotherFunction()">
+          <ion-icon class="icon" name="menu-outlined_icon.svg"></ion-icon>
         </button>
       </div>
     </header>
@@ -45,9 +47,11 @@
       <div class="projects-array">
         <div class="projects-array__content projects-array__content">
           <div class="projects-array__edit-buttons">
-            <button class="button button_blue projects-array__button" onclick="addProject()"><span class="button_span">Добавить инициативный проект</span><img class="icon" src="/local/templates/surgut/icons/plus_icon.svg" alt="plus_icon.svg"/>
+            <button class="button button_blue button_size_m  button_icon-left " onclick="addProject()"><span class="button_span">Добавить инициативный проект</span>
+              <ion-icon class="icon" name="add-outline"></ion-icon>
             </button>
-            <button class="button button_white projects-array__button" onclick="editProject()"><span class="button_span">Редактировать текущие</span></button>
+            <button class="button button_white button_size_m   " onclick="editProject()"><span class="button_span">Редактировать текущие</span>
+            </button>
           </div>
           <div class="projects-array__list">
             <div class="project-card"> 
@@ -56,7 +60,8 @@
                 <label for="1"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-                  <button class="tag tag_project-card tag_ tag_event_undefined" type="button">Не заполнен</button>
+                  <button class="button button_blue button_radius button_size_xs   button_without-event"><span class="button_span">Не заполнен</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -66,7 +71,8 @@
                 <label for="2"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-                  <button class="tag tag_project-card tag_ tag_event_false" type="button">Не заполнен</button>
+                  <button class="button button_red button_radius button_size_xs   button_without-event"><span class="button_span">Выполнен</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -76,15 +82,18 @@
                 <label for="3"> </label>
                 <div class="project-card__info"> 
                   <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-                  <button class="tag tag_project-card tag_ tag_event_true" type="button">Выполнен</button>
+                  <button class="button button_green button_radius button_size_xs   button_without-event"><span class="button_span">Выполнен</span>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div class="projects-array__save-buttons">
-            <button class="button button_blue projects-array__button" onclick="deleteProject()"><span class="button_span">Удалить</span><img class="icon" src="/local/templates/surgut/icons/delete_icon.svg" alt="delete_icon.svg"/>
+            <button class="button button_blue button_size_m  button_icon-left " onclick="deleteProject()"><span class="button_span">Удалить</span>
+              <ion-icon class="icon" name="trash-outline"></ion-icon>
             </button>
-            <button class="button button_white projects-array__button projects-array__button_save_button" onclick="cancelEdit()"><span class="button_span">Отмена</span></button>
+            <button class="button button_white button_size_m   " onclick="cancelEdit()"><span class="button_span">Отмена</span>
+            </button>
           </div>
         </div>
       </div>
@@ -126,5 +135,7 @@
     </footer>
     <script src="./js/script.js"></script>
     <script src="./js/jquery-3.7.1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

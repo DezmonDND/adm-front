@@ -3,11 +3,10 @@ include ../_project-card.pug
 include ../../../components/user-profile/_user-profile.pug
 include ../../../components/tabs/main/_tabs.pug 
 include ../../../libs/tab-buttons/_tab-buttons.pug 
-include ../../../libs/tags/_tags.pug 
 include ../../../libs/checkbox/_checkbox.pug
 include ../../../libs/buttons/_buttons.pug 
 
-+projects_array( true, [
++projects_array( true, 'projects', [
     {
         title: 'Название инициативного проекта',
         date: 'Создан 23 сентября 2024',
@@ -15,10 +14,10 @@ include ../../../libs/buttons/_buttons.pug
         status: 'Не заполнен',
         isGoing: false,
         tag: {
-            sort: 'project-card',
+            size: "xs",
+            type: 'button',
             text: 'Не заполнен',
-            isGoing: false,
-            status: ''
+            class: 'button_blue button_radius',
         },
         checkbox: {
             id: '1',
@@ -33,10 +32,10 @@ include ../../../libs/buttons/_buttons.pug
         status: 'Не заполнен',
         isGoing: false,
         tag: {
-            sort: 'project-card',
-            text: 'Не заполнен',
-            isGoing: false,
-            status: ''
+            size: "xs",
+            type: 'button',
+            text: 'Выполнен',
+            class: 'button_red button_radius',
         },
         checkbox: {
             id: '2',
@@ -51,10 +50,10 @@ include ../../../libs/buttons/_buttons.pug
         status: 'Не заполнен',
         isGoing: false,
         tag: {
-            sort: 'project-card',
+            size: "xs",
+            type: 'button',
             text: 'Выполнен',
-            isGoing: true,
-            status: ''
+            class: 'button_green button_radius',
         },
         checkbox: {
             id: '3',
