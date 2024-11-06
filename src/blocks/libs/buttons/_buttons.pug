@@ -1,6 +1,6 @@
 mixin icon(icon, text)
     span.button_span #{text}
-    img(src = `./icons/${icon}` class=`icon` alt=`${icon}`)
+    ion-icon(name=`${icon}` class=`icon`)
 
 mixin button-with-link(options)
     if options.icon
@@ -19,15 +19,15 @@ mixin button-without-link(options)
             span.button_span #{options.text}
 
 mixin tag-icon(options)
-    img(src = `../../icons/${options.icon}_icon.svg` class=`tag_icon`)
+    ion-icon(name=`${options.icon}` class=`tag_icon`)
     span.tag_span #{options.text} 
 
 mixin tag(options)
     if options.status === 'live' || options.status === 'RSS'
         if options.status === 'live'
             button(class=`tag tag_${options.sort} tag_record tag_${options.status}`)
-                +tag-icon(options) 
-        else if options.status === 'RSS' 
+                +tag-icon(options)        
+        else if options.status === 'RSS'
             a(href=options.href class=`tag tag_${options.sort} tag_record tag_${options.status}`)
                 +tag-icon(options)       
     else if options.status === 'tag'
@@ -38,9 +38,5 @@ mixin button(options)
         +button-with-link(options)  
     else if options.type === 'button'
         +button-without-link(options) 
-    else if options.type === 'live'  
-        +tag(options)
-    else if options.type === 'RSS'
-        +tag(options)
-    else if options.type === 'tag'          
+    else  
         +tag(options)

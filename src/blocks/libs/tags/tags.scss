@@ -94,6 +94,10 @@ $icons-color: #1A2D82;
     cursor: pointer;
 }
 
+.tag_round {
+    border-radius: 1000px;
+}
+
 .tag_s {
     padding: 4px 20px;
     @include mob-h4();
