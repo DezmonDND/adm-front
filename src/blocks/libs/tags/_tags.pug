@@ -1,7 +1,14 @@
+//- mixin tag-icon(options)
+//-     img(src = `../../icons/${options.status}_icon.svg` class=`tag_icon`)
+//-     span.tag_span #{options.text} 
+
 mixin tag(options)
     if options.status === 'live' || options.status === 'RSS'
-        a(href=options.href class=`tag tag_${options.sort} tag_record tag_${options.status}`) 
-            img(src = `../../icons/${options.status}_icon.svg` class=`tag_icon`)
-            span.tag_span #{options.text}
+        if options.status === 'live'
+            button(class=`tag tag_${options.sort} tag_record tag_${options.status}`)
+                +tag-icon(options) 
+        else if options.status === 'RSS' 
+            a(href=options.href class=`tag tag_${options.sort} tag_record tag_${options.status}`)
+                +tag-icon(options)       
     else 
         button(class=`tag tag_${options.sort} tag_${options.status} ${options.isGoing ? `tag_event_${options.isGoing}` : ''}` type='button') #{options.text}

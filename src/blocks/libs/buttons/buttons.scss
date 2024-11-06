@@ -111,8 +111,51 @@ $main-text: #040528;
     }
 }
 
+.button_size_m {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 16px 28px;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-weight: 500;
+        line-height: 16px;
+        padding: 8px 16px;
+    }
+}
+
+.button_size_s {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 20px;
+
+    @media screen and (max-width: 600px) {
+        font-weight: 500;
+        line-height: 16px;
+        padding: 8px 16px;
+    }
+}
+
+.button_size_xs {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 16px;
+}
+
 .button_link {
     display: inline-flex;
+}
+
+.button_icon-left {
+    flex-direction: row-reverse;
 }
 
 .button_burger {

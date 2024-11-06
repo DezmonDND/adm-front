@@ -1,25 +1,46 @@
-mixin icon(icon, text, iconPosition)
+mixin icon(icon, text)
     span.button_span #{text}
     img(src = `./icons/${icon}` class=`icon` alt=`${icon}`)
 
 mixin button-with-link(options)
     if options.icon
-        a.button.button_link(href='/' target='_blank' class=`${options.class}`)
+        a.button.button_link(href='/' target='_blank' class=`${options.class} button_icon-${options.iconPosition} ${options.size ? `button_size_${options.size}` : ''}` )
             +icon(options.icon, options.text)
     else 
-        a.button.button_link(href='/' target='_blank' class=`${options.class}`)
+        a.button.button_link(href='/' target='_blank' class=`${options.class} ${options.size ? `button_size_${options.size}` : ''}`)
             span.button_span #{options.text} 
 
 mixin button-without-link(options)
     if options.icon
-        button.button(onclick=options.event class=`${options.class}` disabled=options.disabled)
+        button.button(onclick=options.event class=`${options.class}` class=`${options.class} button_icon-${options.iconPosition} ${options.size ? `button_size_${options.size}` : ''}` disabled=options.disabled)
             +icon(options.icon, options.text)
     else 
-        button.button(onclick=options.event class=`${options.class}` disabled=options.disabled)
+        button.button(onclick=options.event class=`${options.class} ${options.size ? `button_size_${options.size}` : ''}` disabled=options.disabled)
             span.button_span #{options.text}
+
+mixin tag-icon(options)
+    img(src = `../../icons/${options.icon}_icon.svg` class=`tag_icon`)
+    span.tag_span #{options.text} 
+
+mixin tag(options)
+    if options.status === 'live' || options.status === 'RSS'
+        if options.status === 'live'
+            button(class=`tag tag_${options.sort} tag_record tag_${options.status}`)
+                +tag-icon(options) 
+        else if options.status === 'RSS' 
+            a(href=options.href class=`tag tag_${options.sort} tag_record tag_${options.status}`)
+                +tag-icon(options)       
+    else if options.status === 'tag'
+        button(class=`tag tag_${options.sort} tag_${options.status} ${options.isGoing ? `tag_event_${options.isGoing}` : ''}` type='button') #{options.text}
 
 mixin button(options)
     if options.type === 'link'
         +button-with-link(options)  
-    else
-        +button-without-link(options)  
+    else if options.type === 'button'
+        +button-without-link(options) 
+    else if options.type === 'live'  
+        +tag(options)
+    else if options.type === 'RSS'
+        +tag(options)
+    else if options.type === 'tag'          
+        +tag(options)

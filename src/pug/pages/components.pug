@@ -3,10 +3,17 @@ extends ../layout
 block content   
    main.components
       +multi_select()
-      +button({ type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', size: 's', text: 'О нас', iconPosition: 'left' })
-      +button({ type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', size: 'm', text: 'Контакты' })
-      +button({ type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', size: 'm', text: 'Далее' })
-      +button({ type: 'button', class: 'button_white', event: 'getValues()', icon: '', size: 's', text: 'Готово' })
+      +button({ size: 'm', type: 'link', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', text: 'О нас', iconPosition: 'left' })
+      +button({ size: 'm', type: 'button', class: 'button_blue', href: '/about', icon: 'plus_icon.svg', text: 'О нас', iconPosition: 'left', disabled: true})
+      +button({ size: 's', type: 'link', class: 'button_green', href: '/contact', icon: 'arrow_icon.svg', text: 'Контакты' })
+      +button({ size: 'xs', type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow_icon.svg', text: 'Далее' })
+      +button({ size: 's', type: 'button', class: 'button_white', event: 'getValues()', icon: '', text: 'Готово' })
+      +button({ type: 'RSS', sort: 'RSS', status: 'RSS', text: 'RSS' })
+      +button({ type: 'live', sort: 'live', status: 'live', icon: 'live', text: 'Прямая трансляция' })
+      +button({ type: 'live', sort: 'round', status: 'live', icon: 'mail', text: 'Подписаться на главное' })
+      +button({ type: 'tag', text: 'Идет', isGoing: 'true', })
+      +button({ type: 'tag', text: 'Не определен', isGoing: 'undefined', })
+      +button({ type: 'tag', text: 'Завершен', isGoing: 'false', })
       +checkbox(
          { id: 'radio', sort: 'radio', status: false }
       )
@@ -25,49 +32,49 @@ block content
       { href: '/about', text: 'О нас' },
       { href: '/contact', text: 'Контакты' }
       ])
-      +tag(
-         {
-            status: 'RSS', 
-            onclick: null, 
-            sort: 'RSS',
-            text: 'RSS',
-            href: '/'
-            })
-      +tag(
-         {
-            status: 'live', 
-            onclick: null, 
-            sort: 'live',
-            text: 'Прямая трансляция',
-            href: '/'
-            })
-      +tag(
-         {
-            isGoing: 'false',
-            status: '', 
-            onclick: null, 
-            sort: '',
-            text: 'Завершен',
-            href: '/'
-            })
-      +tag(
-         {
-            isGoing: 'true',
-            status: '', 
-            onclick: null, 
-            sort: '',
-            text: 'Идет',
-            href: '/'
-            })     
-      +tag(
-         {
-            isGoing: 'undefined',
-            status: '', 
-            onclick: null, 
-            sort: '',
-            text: 'Не определен',
-            href: '/'
-            })              
+      //- +tag(
+      //-    {
+      //-       status: 'RSS', 
+      //-       onclick: null, 
+      //-       sort: 'RSS',
+      //-       text: 'RSS',
+      //-       href: '/'
+      //-       })
+      //- +tag(
+      //-    {
+      //-       status: 'live', 
+      //-       onclick: null, 
+      //-       sort: 'live',
+      //-       text: 'Прямая трансляция',
+      //-       href: '/'
+      //-       })
+      //- +tag(
+      //-    {
+      //-       isGoing: 'false',
+      //-       status: '', 
+      //-       onclick: null, 
+      //-       sort: '',
+      //-       text: 'Завершен',
+      //-       href: '/'
+      //-       })
+      //- +tag(
+      //-    {
+      //-       isGoing: 'true',
+      //-       status: '', 
+      //-       onclick: null, 
+      //-       sort: '',
+      //-       text: 'Идет',
+      //-       href: '/'
+      //-       })     
+      //- +tag(
+      //-    {
+      //-       isGoing: 'undefined',
+      //-       status: '', 
+      //-       onclick: null, 
+      //-       sort: '',
+      //-       text: 'Не определен',
+      //-       href: '/'
+      //-       })              
       +textarea({
          placeholder: 'Введите ваш ответ',
          value: '900'
