@@ -12,7 +12,7 @@ mixin interview(value)
                     span.iinterview__votes #{value.votes}
                     span.iinterview__user-status #{value.result}
             if value.buttonText           
-                +button({ type: 'link', class: 'button_blue button_interview', icon: 'arrow_icon.svg', text: `${value.buttonText}` })    
+                +button({ type: 'link', size: 'l', class: 'button_blue', icon: 'arrow-forward-outline', text: `${value.buttonText}` })    
 
 mixin interviews_array(datas= [])
     .interviews_array

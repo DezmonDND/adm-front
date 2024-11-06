@@ -1,5 +1,11 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+@mixin tag-with-icon() {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba($main-text, .25);
+}
+
 .button {
     all: unset;
     color: $content-color;
@@ -7,15 +13,9 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 16px 29px;
 
     .icon {
-        width: 20px;
         font-size: 20px;
-    }
-
-    .icon_m {
-        width: 24px;
     }
 }
 
@@ -24,8 +24,6 @@
 }
 
 .button_blue {
-    @include desc-h4();
-    font-weight: 600;
     background-color: $primary-color;
 
     &:hover {
@@ -63,8 +61,6 @@
     color: $primary-color;
     background-color: $content-color;
     border: 1px solid $primary-color;
-    font-size: 14px;
-    line-height: 18px;
 
     &:hover {
         cursor: pointer;
@@ -85,8 +81,8 @@
 
 .button_size_l {
     font-weight: 600;
-    @include heading-h4;
     padding: $padding-button-l;
+    @include heading-h4;
 
     @media screen and (max-width: 1000px) {
         padding: $padding-button-m;
@@ -99,8 +95,8 @@
 
 .button_size_m {
     font-weight: 600;
-    @include heading-h5;
     padding: $padding-button-m;
+    @include heading-h5;
 
     @media screen and (max-width: 600px) {
         padding: $padding-button-s
@@ -109,8 +105,8 @@
 
 .button_size_s {
     font-weight: 500;
-    @include heading-h6;
     padding: $padding-button-s;
+    @include heading-h6;
 }
 
 .button_withiout-text {
@@ -137,8 +133,8 @@
 }
 
 .button_header {
-    @include desc-title5();
     padding: 8px 20px;
+    @include heading-h6;
 }
 
 .custom-file-upload {
@@ -172,19 +168,9 @@
 }
 
 // Тэги
-@mixin tag-with-icon() {
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 4px rgba($main-text, .25);
-}
-
 .tag {
     all: unset;
     border-radius: 1000px;
-    padding: 4px 12px;
-    color: $content-color;
-    font-weight: 600;
-    color: $content-color;
 
     .tag_span {
         margin-left: 12px;
@@ -196,11 +182,11 @@
 }
 
 .tag-link {
-    @include heading-h5;
     padding: $padding-tag-link-desc;
-    @include tag-with-icon();
     color: $primary-color;
     cursor: pointer;
+    @include heading-h5;
+    @include tag-with-icon();
 
     @media screen and (max-width: 1000px) {
         padding: $padding-tag-link-tab;
@@ -208,23 +194,24 @@
 }
 
 .tag-button-with-icon {
-    @include heading-h5;
     padding: $padding-tag-link-desc;
-    @include tag-with-icon();
     color: $primary-color;
+    @include heading-h5;
+    @include tag-with-icon();
 }
 
 .tag-link-with-icon {
-    @include heading-h5;
     padding: $padding-tag-link-desc;
-    @include tag-with-icon();
     color: $primary-color;
     cursor: pointer;
+    @include heading-h5;
+    @include tag-with-icon();
 }
 
 .tag-button {
     @include heading-h5;
     padding: $padding-tag-button-desc;
+    color: $content-color;
 
     @media screen and (max-width: 1000px) {
         padding: $padding-tag-button-tab;
