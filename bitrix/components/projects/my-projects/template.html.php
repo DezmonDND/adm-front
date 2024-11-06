@@ -1,0 +1,49 @@
+
+<div class="projects-array">
+  <div class="projects-array__content projects-array__content">
+    <div class="projects-array__edit-buttons">
+      <button class="button button_blue button_icon-left button_size_m" onclick="addProject()"><span class="button_span">Добавить инициативный проект</span>
+        <ion-icon class="icon" name="add-outline"></ion-icon>
+      </button>
+      <button class="button button_white button_size_m" onclick="editProject()"><span class="button_span">Редактировать текущие</span></button>
+    </div>
+    <div class="projects-array__list">
+      <div class="project-card"> 
+        <div class="project-card__content"> 
+          <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
+          <label for="1"> </label>
+          <div class="project-card__info"> 
+            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
+            <button class="tag tag-button tag-button-blue" type="button">Не заполнен</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card"> 
+        <div class="project-card__content"> 
+          <input class="сheckbox " type="checkbox" id="2" name="undefined" checked="checked"/>
+          <label for="2"> </label>
+          <div class="project-card__info"> 
+            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
+            <button class="tag tag-button tag-button-red" type="button">Выполнен</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card"> 
+        <div class="project-card__content"> 
+          <input class="сheckbox " type="checkbox" id="3" name="undefined" checked="checked"/>
+          <label for="3"> </label>
+          <div class="project-card__info"> 
+            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
+            <button class="tag tag-button tag-button-green" type="button">Выполнен</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects-array__save-buttons">
+      <button class="button button_blue button_icon-left button_size_m" onclick="deleteProject()"><span class="button_span">Удалить</span>
+        <ion-icon class="icon" name="trash-outline"></ion-icon>
+      </button>
+      <button class="button button_white button_size_m" onclick="cancelEdit()"><span class="button_span">Отмена</span></button>
+    </div>
+  </div>
+</div>
