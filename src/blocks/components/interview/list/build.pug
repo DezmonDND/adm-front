@@ -1,18 +1,18 @@
 include ../_list.pug 
-include ../../../libs/tags/_tags.pug 
 include ../../../libs/buttons/_buttons.pug 
 
 +interviews_array([
     {
         date: 'до 29 сентября', 
-        title: 'Здравоохранение в Сургуте Здравоохранение в Сургуте Работа местных властей и общественные инициативы', 
-        description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+        title: 'Уровень благоустройства города', 
+        description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры', 
         votes: '319 голосов', 
         result: 'Вы участвовали', 
         buttonText: 'Участвовать', 
         tag: {
-            sort: 'interviews-array',
-            isGoing: true,
+            size: "xs",
+            type: 'button',
+            class: 'button_green',
             text: 'Идет', 
             },
     },
@@ -24,8 +24,9 @@ include ../../../libs/buttons/_buttons.pug
         result: 'Вы участвовали', 
         buttonText: 'Участвовать', 
         tag: {
-            sort: 'interviews-array',
-            isGoing: true,
+            size: "xs",
+            type: 'button',
+            class: 'button_green button_radius',
             text: 'Идет', 
             },
     },
@@ -37,8 +38,9 @@ include ../../../libs/buttons/_buttons.pug
         result: 'Вы участвовали', 
         buttonText: 'Участвовать', 
         tag: {
-            sort: 'interviews-array',
-            isGoing: true,
+            size: "xs",
+            type: 'button',
+            class: 'button_green button_radius',
             text: 'Идет', 
             },
     },
@@ -48,10 +50,11 @@ include ../../../libs/buttons/_buttons.pug
         description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
         votes: '319 голосов', 
         result: 'Вы участвовали', 
-        buttonText: 'Участвовать', 
+        buttonText: 'Результаты', 
         tag: {
-            sort: 'interviews-array',
-            isGoing: false,
+            size: "xs",
+            type: 'button',
+            class: 'button_red button_radius',
             text: 'Завершен', 
             },
     },
@@ -61,10 +64,11 @@ include ../../../libs/buttons/_buttons.pug
         description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
         votes: '319 голосов', 
         result: 'Вы участвовали', 
-        buttonText: 'Участвовать', 
+        buttonText: 'Результаты', 
         tag: {
-            sort: 'interviews-array',
-            isGoing: false,
+            size: "xs",
+            type: 'button',
+            class: 'button_red button_radius',
             text: 'Завершен',
             },
     },
@@ -74,10 +78,11 @@ include ../../../libs/buttons/_buttons.pug
         description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
         votes: '319 голосов', 
         result: 'Вы участвовали', 
-        buttonText: 'Участвовать', 
+        buttonText: '',
         tag: {
-            sort: 'interviews-array',
-            isGoing: false,
+            size: "xs",
+            type: 'button',
+            class: 'button_red button_radius',
             text: 'Завершен', 
             },
     },

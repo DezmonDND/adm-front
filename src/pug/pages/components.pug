@@ -2,18 +2,161 @@ extends ../layout
 
 block content   
    main.components
+      hr
+      .row
+         .col-12
+            h4 Кнопки
+            h4 Типы кнопок [link/button]
+         .col-6
+            h5 type: 'link', size: 'm', class: 'button_blue', href: '/about'
+            h5 Если нужно открывать в новом окне, то передавать target=true
+            +button({ type: 'link', class: 'button_blue', href: '/about', text: "Ccылка"})
+         .col-6
+            h5 type: 'button',  size: 'm',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"
+            h5 Если не передать event, то будет некликабельной (тегом)
+            +button({ type: 'button',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"})
+         .col-12
+            h4 Цвета кнопок (добавляем в класс)
+         .col-3
+            h5 button_blue (default)
+            +button({ type: 'link', class: 'button_blue', href: '/about', text: "Синяя"})
+         .col-3
+            h5 button_green
+            +button({ type: 'link', class: 'button_green', href: '/about', text: "Зеленая"})
+         .col-3
+            h5 button_red
+            +button({ type: 'link', class: 'button_red', href: '/about', text: "Красная"})
+         .col-3
+            h5 button_white
+            +button({ type: 'link', class: 'button_white', href: '/about', text: "Белая"})
+         .col-12
+            h4 Размеры кнопок
+         .col-3
+            h5  Size: l
+            +button({ type: 'link', size: 'l', class: 'button_blue', href: '/about', text: "Большая"})
+         .col-3
+            h5  Size: m (default)
+            +button({ type: 'link', size: 'm', class: 'button_green', href: '/about', text: "Средняя"})
+         .col-3
+            h5  Size: s
+            +button({ type: 'link', size: 's', class: 'button_red', href: '/about', text: "Маленькая"})
+         .col-3
+            h5  Size: xs
+            +button({ type: 'link', size: 'xs', class: 'button_red button_radius', text: "для тегов"})
+         .col-12
+            h4 Кнопки с иконками
+         .col-4
+            h5 iconPosition: 'left'
+            +button({ type: 'link', iconPosition: 'left',href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+         .col-4
+            h5 iconPosition: 'right'
+            +button({ type: 'link', iconPosition: 'right', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+         .col-4
+            h5 Без текста
+            +button({ type: 'link', href: '/about', class: 'button_white', icon: 'add-outline'})
+         .col-12
+            h4 Дополнительные опции
+         .col-6
+            h5 Закругленная кнопка - class: button_radius
+            +button({ type: 'link', href: '/about', class: 'button_white button_radius', icon: 'add-outline', text: 'Example'})
+         .col-6
+            h5 Кнопка без обводки(для белой) - class: button_white_no-border
+            +button({ type: 'link', href: '/about', class: 'button_white button_white_no-border button_radius', icon: 'add-outline', text: 'Example'})
+      hr
+      .row
+         .col-12
+            h4 Навигация
+         .col-6
+            +pagination(6, 3, 2)
+         .col-6
+            +pagination(30, 1, 2)
+         .col-6
+            +pagination(30, 2, 2)
+         .col-6
+            +pagination(30, 15, 2)
+         .col-6
+            +pagination(30, 30, 2)
+         .col-6
+            +pagination(30, 29, 2)
+      hr
+      .row
+         .col-12
+            h4 Табы переключатели
+         .col-6
+            h5 Слайдер
+            +tabs([
+               { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+               { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+               { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+               { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+               ]
+            )
+         .col-6
+            h5 В виде тегов
+            +tabs-tag([
+               { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
+               { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
+               { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
+               { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+               ]
+            )
+      hr
+      .row
+         .col-12
+            h4 Список ссылок
+         .col-6
+            h5 Обычный
+            +linkslist([{title:"Назначающий НПА",  href:"#"},{title:"Объявление с материалами", href:"#"},])
+         .col-6
+            h5 С описанием
+            +linkslist([{title:"Назначающий НПА", desc:"14 услуг", href:"#"},{title:"Объявление с материалами", desc:"15 товаров", href:"#"},])
+      hr
+      h4 Пример Popup
+      //- Кнопки для открытия popup-окна
+      a.popup-open(href='#' data-popup-id='popup1') Открыть popup 1
+      a.popup-open(href='#' data-popup-id='popup2') Открыть popup 2
+
+        //- Popup 1
+      #popup1.popup-fade.popup_not-padding(style='display: none;')
+         video(width="827" height="620" poster="http://dumasurgut.ru/getattachment/9884c888-bc58-4c22-bc13-99920c9d6adc/46453.aspx" preload="auto" controls)
+            source(src="http://vs.dumasurgut.ru:8080/vod/2024/ps130524.mp4" type="video/mp4")
+            p(style="color:whitesmoke; margin: 5px 5px;") Ваш браузер не может воспроизвести видео. Используйте современный браузер с поддержкой HTML5
+
+      #popup2.popup-fade(style='display: none;')
+         video(width="827" height="620" poster="http://dumasurgut.ru/getattachment/9884c888-bc58-4c22-bc13-99920c9d6adc/46453.aspx" preload="auto" controls)
+            source(src="http://vs.dumasurgut.ru:8080/vod/2024/ps130524.mp4" type="video/mp4")
+            p(style="color:whitesmoke; margin: 5px 5px;") Ваш браузер не может воспроизвести видео. Используйте современный браузер с поддержкой HTML5
+      hr
+      h4 Другое
       +multi_select()
-      +button({ size: 'm', type: 'link', class: 'button_blue', href: '/about', icon: 'add-outline', text: 'О нас', iconPosition: 'left' })
+      123
+      +button({ type: 'link', href: '/about', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', href: '/about', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'tag', href: '/about', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', size: 'l', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', size: 'm', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', size: 's', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Example'})
+      +button({ type: 'button', size: 's', href: '/about', class: 'button_white', icon: 'add-outline'})
+      +button({ type: 'button', class: 'button_white button_white_no-border button_radius', icon: 'logo-rss', iconPosition: 'left', text: 'RSS' })
+      +button({ type: 'button', class: 'button_white button_white_no-border button_radius', icon: 'radio-button-on-outline', iconPosition: 'left', text: 'Прямая трансляция' })
+      +button({ type: 'link', href:'/',  class: 'button_white button_white_no-border button_radius' , iconPosition: 'left', icon: 'mail', text: 'Подписаться на главное' })
+      +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: 'Идет' })
+      +button({ type: 'button', size: 'xs', class: 'button_red button_radius', text: 'Не определен' })
+      +button({ type: 'button', size: 'xs', class: 'button_green button_radius', text: 'Завершен' })
+
+      123
+      +button({ size: 'l', type: 'link', class: 'button_blue', href: '/about', icon: 'add-outline', text: 'О нас', iconPosition: 'left' })
       +button({ size: 'm', type: 'button', class: 'button_blue', href: '/about', icon: 'arrow-back-outline', text: 'О нас', iconPosition: 'left', disabled: true})
       +button({ size: 's', type: 'link', class: 'button_green', href: '/contact', icon: 'arrow-forward-outline', text: 'Контакты' })
-      +button({ size: 'xs', type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow-forward-outline', text: 'Далее' })
-      +button({ size: 's', type: 'button', class: 'button_white', event: 'getValues()', icon: '', text: 'Готово' })
-      +button({ type: 'RSS', sort: 'RSS', status: 'RSS', icon: 'logo-rss', text: 'RSS' })
-      +button({ type: 'live', sort: 'live', status: 'live', icon: 'radio-button-on-outline', text: 'Прямая трансляция' })
-      +button({ type: 'RSS', sort: 'round', status: 'RSS', icon: 'mail', text: 'Подписаться на главное' })
-      +button({ type: 'tag', text: 'Идет', isGoing: 'true', })
-      +button({ type: 'tag', text: 'Не определен', isGoing: 'undefined', })
-      +button({ type: 'tag', text: 'Завершен', isGoing: 'false', })
+      +button({ size: 'l', type: 'button', class: 'button_blue', event: 'someFunction()', icon: 'arrow-forward-outline', text: 'Далее' })
+      +button({ size: 'l', type: 'button', class: 'button_white button_withiout-text', event: 'someFunction()', icon: 'download-outline' })
+      +button({ size: 'm', type: 'button', class: 'button_white', event: 'getValues()', text: 'Готово' })
+      +button({ type: 'tag-link-with-icon', icon: 'logo-rss', text: 'RSS' })
+      +button({ type: 'tag-button-with-icon', class: 'tag-button-with-icon', icon: 'radio-button-on-outline', text: 'Прямая трансляция' })
+      +button({ type: 'tag-link-with-icon', icon: 'mail', text: 'Подписаться на главное' })
+      +button({ type: 'button', class: 'tag-button-blue', text: 'Идет' })
+      +button({ type: 'button', class: 'button_red button_radius', text: 'Не определен' })
+      +button({ type: 'button', class: 'button_green button_radius', text: 'Завершен' })
       +checkbox(
          { id: 'radio', sort: 'radio', status: false }
       )
@@ -31,50 +174,7 @@ block content
       { href: '/', text: 'Главная' },
       { href: '/about', text: 'О нас' },
       { href: '/contact', text: 'Контакты' }
-      ])
-      //- +tag(
-      //-    {
-      //-       status: 'RSS', 
-      //-       onclick: null, 
-      //-       sort: 'RSS',
-      //-       text: 'RSS',
-      //-       href: '/'
-      //-       })
-      //- +tag(
-      //-    {
-      //-       status: 'live', 
-      //-       onclick: null, 
-      //-       sort: 'live',
-      //-       text: 'Прямая трансляция',
-      //-       href: '/'
-      //-       })
-      //- +tag(
-      //-    {
-      //-       isGoing: 'false',
-      //-       status: '', 
-      //-       onclick: null, 
-      //-       sort: '',
-      //-       text: 'Завершен',
-      //-       href: '/'
-      //-       })
-      //- +tag(
-      //-    {
-      //-       isGoing: 'true',
-      //-       status: '', 
-      //-       onclick: null, 
-      //-       sort: '',
-      //-       text: 'Идет',
-      //-       href: '/'
-      //-       })     
-      //- +tag(
-      //-    {
-      //-       isGoing: 'undefined',
-      //-       status: '', 
-      //-       onclick: null, 
-      //-       sort: '',
-      //-       text: 'Не определен',
-      //-       href: '/'
-      //-       })              
+      ])          
       +textarea({
          placeholder: 'Введите ваш ответ',
          value: '900'
@@ -140,12 +240,7 @@ block content
       { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
       )    
       +tab-button({ size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'})
-      +tabs([
-      { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
-      { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
-      { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
-      { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
-      ])
+      
       +project_card( true, {
          title: 'Название инициативного проекта',
          date: 'Создан 23 сентября 2024',
@@ -153,6 +248,7 @@ block content
          status: 'Не заполнен',
          isGoing: false,
          tag: {
+            size: "xs",
             sort: 'project-card',
             text: 'Не заполнен',
             isGoing: false,
@@ -164,4 +260,3 @@ block content
             status: true,
          }
          })
-         +pagination(6, 3, 2) 

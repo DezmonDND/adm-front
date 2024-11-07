@@ -3,9 +3,9 @@ mixin event-card(data)
         .event-card__container 
             .event-card__info 
                 .event-card__tags
-                    +button({ size: 'xs', type: 'button', class: 'button_blue', text: 'история' })
-                    +button({ size: 'xs', type: 'button', class: 'button_blue', text: 'Награды' })
-                    +button({ size: 'xs', type: 'button', class: 'button_blue', text: 'Экономика' })
+                    +button({ type: 'button', size: 'xs', class: 'button_gray button_radius', text: "История"})
+                    +button({ type: 'button', size: 'xs', class: 'button_gray button_radius', text: "Награды"})
+                    +button({ type: 'button', size: 'xs', class: 'button_gray button_radius', text: "Экономика"})
                 .event-card__description 
                     h2.event-card__title #{data.title}
                     p.event-card__text #{data.description}
@@ -13,8 +13,8 @@ mixin event-card(data)
                         span.event-card__date #{data.date}
                         span.event-card__last-date #{data.last_date}
                 .event-card__buttons 
-                    +button({ size: 's', type: 'link', class: 'button_blue', href: '/about', icon: 'add-outline', text: 'Версия для печати', iconPosition: 'left' })
-                    +button({ size: 's', type: 'link', class: 'button_white', href: '/about', icon: 'add-outline', text: 'Поделиться', iconPosition: 'left' })
-                    +button({ size: 's', type: 'link', class: 'button_white', href: '/about', icon: 'add-outline', iconPosition: 'left' })  
+                    +button({ size: 'm', type: 'link', class: 'button_blue', href: '/about', icon: 'print-outline', text: 'Версия для печати', iconPosition: 'left' })
+                    +button({ size: 'm', type: 'link', class: 'button_white', href: '/about', icon: 'link-outline', text: 'Поделиться', iconPosition: 'left' })
+                    +button({ size: 'm', type: 'link', class: 'button_white', href: '/about', icon: 'download-outline' })  
             
 

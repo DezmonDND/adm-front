@@ -1,0 +1,22 @@
+mixin hearing-list(title, items)
+    .hearing-list
+        if title != "" 
+            h3 #{title}
+        .hearing-list-items
+            each item, index in items
+                .hearing-item
+                    .hearing-item-link
+                        img(src="./resources/hearing.jpg")
+                        .hearing-item-bg
+                        a(href="/hearing-detail.html").hearing-item-play
+                            span.hearing-item-play-icon
+                    .hearing-item-content
+                        .hearing-item-title
+                            span #{item.title}
+                        .hearing-item-labels
+                            .hearing-item-labels-item
+                                span Дата публикации
+                                |#{item.date}
+                            .hearing-item--labels-item
+                                span Организатор
+                                |#{item.org}

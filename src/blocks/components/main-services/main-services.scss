@@ -6,12 +6,11 @@
     .main-services__container {
         display: flex;
         flex-direction: column;
-        padding: 0 64px 48px;
         gap: 60px;
 
         .main-services__search {
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: repeat(2, calc((100% - 24px)/2));
             gap: 24px;
 
             .main-services__search-content {
@@ -24,7 +23,7 @@
                     font-size: 24px;
                     line-height: 28px;
                 }
-    
+
                 .search-main-services {
                     width: 100%;
                     max-width: none;
@@ -45,12 +44,12 @@
             }
 
             .main-services__buttons-container {
-                display: grid;
-                grid-template-columns: 50% 50%;
-                gap: 20px;
+                display: flex;
+                gap: 24px;
 
                 .main-services__button {
                     justify-content: center;
+                    width: 100%;
                 }
             }
 

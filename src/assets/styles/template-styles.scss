@@ -1,11 +1,11 @@
 @use 'fonts';
 @use 'props';
-
 @use '../styles/vars.scss' as *;
+
 @use '../../blocks/libs/inputs/inputs.scss';
 @use '../../blocks/libs/buttons/buttons.scss';
 @use '../../blocks//libs/links/links.scss';
-@use '../../blocks/libs/tags/tags.scss';
+@use '../../blocks//libs/linkslist/linkslist.scss';
 @use '../../blocks/libs/textarea/textarea.scss';
 @use '../../blocks/libs/select/select.scss';
 @use '../../blocks/libs//checkbox/checkbox.scss';
@@ -14,6 +14,8 @@
 @use '../../blocks/libs/calender/calender.scss';
 @use '../../blocks/libs/tab-buttons/tab-buttons.scss';
 @use '../../blocks/libs/pag-buttons/pag-buttons.scss';
+@use '../../blocks/libs/fullwidth/fullwidth.scss';
+@use '../../blocks/libs/modal/modal.scss';
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
 @use '../../blocks/components/form-field/form-field.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
@@ -32,6 +34,9 @@
 @use '../../blocks/components/fieldset/fieldset.scss';
 @use '../../blocks/components/feedbacks/feedbacks.scss';
 @use '../../blocks/components/reception/reception.scss';
+@use '../../blocks/components/hearing/preview/hearing-preview.scss';
+@use '../../blocks/components/hearing/list/hearing-list.scss';
+@use '../../blocks/components/hearing/detail/hearing-detail.scss';
 @use '../../blocks/components/biography/biography-card.scss';
 @use '../../blocks/components/biography/biography.scss';
 @use '../../blocks/libs/multiselect/multi-select.scss';
@@ -48,6 +53,8 @@
 @use '../../blocks/components/navigation/navigation.scss';
 @use '../../blocks/components/afisha/afisha-universal.scss';
 @use '../../blocks/components/afisha/event.scss';
+@use './bootstrap-grid.scss';
+
 
 * {
     font-family: 'Inter', sans-serif;
@@ -66,14 +73,15 @@ body {
 }
 
 .main {
-    max-width: 1440px;
     box-sizing: border-box;
-    // align-items: center;
+    max-width: 1440px;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 0 64px 60px;
+    @include main-padding;
+    padding-bottom: 60px;
+
 
     .main__title {
         font-weight: 700;
@@ -108,7 +116,7 @@ body {
 
 @media screen and (max-width: 1000px) {
     .main {
-        padding: 0 20px 40px;
+        padding-bottom: 40px;
 
         .main__description {
             margin-bottom: 30px;
@@ -129,7 +137,6 @@ body {
 
 @media screen and (max-width: 600px) {
     .main {
-        padding: 0 27px 40px;
 
         .main__title {
             font-size: 20px;
@@ -148,5 +155,10 @@ body {
 .grey-block {
     background: $cards-background;
     border-radius: 12px;
+    width: 100%;
+}
+
+hr {
+    border-color: #ebedf4;
     width: 100%;
 }

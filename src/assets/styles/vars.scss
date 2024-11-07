@@ -1,7 +1,10 @@
 // ЦВЕТА
 
+// Services
+$services-hover: #f2f3f5;
+
 // Типографика
-$main-text: #040528;
+$main-text: #040528; //primary
 $main-text-dark-bg: #ffffff;
 $second-text: #15195a;
 $tertiary-text: #78839c;
@@ -12,6 +15,7 @@ $fourth-text-inverse: #ebedf4;
 
 // Фон
 $cards-background: #fafafa;
+$grey-adm: #fafafa;
 
 // Иконки
 $icons-color: #1a2d82;
@@ -34,6 +38,17 @@ $primary-color-green: #14bc30;
 $primary-color-green-hover: #10cd30;
 $primary-color-green-click: #0c9022;
 $primary-color-green-disabled: #dbdbdb;
+$padding-button-l: 16px 28px;
+$padding-button-m: 12px 20px;
+$padding-button-s: 8px 16px;
+$padding-button-xs: 4px 24px;
+
+$padding-button-without-text-desc: 12px;
+$padding-button-without-text-tab: 8px;
+$padding-tag-link-desc: 12px 20px;
+$padding-tag-link-tab: 8px 16px;
+$padding-tag-button-desc: 4px 24px;
+$padding-tag-button-tab: 4px 16px;
 
 // Категории
 $health-color: linear-gradient(#8eec87 0%, #447ecb 100%);
@@ -47,14 +62,27 @@ $interview-end-color: #d10404;
 
 // Шрифты
 
-/*** Start - FontWeight ***/
+//Start - FontWeight
 $font-weight-regular: 300;
 $font-weight-medium: 400;
 $font-weight-semi-bold: 500;
 $font-weight-bold: 600;
-/*** End - FontWeight ***/
+//End - FontWeight
 
-/*** Start - Heading ***/
+// Mixin Container Padding
+@mixin main-padding {
+    padding: 0 64px;
+
+    @media screen and (max-width: 1000px) {
+        padding: 0 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 0 27px;
+    }
+}
+
+//Start - Heading
 @mixin heading-h1 {
     font-weight: $font-weight-semi-bold;
     font-size: 40px;
@@ -117,9 +145,7 @@ $font-weight-bold: 600;
     // Спросить, что тут должно быть
 }
 
-/*** Finish - Heading ***/
-
-/*** Start - Title ***/
+// Start - Title
 @mixin title-1 {
     font-weight: $font-weight-semi-bold;
     font-size: 32px;
@@ -184,9 +210,14 @@ $font-weight-bold: 600;
     }
 }
 
+
 /*** Finish - Title ***/
 
-/*** Start - Text ***/
+
+
+// Finish - Title
+
+// Start - Text
 
 @mixin text-1 {
     font-weight: $font-weight-regular;
@@ -229,8 +260,6 @@ $font-weight-bold: 600;
         // Спросить, что тут должно быть
     }
 }
-
-
 @mixin lead-2 {
     font-size: 24px;
     line-height: 28px;

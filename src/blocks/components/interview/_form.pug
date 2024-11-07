@@ -2,7 +2,7 @@ mixin interview-full(data)
     .interview-full
         .interview-full__container 
             .interview-full__info 
-                +tag(data.tag)
+                +button(data.tag)
                 span.interview-full__date #{data.date}
                 span.interview-full__votes #{data.votes}
             .interview-full__description 

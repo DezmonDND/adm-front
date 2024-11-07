@@ -1,0 +1,116 @@
+@use '../../../../assets/styles/vars.scss' as *;
+@use '../base.scss' as *;
+
+.hearing-preview {
+    max-height: 738px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+
+    @media (max-width: 1000px) {
+        max-height: 410px;
+    }
+
+    @media (max-width: 576px) {
+        max-height: 189px;
+    }
+
+    video {
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &-on {
+        video {
+            display: block;
+        }
+
+        img,
+        .hearing-preview-play,
+        .hearing-preview-bg,
+        .hearing-preview-title {
+            display: none;
+        }
+    }
+
+    &-bg {
+        @include img-bg();
+    }
+
+    &-title {
+        max-width: 890px;
+        color: #fff;
+        position: absolute;
+        bottom: 44px;
+        left: 40px;
+        text-decoration: none;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include title-1;
+
+        @media (max-width: 1000px) {
+            bottom: 12px;
+            left: 12px;
+        }
+    }
+
+    &-play {
+        position: absolute;
+        top: 328px;
+        @include play(82);
+
+        @media (max-width: 1000px) {
+            @include play(40);
+            top: 185px;
+        }
+
+        @media (max-width: 576px) {
+            @include play(32);
+            top: 79px;
+        }
+    }
+
+    .live_stream {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        color: $interview-end-color;
+
+        @media (max-width: 1000px) {
+            top: 10px;
+            left: 10px;
+        }
+
+        &_s {
+            display: none;
+
+            @media (max-width: 1000px) {
+                display: flex;
+            }
+        }
+
+        &_l {
+            display: flex;
+
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+    }
+}

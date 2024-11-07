@@ -103,4 +103,4 @@ block content
                 .custom-file-upload(onclick='addDocument()')
                     label(for="file" id="file-label") Вложить документ
                         input(type="file" id="file" name="files" class='input__add-document' multiple)   
-                +button({ type: 'button', class: 'button_blue virtual-reception__send-button', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить обращение` })
+                +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })

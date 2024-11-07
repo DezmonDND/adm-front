@@ -25,5 +25,10 @@
             grid-template-columns: repeat(4, calc((100% - 72px)/4));
             gap: 24px;
         }
+
+        .main-events__navigation {
+            display: flex;
+            justify-content: center;
+        }
     }
 }

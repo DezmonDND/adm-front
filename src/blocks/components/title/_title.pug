@@ -1,6 +1,10 @@
 mixin title(data)
     .title 
         .title__container 
-            h1.title__name #{data.title}
+            h2.title__name #{data.title}
+            if data.buttons
+                div.title__buttons
+                    each button, index in data.buttons
+                        +button(button)
             if data.description
                 .title__description #{data.description}            

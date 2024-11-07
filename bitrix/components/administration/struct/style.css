@@ -1,0 +1,35 @@
+.admstruct-contact {
+  margin: 20px;
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .admstruct-contact {
+    flex-direction: column;
+  }
+}
+.admstruct-contact-item {
+  flex: 1;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .admstruct-contact-item {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.admstruct-contact .admstruct-contact-item-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+@media (max-width: 768px) {
+  .admstruct-contact .admstruct-contact-item-label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

@@ -6,26 +6,43 @@
 
     .title__container {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         gap: 20px;
+        padding: 13px 0 20px 0;
 
-        .title__name {
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+        }
+
+        h2 {
             font-weight: 600;
             font-size: 32px;
             line-height: 38px;
+            margin: 0;
         }
 
         .title__description {
+            flex-basis: 100%;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+        }
+
+        .title__buttons {
+            display: flex;
+            gap: 8px;
+            margin-left: auto;
+
+            @media screen and (max-width: 576px) {
+                margin-left: 0;
+            }
         }
     }
 }
 
 @media screen and (max-width: 1000px) {
     .title {
-
         .title__container {
             .title__name {
                 font-weight: 600;
@@ -38,8 +55,6 @@
 
 @media screen and (max-width: 600px) {
     .title {
-
-
         .title__container {
             gap: 16px;
 
