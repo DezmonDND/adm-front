@@ -275,6 +275,11 @@ $font-weight-bold: 600;
     line-height: 20px;
 }
 
+@mixin caption-3 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
 /*** Finish - Text ***/
 
 // Устаревшее

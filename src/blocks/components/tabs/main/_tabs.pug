@@ -1,4 +1,7 @@
-mixin tabs(tabs = [])
+mixin tabs(slider, tabs = [])
   .tabs
-    each tab in tabs
-      +tab-button(tab)      
+    .tabs__container
+      each tab in tabs
+        +tab-button(tab)
+    if slider
+      +slider()          

@@ -1,7 +1,8 @@
 extends ../layout
 
-block content   
+block content
     main.main
+        +header-services()
         .news 
             .news__container
                 +news-card-with-image()
@@ -457,6 +458,23 @@ block content
                                 first_page: '1',
                                 end_page: '7',
                             })
+        .main-people-care 
+            +main-title({
+                href: '/',
+                title: 'С заботой о жителях',
+                slider: true,
+            })   
+            .main-people-care__container
+                .main-people-care__card-list 
+                    +people-care-card({
+                        title: 'Лицам с ограниченными возможностями здоровья',
+                    })
+                    +people-care-card({
+                        title: 'Бюджет для граждан Сургута'
+                    })
+                    +people-care-card({
+                        title: 'Национальные проекты'
+                    })                
         .main-services 
             +main-title({
                 href: '/',
@@ -520,6 +538,48 @@ block content
                     href: '/',
                     icon: 'arrow-in-cub_icon_main.svg',
                     title: 'Национальные проекты',
+                })
+        +main-title({
+            title: 'Помогите городу стать лучше',
+            link_text: 'Все опросы',
+            href: '/',
+        })
+        +tabs('slider', [
+            { title: 'Национальные проекты', href: '/' , value: 'Национальные проекты', isActive: true},
+            { title: 'Администрация', href: '/' , value: 'Администрация'},
+            { title: 'Прочее', href: '/' , value: 'Прочее'},
+            ])
+        .main-help-city 
+            .main-help-city__content 
+                +main-project-card({
+                    date: 'до 29 сентября',
+                    title: 'Уровень благоустройства города',
+                    description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры ',
+                    votes: '319 голосов',
+                    result: 'Вы участвовали',
+                    buttonText: 'Участвовать',
+                    tag: 'Идет',
+                    tag_color: 'green'
+                })
+                +main-project-card({
+                    date: 'до 29 сентября',
+                    title: 'Здравоохранение в Сургуте',
+                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг',
+                    votes: '319 голосов',
+                    result: 'Вы участвовали',
+                    buttonText: 'Участвовать',
+                    tag: 'Идет',
+                    tag_color: 'green'
+                })
+                +main-project-card({
+                    date: 'до 29 сентября',
+                    title: 'Работа местных властей и общественные инициативы',
+                    description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры ',
+                    votes: '319 голосов',
+                    result: 'Вы участвовали',
+                    buttonText: 'Участвовать',
+                    tag: 'Завершен',
+                    tag_color: 'red'
                 })
         .main-usefull-links
             +main-title({

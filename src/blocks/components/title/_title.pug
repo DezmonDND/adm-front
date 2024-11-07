@@ -7,4 +7,6 @@ mixin title(data)
                     each button, index in data.buttons
                         +button(button)
             if data.description
-                .title__description #{data.description}            
+                .title__description #{data.description}
+            if data.slider
+                +slider()                  

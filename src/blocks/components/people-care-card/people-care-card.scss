@@ -1,0 +1,24 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.people-care-card {
+    max-width: 421px;
+    width: 100%;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background: $finance-color;
+    align-content: end;
+
+
+    .people-care-card__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 32px;
+        padding: 32px;
+
+        .people-care-card__title {
+            @include heading-h2;
+            color: $content-color;
+        }
+    }
+}

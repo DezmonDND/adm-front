@@ -1,0 +1,25 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.header-services {
+    display: flex;
+    background-color: $cards-background;
+
+    .header-services__container {
+        display: flex;
+        gap: 17px;
+        max-width: 1440px;
+        width: 100%;
+        padding: 20px 0;
+
+        .header-services__button {
+            background-color: $services-hover;
+            color: $main-text;
+            @include heading-h6;
+
+            .icon {
+                color: $primary-color;
+                font-size: 32px;
+            }
+        }
+    }
+}

@@ -53,7 +53,13 @@
 @use '../../blocks/components/navigation/navigation.scss';
 @use '../../blocks/components/afisha/afisha-universal.scss';
 @use '../../blocks/components/afisha/event.scss';
+@use '../../blocks/components/slider/slider.scss';
 @use './bootstrap-grid.scss';
+@use '../../blocks/components/header/services/header-services.scss';
+@use '../../blocks/components/people-care-card/people-care-card.scss';
+@use '../../blocks/components/main-people-care/people-care.scss';
+@use '../../blocks/components/main/help-city/help-city.scss';
+@use '../../blocks/components/main/project-card/main-project-card.scss';
 
 
 * {

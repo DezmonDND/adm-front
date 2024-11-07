@@ -1,0 +1,24 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    gap: 12px;
+    @include text-4;
+    font-size: 24px;
+
+    .slider__link-prev {
+        @include flex;
+        color: $primary-color;
+    }
+
+    .slider__link-next {
+        @include flex;
+        color: $primary-color;
+    }
+}
