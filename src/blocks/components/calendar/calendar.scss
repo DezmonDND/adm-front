@@ -1,0 +1,88 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.calendar {
+
+    .calendar__links {
+        display: flex;
+        gap: 20px;
+
+        .calendar__divider {
+            border: 1px solid $fourth-text;
+            height: 100px;
+        }
+
+        .calendar__link-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            max-width: 56px;
+            width: 100%;
+            justify-content: space-between;
+
+            .calendar__link {
+                box-sizing: border-box;
+                max-width: 56px;
+                height: 56px;
+                width: 100%;
+                text-align: center;
+                font-weight: 300;
+                text-decoration: none;
+                color: $tertiary-text;
+                padding: 9px;
+                @include desc-label1;
+
+                &_active {
+                    border-radius: 50%;
+                    border: 1.5px solid $primary-color;
+                    color: $main-text;
+                }
+
+                &_clicked {
+                    border-radius: 1000px;
+                    border: 1.5px solid $primary-color;
+                    color: $content-color;
+                    background-color: $primary-color;
+                }
+
+                &_without-events {
+                    color: $main-text;
+                }
+            }
+
+            .calendar__day {
+                @include text-1;
+                color: $tertiary-text;
+
+                &_active {
+                    color: $main-text;
+                }
+
+                &_clicked {
+                    color: $main-text;
+                }
+
+                &_without-events {
+                    color: $main-text;
+                }
+            }
+
+            .calendar__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 18px;
+                height: 18px;
+                background-color: $primary-color;
+                color: $content-color;
+                border-radius: 50%;
+                font-size: 11px;
+                line-height: 14px;
+            }
+
+        }
+    }
+}

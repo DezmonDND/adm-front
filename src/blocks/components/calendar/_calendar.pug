@@ -1,0 +1,14 @@
+mixin calendar(data=[])
+    .calendar
+        .calendar__links
+            each link in data
+                if link.divider             
+                    .calendar__divider
+                .calendar__link-content
+                    - const hasLinkClass = link.class ? `calendar__link_${link.class}` : ''
+                    - const hasDayClass = link.day_class ? `calendar__day_${link.day_class}` : ''
+                    a.calendar__link(href='/' class=[hasLinkClass]) #{link.date}                        
+                    span.calendar__day(class=[hasDayClass]) #{link.day}
+                    if link.events
+                        div.calendar__icon
+                            span #{link.events}

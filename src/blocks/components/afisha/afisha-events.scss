@@ -1,17 +1,17 @@
-@use '../../../../assets/styles/vars.scss' as *;
+@use '../../../assets/styles/vars.scss' as *;
 
-.main-events {
+.afisha-events {
    
-    .main-events__container {
+    .afisha-events__container {
 
-        .main-events__selects {
+        .afisha-events__selects {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-right: 24px;
             margin: 24px 0 32px;
 
-            .main-events__selects-container {
+            .afisha-events__selects-container {
                 display: grid;
                 grid-template-columns: 23% 27% 30% 16%;
                 gap: 12px;
@@ -20,7 +20,7 @@
             }
         }
 
-        .main-events__news {
+        .afisha-events__news {
             display: grid;
             grid-template-columns: repeat(4, calc((100% - 72px)/4));
             gap: 24px;

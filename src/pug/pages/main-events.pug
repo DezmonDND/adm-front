@@ -9,27 +9,109 @@ block content
                     title: 'Анонсы и события',
                     link_text: 'Все события'
                 })
-                .main-events__calender
-                    .main-events__calender-links
-                        .main-events__calender-link-content 
-                            a(href='/' class=`main-events__calender-link main-events__calender-link_active`) 24                        
-                            span.main-events__calender-span Пн
-                            div.main-events__calender-icon
-                                span 2
-                        .main-events__calender-link-content 
-                            a(href='/' class=`main-events__calender-link main-events__calender-link_active`) 24                        
-                            span.main-events__calender-span Пн
-                        .main-events__calender-link-content 
-                            a(href='/' class=`main-events__calender-link main-events__calender-link_active`) 24                        
-                            span.main-events__calender-span Пн    
-                        .main-events__calender-link-content 
-                            a(href='/' class=`main-events__calender-link`) 24                        
-                            span.main-events__calender-span Пн 
-                        .main-events__calender-link-content 
-                            a(href='/' class=`main-events__calender-link main-events__calender-link_clicked`) 24                        
-                            span.main-events__calender-span Пн  
-                                div.main-events__calender-icon
-                                span 2           
+                +calendar([
+                    {
+                    date: '18',
+                    day: 'Вт',
+                    class: 'clicked',
+                    events: '2',
+                    day_class: 'clicked',
+                    },
+                    {
+                    date: '19',
+                    day: 'Ср',
+                    },
+                    {
+                    date: '20',
+                    day: 'Чт',
+                    class: 'active',
+                    events: '2',
+                    day_class: 'active',
+                    },
+                    {
+                    date: '21',
+                    day: 'Пт',
+                    class: 'active',
+                    events: '2',
+                    day_class: 'active',
+                    },
+                    {
+                    date: '22',
+                    day: 'Сб',
+                    },
+                    {
+                    date: '23',
+                    day: 'Вс',
+                    },
+                    {
+                    date: '24',
+                    day: 'Пр',
+                    class: 'active',
+                    events: '2',
+                    day_class: 'active',
+                    },
+                    {
+                    date: '25',
+                    day: 'Вт',
+                    class: 'active',
+                    events: '2',
+                    day_class: 'active',
+                    },
+                    {
+                    date: '26',
+                    day: 'Ср',
+                    },
+                    {
+                    date: '27',
+                    day: 'Чт',
+                    class: 'active',
+                    events: '2',
+                    day_class: 'active',
+                    },
+                    {
+                    date: '28',
+                    day: 'Пт',
+                    class: 'active',
+                    events: '2',
+                    day_class: 'active',
+                    },
+                    {
+                    date: '29',
+                    day: 'Сб',
+                    },
+                    {
+                    date: '30',
+                    day: 'Вс',
+                    },
+                    {
+                    date: '1',
+                    day: 'Пн',
+                    class: 'without-events',
+                    day_class: 'without-events',
+                    divider: true,
+                    },
+                    {
+                    date: '2',
+                    day: 'Вт',
+                    class: 'active',
+                    events: '2',
+                    day_class: 'active',
+                    },
+                    {
+                    date: '3',
+                    day: 'Ср',
+                    class: '',
+                    class: 'without-events',
+                    day_class: 'without-events',
+                    },
+                    {
+                    date: '4',
+                    day: 'Чт',
+                    class: 'active',
+                    events: '2',
+                    day_class: 'active',
+                    },
+                ])         
                 .main-events__selects
                     .main-events__selects-container
                         +select('right', [

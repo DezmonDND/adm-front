@@ -41,6 +41,8 @@
 @use '../../blocks/components/main-links/main-links.scss';
 @use '../../blocks/components/administration/struct/adm-struct.scss';
 @use '../../blocks/components/main/events/main-events.scss';
+@use '../../blocks/components/calendar/calendar.scss';
+@use '../../blocks/components/afisha/afisha-events.scss';
 
 * {
     font-family: 'Inter', sans-serif;
