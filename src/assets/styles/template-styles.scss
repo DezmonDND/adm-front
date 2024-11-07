@@ -15,6 +15,7 @@
 @use '../../blocks/libs/tab-buttons/tab-buttons.scss';
 @use '../../blocks/libs/pag-buttons/pag-buttons.scss';
 @use '../../blocks/libs/fullwidth/fullwidth.scss';
+@use '../../blocks/libs/modal/modal.scss';
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
 @use '../../blocks/components/form-field/form-field.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
@@ -69,7 +70,9 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 0 64px 60px;
+    @include main-padding;
+    padding-bottom: 60px;
+
 
     .main__title {
         font-weight: 700;
@@ -104,7 +107,7 @@ body {
 
 @media screen and (max-width: 1000px) {
     .main {
-        padding: 0 20px 40px;
+        padding-bottom: 40px;
 
         .main__description {
             margin-bottom: 30px;
@@ -125,7 +128,6 @@ body {
 
 @media screen and (max-width: 600px) {
     .main {
-        padding: 0 27px 40px;
 
         .main__title {
             font-size: 20px;

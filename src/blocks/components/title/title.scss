@@ -9,6 +9,10 @@
         gap: 20px;
         padding: 13px 0 20px 0;
 
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+        }
+
         h2 {
             font-weight: 600;
             font-size: 32px;
@@ -27,6 +31,10 @@
             display: flex;
             gap: 8px;
             margin-left: auto;
+
+            @media screen and (max-width: 576px) {
+                margin-left: 0;
+            }
         }
     }
 }

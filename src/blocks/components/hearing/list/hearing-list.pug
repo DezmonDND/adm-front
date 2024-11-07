@@ -1,6 +1,7 @@
 mixin hearing-list(title, items)
     .hearing-list
-        h3 #{title}
+        if title != "" 
+            h3 #{title}
         .hearing-list-items
             each item, index in items
                 .hearing-item
@@ -10,7 +11,8 @@ mixin hearing-list(title, items)
                         a(href="/hearing-detail.html").hearing-item-play
                             span.hearing-item-play-icon
                     .hearing-item-content
-                        .hearing-item-title #{item.title}
+                        .hearing-item-title
+                            span #{item.title}
                         .hearing-item-labels
                             .hearing-item-labels-item
                                 span Дата публикации
