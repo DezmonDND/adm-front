@@ -9,6 +9,7 @@ $tertiary-text-dark-bg: #e9e9e9;
 $fourth-text: #c0c2cc;
 $fourth-text-inverse: #ebedf4;
 
+
 // Фон
 $cards-background: #fafafa;
 
@@ -58,6 +59,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 40px;
     line-height: 48px;
+
     @media (max-width: 768px) {
         font-size: 20px;
         line-height: 24px;
@@ -68,6 +70,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 32px;
     line-height: 38px;
+
     @media (max-width: 768px) {
         font-size: 16px;
         line-height: 20px;
@@ -78,6 +81,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 24px;
     line-height: 28px;
+
     @media (max-width: 768px) {
         font-size: 14px;
         line-height: 18px;
@@ -88,6 +92,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 20px;
     line-height: 28px;
+
     @media (max-width: 768px) {
         font-size: 12px;
         line-height: 16px;
@@ -98,6 +103,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 16px;
     line-height: 24px;
+
     @media (max-width: 768px) {
         font-size: 10px;
         line-height: 12px;
@@ -118,6 +124,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 32px;
     line-height: 38px;
+
     @media (max-width: 768px) {
         font-size: 16px;
         line-height: 20px;
@@ -128,6 +135,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 28px;
     line-height: 36px;
+
     @media (max-width: 768px) {
         font-size: 14px;
         line-height: 18px;
@@ -138,6 +146,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 24px;
     line-height: 28px;
+
     @media (max-width: 768px) {
         font-size: 12px;
         line-height: 16px;
@@ -148,6 +157,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 20px;
     line-height: 24px;
+
     @media (max-width: 768px) {
         font-size: 10px;
         line-height: 14px;
@@ -158,6 +168,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 16px;
     line-height: 20px;
+
     @media (max-width: 768px) {
         // Спросить, что тут должно быть
     }
@@ -167,10 +178,12 @@ $font-weight-bold: 600;
     font-weight: $font-weight-semi-bold;
     font-size: 14px;
     line-height: 16px;
+
     @media (max-width: 768px) {
         // Спросить, что тут должно быть
     }
 }
+
 /*** Finish - Title ***/
 
 /*** Start - Text ***/
@@ -179,6 +192,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-regular;
     font-size: 24px;
     line-height: 32px;
+
     @media (max-width: 768px) {
         // Спросить, что тут должно быть
     }
@@ -188,6 +202,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-regular;
     font-size: 20px;
     line-height: 30px;
+
     @media (max-width: 768px) {
         font-size: 12px;
         line-height: 18px;
@@ -198,6 +213,7 @@ $font-weight-bold: 600;
     font-weight: $font-weight-regular;
     font-size: 16px;
     line-height: 24px;
+
     @media (max-width: 768px) {
         font-size: 10px;
         line-height: 16px;
@@ -208,9 +224,26 @@ $font-weight-bold: 600;
     font-weight: $font-weight-regular;
     font-size: 14px;
     line-height: 20px;
+
     @media (max-width: 768px) {
         // Спросить, что тут должно быть
     }
+}
+
+
+@mixin lead-2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+@mixin caption-1 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@mixin caption-2 {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 /*** Finish - Text ***/
@@ -268,11 +301,6 @@ $font-weight-bold: 600;
 
 @mixin desc-text4 {
     @include text-4();
-}
-
-@mixin desc-caption1 {
-    font-size: 13px;
-    line-height: 18px;
 }
 
 @mixin desc-calender {

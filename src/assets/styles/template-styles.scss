@@ -43,6 +43,11 @@
 @use '../../blocks/components/main/events/main-events.scss';
 @use '../../blocks/components/calendar/calendar.scss';
 @use '../../blocks/components/afisha/afisha-events.scss';
+@use '../../blocks/components/afisha/afisha-event-description.scss';
+@use '../../blocks/components/afisha/event-card.scss';
+@use '../../blocks/components/navigation/navigation.scss';
+@use '../../blocks/components/afisha/afisha-universal.scss';
+@use '../../blocks/components/afisha/event.scss';
 
 * {
     font-family: 'Inter', sans-serif;

@@ -1,0 +1,30 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    gap: 12px;
+    @include text-4;
+
+    .navigation__link-prev {
+        @include flex;
+        color: $primary-color;
+    }
+
+    .navigation__pages {
+        display: flex;
+        gap: 4px;
+
+        .navigation__page {}
+    }
+
+    .navigation__link-next {
+        @include flex;
+        color: $primary-color;
+    }
+}

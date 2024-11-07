@@ -1,0 +1,69 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.afisha-event {
+
+    .afisha-event__container {
+
+
+        .afisha-event__content {
+            max-width: 755px;
+            margin: 40px auto 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .afisha-event__main-text {
+                .afisha-event__title {
+                    @include heading-h4;
+                    margin-bottom: 24px;
+                }
+
+                .afisha-event__text {
+                    @include text-3;
+                }
+            }
+        }
+
+        .afisha-event__quote {
+
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .afisha-event__quote-text {
+                @include text-1;
+
+            }
+
+            .afisha-event__quote-author {
+                @include text-4;
+                color: $tertiary-text;
+            }
+        }
+
+        .afisha-event__banner {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            .afisha-event__image {
+                max-width: 755px;
+                width: 100%;
+
+            }
+
+            .afisha-event__navigation {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .afisha-event__comment {
+                    @include text-4;
+                }
+
+                .afisha-event__pages {}
+            }
+
+        }
+    }
+}
