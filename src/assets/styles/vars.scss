@@ -68,6 +68,19 @@ $font-weight-semi-bold: 500;
 $font-weight-bold: 600;
 //End - FontWeight
 
+// Mixin Container Padding
+@mixin main-padding {
+    padding: 0 64px;
+
+    @media screen and (max-width: 1000px) {
+        padding: 0 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 0 27px;
+    }
+}
+
 //Start - Heading
 @mixin heading-h1 {
     font-weight: $font-weight-semi-bold;

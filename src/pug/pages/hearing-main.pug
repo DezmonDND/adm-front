@@ -8,14 +8,14 @@ block content
                 { sort: 'crumb', href: '/about', text: 'Публичные слушания'},
             ])
         +title({title: "Публичные слушания", buttons:[
-            { type: 'link', href:"/", target:true, class: 'button_white button_white_no-border button_radius', icon: 'logo-rss', iconPosition: 'left', text: 'RSS' },
-            { type: 'link', href:'/',  target:true, class: 'button_white button_white_no-border button_radius' , iconPosition: 'left', icon: 'mail', text: 'Подписаться на главное' }
+            { type: 'link', href:"/", target:true, class: 'button_white button_white_no-border', icon: 'logo-rss', iconPosition: 'left', text: 'RSS' },
+            { type: 'link', href:'/',  target:true, class: 'button_white button_white_no-border' , iconPosition: 'left', icon: 'mail', text: 'Подписаться на главное' }
         ]})
         +tabs( 
             [
-                { isActive: true, title: 'Главная', href: '/hearing-main.html' , value: 'Национальные проекты'},
-                { title: 'Календарь', href: '/hearing-calendar.html' , value: 'Администрация'},
-                { title: 'Архив', href: '/hearing-archive.html' , value: 'Прочие'},
+                { isActive: true, title: 'Главная', href: '/hearing-main.html'},
+                { title: 'Календарь', href: '/hearing-calendar.html'},
+                { title: 'Архив', href: '/hearing-archive.html'},
             ])
         +hearing-preview()
         +hearing-list("Ближайшие публичные слушания",[{title:"Публичные слушания (постановление Администрации города от 30.08.2024 №4470) по внесению изменений в проект планировки (в части красных линий улиц) территории улично-дорожной сети города.", org: "Наименование организации", date: "22.12.2024" },{title:"Публичные слушания (постановление Администрации города от 30.08.2024 №4470) по внесению изменений в проект планировки (в части красных линий улиц) территории улично-дорожной сети города.", org: "Наименование организации", date: "22.12.2024" },{title:"Публичные слушания (постановление Администрации города от 30.08.2024 №4470) по внесению изменений в проект планировки (в части красных линий улиц) территории улично-дорожной сети города.", org: "Наименование организации", date: "22.12.2024" }])

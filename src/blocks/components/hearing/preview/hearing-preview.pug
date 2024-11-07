@@ -1,13 +1,17 @@
 mixin hearing-preview(light=false, href = true)
     div.hearing-preview
         img(src="./resources/hearing.jpg")
+        video(width="100%" height="auto" poster="http://dumasurgut.ru/getattachment/9884c888-bc58-4c22-bc13-99920c9d6adc/46453.aspx" preload="auto" controls)
+                source(src="http://vs.dumasurgut.ru:8080/vod/2024/ps130524.mp4" type="video/mp4")
+                p(style="color:whitesmoke; margin: 5px 5px;") Ваш браузер не может воспроизвести видео. Используйте современный браузер с поддержкой HTML5
         .hearing-preview-bg
-        if href
+        //if href
             a(href="/hearing-detail.html").hearing-preview-play
                 span.hearing-preview-play-icon
-        else
-            button.hearing-preview-play
-                span.hearing-preview-play-icon
-        +button({ type: 'button', class: 'live_stream button_white button_white_no-border button_radius', icon: 'radio-button-on-outline', iconPosition: 'left', text: 'Прямая трансляция' })
+        //else
+        button(onclick="$('.hearing-preview').addClass('hearing-preview-on'); $('.hearing-preview video')[0].play();").hearing-preview-play
+            span.hearing-preview-play-icon
+        +button({ type: 'button', class: 'live_stream live_stream_l button_white button_white_no-border button_radius', icon: 'radio-button-on-outline', iconPosition: 'left', text: 'Прямая трансляция' })
+        +button({ type: 'button', class: 'live_stream live_stream_s button_white button_white_no-border button_radius', icon: 'radio-button-on-outline', iconPosition: 'left',})
         if !light
-            div.hearing-preview-title Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818
+            a(href="/hearing-detail.html").hearing-preview-title Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818
