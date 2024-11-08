@@ -1,0 +1,59 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.toggle-container {
+    background-color: $grey-adm;
+    border-radius: 12px;
+    margin-bottom: 12px;
+
+    .toggle-header {
+
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        padding: 20px;
+
+        .toggle-arrow {
+            margin-left: auto;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .toggle-title {
+        @include heading-h4;
+    }
+
+    .toggle-content {
+
+        overflow: hidden;
+        height: 0;
+        /* Начальная высота для анимации */
+
+        transition: height 0.3s ease-out, padding 0.3s ease-out;
+        /* Плавное изменение высоты и отступов */
+
+        @include text-2;
+
+        &-container {
+            padding: 0 20px;
+        }
+
+        /* Закрытое состояние - убираем вертикальные отступы */
+        &.closed {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        /* Открытое состояние - добавляем отступы */
+
+    }
+
+    &.open .toggle-content-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &.open .toggle-header .toggle-arrow {
+        transform: rotate(180deg);
+        /* Поворачиваем стрелку при открытии */
+    }
+}
