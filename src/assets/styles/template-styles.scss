@@ -16,6 +16,8 @@
 @use '../../blocks/libs/pag-buttons/pag-buttons.scss';
 @use '../../blocks/libs/fullwidth/fullwidth.scss';
 @use '../../blocks/libs/modal/modal.scss';
+@use '../../blocks/libs/toggle/toggle.scss';
+
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
 @use '../../blocks/components/form-field/form-field.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
@@ -45,6 +47,8 @@
 @use '../../blocks/components/main-services/main-services.scss';
 @use '../../blocks/components/main-links/main-links.scss';
 @use '../../blocks/components/administration/struct/adm-struct.scss';
+@use '../../blocks/components/administration/service/adm-service.scss';
+
 @use './bootstrap-grid.scss';
 
 * {
@@ -150,6 +154,18 @@ body {
 }
 
 hr {
-    border-color: #ebedf4;
-    width: 100%;
+    border-color: $fourth-text;
+    border-top: 0px;
+}
+
+ul {
+    margin-left: 18px;
+}
+
+b {
+    font-weight: $font-weight-bold;
+}
+
+.upper-text {
+    text-transform: uppercase;
 }

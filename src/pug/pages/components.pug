@@ -1,6 +1,10 @@
 extends ../layout
 
 block content   
+   style.
+      .row {
+         width: 100%;
+      }
    main.components
       hr
       .row
@@ -56,12 +60,15 @@ block content
             +button({ type: 'link', href: '/about', class: 'button_white', icon: 'add-outline'})
          .col-12
             h4 Дополнительные опции
-         .col-6
+         .col-4
             h5 Закругленная кнопка - class: button_radius
             +button({ type: 'link', href: '/about', class: 'button_white button_radius', icon: 'add-outline', text: 'Example'})
-         .col-6
+         .col-4
             h5 Кнопка без обводки(для белой) - class: button_white_no-border
             +button({ type: 'link', href: '/about', class: 'button_white button_white_no-border button_radius', icon: 'add-outline', text: 'Example'})
+         .col-4
+            h5 Только для тегов с особенным шрифтом - class: button_tag-label
+            +button({ type: 'button', size: 's', class: 'button_blue button_radius button_tag-label', text: 'Государственная' })
       hr
       .row
          .col-12
@@ -110,6 +117,19 @@ block content
          .col-6
             h5 С описанием
             +linkslist([{title:"Назначающий НПА", desc:"14 услуг", href:"#"},{title:"Объявление с материалами", desc:"15 товаров", href:"#"},])
+      hr
+      .row
+         .col-12
+            h4 Toogle
+         .col-12
+            h5 С контентом и подвалом
+            h5 Можно также осталвлять что-то одно или toggle-content или toggle-footer
+            .toggle-container
+               .toggle-header Сроки предоставления услуги
+               .toggle-content
+                  | Контейнер с отсупами
+               .toggle-footer
+                  | Широкий контейнер
       hr
       h4 Пример Popup
       //- Кнопки для открытия popup-окна

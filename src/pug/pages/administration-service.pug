@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Администрация'},
+                { sort: '', href: '/', text: 'Услуги населению'},
+                { sort: '', href: '/', text: 'ЗАГС'},
+                { sort: '', href: '/', text: 'Услуги ЗАГСа'},
+            ],
+            )
+        +adm-service()

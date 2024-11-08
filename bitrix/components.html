@@ -31,6 +31,11 @@
         </button>
       </div>
     </header>
+    <style>
+      .row {
+         width: 100%;
+      }
+    </style>
     <main class="components">
       <hr/>
       <div class="row">
@@ -96,13 +101,18 @@
         <div class="col-12">
           <h4>Дополнительные опции</h4>
         </div>
-        <div class="col-6">
+        <div class="col-4">
           <h5>Закругленная кнопка - class: button_radius</h5><a class="button button_link button_white button_radius   " href="/" attributes="{}"><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
-        <div class="col-6">
+        <div class="col-4">
           <h5>Кнопка без обводки(для белой) - class: button_white_no-border</h5><a class="button button_link button_white button_white_no-border button_radius   " href="/" attributes="{}"><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
+        </div>
+        <div class="col-4">
+          <h5>Только для тегов с особенным шрифтом - class: button_tag-label</h5>
+          <button class="button button_blue button_radius button_tag-label button_size_s   button_without-event"><span class="button_span">Государственная</span>
+          </button>
         </div>
       </div>
       <hr/>
@@ -176,6 +186,21 @@
         <div class="col-6">
           <h5>С описанием</h5>
           <div class="links-list"><a class="links-list-item" href="#">Назначающий НПА<span>14 услуг</span><img src="/icons/arrow-left_link-icon.svg"/></a><a class="links-list-item" href="#">Объявление с материалами<span>15 товаров</span><img src="/icons/arrow-left_link-icon.svg"/></a>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h4>Toogle</h4>
+        </div>
+        <div class="col-12">
+          <h5>С контентом и подвалом</h5>
+          <h5>Можно также осталвлять что-то одно или toggle-content или toggle-footer</h5>
+          <div class="toggle-container">
+            <div class="toggle-header">Сроки предоставления услуги</div>
+            <div class="toggle-content">Контейнер с отсупами</div>
+            <div class="toggle-footer">Широкий контейнер</div>
           </div>
         </div>
       </div>

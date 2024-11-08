@@ -11,13 +11,13 @@
 .admstruct-contact-item {
   flex: 1;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
 }
 @media (max-width: 768px) {
   .admstruct-contact-item {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .admstruct-contact .admstruct-contact-item-label {
@@ -25,11 +25,11 @@
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 24px;
 }
 @media (max-width: 768px) {
   .admstruct-contact .admstruct-contact-item-label {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
