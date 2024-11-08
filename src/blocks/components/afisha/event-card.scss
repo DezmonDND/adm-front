@@ -1,7 +1,7 @@
 @use '../../../assets/styles/vars.scss' as *;
 
 .event-card {
-    background-color:$cards-background;
+    background-color: $cards-background;
     display: flex;
     justify-content: center;
 
@@ -12,8 +12,12 @@
         width: 100%;
         padding: 40px 0 40px;
 
+        @media screen and (max-width: 1000px) {
+            padding: 20px;
+        }
+
         .event-card__info {
-            
+
 
             .event-card__tags {
                 display: flex;
@@ -25,7 +29,11 @@
                 flex-direction: column;
                 gap: 12px;
                 margin: 24px 0 64px;
-                
+
+                @media screen and (max-width: 1000px) {
+                    margin-bottom: 32px;
+                }
+
                 .event-card__title {
                     @include heading-h2;
                 }
@@ -38,10 +46,16 @@
                     display: flex;
                     gap: 32px;
                     color: $tertiary-text;
-                    .event-card__dates {}
-    
-                    .event-card__last-date {}
-    
+
+                    .event-card__dates {
+                        @include caption-2;
+
+                    }
+
+                    .event-card__last-date {
+                        @include caption-2;
+                    }
+
                 }
             }
 

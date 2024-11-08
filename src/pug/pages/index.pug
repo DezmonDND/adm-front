@@ -11,173 +11,163 @@ block content
                     +news-card-without-image()
                     +news-card-without-image()
                     +news-card-without-image()
-        .main-news 
-            .main-news__container 
-                +main-title({
-                    href: '/',
-                    title: 'Главные новости',
-                    link_text: 'Все новости',
-                })
-                +tabs( 
-                    [
-                        { isActive: true, title: 'Самые важные', href: '/' },
-                        { title: 'Реализация нацпроектов', href: '/' },
-                        { title: 'Деятельность администрации', href: '/' },
-                        { title: 'Областная дума', href: '/' },
-                    ])
-                .main-news__card-list 
-                    +main-news-card(
-                    {
-                        image: 'image_1.jpg',
-                        date: '10 июня 2023',
-                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                        tags: [
+        .full-width-container
+            .full-width-background
+                .full-width-content            
+                    .main-news 
+                        .main-news__container 
+                            +main-title({
+                                href: '/',
+                                title: 'Главные новости',
+                                link_text: 'Все новости',
+                            })
+                            +tabs( 
+                                [
+                                    { isActive: true, title: 'Самые важные', href: '/' },
+                                    { title: 'Реализация нацпроектов', href: '/' },
+                                    { title: 'Деятельность администрации', href: '/' },
+                                    { title: 'Областная дума', href: '/' },
+                                ])
+                            .main-news__card-list 
+                                +main-news-card(
                                 {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'история',
-                                    href: '/'
-                            }                     
-                        ]
-                    },
-                    )
-                    +main-news-card(
-                    {
-                        image: 'image_2.jpg',
-                        date: '10 июня 2023',
-                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                        tags: [
-                                {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'Медицина',
-                                    href: '/'
+                                    image: 'image_1.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'история',
+                                            }                     
+                                    ]
                                 },
+                                )
+                                +main-news-card(
                                 {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'Награды',
-                                    href: '/'
-                                }                      
-                        ]
-                    },
-                    )
-                    +main-news-card(
-                    {
-                        image: 'image_3.jpg',
-                        date: '10 июня 2023',
-                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                        tags: [
-                                {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'Пожары',
-                                    href: '/'
-                            }                     
-                        ]
-                    },
-                    )
-                    +main-news-card(
-                    {
-                        image: 'image_4.jpg',
-                        date: '10 июня 2023',
-                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                        tags: [
-                                {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'Экономика',
-                                    href: '/'
-                            }                     
-                        ]
-                    },
-                    )
-                    +main-news-card(
-                    {
-                        image: 'image_1.jpg',
-                        date: '10 июня 2023',
-                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                        tags: [
-                                {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'история',
-                                    href: '/'
-                            }                     
-                        ]
-                    },
-                    )
-                    +main-news-card(
-                    {
-                        image: 'image_2.jpg',
-                        date: '10 июня 2023',
-                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                        tags: [
-                                {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'Медицина',
-                                    href: '/'
+                                    image: 'image_2.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'Медицина',
+                                            },
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'Награды',
+                                            }                      
+                                    ]
                                 },
+                                )
+                                +main-news-card(
                                 {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'Награды',
-                                    href: '/'
-                                }                      
-                        ]
-                    },
-                    )
-                    +main-news-card(
-                    {
-                        image: 'image_3.jpg',
-                        date: '10 июня 2023',
-                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                        tags: [
+                                    image: 'image_3.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'Пожары',
+                                            },                   
+                                    ]
+                                },
+                                )
+                                +main-news-card(
                                 {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'Пожары',
-                                    href: '/'
-                            }                     
-                        ]
-                    },
-                    )
-                    +main-news-card(
-                    {
-                        image: 'image_4.jpg',
-                        date: '10 июня 2023',
-                        title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                        tags: [
+                                    image: 'image_4.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'Экономика',
+                                            },                    
+                                    ]
+                                },
+                                )
+                                +main-news-card(
                                 {
-                                    isGoing: 'undefined',
-                                    status: '', 
-                                    onclick: null, 
-                                    sort: 'main-news-card',
-                                    text: 'Экономика',
-                                    href: '/'
-                            }                     
-                        ]
-                    },
-                    )
+                                    image: 'image_1.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'история',
+                                            }                     
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_2.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'Медицина',
+                                            },
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius  news-card__tag', 
+                                                text: 'Награды',
+                                            }                      
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_3.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'Пожары',
+                                            },                   
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_4.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                            {
+                                                type: 'button',
+                                                size: 'xs', 
+                                                class: 'button_blue button_radius news-card__tag', 
+                                                text: 'Экономика',
+                                            },                    
+                                    ]
+                                },
+                                )
+        .solve-problems
+            +main-title({
+                href: '/',
+                title: 'Решаем проблемы вместе',
+            })   
+            .solve-problems__container
+                img.solve-problems__banner(src='../img/banner_1.png' alt='Баннер')                         
         .main-events
             .main-events__container 
                 +main-title({
@@ -474,71 +464,79 @@ block content
                     })
                     +people-care-card({
                         title: 'Национальные проекты'
-                    })                
-        .main-services 
-            +main-title({
-                href: '/',
-                title: 'Полезные сервисы для вас',
-            })
-            .main-services__container
-                .main-services__search
-                    .main-services__search-content
-                        h3(class='.main-services__label') Поиск законопроектов
-                        +search(
-                            {name: 'laws', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
-                                false, 'l', 'getValues()', 'main-services',) 
-                    .main-services__search-content        
-                        h3(class='.main-services__label') Поиск правовых актов        
-                        +search(
-                            {name: 'acts', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
-                                false, 'l', 'getValues()', 'main-services',)         
-                .main-services__buttons
-                    h3.main-services__buttons-title Связаться
-                    .main-services__buttons-container
-                        +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: '', text: 'Электронное обращение' })
-                        +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: '', text: 'Личный прием' })       
-        .main-usefull-links
+                    }) 
+        .full-width-container
+            .full-width-background
+                .full-width-content                           
+                    .main-services 
+                        +main-title({
+                            href: '/',
+                            title: 'Полезные сервисы для вас',
+                        })
+                        .main-services__container
+                            .main-services__search
+                                .main-services__search-content
+                                    h3(class='main-services__label') Поиск законопроектов
+                                    +search(
+                                        {name: 'laws', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+                                            false, 'l', 'getValues()', 'main-services',) 
+                                .main-services__search-content        
+                                    h3(class='main-services__label') Поиск правовых актов        
+                                    +search(
+                                        {name: 'acts', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+                                            false, 'l', 'getValues()', 'main-services',)         
+                            .main-services__buttons
+                                h3.main-services__buttons-title Связаться
+                                .main-services__buttons-container
+                                    +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: '', text: 'Электронное обращение' })
+                                    +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: '', text: 'Личный прием' })       
+        .important-links
             +main-title({
                 href: '/',
                 title: 'Самое важное',
             })
-            .main-usefull-links__container
+            .important-links__container
                 +main-link({
-                    sort: 'important',
+                    class: 'important',
                     href: '/',
                     icon: 'circle_icon_main.svg',
                     title: 'Лицам с ограниченными возможностями',
                 })
                 +main-link({
-                    sort: 'important',
+                    class: 'important',
                     href: '/',
                     icon: 'arrow-in-cub_icon_main.svg',
                     title: 'Афиша на Культуре.РФ',
                 })
                 +main-link({
-                    sort: 'important',
+                    class: 'important',
                     href: '/',
                     icon: 'arrow-in-cub_icon_main.svg',
                     title: 'Инициативые проекты',
                 })
                 +main-link({
-                    sort: 'important',
+                    class: 'important',
                     href: '/',
                     icon: 'arrow-in-cub_icon_main.svg',
                     title: 'Бюджет для граждан Сургута',
                 })
                 +main-link({
-                    sort: 'important',
+                    class: 'important',
                     href: '/',
                     icon: 'circle_icon_main.svg',
                     title: 'Налоговая политика',
                 })
                 +main-link({
-                    sort: 'important',
+                    class: 'important',
                     href: '/',
                     icon: 'arrow-in-cub_icon_main.svg',
                     title: 'Национальные проекты',
                 })
+            .usefull-links__navigation
+                +navigation({
+                                first_page: '1',
+                                end_page: '7',
+                            })
         +main-title({
             title: 'Помогите городу стать лучше',
             link_text: 'Все опросы',
@@ -581,56 +579,65 @@ block content
                     tag: 'Завершен',
                     tag_color: 'red'
                 })
-        .main-usefull-links
+        .important-inf
+            +main-title({
+                href: '/',
+                title: 'Важная информация для жителей',
+                slider: true,
+            })   
+            .important-inf__container
+                img.important-inf__banner(src='../img/banner.png' alt='Баннер') 
+                img.important-inf__banner(src='../img/banner.png' alt='Баннер')       
+        .usefull-links
             +main-title({
                 href: '/',
                 title: 'Полезные ссылки',
             })
-            .main-usefull-links__container
+            .usefull-links__container
                 +main-link({
-                    sort: 'usefull',
+                    class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Оплата ЖКХ услуг ',
                 })
                 +main-link({
-                    sort: 'usefull',
+                    class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Виртуальная приемная',
                 })
                 +main-link({
-                    sort: 'usefull',
+                    class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Пособия и налоги',
                 })
                 +main-link({
-                    sort: 'usefull',
+                    class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Расписание общественного транспорта',
                 })
                 +main-link({
-                    sort: 'usefull',
+                    class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Выплаты пенсионерам',
                 })
                 +main-link({
-                    sort: 'usefull',
+                    class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Запись на публичные слушания',
                 })
                 +main-link({
-                    sort: 'usefull',
+                    class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Социальные услуги',
                 })
                 +main-link({
-                    sort: 'usefull',
+                    class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Работа в России',

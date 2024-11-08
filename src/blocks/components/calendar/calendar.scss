@@ -22,7 +22,7 @@
         display: flex;
         overflow: scroll;
         scrollbar-width: none;
-        gap: 21px;
+        gap: 20px;
 
         @media screen and (max-width: 1000px) {
             display: none;
@@ -31,6 +31,7 @@
         .calendar__divider {
             border: 1px solid $fourth-text;
             height: 100px;
+            margin: 0 9px;
         }
 
         .calendar__link-content {
@@ -40,7 +41,7 @@
             position: relative;
             min-width: 56px;
             width: 100%;
-            justify-content: space-between;
+            gap: 10px;
 
             .calendar__link {
                 box-sizing: border-box;

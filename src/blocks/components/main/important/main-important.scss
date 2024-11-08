@@ -1,0 +1,15 @@
+.important-inf {
+    display: flex;
+    flex-direction: column;
+
+    .important-inf__container {
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        .important-inf__banner {
+            max-width: 873px;
+        }
+    }
+}

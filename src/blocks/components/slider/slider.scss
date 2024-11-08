@@ -9,8 +9,7 @@
 .slider {
     display: flex;
     gap: 12px;
-    @include text-4;
-    font-size: 24px;
+    font-size: 34px;
 
     .slider__link-prev {
         @include flex;

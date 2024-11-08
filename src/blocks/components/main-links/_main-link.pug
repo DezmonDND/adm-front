@@ -1,4 +1,8 @@
 mixin main-link(data)
-    a(href=data.href class=`main-link ${data.sort ? `main-${data.sort}-link` : ''}`)
-        img(src=`../icons/${data.icon}` alt='Иконка' class=`main-link__icon ${data.sort ? `main-${data.sort}-link__icon` : ''}`)
-        span(class=`main-link__title ${data.sort ? `main-${data.sort}-link__title` : '' }`) #{data.title} 
+    - const hasClass = data.class ? `${data.class}-link` : ''
+    - const hasIcon = data.class ? `${data.class}-link__icon` : ''
+    - const hasTitle = data.class ? `${data.class}-link__title` : ''
+
+    a(href=data.href class=[hasClass])
+        img(src=`../icons/${data.icon}` alt='Иконка' class=[hasIcon])
+        span(class=[hasTitle]) #{data.title} 

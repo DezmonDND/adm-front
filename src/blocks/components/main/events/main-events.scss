@@ -1,6 +1,7 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .main-events {
+    padding-top: 60px;
    
     .main-events__container {
 
@@ -9,7 +10,7 @@
             justify-content: space-between;
             align-items: center;
             padding-right: 24px;
-            margin: 24px 0 32px;
+            margin: 30px 0 39px;
 
             .main-events__selects-container {
                 display: grid;
@@ -24,6 +25,8 @@
             display: grid;
             grid-template-columns: repeat(4, calc((100% - 72px)/4));
             gap: 24px;
+            row-gap: 34px;
+            margin-bottom: 75px;
         }
 
         .main-events__navigation {

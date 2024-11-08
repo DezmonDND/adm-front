@@ -13,6 +13,10 @@
         line-height: 24px;
         gap: 24px;
         width: 100%;
+        @media screen and (max-width: 600px) {
+            gap: 12px;
+
+        }
 
 
         .biography__contacts-content {
@@ -40,6 +44,12 @@
                 border-radius: 20px;
                 background-color: #fafafa;
 
+                @media screen and (max-width: 1000px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    
+                }
+
                 .biography__phones {
                     display: flex;
                     flex-direction: column;
@@ -64,6 +74,11 @@
             border-radius: 20px;
             background-color: #fafafa;
             width: 100%;
+
+            @media screen and (max-width: 600px) {
+                padding: 20px;;
+    
+            }
 
             .biography__info-content {
                 display: flex;

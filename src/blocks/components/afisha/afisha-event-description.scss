@@ -3,6 +3,7 @@
 .afisha-event {
 
     .afisha-event__container {
+     
 
 
         .afisha-event__content {
@@ -12,6 +13,11 @@
             flex-direction: column;
             gap: 40px;
 
+            @media screen and (max-width: 1000px) {
+                margin-bottom: 0;
+                
+            }
+
             .afisha-event__main-text {
                 .afisha-event__title {
                     @include heading-h4;
@@ -19,7 +25,7 @@
                 }
 
                 .afisha-event__text {
-                    @include text-3;
+                    @include text-2;
                 }
             }
         }
@@ -30,13 +36,18 @@
             flex-direction: column;
             gap: 16px;
 
+            @media screen and (max-width: 1000px) {
+                padding: 0 16px;
+                
+            }
+
             .afisha-event__quote-text {
                 @include text-1;
 
             }
 
             .afisha-event__quote-author {
-                @include text-4;
+                @include text-3;
                 color: $tertiary-text;
             }
         }
@@ -63,6 +74,11 @@
                 object-fit: cover;
                 object-position: center;
                 border-radius: 8px;
+                
+                @media screen and (max-width: 600px) {
+                    max-height: 189px;
+                    
+                }
             }
 
             .afisha-event__item-play {
@@ -99,7 +115,7 @@
                 align-items: center;
 
                 .afisha-event__comment {
-                    @include text-4;
+                    @include text-3;
                 }
 
                 .afisha-event__pages {}

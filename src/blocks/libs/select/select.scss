@@ -1,22 +1,23 @@
+@use '../../../assets/styles/vars.scss' as *;
+
 $input-color-default: #C6CBD9;
 $main-text: #000448;
 
 .select {
     box-sizing: border-box;
-    padding: 20px 34px 20px 16px;
+    padding: 17px 44px 17px 25px;
     width: 100%;
     border-radius: 8px;
     border: 1px solid $input-color-default;
     appearance: none;
     background: url(../../icons/select-down_icon.svg) center no-repeat;
-    background-position: 98%;
+    background-position: 93%;
     background-size: 24px;
     outline: none;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 16px;
-    line-height: 24px;
+    @include text-1;
 
     &:hover {
         cursor: pointer;

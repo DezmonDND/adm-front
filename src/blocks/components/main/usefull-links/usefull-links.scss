@@ -1,0 +1,37 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.usefull-links {
+    margin-top: 50px;
+
+    .usefull-links__container {
+        display: grid;
+        grid-template-columns: repeat(4, calc((100% - 36px)/4));
+        gap: 12px;
+        padding: 0 0 39px;
+        justify-content: center;
+        margin-top: 43px;
+
+        .usefull-link {
+            display: flex;
+            flex-direction: row-reverse;
+            text-decoration: none;
+            color: $main-text;
+            gap: 8px;
+            background-color: $cards-background;
+            border-radius: 8px;
+            padding: 20px;
+            justify-content: space-between;
+
+            .usefull-link__icon {
+                width: 24px;
+                height: 24px;
+            }
+
+            .usefull-link__title {
+                @include heading-h5;
+            }
+        }
+    }
+
+
+}
