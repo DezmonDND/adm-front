@@ -6,24 +6,35 @@ block content
             [
                 { sort: '', href: '/', text: 'Главная' },
                 { sort: '', href: '/', text: 'Администрация'},
-                { sort: '', href: '/', text: 'Глава города'},
+                { sort: '', href: '/', text: 'Заместители'},
             ],
             )
         +title({
-            title: 'Глава города'
+            title: 'Заместители'
         })
-        +tabs( 
-            [
-                { isActive: true, title: 'Биография', href: '/' },
-                { title: 'Полномочия', href: '/' },
-                { title: 'Ежегодный доход', href: '/' },
-                { title: 'Должностной знак', href: '/' },
-                { title: 'Виртуальная приемная', href: '/' },
-                { title: 'Официальные выступления', href: '/' },
-            ])
-        +biography_card({
-            cls: '',
-            name: 'Филатов Андрей Сергеевич',
-            job: 'Глава города Сургута',
-            avatar: 'filatov_avatar.png',
-        })
+        .adm-helpers 
+            .adm-helpers__content   
+                +biography_card({
+                    cls: '',
+                    name: 'Кириленко Артем Михайлович',
+                    job: 'Заместитель главы города Сургута',
+                    avatar: 'kirilenko_avatar.png',     
+                    href: '/',
+                    link_text: 'Перейти на страницу',
+                })
+                +biography_card({
+                    cls: '',
+                    name: 'Малыхин Виталий Викторович',
+                    job: 'Заместитель главы города Сургута',
+                    avatar: 'malihin_avatar.png',
+                    href: '/',
+                    link_text: 'Перейти на страницу',
+                })
+                +biography_card({
+                    cls: '',
+                    name: 'Томазова Анна Николаевна',
+                    job: 'Заместитель главы города Сургута',
+                    avatar: 'tomazova_avatar.png',
+                    href: '/',
+                    link_text: 'Перейти на страницу',
+                })

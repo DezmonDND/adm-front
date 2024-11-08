@@ -544,11 +544,11 @@ block content
             link_text: 'Все опросы',
             href: '/',
         })
-        +tabs('slider', [
+        +tabs([
             { title: 'Национальные проекты', href: '/' , value: 'Национальные проекты', isActive: true},
             { title: 'Администрация', href: '/' , value: 'Администрация'},
             { title: 'Прочее', href: '/' , value: 'Прочее'},
-            ])
+            ], 'slider')
         .main-help-city 
             .main-help-city__content 
                 +main-project-card({
