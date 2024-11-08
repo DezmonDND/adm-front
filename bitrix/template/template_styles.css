@@ -114,11 +114,12 @@
   padding: 12px 20px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
   /** Позиционирование иконки ***/
   /** Вариант c закруглением ***/
   /** Вариант без текста ***/
   /** Вариант без действия ***/
+  /** Особый шрифт для тегов ***/
 }
 .button:hover {
   background-color: #0a5fe7;
@@ -169,8 +170,8 @@
 }
 @media (max-width: 768px) {
   .button {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -185,12 +186,12 @@
   padding: 16px 28px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 24px;
 }
 @media (max-width: 768px) {
   .button_size_l {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -204,8 +205,14 @@
 .button_size_s {
   padding: 8px 16px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 16px;
+}
+@media (max-width: 768px) {
+  .button_size_s {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 .button_size_s .icon {
   font-size: 16px;
@@ -214,12 +221,12 @@
   padding: 4px 24px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .button_size_xs {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 .button_size_xs .icon {
@@ -246,6 +253,12 @@
 }
 .button_without-event:hover {
   background-color: inherit;
+}
+.button_tag-label span {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
 }
 
 .custom-file-upload {
@@ -324,8 +337,14 @@
 .button_header {
   padding: 8px 20px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 16px;
+}
+@media (max-width: 768px) {
+  .button_header {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -382,12 +401,12 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .links-list-item {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 .links-list-item:hover {
@@ -403,8 +422,14 @@
   color: #78839c;
   margin-left: 12px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 16px;
+}
+@media (max-width: 768px) {
+  .links-list-item span {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .container {
@@ -991,6 +1016,66 @@
   line-height: 0;
 }
 
+.toggle-container {
+  background-color: #fafafa;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.toggle-container .toggle-header {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 20px;
+}
+.toggle-container .toggle-header .toggle-arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+.toggle-container .toggle-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .toggle-container .toggle-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.toggle-container .toggle-content {
+  overflow: hidden;
+  height: 0;
+  /* Начальная высота для анимации */
+  transition: height 0.3s ease-out, padding 0.3s ease-out;
+  /* Плавное изменение высоты и отступов */
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* Закрытое состояние - убираем вертикальные отступы */
+  /* Открытое состояние - добавляем отступы */
+}
+@media (max-width: 768px) {
+  .toggle-container .toggle-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.toggle-container .toggle-content-container {
+  padding: 0 20px;
+}
+.toggle-container .toggle-content.closed {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.toggle-container.open .toggle-content-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.toggle-container.open .toggle-header .toggle-arrow {
+  transform: rotate(180deg);
+  /* Поворачиваем стрелку при открытии */
+}
+
 .breadcrumbs {
   display: flex;
   align-items: center;
@@ -1202,23 +1287,23 @@
 .tabs .tab-button_m {
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 24px;
 }
 @media (max-width: 768px) {
   .tabs .tab-button_m {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 .tabs .tab-button_s {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .tabs .tab-button_s {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 .tabs .tab-button_xs {
@@ -1254,12 +1339,12 @@
   border-radius: 1000px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .tabs-tag .tab-button {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 .tabs-tag .tab-button_active {
@@ -2749,8 +2834,8 @@
 }
 @media (max-width: 768px) {
   .hearing-list h3 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -2839,13 +2924,13 @@
   font-weight: 300;
   display: block;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .hearing-item-labels span {
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .hearing-item-link {
@@ -2922,13 +3007,13 @@
   display: flex;
   padding: 40px 20px;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
 }
 @media (max-width: 768px) {
   .hearing-detail-description {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -2949,13 +3034,13 @@
 .hearing-detail-description-label {
   color: #78839c;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .hearing-detail-description-label {
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .hearing-detail-description-label:nth-of-type(2) {
@@ -3545,13 +3630,13 @@
 .admstruct-contact-item {
   flex: 1;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
 }
 @media (max-width: 768px) {
   .admstruct-contact-item {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .admstruct-contact .admstruct-contact-item-label {
@@ -3559,12 +3644,103 @@
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 24px;
 }
 @media (max-width: 768px) {
   .admstruct-contact .admstruct-contact-item-label {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.service-detail .label {
+  color: #78839c;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 768px) {
+  .service-detail .label {
     font-size: 12px;
     line-height: 16px;
+  }
+}
+.service-detail .toggle-content.pt-0 {
+  padding-top: 0;
+}
+.service-detail .toggle-content.pb-0 {
+  padding-bottom: 0;
+}
+
+.service-contacts .toggle-content-container {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 576px) {
+  .service-contacts .toggle-content-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+.service-contacts .toggle-content-container .contacts-item {
+  width: 33%;
+  box-sizing: border-box;
+}
+@media (max-width: 576px) {
+  .service-contacts .toggle-content-container .contacts-item {
+    width: 100%;
+  }
+}
+
+.service-method .service-method-line {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 576px) {
+  .service-method .service-method-line {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+.service-method .service-method-line .method-item {
+  width: 300px;
+}
+
+.service-file .file-line {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #15195a;
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .service-file .file-line {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.service-file .file-line:hover {
+  background: #f2f3f5;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .service-file .file-line {
+    padding: 16px 20px;
+  }
+}
+.service-file .file-line ion-icon {
+  font-size: 32px;
+  color: #004cc4;
+  margin-right: 16px;
+}
+@media (max-width: 768px) {
+  .service-file .file-line ion-icon {
+    font-size: 28px;
   }
 }
 
@@ -7732,6 +7908,18 @@ body {
 }
 
 hr {
-  border-color: #ebedf4;
-  width: 100%;
+  border-color: #c0c2cc;
+  border-top: 0px;
+}
+
+ul {
+  margin-left: 18px;
+}
+
+b {
+  font-weight: 600;
+}
+
+.upper-text {
+  text-transform: uppercase;
 }

@@ -171,6 +171,11 @@
             background-color: inherit; // Убирает стили при наведении
         }
     }
+
+    /** Особый шрифт для тегов ***/
+    &_tag-label span {
+        @include tags-label;
+    }
 }
 
 // Не в кнопках должно быть

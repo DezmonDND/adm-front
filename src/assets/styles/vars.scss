@@ -111,15 +111,26 @@ $font-weight-bold: 600;
     line-height: 28px;
 
     @media (max-width: 768px) {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
 @mixin heading-h4 {
     font-weight: $font-weight-semi-bold;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 24px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@mixin heading-h5 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 16px;
+    line-height: 20px;
 
     @media (max-width: 768px) {
         font-size: 12px;
@@ -127,22 +138,151 @@ $font-weight-bold: 600;
     }
 }
 
-@mixin heading-h5 {
+@mixin heading-h6 {
     font-weight: $font-weight-semi-bold;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 16px;
 
     @media (max-width: 768px) {
         font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+// Finish - Heading
+
+//Start - Caption
+@mixin caption-1 {
+    font-weight: $font-weight-regular;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@mixin caption-2 {
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin caption-3 {
+    font-weight: $font-weight-regular;
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (max-width: 768px) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@mixin caption-4 {
+    font-weight: $font-weight-regular;
+    font-size: 12px;
+    line-height: 16px;
+
+    @media (max-width: 768px) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@mixin caption-5 {
+    font-weight: $font-weight-regular;
+    font-size: 10px;
+    line-height: 14px;
+
+    @media (max-width: 768px) {
+        font-size: 8px;
         line-height: 12px;
     }
 }
 
-@mixin heading-h6 {
+// Finish - Caption
+
+//Start - Lead
+@mixin lead-1 {
+    font-weight: $font-weight-medium;
+    font-size: 28px;
+    line-height: 34px;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@mixin lead-2 {
+    font-weight: $font-weight-medium;
+    font-size: 24px;
+    line-height: 28px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@mixin lead-3 {
+    font-weight: $font-weight-medium;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@mixin lead-4 {
+    font-weight: $font-weight-medium;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin lead-5 {
+    font-weight: $font-weight-medium;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin lead-6 {
+    font-weight: $font-weight-medium;
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (max-width: 768px) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+// Finish - Lead
+
+@mixin tags-label {
     font-weight: $font-weight-semi-bold;
-    font-size: 13px;
-    line-height: 16px;
-    // Спросить, что тут должно быть
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
 }
 
 // Start - Title
@@ -221,43 +361,34 @@ $font-weight-bold: 600;
 
 @mixin text-1 {
     font-weight: $font-weight-regular;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
 
     @media (max-width: 768px) {
-        // Спросить, что тут должно быть
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
 @mixin text-2 {
     font-weight: $font-weight-regular;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 24px;
 
     @media (max-width: 768px) {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
 @mixin text-3 {
     font-weight: $font-weight-regular;
-    font-size: 16px;
-    line-height: 24px;
-
-    @media (max-width: 768px) {
-        font-size: 10px;
-        line-height: 16px;
-    }
-}
-
-@mixin text-4 {
-    font-weight: $font-weight-regular;
     font-size: 14px;
     line-height: 20px;
 
     @media (max-width: 768px) {
-        // Спросить, что тут должно быть
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 @mixin lead-2 {
@@ -334,7 +465,7 @@ $font-weight-bold: 600;
 }
 
 @mixin desc-text4 {
-    @include text-4();
+    @include text-3();
 }
 
 @mixin desc-calender {
