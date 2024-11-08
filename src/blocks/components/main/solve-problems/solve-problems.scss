@@ -8,6 +8,11 @@
         gap: 3px;
     }
 
+    @media (max-width: 600px) {
+        margin-top: 6px;
+
+    }
+
     .solve-problems__container {
 
         .solve-problems__banner {

@@ -7,6 +7,10 @@
         margin-top: 21px;
     }
 
+    @media (max-width: 600px) {
+        margin-top: 16px;
+    }
+
     .usefull-links__container {
         display: grid;
         grid-template-columns: repeat(4, calc((100% - 36px)/4));
@@ -20,6 +24,11 @@
             grid-template-columns: repeat(3, calc((100% - 16px)/3));
             margin-top: 0;
             padding: 0 0 4px;
+        }
+
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
         }
 
         .usefull-link {
@@ -37,6 +46,13 @@
                 box-sizing: border-box;
                 min-height: 76px;
             }
+
+            @media (max-width: 600px) {
+                min-height: unset;
+                padding: 12px 20px;
+                align-items: center;
+            }
+
 
             .usefull-link__icon {
                 width: 24px;

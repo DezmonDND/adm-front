@@ -12,6 +12,10 @@
             margin-top: 10px;
         }
 
+        @media (max-width: 1000px) {
+            margin-top: 4px;
+        }
+
         .important-inf__banner {
             max-width: 873px;
             width: 100%;

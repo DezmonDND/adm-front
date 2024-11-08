@@ -5,12 +5,24 @@
         margin: 0 0 23px;
     }
 
+    @media screen and (max-width: 600px) {
+        margin: 0 0 15px;
+    }
+
     .main-help-city__content {
         display: flex;
         gap: 24px;
 
         @media screen and (max-width: 1000px) {
             gap: 8px;
+        }
+
+        @media (max-width: 600px) {
+            display: grid;
+            grid-template-columns: repeat(2, 336px);
+            overflow-y: scroll;
+            scrollbar-width: none;
+
         }
     }
 

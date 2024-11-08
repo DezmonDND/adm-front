@@ -177,6 +177,8 @@ block content
                     title: 'Анонсы и события',
                     link_text: 'Все события'
                 })
+                .events__filters
+                    +button({ type: 'button', size: 'm', class: 'button_white events__filter-button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
                 +calendar([
                     {
                     date: '18',

@@ -26,12 +26,20 @@
                 grid-template-columns: repeat(2, calc((100% - 8px)/2));
             }
 
+            @media (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+
             .main-services__search-content {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
 
-
+                @media (max-width: 600px) {
+                    gap: 11px;
+                }
 
                 .main-services__label {
                     @include heading-h3;
@@ -63,6 +71,10 @@
                 @media (max-width: 1000px) {
                     margin-bottom: 16px;
                 }
+
+                @media (max-width: 600px) {
+                    margin-bottom: 19px;
+                }
             }
 
             .main-services__buttons-container {
@@ -73,9 +85,14 @@
                     gap: 8px;
                 }
 
+                @media (max-width: 600px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 .main-services__button {
                     justify-content: center;
-                    width: 100%;
+                    width: calc(100% - 40px);
                 }
             }
 
