@@ -11,15 +11,27 @@
         gap: 60px;
         margin-top: 55px;
 
+        @media (max-width: 1000px) {
+            margin-top: 2px;
+            gap: 25px;
+        }
+
         .main-services__search {
             display: grid;
             grid-template-columns: repeat(2, calc((100% - 24px)/2));
             gap: 24px;
 
+            @media (max-width: 1000px) {
+                gap: 8px;
+                grid-template-columns: repeat(2, calc((100% - 8px)/2));
+            }
+
             .main-services__search-content {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+
+
 
                 .main-services__label {
                     @include heading-h3;
@@ -28,6 +40,13 @@
                 .search-main-services {
                     width: 100%;
                     max-width: none;
+
+                    .search__button_l {
+                        @media (max-width: 1000px) {
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
                 }
             }
 
@@ -38,15 +57,21 @@
             flex-direction: column;
 
             .main-services__buttons-title {
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 28px;
+                @include heading-h4;
                 margin-bottom: 24px;
+
+                @media (max-width: 1000px) {
+                    margin-bottom: 16px;
+                }
             }
 
             .main-services__buttons-container {
                 display: flex;
                 gap: 24px;
+
+                @media (max-width: 1000px) {
+                    gap: 8px;
+                }
 
                 .main-services__button {
                     justify-content: center;

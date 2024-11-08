@@ -8,6 +8,10 @@
     width: 100%;
     margin: 0 0 40px;
 
+    @media (max-width: 1000px) {
+       margin: 10px 0 17px;
+    }
+
     .tabs__container {
         display: flex;
         overflow: auto;
@@ -53,13 +57,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .tabs {
-        margin-top: 32px;
-    }
+
 }
 
 @media screen and (max-width: 600px) {
     .tabs {
-        margin-top: 26px;
+
     }
 }

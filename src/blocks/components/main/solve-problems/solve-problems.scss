@@ -3,8 +3,15 @@
     flex-direction: column;
     gap: 48px;
 
+    @media (max-width: 1000px) {
+        margin-top: 23px;
+        gap: 3px;
+    }
+
     .solve-problems__container {
 
-        .solve-problems__banner {}
+        .solve-problems__banner {
+            width: 100%;
+        }
     }
 }

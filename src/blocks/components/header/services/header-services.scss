@@ -3,6 +3,9 @@
 .header-services {
     display: flex;
     background-color: $cards-background;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
 
     .header-services__container {
         display: flex;
@@ -10,6 +13,12 @@
         max-width: 1440px;
         width: 100%;
         padding: 20px 0;
+
+        @media (max-width: 1000px) {
+            padding: 12px 0;
+            gap: 12px;
+        }
+
 
         .header-services__button {
             background-color: $services-hover;
@@ -21,6 +30,10 @@
             .icon {
                 color: $primary-color;
                 font-size: 45px;
+
+                @media (max-width: 1000px) {
+                    font-size: 40px;
+                }
             }
         }
     }

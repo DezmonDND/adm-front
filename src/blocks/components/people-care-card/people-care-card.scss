@@ -9,6 +9,9 @@
     background: $finance-color;
     align-content: end;
 
+    @media (max-width: 1000px) {
+        min-height: 214px;
+    }
 
     .people-care-card__container {
         display: flex;
@@ -16,6 +19,11 @@
         justify-content: flex-end;
         gap: 32px;
         padding: 32px;
+
+        @media (max-width: 1000px) {
+            padding: 16px;
+            gap: 13px;
+        }
 
         .people-care-card__title {
             @include heading-h2;

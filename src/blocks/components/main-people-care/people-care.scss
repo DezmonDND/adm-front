@@ -1,12 +1,36 @@
 .main-people-care {
     padding: 44px 0 48px;
 
+    @media (max-width: 1000px) {
+        padding: 22px 0 18px;
+    }
+
     .main-people-care__container {
         margin-top: 46px;
 
+        @media (max-width: 1000px) {
+            margin-top: 0;
+        }
+
         .main-people-care__card-list {
-            display: flex;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3, calc((100% - 48px)/3));
             gap: 24px;
+
+            @media (max-width: 1000px) {
+                gap: 8px;
+                grid-template-columns: repeat(3, calc((100% - 16px)/3));
+            }
+        }
+
+        .people-care__slider {
+            display: none;
+            @media (max-width: 1000px) {
+                display: flex;
+                justify-content: center;
+                padding-top: 24px;
+            }
         }
     }
 }

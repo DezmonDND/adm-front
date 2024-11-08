@@ -1,5 +1,10 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+@mixin font-tablet {
+    font-size: 10px;
+    line-height: 14px;
+}
+
 .main-project-card {
     display: flex;
     flex-direction: column;
@@ -10,6 +15,16 @@
     justify-content: space-between;
     height: 428px;
 
+    @media screen and (max-width: 1000px) {
+        // height: 256px;
+        height: 288px;
+
+        &:nth-child(n+3) {
+            display: none;
+        }
+
+    }
+
     .main-project-card__content {
         padding: 13px 32px 36px;
         display: flex;
@@ -18,10 +33,22 @@
         height: 100%;
         justify-content: space-between;
 
+        @media screen and (max-width: 1000px) {
+            // padding: 12px;
+            padding: 20px;
+
+        }
+
         .main-project-card__dates {
             display: flex;
             align-items: center;
             gap: 20px;
+
+            @media screen and (max-width: 1000px) {
+                gap: 4px;
+
+            }
+
 
             .main-project-card__date {
                 @include heading-h5;
@@ -29,6 +56,12 @@
                 background-color: $content-color;
                 padding: 4px 16px;
                 margin: 10px 0 10px;
+
+                @media screen and (max-width: 1000px) {
+                    @include font-tablet();
+                    margin: 0;
+
+                }
             }
         }
 
@@ -39,6 +72,14 @@
             overflow: hidden;
             margin-top: 20px;
             min-height: 169px;
+
+            @media screen and (max-width: 1000px) {
+                // margin-top: 8px;
+                margin-top: 18px;
+                gap: 8px;
+                min-height: 108px;
+
+            }
 
             .main-project-card__title {
                 @include heading-h3;
@@ -67,11 +108,21 @@
         .main-project-card__votes {
             color: $tertiary-text;
             @include caption-2();
+
+            @media screen and (max-width: 1000px) {
+                @include font-tablet();
+
+            }
         }
 
         .main-project-card__user-status {
             @include desc-title5();
             color: $primary-color;
+
+            @media screen and (max-width: 1000px) {
+                @include font-tablet();
+
+            }
         }
     }
 }

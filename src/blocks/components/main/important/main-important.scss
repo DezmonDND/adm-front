@@ -8,8 +8,17 @@
         overflow-x: scroll;
         scrollbar-width: none;
 
+        @media (max-width: 1000px) {
+            margin-top: 10px;
+        }
+
         .important-inf__banner {
             max-width: 873px;
+            width: 100%;
+
+            @media (max-width: 1000px) {
+                max-width: 482px;
+            }
         }
     }
 }

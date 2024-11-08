@@ -6,6 +6,10 @@
     cursor: pointer;
     font-size: 30px;
 
+    @media (max-width: 1000px) {
+        font-size: 20px;
+    }
+
 }
 
 .navigation {
@@ -13,6 +17,10 @@
     align-items: center;
     gap: 24px;
     @include text-3;
+
+    @media (max-width: 1000px) {
+        gap: 14px;
+    }
 
     .navigation__link-prev {
         @include flex;

@@ -17,7 +17,7 @@ $main-text: #000448;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    @include text-1;
+    @include text-2;
 
     &:hover {
         cursor: pointer;

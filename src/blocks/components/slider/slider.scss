@@ -11,6 +11,12 @@
     gap: 12px;
     font-size: 34px;
 
+    @media (max-width: 1000px) {
+        font-size: 23px;
+        padding-bottom: 5px;
+        
+    }
+
     .slider__link-prev {
         @include flex;
         color: $primary-color;
