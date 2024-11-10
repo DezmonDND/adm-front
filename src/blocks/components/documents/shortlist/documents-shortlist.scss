@@ -1,0 +1,44 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.short-filelist {
+    .file-line {
+        @include lead-5;
+        color: $second-text;
+        text-decoration: none;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        background-color: $grey-adm;
+        border-radius: 8px;
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            background: $services-hover;
+        }
+
+        @media (max-width: 768px) {
+            padding: 16px 20px;
+        }
+
+        ion-icon {
+            font-size: 32px;
+            color: $primary-color;
+            margin-right: 16px;
+
+            @media (max-width: 768px) {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+//При использовании модуля в toogle
+.toggle-content-footer {
+    .file-line {
+        margin-bottom: 0;
+    }
+}
