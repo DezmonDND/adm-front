@@ -1,0 +1,44 @@
+.short-filelist .file-line {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #15195a;
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .short-filelist .file-line {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.short-filelist .file-line:last-child {
+  margin-bottom: 0;
+}
+.short-filelist .file-line:hover {
+  background: #f2f3f5;
+}
+@media (max-width: 768px) {
+  .short-filelist .file-line {
+    padding: 16px 20px;
+  }
+}
+.short-filelist .file-line ion-icon {
+  font-size: 32px;
+  color: #004cc4;
+  margin-right: 16px;
+}
+@media (max-width: 768px) {
+  .short-filelist .file-line ion-icon {
+    font-size: 28px;
+  }
+}
+
+.toggle-content-footer .file-line {
+  margin-bottom: 0;
+}

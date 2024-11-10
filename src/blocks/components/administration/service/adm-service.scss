@@ -53,39 +53,3 @@
 
 
 }
-
-.service-file {
-
-
-    .file-line {
-        @include lead-5;
-        color: $second-text;
-        text-decoration: none;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-
-        &:hover {
-            background: $services-hover;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 768px) {
-            padding: 16px 20px;
-        }
-
-        ion-icon {
-            font-size: 32px;
-            color: $primary-color;
-            margin-right: 16px;
-
-            @media (max-width: 768px) {
-                font-size: 28px;
-            }
-
-
-        }
-    }
-
-
-}

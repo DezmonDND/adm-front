@@ -1,3 +1,5 @@
+include ../../documents/shortlist/documents-shortlist.pug
+
 mixin adm-service()
     +title({title: 'Услуги ЗАГСа'})
     .service-detail
@@ -19,19 +21,12 @@ mixin adm-service()
                         | Лично завявителем
             .toggle-footer
                 hr
-                .service-file
-                    a(href="#" target="_blank").file-line
-                        <ion-icon name="document"></ion-icon>
-                        | Инструкция - Регистрация рождения одинокой матерью.pdf
-                    a(href="#" target="_blank").file-line
-                        <ion-icon name="document"></ion-icon>
-                        | Инструкция - Регистрация рождения одинокой матерью.pdf 
-                    a(href="#" target="_blank").file-line
-                        <ion-icon name="document"></ion-icon>
-                        | Инструкция - Регистрация рождения одинокой матерью.pdf
-                    a(href="#" target="_blank").file-line
-                        <ion-icon name="document"></ion-icon>
-                        | Инструкция - Регистрация рождения одинокой матерью.pdf 
+                +short-filelist([
+                    {title:"Инструкция - Регистрация рождения одинокой матерью.pdf", href:"#"},
+                    {title:"Инструкция - Регистрация рождения одинокой матерью.pdf", href:"#"},
+                    {title:"Инструкция - Регистрация рождения одинокой матерью.pdf", href:"#"},
+                    {title:"Инструкция - Регистрация рождения одинокой матерью.pdf", href:"#"}
+                ])
         .toggle-container
             .toggle-header Контакты
             .toggle-content.service-contacts
@@ -68,16 +63,9 @@ mixin adm-service()
         .toggle-container
             .toggle-header Основание предоставляемой услуги
             .toggle-footer
-                .service-file
-                    a(href="#" target="_blank").file-line
-                        <ion-icon name="document"></ion-icon>
-                        | Инструкция - Регистрация рождения одинокой матерью.pdf
-                    a(href="#" target="_blank").file-line
-                        <ion-icon name="document"></ion-icon>
-                        | Инструкция - Регистрация рождения одинокой матерью.pdf 
-                    a(href="#" target="_blank").file-line
-                        <ion-icon name="document"></ion-icon>
-                        | Инструкция - Регистрация рождения одинокой матерью.pdf
-                    a(href="#" target="_blank").file-line
-                        <ion-icon name="document"></ion-icon>
-                        | Инструкция - Регистрация рождения одинокой матерью.pdf 
+                +short-filelist([
+                    {title:"Инструкция - Регистрация рождения одинокой матерью.pdf", href:"#"},
+                    {title:"Инструкция - Регистрация рождения одинокой матерью.pdf", href:"#"},
+                    {title:"Инструкция - Регистрация рождения одинокой матерью.pdf", href:"#"},
+                    {title:"Инструкция - Регистрация рождения одинокой матерью.pdf", href:"#"}
+                ])
