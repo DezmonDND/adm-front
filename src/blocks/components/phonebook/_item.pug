@@ -1,0 +1,41 @@
+mixin phonebook_main_item(fio,job, adress, cab, phone, mail)
+    .line 
+        .fio #{fio}
+        .line-fields
+            .line-field
+                .label Должность
+                | #{job}
+            .line-field
+                .label Адрес
+                | #{adress}
+            .line-field
+                .label Кабинет
+                | #{cab}
+            .line-field
+                .label Телефон
+                |  #{phone} 
+            .line-field
+                .label Электронная почта
+                a(href=`mailto:${mail}`) #{mail}
+
+mixin phonebook_item(fio,job, adress, cab, phone, mail)
+    .line 
+        .line-fields
+            .line-field
+                .label ФИО
+                | #{fio}
+            .line-field
+                .label Должность
+                | #{job}
+            .line-field
+                .label Адрес
+                | #{adress}
+            .line-field
+                .label Кабинет
+                | #{cab}
+            .line-field
+                .label Телефон
+                |  #{phone} 
+            .line-field
+                .label Электронная почта
+                a(href=`mailto:${mail}`) #{mail}
