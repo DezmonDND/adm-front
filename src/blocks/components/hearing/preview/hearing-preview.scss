@@ -76,13 +76,13 @@
         @include play(82);
 
         @media (max-width: 1000px) {
-            @include play(40);
             top: 185px;
+            @include play(40);
         }
 
         @media (max-width: 576px) {
-            @include play(32);
             top: 79px;
+            @include play(32);
         }
     }
 

@@ -14,8 +14,10 @@
 }
 
 @mixin size_M() {
-    padding: $padding-button-m;
-    @include heading-h5;
+    & {
+        padding: $padding-button-m;
+        @include heading-h5;
+    }
 
     @media screen and (max-width: 1000px) {
         padding: $padding-button-s;

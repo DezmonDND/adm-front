@@ -2,8 +2,8 @@
 
 .short-filelist {
     .file-line {
-        @include lead-5;
-        color: $second-text;
+
+
         text-decoration: none;
         padding: 20px;
         display: flex;
@@ -11,6 +11,11 @@
         background-color: $grey-adm;
         border-radius: 8px;
         margin-bottom: 12px;
+
+        & {
+            color: $second-text;
+            @include lead-5;
+        }
 
         &:last-child {
             margin-bottom: 0;
