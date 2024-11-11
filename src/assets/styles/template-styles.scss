@@ -17,9 +17,7 @@
 @use '../../blocks/libs/fullwidth/fullwidth.scss';
 @use '../../blocks/libs/modal/modal.scss';
 @use '../../blocks/libs/toggle/toggle.scss';
-
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
-@use '../../blocks/components/form-field/form-field.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
 @use '../../blocks/components/tabs/main/tabs.scss';
 @use '../../blocks/components/tabs/tags/tabs-tag.scss';
@@ -43,11 +41,10 @@
 @use '../../blocks/components/biography/biography.scss';
 @use '../../blocks/libs/multiselect/multi-select.scss';
 @use '../../blocks/components/news/news.scss';
-@use '../../blocks/components/main-title/main-title.scss';
-@use '../../blocks/components/main-services/main-services.scss';
-@use '../../blocks/components/main-links/main-links.scss';
+@use '../../blocks/components/title/main/main-title.scss';
+@use '../../blocks/components/services/services.scss';
 @use '../../blocks/components/administration/struct/adm-struct.scss';
-@use '../../blocks/components/main/events/main-events.scss';
+@use '../../blocks/components/events/events.scss';
 @use '../../blocks/components/calendar/calendar.scss';
 @use '../../blocks/components/afisha/afisha-events.scss';
 @use '../../blocks/components/afisha/afisha-event-description.scss';
@@ -60,14 +57,14 @@
 @use './bootstrap-grid.scss';
 @use '../../blocks/components/header/services/header-services.scss';
 @use '../../blocks/components/people-care-card/people-care-card.scss';
-@use '../../blocks/components/main-people-care/people-care.scss';
-@use '../../blocks/components/main/help-city/help-city.scss';
-@use '../../blocks/components/main/project-card/main-project-card.scss';
+@use '../../blocks/components/people-care/people-care.scss';
+@use '../../blocks/components/help-city/help-city.scss';
+@use '../../blocks/components/project-card-main/main-project-card.scss';
 @use '../../blocks/components/administration/helpers/adm-helpers.scss';
-@use '../../blocks/components/main/important/main-important.scss';
-@use '../../blocks/components/main/solve-problems/solve-problems.scss';
-@use '../../blocks/components/main/important-links/important-links.scss';
-@use '../../blocks/components/main/usefull-links/usefull-links.scss';
+@use '../../blocks/components/important/important.scss';
+@use '../../blocks/components/solve-problems/solve-problems.scss';
+@use '../../blocks/components/links/important/important-links.scss';
+@use '../../blocks/components/links/usefull/usefull-links.scss';
 
 
 * {

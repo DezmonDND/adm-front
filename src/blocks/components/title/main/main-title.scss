@@ -1,0 +1,29 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.main-title {
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 48px 0 40px;
+
+    @media (max-width: 1000px) {
+        padding: 24px 0 20px;
+        
+    }
+
+    .main-title__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .main-title__title {
+            @include heading-h1;
+        }
+
+        .main-title__link {
+            @include text-link;
+            text-decoration: none;
+            color: rgba(0, 76, 196, 1);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+include ../../title/main/_main-title.pug
+include ../../search/_search.pug
+include ../../libs/buttons/_buttons.pug
+
+mixin services()
+    .full-width-container
+        .full-width-background
+            .full-width-content                           
+                .main-services 
+                    +main-title({
+                        href: '/',
+                        title: 'Полезные сервисы для вас',
+                    })
+                    .main-services__container
+                        .main-services__search
+                            .main-services__search-content
+                                h3(class='main-services__label') Поиск законопроектов
+                                +search(
+                                    {name: 'laws', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+                                        false, 'l', 'getValues()', 'main-services',) 
+                            .main-services__search-content        
+                                h3(class='main-services__label') Поиск правовых актов        
+                                +search(
+                                    {name: 'acts', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+                                        false, 'l', 'getValues()', 'main-services',)         
+                        .main-services__buttons
+                            h3.main-services__buttons-title Связаться
+                            .main-services__buttons-container
+                                +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: '', text: 'Электронное обращение' })
+                                +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: '', text: 'Личный прием' })       

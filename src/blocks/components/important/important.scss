@@ -1,0 +1,29 @@
+.important-inf {
+    display: flex;
+    flex-direction: column;
+
+    .important-inf__container {
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        @media (max-width: 1000px) {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 1000px) {
+            margin-top: 4px;
+        }
+
+        .important-inf__banner {
+            max-width: 873px;
+            width: 100%;
+
+            @media (max-width: 1000px) {
+                max-width: 482px;
+            }
+        }
+    }
+}
+

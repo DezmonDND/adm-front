@@ -1,0 +1,10 @@
+include ../../components/title/main/_main-title.pug
+
+mixin solve-problems()
+    .solve-problems
+        +main-title({
+            href: '/',
+            title: 'Решаем проблемы вместе',
+        })   
+        .solve-problems__container
+            img.solve-problems__banner(src='../img/banner_1.png' alt='Баннер') 
