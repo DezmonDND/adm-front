@@ -54,12 +54,15 @@
                 text-decoration: none;
                 color: $tertiary-text;
                 padding: 9px;
+                cursor: default;
                 @include desc-label1;
+
 
                 &_active {
                     border-radius: 50%;
                     border: 1.5px solid $primary-color;
                     color: $main-text;
+                    cursor: pointer;
                 }
 
                 &_clicked {
@@ -67,10 +70,12 @@
                     border: 1.5px solid $primary-color;
                     color: $content-color;
                     background-color: $primary-color;
+                    cursor: pointer;
                 }
 
                 &_without-events {
                     color: $main-text;
+                    cursor: pointer;
                 }
             }
 

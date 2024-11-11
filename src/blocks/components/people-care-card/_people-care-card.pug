@@ -2,6 +2,7 @@ include ../../libs/buttons/_buttons.pug
 
 mixin people-care-card(data)
     .people-care-card
+        img(src='../resources/wallet-main_icon.svg' class='people-care-card__icon')
         .people-care-card__container
             h2.people-care-card__title #{data.title}
-            +button({ type: 'link', iconPosition: 'right', size: 'm', href: '/about', class: 'button_blue', icon: 'arrow-forward', text: 'Подробнее'})
+            +button({ type: 'link', iconPosition: 'right', size: 'm', href: '/about', class: 'button_blue people-care-card__button', icon: 'arrow-forward', text: 'Подробнее'})

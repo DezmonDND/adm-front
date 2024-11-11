@@ -8,9 +8,31 @@
     background-repeat: no-repeat;
     background: $finance-color;
     align-content: end;
+    position: relative;
 
     @media (max-width: 1000px) {
         min-height: 214px;
+    }
+
+    .people-care-card__icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 320px;
+        width: 100%;
+        max-height: 320px;
+        opacity: 0.1;
+
+        @media (max-width: 1000px) {
+            max-width: 140px;
+            top: 45px;
+            right: 13px;
+            bottom: 28px;
+        }
+
+        @media (max-width: 600px) {
+            right: 28px;
+        }
     }
 
     .people-care-card__container {
@@ -28,6 +50,12 @@
         .people-care-card__title {
             @include heading-h2;
             color: $content-color;
+            z-index: 1;
         }
+
+        .people-care-card__button {
+            z-index: 1;
+        }
+
     }
 }
