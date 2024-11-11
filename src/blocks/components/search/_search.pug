@@ -1,3 +1,6 @@
+include ../../libs/inputs/_inputs.pug
+include ../../libs/search-button/_search-button.pug
+
 mixin search(input_options, error, size, event, sort)
     form(class=`search search-${sort}`)
         +input(input_options, error)

@@ -1,0 +1,14 @@
+.afisha-universal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.afisha-universal .afisha-universal__content {
+  width: 100%;
+}
+.afisha-universal .afisha-universal__content .afisha-universal__events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 64px;
+}
