@@ -8,12 +8,12 @@
     .main-services__container {
         display: flex;
         flex-direction: column;
-        gap: 60px;
-        margin-top: 55px;
+        gap: 47px;
+        margin-top: 9px;
 
         @media (max-width: 1000px) {
             margin-top: 2px;
-            gap: 25px;
+            gap: 19px;
         }
 
         .main-services__search {
@@ -65,7 +65,7 @@
             flex-direction: column;
 
             .main-services__buttons-title {
-                @include heading-h4;
+                @include heading-h3;
                 margin-bottom: 24px;
 
                 @media (max-width: 1000px) {
@@ -95,54 +95,6 @@
                     width: calc(100% - 40px);
                 }
             }
-
         }
-    }
-
-}
-
-@media screen and (max-width: 1000px) {
-    .main-services {
-
-        .main-services__container {
-
-            .main-services__search {
-                .main-services__label {}
-
-                .search-main-services {}
-
-            }
-
-            .main-services__buttons {
-                .main-services__buttons-title {}
-
-                .main-services__buttons-container {}
-
-            }
-        }
-
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .main-services {
-
-        .main-services__container {
-
-            .main-services__search {
-                .main-services__label {}
-
-                .search-main-services {}
-
-            }
-
-            .main-services__buttons {
-                .main-services__buttons-title {}
-
-                .main-services__buttons-container {}
-
-            }
-        }
-
     }
 }

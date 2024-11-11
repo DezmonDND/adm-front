@@ -1,11 +1,14 @@
 .solve-problems {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 8px;
+    margin-bottom: 48px;
+
 
     @media (max-width: 1000px) {
         margin-top: 23px;
         gap: 3px;
+        margin-bottom: 0;
     }
 
     @media (max-width: 600px) {

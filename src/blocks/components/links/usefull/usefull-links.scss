@@ -1,6 +1,7 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .usefull-links {
+    max-width: 1440px;
     margin-top: 50px;
 
     @media (max-width: 1000px) {
@@ -13,11 +14,10 @@
 
     .usefull-links__container {
         display: grid;
-        grid-template-columns: repeat(4, calc((100% - 36px)/4));
-        gap: 12px;
-        padding: 0 0 39px;
+        grid-template-columns: repeat(4, calc((100% - 72px)/4));
+        gap: 24px;
         justify-content: center;
-        margin-top: 43px;
+        margin-top: 6px;
 
         @media (max-width: 1000px) {
             gap: 8px;
@@ -41,6 +41,14 @@
             border-radius: 8px;
             padding: 20px;
             justify-content: space-between;
+
+            &:hover {
+                background-color: $services-hover;
+            }
+        
+            &:active {
+                background-color: $services-active;
+            }
 
             @media (max-width: 1000px) {
                 box-sizing: border-box;

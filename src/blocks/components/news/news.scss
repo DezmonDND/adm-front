@@ -2,7 +2,7 @@
 
 .news-card-without-image {
     display: flex;
-    background-color: rgba(250, 250, 250, 1);
+    background-color: $cards-background;
     border-radius: 12px;
     text-decoration: none;
     color: #000000;
@@ -11,11 +11,19 @@
     padding: 20px 20px;
     box-sizing: border-box;
 
+    &:hover {
+        background-color: $services-hover;
+    }
+
+    &:active {
+        background-color: $services-active;
+    }
+
     @media screen and (max-width: 1000px) {
         min-width: 360px;
         padding: 16px;
 
-        &:nth-child(n+4) {
+        &:nth-child(n+3) {
             display: none;
         }
     }
@@ -31,7 +39,7 @@
         gap: 29px;
 
         @media screen and (max-width: 1000px) {
-            gap: 17px;
+            gap: 22px;
         }
 
         .news-card-without-image__content {
@@ -173,12 +181,12 @@
     .main-news__container {
         .main-news__card-list {
             gap: 24px;
-            row-gap: 34px;
+            row-gap: 20px;
             display: grid;
             grid-template-columns: repeat(4, calc((100% - 72px)/4));
             justify-content: space-between;
-            margin-top: 68px;
-            padding-bottom: 58px;
+            margin-top: 0;
+            padding-bottom: 44px;
 
             @media (max-width: 1280px) {
                 grid-template-columns: repeat(3, calc((100% - 72px)/3));
@@ -205,6 +213,16 @@
     max-width: 310px;
     background-color: $cards-background;
     border-radius: 12px;
+    text-decoration: none;
+    color: $main-text;
+
+    &:hover {
+        color: $primary-color-hover;
+    }
+
+    &:active {
+        color: $primary-color-active;
+    }
 
     @media (max-width: 1000px) {
         &:nth-child(n+4) {
@@ -278,111 +296,6 @@
 
             .main-news-card__title {
                 @include heading-h5;
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 1000px) {
-    .news {
-        .news__container {}
-
-        .news__list {}
-    }
-
-    .news-card-without-image {
-        .news-card-without-image__container {
-            .news-card-without-image__content {
-
-                .news-card-without-image__title {
-                    .news-card-without-image__date {}
-                }
-            }
-        }
-    }
-
-    .news-card-with-image {
-
-        .news-card-with-image__container {
-
-            .news-card-with-image__content {
-
-                .news-card-with-image__date {}
-
-                .news-card-with-image__title {}
-            }
-        }
-    }
-
-    .main-news-card {
-
-        .main-news-card__container {
-
-            .main-news-card__image-block {
-
-                .main-news-card__image {}
-
-                .main-news-card__tags {}
-            }
-
-            .main-news-card__content {
-
-                .main-news-card__date {}
-
-                .main-news-card__title {}
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .news {
-        .news__container {}
-
-        .news__list {}
-    }
-
-    .news-card-without-image {
-        .news-card-without-image__container {
-            .news-card-without-image__content {
-
-                .news-card-without-image__title {
-                    .news-card-without-image__date {}
-                }
-            }
-        }
-    }
-
-    .news-card-with-image {
-
-        .news-card-with-image__container {
-
-            .news-card-with-image__content {
-
-                .news-card-with-image__date {}
-
-                .news-card-with-image__title {}
-            }
-        }
-    }
-
-    .main-news-card {
-
-        .main-news-card__container {
-
-            .main-news-card__image-block {
-
-                .main-news-card__image {}
-
-                .main-news-card__tags {}
-            }
-
-            .main-news-card__content {
-
-                .main-news-card__date {}
-
-                .main-news-card__title {}
             }
         }
     }
