@@ -42,10 +42,10 @@
   margin-bottom: 12px;
 }
 .phonebook-main-item .line .fio {
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 20px;
 }
 @media (max-width: 992px) {
   .phonebook-main-item .line .fio {
@@ -110,10 +110,10 @@
 }
 
 .phonebook-list .sub_header {
+  padding: 20px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  padding: 20px 0;
 }
 @media (max-width: 992px) {
   .phonebook-list .sub_header {
