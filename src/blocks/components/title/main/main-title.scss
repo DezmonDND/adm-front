@@ -21,7 +21,7 @@
         }
 
         .main-title__link {
-            @include text-link;
+            @include text-1;
             text-decoration: none;
             color: rgba(0, 76, 196, 1);
         }

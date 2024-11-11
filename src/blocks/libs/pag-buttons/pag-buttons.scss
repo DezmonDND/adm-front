@@ -24,8 +24,8 @@ $content-color: #FFFFFF;
     padding: 12px 25px;
     border-radius: 8px;
     font-weight: 600;
-    @include heading-h5;
     text-decoration: none;
+    @include heading-h5;
 
     &:hover {
         cursor: pointer;

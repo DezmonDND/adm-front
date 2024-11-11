@@ -54,6 +54,8 @@
 @use '../../blocks/components/afisha/event.scss';
 @use '../../blocks/components/slider/slider.scss';
 @use '../../blocks/components/administration/service/adm-service.scss';
+@use '../../blocks/components/documents/shortlist/documents-shortlist.scss';
+@use '../../blocks/components/phonebook/main/phonebook.scss';
 @use './bootstrap-grid.scss';
 @use '../../blocks/components/header/services/header-services.scss';
 @use '../../blocks/components/people-care-card/people-care-card.scss';
@@ -90,8 +92,11 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    @include main-padding;
     padding-bottom: 60px;
+
+    & {
+        @include main-padding;
+    }
 
 
     .main__title {

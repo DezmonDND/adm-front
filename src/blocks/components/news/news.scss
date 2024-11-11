@@ -49,8 +49,8 @@
         }
 
         .news-card-without-image__date {
-            @include caption-3;
             color: rgba(133, 140, 156, 1);
+            @include caption-3;
         }
     }
 }
@@ -102,14 +102,14 @@
             width: 100%;
 
             .news-card-with-image__date {
-                @include caption-2;
                 z-index: 1;
+                @include caption-2;
             }
 
             .news-card-with-image__title {
-                @include heading-h1;
                 margin: 8px 0 32px;
                 z-index: 1;
+                @include heading-h1;
 
                 @media screen and (max-width: 1000px) {
                     margin: 4px 0 16px;
