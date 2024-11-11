@@ -1,0 +1,68 @@
+
+<div class="main-title">
+  <div class="main-title__container">
+    <h1 class="main-title__title">Помогите городу стать лучше</h1><a class="main-title__link" href="/">Все опросы</a>
+  </div>
+</div>
+<div class="help-city__tabs">
+  <div class="tabs">
+    <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочее">Прочее</a>
+    </div>
+    <div class="slider"> <a class="slider__link-prev">
+        <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link-next">
+        <ion-icon name="arrow-forward-outline"></ion-icon></a></div>
+  </div>
+</div>
+<div class="main-help-city"> 
+  <div class="main-help-city__content"> 
+    <div class="main-project-card">
+      <div class="main-project-card__content">
+        <div class="main-project-card__info"> 
+          <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
+          </div>
+          <div class="main-project-card__description"> 
+            <h3 class="main-project-card__title" title="Уровень благоустройства города">Уровень благоустройства города</h3>
+            <p class="main-project-card__text">Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры </p>
+          </div>
+          <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
+        </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+          <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+      </div>
+    </div>
+    <div class="main-project-card">
+      <div class="main-project-card__content">
+        <div class="main-project-card__info"> 
+          <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
+          </div>
+          <div class="main-project-card__description"> 
+            <h3 class="main-project-card__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
+            <p class="main-project-card__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
+          </div>
+          <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
+        </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+          <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+      </div>
+    </div>
+    <div class="main-project-card">
+      <div class="main-project-card__content">
+        <div class="main-project-card__info"> 
+          <div class="main-project-card__dates"> <a class="button button_link button_red button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Завершен</span></a><span class="main-project-card__date">до 29 сентября</span>
+          </div>
+          <div class="main-project-card__description"> 
+            <h3 class="main-project-card__title" title="Работа местных властей и общественные инициативы">Работа местных властей и общественные инициативы</h3>
+            <p class="main-project-card__text">Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры </p>
+          </div>
+          <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
+        </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+          <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+      </div>
+    </div>
+  </div>
+  <div class="help-city__navigation"> 
+    <div class="navigation"> <a class="navigation__link-prev">
+        <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
+      <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">2</span></div><a class="navigation__link-next">
+        <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+    </div>
+  </div>
+</div>
