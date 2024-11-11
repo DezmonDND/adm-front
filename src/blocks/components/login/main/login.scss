@@ -132,3 +132,16 @@
 .hidden {
     display: none !important;
 }
+
+@media screen and (max-width:500px) {
+    .login {
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        max-width: unset;
+        border-radius:0;
+        overflow:hidden;
+    }
+}
