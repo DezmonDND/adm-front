@@ -1,0 +1,33 @@
+.citizen-card {
+    .citizen-card__container {
+        display: flex;
+        gap: 40px;
+        padding: 20px;
+
+        .citizen-card__image {
+            max-width: 180px;
+            width: 100%;
+        }
+
+        .citizen-card__content {
+            display: flex;
+            gap: 16px;
+            .citizen-card__name-block {
+                display: flex;
+                gap: 16px;
+                .citizen-card__name {
+                    @include heading-h4;
+                }
+
+                .citizen-card__dates {
+                    @include heading-h4;
+                }
+            }
+
+            .citizen-card__about {
+                @include text-2;
+            }
+        }
+    }
+
+}
