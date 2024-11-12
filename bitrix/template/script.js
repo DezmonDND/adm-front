@@ -1,13 +1,3 @@
-function openSelect() {
-  const selectMenu = document.querySelector(".select_multiple-menu");
-  selectMenu.style.display =
-    selectMenu.style.display === "none" ? "flex" : "none";
-}
-
-function selectOption(element) {
-  element.classList.toggle("select_multiple-option_selected");
-}
-
 $(document).ready(function () {
     // Инициализация всех popup-блоков
     $('.popup-fade').each(function () {
@@ -158,6 +148,16 @@ function deleteElement(text) {
 function updateMultiSelectValue(e) {
     multiSelect.value = selectedValues.join(', ');
     getValues(e);
+}
+
+function openSelect() {
+  const selectMenu = document.querySelector(".select_multiple-menu");
+  selectMenu.style.display =
+    selectMenu.style.display === "none" ? "flex" : "none";
+}
+
+function selectOption(element) {
+  element.classList.toggle("select_multiple-option_selected");
 }
 
 $(document).ready(function () {
