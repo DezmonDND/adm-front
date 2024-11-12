@@ -4,6 +4,11 @@
     max-width: 1440px;
     width: 100%;
     background-color: rgba(250, 250, 250, 1);
+    padding-bottom: 50px;
+
+    @media (max-width: 1000px) {
+        padding-bottom: 25px;
+    }
 
     .main-services__container {
         display: flex;
@@ -65,8 +70,8 @@
             flex-direction: column;
 
             .main-services__buttons-title {
-                @include heading-h3;
                 margin-bottom: 24px;
+                @include heading-h3;
 
                 @media (max-width: 1000px) {
                     margin-bottom: 16px;

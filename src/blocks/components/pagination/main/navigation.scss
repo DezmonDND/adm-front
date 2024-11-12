@@ -23,8 +23,8 @@
     }
 
     .navigation__link-prev {
-        @include flex;
         color: $primary-color;
+        @include flex;
     }
 
     .navigation__pages {
@@ -36,7 +36,7 @@
     }
 
     .navigation__link-next {
-        @include flex;
         color: $primary-color;
+        @include flex;
     }
 }

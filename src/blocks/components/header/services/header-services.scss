@@ -27,9 +27,9 @@
         .header-services__button {
             background-color: $cards-background;
             color: $main-text;
-            @include heading-h6;
             padding: 4px 18px;
             gap: 12px;
+            @include heading-h6;
 
             &:hover {
                 background-color: $services-hover;

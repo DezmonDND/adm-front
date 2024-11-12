@@ -80,8 +80,8 @@
             }
 
             .calendar__day {
-                @include text-1;
                 color: $tertiary-text;
+                @include text-1;
 
                 &_active {
                     color: $main-text;

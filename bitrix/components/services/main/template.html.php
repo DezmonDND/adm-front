@@ -28,7 +28,7 @@
           <div class="main-services__buttons">
             <h3 class="main-services__buttons-title">Связаться</h3>
             <div class="main-services__buttons-container">
-              <button class="button button_blue main-services__button button_size_xs   " onclick="console.log(1);"><span class="button_span">Электронное обращение</span>
+              <button class="button button_blue main-services__button button_size_l   " onclick="console.log(1);"><span class="button_span">Электронное обращение</span>
               </button>
               <button class="button button_blue main-services__button button_size_l   " onclick="console.log(1);"><span class="button_span">Личный прием</span>
               </button>
