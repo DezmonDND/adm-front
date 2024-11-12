@@ -13,12 +13,12 @@ block content
                 .project-generation__top-container
                     span Документ инициативного проекта сгенерирован
                     .project-generation__top-btns
-                        +button({ type: 'button', class: 'button_white', text: `Поделиться`, icon: `link-outline`, iconPosition: 'left' }) 
-                        +button({ type: 'button',  class: 'button_blue', text: `Версия для печати`, icon: `print-outline`,  iconPosition: 'left' })
-                        +button({ type: 'button', class: 'button_white', icon: `download-outline` }) 
+                        +button({ type: 'button', class: 'button_white',event: 'anotherFunction()', text: `Поделиться`, icon: `link-outline`, iconPosition: 'left' }) 
+                        +button({ type: 'button',  class: 'button_blue',event: 'anotherFunction()', text: `Версия для печати`, icon: `print-outline`,  iconPosition: 'left' })
+                        +button({ type: 'button', class: 'button_white', event: 'anotherFunction()',icon: `download-outline` }) 
                     .project-generation__top-btns.mb 
-                        +button({ type: 'button', class: 'button_white', text: `Поделиться`, icon: `link-outline`, iconPosition: 'left' })
-                        +button({ type: 'button', class: 'button_white', text: `Скачать документ`, icon: `download-outline`, iconPosition: 'left' })
+                        +button({ type: 'button', class: 'button_white',event: 'anotherFunction()', text: `Поделиться`, icon: `link-outline`, iconPosition: 'left' })
+                        +button({ type: 'button', class: 'button_white',event: 'anotherFunction()', text: `Скачать документ`, icon: `download-outline`, iconPosition: 'left' })
             .project-generation__main
                 .project-generation__main-container
                     span Дополнительная информация
@@ -30,4 +30,4 @@ block content
                             | По адресу г. Сургут, ул. Дзержиинского, д.5, телефон 8 (3462) 28-27-08
             .project-generation_bottom
                 .project-generation__bottom-container
-                    +button({ type: 'button',  class: 'button_white', text: `Вернуться к инициативным проектам`, icon: `arrow-back-outline`, iconPosition: 'left' })
+                    +button({ type: 'button',  event: 'anotherFunction()',class: 'button_white', text: `Вернуться к инициативным проектам`, icon: `arrow-back-outline`, iconPosition: 'left' })
