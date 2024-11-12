@@ -33,13 +33,14 @@ $interview-end-color: #D10404;
 }
 
 .input-search {
+    width: calc(100% - 60px);
     margin: 0;
     border-radius: 8px 0 0 8px;
     padding: 11px 20px;
 }
 
 .input-search-l {
-    padding: 23px 20px;
+    padding: 17px 20px;
 }
 
 .input-xs {

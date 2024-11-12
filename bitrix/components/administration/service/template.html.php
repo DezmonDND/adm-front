@@ -1,7 +1,7 @@
 
 <div class="title"> 
   <div class="title__container"> 
-    <h2>Услуги ЗАГСа</h2>
+    <h2 class="title__name">Услуги ЗАГСа</h2>
   </div>
 </div>
 <div class="service-detail">

@@ -1,0 +1,39 @@
+/*** Finish - Title ***/
+.doc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.doc-list .doc-line {
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  color: #15195a;
+  text-decoration: none;
+}
+.doc-list .doc-line:hover {
+  background: #f2f3f5;
+}
+.doc-list .doc-line .ident {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 992px) {
+  .doc-list .doc-line .ident {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.doc-list .doc-line .name {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 992px) {
+  .doc-list .doc-line .name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
