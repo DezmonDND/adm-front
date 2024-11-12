@@ -2,7 +2,7 @@
 .main-services {
   max-width: 1440px;
   width: 100%;
-  background-color: rgb(250, 250, 250);
+  background-color: var(--cards-background);
   padding-bottom: 50px;
 }
 @media (max-width: 1000px) {

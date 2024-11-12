@@ -1,0 +1,69 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+@mixin icons-hover {
+    filter: invert(44%) sepia(59%) saturate(7476%) hue-rotate(210deg) brightness(89%) contrast(105%);
+}
+
+
+.header-duma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: $main-text;
+    background-color: $cards-background;
+    border-bottom: 1px solid $event-color-hover;
+
+    .header__top-content {
+        display: flex;
+        max-width: 1312px;
+        width: 100%;
+        padding: 7px 65px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .header__top-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .header__buttons {
+            display: flex;
+            gap: 21px;
+
+            .header__eye-link {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                background-image: url(../icons/eye-outlined_icon.svg);
+                background-size: 18px;
+                background-repeat: no-repeat;
+                background-position: left;
+
+                &:hover {
+                    @include icons-hover;
+                }
+
+                .header__eye-link-title {
+                    margin-left: 28px;
+                    @include lead-6;
+                }
+            }
+        }
+    }
+
+    .search-header-duma {
+        max-width: 631px;
+    }
+
+    .header__bottom-content {
+        display: flex;
+        align-items: center;
+        max-width: 1312px;
+        width: 100%;
+        padding: 20px 64px;
+        gap: 60px;
+    }
+}

@@ -1,5 +1,6 @@
 @use 'fonts';
 @use 'props';
+@use '_variables';
 @use '../styles/vars.scss' as *;
 
 @use '../../blocks/libs/inputs/inputs.scss';
@@ -76,8 +77,10 @@
 @use '../../blocks/components/news/news-top/news-top.scss';
 @use '../../blocks/components/init-projects/init-card/init-card.scss';
 @use '../../blocks/components/init-projects/main/init-projects.scss';
-
-
+@use '../../blocks/components/header/duma/header-duma.scss';
+@use '../../blocks/components/header/header-links/header-links.scss';
+@use '../../blocks/components/header/socials/header-socials.scss';
+@use '../../blocks/components/header/logo/logo.scss';
 
 * {
     font-family: 'Inter', sans-serif;

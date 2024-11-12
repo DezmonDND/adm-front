@@ -1,0 +1,33 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.header__main-links {
+    display: flex;
+    gap: 8px;
+    text-decoration: none;
+    color: $main-text;
+
+    &:hover {
+        color: $primary-color;
+    }
+
+    .header__logo {
+        max-width: 28px;
+    }
+
+    .header__main-links__block {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .header__title {
+            font-weight: 600;
+            @include heading-h6;
+        }
+
+        .header__main-link {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

@@ -1,8 +1,6 @@
-// ЦВЕТА
-
 // Services
-$services-hover: #f2f3f5;
-$services-active: #e3e4e7;
+$services-hover: var(--services-hover);
+$services-active: var(--services-active);
 
 // Типографика
 $main-text: #000000; //primary
@@ -13,10 +11,8 @@ $tertiary-text-dark-bg: #e9e9e9;
 $fourth-text: #c0c2cc;
 $fourth-text-inverse: #ebedf4;
 
-
-// Фон
-$cards-background: #fafafa;
-$grey-adm: #fafafa;
+$cards-background: var(--cards-background);
+$grey-adm: var(--grey-adm);
 
 // Иконки
 $icons-color: #1a2d82;
@@ -30,15 +26,15 @@ $event-color: #e7edfb;
 $event-color-hover: #e7edfb;
 
 // Кнопки
-$primary-color: #004cc4;
-$primary-color-hover: #0a5fe7;
-$primary-color-active: #003ea2;
-$primary-color-disabled: #c2d8ff;
+$primary-color: var(--primary-color);
+$primary-color-hover: var(--primary-color-hover);
+$primary-color-active: var(--primary-color-active);
+$primary-color-disabled: var(--primary-color-disabled);
 $content-color: #ffffff;
-$primary-color-green: #14bc30;
-$primary-color-green-hover: #10cd30;
-$primary-color-green-click: #0c9022;
-$primary-color-green-disabled: #dbdbdb;
+$primary-color-green: var(--primary-color-green);
+$primary-color-green-hover: var(--primary-color-green-hover);
+$primary-color-green-click: var(--primary-color-green-click);
+$primary-color-green-disabled: var(--primary-color-green-disabled);
 $padding-button-l: 17px 28px;
 $padding-button-m: 11px 20px;
 $padding-button-s: 7px 16px;
