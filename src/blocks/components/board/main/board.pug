@@ -1,0 +1,7 @@
+include ../board-elem/board-elem
+
+mixin board(items = [])
+    .board 
+        .board__content
+            each item in items 
+                +board-elem(item)

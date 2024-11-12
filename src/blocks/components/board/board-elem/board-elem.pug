@@ -1,0 +1,11 @@
+
+
+mixin board-elem(item)
+    .board-elem
+        .board-elem__container
+            img(src=`../resources/${item.img}`).board-elem__img 
+            .board-elem__info
+                .board-elem__info-date
+                    span= item.date
+                .board-elem__info-text
+                    span= item.info
