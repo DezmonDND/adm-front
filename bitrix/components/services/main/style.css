@@ -3,6 +3,12 @@
   max-width: 1440px;
   width: 100%;
   background-color: rgb(250, 250, 250);
+  padding-bottom: 50px;
+}
+@media (max-width: 1000px) {
+  .main-services {
+    padding-bottom: 25px;
+  }
 }
 .main-services .main-services__container {
   display: flex;

@@ -102,8 +102,8 @@
                 }
 
                 .news-card__tag {
-                    @include tags-label;
                     padding: 4px 12px;
+                    @include tags-label;
                 }
             }
         }

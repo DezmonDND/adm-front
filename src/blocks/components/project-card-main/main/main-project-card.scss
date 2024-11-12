@@ -57,8 +57,8 @@
                 @include heading-h5;
 
                 @media screen and (max-width: 1000px) {
-                    @include font-tablet();
                     margin: 0;
+                    @include font-tablet();
 
                 }
             }

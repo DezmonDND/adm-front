@@ -47,6 +47,10 @@
             gap: 20px;
 
             .news-card-without-image__title {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
                 @include heading-h5;
             }
 

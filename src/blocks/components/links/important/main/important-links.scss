@@ -1,11 +1,9 @@
 @use '../../../../../assets/styles/vars.scss' as *;
 
 .important-links {
-    margin-top: 50px;
     margin-bottom: 20px;
 
     @media (max-width: 1000px) {
-        margin-top: 25px;
         margin-bottom: 0;
     }
 
