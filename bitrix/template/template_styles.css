@@ -2700,7 +2700,6 @@
 @media (max-width: 1000px) {
   .hearing-preview-play {
     top: 185px;
-    top: 185px;
     background-color: #004cc4;
     border: none;
     border-radius: 50%;
@@ -2728,7 +2727,6 @@
 }
 @media (max-width: 576px) {
   .hearing-preview-play {
-    top: 79px;
     top: 79px;
     background-color: #004cc4;
     border: none;
@@ -4256,12 +4254,6 @@
   font-size: 16px;
   line-height: 20px;
 }
-.short-filelist .file-line {
-  color: #15195a;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-}
 @media (max-width: 992px) {
   .short-filelist .file-line {
     font-size: 12px;
@@ -4505,7 +4497,6 @@
 }
 .phonebook-main-item .line .fio {
   margin-bottom: 20px;
-  margin-bottom: 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -4573,7 +4564,6 @@
 }
 
 .phonebook-list .sub_header {
-  padding: 20px 0;
   padding: 20px 0;
   font-weight: 500;
   font-size: 16px;
@@ -4645,13 +4635,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #ffffff;
+  background: #FFFFFF;
   padding: 20px;
   border-radius: 12px;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .login {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: unset;
+    border-radius: 0;
+    overflow: hidden;
+  }
 }
 
 .login__content {
@@ -4669,7 +4671,7 @@
 .login__content-top ion-icon {
   font-size: 16px;
   border-radius: 12px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 4px;
   box-sizing: border-box;
   font-weight: 600;
@@ -4677,9 +4679,16 @@
 }
 
 .login__content-top span {
+  color: #000448;
+  font-weight: 500;
   font-size: 24px;
-  font-weight: 600;
-  color: #040528;
+  line-height: 28px;
+}
+@media (max-width: 992px) {
+  .login__content-top span {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .login__content-main {
@@ -4695,14 +4704,30 @@
 }
 
 .login__content-main__title span {
-  font-size: 16px;
   font-weight: 600;
-  color: #040528;
+  color: #000448;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 992px) {
+  .login__content-main__title span {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .login__content-main__subtitle span {
+  color: #15195A;
+  font-weight: 300;
   font-size: 14px;
-  color: #15195a;
+  line-height: 20px;
+}
+@media (max-width: 992px) {
+  .login__content-main__subtitle span {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .login__content-main__confirm-standart .button, .login__content-main__confirm-gos .button, .login__content-main__confirm-email, .login__content-main__confirm-delim {
@@ -4713,22 +4738,31 @@
 }
 
 .login__content-main__confirm-email span {
-  font-size: 13px;
   color: #004cc4;
   cursor: pointer;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .login__content-main__confirm-delim {
-  font-size: 12px;
   color: #78839c;
   align-items: center;
   justify-content: space-between;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (max-width: 992px) {
+  .login__content-main__confirm-delim {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .delim-line {
   flex: 1;
   height: 1px;
-  background-color: #ccc;
+  background-color: #ebedf4;
   max-width: 150px;
 }
 
@@ -4752,8 +4786,16 @@
 }
 
 .wrong-code span {
-  font-size: 12px;
   color: #d10404;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (max-width: 992px) {
+  .wrong-code span {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .hidden {
@@ -9879,9 +9921,6 @@ body {
   flex-direction: column;
   margin: auto;
   padding-bottom: 60px;
-}
-.main {
-  padding: 0 64px;
 }
 .main {
   padding: 0 64px;
