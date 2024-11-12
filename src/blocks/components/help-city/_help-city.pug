@@ -1,0 +1,56 @@
+include ../../components/title/main/_main-title.pug
+include ../../components/project-card-main/_main-project-card.pug
+include ../../components/pagination/_navigation.pug
+include ../../libs/buttons/_buttons.pug
+include ../../components/tabs/main/_tabs
+include ../../components/slider/_slider
+
+mixin help-city()
+    +main-title({
+        title: 'Помогите городу стать лучше',
+        link_text: 'Все опросы',
+        href: '/',
+    })
+    .help-city__tabs
+        +tabs([
+            { title: 'Национальные проекты', href: '/' , value: 'Национальные проекты', isActive: true},
+            { title: 'Администрация', href: '/' , value: 'Администрация'},
+            { title: 'Прочее', href: '/' , value: 'Прочее'},
+            ], 'slider')
+    .main-help-city 
+        .main-help-city__content 
+            +main-project-card({
+                date: 'до 29 сентября',
+                title: 'Уровень благоустройства города',
+                description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры ',
+                votes: '319 голосов',
+                result: 'Вы участвовали',
+                buttonText: 'Участвовать',
+                tag: 'Идет',
+                tag_color: 'green'
+            })
+            +main-project-card({
+                date: 'до 29 сентября',
+                title: 'Здравоохранение в Сургуте',
+                description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг',
+                votes: '319 голосов',
+                result: 'Вы участвовали',
+                buttonText: 'Участвовать',
+                tag: 'Идет',
+                tag_color: 'green'
+            })
+            +main-project-card({
+                date: 'до 29 сентября',
+                title: 'Работа местных властей и общественные инициативы',
+                description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры ',
+                votes: '319 голосов',
+                result: 'Вы участвовали',
+                buttonText: 'Участвовать',
+                tag: 'Завершен',
+                tag_color: 'red'
+            })
+        .help-city__navigation 
+            +navigation({
+                first_page: '1',
+                end_page: '2',
+                    })

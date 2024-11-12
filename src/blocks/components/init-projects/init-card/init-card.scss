@@ -1,0 +1,66 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.init-card {
+    background-color: $cards-background;
+    border-radius: 12px;
+
+    .init-card__container {
+
+        .init-card__image {
+            max-width: 421px;
+            width: 100%;
+            border-radius: 12px 12px 0 0
+        }
+
+        .init-card__title {
+            @include heading-h4;
+        }
+
+        .init-card__description {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 20px 20px 28px;
+
+            @include respond-to(md) {
+                gap: 16px;
+            }
+
+            .init-card__content {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                @include respond-to(md) {
+                    gap: 16px;
+                }
+
+                .init-card__columns {
+                    display: grid;
+                    grid-template-columns: repeat(2, calc((100% - 12px)/2));
+                    gap: 12px;
+
+                    &:last-of-type {
+                        grid-template-columns: 100%;
+                    }
+
+                    .init-card__row {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+
+                        .init-card__name {
+                            color: $tertiary-text;
+                            @include caption-3;
+                        }
+
+                        .init-card__text {
+                            @include lead-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

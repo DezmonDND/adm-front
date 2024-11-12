@@ -1,0 +1,59 @@
+@use '../../../../../assets/styles/vars.scss' as *;
+
+.event {
+    width: 100%;
+    background-color: $cards-background;
+    border-radius: 12px;
+
+    .event__container {
+        display: flex;
+        align-items: center;
+        padding: 20px 32px;
+
+        .event__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .event__time-block {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            @include lead-2;
+
+            .event__icon {
+                color: $primary-color;
+            }
+        }
+
+        .event__location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            @include caption-2;
+
+            .event__place {}
+
+            .event__icon-dot {
+                width: 4px;
+                height: 4px;
+                background-color: $primary-color;
+                border-radius: 50%;
+            }
+        }
+
+        .event__description {
+            max-width: 955px;
+            width: 100%;
+            margin: 0 20px 0 64px;
+            @include text-2;
+        }
+
+        .event__number {
+            color: $tertiary-text;
+            @include caption-1;
+        }
+    }
+}

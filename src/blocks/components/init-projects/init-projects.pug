@@ -1,0 +1,12 @@
+include ../init-projects/init-card/init-card
+
+mixin init-projects()
+    .init-projects 
+        img(src=`../img/map.png` alt='Изображение').init-projects__map 
+        .init-projects__list 
+            +init-card()
+            +init-card()
+            +init-card()
+            +init-card()
+            +init-card()
+            +init-card()

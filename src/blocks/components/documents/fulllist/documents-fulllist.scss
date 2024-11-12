@@ -1,0 +1,113 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.doc-fulllist {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+
+    .doc-line {
+        padding: 20px;
+        background: $grey-adm;
+        border-radius: 12px;
+        @include text-2;
+
+        .doc-field,
+        .doc-name {
+            margin-top: 24px;
+        }
+
+        .label {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 8px;
+            align-items: center;
+
+            color: $tertiary-text;
+            @include caption-2;
+
+            .fio {
+                color: $main-text;
+                @include text-2;
+            }
+        }
+
+        .doc-fields {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            align-items: end;
+
+            @include respond-to(md) {
+                flex-wrap: wrap;
+            }
+        }
+
+
+        .doc-field {
+            &:nth-child(1) {
+                width: 400px;
+
+                @include respond-to(md) {
+                    flex: 0 0 50%;
+                }
+
+                @include respond-to(sm) {
+                    flex: 0 0 100%;
+                }
+            }
+
+            &:nth-child(2) {
+                width: 155px;
+
+                @include respond-to(md) {
+                    flex-basis: content;
+                }
+
+                @include respond-to(sm) {
+                    width: 50%;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 182px;
+
+                @include respond-to(md) {
+                    flex-basis: content;
+                }
+
+                @include respond-to(sm) {
+                    width: 50%;
+                }
+            }
+
+            &.files {
+                display: flex;
+                gap: 8px;
+                margin-left: auto;
+
+                @include respond-to(md) {
+                    flex: 0 0 100%;
+
+                    a {
+                        flex-basis: inherit;
+                        justify-content: center;
+
+
+                    }
+                }
+
+                @include respond-to(sm) {
+                    flex-direction: column;
+
+                    a {
+                        width: -webkit-fill-available;
+                        width: fill-available;
+                    }
+                }
+            }
+        }
+    }
+}

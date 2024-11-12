@@ -5,5 +5,10 @@
     <h2 class="user-profile__name">Валентинов Георгий Викторович</h2><span class="user-profile_job">Должность     </span>
   </div>
 </div>
-<div class="tabs"><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a>
+<div class="tabs">
+  <div class="tabs__container"><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a><a class="tab-button "></a>
+  </div>
+  <div class="slider"> <a class="slider__link-prev">
+      <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link-next">
+      <ion-icon name="arrow-forward-outline"></ion-icon></a></div>
 </div>

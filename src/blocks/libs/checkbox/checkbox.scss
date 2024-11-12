@@ -1,3 +1,5 @@
+@use '../../../assets/styles/vars.scss' as *;
+
 $primary-color: #004CC4;
 $primary-color-hover: #0A5FE7;
 $content-color: #FFFFFF;
@@ -8,7 +10,7 @@ $fourth-text-inverse: #EBEDF4;
 }
 
 .сheckbox.сheckbox-label+label {
-    padding-left: 38px;
+    padding-left: 32px;
 
     &:before {
         left: 10px;
@@ -23,6 +25,7 @@ $fourth-text-inverse: #EBEDF4;
     user-select: none;
     height: 21px;
     padding-left: 21px;
+    @include text-2;
 
     &:before {
         content: "";
@@ -76,6 +79,10 @@ $fourth-text-inverse: #EBEDF4;
     background-image: url(../../icons/radiobtns_icon.svg);
 }
 
+.checkbox__label {
+    @include text-2;
+}
+
 @media screen and (max-width: 1000px) {
     .сheckbox.сheckbox-label+label {
         padding-left: 35px;
@@ -102,10 +109,5 @@ $fourth-text-inverse: #EBEDF4;
         &:before {
             left: 8px;
         }
-    }
-
-    .сheckbox__label {
-        font-size: 12px;
-        line-height: 18px;
     }
 }

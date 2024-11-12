@@ -1,0 +1,25 @@
+include ../../components/title/main/_main-title
+include ../../components/people-care-card/_people-care-card
+include ../../components/slider/_slider
+include ../../libs/buttons/_buttons
+
+mixin people-care()
+    .main-people-care 
+        +main-title({
+            href: '/',
+            title: 'С заботой о жителях',
+            slider: true,
+        })   
+        .main-people-care__container
+            .main-people-care__card-list 
+                +people-care-card({
+                    title: 'Лицам с ограниченными возможностями здоровья',
+                })
+                +people-care-card({
+                    title: 'Бюджет для граждан Сургута'
+                })
+                +people-care-card({
+                    title: 'Национальные проекты'
+                }) 
+            .people-care__slider
+                +slider()    

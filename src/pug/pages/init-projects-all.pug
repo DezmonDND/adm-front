@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Инициативные проекты'},
+            ],
+            )
+        +title({
+            title: 'Инициативные проекты'
+        })
+        .init-projects 
+            img(src=`../img/map.png`).init-projects__map 
+            .init-projects__list 
+                +init-card()
+                +init-card()
+                +init-card()
+                +init-card()
+                +init-card()
+                +init-card()
