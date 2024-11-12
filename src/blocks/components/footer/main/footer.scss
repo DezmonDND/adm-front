@@ -30,6 +30,12 @@ $content-color: #FFFFFF;
     color: $content-color;
     font-weight: 400;
     justify-content: center;
+    margin-top: 64px;
+
+    @media (max-width: 1000px) {
+        margin-top: 40px;
+        
+    }
 
     .footer__header {
         display: flex;

@@ -1,0 +1,6 @@
+mixin doc-list(items)
+    .doc-list
+         each item, index in items
+            a.doc-line(href=item.href)
+                .ident № #{item.num} от #{item.date}
+                .name #{item.title}

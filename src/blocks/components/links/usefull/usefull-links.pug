@@ -1,0 +1,59 @@
+include ../_links
+include ../../title/main/_main-title.pug
+include ../../pagination/_navigation.pug
+
+mixin usefull-links()
+    .usefull-links
+        +main-title({
+            href: '/',
+            title: 'Полезные ссылки',
+        })
+        .usefull-links__container
+            +main-link({
+                class: 'usefull',
+                href: '/',
+                icon: 'arrow-right_icon.svg',
+                title: 'Оплата ЖКХ услуг ',
+            })
+            +main-link({
+                class: 'usefull',
+                href: '/',
+                icon: 'arrow-right_icon.svg',
+                title: 'Виртуальная приемная',
+            })
+            +main-link({
+                class: 'usefull',
+                href: '/',
+                icon: 'arrow-right_icon.svg',
+                title: 'Пособия и налоги',
+            })
+            +main-link({
+                class: 'usefull',
+                href: '/',
+                icon: 'arrow-right_icon.svg',
+                title: 'Расписание общественного транспорта',
+            })
+            +main-link({
+                class: 'usefull',
+                href: '/',
+                icon: 'arrow-right_icon.svg',
+                title: 'Выплаты пенсионерам',
+            })
+            +main-link({
+                class: 'usefull',
+                href: '/',
+                icon: 'arrow-right_icon.svg',
+                title: 'Запись на публичные слушания',
+            })
+            +main-link({
+                class: 'usefull',
+                href: '/',
+                icon: 'arrow-right_icon.svg',
+                title: 'Социальные услуги',
+            })
+            +main-link({
+                class: 'usefull',
+                href: '/',
+                icon: 'arrow-right_icon.svg',
+                title: 'Работа в России',
+            })        

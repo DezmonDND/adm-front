@@ -1,0 +1,30 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.doc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+
+    .doc-line {
+        padding: 20px;
+        background: $grey-adm;
+        border-radius: 12px;
+        color: $second-text;
+        text-decoration: none;
+
+        &:hover {
+            background: $services-hover;
+        }
+
+        .ident {
+            margin-bottom: 12px;
+            @include heading-h5;
+        }
+
+        .name {
+            @include text-2;
+
+        }
+    }
+}

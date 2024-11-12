@@ -1,0 +1,8 @@
+mixin main-link(data)
+    - const hasClass = data.class ? `${data.class}-link` : ''
+    - const hasIcon = data.class ? `${data.class}-link__icon` : ''
+    - const hasTitle = data.class ? `${data.class}-link__title` : ''
+
+    a(href=data.href class=[hasClass])
+        img(src=`../icons/${data.icon}` alt='Иконка' class=[hasIcon])
+        span(class=[hasTitle]) #{data.title} 

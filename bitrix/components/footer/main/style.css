@@ -13,6 +13,12 @@
   color: #FFFFFF;
   font-weight: 400;
   justify-content: center;
+  margin-top: 64px;
+}
+@media (max-width: 1000px) {
+  .footer {
+    margin-top: 40px;
+  }
 }
 .footer .footer__header {
   display: flex;
