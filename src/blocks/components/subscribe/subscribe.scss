@@ -1,0 +1,25 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.subscribe {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.subscribe__title{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.subscribe__title span{
+    color: $main-text;
+    @include heading-h4();
+}
+
+.subscribe__subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

@@ -107,86 +107,40 @@
         </div>
       </div>
     </div>
-    <main class="main">
-      <div class="row">
-        <div class="col-6">
-          <h2>Сайт администации</h2>
-          <ul>
-            <li> <a href="index.html" target="_blank">Главная страница</a></li>
-            <li> <a href="components.html" target="_blank">Компоненты</a></li>
-            <li> <a href="components.html" target="_blank">Компоненты UI</a></li>
-          </ul>
-          <h4>Обращения и инициативные проекты</h4>
-          <ul> 
-            <li> <a href="reception.html" target="_blank">Виртуальная приемная</a></li>
-            <li> <a href="feedback-status.html" target="_blank">Узнать статус обращения</a></li>
-            <li> <a href="projects.html" target="_blank">Инициативные проекты</a></li>
-            <li> <a href="project-status.html" target="_blank">Узнать статус проекта</a></li>
-          </ul>
-          <h4>Опросы</h4>
-          <ul> 
-            <li> <a href="interview-form.html" target="_blank">Опросы с формой</a></li>
-            <li> <a href="interviews-list.html" target="_blank">Список опросов </a></li>
-          </ul>
-          <h4>Документы</h4>
-          <ul> 
-            <li> <a href="docs-project.html" target="_blank">X?X Проекты документов</a></li>
-            <li> <a href="docs-admin.html" target="_blank">X?X Постановления Администрации города</a></li>
-          </ul>
-          <h4>Публичные слушания</h4>
-          <ul> 
-            <li> <a href="hearing-main.html" target="_blank">X?X Список слушаний</a></li>
-            <li> <a href="hearing-detail.html" target="_blank">X?X Детальная страница</a></li>
-            <li> <a href="hearing-calendar.html" target="_blank">X?X Календарь</a></li>
-            <li> <a href="hearing-archive.html" target="_blank">X?X Архив      </a></li>
-          </ul>
-          <h4>Администрация</h4>
-          <ul> 
-            <li> <a href="administration-biograpthy.html" target="_blank">Биография Филатов</a></li>
-            <li> <a href="administration-biograpthy-kirilenko.html" target="_blank">Биография Кириленко    </a></li>
-            <li> <a href="administration-helpers.html" target="_blank">Заместители</a></li>
-            <li> <a href="administration-struct.html" target="_blank">Структурное подразделение</a></li>
-            <li> <a href="reception.html" target="_blank">Виртуальная приемная  </a></li>
-            <li> <a href="administration-service.html" target="_blank">Детальная страница услуги </a></li>
-            <li>         <a href="administration-struct.html" target="_blank">X?X Структурное подразделение</a></li>
-            <li> <a href="administration-service-list.html" target="_blank">X?X Услуги населению</a></li>
-            <li> <a href="administration-service.html" target="_blank">X?X Детальная страница услуги</a></li>
-            <li> <a href="phonebook.html" target="_blank">X?X Телефонный справочник</a></li>
-          </ul>
-          <h4>Личный кабинет   </h4>
-          <ul>    
-            <li> <a href="cabinet-application.html" target="_blank">Мои обращения </a></li>
-            <li> <a href="projects.html" target="_blank">Инициативные проекты</a></li>
-            <li> <a href="subscribe.html" target="_blank">Подписка на новости</a></li>
-          </ul>
-          <h4>Опросы  </h4>
-          <ul> 
-            <li> <a href="interview-form.html" target="_blank">Опрос</a></li>
-            <li> <a href="interviews-list.html" target="_blank">Все опросы          </a></li>
-          </ul>
-          <h4>Универсальная афиша/анонс/событие</h4>
-          <ul>
-            <li> <a href="afisha-events.html" target="_blank">Специальная афиша   </a></li>
-            <li> <a href="afisha-event-description.html" target="_blank">Страница события </a></li>
-            <li> <a href="afisha-universal.html" target="_blank">Универсальный модуль афиши/анонсов/событий                 </a></li>
-          </ul>
-          <h4>Инициативные проекты</h4>
-          <ul>
-            <li> <a href="init-projects-all.html" target="_blank">Инициативные проекты - Все проекты</a></li>
-          </ul>
-          <h4>Почетные граждане</h4>
-          <ul>
-            <li> <a href="citizens-list.html" target="_blank">Почетные граждане Сургута </a></li>
-            <li> <a href="honor-board.html" target="_blank">Доска почета</a></li>
-          </ul>
+    <main class="main"> 
+      <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"><img class="breadcrumbs__icon" src="/local/templates/surgut/icons/arrow-left_link-icon.svg" alt="Стрелка"/></a>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Подписка</a><span class="span">/</span><span class="breadcrumb_link">Подписка на главное</span>
         </div>
-        <div class="col-6">
-          <h2>Сайт Думы</h2>
-          <ul>
-            <li> <a href="dm-index.html" target="_blank">Главная</a></li>
-            <li> <a href="components.html" target="_blank">Компоненты UI</a></li>
-          </ul>
+      </div>
+      <div class="title"> 
+        <div class="title__container"> 
+          <h2 class="title__name">Подписка на главное</h2>
         </div>
+      </div>
+      <div class="subscribe"> 
+        <div class="subscribe__title"> <span>Введите вашу электронную почту</span>
+          <input class="input    " placeholder="Электронная почта" value=""/>
+        </div>
+        <div class="subscribe__subtitle">
+          <fieldset class="undefined fieldset">
+            <h3 class="fieldset__title ">На какие темы вы хотите подписаться?</h3>
+            <div class="fieldset__answers_checkboxes">
+              <div class="fieldset__checkboxes">
+                <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
+                <label class="сheckbox__label" for="1">Название темы</label>
+              </div>
+              <div class="fieldset__checkboxes">
+                <input class="сheckbox сheckbox-label " type="checkbox" id="2" name="undefined"/>
+                <label class="сheckbox__label" for="2">Название темы</label>
+              </div>
+              <div class="fieldset__checkboxes">
+                <input class="сheckbox сheckbox-label " type="checkbox" id="3" name="undefined"/>
+                <label class="сheckbox__label" for="3">Название темы</label>
+              </div>
+            </div>
+          </fieldset>
+        </div><a class="button button_link button_blue button_size_l  " href="/" attributes="{}"><span class="button_span">Подписаться</span>
+          <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
       </div>
     </main>
     <footer class="footer">
