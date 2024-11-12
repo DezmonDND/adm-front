@@ -40,7 +40,6 @@
 @use '../../blocks/components/biography/main/biography-card/biography-card.scss';
 @use '../../blocks/components/biography/main/biography/biography.scss';
 @use '../../blocks/libs/multiselect/multi-select.scss';
-@use '../../blocks/components/news/news.scss';
 @use '../../blocks/components/title/main/main-title.scss';
 @use '../../blocks/components/services/main/services.scss';
 @use '../../blocks/components/administration/struct/adm-struct.scss';
@@ -67,8 +66,10 @@
 @use '../../blocks/components/solve-problems/main/solve-problems.scss';
 @use '../../blocks/components/links/important/main/important-links.scss';
 @use '../../blocks/components/links/usefull/main/usefull-links.scss';
-@use '../../blocks/components/news/main/with-image/with-image.scss';
-@use '../../blocks/components/news/main/without-image/without-image.scss';
+@use '../../blocks/components/news/card-with-image/with-image.scss';
+@use '../../blocks/components/news/card-without-image/without-image.scss';
+@use '../../blocks/components/news/news-main/news-main.scss';
+@use '../../blocks/components/news/news-top/news-top.scss';
 
 
 
