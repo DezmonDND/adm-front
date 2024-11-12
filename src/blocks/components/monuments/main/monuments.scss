@@ -1,0 +1,45 @@
+.monuments-elem__container {
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+}
+
+.monuments-elem__img {
+    max-width: 360px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    height: 100%;
+    max-height: 200px;
+}
+
+.monuments-elem__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.monuments-elem__descr {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.monuments-elem__descr div {
+    width: 50%;
+}
+
+.monuments-elem__date {
+    display: flex;
+    gap: 8px;
+}
+
+.monuments-elem__addr, .monuments-elem__author {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
