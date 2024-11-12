@@ -1,0 +1,15 @@
+include ../card-with-image/card-with-image
+include ../card-without-image/card-without-image
+include ../../slider/_slider
+include ../../title/main/_main-title
+include ../../tabs/main/_tabs
+
+mixin news-top()
+    .news 
+        .news__container
+            +news-card-with-image()
+            .news__list    
+                +news-card-without-image()
+                +news-card-without-image()
+                +news-card-without-image()
+                +news-card-without-image()

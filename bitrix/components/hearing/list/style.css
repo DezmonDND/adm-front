@@ -1,3 +1,4 @@
+/*** Finish - Title ***/
 .hearing-list {
   padding: 40px 0 0 0;
 }
@@ -46,7 +47,7 @@
   font-size: 20px;
   line-height: 24px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .hearing-item {
     font-size: 10px;
     line-height: 14px;

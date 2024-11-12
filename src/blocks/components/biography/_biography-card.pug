@@ -5,5 +5,5 @@ mixin biography_card(data)
             .biography-card__user-info
                 h2.biography-card__name #{data.name}
                 span.biography-card__job #{data.job}
-                if data
+                if data.href
                     a(class='biography-card__link' href=data.href) #{data.link_text}

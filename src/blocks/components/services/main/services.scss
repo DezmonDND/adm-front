@@ -1,0 +1,100 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.main-services {
+    max-width: 1440px;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 1);
+
+    .main-services__container {
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+        margin-top: 9px;
+
+        @media (max-width: 1000px) {
+            margin-top: 2px;
+            gap: 19px;
+        }
+
+        .main-services__search {
+            display: grid;
+            grid-template-columns: repeat(2, calc((100% - 24px)/2));
+            gap: 24px;
+
+            @media (max-width: 1000px) {
+                gap: 8px;
+                grid-template-columns: repeat(2, calc((100% - 8px)/2));
+            }
+
+            @media (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .main-services__search-content {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                @media (max-width: 600px) {
+                    gap: 11px;
+                }
+
+                .main-services__label {
+                    @include heading-h3;
+                }
+
+                .search-main-services {
+                    width: 100%;
+                    max-width: none;
+
+                    .search__button_l {
+                        @media (max-width: 1000px) {
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .main-services__buttons {
+            display: flex;
+            flex-direction: column;
+
+            .main-services__buttons-title {
+                @include heading-h3;
+                margin-bottom: 24px;
+
+                @media (max-width: 1000px) {
+                    margin-bottom: 16px;
+                }
+
+                @media (max-width: 600px) {
+                    margin-bottom: 19px;
+                }
+            }
+
+            .main-services__buttons-container {
+                display: flex;
+                gap: 24px;
+
+                @media (max-width: 1000px) {
+                    gap: 8px;
+                }
+
+                @media (max-width: 600px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .main-services__button {
+                    justify-content: center;
+                    width: calc(100% - 40px);
+                }
+            }
+        }
+    }
+}

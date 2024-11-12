@@ -1,0 +1,52 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.header-services {
+    display: flex;
+    background-color: $cards-background;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+
+    .header-services__container {
+        display: flex;
+        gap: 5px;
+        max-width: 1440px;
+        width: 100%;
+        padding: 20px 0;
+
+        @media (max-width: 1000px) {
+            padding: 12px 0;
+            gap: 12px;
+        }
+
+        @media (max-width: 600px) {
+            padding: 8px 0;
+        }
+
+
+        .header-services__button {
+            background-color: $cards-background;
+            color: $main-text;
+            @include heading-h6;
+            padding: 4px 18px;
+            gap: 12px;
+
+            &:hover {
+                background-color: $services-hover;
+            }
+
+            &:active {
+                background-color: $services-active;
+            }
+
+            .icon {
+                color: $primary-color;
+                font-size: 45px;
+
+                @media (max-width: 1000px) {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

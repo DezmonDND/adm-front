@@ -1,0 +1,16 @@
+include ../../../libs/buttons/_buttons
+
+mixin header-services(data)
+    .full-width-container
+            .full-width-background
+                .full-width-content
+                    .header-services
+                        .header-services__container 
+                            +button({ type: 'link', href: '/about', class: 'button_radius header-services__button', icon: 'people', iconPosition: 'left', text: 'Информация про мобилизацию'})
+                            +button({ type: 'link', href: '/about', class: 'button_radius header-services__button', icon: 'settings', iconPosition: 'left', text: 'Доступная среда'})
+                            +button({ type: 'link', href: '/about', class: 'button_radius header-services__button', icon: 'cog', iconPosition: 'left', text: 'Коммунальная техника онлайн'})
+                            +button({ type: 'link', href: '/about', class: 'button_radius header-services__button', icon: 'bus', iconPosition: 'left', text: 'Общественный транспорт с 20.05.23'})
+                            +button({ type: 'link', href: '/about', class: 'button_radius header-services__button', icon: 'shield-checkmark', iconPosition: 'left', text: 'Информация дольщикам'})
+                            +button({ type: 'link', href: '/about', class: 'button_radius header-services__button', icon: 'wallet', iconPosition: 'left', text: 'Открытый бюджет'})
+                            +button({ type: 'link', href: '/about', class: 'button_radius header-services__button', icon: 'home', iconPosition: 'left', text: 'Ветхное или аварийное жильё'})
+
