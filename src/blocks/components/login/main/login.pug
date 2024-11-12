@@ -1,0 +1,28 @@
+include ../../../libs/inputs/_inputs.pug 
+include ../../../libs/buttons/_buttons.pug 
+
+mixin login()
+    .overlay.hidden
+    .login.hidden
+        .login__content
+            .login__content-top
+                span Вход          
+                ion-icon(name = "close-outline", class = 'icon', onclick = 'hideLogin()')
+            .login__content-main
+                .login__content-main__text
+                    .login__content-main__title
+                        span Введите номер телефона
+                    .login__content-main__subtitle
+                        span Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон
+                .login__content-main__input
+                    +input({placeholder: 'Номер телефона'})
+                .login__content-main__confirm-standart
+                    +button({ type: 'button',  class: 'button_blue', event: 'showCode()', text: `Войти`, size: 'm', })  
+                .login__content-main__confirm-delim 
+                    .delim-line
+                    span  или 
+                    .delim-line 
+                .login__content-main__confirm-gos
+                    +button({ type: 'link', size: 'm', class: 'button_white', text: `Войти через госуслуги` })  
+                .login__content-main__confirm-email
+                    span(onclick = "showEmail()") Войти по почте 
