@@ -1,0 +1,22 @@
+include ../../../libs/inputs/_inputs.pug 
+include ../../../libs/buttons/_buttons.pug 
+
+mixin login-email()
+    .overlay.hidden
+    .login.login-email.hidden
+        .login__content
+            .login__content-top
+                span Вход          
+                ion-icon(name = "close-outline", class = 'icon', onclick = 'hideEmail()')
+            .login__content-main
+                .login__content-main__text
+                    .login__content-main__title
+                        span Войти по почте
+                    .login__content-main__subtitle
+                        span Только для зарегистрированных пользователей
+                .login__content-main__input
+                    +input({placeholder: 'Электронная почта'})
+                .login__content-main__confirm-standart
+                    +button({ type: 'button',  class: 'button_blue', event: 'showCode()', text: `Войти`, size: 'm', })  
+                .login__content-main__confirm-email
+                    span(onclick = "showLogin()") Вернуться на главный экран входа

@@ -1,5 +1,9 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+@mixin icons-hover {
+    filter: invert(44%) sepia(59%) saturate(7476%) hue-rotate(210deg) brightness(89%) contrast(105%);
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -33,13 +37,12 @@
                 background-position: left;
 
                 &:hover {
-                    color: $primary-color-hover;
-                    background-image: url(../icons/eye-hover_icon.svg);
+                    @include icons-hover;
                 }
 
                 .header__eye-link-title {
-                    font-weight: 600;
                     margin-left: 28px;
+                    @include lead-6;
                 }
             }
         }

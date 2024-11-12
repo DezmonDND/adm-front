@@ -6,7 +6,9 @@ include ../../libs/buttons/_buttons.pug
 include ../../libs/links/_links.pug 
 include ../../libs/search-button/_search-button.pug 
 include ../../libs/inputs/_inputs.pug
-
+include ../login/main/login
+include ../login/code/login-code
+include ../login/email/login-email
 
 mixin header(sort)
     header.header 
@@ -51,7 +53,7 @@ mixin header(sort)
             .header__buttons  
                 a(href='/').header__eye-link
                     span.header__eye-link-title Версия для слабовидящих
-                +button({ type: 'button', class: 'button_blue button_header', event: 'anotherFunction()', icon: '', size: 'xs', text: 'Войти' })     
+                +button({ type: 'button', class: 'button_blue button_header', event: 'showLogin()', icon: '', size: 'xs', text: 'Войти' })     
         .header__bottom-content
             +logo({
                 href: '/',
@@ -80,3 +82,6 @@ mixin header(sort)
                 },
                 ])        
             +button({ type: 'button', class: 'button_burger', event: 'anotherFunction()', icon: 'menu-outlined_icon.svg', size: 'xs', text: '' })        
+    +login()  
+    +login-code()   
+    +login-email()
