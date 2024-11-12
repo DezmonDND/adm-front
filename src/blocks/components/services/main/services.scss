@@ -65,8 +65,8 @@
             flex-direction: column;
 
             .main-services__buttons-title {
-                @include heading-h3;
                 margin-bottom: 24px;
+                @include heading-h3;
 
                 @media (max-width: 1000px) {
                     margin-bottom: 16px;

@@ -16,8 +16,8 @@
 
             .afisha-event__main-text {
                 .afisha-event__title {
-                    @include heading-h4;
                     margin-bottom: 24px;
+                    @include heading-h4;
                 }
 
                 .afisha-event__text {
@@ -43,8 +43,8 @@
             }
 
             .afisha-event__quote-author {
-                @include text-3;
                 color: $tertiary-text;
+                @include text-3;
             }
         }
 

@@ -49,9 +49,9 @@
         }
 
         .people-care-card__title {
-            @include heading-h2;
             color: $content-color;
             z-index: 1;
+            @include heading-h2;
         }
 
         .people-care-card__button {

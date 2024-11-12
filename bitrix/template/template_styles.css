@@ -3386,11 +3386,11 @@
   }
 }
 .main-title .main-title__container .main-title__link {
+  text-decoration: none;
+  color: rgb(0, 76, 196);
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
-  text-decoration: none;
-  color: rgb(0, 76, 196);
 }
 @media (max-width: 992px) {
   .main-title .main-title__container .main-title__link {
@@ -3481,10 +3481,10 @@
   flex-direction: column;
 }
 .main-services .main-services__container .main-services__buttons .main-services__buttons-title {
+  margin-bottom: 24px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 24px;
 }
 @media (max-width: 992px) {
   .main-services .main-services__container .main-services__buttons .main-services__buttons-title {
@@ -3726,10 +3726,10 @@
   cursor: pointer;
 }
 .calendar .calendar__links .calendar__link-content .calendar__day {
+  color: #78839c;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
-  color: #78839c;
 }
 @media (max-width: 992px) {
   .calendar .calendar__links .calendar__link-content .calendar__day {
@@ -3888,11 +3888,11 @@
   }
 }
 .navigation .navigation__link-prev {
+  color: #004cc4;
   display: flex;
   align-items: center;
   cursor: pointer;
   font-size: 30px;
-  color: #004cc4;
 }
 @media (max-width: 1000px) {
   .navigation .navigation__link-prev {
@@ -3913,11 +3913,11 @@
   }
 }
 .navigation .navigation__link-next {
+  color: #004cc4;
   display: flex;
   align-items: center;
   cursor: pointer;
   font-size: 30px;
-  color: #004cc4;
 }
 @media (max-width: 1000px) {
   .navigation .navigation__link-next {
@@ -4008,10 +4008,10 @@
   }
 }
 .event .event__container .event__number {
+  color: #78839c;
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
-  color: #78839c;
 }
 @media (max-width: 992px) {
   .event .event__container .event__number {
@@ -4033,10 +4033,10 @@
   }
 }
 .afisha-event .afisha-event__container .afisha-event__content .afisha-event__main-text .afisha-event__title {
+  margin-bottom: 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 24px;
 }
 @media (max-width: 992px) {
   .afisha-event .afisha-event__container .afisha-event__content .afisha-event__main-text .afisha-event__title {
@@ -4077,10 +4077,10 @@
   }
 }
 .afisha-event .afisha-event__container .afisha-event__quote .afisha-event__quote-author {
+  color: #78839c;
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
-  color: #78839c;
 }
 @media (max-width: 992px) {
   .afisha-event .afisha-event__container .afisha-event__quote .afisha-event__quote-author {
@@ -4350,10 +4350,10 @@
   gap: 8px;
   margin-bottom: 8px;
   align-items: center;
+  color: #78839c;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  color: #78839c;
 }
 @media (max-width: 992px) {
   .doc-fulllist .doc-line .label {
@@ -8705,11 +8705,11 @@
 .header-services .header-services__container .header-services__button {
   background-color: #fafafa;
   color: #000448;
+  padding: 4px 18px;
+  gap: 12px;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  padding: 4px 18px;
-  gap: 12px;
 }
 @media (max-width: 992px) {
   .header-services .header-services__container .header-services__button {
@@ -8785,11 +8785,11 @@
   }
 }
 .people-care-card .people-care-card__container .people-care-card__title {
+  color: #FFFFFF;
+  z-index: 1;
   font-weight: 500;
   font-size: 32px;
   line-height: 38px;
-  color: #FFFFFF;
-  z-index: 1;
 }
 @media (max-width: 992px) {
   .people-care-card .people-care-card__container .people-care-card__title {
@@ -8941,13 +8941,13 @@
   }
 }
 .main-project-card .main-project-card__content .main-project-card__dates .main-project-card__date {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
   border-radius: 100px;
   background-color: #FFFFFF;
   padding: 4px 16px;
   margin: 10px 0 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (max-width: 992px) {
   .main-project-card .main-project-card__content .main-project-card__dates .main-project-card__date {
@@ -8978,13 +8978,13 @@
   }
 }
 .main-project-card .main-project-card__content .main-project-card__description .main-project-card__title {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
 }
 @media (max-width: 992px) {
   .main-project-card .main-project-card__content .main-project-card__description .main-project-card__title {
@@ -8993,13 +8993,13 @@
   }
 }
 .main-project-card .main-project-card__content .main-project-card__description .main-project-card__text {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
 @media (max-width: 992px) {
   .main-project-card .main-project-card__content .main-project-card__description .main-project-card__text {
@@ -9032,10 +9032,10 @@
   }
 }
 .main-project-card .main-project-card__infos .main-project-card__user-status {
+  color: #004cc4;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #004cc4;
 }
 @media screen and (max-width: 1000px) {
   .main-project-card .main-project-card__infos .main-project-card__user-status {
@@ -9544,10 +9544,10 @@
   }
 }
 .main-news-card .main-news-card__container .main-news-card__content .main-news-card__date {
+  color: #78839c;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  color: #78839c;
 }
 @media (max-width: 992px) {
   .main-news-card .main-news-card__container .main-news-card__content .main-news-card__date {

@@ -124,8 +124,8 @@
             }
 
             .main-news-card__date {
-                @include caption-3;
                 color: $tertiary-text;
+                @include caption-3;
             }
 
             .main-news-card__title {

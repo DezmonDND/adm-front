@@ -51,11 +51,11 @@
   }
 }
 .people-care-card .people-care-card__container .people-care-card__title {
+  color: #ffffff;
+  z-index: 1;
   font-weight: 500;
   font-size: 32px;
   line-height: 38px;
-  color: #ffffff;
-  z-index: 1;
 }
 @media (max-width: 992px) {
   .people-care-card .people-care-card__container .people-care-card__title {

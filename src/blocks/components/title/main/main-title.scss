@@ -6,7 +6,7 @@
 
     @media (max-width: 1000px) {
         padding: 24px 0 20px;
-        
+
     }
 
     .main-title__container {
@@ -19,20 +19,20 @@
         }
 
         .main-title__link {
-            @include text-1;
             text-decoration: none;
             color: rgba(0, 76, 196, 1);
+            @include text-1;
 
             &:hover {
                 text-decoration: underline;
                 color: $primary-color-hover;
             }
-        
+
             &:active {
                 text-decoration: underline;
                 color: $primary-color-active;
             }
-        
+
             &:disabled {
                 color: $primary-color-disabled;
             }

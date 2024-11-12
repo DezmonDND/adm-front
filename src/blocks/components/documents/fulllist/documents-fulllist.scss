@@ -25,8 +25,8 @@
             margin-bottom: 8px;
             align-items: center;
 
-            @include caption-2;
             color: $tertiary-text;
+            @include caption-2;
 
             .fio {
                 color: $main-text;

@@ -19,11 +19,11 @@
   }
 }
 .navigation .navigation__link-prev {
+  color: #004cc4;
   display: flex;
   align-items: center;
   cursor: pointer;
   font-size: 30px;
-  color: #004cc4;
 }
 @media (max-width: 1000px) {
   .navigation .navigation__link-prev {
@@ -44,11 +44,11 @@
   }
 }
 .navigation .navigation__link-next {
+  color: #004cc4;
   display: flex;
   align-items: center;
   cursor: pointer;
   font-size: 30px;
-  color: #004cc4;
 }
 @media (max-width: 1000px) {
   .navigation .navigation__link-next {

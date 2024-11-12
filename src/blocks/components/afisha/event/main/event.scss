@@ -52,8 +52,8 @@
         }
 
         .event__number {
-            @include caption-1;
             color: $tertiary-text;
+            @include caption-1;
         }
     }
 }
