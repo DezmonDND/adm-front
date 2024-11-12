@@ -9403,6 +9403,10 @@
   gap: 20px;
 }
 .news-card-without-image .news-card-without-image__container .news-card-without-image__content .news-card-without-image__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
