@@ -6,7 +6,7 @@
 }
 .doc-fulllist .doc-line {
   padding: 20px;
-  background: #fafafa;
+  background: var(--grey-adm);
   border-radius: 12px;
   font-weight: 300;
   font-size: 16px;

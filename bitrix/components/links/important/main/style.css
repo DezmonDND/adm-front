@@ -36,7 +36,7 @@
   }
 }
 .important-links .important-links__container .important-link {
-  background-color: #fafafa;
+  background-color: var(--cards-background);
   border-radius: 20px;
   text-decoration: none;
   color: #000000;
@@ -46,10 +46,10 @@
   align-items: center;
 }
 .important-links .important-links__container .important-link:hover {
-  color: #0a5fe7;
+  color: var(--primary-color-hover);
 }
 .important-links .important-links__container .important-link:active {
-  color: #003ea2;
+  color: var(--primary-color-active);
 }
 @media (max-width: 1000px) {
   .important-links .important-links__container .important-link {
