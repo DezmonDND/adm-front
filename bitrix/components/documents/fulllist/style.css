@@ -71,7 +71,7 @@
     flex: 0 0 50%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .doc-fulllist .doc-line .doc-field:nth-child(1) {
     flex: 0 0 100%;
   }
@@ -84,7 +84,7 @@
     flex-basis: content;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .doc-fulllist .doc-line .doc-field:nth-child(2) {
     width: 50%;
   }
@@ -97,7 +97,7 @@
     flex-basis: content;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .doc-fulllist .doc-line .doc-field:nth-child(3) {
     width: 50%;
   }
@@ -116,7 +116,7 @@
     justify-content: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .doc-fulllist .doc-line .doc-field.files {
     flex-direction: column;
   }
