@@ -5,13 +5,9 @@
 }
 
 .project-generation__top {
-    background-color: $grey-adm;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -50%;
-    margin-right: -50%;
-    width: 200%;
 }
 
 .project-generation__top-container {
@@ -24,13 +20,13 @@
 }
 
 .project-generation__top-container span {
-    font-size: 32px;
-    font-weight: 600;
+    @include heading-h2();
 }
 
 .project-generation__top-container button span {
     font-size: unset;
     font-weight: unset;
+    line-height: unset;
 }
 
 .project-generation__top-btns {
@@ -55,14 +51,12 @@
 }
 
 .project-generation__main-container span {
-    font-size: 24px;
-    font-weight: 600;
+    @include heading-h3();
 }
 
 
 .project-generation__main-content span{
-    font-weight: 400;
-    font-size: 16px;
+    @include text-2();
 }
 
 .project-generation_bottom {
@@ -74,4 +68,22 @@
 .project-generation__bottom-container {
     padding-top:0;
 }
+.project-generation__top-btns.mb {
+    display: none;
+}
 
+
+@media screen and (max-width:500px) {
+    .project-generation__top-btns {
+        display: none;
+    }
+    .project-generation__top-btns.mb {
+        display: flex;
+        width: 100%;
+    }
+    .project-generation__top-btns.mb  .button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
