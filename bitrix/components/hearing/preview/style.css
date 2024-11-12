@@ -101,6 +101,7 @@
 }
 @media (max-width: 1000px) {
   .hearing-preview-play {
+    top: 185px;
     background-color: #004cc4;
     border: none;
     border-radius: 50%;
@@ -111,7 +112,6 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    top: 185px;
   }
   .hearing-preview-play:hover {
     background-color: #0a5fe7;
@@ -129,6 +129,7 @@
 }
 @media (max-width: 576px) {
   .hearing-preview-play {
+    top: 79px;
     background-color: #004cc4;
     border: none;
     border-radius: 50%;
@@ -139,7 +140,6 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    top: 79px;
   }
   .hearing-preview-play:hover {
     background-color: #0a5fe7;

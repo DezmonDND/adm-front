@@ -111,10 +111,6 @@
   background-color: #004cc4;
   /** Описание размеров кнопки ***/
   /** default size M **/
-  padding: 12px 20px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
   /** Позиционирование иконки ***/
   /** Вариант c закруглением ***/
   /** Вариант без текста ***/
@@ -167,6 +163,12 @@
 .button_white_no-border {
   box-shadow: 0 4px 12px rgba(4, 5, 40, 0.08);
   border: none;
+}
+.button {
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (max-width: 992px) {
   .button {
@@ -2735,6 +2737,7 @@
 }
 @media (max-width: 1000px) {
   .hearing-preview-play {
+    top: 185px;
     background-color: #004cc4;
     border: none;
     border-radius: 50%;
@@ -2745,7 +2748,6 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    top: 185px;
   }
   .hearing-preview-play:hover {
     background-color: #0a5fe7;
@@ -2763,6 +2765,7 @@
 }
 @media (max-width: 576px) {
   .hearing-preview-play {
+    top: 79px;
     background-color: #004cc4;
     border: none;
     border-radius: 50%;
@@ -2773,7 +2776,6 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    top: 79px;
   }
   .hearing-preview-play:hover {
     background-color: #0a5fe7;
@@ -3709,10 +3711,6 @@
 }
 
 .short-filelist .file-line {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #15195a;
   text-decoration: none;
   padding: 20px;
   display: flex;
@@ -3720,6 +3718,12 @@
   background-color: #fafafa;
   border-radius: 8px;
   margin-bottom: 12px;
+}
+.short-filelist .file-line {
+  color: #15195a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (max-width: 992px) {
   .short-filelist .file-line {
@@ -3797,10 +3801,10 @@
   margin-bottom: 12px;
 }
 .phonebook-main-item .line .fio {
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 20px;
 }
 @media (max-width: 992px) {
   .phonebook-main-item .line .fio {
@@ -3865,10 +3869,10 @@
 }
 
 .phonebook-list .sub_header {
+  padding: 20px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  padding: 20px 0;
 }
 @media (max-width: 992px) {
   .phonebook-list .sub_header {
@@ -3921,6 +3925,134 @@
   }
 }
 
+.project-generation__container {
+  color: #040528;
+}
+
+.project-generation__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-generation__top-container {
+  max-width: 867px;
+  padding: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+
+.project-generation__top-container span {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+@media (max-width: 992px) {
+  .project-generation__top-container span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.project-generation__top-container button span {
+  font-size: unset;
+  font-weight: unset;
+  line-height: unset;
+}
+
+.project-generation__top-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.project-generation__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-generation__main-container, .project-generation__bottom-container {
+  max-width: 867px;
+  padding: 32px 0px;
+  padding-top: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-generation__bottom-container {
+  padding: 0px;
+}
+
+.project-generation__main-container span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+@media (max-width: 992px) {
+  .project-generation__main-container span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.project-generation__main-content span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 992px) {
+  .project-generation__main-content span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.project-generation_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-generation__bottom-container {
+  padding-top: 0;
+}
+
+.project-generation__top-btns.mb {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .project-generation__top-container {
+    padding: 24px 0px;
+    gap: 24px;
+  }
+  .project-generation__main-container {
+    padding: 32px 0px;
+    padding-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project-generation__top-btns {
+    display: none;
+  }
+  .project-generation__top-btns.mb {
+    display: flex;
+    width: 100%;
+  }
+  .project-generation__top-btns.mb .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -8007,8 +8139,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 0 64px;
   padding-bottom: 60px;
+}
+.main {
+  padding: 0 64px;
 }
 @media (max-width: 992px) {
   .main {

@@ -1,8 +1,4 @@
 .short-filelist .file-line {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #15195a;
   text-decoration: none;
   padding: 20px;
   display: flex;
@@ -10,6 +6,12 @@
   background-color: #fafafa;
   border-radius: 8px;
   margin-bottom: 12px;
+}
+.short-filelist .file-line {
+  color: #15195a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (max-width: 992px) {
   .short-filelist .file-line {
