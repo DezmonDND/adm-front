@@ -1,0 +1,17 @@
+include ../../libs/buttons/_buttons
+
+mixin main-project-card(value)
+    .main-project-card
+        .main-project-card__content
+            .main-project-card__info 
+                .main-project-card__dates 
+                    +button({ type: 'link', size: 'xs', class: `button_${value.tag_color} button_radius`, text: `${value.tag}`})
+                    span.main-project-card__date #{value.date}
+                .main-project-card__description 
+                    h3(title=`${value.title}`).main-project-card__title #{value.title}
+                    p.main-project-card__text #{value.description}
+                .main-project-card__infos 
+                    span.main-project-card__votes #{value.votes}
+                    span.main-project-card__user-status #{value.result}
+            if value.buttonText           
+                +button({ type: 'link', size: 'm', class: 'button_blue', icon: 'arrow-forward-outline', text: `${value.buttonText}` })    

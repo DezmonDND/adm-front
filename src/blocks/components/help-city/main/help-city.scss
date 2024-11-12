@@ -1,0 +1,44 @@
+.main-help-city {
+    margin: 0 0 47px;
+
+    @media screen and (max-width: 1000px) {
+        margin: 0 0 23px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin: 0 0 15px;
+    }
+
+    .main-help-city__content {
+        display: flex;
+        gap: 24px;
+
+        @media screen and (max-width: 1000px) {
+            gap: 8px;
+        }
+
+        @media (max-width: 600px) {
+            display: grid;
+            grid-template-columns: repeat(2, 336px);
+            overflow-y: scroll;
+            scrollbar-width: none;
+
+        }
+    }
+
+    .help-city__navigation {
+        display: none;
+        @media screen and (max-width: 1000px) {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+    }
+}
+
+.help-city__tabs {
+    @media (max-width: 1000px) {
+        display: none;
+        
+    }
+}

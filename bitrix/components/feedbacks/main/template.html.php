@@ -1,7 +1,7 @@
 
 <div class="title"> 
   <div class="title__container"> 
-    <h2>Узнать статус обращения</h2>
+    <h2 class="title__name">Узнать статус обращения</h2>
   </div>
 </div>
 <div class="feedback-status">

@@ -1,22 +1,57 @@
-.pagination {
+/*** Finish - Title ***/
+.navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
-  align-self: flex-start;
+  gap: 24px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
 }
-.pagination .pagination__pages {
-  display: flex;
-  gap: 8px;
-}
-
-@media screen and (max-width: 1000px) {
-  .pagination {
-    align-self: center;
+@media (max-width: 992px) {
+  .navigation {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
-@media screen and (max-width: 370px) {
-  .pagination {
-    gap: 4px;
+@media (max-width: 1000px) {
+  .navigation {
+    gap: 14px;
+  }
+}
+.navigation .navigation__link-prev {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+  color: #004cc4;
+}
+@media (max-width: 1000px) {
+  .navigation .navigation__link-prev {
+    font-size: 20px;
+  }
+}
+.navigation .navigation__pages {
+  display: flex;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 992px) {
+  .navigation .navigation__pages {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.navigation .navigation__link-next {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+  color: #004cc4;
+}
+@media (max-width: 1000px) {
+  .navigation .navigation__link-next {
+    font-size: 20px;
   }
 }

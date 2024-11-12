@@ -1,3 +1,4 @@
+/*** Finish - Title ***/
 .doc-fulllist {
   display: flex;
   flex-direction: column;
@@ -40,7 +41,7 @@
   }
 }
 .doc-fulllist .doc-line .label .fio {
-  color: #040528;
+  color: #000000;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;

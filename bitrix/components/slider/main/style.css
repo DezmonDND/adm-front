@@ -1,0 +1,24 @@
+/*** Finish - Title ***/
+.slider {
+  display: flex;
+  gap: 12px;
+  font-size: 34px;
+}
+@media (max-width: 1000px) {
+  .slider {
+    font-size: 23px;
+    padding-bottom: 5px;
+  }
+}
+.slider .slider__link-prev {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #004cc4;
+}
+.slider .slider__link-next {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #004cc4;
+}

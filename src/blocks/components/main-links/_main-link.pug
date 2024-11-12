@@ -1,4 +1,0 @@
-mixin main-link(data)
-    a(href=data.href class=`main-link ${data.sort ? `main-${data.sort}-link` : ''}`)
-        img(src=`../icons/${data.icon}` alt='Иконка' class=`main-link__icon ${data.sort ? `main-${data.sort}-link__icon` : ''}`)
-        span(class=`main-link__title ${data.sort ? `main-${data.sort}-link__title` : '' }`) #{data.title} 

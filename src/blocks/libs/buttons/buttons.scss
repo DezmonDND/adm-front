@@ -102,6 +102,11 @@
         border: 1px solid $interview-end-color;
     }
 
+    &_gray {
+        color:$main-text;
+        background-color: $fourth-text-inverse;
+    }
+
     &_white {
         color: $primary-color;
         background-color: $content-color;

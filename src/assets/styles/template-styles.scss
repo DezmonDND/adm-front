@@ -17,13 +17,11 @@
 @use '../../blocks/libs/fullwidth/fullwidth.scss';
 @use '../../blocks/libs/modal/modal.scss';
 @use '../../blocks/libs/toggle/toggle.scss';
-
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
-@use '../../blocks/components/form-field/form-field.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
 @use '../../blocks/components/tabs/main/tabs.scss';
 @use '../../blocks/components/tabs/tags/tabs-tag.scss';
-@use '../../blocks/components/pagination/main/pagination.scss';
+@use '../../blocks/components/pagination/default/pagination.scss';
 @use '../../blocks/components/footer/main/footer.scss';
 @use '../../blocks/components/header/main/header.scss';
 @use '../../blocks/components/interview/list/interviews.scss';
@@ -33,27 +31,49 @@
 @use '../../blocks/components/projects/project-card.scss';
 @use '../../blocks/components/projects/projects-array.scss';
 @use '../../blocks/components/title/title.scss';
-@use '../../blocks/components/fieldset/fieldset.scss';
+@use '../../blocks/libs/fieldset/fieldset.scss';
 @use '../../blocks/components/feedbacks/feedbacks.scss';
 @use '../../blocks/components/reception/reception.scss';
 @use '../../blocks/components/hearing/preview/hearing-preview.scss';
 @use '../../blocks/components/hearing/list/hearing-list.scss';
 @use '../../blocks/components/hearing/detail/hearing-detail.scss';
-@use '../../blocks/components/biography/biography-card.scss';
-@use '../../blocks/components/biography/biography.scss';
+@use '../../blocks/components/biography/main/biography-card/biography-card.scss';
+@use '../../blocks/components/biography/main/biography/biography.scss';
 @use '../../blocks/libs/multiselect/multi-select.scss';
-@use '../../blocks/components/news/news.scss';
-@use '../../blocks/components/main-title/main-title.scss';
-@use '../../blocks/components/main-services/main-services.scss';
-@use '../../blocks/components/main-links/main-links.scss';
+@use '../../blocks/components/title/main/main-title.scss';
+@use '../../blocks/components/services/main/services.scss';
 @use '../../blocks/components/administration/struct/adm-struct.scss';
+@use '../../blocks/components/events/main/events.scss';
+@use '../../blocks/components/calendar/main/calendar.scss';
+@use '../../blocks/components/afisha/events-list/events-list.scss';
+@use '../../blocks/components/afisha/event-card/main/event-card.scss';
+@use '../../blocks/components/pagination/main/navigation.scss';
+@use '../../blocks/components/afisha/universal/universal.scss';
+@use '../../blocks/components/afisha/event/main/event.scss';
+@use '../../blocks/components/afisha/event-full-desc/full-desc.scss';
+@use '../../blocks/components/slider/main/slider.scss';
 @use '../../blocks/components/administration/service/adm-service.scss';
 @use '../../blocks/components/documents/shortlist/documents-shortlist.scss';
 @use '../../blocks/components/documents/list/documents-list.scss';
 @use '../../blocks/components/documents/fulllist/documents-fulllist.scss';
 @use '../../blocks/components/phonebook/main/phonebook.scss';
-
 @use './bootstrap-grid.scss';
+@use '../../blocks/components/header/services/header-services.scss';
+@use '../../blocks/components/people-care-card/main/people-care-card.scss';
+@use '../../blocks/components/people-care/main/people-care.scss';
+@use '../../blocks/components/help-city/main/help-city.scss';
+@use '../../blocks/components/project-card-main/main/main-project-card.scss';
+@use '../../blocks/components/administration/helpers/adm-helpers.scss';
+@use '../../blocks/components/important/main/important.scss';
+@use '../../blocks/components/solve-problems/main/solve-problems.scss';
+@use '../../blocks/components/links/important/main/important-links.scss';
+@use '../../blocks/components/links/usefull/main/usefull-links.scss';
+@use '../../blocks/components/news/card-with-image/with-image.scss';
+@use '../../blocks/components/news/card-without-image/without-image.scss';
+@use '../../blocks/components/news/news-main/news-main.scss';
+@use '../../blocks/components/news/news-top/news-top.scss';
+
+
 
 * {
     font-family: 'Inter', sans-serif;
@@ -118,7 +138,6 @@ body {
 
 @media screen and (max-width: 1000px) {
     .main {
-        padding-bottom: 40px;
 
         .main__description {
             margin-bottom: 30px;
