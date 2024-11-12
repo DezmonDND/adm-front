@@ -1,45 +1,27 @@
-function showLogin() {
-    hideCode()
-    hideEmail()
-    document.querySelector('.overlay').classList.remove('hidden');
-    document.querySelector('.login').classList.remove('hidden');
-    document.body.style.overflow = 'hidden'
+function toggleModal(modalName, show = true) {
+    // Прячем все модальные окна
+    ['login', 'login-code', 'login-email'].forEach(name => {
+        document.querySelector(`.${name}`).classList.add('hidden');
+    });
+
+    if (show) {
+        document.querySelector('.overlay').classList.remove('hidden');
+        document.querySelector(`.${modalName}`).classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.querySelector('.overlay').classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
 }
 
-function hideLogin() {
-    document.querySelector('.overlay').classList.add('hidden');
-    document.querySelector('.login').classList.add('hidden');
-    document.body.style.overflow = 'auto'
-}
+function showLogin() { toggleModal('login'); }
+function showCode() { toggleModal('login-code'); }
+function showEmail() { toggleModal('login-email'); }
 
-function showCode() {
-    hideLogin()
-    hideEmail()
-    document.querySelector('.overlay').classList.remove('hidden');
-    document.querySelector('.login-code').classList.remove('hidden');
-    document.body.style.overflow = 'hidden'
-}
+function hideLogin() { toggleModal('login', false); }
+function hideCode() { toggleModal('login-code', false); }
+function hideEmail() { toggleModal('login-email', false); }
 
-function hideCode() {
-    document.querySelector('.overlay').classList.add('hidden');
-    document.querySelector('.login-code').classList.add('hidden');
-    document.body.style.overflow = 'auto'
-}
-
-function showEmail() {
-    hideLogin()
-    hideCode()
-    document.querySelector('.overlay').classList.remove('hidden');
-    document.querySelector('.login-email').classList.remove('hidden');
-    document.body.style.overflow = 'hidden'
-}
-
-function hideEmail(){
-    document.querySelector('.overlay').classList.add('hidden');
-    document.querySelector('.login-email').classList.add('hidden');
-    document.body.style.overflow = 'auto'
-}
-
-document.querySelector('.overlay').addEventListener('click', hideLogin);
-document.querySelector('.overlay').addEventListener('click', hideCode);
-document.querySelector('.overlay').addEventListener('click', hideEmail);
+document.querySelector('.overlay').addEventListener('click', () => {
+    toggleModal(null, false);
+});
