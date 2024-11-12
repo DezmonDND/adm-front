@@ -1,4 +1,10 @@
-// ЦВЕТА
+body {
+    --cards-background-params: #fafafa;
+
+    &.tmp-duma {
+        --cards-background-params: #000;
+    }
+}
 
 // Services
 $services-hover: #f2f3f5;
@@ -14,8 +20,8 @@ $fourth-text: #c0c2cc;
 $fourth-text-inverse: #ebedf4;
 
 
-// Фон
-$cards-background: #fafafa;
+$cards-background: var(--cards-background-params);
+
 $grey-adm: #fafafa;
 
 // Иконки
