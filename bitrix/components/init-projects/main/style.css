@@ -19,7 +19,7 @@
     gap: 8px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .init-projects .init-projects__list {
     grid-template-columns: 100%;
   }

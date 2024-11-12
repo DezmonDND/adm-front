@@ -1009,7 +1009,7 @@
     padding: 0 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main .full-width-container .full-width-content {
     padding: 0 27px;
   }
@@ -4527,7 +4527,7 @@
     width: 160px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .phonebook-main-item .line .line-fields .line-field:nth-child(1) {
     width: 100%;
   }
@@ -4556,7 +4556,7 @@
     width: 140px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .phonebook-main-item .line .line-fields .line-field:nth-child(2), .phonebook-main-item .line .line-fields .line-field:nth-child(3), .phonebook-main-item .line .line-fields .line-field:nth-child(4), .phonebook-main-item .line .line-fields .line-field:nth-child(5) {
     width: calc(50% - 10px);
     box-sizing: border-box;
@@ -4610,7 +4610,7 @@
     box-sizing: border-box;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .phonebook-list .line .line-field:nth-child(1), .phonebook-list .line .line-field:nth-child(2) {
     width: 100%;
   }
@@ -9705,7 +9705,7 @@
     gap: 8px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .init-projects .init-projects__list {
     grid-template-columns: 100%;
   }
@@ -9744,7 +9744,7 @@ body {
     padding: 0 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main {
     padding: 0 27px;
   }
