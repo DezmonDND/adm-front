@@ -1,3 +1,3 @@
 mixin input(options, error, value='')
     input(placeholder=options.placeholder, name=options.name, value=value,
-        class=`input input-${options.sort} input-${options.type} input-search-${options.size} ${error ? 'input-error' : '' }`)
+        class=`input ${options.sort ? `input-${options.sort}` : ``} ${options.type ? `input-${options.type}` : ``} ${options.size ? `input-search-${options.size}` : ``} ${error ? `input-error` : ``}`) 

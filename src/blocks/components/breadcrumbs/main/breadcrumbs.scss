@@ -4,10 +4,13 @@ $tertiary-text: #78839C;
     display: flex;
     align-items: center;
     color: $tertiary-text;
-    padding: 20px 0;
+    padding: 20px 0 10px;
     font-size: 14px;
     line-height: 16px;
     gap: 3px;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
 
     .breadcrumbs__icon-link {
         &:hover {

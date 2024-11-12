@@ -7,14 +7,14 @@ mixin pagination(pages, current, link)
             else
                 button.pag-button-with-icon.pag-button_left(href=`/${link}/1`)
                     span.pag-button__span Назад
-            - let start = Math.max(1, current - 2)
-            - let end = Math.min(pages, current + 2)
+            - let start = Math.max(1, current - 1)
+            - let end = Math.min(pages, current + 1)
             if pages < 7
                 - for (let i = 1; i <= pages; i++)
                     if i == current
                         a.pag-button.pag-button_active(href=`/${link}/${i}`) #{i}
                     else
-                        a.pag-button(href=`/${link}/${i}`) #{i}        
+                        a.pag-button(href=`/${link}/${i}`) #{i}  
             else            
                 if start > 2
                     a.pag-button(href=`/${link}/1`) 1
@@ -25,7 +25,7 @@ mixin pagination(pages, current, link)
                         a.pag-button.pag-button_active(href=`/${link}/${i}`) #{i}
                     else
                         a.pag-button(href=`/${link}/${i}`) #{i}
-                if end < pages - 1
+                if end < pages - 2
                     span ...
                 if end < pages 
                     a.pag-button(href=`/${link}/${pages}`) #{pages}

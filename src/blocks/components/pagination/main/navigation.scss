@@ -1,0 +1,42 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+
+    @media (max-width: 1000px) {
+        font-size: 20px;
+    }
+
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include text-3;
+
+    @media (max-width: 1000px) {
+        gap: 14px;
+    }
+
+    .navigation__link-prev {
+        @include flex;
+        color: $primary-color;
+    }
+
+    .navigation__pages {
+        display: flex;
+        gap: 4px;
+        @include lead-3;
+
+        .navigation__page {}
+    }
+
+    .navigation__link-next {
+        @include flex;
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,55 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.service-detail {
+    .label {
+        color: $tertiary-text;
+        display: block;
+        margin-bottom: 12px;
+        @include caption-2
+    }
+
+    .toggle-content.pt-0 {
+        padding-top: 0;
+    }
+
+    .toggle-content.pb-0 {
+        padding-bottom: 0;
+    }
+}
+
+.service-contacts .toggle-content-container {
+    display: flex;
+    gap: 24px;
+
+    @media (max-width: 576px) {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .contacts-item {
+        width: 33%;
+        box-sizing: border-box;
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+}
+
+.service-method {
+    .service-method-line {
+        display: flex;
+        gap: 24px;
+
+        @media (max-width: 576px) {
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .method-item {
+            width: 300px;
+        }
+    }
+
+
+}

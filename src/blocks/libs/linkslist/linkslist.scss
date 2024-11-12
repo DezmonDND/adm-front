@@ -1,0 +1,34 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.links-list {
+    margin-top: 12px;
+    width: 100%;
+
+    &-item {
+        display: block;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        background: $grey-adm;
+        color: $main-text;
+        padding: 20px;
+        text-decoration: none;
+        @include heading-h5;
+
+        &:hover {
+            transition: box-shadow 0.3s ease-in-out;
+            background: $services-hover;
+            box-shadow: 0 4px 4px 0 hsl(0deg 0% 0% / 25%);
+        }
+
+        img {
+            transform: rotate(180deg);
+            float: right;
+        }
+
+        span {
+            color: $tertiary-text;
+            margin-left: 12px;
+            @include heading-h6;
+        }
+    }
+}

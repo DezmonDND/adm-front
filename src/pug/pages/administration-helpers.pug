@@ -1,0 +1,40 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Администрация'},
+                { sort: '', href: '/', text: 'Заместители'},
+            ],
+            )
+        +title({
+            title: 'Заместители'
+        })
+        .adm-helpers 
+            .adm-helpers__content   
+                +biography_card({
+                    cls: '',
+                    name: 'Кириленко Артем Михайлович',
+                    job: 'Заместитель главы города Сургута',
+                    avatar: 'kirilenko_avatar.png',     
+                    href: '/',
+                    link_text: 'Перейти на страницу',
+                })
+                +biography_card({
+                    cls: '',
+                    name: 'Малыхин Виталий Викторович',
+                    job: 'Заместитель главы города Сургута',
+                    avatar: 'malihin_avatar.png',
+                    href: '/',
+                    link_text: 'Перейти на страницу',
+                })
+                +biography_card({
+                    cls: '',
+                    name: 'Томазова Анна Николаевна',
+                    job: 'Заместитель главы города Сургута',
+                    avatar: 'tomazova_avatar.png',
+                    href: '/',
+                    link_text: 'Перейти на страницу',
+                })

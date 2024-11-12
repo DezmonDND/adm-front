@@ -1,0 +1,23 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.tabs-tag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    .tab-button {
+        background: $fourth-text-inverse;
+        color: $second-text;
+        text-decoration: none;
+        padding: 8px 16px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+        border-radius: 1000px;
+
+        @include desc-h5;
+    }
+    .tab-button_active {
+        background: $primary-color;
+        color: $main-text-dark-bg;
+    }
+}

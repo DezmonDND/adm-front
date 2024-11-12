@@ -3,6 +3,9 @@
     align-items: center;
     gap: 40px;
     margin: 36px 0 40px;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
 
     .user-profile__button {
         all: unset;
@@ -44,26 +47,42 @@
 
 @media screen and (max-width: 1000px) {
     .user-profile {
+        margin: 33px 0 0;
+        padding: 0;
         .user-profile__button {
-            .user-profile__avatar {}
+            .user-profile__avatar {
+                max-width: 64px;
+            }
         }
 
         .user-profile__info {
-            .user-profile__name {}
+            .user-profile__name {
+                font-size: 24px;
+                line-height: 28px;
+            }
 
-            .user-profile_job {}
+            .user-profile_job {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
 }
 
 @media screen and (max-width:600px) {
     .user-profile {
+        gap: 24px;
         .user-profile__button {
             .user-profile__avatar {}
         }
 
         .user-profile__info {
-            .user-profile__name {}
+            .user-profile__name {
+                font-size: 20px;
+                line-height: 24px;
+
+
+            }
 
             .user-profile_job {}
         }

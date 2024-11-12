@@ -1,0 +1,63 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 0 27px;
+
+    @media (max-width: 1000px) {
+        margin: 10px 0 17px;
+    }
+
+    .tabs__container {
+        display: flex;
+        overflow: auto;
+        scrollbar-width: none;
+        text-wrap: nowrap;
+        gap: 16px;
+        box-sizing: border-box;
+        @include heading-h4;
+
+        .tab-button {
+            all: unset;
+            color: $tertiary-text;
+            padding: 0 0 8px;
+            border: 2px solid transparent;
+
+            &:hover {
+                cursor: pointer;
+                border-bottom: 2px solid $tertiary-text;
+            }
+
+            &_active {
+                border-bottom: 2px solid #22232c;
+                color: #22232c;
+            }
+
+            &_l {
+                @include desc-h1();
+            }
+
+            &_m {
+                @include desc-h4();
+            }
+
+            &_s {
+                @include desc-h5();
+            }
+
+            &_xs {
+                @include mob-h3();
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 600px) {
+    .tabs {}
+}

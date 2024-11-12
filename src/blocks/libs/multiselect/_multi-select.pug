@@ -1,0 +1,9 @@
+mixin multi_select()
+    div.ms
+        ul.ms__chose()
+            li
+                input(id="name" name='multiSelect' value='' type="text" class="input ms__input")
+        ul.ms__dropdown.ms__dropdown_hidden(id='multiSelectDropdown')
+            li.ms__dropdown-item.ms__dropdown-item_visible(data-value='Филатов Андрей Сергеевич') Филатов Андрей Сергеевич
+            li.ms__dropdown-item.ms__dropdown-item_visible(data-value='Филатов Андрей Сергеевич, Глава') Филатов Андрей Сергеевич, Глава 
+            li.ms__dropdown-item.ms__dropdown-item_visible(data-value='Филатов Андрей, Глава города Сургута') Филатов Андрей, Глава города Сургута

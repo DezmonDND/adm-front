@@ -1,0 +1,10 @@
+include ../../../components/slider/_slider
+include ../../../libs/tab-buttons/_tab-buttons
+
+mixin tabs(tabs = [], slider)
+  .tabs
+    .tabs__container
+      each tab in tabs
+        +tab-button(tab)
+    if slider
+      +slider()          

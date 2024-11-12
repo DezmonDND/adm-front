@@ -1,97 +1,648 @@
 extends ../layout
 
-block content   
+block content
     main.main
-        +breadcrumbs(
-            [
-                { sort: 'crumb', href: '/', text: 'Главная' },
-                { sort: 'crumb', href: '/about', text: 'Опросы'},
-            ])
-        h2.main__title Опросы  
-            +tabs( 
-                [
-                    { isActive: true, title: 'Национальные проекты', href: '/' , value: 'Национальные проекты'},
-                    { title: 'Администрация', href: '/' , value: 'Администрация'},
-                    { title: 'Прочие', href: '/' , value: 'Прочие'},
-                ])   
-            +interviews_array([
-                {
-                    date: 'до 29 сентября', 
-                    title: 'Здравоохранение в Сургуте Здравоохранение в Сургуте Работа местных властей и общественные инициативы', 
-                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услугОцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
-                    votes: '319 голосов', 
-                    result: 'Вы участвовали', 
-                    buttonText: 'Участвовать', 
-                    tag: {
-                        sort: 'interviews-array',
-                        isGoing: true,
-                        text: 'Идет', 
-                        },
-                },
-                {
-                    date: 'до 29 сентября', 
-                    title: 'Здравоохранение в Сургуте', 
-                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
-                    votes: '319 голосов', 
-                    result: 'Вы участвовали', 
-                    buttonText: 'Участвовать', 
-                    tag: {
-                        sort: 'interviews-array',
-                        isGoing: true,
-                        text: 'Идет', 
-                        },
-                },
-                {
-                    date: 'до 29 сентября', 
-                    title: 'Здравоохранение в Сургуте', 
-                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
-                    votes: '319 голосов', 
-                    result: 'Вы участвовали', 
-                    buttonText: 'Участвовать', 
-                    tag: {
-                        sort: 'interviews-array',
-                        isGoing: true,
-                        text: 'Идет', 
-                        },
-                },
-                {
-                    date: 'до 29 сентября', 
-                    title: 'Здравоохранение в Сургуте', 
-                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
-                    votes: '319 голосов', 
-                    result: 'Вы участвовали', 
-                    buttonText: 'Результаты', 
-                    tag: {
-                        sort: 'interviews-array',
-                        isGoing: false,
-                        text: 'Завершен', 
-                        },
-                },
-                {
-                    date: 'до 29 сентября', 
-                    title: 'Работа местных властей и общественные инициативы', 
-                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
-                    votes: '319 голосов', 
-                    result: 'Вы участвовали', 
-                    buttonText: 'Результаты', 
-                    tag: {
-                        sort: 'interviews-array',
-                        isGoing: false,
-                        text: 'Завершен',
-                        },
-                },
-                {
-                    date: 'до 29 сентября', 
-                    title: 'Здравоохранение в Сургуте', 
-                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
-                    votes: '319 голосов', 
-                    result: 'Вы участвовали', 
-                    buttonText: '', 
-                    tag: {
-                        sort: 'interviews-array',
-                        isGoing: false,
-                        text: 'Завершен', 
-                        },
-                },
-                ])             
-        +pagination(30, 5, 2)
+        +header-services()
+        .news 
+            .news__container
+                +news-card-with-image()
+                .news__list    
+                    +news-card-without-image()
+                    +news-card-without-image()
+                    +news-card-without-image()
+                    +news-card-without-image()
+        .full-width-container
+            .full-width-background
+                .full-width-content            
+                    .main-news 
+                        .main-news__container 
+                            +main-title({
+                                href: '/',
+                                title: 'Главные новости',
+                                link_text: 'Все новости',
+                            })
+                            +tabs( 
+                                [
+                                    { isActive: true, title: 'Самые важные', href: '/' },
+                                    { title: 'Реализация нацпроектов', href: '/' },
+                                    { title: 'Деятельность администрации', href: '/' },
+                                    { title: 'Областная дума', href: '/' },
+                                ])
+                            .main-news__card-list 
+                                +main-news-card(
+                                {
+                                    image: 'image_1.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'история',
+                                        }                     
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_2.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Медицина',
+                                        },
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Награды',
+                                        }                      
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_3.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Пожары',
+                                        },                   
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_4.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Экономика',
+                                        },                    
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_1.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'история',
+                                        }                     
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_2.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Медицина',
+                                        },
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius  news-card__tag', 
+                                            text: 'Награды',
+                                        }                      
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_3.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Пожары',
+                                        },                   
+                                    ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_4.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Экономика',
+                                        },                    
+                                    ]
+                                },
+                                )   
+        .solve-problems
+            +main-title({
+                href: '/',
+                title: 'Решаем проблемы вместе',
+            })   
+            .solve-problems__container
+                img.solve-problems__banner(src='../img/banner_1.png' alt='Баннер') 
+        .full-width-container
+            .full-width-background
+                .full-width-content                                
+                    .main-events
+                        .main-events__container 
+                            +main-title({
+                                href: '/',
+                                title: 'Анонсы и события',
+                                link_text: 'Все события'
+                            })
+                            .events__filters
+                                +button({ type: 'button', size: 'm', class: 'button_white events__filter-button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
+                            +calendar([
+                                {
+                                date: '18',
+                                day: 'Вт',
+                                class: 'clicked',
+                                events: '2',
+                                day_class: 'clicked',
+                                },
+                                {
+                                date: '19',
+                                day: 'Ср',
+                                },
+                                {
+                                date: '20',
+                                day: 'Чт',
+                                class: 'active',
+                                events: '2',
+                                day_class: 'active',
+                                },
+                                {
+                                date: '21',
+                                day: 'Пт',
+                                class: 'active',
+                                events: '2',
+                                day_class: 'active',
+                                },
+                                {
+                                date: '22',
+                                day: 'Сб',
+                                },
+                                {
+                                date: '23',
+                                day: 'Вс',
+                                },
+                                {
+                                date: '24',
+                                day: 'Пр',
+                                class: 'active',
+                                events: '2',
+                                day_class: 'active',
+                                },
+                                {
+                                date: '25',
+                                day: 'Вт',
+                                class: 'active',
+                                events: '2',
+                                day_class: 'active',
+                                },
+                                {
+                                date: '26',
+                                day: 'Ср',
+                                },
+                                {
+                                date: '27',
+                                day: 'Чт',
+                                class: 'active',
+                                events: '2',
+                                day_class: 'active',
+                                },
+                                {
+                                date: '28',
+                                day: 'Пт',
+                                class: 'active',
+                                events: '2',
+                                day_class: 'active',
+                                },
+                                {
+                                date: '29',
+                                day: 'Сб',
+                                },
+                                {
+                                date: '30',
+                                day: 'Вс',
+                                },
+                                {
+                                date: '1',
+                                day: 'Пн',
+                                class: 'without-events',
+                                day_class: 'without-events',
+                                divider: true,
+                                },
+                                {
+                                date: '2',
+                                day: 'Вт',
+                                class: 'active',
+                                events: '2',
+                                day_class: 'active',
+                                },
+                                {
+                                date: '3',
+                                day: 'Ср',
+                                class: '',
+                                class: 'without-events',
+                                day_class: 'without-events',
+                                },
+                                {
+                                date: '4',
+                                day: 'Чт',
+                                class: 'active',
+                                events: '2',
+                                day_class: 'active',
+                                },
+                            ])         
+                            .main-events__selects
+                                .main-events__selects-container
+                                    +select('right', [
+                                        { value: 'Все события', text: 'Все события' },
+                                        { value: 'Театр', text: 'Театр' },
+                                        { value: 'Детям', text: 'Детям' },
+                                        { value: 'Выставки', text: 'Выставки' },
+                                        { value: 'Концерты', text: 'Концерты' }
+                                        ], 'single', 'events__select')
+                                    +select('right', [
+                                        { value: 'Любая тематика', text: 'Любая тематика' },
+                                        { value: 'Любая тематика', text: 'Любая тематика' }
+                                        ], 'single', 'events__select')
+                                    +select('right', [
+                                        { value: 'Место проведения', text: 'Место проведения' },
+                                        { value: 'Место проведения', text: 'Место проведения' }
+                                        ], 'single', 'events__select')
+                                    +select('right', [
+                                        { value: 'Июнь', text: 'Июнь' },
+                                        { value: 'Июнь', text: 'Июнь' }
+                                        ], 'single', 'events__select') 
+                                +checkbox({
+                                    label: 'С пушкинской картой',
+                                    id: '10',
+                                    name: 'with-card',
+                                    status: true,
+                                    sort: 'checkbox'
+                                })                                                              
+                            .main-events__news
+                                +main-news-card(
+                                {
+                                    image: 'image_1.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Кино',
+                                        },                   
+                                        ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_2.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Кино',
+                                        },                   
+                                        ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_3.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Кино',
+                                        },                   
+                                        ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_5.png',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Кино',
+                                        },                   
+                                        ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_1.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Кино',
+                                        },                   
+                                        ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_2.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Кино',
+                                        },                   
+                                        ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_3.jpg',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Кино',
+                                        },                   
+                                        ]
+                                },
+                                )
+                                +main-news-card(
+                                {
+                                    image: 'image_5.png',
+                                    date: '10 июня 2023',
+                                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                    tags: [
+                                        {
+                                            type: 'button',
+                                            size: 'xs', 
+                                            class: 'button_blue button_radius news-card__tag', 
+                                            text: 'Кино',
+                                        },                   
+                                        ]
+                                },
+                                )
+                            .main-events__navigation
+                                +navigation({
+                                    first_page: '1',
+                                    end_page: '7',
+                                        })
+        .main-people-care 
+            +main-title({
+                href: '/',
+                title: 'С заботой о жителях',
+                slider: true,
+            })   
+            .main-people-care__container
+                .main-people-care__card-list 
+                    +people-care-card({
+                        title: 'Лицам с ограниченными возможностями здоровья',
+                        image: 'hands-services.svg',
+                        background: 'linear-gradient(#8eec87 0%, #447ecb 100%)',
+                    })
+                    +people-care-card({
+                        title: 'Бюджет для граждан Сургута',
+                        image: 'wallet-services.svg',
+                        background: '',
+                    })
+                    +people-care-card({
+                        title: 'Национальные проекты',
+                        image: 'people_icon-services.svg',
+                        background: 'linear-gradient(#8edcd6 0%, #1679b7 100%)',
+                    }) 
+                .people-care__slider
+                    +slider()    
+        .full-width-container
+            .full-width-background
+                .full-width-content                           
+                    .main-services 
+                        +main-title({
+                            href: '/',
+                            title: 'Полезные сервисы для вас',
+                        })
+                        .main-services__container
+                            .main-services__search
+                                .main-services__search-content
+                                    h3(class='main-services__label') Поиск законопроектов
+                                    +search(
+                                        {name: 'laws', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+                                            false, 'l', 'getValues()', 'main-services',) 
+                                .main-services__search-content        
+                                    h3(class='main-services__label') Поиск правовых актов        
+                                    +search(
+                                        {name: 'acts', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
+                                            false, 'l', 'getValues()', 'main-services',)         
+                            .main-services__buttons
+                                h3.main-services__buttons-title Связаться
+                                .main-services__buttons-container
+                                    +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: 'getValues()', text: 'Электронное обращение' })
+                                    +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: 'getValues()', text: 'Личный прием' })       
+        .important-links
+            +main-title({
+                href: '/',
+                title: 'Самое важное',
+            })
+            .important-links__container
+                +main-link({
+                    class: 'important',
+                    href: '/',
+                    icon: 'circle_icon_main.svg',
+                    title: 'Лицам с ограниченными возможностями',
+                })
+                +main-link({
+                    class: 'important',
+                    href: '/',
+                    icon: 'arrow-in-cub_icon_main.svg',
+                    title: 'Афиша на Культуре.РФ',
+                })
+                +main-link({
+                    class: 'important',
+                    href: '/',
+                    icon: 'arrow-in-cub_icon_main.svg',
+                    title: 'Инициативые проекты',
+                })
+                +main-link({
+                    class: 'important',
+                    href: '/',
+                    icon: 'arrow-in-cub_icon_main.svg',
+                    title: 'Бюджет для граждан Сургута',
+                })
+                +main-link({
+                    class: 'important',
+                    href: '/',
+                    icon: 'circle_icon_main.svg',
+                    title: 'Налоговая политика',
+                })
+                +main-link({
+                    class: 'important',
+                    href: '/',
+                    icon: 'arrow-in-cub_icon_main.svg',
+                    title: 'Национальные проекты',
+                })
+            .usefull-links__navigation
+                +navigation({
+                    first_page: '1',
+                    end_page: '7',
+                        })
+        +main-title({
+            title: 'Помогите городу стать лучше',
+            link_text: 'Все опросы',
+            href: '/',
+        })
+        .help-city__tabs
+            +tabs([
+                { title: 'Национальные проекты', href: '/' , value: 'Национальные проекты', isActive: true},
+                { title: 'Администрация', href: '/' , value: 'Администрация'},
+                { title: 'Прочее', href: '/' , value: 'Прочее'},
+                ], 'slider')
+        .main-help-city 
+            .main-help-city__content 
+                +main-project-card({
+                    date: 'до 29 сентября',
+                    title: 'Уровень благоустройства города',
+                    description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры ',
+                    votes: '319 голосов',
+                    result: 'Вы участвовали',
+                    buttonText: 'Участвовать',
+                    tag: 'Идет',
+                    tag_color: 'green'
+                })
+                +main-project-card({
+                    date: 'до 29 сентября',
+                    title: 'Здравоохранение в Сургуте',
+                    description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг',
+                    votes: '319 голосов',
+                    result: 'Вы участвовали',
+                    buttonText: 'Участвовать',
+                    tag: 'Идет',
+                    tag_color: 'green'
+                })
+                +main-project-card({
+                    date: 'до 29 сентября',
+                    title: 'Работа местных властей и общественные инициативы',
+                    description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры ',
+                    votes: '319 голосов',
+                    result: 'Вы участвовали',
+                    buttonText: 'Участвовать',
+                    tag: 'Завершен',
+                    tag_color: 'red'
+                })
+            .help-city__navigation 
+                +navigation({
+                    first_page: '1',
+                    end_page: '2',
+                        })
+        .important-inf
+            +main-title({
+                href: '/',
+                title: 'Важная информация для жителей',
+                slider: true,
+            })   
+            .important-inf__container
+                img.important-inf__banner(src='../img/banner.png' alt='Баннер') 
+                img.important-inf__banner(src='../img/banner.png' alt='Баннер')
+                img.important-inf__banner(src='../img/banner.png' alt='Баннер')        
+        .usefull-links
+            +main-title({
+                href: '/',
+                title: 'Полезные ссылки',
+            })
+            .usefull-links__container
+                +main-link({
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-right_icon.svg',
+                    title: 'Оплата ЖКХ услуг ',
+                })
+                +main-link({
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-right_icon.svg',
+                    title: 'Виртуальная приемная',
+                })
+                +main-link({
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-right_icon.svg',
+                    title: 'Пособия и налоги',
+                })
+                +main-link({
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-right_icon.svg',
+                    title: 'Расписание общественного транспорта',
+                })
+                +main-link({
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-right_icon.svg',
+                    title: 'Выплаты пенсионерам',
+                })
+                +main-link({
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-right_icon.svg',
+                    title: 'Запись на публичные слушания',
+                })
+                +main-link({
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-right_icon.svg',
+                    title: 'Социальные услуги',
+                })
+                +main-link({
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-right_icon.svg',
+                    title: 'Работа в России',
+                })        

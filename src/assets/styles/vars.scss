@@ -1,80 +1,448 @@
 // ЦВЕТА
 
+// Services
+$services-hover: #f2f3f5;
+$services-active: #e3e4e7;
+
 // Типографика
-$main-text: #040528;
-$main-text-dark-bg: #FFFFFF;
-$second-text: #15195A;
-$tertiary-text: #78839C;
-$tertiary-text-dark-bg: #E9E9E9;
-$fourth-text: #C0C2CC;
-$fourth-text-inverse: #EBEDF4;
+$main-text: #000000; //primary
+$main-text-dark-bg: #ffffff;
+$second-text: #15195a;
+$tertiary-text: #78839c;
+$tertiary-text-dark-bg: #e9e9e9;
+$fourth-text: #c0c2cc;
+$fourth-text-inverse: #ebedf4;
+
 
 // Фон
-$cards-background: #FAFAFA;
+$cards-background: #fafafa;
+$grey-adm: #fafafa;
 
 // Иконки
-$icons-color: #1A2D82;
-$icons-background: #F7FBFE;
+$icons-color: #1a2d82;
+$icons-background: #f7fbfe;
 
 // Инпуты
-$input-color-default: #C6CBD9;
+$input-color-default: #c6cbd9;
 
 // Календарь
-$event-color: #E7EDFB;
-$event-color-hover: #E7EDFB;
+$event-color: #e7edfb;
+$event-color-hover: #e7edfb;
 
 // Кнопки
-$primary-color: #004CC4;
-$primary-color-hover: #0A5FE7;
-$primary-color-active: #003EA2;
-$primary-color-disabled: #C2D8FF;
-$content-color: #FFFFFF;
-$primary-color-green: #14BC30;
-$primary-color-green-hover: #10CD30;
-$primary-color-green-click: #0C9022;
-$primary-color-green-disabled: #DBDBDB;
+$primary-color: #004cc4;
+$primary-color-hover: #0a5fe7;
+$primary-color-active: #003ea2;
+$primary-color-disabled: #c2d8ff;
+$content-color: #ffffff;
+$primary-color-green: #14bc30;
+$primary-color-green-hover: #10cd30;
+$primary-color-green-click: #0c9022;
+$primary-color-green-disabled: #dbdbdb;
+$padding-button-l: 18px 28px;
+$padding-button-m: 12px 20px;
+$padding-button-s: 8px 16px;
+$padding-button-xs: 4px 24px;
+
+$padding-button-without-text-desc: 12px;
+$padding-button-without-text-tab: 8px;
+$padding-tag-link-desc: 12px 20px;
+$padding-tag-link-tab: 8px 16px;
+$padding-tag-button-desc: 4px 24px;
+$padding-tag-button-tab: 4px 16px;
 
 // Категории
-$health-color: linear-gradient(#8EEC87 0%, #447ECB 100%);
-$finance-color: linear-gradient(#E8AAEF 0%, #3172C6 100%);
-$projects-color: linear-gradient(#8EDCD6 0%, #1679B7 100%);
-$social-color: linear-gradient(#F97A7C 0%, #5280EA 100%);
+$health-color: linear-gradient(#8eec87 0%, #447ecb 100%);
+$finance-color: linear-gradient(#e8aaef 0%, #3172c6 100%);
+$projects-color: linear-gradient(#8edcd6 0%, #1679b7 100%);
+$social-color: linear-gradient(#f97a7c 0%, #5280ea 100%);
 
 // Опросы
-$interview-color: #2DBB45;
-$interview-end-color: #D10404;
+$interview-color: #2dbb45;
+$interview-end-color: #d10404;
 
 // Шрифты
 
-// Десктоп
-@mixin desc-h1 {
+//Start - FontWeight
+$font-weight-regular: 300;
+$font-weight-medium: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 600;
+//End - FontWeight
+
+$breakpoint-md: 992px;
+$breakpoint-sm: 768px;
+
+// Mixin media
+@mixin respond-to($breakpoint) {
+    @if $breakpoint ==md {
+        @media (max-width: $breakpoint-md) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==sm {
+        @media (max-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+}
+
+// Mixin Container Padding
+@mixin main-padding {
+    padding: 0 64px;
+
+    @include respond-to(md) {
+        padding: 0 20px;
+    }
+
+    @include respond-to(sm) {
+        padding: 0 27px;
+    }
+}
+
+//Start - Heading
+@mixin heading-h1 {
+    font-weight: $font-weight-semi-bold;
     font-size: 40px;
-    line-height: 52px;
+    line-height: 48px;
+
+    @include respond-to(md) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@mixin heading-h2 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 32px;
+    line-height: 38px;
+
+    @include respond-to(md) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@mixin heading-h3 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    @include respond-to(md) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@mixin heading-h4 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include respond-to(md) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@mixin heading-h5 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include respond-to(md) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin heading-h6 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 12px;
+    line-height: 16px;
+
+    @include respond-to(md) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+// Finish - Heading
+
+//Start - Caption
+@mixin caption-1 {
+    font-weight: $font-weight-regular;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include respond-to(md) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@mixin caption-2 {
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include respond-to(md) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin caption-3 {
+    font-weight: $font-weight-regular;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include respond-to(md) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@mixin caption-4 {
+    font-weight: $font-weight-regular;
+    font-size: 12px;
+    line-height: 16px;
+
+    @include respond-to(md) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@mixin caption-5 {
+    font-weight: $font-weight-regular;
+    font-size: 10px;
+    line-height: 14px;
+
+    @include respond-to(md) {
+        font-size: 8px;
+        line-height: 12px;
+    }
+}
+
+// Finish - Caption
+
+//Start - Lead
+@mixin lead-1 {
+    font-weight: $font-weight-medium;
+    font-size: 28px;
+    line-height: 34px;
+
+    @include respond-to(md) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@mixin lead-2 {
+    font-weight: $font-weight-medium;
+    font-size: 24px;
+    line-height: 28px;
+
+    @include respond-to(md) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@mixin lead-3 {
+    font-weight: $font-weight-medium;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include respond-to(md) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@mixin lead-4 {
+    font-weight: $font-weight-medium;
+    font-size: 18px;
+    line-height: 22px;
+
+    @include respond-to(md) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin lead-5 {
+    font-weight: $font-weight-medium;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include respond-to(md) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin lead-6 {
+    font-weight: $font-weight-medium;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include respond-to(md) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+// Finish - Lead
+
+@mixin tags-label {
+    font-weight: $font-weight-semi-bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+// Start - Text
+
+@mixin text-1 {
+    font-weight: $font-weight-regular;
+    font-size: 20px;
+    line-height: 28px;
+
+    @include respond-to(md) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@mixin text-2 {
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include respond-to(md) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@mixin text-3 {
+    font-weight: $font-weight-regular;
+    font-size: 14px;
+    line-height: 20px;
+
+    @include respond-to(md) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+//Finish - Text
+
+// Устарело все что ниже. Удалить
+// Start - Title
+@mixin title-1 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 32px;
+    line-height: 38px;
+
+    @media (max-width: 1000px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@mixin title-2 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 28px;
+    line-height: 36px;
+
+    @media (max-width: 1000px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@mixin title-3 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    @media (max-width: 1000px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@mixin title-4 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (max-width: 1000px) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@mixin title-5 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: 1000px) {
+        // Спросить, что тут должно быть
+    }
+}
+
+@mixin title-6 {
+    font-weight: $font-weight-semi-bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    @media (max-width: 1000px) {
+        // Спросить, что тут должно быть
+    }
+}
+
+
+/*** Finish - Title ***/
+
+
+
+// Finish - Title
+
+
+
+
+@mixin desc-h1 {
+    @include heading-h1();
 }
 
 @mixin desc-h2 {
-    font-size: 32px;
-    line-height: 40px;
+    @include heading-h2();
 }
 
 @mixin desc-h3 {
-    font-size: 24px;
-    line-height: 32px;
+    @include heading-h3();
 }
 
 @mixin desc-h4 {
-    font-size: 20px;
-    line-height: 28px;
+    @include heading-h4();
 }
 
 @mixin desc-h5 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    @include heading-h5();
 }
 
 @mixin desc-h6 {
-    font-size: 13px;
+    @include heading-h6();
+}
+
+@mixin mob-h3() {
+    font-size: 14px;
     line-height: 16px;
 }
 
@@ -84,35 +452,24 @@ $interview-end-color: #D10404;
 }
 
 @mixin desc-title5 {
-    font-size: 14px;
-    line-height: 16px;
+    @include title-5();
 }
 
 @mixin desc-text1 {
-    font-size: 24px;
-    line-height: 32px;
+    @include text-1();
 }
 
 @mixin desc-text2 {
-    font-size: 20px;
-    line-height: 28px;
+    @include text-2();
 }
 
 @mixin desc-text3 {
-    font-size: 16px;
-    line-height: 24px;
+    @include text-3();
 }
 
 @mixin desc-text4 {
-    font-size: 14px;
-    line-height: 20px;
+    @include text-3();
 }
-
-@mixin desc-caption1 {
-    font-size: 13px;
-    line-height: 18px;
-}
-
 
 @mixin desc-calender {
     font-size: 18px;

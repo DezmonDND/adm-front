@@ -5,11 +5,11 @@ doctype html
 html(lang="ru")
     head
         link(rel="stylesheet" href="./css/template-styles.css")
+        link(rel="stylesheet" href="./css/styles.css")
         link(rel="stylesheet" href="./css/other.css")
 
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
-
         title Document
     body
         +header()
@@ -66,5 +66,8 @@ html(lang="ru")
                 {href: '/', title: 'Ссылка'},
                 ],
         })          
+        script(src = './js/jquery-3.7.1.js')
         script(src = './js/script.js')
+        script(type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js")
+        script(nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js")
 

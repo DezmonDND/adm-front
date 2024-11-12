@@ -1,5 +1,21 @@
 .projects-array {
     margin: 40px 0 0;
+    max-width: 1440px;
+    box-sizing: border-box;
+    width: 100%;
+
+    .cabinet-array__content {
+        align-items: baseline;
+
+        .cabinet-array__button {
+            padding: 13px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            flex-direction: row-reverse;
+            align-self: flex-start;
+        }
+    }
 
     .projects-array__content {
         display: flex;
@@ -22,6 +38,7 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+            width: 100%;
         }
 
         .projects-array__save-buttons {
@@ -44,16 +61,40 @@
 
 @media screen and (max-width: 1000px) {
     .projects-array {
+        margin-top: 8px;
+
+
+        .cabinet-array__content {
+     flex-direction: column-reverse;
+    
+            .cabinet-array__button {
+        align-self: stretch;
+        justify-content: center;
+            }
+        }
         .projects-array__content {
+            margin-top: 12px;
 
             .projects-array__edit-buttons {
 
-                .projects-array__button {}
+                .projects-array__button {
+                    padding: 8px 14px;
+                    border-radius: 8px;
+                }
+            }
+
+            .projects-array__list {
+                gap: 19px;
             }
 
             .projects-array__save-buttons {
+                gap: 14px;
 
-                .projects-array__button {}
+                .projects-array__button {
+                    padding: 12px 24px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
             }
         }
     }
@@ -61,16 +102,34 @@
 
 @media screen and (max-width: 600px) {
     .projects-array {
+
+        .cabinet-array__content {
+     
+    
+            .cabinet-array__button {
+        font-size: 12px;
+        line-height: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+            }
+        }
         .projects-array__content {
 
             .projects-array__edit-buttons {
 
-                .projects-array__button {}
+                .projects-array__button {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
             }
 
             .projects-array__save-buttons {
 
-                .projects-array__button {}
+                .projects-array__button {
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 13px 20px;
+                }
             }
         }
     }

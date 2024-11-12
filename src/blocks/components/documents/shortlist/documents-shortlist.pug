@@ -1,0 +1,6 @@
+mixin short-filelist(items)
+    .short-filelist
+         each item, index in items
+            a.file-line(href=item.href)
+                <ion-icon name="document"></ion-icon>
+                | #{item.title}

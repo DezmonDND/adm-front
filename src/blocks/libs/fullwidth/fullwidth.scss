@@ -1,0 +1,30 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.main {
+    .full-width-container {
+        position: relative; // Позволяет абсолютному позиционированию дочерних элементов
+        width: 100vw; // Задаем полную ширину окна просмотра
+        left: 50%; // Центрируем
+        right: 50%; // Центрируем
+        margin-left: -50vw; // Сдвигаем влево на половину ширины окна
+        margin-right: -50vw; // Сдвигаем вправо на половину ширины окна
+
+        .full-width-background {
+            background-color: $grey-adm; // Цвет фона
+            top: 0; // Позиционируем сверху
+            left: 0;
+            right: 0;
+            z-index: -1; // Помещаем за другие элементы
+        }
+
+        .full-width-content {
+            box-sizing: border-box;
+            max-width: 1440px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            @include main-padding;
+        }
+    }
+}

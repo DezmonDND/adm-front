@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+    main.main 
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Опросы'},
+                { sort: '', href: '/', text: 'Создание агломераций на территории Ханты-Мансийского автономного округа-Югры'},
+            ],
+            )
+        +title({
+            title: 'Узнать статус обращения'
+            })
+        .feedback-status
+            .feedback-status__container 
+                .feedback-status__title Введите выданный номер обращения
+                +search(
+                {name: 'number', size: 'l', placeholder: 'Номер обращения', type: 'search'},
+                    false, 'l', 'getValues()', 'feedbacks',) 
+                +project_card(false, {
+                    title: 'Номер обращения',
+                    date: 'Сформировано 23 сентября 2024',
+                    tag: {
+                        size: "xs",
+                        sort: 'project-card',
+                        text: 'Состояние обращения',
+                        isGoing: false,
+                        status: ''
+                    }
+                })        

@@ -1,0 +1,34 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Администрация'},
+                { sort: '', href: '/', text: 'Глава города'},
+            ],
+            )
+        +title({
+            title: 'Глава города'
+        })
+        +tabs( 
+            [
+                { isActive: true, title: 'Биография', href: '/' },
+                { title: 'Полномочия', href: '/' },
+                { title: 'Ежегодный доход', href: '/' },
+                { title: 'Должностной знак', href: '/' },
+                { title: 'Виртуальная приемная', href: '/' },
+                { title: 'Официальные выступления', href: '/' },
+            ])
+        +biography_card({
+            cls: 'full-page',
+            name: 'Кириленко Артем Михайлович',
+            job: 'Заместитель главы города Сургута',
+            avatar: 'kirilenko_avatar.png',
+        })
+        +biography({
+            name: 'Кириленко Артем Михайлович',
+            job: 'Заместитель главы города Сургута',
+            avatar: 'kirilenko_avatar.png',
+        })

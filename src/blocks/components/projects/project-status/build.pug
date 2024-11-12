@@ -1,0 +1,31 @@
+include ../_project-card.pug
+include ../../../components/user-profile/_user-profile.pug
+include ../../../components/title/_title.pug
+include ../../../components/tabs/main/_tabs.pug 
+include ../../../components/search/_search.pug 
+include ../../../libs/inputs/_inputs.pug
+include ../../../libs/tab-buttons/_tab-buttons.pug
+include ../../../libs/search-button/_search-button.pug 
+include ../../../libs/checkbox/_checkbox.pug
+include ../../../libs/buttons/_buttons.pug 
+
++title({
+    title: 'Узнать статус обращения'
+    })
+.feedback-status
+    .feedback-status__container 
+        .feedback-status__title Введите выданный номер обращения
+        +search(
+        {name: 'number', size: 'l', placeholder: 'Номер обращения', type: 'search'},
+            false, 'l', 'getValues()', 'feedbacks',) 
+        +project_card(false, {
+            title: 'Номер обращения',
+            date: 'Сформировано 23 сентября 2024',
+            tag: {
+                size: "xs",
+                sort: 'project-card',
+                text: 'Состояние обращения',
+                isGoing: false,
+                status: ''
+            }
+        }) 

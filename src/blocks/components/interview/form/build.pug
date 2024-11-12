@@ -1,13 +1,13 @@
 include ../_form.pug 
-include ../../../components/form-field/_form-field.pug 
-include ../../../libs/tags/_tags.pug 
+include ../../../libs/fieldset/_fieldset.pug 
 include ../../../libs/checkbox/_checkbox.pug
 include ../../../libs/textarea/_textarea.pug 
 include ../../../libs/inputs/_inputs.pug 
 include ../../../libs/buttons/_buttons.pug 
+include ../../../libs/select/_select.pug 
 
 form.interview-form
-    +form-field(
+    +fieldset(
         {
             type: 'radio',
             title: '1. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
@@ -28,7 +28,7 @@ form.interview-form
                     },
                 ],
         })  
-    +form-field(
+    +fieldset(
         {
             type: 'checkbox',
             title: '2. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
@@ -50,7 +50,7 @@ form.interview-form
                 },
                 ],
         })
-    +form-field(
+    +fieldset(
         {
             type: '',
             title: '3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
@@ -58,13 +58,13 @@ form.interview-form
             error: false,
             inputs: [
                 {
-                    placeholder: 'Введите ваш ответ',
-                    name: 'answer3', 
-                    sort: 'interview-full',
+                    placeholder: `Введите ваш ответ`,
+                    name: `answer3`, 
+                    sort: `interview-full`,
                 },
                 ] 
         })
-    +form-field(
+    +fieldset(
         {
             type: 'textarea',
             title: '4. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
@@ -75,4 +75,24 @@ form.interview-form
                 value: '900'
                     }
         })
-    +button({ type: 'button', class: 'button_blue button_interview', event: 'getValues(event)', icon: 'arrow_icon.svg', text: `Отправить форму` }) 
+    +fieldset(
+        {
+            type: 'select', 
+            title: 'Кому направляете электронную анкету', 
+            cls_title: 'reception__sender', 
+            options: [
+                { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
+                { text: 'Филатов', value: 'Филатов' }, 
+                { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
+            iconPosition: 'right'})
+    +fieldset(
+        {
+            type: 'multiple', 
+            title: 'Кому направляете электронную анкету', 
+            cls_title: 'reception__sender', 
+            options: [
+                { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
+                { text: 'Филатов', value: 'Филатов' }, 
+                { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
+            iconPosition: 'right'})        
+    +button({ size: 'l', type: 'button', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить форму` })

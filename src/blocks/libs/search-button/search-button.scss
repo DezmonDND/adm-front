@@ -6,7 +6,7 @@ $primary-color: #004CC4;
     width: 100%;
 
     .search__button {
-        width: 52px;
+        width: 48px;
         height: 48px;
         background: url(../icons/search_icon.svg) center no-repeat;
         background-color: $primary-color;
@@ -20,11 +20,21 @@ $primary-color: #004CC4;
     }
 
     .search__button_l {
-        width: 72px;
-        height: 72px;
+        width: 60px;
+        height: 60px;
     }
 }
 
 .search-header {
     max-width: 693px;
+}
+
+@media screen and (width: 1000px) {
+    .search {
+        .search__button_l {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
 }

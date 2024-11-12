@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: 'crumb', href: '/', text: 'Главная' },
+                { sort: 'crumb', href: '/', text: 'Администрация'},
+                { sort: 'crumb', href: '/', text: 'Телефонный справочник'},
+            ])
+        +title({title: "Телефонный справочник"})
+        +tabs( 
+            [
+                { isActive: true, title: 'Глава города', href: '/phonebook.html'},
+                { title: 'Администрация', href: '/phonebook.html'},
+                { title: 'Муниципальные учреждения', href: '/phonebook.html'},
+            ])
+        +phonebook()

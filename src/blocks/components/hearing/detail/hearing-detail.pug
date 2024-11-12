@@ -1,0 +1,12 @@
+include ./description.pug
+
+mixin hearing-detail()
+    +title({title: "Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818"})
+    .hearing-detail
+        +hearing-preview(true,false)
+        .full-width-container
+            .full-width-background
+                .full-width-content
+                    +description()
+        .hearing-detail-links
+            +linkslist([{title:"Назначающий НПА", href:"#"},{title:"Объявление с материалами", href:"#"},])

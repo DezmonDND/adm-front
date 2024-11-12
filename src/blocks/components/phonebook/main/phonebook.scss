@@ -1,0 +1,173 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+// Общие стили
+
+.line-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    @include text-2;
+
+    @include respond-to(md) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    a {
+        color: $second-text;
+    }
+
+    .label {
+        color: $tertiary-text;
+        margin-bottom: 12px;
+        @include caption-2;
+    }
+}
+
+// Стилизация главы
+.phonebook-main-item {
+    padding: 20px;
+    background: $grey-adm;
+    border-radius: 12px;
+    margin-bottom: 12px;
+
+    .line {
+        .fio {
+            margin-bottom: 20px;
+            @include heading-h4;
+        }
+
+        .line-fields {
+            padding-top: 12px;
+            @include caption-1;
+
+            .line-field {
+                &:nth-child(1) {
+                    width: 316px;
+
+                    @include respond-to(md) {
+                        width: 160px;
+                    }
+
+                    @include respond-to(sm) {
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 264px;
+
+                    @include respond-to(md) {
+                        width: 117px
+                    }
+                }
+
+                &:nth-child(3) {
+                    width: 120px;
+
+                    @media (max-width: 1000px) {
+                        width: 60px;
+                    }
+                }
+
+                &:nth-child(4) {
+                    width: 212px;
+
+                    @media (max-width: 1000px) {
+                        width: 140px;
+                    }
+                }
+
+                @include respond-to(sm) {
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        width: calc(50% - 10px);
+                        ;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Стилизация остальных
+
+
+.phonebook-list {
+    .sub_header {
+        padding: 20px 0;
+        @include heading-h5;
+    }
+
+    .line {
+        padding: 20px 0;
+
+        @include respond-to(md) {
+            border-bottom: 1px solid $tertiary-text;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+
+        .line-field {
+            &:nth-child(1) {
+                width: 250px;
+            }
+
+            &:nth-child(2) {
+                width: 220px;
+            }
+
+            &:nth-child(3) {
+                width: 240px;
+            }
+
+            &:nth-child(4) {
+                width: 80px;
+            }
+
+            &:nth-child(5) {
+                width: 160px;
+            }
+
+            &:nth-child(6) {
+                width: 202px;
+            }
+
+            @include respond-to(md) {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    width: calc(33.333% - 13.33px);
+                    box-sizing: border-box;
+                }
+            }
+
+            @include respond-to(sm) {
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    width: 100%;
+                }
+
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    width: calc(50% - 10px);
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

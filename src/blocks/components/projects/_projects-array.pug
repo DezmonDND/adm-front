@@ -1,13 +1,16 @@
-mixin projects_array(isEdit, projects = [])
+mixin projects_array(isEdit, type, projects = [])
     .projects-array
-        .projects-array__content
-            .projects-array__edit-buttons
-                +button({ type: 'button', class: 'button_blue projects-array__button', event: 'addProject()', icon: 'plus_icon.svg', text: `Добавить инициативный проект` })
-                +button({ type: 'button', class: 'button_white projects-array__button', event: 'editProject()', text: `Редактировать текущие` })
+        div(class=`projects-array__content ${type}-array__content`)
+            if type === 'projects'
+                .projects-array__edit-buttons
+                    +button({ type: 'button', size: 'm', class: 'button_blue', event: 'addProject()', icon: 'add-outline', iconPosition: 'left', text: `Добавить инициативный проект` })
+                    +button({ type: 'button', size: 'm', class: 'button_white', event: 'editProject()', text: `Редактировать текущие` })
+            else if type === 'cabinet' 
+                    +button({ type: 'button', size: 'm', class: 'button_blue', event: 'addProject()', icon: 'add-outline', iconPosition: 'left', text: `Создать новое обращение` })
             .projects-array__list
                 each project in projects 
                     +project_card(isEdit, project)
             if isEdit                     
                 .projects-array__save-buttons
-                    +button({ type: 'button', class: 'button_blue projects-array__button', event: 'deleteProject()', icon: 'delete_icon.svg', text: `Удалить` })
-                    +button({ type: 'button', class: 'button_white projects-array__button projects-array__button_save_button', event: 'cancelEdit()', text: `Отмена` })
+                    +button({ type: 'button', size: 'm', class: 'button_blue', event: 'deleteProject()', icon: 'trash-outline', iconPosition: 'left', text: `Удалить` })
+                    +button({ type: 'button', size: 'm', class: 'button_white', event: 'cancelEdit()', text: `Отмена` })
