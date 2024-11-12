@@ -78,8 +78,10 @@
 @use '../../blocks/components/citizens/citizens-list/citizens-list.scss';
 @use '../../blocks/components/honor-board/board-card/board-card.scss';
 @use '../../blocks/components/honor-board/board-list/board-list.scss';
-
-
+@use '../../blocks/components/header/duma/header-duma.scss';
+@use '../../blocks/components/header/header-links/header-links.scss';
+@use '../../blocks/components/header/socials/header-socials.scss';
+@use '../../blocks/components/header/logo/logo.scss';
 
 * {
     font-family: 'Inter', sans-serif;

@@ -1,3 +1,36 @@
+body {
+  --services-hover: #f2f3f5;
+  --services-active: #e3e4e7;
+  --cards-background: #fafafa;
+  --grey-adm: #fafafa;
+  --event-color: #e7edfb;
+  --event-color-hover: #e7edfb;
+  --primary-color: #004cc4;
+  --primary-color-hover: #0a5fe7;
+  --primary-color-active: #003ea2;
+  --primary-color-disabled: #c2d8ff;
+  --primary-color-green: #14bc30;
+  --primary-color-green-hover: #10cd30;
+  --primary-color-green-click: #0c9022;
+  --primary-color-green-disabled: #dbdbdb;
+}
+body.tmp-duma {
+  --services-hover: #f0eee2;
+  --services-active: #e7e5d7;
+  --cards-background: #f7f6ef;
+  --grey-adm: #f7f6ef;
+  --event-color: #e9e4d2;
+  --event-color-hover: #bfb797;
+  --primary-color: #0d6cba;
+  --primary-color-hover: #288cde;
+  --primary-color-active: #0c5591;
+  --primary-color-disabled: #90bbde;
+  --primary-color-green: #a78818;
+  --primary-color-green-hover: #c9a41d;
+  --primary-color-green-click: #856b0f;
+  --primary-color-green-disabled: #bda964;
+}
+
 /*** Finish - Title ***/
 .afisha-event .afisha-event__container .afisha-event__content {
   max-width: 755px;
@@ -104,7 +137,7 @@
   left: 50%;
   width: 48px;
   height: 48px;
-  background-color: #004cc4;
+  background-color: var(--primary-color);
   color: #ffffff;
   z-index: 2;
   font-size: 24px;

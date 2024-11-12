@@ -1,0 +1,6 @@
+mixin logo(data)
+    a(href=data.href).header__main-links
+        img(class=`header__logo` src=`../icons/footer-logo_icon.svg` alt='Логотип')
+        .header__main-links__block 
+            span.header__title #{data.title}
+            span.header__main-link #{data.about}
