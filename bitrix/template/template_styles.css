@@ -9850,6 +9850,99 @@
   }
 }
 
+.board-card {
+  border-radius: 12px;
+  background-color: #fafafa;
+}
+.board-card .board-card__container {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+@media (max-width: 992px) {
+  .board-card .board-card__container {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .board-card .board-card__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.board-card .board-card__container .board-card__image {
+  border-radius: 12px;
+  max-width: 200px;
+  width: 100%;
+  max-height: 236px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 992px) {
+  .board-card .board-card__container .board-card__image {
+    max-width: 110px;
+    max-height: 132px;
+  }
+}
+@media (max-width: 767px) {
+  .board-card .board-card__container .board-card__image {
+    max-width: 296px;
+    max-height: 340px;
+  }
+}
+.board-card .board-card__container .board-card__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .board-card .board-card__container .board-card__desc {
+    gap: 8px;
+  }
+}
+.board-card .board-card__container .board-card__desc .board-card__date {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 992px) {
+  .board-card .board-card__container .board-card__desc .board-card__date {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.board-card .board-card__container .board-card__desc .board-card__about {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+@media (max-width: 992px) {
+  .board-card .board-card__container .board-card__desc .board-card__about {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.board-list .board-list__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .board-list .board-list__container {
+    gap: 8px;
+  }
+}
+
+.honor-board__pagination {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .honor-board__pagination {
+    justify-content: center;
+  }
+}
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
