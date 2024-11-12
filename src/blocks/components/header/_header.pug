@@ -1,3 +1,7 @@
+include ../login/main/login
+include ../login/code/login-code
+include ../login/email/login-email
+
 mixin header(sort)
     header.header 
         .header__top-content
@@ -15,7 +19,7 @@ mixin header(sort)
             .header__buttons  
                 a(href='/').header__eye-link
                     span.header__eye-link-title Версия для слабовидящих
-                +button({ type: 'button', class: 'button_blue button_header', event: 'anotherFunction()', icon: '', size: 'xs', text: 'Войти' })     
+                +button({ type: 'button', class: 'button_blue button_header', event: 'showLogin()', icon: '', size: 'xs', text: 'Войти' })     
         .header__bottom-content
             a(href="/").header__main-links
                 img(class=`header__logo` src=`../icons/footer-logo_icon.svg` alt='Логотип')
@@ -30,4 +34,7 @@ mixin header(sort)
                 a(href='/').header__link Городская власть
                 a(href='/').header__link Документы
                 a(href='/').header__link Контакты 
-            +button({ type: 'button', class: 'button_burger', event: 'anotherFunction()', icon: 'menu-outlined_icon.svg', size: 'xs', text: '' })        
+            +button({ type: 'button', class: 'button_burger', event: 'anotherFunction()', icon: 'menu-outlined_icon.svg', size: 'xs', text: '' })   
+    +login()  
+    +login-code()   
+    +login-email()
