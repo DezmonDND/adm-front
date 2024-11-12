@@ -1,0 +1,94 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-struct-card {
+    display: flex;
+    background-color: $content-color;
+    max-width: 584px;
+    width: 100%;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 50%;
+
+    @media (max-width:500px) {
+        max-width: unset;
+    }
+}
+
+.dm-struct-card__container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dm-struct-card__container span {
+    color: $main-text;
+    @include lead-5();
+}
+
+.dm-struct__main  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: $grey-adm;
+    border-radius: 20px;
+}
+
+.dm-struct__main-container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    @media (max-width:768px)
+    {
+        padding: 20px;
+        gap: 8px;
+    }
+}
+
+
+.dm-struct__main-first,  .dm-struct__main-second, .dm-struct__main-third, .dm-struct__main-fourth{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.dm-struct__main-second {
+    display: flex;
+    @media (max-width:500px)
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.dm-struct__main-third {
+    display: flex;
+    border-top: 1px solid $tertiary-text;
+    border-bottom: 1px solid $tertiary-text;
+    padding: 24px 0px;
+
+    @media (max-width:768px)
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 12px 0px;
+        gap: 8px;
+        .dm-struct-card {
+            max-width: unset;
+        }
+    }
+    @media (max-width:500px)
+    {
+        grid-template-columns: 1fr;
+    }
+
+}
+
