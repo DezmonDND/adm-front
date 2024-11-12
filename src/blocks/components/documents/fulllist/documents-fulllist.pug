@@ -1,0 +1,22 @@
+mixin doc-fulllist(items)
+    .doc-fulllist
+         each item, index in items
+            .doc-line(href=item.href)
+                +button({ type: 'button', size: 's', class: 'button_blue button_radius button_tag-label', text: 'Вид экспертизы' })
+                .doc-name
+                    .label Наименование
+                    | Проект постановления Администрации города «О внесении изменений в постановление Администрации города от 13.12.2013 № 8993 «Об утверждении муниципальной программы «Развитие образования города Сургута на период до 2030 года».
+                .doc-fields
+                    .doc-field
+                        .label Исполнитель
+                            .fio Глазычева Мария Николаевна
+                        | Департамент образования города Сургута
+                    .doc-field
+                        .label Начало экспертизы
+                        | 20.06.2023
+                    .doc-field
+                        .label Окончание экспертизы
+                        | 20.06.2023
+                    .doc-field.files
+                        +button({ type: 'link', target:true, href:"/", size: 'm', class: 'button_white', icon:"download", iconPosition:"left", text: 'Результаты экспертизы' })
+                        +button({ type: 'link', target:true, href:"/", size: 'm', class: 'button_blue', icon:"download", iconPosition:"left", text: 'Скачать' })
