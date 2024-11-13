@@ -1,0 +1,13 @@
+mixin citizen-card(data)
+    .citizen-card
+        .citizen-card__container 
+            .citizen-card__desc
+                img(class='citizen-card__image' src=`../resources/${data.image}` alt='Фотография')
+                .citizen-card__name-block_mobile
+                    .citizen-card__name #{data.name}
+                    .citizen-card__dates #{data.dates}
+                .citizen-card__content 
+                    .citizen-card__name-block 
+                        .citizen-card__name #{data.name}
+                        .citizen-card__dates #{data.dates}
+                    p.citizen-card__about #{data.about}

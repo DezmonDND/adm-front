@@ -83,6 +83,8 @@
 @use '../../blocks/components/header/header-links/header-links.scss';
 @use '../../blocks/components/header/socials/header-socials.scss';
 @use '../../blocks/components/header/logo/logo.scss';
+@use '../../blocks/components/citizens/citizen-card/citizen-card.scss';
+@use '../../blocks/components/citizens/citizens-list/citizens-list.scss';
 
 * {
     font-family: 'Inter', sans-serif;
