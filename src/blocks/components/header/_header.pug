@@ -1,6 +1,7 @@
 include ./header-links/header-links
 include ./socials/header-socials
 include ./logo/logo
+include ./menu/menu
 include ../../components/search/_search.pug 
 include ../../libs/buttons/_buttons.pug 
 include ../../libs/links/_links.pug 
@@ -12,6 +13,44 @@ include ../login/email/login-email
 
 mixin header(sort)
     header.header 
+        +menu([
+            {
+                href: '/',
+                title: 'Быстрый доступ'
+            },
+            {
+                href: '/',
+                title: 'Публичные слушания'
+            },
+            {
+                href: '/',
+                title: 'Противодействие коррупции'
+            },
+            {
+                href: '/',
+                title: 'Пресс-центр'
+            },
+            {
+                href: '/',
+                title: 'Обращения граждан'
+            },
+            {
+                href: '/',
+                title: 'О Сургуте'
+            },
+            {
+                href: '/',
+                title: 'Городская власть'
+            },
+            {
+                href: '/',
+                title: 'Документы'
+            },
+            {
+                href: '/',
+                title: 'Контакты'
+            }
+        ])
         .header__top-content
             .header__top-links
                 +header-links([

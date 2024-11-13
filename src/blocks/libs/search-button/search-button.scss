@@ -1,4 +1,4 @@
-$primary-color: #004CC4;
+@use '../../../assets/styles/vars.scss' as *;
 
 .search {
     display: flex;
@@ -16,6 +16,10 @@ $primary-color: #004CC4;
 
         &:hover {
             cursor: pointer;
+        }
+
+        @include respond-to(sm) {
+            border-radius: 0 4px 4px 0;
         }
     }
 
