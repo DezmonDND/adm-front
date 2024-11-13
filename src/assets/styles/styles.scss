@@ -1,25 +1,87 @@
 @use '../styles/vars.scss' as *;
 
-h1 {
-    @include heading-h1
+@mixin padding-h3-h6 {
+    & {
+        padding: 32px 0 8px;
+    }
+
+    @include respond-to(md) {
+        padding: 24px 0 8px;
+    }
 }
 
 h2 {
-    @include heading-h2
+    padding: 48px 0 16px;
+    @include heading-h2;
+
+    @include respond-to(md) {
+        padding: 32px 0 8px;
+    }
 }
 
 h3 {
-    @include heading-h3
+    @include heading-h3;
+    @include padding-h3-h6;
 }
 
 h4 {
-    @include heading-h4
+    @include heading-h4;
+    @include padding-h3-h6;
 }
 
 h5 {
-    @include heading-h5
+    @include heading-h5;
+    @include padding-h3-h6;
 }
 
 h6 {
-    @include heading-h6
+    @include heading-h6;
+    @include padding-h3-h6;
+}
+
+ul,
+ol {
+    margin-left: 44px;
+}
+
+li {
+    margin: 8px 0 8px;
+}
+
+p {
+    margin: 8px 0 8px;
+}
+
+a {
+    font-weight: $font-weight-medium;
+    text-decoration: none;
+}
+
+b {
+    font-weight: $font-weight-bold;
+}
+
+// Стили статической страницы
+.content {
+    &-card {
+        background-color: var(--cards-background);
+
+        &__container {
+            margin: 0 auto;
+            max-width: 738px;
+            width: 100%;
+            padding: 40px 0 40px;
+        }
+
+        h1 {
+            @include heading-h1;
+        }
+    }
+
+    &-page {
+        max-width: 755px;
+        margin: 0px auto;
+    }
+
+
 }
