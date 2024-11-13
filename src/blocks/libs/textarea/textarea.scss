@@ -1,7 +1,8 @@
-$tertiary-text: #78839C;
+@use '../../../assets/styles/vars.scss' as *;
+
 $desk-text3: 16px;
 $desk-text3-lh: 24px;
-$input-color-default: #C6CBD9;
+
 
 .container {
     box-sizing: border-box;

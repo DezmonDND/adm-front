@@ -1,4 +1,4 @@
-$tertiary-text: #78839C;
+@use '../../../../assets/styles/vars.scss' as *;
 
 .breadcrumbs {
     display: flex;
@@ -28,7 +28,7 @@ $tertiary-text: #78839C;
         gap: 9px;
         overflow: scroll;
         scrollbar-width: none;
-        
+
     }
 
     .span {

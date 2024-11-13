@@ -102,7 +102,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    color: #000000;
+    color: $main-text;
     letter-spacing: var(--ls);
     background-color: $content-color;
 }
