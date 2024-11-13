@@ -20,8 +20,8 @@
     </form>
     <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
     </div>
-    <button class="button button_burger button_size_xs button_without-text  " onclick="anotherFunction()">
-      <ion-icon class="icon" name="menu-outlined_icon.svg"></ion-icon>
+    <button class="button button_burger button_size_xs button_without-text  " onclick="openMenu()">
+      <ion-icon class="icon" name="menu-outline"></ion-icon>
     </button>
   </div>
 </header>

@@ -271,25 +271,12 @@
 
 // Перенести в шапку
 
-
-.button_burger {
-    display: none;
-}
-
-.button_burger {
-    padding: 0;
-    gap: 0;
-}
-
 .button_header {
     padding: 8px 20px;
     @include heading-h6;
 }
 
 @media screen and (max-width: 880px) {
-    .button.button_burger {
-        display: block;
-        padding-right: 0;
-    }
+
 
 }

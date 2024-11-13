@@ -6,6 +6,10 @@
     justify-content: center;
     gap: 20px;
 
+    @include respond-to(md) {
+        display: none;
+    }
+
     .header__link {
         text-decoration: none;
         color: $main-text;
