@@ -53,7 +53,7 @@ mixin header(sort)
                     },
                 ])
             .header__buttons  
-                a(href='/').header__eye-link
+                a(onclick = 'visibility()').header__eye-link
                     span.header__eye-link-title Версия для слабовидящих
                 +button({ type: 'button', class: 'button_blue button_header', event: 'showLogin()', icon: '', size: 'xs', text: 'Войти' })     
         .header__bottom-content
@@ -83,7 +83,75 @@ mixin header(sort)
                     title: 'Контакты',
                 },
                 ])        
-            +button({ type: 'button', class: 'button_burger', event: 'anotherFunction()', icon: 'menu-outlined_icon.svg', size: 'xs', text: '' })        
+            +button({ type: 'button', class: 'button_burger', event: 'anotherFunction()', icon: 'menu-outlined_icon.svg', size: 'xs', text: '' })
+        .header-visibility__top-content 
+            .header-visibility__top-links
+                +header-links([
+                    {
+                        href: '/',
+                        title: 'О Сургуте',
+                    },
+                    {
+                        href: '/',
+                        title: 'Городская власть',
+                    },
+                    {
+                        href: '/',
+                        title: 'Документы',
+                    },
+                    {
+                        href: '/',
+                        title: 'Контакты',
+                    },
+                    ])        
+                +header-socials([
+                    {
+                        href: '/',
+                        class: 'vk_icon'
+                    },
+                    {
+                        href: '/',
+                        class: 'ok_icon '
+                    },
+                    {
+                        href: '/',
+                        class: 'tg_icon'
+                    },
+                ])
+            .header__buttons  
+                +button({ type: 'button', class: 'button_blue button_header', event: 'showLogin()', icon: '', size: 'xs', text: 'Войти' }) 
+        .header-visibility__middle-content 
+            +logo({
+                href: '/',
+                title: 'Администрация Сургута',
+                about: 'Официальный портал',
+            })
+            +search(
+                {name: 'number', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
+                    false, 's', 'getValues()', 'header',) 
+        .header-visibility__bottom-content
+            +header-links([
+                    {
+                        href: '/',
+                        title: 'Быстрый доступ',
+                    },
+                    {
+                        href: '/',
+                        title: 'Публичные слушания',
+                    },
+                    {
+                        href: '/',
+                        title: 'Противодействие коррупции',
+                    },
+                    {
+                        href: '/',
+                        title: 'Пресс-центр',
+                    },
+                    {
+                        href: '/',
+                        title: 'Обращения граждан',
+                    },
+                ])     
     +login()  
     +login-code()   
     +login-email()

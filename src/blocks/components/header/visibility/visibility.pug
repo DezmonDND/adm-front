@@ -1,6 +1,6 @@
 
 mixin visibility()
-    .header-visibility.active
+    .header-visibility
         .header-visibility-container
             .header-visibility-elems
                 .header-visibility-elem
@@ -21,9 +21,9 @@ mixin visibility()
                     .header-visibility-elem-left
                         span Межстрочный интервал:
                     .header-visibility-elem-right
-                        span.line-height-12(onclick = "setLineHeight(1.2, this)") А
-                        span.line-height-15(onclick = "setLineHeight(1.5, this)") А 
-                        span.line-height-2(onclick = "setLineHeight(2, this)") А
+                        span.line-height-12(onclick = "setLineHeight(1.5, this)") А
+                        span.line-height-15(onclick = "setLineHeight(2, this)") А 
+                        span.line-height-2(onclick = "setLineHeight(2.5, this)") А
                 .header-visibility-elem 
                     .header-visibility-elem-left
                         span Цвет сайта:

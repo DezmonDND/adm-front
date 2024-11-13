@@ -1,5 +1,16 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+.header-visibility {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: $grey-adm;
+  display: none;
+}
+
 .header-visibility.active {
     display: block;
   }
@@ -38,9 +49,7 @@
   }
   
   
-  .header-visibility-close {
-    color: var(--main-text);
-  }
+  
   .header-visibility-close ion-icon {
     font-size: 28px;
     color: $primary-color;
@@ -72,7 +81,7 @@
     transform: translateX(-50%);
     width: 6px;
     height: 6px;
-    background-color: var(--button-hover);
+    background-color: $primary-color;
     border-radius: 50%;
   }
 
@@ -159,3 +168,77 @@
     text-underline-offset: 2px;
     padding-bottom: 8px;
   }
+
+  .header-visibility__top-content {
+    padding: 7px 65px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    display: none;
+  }
+.header-visibility__top-links {
+  display: flex;
+  gap: 80px;
+}
+
+.header-visibility__middle-content {
+  display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 64px;
+    gap: 24px;
+}
+
+.header-visibility__bottom-content {
+  padding: 7px 65px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    display: none;
+}
+
+.visibility .header-visibility__top-content, .visibility .header-visibility__middle-content, .visibility .header-visibility__bottom-content {
+  display: flex;
+}
+
+.visibility .header__top-content, .visibility .header__bottom-content {
+  display: none;
+}
+
+.visibility .header__social-icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+}
+
+
+.visibility .header-services__container {
+  background-color: $content-color;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.visibility .full-width-background {
+  background-color:$content-color !important;
+}
+
+.visibility .header-services__button {
+  flex-direction: column-reverse;
+  max-width: 310px;
+  width: 100%;
+  height: 160px;
+  align-items: center;  
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.visibility .header-services__button ion-icon {
+  color: $icons-color !important;
+}
+
+.visibility .header-services__button:not(:hover) {
+  background-color: $content-color !important;
+}
+
