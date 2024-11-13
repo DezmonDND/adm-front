@@ -1,3 +1,11 @@
 
 mixin dm-deputies-comitets(items = [])
     .dm-deputies-comitets
+        .dm-deputies-comitets__content
+            each item in items 
+                .dm-deputies-comitets__block
+                    .dm-deputies-comitets__name
+                        span= item.name
+                    .dm-deputies-comitets__list
+                        each el in item.persons
+                            +dm-comitet-elem(el)

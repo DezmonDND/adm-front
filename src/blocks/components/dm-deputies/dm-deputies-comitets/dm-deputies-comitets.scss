@@ -1,1 +1,54 @@
 @use '../../../../assets/styles/vars.scss' as *;
+
+.dm-deputies-comitets {
+    padding-top: 48px;
+
+    @media (max-width:768px) {
+        padding-top: 24px;
+    }
+}
+
+.dm-deputies-comitets__block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media (max-width:768px) {
+        gap: 16px;
+    }
+}
+
+.dm-deputies-comitets__content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @media (max-width:768px) {
+        gap: 24px;
+    }
+}
+
+.dm-deputies-comitets__name {
+    color: $main-text;
+    font-weight: 500 !important;
+    @include heading-h2();
+    @media (max-width:768px) {
+        font-weight: 600 !important;
+    }
+}
+
+.dm-deputies-comitets__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    .dm-comitet-elem {
+        max-width: 420px;
+    }
+    @media (max-width:768px) {
+        gap: 8px;
+        .dm-comitet-elem {
+            max-width: unset;
+        }
+    }
+    @media (max-width:500) {
+       flex-direction: column;
+    }
+}

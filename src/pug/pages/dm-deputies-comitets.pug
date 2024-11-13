@@ -1,0 +1,80 @@
+extends ../dm-layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Администрация'},
+                { sort: '', href: '/', text: 'Заместители'},
+            ],
+            )
+        +title({
+            title: 'Депутаты'
+        })
+        +tabs( 
+            [
+                { title: 'По алфавиту', href: '/' },
+                { title: 'По фракциям', href: '/' },
+                { isActive: true, title: 'По комитету', href: '/' },
+            ])
+        .dm-deputies__search
+            +search(
+                    {name: 'surname', size: 'l', placeholder: 'Поиск по фамилии', type: 'search'},
+                        false, 'l', 'getValues()', 'feedbacks',)
+        +dm-deputies-comitets(
+            [
+                {
+                    name: 'Комитет по бюджету, налогам, финансам и имуществу',
+                    persons: 
+                            [
+                                {
+                                img: 'kirilenko_avatar.png',
+                                surname: 'Барсов',
+                                name: 'Евгений Вячеславович'
+                                },
+                                {
+                                img: 'kirilenko_avatar.png',
+                                surname: 'Барсов',
+                                name: 'Евгений Вячеславович'
+                                }
+                            ]
+                },
+                {
+                    name: 'Комитет по городскому хозяйству и перспективному развитию города',
+                    persons: 
+                            [
+                                {
+                                img: 'kirilenko_avatar.png',
+                                surname: 'Барсов',
+                                name: 'Евгений Вячеславович'
+                                }, 
+                                {
+                                img: 'kirilenko_avatar.png',
+                                surname: 'Барсов',
+                                name: 'Евгений Вячеславович'
+                                },
+                                {
+                                img: 'kirilenko_avatar.png',
+                                surname: 'Барсов',
+                                name: 'Евгений Вячеславович'
+                                }, 
+                                {
+                                img: 'kirilenko_avatar.png',
+                                surname: 'Барсов',
+                                name: 'Евгений Вячеславович'
+                                },
+                                {
+                                img: 'kirilenko_avatar.png',
+                                surname: 'Барсов',
+                                name: 'Евгений Вячеславович'
+                                }, 
+                                {
+                                img: 'kirilenko_avatar.png',
+                                surname: 'Барсов',
+                                name: 'Евгений Вячеславович'
+                                }
+                            ]
+                }
+            ]
+        )
