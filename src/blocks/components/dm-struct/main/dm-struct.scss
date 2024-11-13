@@ -133,7 +133,7 @@
     }
 }
 
-.dm-struct__bottom p, .dm-struct__bottom a {
+.dm-struct__bottom p, .dm-struct__bottom a, .dm-struct__bottom span {
     color: $main-text;
     @include text-2();
 }
