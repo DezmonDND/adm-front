@@ -20,6 +20,11 @@ body {
     --primary-color-green-click: #0c9022;
     --primary-color-green-disabled: #dbdbdb;
 
+    // Типографика
+    --scale: 1;
+    --ls: 0;
+    --lh: 1;
+
     &.tmp-duma {
         --services-hover: #f0eee2;
         --services-active: #e7e5d7;

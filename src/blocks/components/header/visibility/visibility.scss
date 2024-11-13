@@ -29,17 +29,23 @@
     font-size: 14px !important;
     letter-spacing: 0 !important;
     color:$main-text;
+    font-weight: $font-weight-medium;
   }
 
     
   .header-visibility-elem span {
-    font-size: 32px;
+    @include text-2();
   }
   
   
   .header-visibility-close {
     color: var(--main-text);
   }
+  .header-visibility-close ion-icon {
+    font-size: 28px;
+    color: $primary-color;
+  }
+
   .header-visibility-elem-right {
     display: flex;
     align-items: center;
@@ -68,4 +74,88 @@
     height: 6px;
     background-color: var(--button-hover);
     border-radius: 50%;
+  }
+
+  .font-size-1 {
+    font-size:14px !important;
+  }
+
+  .font-size-15 {
+    font-size:18px !important;
+  }
+
+  .font-size-2 {
+    font-size:22px !important;
+  }
+
+  .letter-spacing-0 {
+    border-left: 1px solid $main-text; 
+    border-right: 1px solid $main-text;
+    padding: 0px 1px;
+  }
+
+  .letter-spacing-6 {
+    border-left: 1px solid $main-text; 
+    border-right: 1px solid $main-text; 
+    padding: 0px 3px
+  }
+
+  .letter-spacing-12 {
+    border-left: 1px solid $main-text; 
+    border-right: 1px solid $main-text; 
+    padding: 0px 6px
+  }
+
+  .line-height-12 {
+      border-bottom: 1px solid $main-text; 
+      border-top: 1px solid $main-text;
+  }
+
+  .line-height-15 {
+    border-bottom: 1px solid $main-text; 
+    border-top: 1px solid $main-text; 
+    padding:2px 0px;
+  }
+
+  .line-height-2 {
+    border-bottom: 1px solid $main-text; 
+    border-top: 1px solid $main-text; 
+    padding:4px 0px;
+  }
+
+  .theme-light {
+    padding: 4px 8px;
+    background-color:white; 
+    color:black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    padding-bottom: 8px;
+  }
+
+  .theme-dark {
+    border-radius: 4px;
+    padding: 4px 8px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    background-color: black; 
+    color:white;
+    border:none;
+    border: 1px solid black;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .theme-blue {
+    padding: 4px 8px;
+    background-color:$visibility-back; 
+    color:black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid $visibility-back;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    padding-bottom: 8px;
   }

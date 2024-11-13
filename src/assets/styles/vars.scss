@@ -57,6 +57,10 @@ $social-color: linear-gradient(#f97a7c 0%, #5280ea 100%);
 $interview-color: #2dbb45;
 $interview-end-color: #d10404;
 
+
+// Слабовидящие
+$visibility-back: #B2D9FF;
+
 // Шрифты
 
 //Start - FontWeight
@@ -97,201 +101,226 @@ $breakpoint-sm: 768px;
     }
 }
 
-//Start - Heading
 @mixin heading-h1 {
     font-weight: $font-weight-semi-bold;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: calc(40px * var(--scale));
+    line-height: calc(48px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: calc(20px * var(--scale));
+        line-height: calc(24px * var(--lh));
     }
 }
 
 @mixin heading-h2 {
     font-weight: $font-weight-semi-bold;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: calc(32px * var(--scale));
+    line-height: calc(38px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: calc(16px * var(--scale));
+        line-height: calc(20px * var(--lh));
     }
 }
 
 @mixin heading-h3 {
     font-weight: $font-weight-semi-bold;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: calc(24px * var(--scale));
+    line-height: calc(28px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: calc(16px * var(--scale));
+        line-height: calc(20px * var(--lh));
     }
 }
 
 @mixin heading-h4 {
     font-weight: $font-weight-semi-bold;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: calc(20px * var(--scale));
+    line-height: calc(24px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: calc(14px * var(--scale));
+        line-height: calc(18px * var(--lh));
     }
 }
 
 @mixin heading-h5 {
     font-weight: $font-weight-semi-bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: calc(12px * var(--scale));
+        line-height: calc(16px * var(--lh));
     }
 }
 
 @mixin heading-h6 {
     font-weight: $font-weight-semi-bold;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: calc(10px * var(--scale));
+        line-height: calc(14px * var(--lh));
     }
 }
 
-// Finish - Heading
-
-//Start - Caption
 @mixin caption-1 {
     font-weight: $font-weight-regular;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: calc(20px * var(--scale));
+    line-height: calc(24px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: calc(14px * var(--scale));
+        line-height: calc(18px * var(--lh));
     }
 }
 
 @mixin caption-2 {
     font-weight: $font-weight-regular;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: calc(12px * var(--scale));
+        line-height: calc(16px * var(--lh));
     }
 }
 
 @mixin caption-3 {
     font-weight: $font-weight-regular;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: calc(10px * var(--scale));
+        line-height: calc(14px * var(--lh));
     }
 }
 
 @mixin caption-4 {
     font-weight: $font-weight-regular;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: calc(10px * var(--scale));
+        line-height: calc(14px * var(--lh));
     }
 }
 
 @mixin caption-5 {
     font-weight: $font-weight-regular;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 8px;
-        line-height: 12px;
+        font-size: calc(8px * var(--scale));
+        line-height: calc(12px * var(--lh));
     }
 }
 
-// Finish - Caption
-
-//Start - Lead
 @mixin lead-1 {
     font-weight: $font-weight-medium;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: calc(28px * var(--scale));
+    line-height: calc(34px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: calc(18px * var(--scale));
+        line-height: calc(22px * var(--lh));
     }
 }
 
 @mixin lead-2 {
     font-weight: $font-weight-medium;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: calc(24px * var(--scale));
+    line-height: calc(28px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: calc(16px * var(--scale));
+        line-height: calc(20px * var(--lh));
     }
 }
 
 @mixin lead-3 {
     font-weight: $font-weight-medium;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: calc(20px * var(--scale));
+    line-height: calc(24px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: calc(14px * var(--scale));
+        line-height: calc(18px * var(--lh));
     }
 }
 
 @mixin lead-4 {
     font-weight: $font-weight-medium;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: calc(18px * var(--scale));
+    line-height: calc(22px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: calc(12px * var(--scale));
+        line-height: calc(16px * var(--lh));
     }
 }
 
 @mixin lead-5 {
     font-weight: $font-weight-medium;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: calc(12px * var(--scale));
+        line-height: calc(16px * var(--lh));
     }
 }
 
 @mixin lead-6 {
     font-weight: $font-weight-medium;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
 
     @include respond-to(md) {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: calc(10px * var(--scale));
+        line-height: calc(14px * var(--lh));
     }
 }
 
-// Finish - Lead
+@mixin text-1 {
+    font-weight: $font-weight-regular;
+    font-size: calc(20px * var(--scale));
+    line-height: calc(28px * var(--lh));
+
+    @include respond-to(md) {
+        font-size: calc(16px * var(--scale));
+        line-height: calc(24px * var(--lh));
+    }
+}
+
+@mixin text-2 {
+    font-weight: $font-weight-regular;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(24px * var(--lh));
+
+    @include respond-to(md) {
+        font-size: calc(14px * var(--scale));
+        line-height: calc(20px * var(--lh));
+    }
+}
+
+@mixin text-3 {
+    font-weight: $font-weight-regular;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+
+    @include respond-to(md) {
+        font-size: calc(14px * var(--scale));
+        line-height: calc(20px * var(--lh));
+    }
+}
+
 
 @mixin tags-label {
     font-weight: $font-weight-semi-bold;
@@ -300,42 +329,7 @@ $breakpoint-sm: 768px;
     text-transform: uppercase;
 }
 
-// Start - Text
 
-@mixin text-1 {
-    font-weight: $font-weight-regular;
-    font-size: 20px;
-    line-height: 28px;
-
-    @include respond-to(md) {
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
-
-@mixin text-2 {
-    font-weight: $font-weight-regular;
-    font-size: 16px;
-    line-height: 24px;
-
-    @include respond-to(md) {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-
-@mixin text-3 {
-    font-weight: $font-weight-regular;
-    font-size: 14px;
-    line-height: 20px;
-
-    @include respond-to(md) {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-
-//Finish - Text
 
 // Устарело все что ниже. Удалить
 // Start - Title
