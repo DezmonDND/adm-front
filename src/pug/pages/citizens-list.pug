@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Документы'},
+                { sort: '', href: '/', text: 'Проекты документов'},
+            ],
+            )
+        +title({
+            title: 'Почетные граждане Сургута'
+        })
+        +citizens-list()
