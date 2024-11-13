@@ -13,7 +13,7 @@
   display: flex;
   width: 426px;
   max-width: 440px;
-  background-color: #fafafa;
+  background-color: var(--grey-adm);
   border-radius: 12px;
 }
 @media (max-width: 768px) {
@@ -59,6 +59,10 @@
   }
 }
 
+.dm-comitet-elem__info-surname span {
+  font-weight: 400;
+}
+
 .dm-comitet-elem__info-name {
   font-weight: 300;
   font-size: 14px;
@@ -69,6 +73,11 @@
     font-size: 10px;
     line-height: 14px;
   }
+}
+
+.dm-comitet-elem__info-name span {
+  font-weight: 400;
+  color: #78839c;
 }
 
 .dm-comitet__title {

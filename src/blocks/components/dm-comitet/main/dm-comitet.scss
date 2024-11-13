@@ -47,8 +47,17 @@
     @include lead-1();
 }
 
+.dm-comitet-elem__info-surname span{
+    font-weight: $font-weight-medium;
+}
+
 .dm-comitet-elem__info-name {
     @include caption-3();
+}
+
+.dm-comitet-elem__info-name span{
+    font-weight: $font-weight-medium;
+    color: $tertiary-text;
 }
 
 .dm-comitet__title {
