@@ -63,7 +63,6 @@ body {
     }
 
     &.dark-theme {
-        background: #10cd30;
         --main-text: #ffffff; //primary
         --main-text-dark-bg: #ffffff;
         --second-text: #ffffff;
@@ -86,7 +85,6 @@ body {
         --event-color-hover: #242433;
 
         // Кнопки
-        --primary-color: #fff;
         --primary-color: #242433;
         --primary-color-hover: #242433;
         --primary-color-active: #242433;
