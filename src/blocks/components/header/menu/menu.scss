@@ -1,49 +1,69 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-.menu {
-    display: none;
+.mobile-menu {
     position: fixed;
     top: 0;
     right: -100%;
-    background-color: $content-color;
-    z-index: 5;
-    transition: all 0.5s; 
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    transition: .3s ease-in-out;
 
-    .menu__container {
+    &_active {
+        right: 0;
+    }
+
+    .menu {
         display: flex;
-        flex-direction: column;
-        padding: 24px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: .3s ease-in-out;
+        opacity: 1;
 
-        .search-header-mobile {
-            margin: 36px 0 40px;
+        &_active {
+            right: 0;
         }
 
-        .menu__buttons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .menu__list {
-            list-style: none;
-            margin: 0;
+        .menu__container {
             display: flex;
             flex-direction: column;
-            gap: 24px;
-            min-height: 620px;
-            @include heading-h1;
+            padding: 24px;
 
-            .menu__item {
-                text-decoration: none;
-                color: $main-text;
+            .search-header-mobile {
+                margin: 36px 0 40px;
             }
-        }
 
-        .menu__socials {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 24px;
+            .menu__buttons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .menu__list {
+                list-style: none;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                min-height: 620px;
+                @include heading-h1;
+
+                .menu__item {
+                    text-decoration: none;
+                    color: $main-text;
+                }
+            }
+
+            .menu__socials {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 24px;
+            }
         }
     }
 }

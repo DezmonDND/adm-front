@@ -13,7 +13,7 @@ include ../login/email/login-email
 
 mixin header(sort)
     header.header 
-        +menu([
+        +menu('#ffffff', [
             {
                 href: '/',
                 title: 'Быстрый доступ'
@@ -90,8 +90,7 @@ mixin header(sort)
                     },
                 ])
             .header__buttons  
-                a(href='/').header__eye-link
-                    span.header__eye-link-title Версия для слабовидящих
+                +button({ type: 'link', href: '/', class: 'button_white button__eye', icon: 'eye-outline', size: 'xs', iconPosition: 'left', text: 'Версия для слабовидящих'})               
                 +button({ type: 'button', class: 'button_blue button_header', event: 'showLogin()', icon: '', size: 'xs', text: 'Войти' })     
         .header__bottom-content
             +logo({
@@ -120,7 +119,7 @@ mixin header(sort)
                     title: 'Контакты',
                 },
                 ])        
-            +button({ type: 'button', class: 'button_burger', event: 'openMenu()', icon: 'menu-outline', size: 'xs' })        
+            +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })        
     +login()  
     +login-code()   
     +login-email()

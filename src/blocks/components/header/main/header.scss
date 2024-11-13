@@ -97,13 +97,19 @@
     }
 }
 
-.header__eye {
-    background-image: url(../icons/eye-mobile.svg);
-    background-color: $primary-color;
-    width: 24px;
-    height: 24px;
-    background-size: 17px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
+.button__eye {
+    color: $main-text;
+    border-color: transparent;
+    background-color: transparent;
+
+    &:hover {
+        border-color: transparent;
+        background-color: transparent;
+    }
+
+}
+
+.button_header {
+    padding: 8px 20px;
+    @include heading-h6;
 }

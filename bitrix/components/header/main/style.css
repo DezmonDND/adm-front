@@ -95,13 +95,25 @@
   }
 }
 
-.header__eye {
-  background-image: url(../icons/eye-mobile.svg);
-  background-color: var(--primary-color);
-  width: 24px;
-  height: 24px;
-  background-size: 17px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
+.button__eye {
+  color: #000000;
+  border-color: transparent;
+  background-color: transparent;
+}
+.button__eye:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.button_header {
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (max-width: 992px) {
+  .button_header {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }

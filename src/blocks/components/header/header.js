@@ -1,22 +1,10 @@
-function openMenu() {
-    const burgerButton = document.querySelector('.button_burger');
-    const closeButton = document.querySelector('.button_close');
-    const mobileMenu = document.querySelector('.menu');
-    const body = document.querySelector('body');
+let isOpen = false;
 
-    burgerButton.style.display = 'none';
-    closeButton.style.display = 'flex';
-    mobileMenu.style.display = 'flex';
-    mobileMenu.style.right = '0';
-}
-
-function closeMenu() {
-    const burgerButton = document.querySelector('.button_burger');
-    const closeButton = document.querySelector('.button_close');
-    const mobileMenu = document.querySelector('.menu');
-    const body = document.querySelector('body');
-
-    burgerButton.style.display = 'flex';
-    closeButton.style.display = 'none';
-    mobileMenu.style.display = 'none';
+function toggleMenu() {
+    isOpen = !isOpen;
+    document.querySelector('.button_burger').style.display = isOpen ? 'none' : 'flex';
+    document.querySelector('.button_close').style.display = isOpen ? 'flex' : 'none';
+    document.querySelector('.mobile-menu').classList.toggle('mobile-menu_active');
+    document.querySelector('.menu').classList.toggle('menu_active');
+    // document.querySelector('body').classList.toggle('overlay');
 }

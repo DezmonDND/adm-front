@@ -10,7 +10,7 @@ include ../../../libs/inputs/_inputs.pug
 
 mixin header-duma()
     header.header-duma
-        +menu([
+        +menu('#F7F6EF', [
             {
                 href: '/',
                 title: 'О думе города'
@@ -39,13 +39,12 @@ mixin header-duma()
                     title: 'Дума Сургута',
                     about: 'Официальный портал',
                 })
-                +button({ type: 'button', class: 'button_burger', event: 'openMenu()', icon: 'menu-outline', size: 'xs', text: '' })
+                +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs', text: '' })
                 +search(
                     {name: 'number', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
                         false, 's', 'getValues()', 'header-duma',) 
                 .header__buttons  
-                    a(href='/').header__eye-link
-                        span.header__eye-link-title Версия для слабовидящих
+                    +button({ type: 'link', href: '/', class: 'button_white button__eye', icon: 'eye-outline', size: 'xs', iconPosition: 'left', text: 'Версия для слабовидящих'})               
                     +button({ type: 'button', class: 'button_blue button_header', event: 'anotherFunction()', icon: '', size: 'xs', text: 'Служебный вход' })             
             .header__bottom-content   
                 +header-links([
