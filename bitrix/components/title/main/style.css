@@ -39,12 +39,12 @@
 }
 .main-title .main-title__container .main-title__link:hover {
   text-decoration: underline;
-  color: #0a5fe7;
+  color: var(--primary-color-hover);
 }
 .main-title .main-title__container .main-title__link:active {
   text-decoration: underline;
-  color: #003ea2;
+  color: var(--primary-color-active);
 }
 .main-title .main-title__container .main-title__link:disabled {
-  color: #c2d8ff;
+  color: var(--primary-color-disabled);
 }

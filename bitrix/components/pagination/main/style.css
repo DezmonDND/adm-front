@@ -19,7 +19,7 @@
   }
 }
 .navigation .navigation__link-prev {
-  color: #004cc4;
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -44,7 +44,7 @@
   }
 }
 .navigation .navigation__link-next {
-  color: #004cc4;
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   cursor: pointer;

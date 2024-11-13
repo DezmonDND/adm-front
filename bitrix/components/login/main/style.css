@@ -50,7 +50,7 @@
 .login__content-top ion-icon {
   font-size: 16px;
   border-radius: 12px;
-  background-color: #fafafa;
+  background-color: var(--cards-background);
   padding: 4px;
   box-sizing: border-box;
   font-weight: 600;
@@ -117,7 +117,7 @@
 }
 
 .login__content-main__confirm-email span {
-  color: #004cc4;
+  color: var(--primary-color);
   cursor: pointer;
   font-size: 13px;
   line-height: 18px;

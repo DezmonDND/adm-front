@@ -39,16 +39,16 @@
   text-decoration: none;
   color: #000000;
   gap: 8px;
-  background-color: #fafafa;
+  background-color: var(--cards-background);
   border-radius: 8px;
   padding: 20px;
   justify-content: space-between;
 }
 .usefull-links .usefull-links__container .usefull-link:hover {
-  background-color: #f2f3f5;
+  background-color: var(--services-hover);
 }
 .usefull-links .usefull-links__container .usefull-link:active {
-  background-color: #e3e4e7;
+  background-color: var(--services-active);
 }
 @media (max-width: 1000px) {
   .usefull-links .usefull-links__container .usefull-link {
