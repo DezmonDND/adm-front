@@ -4753,6 +4753,134 @@ body.tmp-duma {
   display: none !important;
 }
 
+.project-generation__container {
+  color: #000448;
+}
+
+.project-generation__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-generation__top-container {
+  max-width: 867px;
+  padding: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+
+.project-generation__top-container span {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+@media (max-width: 992px) {
+  .project-generation__top-container span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.project-generation__top-container button span {
+  font-size: unset;
+  font-weight: unset;
+  line-height: unset;
+}
+
+.project-generation__top-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.project-generation__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-generation__main-container, .project-generation__bottom-container {
+  max-width: 867px;
+  padding: 32px 0px;
+  padding-top: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-generation__bottom-container {
+  padding: 0px;
+}
+
+.project-generation__main-container span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+@media (max-width: 992px) {
+  .project-generation__main-container span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.project-generation__main-content span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 992px) {
+  .project-generation__main-content span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.project-generation_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-generation__bottom-container {
+  padding-top: 0;
+}
+
+.project-generation__top-btns.mb {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .project-generation__top-container {
+    padding: 24px 0px;
+    gap: 24px;
+  }
+  .project-generation__main-container {
+    padding: 32px 0px;
+    padding-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project-generation__top-btns {
+    display: none;
+  }
+  .project-generation__top-btns.mb {
+    display: flex;
+    width: 100%;
+  }
+  .project-generation__top-btns.mb .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 .subscribe {
   padding-top: 24px;
   display: flex;
