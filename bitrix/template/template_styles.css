@@ -1232,11 +1232,11 @@ body.tmp-duma {
   align-items: center;
   max-width: 1440px;
   width: 100%;
-  margin: 0 0 27px;
+  margin: 16px 0 24px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .tabs {
-    margin: 10px 0 17px;
+    margin: 8px 0 16px;
   }
 }
 .tabs .tabs__container {
@@ -2225,20 +2225,27 @@ body.tmp-duma {
 .title {
   max-width: 1440px;
   width: 100%;
+  margin: 16px 0 24px;
+}
+@media (max-width: 768px) {
+  .title {
+    margin: 8px 0 16px;
+  }
 }
 .title .title__container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
-  padding: 13px 0 20px 0;
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
   .title .title__container {
     flex-direction: column;
+    gap: 16px;
   }
 }
 .title .title__container h2 {
+  padding: 0;
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
@@ -2246,41 +2253,27 @@ body.tmp-duma {
 }
 .title .title__container .title__description {
   flex-basis: 100%;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
+}
+@media (max-width: 992px) {
+  .title .title__container .title__description {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 .title .title__container .title__buttons {
   display: flex;
   gap: 8px;
   margin-left: auto;
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
   .title .title__container .title__buttons {
     margin-left: 0;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .title .title__container .title__name {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .title .title__container {
-    gap: 16px;
-  }
-  .title .title__container .title__name {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .title .title__container .title__description {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
 .fieldset {
   display: flex;
   flex-direction: column;
@@ -2406,15 +2399,6 @@ body.tmp-duma {
   line-height: 28px;
   font-weight: 600;
 }
-.reception__form .reception__content .reception__sender_title {
-  margin-top: 27px;
-}
-.reception__form .reception__content .reception__job_title {
-  margin-top: 32px;
-}
-.reception__form .reception__content .reception__user_title {
-  margin-top: 28px;
-}
 .reception__form .reception__content .reception_add-author-btn {
   margin-top: 35px;
   font-weight: 600;
@@ -2441,12 +2425,10 @@ body.tmp-duma {
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-  margin-top: 40px;
 }
 .reception__form .reception__content .reception__feedback_title {
   font-size: 24px;
   line-height: 28px;
-  margin-top: 45px;
 }
 .reception__form .reception__documents-list {
   flex-direction: column;
@@ -2554,7 +2536,6 @@ body.tmp-duma {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  margin-top: 20px;
   border-radius: 12px;
 }
 @media (max-width: 1000px) {
@@ -3127,7 +3108,6 @@ body.tmp-duma {
 .biography .biography__container .biography__contacts-content .biography__contacts {
   display: flex;
   flex-direction: column;
-  gap: 32px;
   padding: 20px;
   border-radius: 20px;
   background-color: #fafafa;
@@ -10662,14 +10642,7 @@ body {
 hr {
   border-color: #c0c2cc;
   border-top: 0px;
-}
-
-ul {
-  margin-left: 18px;
-}
-
-b {
-  font-weight: 600;
+  margin: 32px 0 16px;
 }
 
 .upper-text {
