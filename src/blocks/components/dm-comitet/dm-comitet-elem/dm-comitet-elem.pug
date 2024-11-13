@@ -1,0 +1,11 @@
+
+
+mixin dm-comitet-elem(item)
+    .dm-comitet-elem
+        .dm-comitet-elem__container 
+            img(src=`../resources/${item.img}`).dm-comitet-elem__img
+            .dm-comitet-elem__info
+                .dm-comitet-elem__info-surname
+                    span= item.surname
+                .dm-comitet-elem__info-name
+                    span= item.name
