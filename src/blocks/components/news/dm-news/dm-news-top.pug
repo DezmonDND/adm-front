@@ -1,0 +1,16 @@
+mixin dm-news()    
+    .news.dm-news 
+        +tabs( 
+            [
+                { isActive: true, title: 'Самые важные', href: '/' },
+                { title: 'Реализация нацпроектов', href: '/' },
+                { title: 'Деятельность администрации', href: '/' },
+                { title: 'Областная дума', href: '/' },
+            ])
+        .news__container
+            +news-card-with-image()
+            .news__list    
+                +news-card-without-image()
+                +news-card-without-image()
+                +news-card-without-image()
+                +news-card-without-image()

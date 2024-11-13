@@ -1,0 +1,23 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.archive-dm {
+
+    .archive-dm__container {
+        display: flex;
+        gap: 24px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        .archive-dm__link {
+
+            .archive-dm__image {
+                min-width: 644px;
+                width: 100%;
+                max-height: 362px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 12px;
+            }
+        }
+    }
+}
