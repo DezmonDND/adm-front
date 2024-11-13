@@ -41,6 +41,15 @@
     }
 }
 
+body.tmp-duma {
+    .short-filelist {
+        ion-icon {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+
 //При использовании модуля в toogle
 .toggle-content-footer {
     .file-line {

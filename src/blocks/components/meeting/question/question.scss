@@ -1,0 +1,24 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.question-fields {
+    display: flex;
+    flex-direction: row;
+
+    @include respond-to(sm) {
+        flex-direction: column;
+    }
+
+    .field {
+        width: 50%;
+        @include text-1;
+
+        @include respond-to(sm) {
+            width: 100%;
+        }
+
+        .label {
+            color: $tertiary-text;
+            @include caption-2;
+        }
+    }
+}

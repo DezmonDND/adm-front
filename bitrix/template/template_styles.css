@@ -60,6 +60,7 @@ body.tmp-duma {
   --primary-color-green-hover: #c9a41d;
   --primary-color-green-click: #856b0f;
   --primary-color-green-disabled: #bda964;
+  --secondary-color: #a78818;
 }
 
 /*** Finish - Title ***/
@@ -4231,6 +4232,10 @@ body.tmp-duma {
   .short-filelist .file-line ion-icon {
     font-size: 28px;
   }
+}
+
+body.tmp-duma .short-filelist ion-icon {
+  color: var(--secondary-color);
 }
 
 .toggle-content-footer .file-line {
@@ -10056,6 +10061,45 @@ body.tmp-duma {
   text-decoration: none;
   font-size: 12px;
   line-height: 14px;
+}
+
+.question-fields {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .question-fields {
+    flex-direction: column;
+  }
+}
+.question-fields .field {
+  width: 50%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+}
+@media (max-width: 992px) {
+  .question-fields .field {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .question-fields .field {
+    width: 100%;
+  }
+}
+.question-fields .field .label {
+  color: #78839c;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 992px) {
+  .question-fields .field .label {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 * {
