@@ -1,0 +1,61 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-deputies-alphabet {
+    padding-top: 48px;
+
+    @media (max-width:768px) {
+        padding-top: 24px;
+    }
+}
+.dm-deputies-alphabet__row {
+    display: flex;
+    gap: 180px;
+    align-items: center;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+.dm-deputies-alphabet__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dm-deputies-alphabet__list {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    @media (max-width:768px) {
+        .dm-comitet-elem {
+            width: unset;
+        }
+        gap: 8px;
+    }
+    @media (max-width:500px) {
+        .dm-comitet-elem {
+            width: 100%;
+        }
+    }
+}
+
+.dm-deputies-alphabet__letter {
+    font-size: 64px;
+    color: $main-text;
+    font-weight: 500;
+    @media (max-width:768px) {
+        ::before {
+            content: 'На букву ';
+        }
+        font-weight: 600 !important;
+        @include heading-h2();
+    }
+}
+
+.dm-deputies__search .search{
+    max-width: unset;
+}
