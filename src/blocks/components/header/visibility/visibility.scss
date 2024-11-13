@@ -213,13 +213,13 @@
 
 
 .visibility .header-services__container {
-  background-color: $content-color;
+  background-color: var(--content-color);
   flex-wrap: wrap;
   align-items: stretch;
 }
 
 .visibility .full-width-background {
-  background-color:$content-color !important;
+  background-color:var(--content-color) !important;
 }
 
 .visibility .header-services__button {
@@ -239,6 +239,20 @@
 }
 
 .visibility .header-services__button:not(:hover) {
-  background-color: $content-color !important;
+  background-color: var(--content-color) !important;
 }
 
+
+.visibility .main-services {
+
+  background-color: var(--content-color) !important;
+}
+
+.visibility .main-services__search {
+  flex-direction: column !important;
+  display: flex !important;
+}
+
+.visibility .important-links__container {
+  grid-template-columns: repeat(2, 48%)
+}

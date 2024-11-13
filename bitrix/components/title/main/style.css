@@ -15,26 +15,26 @@
 }
 .main-title .main-title__container .main-title__title {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: calc(40px * var(--scale));
+  line-height: calc(48px * var(--lh));
 }
 @media (max-width: 992px) {
   .main-title .main-title__container .main-title__title {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: calc(20px * var(--scale));
+    line-height: calc(24px * var(--lh));
   }
 }
 .main-title .main-title__container .main-title__link {
   text-decoration: none;
   color: rgb(0, 76, 196);
   font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(28px * var(--lh));
 }
 @media (max-width: 992px) {
   .main-title .main-title__container .main-title__link {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(24px * var(--lh));
   }
 }
 .main-title .main-title__container .main-title__link:hover {

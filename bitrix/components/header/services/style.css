@@ -25,18 +25,18 @@
 }
 .header-services .header-services__container .header-services__button {
   background-color: var(--cards-background);
-  color: #000000;
+  color: var(--main-text);
   padding: 4px 18px;
   gap: 12px;
   border-color: transparent;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
 }
 @media (max-width: 992px) {
   .header-services .header-services__container .header-services__button {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }
 .header-services .header-services__container .header-services__button:hover {

@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: row-reverse;
   text-decoration: none;
-  color: #000000;
+  color: var(--main-text);
   gap: 8px;
   background-color: var(--cards-background);
   border-radius: 8px;
@@ -69,12 +69,12 @@
 }
 .usefull-links .usefull-links__container .usefull-link .usefull-link__title {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .usefull-links .usefull-links__container .usefull-link .usefull-link__title {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }

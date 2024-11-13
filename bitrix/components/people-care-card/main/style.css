@@ -51,16 +51,16 @@
   }
 }
 .people-care-card .people-care-card__container .people-care-card__title {
-  color: #ffffff;
+  color: var(--content-color);
   z-index: 1;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: calc(32px * var(--scale));
+  line-height: calc(38px * var(--lh));
 }
 @media (max-width: 992px) {
   .people-care-card .people-care-card__container .people-care-card__title {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 .people-care-card .people-care-card__container .people-care-card__button {

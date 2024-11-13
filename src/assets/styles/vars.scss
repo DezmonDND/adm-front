@@ -3,19 +3,19 @@ $services-hover: var(--services-hover);
 $services-active: var(--services-active);
 
 // Типографика
-$main-text: #000000; //primary
-$main-text-dark-bg: #ffffff;
-$second-text: #15195a;
-$tertiary-text: #78839c;
-$tertiary-text-dark-bg: #e9e9e9;
-$fourth-text: #c0c2cc;
-$fourth-text-inverse: #ebedf4;
+$main-text: var(--main-text); //primary
+$main-text-dark-bg: var(--main-text-dark-bg);
+$second-text: var(--second-text);
+$tertiary-text: var(--tertiary-text);
+$tertiary-text-dark-bg: var(--tertiary-text-dark-bg);
+$fourth-text: var(--fourth-text);
+$fourth-text-inverse: var(--fourth-text-inverse);
 
 $cards-background: var(--cards-background);
 $grey-adm: var(--grey-adm);
 
 // Иконки
-$icons-color: #1a2d82;
+$icons-color: var(--icons-color);
 $icons-background: #f7fbfe;
 
 // Инпуты
@@ -30,7 +30,7 @@ $primary-color: var(--primary-color);
 $primary-color-hover: var(--primary-color-hover);
 $primary-color-active: var(--primary-color-active);
 $primary-color-disabled: var(--primary-color-disabled);
-$content-color: #ffffff;
+$content-color: var(--content-color);
 $primary-color-green: var(--primary-color-green);
 $primary-color-green-hover: var(--primary-color-green-hover);
 $primary-color-green-click: var(--primary-color-green-click);
