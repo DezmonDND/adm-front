@@ -26,4 +26,8 @@
         @include flex;
         color: $primary-color;
     }
+
+    .dm-slider__link {
+        @include dm-icon-color;
+    }
 }

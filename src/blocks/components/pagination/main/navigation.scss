@@ -37,4 +37,8 @@
         color: $primary-color;
         @include flex;
     }
+
+    .dm-navigation__link {
+        @include dm-icon-color;
+    }
 }

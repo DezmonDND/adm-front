@@ -1,7 +1,9 @@
 mixin news-card-without-image(data)
+    - const hasIconClass = data.classIcon ? data.classIcon : ''
+
     a.news-card-without-image(href="/")    
         .news-card-without-image__container 
             .news-card-without-image__content
                 h5(title=`Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника`).news-card-without-image__title Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника
-                img(src="../icons/arrow-right_icon.svg", alt="Стрелка" class='news-card-without-image__icon')
+                img(src="../icons/arrow-right_icon.svg", alt="Стрелка" class=[hasIconClass]).news-card-without-image__icon
             span.news-card-without-image__date 23 сентября 2024

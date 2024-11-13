@@ -1,10 +1,12 @@
 mixin navigation(data)
     .navigation 
-        a.navigation__link-prev
+        - const hasIconClass = data.classIcon ? data.classIcon : '' 
+
+        a(class=[hasIconClass]).navigation__link-prev
             ion-icon(name=`arrow-back-outline` class=`icon`)
         .navigation__pages
             span.navigation__page #{data.first_page}
             span.navigation__page /
             span.navigation__page #{data.end_page}
-        a.navigation__link-next
+        a(class=[hasIconClass]).navigation__link-next
             ion-icon(name=`arrow-forward-outline` class=`icon`)

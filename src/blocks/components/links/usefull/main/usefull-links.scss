@@ -66,6 +66,10 @@
                 height: 24px;
             }
 
+            .dm-usefull-link__icon {
+                @include dm-icon-color;
+            }
+
             .usefull-link__title {
                 @include heading-h5;
             }

@@ -18,10 +18,18 @@ block content
             .news__container
                 +news-card-with-image()
                 .news__list    
-                    +news-card-without-image()
-                    +news-card-without-image()
-                    +news-card-without-image()
-                    +news-card-without-image()                                     
+                    +news-card-without-image({
+                        classIcon: 'dm-card-without-image__icon'
+                    })
+                    +news-card-without-image({
+                        classIcon: 'dm-card-without-image__icon'
+                    })
+                    +news-card-without-image({
+                        classIcon: 'dm-card-without-image__icon'
+                    })
+                    +news-card-without-image({
+                        classIcon: 'dm-card-without-image__icon'
+                    })                                     
         .main-events
             .main-events__container 
                 +main-title({
@@ -29,6 +37,10 @@ block content
                     title: 'Хроника и анонсы событий',
                     link_text: 'Все события'
                 })
+                .dm-filter__btn
+                    +button({ type: 'button', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
+                .dm-calendar__btn
+                    +button({ type: 'button', class: 'button_white dm-calendar__button', iconPosition: 'left', icon: 'calendar-number-outline', text: "Календарь"})                    
                 +filters()
                 +chronicle()                                                       
         .important-links
@@ -38,7 +50,13 @@ block content
                         +main-title({
                             href: '/',
                             title: 'Архив трансляций',
-                            link_text: 'Все видео и фото'
+                            link_text: 'Все видео и фото',
+                            type: 'tabs',
+                            tabs: [
+                                { isActive: true, title: 'Архив трансляций', href: '/' },
+                                { title: 'Фото', href: '/' },
+                                '', 'dm-title-tabs'
+                            ]
                         })
                         +tabs( 
                             [
@@ -51,6 +69,7 @@ block content
                             +navigation({
                                 first_page: '1',
                                 end_page: '2',
+                                classIcon: 'dm-navigation__link'
                                     })
         .solve-problems
             +main-title({
@@ -64,6 +83,9 @@ block content
                 href: '/',
                 title: 'Проекты Думы города',
                 slider: true,
+                sliderIcon: {
+                    classIcon: 'dm-slider__link'
+                }
             })   
             +projects-dm()
         .usefull-links
@@ -77,46 +99,54 @@ block content
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Оплата ЖКХ услуг ',
+                    classIcon: 'dm-usefull-link__icon'
                 })
                 +main-link({
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Виртуальная приемная',
+                    classIcon: 'dm-usefull-link__icon'
                 })
                 +main-link({
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Пособия и налоги',
+                    classIcon: 'dm-usefull-link__icon'
                 })
                 +main-link({
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Расписание общественного транспорта',
+                    classIcon: 'dm-usefull-link__icon'
                 })
                 +main-link({
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Выплаты пенсионерам',
+                    classIcon: 'dm-usefull-link__icon'
                 })
                 +main-link({
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Запись на публичные слушания',
+                    classIcon: 'dm-usefull-link__icon'
                 })
                 +main-link({
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Социальные услуги',
+                    classIcon: 'dm-usefull-link__icon'
                 })
                 +main-link({
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-right_icon.svg',
                     title: 'Работа в России',
+                    classIcon: 'dm-usefull-link__icon'
                 })        

@@ -1,0 +1,47 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.archive-card {
+    border-radius: 12px;
+    background-color: $content-color;
+
+    .archive-card__container {
+        position: relative;
+
+        .archive-card__image {
+            width: 644px;
+            max-height: 362px;
+            border-radius: 12px 12px 0 0;
+            object-fit: cover;
+            object-position: center;
+
+
+        }
+
+        .archive-card__buttton {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background-color: $primary-color-green;
+            border-color: transparent;
+        }
+
+        .archive-card__desc {
+
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 0 0 12px 12px;
+            gap: 8px;
+
+            .archive-card__title {
+                @include lead-4;
+            }
+
+            .archive-card__date {
+                color: $tertiary-text;
+                @include caption-2;
+
+            }
+        }
+    }
+}

@@ -58,6 +58,10 @@
                 width: 24px;
                 height: 24px;
             }
+
+            .dm-card-without-image__icon {
+                @include dm-icon-color;
+            }
         }
 
         .news-card-without-image__date {

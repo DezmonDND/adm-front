@@ -10,11 +10,26 @@
         align-items: center;
         padding: 20px 32px;
 
+        @include respond-to(sm) {
+            position: relative;
+            flex-direction: column;
+            padding: 16px 20px;
+            gap: 16px;
+        }
+
         .event__info {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 8px;
+
+            @include respond-to(sm) {
+                box-sizing: border-box;
+                flex-direction: row;
+                gap: 35px;
+                width: 100%;
+                padding-right: 20px;
+            }
         }
 
         .event__time-block {
@@ -26,12 +41,17 @@
             .event__icon {
                 color: $primary-color;
             }
+
+            .dm-event__icon {
+                @include dm-icon-color;
+            }
         }
 
         .event__location {
             display: flex;
             align-items: center;
             gap: 8px;
+            text-wrap: nowrap;
             @include caption-2;
 
             .event__place {}
@@ -49,11 +69,21 @@
             width: 100%;
             margin: 0 20px 0 64px;
             @include text-2;
+
+            @include respond-to(sm) {
+                margin: 0;
+            }
         }
 
         .event__number {
             color: $tertiary-text;
             @include caption-1;
+
+            @include respond-to(sm) {
+                position: absolute;
+                top: 16px;
+                right: 20px;
+            }
         }
     }
 }
