@@ -1,0 +1,71 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.header-visibility.active {
+    display: block;
+  }
+  
+  .header-visibility-container {
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-visibility-elems {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .header-visibility-elem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+    color:$main-text;
+  }
+
+    
+  .header-visibility-elem span {
+    font-size: 32px;
+  }
+  
+  
+  .header-visibility-close {
+    color: var(--main-text);
+  }
+  .header-visibility-elem-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-visibility-elem-right span {
+    cursor: pointer;
+  }
+  
+  .header-visibility-elem-right span, .header-visibility-elem-left span {
+    letter-spacing: 0em;
+    line-height: 1.2;
+  }
+  
+  .active-param {
+    position: relative;
+  }
+  
+  .active-param::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: var(--button-hover);
+    border-radius: 50%;
+  }

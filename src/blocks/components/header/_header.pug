@@ -9,9 +9,11 @@ include ../../libs/inputs/_inputs.pug
 include ../login/main/login
 include ../login/code/login-code
 include ../login/email/login-email
+include ./visibility/visibility
 
 mixin header(sort)
     header.header 
+        +visibility()
         .header__top-content
             .header__top-links
                 +header-links([
