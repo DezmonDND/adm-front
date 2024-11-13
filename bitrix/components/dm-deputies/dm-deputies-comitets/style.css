@@ -1,0 +1,72 @@
+/*** Finish - Title ***/
+.dm-deputies-comitets {
+  padding-top: 48px;
+}
+@media (max-width: 768px) {
+  .dm-deputies-comitets {
+    padding-top: 24px;
+  }
+}
+
+.dm-deputies-comitets__block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .dm-deputies-comitets__block {
+    gap: 16px;
+  }
+}
+
+.dm-deputies-comitets__content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+@media (max-width: 768px) {
+  .dm-deputies-comitets__content {
+    gap: 24px;
+  }
+}
+
+.dm-deputies-comitets__name {
+  color: #000000;
+  font-weight: 500 !important;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+@media (max-width: 992px) {
+  .dm-deputies-comitets__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .dm-deputies-comitets__name {
+    font-weight: 600 !important;
+  }
+}
+
+.dm-deputies-comitets__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.dm-deputies-comitets__list .dm-comitet-elem {
+  max-width: 420px;
+}
+@media (max-width: 768px) {
+  .dm-deputies-comitets__list {
+    gap: 8px;
+  }
+  .dm-deputies-comitets__list .dm-comitet-elem {
+    max-width: unset;
+  }
+}
+@media (max-width: 500) {
+  .dm-deputies-comitets__list {
+    flex-direction: column;
+  }
+}
