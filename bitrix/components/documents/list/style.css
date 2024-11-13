@@ -6,13 +6,13 @@
 }
 .doc-list .doc-line {
   padding: 20px;
-  background: #fafafa;
+  background: var(--grey-adm);
   border-radius: 12px;
   color: #15195a;
   text-decoration: none;
 }
 .doc-list .doc-line:hover {
-  background: #f2f3f5;
+  background: var(--services-hover);
 }
 .doc-list .doc-line .ident {
   margin-bottom: 12px;
