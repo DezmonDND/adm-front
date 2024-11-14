@@ -10532,8 +10532,15 @@ td {
 
 td:hover {
   background-color: var(--event-color);
-  border: 1px solid var(--services-hover);
+  border: 1px solid var(--event-color-hover);
   border-radius: 4px;
+  color: #000448;
+}
+
+.td_active {
+  background-color: var(--event-color);
+  border-radius: 4px;
+  color: #000448;
 }
 
 .today {

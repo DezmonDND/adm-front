@@ -63,8 +63,15 @@ td {
 
 td:hover {
     background-color: $event-color;
-    border: 1px solid $services-hover;
+    border: 1px solid $event-color-hover;
     border-radius: 4px;
+    color: $main-text;
+}
+
+.td_active {
+    background-color: $event-color;
+    border-radius: 4px;
+    color: $main-text;
 }
 
 .today {
