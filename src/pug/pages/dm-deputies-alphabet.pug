@@ -9,9 +9,11 @@ block content
                 { sort: '', href: '/', text: 'Заместители'},
             ],
             )
-        +title({
-            title: 'Депутаты'
-        })
+        .dm-deputies__title-container
+            +title({
+                title: 'Депутаты'
+            })
+            +button({ type: 'link', href:'/',  class: 'button_white button_white_no-border' , iconPosition: 'left', icon: 'person', text: 'Узнай, кто твой депутат' })
         +tabs( 
             [
                 { isActive: true, title: 'По алфавиту', href: '/' },

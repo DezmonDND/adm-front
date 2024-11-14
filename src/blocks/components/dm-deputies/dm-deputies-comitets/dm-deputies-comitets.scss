@@ -2,17 +2,17 @@
 
 .dm-deputies-comitets {
     padding-top: 48px;
-
-    @media (max-width:768px) {
+    @include respond-to(md) {
         padding-top: 24px;
     }
+   
 }
 
 .dm-deputies-comitets__block {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    @media (max-width:768px) {
+    @include respond-to(md) {
         gap: 16px;
     }
 }
@@ -21,7 +21,8 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    @media (max-width:768px) {
+    
+    @include respond-to(md) {
         gap: 24px;
     }
 }
@@ -30,7 +31,7 @@
     color: $main-text;
     font-weight: 500 !important;
     @include heading-h2();
-    @media (max-width:768px) {
+    @include respond-to(md) {
         font-weight: 600 !important;
     }
 }
@@ -42,13 +43,40 @@
     .dm-comitet-elem {
         max-width: 420px;
     }
-    @media (max-width:768px) {
+    @include respond-to(md) {
         gap: 8px;
         .dm-comitet-elem {
             max-width: unset;
         }
     }
-    @media (max-width:500) {
-       flex-direction: column;
+    @include respond-to(sm) {
+        .dm-comitet-elem {
+            width: 100%;
+        }
+        flex-direction: column;
     }
+}
+
+.dm-deputies__title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-to(sm) {
+        
+        flex-direction: column;
+    }
+
+}
+
+.dm-deputies__title-container .button{
+   width: 100%;
+   max-width: 265px;
+   box-sizing: border-box;
+   @include respond-to(sm) {
+        
+    max-width: 205px;
+}
+}
+.dm-deputies__title-container .button span {
+    font-weight: 600;
 }
