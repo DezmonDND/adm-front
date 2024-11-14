@@ -3,14 +3,21 @@ extends ../layout
 block content
     main.main
         +header-services()
-        .news 
-            .news__container
-                +news-card-with-image()
-                .news__list    
-                    +news-card-without-image({})
-                    +news-card-without-image({})
-                    +news-card-without-image({})
-                    +news-card-without-image({})
+        +news-top({
+            cards: [
+                {
+                    icon: 'arrow-forward-outline', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                }
+            ]})
         .full-width-container
             .full-width-background
                 .full-width-content            
@@ -448,7 +455,7 @@ block content
                     +people-care-card({
                         title: 'Лицам с ограниченными возможностями здоровья',
                         image: 'hands-services.svg',
-                        background: 'linear-gradient(#8eec87 0%, #447ecb 100%)',
+                        background: 'linear-gradient(#8eec87 0%, #447ecb 100%)' 
                     })
                     +people-care-card({
                         title: 'Бюджет для граждан Сургута',
@@ -458,7 +465,7 @@ block content
                     +people-care-card({
                         title: 'Национальные проекты',
                         image: 'people_icon-services.svg',
-                        background: 'linear-gradient(#8edcd6 0%, #1679b7 100%)',
+                        background: 'linear-gradient(#8edcd6 0%, #1679b7 100%)' 
                     }) 
                 .people-care__slider
                     +slider({})    
@@ -487,53 +494,7 @@ block content
                                 .main-services__buttons-container
                                     +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: 'getValues()', text: 'Электронное обращение' })
                                     +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: 'getValues()', text: 'Личный прием' })       
-        .important-links
-            +main-title({
-                href: '/',
-                title: 'Самое важное',
-            })
-            .important-links__container
-                +main-link({
-                    class: 'important',
-                    href: '/',
-                    icon: 'circle_icon_main.svg',
-                    title: 'Лицам с ограниченными возможностями',
-                })
-                +main-link({
-                    class: 'important',
-                    href: '/',
-                    icon: 'arrow-in-cub_icon_main.svg',
-                    title: 'Афиша на Культуре.РФ',
-                })
-                +main-link({
-                    class: 'important',
-                    href: '/',
-                    icon: 'arrow-in-cub_icon_main.svg',
-                    title: 'Инициативые проекты',
-                })
-                +main-link({
-                    class: 'important',
-                    href: '/',
-                    icon: 'arrow-in-cub_icon_main.svg',
-                    title: 'Бюджет для граждан Сургута',
-                })
-                +main-link({
-                    class: 'important',
-                    href: '/',
-                    icon: 'circle_icon_main.svg',
-                    title: 'Налоговая политика',
-                })
-                +main-link({
-                    class: 'important',
-                    href: '/',
-                    icon: 'arrow-in-cub_icon_main.svg',
-                    title: 'Национальные проекты',
-                })
-            .usefull-links__navigation
-                +navigation({
-                    first_page: '1',
-                    end_page: '7',
-                        })
+        +important-links()
         +main-title({
             title: 'Помогите городу стать лучше',
             link_text: 'Все опросы',
@@ -592,57 +553,55 @@ block content
                 img.important-inf__banner(src='../img/banner.png' alt='Баннер') 
                 img.important-inf__banner(src='../img/banner.png' alt='Баннер')
                 img.important-inf__banner(src='../img/banner.png' alt='Баннер')        
-        .usefull-links
-            +main-title({
-                href: '/',
-                title: 'Полезные ссылки',
-            })
-            .usefull-links__container
-                +main-link({
+        +usefull-links({
+            links: [
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Оплата ЖКХ услуг ',
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Виртуальная приемная',
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Пособия и налоги',
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Расписание общественного транспорта',
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Выплаты пенсионерам',
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Запись на публичные слушания',
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Социальные услуги',
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Работа в России',
-                })        
+                }
+            ]
+        })

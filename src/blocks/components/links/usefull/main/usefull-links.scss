@@ -62,15 +62,16 @@
 
 
             .usefull-link__icon {
-                width: 24px;
-                height: 24px;
+                color: $primary-color;
+                font-size: 24px;
             }
 
             .dm-usefull-link__icon {
-                @include dm-icon-color;
+                color: $primary-color-green;
             }
 
             .usefull-link__title {
+                width: calc(100% - 32px);
                 @include heading-h5;
             }
         }

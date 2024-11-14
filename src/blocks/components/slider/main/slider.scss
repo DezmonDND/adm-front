@@ -28,6 +28,6 @@
     }
 
     .dm-slider__link {
-        @include dm-icon-color;
+        color: $primary-color-green;
     }
 }

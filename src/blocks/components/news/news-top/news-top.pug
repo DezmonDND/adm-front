@@ -4,12 +4,14 @@ include ../../slider/_slider
 include ../../title/main/_main-title
 include ../../tabs/main/_tabs
 
-mixin news-top()
+mixin news-top(data)
     .news 
         .news__container
             +news-card-with-image()
-            .news__list    
-                +news-card-without-image({})
-                +news-card-without-image({})
-                +news-card-without-image({})
-                +news-card-without-image({})
+            .news__list
+                each card in data.cards    
+                    +news-card-without-image({
+                        icon: card.icon,
+                        classIcon: card.classIcon,
+                    })
+

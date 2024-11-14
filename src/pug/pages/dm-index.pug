@@ -14,22 +14,26 @@ block content
                     { title: 'Реализация нацпроектов', href: '/' },
                     { title: 'Деятельность администрации', href: '/' },
                     { title: 'Областная дума', href: '/' },
-                ])
-            .news__container
-                +news-card-with-image()
-                .news__list    
-                    +news-card-without-image({
-                        classIcon: 'dm-card-without-image__icon'
-                    })
-                    +news-card-without-image({
-                        classIcon: 'dm-card-without-image__icon'
-                    })
-                    +news-card-without-image({
-                        classIcon: 'dm-card-without-image__icon'
-                    })
-                    +news-card-without-image({
-                        classIcon: 'dm-card-without-image__icon'
-                    })                                     
+                ]) 
+            +news-top({
+                cards: [
+                    {
+                        icon: 'arrow-forward-outline',
+                        classIcon: 'dm-card-without-image__icon', 
+                    },
+                    {
+                        icon: 'arrow-forward-outline', 
+                        classIcon: 'dm-card-without-image__icon',
+                    },
+                    {
+                        icon: 'arrow-forward-outline',
+                        classIcon: 'dm-card-without-image__icon', 
+                    },
+                    {
+                        icon: 'arrow-forward-outline', 
+                        classIcon: 'dm-card-without-image__icon',
+                    }
+                ]})                                       
         .main-events
             .main-events__container 
                 +main-title({
@@ -88,65 +92,63 @@ block content
                 }
             })   
             +projects-dm()
-        .usefull-links
-            +main-title({
-                href: '/',
-                title: 'Полезные ссылки',
-            })
-            .usefull-links__container
-                +main-link({
+        +usefull-links({
+            links: [
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Оплата ЖКХ услуг ',
                     classIcon: 'dm-usefull-link__icon'
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Виртуальная приемная',
                     classIcon: 'dm-usefull-link__icon'
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Пособия и налоги',
                     classIcon: 'dm-usefull-link__icon'
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Расписание общественного транспорта',
                     classIcon: 'dm-usefull-link__icon'
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Выплаты пенсионерам',
                     classIcon: 'dm-usefull-link__icon'
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Запись на публичные слушания',
                     classIcon: 'dm-usefull-link__icon'
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Социальные услуги',
                     classIcon: 'dm-usefull-link__icon'
-                })
-                +main-link({
+                },
+                {
                     class: 'usefull',
                     href: '/',
-                    icon: 'arrow-right_icon.svg',
+                    icon: 'arrow-forward-outline',
                     title: 'Работа в России',
                     classIcon: 'dm-usefull-link__icon'
-                })        
+                }
+            ]
+        })           
