@@ -811,10 +811,6 @@ body.tmp-duma {
   height: 60px;
 }
 
-.search-header {
-  max-width: 693px;
-}
-
 @media screen and (width: 1000px) {
   .search .search__button_l {
     width: 48px;
@@ -1637,6 +1633,9 @@ body.tmp-duma {
     font-size: 10px;
     line-height: 14px;
   }
+}
+.button__eye .icon {
+  font-size: 20px;
 }
 .button__eye:hover {
   border-color: transparent;

@@ -109,6 +109,9 @@
     line-height: 14px;
   }
 }
+.button__eye .icon {
+  font-size: 20px;
+}
 .button__eye:hover {
   border-color: transparent;
   background-color: transparent;
