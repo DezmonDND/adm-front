@@ -97,6 +97,7 @@
     color: $main-text;
     border-color: transparent;
     background-color: transparent;
+    @include lead-6;
 
     &:hover {
         border-color: transparent;
