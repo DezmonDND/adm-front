@@ -52,7 +52,9 @@
   .header-visibility-elem span {
     @include text-2();
   }
-  
+  .header-visibility-close {
+    cursor: pointer;
+  }
   .header-visibility-close ion-icon {
     font-size: 28px;
     color: #004CC4;
@@ -145,6 +147,7 @@
     text-decoration: underline;
     text-underline-offset: 2px;
     padding-bottom: 8px;
+    cursor: pointer;
   }
 
   .theme-dark {
@@ -158,6 +161,7 @@
     border: 1px solid black;
     text-decoration: underline;
     text-underline-offset: 2px;
+    cursor: pointer;
   }
 
   .theme-blue {
@@ -170,6 +174,7 @@
     text-decoration: underline;
     text-underline-offset: 2px;
     padding-bottom: 8px;
+    cursor: pointer;
   }
 
   .header-visibility__top-content {
