@@ -1,6 +1,7 @@
 
 <div class="dm-meeting">
   <div class="dm-meeting__content">
+    <div class="dm-meeting__title"><span>Оперативная информация о результатах рассмотрения вопросов</span></div>
     <div class="dm-meeting__info">
       <div class="dm-meeting__left">
         <div class="dm-meeting__addr"> <span>Место проведения</span><span>Зал заседаний Думы города (уд. Восход, 4)</span></div>

@@ -189,3 +189,12 @@
         gap: 12px;
     }
 }
+
+.dm-meeting__title {
+    padding-bottom: 24px;
+}
+
+.dm-meeting__title span{
+    color: $tertiary-text;
+    @include lead-5();
+}
