@@ -1,0 +1,106 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.calendar-dm {
+    background-color: $cards-background;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+
+    .calendar-dm-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .calendar-dm-date {
+            font-weight: 600;
+            margin: 0;
+            @include caption-2;
+        }
+
+        .calendar-dm-button {
+            border: none;
+            background-color: transparent;
+            color: $primary-color-green;
+
+            &:hover {
+                border: none;
+                background-color: transparent;
+                color: $primary-color-green-hover;
+            }
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    @include lead-3;
+}
+
+th {
+    color: $fourth-text;
+}
+
+td {
+    color: $tertiary-text;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: $event-color;
+    border: 1px solid $event-color-hover;
+    border-radius: 4px;
+    color: $main-text;
+}
+
+.td_active {
+    background-color: $event-color;
+    border-radius: 4px;
+    color: $main-text;
+}
+
+.today {
+    background-color: #A78818;
+    color: $content-color;
+    border-radius: 4px;
+}
+
+.today_active {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 6px;
+        height: 6px;
+        background-color: #745e0e;
+        border-radius: 50%;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .calendar {
+        width: 100%;
+        max-width: unset;
+    }
+}

@@ -1,12 +1,17 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma .news-card-without-image {
+    &:nth-child(n+4) {
+        display: none;
+    }
+}
+
 .news-card-without-image {
     display: flex;
     background-color: $cards-background;
     border-radius: 12px;
     text-decoration: none;
-    color: #000000;
-    max-width: 420px;
+    color: $main-text;
     width: 100%;
     padding: 20px 20px;
     box-sizing: border-box;
@@ -19,7 +24,7 @@
         background-color: $services-active;
     }
 
-    @media screen and (max-width: 1000px) {
+    @include respond-to(md) {
         min-width: 360px;
         padding: 16px;
 
@@ -28,7 +33,7 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @include respond-to(sm) {
         max-width: none;
         min-width: auto;
     }
@@ -37,8 +42,9 @@
         display: flex;
         flex-direction: column;
         gap: 29px;
+        width: 100%;
 
-        @media screen and (max-width: 1000px) {
+        @include respond-to(md) {
             gap: 22px;
         }
 
@@ -47,21 +53,23 @@
             gap: 20px;
 
             .news-card-without-image__title {
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+                width: calc(100% - 44px);
+                @include visible-lines(3);
                 @include heading-h5;
             }
 
             .news-card-without-image__icon {
-                width: 24px;
-                height: 24px;
+                font-size: 24px;
+                color: $primary-color;
+            }
+
+            .dm-card-without-image__icon {
+                color: $primary-color-green;
             }
         }
 
         .news-card-without-image__date {
-            color: rgba(133, 140, 156, 1);
+            color: $tertiary-text;
             @include caption-3;
         }
     }

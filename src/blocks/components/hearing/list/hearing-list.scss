@@ -1,6 +1,14 @@
 @use '../../../../assets/styles/vars.scss' as *;
 @use '../base.scss' as *;
 
+body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-title {
+    display: none;
+}
+
+body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-desc {
+    color: $tertiary-text;
+}
+
 .hearing-list {
     padding: 40px 0 0 0;
 
@@ -43,22 +51,18 @@
     }
 
     &-title {
-        span {
-            display: -webkit-box;
-            -webkit-line-clamp: 5;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
         height: 100px;
         display: block;
         overflow: hidden;
 
+        span {
+            @include visible-lines(5);
+            @include lead-4;
+        }
+
         @media (max-width: 1000px) {
             height: 104px
         }
-
     }
 
     &-content {
@@ -83,17 +87,24 @@
     &-labels {
         display: flex;
 
+
         &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .hearing-item-span-title {
+                color: $tertiary-text;
+                @include caption-3;
+            }
+
+            .hearing-item-span-desc {
+                @include lead-4;
+            }
+
             &:first-child {
                 padding-right: 24px; // Применить отступ только для первого элемента
             }
-        }
-
-        span {
-            color: $tertiary-text;
-            font-weight: 300;
-            display: block;
-            @include text-3;
         }
     }
 
@@ -103,20 +114,15 @@
         justify-content: center;
         border-radius: 8px;
         overflow: hidden;
+
+        .hearing-card_button {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
     }
 
     &-bg {
         @include img-bg();
-    }
-
-    &-play {
-        position: absolute;
-        top: 157px;
-        @include play(48);
-
-        @media (max-width: 1000px) {
-            top: 78px;
-            @include play(32);
-        }
     }
 }

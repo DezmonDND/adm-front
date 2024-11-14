@@ -4,5 +4,8 @@ mixin main-link(data)
     - const hasTitle = data.class ? `${data.class}-link__title` : ''
 
     a(href=data.href class=[hasClass])
-        img(src=`../icons/${data.icon}` alt='Иконка' class=[hasIcon])
+        if data.icon
+            ion-icon(name=`${data.icon}` class=`icon ${hasIcon}`)
+        if data.svg_icon
+            img(src=`../icons/${data.svg_icon}` alt='Иконка' class=[hasIcon])     
         span(class=[hasTitle]) #{data.title} 
