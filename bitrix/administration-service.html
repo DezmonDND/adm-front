@@ -1,0 +1,215 @@
+<!DOCTYPE html >
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="./css/template-styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/other.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="header__top-content">
+        <div class="header__top-links">
+          <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+          </div>
+          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+          </div>
+        </div>
+        <div class="header__buttons"> <a class="header__eye-link" href="/"><span class="header__eye-link-title">Версия для слабовидящих</span></a>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()"><span class="button_span">Войти</span>
+          </button>
+        </div>
+      </div>
+      <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+          <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+        <form class="search search-header">
+          <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+          <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
+        </form>
+        <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
+        </div>
+        <button class="button button_burger button_size_xs button_without-text  " onclick="anotherFunction()">
+          <ion-icon class="icon" name="menu-outlined_icon.svg"></ion-icon>
+        </button>
+      </div>
+    </header>
+    <div class="overlay hidden"></div>
+    <div class="login hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideLogin()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Введите номер телефона</span></div>
+            <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input    " placeholder="Номер телефона" value=""/>
+          </div>
+          <div class="login__content-main__confirm-standart">
+            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            </button>
+          </div>
+          <div class="login__content-main__confirm-delim"> 
+            <div class="delim-line"></div><span> или </span>
+            <div class="delim-line"> </div>
+          </div>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="login login-code hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideCode()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Введите код</span></div>
+            <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input    " placeholder="Код" value=""/>
+          </div>
+          <!-- Если код неверный то инпут меняется на этот-->
+          <div class="login__content-main__input wrong-code">
+            <input class="input    " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="login login-email hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideEmail()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Войти по почте</span></div>
+            <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input    " placeholder="Электронная почта" value=""/>
+          </div>
+          <div class="login__content-main__confirm-standart">
+            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            </button>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"><img class="breadcrumbs__icon" src="/local/templates/surgut/icons/arrow-left_link-icon.svg" alt="Стрелка"/></a>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Администрация</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Услуги населению</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">ЗАГС</a><span class="span">/</span><span class="breadcrumb_link">Услуги ЗАГСа</span>
+        </div>
+      </div>
+      <div class="title"> 
+        <div class="title__container"> 
+          <h2 class="title__name">Услуги ЗАГСа</h2>
+        </div>
+      </div>
+      <div class="service-detail">
+        <div class="toggle-container service-info">
+          <div class="toggle-header">Информация по услуге</div>
+          <div class="toggle-content">
+            <button class="button button_blue button_radius button_tag-label button_size_s   button_without-event"><span class="button_span">Государственная</span>
+            </button><br/>Государственная регистрация расторжения брака производится органом, осуществляющим государственную регистрацию актов гражданского состояния, посредством составления соответствующей записи акта гражданского состояния, на основании которой выдается свидетельство о государственной регистрации акта гражданского состояния.
+          </div>
+        </div>
+        <div class="toggle-container service-method">
+          <div class="toggle-header">Способ получения услуги</div>
+          <div class="toggle-content">
+            <div class="service-method-line">
+              <div class="method-item"><span class="label">Подача заявлений</span>Лично или в электронном виде</div>
+              <div class="method-item"><span class="label">Получения результата</span>Лично завявителем</div>
+            </div>
+          </div>
+          <div class="toggle-footer">
+            <hr/>
+            <div class="short-filelist"><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a>
+            </div>
+          </div>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle-header">Контакты</div>
+          <div class="toggle-content service-contacts">
+            <div class="contacts-item"><span class="label">Структурное подразделение </span>Управление ЗАГС Администрации г. Сургута</div>
+            <div class="contacts-item"><span class="label">Адрес </span>г.Сургут, бульвар Свободы, д.5, кабинет №238 • 8 (3462) 95-09-44</div>
+            <div class="contacts-item"><span class="label">Прием граждан </span>Cреда, четверг с 14.00 до 17.00<br/>пятница с 09.00 до 13.00</div>
+          </div>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle-header">Оплата услуги</div>
+          <div class="toggle-content">За предоставление услуги, включая выдачу свидетельств, до подачи заявления необходимо оплатить государственную пошлину:
+            <ul>
+              <li>при взаимном согласии супругов, не имеющих общих несовершеннолетних детей, - 650 рублей с каждого из супругов;</li>
+              <li>при расторжении брака в судебном порядке - 650 рублей с каждого из супругов;</li>
+              <li>при расторжении брака по заявлению одного из супругов в случае, если другой супруг признан судом безвестно отсутствующим, недееспособным или осужденным за совершение преступления к лишению свободы на срок свыше трех лет, - 350 рублей.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle-header">Сроки предоставления услуги</div>
+          <div class="toggle-content">Государственная регистрация расторжения брака на основании решения суда и выдача заявителю соответствующего свидетельства о государственной регистрации акта гражданского состояния производятся в день обращения заявителя при условии предъявления всех оформленных надлежащим образом документов.<br/><br/><br/>Государственная регистрация расторжения брака и выдача заявителю свидетельства о расторжении брака на основании заявления о расторжении брака по взаимному согласию супругов, не имеющих общих детей, не достигших совершеннолетия (
+            <u><b>статья 33</b></u> Федерального закона N 143-ФЗ), или по заявлению одного из супругов, предусмотренных статьей 34 Федерального закона N 143-ФЗ, производится по истечении месяца со дня подачи соответствующего заявления в орган, предоставляющий государственную услугу.
+          </div>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle-header">Основание предоставляемой услуги</div>
+          <div class="toggle-footer">
+            <div class="short-filelist"><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_container-top">
+          <div class="footer__header"> 
+            <div class="footer__header-links"><a class="footer__main-links" href="/"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                <div class="footer__header-links__block"> <span class="footer__title">Администрация Сургута</span><span class="footer__link">Официальный портал</span></div></a>
+              <div class="footer__social-links"><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/vk-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/ok-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/tg-footer_icon.svg"/></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
+        <div class="footer__categories">
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">О Сургуте </h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Сургут сегодня            </a><a class="footer__categorie-link" href="/">История Сургута            </a><a class="footer__categorie-link" href="/">Официальные символы            </a><a class="footer__categorie-link" href="/">Устав Сургута            </a><a class="footer__categorie-link" href="/">Генплан            </a><a class="footer__categorie-link" href="/">Стратегия развития            </a><a class="footer__categorie-link" href="/">Инвестиционный паспорт Сургута            </a><a class="footer__categorie-link" href="/">Инвестору            </a><a class="footer__categorie-link" href="/">Общественные советы города Сургута            </a><a class="footer__categorie-link" href="/">Ими гордится Сургут            </a><a class="footer__categorie-link" href="/">Справочная информация            </a><a class="footer__categorie-link" href="/">Интерактивные карты Сургута            </a><a class="footer__categorie-link" href="/">Градостроительная деятельность            </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Городская власть</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Глава города             </a><a class="footer__categorie-link" href="/">Дума города             </a><a class="footer__categorie-link" href="/">Администрация             </a><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a><a class="footer__categorie-link" href="/">Законодательная карта             </a><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a><a class="footer__categorie-link" href="/">Государственные органы             </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Документы</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Важные документы для горожан            </a><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a><a class="footer__categorie-link" href="/">Решения Думы города            </a><a class="footer__categorie-link" href="/">Постановления Главы города            </a><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a><a class="footer__categorie-link" href="/">Постановления Администрации города            </a><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Муниципальные программы            </a><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Категория</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

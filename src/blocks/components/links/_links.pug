@@ -2,11 +2,10 @@ mixin main-link(data)
     - const hasClass = data.class ? `${data.class}-link` : ''
     - const hasIcon = data.class ? `${data.class}-link__icon` : ''
     - const hasTitle = data.class ? `${data.class}-link__title` : ''
-    - const hasIconClass = data.classIcon ? data.classIcon : '' 
 
     a(href=data.href class=[hasClass])
         if data.icon
-            ion-icon(name=`${data.icon}` class=`icon ${hasIcon} ${hasIconClass}`)
+            ion-icon(name=`${data.icon}` class=`icon ${hasIcon}`)
         if data.svg_icon
-            img(src=`../icons/${data.svg_icon}` alt='Иконка' class=[hasIcon, hasIconClass])     
+            img(src=`../icons/${data.svg_icon}` alt='Иконка' class=[hasIcon])     
         span(class=[hasTitle]) #{data.title} 

@@ -1,8 +1,0 @@
-mixin project-dm-card(data)
-    a(href='/' style=`background: ${data.bg}`).project-dm-card
-        .project-dm-card__container
-            .project-dm-card__titles
-                h1.project-dm-card__title #{data.title}
-                if data.span
-                    span.project-dm-card__span #{data.span}
-            span.project-dm-card__desc #{data.desc}

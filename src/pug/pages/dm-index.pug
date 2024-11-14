@@ -2,38 +2,36 @@ extends ../dm-layout
 
 block content
     main.main
-        +main-title({
-            href: '/',
-            title: 'Главные новости',
-            link_text: 'Все новости',
-            })
-        .news.dm-news 
-            +tabs( 
-                [
-                    { isActive: true, title: 'Самые важные', href: '/' },
-                    { title: 'Реализация нацпроектов', href: '/' },
-                    { title: 'Деятельность администрации', href: '/' },
-                    { title: 'Областная дума', href: '/' },
-                ]) 
-            +news-top({
-                cards: [
-                    {
-                        icon: 'arrow-forward-outline',
-                        classIcon: 'dm-card-without-image__icon', 
-                    },
-                    {
-                        icon: 'arrow-forward-outline', 
-                        classIcon: 'dm-card-without-image__icon',
-                    },
-                    {
-                        icon: 'arrow-forward-outline',
-                        classIcon: 'dm-card-without-image__icon', 
-                    },
-                    {
-                        icon: 'arrow-forward-outline', 
-                        classIcon: 'dm-card-without-image__icon',
-                    }
-                ]})                                       
+        +news-top({
+            title: {
+                href: '/',
+                title: 'Главные новости',
+                link_text: 'Все новости',
+                },
+            tabs: [
+                { isActive: true, title: 'Самые важные', href: '/' },
+                { title: 'Реализация нацпроектов', href: '/' },
+                { title: 'Деятельность администрации', href: '/' },
+                { title: 'Областная дума', href: '/' },
+            ]  ,  
+            cards: [
+                {
+                    icon: 'arrow-forward-outline',
+                    classIcon: 'dm-card-without-image__icon', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                    classIcon: 'dm-card-without-image__icon',
+                },
+                {
+                    icon: 'arrow-forward-outline',
+                    classIcon: 'dm-card-without-image__icon', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                    classIcon: 'dm-card-without-image__icon',
+                }
+            ]})                                       
         .main-events
             .main-events__container 
                 +main-title({
@@ -73,7 +71,6 @@ block content
                             +navigation({
                                 first_page: '1',
                                 end_page: '2',
-                                classIcon: 'dm-navigation__link'
                                     })
         .solve-problems
             +main-title({
@@ -82,7 +79,7 @@ block content
             })   
             .solve-problems__container
                 img.solve-problems__banner(src='../img/banner_1.png' alt='Баннер')                                  
-        .important-inf
+        .main-people-care 
             +main-title({
                 href: '/',
                 title: 'Проекты Думы города',
@@ -91,7 +88,28 @@ block content
                     classIcon: 'dm-slider__link'
                 }
             })   
-            +projects-dm()
+            .main-people-care__container
+                .main-people-care__card-list 
+                    +people-care-card({
+                        title: 'ДУМАющий Сургут',
+                        logo: true,
+                        background: 'people-care-card_bg-dm-1',
+                        desc: 'совместный проект «Сургутской трибуны» и Думы города' 
+                    })
+                    +people-care-card({
+                        title: 'Видео проекты',
+                        logo: true,
+                        background: 'people-care-card_bg-dm-2',
+                        desc: 'совместный проект «Сургутской трибуны» и Думы города' 
+                    })
+                    +people-care-card({
+                        title: 'Опросы',
+                        logo: true,
+                        background: 'people-care-card_bg-dm-3',
+                        desc: 'совместный проект «Сургутской трибуны» и Думы города'  
+                    }) 
+                .people-care__slider
+                    +slider({}) 
         +usefull-links({
             links: [
                 {
@@ -99,56 +117,48 @@ block content
                     href: '/',
                     icon: 'arrow-forward-outline',
                     title: 'Оплата ЖКХ услуг ',
-                    classIcon: 'dm-usefull-link__icon'
                 },
                 {
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-forward-outline',
                     title: 'Виртуальная приемная',
-                    classIcon: 'dm-usefull-link__icon'
                 },
                 {
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-forward-outline',
                     title: 'Пособия и налоги',
-                    classIcon: 'dm-usefull-link__icon'
                 },
                 {
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-forward-outline',
                     title: 'Расписание общественного транспорта',
-                    classIcon: 'dm-usefull-link__icon'
                 },
                 {
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-forward-outline',
                     title: 'Выплаты пенсионерам',
-                    classIcon: 'dm-usefull-link__icon'
                 },
                 {
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-forward-outline',
                     title: 'Запись на публичные слушания',
-                    classIcon: 'dm-usefull-link__icon'
                 },
                 {
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-forward-outline',
                     title: 'Социальные услуги',
-                    classIcon: 'dm-usefull-link__icon'
                 },
                 {
                     class: 'usefull',
                     href: '/',
                     icon: 'arrow-forward-outline',
                     title: 'Работа в России',
-                    classIcon: 'dm-usefull-link__icon'
                 }
             ]
         })           

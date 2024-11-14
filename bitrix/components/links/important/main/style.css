@@ -1,0 +1,94 @@
+/*** Finish - Title ***/
+.important-links {
+  margin-bottom: 20px;
+}
+@media (max-width: 1000px) {
+  .important-links {
+    margin-bottom: 0;
+  }
+}
+.important-links .usefull-links__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 21px 0 26px;
+}
+.important-links .important-links__container {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  gap: 24px;
+  padding: 0 0 31px;
+  justify-content: center;
+  margin-top: 4px;
+}
+@media (max-width: 1000px) {
+  .important-links .important-links__container {
+    gap: 8px;
+    margin-top: 3px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .important-links .important-links__container {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+.important-links .important-links__container .important-link {
+  background-color: var(--cards-background);
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.important-links .important-links__container .important-link:hover {
+  color: var(--primary-color-hover);
+}
+.important-links .important-links__container .important-link:active {
+  color: var(--primary-color-active);
+}
+@media (max-width: 1000px) {
+  .important-links .important-links__container .important-link {
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+  .important-links .important-links__container .important-link:nth-child(n+4) {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .important-links .important-links__container .important-link {
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+  .important-links .important-links__container .important-link:nth-child(n+3) {
+    display: none;
+  }
+}
+.important-links .important-links__container .important-link .important-link__icon {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 1000px) {
+  .important-links .important-links__container .important-link .important-link__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.important-links .important-links__container .important-link .important-link__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+@media (max-width: 992px) {
+  .important-links .important-links__container .important-link .important-link__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

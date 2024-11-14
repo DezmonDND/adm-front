@@ -85,13 +85,9 @@
 @use '../../blocks/components/honor-board/board-list/board-list.scss';
 @use '../../blocks/components/citizens/citizen-card/citizen-card.scss';
 @use '../../blocks/components/citizens/citizens-list/citizens-list.scss';
-@use '../../blocks/components/news/dm-news/dm-news.scss';
 @use '../../blocks/components/chronicle/main/chronicle.scss';
 @use '../../blocks/components/chronicle/calendar/calendar-dm.scss';
-@use '../../blocks/components/archive-dm/main/archive-dm.scss';
-@use '../../blocks/components/projects-dm/main/projects-dm.scss';
-@use '../../blocks/components/projects-dm/project-dm-card/project-dm-card.scss';
-@use '../../blocks/components/archive-dm/archive-card/archive-card.scss';
+@use '../../blocks/components/hearing/archive-dm/archive-dm.scss';
 
 * {
     font-family: 'Inter', sans-serif;

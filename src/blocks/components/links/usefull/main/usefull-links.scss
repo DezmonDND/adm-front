@@ -1,5 +1,9 @@
 @use '../../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma .usefull-links .usefull-links__container .usefull-link__icon {
+    color: $primary-color-green;
+}
+
 .usefull-links {
     margin-top: 50px;
 
@@ -64,10 +68,6 @@
             .usefull-link__icon {
                 color: $primary-color;
                 font-size: 24px;
-            }
-
-            .dm-usefull-link__icon {
-                color: $primary-color-green;
             }
 
             .usefull-link__title {

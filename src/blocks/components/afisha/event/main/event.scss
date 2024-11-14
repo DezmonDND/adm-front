@@ -1,5 +1,13 @@
 @use '../../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma .event .event__container .event__time-block .event__icon {
+    color: $primary-color-green;
+}
+
+body.tmp-duma .event .event__container .event__location .event__icon-dot {
+    background-color: $primary-color-green;
+}
+
 .event {
     width: 100%;
     background-color: $cards-background;
@@ -41,10 +49,6 @@
             .event__icon {
                 color: $primary-color;
             }
-
-            .dm-event__icon {
-                @include dm-icon-color;
-            }
         }
 
         .event__location {
@@ -53,8 +57,6 @@
             gap: 8px;
             text-wrap: nowrap;
             @include caption-2;
-
-            .event__place {}
 
             .event__icon-dot {
                 width: 4px;

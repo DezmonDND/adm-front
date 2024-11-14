@@ -1,16 +1,38 @@
-mixin dm-news()    
-    .news.dm-news 
-        +tabs( 
-            [
-                { isActive: true, title: 'Самые важные', href: '/' },
-                { title: 'Реализация нацпроектов', href: '/' },
-                { title: 'Деятельность администрации', href: '/' },
-                { title: 'Областная дума', href: '/' },
-            ])
-        .news__container
-            +news-card-with-image()
-            .news__list    
-                +news-card-without-image()
-                +news-card-without-image()
-                +news-card-without-image()
-                +news-card-without-image()
+include ../card-with-image/card-with-image
+include ../card-without-image/card-without-image
+include ../../slider/_slider
+include ../../title/main/_main-title
+include ../../tabs/main/_tabs
+include ../news-top/news-top
+
+mixin dm-news-top()
+    +news-top({
+        title: {
+            href: '/',
+            title: 'Главные новости',
+            link_text: 'Все новости',
+            },
+        tabs: [
+            { isActive: true, title: 'Самые важные', href: '/' },
+            { title: 'Реализация нацпроектов', href: '/' },
+            { title: 'Деятельность администрации', href: '/' },
+            { title: 'Областная дума', href: '/' },
+        ]  ,  
+        cards: [
+            {
+                icon: 'arrow-forward-outline',
+                classIcon: 'dm-card-without-image__icon', 
+            },
+            {
+                icon: 'arrow-forward-outline', 
+                classIcon: 'dm-card-without-image__icon',
+            },
+            {
+                icon: 'arrow-forward-outline',
+                classIcon: 'dm-card-without-image__icon', 
+            },
+            {
+                icon: 'arrow-forward-outline', 
+                classIcon: 'dm-card-without-image__icon',
+            }
+        ]})       

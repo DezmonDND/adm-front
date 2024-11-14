@@ -22,8 +22,8 @@ $icons-background: #f7fbfe;
 $input-color-default: #c6cbd9;
 
 // Календарь
-$event-color: #e7edfb;
-$event-color-hover: #e7edfb;
+$event-color: var(--event-color);
+$event-color-hover: var(--event-color-hover);
 
 // Кнопки
 $primary-color: var(--primary-color);
@@ -54,10 +54,9 @@ $projects-color: linear-gradient(#8edcd6 0%, #1679b7 100%);
 $social-color: linear-gradient(#f97a7c 0%, #5280ea 100%);
 
 // Дума
-$dm-project-bg-1: linear-gradient(256.74deg, #255BA0 40.93%, #15E7BA 112.76%);
+$dm-project-bg-1: linear-gradient(244.39deg, #0D6CBA 25.53%, #CCCAC5 104.75%);
 $dm-project-bg-2: linear-gradient(256.37deg, #255BA0 35.08%, #15B3E7 111.88%);
 $dm-project-bg-3: linear-gradient(254.18deg, #255BA0 35.1%, #15E7D9 121.05%);
-
 
 // Опросы
 $interview-color: #2dbb45;

@@ -1,5 +1,9 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma .main-title .main-title__container .tabs .tabs__container {
+    @include heading-h1;
+}
+
 .tabs {
     display: flex;
     justify-content: space-between;
