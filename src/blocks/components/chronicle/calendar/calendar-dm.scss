@@ -80,6 +80,24 @@ td:hover {
     border-radius: 4px;
 }
 
+.today_active {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 6px;
+        height: 6px;
+        background-color: #745e0e;
+        border-radius: 50%;
+
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .calendar {
         width: 100%;

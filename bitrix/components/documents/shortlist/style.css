@@ -42,6 +42,10 @@
   }
 }
 
+body.tmp-duma .short-filelist ion-icon {
+  color: var(--secondary-color);
+}
+
 .toggle-content-footer .file-line {
   margin-bottom: 0;
 }

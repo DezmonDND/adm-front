@@ -1,19 +1,29 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+
 .title {
     max-width: 1440px;
     width: 100%;
+    margin: 16px 0 24px;
+
+    @include respond-to(sm) {
+        margin: 8px 0 16px;
+    }
 
     .title__container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         gap: 20px;
-        padding: 13px 0 20px 0;
+        // padding: 13px 0 20px 0;
 
-        @media screen and (max-width: 576px) {
+        @include respond-to(sm) {
             flex-direction: column;
+            gap: 16px;
         }
 
         h2 {
+            padding: 0;
             font-weight: 600;
             font-size: 32px;
             line-height: 38px;
@@ -22,9 +32,7 @@
 
         .title__description {
             flex-basis: 100%;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            @include caption-2;
         }
 
         .title__buttons {
@@ -32,38 +40,8 @@
             gap: 8px;
             margin-left: auto;
 
-            @media screen and (max-width: 576px) {
+            @include respond-to(sm) {
                 margin-left: 0;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .title {
-        .title__container {
-            .title__name {
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 28px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .title {
-        .title__container {
-            gap: 16px;
-
-            .title__name {
-                font-size: 20px;
-                line-height: 24px;
-            }
-
-            .title__description {
-                font-size: 12px;
-                line-height: 18px;
             }
         }
     }

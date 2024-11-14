@@ -9,10 +9,16 @@ body.tmp-duma .main-title .main-title__container .tabs .tabs__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     margin: 0 0 27px;
+=======
+    max-width: 1440px;
+    width: 100%;
+    margin: 16px 0 24px;
+>>>>>>> dbfe85ea4bbb587c42577438fab21391424f45c5
 
-    @media (max-width: 1000px) {
-        margin: 10px 0 17px;
+    @include respond-to(sm) {
+        margin: 8px 0 16px;
     }
 
     .tabs__container {

@@ -43,6 +43,7 @@ function generateCalendar(calendarElement, monthYearElement, month, year) {
                     year === today.getFullYear()
                 ) {
                     cell.classList.add('today');
+                    cell.classList.add('today_active');
                 }
                 row.appendChild(cell);
                 date++;

@@ -1,6 +1,6 @@
 function toggleModal(modalName, show = true) {
     // Прячем все модальные окна
-    ['login', 'login-code', 'login-email'].forEach(name => {
+    ['login', 'login-code', 'login-email'].forEach((name) => {
         document.querySelector(`.${name}`).classList.add('hidden');
     });
 
@@ -14,14 +14,28 @@ function toggleModal(modalName, show = true) {
     }
 }
 
-function showLogin() { toggleModal('login'); }
-function showCode() { toggleModal('login-code'); }
-function showEmail() { toggleModal('login-email'); }
+function showLogin() {
+    toggleModal('login');
+}
+function showCode() {
+    toggleModal('login-code');
+}
+function showEmail() {
+    toggleModal('login-email');
+}
 
-function hideLogin() { toggleModal('login', false); }
-function hideCode() { toggleModal('login-code', false); }
-function hideEmail() { toggleModal('login-email', false); }
+function hideLogin() {
+    toggleModal('login', false);
+}
+function hideCode() {
+    toggleModal('login-code', false);
+}
+function hideEmail() {
+    toggleModal('login-email', false);
+}
 
-document.querySelector('.overlay').addEventListener('click', () => {
-    toggleModal(null, false);
-});
+const overlay = document.querySelector('.overlay');
+if (overlay)
+    overlay.addEventListener('click', () => {
+        toggleModal(null, false);
+    });
