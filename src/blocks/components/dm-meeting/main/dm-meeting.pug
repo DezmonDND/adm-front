@@ -4,20 +4,23 @@ mixin dm-meeting(info, items = [])
     .dm-meeting
         .dm-meeting__content
             .dm-meeting__info
-                .dm-meeting__addr 
-                    span Место проведения
-                    span= info.addr
-                .dm-meeting__date 
-                    span Дата и время
-                    span= info.date
-                .dm-meeting__decision 
-                    .dm-meeting__part
-                        span Приняли участие
-                        span= info.quantity + " депутата"
-                    .dm-meeting__accept
-                        span Всего принято
-                        span= info.decisions + " решения"
-                +button({ size: 'm', type: 'link', class: 'button_blue', href: '#', text: 'Видеозапись', icon: 'play', iconPosition: 'left'})
+                .dm-meeting__left
+                    .dm-meeting__addr 
+                        span Место проведения
+                        span= info.addr
+                .dm-meeting__right
+                    .dm-meeting__right-info
+                        .dm-meeting__date 
+                            span Дата и время
+                            span= info.date
+                        .dm-meeting__decision 
+                            .dm-meeting__part
+                                span Приняли участие
+                                span= info.quantity + " депутата"
+                            .dm-meeting__accept
+                                span Всего принято
+                                span= info.decisions + " решения"
+                    +button({ size: 'm', type: 'link', class: 'button_blue', href: '#', text: 'Видеозапись', icon: 'play', iconPosition: 'left'})
             .dm-meeting__list
                 each item in items 
                     +dm-meeting-elem(item)

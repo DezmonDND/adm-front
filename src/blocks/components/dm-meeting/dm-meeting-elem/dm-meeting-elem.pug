@@ -18,11 +18,12 @@ mixin dm-meeting-elem(item)
             hr
             .dm-meeting-elem__bot
                 .dm-meeting-elem__bot-left
-                    .dm-meeting-elem__vote
-                        span= "За: " + item.vote
-                    .dm-meeting-elem__decision
-                        span= item.decision
-                        ion-icon(name=`${item.icon}-outline`)
+                    .dm-meeting-elem__bot-info
+                        .dm-meeting-elem__vote
+                            span= "За: " + item.vote
+                        .dm-meeting-elem__decision
+                            span= item.decision
+                            ion-icon(name=`${item.icon}-outline`)
                     .dm-meeting-elem__doc
                         a(href='#')= item.doc
                 +button({ size: 'm', type: 'link', class: 'button_blue', href: '#', text: 'Подробнее' })
