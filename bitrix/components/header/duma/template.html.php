@@ -12,7 +12,9 @@
           </div>
           <form class="search search-header-mobile">
             <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-            <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
+            <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
+              <ion-icon class="icon" name="search-outline"></ion-icon>
+            </button>
           </form>
           <ul class="menu__list"> 
             <li><a class="menu__item" href="/">О думе города</a></li>
@@ -38,11 +40,13 @@
       </button>
       <form class="search search-header-duma">
         <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-        <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
+        <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
+          <ion-icon class="icon" name="search-outline"></ion-icon>
+        </button>
       </form>
       <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
           <ion-icon class="icon" name="eye-outline"></ion-icon></a>
-        <button class="button button_blue button_header button_size_xs   " onclick="anotherFunction()"><span class="button_span">Служебный вход</span>
+        <button class="button button_blue button_size_s   " onclick="anotherFunction()"><span class="button_span">Служебный вход</span>
         </button>
       </div>
     </div>

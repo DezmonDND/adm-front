@@ -6,13 +6,18 @@
     width: 100%;
 
     .search__button {
-        width: 44px;
-        height: 44px;
-        background: url(../icons/search_icon.svg) center no-repeat;
+        box-sizing: border-box;
         background-color: $primary-color;
-        background-size: 24px;
+        color: $content-color;
         border: none;
         border-radius: 0 8px 8px 0;
+        padding: 10px;
+        height: 44px;
+        width: 44px;
+
+        .icon {
+            font-size: 24px;
+        }
 
         &:hover {
             cursor: pointer;

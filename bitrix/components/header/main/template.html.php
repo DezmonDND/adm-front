@@ -12,7 +12,9 @@
           </div>
           <form class="search search-header-mobile">
             <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-            <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
+            <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
+              <ion-icon class="icon" name="search-outline"></ion-icon>
+            </button>
           </form>
           <ul class="menu__list"> 
             <li><a class="menu__item" href="/">Быстрый доступ</a></li>
@@ -43,7 +45,7 @@
     </div>
     <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
         <ion-icon class="icon" name="eye-outline"></ion-icon></a>
-      <button class="button button_blue button_header button_size_xs   " onclick="showLogin()"><span class="button_span">Войти</span>
+      <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
       </button>
     </div>
   </div>
@@ -51,7 +53,9 @@
       <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
     <form class="search search-header">
       <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-      <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
+      <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
+        <ion-icon class="icon" name="search-outline"></ion-icon>
+      </button>
     </form>
     <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
     </div>
