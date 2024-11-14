@@ -75,16 +75,6 @@ $(document).ready(function () {
     });
 });
 
-function openSelect() {
-  const selectMenu = document.querySelector(".select_multiple-menu");
-  selectMenu.style.display =
-    selectMenu.style.display === "none" ? "flex" : "none";
-}
-
-function selectOption(element) {
-  element.classList.toggle("select_multiple-option_selected");
-}
-
 const msDropdownList = document.querySelector('.ms__dropdown');
 const msDropdownItems = document.querySelectorAll('.ms__dropdown-item');
 const multiSelect = document.querySelector('input[name="multiSelect"]');
@@ -158,6 +148,16 @@ function deleteElement(text) {
 function updateMultiSelectValue(e) {
     multiSelect.value = selectedValues.join(', ');
     getValues(e);
+}
+
+function openSelect() {
+  const selectMenu = document.querySelector(".select_multiple-menu");
+  selectMenu.style.display =
+    selectMenu.style.display === "none" ? "flex" : "none";
+}
+
+function selectOption(element) {
+  element.classList.toggle("select_multiple-option_selected");
 }
 
 function getLength() {
