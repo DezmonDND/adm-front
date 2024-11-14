@@ -11127,6 +11127,7 @@ td:hover {
   max-width: 440px;
   background-color: var(--grey-adm);
   border-radius: 12px;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .dm-comitet-elem {
@@ -11139,6 +11140,14 @@ td:hover {
     max-width: unset;
     width: 100%;
   }
+}
+
+.dm-comitet-elem:hover {
+  background-color: var(--services-hover);
+}
+
+.dm-comitet-elem:active {
+  background-color: var(--services-active);
 }
 
 .dm-comitet-elem__container {
@@ -11172,6 +11181,8 @@ td:hover {
 }
 
 .dm-comitet-elem__info-surname span {
+  color: #000448;
+  text-decoration: none;
   font-weight: 400;
 }
 
@@ -11432,6 +11443,182 @@ td:hover {
 .dm-struct__bottom a:active {
   color: var(--primary-color-active);
   border-bottom: 1px solid var(--primary-color-active);
+}
+
+.dm-deputies-alphabet {
+  padding-top: 48px;
+}
+@media (max-width: 992px) {
+  .dm-deputies-alphabet {
+    padding-top: 24px;
+  }
+}
+
+.dm-deputies-alphabet__row {
+  display: flex;
+  gap: 180px;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .dm-deputies-alphabet__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+.dm-deputies-alphabet__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dm-deputies-alphabet__list {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .dm-deputies-alphabet__list {
+    gap: 8px;
+  }
+  .dm-deputies-alphabet__list .dm-comitet-elem {
+    width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .dm-deputies-alphabet__list .dm-comitet-elem {
+    width: 100%;
+  }
+}
+
+.dm-deputies-alphabet__letter {
+  font-size: 64px;
+  color: #000448;
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .dm-deputies-alphabet__letter {
+    font-weight: 600 !important;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .dm-deputies-alphabet__letter ::before {
+    content: "На букву ";
+  }
+}
+@media (max-width: 992px) and (max-width: 992px) {
+  .dm-deputies-alphabet__letter {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.dm-deputies__search .search {
+  max-width: unset;
+}
+
+.dm-deputies-comitets {
+  padding-top: 48px;
+}
+@media (max-width: 992px) {
+  .dm-deputies-comitets {
+    padding-top: 24px;
+  }
+}
+
+.dm-deputies-comitets__block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 992px) {
+  .dm-deputies-comitets__block {
+    gap: 16px;
+  }
+}
+
+.dm-deputies-comitets__content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+@media (max-width: 992px) {
+  .dm-deputies-comitets__content {
+    gap: 24px;
+  }
+}
+
+.dm-deputies-comitets__name {
+  color: #000448;
+  font-weight: 500 !important;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+@media (max-width: 992px) {
+  .dm-deputies-comitets__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .dm-deputies-comitets__name {
+    font-weight: 600 !important;
+  }
+}
+
+.dm-deputies-comitets__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.dm-deputies-comitets__list .dm-comitet-elem {
+  max-width: 420px;
+}
+@media (max-width: 992px) {
+  .dm-deputies-comitets__list {
+    gap: 8px;
+  }
+  .dm-deputies-comitets__list .dm-comitet-elem {
+    max-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .dm-deputies-comitets__list {
+    flex-direction: column;
+  }
+  .dm-deputies-comitets__list .dm-comitet-elem {
+    width: 100%;
+  }
+}
+
+.dm-deputies__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .dm-deputies__title-container {
+    flex-direction: column;
+  }
+}
+
+.dm-deputies__title-container .button {
+  width: 100%;
+  max-width: 265px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .dm-deputies__title-container .button {
+    max-width: 205px;
+  }
+}
+
+.dm-deputies__title-container .button span {
+  font-weight: 600;
 }
 
 * {

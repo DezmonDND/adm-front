@@ -15,6 +15,7 @@
   max-width: 440px;
   background-color: var(--grey-adm);
   border-radius: 12px;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .dm-comitet-elem {
@@ -27,6 +28,14 @@
     max-width: unset;
     width: 100%;
   }
+}
+
+.dm-comitet-elem:hover {
+  background-color: var(--services-hover);
+}
+
+.dm-comitet-elem:active {
+  background-color: var(--services-active);
 }
 
 .dm-comitet-elem__container {
@@ -60,6 +69,8 @@
 }
 
 .dm-comitet-elem__info-surname span {
+  color: #000000;
+  text-decoration: none;
   font-weight: 400;
 }
 
