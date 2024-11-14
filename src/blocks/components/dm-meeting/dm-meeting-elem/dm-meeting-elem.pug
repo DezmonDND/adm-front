@@ -1,0 +1,28 @@
+
+
+mixin dm-meeting-elem(item)
+    .dm-meeting-elem
+        .dm-meeting-elem__container 
+            .dm-meeting-elem__top
+                .dm-meeting-elem__num 
+                    span= '№' +  item.num
+                .dm-meeting-elem__name
+                    span= item.name
+            .dm-meeting-elem__mid
+                .dm-meeting-elem__prepare
+                    span Готовит
+                    span= item.prepare
+                .dm-meeting-elem__speaker
+                    span Докладывает
+                    span= item.speaker
+            hr
+            .dm-meeting-elem__bot
+                .dm-meeting-elem__bot-left
+                    .dm-meeting-elem__vote
+                        span= "За: " + item.vote
+                    .dm-meeting-elem__decision
+                        span= item.decision
+                        ion-icon(name=`${item.icon}-outline`)
+                    .dm-meeting-elem__doc
+                        a(href='#')= item.doc
+                +button({ size: 'm', type: 'link', class: 'button_blue', href: '#', text: 'Подробнее' })
