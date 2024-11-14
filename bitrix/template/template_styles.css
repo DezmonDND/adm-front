@@ -466,7 +466,6 @@ body.tmp-duma {
 .links-list-item:hover {
   transition: box-shadow 0.3s ease-in-out;
   background: var(--services-hover);
-  box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.25);
 }
 .links-list-item img {
   transform: rotate(180deg);
