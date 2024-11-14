@@ -1,0 +1,38 @@
+include ../socials/header-socials
+
+mixin menu(bg, data)
+    .mobile-menu
+        div(class=`menu ${bg}`)
+            .menu__container
+                .menu__content 
+                    .menu__buttons 
+                        +logo({
+                            href: '/',
+                            title: 'Администрация Сургута',
+                            about: 'Официальный портал',
+                            })
+                        +button({ type: 'button', class: 'button_close', event: 'toggleMenu()', icon: 'close-outline', size: 'xs' })     
+                    +search(
+                        {name: 'number', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
+                            false, 's', 'getValues()', 'header-mobile',) 
+                    ul.menu__list 
+                        each link in data
+                            li
+                                a(href = link.href).menu__item #{link.title}
+                .menu__socials 
+                    +header-socials([
+                        {
+                            href: '/',
+                            class: 'vk_icon-mobile'
+                        },
+                        {
+                            href: '/',
+                            class: 'ok_icon-mobile'
+                        },
+                        {
+                            href: '/',
+                            class: 'tg_icon-mobile'
+                        },
+
+                    ])  
+                    +button({ type: 'link', href: '/', class: 'button_white button__eye', icon: 'eye-outline', size: 'xs',})                

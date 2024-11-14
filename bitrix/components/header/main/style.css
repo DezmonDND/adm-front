@@ -13,6 +13,11 @@
   justify-content: space-between;
   gap: 20px;
 }
+@media (max-width: 992px) {
+  .header .header__top-content {
+    display: none;
+  }
+}
 .header .header__top-content .header__top-links {
   display: flex;
   gap: 40px;
@@ -31,7 +36,7 @@
   background-position: left;
 }
 .header .header__top-content .header__buttons .header__eye-link:hover {
-  filter: invert(44%) sepia(59%) saturate(7476%) hue-rotate(210deg) brightness(89%) contrast(105%);
+  color: var(--primary-color-hover);
 }
 .header .header__top-content .header__buttons .header__eye-link .header__eye-link-title {
   margin-left: 28px;
@@ -52,31 +57,83 @@
   padding: 20px 64px;
   gap: 24px;
 }
+@media (max-width: 992px) {
+  .header .header__bottom-content {
+    padding: 16px 20px;
+  }
+}
 
-@media screen and (max-width: 1000px) {
-  .header .header__top-content {
-    padding: 16px 20px;
-  }
-  .header .header__bottom-content {
-    padding: 16px 20px;
+.button_burger {
+  all: unset;
+  display: none;
+}
+@media (max-width: 992px) {
+  .button_burger {
+    display: flex;
   }
 }
-@media screen and (max-width: 880px) {
-  .header .header__top-content {
-    display: none;
+.button_burger .icon {
+  font-size: 24px;
+}
+
+.button_close {
+  all: unset;
+  display: none;
+}
+@media (max-width: 992px) {
+  .button_close {
+    display: flex;
   }
-  .header .header__bottom-content {
-    justify-content: space-between;
-  }
-  .header .header__bottom-content .search {
-    display: none;
-  }
-  .header .header__bottom-content .header__bottom-links {
+}
+.button_close .icon {
+  font-size: 24px;
+}
+
+@media (max-width: 992px) {
+  .search-header {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
-  .header .header__bottom-content {
-    padding: 16px 27px;
+
+.button__eye {
+  color: #000000;
+  border-color: transparent;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+@media (max-width: 992px) {
+  .button__eye {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+.button__eye .icon {
+  font-size: 20px;
+}
+.button__eye:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.menu_main-bg {
+  background-color: #ffffff;
+}
+
+.menu_duma-bg {
+  background-color: var(--cards-background);
+}
+
+.button_header {
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (max-width: 992px) {
+  .button_header {
+    font-size: 10px;
+    line-height: 14px;
   }
 }

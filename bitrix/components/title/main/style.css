@@ -13,6 +13,12 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .main-title .main-title__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .main-title .main-title__container .main-title__title {
   font-weight: 500;
   font-size: 40px;
