@@ -1,10 +1,12 @@
 include ../../../components/slider/_slider
 include ../../../libs/tab-buttons/_tab-buttons
 
-mixin tabs(tabs = [], slider)
+mixin tabs(tabs = [], slider, classFont)
   .tabs
-    .tabs__container
+    - const hasFontClass = classFont ? classFont : '' 
+
+    div(class=[hasFontClass]).tabs__container
       each tab in tabs
         +tab-button(tab)
     if slider
-      +slider()          
+      +slider({})          
