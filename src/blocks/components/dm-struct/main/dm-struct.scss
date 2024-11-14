@@ -16,6 +16,14 @@
      }
 }
 
+.dm-struct-card:hover span{
+    color: $primary-color-hover;
+}
+
+.dm-struct-card:active span{
+    color:$primary-color-active;
+}
+
 .dm-struct-card__container {
     padding: 24px;
     display: flex;
@@ -151,10 +159,18 @@
 }
 
 .dm-struct__bottom a  {
-    
     text-decoration: none;
     color: $primary-color;
     font-weight: 500;
 }
 
+.dm-struct__bottom a:hover  {
+    color: $primary-color-hover;
+    border-bottom: 1px solid $primary-color-hover;
+}
+
+.dm-struct__bottom a:active  {
+    color: $primary-color-active;
+    border-bottom: 1px solid $primary-color-active;
+}
 
