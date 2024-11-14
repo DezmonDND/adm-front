@@ -1,0 +1,5 @@
+/*** Finish - Title ***/
+.dm-afisha .dm-afisha__container {
+  display: flex;
+  flex-direction: column;
+}

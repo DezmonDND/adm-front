@@ -11253,6 +11253,34 @@ td:hover {
   }
 }
 
+.dm-afisha .dm-afisha__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+@media (max-width: 992px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.filters .filters_container {
+  display: flex;
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .filters .filters_container {
+    flex-wrap: wrap;
+  }
+}
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
