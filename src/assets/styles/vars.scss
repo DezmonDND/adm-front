@@ -84,8 +84,8 @@ $breakpoint-sm: 768px;
 
 // Mixin colors
 @mixin visible-lines($num) {
-    -webkit-line-clamp: $num;
     display: -webkit-box;
+    -webkit-line-clamp: $num;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
