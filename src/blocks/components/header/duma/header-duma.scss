@@ -11,51 +11,74 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
     color: $main-text;
     background-color: $cards-background;
     border-bottom: 1px solid $event-color-hover;
 
-    .header__top-content {
+    .header-duma__container {
+        box-sizing: border-box;
         display: flex;
-        max-width: 1312px;
+        flex-direction: column;
         width: 100%;
-        padding: 7px 65px;
+        max-width: 1440px;
+        padding: 0 64px;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
 
-        .header__top-links {
-            display: flex;
-            gap: 40px;
+        @include respond-to(md) {
+            padding: 0 20px;
         }
 
-        .header__buttons {
+        .header__top-content {
             display: flex;
-            gap: 21px;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+            gap: 20px;
 
-            .header__eye-link {
+            .header__top-links {
                 display: flex;
-                align-items: center;
-                text-decoration: none;
-                background-image: url(../icons/eye-outlined_icon.svg);
-                background-size: 18px;
-                background-repeat: no-repeat;
-                background-position: left;
+                gap: 40px;
+            }
 
-                &:hover {
-                    @include icons-hover;
+            .header__buttons {
+                display: flex;
+                gap: 21px;
+
+                @include respond-to(md) {
+                    display: none;
                 }
 
-                .header__eye-link-title {
-                    margin-left: 28px;
-                    @include lead-6;
+                .header__eye-link {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    background-image: url(../icons/eye-outlined_icon.svg);
+                    background-size: 18px;
+                    background-repeat: no-repeat;
+                    background-position: left;
+
+                    &:hover {
+                        @include icons-hover;
+                    }
+
+                    .header__eye-link-title {
+                        margin-left: 28px;
+                        @include lead-6;
+                    }
                 }
             }
         }
     }
 
     .search-header-duma {
-        max-width: 631px;
+        max-width: 655px;
+
+        @include respond-to(md) {
+            display: none;
+        }
     }
 
     .header__bottom-content {
@@ -63,7 +86,11 @@
         align-items: center;
         max-width: 1312px;
         width: 100%;
-        padding: 20px 64px;
+        padding: 20px 0;
         gap: 60px;
+
+        @include respond-to(md) {
+            display: none;
+        }
     }
 }

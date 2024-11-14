@@ -6,6 +6,18 @@
     cursor: pointer;
 }
 
+body.tmp-duma .slider .slider__link {
+    color: $primary-color-green;
+
+    &:hover {
+        color: $primary-color-green-hover;
+    }
+
+    &:active {
+        color: $primary-color-green-click;
+    }
+}
+
 .slider {
     display: flex;
     gap: 12px;
@@ -14,15 +26,10 @@
     @media (max-width: 1000px) {
         font-size: 23px;
         padding-bottom: 5px;
-        
+
     }
 
-    .slider__link-prev {
-        @include flex;
-        color: $primary-color;
-    }
-
-    .slider__link-next {
+    .slider__link {
         @include flex;
         color: $primary-color;
     }

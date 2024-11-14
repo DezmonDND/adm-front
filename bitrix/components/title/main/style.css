@@ -1,7 +1,7 @@
 /*** Finish - Title ***/
 .main-title {
   box-sizing: border-box;
-  padding: 48px 0 40px;
+  padding: 26px 0 45px;
 }
 @media (max-width: 1000px) {
   .main-title {
@@ -12,6 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .main-title .main-title__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .main-title .main-title__container .main-title__title {
   font-weight: 500;
@@ -26,15 +32,15 @@
 }
 .main-title .main-title__container .main-title__link {
   text-decoration: none;
-  color: rgb(0, 76, 196);
-  font-weight: 300;
+  color: var(--primary-color);
+  font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 24px;
 }
 @media (max-width: 992px) {
   .main-title .main-title__container .main-title__link {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 .main-title .main-title__container .main-title__link:hover {

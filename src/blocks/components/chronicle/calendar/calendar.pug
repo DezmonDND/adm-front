@@ -1,0 +1,19 @@
+include ../../../libs/buttons/_buttons.pug
+
+mixin chronicle-calendar()
+    .calendar-dm(id = 'calendar')
+        .calendar-dm-header 
+            +button({ type: 'button', class: 'button_white calendar-dm-button', icon: 'arrow-back-outline', event: 'prevMonth()'})
+            span.calendar-dm-date(id = 'month-year')
+            +button({ type: 'button', class: 'button_white calendar-dm-button', icon: 'arrow-forward-outline', event: 'nextMonth()'})
+        table(id = "calendar")
+            thead 
+                tr 
+                    th Пн
+                    th Вт
+                    th Ср
+                    th Чт
+                    th Пт
+                    th Сб
+                    th Вс
+            tbody

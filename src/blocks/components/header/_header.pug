@@ -1,6 +1,7 @@
 include ./header-links/header-links
 include ./socials/header-socials
 include ./logo/logo
+include ./menu/menu
 include ../../components/search/_search.pug 
 include ../../libs/buttons/_buttons.pug 
 include ../../libs/links/_links.pug 
@@ -12,6 +13,44 @@ include ../login/email/login-email
 
 mixin header(sort)
     header.header 
+        +menu('menu_main-bg', [
+            {
+                href: '/',
+                title: 'Быстрый доступ'
+            },
+            {
+                href: '/',
+                title: 'Публичные слушания'
+            },
+            {
+                href: '/',
+                title: 'Противодействие коррупции'
+            },
+            {
+                href: '/',
+                title: 'Пресс-центр'
+            },
+            {
+                href: '/',
+                title: 'Обращения граждан'
+            },
+            {
+                href: '/',
+                title: 'О Сургуте'
+            },
+            {
+                href: '/',
+                title: 'Городская власть'
+            },
+            {
+                href: '/',
+                title: 'Документы'
+            },
+            {
+                href: '/',
+                title: 'Контакты'
+            }
+        ])
         .header__top-content
             .header__top-links
                 +header-links([
@@ -51,9 +90,8 @@ mixin header(sort)
                     },
                 ])
             .header__buttons  
-                a(href='/').header__eye-link
-                    span.header__eye-link-title Версия для слабовидящих
-                +button({ type: 'button', class: 'button_blue button_header', event: 'showLogin()', icon: '', size: 'xs', text: 'Войти' })     
+                +button({ type: 'link', href: '/', class: 'button_white button__eye', icon: 'eye-outline', size: 'xs', iconPosition: 'left', text: 'Версия для слабовидящих'})               
+                +button({ type: 'button', class: 'button_blue', event: 'showLogin()', icon: '', size: 's', text: 'Войти' })     
         .header__bottom-content
             +logo({
                 href: '/',
@@ -81,7 +119,7 @@ mixin header(sort)
                     title: 'Контакты',
                 },
                 ])        
-            +button({ type: 'button', class: 'button_burger', event: 'anotherFunction()', icon: 'menu-outlined_icon.svg', size: 'xs', text: '' })        
+            +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })        
     +login()  
     +login-code()   
     +login-email()

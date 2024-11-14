@@ -1,0 +1,12 @@
+mixin duma-filelist(items)
+    .duma-filelist
+         each item, index in items
+            .file-line
+                .title #{item.title}
+                .description #{item.description}
+                hr
+                .fields
+                    .field Действует ✓
+                    .field Не является нормативным правовым актом
+                    .field
+                         +button({ type: 'link', size: "m", class: 'button_blue', iconPosition: "left", icon: "document-text", href: '/about', text: "Текст документа"})

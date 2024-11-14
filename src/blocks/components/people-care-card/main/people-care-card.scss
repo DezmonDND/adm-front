@@ -6,13 +6,47 @@
     min-height: 320px;
     border-radius: 12px;
     background-repeat: no-repeat;
-    background: $finance-color;
     align-content: end;
     position: relative;
     overflow: hidden;
 
     @media (max-width: 1000px) {
         min-height: 214px;
+    }
+
+    &_bg-health {
+        background: $health-color;
+    }
+
+    &_bg-finance {
+        background: $finance-color;
+    }
+
+    &_bg-projects {
+        background: $projects-color;
+    }
+
+    &_bg-social {
+        background: $social-color;
+    }
+
+    &_bg-dm-1 {
+        background: $dm-project-bg-1;
+    }
+
+    &_bg-dm-2 {
+        background: $dm-project-bg-2;
+    }
+
+    &_bg-dm-3 {
+        background: $dm-project-bg-3;
+    }
+
+    .people-care-card__logo {
+        position: absolute;
+        top: 0;
+        right: 32px;
+        width: 70px;
     }
 
     .people-care-card__icon {
@@ -48,15 +82,25 @@
             gap: 13px;
         }
 
-        .people-care-card__title {
-            color: $content-color;
-            z-index: 1;
-            @include heading-h2;
+        .people-care-card__text-block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .people-care-card__title {
+                color: $content-color;
+                z-index: 1;
+                @include heading-h2;
+            }
+
+            .people-care-card__desc {
+                color: $content-color;
+                @include caption-2;
+            }
         }
 
         .people-care-card__button {
             z-index: 1;
         }
-
     }
 }

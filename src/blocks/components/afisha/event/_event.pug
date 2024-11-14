@@ -3,7 +3,7 @@ mixin event(data)
         .event__container            
             .event__info 
                 .event__time-block 
-                    ion-icon(name=`time` class=`event__icon`)
+                    ion-icon(name=`time`).event__icon
                     span.event__time #{data.time}
                 .event__location 
                     span.event__place #{data.building}

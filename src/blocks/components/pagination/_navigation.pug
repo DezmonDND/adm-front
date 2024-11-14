@@ -1,10 +1,10 @@
 mixin navigation(data)
     .navigation 
-        a.navigation__link-prev
+        a.navigation__link
             ion-icon(name=`arrow-back-outline` class=`icon`)
         .navigation__pages
             span.navigation__page #{data.first_page}
             span.navigation__page /
             span.navigation__page #{data.end_page}
-        a.navigation__link-next
+        a.navigation__link
             ion-icon(name=`arrow-forward-outline` class=`icon`)

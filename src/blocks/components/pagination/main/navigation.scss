@@ -9,7 +9,18 @@
     @media (max-width: 1000px) {
         font-size: 20px;
     }
+}
 
+body.tmp-duma .navigation .navigation__link {
+    color: $primary-color-green;
+
+    &:hover {
+        color: $primary-color-green-hover;
+    }
+
+    &:active {
+        color: $primary-color-green-click;
+    }
 }
 
 .navigation {
@@ -22,7 +33,7 @@
         gap: 14px;
     }
 
-    .navigation__link-prev {
+    .navigation__link {
         color: $primary-color;
         @include flex;
     }
@@ -31,10 +42,5 @@
         display: flex;
         gap: 4px;
         @include lead-3;
-    }
-
-    .navigation__link-next {
-        color: $primary-color;
-        @include flex;
     }
 }

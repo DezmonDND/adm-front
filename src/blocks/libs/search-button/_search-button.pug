@@ -1,2 +1,4 @@
+include ../buttons/_buttons
+
 mixin search-button(size, event)
-    button(class=`search__button search__button_${size}` type='submit' onclick=event)        
+    +button({ type: 'button', size: 's', class: 'button_white search__button', icon: 'add-outline', event: '1', icon: 'search-outline'})     

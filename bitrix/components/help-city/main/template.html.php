@@ -8,9 +8,9 @@
   <div class="tabs">
     <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочее">Прочее</a>
     </div>
-    <div class="slider"> <a class="slider__link-prev">
-        <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link-next">
-        <ion-icon name="arrow-forward-outline"></ion-icon></a></div>
+    <div class="slider"><a class="slider__link">
+        <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link">
+        <ion-icon name="arrow-forward-outline"> </ion-icon></a></div>
   </div>
 </div>
 <div class="main-help-city"> 
@@ -59,9 +59,9 @@
     </div>
   </div>
   <div class="help-city__navigation"> 
-    <div class="navigation"> <a class="navigation__link-prev">
+    <div class="navigation"> <a class="navigation__link">
         <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
-      <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">2</span></div><a class="navigation__link-next">
+      <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">2</span></div><a class="navigation__link">
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
     </div>
   </div>
