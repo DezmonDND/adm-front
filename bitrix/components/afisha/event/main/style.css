@@ -1,7 +1,15 @@
 /*** Finish - Title ***/
+body.tmp-duma .event .event__container .event__time-block .event__icon {
+  color: var(--primary-color-green);
+}
+
+body.tmp-duma .event .event__container .event__location .event__icon-dot {
+  background-color: var(--primary-color-green);
+}
+
 .event {
   width: 100%;
-  background-color: #fafafa;
+  background-color: var(--cards-background);
   border-radius: 12px;
 }
 .event .event__container {
@@ -9,11 +17,28 @@
   align-items: center;
   padding: 20px 32px;
 }
+@media (max-width: 768px) {
+  .event .event__container {
+    position: relative;
+    flex-direction: column;
+    padding: 16px 20px;
+    gap: 16px;
+  }
+}
 .event .event__container .event__info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+}
+@media (max-width: 768px) {
+  .event .event__container .event__info {
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 35px;
+    width: 100%;
+    padding-right: 20px;
+  }
 }
 .event .event__container .event__time-block {
   display: flex;
@@ -30,12 +55,13 @@
   }
 }
 .event .event__container .event__time-block .event__icon {
-  color: #004cc4;
+  color: var(--primary-color);
 }
 .event .event__container .event__location {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-wrap: nowrap;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -49,7 +75,7 @@
 .event .event__container .event__location .event__icon-dot {
   width: 4px;
   height: 4px;
-  background-color: #004cc4;
+  background-color: var(--primary-color);
   border-radius: 50%;
 }
 .event .event__container .event__description {
@@ -66,6 +92,11 @@
     line-height: 20px;
   }
 }
+@media (max-width: 768px) {
+  .event .event__container .event__description {
+    margin: 0;
+  }
+}
 .event .event__container .event__number {
   color: #78839c;
   font-weight: 300;
@@ -76,5 +107,12 @@
   .event .event__container .event__number {
     font-size: 14px;
     line-height: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .event .event__container .event__number {
+    position: absolute;
+    top: 16px;
+    right: 20px;
   }
 }

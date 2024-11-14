@@ -1,0 +1,22 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.header_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @include respond-to(md) {
+        display: none;
+    }
+
+    .header__link {
+        text-decoration: none;
+        color: $main-text;
+        @include lead-6;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

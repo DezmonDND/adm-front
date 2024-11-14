@@ -1,6 +1,6 @@
 /*** Finish - Title ***/
 .event-card {
-  background-color: #fafafa;
+  background-color: var(--cards-background);
   display: flex;
   justify-content: center;
 }

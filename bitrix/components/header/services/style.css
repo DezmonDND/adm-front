@@ -1,7 +1,7 @@
 /*** Finish - Title ***/
 .header-services {
   display: flex;
-  background-color: #fafafa;
+  background-color: var(--cards-background);
   overflow-x: scroll;
   scrollbar-width: none;
 }
@@ -24,10 +24,11 @@
   }
 }
 .header-services .header-services__container .header-services__button {
-  background-color: #fafafa;
+  background-color: var(--cards-background);
   color: #000000;
   padding: 4px 18px;
   gap: 12px;
+  border-color: transparent;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -39,13 +40,13 @@
   }
 }
 .header-services .header-services__container .header-services__button:hover {
-  background-color: #f2f3f5;
+  background-color: var(--services-hover);
 }
 .header-services .header-services__container .header-services__button:active {
-  background-color: #e3e4e7;
+  background-color: var(--services-active);
 }
 .header-services .header-services__container .header-services__button .icon {
-  color: #004cc4;
+  color: var(--primary-color);
   font-size: 45px;
 }
 @media (max-width: 1000px) {

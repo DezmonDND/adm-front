@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  margin-top: 20px;
   border-radius: 12px;
 }
 @media (max-width: 1000px) {
@@ -76,7 +75,7 @@
 .hearing-preview-play {
   position: absolute;
   top: 328px;
-  background-color: #004cc4;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 50%;
   width: 82px;
@@ -88,7 +87,7 @@
   transition: background-color 0.3s;
 }
 .hearing-preview-play:hover {
-  background-color: #0a5fe7;
+  background-color: var(--primary-color-hover);
 }
 .hearing-preview-play-icon {
   position: relative;
@@ -103,7 +102,7 @@
 @media (max-width: 1000px) {
   .hearing-preview-play {
     top: 185px;
-    background-color: #004cc4;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -115,7 +114,7 @@
     transition: background-color 0.3s;
   }
   .hearing-preview-play:hover {
-    background-color: #0a5fe7;
+    background-color: var(--primary-color-hover);
   }
   .hearing-preview-play-icon {
     position: relative;
@@ -131,7 +130,7 @@
 @media (max-width: 576px) {
   .hearing-preview-play {
     top: 79px;
-    background-color: #004cc4;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 50%;
     width: 32px;
@@ -143,7 +142,7 @@
     transition: background-color 0.3s;
   }
   .hearing-preview-play:hover {
-    background-color: #0a5fe7;
+    background-color: var(--primary-color-hover);
   }
   .hearing-preview-play-icon {
     position: relative;

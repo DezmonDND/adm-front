@@ -3,8 +3,11 @@ include ../../../components/slider/_slider
 mixin main-title(data)
     .main-title
         .main-title__container
-            h1.main-title__title #{data.title}
+            if data.type === 'tabs'
+                +tabs(data.tabs)
+            else    
+                h1.main-title__title #{data.title}
             if data.link_text
                 a(href=data.href class='main-title__link') #{data.link_text}
             if data.slider
-                +slider()  
+                +slider(data.sliderIcon)  

@@ -1,0 +1,19 @@
+include ../../../libs/buttons/_buttons
+
+mixin hearing-card(item)
+    .hearing-item
+        .hearing-item-link
+            img(src="./resources/hearing.jpg")
+            .hearing-item-bg
+            +button({ type: 'button', size: 's', class: 'button_blue button_radius button_tag-label hearing-card_button', icon: 'caret-forward-outline', iconPosition: 'left', text: 'Видеозапись' })
+        .hearing-item-content
+            .hearing-item-title
+                span #{item.title}
+            .hearing-item-labels
+                .hearing-item-labels-item
+                    span.hearing-item-span-title Дата публикации
+                    span.hearing-item-span-desc #{item.date}
+                if item.org   
+                    .hearing-item-labels-item
+                        span.hearing-item-span-title Организатор
+                        span.hearing-item-span-desc #{item.org}

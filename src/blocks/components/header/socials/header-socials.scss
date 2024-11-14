@@ -1,0 +1,67 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+@mixin duma-icons {
+    background-color: $primary-color-green;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+        background-color: $primary-color-green-hover;
+    }
+
+    &:active {
+        background-color: $primary-color-green-click;
+    }
+}
+
+@mixin icons-hover {
+    filter: invert(44%) sepia(59%) saturate(7476%) hue-rotate(210deg) brightness(89%) contrast(105%);
+}
+
+.header__socials {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    .header__social-icon {
+        width: 20px;
+        height: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .vk_icon-duma {
+        background-image: url(../icons/vk_duma-header.svg);
+        @include duma-icons();
+    }
+
+    .ok_icon-duma {
+        background-image: url(../icons/ok_duma-header.svg);
+        @include duma-icons();
+    }
+
+    .vk_icon {
+        background-image: url(../icons/vk_icon_default.svg);
+
+        &:hover {
+            @include icons-hover();
+        }
+    }
+
+    .ok_icon {
+        background-image: url(../icons/ok-header.svg);
+
+        &:hover {
+            @include icons-hover();
+        }
+    }
+
+    .tg_icon {
+        background-image: url(../icons/tg_icon_default.svg);
+
+        &:hover {
+            @include icons-hover();
+        }
+    }
+}

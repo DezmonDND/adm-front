@@ -4,7 +4,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  background-color: #fafafa;
+  background-color: var(--grey-adm);
   border-radius: 8px;
   margin-bottom: 12px;
 }
@@ -24,7 +24,7 @@
   margin-bottom: 0;
 }
 .short-filelist .file-line:hover {
-  background: #f2f3f5;
+  background: var(--services-hover);
 }
 @media (max-width: 768px) {
   .short-filelist .file-line {
@@ -33,13 +33,17 @@
 }
 .short-filelist .file-line ion-icon {
   font-size: 32px;
-  color: #004cc4;
+  color: var(--primary-color);
   margin-right: 16px;
 }
 @media (max-width: 768px) {
   .short-filelist .file-line ion-icon {
     font-size: 28px;
   }
+}
+
+body.tmp-duma .short-filelist ion-icon {
+  color: var(--secondary-color);
 }
 
 .toggle-content-footer .file-line {

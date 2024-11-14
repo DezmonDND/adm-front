@@ -1,0 +1,164 @@
+extends ../dm-layout
+
+block content
+    main.main
+        +news-top({
+            title: {
+                href: '/',
+                title: 'Главные новости',
+                link_text: 'Все новости',
+                },
+            tabs: [
+                { isActive: true, title: 'Самые важные', href: '/' },
+                { title: 'Реализация нацпроектов', href: '/' },
+                { title: 'Деятельность администрации', href: '/' },
+                { title: 'Областная дума', href: '/' },
+            ]  ,  
+            cards: [
+                {
+                    icon: 'arrow-forward-outline',
+                    classIcon: 'dm-card-without-image__icon', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                    classIcon: 'dm-card-without-image__icon',
+                },
+                {
+                    icon: 'arrow-forward-outline',
+                    classIcon: 'dm-card-without-image__icon', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                    classIcon: 'dm-card-without-image__icon',
+                }
+            ]})                                       
+        .main-events
+            .main-events__container 
+                +main-title({
+                    href: '/',
+                    title: 'Хроника и анонсы событий',
+                    link_text: 'Все события'
+                })
+                .dm-filter__btn
+                    +button({ type: 'button', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
+                .dm-calendar__btn
+                    +button({ type: 'button', class: 'button_white dm-calendar__button', iconPosition: 'left', icon: 'calendar-number-outline', text: "Календарь"})                    
+                +filters()
+                +chronicle()                                                       
+        .important-links
+            .full-width-container
+                .full-width-background
+                    .full-width-content 
+                        +main-title({
+                            href: '/',
+                            title: 'Архив трансляций',
+                            link_text: 'Все видео и фото',
+                            type: 'tabs',
+                            tabs: [
+                                { isActive: true, title: 'Архив трансляций', href: '/' },
+                                { title: 'Фото', href: '/' },
+                                '', 'dm-title-tabs'
+                            ]
+                        })
+                        +tabs( 
+                            [
+                                { isActive: true, title: 'Самые важные', href: '/' },
+                                { title: 'Заседания', href: '/' },
+                                { title: 'Публичные слушания', href: '/' },
+                            ])
+                        +archive-dm()
+                        .usefull-links__navigation
+                            +navigation({
+                                first_page: '1',
+                                end_page: '2',
+                                    })
+        .solve-problems
+            +main-title({
+                href: '/',
+                title: 'Решаем проблемы вместе',
+            })   
+            .solve-problems__container
+                img.solve-problems__banner(src='../img/banner_1.png' alt='Баннер')                                  
+        .main-people-care 
+            +main-title({
+                href: '/',
+                title: 'Проекты Думы города',
+                slider: true,
+                sliderIcon: {
+                    classIcon: 'dm-slider__link'
+                }
+            })   
+            .main-people-care__container
+                .main-people-care__card-list 
+                    +people-care-card({
+                        title: 'ДУМАющий Сургут',
+                        logo: true,
+                        background: 'people-care-card_bg-dm-1',
+                        desc: 'совместный проект «Сургутской трибуны» и Думы города' 
+                    })
+                    +people-care-card({
+                        title: 'Видео проекты',
+                        logo: true,
+                        background: 'people-care-card_bg-dm-2',
+                        desc: 'совместный проект «Сургутской трибуны» и Думы города' 
+                    })
+                    +people-care-card({
+                        title: 'Опросы',
+                        logo: true,
+                        background: 'people-care-card_bg-dm-3',
+                        desc: 'совместный проект «Сургутской трибуны» и Думы города'  
+                    }) 
+                .people-care__slider
+                    +slider({}) 
+        +usefull-links({
+            links: [
+                {
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-forward-outline',
+                    title: 'Оплата ЖКХ услуг ',
+                },
+                {
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-forward-outline',
+                    title: 'Виртуальная приемная',
+                },
+                {
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-forward-outline',
+                    title: 'Пособия и налоги',
+                },
+                {
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-forward-outline',
+                    title: 'Расписание общественного транспорта',
+                },
+                {
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-forward-outline',
+                    title: 'Выплаты пенсионерам',
+                },
+                {
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-forward-outline',
+                    title: 'Запись на публичные слушания',
+                },
+                {
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-forward-outline',
+                    title: 'Социальные услуги',
+                },
+                {
+                    class: 'usefull',
+                    href: '/',
+                    icon: 'arrow-forward-outline',
+                    title: 'Работа в России',
+                }
+            ]
+        })           

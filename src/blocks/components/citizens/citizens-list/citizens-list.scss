@@ -1,0 +1,25 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.citizens-list {
+
+    .citizens-list__container {
+        .citizens-list__desc {
+            margin-bottom: 24px;
+        }
+
+        .citizens-list__cards {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            @include respond-to(md) {
+                gap: 24px;
+            }
+
+            @include respond-to(sm) {
+                gap: 8px;
+            }
+        }
+
+    }
+}

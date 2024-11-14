@@ -1,0 +1,33 @@
+extends ../layout
+
+block content 
+    main.main
+        +breadcrumbs(
+            [
+                { sort: 'crumb', href: '/', text: 'Главная' },
+                { sort: 'crumb', href: '/about', text: 'Специальное событие'},
+                { sort: 'crumb', href: '/about', text: 'В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй'},
+            ])
+        .project-generation__container 
+            .project-generation__top
+                .project-generation__top-container
+                    span Документ инициативного проекта сгенерирован
+                    .project-generation__top-btns
+                        +button({ type: 'button', class: 'button_white',event: 'anotherFunction()', text: `Поделиться`, icon: `link-outline`, iconPosition: 'left' }) 
+                        +button({ type: 'button',  class: 'button_blue',event: 'anotherFunction()', text: `Версия для печати`, icon: `print-outline`,  iconPosition: 'left' })
+                        +button({ type: 'button', class: 'button_white', event: 'anotherFunction()',icon: `download-outline` }) 
+                    .project-generation__top-btns.mb 
+                        +button({ type: 'button', class: 'button_white',event: 'anotherFunction()', text: `Поделиться`, icon: `link-outline`, iconPosition: 'left' })
+                        +button({ type: 'button', class: 'button_white',event: 'anotherFunction()', text: `Скачать документ`, icon: `download-outline`, iconPosition: 'left' })
+            .project-generation__main
+                .project-generation__main-container
+                    span Дополнительная информация
+                    .project-generation__main-content 
+                        span Ваш инициативный проект сформирован. Вы вправе обратиться с данным инициативным проектом в письменном виде в МКУ “Наш город” за оказанием информационной и консультационной помощи по дальнейшим этапам работы с проектом и вопросами:
+                            | составления и оформления инициативного проекта;
+                            | определения части территории города Сургута, на которой могут реализовываться инициативные проекты;
+                            | организации и проведения собраний (конференций), опроса граждан и (или) сбора подписных листов, подтверждающих поддержку инициативного проекта
+                            | По адресу г. Сургут, ул. Дзержиинского, д.5, телефон 8 (3462) 28-27-08
+            .project-generation_bottom
+                .project-generation__bottom-container
+                    +button({ type: 'button',  event: 'anotherFunction()',class: 'button_white', text: `Вернуться к инициативным проектам`, icon: `arrow-back-outline`, iconPosition: 'left' })

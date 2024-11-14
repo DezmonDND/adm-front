@@ -1,33 +1,125 @@
+include ./header-links/header-links
+include ./socials/header-socials
+include ./logo/logo
+include ./menu/menu
+include ../../components/search/_search.pug 
+include ../../libs/buttons/_buttons.pug 
+include ../../libs/links/_links.pug 
+include ../../libs/search-button/_search-button.pug 
+include ../../libs/inputs/_inputs.pug
+include ../login/main/login
+include ../login/code/login-code
+include ../login/email/login-email
+
 mixin header(sort)
     header.header 
+        +menu('menu_main-bg', [
+            {
+                href: '/',
+                title: 'Быстрый доступ'
+            },
+            {
+                href: '/',
+                title: 'Публичные слушания'
+            },
+            {
+                href: '/',
+                title: 'Противодействие коррупции'
+            },
+            {
+                href: '/',
+                title: 'Пресс-центр'
+            },
+            {
+                href: '/',
+                title: 'Обращения граждан'
+            },
+            {
+                href: '/',
+                title: 'О Сургуте'
+            },
+            {
+                href: '/',
+                title: 'Городская власть'
+            },
+            {
+                href: '/',
+                title: 'Документы'
+            },
+            {
+                href: '/',
+                title: 'Контакты'
+            }
+        ])
         .header__top-content
             .header__top-links
-                .header_links
-                    a(href='/' ).header__link Быстрый доступ
-                    a(href='/').header__link Публичные слушания
-                    a(href='/').header__link Противодействие коррупции
-                    a(href='/').header__link Пресс-центр
-                    a(href='/').header__link Обращения граждан
-                .header__socials
-                    a(href='/').header__social__icon.vk_icon 
-                    a(href='/').header__social__icon.ok_icon 
-                    a(href='/').header__social__icon.tg_icon
+                +header-links([
+                    {
+                        href: '/',
+                        title: 'Быстрый доступ',
+                    },
+                    {
+                        href: '/',
+                        title: 'Публичные слушания',
+                    },
+                    {
+                        href: '/',
+                        title: 'Противодействие коррупции',
+                    },
+                    {
+                        href: '/',
+                        title: 'Пресс-центр',
+                    },
+                    {
+                        href: '/',
+                        title: 'Обращения граждан',
+                    },
+                ])
+                +header-socials([
+                    {
+                        href: '/',
+                        class: 'vk_icon'
+                    },
+                    {
+                        href: '/',
+                        class: 'ok_icon '
+                    },
+                    {
+                        href: '/',
+                        class: 'tg_icon'
+                    },
+                ])
             .header__buttons  
-                a(href='/').header__eye-link
-                    span.header__eye-link-title Версия для слабовидящих
-                +button({ type: 'button', class: 'button_blue button_header', event: 'anotherFunction()', icon: '', size: 'xs', text: 'Войти' })     
+                +button({ type: 'link', href: '/', class: 'button_white button__eye', icon: 'eye-outline', size: 'xs', iconPosition: 'left', text: 'Версия для слабовидящих'})               
+                +button({ type: 'button', class: 'button_blue', event: 'showLogin()', icon: '', size: 's', text: 'Войти' })     
         .header__bottom-content
-            a(href="/").header__main-links
-                img(class=`header__logo` src=`../icons/footer-logo_icon.svg` alt='Логотип')
-                .header__main-links__block 
-                    span.header__title Администрация Сургута
-                    span.header__main-link Официальный портал
+            +logo({
+                href: '/',
+                title: 'Администрация Сургута',
+                about: 'Официальный портал',
+            })
             +search(
                 {name: 'number', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
                     false, 's', 'getValues()', 'header',) 
-            .header__bottom-links 
-                a(href='/').header__link О Сургуте
-                a(href='/').header__link Городская власть
-                a(href='/').header__link Документы
-                a(href='/').header__link Контакты 
-            +button({ type: 'button', class: 'button_burger', event: 'anotherFunction()', icon: 'menu-outlined_icon.svg', size: 'xs', text: '' })        
+            +header-links([
+                {
+                    href: '/',
+                    title: 'О Сургуте',
+                },
+                {
+                    href: '/',
+                    title: 'Городская власть',
+                },
+                {
+                    href: '/',
+                    title: 'Документы',
+                },
+                {
+                    href: '/',
+                    title: 'Контакты',
+                },
+                ])        
+            +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })        
+    +login()  
+    +login-code()   
+    +login-email()

@@ -1,0 +1,64 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.chronicle {
+    display: flex;
+
+    .chronicle__container {
+        display: flex;
+        gap: 24px;
+
+        .chronicle__list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .chronicle__slider {
+                display: flex;
+                justify-content: center;
+                margin: 48px 0 48px;
+            }
+        }
+
+        .chronicle__calendar {
+            @include respond-to(md) {
+                display: none;
+            }
+        }
+    }
+}
+
+.dm-calendar__btn {
+    display: none;
+    margin-bottom: 24px;
+
+    @include respond-to(md) {
+        display: flex;
+    }
+
+    @include respond-to(sm) {
+        display: none;
+    }
+
+    .dm-calendar__button {
+        @include respond-to(md) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+.dm-filter__btn {
+    display: none;
+    margin-bottom: 24px;
+
+    @include respond-to(sm) {
+        display: flex;
+    }
+    .dm-filter__button {
+        
+        @include respond-to(sm) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

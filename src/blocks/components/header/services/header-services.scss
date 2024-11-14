@@ -29,6 +29,7 @@
             color: $main-text;
             padding: 4px 18px;
             gap: 12px;
+            border-color: transparent;
             @include heading-h6;
 
             &:hover {
