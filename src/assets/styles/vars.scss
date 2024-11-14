@@ -324,8 +324,8 @@ $breakpoint-sm: 768px;
 
 @mixin tags-label {
     font-weight: $font-weight-semi-bold;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: calc(11px * var(--scale));
+    line-height: calc(14px * var(--lh));
     text-transform: uppercase;
 }
 

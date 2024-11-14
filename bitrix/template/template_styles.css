@@ -370,8 +370,8 @@ body.blue-theme {
 }
 .button_tag-label span {
   font-weight: 500;
-  font-size: 11px;
-  line-height: 14px;
+  font-size: calc(11px * var(--scale));
+  line-height: calc(14px * var(--lh));
   text-transform: uppercase;
 }
 
@@ -9737,8 +9737,8 @@ body.blue-theme {
 .main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__tags .news-card__tag {
   padding: 4px 12px;
   font-weight: 500;
-  font-size: 11px;
-  line-height: 14px;
+  font-size: calc(11px * var(--scale));
+  line-height: calc(14px * var(--lh));
   text-transform: uppercase;
 }
 .main-news-card .main-news-card__container .main-news-card__content {
