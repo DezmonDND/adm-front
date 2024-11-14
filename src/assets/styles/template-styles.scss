@@ -54,11 +54,13 @@
 @use '../../blocks/components/afisha/event-full-desc/full-desc.scss';
 @use '../../blocks/components/slider/main/slider.scss';
 @use '../../blocks/components/administration/service/adm-service.scss';
+@use '../../blocks/components/documents/dumalist/documents-dumalist.scss';
 @use '../../blocks/components/documents/shortlist/documents-shortlist.scss';
 @use '../../blocks/components/documents/list/documents-list.scss';
 @use '../../blocks/components/documents/fulllist/documents-fulllist.scss';
 @use '../../blocks/components/phonebook/main/phonebook.scss';
 @use '../../blocks/components/login/main/login.scss';
+@use '../../blocks/components/projects/project-generation/project-generation.scss';
 
 @use '../../blocks/components/subscribe/subscribe.scss';
 
@@ -83,14 +85,14 @@
 @use '../../blocks/components/header/header-links/header-links.scss';
 @use '../../blocks/components/header/socials/header-socials.scss';
 @use '../../blocks/components/header/logo/logo.scss';
+@use '../../blocks/components/meeting/question/question.scss';
+@use '../../blocks/components/meeting/solution/solution.scss';
 @use '../../blocks/components/honor-board/board-card/board-card.scss';
 @use '../../blocks/components/honor-board/board-list/board-list.scss';
 @use '../../blocks/components/citizens/citizen-card/citizen-card.scss';
 @use '../../blocks/components/citizens/citizens-list/citizens-list.scss';
 @use '../../blocks/components/header/menu/menu.scss';
 @use '../../blocks/components/dm-comitet/main/dm-comitet.scss';
-
-
 
 * {
     font-family: 'Inter', sans-serif;
@@ -200,14 +202,7 @@ body {
 hr {
     border-color: $fourth-text;
     border-top: 0px;
-}
-
-ul {
-    margin-left: 18px;
-}
-
-b {
-    font-weight: $font-weight-bold;
+    margin: 32px 0 16px;
 }
 
 .upper-text {
