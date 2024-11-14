@@ -3,7 +3,7 @@
 .dm-deputies-alphabet {
   padding-top: 48px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dm-deputies-alphabet {
     padding-top: 24px;
   }
@@ -14,7 +14,7 @@
   gap: 180px;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dm-deputies-alphabet__row {
     flex-direction: column;
     align-items: flex-start;
@@ -34,7 +34,7 @@
   gap: 24px;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dm-deputies-alphabet__list {
     gap: 8px;
   }
@@ -42,7 +42,7 @@
     width: unset;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .dm-deputies-alphabet__list .dm-comitet-elem {
     width: 100%;
   }
@@ -53,7 +53,7 @@
   color: #000000;
   font-weight: 500;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dm-deputies-alphabet__letter {
     font-weight: 600 !important;
     font-weight: 500;
@@ -64,7 +64,7 @@
     content: "На букву ";
   }
 }
-@media (max-width: 768px) and (max-width: 992px) {
+@media (max-width: 992px) and (max-width: 992px) {
   .dm-deputies-alphabet__letter {
     font-size: 16px;
     line-height: 20px;
