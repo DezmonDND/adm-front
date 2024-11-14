@@ -2,7 +2,7 @@ include ../socials/header-socials
 
 mixin menu(bg, data)
     .mobile-menu
-        .menu(style=`background-color: ${bg}`) 
+        div(class=`menu ${bg}`)
             .menu__container 
                 .menu__buttons 
                     +logo({

@@ -1,7 +1,7 @@
 
 <header class="header-duma">
   <div class="mobile-menu">
-    <div class="menu" style="background-color: #F7F6EF"> 
+    <div class="menu menu_duma-bg">
       <div class="menu__container"> 
         <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
             <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>

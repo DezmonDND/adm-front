@@ -1561,7 +1561,7 @@ body.tmp-duma {
   background-position: left;
 }
 .header .header__top-content .header__buttons .header__eye-link:hover {
-  filter: invert(44%) sepia(59%) saturate(7476%) hue-rotate(210deg) brightness(89%) contrast(105%);
+  color: var(--primary-color-hover);
 }
 .header .header__top-content .header__buttons .header__eye-link .header__eye-link-title {
   margin-left: 28px;
@@ -1628,6 +1628,14 @@ body.tmp-duma {
 .button__eye:hover {
   border-color: transparent;
   background-color: transparent;
+}
+
+.menu_main-bg {
+  background-color: #FFFFFF;
+}
+
+.menu_duma-bg {
+  background-color: var(--cards-background);
 }
 
 .button_header {

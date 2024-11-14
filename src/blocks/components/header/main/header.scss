@@ -1,9 +1,5 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-@mixin icons-hover {
-    filter: invert(44%) sepia(59%) saturate(7476%) hue-rotate(210deg) brightness(89%) contrast(105%);
-}
-
 .header {
     display: flex;
     flex-direction: column;
@@ -41,7 +37,7 @@
                 background-position: left;
 
                 &:hover {
-                    @include icons-hover;
+                    color: $primary-color-hover;
                 }
 
                 .header__eye-link-title {
@@ -107,6 +103,14 @@
         background-color: transparent;
     }
 
+}
+
+.menu_main-bg {
+    background-color: $content-color;
+}
+
+.menu_duma-bg {
+    background-color: $cards-background;
 }
 
 .button_header {
