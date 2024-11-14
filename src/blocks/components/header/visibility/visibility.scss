@@ -284,6 +284,30 @@
   width: 0;
 }
 
+.visibility .news .news__container {
+  flex-direction: column;
+}
+
+.visibility .news-card-without-image, .visibility .news-card-with-image {
+  width: 100%;
+  max-width: unset;
+}
+
+.visibility .important-links__container {
+  grid-template-columns: 1fr;
+}
+.visibility .usefull-links__container {
+  grid-template-columns: repeat(3, 1fr);
+}
+.visibility .main-events .main-events__container .main-events__news {
+  grid-template-columns: repeat(3, 1fr);
+}
+.visibility .main-services .main-services__container .main-services__buttons .main-services__buttons-container {
+  flex-direction: column;
+}
+
+
+// ТЕМНАЯ ТЕМА
 
 .dark-theme .input {
   background-color: $content-color;
@@ -295,9 +319,6 @@
   border: 1px solid #c6cbd9;
 }
 
-.dark-theme .input::placeholder {
-  // color: $main-text; 
-}
 
 .dark-theme .button {
   color: $main-text;
@@ -368,30 +389,109 @@
   border: 1px solid $main-text;
 }
 
-.visibility .important-links__container {
-  grid-template-columns: 1fr;
-}
-.visibility .usefull-links__container {
-  grid-template-columns: repeat(3, 1fr);
-}
-.visibility .main-events .main-events__container .main-events__news {
-  grid-template-columns: repeat(3, 1fr);
-}
-.visibility .main-services .main-services__container .main-services__buttons .main-services__buttons-container {
-  flex-direction: column;
-}
-
 .dark-theme .navigation .navigation__link-next, .dark-theme .navigation .navigation__link-prev {
   color: $main-text;
 }
 
-.visibility .news .news__container {
-  flex-direction: column;
+
+// ГОЛУБАЯ ТЕМА
+
+.blue-theme .input {
+  background-color: $content-color;
+  color: $main-text; 
+  border: 1px solid $main-text;
+}
+
+.blue-theme  .search__button {
+  background-color: $content-color;
+  border: 1px solid $main-text;
+  color: $main-text;
 }
 
 
+.blue-theme  .button {
+  color: $main-text;
+  border: 1px solid $main-text;
+}
+.blue-theme .news-card-with-image .news-card-with-image__container .news-card-with-image__content {
+  color: $content-color;
+}
 
-.visibility .news-card-without-image, .visibility .news-card-with-image {
-  width: 100%;
-  max-width: unset;
+
+.blue-theme  .news-card-without-image__container {
+  border: 1px solid $main-text;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.blue-theme  .news-card-with-image__content .button, .dark-theme .people-care-card__container .button, .dark-theme .main-services__buttons-container .button, .dark-theme .important-links__container a, .dark-theme .usefull-link{
+  background-color: transparent;
+  border: 1px solid $content-color;
+}
+
+.blue-theme  .news-card-with-image__content .button {
+  color: $content-color;
+}
+.blue-theme .news-card-without-image .news-card-without-image__container .news-card-without-image__date {
+  color: $main-text;
+}
+.blue-theme  .header__link:hover, .dark-theme .header__main-links:hover {
+  color: unset;
+}
+
+.blue-theme  .tabs .tabs__container .tab-button_active {
+  color: unset;
+  border-bottom:  2px solid $main-text;
+}
+
+.blue-theme  .main-news-card:hover {
+  color: unset;
+}
+
+.blue-theme  .main-title .main-title__container .main-title__link {
+  color: $main-text;
+}
+
+.blue-theme  .main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__tags .news-card__tag {
+  background-color: $main-text;
+  color: $content-color;
+  border: none;
+}
+
+.blue-theme  .calendar .calendar__links .calendar__link-content .calendar__link_clicked {
+  border: 1.5px solid $main-text;
+  color: $main-text;
+}
+
+.blue-theme  .calendar .calendar__links .calendar__link-content .calendar__icon {
+  background-color: $main-text;
+}
+
+.blue-theme  .select {
+  color: $main-text;
+}
+
+.blue-theme  .people-care-card .people-care-card__container .people-care-card__title {
+  color: $main-text;
+}
+
+.blue-theme  .main-project-card__dates .button, .dark-theme .main-project-card__dates .main-project-card__date {
+  border: 1px solid $main-text;
+  background-color: $content-color;
+  margin: 0 !important;
+}
+.blue-theme .important-link, .blue-theme .usefull-link {
+  border: 1px solid $main-text;
+}
+
+.blue-theme  .important-links .important-links__container .important-link:hover {
+  color: unset;;
+}
+
+.blue-theme  .main-project-card {
+  border: 1px solid $main-text;
+}
+
+.blue-theme  .navigation .navigation__link-next, .dark-theme .navigation .navigation__link-prev {
+  color: $main-text;
 }

@@ -53,8 +53,15 @@ function visibility() {
     el.classList.add('active-param')
     if(theme == 'dark') {
       document.body.classList.add('dark-theme')
+      document.body.classList.remove('blue-theme')
     }
     if(theme == 'light'){
+      document.body.classList.remove('dark-theme')
+      document.body.classList.remove('blue-theme')
+
+    }
+    if(theme == 'blue'){
+      document.body.classList.add('blue-theme')
       document.body.classList.remove('dark-theme')
     }
   }
