@@ -1,0 +1,21 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-applications {
+    display: flex;
+    flex-direction: column;
+
+    .dm-applications__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 978px;
+        width: 100%;
+
+        .dm-applications__list {
+            .dm-applications__item {}
+        }
+
+        .dm-applications__form {
+            .dm-applications__title {}
+        }
+    }
+}
