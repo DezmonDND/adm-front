@@ -6,10 +6,10 @@
     align-items: center;
     max-width: 1440px;
     width: 100%;
-    margin: 0 0 27px;
+    margin: 16px 0 24px;
 
-    @media (max-width: 1000px) {
-        margin: 10px 0 17px;
+    @include respond-to(sm) {
+        margin: 8px 0 16px;
     }
 
     .tabs__container {
