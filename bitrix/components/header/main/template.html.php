@@ -2,31 +2,34 @@
 <header class="header"> 
   <div class="mobile-menu">
     <div class="menu menu_main-bg">
-      <div class="menu__container"> 
-        <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
-            <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-          <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
-            <ion-icon class="icon" name="close-outline"></ion-icon>
-          </button>
+      <div class="menu__container">
+        <div class="menu__content"> 
+          <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+              <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+            <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+              <ion-icon class="icon" name="close-outline"></ion-icon>
+            </button>
+          </div>
+          <form class="search search-header-mobile">
+            <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+            <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
+          </form>
+          <ul class="menu__list"> 
+            <li><a class="menu__item" href="/">Быстрый доступ</a></li>
+            <li><a class="menu__item" href="/">Публичные слушания</a></li>
+            <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
+            <li><a class="menu__item" href="/">Пресс-центр</a></li>
+            <li><a class="menu__item" href="/">Обращения граждан</a></li>
+            <li><a class="menu__item" href="/">О Сургуте</a></li>
+            <li><a class="menu__item" href="/">Городская власть</a></li>
+            <li><a class="menu__item" href="/">Документы</a></li>
+            <li><a class="menu__item" href="/">Контакты</a></li>
+          </ul>
         </div>
-        <form class="search search-header-mobile">
-          <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="search__button search__button_s" type="submit" onclick="getValues()">       </button>
-        </form>
-        <ul class="menu__list"> 
-          <li><a class="menu__item" href="/">Быстрый доступ</a></li>
-          <li><a class="menu__item" href="/">Публичные слушания</a></li>
-          <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
-          <li><a class="menu__item" href="/">Пресс-центр</a></li>
-          <li><a class="menu__item" href="/">Обращения граждан</a></li>
-          <li><a class="menu__item" href="/">О Сургуте</a></li>
-          <li><a class="menu__item" href="/">Городская власть</a></li>
-          <li><a class="menu__item" href="/">Документы</a></li>
-          <li><a class="menu__item" href="/">Контакты</a></li>
-        </ul>
         <div class="menu__socials"> 
-          <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
-          </div><a class="header__eye" href="/"> </a>
+          <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+          </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+            <ion-icon class="icon" name="eye-outline"></ion-icon></a>
         </div>
       </div>
     </div>

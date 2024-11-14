@@ -1,5 +1,20 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+@mixin mobile-icons {
+    width: 40px;
+    height: 40px;
+    background-color: $primary-color;
+    border-radius: 4px;
+    background-size: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .header__social-icon,
+body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
+    background-color: $primary-color-green;
+}
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -9,9 +24,12 @@
     height: 100%;
     width: 100%;
     z-index: 10;
-    transition: .3s ease-in-out;
+    opacity: 0;
+    transition: opacity .3s linear;
+    will-change: opacity;
 
     &_active {
+        opacity: 1;
         right: 0;
     }
 
@@ -19,10 +37,16 @@
         display: flex;
         position: fixed;
         top: 0;
+        right: 0;
+        bottom: 0;
         right: -100%;
         z-index: 100;
-        transition: .3s ease-in-out;
+        transition: .4s ease-in-out;
         opacity: 1;
+        overflow-y: auto;
+        max-width: 440px;
+        width: 100%;
+
 
         &_active {
             right: 0;
@@ -31,7 +55,9 @@
         .menu__container {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             padding: 24px;
+            width: 100%;
 
             .search-header-mobile {
                 margin: 36px 0 40px;
@@ -49,8 +75,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
-                min-height: 620px;
-                @include heading-h1;
+                @include lead-2;
 
                 .menu__item {
                     text-decoration: none;
@@ -63,7 +88,40 @@
                 align-items: center;
                 justify-content: space-between;
                 margin-top: 24px;
+
+                .vk_icon-mobile {
+                    background-image: url(../icons/vk_duma-header.svg);
+                }
+
+                .ok_icon-mobile {
+                    background-image: url(../icons/ok_duma-header.svg);
+                }
+
+                .tg_icon-mobile {
+                    background-image: url(../icons/tg_icon.svg);
+                }
+
+                .header__social-icon {
+                    @include mobile-icons;
+                }
+
+                .button__eye {
+                    background-color: $primary-color;
+                    color: $content-color;
+                    box-sizing: border-box;
+                    padding: 6px;
+                    border-radius: 4px;
+
+                    .icon {
+                        font-size: 26px;
+                        border-radius: 4px;
+                    }
+                }
             }
         }
     }
+}
+
+.overlay_mobile-menu {
+    overflow: hidden;
 }
