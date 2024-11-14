@@ -61,9 +61,7 @@
 @use '../../blocks/components/phonebook/main/phonebook.scss';
 @use '../../blocks/components/login/main/login.scss';
 @use '../../blocks/components/projects/project-generation/project-generation.scss';
-
 @use '../../blocks/components/subscribe/subscribe.scss';
-
 @use './bootstrap-grid.scss';
 @use '../../blocks/components/header/services/header-services.scss';
 @use '../../blocks/components/people-care-card/main/people-care-card.scss';
@@ -91,6 +89,9 @@
 @use '../../blocks/components/honor-board/board-list/board-list.scss';
 @use '../../blocks/components/citizens/citizen-card/citizen-card.scss';
 @use '../../blocks/components/citizens/citizens-list/citizens-list.scss';
+@use '../../blocks/components/chronicle/main/chronicle.scss';
+@use '../../blocks/components/chronicle/calendar/calendar-dm.scss';
+@use '../../blocks/components/hearing/archive-dm/archive-dm.scss';
 @use '../../blocks/components/dm-comitet/main/dm-comitet.scss';
 
 * {

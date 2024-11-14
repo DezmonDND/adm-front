@@ -1,4 +1,12 @@
 /*** Finish - Title ***/
+body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-title {
+  display: none;
+}
+
+body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-desc {
+  color: #78839c;
+}
+
 .hearing-list {
   padding: 40px 0 0 0;
 }
@@ -68,7 +76,15 @@
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+@media (max-width: 992px) {
+  .hearing-item-title span {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 @media (max-width: 1000px) {
   .hearing-item-title {
@@ -97,22 +113,36 @@
 .hearing-item-labels {
   display: flex;
 }
-.hearing-item-labels-item:first-child {
-  padding-right: 24px;
+.hearing-item-labels-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.hearing-item-labels span {
+.hearing-item-labels-item .hearing-item-span-title {
   color: #78839c;
   font-weight: 300;
-  display: block;
-  font-weight: 300;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
 }
 @media (max-width: 992px) {
-  .hearing-item-labels span {
-    font-size: 14px;
-    line-height: 20px;
+  .hearing-item-labels-item .hearing-item-span-title {
+    font-size: 10px;
+    line-height: 14px;
   }
+}
+.hearing-item-labels-item .hearing-item-span-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+@media (max-width: 992px) {
+  .hearing-item-labels-item .hearing-item-span-desc {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.hearing-item-labels-item:first-child {
+  padding-right: 24px;
 }
 .hearing-item-link {
   position: relative;
@@ -121,65 +151,15 @@
   border-radius: 8px;
   overflow: hidden;
 }
+.hearing-item-link .hearing-card_button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
 .hearing-item-bg {
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   top: 0;
-}
-.hearing-item-play {
-  position: absolute;
-  top: 157px;
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.hearing-item-play:hover {
-  background-color: var(--primary-color-hover);
-}
-.hearing-item-play-icon {
-  position: relative;
-  width: 0;
-  height: 0;
-  border-left: 9.6px solid white;
-  border-top: 6.432px solid transparent;
-  border-bottom: 6.432px solid transparent;
-  border-radius: 2px;
-  margin-left: +2.4px;
-}
-@media (max-width: 1000px) {
-  .hearing-item-play {
-    top: 78px;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .hearing-item-play:hover {
-    background-color: var(--primary-color-hover);
-  }
-  .hearing-item-play-icon {
-    position: relative;
-    width: 0;
-    height: 0;
-    border-left: 6.4px solid white;
-    border-top: 4.288px solid transparent;
-    border-bottom: 4.288px solid transparent;
-    border-radius: 2px;
-    margin-left: +1.6px;
-  }
 }

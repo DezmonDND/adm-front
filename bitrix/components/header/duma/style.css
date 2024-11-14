@@ -7,7 +7,7 @@
   width: 100%;
   color: #000000;
   background-color: var(--cards-background);
-  border-bottom: 1px solid #e7edfb;
+  border-bottom: 1px solid var(--event-color-hover);
 }
 .header-duma .header__top-content {
   display: flex;
