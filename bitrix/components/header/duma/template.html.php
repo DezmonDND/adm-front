@@ -58,3 +58,75 @@
     </div>
   </div>
 </header>
+<div class="overlay hidden"></div>
+<div class="login hidden">
+  <div class="login__content">
+    <div class="login__content-top"><span>Вход          </span>
+      <ion-icon class="icon" name="close-outline" onclick="hideLogin()"></ion-icon>
+    </div>
+    <div class="login__content-main">
+      <div class="login__content-main__text">
+        <div class="login__content-main__title"><span>Введите номер телефона</span></div>
+        <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
+      </div>
+      <div class="login__content-main__input">
+        <input class="input    " placeholder="Номер телефона" value=""/>
+      </div>
+      <div class="login__content-main__confirm-standart">
+        <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+        </button>
+      </div>
+      <div class="login__content-main__confirm-delim"> 
+        <div class="delim-line"></div><span> или </span>
+        <div class="delim-line"> </div>
+      </div>
+      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+      </div>
+      <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
+    </div>
+  </div>
+</div>
+<div class="overlay hidden"></div>
+<div class="login login-code hidden">
+  <div class="login__content">
+    <div class="login__content-top"><span>Вход          </span>
+      <ion-icon class="icon" name="close-outline" onclick="hideCode()"></ion-icon>
+    </div>
+    <div class="login__content-main">
+      <div class="login__content-main__text">
+        <div class="login__content-main__title"><span>Введите код</span></div>
+        <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
+      </div>
+      <div class="login__content-main__input">
+        <input class="input    " placeholder="Код" value=""/>
+      </div>
+      <!-- Если код неверный то инпут меняется на этот-->
+      <div class="login__content-main__input wrong-code">
+        <input class="input    " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+      </div>
+      <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
+    </div>
+  </div>
+</div>
+<div class="overlay hidden"></div>
+<div class="login login-email hidden">
+  <div class="login__content">
+    <div class="login__content-top"><span>Вход          </span>
+      <ion-icon class="icon" name="close-outline" onclick="hideEmail()"></ion-icon>
+    </div>
+    <div class="login__content-main">
+      <div class="login__content-main__text">
+        <div class="login__content-main__title"><span>Войти по почте</span></div>
+        <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
+      </div>
+      <div class="login__content-main__input">
+        <input class="input    " placeholder="Электронная почта" value=""/>
+      </div>
+      <div class="login__content-main__confirm-standart">
+        <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+        </button>
+      </div>
+      <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
+    </div>
+  </div>
+</div>

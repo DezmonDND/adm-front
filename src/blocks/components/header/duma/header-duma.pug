@@ -7,6 +7,9 @@ include ../../../libs/buttons/_buttons.pug
 include ../../../libs/links/_links.pug 
 include ../../../libs/search-button/_search-button.pug 
 include ../../../libs/inputs/_inputs.pug
+include ../../login/main/login
+include ../../login/code/login-code
+include ../../login/email/login-email
 
 mixin header-duma()
     header.header-duma
@@ -78,4 +81,7 @@ mixin header-duma()
                         href: '/',
                         class: 'ok_icon-duma'
                     },
-                    ])           
+                    ])  
+    +login()  
+    +login-code()   
+    +login-email()                         
