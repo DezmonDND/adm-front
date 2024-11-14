@@ -16,6 +16,14 @@
   }
 }
 
+.dm-struct-card:hover span {
+  color: var(--primary-color-hover);
+}
+
+.dm-struct-card:active span {
+  color: var(--primary-color-active);
+}
+
 .dm-struct-card__container {
   padding: 24px;
   display: flex;
@@ -160,4 +168,14 @@
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 500;
+}
+
+.dm-struct__bottom a:hover {
+  color: var(--primary-color-hover);
+  border-bottom: 1px solid var(--primary-color-hover);
+}
+
+.dm-struct__bottom a:active {
+  color: var(--primary-color-active);
+  border-bottom: 1px solid var(--primary-color-active);
 }
