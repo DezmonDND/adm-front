@@ -11908,6 +11908,11 @@ td:hover {
   gap: 16px;
   padding-bottom: 16px;
 }
+@media (max-width: 992px) {
+  .dm-finance__list {
+    gap: 8px;
+  }
+}
 
 * {
   font-family: "Inter", sans-serif;

@@ -118,4 +118,7 @@
     flex-direction: column;
     gap: 16px;
     padding-bottom: 16px;
+    @include respond-to(md) {
+        gap: 8px;
+    }
 }
