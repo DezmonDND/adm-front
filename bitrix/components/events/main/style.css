@@ -1,4 +1,8 @@
 /*** Finish - Title ***/
+body.tmp-duma .main-events {
+  margin-top: 25px;
+}
+
 @media (max-width: 1000px) {
   .main-events {
     padding-top: 18px;

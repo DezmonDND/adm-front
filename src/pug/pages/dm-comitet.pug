@@ -1,0 +1,56 @@
+extends ../dm-layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Администрация'},
+                { sort: '', href: '/', text: 'Заместители'},
+            ],
+            )
+        +title({
+            title: 'Комитет по бюджету, налогам, финансам и имуществу'
+        })
+        +dm-comitet(
+            {
+                img: 'kirilenko_avatar.png',
+                surname: 'Барсов',
+                name: 'Евгений Вячеславович'
+            },
+            [
+                {
+                img: 'kirilenko_avatar.png',
+                surname: 'Барсов',
+                name: 'Евгений Вячеславович'
+                },
+                {
+                img: 'kirilenko_avatar.png',
+                surname: 'Барсов',
+                name: 'Евгений Вячеславович'
+                }
+            ],
+            [
+                {
+                img: 'kirilenko_avatar.png',
+                surname: 'Барсов',
+                name: 'Евгений Вячеславович'
+                },
+                {
+                img: 'kirilenko_avatar.png',
+                surname: 'Барсов',
+                name: 'Евгений Вячеславович'
+                },
+                {
+                img: 'kirilenko_avatar.png',
+                surname: 'Барсов',
+                name: 'Евгений Вячеславович'
+                },
+                {
+                img: 'kirilenko_avatar.png',
+                surname: 'Барсов',
+                name: 'Евгений Вячеславович'
+                }
+            ]
+        )
+        +short-filelist([{title:"Положение о деятельности комитета", href:"#"}])

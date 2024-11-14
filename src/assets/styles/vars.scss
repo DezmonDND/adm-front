@@ -22,8 +22,8 @@ $icons-background: #f7fbfe;
 $input-color-default: #c6cbd9;
 
 // Календарь
-$event-color: #e7edfb;
-$event-color-hover: #e7edfb;
+$event-color: var(--event-color);
+$event-color-hover: var(--event-color-hover);
 
 // Кнопки
 $primary-color: var(--primary-color);
@@ -35,6 +35,9 @@ $primary-color-green: var(--primary-color-green);
 $primary-color-green-hover: var(--primary-color-green-hover);
 $primary-color-green-click: var(--primary-color-green-click);
 $primary-color-green-disabled: var(--primary-color-green-disabled);
+
+$secondary-color: var(--secondary-color);
+
 $padding-button-l: 17px 28px;
 $padding-button-m: 11px 20px;
 $padding-button-s: 7px 16px;
@@ -52,6 +55,11 @@ $health-color: linear-gradient(#8eec87 0%, #447ecb 100%);
 $finance-color: linear-gradient(#e8aaef 0%, #3172c6 100%);
 $projects-color: linear-gradient(#8edcd6 0%, #1679b7 100%);
 $social-color: linear-gradient(#f97a7c 0%, #5280ea 100%);
+
+// Дума
+$dm-project-bg-1: linear-gradient(244.39deg, #0D6CBA 25.53%, #CCCAC5 104.75%);
+$dm-project-bg-2: linear-gradient(256.37deg, #255BA0 35.08%, #15B3E7 111.88%);
+$dm-project-bg-3: linear-gradient(254.18deg, #255BA0 35.1%, #15E7D9 121.05%);
 
 // Опросы
 $interview-color: #2dbb45;
@@ -72,6 +80,19 @@ $font-weight-bold: 600;
 
 $breakpoint-md: 992px;
 $breakpoint-sm: 768px;
+
+// Mixin colors
+@mixin dm-icon-color {
+    filter: invert(55%) sepia(88%) saturate(3553%) hue-rotate(28deg) brightness(99%) contrast(81%);
+}
+
+// Mixin colors
+@mixin visible-lines($num) {
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 // Mixin media
 @mixin respond-to($breakpoint) {
