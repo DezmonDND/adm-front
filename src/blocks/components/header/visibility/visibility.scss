@@ -9,6 +9,7 @@
   background-color: #fafafa;
   display: none;
   max-width: 100vw;
+  
 }
 
 .header-visibility.active {
@@ -17,11 +18,15 @@
   
   .header-visibility-container {
     margin: 0 auto;
-    max-width: 1305px;
+    box-sizing: border-box;
+    max-width: 1440px;
     padding: 20px 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include respond-to(md) {
+      padding: 16px 20px;
+  }
   }
   
   .header-visibility-elems {
@@ -200,8 +205,12 @@
   justify-content: flex-start;
 }
 
-.visibility .header-visibility__top-content, .visibility .header-visibility__middle-content, .visibility .header-visibility__bottom-content {
+.visibility .header-visibility__top-content, .visibility .header-visibility__middle-content, .visibility  .header-visibility__bottom-content {
   display: flex;
+  @include respond-to(md) {
+    padding: 16px 20px;
+}
+
 }
 
 .visibility .header__top-content, .visibility .header__bottom-content {
@@ -220,6 +229,7 @@
   flex-wrap: wrap;
   align-items: stretch;
 }
+
 
 .visibility .full-width-background {
   background-color:var(--content-color) !important;
@@ -361,19 +371,27 @@
 .visibility .important-links__container {
   grid-template-columns: 1fr;
 }
-
-@media screen and (max-width:1024px) {
-    .visibility .main-events .main-events__container .main-events__news {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .visibility .main-services .main-services__container .main-services__buttons .main-services__buttons-container {
-      flex-direction: column;
-    }
-    .visibility .usefull-links__container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+.visibility .usefull-links__container {
+  grid-template-columns: repeat(3, 1fr);
+}
+.visibility .main-events .main-events__container .main-events__news {
+  grid-template-columns: repeat(3, 1fr);
+}
+.visibility .main-services .main-services__container .main-services__buttons .main-services__buttons-container {
+  flex-direction: column;
 }
 
 .dark-theme .navigation .navigation__link-next, .dark-theme .navigation .navigation__link-prev {
   color: $main-text;
+}
+
+.visibility .news .news__container {
+  flex-direction: column;
+}
+
+
+
+.visibility .news-card-without-image, .visibility .news-card-with-image {
+  width: 100%;
+  max-width: unset;
 }

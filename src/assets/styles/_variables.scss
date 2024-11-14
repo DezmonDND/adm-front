@@ -95,8 +95,37 @@ body {
         --primary-color-green-click: #242433;
         --primary-color-green-disabled: #242433;
     }
-}
+    &.dark-theme {
+        --main-text: #ffffff; //primary
+        --main-text-dark-bg: #ffffff;
+        --second-text: #ffffff;
+        --tertiary-text: #ffffff;
+        --tertiary-text-dark-bg: #ffffff;
+        --fourth-text: #ffffff;
+        --fourth-text-inverse: #ffffff;
 
-.blue-theme {
-    // #B2D9FF
+
+        --icons-color: #ffff;
+        --content-color: #242433;
+        --services-hover: #242433;
+        --services-active: #242433;
+        // Фон
+        --cards-background: #242433;
+        --grey-adm: #242433;
+
+        // Календарь
+        --event-color: #242433;
+        --event-color-hover: #242433;
+
+        // Кнопки
+        --primary-color: #242433;
+        --primary-color-hover: #242433;
+        --primary-color-active: #242433;
+        --primary-color-disabled: #242433;
+
+        --primary-color-green: #242433;
+        --primary-color-green-hover: #242433;
+        --primary-color-green-click: #242433;
+        --primary-color-green-disabled: #242433;
+    }
 }

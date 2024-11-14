@@ -1,8 +1,9 @@
+/*** Finish - Title ***/
 .interview-full {
   display: flex;
   flex-direction: column;
   border-radius: 40px;
-  background-color: #FAFAFA;
+  background-color: var(--cards-background);
   align-items: center;
   justify-content: center;
   margin: 20px 0;
@@ -30,7 +31,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #78839C;
+  color: var(--tertiary-text);
 }
 .interview-full .interview-full__container .interview-full__description {
   display: flex;
