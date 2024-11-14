@@ -1,4 +1,8 @@
 /*** Finish - Title ***/
+body.tmp-duma .news {
+  margin-top: 0;
+}
+
 .news {
   display: flex;
   width: 100%;

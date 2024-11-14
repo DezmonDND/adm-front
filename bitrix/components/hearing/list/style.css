@@ -1,4 +1,12 @@
 /*** Finish - Title ***/
+body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-title {
+  display: none;
+}
+
+body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-desc {
+  color: #78839c;
+}
+
 .hearing-list {
   padding: 40px 0 0 0;
 }

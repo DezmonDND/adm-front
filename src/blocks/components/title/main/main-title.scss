@@ -2,7 +2,7 @@
 
 .main-title {
     box-sizing: border-box;
-    padding: 48px 0 40px;
+    padding: 26px 0 45px;
 
     @media (max-width: 1000px) {
         padding: 24px 0 20px;
@@ -20,8 +20,8 @@
 
         .main-title__link {
             text-decoration: none;
-            color: rgba(0, 76, 196, 1);
-            @include text-1;
+            color: $primary-color;
+            @include lead-3;
 
             &:hover {
                 text-decoration: underline;

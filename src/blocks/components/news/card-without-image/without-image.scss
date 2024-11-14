@@ -1,5 +1,11 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma .news-card-without-image {
+    &:nth-child(n+4) {
+        display: none;
+    }
+}
+
 .news-card-without-image {
     display: flex;
     background-color: $cards-background;

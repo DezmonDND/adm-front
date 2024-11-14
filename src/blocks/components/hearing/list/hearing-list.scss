@@ -1,6 +1,14 @@
 @use '../../../../assets/styles/vars.scss' as *;
 @use '../base.scss' as *;
 
+body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-title {
+    display: none;
+}
+
+body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-desc {
+    color: $tertiary-text;
+}
+
 .hearing-list {
     padding: 40px 0 0 0;
 
