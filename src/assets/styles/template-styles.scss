@@ -79,6 +79,7 @@
 @use '../../blocks/components/news/news-top/news-top.scss';
 @use '../../blocks/components/init-projects/init-card/init-card.scss';
 @use '../../blocks/components/init-projects/main/init-projects.scss';
+@use '../../blocks/components/monuments/main/monuments.scss';
 @use '../../blocks/components/header/duma/header-duma.scss';
 @use '../../blocks/components/header/header-links/header-links.scss';
 @use '../../blocks/components/header/socials/header-socials.scss';
@@ -97,7 +98,6 @@
 @use '../../blocks/components/dm-struct/main/dm-struct.scss';
 @use '../../blocks/components/dm-deputies/dm-deputies-alphabet/dm-deputies-alphabet.scss';
 @use '../../blocks/components/dm-deputies/dm-deputies-comitets/dm-deputies-comitets.scss';
-
 
 
 * {

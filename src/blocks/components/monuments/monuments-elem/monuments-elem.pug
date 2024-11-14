@@ -1,0 +1,19 @@
+
+
+mixin monuments-elem(item)
+    .monuments-elem 
+        .monuments-elem__container
+            img(src=`../resources/${item.img}`).monuments-elem__img
+            .monuments-elem__info
+                .monuments-elem__title
+                    span= item.title
+                .monuments-elem__date
+                    span Год октрытия
+                    span= item.date
+                .monuments-elem__descr
+                    .monuments-elem__addr
+                        span Местоположение
+                        span= item.addr
+                    .monuments-elem__author
+                        span Автор проекта
+                        span= item.author
