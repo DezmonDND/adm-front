@@ -72,8 +72,10 @@
       <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
       </div>
     </div>
-    <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
-        <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+    <div class="header__buttons"> 
+      <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()"><span class="button_span">Версия для слабовидящих</span>
+        <ion-icon class="icon" name="eye-outline"></ion-icon>
+      </button>
       <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
       </button>
     </div>
@@ -91,6 +93,31 @@
     <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
       <ion-icon class="icon" name="menu-outline"></ion-icon>
     </button>
+  </div>
+  <div class="header-visibility__top-content"> 
+    <div class="header-visibility__top-links">
+      <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
+      </div>
+      <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+      </div>
+    </div>
+    <div class="header__buttons"> 
+      <button class="button button_blue button_header button_size_xs   " onclick="showLogin()"><span class="button_span">Войти</span>
+      </button>
+    </div>
+  </div>
+  <div class="header-visibility__middle-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+      <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+    <form class="search search-header">
+      <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+      <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
+        <ion-icon class="icon" name="search-outline"></ion-icon>
+      </button>
+    </form>
+  </div>
+  <div class="header-visibility__bottom-content">
+    <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+    </div>
   </div>
 </header>
 <div class="overlay hidden"></div>

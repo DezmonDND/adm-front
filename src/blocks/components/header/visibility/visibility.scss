@@ -502,11 +502,8 @@
 }
 
 .visibility .input {
+  line-height: unset !important;
   @include text-3();
-}
-
-.visibility .search .search__button {
-  height: unset;
 }
 
 .visibility .tabs .tabs__container {
@@ -515,4 +512,16 @@
 
 .visibility .main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__tags {
   flex-wrap: wrap;
+}
+
+.visibility .news .news__container .news__list {
+  max-width: unset;
+}
+
+.visibility .search .search__button {
+  height: unset;
+}
+
+.visibility .search .search__button .icon {
+  font-size: calc(24px * var(--scale));
 }
