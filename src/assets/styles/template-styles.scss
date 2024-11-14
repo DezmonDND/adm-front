@@ -54,6 +54,7 @@
 @use '../../blocks/components/afisha/event-full-desc/full-desc.scss';
 @use '../../blocks/components/slider/main/slider.scss';
 @use '../../blocks/components/administration/service/adm-service.scss';
+@use '../../blocks/components/documents/dumalist/documents-dumalist.scss';
 @use '../../blocks/components/documents/shortlist/documents-shortlist.scss';
 @use '../../blocks/components/documents/list/documents-list.scss';
 @use '../../blocks/components/documents/fulllist/documents-fulllist.scss';
@@ -85,6 +86,7 @@
 @use '../../blocks/components/header/socials/header-socials.scss';
 @use '../../blocks/components/header/logo/logo.scss';
 @use '../../blocks/components/meeting/question/question.scss';
+@use '../../blocks/components/meeting/solution/solution.scss';
 @use '../../blocks/components/honor-board/board-card/board-card.scss';
 @use '../../blocks/components/honor-board/board-list/board-list.scss';
 @use '../../blocks/components/citizens/citizen-card/citizen-card.scss';

@@ -1,0 +1,96 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.duma-filelist {
+    .file-line {
+        padding: 20px;
+        background-color: $grey-adm;
+        border-radius: 8px;
+        margin-bottom: 12px;
+
+        & {
+            color: $second-text;
+            @include lead-5;
+        }
+
+        .title {
+            margin-top: 0;
+            margin-bottom: 12px;
+            @include heading-h4;
+        }
+
+        .description {
+            @include text-2;
+        }
+
+        hr {
+            margin: 16px 0;
+
+            @include respond-to(sm) {
+                display: none;
+            }
+        }
+
+
+        .fields {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @include respond-to(sm) {
+                margin-top: 20px;
+            }
+
+            .field {
+                &:nth-of-type(1) {
+                    margin-right: 24px;
+                    @include lead-3;
+                }
+
+                &:nth-of-type(2) {
+                    @include text-2;
+                }
+
+                &:nth-of-type(3) {
+                    margin-left: auto;
+                }
+            }
+
+            @include respond-to(sm) {
+                flex-direction: column;
+                align-items: baseline;
+
+                .field {
+
+                    &:nth-of-type(2),
+                    &:nth-of-type(3),
+                    &:nth-of-type(1) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    &:nth-of-type(3) {
+                        margin-top: 20px;
+                        width: 100%;
+
+                        a {
+                            width: auto;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            background: $services-hover;
+        }
+
+        @media (max-width: 768px) {
+            padding: 16px 20px;
+        }
+    }
+}
