@@ -1,0 +1,85 @@
+/*** Finish - Title ***/
+body.tmp-duma .usefull-links .usefull-links__container .usefull-link__icon {
+  color: var(--primary-color-green);
+}
+
+.usefull-links {
+  margin-top: 50px;
+}
+@media (max-width: 1000px) {
+  .usefull-links {
+    margin-top: 21px;
+  }
+}
+@media (max-width: 600px) {
+  .usefull-links {
+    margin-top: 16px;
+  }
+}
+.usefull-links .usefull-links__container {
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% - 72px) / 4));
+  gap: 24px;
+  justify-content: center;
+  margin-top: 6px;
+}
+@media (max-width: 1000px) {
+  .usefull-links .usefull-links__container {
+    gap: 8px;
+    grid-template-columns: repeat(3, calc((100% - 16px) / 3));
+    margin-top: 0;
+    padding: 0 0 4px;
+  }
+}
+@media (max-width: 600px) {
+  .usefull-links .usefull-links__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.usefull-links .usefull-links__container .usefull-link {
+  display: flex;
+  flex-direction: row-reverse;
+  text-decoration: none;
+  color: #000000;
+  gap: 8px;
+  background-color: var(--cards-background);
+  border-radius: 8px;
+  padding: 20px;
+  justify-content: space-between;
+}
+.usefull-links .usefull-links__container .usefull-link:hover {
+  background-color: var(--services-hover);
+}
+.usefull-links .usefull-links__container .usefull-link:active {
+  background-color: var(--services-active);
+}
+@media (max-width: 1000px) {
+  .usefull-links .usefull-links__container .usefull-link {
+    box-sizing: border-box;
+    min-height: 76px;
+  }
+}
+@media (max-width: 600px) {
+  .usefull-links .usefull-links__container .usefull-link {
+    min-height: unset;
+    padding: 12px 20px;
+    align-items: center;
+  }
+}
+.usefull-links .usefull-links__container .usefull-link .usefull-link__icon {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+.usefull-links .usefull-links__container .usefull-link .usefull-link__title {
+  width: calc(100% - 32px);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 992px) {
+  .usefull-links .usefull-links__container .usefull-link .usefull-link__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

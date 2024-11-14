@@ -1,0 +1,55 @@
+/*** Finish - Title ***/
+body.tmp-duma .navigation .navigation__link {
+  color: var(--primary-color-green);
+}
+body.tmp-duma .navigation .navigation__link:hover {
+  color: var(--primary-color-green-hover);
+}
+body.tmp-duma .navigation .navigation__link:active {
+  color: var(--primary-color-green-click);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (max-width: 992px) {
+  .navigation {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .navigation {
+    gap: 14px;
+  }
+}
+.navigation .navigation__link {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+@media (max-width: 1000px) {
+  .navigation .navigation__link {
+    font-size: 20px;
+  }
+}
+.navigation .navigation__pages {
+  display: flex;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 992px) {
+  .navigation .navigation__pages {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
