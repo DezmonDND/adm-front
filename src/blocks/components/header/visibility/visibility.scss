@@ -500,3 +500,19 @@
 .blue-theme  .navigation .navigation__link-next, .dark-theme .navigation .navigation__link-prev {
   color: $main-text;
 }
+
+.visibility .input {
+  @include text-3();
+}
+
+.visibility .search .search__button {
+  height: unset;
+}
+
+.visibility .tabs .tabs__container {
+  flex-wrap: wrap;
+}
+
+.visibility .main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__tags {
+  flex-wrap: wrap;
+}
