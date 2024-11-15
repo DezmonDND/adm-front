@@ -1,0 +1,13 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-afisha {
+
+    .dm-afisha__container {
+        display: flex;
+        flex-direction: column;
+
+        .event__number {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+extends ../dm-layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Афиши, анонсы, события'},
+            ],
+            )
+        +title({
+            title: 'Специальная афиша'
+        })
+        +dm-afisha()

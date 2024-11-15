@@ -142,109 +142,166 @@
     </div>
     <main class="main">
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Администрация</a><span class="span">/</span><span class="breadcrumb_link">Заместители</span>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Афиши, анонсы, события</span>
         </div>
       </div>
-      <div class="dm-deputies__title-container">
-        <div class="title"> 
-          <div class="title__container"> 
-            <h2 class="title__name">Депутаты</h2>
-          </div>
-        </div><a class="button button_link button_white button_white_no-border   button_icon-left" href="/" attributes="{}"><span class="button_span">Узнай, кто твой депутат</span>
-          <ion-icon class="icon" name="person"></ion-icon></a>
-      </div>
-      <div class="tabs">
-        <div class="tabs__container"><a class="tab-button tab-button_active" href="/">По алфавиту</a><a class="tab-button " href="/">По фракциям</a><a class="tab-button " href="/">По комитету</a>
+      <div class="title"> 
+        <div class="title__container"> 
+          <h2 class="title__name">Специальная афиша</h2>
         </div>
       </div>
-      <div class="dm-deputies__search">
-        <form class="search search-feedbacks">
-          <input class="input  input-search input-search-l " placeholder="Поиск по фамилии" name="surname" value=""/>
-          <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
-            <ion-icon class="icon" name="search-outline"></ion-icon>
-          </button>
-        </form>
-      </div>
-      <div class="dm-deputies-alphabet">
-        <div class="dm-deputies-alphabet__content">
-          <div class="dm-deputies-alphabet__row">
-            <div class="dm-deputies-alphabet__letter"><span>А</span></div>
-            <div class="dm-deputies-alphabet__list"><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a>
-            </div>
+      <div class="dm-afisha">
+        <div class="dm-afisha__container">
+          <div class="dm-filter__btn">
+            <button class="button button_white dm-filter__button button_size_m  button_icon-left button_without-event"><span class="button_span">Фильтры</span>
+              <ion-icon class="icon" name="funnel-outline"></ion-icon>
+            </button>
           </div>
-          <div class="dm-deputies-alphabet__row">
-            <div class="dm-deputies-alphabet__letter"><span>Б</span></div>
-            <div class="dm-deputies-alphabet__list"><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a>
-            </div>
+          <div class="dm-calendar__btn">
+            <button class="button button_white dm-calendar__button   button_icon-left button_without-event"><span class="button_span">Календарь</span>
+              <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
+            </button>
           </div>
-          <div class="dm-deputies-alphabet__row">
-            <div class="dm-deputies-alphabet__letter"><span>В</span></div>
-            <div class="dm-deputies-alphabet__list"><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a>
+          <div class="filters">
+            <div class="filters_container">
+              <select class="select events__select select-icon-right">
+                <option class="select__option" value="Все события">Все события</option>
+                <option class="select__option" value="Театр">Театр</option>
+                <option class="select__option" value="Детям">Детям</option>
+                <option class="select__option" value="Выставки">Выставки</option>
+                <option class="select__option" value="Концерты">Концерты</option>
+              </select>
+              <select class="select events__select select-icon-right">
+                <option class="select__option" value="Любая тематика">Любая тематика</option>
+                <option class="select__option" value="Любая тематика">Любая тематика</option>
+              </select>
+              <select class="select events__select select-icon-right">
+                <option class="select__option" value="Место проведения">Место проведения</option>
+                <option class="select__option" value="Место проведения">Место проведения</option>
+              </select>
+              <select class="select events__select select-icon-right">
+                <option class="select__option" value="Июнь">Июнь</option>
+                <option class="select__option" value="Июнь">Июнь</option>
+              </select>
             </div>
+            <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
+            <label class="сheckbox__label" for="10">С пушкинской картой</label>
           </div>
-          <div class="dm-deputies-alphabet__row">
-            <div class="dm-deputies-alphabet__letter"><span>Г</span></div>
-            <div class="dm-deputies-alphabet__list"><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+          <div class="chronicle">
+            <div class="chronicle__container"> 
+              <div class="chronicle__list">
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
                   </div>
-                </div></a><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
                   </div>
-                </div></a><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
                   </div>
-                </div></a><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
                   </div>
-                </div></a>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
+                  </div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
+                  </div>
+                </div>
+                <div class="chronicle__slider">
+                  <div class="navigation"> <a class="navigation__link">
+                      <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
+                    <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">2</span></div><a class="navigation__link">
+                      <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chronicle__calendar">
+                <div class="calendar-dm" id="calendar">
+                  <div class="calendar-dm-header"> 
+                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="prevMonth()">
+                      <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
+                    </button><span class="calendar-dm-date" id="month-year"></span>
+                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="nextMonth()">
+                      <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <table id="calendar">
+                    <thead> 
+                      <tr> 
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                        <th>Сб</th>
+                        <th>Вс</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
