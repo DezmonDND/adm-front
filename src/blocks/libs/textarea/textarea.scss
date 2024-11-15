@@ -4,7 +4,7 @@ $desk-text3: 16px;
 $desk-text3-lh: 24px;
 
 
-.container {
+.textarea__container {
     box-sizing: border-box;
     width: 100%;
     height: 200px;
@@ -56,7 +56,7 @@ $desk-text3-lh: 24px;
 }
 
 @media screen and (max-width: 600px) {
-    .container {
+    .textarea__container {
         margin: 14px 0 7px;
 
         .textarea {
