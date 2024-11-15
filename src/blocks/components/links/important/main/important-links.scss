@@ -1,5 +1,18 @@
 @use '../../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma .important-links .main-title {
+    padding-bottom: 32px;
+}
+
+body.tmp-duma .important-links .main-title .main-title__container {
+    @include respond-to(sm) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
 .important-links {
     margin-bottom: 20px;
 
@@ -11,7 +24,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 21px 0 26px;
+        margin: 20px 0 20px;
     }
 
     .important-links__container {
@@ -47,14 +60,14 @@
             &:hover {
                 color: $primary-color-hover;
             }
-        
+
             &:active {
                 color: $primary-color-active;
             }
 
             @media (max-width: 1000px) {
                 border-radius: 8px;
-                padding: 16px 20px;
+                padding: 14px 16px;
 
                 &:nth-child(n+4) {
                     display: none;

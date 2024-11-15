@@ -10,6 +10,11 @@
         .hearing-item {
             background-color: $content-color;
 
+            @include respond-to(md) {
+                max-width: 360px;
+                max-height: 260px;
+            }
+
             .hearing-item-content {
                 display: flex;
                 flex-direction: column;

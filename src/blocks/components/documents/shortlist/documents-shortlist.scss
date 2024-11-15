@@ -12,6 +12,13 @@
         border-radius: 8px;
         margin-bottom: 12px;
 
+        .file-line-icon {
+            width: 24px;
+        }
+        .file-line-span {
+            width: calc(100% - 24px);
+        }
+
         & {
             color: $second-text;
             @include lead-5;

@@ -1,16 +1,11 @@
 /*** Finish - Title ***/
-body.tmp-duma .main-events {
-  margin-top: 25px;
+body.tmp-duma .main-events .main-events__container .main-title {
+  padding-bottom: 32px;
 }
 
 @media (max-width: 1000px) {
   .main-events {
-    padding-top: 18px;
-  }
-}
-@media (max-width: 600px) {
-  .main-events {
-    padding-top: 13px;
+    padding-bottom: 20px;
   }
 }
 .main-events .events__filters {

@@ -34,6 +34,10 @@ body.tmp-duma .news-card-without-image {
     }
 
     @include respond-to(sm) {
+        &:nth-child(3n) {
+            display: block;
+        }
+
         max-width: none;
         min-width: auto;
     }
@@ -45,7 +49,7 @@ body.tmp-duma .news-card-without-image {
         width: 100%;
 
         @include respond-to(md) {
-            gap: 22px;
+            gap: 12px;
         }
 
         .news-card-without-image__content {

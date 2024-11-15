@@ -1,14 +1,9 @@
 .main-help-city {
-  margin: 0 0 47px;
+  margin: 0 0 48px;
 }
 @media screen and (max-width: 1000px) {
   .main-help-city {
-    margin: 0 0 23px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .main-help-city {
-    margin: 0 0 15px;
+    margin: 0 0 20px;
   }
 }
 .main-help-city .main-help-city__content {
@@ -35,7 +30,7 @@
   .main-help-city .help-city__navigation {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 

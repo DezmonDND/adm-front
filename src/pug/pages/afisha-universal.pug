@@ -121,33 +121,7 @@ block content
             },
                 ])
         .afisha-universal__selects
-            .afisha-universal__selects-container
-                +select('right', [
-                    { value: 'Все события', text: 'Все события' },
-                    { value: 'Театр', text: 'Театр' },
-                    { value: 'Детям', text: 'Детям' },
-                    { value: 'Выставки', text: 'Выставки' },
-                    { value: 'Концерты', text: 'Концерты' }
-            ], 'single')
-                +select('right', [
-                    { value: 'Любая тематика', text: 'Любая тематика' },
-                    { value: 'Любая тематика', text: 'Любая тематика' }
-            ], 'single')
-                +select('right', [
-                    { value: 'Место проведения', text: 'Место проведения' },
-                    { value: 'Место проведения', text: 'Место проведения' }
-            ], 'single')
-                +select('right', [
-                    { value: 'Июнь', text: 'Июнь' },
-                    { value: 'Июнь', text: 'Июнь' }
-            ], 'single') 
-            +checkbox({
-                label: 'С пушкинской картой',
-                id: '10',
-                name: 'with-card',
-                status: true,
-                sort: 'checkbox'
-            })
+            +filters()
         .afisha-universal  
             .afisha-universal__content
                 .afisha-universal__events-list 

@@ -1,19 +1,11 @@
 .solve-problems {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   margin-bottom: 48px;
 }
 @media (max-width: 1000px) {
   .solve-problems {
-    margin-top: 23px;
-    gap: 3px;
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 600px) {
-  .solve-problems {
-    margin-top: 6px;
+    margin-bottom: 20px;
   }
 }
 .solve-problems .solve-problems__container .solve-problems__banner {

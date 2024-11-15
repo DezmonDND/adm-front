@@ -22,7 +22,11 @@
     </div>
     <div class="toggle-footer">
       <hr/>
-      <div class="short-filelist"><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a>
+      <div class="short-filelist"><a class="file-line" href="#">
+          <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Инструкция - Регистрация рождения одинокой матерью.pdf</span></a><a class="file-line" href="#">
+          <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Инструкция - Регистрация рождения одинокой матерью.pdf</span></a><a class="file-line" href="#">
+          <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Инструкция - Регистрация рождения одинокой матерью.pdf</span></a><a class="file-line" href="#">
+          <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Инструкция - Регистрация рождения одинокой матерью.pdf</span></a>
       </div>
     </div>
   </div>
@@ -53,7 +57,11 @@
   <div class="toggle-container">
     <div class="toggle-header">Основание предоставляемой услуги</div>
     <div class="toggle-footer">
-      <div class="short-filelist"><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Инструкция - Регистрация рождения одинокой матерью.pdf</a>
+      <div class="short-filelist"><a class="file-line" href="#">
+          <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Инструкция - Регистрация рождения одинокой матерью.pdf</span></a><a class="file-line" href="#">
+          <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Инструкция - Регистрация рождения одинокой матерью.pdf</span></a><a class="file-line" href="#">
+          <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Инструкция - Регистрация рождения одинокой матерью.pdf</span></a><a class="file-line" href="#">
+          <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Инструкция - Регистрация рождения одинокой матерью.pdf</span></a>
       </div>
     </div>
   </div>

@@ -8,11 +8,6 @@
   overflow-x: scroll;
   scrollbar-width: none;
 }
-@media (max-width: 1000px) {
-  .important-inf .important-inf__container {
-    margin-top: 4px;
-  }
-}
 .important-inf .important-inf__container .important-inf__banner {
   max-width: 873px;
   width: 100%;

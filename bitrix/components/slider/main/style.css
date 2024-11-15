@@ -26,3 +26,9 @@ body.tmp-duma .slider .slider__link:active {
   cursor: pointer;
   color: var(--primary-color);
 }
+.slider .slider__link:hover {
+  color: var(--primary-color-hover);
+}
+.slider .slider__link:active {
+  color: var(--primary-color-active);
+}

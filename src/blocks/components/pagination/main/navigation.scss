@@ -36,6 +36,14 @@ body.tmp-duma .navigation .navigation__link {
     .navigation__link {
         color: $primary-color;
         @include flex;
+
+        &:hover {
+            color: $primary-color-hover;
+        }
+    
+        &:active {
+            color: $primary-color-active;
+        }
     }
 
     .navigation__pages {

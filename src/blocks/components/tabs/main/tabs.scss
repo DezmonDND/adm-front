@@ -5,6 +5,10 @@ body.tmp-duma .main-title .main-title__container .tabs .tabs__container {
     @include heading-h1;
 }
 
+body.tmp-duma .main-title .main-title__container .tabs {
+    margin: 0;
+}
+
 .tabs {
     display: flex;
     justify-content: space-between;

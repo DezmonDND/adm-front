@@ -4,15 +4,15 @@ body.tmp-duma .usefull-links .usefull-links__container .usefull-link__icon {
     color: $primary-color-green;
 }
 
+body.tmp-duma .usefull-links {
+    margin-top: 0;
+}
+
 .usefull-links {
-    margin-top: 50px;
+    margin-top: 48px;
 
     @media (max-width: 1000px) {
-        margin-top: 21px;
-    }
-
-    @media (max-width: 600px) {
-        margin-top: 16px;
+        margin-top: 20px;
     }
 
     .usefull-links__container {
@@ -48,30 +48,32 @@ body.tmp-duma .usefull-links .usefull-links__container .usefull-link__icon {
             &:hover {
                 background-color: $services-hover;
             }
-        
+
             &:active {
                 background-color: $services-active;
             }
 
             @media (max-width: 1000px) {
                 box-sizing: border-box;
-                min-height: 76px;
+                min-height: 64px;
+                gap: 12px;
+                padding: 16px;
             }
 
             @media (max-width: 600px) {
                 min-height: unset;
                 padding: 12px 20px;
                 align-items: center;
+                min-height: 48px;
             }
-
 
             .usefull-link__icon {
                 color: $primary-color;
-                font-size: 24px;
             }
 
             .usefull-link__title {
                 width: calc(100% - 32px);
+                @include visible-lines(2);
                 @include heading-h5;
             }
         }
