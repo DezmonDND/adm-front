@@ -1,0 +1,7 @@
+include ../dm-unions-elem/dm-unions-elem
+
+mixin dm-unions(items = [])
+    .dm-unions 
+        .dm-unions__content
+            each item in items 
+                +dm-unions-elem(item)
