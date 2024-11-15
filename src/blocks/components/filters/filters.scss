@@ -1,0 +1,24 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 12px;
+
+    @include respond-to(md) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters_container {
+        display: flex;
+        gap: 12px;
+
+        @include respond-to(sm) {
+            flex-wrap: wrap;
+        }
+
+    }
+}

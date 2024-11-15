@@ -27,13 +27,13 @@
   background: linear-gradient(#f97a7c 0%, #5280ea 100%);
 }
 .people-care-card_bg-dm-1 {
-  background: linear-gradient(244.39deg, #0D6CBA 25.53%, #CCCAC5 104.75%);
+  background: linear-gradient(244.39deg, #0d6cba 25.53%, #cccac5 104.75%);
 }
 .people-care-card_bg-dm-2 {
-  background: linear-gradient(256.37deg, #255BA0 35.08%, #15B3E7 111.88%);
+  background: linear-gradient(256.37deg, #255ba0 35.08%, #15b3e7 111.88%);
 }
 .people-care-card_bg-dm-3 {
-  background: linear-gradient(254.18deg, #255BA0 35.1%, #15E7D9 121.05%);
+  background: linear-gradient(254.18deg, #255ba0 35.1%, #15e7d9 121.05%);
 }
 .people-care-card .people-care-card__logo {
   position: absolute;
