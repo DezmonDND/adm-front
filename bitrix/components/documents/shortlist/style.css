@@ -8,6 +8,12 @@
   border-radius: 8px;
   margin-bottom: 12px;
 }
+.short-filelist .file-line .file-line-icon {
+  width: 24px;
+}
+.short-filelist .file-line .file-line-span {
+  width: calc(100% - 24px);
+}
 .short-filelist .file-line {
   color: var(--second-text);
   font-weight: 400;

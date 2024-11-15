@@ -7,6 +7,11 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   color: var(--tertiary-text);
 }
 
+body.tmp-duma .hearing-item img {
+  height: auto;
+  max-height: 362px;
+}
+
 .hearing-list {
   padding: 40px 0 0 0;
 }
@@ -148,13 +153,14 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   position: relative;
   display: flex;
   justify-content: center;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   overflow: hidden;
 }
 .hearing-item-link .hearing-card_button {
   position: absolute;
   top: 12px;
   left: 12px;
+  padding: 4px 12px;
 }
 .hearing-item-bg {
   position: absolute;

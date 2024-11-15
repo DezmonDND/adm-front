@@ -41,13 +41,15 @@
   }
 }
 
-.dm-meeting-elem__prepare, .dm-meeting-elem__speaker {
+.dm-meeting-elem__prepare,
+.dm-meeting-elem__speaker {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.dm-meeting-elem__prepare span, .dm-meeting-elem__speaker span {
+.dm-meeting-elem__prepare span,
+.dm-meeting-elem__speaker span {
   color: var(--second-text);
   font-weight: 400 !important;
   font-weight: 300;
@@ -55,13 +57,15 @@
   line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
-  .dm-meeting-elem__prepare span, .dm-meeting-elem__speaker span {
+  .dm-meeting-elem__prepare span,
+  .dm-meeting-elem__speaker span {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
 }
 
-.dm-meeting-elem__prepare span:first-child, .dm-meeting-elem__speaker span:first-child {
+.dm-meeting-elem__prepare span:first-child,
+.dm-meeting-elem__speaker span:first-child {
   color: var(--tertiary-text);
   font-weight: 400 !important;
   font-weight: 300;
@@ -69,7 +73,8 @@
   line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
-  .dm-meeting-elem__prepare span:first-child, .dm-meeting-elem__speaker span:first-child {
+  .dm-meeting-elem__prepare span:first-child,
+  .dm-meeting-elem__speaker span:first-child {
     font-size: calc(12px * var(--scale));
     line-height: calc(16px * var(--lh));
   }
@@ -188,33 +193,48 @@
   }
 }
 
-.dm-meeting__addr, .dm-meeting__date, .dm-meeting__part, .dm-meeting__accept {
+.dm-meeting__addr,
+.dm-meeting__date,
+.dm-meeting__part,
+.dm-meeting__accept {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.dm-meeting__addr span, .dm-meeting__date span, .dm-meeting__part span, .dm-meeting__accept span {
+.dm-meeting__addr span,
+.dm-meeting__date span,
+.dm-meeting__part span,
+.dm-meeting__accept span {
   color: var(--second-text);
   font-weight: 300;
   font-size: calc(20px * var(--scale));
   line-height: calc(28px * var(--lh));
 }
 @media (max-width: 992px) {
-  .dm-meeting__addr span, .dm-meeting__date span, .dm-meeting__part span, .dm-meeting__accept span {
+  .dm-meeting__addr span,
+  .dm-meeting__date span,
+  .dm-meeting__part span,
+  .dm-meeting__accept span {
     font-size: calc(16px * var(--scale));
     line-height: calc(24px * var(--lh));
   }
 }
 
-.dm-meeting__addr span:first-child, .dm-meeting__date span:first-child, .dm-meeting__part span:first-child, .dm-meeting__accept span:first-child {
+.dm-meeting__addr span:first-child,
+.dm-meeting__date span:first-child,
+.dm-meeting__part span:first-child,
+.dm-meeting__accept span:first-child {
   color: var(--tertiary-text);
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
-  .dm-meeting__addr span:first-child, .dm-meeting__date span:first-child, .dm-meeting__part span:first-child, .dm-meeting__accept span:first-child {
+  .dm-meeting__addr span:first-child,
+  .dm-meeting__date span:first-child,
+  .dm-meeting__part span:first-child,
+  .dm-meeting__accept span:first-child {
     font-size: calc(12px * var(--scale));
     line-height: calc(16px * var(--lh));
   }

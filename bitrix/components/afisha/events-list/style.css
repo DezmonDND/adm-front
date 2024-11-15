@@ -1,4 +1,7 @@
 /*** Finish - Title ***/
+.afisha-events .afisha-events__container .calendar {
+  margin-bottom: 20px;
+}
 .afisha-events .afisha-events__container .afisha-events__news {
   display: grid;
   grid-template-columns: repeat(4, calc((100% - 72px) / 4));

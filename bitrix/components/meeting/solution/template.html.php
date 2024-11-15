@@ -17,7 +17,9 @@
     <div class="label">Приняли участие</div>Направлена на опубликование
   </div>
 </div>
-<div class="short-filelist"><a class="file-line" href="#"><ion-icon name="document"></ion-icon>№ 367-VII ДГ от 19.06.2023 &quot;О внесении изменений в некоторые решения Думы города&quot;.pdf</a><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Пояснение - Регистрация </a>
+<div class="short-filelist"><a class="file-line" href="#">
+    <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">№ 367-VII ДГ от 19.06.2023 &quot;О внесении изменений в некоторые решения Думы города&quot;.pdf</span></a><a class="file-line" href="#">
+    <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Пояснение - Регистрация </span></a>
 </div>
 <hr/>
 <div class="solution-head">Связанные документы</div>

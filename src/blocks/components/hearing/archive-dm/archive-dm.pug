@@ -7,8 +7,13 @@ mixin archive-dm()
                 title: 'Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818)',
                 date: '3 дня назад',
             })
-            a(class='archive-dm__link')
-                img(class='archive-dm__image' alt='Превью' src='../resources/hearing.jpg')
-            a(class='archive-dm__link')
-                img(class='archive-dm__image' alt='Превью' src='../resources/hearing.jpg')    
+            +hearing-card({
+                title: 'Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818)',
+                date: '3 дня назад',
+            })
+            +hearing-card({
+                title: 'Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818)',
+                date: '3 дня назад',
+            })
+
 

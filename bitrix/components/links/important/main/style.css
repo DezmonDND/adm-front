@@ -1,4 +1,17 @@
 /*** Finish - Title ***/
+body.tmp-duma .important-links .main-title {
+  padding-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  body.tmp-duma .important-links .main-title .main-title__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
 .important-links {
   margin-bottom: 20px;
 }
