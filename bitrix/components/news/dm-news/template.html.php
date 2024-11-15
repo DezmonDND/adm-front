@@ -20,26 +20,22 @@
     </div>
     <div class="news__list"><a class="news-card-without-image" href="/">   
         <div class="news-card-without-image__container"> 
-          <div class="news-card-without-image__content">
-            <h5 class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</h5>
+          <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
             <ion-icon class="icon dm-card-without-image__icon news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
           </div><span class="news-card-without-image__date">23 сентября 2024</span>
         </div></a><a class="news-card-without-image" href="/">   
         <div class="news-card-without-image__container"> 
-          <div class="news-card-without-image__content">
-            <h5 class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</h5>
+          <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
             <ion-icon class="icon dm-card-without-image__icon news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
           </div><span class="news-card-without-image__date">23 сентября 2024</span>
         </div></a><a class="news-card-without-image" href="/">   
         <div class="news-card-without-image__container"> 
-          <div class="news-card-without-image__content">
-            <h5 class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</h5>
+          <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
             <ion-icon class="icon dm-card-without-image__icon news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
           </div><span class="news-card-without-image__date">23 сентября 2024</span>
         </div></a><a class="news-card-without-image" href="/">   
         <div class="news-card-without-image__container"> 
-          <div class="news-card-without-image__content">
-            <h5 class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</h5>
+          <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
             <ion-icon class="icon dm-card-without-image__icon news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
           </div><span class="news-card-without-image__date">23 сентября 2024</span>
         </div></a>

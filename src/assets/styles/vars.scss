@@ -35,8 +35,6 @@ $primary-color-green: var(--primary-color-green);
 $primary-color-green-hover: var(--primary-color-green-hover);
 $primary-color-green-click: var(--primary-color-green-click);
 $primary-color-green-disabled: var(--primary-color-green-disabled);
-$num-button-text: #cdd0df;
-$num-button-text-click: #dae1f1;
 
 $secondary-color: var(--secondary-color);
 
@@ -59,16 +57,17 @@ $projects-color: linear-gradient(#8edcd6 0%, #1679b7 100%);
 $social-color: linear-gradient(#f97a7c 0%, #5280ea 100%);
 
 // Дума
-$dm-project-bg-1: linear-gradient(244.39deg, #0d6cba 25.53%, #cccac5 104.75%);
-$dm-project-bg-2: linear-gradient(256.37deg, #255ba0 35.08%, #15b3e7 111.88%);
-$dm-project-bg-3: linear-gradient(254.18deg, #255ba0 35.1%, #15e7d9 121.05%);
+$dm-project-bg-1: linear-gradient(244.39deg, #0D6CBA 25.53%, #CCCAC5 104.75%);
+$dm-project-bg-2: linear-gradient(256.37deg, #255BA0 35.08%, #15B3E7 111.88%);
+$dm-project-bg-3: linear-gradient(254.18deg, #255BA0 35.1%, #15E7D9 121.05%);
 
 // Опросы
 $interview-color: #2dbb45;
 $interview-end-color: #d10404;
 
+
 // Слабовидящие
-$visibility-back: #b2d9ff;
+$visibility-back: #B2D9FF;
 
 // Шрифты
 
@@ -101,7 +100,9 @@ $breakpoint-sm: 768px;
         @media (max-width: $breakpoint-md) {
             @content;
         }
-    } @else if $breakpoint ==sm {
+    }
+
+    @else if $breakpoint ==sm {
         @media (max-width: $breakpoint-sm) {
             @content;
         }
@@ -341,12 +342,15 @@ $breakpoint-sm: 768px;
     }
 }
 
+
 @mixin tags-label {
     font-weight: $font-weight-semi-bold;
     font-size: calc(11px * var(--scale));
     line-height: calc(14px * var(--lh));
     text-transform: uppercase;
 }
+
+
 
 // Устарело все что ниже. Удалить
 // Start - Title
@@ -414,9 +418,15 @@ $breakpoint-sm: 768px;
     }
 }
 
+
 /*** Finish - Title ***/
 
+
+
 // Finish - Title
+
+
+
 
 @mixin desc-h1 {
     @include heading-h1();

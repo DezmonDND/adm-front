@@ -1,12 +1,8 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-@mixin without-event {
-    color: $primary-color-disabled;
-    border-color: $primary-color-disabled;
-    background-color: $content-color;
-    cursor: default;
-    pointer-events: none;
-}
+$num-button-text: #CDD0DF;
+$num-button-text-hover: #E7EDFB;
+$num-button-text-click: #DAE1F1;
 
 .pag-button_right,
 .pag-button_left {
@@ -31,7 +27,7 @@
 
     &:hover {
         cursor: pointer;
-        background-color: $event-color-hover;
+        background-color: $num-button-text-hover;
         border-color: transparent;
 
     }
@@ -63,7 +59,7 @@
 
     &:hover {
         cursor: pointer;
-        background-color: $event-color;
+        background-color: $num-button-text-hover;
         border-color: transparent;
     }
 
@@ -89,34 +85,38 @@
 }
 
 .pag-button_active {
-    background-color: $primary-color;
+    background-color: #004CC4;
     color: $content-color;
     border: 1px solid transparent;
 
     &:hover {
-        color: $main-text;
+        color: #000000;
     }
 }
 
 .pag-button-with-icon_left_disabled {
     background-image: url(../icons/arrow-left_icon_disabled.svg);
-    color: $primary-color-disabled;
-    border-color: $primary-color-disabled;
+    color: #C2D8FF;
+    border-color: #C2D8FF;
     background-color: $content-color;
 
     &:disabled {
-        @include without-event();
+        color: #C2D8FF;
+        border-color: #C2D8FF;
+        background-color: $content-color;
     }
 }
 
 .pag-button-with-icon_right_disabled {
     background-image: url(../icons/arrow-right_icon_disabled.svg);
-    color: $primary-color-disabled;
-    border-color: $primary-color-disabled;
+    color: #C2D8FF;
+    border-color: #C2D8FF;
     background-color: $content-color;
 
     &:disabled {
-        @include without-event();
+        color: #C2D8FF;
+        border-color: #C2D8FF;
+        background-color: $content-color;
     }
 }
 

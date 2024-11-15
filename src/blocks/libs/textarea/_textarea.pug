@@ -1,5 +1,5 @@
 mixin textarea(options, error)
-    .container
+    .textarea__container
         textarea(class=`textarea ${options.size ? `textarea-${options.size}` : ''} ${error ? 'textarea-error' : ''}` 
             placeholder=options.placeholder
             name=options.name

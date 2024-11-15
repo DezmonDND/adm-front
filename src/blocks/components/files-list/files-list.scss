@@ -1,0 +1,51 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.files-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .files-list__document {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        cursor: pointer;
+
+        .files-list__delete-button {
+            all: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 23px;
+            height: 23px;
+            cursor: pointer;
+            padding: 0;
+            background-color: $cards-background;
+            border-radius: 50%;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        .files-list__document-description {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 12px;
+            border-radius: 8px;
+            background-color: #FAFAFA;
+            width: 100%;
+
+            .files-list__icon {
+                color: $primary-color;
+                font-size: 24px;
+            }
+
+            .files-list__document-title {
+                font-weight: 500;
+                @include lead-5;
+            }
+        }
+    }
+}
