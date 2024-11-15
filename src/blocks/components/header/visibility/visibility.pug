@@ -1,0 +1,35 @@
+
+mixin visibility()
+    .header-visibility
+        .header-visibility-container
+            .header-visibility-elems
+                .header-visibility-elem
+                    .header-visibility-elem-left
+                        span Размер шрифта:
+                    .header-visibility-elem-right
+                        span.font-size-1(onclick = "setFontSize(1, this)")  А 
+                        span.font-size-15(onclick = "setFontSize(1.5, this)")  А 
+                        span.font-size-2(onclick = "setFontSize(2, this)")  А
+                .header-visibility-elem
+                    .header-visibility-elem-left
+                        span Межбуквенный интервал:
+                    .header-visibility-elem-right
+                        span.letter-spacing-0(onclick = "setLetterSpacing(0, this)") А
+                        span.letter-spacing-6(onclick = "setLetterSpacing(0.06, this)" ) А 
+                        span.letter-spacing-12(onclick = "setLetterSpacing(0.12, this)" ) А
+                .header-visibility-elem
+                    .header-visibility-elem-left
+                        span Межстрочный интервал:
+                    .header-visibility-elem-right
+                        span.line-height-12(onclick = "setLineHeight(1.5, this)") А
+                        span.line-height-15(onclick = "setLineHeight(2, this)") А 
+                        span.line-height-2(onclick = "setLineHeight(2.5, this)") А
+                .header-visibility-elem 
+                    .header-visibility-elem-left
+                        span Цвет сайта:
+                    .header-visibility-elem-right
+                        button.theme-light(onclick = "setTheme(`light`, this)") A 
+                        button.theme-dark(onclick = "setTheme(`dark`, this)") A
+                        button.theme-blue(onclick = "setTheme(`blue`, this)") A
+            .header-visibility-close
+                ion-icon(name="close-outline")

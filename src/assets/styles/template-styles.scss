@@ -99,6 +99,7 @@
 @use '../../blocks/components/dm-deputies/dm-deputies-alphabet/dm-deputies-alphabet.scss';
 @use '../../blocks/components/dm-deputies/dm-deputies-comitets/dm-deputies-comitets.scss';
 
+@use '../../blocks/components/header/visibility/visibility.scss';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -115,6 +116,9 @@ body {
     height: 100vh;
     color: #000000;
     overflow-x: hidden;
+    color: $main-text;
+    letter-spacing: var(--ls);
+    background-color: $content-color;
 }
 
 .main {

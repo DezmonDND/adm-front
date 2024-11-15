@@ -45,13 +45,13 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   gap: 12px;
   align-items: center;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
 }
 @media (max-width: 992px) {
   .event .event__container .event__time-block {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 .event .event__container .event__time-block .event__icon {
@@ -63,13 +63,13 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   gap: 8px;
   text-wrap: nowrap;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .event .event__container .event__location {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 .event .event__container .event__location .event__icon-dot {
@@ -83,13 +83,13 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   width: 100%;
   margin: 0 20px 0 64px;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .event .event__container .event__description {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 @media (max-width: 768px) {
@@ -98,15 +98,15 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   }
 }
 .event .event__container .event__number {
-  color: #78839c;
+  color: var(--tertiary-text);
   font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .event .event__container .event__number {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 @media (max-width: 768px) {

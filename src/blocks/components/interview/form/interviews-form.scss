@@ -1,6 +1,4 @@
-$cards-background: #FAFAFA;
-$content-color: #FFFFFF;
-$tertiary-text: #78839C;
+@use '../../../../assets/styles/vars.scss' as *;
 
 @mixin desc-h2() {
     font-size: 32px;

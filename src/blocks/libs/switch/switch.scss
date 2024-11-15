@@ -1,6 +1,4 @@
-$content-color: #FFFFFF;
-$fourth-text-inverse: #EBEDF4;
-$primary-color: #004CC4;
+@use '../../../assets/styles/vars.scss' as *;
 
 .switch {
     position: relative;

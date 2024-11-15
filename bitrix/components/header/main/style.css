@@ -4,7 +4,7 @@
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
-  color: #000000;
+  color: var(--main-text);
 }
 .header .header__top-content {
   display: flex;
@@ -41,13 +41,13 @@
 .header .header__top-content .header__buttons .header__eye-link .header__eye-link-title {
   margin-left: 28px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(18px * var(--lh));
 }
 @media (max-width: 992px) {
   .header .header__top-content .header__buttons .header__eye-link .header__eye-link-title {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }
 .header .header__bottom-content {
@@ -96,17 +96,17 @@
 }
 
 .button__eye {
-  color: #000000;
+  color: var(--main-text);
   border-color: transparent;
   background-color: transparent;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(18px * var(--lh));
 }
 @media (max-width: 992px) {
   .button__eye {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }
 .button__eye .icon {
@@ -118,7 +118,7 @@
 }
 
 .menu_main-bg {
-  background-color: #ffffff;
+  background-color: var(--content-color);
 }
 
 .menu_duma-bg {
@@ -128,12 +128,12 @@
 .button_header {
   padding: 8px 20px;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
 }
 @media (max-width: 992px) {
   .button_header {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }

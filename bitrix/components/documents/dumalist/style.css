@@ -6,39 +6,39 @@
   margin-bottom: 12px;
 }
 .duma-filelist .file-line {
-  color: #15195a;
+  color: var(--second-text);
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .duma-filelist .file-line {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 .duma-filelist .file-line .title {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .duma-filelist .file-line .title {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 .duma-filelist .file-line .description {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .duma-filelist .file-line .description {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 .duma-filelist .file-line hr {
@@ -62,24 +62,24 @@
 .duma-filelist .file-line .fields .field:nth-of-type(1) {
   margin-right: 24px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .duma-filelist .file-line .fields .field:nth-of-type(1) {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 .duma-filelist .file-line .fields .field:nth-of-type(2) {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .duma-filelist .file-line .fields .field:nth-of-type(2) {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 .duma-filelist .file-line .fields .field:nth-of-type(3) {

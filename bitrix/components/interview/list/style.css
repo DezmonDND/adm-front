@@ -1,3 +1,4 @@
+/*** Finish - Title ***/
 .interview__info {
   display: flex;
   flex-direction: column;
@@ -43,7 +44,7 @@
   line-height: 20px;
   font-weight: 600;
   border-radius: 100px;
-  background-color: #FFFFFF;
+  background-color: var(--content-color);
   padding: 4px 16px;
   margin: 10px 0 10px;
 }
@@ -80,7 +81,7 @@
   margin-top: 20px;
 }
 .interviews_array .interview .iinterview__infos .iinterview__votes {
-  color: #78839C;
+  color: var(--tertiary-text);
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -89,7 +90,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #004CC4;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 1000px) {

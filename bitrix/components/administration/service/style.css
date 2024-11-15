@@ -1,16 +1,16 @@
 /*** Finish - Title ***/
 .service-detail .label {
-  color: #78839c;
+  color: var(--tertiary-text);
   display: block;
   margin-bottom: 12px;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .service-detail .label {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 .service-detail .toggle-content.pt-0 {
