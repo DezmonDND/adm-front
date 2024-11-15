@@ -87,29 +87,29 @@
 
 .monuments-elem span, .monuments-elem__addr span, .monuments-elem__author span {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(18px * var(--lh));
 }
 @media (max-width: 992px) {
   .monuments-elem span, .monuments-elem__addr span, .monuments-elem__author span {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }
 
 .monuments-elem__date span:first-child, .monuments-elem__addr span:first-child, .monuments-elem__author span:first-child {
-  color: #78839c;
+  color: var(--tertiary-text);
 }
 
 .monuments-elem__title span {
   font-weight: 600;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .monuments-elem__title span {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }

@@ -1,7 +1,7 @@
 /*** Finish - Title ***/
 .dm-struct-card {
   display: flex;
-  background-color: #ffffff;
+  background-color: var(--content-color);
   max-width: 584px;
   width: 100%;
   border-radius: 4px;
@@ -33,15 +33,15 @@
 }
 
 .dm-struct-card__container span {
-  color: #15195a;
+  color: var(--second-text);
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-struct-card__container span {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 
@@ -152,15 +152,15 @@
 }
 
 .dm-struct__bottom p, .dm-struct__bottom a, .dm-struct__bottom span {
-  color: #000000;
+  color: var(--main-text);
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-struct__bottom p, .dm-struct__bottom a, .dm-struct__bottom span {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 

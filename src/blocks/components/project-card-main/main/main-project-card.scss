@@ -53,14 +53,14 @@
                 border-radius: 100px;
                 background-color: $content-color;
                 padding: 4px 16px;
-                margin: 10px 0 10px;
+                // margin: 10px 0 10px;F
                 @include heading-h5;
 
-                @media screen and (max-width: 1000px) {
-                    margin: 0;
-                    @include font-tablet();
+                // @media screen and (max-width: 1000px) {
+                //     margin: 0;
+                //     @include font-tablet();
 
-                }
+                // }
             }
         }
 
@@ -108,19 +108,19 @@
             color: $tertiary-text;
             @include caption-2();
 
-            @media screen and (max-width: 1000px) {
-                @include font-tablet();
+            // @media screen and (max-width: 1000px) {
+            //     @include font-tablet();
 
-            }
+            // }
         }
 
         .main-project-card__user-status {
             color: $primary-color;
             @include desc-title5();
 
-            @media screen and (max-width: 1000px) {
-                @include font-tablet();
-            }
+            // @media screen and (max-width: 1000px) {
+            //     @include font-tablet();
+            // }
         }
     }
 }

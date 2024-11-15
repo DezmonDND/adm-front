@@ -3,13 +3,13 @@
   display: flex;
   padding: 40px 20px;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .hearing-detail-description {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 @media (max-width: 1000px) {
@@ -28,15 +28,15 @@
   }
 }
 .hearing-detail-description-label {
-  color: #78839c;
+  color: var(--tertiary-text);
   font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .hearing-detail-description-label {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 .hearing-detail-description-label:nth-of-type(2) {

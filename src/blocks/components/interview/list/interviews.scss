@@ -1,4 +1,4 @@
-$tertiary-text: #78839C;
+@use '../../../../assets/styles/vars.scss' as *;
 
 @mixin desc-h5() {
     font-size: 16px;
@@ -49,9 +49,6 @@ $tertiary-text: #78839C;
     font-size: 13px;
     line-height: 18px;
 }
-
-$content-color: #FFFFFF;
-$primary-color: #004CC4;
 
 .interview__info {
     display: flex;
