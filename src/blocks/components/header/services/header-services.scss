@@ -30,7 +30,10 @@
             padding: 4px 18px;
             gap: 12px;
             border-color: transparent;
-            @include heading-h6;
+
+            .button_span {
+                @include heading-h6;
+            }
 
             &:hover {
                 background-color: $services-hover;
@@ -41,7 +44,7 @@
             }
 
             .icon {
-                color: $primary-color;
+                color: $icons-color;
                 font-size: 45px;
 
                 @media (max-width: 1000px) {

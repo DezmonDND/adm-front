@@ -1,23 +1,17 @@
 /*** Finish - Title ***/
 .main-title {
   box-sizing: border-box;
-  padding: 26px 0 45px;
+  padding: 48px 0 48px;
 }
 @media (max-width: 1000px) {
   .main-title {
-    padding: 24px 0 20px;
+    padding: 20px 0 20px;
   }
 }
 .main-title .main-title__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media (max-width: 768px) {
-  .main-title .main-title__container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 .main-title .main-title__container .main-title__title {
   font-weight: 500;
@@ -39,8 +33,8 @@
 }
 @media (max-width: 992px) {
   .main-title .main-title__container .main-title__link {
-    font-size: calc(14px * var(--scale));
-    line-height: calc(18px * var(--lh));
+    font-size: calc(13px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 .main-title .main-title__container .main-title__link:hover {

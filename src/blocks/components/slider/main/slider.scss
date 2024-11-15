@@ -32,5 +32,13 @@ body.tmp-duma .slider .slider__link {
     .slider__link {
         @include flex;
         color: $primary-color;
+
+        &:hover {
+            color: $primary-color-hover;
+        }
+
+        &:active {
+            color: $primary-color-active;
+        }
     }
 }

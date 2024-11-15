@@ -7,14 +7,13 @@
     padding-bottom: 50px;
 
     @media (max-width: 1000px) {
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
 
     .main-services__container {
         display: flex;
         flex-direction: column;
         gap: 47px;
-        margin-top: 9px;
 
         @media (max-width: 1000px) {
             margin-top: 2px;
@@ -47,6 +46,7 @@
                 }
 
                 .main-services__label {
+                    padding: 0;
                     @include heading-h3;
                 }
 
@@ -62,7 +62,6 @@
                     }
                 }
             }
-
         }
 
         .main-services__buttons {
@@ -71,6 +70,7 @@
 
             .main-services__buttons-title {
                 margin-bottom: 24px;
+                padding: 0;
                 @include heading-h3;
 
                 @media (max-width: 1000px) {

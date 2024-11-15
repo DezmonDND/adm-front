@@ -40,6 +40,12 @@ body.tmp-duma .navigation .navigation__link:active {
     font-size: 20px;
   }
 }
+.navigation .navigation__link:hover {
+  color: var(--primary-color-hover);
+}
+.navigation .navigation__link:active {
+  color: var(--primary-color-active);
+}
 .navigation .navigation__pages {
   display: flex;
   gap: 4px;

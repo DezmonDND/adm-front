@@ -5,12 +5,7 @@ body.tmp-duma .main-events {
 
 @media (max-width: 1000px) {
   .main-events {
-    padding-top: 18px;
-  }
-}
-@media (max-width: 600px) {
-  .main-events {
-    padding-top: 13px;
+    padding-bottom: 20px;
   }
 }
 .main-events .events__filters {

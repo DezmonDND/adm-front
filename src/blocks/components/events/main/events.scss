@@ -2,16 +2,11 @@
 
 body.tmp-duma .main-events {
     margin-top: 25px;
-    }
+}
 
 .main-events {
-
     @media (max-width: 1000px) {
-        padding-top: 18px;
-    }
-
-    @media (max-width: 600px) {
-        padding-top: 13px;
+        padding-bottom: 20px;
     }
 
     .events__filters {

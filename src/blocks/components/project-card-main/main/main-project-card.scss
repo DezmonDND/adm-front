@@ -1,10 +1,5 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-@mixin font-tablet {
-    font-size: 10px;
-    line-height: 14px;
-}
-
 .main-project-card {
     display: flex;
     flex-direction: column;
@@ -21,11 +16,10 @@
         &:nth-child(n+3) {
             display: none;
         }
-
     }
 
     .main-project-card__content {
-        padding: 11px 20px 20px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: baseline;
@@ -33,9 +27,7 @@
         justify-content: space-between;
 
         @media screen and (max-width: 1000px) {
-            // padding: 12px;
-            padding: 20px;
-
+            padding: 16px;
         }
 
         .main-project-card__dates {
@@ -45,22 +37,13 @@
 
             @media screen and (max-width: 1000px) {
                 gap: 4px;
-
             }
-
 
             .main-project-card__date {
                 border-radius: 100px;
                 background-color: $content-color;
                 padding: 4px 16px;
-                // margin: 10px 0 10px;F
                 @include heading-h5;
-
-                // @media screen and (max-width: 1000px) {
-                //     margin: 0;
-                //     @include font-tablet();
-
-                // }
             }
         }
 
@@ -73,26 +56,19 @@
             min-height: 169px;
 
             @media screen and (max-width: 1000px) {
-                // margin-top: 8px;
                 margin-top: 18px;
                 gap: 8px;
                 min-height: 108px;
-
             }
 
             .main-project-card__title {
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+                padding: 0;
+                @include visible-lines(2);
                 @include heading-h3;
             }
 
             .main-project-card__text {
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+                @include visible-lines(3);
                 @include text-2;
             }
         }
@@ -106,21 +82,12 @@
 
         .main-project-card__votes {
             color: $tertiary-text;
-            @include caption-2();
-
-            // @media screen and (max-width: 1000px) {
-            //     @include font-tablet();
-
-            // }
+            @include caption-2;
         }
 
         .main-project-card__user-status {
             color: $primary-color;
-            @include desc-title5();
-
-            // @media screen and (max-width: 1000px) {
-            //     @include font-tablet();
-            // }
+            @include caption-2;
         }
     }
 }

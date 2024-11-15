@@ -3,20 +3,7 @@
 }
 @media (max-width: 1000px) {
   .main-people-care {
-    padding: 22px 0 18px;
-  }
-}
-@media (max-width: 600px) {
-  .main-people-care {
-    padding: 14px 0 18px;
-  }
-}
-.main-people-care .main-people-care__container {
-  margin-top: 8px;
-}
-@media (max-width: 1000px) {
-  .main-people-care .main-people-care__container {
-    margin-top: 0;
+    padding: 0 0 20px;
   }
 }
 .main-people-care .main-people-care__container .main-people-care__card-list {

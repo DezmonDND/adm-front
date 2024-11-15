@@ -7,14 +7,13 @@
 }
 @media (max-width: 1000px) {
   .main-services {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
 }
 .main-services .main-services__container {
   display: flex;
   flex-direction: column;
   gap: 47px;
-  margin-top: 9px;
 }
 @media (max-width: 1000px) {
   .main-services .main-services__container {
@@ -51,6 +50,7 @@
   }
 }
 .main-services .main-services__container .main-services__search .main-services__search-content .main-services__label {
+  padding: 0;
   font-weight: 500;
   font-size: calc(24px * var(--scale));
   line-height: calc(28px * var(--lh));
@@ -77,6 +77,7 @@
 }
 .main-services .main-services__container .main-services__buttons .main-services__buttons-title {
   margin-bottom: 24px;
+  padding: 0;
   font-weight: 500;
   font-size: calc(24px * var(--scale));
   line-height: calc(28px * var(--lh));

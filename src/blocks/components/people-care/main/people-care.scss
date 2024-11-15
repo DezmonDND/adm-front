@@ -2,20 +2,10 @@
     padding: 0 0 48px;
 
     @media (max-width: 1000px) {
-        padding: 22px 0 18px;
-    }
-
-    @media (max-width: 600px) {
-        padding: 14px 0 18px;
+        padding: 0 0 20px;
     }
 
     .main-people-care__container {
-        margin-top: 8px;
-
-        @media (max-width: 1000px) {
-            margin-top: 0;
-        }
-
         .main-people-care__card-list {
             display: grid;
             justify-content: center;

@@ -1,19 +1,4 @@
-$content-color: #FFFFFF;
-
-@mixin desc-text3 {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-@mixin desc-text4 {
-    font-size: 14px;
-    line-height: 20px;
-}
-
-@mixin desc-h5() {
-    font-size: 16px;
-    line-height: 20px;
-}
+@use '../../../../assets/styles/vars.scss' as *;
 
 .footer_container {
     display: flex;
@@ -26,15 +11,13 @@ $content-color: #FFFFFF;
 .footer {
     display: flex;
     width: 100%;
-    background-color: #0D0F43;
+    background-color: $footer-color;
     color: $content-color;
-    font-weight: 400;
     justify-content: center;
     margin-top: 64px;
 
     @media (max-width: 1000px) {
         margin-top: 40px;
-        
     }
 
     .footer__header {
@@ -52,10 +35,10 @@ $content-color: #FFFFFF;
                 display: flex;
                 gap: 8px;
                 text-decoration: none;
-                color: #FFFFFF;
+                color: $content-color;
 
                 &:hover {
-                    color: #C0C2CC;
+                    color: $fourth-text;
                 }
 
                 .footer__header-links__block {
@@ -64,14 +47,11 @@ $content-color: #FFFFFF;
                     gap: 4px;
 
                     .footer__title {
-                        font-weight: 600;
-                        font-size: 13px;
-                        line-height: 15px;
+                        @include heading-h6;
                     }
 
                     .footer__link {
-                        font-size: 12px;
-                        line-height: 14px;
+                        @include caption-4;
                     }
                 }
             }
@@ -100,10 +80,14 @@ $content-color: #FFFFFF;
         top: 31px;
         right: 62px;
 
+        @include respond-to(sm) {
+            margin-top: 20px;
+        }
+
         .footer__address {
-            @include desc-h5();
             text-decoration: none;
             color: $content-color;
+            @include heading-h5;
 
             &:hover {
                 opacity: 0.6;
@@ -122,14 +106,14 @@ $content-color: #FFFFFF;
             }
 
             .footer__email-title {
-                @include desc-text3();
+                @include heading-h5;
             }
         }
     }
 
     .footer__categories {
         display: flex;
-        padding: 56px 63px;
+        padding: 40px 64px;
         gap: 24px;
         color: $content-color;
 
@@ -140,10 +124,11 @@ $content-color: #FFFFFF;
             gap: 16px;
             max-width: 310px;
             width: 100%;
+            margin: 0;
 
             .footer__categorie-title {
-                font-weight: 600;
-                @include desc-text3()
+                padding: 0;
+                @include heading-h5;
             }
 
             .footer__categorie-links {
@@ -153,8 +138,8 @@ $content-color: #FFFFFF;
 
                 .footer__categorie-link {
                     text-decoration: none;
-                    color: #C0C2CC;
-                    @include desc-text4();
+                    color: $fourth-text;
+                    @include text-3;
 
                     &:hover {
                         color: $content-color;
@@ -166,7 +151,8 @@ $content-color: #FFFFFF;
 }
 
 .footer_container-top {
-    border-bottom: 1px solid rgba($content-color, .2);
+    border-bottom: 1px solid rgba(#FFFFFF, .2);
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -189,14 +175,12 @@ $content-color: #FFFFFF;
 
         .footer__contacts {
             position: static;
-            padding: 17px 20px 20px;
+            padding: 20px;
             justify-content: space-between;
             flex-direction: row-reverse;
 
             .footer__address {
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 18px;
+                @include heading-h5;
             }
         }
 
