@@ -1,7 +1,0 @@
-mixin files-list(data)
-    .files-list
-        .files-list__document
-            +button({ type: 'button',  event: 'console.log(1);', class: 'button files-list__delete-button', icon: 'close-outline' })
-            .files-list__document-description
-                ion-icon(class='files-list__icon' name='document')
-                span.files-list__document-title #{data.title}

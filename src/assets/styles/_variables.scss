@@ -6,6 +6,9 @@ body {
     --cards-background: #fafafa;
     --grey-adm: #fafafa;
 
+    --content-color: #ffff;
+
+    --icons-color: #1a2d82;
     // Календарь
     --event-color: #e7edfb;
     --event-color-hover: #e7edfb;
@@ -19,6 +22,21 @@ body {
     --primary-color-green-hover: #10cd30;
     --primary-color-green-click: #0c9022;
     --primary-color-green-disabled: #dbdbdb;
+
+
+    --main-text: #000000; //primary
+    --main-text-dark-bg: #ffffff;
+    --second-text: #15195a;
+    --tertiary-text: #78839c;
+    --tertiary-text-dark-bg: #e9e9e9;
+    --fourth-text: #c0c2cc;
+    --fourth-text-inverse: #ebedf4;
+
+
+    // Типографика
+    --scale: 1;
+    --ls: 0;
+    --lh: 1;
 
     &.tmp-duma {
         --services-hover: #f0eee2;
@@ -44,5 +62,72 @@ body {
         --primary-color-green-disabled: #bda964;
 
         --secondary-color: #a78818;
+    }
+
+    &.dark-theme {
+        --main-text: #ffffff; //primary
+        --main-text-dark-bg: #ffffff;
+        --second-text: #ffffff;
+        --tertiary-text: #ffffff;
+        --tertiary-text-dark-bg: #ffffff;
+        --fourth-text: #ffffff;
+        --fourth-text-inverse: #ffffff;
+
+
+        --icons-color: #ffff;
+        --content-color: #242433;
+        --services-hover: #242433;
+        --services-active: #242433;
+        // Фон
+        --cards-background: #242433;
+        --grey-adm: #242433;
+
+        // Календарь
+        --event-color: #242433;
+        --event-color-hover: #242433;
+
+        // Кнопки
+        --primary-color: #242433;
+        --primary-color-hover: #242433;
+        --primary-color-active: #242433;
+        --primary-color-disabled: #242433;
+
+        --primary-color-green: #242433;
+        --primary-color-green-hover: #242433;
+        --primary-color-green-click: #242433;
+        --primary-color-green-disabled: #242433;
+    }
+    &.blue-theme {
+        --main-text: #0A3866; //primary
+        --main-text-dark-bg: #0A3866;
+        --second-text: #0A3866;
+        --tertiary-text: #0A3866;
+        --tertiary-text-dark-bg: #0A3866;
+        --fourth-text: #0A3866;
+        --fourth-text-inverse: #0A3866;
+
+
+        --icons-color: #0A3866;
+        --content-color: #B2D9FF;
+        --services-hover: #B2D9FF;
+        --services-active: #B2D9FF;
+        // Фон
+        --cards-background: #B2D9FF;
+        --grey-adm: #B2D9FF;
+
+        // Календарь
+        --event-color: #B2D9FF;
+        --event-color-hover: #B2D9FF;
+
+        // Кнопки
+        --primary-color: #B2D9FF;
+        --primary-color-hover: #B2D9FF;
+        --primary-color-active: #B2D9FF;
+        --primary-color-disabled: #B2D9FF;
+
+        --primary-color-green: #B2D9FF;
+        --primary-color-green-hover: #B2D9FF;
+        --primary-color-green-click: #B2D9FF;
+        --primary-color-green-disabled: #B2D9FF;
     }
 }

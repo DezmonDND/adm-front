@@ -39,7 +39,7 @@
   background-color: var(--cards-background);
   border-radius: 20px;
   text-decoration: none;
-  color: #000000;
+  color: var(--main-text);
   padding: 20px;
   display: flex;
   gap: 20px;
@@ -83,12 +83,12 @@
 }
 .important-links .important-links__container .important-link .important-link__title {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: calc(18px * var(--scale));
+  line-height: calc(22px * var(--lh));
 }
 @media (max-width: 992px) {
   .important-links .important-links__container .important-link .important-link__title {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }

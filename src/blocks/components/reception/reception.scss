@@ -1,10 +1,6 @@
 .reception__form {
     max-width: 866px;
 
-    .files-list {
-        margin-top: 28px;
-    }
-
     .reception__content {
 
         .reception__main_title {
@@ -13,7 +9,20 @@
             font-weight: 600;
         }
 
+        .reception__sender_title {
+            //margin-top: 27px;
+        }
+
+        .reception__job_title {
+            //margin-top: 32px;
+        }
+
+        .reception__user_title {
+            //margin-top: 28px;
+        }
+
         .fieldset_user-contacts {}
+
 
         .reception_add-author-btn {
             margin-top: 35px;
@@ -45,11 +54,13 @@
             font-weight: 600;
             font-size: 24px;
             line-height: 28px;
+            //margin-top: 40px;
         }
 
         .reception__feedback_title {
             font-size: 24px;
             line-height: 28px;
+            //margin-top: 45px;
         }
     }
 

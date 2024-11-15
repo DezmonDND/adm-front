@@ -95,12 +95,14 @@ block content
                     error: false,
                     options: {
                         placeholder: 'Введите ваш ответ',
-                        value: '900',
+                        value: 'none',
                         cls: 'reception',
                         name: 'feedback',
                             }
                 })
-            .files-list
+            ul.reception__documents-list
             .reception__buttons
-                +add-file-button({})
+                .custom-file-upload(onclick='addDocument()')
+                    label(for="file" id="file-label") Вложить документ
+                        input(type="file" id="file" name="files" class='input__add-document' multiple)   
                 +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })

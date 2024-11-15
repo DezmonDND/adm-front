@@ -6,7 +6,7 @@
   scrollbar-width: none;
 }
 .archive-dm .archive-dm__container .hearing-item {
-  background-color: #ffffff;
+  background-color: var(--content-color);
 }
 .archive-dm .archive-dm__container .hearing-item .hearing-item-content {
   display: flex;

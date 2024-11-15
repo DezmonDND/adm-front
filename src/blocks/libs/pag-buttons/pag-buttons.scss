@@ -1,10 +1,16 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-$second-text: #15195A;
 $num-button-text: #CDD0DF;
 $num-button-text-hover: #E7EDFB;
 $num-button-text-click: #DAE1F1;
-$content-color: #FFFFFF;
+
+@mixin without-event {
+    color: #C2D8FF;
+    border-color: #C2D8FF;
+    background-color: $content-color;
+    cursor: default;
+    pointer-events: none;
+}
 
 .pag-button_right,
 .pag-button_left {
@@ -90,9 +96,10 @@ $content-color: #FFFFFF;
     background-color: #004CC4;
     color: $content-color;
     border: 1px solid transparent;
-        &:hover {
-            color: #000000;
-        }
+
+    &:hover {
+        color: #000000;
+    }
 }
 
 .pag-button-with-icon_left_disabled {
@@ -102,9 +109,7 @@ $content-color: #FFFFFF;
     background-color: $content-color;
 
     &:disabled {
-        color: #C2D8FF;
-        border-color: #C2D8FF;
-        background-color: $content-color;
+        @include without-event();
     }
 }
 
@@ -115,9 +120,7 @@ $content-color: #FFFFFF;
     background-color: $content-color;
 
     &:disabled {
-        color: #C2D8FF;
-        border-color: #C2D8FF;
-        background-color: $content-color;
+        @include without-event();
     }
 }
 

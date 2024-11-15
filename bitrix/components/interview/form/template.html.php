@@ -39,7 +39,7 @@
   <fieldset class="fieldset">
     <h3 class="fieldset__title ">4. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
     <div class="fieldset__answers">
-      <div class="textarea__container">
+      <div class="container">
         <textarea class="textarea  " placeholder="Введите ваш ответ" maxlength="900" oninput="getLength(this)"></textarea>
         <div class="counter "><span class="current">0</span><span>/</span><span class="max">900 </span></div>
       </div>

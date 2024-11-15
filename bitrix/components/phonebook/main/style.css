@@ -4,13 +4,13 @@
   flex-direction: row;
   gap: 24px;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .line-fields {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 @media (max-width: 992px) {
@@ -20,19 +20,19 @@
   }
 }
 .line-fields a {
-  color: #15195a;
+  color: var(--second-text);
 }
 .line-fields .label {
-  color: #78839c;
+  color: var(--tertiary-text);
   margin-bottom: 12px;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .line-fields .label {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 
@@ -45,25 +45,25 @@
 .phonebook-main-item .line .fio {
   margin-bottom: 20px;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .phonebook-main-item .line .fio {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 .phonebook-main-item .line .line-fields {
   padding-top: 12px;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .phonebook-main-item .line .line-fields {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 .phonebook-main-item .line .line-fields .line-field:nth-child(1) {
@@ -113,13 +113,13 @@
 .phonebook-list .sub_header {
   padding: 20px 0;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .phonebook-list .sub_header {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 .phonebook-list .line {
@@ -127,7 +127,7 @@
 }
 @media (max-width: 992px) {
   .phonebook-list .line {
-    border-bottom: 1px solid #78839c;
+    border-bottom: 1px solid var(--tertiary-text);
   }
   .phonebook-list .line:last-child {
     border-bottom: none;

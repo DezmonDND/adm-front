@@ -1,0 +1,12 @@
+include ../../dm-comitet/dm-comitet-elem/dm-comitet-elem
+
+mixin dm-deputies-alphabet(items = [])
+    .dm-deputies-alphabet
+        .dm-deputies-alphabet__content
+            each item in items 
+                .dm-deputies-alphabet__row
+                    .dm-deputies-alphabet__letter
+                        span= item.letter
+                    .dm-deputies-alphabet__list
+                        each el in item.persons
+                            +dm-comitet-elem(el)
