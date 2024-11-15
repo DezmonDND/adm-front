@@ -872,6 +872,9 @@ body.blue-theme {
   width: 60px;
   height: 60px;
 }
+.search .search__button_l .icon {
+  font-size: 40px;
+}
 
 @media screen and (width: 1000px) {
   .search .search__button_l {
@@ -899,7 +902,7 @@ body.blue-theme {
 .pag-button_left {
   all: unset;
   color: var(--second-text);
-  border: 1px solid #CDD0DF;
+  border: 1px solid #cdd0df;
   padding: 12px 25px;
   border-radius: 8px;
   font-weight: 600;
@@ -918,7 +921,7 @@ body.blue-theme {
 .pag-button {
   all: unset;
   color: var(--second-text);
-  border: 1px solid #CDD0DF;
+  border: 1px solid #cdd0df;
   padding: 12px 25px;
   border-radius: 8px;
   font-weight: 600;
@@ -935,12 +938,12 @@ body.blue-theme {
 }
 .pag-button:hover {
   cursor: pointer;
-  background-color: #E7EDFB;
+  background-color: var(--event-color-hover);
   border-color: transparent;
 }
 .pag-button:active {
   border-color: transparent;
-  background-color: #DAE1F1;
+  background-color: #dae1f1;
 }
 .pag-button:focus {
   color: var(--content-color);
@@ -962,12 +965,12 @@ body.blue-theme {
 }
 .pag-button-with-icon:hover {
   cursor: pointer;
-  background-color: #E7EDFB;
+  background-color: var(--event-color);
   border-color: transparent;
 }
 .pag-button-with-icon:active {
   border-color: transparent;
-  background-color: #DAE1F1;
+  background-color: #dae1f1;
 }
 
 .pag-button_left {
@@ -986,23 +989,23 @@ body.blue-theme {
 }
 
 .pag-button_active {
-  background-color: #004CC4;
+  background-color: var(--primary-color);
   color: var(--content-color);
   border: 1px solid transparent;
 }
 .pag-button_active:hover {
-  color: #000000;
+  color: var(--main-text);
 }
 
 .pag-button-with-icon_left_disabled {
   background-image: url("./icons/arrow-left_icon_disabled.svg");
-  color: #C2D8FF;
-  border-color: #C2D8FF;
+  color: var(--primary-color-disabled);
+  border-color: var(--primary-color-disabled);
   background-color: var(--content-color);
 }
 .pag-button-with-icon_left_disabled:disabled {
-  color: #C2D8FF;
-  border-color: #C2D8FF;
+  color: var(--primary-color-disabled);
+  border-color: var(--primary-color-disabled);
   background-color: var(--content-color);
   cursor: default;
   pointer-events: none;
@@ -1010,13 +1013,13 @@ body.blue-theme {
 
 .pag-button-with-icon_right_disabled {
   background-image: url("./icons/arrow-right_icon_disabled.svg");
-  color: #C2D8FF;
-  border-color: #C2D8FF;
+  color: var(--primary-color-disabled);
+  border-color: var(--primary-color-disabled);
   background-color: var(--content-color);
 }
 .pag-button-with-icon_right_disabled:disabled {
-  color: #C2D8FF;
-  border-color: #C2D8FF;
+  color: var(--primary-color-disabled);
+  border-color: var(--primary-color-disabled);
   background-color: var(--content-color);
   cursor: default;
   pointer-events: none;
@@ -9287,13 +9290,13 @@ body.tmp-duma .short-filelist ion-icon {
   background: linear-gradient(#f97a7c 0%, #5280ea 100%);
 }
 .people-care-card_bg-dm-1 {
-  background: linear-gradient(244.39deg, #0D6CBA 25.53%, #CCCAC5 104.75%);
+  background: linear-gradient(244.39deg, #0d6cba 25.53%, #cccac5 104.75%);
 }
 .people-care-card_bg-dm-2 {
-  background: linear-gradient(256.37deg, #255BA0 35.08%, #15B3E7 111.88%);
+  background: linear-gradient(256.37deg, #255ba0 35.08%, #15b3e7 111.88%);
 }
 .people-care-card_bg-dm-3 {
-  background: linear-gradient(254.18deg, #255BA0 35.1%, #15E7D9 121.05%);
+  background: linear-gradient(254.18deg, #255ba0 35.1%, #15e7d9 121.05%);
 }
 .people-care-card .people-care-card__logo {
   position: absolute;
@@ -12239,11 +12242,11 @@ td:hover {
 
 .theme-blue {
   padding: 4px 8px;
-  background-color: #B2D9FF;
+  background-color: #b2d9ff;
   color: black;
   border-radius: 4px;
   box-sizing: border-box;
-  border: 1px solid #B2D9FF;
+  border: 1px solid #b2d9ff;
   text-decoration: underline;
   text-underline-offset: 2px;
   padding-bottom: 8px;
