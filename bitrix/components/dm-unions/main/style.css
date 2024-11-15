@@ -27,7 +27,7 @@
   background-color: var(--grey-adm);
   border-radius: 12px;
   text-decoration: none;
-  color: #15195a;
+  color: var(--second-text);
 }
 
 .dm-unions-elem__container {
@@ -75,37 +75,37 @@
 .dm-unions-elem__info-name span {
   font-weight: 500;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-unions-elem__info-name span {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 
 .dm-unions-elem__info-descr span {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-unions-elem__info-descr span {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 
 .dm-unions-elem__bot span {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(18px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-unions-elem__bot span {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }
 
@@ -121,5 +121,5 @@
 }
 
 .dm-unions-elem__info-currency span:first-child, .dm-unions-elem__info-head span:first-child {
-  color: #78839c;
+  color: var(--tertiary-text);
 }
