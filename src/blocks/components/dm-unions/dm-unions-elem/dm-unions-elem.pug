@@ -1,0 +1,20 @@
+
+
+mixin dm-unions-elem(item)
+    a(href='#').dm-unions-elem
+        .dm-unions-elem__container
+            .dm-unions-elem__left
+                img(src=`../resources/${item.img}`).dm-unions-elem__img
+            .dm-unions-elem__right
+                .dm-unions-elem__top
+                    .dm-unions-elem__info-name
+                        span= item.name
+                    .dm-unions-elem__info-descr
+                        span= item.descr
+                .dm-unions-elem__bot
+                    .dm-unions-elem__info-currency
+                        span Состав
+                        span= item.currency
+                    .dm-unions-elem__info-head
+                        span Руководитель
+                        span= item.head

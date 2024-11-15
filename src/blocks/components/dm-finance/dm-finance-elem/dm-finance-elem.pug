@@ -1,0 +1,16 @@
+include ../../../libs/buttons/_buttons
+
+mixin dm-finance-elem(item)
+    .dm-finance-elem
+        .dm-finance-elem__container
+            .dm-finance-elem__top
+                span= item.name
+            hr
+            .dm-finance-elem__bot
+                .dm-finance-elem__bot-left
+                    .dm-finance-elem__status
+                        span= item.status
+                        ion-icon(name=`${item.icon}-outline`)
+                    .dm-finance-elem__doc 
+                        a(href = '#')= item.doc
+                +button({ size: 'm', type: 'link', class: 'button_blue', href: '#', text: 'Подробнее' })

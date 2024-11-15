@@ -1,9 +1,5 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-@mixin icons-hover {
-    filter: invert(44%) sepia(59%) saturate(7476%) hue-rotate(210deg) brightness(89%) contrast(105%);
-}
-
 .header {
     display: flex;
     flex-direction: column;
@@ -17,6 +13,10 @@
         align-items: center;
         justify-content: space-between;
         gap: 20px;
+
+        @include respond-to(md) {
+            display: none;
+        }
 
         .header__top-links {
             display: flex;
@@ -37,7 +37,7 @@
                 background-position: left;
 
                 &:hover {
-                    @include icons-hover;
+                    color: $primary-color-hover;
                 }
 
                 .header__eye-link-title {
@@ -54,46 +54,70 @@
         justify-content: space-between;
         padding: 20px 64px;
         gap: 24px;
-    }
-}
 
-@media screen and (max-width: 1000px) {
-    .header {
-        .header__top-content {
-            padding: 16px 20px;
-        }
-
-        .header__bottom-content {
-
+        @include respond-to(md) {
             padding: 16px 20px;
         }
     }
 }
 
-@media screen and (max-width: 880px) {
-    .header {
-        .header__top-content {
-            display: none;
-        }
+.button_burger {
+    all: unset;
+    display: none;
 
-        .header__bottom-content {
-            justify-content: space-between;
+    @include respond-to(md) {
+        display: flex;
+    }
 
-            .search {
-                display: none;
-            }
-
-            .header__bottom-links {
-                display: none;
-            }
-        }
+    .icon {
+        font-size: 24px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .header {
-        .header__bottom-content {
-            padding: 16px 27px;
-        }
+.button_close {
+    all: unset;
+    display: none;
+
+    @include respond-to(md) {
+        display: flex;
     }
+
+    .icon {
+        font-size: 24px;
+    }
+}
+
+.search-header {
+    @include respond-to(md) {
+        display: none;
+    }
+}
+
+.button__eye {
+    color: $main-text;
+    border-color: transparent;
+    background-color: transparent;
+    @include lead-6;
+
+    .icon {
+        font-size: 20px;
+    }
+
+    &:hover {
+        border-color: transparent;
+        background-color: transparent;
+    }
+}
+
+.menu_main-bg {
+    background-color: $content-color;
+}
+
+.menu_duma-bg {
+    background-color: $cards-background;
+}
+
+.button_header {
+    padding: 8px 20px;
+    @include heading-h6;
 }

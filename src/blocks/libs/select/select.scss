@@ -1,8 +1,5 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-$input-color-default: #C6CBD9;
-$main-text: #000448;
-
 .select {
     box-sizing: border-box;
     padding: 17px 44px 17px 25px;
@@ -35,7 +32,7 @@ $main-text: #000448;
     flex-direction: column;
     width: 100%;
     gap: 4px;
-    
+
 
     .select_multiple {
         display: flex;
@@ -78,7 +75,7 @@ $main-text: #000448;
                     background-repeat: no-repeat;
                     background-size: 23px;
                     border-radius: 50%;
-    
+
                     &:hover {
                         background-image: url(../icons/close-hover_icon.svg);
                     }

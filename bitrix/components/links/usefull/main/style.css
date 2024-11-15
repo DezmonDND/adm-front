@@ -1,4 +1,8 @@
 /*** Finish - Title ***/
+body.tmp-duma .usefull-links .usefull-links__container .usefull-link__icon {
+  color: var(--primary-color-green);
+}
+
 .usefull-links {
   margin-top: 50px;
 }
@@ -37,7 +41,7 @@
   display: flex;
   flex-direction: row-reverse;
   text-decoration: none;
-  color: #000000;
+  color: var(--main-text);
   gap: 8px;
   background-color: var(--cards-background);
   border-radius: 8px;
@@ -64,17 +68,18 @@
   }
 }
 .usefull-links .usefull-links__container .usefull-link .usefull-link__icon {
-  width: 24px;
-  height: 24px;
+  color: var(--primary-color);
+  font-size: 24px;
 }
 .usefull-links .usefull-links__container .usefull-link .usefull-link__title {
+  width: calc(100% - 32px);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .usefull-links .usefull-links__container .usefull-link .usefull-link__title {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }

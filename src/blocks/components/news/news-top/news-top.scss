@@ -1,15 +1,19 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma .news {
+margin-top: 0;
+}
+
 .news {
     display: flex;
     width: 100%;
     margin: 24px 0 48px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         margin: 18px 0 25px;
     }
 
-    @media (max-width: 600px) {
+    @include respond-to(sm) {
         margin: 15px 0 7px;
     }
 
@@ -19,11 +23,11 @@
         gap: 24px;
         justify-content: center;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             gap: 8px;
         }
 
-        @media (max-width: 600px) {
+        @include respond-to(sm) {
             flex-direction: column;
         }
 
@@ -31,6 +35,16 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
+            max-width: 420px;
+            width: 100%;
+
+            @include respond-to(md) {
+                max-width: 360px;
+            }
+
+            @include respond-to(sm) {
+                max-width: none;
+            }
         }
     }
 }

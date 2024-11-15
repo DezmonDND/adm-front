@@ -9,13 +9,13 @@
   background: var(--grey-adm);
   border-radius: 12px;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .doc-fulllist .doc-line {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 .doc-fulllist .doc-line .doc-field,
@@ -29,27 +29,27 @@
   gap: 8px;
   margin-bottom: 8px;
   align-items: center;
-  color: #78839c;
+  color: var(--tertiary-text);
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .doc-fulllist .doc-line .label {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 .doc-fulllist .doc-line .label .fio {
-  color: #000000;
+  color: var(--main-text);
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .doc-fulllist .doc-line .label .fio {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 .doc-fulllist .doc-line .doc-fields {

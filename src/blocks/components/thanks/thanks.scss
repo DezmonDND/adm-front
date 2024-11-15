@@ -1,4 +1,4 @@
-$cards-background: #FAFAFA;
+@use '../../../assets/styles/vars.scss' as *;
 
 .thanks {
     display: flex;

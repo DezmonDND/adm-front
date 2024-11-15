@@ -61,9 +61,7 @@
 @use '../../blocks/components/phonebook/main/phonebook.scss';
 @use '../../blocks/components/login/main/login.scss';
 @use '../../blocks/components/projects/project-generation/project-generation.scss';
-
 @use '../../blocks/components/subscribe/subscribe.scss';
-
 @use './bootstrap-grid.scss';
 @use '../../blocks/components/header/services/header-services.scss';
 @use '../../blocks/components/people-care-card/main/people-care-card.scss';
@@ -81,17 +79,29 @@
 @use '../../blocks/components/news/news-top/news-top.scss';
 @use '../../blocks/components/init-projects/init-card/init-card.scss';
 @use '../../blocks/components/init-projects/main/init-projects.scss';
+@use '../../blocks/components/monuments/main/monuments.scss';
 @use '../../blocks/components/header/duma/header-duma.scss';
 @use '../../blocks/components/header/header-links/header-links.scss';
 @use '../../blocks/components/header/socials/header-socials.scss';
 @use '../../blocks/components/header/logo/logo.scss';
+@use '../../blocks/components/header/menu/menu.scss';
 @use '../../blocks/components/meeting/question/question.scss';
 @use '../../blocks/components/meeting/solution/solution.scss';
 @use '../../blocks/components/honor-board/board-card/board-card.scss';
 @use '../../blocks/components/honor-board/board-list/board-list.scss';
 @use '../../blocks/components/citizens/citizen-card/citizen-card.scss';
 @use '../../blocks/components/citizens/citizens-list/citizens-list.scss';
+@use '../../blocks/components/chronicle/main/chronicle.scss';
+@use '../../blocks/components/chronicle/calendar/calendar-dm.scss';
+@use '../../blocks/components/hearing/archive-dm/archive-dm.scss';
 @use '../../blocks/components/dm-comitet/main/dm-comitet.scss';
+@use '../../blocks/components/dm-struct/main/dm-struct.scss';
+@use '../../blocks/components/dm-deputies/dm-deputies-alphabet/dm-deputies-alphabet.scss';
+@use '../../blocks/components/dm-deputies/dm-deputies-comitets/dm-deputies-comitets.scss';
+@use '../../blocks/components/dm-finance/main/dm-finance.scss';
+
+@use '../../blocks/components/header/visibility/visibility.scss';
+@use '../../blocks/components/dm-unions/main/dm-unions.scss';
 @use '../../blocks/components/dm-meeting/main/dm-meeting.scss';
 
 * {
@@ -108,6 +118,10 @@ body {
     flex-direction: column;
     height: 100vh;
     color: #000000;
+    overflow-x: hidden;
+    color: $main-text;
+    letter-spacing: var(--ls);
+    background-color: $content-color;
 }
 
 .main {

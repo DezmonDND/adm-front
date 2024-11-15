@@ -13,15 +13,15 @@
 }
 
 .subscribe__title span {
-  color: #000000;
+  color: var(--main-text);
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .subscribe__title span {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 
