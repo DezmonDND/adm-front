@@ -1,0 +1,64 @@
+include ../afisha/event/_event
+include ./calendar/calendar
+include ../pagination/_navigation
+
+mixin chronicle(data)
+    .chronicle
+        .chronicle__container 
+            .chronicle__list
+                +event({
+                    time: '11 : 00',
+                    building: 'Здание №1',
+                    cabinet: '408 каб',
+                    description: 'Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества',
+                    number: '2',
+                    classIcon: 'dm-event__icon'
+                    }) 
+                +event({
+                    time: '11 : 00',
+                    building: 'Здание №1',
+                    cabinet: '408 каб',
+                    description: 'Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества',
+                    number: '2',
+                    classIcon: 'dm-event__icon'
+                    }) 
+                +event({
+                    time: '11 : 00',
+                    building: 'Здание №1',
+                    cabinet: '408 каб',
+                    description: 'Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества',
+                    number: '2',
+                    classIcon: 'dm-event__icon'
+                    }) 
+                +event({
+                    time: '11 : 00',
+                    building: 'Здание №1',
+                    cabinet: '408 каб',
+                    description: 'Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества',
+                    number: '2',
+                    classIcon: 'dm-event__icon'
+                    }) 
+                +event({
+                    time: '11 : 00',
+                    building: 'Здание №1',
+                    cabinet: '408 каб',
+                    description: 'Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества',
+                    number: '2',
+                    classIcon: 'dm-event__icon'
+                    }) 
+                +event({
+                    time: '11 : 00',
+                    building: 'Здание №1',
+                    cabinet: '408 каб',
+                    description: 'Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества',
+                    number: '2',
+                    classIcon: 'dm-event__icon'
+                    })  
+                .chronicle__slider
+                    +navigation({
+                        first_page: '1',
+                        end_page: '2',
+                        classIcon: 'dm-navigation__link'
+                            })                        
+            .chronicle__calendar
+                +chronicle-calendar()

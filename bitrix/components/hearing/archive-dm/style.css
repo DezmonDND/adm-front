@@ -1,0 +1,26 @@
+/*** Finish - Title ***/
+.archive-dm .archive-dm__container {
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.archive-dm .archive-dm__container .hearing-item {
+  background-color: var(--content-color);
+}
+.archive-dm .archive-dm__container .hearing-item .hearing-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.archive-dm .archive-dm__container .hearing-item .hearing-item-content .hearing-item-title {
+  height: unset;
+}
+.archive-dm .archive-dm__container .archive-dm__link .archive-dm__image {
+  min-width: 644px;
+  width: 100%;
+  max-height: 362px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}

@@ -1,0 +1,39 @@
+/*** Finish - Title ***/
+.question-fields {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .question-fields {
+    flex-direction: column;
+  }
+}
+.question-fields .field {
+  width: 50%;
+  font-weight: 300;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .question-fields .field {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(24px * var(--lh));
+  }
+}
+@media (max-width: 768px) {
+  .question-fields .field {
+    width: 100%;
+  }
+}
+.question-fields .field .label {
+  color: var(--tertiary-text);
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .question-fields .field .label {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
+}

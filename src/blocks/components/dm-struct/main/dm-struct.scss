@@ -1,0 +1,176 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-struct-card {
+    display: flex;
+    background-color: $content-color;
+    max-width: 584px;
+    width: 100%;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 50%;
+
+     @include respond-to(sm) {
+        max-width: unset;
+     }
+}
+
+.dm-struct-card:hover span{
+    color: $primary-color-hover;
+}
+
+.dm-struct-card:active span{
+    color:$primary-color-active;
+}
+
+.dm-struct-card__container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dm-struct-card__container span {
+    color: $second-text;
+    @include lead-5();
+}
+
+.dm-struct__main  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: $grey-adm;
+    border-radius: 20px;
+}
+
+.dm-struct__main-container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    @include respond-to(md) {
+        padding: 20px;
+        gap: 8px;
+     }
+}
+
+
+.dm-struct__main-first,  .dm-struct__main-second, .dm-struct__main-third, .dm-struct__main-fourth{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.dm-struct__main-second {
+    display: flex;
+    position: relative;
+    padding-top: 24px;
+    box-sizing: border-box;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 1px;
+        background: repeating-linear-gradient(
+            to right,
+            $primary-color-green,
+            $primary-color-green 60px,
+            transparent 60px,
+            transparent 80px
+        );
+    }
+
+    @include respond-to(md) {
+        gap: 8px;
+        padding-top: 12px;
+     }
+     @include respond-to(sm) {
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+
+}
+
+.dm-struct__main-third {
+    display: flex;
+    position: relative;
+    padding: 24px 0px;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: repeating-linear-gradient(
+            to right,
+            $primary-color-green,
+            $primary-color-green 60px,
+            transparent 60px,
+            transparent 80px
+        );
+    }
+
+    &::before {
+        top: 0; 
+    }
+
+    &::after {
+        bottom: 0; 
+    }
+    @include respond-to(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 12px 0px;
+        gap: 8px;
+
+        .dm-struct-card {
+            max-width: unset;
+        }
+     }
+     @include respond-to(sm) {
+        grid-template-columns: 1fr;
+
+     }
+}
+
+
+.dm-struct__bottom {
+    padding-top: 48px;
+    padding-bottom: 64px;
+    @include respond-to(md) {
+        padding-top: 24px;
+        padding-bottom: 48px;
+     }
+}
+
+.dm-struct__bottom p, .dm-struct__bottom a, .dm-struct__bottom span {
+    color: $main-text;
+    @include text-2();
+}
+
+.dm-struct__bottom a  {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: 500;
+}
+
+.dm-struct__bottom a:hover  {
+    color: $primary-color-hover;
+    border-bottom: 1px solid $primary-color-hover;
+}
+
+.dm-struct__bottom a:active  {
+    color: $primary-color-active;
+    border-bottom: 1px solid $primary-color-active;
+}
+
