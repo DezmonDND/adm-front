@@ -14,13 +14,13 @@ body.tmp-duma .navigation .navigation__link:active {
   align-items: center;
   gap: 24px;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .navigation {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 @media (max-width: 1000px) {
@@ -44,12 +44,12 @@ body.tmp-duma .navigation .navigation__link:active {
   display: flex;
   gap: 4px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .navigation .navigation__pages {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }

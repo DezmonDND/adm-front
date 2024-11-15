@@ -1,0 +1,32 @@
+include ../../../libs/linkslist/_linkslist
+
+mixin dm-mail()
+    .dm-mail 
+        .dm-mail__content
+            .dm-mail__top
+                .dm-mail__contacts
+                    .dm-mail__phone
+                        span Контакты для связи
+                        span Отдел регистрации и учета обращений граждан, организаций и делопроизводства - каб. 106 (тел. 52-80-19)
+                        span Приемная Думы города - каб 201 (тел. 52-83-74)
+                    .dm-mail__mail 
+                        span Почтовый адрес
+                        span ул. Восход, 4, г. Сургут, Ханты - Мансийский автономный округ Югра, Тюменская область, 628404, Россия
+                    .dm-mail__addr
+                        span Адрес
+                        span ул. Энгельса, 8, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628408
+                +linkslist([
+                    {title:"Телефонный справочник", href:"#"},
+                ])
+            .dm-mail__map
+                iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b282a3890b57f3edc0ace8ef27e29dc87c6b0f49529581fb5faabd9e13f1429&amp;source=constructor" width="100%" height="400" frameborder="0")
+            .dm-mail__descr     
+                span ул. Восход, 4, г. Сургут, Ханты-Мансийский автономный округ - Югра, Тюменская область, 628404, Россия.
+            hr
+            .dm-mail__bot
+                .dm-mail__bot-title
+                    span Ближайшие остановки общественного транспорта 
+                .dm-mail__bot-list
+                    ul 
+                        li "Магазин Изумруд". Автобусы - 1, 2, 3, 6, 11, 14а, 23, 47, 119. Маршрутное такси 96.
+                        li "Набережный проспект". Автобусы - 1, 3, 6, 7, 11, 14а, 23, 47, 119.

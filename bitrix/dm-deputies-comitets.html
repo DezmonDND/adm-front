@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="./css/other.css"/>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <title>Duma</title>
   </head>
-  <body>
-    <header class="header"> 
+  <body class="tmp-duma">
+    <header class="header-duma">
       <div class="mobile-menu">
-        <div class="menu menu_main-bg">
+        <div class="menu menu_duma-bg">
           <div class="menu__container">
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
@@ -27,15 +27,11 @@
                 </button>
               </form>
               <ul class="menu__list"> 
-                <li><a class="menu__item" href="/">Быстрый доступ</a></li>
-                <li><a class="menu__item" href="/">Публичные слушания</a></li>
-                <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
-                <li><a class="menu__item" href="/">Пресс-центр</a></li>
-                <li><a class="menu__item" href="/">Обращения граждан</a></li>
-                <li><a class="menu__item" href="/">О Сургуте</a></li>
-                <li><a class="menu__item" href="/">Городская власть</a></li>
+                <li><a class="menu__item" href="/">О думе города</a></li>
+                <li><a class="menu__item" href="/">Состав и структура</a></li>
                 <li><a class="menu__item" href="/">Документы</a></li>
-                <li><a class="menu__item" href="/">Контакты</a></li>
+                <li><a class="menu__item" href="/">Деятельность</a></li>
+                <li><a class="menu__item" href="/">Обратная связь</a></li>
               </ul>
             </div>
             <div class="menu__socials"> 
@@ -46,32 +42,30 @@
           </div>
         </div>
       </div>
-      <div class="header__top-content">
-        <div class="header__top-links">
-          <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
-          </div>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
-          </div>
-        </div>
-        <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
-            <ion-icon class="icon" name="eye-outline"></ion-icon></a>
-          <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
+      <div class="header-duma__container">
+        <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+            <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+            <ion-icon class="icon" name="menu-outline"></ion-icon>
           </button>
+          <form class="search search-header-duma">
+            <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+            <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
+              <ion-icon class="icon" name="search-outline"></ion-icon>
+            </button>
+          </form>
+          <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
+              <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <button class="button button_blue button_size_s   " onclick="anotherFunction()"><span class="button_span">Служебный вход</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
-          <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-        <form class="search search-header">
-          <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
-            <ion-icon class="icon" name="search-outline"></ion-icon>
-          </button>
-        </form>
-        <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
+        <div class="header__bottom-content">  
+          <div class="header_links"><a class="header__link" href="/">О Думе города</a><a class="header__link" href="/">Состав и структура</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Деятельность</a><a class="header__link" href="/">Обратная связь</a>
+          </div>
+          <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
+          </div>
         </div>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
-          <ion-icon class="icon" name="menu-outline"></ion-icon>
-        </button>
       </div>
     </header>
     <div class="overlay hidden"></div>
@@ -148,47 +142,88 @@
     </div>
     <main class="main">
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"><img class="breadcrumbs__icon" src="/local/templates/surgut/icons/arrow-left_link-icon.svg" alt="Стрелка"/></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/about" target="_blank">Специальное событие</a><span class="span">/</span><span class="breadcrumb_link">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</span>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Администрация</a><span class="span">/</span><span class="breadcrumb_link">Заместители</span>
         </div>
       </div>
-      <div class="project-generation__container"> 
-        <div class="project-generation__top">
-          <div class="project-generation__top-container"><span>Документ инициативного проекта сгенерирован</span>
-            <div class="project-generation__top-btns">
-              <button class="button button_white   button_icon-left " onclick="anotherFunction()"><span class="button_span">Поделиться</span>
-                <ion-icon class="icon" name="link-outline"></ion-icon>
-              </button>
-              <button class="button button_blue   button_icon-left " onclick="anotherFunction()"><span class="button_span">Версия для печати</span>
-                <ion-icon class="icon" name="print-outline"></ion-icon>
-              </button>
-              <button class="button button_white  button_without-text  " onclick="anotherFunction()">
-                <ion-icon class="icon" name="download-outline"></ion-icon>
-              </button>
-            </div>
-            <div class="project-generation__top-btns mb"> 
-              <button class="button button_white   button_icon-left " onclick="anotherFunction()"><span class="button_span">Поделиться</span>
-                <ion-icon class="icon" name="link-outline"></ion-icon>
-              </button>
-              <button class="button button_white   button_icon-left " onclick="anotherFunction()"><span class="button_span">Скачать документ</span>
-                <ion-icon class="icon" name="download-outline"></ion-icon>
-              </button>
+      <div class="dm-deputies__title-container">
+        <div class="title"> 
+          <div class="title__container"> 
+            <h2 class="title__name">Депутаты</h2>
+          </div>
+        </div><a class="button button_link button_white button_white_no-border   button_icon-left" href="/" attributes="{}"><span class="button_span">Узнай, кто твой депутат</span>
+          <ion-icon class="icon" name="person"></ion-icon></a>
+      </div>
+      <div class="tabs">
+        <div class="tabs__container"><a class="tab-button " href="/">По алфавиту</a><a class="tab-button " href="/">По фракциям</a><a class="tab-button tab-button_active" href="/">По комитету</a>
+        </div>
+      </div>
+      <div class="dm-deputies__search">
+        <form class="search search-feedbacks">
+          <input class="input  input-search input-search-l " placeholder="Поиск по фамилии" name="surname" value=""/>
+          <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
+            <ion-icon class="icon" name="search-outline"></ion-icon>
+          </button>
+        </form>
+      </div>
+      <div class="dm-deputies-comitets">
+        <div class="dm-deputies-comitets__content">
+          <div class="dm-deputies-comitets__block">
+            <div class="dm-deputies-comitets__name"><span>Комитет по бюджету, налогам, финансам и имуществу</span></div>
+            <div class="dm-deputies-comitets__list"><a class="dm-comitet-elem" href="#">
+                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
+                  <div class="dm-comitet-elem__info">
+                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                  </div>
+                </div></a><a class="dm-comitet-elem" href="#">
+                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
+                  <div class="dm-comitet-elem__info">
+                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                  </div>
+                </div></a>
             </div>
           </div>
-        </div>
-        <div class="project-generation__main">
-          <div class="project-generation__main-container"><span>Дополнительная информация</span>
-            <div class="project-generation__main-content"> <span>
-                Ваш инициативный проект сформирован. Вы вправе обратиться с данным инициативным проектом в письменном виде в МКУ “Наш город” за оказанием информационной и консультационной помощи по дальнейшим этапам работы с проектом и вопросами:составления и оформления инициативного проекта;
-                определения части территории города Сургута, на которой могут реализовываться инициативные проекты;
-                организации и проведения собраний (конференций), опроса граждан и (или) сбора подписных листов, подтверждающих поддержку инициативного проекта
-                По адресу г. Сургут, ул. Дзержиинского, д.5, телефон 8 (3462) 28-27-08</span></div>
-          </div>
-        </div>
-        <div class="project-generation_bottom">
-          <div class="project-generation__bottom-container">
-            <button class="button button_white   button_icon-left " onclick="anotherFunction()"><span class="button_span">Вернуться к инициативным проектам</span>
-              <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
-            </button>
+          <div class="dm-deputies-comitets__block">
+            <div class="dm-deputies-comitets__name"><span>Комитет по городскому хозяйству и перспективному развитию города</span></div>
+            <div class="dm-deputies-comitets__list"><a class="dm-comitet-elem" href="#">
+                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
+                  <div class="dm-comitet-elem__info">
+                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                  </div>
+                </div></a><a class="dm-comitet-elem" href="#">
+                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
+                  <div class="dm-comitet-elem__info">
+                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                  </div>
+                </div></a><a class="dm-comitet-elem" href="#">
+                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
+                  <div class="dm-comitet-elem__info">
+                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                  </div>
+                </div></a><a class="dm-comitet-elem" href="#">
+                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
+                  <div class="dm-comitet-elem__info">
+                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                  </div>
+                </div></a><a class="dm-comitet-elem" href="#">
+                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
+                  <div class="dm-comitet-elem__info">
+                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                  </div>
+                </div></a><a class="dm-comitet-elem" href="#">
+                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
+                  <div class="dm-comitet-elem__info">
+                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                  </div>
+                </div></a>
+            </div>
           </div>
         </div>
       </div>
@@ -230,7 +265,7 @@
     </footer>
     <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./js/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="./js/ionicons.js"></script>
   </body>
 </html>

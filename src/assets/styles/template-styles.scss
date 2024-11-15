@@ -79,6 +79,7 @@
 @use '../../blocks/components/news/news-top/news-top.scss';
 @use '../../blocks/components/init-projects/init-card/init-card.scss';
 @use '../../blocks/components/init-projects/main/init-projects.scss';
+@use '../../blocks/components/monuments/main/monuments.scss';
 @use '../../blocks/components/header/duma/header-duma.scss';
 @use '../../blocks/components/header/header-links/header-links.scss';
 @use '../../blocks/components/header/socials/header-socials.scss';
@@ -97,6 +98,14 @@
 @use '../../blocks/components/dm-applications/main/dm-applications.scss';
 @use '../../blocks/libs/add-file-button/add-file-button.scss';
 @use '../../blocks/components/files-list/files-list.scss';
+@use '../../blocks/components/dm-struct/main/dm-struct.scss';
+@use '../../blocks/components/dm-deputies/dm-deputies-alphabet/dm-deputies-alphabet.scss';
+@use '../../blocks/components/dm-deputies/dm-deputies-comitets/dm-deputies-comitets.scss';
+@use '../../blocks/components/dm-finance/main/dm-finance.scss';
+@use '../../blocks/components/dm-mail/main/dm-mail.scss';
+@use '../../blocks/components/header/visibility/visibility.scss';
+@use '../../blocks/components/dm-unions/main/dm-unions.scss';
+@use '../../blocks/components/dm-meeting/main/dm-meeting.scss';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -113,6 +122,9 @@ body {
     height: 100vh;
     color: #000000;
     overflow-x: hidden;
+    color: $main-text;
+    letter-spacing: var(--ls);
+    background-color: $content-color;
 }
 
 .main {

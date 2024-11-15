@@ -31,7 +31,7 @@
   }
 }
 .calendar .calendar__links .calendar__divider {
-  border: 1px solid #c0c2cc;
+  border: 1px solid var(--fourth-text);
   height: 100px;
   margin: 0 9px;
 }
@@ -52,7 +52,7 @@
   text-align: center;
   font-weight: 300;
   text-decoration: none;
-  color: #78839c;
+  color: var(--tertiary-text);
   padding: 9px;
   cursor: default;
   font-size: 28px;
@@ -61,40 +61,40 @@
 .calendar .calendar__links .calendar__link-content .calendar__link_active {
   border-radius: 50%;
   border: 1.5px solid var(--primary-color);
-  color: #000000;
+  color: var(--main-text);
   cursor: pointer;
 }
 .calendar .calendar__links .calendar__link-content .calendar__link_clicked {
   border-radius: 1000px;
   border: 1.5px solid var(--primary-color);
-  color: #ffffff;
+  color: var(--content-color);
   background-color: var(--primary-color);
   cursor: pointer;
 }
 .calendar .calendar__links .calendar__link-content .calendar__link_without-events {
-  color: #000000;
+  color: var(--main-text);
   cursor: pointer;
 }
 .calendar .calendar__links .calendar__link-content .calendar__day {
-  color: #78839c;
+  color: var(--tertiary-text);
   font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(28px * var(--lh));
 }
 @media (max-width: 992px) {
   .calendar .calendar__links .calendar__link-content .calendar__day {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(24px * var(--lh));
   }
 }
 .calendar .calendar__links .calendar__link-content .calendar__day_active {
-  color: #000000;
+  color: var(--main-text);
 }
 .calendar .calendar__links .calendar__link-content .calendar__day_clicked {
-  color: #000000;
+  color: var(--main-text);
 }
 .calendar .calendar__links .calendar__link-content .calendar__day_without-events {
-  color: #000000;
+  color: var(--main-text);
 }
 .calendar .calendar__links .calendar__link-content .calendar__icon {
   display: flex;
@@ -106,7 +106,7 @@
   width: 18px;
   height: 18px;
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--content-color);
   border-radius: 50%;
   font-size: 11px;
   line-height: 14px;
