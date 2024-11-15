@@ -1,0 +1,196 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-meeting-elem {
+    width: 100%;
+    border-radius: 8px;
+    background-color: $grey-adm;
+}
+
+.dm-meeting-elem__container  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include respond-to(md) {
+        gap: 16px;
+        .button {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.dm-meeting-elem__top {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.dm-meeting-elem__mid {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include respond-to(sm) {
+       flex-direction: column;
+       align-items: flex-start;
+    }
+}
+
+.dm-meeting-elem__prepare, .dm-meeting-elem__speaker {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dm-meeting-elem__prepare span, .dm-meeting-elem__speaker span{
+    color: $second-text;
+    font-weight: 400 !important;
+    @include text-2();
+}
+
+.dm-meeting-elem__prepare span:first-child, .dm-meeting-elem__speaker span:first-child  {
+    color: $tertiary-text;
+    font-weight: 400 !important;
+    @include caption-2();
+}
+
+.dm-meeting-elem__bot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include respond-to(md) {
+        align-items: flex-start;
+        gap: 16px;
+        flex-direction: column;
+    }
+}
+
+.dm-meeting-elem__bot-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include respond-to(sm) {
+        align-items: flex-start;
+        gap: 16px;
+        flex-direction: column-reverse;
+    }
+}
+
+.dm-meeting-elem__bot-left span {
+    color: $second-text;
+    @include lead-3();
+}
+
+.dm-meeting-elem__container  hr {
+    margin: 0;
+    border-color: $second-text;
+    opacity: 0.2;
+}
+
+.dm-meeting-elem__num  span{
+    color: $tertiary-text;
+    font-weight: 500;
+    @include lead-3();
+}
+
+.dm-meeting-elem__name span {
+    color: $second-text;
+    font-weight: 500;
+    @include lead-3();
+}
+
+.dm-meeting-elem__decision {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dm-meeting-elem__doc a {
+    border-bottom: 1px solid $second-text;
+    color: $second-text;
+    @include text-2();
+}
+
+.dm-meeting__list {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dm-meeting__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-to(md) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+}
+
+.dm-meeting__addr , .dm-meeting__date ,  .dm-meeting__part, .dm-meeting__accept {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dm-meeting__addr span, .dm-meeting__date span,  .dm-meeting__part span, .dm-meeting__accept span {
+    color: $second-text;
+    @include text-1();
+}
+
+.dm-meeting__addr span:first-child, .dm-meeting__date span:first-child,  .dm-meeting__part span:first-child, .dm-meeting__accept span:first-child {
+    color: $tertiary-text;
+    @include caption-2();
+}
+
+.dm-meeting__decision  {
+    gap: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.dm-meeting__right {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    @include respond-to(md) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+}
+
+.dm-meeting__right-info {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    @include respond-to(sm) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+}
+
+.dm-meeting-elem__bot-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include respond-to(sm) {
+        gap: 12px;
+    }
+}
+
+.dm-meeting__title {
+    padding-bottom: 24px;
+}
+
+.dm-meeting__title span{
+    color: $tertiary-text;
+    @include lead-5();
+}
