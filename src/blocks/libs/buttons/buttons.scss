@@ -192,37 +192,6 @@
 }
 
 // Не в кнопках должно быть
-.custom-file-upload {
-    display: inline-block;
-    position: relative;
-    font-size: 14px;
-    line-height: 18px;
-
-    label {
-        outline: 0;
-        border: 0;
-        font-family: inherit;
-        cursor: pointer;
-        padding: 11px 22px 11px 47px;
-        background-image: url(../icons/add-document_icon.svg);
-        background-position: 8%;
-        background-repeat: no-repeat;
-        border: 1px solid $primary-color;
-        color: $primary-color;
-        border-radius: 8px;
-
-        &:hover {
-            color: $primary-color-hover;
-            border-color: $primary-color-hover;
-        }
-    }
-
-    input {
-        display: none;
-    }
-}
-
-// Не в кнопках должно быть
 @media screen and (max-width: 600px) {
     .button_interview {
         margin-top: 12px;
@@ -230,10 +199,6 @@
 
     .button_add-author {
         margin: 27px 0 35px;
-    }
-
-    .custom-file-upload label {
-        padding-left: 41px;
     }
 
     .virtual-reception__send-button {
@@ -255,20 +220,11 @@
         background-position: 8%;
     }
 
-    .custom-file-upload label {
-        border-radius: 8px;
-        padding: 6px 15px 6px 37px;
-        background-position: 6%;
-    }
-
     .virtual-reception__send-button {
         padding: 12px 27px;
         font-size: 14px;
         line-height: 18px;
-
     }
 }
-
-// Перенести в шапку
 
 

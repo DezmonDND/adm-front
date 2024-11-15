@@ -95,6 +95,8 @@
 @use '../../blocks/components/hearing/archive-dm/archive-dm.scss';
 @use '../../blocks/components/dm-comitet/main/dm-comitet.scss';
 @use '../../blocks/components/dm-applications/main/dm-applications.scss';
+@use '../../blocks/libs/add-file-button/add-file-button.scss';
+@use '../../blocks/components/files-list/files-list.scss';
 
 * {
     font-family: 'Inter', sans-serif;

@@ -1,8 +1,5 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-$input-color-default: #C6CBD9;
-$main-text: #000448;
-
 .select {
     box-sizing: border-box;
     padding: 17px 44px 17px 25px;
@@ -11,7 +8,7 @@ $main-text: #000448;
     border: 1px solid $input-color-default;
     appearance: none;
     background: url(../../icons/select-down_icon.svg) center no-repeat;
-    background-position: 93%;
+    background-position: 97%;
     background-size: 24px;
     outline: none;
     overflow: hidden;

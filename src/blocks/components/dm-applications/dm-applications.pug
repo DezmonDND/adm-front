@@ -1,15 +1,23 @@
+include ../../libs/fieldset/_fieldset.pug 
+include ../../libs/checkbox/_checkbox.pug
+include ../../libs/textarea/_textarea.pug 
+include ../../libs/inputs/_inputs.pug 
+include ../../libs/buttons/_buttons.pug 
+include ../../libs/select/_select.pug 
+include ../../libs/add-file-button/add-file-button
+
 mixin dm-applications(data)
     .dm-applications
         .dm-applications__container
             ul.dm-applications__list 
-                li.dm-applications__item Обращения рассматриваются в соответствии с Федеральным законом от 02.05.2006 № 59-ФЗ "О порядке рассмотрения обращений граждан Российской Федерации";
-                li.dm-applications__item Обращения подлежат обязательной регистрации в течение трех дней с момента поступления отделом по организационному и документационному обеспечению Думы города;
+                li.dm-applications__item Обращения рассматриваются в соответствии с Федеральным законом от 02.05.2006 #[a(href='/').link № 59-ФЗ "О порядке рассмотрения обращений граждан Российской Федерации"];
+                li.dm-applications__item Обращения подлежат обязательной регистрации в течение трех дней с момента поступления #[a(href='/').link отделом по организационному и документационному обеспечению Думы города];
                 li.dm-applications__item Ответ на обращение направляется по электронной почте;
                 li.dm-applications__item Ответ может быть продублирован обычной почтой по почтовому адресу, указанному в анкете, если в форме отмечено соответствующее поле;
                 li.dm-applications__item Длина текста электронного обращения не должна превышать 20 тысяч символов;
                 li.dm-applications__item Электронное обращение может содержать вложенный файл, размером не более 2,5мб.
-                li.dm-applications__item Обращения, содержащие в электронном виде материалы большего объема, следует направлять иным способом;
-                li.dm-applications__item Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных. 
+                li.dm-applications__item Обращения, содержащие в электронном виде материалы большего объема, следует направлять #[a(href='/').link иным способом];
+                li.dm-applications__item Информация о персональных данных авторов обращений, направленных в электронном виде, #[a(href='/').link хранится и обрабатывается] с соблюдением требований российского законодательства о персональных данных. 
             form.dm-applications__form  
                 h3.dm-applications__title Основные данные
                 +fieldset(
@@ -62,8 +70,15 @@ mixin dm-applications(data)
                                 sort: 'virtual-reception_input',
                             },
                             ]    
-                    })    
-                +button({ type: 'button', class: 'button_white reception_add-author-btn', event: 'addFormField(event)', text: `Добавить соавтора`, })    
+                    }) 
+                .dm-applications__get-answer       
+                    +checkbox({
+                        sort: 'checkbox',
+                        label: 'Требование дать письменный ответ по почте',
+                        name: 'contact',
+                        id: 'contact'
+                    })
+                .dm-applications__divider     
                 +fieldset(
                     {
                         cls_title: 'reception__feedback',
@@ -73,14 +88,22 @@ mixin dm-applications(data)
                         error: false,
                         options: {
                             placeholder: 'Введите ваше обращение (не больше 20 тысяч символов)',
-                            value: 'none',
+                            value: '20000',
                             cls: 'reception',
                             name: 'feedback',
                                 }
                     })
-            ul.reception__documents-list
-            .reception__buttons
-                .custom-file-upload(onclick='addDocument()')
-                    label(for="file" id="file-label") Вложить документ
-                        input(type="file" id="file" name="files" class='input__add-document' multiple)   
+            .dm-applications__buttons
+                +add-file-button({
+                    desc: 'Принимаются файлы размером не более 2,5 МБ '
+                })
+                .files-list
+                .dm-applications__divider  
+                .dm-applications__agreement
+                    +checkbox({
+                        sort: 'checkbox',
+                        name: 'accept',
+                        id: 'accept'
+                    })
+                    p.dm-applications__desc #[span.dm-applications__span Согласие на обработку персональных данных:] нажимая на кнопку "Отправить" выражаю согласие на обработку, в том числе с помощью средств автоматизации, моих персональных данных. #[a(href='/').dm-applications__link С Политикой Думы города Сургута в отношении обработки персональных данных] ознакомлен.           
                 +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })   
