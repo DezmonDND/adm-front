@@ -48,30 +48,30 @@
 }
 
 .dm-meeting-elem__prepare span, .dm-meeting-elem__speaker span {
-  color: #15195a;
+  color: var(--second-text);
   font-weight: 400 !important;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting-elem__prepare span, .dm-meeting-elem__speaker span {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 
 .dm-meeting-elem__prepare span:first-child, .dm-meeting-elem__speaker span:first-child {
-  color: #78839c;
+  color: var(--tertiary-text);
   font-weight: 400 !important;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting-elem__prepare span:first-child, .dm-meeting-elem__speaker span:first-child {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 
@@ -102,49 +102,49 @@
 }
 
 .dm-meeting-elem__bot-left span {
-  color: #15195a;
+  color: var(--second-text);
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting-elem__bot-left span {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 
 .dm-meeting-elem__container hr {
   margin: 0;
-  border-color: #15195a;
+  border-color: var(--second-text);
   opacity: 0.2;
 }
 
 .dm-meeting-elem__num span {
-  color: #78839c;
+  color: var(--tertiary-text);
   font-weight: 500;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting-elem__num span {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 
 .dm-meeting-elem__name span {
-  color: #15195a;
+  color: var(--second-text);
   font-weight: 500;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting-elem__name span {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 
@@ -155,21 +155,17 @@
 }
 
 .dm-meeting-elem__doc a {
-  border-bottom: 1px solid #15195a;
-  color: #15195a;
+  border-bottom: 1px solid var(--second-text);
+  color: var(--second-text);
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting-elem__doc a {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
-}
-
-.dm-meeting-elem__bot .button span {
-  border-bottom: 1px solid #ffffff;
 }
 
 .dm-meeting__list {
@@ -199,28 +195,28 @@
 }
 
 .dm-meeting__addr span, .dm-meeting__date span, .dm-meeting__part span, .dm-meeting__accept span {
-  color: #15195a;
+  color: var(--second-text);
   font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(28px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting__addr span, .dm-meeting__date span, .dm-meeting__part span, .dm-meeting__accept span {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(24px * var(--lh));
   }
 }
 
 .dm-meeting__addr span:first-child, .dm-meeting__date span:first-child, .dm-meeting__part span:first-child, .dm-meeting__accept span:first-child {
-  color: #78839c;
+  color: var(--tertiary-text);
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting__addr span:first-child, .dm-meeting__date span:first-child, .dm-meeting__part span:first-child, .dm-meeting__accept span:first-child {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 
@@ -272,14 +268,14 @@
 }
 
 .dm-meeting__title span {
-  color: #78839c;
+  color: var(--tertiary-text);
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-meeting__title span {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }

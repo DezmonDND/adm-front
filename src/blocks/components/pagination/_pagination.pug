@@ -2,10 +2,10 @@ mixin pagination(pages, current, link)
     if pages > 1
         .pagination
             if current == 1
-                button(disabled).pag-button_left.pag-button-with-icon.pag-button-with-icon_left_disabled
+                a(disabled).pag-button_left.pag-button-with-icon.pag-button-with-icon_left_disabled
                     span.pag-button__span Назад
             else
-                button.pag-button-with-icon.pag-button_left(href=`/${link}/1`)
+                a.pag-button-with-icon.pag-button_left(href=`/${link}/1`)
                     span.pag-button__span Назад
             - let start = Math.max(1, current - 2)
             - let end = Math.min(pages, current + 2)
@@ -30,8 +30,8 @@ mixin pagination(pages, current, link)
                 if end < pages 
                     a.pag-button(href=`/${link}/${pages}`) #{pages}
             if current == pages
-                button(disabled).pag-button-with-icon.pag-button_right.pag-button-with-icon_right_disabled 
+                a(disabled).pag-button-with-icon.pag-button_right.pag-button-with-icon_right_disabled 
                     span.pag-button__span Вперед
             else
-                button.pag-button-with-icon.pag-button_right(href=`/${link}/${pages}`) 
+                a.pag-button-with-icon.pag-button_right(href=`/${link}/${pages}`) 
                     span.pag-button__span Вперед

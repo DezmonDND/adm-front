@@ -1,8 +1,12 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-$num-button-text: #CDD0DF;
-$num-button-text-hover: #E7EDFB;
-$num-button-text-click: #DAE1F1;
+@mixin without-event {
+    color: $primary-color-disabled;
+    border-color: $primary-color-disabled;
+    background-color: $content-color;
+    cursor: default;
+    pointer-events: none;
+}
 
 .pag-button_right,
 .pag-button_left {
@@ -27,7 +31,7 @@ $num-button-text-click: #DAE1F1;
 
     &:hover {
         cursor: pointer;
-        background-color: $num-button-text-hover;
+        background-color: $event-color-hover;
         border-color: transparent;
 
     }
@@ -59,7 +63,7 @@ $num-button-text-click: #DAE1F1;
 
     &:hover {
         cursor: pointer;
-        background-color: $num-button-text-hover;
+        background-color: $event-color;
         border-color: transparent;
     }
 
@@ -85,38 +89,34 @@ $num-button-text-click: #DAE1F1;
 }
 
 .pag-button_active {
-    background-color: #004CC4;
+    background-color: $primary-color;
     color: $content-color;
     border: 1px solid transparent;
 
     &:hover {
-        color: #000000;
+        color: $main-text;
     }
 }
 
 .pag-button-with-icon_left_disabled {
     background-image: url(../icons/arrow-left_icon_disabled.svg);
-    color: #C2D8FF;
-    border-color: #C2D8FF;
+    color: $primary-color-disabled;
+    border-color: $primary-color-disabled;
     background-color: $content-color;
 
     &:disabled {
-        color: #C2D8FF;
-        border-color: #C2D8FF;
-        background-color: $content-color;
+        @include without-event();
     }
 }
 
 .pag-button-with-icon_right_disabled {
     background-image: url(../icons/arrow-right_icon_disabled.svg);
-    color: #C2D8FF;
-    border-color: #C2D8FF;
+    color: $primary-color-disabled;
+    border-color: $primary-color-disabled;
     background-color: $content-color;
 
     &:disabled {
-        color: #C2D8FF;
-        border-color: #C2D8FF;
-        background-color: $content-color;
+        @include without-event();
     }
 }
 
