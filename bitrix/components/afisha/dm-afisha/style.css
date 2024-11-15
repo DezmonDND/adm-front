@@ -3,3 +3,6 @@
   display: flex;
   flex-direction: column;
 }
+.dm-afisha .dm-afisha__container .event__number {
+  display: none;
+}

@@ -8,7 +8,7 @@
   padding: 20px;
   background: var(--grey-adm);
   border-radius: 12px;
-  color: #15195a;
+  color: var(--second-text);
   text-decoration: none;
 }
 .doc-list .doc-line:hover {
@@ -17,23 +17,23 @@
 .doc-list .doc-line .ident {
   margin-bottom: 12px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .doc-list .doc-line .ident {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 .doc-list .doc-line .name {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .doc-list .doc-line .name {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }

@@ -1,9 +1,4 @@
-$primary-color: #004CC4;
-$primary-color-hover: #0A5FE7;
-$primary-color-active: #003EA2;
-$primary-color-disabled: #C2D8FF;
-$tertiary-text: #78839C;
-$main-text: #040528;
+@use '../../../assets/styles/vars.scss' as *;
 
 @mixin desc-title5 {
     font-size: 14px;

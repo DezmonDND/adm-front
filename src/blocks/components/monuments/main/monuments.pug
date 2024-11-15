@@ -1,0 +1,7 @@
+include ../monuments-elem/monuments-elem
+
+mixin monuments(items = [])
+    .monuments
+        .monuments__content
+            each item in items 
+                +monuments-elem(item)

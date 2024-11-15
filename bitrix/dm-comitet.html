@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="./css/other.css"/>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <title>Duma</title>
   </head>
-  <body>
-    <header class="header"> 
+  <body class="tmp-duma">
+    <header class="header-duma">
       <div class="mobile-menu">
-        <div class="menu menu_main-bg">
+        <div class="menu menu_duma-bg">
           <div class="menu__container">
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
@@ -27,15 +27,11 @@
                 </button>
               </form>
               <ul class="menu__list"> 
-                <li><a class="menu__item" href="/">Быстрый доступ</a></li>
-                <li><a class="menu__item" href="/">Публичные слушания</a></li>
-                <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
-                <li><a class="menu__item" href="/">Пресс-центр</a></li>
-                <li><a class="menu__item" href="/">Обращения граждан</a></li>
-                <li><a class="menu__item" href="/">О Сургуте</a></li>
-                <li><a class="menu__item" href="/">Городская власть</a></li>
+                <li><a class="menu__item" href="/">О думе города</a></li>
+                <li><a class="menu__item" href="/">Состав и структура</a></li>
                 <li><a class="menu__item" href="/">Документы</a></li>
-                <li><a class="menu__item" href="/">Контакты</a></li>
+                <li><a class="menu__item" href="/">Деятельность</a></li>
+                <li><a class="menu__item" href="/">Обратная связь</a></li>
               </ul>
             </div>
             <div class="menu__socials"> 
@@ -46,32 +42,30 @@
           </div>
         </div>
       </div>
-      <div class="header__top-content">
-        <div class="header__top-links">
-          <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
-          </div>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
-          </div>
-        </div>
-        <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
-            <ion-icon class="icon" name="eye-outline"></ion-icon></a>
-          <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
+      <div class="header-duma__container">
+        <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+            <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+            <ion-icon class="icon" name="menu-outline"></ion-icon>
           </button>
+          <form class="search search-header-duma">
+            <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+            <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
+              <ion-icon class="icon" name="search-outline"></ion-icon>
+            </button>
+          </form>
+          <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
+              <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <button class="button button_blue button_size_s   " onclick="anotherFunction()"><span class="button_span">Служебный вход</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
-          <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-        <form class="search search-header">
-          <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_white search__button button_size_s button_without-text  " onclick="1">
-            <ion-icon class="icon" name="search-outline"></ion-icon>
-          </button>
-        </form>
-        <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
+        <div class="header__bottom-content">  
+          <div class="header_links"><a class="header__link" href="/">О Думе города</a><a class="header__link" href="/">Состав и структура</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Деятельность</a><a class="header__link" href="/">Обратная связь</a>
+          </div>
+          <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
+          </div>
         </div>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
-          <ion-icon class="icon" name="menu-outline"></ion-icon>
-        </button>
       </div>
     </header>
     <div class="overlay hidden"></div>
@@ -159,71 +153,57 @@
       <div class="dm-comitet"> 
         <div class="dm-comitet__content">
           <div class="dm-comitet__main"><span class="dm-comitet__title">Председатель</span>
-            <div class="dm-comitet__elems">
-              <div class="dm-comitet-elem">
+            <div class="dm-comitet__elems"><a class="dm-comitet-elem" href="#">
                 <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
                   <div class="dm-comitet-elem__info">
                     <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
                     <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
           </div>
           <div class="dm-comitet__helpers"> <span class="dm-comitet__title">Заместители</span>
-            <div class="dm-comitet__elems">
-              <div class="dm-comitet-elem">
+            <div class="dm-comitet__elems"><a class="dm-comitet-elem" href="#">
                 <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
                   <div class="dm-comitet-elem__info">
                     <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
                     <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                   </div>
-                </div>
-              </div>
-              <div class="dm-comitet-elem">
+                </div></a><a class="dm-comitet-elem" href="#">
                 <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
                   <div class="dm-comitet-elem__info">
                     <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
                     <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
           </div>
           <div class="dm-comitet__members"><span class="dm-comitet__title">Члены коммитета</span>
-            <div class="dm-comitet__elems">
-              <div class="dm-comitet-elem">
+            <div class="dm-comitet__elems"><a class="dm-comitet-elem" href="#">
                 <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
                   <div class="dm-comitet-elem__info">
                     <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
                     <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                   </div>
-                </div>
-              </div>
-              <div class="dm-comitet-elem">
+                </div></a><a class="dm-comitet-elem" href="#">
                 <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
                   <div class="dm-comitet-elem__info">
                     <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
                     <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                   </div>
-                </div>
-              </div>
-              <div class="dm-comitet-elem">
+                </div></a><a class="dm-comitet-elem" href="#">
                 <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
                   <div class="dm-comitet-elem__info">
                     <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
                     <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                   </div>
-                </div>
-              </div>
-              <div class="dm-comitet-elem">
+                </div></a><a class="dm-comitet-elem" href="#">
                 <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
                   <div class="dm-comitet-elem__info">
                     <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
                     <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                   </div>
-                </div>
-              </div>
+                </div></a>
             </div>
           </div>
         </div>
@@ -242,7 +222,9 @@
           </ul>
         </div>
       </div>
-      <div class="short-filelist"><a class="file-line" href="#"><ion-icon name="document"></ion-icon>Положение о деятельности комитета</a>
+      <div class="pagination">
+        <button class="pag-button-with-icon pag-button_left" href="/5/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/5/1">1  </a><a class="pag-button" href="/5/2">2  </a><a class="pag-button" href="/5/3">3  </a><a class="pag-button pag-button_active" href="/5/4">4</a><a class="pag-button" href="/5/5">5  </a><a class="pag-button" href="/5/6">6  </a>
+        <button class="pag-button-with-icon pag-button_right" href="/5/6"> <span class="pag-button__span">Вперед</span></button>
       </div>
     </main>
     <footer class="footer">

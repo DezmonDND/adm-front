@@ -1,0 +1,121 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-finance-elem {
+    width: 100%;
+    border-radius: 8px;
+    background-color: $grey-adm;
+    padding-top: 8px;
+}
+
+.dm-finance-elem__container  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include respond-to(md) {
+        gap: 16px;
+        .button {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.dm-finance-elem__top span{
+    color: $second-text;
+    font-weight: 500;
+    @include lead-3();
+}
+
+.dm-finance-elem__bot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include respond-to(md) {
+        gap: 16px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.dm-finance-elem__bot-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include respond-to(sm) {
+        align-items: flex-start;
+        gap: 16px;
+        flex-direction: column-reverse;
+    }
+}
+
+.dm-finance-elem__bot-left span {
+    color: $second-text;
+    @include lead-3();
+}
+
+.dm-finance hr {
+    margin: 0;
+    border-color: $second-text;
+    opacity: 0.2;
+}
+
+.dm-finance-elem__status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dm-finance-elem__doc a {
+    border-bottom: 1px solid $second-text;
+    color: $second-text;
+    @include text-2();
+}
+
+
+
+.dm-finance__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dm-finance__quote {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 8px 0px;
+}
+
+.dm-finance__quote span:first-child {
+    padding: 0px 16px;
+    color: $second-text;
+    @include text-1();
+}
+
+.dm-finance__quote span:nth-child(2) {
+    color: $tertiary-text;
+    @include caption-2();
+}
+
+.dm-finance__docs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dm-finance__docs  span {
+    @include lead-5();
+}
+
+.dm-finance__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+    @include respond-to(md) {
+        gap: 8px;
+    }
+}

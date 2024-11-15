@@ -1,0 +1,20 @@
+include ../dm-finance-elem/dm-finance-elem
+include ../../documents/shortlist/documents-shortlist
+
+mixin dm-finance(items = [], docs = [])
+    .dm-finance     
+        .dm-finance__content
+            .dm-finance__quote
+                span "Финансовое обеспечение деятельности органов местного самоуправления городского округа осуществляется исключительно за счет собственных доходов местного бюджета"
+                span ст. 6 п. 6 Устава города
+            .dm-finance__quote
+                span "Материально-техническое и организационное обеспечение деятельности Думы города осуществляется в порядке, определенном Думой города."
+                span ст. 29 п. 3 Устава города
+            .dm-finance__list 
+                each item in items 
+                    +dm-finance-elem(item)
+            hr
+            .dm-finance__docs 
+                span Связанные документы
+                +short-filelist(docs)
+

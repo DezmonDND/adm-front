@@ -15,6 +15,7 @@
   max-width: 440px;
   background-color: var(--grey-adm);
   border-radius: 12px;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .dm-comitet-elem {
@@ -27,6 +28,14 @@
     max-width: unset;
     width: 100%;
   }
+}
+
+.dm-comitet-elem:hover {
+  background-color: var(--services-hover);
+}
+
+.dm-comitet-elem:active {
+  background-color: var(--services-active);
 }
 
 .dm-comitet-elem__container {
@@ -49,46 +58,48 @@
 
 .dm-comitet-elem__info-surname {
   font-weight: 400;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: calc(28px * var(--scale));
+  line-height: calc(34px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-comitet-elem__info-surname {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: calc(18px * var(--scale));
+    line-height: calc(22px * var(--lh));
   }
 }
 
 .dm-comitet-elem__info-surname span {
+  color: var(--main-text);
+  text-decoration: none;
   font-weight: 400;
 }
 
 .dm-comitet-elem__info-name {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(18px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-comitet-elem__info-name {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }
 
 .dm-comitet-elem__info-name span {
   font-weight: 400;
-  color: #78839c;
+  color: var(--tertiary-text);
 }
 
 .dm-comitet__title {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-comitet__title {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 
@@ -131,12 +142,12 @@
 
 .dm-comitet__info li {
   font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(28px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-comitet__info li {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(24px * var(--lh));
   }
 }
