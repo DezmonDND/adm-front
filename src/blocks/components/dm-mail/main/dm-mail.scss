@@ -1,0 +1,90 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-mail__contacts {
+    width: 100%;
+    border-radius: 8px;
+    background-color: $grey-adm;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    @include respond-to(md) {
+        flex-direction: column;
+    }
+}
+
+.dm-mail__top .links-list{
+    margin-top: 16px;
+
+    @include respond-to(md) {
+        margin-top: 8px;
+    }
+}
+
+.dm-mail__top .links-list-item{
+    margin-bottom: 0;
+
+
+}
+
+.dm-mail__phone, .dm-mail__mail , .dm-mail__addr {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dm-mail__phone span, .dm-mail__mail span, .dm-mail__addr span {
+    color: $second-text;
+    @include text-2();
+}
+
+.dm-mail__phone span:first-child, .dm-mail__mail span:first-child, .dm-mail__addr span:first-child, .dm-mail__descr   {
+    color: $tertiary-text;
+    @include caption-2();
+}
+
+.dm-mail__map {
+    width: 100%;
+    height: 738px;
+    
+
+    iframe {
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    @include respond-to(md) {
+        height: 410px;
+    }
+    @include respond-to(sm) {
+        height: 200px;
+    }
+}
+
+.dm-mail__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dm-mail__bot {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dm-mail__bot-title span {
+    color: $main-text;
+    @include lead-3();
+}
+
+.dm-mail__bot-list  li {
+    color: $second-text;
+    @include text-2();
+}
+
+.dm-mail hr {
+    margin: 0;
+}

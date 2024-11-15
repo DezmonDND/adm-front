@@ -99,8 +99,10 @@
 @use '../../blocks/components/dm-deputies/dm-deputies-alphabet/dm-deputies-alphabet.scss';
 @use '../../blocks/components/dm-deputies/dm-deputies-comitets/dm-deputies-comitets.scss';
 @use '../../blocks/components/dm-finance/main/dm-finance.scss';
+@use '../../blocks/components/dm-mail/main/dm-mail.scss';
 @use '../../blocks/components/header/visibility/visibility.scss';
 @use '../../blocks/components/dm-unions/main/dm-unions.scss';
+@use '../../blocks/components/dm-meeting/main/dm-meeting.scss';
 
 * {
     font-family: 'Inter', sans-serif;
