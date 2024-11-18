@@ -1,1 +1,41 @@
 @use '../../../assets/styles/vars.scss' as *;
+
+.search-by-syte {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+
+    .input-search-by-syte {
+        max-width: 624px;
+    }
+
+    .search-by-syte__buttons {
+        display: flex;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .search-by-syte__button {
+        background-color: $content-color;
+        border: 1px solid $input-color-default;
+        color: $main-text;
+        max-width: 279px;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: left;
+        @include caption-2;
+
+        &:hover {
+            border-color: $input-color-hover;
+        }
+    }
+
+    .search-by-syte__select {
+        appearance: none;
+        background: url(../../icons/folder_icon.svg) center no-repeat;
+        background-position: 7%;
+        background-size: 24px;
+        padding: 20px 12px 20px 50px;
+    }
+}
