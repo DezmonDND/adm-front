@@ -40,9 +40,9 @@ $num-button-text-click: #dae1f1;
 
 $secondary-color: var(--secondary-color);
 
-$padding-button-l: 16px 28px;
-$padding-button-m: 12px 20px;
-$padding-button-s: 8px 16px;
+$padding-button-l: 17px 28px;
+$padding-button-m: 11px 20px;
+$padding-button-s: 7px 16px;
 $padding-button-xs: 4px 16px;
 
 $padding-button-without-text-desc: 12px;
@@ -253,6 +253,17 @@ $breakpoint-sm: 768px;
     @include respond-to(md) {
         font-size: calc(13px * var(--scale));
         line-height: calc(16px * var(--lh));
+    }
+}
+
+@mixin text-link-2 {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(14px * var(--lh));
+    font-weight: $font-weight-semi-bold;
+
+    @include respond-to(md) {
+        font-size: calc(11px * var(--scale));
+        line-height: calc(14px * var(--lh));
     }
 }
 
