@@ -1,0 +1,7 @@
+mixin sorting()
+    .sorting
+        span.sorting__desc Сортировать дату публикации:
+        +select('right', [
+                { value: 'По убыванию', text: 'По убыванию' },
+                { value: 'По возрастанию', text: 'По возрастанию' }
+                ], 'single', 'sorting__select')

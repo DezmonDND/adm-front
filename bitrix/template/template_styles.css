@@ -1954,6 +1954,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
 }
 .interview-full .interview-full__container .interview-full__description .interview-full__title {
   font-weight: 700;
+  padding: 0;
   font-size: 32px;
   line-height: 38px;
 }
@@ -2060,6 +2061,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
+  padding: 0;
 }
 .thanks .thanks__container .thanks__description .thanks__text {
   font-size: 16px;
@@ -2144,6 +2146,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
 }
 .user-profile .user-profile__info .user-profile__name {
   margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
@@ -2372,6 +2375,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
   }
 }
 .title .title__container .title__name {
+  padding: 0;
   font-weight: 500;
   font-size: calc(40px * var(--scale));
   line-height: calc(48px * var(--lh));
@@ -2905,6 +2909,7 @@ body.tmp-duma .hearing-item img {
   display: flex;
   border-radius: 12px;
   background: var(--fourth-text-inverse);
+  color: var(--main-text);
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -3359,13 +3364,13 @@ body.tmp-duma .hearing-item img {
 }
 
 .ms__chose-item {
-  font-weight: 300;
-  font-size: calc(14px * var(--scale));
-  line-height: calc(20px * var(--lh));
   background: rgb(231, 237, 251);
   border-radius: 100px;
   padding: 12px 20px;
   margin: 0;
+  font-weight: 300;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .ms__chose-item {
@@ -13291,6 +13296,40 @@ td:hover {
 @media (max-width: 768px) {
   .filters .filters_container {
     flex-wrap: wrap;
+  }
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  max-width: 439px;
+  width: 100%;
+  gap: 12px;
+}
+.sorting .sorting__desc {
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .sorting .sorting__desc {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.sorting .sorting__select {
+  max-width: 182px;
+  padding: 12px 20px;
+  background-position: 96%;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .sorting .sorting__select {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
   }
 }
 
