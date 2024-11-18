@@ -11,7 +11,7 @@ body {
     --icons-color: #1a2d82;
     // Календарь
     --event-color: #e7edfb;
-    --event-color-hover: #e7edfb;
+    --event-color-hover: #80a6f7;
 
     // Кнопки
     --primary-color: #004cc4;
@@ -23,7 +23,6 @@ body {
     --primary-color-green-click: #0c9022;
     --primary-color-green-disabled: #dbdbdb;
 
-
     --main-text: #000000; //primary
     --main-text-dark-bg: #ffffff;
     --second-text: #15195a;
@@ -31,7 +30,6 @@ body {
     --tertiary-text-dark-bg: #e9e9e9;
     --fourth-text: #c0c2cc;
     --fourth-text-inverse: #ebedf4;
-
 
     // Типографика
     --scale: 1;
@@ -73,7 +71,6 @@ body {
         --fourth-text: #ffffff;
         --fourth-text-inverse: #ffffff;
 
-
         --icons-color: #ffff;
         --content-color: #242433;
         --services-hover: #242433;
@@ -98,36 +95,35 @@ body {
         --primary-color-green-disabled: #242433;
     }
     &.blue-theme {
-        --main-text: #0A3866; //primary
-        --main-text-dark-bg: #0A3866;
-        --second-text: #0A3866;
-        --tertiary-text: #0A3866;
-        --tertiary-text-dark-bg: #0A3866;
-        --fourth-text: #0A3866;
-        --fourth-text-inverse: #0A3866;
+        --main-text: #0a3866; //primary
+        --main-text-dark-bg: #0a3866;
+        --second-text: #0a3866;
+        --tertiary-text: #0a3866;
+        --tertiary-text-dark-bg: #0a3866;
+        --fourth-text: #0a3866;
+        --fourth-text-inverse: #0a3866;
 
-
-        --icons-color: #0A3866;
-        --content-color: #B2D9FF;
-        --services-hover: #B2D9FF;
-        --services-active: #B2D9FF;
+        --icons-color: #0a3866;
+        --content-color: #b2d9ff;
+        --services-hover: #b2d9ff;
+        --services-active: #b2d9ff;
         // Фон
-        --cards-background: #B2D9FF;
-        --grey-adm: #B2D9FF;
+        --cards-background: #b2d9ff;
+        --grey-adm: #b2d9ff;
 
         // Календарь
-        --event-color: #B2D9FF;
-        --event-color-hover: #B2D9FF;
+        --event-color: #b2d9ff;
+        --event-color-hover: #b2d9ff;
 
         // Кнопки
-        --primary-color: #B2D9FF;
-        --primary-color-hover: #B2D9FF;
-        --primary-color-active: #B2D9FF;
-        --primary-color-disabled: #B2D9FF;
+        --primary-color: #b2d9ff;
+        --primary-color-hover: #b2d9ff;
+        --primary-color-active: #b2d9ff;
+        --primary-color-disabled: #b2d9ff;
 
-        --primary-color-green: #B2D9FF;
-        --primary-color-green-hover: #B2D9FF;
-        --primary-color-green-click: #B2D9FF;
-        --primary-color-green-disabled: #B2D9FF;
+        --primary-color-green: #b2d9ff;
+        --primary-color-green-hover: #b2d9ff;
+        --primary-color-green-click: #b2d9ff;
+        --primary-color-green-disabled: #b2d9ff;
     }
 }

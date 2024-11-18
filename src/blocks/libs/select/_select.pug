@@ -1,13 +1,14 @@
 include ../multiselect/_multi-select.pug
 
-mixin select(iconPosition, options, type, cls)
+mixin select(iconPosition, options, type, cls, size)
   if type === 'multiple'  
     +multi_select()
   else
     - const hasClass = cls ? cls : '';
+    - const hasSize = size ? `select_${size}` : ''
     - const classIconPosition = iconPosition ? `select-icon-${iconPosition}` : '';
     
-    select.select(class=[hasClass, classIconPosition])
+    select.select(class=[hasClass, hasSize, classIconPosition])
       if options
         each option in options
           option(class=`select__option` value=option.value)= option.text

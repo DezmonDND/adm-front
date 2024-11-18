@@ -24,13 +24,13 @@ $desk-text3-lh: 24px;
         color: $tertiary-text;
     }
 
-    &_m {
-        padding: 16px 13px;
-    }
-
     @include respond-to(md) {
         padding: 16px 13px;
     }
+}
+
+.input_m {
+    padding: 11px 20px;
 }
 
 .input-error {

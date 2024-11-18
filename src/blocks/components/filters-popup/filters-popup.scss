@@ -1,0 +1,80 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.filters-popup {
+    display: none;
+
+    .filters-popup__container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: $cards-background;
+
+        .filters-popup__top-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $content-color;
+            padding: 20px 0;
+
+            .filters-popup__title {
+                @include heading-h4;
+            }
+        }
+
+        .filters-popup__tags {
+            background-color: $content-color;
+            @include flex;
+
+            .filters-popup__title {
+                @include heading-h4;
+            }
+
+            .tabs-tag {
+                margin: 0;
+
+                .tab-button {
+                    background-color: $cards-background;
+                    @include lead-3;
+
+                    &_active {
+                        background-color: $primary-color;
+                        color: $content-color;
+                    }
+                }
+            }
+        }
+
+        .filters-popup__calendar {
+            background-color: $content-color;
+            @include flex;
+
+            .filters-popup__title {
+                @include heading-h4;
+            }
+        }
+
+        .filters-popup__buttons {
+            display: flex;
+            background-color: $content-color;
+            padding: 12px 0;
+
+            .filters-popup__btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.filters-popup_open {
+    display: flex;
+    position: absolute;
+    top: -50px;
+}

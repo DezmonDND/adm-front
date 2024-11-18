@@ -1,0 +1,22 @@
+mixin filters-popup()
+    .filters-popup
+        .filters-popup__container 
+            .filters-popup__top-content 
+                span.filters-popup__title Фильтры
+                +button({ type: 'button',  event: 'toggleFilters();', class: 'button files-list__delete-button', icon: 'close-outline' })
+            .filters-popup__tags
+                span.filters-popup__title Раздел
+                +tabs-tag([
+                    { size: 'l', title: 'Кино', onclick: '1' , value: 'Кино'},
+                    { size: 'l', title: 'Концерты', onclick: '1' , value: 'Концерты'},
+                    { size: 'l', title: 'Выставки', onclick: '1' , value: 'Выставки'},
+                    { size: 'l', title: 'Театр', onclick: '1' , value: 'Театр' },
+                    { size: 'l', title: 'Детям', onclick: '1' , value: 'Детям' },
+                    { size: 'l', title: 'Конференции', onclick: '1' , value: 'Конференции' },
+                    ]
+                    )
+            .filters-popup__calendar
+                span.filters-popup__title Выберите период публикации                  
+                +chronicle-calendar() 
+            .filters-popup__buttons              
+                +button({ type: 'button',  size: 'm', event: 'console.log(1);', class: 'button_blue filters-popup__btn', text: "Искать"})    
