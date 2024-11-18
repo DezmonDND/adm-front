@@ -1,4 +1,5 @@
 @use '../../../assets/styles/vars.scss' as *;
+@use '../../components/search-by-site/search-by-site.scss' as *;
 
 @mixin flex {
     display: flex;
@@ -8,7 +9,20 @@
 }
 
 .filters-popup {
-    display: none;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity .3s linear;
+    will-change: opacity;
+
+    &_open {
+        opacity: 1;
+        right: 0;
+    }
 
     .filters-popup__container {
         display: flex;
@@ -21,7 +35,7 @@
             align-items: center;
             justify-content: space-between;
             background-color: $content-color;
-            padding: 20px 0;
+            padding: 20px 27px;
 
             .filters-popup__title {
                 @include heading-h4;
@@ -30,6 +44,7 @@
 
         .filters-popup__tags {
             background-color: $content-color;
+            padding: 0 27px;
             @include flex;
 
             .filters-popup__title {
@@ -52,8 +67,10 @@
         }
 
         .filters-popup__calendar {
+            padding: 0 27px;
             background-color: $content-color;
             @include flex;
+            @include calendar;
 
             .filters-popup__title {
                 @include heading-h4;
@@ -63,7 +80,7 @@
         .filters-popup__buttons {
             display: flex;
             background-color: $content-color;
-            padding: 12px 0;
+            padding: 12px 27px;
 
             .filters-popup__btn {
                 width: 100%;
@@ -71,10 +88,4 @@
             }
         }
     }
-}
-
-.filters-popup_open {
-    display: flex;
-    position: absolute;
-    top: -50px;
 }

@@ -50,6 +50,8 @@ td {
 
 th {
     color: $fourth-text;
+    
+@include lead-6;
 }
 
 td {

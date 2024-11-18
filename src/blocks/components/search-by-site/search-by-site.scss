@@ -1,5 +1,36 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+@mixin calendar {
+    .calendar-dm {
+        background-color: $content-color;
+
+        .calendar-dm-button {
+            color: $primary-color;
+
+            &:hover {
+                border-color: $primary-color-hover;
+            }
+        }
+
+        td {
+            color: $main-text;
+        }
+
+        .td_active {
+            background-color: $event-color;
+
+            &:hover {
+                border-color: $event-color;
+            }
+        }
+
+        .today {
+            background-color: $primary-color;
+            color: $content-color;
+        }
+    }
+}
+
 .search-by-site {
     display: flex;
     align-items: center;
@@ -39,7 +70,7 @@
             position: absolute;
             top: 50px;
             right: 60px;
-
+            @include calendar;
         }
 
         .search-by-site__calendar_active {
@@ -58,7 +89,7 @@
             @include caption-2;
 
             .button_span {
-                font-weight: 300;
+                font-weight: 400;
             }
 
             &:hover {
@@ -71,6 +102,7 @@
             background-position: 7%;
             padding-left: 50px;
             background-size: 20px;
+            font-weight: 400;
 
             &:hover {
                 border-color: $input-color-hover;
@@ -129,34 +161,5 @@
         @include respond-to(sm) {
             justify-content: center;
         }
-    }
-}
-
-.calendar-dm {
-    background-color: $content-color;
-
-    .calendar-dm-button {
-        color: $primary-color;
-
-        &:hover {
-            border-color: $primary-color-hover;
-        }
-    }
-
-    td {
-        color: $main-text;
-    }
-
-    .td_active {
-        background-color: $event-color;
-
-        &:hover {
-            border-color: $event-color;
-        }
-    }
-
-    .today {
-        background-color: $primary-color;
-        color: $content-color;
     }
 }
