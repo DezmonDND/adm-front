@@ -11,6 +11,7 @@
       <li class="dm-applications__item">Обращения, содержащие в электронном виде материалы большего объема, следует направлять <a class="link" href="/">иным способом</a>;</li>
       <li class="dm-applications__item">Информация о персональных данных авторов обращений, направленных в электронном виде, <a class="link" href="/">хранится и обрабатывается</a> с соблюдением требований российского законодательства о персональных данных. </li>
     </ul>
+    <div class="dm-applications__divider"></div>
     <form class="dm-applications__form"> 
       <h3 class="dm-applications__title">Основные данные</h3>
       <fieldset class="fieldset">
@@ -31,8 +32,9 @@
           <input class="input input-virtual-reception_input   " placeholder="Отчество" name="thirdName" value=""/>
         </div>
       </fieldset>
+      <div class="dm-applications__divider">    </div>
       <fieldset class="fieldset ">
-        <h3 class="fieldset__title reception__job_title">Почтовый адрес для контакта</h3>
+        <h3 class="fieldset__title dm-applications__title">Почтовый адрес для контакта</h3>
         <div class="fieldset__answers">
           <input class="input input-virtual-reception_input   " placeholder="Пример: some@mail.ru" name="companyName" value=""/>
         </div>
@@ -43,7 +45,7 @@
       </div>
       <div class="dm-applications__divider">    </div>
       <fieldset class="fieldset">
-        <h3 class="fieldset__title reception__feedback_title">Обращение</h3>
+        <h3 class="fieldset__title dm-applications__title">Обращение</h3>
         <div class="fieldset__answers">
           <div class="textarea__container">
             <textarea class="textarea  " placeholder="Введите ваше обращение (не больше 20 тысяч символов)" name="feedback" maxlength="20000" oninput="getLength(this)"></textarea>

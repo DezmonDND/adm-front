@@ -18,6 +18,7 @@ mixin dm-applications(data)
                 li.dm-applications__item Электронное обращение может содержать вложенный файл, размером не более 2,5мб.
                 li.dm-applications__item Обращения, содержащие в электронном виде материалы большего объема, следует направлять #[a(href='/').link иным способом];
                 li.dm-applications__item Информация о персональных данных авторов обращений, направленных в электронном виде, #[a(href='/').link хранится и обрабатывается] с соблюдением требований российского законодательства о персональных данных. 
+            .dm-applications__divider
             form.dm-applications__form  
                 h3.dm-applications__title Основные данные
                 +fieldset(
@@ -56,9 +57,10 @@ mixin dm-applications(data)
                             }
                             ]    
                     })
+                .dm-applications__divider     
                 +fieldset(
                     {
-                        cls_title: 'reception__job',
+                        cls_title: 'dm-applications_',
                         type: '',
                         title: 'Почтовый адрес для контакта',
                         span: '',
@@ -81,7 +83,7 @@ mixin dm-applications(data)
                 .dm-applications__divider     
                 +fieldset(
                     {
-                        cls_title: 'reception__feedback',
+                        cls_title: 'dm-applications_',
                         type: 'textarea',
                         title: 'Обращение',
                         span: '',

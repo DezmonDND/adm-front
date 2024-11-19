@@ -17,14 +17,18 @@
         }
 
         .dm-applications__form {
-            .dm-applications__title {}
+            .dm-applications__title {
+                @include heading-h3;
+            }
+
             .dm-applications__get-answer {
                 margin-top: 18px;
             }
 
-            
+
 
         }
+
         .dm-applications__buttons {
             display: flex;
             flex-direction: column;
@@ -53,6 +57,6 @@
 
 .dm-applications__divider {
     width: 100%;
-    border: 1px solid $input-color-default;
+    border: 1px solid $fourth-text-inverse;
     margin-top: 34px;
 }
