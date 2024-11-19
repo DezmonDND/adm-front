@@ -1,33 +1,20 @@
-.main-help-city {
+/*** Finish - Title ***/
+.help-city {
   margin: 0 0 48px;
 }
-@media screen and (max-width: 1000px) {
-  .main-help-city {
+@media (max-width: 992px) {
+  .help-city {
     margin: 0 0 20px;
   }
 }
-.main-help-city .main-help-city__content {
-  display: flex;
-  gap: 24px;
+.help-city .help-city__content .main-project-card {
+  margin-right: 24px;
 }
-@media screen and (max-width: 1000px) {
-  .main-help-city .main-help-city__content {
-    gap: 8px;
-  }
-}
-@media (max-width: 600px) {
-  .main-help-city .main-help-city__content {
-    display: grid;
-    grid-template-columns: repeat(2, 336px);
-    overflow-y: scroll;
-    scrollbar-width: none;
-  }
-}
-.main-help-city .help-city__navigation {
+.help-city .help-city__navigation {
   display: none;
 }
 @media screen and (max-width: 1000px) {
-  .main-help-city .help-city__navigation {
+  .help-city .help-city__navigation {
     display: flex;
     justify-content: center;
     margin-top: 20px;

@@ -1,0 +1,30 @@
+/*** Finish - Title ***/
+.dm-city-projects {
+  padding: 0 0 48px;
+}
+@media (max-width: 1000px) {
+  .dm-city-projects {
+    padding: 0 0 20px;
+  }
+}
+@media (max-width: 992px) {
+  .dm-city-projects .main-title .main-title__container .slider {
+    display: none;
+  }
+}
+.dm-city-projects .dm-city-projects__container .dm-city-projects__card-list {
+  display: flex;
+}
+.dm-city-projects .dm-city-projects__container .dm-city-projects__card-list .people-care-card {
+  margin-right: 24px;
+}
+.dm-city-projects .dm-city-projects__container .dm-city-projects__slider {
+  display: none;
+}
+@media (max-width: 992px) {
+  .dm-city-projects .dm-city-projects__container .dm-city-projects__slider {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+  }
+}

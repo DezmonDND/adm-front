@@ -505,9 +505,9 @@ block content
                 { title: 'Национальные проекты', href: '/' , value: 'Национальные проекты', isActive: true},
                 { title: 'Администрация', href: '/' , value: 'Администрация'},
                 { title: 'Прочее', href: '/' , value: 'Прочее'},
-                ], 'slider')
-        .main-help-city 
-            .main-help-city__content 
+                ], { class: 'help-city' } )
+        .help-city 
+            .help-city__content 
                 +main-project-card({
                     date: 'до 29 сентября',
                     title: 'Уровень благоустройства города',
@@ -538,6 +538,16 @@ block content
                     tag: 'Завершен',
                     tag_color: 'red'
                 })
+                +main-project-card({
+                    date: 'до 29 сентября',
+                    title: 'Работа местных властей и общественные инициативы',
+                    description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры ',
+                    votes: '319 голосов',
+                    result: 'Вы участвовали',
+                    buttonText: 'Участвовать',
+                    tag: 'Завершен',
+                    tag_color: 'red'
+                })
             .help-city__navigation 
                 +navigation({
                     first_page: '1',
@@ -547,7 +557,9 @@ block content
             +main-title({
                 href: '/',
                 title: 'Важная информация для жителей',
-                slider: true,
+                slider: {
+                    class: 'important-inf'
+                },
             })   
             .important-inf__container
                 img.important-inf__banner(src='../img/banner.png' alt='Баннер') 

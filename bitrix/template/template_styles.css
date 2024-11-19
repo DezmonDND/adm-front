@@ -3359,13 +3359,13 @@ body.tmp-duma .hearing-item img {
 }
 
 .ms__chose-item {
-  font-weight: 300;
-  font-size: calc(14px * var(--scale));
-  line-height: calc(20px * var(--lh));
   background: rgb(231, 237, 251);
   border-radius: 100px;
   padding: 12px 20px;
   margin: 0;
+  font-weight: 300;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
   .ms__chose-item {
@@ -9477,36 +9477,22 @@ body.tmp-duma .short-filelist ion-icon {
   }
 }
 
-.main-help-city {
+.help-city {
   margin: 0 0 48px;
 }
-@media screen and (max-width: 1000px) {
-  .main-help-city {
+@media (max-width: 992px) {
+  .help-city {
     margin: 0 0 20px;
   }
 }
-.main-help-city .main-help-city__content {
-  display: flex;
-  gap: 24px;
+.help-city .help-city__content .main-project-card {
+  margin-right: 24px;
 }
-@media screen and (max-width: 1000px) {
-  .main-help-city .main-help-city__content {
-    gap: 8px;
-  }
-}
-@media (max-width: 600px) {
-  .main-help-city .main-help-city__content {
-    display: grid;
-    grid-template-columns: repeat(2, 336px);
-    overflow-y: scroll;
-    scrollbar-width: none;
-  }
-}
-.main-help-city .help-city__navigation {
+.help-city .help-city__navigation {
   display: none;
 }
 @media screen and (max-width: 1000px) {
-  .main-help-city .help-city__navigation {
+  .help-city .help-city__navigation {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -9661,15 +9647,10 @@ body.tmp-duma .short-filelist ion-icon {
   display: flex;
   flex-direction: column;
 }
-.important-inf .important-inf__container {
-  display: flex;
-  gap: 20px;
-  overflow-x: scroll;
-  scrollbar-width: none;
-}
 .important-inf .important-inf__container .important-inf__banner {
   max-width: 873px;
   width: 100%;
+  margin-right: 24px;
 }
 @media (max-width: 1000px) {
   .important-inf .important-inf__container .important-inf__banner {
@@ -13291,6 +13272,129 @@ td:hover {
 @media (max-width: 768px) {
   .filters .filters_container {
     flex-wrap: wrap;
+  }
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.dm-city-projects {
+  padding: 0 0 48px;
+}
+@media (max-width: 1000px) {
+  .dm-city-projects {
+    padding: 0 0 20px;
+  }
+}
+@media (max-width: 992px) {
+  .dm-city-projects .main-title .main-title__container .slider {
+    display: none;
+  }
+}
+.dm-city-projects .dm-city-projects__container .dm-city-projects__card-list {
+  display: flex;
+}
+.dm-city-projects .dm-city-projects__container .dm-city-projects__card-list .people-care-card {
+  margin-right: 24px;
+}
+.dm-city-projects .dm-city-projects__container .dm-city-projects__slider {
+  display: none;
+}
+@media (max-width: 992px) {
+  .dm-city-projects .dm-city-projects__container .dm-city-projects__slider {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
   }
 }
 

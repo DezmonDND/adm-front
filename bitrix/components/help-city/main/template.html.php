@@ -8,13 +8,14 @@
   <div class="tabs">
     <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочее">Прочее</a>
     </div>
-    <div class="slider"><a class="slider__link">
-        <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link">
-        <ion-icon name="arrow-forward-outline"> </ion-icon></a></div>
+    <div class="slider"><a class="slider__link slider__-prev">
+        <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__-next">
+        <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+    </div>
   </div>
 </div>
-<div class="main-help-city"> 
-  <div class="main-help-city__content"> 
+<div class="help-city"> 
+  <div class="help-city__content"> 
     <div class="main-project-card">
       <div class="main-project-card__content">
         <div class="main-project-card__info"> 

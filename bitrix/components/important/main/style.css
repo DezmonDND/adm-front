@@ -2,15 +2,10 @@
   display: flex;
   flex-direction: column;
 }
-.important-inf .important-inf__container {
-  display: flex;
-  gap: 20px;
-  overflow-x: scroll;
-  scrollbar-width: none;
-}
 .important-inf .important-inf__container .important-inf__banner {
   max-width: 873px;
   width: 100%;
+  margin-right: 24px;
 }
 @media (max-width: 1000px) {
   .important-inf .important-inf__container .important-inf__banner {
