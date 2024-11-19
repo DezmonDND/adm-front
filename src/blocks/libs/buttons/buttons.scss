@@ -144,8 +144,8 @@
         }
 
         &_no-border {
-            box-shadow: 0 4px 12px rgba($main-text, .08);
-            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid transparent;
         }
     }
 
