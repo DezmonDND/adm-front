@@ -1,8 +1,7 @@
 
 <div class="hearing-list">
   <h3>Ближайшие публичные слушания</h3>
-  <div class="hearing-list-items">
-    <div class="hearing-item">
+  <div class="hearing-list-items"><a class="hearing-item" href="/hearing-detail.html">
       <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
         <div class="hearing-item-bg"></div>
         <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -15,9 +14,7 @@
           <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
           <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
         </div>
-      </div>
-    </div>
-    <div class="hearing-item">
+      </div></a><a class="hearing-item" href="/hearing-detail.html">
       <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
         <div class="hearing-item-bg"></div>
         <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -30,9 +27,7 @@
           <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
           <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
         </div>
-      </div>
-    </div>
-    <div class="hearing-item">
+      </div></a><a class="hearing-item" href="/hearing-detail.html">
       <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
         <div class="hearing-item-bg"></div>
         <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -45,7 +40,6 @@
           <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
           <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
         </div>
-      </div>
-    </div>
+      </div></a>
   </div>
 </div>

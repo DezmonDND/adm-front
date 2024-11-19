@@ -63,6 +63,8 @@ body.tmp-duma {
 }
 
 .calendar-dm.vanilla-calendar.vanilla-calendar_default {
+    align-self: center;
+
     @include respond-to(sm) {
         padding: 0;
     }
