@@ -2,19 +2,23 @@
 
 .short-filelist {
     .file-line {
-
-
         text-decoration: none;
-        padding: 20px;
+        padding: 19px 20px;
         display: flex;
+        gap: 12px;
         align-items: center;
         background-color: $grey-adm;
         border-radius: 8px;
         margin-bottom: 12px;
 
         .file-line-icon {
-            width: 24px;
+            width: 20px;
+
+            @include respond-to(md) {
+                font-size: 16px;
+            }
         }
+
         .file-line-span {
             width: calc(100% - 24px);
         }
@@ -32,18 +36,8 @@
             background: $services-hover;
         }
 
-        @media (max-width: 768px) {
-            padding: 16px 20px;
-        }
-
-        ion-icon {
-            font-size: 32px;
-            color: $primary-color;
-            margin-right: 16px;
-
-            @media (max-width: 768px) {
-                font-size: 28px;
-            }
+        @include respond-to(md) {
+            padding: 13px 16px;
         }
     }
 }
