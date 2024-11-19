@@ -70,7 +70,6 @@
             padding: 0 27px;
             background-color: $content-color;
             @include flex;
-            @include calendar;
 
             .filters-popup__title {
                 @include heading-h4;

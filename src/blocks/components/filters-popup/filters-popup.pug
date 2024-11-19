@@ -17,6 +17,6 @@ mixin filters-popup()
                     )
             .filters-popup__calendar
                 span.filters-popup__title Выберите период публикации                  
-                +chronicle-calendar() 
+                +chronicle-calendar('calendar-popup') 
             .filters-popup__buttons              
                 +button({ type: 'button',  size: 'm', event: 'console.log(1);', class: 'button_blue filters-popup__btn', text: "Искать"})    
