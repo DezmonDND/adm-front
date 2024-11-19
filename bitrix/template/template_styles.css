@@ -866,6 +866,17 @@ body.blue-theme {
   cursor: pointer;
 }
 
+body.tmp-duma .pag-button:hover {
+  background-color: var(--event-color);
+}
+body.tmp-duma .pag-button:active {
+  background-color: var(--event-color-hover);
+}
+body.tmp-duma .pag-button_active:hover {
+  color: var(--content-color);
+  background-color: var(--primary-color-hover);
+}
+
 .pag-button_right,
 .pag-button_left {
   all: unset;
@@ -1357,7 +1368,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
   justify-content: center;
   gap: 16px;
   align-self: flex-start;
-  margin-top: 40px;
+  margin-top: 48px;
 }
 .pagination .pagination__pages {
   display: flex;
@@ -11326,19 +11337,19 @@ td:hover {
 }
 
 .dm-comitet-elem__img {
-  max-width: 124px;
+  max-width: 72px;
   width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
   height: 100%;
-  max-height: 124px;
+  max-height: 72px;
 }
 
 .dm-comitet-elem {
   display: flex;
-  width: 426px;
-  max-width: 440px;
+  max-width: 310px;
+  width: 100%;
   background-color: var(--grey-adm);
   border-radius: 12px;
   text-decoration: none;
@@ -11366,15 +11377,16 @@ td:hover {
 
 .dm-comitet-elem__container {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 .dm-comitet-elem__info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 @media (max-width: 768px) {
   .dm-comitet-elem__info {
@@ -11384,13 +11396,13 @@ td:hover {
 
 .dm-comitet-elem__info-surname {
   font-weight: 400;
-  font-size: calc(28px * var(--scale));
-  line-height: calc(34px * var(--lh));
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-comitet-elem__info-surname {
-    font-size: calc(18px * var(--scale));
-    line-height: calc(22px * var(--lh));
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 
@@ -11402,8 +11414,8 @@ td:hover {
 
 .dm-comitet-elem__info-name {
   font-weight: 300;
-  font-size: calc(14px * var(--scale));
-  line-height: calc(18px * var(--lh));
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
 }
 @media (max-width: 992px) {
   .dm-comitet-elem__info-name {
@@ -11413,7 +11425,6 @@ td:hover {
 }
 
 .dm-comitet-elem__info-name span {
-  font-weight: 400;
   color: var(--tertiary-text);
 }
 
@@ -11458,11 +11469,11 @@ td:hover {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 48px 0px;
+  padding: 48px 0 0;
 }
 @media (max-width: 768px) {
   .dm-comitet__info {
-    padding: 24px 0px;
+    padding: 24px 0;
   }
 }
 
