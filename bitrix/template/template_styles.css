@@ -147,7 +147,7 @@ body.blue-theme {
   border-color: #858C9C;
 }
 .input:focus {
-  border: 1px solid #78A4F4;
+  border: 1px solid 78A4F4;
 }
 .input::placeholder {
   color: var(--tertiary-text);
@@ -534,7 +534,7 @@ body.blue-theme {
   border-color: #858C9C;
 }
 .textarea__container .textarea:focus {
-  border: 1px solid #78A4F4;
+  border: 1px solid 78A4F4;
 }
 .textarea__container .textarea::placeholder {
   color: var(--tertiary-text);
@@ -678,7 +678,7 @@ body.blue-theme {
 }
 
 .сheckbox.сheckbox-label + label {
-  padding: 8px 32px;
+  padding: 8px 0 8px 32px;
 }
 .сheckbox.сheckbox-label + label:before {
   left: 10px;
@@ -11169,6 +11169,11 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   .dm-calendar__btn .dm-calendar__button {
     width: 100%;
     justify-content: center;
+    padding: 11px 0;
+  }
+  .dm-calendar__btn .dm-calendar__button .button_span {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -11180,6 +11185,13 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   .dm-filter__btn {
     display: flex;
   }
+}
+.dm-filter__btn .dm-filter__button {
+  padding: 11px 0;
+}
+.dm-filter__btn .dm-filter__button .button_span {
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .dm-filter__btn .dm-filter__button {
@@ -13297,7 +13309,7 @@ td:hover {
   margin-bottom: 24px;
   gap: 12px;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .filters {
     flex-direction: column;
     align-items: flex-start;
@@ -13305,11 +13317,39 @@ td:hover {
 }
 .filters .filters_container {
   display: flex;
+  max-width: 620px;
+  width: 100%;
   gap: 12px;
+}
+@media (max-width: 992px) {
+  .filters .filters_container {
+    max-width: 462px;
+  }
 }
 @media (max-width: 768px) {
   .filters .filters_container {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 45% 53%;
+    grid-template-rows: auto auto;
+  }
+}
+.filters .filters_container .filters__select {
+  padding: 13px 34px 13px 16px;
+  border-radius: 6px;
+  background-size: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  background-position: 94%;
+  max-width: 221px;
+  width: 100%;
+}
+.filters .filters_container .filters__select:last-of-type {
+  grid-column: span 2;
+}
+@media (max-width: 992px) {
+  .filters .filters_container .filters__select {
+    border-radius: 4px;
+    padding: 7px 20px 7px 12px;
   }
 }
 

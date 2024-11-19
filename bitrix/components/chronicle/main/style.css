@@ -40,6 +40,11 @@
   .dm-calendar__btn .dm-calendar__button {
     width: 100%;
     justify-content: center;
+    padding: 11px 0;
+  }
+  .dm-calendar__btn .dm-calendar__button .button_span {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -51,6 +56,13 @@
   .dm-filter__btn {
     display: flex;
   }
+}
+.dm-filter__btn .dm-filter__button {
+  padding: 11px 0;
+}
+.dm-filter__btn .dm-filter__button .button_span {
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .dm-filter__btn .dm-filter__button {
