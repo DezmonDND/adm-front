@@ -2,7 +2,7 @@
 
 .dm-meeting-elem {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: $grey-adm;
 }
 
@@ -45,7 +45,11 @@
 .dm-meeting-elem__speaker {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+
+    @include respond-to(sm) {
+        gap: 8px;
+    }
 }
 
 .dm-meeting-elem__prepare span,
@@ -81,7 +85,7 @@
 
     @include respond-to(sm) {
         align-items: flex-start;
-        gap: 16px;
+        gap: 20px;
         flex-direction: column-reverse;
     }
 }
@@ -95,6 +99,10 @@
     margin: 0;
     border-color: $second-text;
     opacity: 0.2;
+
+    @include respond-to(sm) {
+        display: none;
+    }
 }
 
 .dm-meeting-elem__num span {
@@ -111,7 +119,6 @@
 
 .dm-meeting-elem__decision {
     display: flex;
-    align-items: center;
     gap: 5px;
 }
 
@@ -130,8 +137,8 @@
 
 .dm-meeting__info {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    gap: 32px;
 
     @include respond-to(md) {
         flex-direction: column;
@@ -147,6 +154,10 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    @include respond-to(md) {
+        gap: 8px;
+    }
 }
 
 .dm-meeting__addr span,
@@ -169,6 +180,10 @@
     gap: 32px;
     display: flex;
     align-items: center;
+
+    @include respond-to(md) {
+        gap: 24px;
+    }
 }
 
 .dm-meeting__right {
@@ -178,14 +193,19 @@
 
     @include respond-to(md) {
         flex-direction: column;
-        align-items: flex-start;
         gap: 24px;
+    }
+
+    @include respond-to(sm) {
+        flex-direction: column;
+        align-items: flex-start;
+
     }
 }
 
+
 .dm-meeting__right-info {
     display: flex;
-    align-items: center;
     gap: 32px;
 
     @include respond-to(sm) {
