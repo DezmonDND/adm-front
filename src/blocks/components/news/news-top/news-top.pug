@@ -11,7 +11,9 @@ mixin news-top(data)
         +tabs(data.tabs)
     .news 
         .news__container
-            +news-card-with-image()
+            .news-card-with-image__list
+                +news-card-with-image()
+                +news-card-with-image()
             .news__list
                 each card in data.cards    
                     +news-card-without-image({

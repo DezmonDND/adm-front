@@ -55,10 +55,10 @@
             margin-top: 20px;
             min-height: 169px;
 
-            @media screen and (max-width: 1000px) {
+            @include respond-to(md) {
                 margin-top: 18px;
                 gap: 8px;
-                min-height: 108px;
+                min-height: 124px;
             }
 
             .main-project-card__title {
