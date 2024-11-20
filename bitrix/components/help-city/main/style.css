@@ -18,7 +18,7 @@
 .help-city .help-city__navigation {
   display: none;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .help-city .help-city__navigation {
     display: flex;
     justify-content: center;

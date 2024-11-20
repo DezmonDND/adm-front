@@ -1,6 +1,6 @@
 
-<div class="main-events">
-  <div class="main-events__container"> 
+<div class="events">
+  <div class="events__container"> 
     <div class="main-title">
       <div class="main-title__container">
         <h1 class="main-title__title">Анонсы и события</h1><a class="main-title__link" href="/">Все события</a>
@@ -62,8 +62,8 @@
         <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
       </button>
     </div>
-    <div class="main-events__selects">
-      <div class="main-events__selects-container">
+    <div class="events__selects">
+      <div class="events__selects-container">
         <select class="select events__select select-icon-right">
           <option class="select__option" value="Все события">Все события</option>
           <option class="select__option" value="Театр">Театр</option>
@@ -87,7 +87,7 @@
       <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
       <label class="сheckbox__label" for="10">С пушкинской картой</label>
     </div>
-    <div class="main-events__news"><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+    <div class="events__news"><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
             <div class="main-news-card__tags">
@@ -161,11 +161,17 @@
           <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
         </div></a>
     </div>
-    <div class="main-events__navigation">
+    <div class="events__navigation">
       <div class="navigation"> <a class="navigation__link">
           <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
         <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">7</span></div><a class="navigation__link">
           <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+      </div>
+    </div>
+    <div class="events__slider"> 
+      <div class="slider"><a class="slider__link slider__events-prev">
+          <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__events-next">
+          <ion-icon name="arrow-forward-outline"> </ion-icon></a>
       </div>
     </div>
   </div>

@@ -18,6 +18,11 @@
 .dm-city-projects .dm-city-projects__container .dm-city-projects__card-list .people-care-card {
   margin-right: 24px;
 }
+@media (max-width: 992px) {
+  .dm-city-projects .dm-city-projects__container .dm-city-projects__card-list .people-care-card {
+    margin-right: 8px;
+  }
+}
 .dm-city-projects .dm-city-projects__container .dm-city-projects__slider {
   display: none;
 }

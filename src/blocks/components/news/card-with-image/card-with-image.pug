@@ -1,21 +1,13 @@
 include ../../../libs/buttons/_buttons
 
-//- mixin news-card-with-image(data)
-//-     .news-card-with-image(style=`background-image: url(../resources/news_image.png);`)
-//-         .news-card-with-image__container
-//-             .news-card-with-image__content 
-//-                 span.news-card-with-image__date 23 сентября 2024
-//-                 h1.news-card-with-image__title Сургут и Гомель стали городами побратимами
-//-                 +button({ type: 'link', size: 'l', class: 'button_blue news-card-with-image__button', href: '/contact', icon: 'arrow-forward-outline', text: 'Подробнее' })
-
 mixin news-card-with-image(data)
     .news-card-with-image
         .news-card-with-image__container
-            img(src=`../resources/news_image.png`).news-card-with-image__image
+            img(src=`../resources/${data.image}`).news-card-with-image__image
             .news-card-with-image__dots 
                 .news-card-with-image__dot
                 .news-card-with-image__dot
             .news-card-with-image__content 
-                span.news-card-with-image__date 23 сентября 2024
-                h1.news-card-with-image__title Сургут и Гомель стали городами побратимами
+                span.news-card-with-image__date #{data.title} 
+                h1.news-card-with-image__title #{data.desc}
                 +button({ type: 'link', size: 'l', class: 'button_blue news-card-with-image__button', href: '/contact', icon: 'arrow-forward-outline', text: 'Подробнее' })                

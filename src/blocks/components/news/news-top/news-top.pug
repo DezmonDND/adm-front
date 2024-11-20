@@ -12,8 +12,16 @@ mixin news-top(data)
     .news 
         .news__container
             .news-card-with-image__list
-                +news-card-with-image()
-                +news-card-with-image()
+                +news-card-with-image({
+                    title: '23 сентября 2024',
+                    desc: 'Сургут и Гомель стали городами побратимами',
+                    image: 'news_image.png'
+                })
+                +news-card-with-image({
+                    title: '01 ноября 2024',
+                    desc: 'Еще одна новость про город',
+                    image: 'news_image-2.jpg'
+                })
             .news__list
                 each card in data.cards    
                     +news-card-without-image({

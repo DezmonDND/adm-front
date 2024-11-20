@@ -3,6 +3,15 @@ body.tmp-duma .news {
   margin-top: 0;
 }
 
+body.tmp-duma .news .news__container .news__list {
+  gap: 24px;
+}
+@media (max-width: 992px) {
+  body.tmp-duma .news .news__container .news__list {
+    gap: 8px;
+  }
+}
+
 .news {
   display: flex;
   width: 100%;

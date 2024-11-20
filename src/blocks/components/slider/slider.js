@@ -76,6 +76,35 @@ $(window)
                         ],
                     })
                     .data({ 'init-slider': 1 });
+
+                    $('.important-links__container')
+                    .slick({
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        responsive: [
+                            {
+                                breakpoint: 992,
+                                settings: {
+                                    slidesToShow: 3,
+                                },
+                            },
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    slidesToShow: 2,
+                                },
+                            },
+                            {
+                                breakpoint: 500,
+                                settings: {
+                                    slidesToShow: 1,
+                                },
+                            },
+                        ],
+                    })
+                    .data({ 'init-slider': 1 });
             }
         } else {
             if (initLib == 1) {
@@ -100,6 +129,16 @@ $('.slider__events-next').on('click', function () {
 $('.slider__events-prev').on('click', function () {
     $('.events__news').slick('slickPrev');
 });
+
+// Анонсы и события
+
+$('.slider__important-links-next').on('click', function () {
+    $('.important-links__container').slick('slickNext');
+});
+$('.slider__important-links-prev').on('click', function () {
+    $('.important-links__container').slick('slickPrev');
+});
+
 
 // Помогите городу стать лучше
 
@@ -145,18 +184,6 @@ $('.important-inf__container').slick({
     slidesToScroll: 1,
     arrows: false,
     responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-            },
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-            },
-        },
         {
             breakpoint: 500,
             settings: {
@@ -218,12 +245,6 @@ $('.people-care__card-list').slick({
     arrows: false,
     responsive: [
         {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-            },
-        },
-        {
             breakpoint: 768,
             settings: {
                 slidesToShow: 2,
@@ -243,4 +264,28 @@ $('.slider__people-care-next').on('click', function () {
 });
 $('.slider__people-care-prev').on('click', function () {
     $('.people-care__card-list').slick('slickPrev');
+});
+
+// Архив трансляций
+
+$('.archive-dm__container').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+    ],
+});
+
+$('.slider__archive-dm-next').on('click', function () {
+    $('.archive-dm__container').slick('slickNext');
+});
+$('.slider__archive-dm-prev').on('click', function () {
+    $('.archive-dm__container').slick('slickPrev');
 });

@@ -10,7 +10,7 @@
     .main-title {
         .main-title__container {
             .slider {
-                @include respond-to(sm) {
+                @include respond-to(md) {
                     display: none;
                 }
             }
@@ -31,13 +31,7 @@
         }
 
         .people-care__slider {
-            display: none;
-
-            @include respond-to(sm) {
-                display: flex;
-                justify-content: center;
-                padding-top: 24px;
-            }
+            @include main-slider;
         }
     }
 }

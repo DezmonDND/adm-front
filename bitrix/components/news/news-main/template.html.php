@@ -92,9 +92,9 @@
               </div></a>
           </div>
         </div>
-        <div class="news__navigation"> 
-          <div class="slider"><a class="slider__link slider__-prev">
-              <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__-next">
+        <div class="main-news__slider">
+          <div class="slider"><a class="slider__link slider__main-news-prev">
+              <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__main-news-next">
               <ion-icon name="arrow-forward-outline"> </ion-icon></a>
           </div>
         </div>

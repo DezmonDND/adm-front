@@ -1,5 +1,16 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .news-card-with-image {
+        .news-card-with-image__container {
+
+            .news-card-with-image__image {
+                height: 462px;
+            }
+        }
+    }
+}
+
 .news-card-with-image {
     display: flex;
     position: relative;

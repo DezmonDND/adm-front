@@ -15,7 +15,7 @@ mixin people-care()
         .people-care__container
             .people-care__card-list 
                 +people-care-card({
-                    title: 'Лицам с ограниченными возможностями здоровья',
+                    title: 'Лицам с ограниченными возможностями здоровья',
                     image: 'hands-services.svg',
                     background: 'people-care-card_bg-health' 
                 })
@@ -24,6 +24,11 @@ mixin people-care()
                     image: 'wallet-services.svg',
                     background: 'people-care-card_bg-finance',
                 })
+                +people-care-card({
+                    title: 'Национальные проекты',
+                    image: 'people_icon-services.svg',
+                    background: 'people-care-card_bg-projects' 
+                }) 
                 +people-care-card({
                     title: 'Национальные проекты',
                     image: 'people_icon-services.svg',
