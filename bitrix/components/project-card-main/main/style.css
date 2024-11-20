@@ -62,11 +62,11 @@
   margin-top: 20px;
   min-height: 169px;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .main-project-card .main-project-card__content .main-project-card__description {
     margin-top: 18px;
     gap: 8px;
-    min-height: 108px;
+    min-height: 124px;
   }
 }
 .main-project-card .main-project-card__content .main-project-card__description .main-project-card__title {

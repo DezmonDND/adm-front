@@ -34,6 +34,9 @@ body.tmp-duma .news {
     flex-direction: column;
   }
 }
+.news .news__container .news-card-with-image__list {
+  display: flex;
+}
 .news .news__container .news__list {
   display: flex;
   flex-direction: column;
