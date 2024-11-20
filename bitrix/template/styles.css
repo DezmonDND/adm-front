@@ -129,14 +129,15 @@ b {
   padding: 40px 0 40px;
 }
 .content-card h1 {
+  margin-bottom: 20px;
   font-weight: 500;
-  font-size: calc(40px * var(--scale));
-  line-height: calc(48px * var(--lh));
+  font-size: calc(32px * var(--scale));
+  line-height: calc(38px * var(--lh));
 }
 @media (max-width: 992px) {
   .content-card h1 {
-    font-size: calc(20px * var(--scale));
-    line-height: calc(24px * var(--lh));
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 .content-page {
