@@ -60,7 +60,6 @@
     }
 }
 
-
 .dm-struct__main-first,
 .dm-struct__main-second,
 .dm-struct__main-third,
@@ -100,7 +99,6 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-
 }
 
 .dm-struct__main-third {
@@ -146,7 +144,6 @@
     }
 }
 
-
 .dm-struct__bottom {
     padding-top: 48px;
     padding-bottom: 64px;
@@ -162,6 +159,12 @@
 .dm-struct__bottom span {
     color: $main-text;
     @include text-2();
+}
+
+.dm-struct__bottom ul {
+    @include respond-to(md) {
+        margin-left: 28px;
+    }
 }
 
 .dm-struct__bottom a {

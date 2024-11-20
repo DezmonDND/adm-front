@@ -4,33 +4,23 @@
     display: flex;
     align-items: center;
     color: $tertiary-text;
-    padding: 20px 0 10px;
-    font-size: 14px;
-    line-height: 16px;
+    padding: 24px 0 8px;
     gap: 3px;
-    width: 100%;
-    max-width: 1440px;
     box-sizing: border-box;
+    @include text-link-2;
+
+    @include respond-to(sm) {
+        padding: 16px 0 4px;
+    }
 
     .breadcrumbs__container {
         display: flex;
-        gap: 9px;
+        gap: 8px;
         overflow: scroll;
         scrollbar-width: none;
-
     }
 
     .span {
         color: $tertiary-text;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .breadcrumbs {
-        padding: 14px 0;
-
-        .breadcrumbs__container {
-            gap: 8px;
-        }
     }
 }

@@ -171,6 +171,12 @@
   }
 }
 
+@media (max-width: 992px) {
+  .dm-struct__bottom ul {
+    margin-left: 28px;
+  }
+}
+
 .dm-struct__bottom a {
   text-decoration: none;
   color: var(--primary-color);

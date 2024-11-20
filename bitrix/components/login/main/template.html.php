@@ -11,7 +11,7 @@
         <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
       </div>
       <div class="login__content-main__input">
-        <input class="input    " placeholder="Номер телефона" value=""/>
+        <input class="input     " placeholder="Номер телефона" value=""/>
       </div>
       <div class="login__content-main__confirm-standart">
         <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>

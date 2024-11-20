@@ -18,9 +18,14 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .pagination {
+        gap: 8px;
+    }
+}
+
 @media screen and (max-width: 370px) {
     .pagination {
         gap: 4px;
     }
-
 }

@@ -20,6 +20,8 @@ $icons-background: #f7fbfe;
 
 // Инпуты
 $input-color-default: #c6cbd9;
+$input-color-hover: #858c9c;
+$input-color-focus: #78a4f4;
 
 // Календарь
 $event-color: var(--event-color);
@@ -40,9 +42,9 @@ $num-button-text-click: #dae1f1;
 
 $secondary-color: var(--secondary-color);
 
-$padding-button-l: 16px 28px;
-$padding-button-m: 12px 20px;
-$padding-button-s: 8px 16px;
+$padding-button-l: 17px 28px;
+$padding-button-m: 11px 20px;
+$padding-button-s: 7px 16px;
 $padding-button-xs: 4px 16px;
 
 $padding-button-without-text-desc: 12px;
@@ -68,7 +70,7 @@ $interview-color: #2dbb45;
 $interview-end-color: #d10404;
 
 // Подвал
-$footer-color: #0D0F43;
+$footer-color: #0d0f43;
 
 // Слабовидящие
 $visibility-back: #b2d9ff;
@@ -262,6 +264,17 @@ $breakpoint-sx: 550px;
     @include respond-to(md) {
         font-size: calc(13px * var(--scale));
         line-height: calc(16px * var(--lh));
+    }
+}
+
+@mixin text-link-2 {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(14px * var(--lh));
+    font-weight: $font-weight-semi-bold;
+
+    @include respond-to(md) {
+        font-size: calc(11px * var(--scale));
+        line-height: calc(14px * var(--lh));
     }
 }
 
