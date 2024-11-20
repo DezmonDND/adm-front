@@ -20,11 +20,20 @@ body.tmp-duma .important-links .main-title .main-title__container {
         margin-bottom: 0;
     }
 
-    .usefull-links__navigation {
+    .important-links__navigation {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 20px 0 20px;
+
+        @include respond-to(md) {
+            display: none;
+        }
+    }
+
+    .important-links__slider {
+        margin-bottom: 20px;
+        @include main-slider;
     }
 
     .important-links__container {

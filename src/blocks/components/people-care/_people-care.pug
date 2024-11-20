@@ -4,22 +4,30 @@ include ../../components/slider/_slider
 include ../../libs/buttons/_buttons
 
 mixin people-care()
-    .main-people-care 
+    .people-care 
         +main-title({
             href: '/',
             title: 'С заботой о жителях',
-            slider: false,
+            slider: {
+                class: 'people-care'
+            },
         })   
-        .main-people-care__container
-            .main-people-care__card-list 
+        .people-care__container
+            .people-care__card-list 
                 +people-care-card({
                     title: 'Лицам с ограниченными возможностями здоровья',
+                    image: 'hands-services.svg',
+                    background: 'people-care-card_bg-health' 
                 })
                 +people-care-card({
-                    title: 'Бюджет для граждан Сургута'
+                    title: 'Бюджет для граждан Сургута',
+                    image: 'wallet-services.svg',
+                    background: 'people-care-card_bg-finance',
                 })
                 +people-care-card({
-                    title: 'Национальные проекты'
+                    title: 'Национальные проекты',
+                    image: 'people_icon-services.svg',
+                    background: 'people-care-card_bg-projects' 
                 }) 
             .people-care__slider
-                +slider({})    
+                +slider({ class: 'people-care' })   

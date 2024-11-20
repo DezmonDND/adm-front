@@ -10,13 +10,13 @@ mixin help-city()
         title: 'Помогите городу стать лучше',
         link_text: 'Все опросы',
         href: '/',
-    })
+        })
     .help-city__tabs
         +tabs([
             { title: 'Национальные проекты', href: '/' , value: 'Национальные проекты', isActive: true},
             { title: 'Администрация', href: '/' , value: 'Администрация'},
             { title: 'Прочее', href: '/' , value: 'Прочее'},
-            ], 'slider')
+            ], { class: 'help-city' } )
     .help-city 
         .help-city__content 
             +main-project-card({
@@ -49,8 +49,15 @@ mixin help-city()
                 tag: 'Завершен',
                 tag_color: 'red'
             })
+            +main-project-card({
+                date: 'до 29 сентября',
+                title: 'Работа местных властей и общественные инициативы',
+                description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры ',
+                votes: '319 голосов',
+                result: 'Вы участвовали',
+                buttonText: 'Участвовать',
+                tag: 'Завершен',
+                tag_color: 'red'
+            })
         .help-city__navigation 
-            +navigation({
-                first_page: '1',
-                end_page: '2',
-                    })
+            +slider({ class: 'help-city' })

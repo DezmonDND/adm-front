@@ -20,7 +20,7 @@
     .help-city__navigation {
         display: none;
 
-        @media screen and (max-width: 1000px) {
+        @include respond-to(md) {
             display: flex;
             justify-content: center;
             margin-top: 20px;

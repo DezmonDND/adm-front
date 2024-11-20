@@ -98,13 +98,26 @@ $breakpoint-sm: 768px;
     overflow: hidden;
 }
 
+// Mixin Slider
+@mixin main-slider {
+    display: none;
+
+    @include respond-to(md) {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
 // Mixin media
 @mixin respond-to($breakpoint) {
     @if $breakpoint ==md {
         @media (max-width: $breakpoint-md) {
             @content;
         }
-    } @else if $breakpoint ==sm {
+    }
+
+    @else if $breakpoint ==sm {
         @media (max-width: $breakpoint-sm) {
             @content;
         }

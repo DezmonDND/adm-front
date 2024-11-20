@@ -9,9 +9,10 @@
     align-content: end;
     position: relative;
     overflow: hidden;
+    margin-right: 24px;
 
-    @media (max-width: 1000px) {
-        min-height: 214px;
+    @include respond-to(md) {
+        margin-right: 8px;
     }
 
     &_bg-health {
@@ -88,6 +89,7 @@
             gap: 16px;
 
             .people-care-card__title {
+                padding: 0;
                 color: $content-color;
                 z-index: 1;
                 @include heading-h2;

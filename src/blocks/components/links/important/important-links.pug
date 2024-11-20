@@ -1,6 +1,7 @@
 include ../_links
 include ../../title/main/_main-title.pug
 include ../../pagination/_navigation.pug
+include ../../slider/_slider.pug
 
 mixin important-links()
     .important-links
@@ -45,8 +46,10 @@ mixin important-links()
                 svg_icon: 'arrow-in-cub_icon_main.svg',
                 title: 'Национальные проекты',
             })
-        .usefull-links__navigation
+        .important-links__navigation
             +navigation({
                 first_page: '1',
                 end_page: '7',
                     })
+        .important-links__slider            
+            +slider({ class: 'important-links' })        
