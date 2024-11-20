@@ -12925,7 +12925,7 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
 @media (max-width: 768px) {
   .dm-unions-elem__img {
     max-width: 82px;
-    max-height: 94px;
+    max-height: 108px;
   }
 }
 
@@ -12968,9 +12968,9 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
   flex-direction: column;
   gap: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dm-unions-elem__top {
-    gap: 8px;
+    gap: 4px;
   }
 }
 
