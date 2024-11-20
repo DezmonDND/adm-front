@@ -21,7 +21,7 @@
                 </button>
               </div>
               <form class="search search-header-mobile">
-                <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+                <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
                 <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
@@ -93,7 +93,7 @@
       <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+          <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
           <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
@@ -119,7 +119,7 @@
       <div class="header-visibility__middle-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+          <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
           <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
@@ -142,7 +142,7 @@
             <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Номер телефона" value=""/>
+            <input class="input     " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
             <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
@@ -170,11 +170,11 @@
             <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Код" value=""/>
+            <input class="input     " placeholder="Код" value=""/>
           </div>
           <!-- Если код неверный то инпут меняется на этот-->
           <div class="login__content-main__input wrong-code">
-            <input class="input    " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+            <input class="input     " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -192,7 +192,7 @@
             <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Электронная почта" value=""/>
+            <input class="input     " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
             <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
@@ -241,8 +241,7 @@
       </div>
       <div class="hearing-list">
         <h3>Ближайшие публичные слушания</h3>
-        <div class="hearing-list-items">
-          <div class="hearing-item">
+        <div class="hearing-list-items"><a class="hearing-item" href="/hearing-detail.html">
             <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
               <div class="hearing-item-bg"></div>
               <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -255,9 +254,7 @@
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
               </div>
-            </div>
-          </div>
-          <div class="hearing-item">
+            </div></a><a class="hearing-item" href="/hearing-detail.html">
             <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
               <div class="hearing-item-bg"></div>
               <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -270,9 +267,7 @@
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
               </div>
-            </div>
-          </div>
-          <div class="hearing-item">
+            </div></a><a class="hearing-item" href="/hearing-detail.html">
             <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
               <div class="hearing-item-bg"></div>
               <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -285,14 +280,12 @@
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
               </div>
-            </div>
-          </div>
+            </div></a>
         </div>
       </div>
       <div class="hearing-list">
         <h3>Прошедшие публичные слушания</h3>
-        <div class="hearing-list-items">
-          <div class="hearing-item">
+        <div class="hearing-list-items"><a class="hearing-item" href="/hearing-detail.html">
             <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
               <div class="hearing-item-bg"></div>
               <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -305,9 +298,7 @@
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
               </div>
-            </div>
-          </div>
-          <div class="hearing-item">
+            </div></a><a class="hearing-item" href="/hearing-detail.html">
             <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
               <div class="hearing-item-bg"></div>
               <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -320,9 +311,7 @@
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
               </div>
-            </div>
-          </div>
-          <div class="hearing-item">
+            </div></a><a class="hearing-item" href="/hearing-detail.html">
             <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
               <div class="hearing-item-bg"></div>
               <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -335,8 +324,7 @@
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">22.12.2024</span></div>
                 <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
               </div>
-            </div>
-          </div>
+            </div></a>
         </div>
       </div>
     </main>

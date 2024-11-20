@@ -3,29 +3,30 @@
   display: flex;
   align-items: center;
   color: var(--tertiary-text);
-  padding: 20px 0 10px;
-  font-size: 14px;
-  line-height: 16px;
+  padding: 24px 0 8px;
   gap: 3px;
-  width: 100%;
-  max-width: 1440px;
   box-sizing: border-box;
+  font-size: calc(12px * var(--scale));
+  line-height: calc(14px * var(--lh));
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .breadcrumbs {
+    font-size: calc(11px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
+}
+@media (max-width: 768px) {
+  .breadcrumbs {
+    padding: 16px 0 4px;
+  }
 }
 .breadcrumbs .breadcrumbs__container {
   display: flex;
-  gap: 9px;
+  gap: 8px;
   overflow: scroll;
   scrollbar-width: none;
 }
 .breadcrumbs .span {
   color: var(--tertiary-text);
-}
-
-@media screen and (max-width: 1000px) {
-  .breadcrumbs {
-    padding: 14px 0;
-  }
-  .breadcrumbs .breadcrumbs__container {
-    gap: 8px;
-  }
 }

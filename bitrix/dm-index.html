@@ -21,7 +21,7 @@
                 </button>
               </div>
               <form class="search search-header-mobile">
-                <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+                <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
                 <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
@@ -49,7 +49,7 @@
             <ion-icon class="icon" name="menu-outline"></ion-icon>
           </button>
           <form class="search search-header-duma">
-            <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+            <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
             <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
               <ion-icon class="icon" name="search-outline"></ion-icon>
             </button>
@@ -80,7 +80,7 @@
             <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Номер телефона" value=""/>
+            <input class="input     " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
             <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
@@ -108,11 +108,11 @@
             <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Код" value=""/>
+            <input class="input     " placeholder="Код" value=""/>
           </div>
           <!-- Если код неверный то инпут меняется на этот-->
           <div class="login__content-main__input wrong-code">
-            <input class="input    " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+            <input class="input     " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -130,7 +130,7 @@
             <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Электронная почта" value=""/>
+            <input class="input     " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
             <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
@@ -312,30 +312,7 @@
                 </div>
               </div>
               <div class="chronicle__calendar">
-                <div class="calendar-dm" id="calendar">
-                  <div class="calendar-dm-header"> 
-                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="prevMonth()">
-                      <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
-                    </button><span class="calendar-dm-date" id="month-year"></span>
-                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="nextMonth()">
-                      <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                    </button>
-                  </div>
-                  <table id="calendar">
-                    <thead> 
-                      <tr> 
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
-                      </tr>
-                    </thead>
-                    <tbody></tbody>
-                  </table>
-                </div>
+                <div class="calendar-dm" id="calendar-duma"></div>
               </div>
             </div>
           </div>
@@ -358,8 +335,7 @@
                 </div>
               </div>
               <div class="archive-dm">
-                <div class="archive-dm__container"> 
-                  <div class="hearing-item">
+                <div class="archive-dm__container"> <a class="hearing-item" href="/hearing-detail.html">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
                       <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -371,9 +347,7 @@
                       <div class="hearing-item-labels">
                         <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="hearing-item">
+                    </div></a><a class="hearing-item" href="/hearing-detail.html">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
                       <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -385,9 +359,7 @@
                       <div class="hearing-item-labels">
                         <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="hearing-item">
+                    </div></a><a class="hearing-item" href="/hearing-detail.html">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
                       <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
@@ -399,8 +371,7 @@
                       <div class="hearing-item-labels">
                         <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
                       </div>
-                    </div>
-                  </div>
+                    </div></a>
                 </div>
               </div>
               <div class="usefull-links__navigation">

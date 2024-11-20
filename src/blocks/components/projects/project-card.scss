@@ -1,6 +1,8 @@
+@use '../../../assets/styles/vars.scss' as *;
+
 .project-card {
     display: flex;
-    background-color: #FAFAFA;
+    background-color: $cards-background;
     border-radius: 12px;
 
     .project-card__content {
@@ -13,29 +15,36 @@
             display: flex;
             flex-direction: column;
             align-items: baseline;
+
             .project-card__title {
                 margin: 0;
                 padding: 0;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 28px;
-            }            
+                @include heading-h4;
+            }
 
             .project-card__date {
                 margin: 8px 0 20px;
-                font-size: 13px;
-                line-height: 18px;
-                color: #858C9C;
+                color: $tertiary-text;
+                @include caption-2;
             }
 
-            .tag_project-card {
-                font-weight: 600;
-                font-size: 11px;
-                line-height: 14px;
+            .button_span {
                 text-transform: uppercase;
             }
 
         }
+    }
+}
+
+.project-card_link {
+    color: $main-text;
+
+    &:hover {
+        background-color: $services-hover;
+    }
+
+    &:active {
+        background-color: $services-active;
     }
 }
 

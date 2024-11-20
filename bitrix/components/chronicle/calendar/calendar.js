@@ -1,96 +1,36 @@
-const calendars = document.querySelectorAll('#calendar tbody'); // Получаем все календари
-const monthYearContainers = document.querySelectorAll('#month-year'); // Предполагается, что у каждого календаря есть свой контейнер для месяца и года
-const today = new Date();
-let currentMonth = today.getMonth();
-let currentYear = today.getFullYear();
+const options = {
+    settings: {
+        lang: 'ru-RU',
+        selection: {
+            day: 'multiple-ranged',
+        },
+    },
+    CSSClasses: {
+        daySelectedFirst: 'calendar-day_selected-first',
+        daySelectedIntermediate: 'calendar-day_selected-intermediate',
+        daySelectedLast: 'calendar-day_selected-last',
+        dayBtn: 'calendar-day__btn',
+        dayBtnHover: 'calendar-day__btn_hover',
+        dayBtnSelected: 'calendar-day__btn_selected',
+        dayBtnWeekend: 'calendar-day__btn',
+        dayBtnHoliday: 'calendar-day__btn',
+        dayHoverFirst: 'calendar-day_hover-first',
+        dayHoverLast: 'calendar-day_hover-last',
+        dayHoverIntermediate: 'calendar-day_hover-intermediate',
+        dayBtnToday: 'calendar-day__btn_today',
+    },
+};
 
-const months = [
-    'Январь',
-    'Февраль',
-    'Март',
-    'Апрель',
-    'Май',
-    'Июнь',
-    'Июль',
-    'Август',
-    'Сентябрь',
-    'Октябрь',
-    'Ноябрь',
-    'Декабрь',
-];
+document.addEventListener('DOMContentLoaded', () => {
+    const calendar = new VanillaCalendar('#calendar', options);
+    const calendarPopup = new VanillaCalendar('#calendar-popup', options);
 
-function generateCalendar(calendarElement, monthYearElement, month, year) {
-    calendarElement.innerHTML = '';
-    const firstDay = new Date(year, month).getDay();
-    const daysInMonth = 32 - new Date(year, month, 32).getDate();
-    let date = 1;
-
-    for (let i = 0; i < 6; i++) {
-        const row = document.createElement('tr');
-
-        for (let j = 1; j <= 7; j++) {
-            const cell = document.createElement('td');
-            if (i === 0 && j < firstDay) {
-                const emptyCell = document.createElement('td');
-                row.appendChild(emptyCell);
-            } else if (date > daysInMonth) {
-                break;
-            } else {
-                cell.textContent = date;
-                if (
-                    date === today.getDate() &&
-                    month === today.getMonth() &&
-                    year === today.getFullYear()
-                ) {
-                    cell.classList.add('today');
-                    cell.classList.add('today_active');
-                }
-                row.appendChild(cell);
-                date++;
-            }
-        }
-        calendarElement.appendChild(row); // Добавляем строку в текущий календарь
-    }
-
-    monthYearElement.textContent = `${months[month]} ${year}`; // Обновляем отображение месяца и года
-}
-
-function updateAllCalendars() {
-    calendars.forEach((calendarElement, index) => {
-        const monthYearElement = monthYearContainers[index]; // Соответствующий элемент для отображения месяца и года
-        generateCalendar(calendarElement, monthYearElement, currentMonth, currentYear);
-    });
-}
-
-function prevMonth() {
-    currentMonth--;
-    if (currentMonth < 0) {
-        currentMonth = 11;
-        currentYear--;
-    }
-    updateAllCalendars(); // Обновляем все календари
-}
-
-function nextMonth() {
-    currentMonth++;
-    if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear++;
-    }
-    updateAllCalendars(); // Обновляем все календари
-}
-
-function addSelect(event) {
-    if (event.target.tagName === 'TD') {
-        event.target.classList.toggle('td_active');
-    }
-}
-
-const calendarBodies = document.querySelectorAll('#calendar tbody');
-
-calendarBodies.forEach((calendarBody) => {
-    calendarBody.addEventListener('click', addSelect);
+    calendar.init();
+    calendarPopup.init();
 });
 
-// Инициализируем все календари при загрузке страницы
-updateAllCalendars();
+document.addEventListener('DOMContentLoaded', () => {
+    const calendarDuma = new VanillaCalendar('#calendar-duma', options);
+
+    calendarDuma.init();
+});

@@ -1,0 +1,90 @@
+@use '../../../assets/styles/vars.scss' as *;
+@use '../../components/search-by-site/search-by-site.scss' as *;
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.filters-popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity .3s linear;
+    will-change: opacity;
+
+    &_open {
+        opacity: 1;
+        right: 0;
+    }
+
+    .filters-popup__container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: $cards-background;
+
+        .filters-popup__top-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $content-color;
+            padding: 20px 27px;
+
+            .filters-popup__title {
+                @include heading-h4;
+            }
+        }
+
+        .filters-popup__tags {
+            background-color: $content-color;
+            padding: 0 27px;
+            @include flex;
+
+            .filters-popup__title {
+                @include heading-h4;
+            }
+
+            .tabs-tag {
+                margin: 0;
+
+                .tab-button {
+                    background-color: $cards-background;
+                    @include lead-3;
+
+                    &_active {
+                        background-color: $primary-color;
+                        color: $content-color;
+                    }
+                }
+            }
+        }
+
+        .filters-popup__calendar {
+            padding: 0 27px;
+            background-color: $content-color;
+            @include flex;
+
+            .filters-popup__title {
+                @include heading-h4;
+            }
+        }
+
+        .filters-popup__buttons {
+            display: flex;
+            background-color: $content-color;
+            padding: 12px 27px;
+
+            .filters-popup__btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
