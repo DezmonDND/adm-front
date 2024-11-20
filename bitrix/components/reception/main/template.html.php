@@ -27,7 +27,7 @@
         <input class="input input-virtual-reception_input   " placeholder="Отчество" name="thirdName" value=""/>
       </div>
     </fieldset>
-    <button class="button button_white reception_add-author-btn    " onclick="addFormField(event)"><span class="button_span">Добавить соавтора</span>
+    <button class="button button_white reception_add-author-btn    " onclick="addFormField(event)" title=""><span class="button_span">Добавить соавтора</span>
     </button>
     <fieldset class="fieldset ">
       <h3 class="fieldset__title reception__email_title">Данные для контакта</h3>
@@ -54,7 +54,7 @@
         <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>
       </label>
     </div>
-    <button class="button button_blue button_size_l   " onclick="getValues(event)"><span class="button_span">Отправить обращение</span>
+    <button class="button button_blue button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить обращение</span>
       <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
     </button>
   </div>

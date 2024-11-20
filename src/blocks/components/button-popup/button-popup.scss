@@ -1,0 +1,36 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.event-card__buttons :hover > .button-popup {
+    display: flex;
+  }
+
+.button-popup {
+    display: none;
+    max-width: 367px;
+    background-color: $content-color;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 55px;
+    left: 15%;
+
+    @include respond-to(sm) {
+        left: 0;
+    }
+
+    .button-popup__container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+        .header__socials {
+            gap: 20px;
+
+            .header__social-icon {
+                width: 32px;
+                height: 32px;
+                background-size: 32px;
+            }
+        }
+    }
+}

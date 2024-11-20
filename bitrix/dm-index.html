@@ -1,4 +1,6 @@
-<!DOCTYPE html >
+
+<nclude>../../../libs/buttons/_buttons</nclude>
+<nclude>../../../libs/buttons/_buttons</nclude><!DOCTYPE html >
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="./css/template-styles.css"/>
@@ -16,13 +18,13 @@
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
                 <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -36,7 +38,7 @@
             </div>
             <div class="menu__socials"> 
               <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
                 <ion-icon class="icon" name="eye-outline"></ion-icon></a>
             </div>
           </div>
@@ -45,18 +47,18 @@
       <div class="header-duma__container">
         <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
             <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
             <ion-icon class="icon" name="menu-outline"></ion-icon>
           </button>
           <form class="search search-header-duma">
             <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
               <ion-icon class="icon" name="search-outline"></ion-icon>
             </button>
           </form>
-          <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
+          <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
               <ion-icon class="icon" name="eye-outline"></ion-icon></a>
-            <button class="button button_blue button_size_s   " onclick="anotherFunction()"><span class="button_span">Служебный вход</span>
+            <button class="button button_blue button_size_s   " onclick="anotherFunction()" title=""><span class="button_span">Служебный вход</span>
             </button>
           </div>
         </div>
@@ -83,14 +85,14 @@
             <input class="input    " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -133,7 +135,7 @@
             <input class="input    " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -155,7 +157,7 @@
           <div class="news-card-with-image" style="background-image: url(./resources/news_image.png);">
             <div class="news-card-with-image__container">
               <div class="news-card-with-image__content"> <span class="news-card-with-image__date">23 сентября 2024</span>
-                <h1 class="news-card-with-image__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-card-with-image__button button_size_l  " href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                <h1 class="news-card-with-image__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-card-with-image__button button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
               </div>
             </div>
@@ -192,12 +194,12 @@
             </div>
           </div>
           <div class="dm-filter__btn">
-            <button class="button button_white dm-filter__button button_size_m  button_icon-left button_without-event"><span class="button_span">Фильтры</span>
+            <button class="button button_white dm-filter__button button_size_m  button_icon-left button_without-event" title=""><span class="button_span">Фильтры</span>
               <ion-icon class="icon" name="funnel-outline"></ion-icon>
             </button>
           </div>
           <div class="dm-calendar__btn">
-            <button class="button button_white dm-calendar__button   button_icon-left button_without-event"><span class="button_span">Календарь</span>
+            <button class="button button_white dm-calendar__button   button_icon-left button_without-event" title=""><span class="button_span">Календарь</span>
               <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
             </button>
           </div>
@@ -314,10 +316,10 @@
               <div class="chronicle__calendar">
                 <div class="calendar-dm" id="calendar">
                   <div class="calendar-dm-header"> 
-                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="prevMonth()">
+                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="prevMonth()" title="">
                       <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
                     </button><span class="calendar-dm-date" id="month-year"></span>
-                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="nextMonth()">
+                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="nextMonth()" title="">
                       <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
                     </button>
                   </div>
@@ -362,7 +364,7 @@
                   <div class="hearing-item">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
-                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
                         <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
                       </button>
                     </div>
@@ -376,7 +378,7 @@
                   <div class="hearing-item">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
-                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
                         <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
                       </button>
                     </div>
@@ -390,7 +392,7 @@
                   <div class="hearing-item">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
-                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
                         <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
                       </button>
                     </div>
@@ -437,7 +439,7 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">ДУМАющий Сургут</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
@@ -445,7 +447,7 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">Видео проекты</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
@@ -453,7 +455,7 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">Опросы</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>

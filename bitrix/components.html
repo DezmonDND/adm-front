@@ -1,4 +1,6 @@
-<!DOCTYPE html >
+
+<nclude>../../../libs/buttons/_buttons</nclude>
+<nclude>../../../libs/buttons/_buttons</nclude><!DOCTYPE html >
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="./css/template-styles.css"/>
@@ -16,13 +18,13 @@
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
                 <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -40,7 +42,7 @@
             </div>
             <div class="menu__socials"> 
               <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
                 <ion-icon class="icon" name="eye-outline"></ion-icon></a>
             </div>
           </div>
@@ -83,10 +85,10 @@
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()"><span class="button_span">Версия для слабовидящих</span>
+          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
             <ion-icon class="icon" name="eye-outline"></ion-icon>
           </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -94,13 +96,13 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
         <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
         </div>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
@@ -112,7 +114,7 @@
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -120,7 +122,7 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
@@ -145,14 +147,14 @@
             <input class="input    " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -195,7 +197,7 @@
             <input class="input    " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -216,73 +218,73 @@
         </div>
         <div class="col-6">
           <h5>type: 'link', size: 'm', class: 'button_blue', href: '/about'</h5>
-          <h5>Если нужно открывать в новом окне, то передавать target=true</h5><a class="button button_link button_blue   " href="/" attributes="{}"><span class="button_span">Ccылка</span></a>
+          <h5>Если нужно открывать в новом окне, то передавать target=true</h5><a class="button button_link button_blue   " href="/" title="" attributes="{}"><span class="button_span">Ccылка</span></a>
         </div>
         <div class="col-6">
           <h5>type: 'button',  size: 'm',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"</h5>
           <h5>Если не передать event, то будет некликабельной (тегом)</h5>
-          <button class="button button_blue    " onclick="console.log(1);"><span class="button_span">Кнопка</span>
+          <button class="button button_blue    " onclick="console.log(1);" title=""><span class="button_span">Кнопка</span>
           </button>
         </div>
         <div class="col-12">
           <h4>Цвета кнопок (добавляем в класс)</h4>
         </div>
         <div class="col-3">
-          <h5>button_blue (default)</h5><a class="button button_link button_blue   " href="/" attributes="{}"><span class="button_span">Синяя</span></a>
+          <h5>button_blue (default)</h5><a class="button button_link button_blue   " href="/" title="" attributes="{}"><span class="button_span">Синяя</span></a>
         </div>
         <div class="col-3">
-          <h5>button_green</h5><a class="button button_link button_green   " href="/" attributes="{}"><span class="button_span">Зеленая</span></a>
+          <h5>button_green</h5><a class="button button_link button_green   " href="/" title="" attributes="{}"><span class="button_span">Зеленая</span></a>
         </div>
         <div class="col-3">
-          <h5>button_red</h5><a class="button button_link button_red   " href="/" attributes="{}"><span class="button_span">Красная</span></a>
+          <h5>button_red</h5><a class="button button_link button_red   " href="/" title="" attributes="{}"><span class="button_span">Красная</span></a>
         </div>
         <div class="col-3">
-          <h5>button_white</h5><a class="button button_link button_white   " href="/" attributes="{}"><span class="button_span">Белая</span></a>
+          <h5>button_white</h5><a class="button button_link button_white   " href="/" title="" attributes="{}"><span class="button_span">Белая</span></a>
         </div>
         <div class="col-12">
           <h4>Размеры кнопок</h4>
         </div>
         <div class="col-3">
-          <h5> Size: l</h5><a class="button button_link button_blue button_size_l  " href="/" attributes="{}"><span class="button_span">Большая</span></a>
+          <h5> Size: l</h5><a class="button button_link button_blue button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Большая</span></a>
         </div>
         <div class="col-3">
-          <h5> Size: m (default)</h5><a class="button button_link button_green button_size_m  " href="/" attributes="{}"><span class="button_span">Средняя</span></a>
+          <h5> Size: m (default)</h5><a class="button button_link button_green button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Средняя</span></a>
         </div>
         <div class="col-3">
-          <h5> Size: s</h5><a class="button button_link button_red button_size_s  " href="/" attributes="{}"><span class="button_span">Маленькая</span></a>
+          <h5> Size: s</h5><a class="button button_link button_red button_size_s  " href="/" title="" attributes="{}"><span class="button_span">Маленькая</span></a>
         </div>
         <div class="col-3">
-          <h5> Size: xs</h5><a class="button button_link button_red button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">для тегов</span></a>
+          <h5> Size: xs</h5><a class="button button_link button_red button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">для тегов</span></a>
         </div>
         <div class="col-12">
           <h4>Кнопки с иконками</h4>
         </div>
         <div class="col-4">
-          <h5>iconPosition: 'left'</h5><a class="button button_link button_white   button_icon-left" href="/" attributes="{}"><span class="button_span">Example</span>
+          <h5>iconPosition: 'left'</h5><a class="button button_link button_white   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-4">
-          <h5>iconPosition: 'right'</h5><a class="button button_link button_white   button_icon-right" href="/" attributes="{}"><span class="button_span">Example</span>
+          <h5>iconPosition: 'right'</h5><a class="button button_link button_white   button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-4">
-          <h5>Без текста</h5><a class="button button_link button_white  button_without-text " href="/" attributes="{}">
+          <h5>Без текста</h5><a class="button button_link button_white  button_without-text " href="/" title="" attributes="{}">
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-12">
           <h4>Дополнительные опции</h4>
         </div>
         <div class="col-4">
-          <h5>Закругленная кнопка - class: button_radius</h5><a class="button button_link button_white button_radius   " href="/" attributes="{}"><span class="button_span">Example</span>
+          <h5>Закругленная кнопка - class: button_radius</h5><a class="button button_link button_white button_radius   " href="/" title="" attributes="{}"><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-4">
-          <h5>Кнопка без обводки(для белой) - class: button_white_no-border</h5><a class="button button_link button_white button_white_no-border button_radius   " href="/" attributes="{}"><span class="button_span">Example</span>
+          <h5>Кнопка без обводки(для белой) - class: button_white_no-border</h5><a class="button button_link button_white button_white_no-border button_radius   " href="/" title="" attributes="{}"><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-4">
           <h5>Только для тегов с особенным шрифтом - class: button_tag-label</h5>
-          <button class="button button_blue button_radius button_tag-label button_size_s   button_without-event"><span class="button_span">Государственная</span>
+          <button class="button button_blue button_radius button_tag-label button_size_s   button_without-event" title=""><span class="button_span">Государственная</span>
           </button>
         </div>
       </div>
@@ -416,55 +418,55 @@
           <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
         </ul>
       </div>
-      <123></123><a class="button button_link    " href="/" attributes="{}"><span class="button_span">Example</span>
+      <123></123><a class="button button_link    " href="/" title="" attributes="{}"><span class="button_span">Example</span>
         <ion-icon class="icon" name="add-outline"></ion-icon></a>
-      <button class="button     button_without-event"><span class="button_span">Example</span>
+      <button class="button     button_without-event" title=""><span class="button_span">Example</span>
         <ion-icon class="icon" name="add-outline"></ion-icon>
       </button>
-      <button class="button button_white button_size_l   button_without-event"><span class="button_span">Example</span>
+      <button class="button button_white button_size_l   button_without-event" title=""><span class="button_span">Example</span>
         <ion-icon class="icon" name="add-outline"></ion-icon>
       </button>
-      <button class="button button_white button_size_m   button_without-event"><span class="button_span">Example</span>
+      <button class="button button_white button_size_m   button_without-event" title=""><span class="button_span">Example</span>
         <ion-icon class="icon" name="add-outline"></ion-icon>
       </button>
-      <button class="button button_white button_size_s   button_without-event"><span class="button_span">Example</span>
+      <button class="button button_white button_size_s   button_without-event" title=""><span class="button_span">Example</span>
         <ion-icon class="icon" name="add-outline"></ion-icon>
       </button>
-      <button class="button button_white button_size_s button_without-text  button_without-event">
+      <button class="button button_white button_size_s button_without-text  button_without-event" title="">
         <ion-icon class="icon" name="add-outline"></ion-icon>
       </button>
-      <button class="button button_white button_white_no-border button_radius   button_icon-left button_without-event"><span class="button_span">RSS</span>
+      <button class="button button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">RSS</span>
         <ion-icon class="icon" name="logo-rss"></ion-icon>
       </button>
-      <button class="button button_white button_white_no-border button_radius   button_icon-left button_without-event"><span class="button_span">Прямая трансляция</span>
+      <button class="button button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">Прямая трансляция</span>
         <ion-icon class="icon" name="radio-button-on-outline"></ion-icon>
-      </button><a class="button button_link button_white button_white_no-border button_radius   button_icon-left" href="/" attributes="{}"><span class="button_span">Подписаться на главное</span>
+      </button><a class="button button_link button_white button_white_no-border button_radius   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Подписаться на главное</span>
         <ion-icon class="icon" name="mail"></ion-icon></a>
-      <button class="button button_blue button_radius button_size_xs   button_without-event"><span class="button_span">Идет</span>
+      <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span>
       </button>
-      <button class="button button_red button_radius button_size_xs   button_without-event"><span class="button_span">Не определен</span>
+      <button class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Не определен</span>
       </button>
-      <button class="button button_green button_radius button_size_xs   button_without-event"><span class="button_span">Завершен</span>
+      <button class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span>
       </button>
-      <123></123><a class="button button_link button_blue button_size_l  button_icon-left" href="/" attributes="{}"><span class="button_span">О нас</span>
+      <123></123><a class="button button_link button_blue button_size_l  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">О нас</span>
         <ion-icon class="icon" name="add-outline"></ion-icon></a>
-      <button class="button button_blue button_size_m  button_icon-left button_without-event" disabled="disabled"><span class="button_span">О нас</span>
+      <button class="button button_blue button_size_m  button_icon-left button_without-event" title="" disabled="disabled"><span class="button_span">О нас</span>
         <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
-      </button><a class="button button_link button_green button_size_s  " href="/" attributes="{}"><span class="button_span">Контакты</span>
+      </button><a class="button button_link button_green button_size_s  " href="/" title="" attributes="{}"><span class="button_span">Контакты</span>
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
-      <button class="button button_blue button_size_l   " onclick="someFunction()"><span class="button_span">Далее</span>
+      <button class="button button_blue button_size_l   " onclick="someFunction()" title=""><span class="button_span">Далее</span>
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
       </button>
-      <button class="button button_white button_withiout-text button_size_l button_without-text  " onclick="someFunction()">
+      <button class="button button_white button_withiout-text button_size_l button_without-text  " onclick="someFunction()" title="">
         <ion-icon class="icon" name="download-outline"></ion-icon>
       </button>
-      <button class="button button_white button_size_m   " onclick="getValues()"><span class="button_span">Готово</span>
+      <button class="button button_white button_size_m   " onclick="getValues()" title=""><span class="button_span">Готово</span>
       </button>
-      <button class="button tag-button-blue    button_without-event"><span class="button_span">Идет</span>
+      <button class="button tag-button-blue    button_without-event" title=""><span class="button_span">Идет</span>
       </button>
-      <button class="button button_red button_radius    button_without-event"><span class="button_span">Не определен</span>
+      <button class="button button_red button_radius    button_without-event" title=""><span class="button_span">Не определен</span>
       </button>
-      <button class="button button_green button_radius    button_without-event"><span class="button_span">Завершен</span>
+      <button class="button button_green button_radius    button_without-event" title=""><span class="button_span">Завершен</span>
       </button>
       <input class="сheckbox radio" type="radio" id="radio" name="undefined"/>
       <label for="radio"> </label>
@@ -505,7 +507,7 @@
       </fieldset>
       <form class="search search-undefined">
         <input class="input  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="number" value=""/>
-        <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1">
+        <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
           <ion-icon class="icon" name="search-outline"></ion-icon>
         </button>
       </form>
@@ -519,7 +521,7 @@
             <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
           </select>
           <button class="calender" type="button">Период публикации</button>
-          <button class="button button_blue button_size_xs   button_without-event"><span class="button_span">Искать</span>
+          <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
           </button>
         </div>
       </form>
@@ -531,7 +533,7 @@
           <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
         </select>
         <button class="calender" type="button">Период публикации</button>
-        <button class="button button_blue button_size_xs   button_without-event"><span class="button_span">Искать</span>
+        <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
         </button>
       </form><a class="tab-button " value="Самые важные">Самые важные</a>
       <div class="project-card"> 

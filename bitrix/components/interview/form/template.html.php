@@ -72,7 +72,7 @@
       </div>
     </div>
   </fieldset>
-  <button class="button button_blue button_size_l   " onclick="getValues(event)"><span class="button_span">Отправить форму</span>
+  <button class="button button_blue button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить форму</span>
     <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
   </button>
 </form>

@@ -46,7 +46,7 @@
       <div class="calendar__icon"><span>2</span></div>
     </div>
   </div>
-  <button class="button button_white calendar__button   button_icon-left button_without-event"><span class="button_span">Календарь</span>
+  <button class="button button_white calendar__button   button_icon-left button_without-event" title=""><span class="button_span">Календарь</span>
     <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
   </button>
 </div>

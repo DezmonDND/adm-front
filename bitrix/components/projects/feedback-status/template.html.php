@@ -10,7 +10,7 @@
     <form class="feedback-status__form"></form>
     <form class="search search-feedbacks">
       <input class="input  input-search input-search-l " placeholder="Номер обращения" name="number" value=""/>
-      <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1">
+      <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
         <ion-icon class="icon" name="search-outline"></ion-icon>
       </button>
     </form>

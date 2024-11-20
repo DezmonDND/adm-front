@@ -91,10 +91,10 @@
     <div class="chronicle__calendar">
       <div class="calendar-dm" id="calendar">
         <div class="calendar-dm-header"> 
-          <button class="button button_white calendar-dm-button  button_without-text  " onclick="prevMonth()">
+          <button class="button button_white calendar-dm-button  button_without-text  " onclick="prevMonth()" title="">
             <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
           </button><span class="calendar-dm-date" id="month-year"></span>
-          <button class="button button_white calendar-dm-button  button_without-text  " onclick="nextMonth()">
+          <button class="button button_white calendar-dm-button  button_without-text  " onclick="nextMonth()" title="">
             <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
           </button>
         </div>

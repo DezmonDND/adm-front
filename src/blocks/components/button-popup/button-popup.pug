@@ -1,0 +1,21 @@
+include ../header/socials/header-socials
+nclude ../../../libs/buttons/_buttons
+
+mixin button-popup()
+    .button-popup
+        .button-popup__container    
+            +header-socials([
+                {
+                    href: '/',
+                    class: 'vk_icon'
+                },
+                {
+                    href: '/',
+                    class: 'ok_icon'
+                },
+                {
+                    href: '/',
+                    class: 'tg_icon'
+                },
+                ]) 
+            +button({ type: 'button', class: 'button_white', event: '1', size: 's', text: 'Скопировать ссылку' })    
