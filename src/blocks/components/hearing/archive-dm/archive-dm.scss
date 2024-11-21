@@ -5,10 +5,18 @@
         .hearing-item {
             background-color: $content-color;
             margin-right: 24px;
+            max-width: 644px;
+            max-height: 474px;
 
             @include respond-to(md) {
                 max-width: 360px;
+                max-height: 260px;
                 margin-right: 8px;
+            }
+
+            @include respond-to(sm) {
+                max-width: 336px;
+                max-height: 276px;
             }
 
             .hearing-item-content {

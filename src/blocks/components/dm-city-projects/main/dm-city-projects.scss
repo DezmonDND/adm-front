@@ -23,10 +23,12 @@
             display: flex;
 
             .people-care-card {
+                min-height: 320px !important;
                 margin-right: 24px;
 
                 @include respond-to(md) {
                     margin-right: 8px;
+                    min-height: 214px !important;
                 }
             }
         }

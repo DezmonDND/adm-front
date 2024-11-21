@@ -10,12 +10,13 @@
     justify-content: space-between;
     height: 428px;
 
-    @media screen and (max-width: 1000px) {
+    @include respond-to (md) {
         height: 288px;
+        max-width: 360px;
+    }
 
-        &:nth-child(n+3) {
-            display: none;
-        }
+    @include respond-to(sm) {
+        max-width: 336px;
     }
 
     .main-project-card__content {

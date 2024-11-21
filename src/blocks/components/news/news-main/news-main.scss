@@ -53,10 +53,8 @@
         margin-right: 8px;
     }
 
-    @media (max-width: 400px) {
-
-
-        max-width: 360px;
+    @include respond-to(sm) {
+        max-width: 250px;
     }
 
     .main-news-card__container {

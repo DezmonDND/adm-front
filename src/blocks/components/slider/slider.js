@@ -12,7 +12,7 @@ function updateArrowsVisibility(slick, nextArrowSelector, prevArrowSelector) {
 // Главная новость
 
 $('.news-card-with-image__list').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -32,17 +32,12 @@ $(window)
             if (initLib != 1) {
                 $('.main-news__card-list')
                     .slick({
-                        infinite: true,
+                        infinite: false,
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         arrows: false,
+                        variableWidth: true,
                         responsive: [
-                            {
-                                breakpoint: 992,
-                                settings: {
-                                    slidesToShow: 3,
-                                },
-                            },
                             {
                                 breakpoint: 768,
                                 settings: {
@@ -58,13 +53,14 @@ $(window)
                         ],
                     })
                     .data({ 'init-slider': 1 });
-                    
+
                 $('.events__news')
                     .slick({
-                        infinite: true,
+                        infinite: false,
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         arrows: false,
+                        variableWidth: true,
                         responsive: [
                             {
                                 breakpoint: 992,
@@ -88,9 +84,9 @@ $(window)
                     })
                     .data({ 'init-slider': 1 });
 
-                    $('.important-links__container')
+                $('.important-links__container')
                     .slick({
-                        infinite: true,
+                        infinite: false,
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         arrows: false,
@@ -150,7 +146,6 @@ $('.slider__important-links-prev').on('click', function () {
     $('.important-links__container').slick('slickPrev');
 });
 
-
 // Помогите городу стать лучше
 
 // $('.help-city__content').slick({
@@ -187,48 +182,52 @@ $('.slider__important-links-prev').on('click', function () {
 //     $('.help-city__content').slick('slickPrev');
 // });
 
-$('.help-city__content').on('init', function(event, slick) {
-    updateArrowsVisibility(slick, '.slider__help-city-next' , '.slider__help-city-prev' );
-}).on('breakpoint', function(event, slick) {
-    updateArrowsVisibility(slick);
-}).slick({
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
+$('.help-city__content')
+    .on('init', function (event, slick) {
+        updateArrowsVisibility(slick, '.slider__help-city-next', '.slider__help-city-prev');
+    })
+    .on('breakpoint', function (event, slick) {
+        updateArrowsVisibility(slick);
+    })
+    .slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
             },
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
+            {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 2,
+                },
             },
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 1,
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                },
             },
-        },
-    ],
-});
+        ],
+    });
 
-$('.slider__help-city-next').on('click', function() {
+$('.slider__help-city-next').on('click', function () {
     $('.help-city__content').slick('slickNext');
 });
-$('.slider__help-city-prev').on('click', function() {
+$('.slider__help-city-prev').on('click', function () {
     $('.help-city__content').slick('slickPrev');
 });
 
 // Важная информация для жителей
 
 $('.important-inf__container').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
@@ -252,10 +251,12 @@ $('.slider__important-inf-prev').on('click', function () {
 // Проекты Думы города
 
 $('.dm-city-projects__card-list').slick({
-    infinite: true,
-    slidesToShow: 2,
+    infinite: false,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    variableWidth: true,
+    adaptiveHeight: true,
     responsive: [
         {
             breakpoint: 1024,
@@ -288,13 +289,20 @@ $('.slider__dm-city-projects-prev').on('click', function () {
 // С заботой о жителях
 
 $('.people-care__card-list').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    variableWidth: true,
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 896,
             settings: {
                 slidesToShow: 2,
             },
@@ -318,10 +326,11 @@ $('.slider__people-care-prev').on('click', function () {
 // Архив трансляций
 
 $('.archive-dm__container').slick({
-    infinite: true,
-    slidesToShow: 2,
+    infinite: false,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    variableWidth: true,
     responsive: [
         {
             breakpoint: 500,
