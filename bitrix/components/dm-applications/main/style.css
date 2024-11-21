@@ -20,6 +20,17 @@
     line-height: calc(20px * var(--lh));
   }
 }
+.dm-applications .dm-applications__container .dm-applications__form .dm-applications__title {
+  font-weight: 500;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .dm-applications .dm-applications__container .dm-applications__form .dm-applications__title {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
 .dm-applications .dm-applications__container .dm-applications__form .dm-applications__get-answer {
   margin-top: 18px;
 }
@@ -54,6 +65,6 @@
 
 .dm-applications__divider {
   width: 100%;
-  border: 1px solid #c6cbd9;
+  border: 1px solid var(--fourth-text-inverse);
   margin-top: 34px;
 }

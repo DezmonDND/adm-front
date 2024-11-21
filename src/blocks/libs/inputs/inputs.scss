@@ -5,12 +5,12 @@ $desk-text3-lh: 24px;
 
 .input {
     box-sizing: border-box;
-    padding: 20px 19px;
+    padding: 19px 20px;
     width: 100%;
     border-radius: 8px;
     border: 1px solid $input-color-default;
     outline: none;
-    @include lead-5;
+    @include caption-2;
 
     &:hover {
         border-color: $input-color-hover;
@@ -25,12 +25,9 @@ $desk-text3-lh: 24px;
     }
 
     @include respond-to(md) {
-        padding: 16px 13px;
+        padding: 13px 16px;
+        border-radius: 6px;
     }
-}
-
-.input_m {
-    padding: 11px 20px;
 }
 
 .input-error {
