@@ -1,22 +1,27 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-.button_share:hover~.button-popup {
+.button_share:hover~.button-popup__content {
     display: flex;
 }
 
-.button-popup {
-    // display: flex;
+.button-popup__content {
     display: none;
-    max-width: 367px;
-    background-color: $content-color;
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
     position: absolute;
-    top: 65px;
+    top: 43px;
     left: -60%;
+    z-index: 1;
 
     &:hover {
         display: flex;
     }
+}
+
+.button-popup {
+    display: flex;
+    max-width: 367px;
+    background-color: $content-color;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
 
     .button-popup__container {
         display: flex;
@@ -47,5 +52,5 @@
     border-right: 12px solid transparent;
     border-bottom: 12px solid $content-color;
     left: 50%;
-    top: -24px;
+    top: -4px;
 }
