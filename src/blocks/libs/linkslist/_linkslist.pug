@@ -4,5 +4,5 @@ mixin linkslist(items)
             a.links-list-item(href=item.href)
                 | #{item.title}
                 if item.desc
-                    span #{item.desc}
-                img(src="/icons/arrow-left_link-icon.svg")
+                    span.links-list-item__desc #{item.desc}
+                ion-icon(name=`arrow-forward-outline` class=`icon`)

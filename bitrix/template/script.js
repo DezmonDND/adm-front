@@ -1,78 +1,40 @@
-$(document).ready(function () {
-    // Инициализация всех popup-блоков
-    $('.popup-fade').each(function () {
-        const $popupFade = $(this);
+// Находим все элементы с классом `content-card`
+document.querySelectorAll('.content-card').forEach((card) => {
+    // Создаем контейнер внутри карточки
+    const container = document.createElement('div');
+    container.className = 'content-card__container';
 
-        // Добавляем структуру popup, если она ещё не существует
-        if ($popupFade.find('.popup').length === 0) {
-            // Оборачиваем контент в .popup и .popup-content
-            const content = $popupFade.html();
-            $popupFade.empty().append(`
-          <div class="popup">
-            <a class="popup-close" href="#"><ion-icon name="close"></ion-icon></a>
-            <div class="popup-content">${content}</div>
-          </div>
-        `);
-        }
-    });
+    // Перемещаем текущие дочерние элементы в контейнер
+    while (card.firstChild) {
+        container.appendChild(card.firstChild);
+    }
 
-    // Открытие popup
-    $('.popup-open').click(function () {
-        var popupId = $(this).data('popup-id');
-        const $popup = $('#' + popupId);
-        $popup.fadeIn();
+    // Создаем ссылку с кнопкой "Поделиться"
+    const shareButton = document.createElement('a');
+    shareButton.className =
+        'button button_link button_white button_size_m button_icon-left social_share';
+    shareButton.href = '/';
+    shareButton.setAttribute('attributes', '{}');
 
-        // Запуск видео при открытии popup
-        const video = $popup.find('video').get(0);
-        if (video) {
-            video.play();
-        }
+    // Создаем содержимое кнопки
+    const buttonSpan = document.createElement('span');
+    buttonSpan.className = 'button_span';
+    buttonSpan.textContent = 'Поделиться';
 
-        return false;
-    });
+    const icon = document.createElement('ion-icon');
+    icon.className = 'icon md hydrated';
+    icon.setAttribute('name', 'link-outline');
+    icon.setAttribute('role', 'img');
 
-    // Закрытие popup при нажатии на кнопку закрытия
-    $(document).on('click', '.popup-close', function () {
-        const $popupFade = $(this).closest('.popup-fade');
-        $popupFade.fadeOut();
+    // Собираем структуру кнопки
+    shareButton.appendChild(buttonSpan);
+    shareButton.appendChild(icon);
 
-        // Остановка видео при закрытии popup
-        const video = $popupFade.find('video').get(0);
-        if (video) {
-            video.pause();
-            video.currentTime = 0; // Сбросить время воспроизведения на начало
-        }
+    // Добавляем кнопку в контейнер
+    container.appendChild(shareButton);
 
-        return false;
-    });
-
-    // Закрытие popup при нажатии на ESC
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.popup-fade').fadeOut();
-
-            // Остановка всех видео в закрытых popup
-            $('.popup-fade video').each(function () {
-                this.pause();
-                this.currentTime = 0;
-            });
-        }
-    });
-
-    // Закрытие popup при клике вне контента
-    $('.popup-fade').click(function (e) {
-        if ($(e.target).closest('.popup').length === 0) {
-            $(this).fadeOut();
-
-            // Остановка видео при закрытии popup
-            const video = $(this).find('video').get(0);
-            if (video) {
-                video.pause();
-                video.currentTime = 0;
-            }
-        }
-    });
+    // Добавляем контейнер в карточку
+    card.appendChild(container);
 });
 
 const msDropdownList = document.querySelector('.ms__dropdown');
@@ -150,6 +112,83 @@ function updateMultiSelectValue(e) {
     getValues(e);
 }
 
+$(document).ready(function () {
+    // Инициализация всех popup-блоков
+    $('.popup-fade').each(function () {
+        const $popupFade = $(this);
+
+        // Добавляем структуру popup, если она ещё не существует
+        if ($popupFade.find('.popup').length === 0) {
+            // Оборачиваем контент в .popup и .popup-content
+            const content = $popupFade.html();
+            $popupFade.empty().append(`
+          <div class="popup">
+            <a class="popup-close" href="#"><ion-icon name="close"></ion-icon></a>
+            <div class="popup-content">${content}</div>
+          </div>
+        `);
+        }
+    });
+
+    // Открытие popup
+    $('.popup-open').click(function () {
+        var popupId = $(this).data('popup-id');
+        const $popup = $('#' + popupId);
+        $popup.fadeIn();
+
+        // Запуск видео при открытии popup
+        const video = $popup.find('video').get(0);
+        if (video) {
+            video.play();
+        }
+
+        return false;
+    });
+
+    // Закрытие popup при нажатии на кнопку закрытия
+    $(document).on('click', '.popup-close', function () {
+        const $popupFade = $(this).closest('.popup-fade');
+        $popupFade.fadeOut();
+
+        // Остановка видео при закрытии popup
+        const video = $popupFade.find('video').get(0);
+        if (video) {
+            video.pause();
+            video.currentTime = 0; // Сбросить время воспроизведения на начало
+        }
+
+        return false;
+    });
+
+    // Закрытие popup при нажатии на ESC
+    $(document).keydown(function (e) {
+        if (e.keyCode === 27) {
+            e.stopPropagation();
+            $('.popup-fade').fadeOut();
+
+            // Остановка всех видео в закрытых popup
+            $('.popup-fade video').each(function () {
+                this.pause();
+                this.currentTime = 0;
+            });
+        }
+    });
+
+    // Закрытие popup при клике вне контента
+    $('.popup-fade').click(function (e) {
+        if ($(e.target).closest('.popup').length === 0) {
+            $(this).fadeOut();
+
+            // Остановка видео при закрытии popup
+            const video = $(this).find('video').get(0);
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+        }
+    });
+});
+
 function openSelect() {
   const selectMenu = document.querySelector(".select_multiple-menu");
   selectMenu.style.display =
@@ -158,6 +197,20 @@ function openSelect() {
 
 function selectOption(element) {
   element.classList.toggle("select_multiple-option_selected");
+}
+
+function getLength() {
+  const textarea = document.querySelector(".textarea");
+  const counterCurrent = document.querySelector(".current");
+  const counterMax = document.querySelector(".max");
+
+  const textLength = textarea.value.length;
+  counterCurrent.textContent = textLength;
+  if (textLength > Number(counterMax.textContent)) {
+    textarea.style.borderColor = "#D10404";
+  } else {
+    textarea.style.borderColor = "";
+  }
 }
 
 $(document).ready(function () {
@@ -220,17 +273,3 @@ $(document).ready(function () {
         });
     });
 });
-
-function getLength() {
-  const textarea = document.querySelector(".textarea");
-  const counterCurrent = document.querySelector(".current");
-  const counterMax = document.querySelector(".max");
-
-  const textLength = textarea.value.length;
-  counterCurrent.textContent = textLength;
-  if (textLength > Number(counterMax.textContent)) {
-    textarea.style.borderColor = "#D10404";
-  } else {
-    textarea.style.borderColor = "";
-  }
-}

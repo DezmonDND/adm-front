@@ -2,16 +2,17 @@
 
 .dm-deputies-comitets {
     padding-top: 48px;
+
     @include respond-to(md) {
         padding-top: 24px;
     }
-   
 }
 
 .dm-deputies-comitets__block {
     display: flex;
     flex-direction: column;
     gap: 24px;
+
     @include respond-to(md) {
         gap: 16px;
     }
@@ -21,39 +22,24 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    
+
     @include respond-to(md) {
         gap: 24px;
     }
 }
 
-.dm-deputies-comitets__name {
+.dm-deputies-comitets__name span {
     color: $main-text;
-    font-weight: 500 !important;
-    @include heading-h2();
-    @include respond-to(md) {
-        font-weight: 600 !important;
-    }
+    @include lead-3;
 }
 
 .dm-deputies-comitets__list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    .dm-comitet-elem {
-        max-width: 420px;
-    }
+
     @include respond-to(md) {
         gap: 8px;
-        .dm-comitet-elem {
-            max-width: unset;
-        }
-    }
-    @include respond-to(sm) {
-        .dm-comitet-elem {
-            width: 100%;
-        }
-        flex-direction: column;
     }
 }
 
@@ -61,22 +47,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 12px 0 16px;
+    gap: 8px;
+
     @include respond-to(sm) {
-        
         flex-direction: column;
     }
 
+    .title {
+        margin: 0;
+    }
 }
 
-.dm-deputies__title-container .button{
-   width: 100%;
-   max-width: 265px;
-   box-sizing: border-box;
-   @include respond-to(sm) {
-        
-    max-width: 205px;
+.dm-deputies__title-container .button {
+    width: 100%;
+    max-width: 265px;
+    box-sizing: border-box;
+    justify-content: center;
+
+    @include respond-to(sm) {
+        max-width: 205px;
+    }
 }
-}
+
 .dm-deputies__title-container .button span {
     font-weight: 600;
 }

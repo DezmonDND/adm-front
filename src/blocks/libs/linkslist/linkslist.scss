@@ -1,27 +1,44 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .icon {
+        color: $primary-color-green;
+    }
+}
+
 .links-list {
     margin-top: 12px;
     width: 100%;
 
     &-item {
-        display: block;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
         border-radius: 8px;
         margin-bottom: 12px;
         background: $grey-adm;
         color: $main-text;
-        padding: 20px;
+        padding: 19px 20px;
         text-decoration: none;
         @include heading-h5;
+
+        @include respond-to(md) {
+            padding: 13px 16px;
+        }
 
         &:hover {
             transition: box-shadow 0.3s ease-in-out;
             background: $services-hover;
         }
 
-        img {
-            transform: rotate(180deg);
-            float: right;
+        .icon {
+            font-size: 20px;
+            color: $primary-color;
+
+            @include respond-to(md) {
+                font-size: 16px;
+            }
         }
 
         span {

@@ -1,5 +1,24 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .pag-button {
+        &:hover {
+            background-color: $event-color;
+        }
+
+        &:active {
+            background-color: $event-color-hover;
+        }
+    }
+
+    .pag-button_active {   
+        &:hover {
+            color: $content-color;
+            background-color: $primary-color-hover;
+        }
+    }
+}
+
 @mixin without-event {
     color: $primary-color-disabled;
     border-color: $primary-color-disabled;
