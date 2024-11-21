@@ -51,7 +51,7 @@ const sliders = [
         nextArrow: '.slider__main-news-next',
         prevArrow: '.slider__main-news-prev',
         options: {
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
@@ -68,7 +68,7 @@ const sliders = [
         nextArrow: '.slider__events-next',
         prevArrow: '.slider__events-prev',
         options: {
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
@@ -85,7 +85,7 @@ const sliders = [
         nextArrow: '.slider__important-links-next',
         prevArrow: '.slider__important-links-prev',
         options: {
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
@@ -101,7 +101,7 @@ const sliders = [
         nextArrow: '.slider__help-city-next',
         prevArrow: '.slider__help-city-prev',
         options: {
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
@@ -117,7 +117,7 @@ const sliders = [
         nextArrow: '.slider__important-inf-next',
         prevArrow: '.slider__important-inf-prev',
         options: {
-            infinite: false,
+            infinite: true,
             slidesToShow: 2,
             slidesToScroll: 1,
             arrows: false,
@@ -130,7 +130,7 @@ const sliders = [
         nextArrow: '.slider__people-care-next',
         prevArrow: '.slider__people-care-prev',
         options: {
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
@@ -147,7 +147,7 @@ const sliders = [
         nextArrow: '.slider__dm-city-projects-next',
         prevArrow: '.slider__dm-city-projects-prev',
         options: {
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
@@ -165,7 +165,7 @@ const sliders = [
         nextArrow: '.slider__archive-dm-next',
         prevArrow: '.slider__archive-dm-prev',
         options: {
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,

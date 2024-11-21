@@ -17,7 +17,7 @@
 }
 @media (max-width: 768px) {
   .main-project-card {
-    max-width: 336px;
+    max-width: none;
   }
 }
 .main-project-card .main-project-card__content {

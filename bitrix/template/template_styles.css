@@ -3437,6 +3437,7 @@ body.tmp-duma .hearing-item img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 .main-title .main-title__container .main-title__title {
   font-weight: 500;
@@ -9564,7 +9565,7 @@ body.tmp-duma .short-filelist ion-icon {
 }
 @media (max-width: 768px) {
   .main-project-card {
-    max-width: 336px;
+    max-width: none;
   }
 }
 .main-project-card .main-project-card__content {
@@ -9830,7 +9831,7 @@ body.tmp-duma .important-links .main-title {
   }
 }
 .important-links .important-links__container .important-link .important-link__title {
-  display: flex;
+  display: flex !important;
   align-items: center;
   min-height: 32px;
   display: -webkit-box;

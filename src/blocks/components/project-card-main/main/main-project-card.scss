@@ -16,7 +16,7 @@
     }
 
     @include respond-to(sm) {
-        max-width: 336px;
+        max-width: none;
     }
 
     .main-project-card__content {

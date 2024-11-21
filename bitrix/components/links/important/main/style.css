@@ -97,7 +97,7 @@ body.tmp-duma .important-links .main-title {
   }
 }
 .important-links .important-links__container .important-link .important-link__title {
-  display: flex;
+  display: flex !important;
   align-items: center;
   min-height: 32px;
   display: -webkit-box;
