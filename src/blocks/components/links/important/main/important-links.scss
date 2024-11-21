@@ -90,7 +90,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
             }
 
             .important-link__title {
-                display: flex;
+                display: flex !important;
                 align-items: center;
                 min-height: 32px;
                 @include visible-lines(2);
