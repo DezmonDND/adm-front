@@ -3,22 +3,31 @@
 .question-fields {
     display: flex;
     flex-direction: row;
-
+    gap: 20px;
+    
     @include respond-to(sm) {
         flex-direction: column;
     }
 
     .field {
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: calc(50% - 6px);
         @include text-1;
 
         @include respond-to(sm) {
             width: 100%;
+            gap: 8px;
         }
 
         .label {
             color: $tertiary-text;
             @include caption-2;
+        }
+
+        .field__desc {
+
         }
     }
 }

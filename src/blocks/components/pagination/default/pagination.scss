@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 16px;
     align-self: flex-start;
-    margin-top: 40px;
+    margin-top: 48px;
 
     .pagination__pages {
         display: flex;
@@ -18,9 +18,14 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .pagination {
+        gap: 8px;
+    }
+}
+
 @media screen and (max-width: 370px) {
-    .pagination{
+    .pagination {
         gap: 4px;
     }
-    
 }

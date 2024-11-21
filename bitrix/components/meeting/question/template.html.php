@@ -7,10 +7,10 @@
 </div>
 <div class="question-fields">
   <div class="field"> 
-    <div class="label">Готовит</div>Администрация города
+    <div class="label">Готовит</div><span class="field__desc"> Администрация города</span>
   </div>
   <div class="field"> 
-    <div class="label">Докладывает</div>Новикова Маргарита Александровна, директор департамента финансов Администрации города
+    <div class="label">Докладывает</div><span class="field__desc">Новикова Маргарита Александровна, директор департамента финансов Администрации города</span>
   </div>
 </div>
 <h5>Проект решения</h5>

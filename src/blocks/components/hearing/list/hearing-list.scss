@@ -53,6 +53,7 @@ body.tmp-duma .hearing-item img{
     display: flex;
     border-radius: 12px;
     background: $fourth-text-inverse;
+    color: $main-text;
     @include title-4;
 
     @media (max-width: 1000px) {

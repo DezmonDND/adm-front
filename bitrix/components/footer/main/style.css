@@ -10,7 +10,7 @@
 .footer {
   display: flex;
   width: 100%;
-  background-color: #0D0F43;
+  background-color: #0d0f43;
   color: var(--content-color);
   justify-content: center;
   margin-top: 64px;

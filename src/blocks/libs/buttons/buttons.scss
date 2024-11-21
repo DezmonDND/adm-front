@@ -4,7 +4,7 @@
     padding: $padding-button-l;
 
 
-    @media screen and (max-width: 1000px) {
+    @include respond-to(md) {
         padding: $padding-button-m;
     }
 
@@ -13,7 +13,7 @@
     }
 
     .icon {
-        font-size: 23px; // Размер от шрифта
+        font-size: 20px; // Размер от шрифта
     }
 }
 
@@ -22,7 +22,7 @@
         padding: $padding-button-m;
     }
 
-    @media screen and (max-width: 1000px) {
+    @include respond-to(md) {
         padding: $padding-button-s;
     }
 
@@ -31,7 +31,7 @@
     }
 
     .icon {
-        font-size: 20px; // Размер от шрифта
+        font-size: 16px; // Размер от шрифта
     }
 }
 
@@ -43,7 +43,7 @@
     }
 
     .icon {
-        font-size: 16px; // Размер от шрифта
+        font-size: 12px; // Размер от шрифта
     }
 }
 
@@ -55,7 +55,7 @@
     }
 
     .icon {
-        font-size: 16px; // Размер от шрифта
+        font-size: 12px; // Размер от шрифта
     }
 }
 
@@ -144,8 +144,8 @@
         }
 
         &_no-border {
-            box-shadow: 0 4px 12px rgba($main-text, .08);
-            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid transparent;
         }
     }
 

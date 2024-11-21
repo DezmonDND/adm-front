@@ -1,15 +1,21 @@
 /*** Finish - Title ***/
 .short-filelist .file-line {
   text-decoration: none;
-  padding: 20px;
+  padding: 19px 20px;
   display: flex;
+  gap: 12px;
   align-items: center;
   background-color: var(--grey-adm);
   border-radius: 8px;
   margin-bottom: 12px;
 }
 .short-filelist .file-line .file-line-icon {
-  width: 24px;
+  width: 20px;
+}
+@media (max-width: 992px) {
+  .short-filelist .file-line .file-line-icon {
+    font-size: 16px;
+  }
 }
 .short-filelist .file-line .file-line-span {
   width: calc(100% - 24px);
@@ -32,19 +38,9 @@
 .short-filelist .file-line:hover {
   background: var(--services-hover);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .short-filelist .file-line {
-    padding: 16px 20px;
-  }
-}
-.short-filelist .file-line ion-icon {
-  font-size: 32px;
-  color: var(--primary-color);
-  margin-right: 16px;
-}
-@media (max-width: 768px) {
-  .short-filelist .file-line ion-icon {
-    font-size: 28px;
+    padding: 13px 16px;
   }
 }
 

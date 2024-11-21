@@ -1,0 +1,21 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.sorting {
+    display: flex;
+    align-items: center;
+    max-width: 439px;
+    width: 100%;
+    gap: 12px;
+
+    .sorting__desc {
+        @include text-2;
+    }
+
+    .sorting__select {
+        max-width: 182px;
+        padding: 12px 20px;
+        background-position: 96%;
+        border-radius: 4px;
+        @include caption-2;
+    }
+}

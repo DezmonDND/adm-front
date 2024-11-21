@@ -1,16 +1,17 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .solution-head {
-    padding: 16px 0;
+    padding: 8px 0;
     @include lead-5;
 }
 
 .solution-fields {
-    padding: 24px 0;
+    padding: 16px 0;
     display: flex;
     flex-direction: row;
+    gap: 24px;
 
-    @include respond-to(md) {
+    @include respond-to(sm) {
         flex-direction: column;
         gap: 24px;
     }
@@ -31,6 +32,10 @@
             color: $tertiary-text;
             margin-bottom: 12px;
             @include caption-2;
+
+            @include respond-to(md) {
+                margin-bottom: 8px;
+            }
         }
     }
 }
