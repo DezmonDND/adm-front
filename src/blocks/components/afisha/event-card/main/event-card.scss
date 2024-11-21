@@ -12,13 +12,11 @@
         width: 100%;
         padding: 40px 0 40px;
 
-        @media screen and (max-width: 1000px) {
+        @include respond-to(md) {
             padding: 20px;
         }
 
         .event-card__info {
-
-
             .event-card__tags {
                 display: flex;
                 gap: 8px;
@@ -30,15 +28,17 @@
                 gap: 12px;
                 margin: 24px 0 64px;
 
-                @media screen and (max-width: 1000px) {
+                @include respond-to(md) {
                     margin-bottom: 32px;
                 }
 
                 .event-card__title {
+                    padding: 0;
                     @include heading-h2;
                 }
 
                 .event-card__text {
+                    margin: 0;
                     @include text-2;
                 }
 
@@ -49,16 +49,13 @@
 
                     .event-card__dates {
                         @include caption-2;
-
                     }
 
                     .event-card__last-date {
                         @include caption-2;
                     }
-
                 }
             }
-
 
             .event-card__buttons {
                 display: flex;

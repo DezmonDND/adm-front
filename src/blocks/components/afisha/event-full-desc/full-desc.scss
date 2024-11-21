@@ -9,37 +9,35 @@
             flex-direction: column;
             gap: 40px;
 
-            @media screen and (max-width: 1000px) {
+            @include respond-to(md) {
                 margin-bottom: 0;
-
             }
 
             .afisha-event__main-text {
                 .afisha-event__title {
+                    padding: 0;
                     margin-bottom: 24px;
                     @include heading-h4;
                 }
 
                 .afisha-event__text {
+                    margin: 0;
                     @include text-2;
                 }
             }
         }
 
         .afisha-event__quote {
-
             display: flex;
             flex-direction: column;
             gap: 16px;
 
-            @media screen and (max-width: 1000px) {
+            @include respond-to(md) {
                 padding: 0 16px;
-
             }
 
             .afisha-event__quote-text {
                 @include text-1;
-
             }
 
             .afisha-event__quote-author {
@@ -71,9 +69,8 @@
                 object-position: center;
                 border-radius: 8px;
 
-                @media screen and (max-width: 600px) {
+                @include respond-to(sm) {
                     max-height: 189px;
-
                 }
             }
 
@@ -102,7 +99,6 @@
             .afisha-event__image {
                 max-width: 755px;
                 width: 100%;
-
             }
 
             .afisha-event__navigation {
@@ -113,8 +109,6 @@
                 .afisha-event__comment {
                     @include text-3;
                 }
-
-                .afisha-event__pages {}
             }
         }
     }
