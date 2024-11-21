@@ -40,6 +40,9 @@ body {
         --services-hover: #f0eee2;
         --services-active: #e7e5d7;
 
+        --main-text: #22232C; //primary
+        --second-text: #040528;
+
         // Фон
         --cards-background: #f7f6ef;
         --grey-adm: #f7f6ef;
@@ -94,6 +97,7 @@ body {
         --primary-color-green-click: #242433;
         --primary-color-green-disabled: #242433;
     }
+
     &.blue-theme {
         --main-text: #0a3866; //primary
         --main-text-dark-bg: #0a3866;

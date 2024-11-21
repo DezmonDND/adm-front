@@ -7,6 +7,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 24px;
   box-sizing: border-box;
 }
 @media (max-width: 992px) {
@@ -28,33 +29,52 @@
   margin-bottom: 0;
 }
 
-.dm-mail__phone, .dm-mail__mail, .dm-mail__addr {
+.dm-mail__phone,
+.dm-mail__mail,
+.dm-mail__addr {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .dm-mail__phone,
+  .dm-mail__mail,
+  .dm-mail__addr {
+    gap: 8px;
+  }
 }
 
-.dm-mail__phone span, .dm-mail__mail span, .dm-mail__addr span {
+.dm-mail__phone span,
+.dm-mail__mail span,
+.dm-mail__addr span {
   color: var(--second-text);
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
-  .dm-mail__phone span, .dm-mail__mail span, .dm-mail__addr span {
+  .dm-mail__phone span,
+  .dm-mail__mail span,
+  .dm-mail__addr span {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
 }
 
-.dm-mail__phone span:first-child, .dm-mail__mail span:first-child, .dm-mail__addr span:first-child, .dm-mail__descr {
+.dm-mail__phone span:first-child,
+.dm-mail__mail span:first-child,
+.dm-mail__addr span:first-child,
+.dm-mail__descr {
   color: var(--tertiary-text);
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
-  .dm-mail__phone span:first-child, .dm-mail__mail span:first-child, .dm-mail__addr span:first-child, .dm-mail__descr {
+  .dm-mail__phone span:first-child,
+  .dm-mail__mail span:first-child,
+  .dm-mail__addr span:first-child,
+  .dm-mail__descr {
     font-size: calc(12px * var(--scale));
     line-height: calc(16px * var(--lh));
   }
@@ -114,6 +134,17 @@
   .dm-mail__bot-list li {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
+  }
+}
+@media (max-width: 992px) {
+  .dm-mail__bot-list li {
+    margin-left: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dm-mail__bot-list ul {
+    margin-left: 0;
   }
 }
 

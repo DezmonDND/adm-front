@@ -86,6 +86,7 @@ $font-weight-bold: 600;
 
 $breakpoint-md: 992px;
 $breakpoint-sm: 768px;
+$breakpoint-xs: 550px;
 
 // Mixin colors
 @mixin dm-icon-color {
@@ -106,8 +107,16 @@ $breakpoint-sm: 768px;
         @media (max-width: $breakpoint-md) {
             @content;
         }
-    } @else if $breakpoint ==sm {
+    }
+
+    @else if $breakpoint ==sm {
         @media (max-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==sx {
+        @media (max-width: $breakpoint-sx) {
             @content;
         }
     }

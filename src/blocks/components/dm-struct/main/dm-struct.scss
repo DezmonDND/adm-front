@@ -99,7 +99,6 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-
 }
 
 .dm-struct__main-third {
@@ -147,9 +146,11 @@
 
 .dm-struct__bottom {
     padding-top: 48px;
+    padding-bottom: 64px;
 
     @include respond-to(md) {
         padding-top: 24px;
+        padding-bottom: 48px;
     }
 }
 
@@ -180,4 +181,13 @@
 .dm-struct__bottom a:active {
     color: $primary-color-active;
     border-bottom: 1px solid $primary-color-active;
+}
+
+.dm-struct__text {
+    color: $second-text;
+    @include text-2;
+}
+
+.dm-struct__com-content {
+    margin: 16px 0 16px;
 }
