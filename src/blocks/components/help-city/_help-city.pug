@@ -6,18 +6,18 @@ include ../../components/tabs/main/_tabs
 include ../../components/slider/_slider
 
 mixin help-city()
-    +main-title({
-        title: 'Помогите городу стать лучше',
-        link_text: 'Все опросы',
-        href: '/',
-        })
-    .help-city__tabs
-        +tabs([
-            { title: 'Национальные проекты', href: '/' , value: 'Национальные проекты', isActive: true},
-            { title: 'Администрация', href: '/' , value: 'Администрация'},
-            { title: 'Прочее', href: '/' , value: 'Прочее'},
-            ], { class: 'help-city' } )
     .help-city 
+        +main-title({
+            title: 'Помогите городу стать лучше',
+            link_text: 'Все опросы',
+            href: '/',
+            })
+        .help-city__tabs
+            +tabs([
+                { title: 'Национальные проекты', href: '/' , value: 'Национальные проекты', isActive: true},
+                { title: 'Администрация', href: '/' , value: 'Администрация'},
+                { title: 'Прочее', href: '/' , value: 'Прочее'},
+                ], { class: 'help-city' } )
         .help-city__content 
             +main-project-card({
                 date: 'до 29 сентября',

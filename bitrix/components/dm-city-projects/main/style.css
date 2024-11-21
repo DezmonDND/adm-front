@@ -16,11 +16,13 @@
   display: flex;
 }
 .dm-city-projects .dm-city-projects__container .dm-city-projects__card-list .people-care-card {
+  min-height: 320px !important;
   margin-right: 24px;
 }
 @media (max-width: 992px) {
   .dm-city-projects .dm-city-projects__container .dm-city-projects__card-list .people-care-card {
     margin-right: 8px;
+    min-height: 214px !important;
   }
 }
 .dm-city-projects .dm-city-projects__container .dm-city-projects__slider {

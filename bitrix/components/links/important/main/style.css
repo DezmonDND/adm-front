@@ -97,6 +97,13 @@ body.tmp-duma .important-links .main-title {
   }
 }
 .important-links .important-links__container .important-link .important-link__title {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-weight: 400;
   font-size: calc(18px * var(--scale));
   line-height: calc(22px * var(--lh));

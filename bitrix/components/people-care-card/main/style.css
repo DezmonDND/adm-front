@@ -2,7 +2,7 @@
 .people-care-card {
   max-width: 421px;
   width: 100%;
-  min-height: 320px;
+  max-height: 320px;
   border-radius: 12px;
   background-repeat: no-repeat;
   align-content: end;
@@ -13,6 +13,8 @@
 @media (max-width: 992px) {
   .people-care-card {
     margin-right: 8px;
+    max-width: 237px;
+    max-height: 214px;
   }
 }
 .people-care-card_bg-health {
@@ -81,6 +83,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  z-index: 1;
 }
 .people-care-card .people-care-card__container .people-care-card__text-block .people-care-card__title {
   padding: 0;
@@ -91,6 +94,25 @@
   line-height: calc(38px * var(--lh));
 }
 @media (max-width: 992px) {
+  .people-care-card .people-care-card__container .people-care-card__text-block .people-care-card__title {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+@media (max-width: 1199px) {
+  .people-care-card .people-care-card__container .people-care-card__text-block .people-care-card__title {
+    font-size: calc(24px * var(--scale));
+    line-height: calc(28px * var(--lh));
+  }
+}
+@media (max-width: 992px) {
+  .people-care-card .people-care-card__container .people-care-card__text-block .people-care-card__title {
+    font-weight: 500;
+    font-size: calc(32px * var(--scale));
+    line-height: calc(38px * var(--lh));
+  }
+}
+@media (max-width: 992px) and (max-width: 992px) {
   .people-care-card .people-care-card__container .people-care-card__text-block .people-care-card__title {
     font-size: calc(16px * var(--scale));
     line-height: calc(20px * var(--lh));

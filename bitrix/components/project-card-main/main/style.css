@@ -9,12 +9,15 @@
   justify-content: space-between;
   height: 428px;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .main-project-card {
     height: 288px;
+    max-width: 360px;
   }
-  .main-project-card:nth-child(n+3) {
-    display: none;
+}
+@media (max-width: 768px) {
+  .main-project-card {
+    max-width: 336px;
   }
 }
 .main-project-card .main-project-card__content {

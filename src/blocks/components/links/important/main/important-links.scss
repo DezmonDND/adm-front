@@ -93,6 +93,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
                 display: flex;
                 align-items: center;
                 min-height: 32px;
+                @include visible-lines(2);
                 @include lead-4;
             }
         }
