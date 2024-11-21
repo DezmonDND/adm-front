@@ -1,13 +1,18 @@
 include ../../components/title/main/_main-title
+include ../../components/slider/_slider
 
 mixin important-inf()   
     .important-inf
         +main-title({
             href: '/',
             title: 'Важная информация для жителей',
-            slider: true,
+            slider: {
+                class: 'important-inf'
+            },
         })   
         .important-inf__container
             img.important-inf__banner(src='../img/banner.png' alt='Баннер') 
             img.important-inf__banner(src='../img/banner.png' alt='Баннер')
-            img.important-inf__banner(src='../img/banner.png' alt='Баннер')        
+            img.important-inf__banner(src='../img/banner.png' alt='Баннер')
+        .important-inf__slider 
+            +slider({ class: 'important-inf' })

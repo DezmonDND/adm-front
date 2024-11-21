@@ -12,6 +12,7 @@ body.tmp-duma .news-card-without-image {
     border-radius: 12px;
     text-decoration: none;
     color: $main-text;
+    min-width: 420px;
     width: 100%;
     padding: 20px 20px;
     box-sizing: border-box;
@@ -45,7 +46,7 @@ body.tmp-duma .news-card-without-image {
     .news-card-without-image__container {
         display: flex;
         flex-direction: column;
-        gap: 29px;
+        gap: 20px;
         width: 100%;
 
         @include respond-to(md) {

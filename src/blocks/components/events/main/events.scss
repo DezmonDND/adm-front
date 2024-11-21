@@ -4,7 +4,7 @@ body.tmp-duma .main-events .main-events__container .main-title {
     padding-bottom: 32px;
 }
 
-.main-events {
+.events {
     @media (max-width: 1000px) {
         padding-bottom: 20px;
     }
@@ -23,8 +23,8 @@ body.tmp-duma .main-events .main-events__container .main-title {
         }
     }
 
-    .main-events__container {
-        .main-events__selects {
+    .events__container {
+        .events__selects {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -42,7 +42,7 @@ body.tmp-duma .main-events .main-events__container .main-title {
 
             }
 
-            .main-events__selects-container {
+            .events__selects-container {
                 display: grid;
                 grid-template-columns: 23% 27% 30% 16%;
                 gap: 12px;
@@ -60,7 +60,7 @@ body.tmp-duma .main-events .main-events__container .main-title {
             }
         }
 
-        .main-events__news {
+        .events__news {
             display: grid;
             grid-template-columns: repeat(4, calc((100% - 72px)/4));
             gap: 24px;
@@ -73,22 +73,24 @@ body.tmp-duma .main-events .main-events__container .main-title {
                 margin-bottom: 24px;
             }
 
-            @media (max-width: 600px) {
-                grid-template-columns: repeat(2, 250px);
-                overflow-y: scroll;
-                scrollbar-width: none;
-                margin-bottom: 12px;
+            @include respond-to(md) {
+                display: block;
+                margin-bottom: 0;
             }
         }
 
-        .main-events__navigation {
+        .events__navigation {
             display: flex;
             justify-content: center;
-            margin-bottom: 46px;
+            margin-bottom: 40px;
 
-            @media (max-width: 1000px) {
-                margin-bottom: 0;
+            @include respond-to(md) {
+                display: none;
             }
+        }
+
+        .events__slider {
+            @include main-slider;
         }
     }
 }

@@ -101,6 +101,17 @@ $breakpoint-xs: 550px;
     overflow: hidden;
 }
 
+// Mixin Slider
+@mixin main-slider {
+    display: none;
+
+    @include respond-to(md) {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
 // Mixin media
 @mixin respond-to($breakpoint) {
     @if $breakpoint ==md {

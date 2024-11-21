@@ -1,17 +1,21 @@
 /*** Finish - Title ***/
-.archive-dm .archive-dm__container {
-  display: flex;
-  gap: 24px;
-  overflow-x: scroll;
-  scrollbar-width: none;
-}
 .archive-dm .archive-dm__container .hearing-item {
   background-color: var(--content-color);
+  margin-right: 24px;
+  max-width: 644px;
+  max-height: 474px;
 }
 @media (max-width: 992px) {
   .archive-dm .archive-dm__container .hearing-item {
     max-width: 360px;
     max-height: 260px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .archive-dm .archive-dm__container .hearing-item {
+    max-width: 336px;
+    max-height: 276px;
   }
 }
 .archive-dm .archive-dm__container .hearing-item .hearing-item-content {
@@ -29,4 +33,9 @@
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
+}
+.archive-dm .archive-dm__slider {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px;
 }

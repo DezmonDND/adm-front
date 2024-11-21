@@ -8,8 +8,8 @@ include ../../libs/checkbox/_checkbox.pug
 include ../../components/slider/_slider
 
 mixin events()
-    .main-events
-        .main-events__container 
+    .events
+        .events__container 
             +main-title({
                 href: '/',
                 title: 'Анонсы и события',
@@ -120,8 +120,8 @@ mixin events()
                 day_class: 'active',
                 },
             ])         
-            .main-events__selects
-                .main-events__selects-container
+            .events__selects
+                .events__selects-container
                     +select('right', [
                         { value: 'Все события', text: 'Все события' },
                         { value: 'Театр', text: 'Театр' },
@@ -148,7 +148,7 @@ mixin events()
                     status: true,
                     sort: 'checkbox'
                 })                                                              
-            .main-events__news
+            .events__news
                 +main-news-card(
                 {
                     image: 'image_1.jpg',
@@ -269,8 +269,10 @@ mixin events()
                         ]
                 },
                 )
-            .main-events__navigation
+            .events__navigation
                 +navigation({
                     first_page: '1',
                     end_page: '7',
                         })
+            .events__slider 
+                +slider({ class: 'events'})            

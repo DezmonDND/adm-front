@@ -2,17 +2,21 @@
 
 .archive-dm {
     .archive-dm__container {
-        display: flex;
-        gap: 24px;
-        overflow-x: scroll;
-        scrollbar-width: none;
-
         .hearing-item {
             background-color: $content-color;
+            margin-right: 24px;
+            max-width: 644px;
+            max-height: 474px;
 
             @include respond-to(md) {
                 max-width: 360px;
                 max-height: 260px;
+                margin-right: 8px;
+            }
+
+            @include respond-to(sm) {
+                max-width: 336px;
+                max-height: 276px;
             }
 
             .hearing-item-content {
@@ -36,5 +40,11 @@
                 border-radius: 12px;
             }
         }
+    }
+
+    .archive-dm__slider {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 20px;
     }
 }
