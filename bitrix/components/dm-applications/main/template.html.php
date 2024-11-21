@@ -32,7 +32,7 @@
           <input class="input  input-virtual-reception_input   " placeholder="Отчество" name="thirdName" value=""/>
         </div>
       </fieldset>
-      <div class="dm-applications__divider">    </div>
+      <div class="dm-applications__divider"></div>
       <fieldset class="fieldset ">
         <h3 class="fieldset__title dm-applications__title">Почтовый адрес для контакта</h3>
         <div class="fieldset__answers">

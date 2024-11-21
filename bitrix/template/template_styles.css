@@ -130,20 +130,12 @@ body.blue-theme {
 /*** Finish - Title ***/
 .input {
   box-sizing: border-box;
-<<<<<<< HEAD
   padding: 19px 20px;
-=======
-  padding: 20px 19px;
->>>>>>> d556c7c2008252008f2f331bab3a52ce24302ed4
   width: 100%;
   border-radius: 8px;
   border: 1px solid #c6cbd9;
   outline: none;
-<<<<<<< HEAD
   font-weight: 300;
-=======
-  font-weight: 400;
->>>>>>> d556c7c2008252008f2f331bab3a52ce24302ed4
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
 }
@@ -157,31 +149,17 @@ body.blue-theme {
   border-color: #858c9c;
 }
 .input:focus {
-<<<<<<< HEAD
-  border: 1px solid 78A4F4;
-=======
   border: 1px solid #78a4f4;
->>>>>>> d556c7c2008252008f2f331bab3a52ce24302ed4
 }
 .input::placeholder {
   color: var(--tertiary-text);
 }
 @media (max-width: 992px) {
   .input {
-<<<<<<< HEAD
     padding: 13px 16px;
     border-radius: 6px;
   }
 }
-=======
-    padding: 16px 13px;
-  }
-}
-
-.input_m {
-  padding: 11px 20px;
-}
->>>>>>> d556c7c2008252008f2f331bab3a52ce24302ed4
 
 .input-error {
   border: 1px solid #d10404;
@@ -567,10 +545,10 @@ body.tmp-duma .icon {
   }
 }
 .textarea__container .textarea:hover {
-  border-color: #858C9C;
+  border-color: #858c9c;
 }
 .textarea__container .textarea:focus {
-  border: 1px solid 78A4F4;
+  border: 1px solid #78a4f4;
 }
 .textarea__container .textarea::placeholder {
   color: var(--tertiary-text);
@@ -2557,13 +2535,14 @@ body.tmp-duma .main-title .main-title__container .tabs {
   line-height: 18px;
 }
 .fieldset .fieldset__answers .fieldset_error {
-  color: #D10404;
+  color: #d10404;
 }
 .fieldset .fieldset__answers_checkboxes {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
+
 @media screen and (max-width: 600px) {
   .fieldset {
     gap: 16px;
@@ -10881,6 +10860,7 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
 .question-fields {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 @media (max-width: 768px) {
   .question-fields {
@@ -10888,7 +10868,10 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   }
 }
 .question-fields .field {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: calc(50% - 6px);
   font-weight: 300;
   font-size: calc(20px * var(--scale));
   line-height: calc(28px * var(--lh));
@@ -10902,6 +10885,7 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
 @media (max-width: 768px) {
   .question-fields .field {
     width: 100%;
+    gap: 8px;
   }
 }
 .question-fields .field .label {
@@ -10916,7 +10900,6 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
     line-height: calc(16px * var(--lh));
   }
 }
-
 .solution-head {
   padding: 8px 0;
   font-weight: 400;
