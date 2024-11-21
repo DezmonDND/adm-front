@@ -16,7 +16,7 @@
     justify-content: center;
     margin-top: 64px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         margin-top: 40px;
     }
 
@@ -26,10 +26,24 @@
         padding: 24px 64px;
         justify-content: space-between;
 
+        @include respond-to(md) {
+            padding: 20px;
+        }
+
+        @include respond-to(sm) {
+            border: none;
+            padding: 24px 27px 32px;
+        }
+
         .footer__header-links {
             display: flex;
             align-items: center;
             gap: 5px;
+
+            @include respond-to(md) {
+                width: 100%;
+                justify-content: space-between;
+            }
 
             .footer__main-links {
                 display: flex;
@@ -62,6 +76,15 @@
                 margin-left: 40px;
                 transition: all;
 
+                @include respond-to(md) {
+                    gap: 12px;
+                    margin-left: 0;
+                }
+
+                @include respond-to(sm) {
+                    gap: 12px;
+                }
+
                 .footer__link-icon {
                     &:hover {
                         opacity: .6;
@@ -80,8 +103,19 @@
         top: 31px;
         right: 62px;
 
+        @include respond-to(md) {
+            position: static;
+            padding: 20px;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+
         @include respond-to(sm) {
             margin-top: 20px;
+            padding: 0 27px 28px;
+            gap: 21px;
+            align-items: flex-start;
+            flex-direction: column-reverse;
         }
 
         .footer__address {
@@ -117,6 +151,18 @@
         gap: 24px;
         color: $content-color;
 
+        @include respond-to(md) {
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @include respond-to(sm) {
+            flex-direction: column;
+            padding: 0 27px 27px;
+            gap: 32px;
+        }
+
         .footer__category-content {
             display: flex;
             flex-direction: column;
@@ -125,6 +171,10 @@
             max-width: 310px;
             width: 100%;
             margin: 0;
+
+            @include respond-to(sm) {
+                gap: 20px;
+            }
 
             .footer__categorie-title {
                 padding: 0;
@@ -153,73 +203,4 @@
 .footer_container-top {
     border-bottom: 1px solid rgba(#FFFFFF, .2);
 
-}
-
-@media screen and (max-width: 1000px) {
-    .footer {
-        .footer__header {
-            .footer__header-links {
-                width: 100%;
-                justify-content: space-between;
-
-                .footer__social-links {
-                    gap: 12px;
-                    margin-left: 0;
-                }
-            }
-        }
-
-        .footer__header {
-            padding: 20px;
-        }
-
-        .footer__contacts {
-            position: static;
-            padding: 20px;
-            justify-content: space-between;
-            flex-direction: row-reverse;
-
-            .footer__address {
-                @include heading-h5;
-            }
-        }
-
-        .footer__categories {
-            padding: 20px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .footer {
-        .footer__header {
-            border: none;
-            padding: 24px 27px 32px;
-
-            .footer__header-links {
-                .footer__social-links {
-                    gap: 12px;
-                }
-            }
-        }
-
-        .footer__contacts {
-            padding: 0 27px 28px;
-            gap: 21px;
-            align-items: flex-start;
-            flex-direction: column-reverse;
-        }
-
-        .footer__categories {
-            flex-direction: column;
-            padding: 0 27px 27px;
-            gap: 32px;
-
-            .footer__category-content {
-                gap: 20px;
-            }
-        }
-    }
 }

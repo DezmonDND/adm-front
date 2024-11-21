@@ -11,7 +11,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color:$content-color;
 
     &::after {
         content: "";
@@ -37,7 +37,6 @@
         @include respond-to(md) {
             padding: 20px;
         }
-
 
         .news-card-with-image__content {
             display: flex;

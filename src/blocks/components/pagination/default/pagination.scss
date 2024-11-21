@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
 .pagination {
     display: flex;
     align-items: center;
@@ -6,26 +8,20 @@
     align-self: flex-start;
     margin-top: 48px;
 
+    @include respond-to(md) {
+        align-self: center;
+    }
+
+    @include respond-to(sm) {
+        gap: 8px;
+    }
+
+    @include respond-to(xs) {
+        gap: 4px;
+    }
+
     .pagination__pages {
         display: flex;
         gap: 8px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .pagination {
-        align-self: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .pagination {
-        gap: 8px;
-    }
-}
-
-@media screen and (max-width: 370px) {
-    .pagination {
-        gap: 4px;
     }
 }

@@ -1,135 +1,40 @@
+@use '../../../assets/styles/vars.scss' as *;
+
 .projects-array {
-    margin: 40px 0 0;
-    max-width: 1440px;
     box-sizing: border-box;
     width: 100%;
-
-    .cabinet-array__content {
-        align-items: baseline;
-
-        .cabinet-array__button {
-            padding: 13px 20px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 16px;
-            flex-direction: row-reverse;
-            align-self: flex-start;
-        }
-    }
 
     .projects-array__content {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 32px;
+
+        @include respond-to(md) {
+            gap: 16px;
+        }
 
         .projects-array__edit-buttons {
             display: flex;
             justify-content: space-between;
-
-            .projects-array__button {
-                flex-direction: row-reverse;
-                padding: 11px 28px;
-                font-size: 14px;
-                line-height: 18px;
-            }
         }
 
         .projects-array__list {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 16px;
             width: 100%;
+
+            @include respond-to(md) {
+                gap: 8px;
+            }
         }
 
         .projects-array__save-buttons {
             display: flex;
             gap: 24px;
 
-            .projects-array__button {
-                flex-direction: row-reverse;
-                padding: 16px 36px;
-                font-size: 20px;
-                line-height: 24px;
-            }
-
-            .projects-array__button_save_button {
-                padding: 16px 21px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .projects-array {
-        margin-top: 8px;
-
-
-        .cabinet-array__content {
-     flex-direction: column-reverse;
-    
-            .cabinet-array__button {
-        align-self: stretch;
-        justify-content: center;
-            }
-        }
-        .projects-array__content {
-            margin-top: 12px;
-
-            .projects-array__edit-buttons {
-
-                .projects-array__button {
-                    padding: 8px 14px;
-                    border-radius: 8px;
-                }
-            }
-
-            .projects-array__list {
-                gap: 19px;
-            }
-
-            .projects-array__save-buttons {
+            @include respond-to(md) {
                 gap: 14px;
-
-                .projects-array__button {
-                    padding: 12px 24px;
-                    font-size: 14px;
-                    line-height: 18px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .projects-array {
-
-        .cabinet-array__content {
-     
-    
-            .cabinet-array__button {
-        font-size: 12px;
-        line-height: 16px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-            }
-        }
-        .projects-array__content {
-
-            .projects-array__edit-buttons {
-
-                .projects-array__button {
-                    font-size: 12px;
-                    line-height: 16px;
-                }
-            }
-
-            .projects-array__save-buttons {
-
-                .projects-array__button {
-                    font-size: 12px;
-                    line-height: 16px;
-                    padding: 13px 20px;
-                }
             }
         }
     }

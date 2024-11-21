@@ -34,7 +34,7 @@
 @use '../../blocks/components/title/title.scss';
 @use '../../blocks/libs/fieldset/fieldset.scss';
 @use '../../blocks/components/feedbacks/feedbacks.scss';
-@use '../../blocks/components/reception/reception.scss';
+@use '../../blocks/components/reception/main/reception.scss';
 @use '../../blocks/components/hearing/preview/hearing-preview.scss';
 @use '../../blocks/components/hearing/list/hearing-list.scss';
 @use '../../blocks/components/hearing/detail/hearing-detail.scss';
@@ -189,10 +189,6 @@ body {
             font-size: 24px;
             line-height: 28px;
             margin-bottom: 18px;
-        }
-
-        .interview-form {
-            margin-top: 32px;
         }
     }
 }

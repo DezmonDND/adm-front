@@ -8,14 +8,20 @@
     border-radius: 8px;
     padding: 14px 50px 14px 16px;
     background: url(../../icons/select-down_icon.svg) center no-repeat;
-    background-position: 98%;
-    background-size: 24px;
+    background-position: 97%;
+    background-size: 20px;
     outline: none;
     cursor: pointer;
 
 
     &:hover {
-        border-color: rgba(153, 160, 170, 1);
+        border-color: $input-color-hover;
+    }
+
+    @include respond-to(md) {
+        padding: 8px 42px 8px 16px;
+        border-radius: 6px;
+        background-size: 16px;
     }
 }
 
@@ -24,7 +30,7 @@
 }
 
 .ms__chose {
-    min-height: 40px;
+    min-height: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -33,16 +39,20 @@
     outline: none;
     flex: 1 1 100px;
     height: 100%;
-    background-color: #fff;
+    background-color: $content-color;
     margin: 0;
+
+    @include respond-to(md) {
+        min-height: 26px;
+    }
 }
 
 .ms__chose-item {
-    background: rgba(231, 237, 251, 1);
+    background: $fourth-text-inverse;
     border-radius: 100px;
-    padding: 12px 20px;
+    padding: 5px 20px;
     margin: 0;
-    @include text-3;
+    @include caption-2;
 }
 
 .ms__dropdown {

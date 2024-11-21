@@ -1,7 +1,9 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
 .main-people-care {
     padding: 0 0 48px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         padding: 0 0 20px;
     }
 
@@ -12,12 +14,12 @@
             grid-template-columns: repeat(3, calc((100% - 48px)/3));
             gap: 24px;
 
-            @media (max-width: 1000px) {
+            @include respond-to(md) {
                 gap: 8px;
                 grid-template-columns: repeat(3, calc((100% - 16px)/3));
             }
 
-            @media (max-width: 600px) {
+            @include respond-to(sm) {
                 grid-template-columns: repeat(3, 250px);
                 overflow-y: scroll;
                 scrollbar-width: none;
@@ -27,7 +29,7 @@
         .people-care__slider {
             display: none;
 
-            @media (max-width: 1000px) {
+            @include respond-to(md) {
                 display: flex;
                 justify-content: center;
                 padding-top: 24px;

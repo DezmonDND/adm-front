@@ -7,7 +7,9 @@ block content
                 { sort: 'crumb', href: '/', text: 'Главная' },
                 { sort: 'crumb', href: '/about', text: 'Опросы'},
             ])
-        h2.main__title Опросы  
+        +title({
+            title: 'Опросы'
+        }) 
         +tabs( 
             [
                 { isActive: true, title: 'Национальные проекты', href: '/' , value: 'Национальные проекты'},

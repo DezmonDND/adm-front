@@ -6,10 +6,6 @@
     height: 200px;
     position: relative;
 
-    @include respond-to(md) {
-        margin: 14px 0 7px;
-    }
-
     .textarea {
         box-sizing: border-box;
         width: 100%;
@@ -19,7 +15,6 @@
         border: 1px solid $input-color-default;
         outline: none;
         resize: none;
-        cursor: pointer;
         @include caption-2;
 
         &:hover {

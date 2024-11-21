@@ -5,7 +5,6 @@
     flex-direction: column;
     gap: 16px;
 
-
     .doc-line {
         padding: 20px;
         background: $grey-adm;
@@ -24,7 +23,6 @@
 
         .name {
             @include text-2;
-
         }
     }
 }

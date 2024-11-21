@@ -1,7 +1,9 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
 .main-help-city {
     margin: 0 0 48px;
 
-    @media screen and (max-width: 1000px) {
+    @include respond-to(md) {
         margin: 0 0 20px;
     }
 
@@ -9,23 +11,22 @@
         display: flex;
         gap: 24px;
 
-        @media screen and (max-width: 1000px) {
+        @include respond-to(md) {
             gap: 8px;
         }
 
-        @media (max-width: 600px) {
+        @include respond-to(sm) {
             display: grid;
             grid-template-columns: repeat(2, 336px);
             overflow-y: scroll;
             scrollbar-width: none;
-
         }
     }
 
     .help-city__navigation {
         display: none;
 
-        @media screen and (max-width: 1000px) {
+        @include respond-to(md) {
             display: flex;
             justify-content: center;
             margin-top: 20px;
@@ -34,8 +35,7 @@
 }
 
 .help-city__tabs {
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         display: none;
-
     }
 }

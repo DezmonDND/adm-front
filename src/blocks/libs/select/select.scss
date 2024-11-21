@@ -17,6 +17,7 @@
     @include caption-2;
 
     &:hover {
+        border-color: $input-color-hover;
         cursor: pointer;
     }
 
@@ -51,7 +52,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 14px 50px 14px 16px;
+        padding: 13px 50px 13px 16px;
         white-space: normal;
 
         &:hover {

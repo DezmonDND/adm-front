@@ -63,7 +63,11 @@
     .fieldset__answers_checkboxes {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
+
+        @include respond-to(md) {
+            gap: 16px;
+        }
     }
 }
 

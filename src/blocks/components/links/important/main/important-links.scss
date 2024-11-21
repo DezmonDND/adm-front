@@ -16,7 +16,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
 .important-links {
     margin-bottom: 20px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         margin-bottom: 0;
     }
 
@@ -35,13 +35,13 @@ body.tmp-duma .important-links .main-title .main-title__container {
         justify-content: center;
         margin-top: 4px;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             gap: 8px;
             margin-top: 3px;
             padding-bottom: 0;
         }
 
-        @media (max-width: 600px) {
+        @include respond-to(sm) {
             overflow-x: scroll;
             scrollbar-width: none;
             grid-template-columns: repeat(2, 250px);
@@ -65,7 +65,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
                 color: $primary-color-active;
             }
 
-            @media (max-width: 1000px) {
+            @include respond-to(md) {
                 border-radius: 8px;
                 padding: 14px 16px;
 
@@ -74,7 +74,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
                 }
             }
 
-            @media (max-width: 600px) {
+            @include respond-to(sm) {
                 border-radius: 8px;
                 padding: 16px 20px;
 
@@ -89,7 +89,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
                 object-fit: cover;
                 object-position: center;
 
-                @media (max-width: 1000px) {
+                @include respond-to(md) {
                     width: 24px;
                     height: 24px;
                 }

@@ -29,7 +29,7 @@ body.tmp-duma .navigation .navigation__link {
     gap: 24px;
     @include text-3;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         gap: 14px;
     }
 

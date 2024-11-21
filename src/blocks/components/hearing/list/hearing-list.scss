@@ -17,7 +17,7 @@ body.tmp-duma .hearing-item img{
 .hearing-list {
     padding: 40px 0 0 0;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         padding: 16px 0 0 0;
     }
 
@@ -25,7 +25,7 @@ body.tmp-duma .hearing-item img{
         margin-bottom: 32px;
         @include heading-h3;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             margin-bottom: 16px;
         }
     }
@@ -36,7 +36,7 @@ body.tmp-duma .hearing-item img{
     flex-wrap: wrap;
     gap: 24px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         gap: 12px;
     }
 }
@@ -52,7 +52,7 @@ body.tmp-duma .hearing-item img{
     color: $main-text;
     @include title-4;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         flex: 0 0 100%;
     }
 
@@ -66,7 +66,7 @@ body.tmp-duma .hearing-item img{
             @include lead-4;
         }
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             height: 104px
         }
     }
@@ -75,7 +75,7 @@ body.tmp-duma .hearing-item img{
         flex: 1;
         padding: 20px;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             padding: 16px;
         }
     }
@@ -85,14 +85,13 @@ body.tmp-duma .hearing-item img{
         width: 100%;
         object-fit: cover;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             height: 188px;
         }
     }
 
     &-labels {
         display: flex;
-
 
         &-item {
             display: flex;

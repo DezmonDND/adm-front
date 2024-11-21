@@ -11,7 +11,7 @@ body.tmp-duma .usefull-links {
 .usefull-links {
     margin-top: 48px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         margin-top: 20px;
     }
 
@@ -22,14 +22,14 @@ body.tmp-duma .usefull-links {
         justify-content: center;
         margin-top: 6px;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             gap: 8px;
             grid-template-columns: repeat(3, calc((100% - 16px)/3));
             margin-top: 0;
             padding: 0 0 4px;
         }
 
-        @media (max-width: 600px) {
+        @include respond-to(sm) {
             display: flex;
             flex-direction: column;
         }
@@ -53,14 +53,14 @@ body.tmp-duma .usefull-links {
                 background-color: $services-active;
             }
 
-            @media (max-width: 1000px) {
+            @include respond-to(md) {
                 box-sizing: border-box;
                 min-height: 64px;
                 gap: 12px;
                 padding: 16px;
             }
 
-            @media (max-width: 600px) {
+            @include respond-to(sm) {
                 min-height: unset;
                 padding: 12px 20px;
                 align-items: center;

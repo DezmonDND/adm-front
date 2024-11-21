@@ -1,0 +1,108 @@
+include ../../libs/fieldset/_fieldset.pug 
+include ../../libs/checkbox/_checkbox.pug
+include ../../libs/textarea/_textarea.pug 
+include ../../libs/inputs/_inputs.pug 
+include ../../libs/buttons/_buttons.pug 
+include ../../libs/select/_select.pug 
+include ../../libs/add-file-button/add-file-button
+include ../title/_title.pug 
+
+mixin reception()
+    .reception
+        +title({
+            title: 'Виртуальная приемная',
+            description: 'Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных.'
+        })
+        form.reception__form
+            .reception__content 
+                h3.reception__main_title Основные данные
+                +fieldset(
+                    {
+                        type: 'select', 
+                        title: 'Кому направляете электронную анкету', 
+                        cls_title: 'reception__sender', 
+                        options: [
+                            { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
+                            { text: 'Филатов', value: 'Филатов' }, 
+                            { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
+                        iconPosition: 'right'})
+                +fieldset(
+                    {
+                        cls_title: 'reception__job',
+                        type: '',
+                        title: 'Наименование вашей организации (юридического лица)',
+                        span: '',
+                        error: false,
+                        inputs: [
+                            {
+                                placeholder: 'Наименование организации',
+                                name: 'companyName', 
+                                sort: 'virtual-reception_input',
+                            },
+                            ]    
+                    })
+                +fieldset(
+                    {
+                        cls: 'user-contacts',
+                        cls_title: 'reception__user',
+                        type: '',
+                        title: 'Ваши данные',
+                        span: 'Вспомогательный текст',
+                        error: false,
+                        inputs: [
+                            {
+                                placeholder: 'Фамилия',
+                                name: 'firstName', 
+                                sort: 'virtual-reception_input',
+                            },
+                            {
+                                placeholder: 'Имя',
+                                name: 'secondName',
+                                sort: 'virtual-reception_input',
+                            },
+                            {
+                                placeholder: 'Отчество',
+                                name: 'thirdName',
+                                sort: 'virtual-reception_input',
+                            }
+                            ]    
+                    })
+                +button({ type: 'button', class: 'button_white reception_add-author-btn', event: 'addFormField(event)', icon: 'people', iconPosition: 'left', text: `Добавить соавтора`, })    
+                +fieldset(
+                    {
+                        cls_title: 'reception__email',
+                        type: '',
+                        title: 'Данные для контакта',
+                        span: 'Вспомогательный текст',
+                        error: false,
+                        inputs: [
+                            {
+                                placeholder: 'your_email@mail.ru',
+                                name: 'email', 
+                                sort: 'virtual-reception_input',
+                            },
+                            {
+                                placeholder: '892343567',
+                                name: 'phone',
+                                sort: 'virtual-reception_input',
+                            },
+                            ]    
+                    })
+                +fieldset(
+                    {
+                        cls_title: 'reception__feedback',
+                        type: 'textarea',
+                        title: 'Обращение',
+                        span: '',
+                        error: false,
+                        options: {
+                            placeholder: 'Введите ваш ответ',
+                            value: '900',
+                            cls: 'reception',
+                            name: 'feedback',
+                                }
+                    })
+            .files-list
+            .reception__buttons
+                +add-file-button()
+                +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })

@@ -1,0 +1,55 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.reception {
+    .reception__form {
+        max-width: 866px;
+        margin-top: 24px;
+
+        @include respond-to(md) {
+            margin-top: 0;
+        }
+
+        @include respond-to(sm) {
+            margin-top: 12px;
+        }
+
+        .files-list {
+            margin-top: 28px;
+        }
+
+        .reception__content {
+            .reception__main_title {
+                padding: 0;
+                @include heading-h3;
+            }
+
+            .reception_add-author-btn {
+                margin: 32px 0 40px;
+            }
+
+            .reception__new-user_title {
+                margin-top: 6px;
+                padding: 0;
+                @include heading-h3;
+            }
+
+            .reception__email_title {
+                padding: 0;
+                @include heading-h3;
+            }
+
+            .reception__feedback_title {
+                padding: 40px 0 24px;
+                @include heading-h3;
+            }
+        }
+
+        .reception__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 12px;
+            margin-top: 24px;
+        }
+    }
+}
