@@ -3944,6 +3944,8 @@ body.tmp-duma .main-events .main-events__container .main-title {
 .event-card .event-card__container .event-card__info .event-card__buttons {
   display: flex;
   gap: 8px;
+}
+.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button {
   position: relative;
 }
 
@@ -13402,19 +13404,21 @@ td:hover {
   }
 }
 
-.button-popup {
+.button_share:hover ~ .button-popup {
   display: flex;
+}
+
+.button-popup {
+  display: none;
   max-width: 367px;
   background-color: var(--content-color);
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
   position: absolute;
   top: 65px;
-  left: 15%;
+  left: -60%;
 }
-@media (max-width: 768px) {
-  .button-popup {
-    left: 0;
-  }
+.button-popup:hover {
+  display: flex;
 }
 .button-popup .button-popup__container {
   display: flex;

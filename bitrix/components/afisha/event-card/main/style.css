@@ -85,5 +85,7 @@
 .event-card .event-card__container .event-card__info .event-card__buttons {
   display: flex;
   gap: 8px;
+}
+.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button {
   position: relative;
 }

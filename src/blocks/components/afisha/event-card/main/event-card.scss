@@ -61,7 +61,10 @@
             .event-card__buttons {
                 display: flex;
                 gap: 8px;
-                position: relative;
+
+                .event-card__button {
+                    position: relative;
+                }
             }
         }
     }

@@ -23,8 +23,10 @@ mixin event-card(data)
                                         span.event-card__last-date #{data.last_date}
                             .event-card__buttons 
                                 +button({ size: 'm', type: 'link', class: 'button_blue', href: '/about', icon: 'print-outline', text: 'Версия для печати', iconPosition: 'left' })
-                                +button({ size: 'm', type: 'link', class: 'button_white button_share', href: '/about', icon: 'link-outline', text: 'Поделиться', iconPosition: 'left' })
+                                .event-card__button
+                                    +button({ size: 'm', type: 'link', class: 'button_white button_share', href: '/about', icon: 'link-outline', text: 'Поделиться', iconPosition: 'left' })
+                                    +button-popup()
                                 +button({ size: 'm', type: 'link', class: 'button_white', href: '/about', icon: 'download-outline' }) 
-                                +button-popup() 
+
 
 
