@@ -1,3 +1,14 @@
+// Скрывать стрелки, если слайдов мало
+
+function updateArrowsVisibility(slick, nextArrowSelector, prevArrowSelector) {
+    const slideCount = slick.slideCount;
+    const visibleSlides = slick.options.slidesToShow;
+    const shouldHide = slideCount <= visibleSlides;
+
+    $(nextArrowSelector).toggle(!shouldHide);
+    $(prevArrowSelector).toggle(!shouldHide);
+}
+
 // Главная новость
 
 $('.news-card-with-image__list').slick({
@@ -142,8 +153,46 @@ $('.slider__important-links-prev').on('click', function () {
 
 // Помогите городу стать лучше
 
-$('.help-city__content').slick({
-    infinite: true,
+// $('.help-city__content').slick({
+//     infinite: false,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     responsive: [
+//         {
+//             breakpoint: 1024,
+//             settings: {
+//                 slidesToShow: 3,
+//             },
+//         },
+//         {
+//             breakpoint: 768,
+//             settings: {
+//                 slidesToShow: 2,
+//             },
+//         },
+//         {
+//             breakpoint: 500,
+//             settings: {
+//                 slidesToShow: 1,
+//             },
+//         },
+//     ],
+// });
+
+// $('.slider__help-city-next').on('click', function () {
+//     $('.help-city__content').slick('slickNext');
+// });
+// $('.slider__help-city-prev').on('click', function () {
+//     $('.help-city__content').slick('slickPrev');
+// });
+
+$('.help-city__content').on('init', function(event, slick) {
+    updateArrowsVisibility(slick, '.slider__help-city-next' , '.slider__help-city-prev' );
+}).on('breakpoint', function(event, slick) {
+    updateArrowsVisibility(slick);
+}).slick({
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
@@ -169,10 +218,10 @@ $('.help-city__content').slick({
     ],
 });
 
-$('.slider__help-city-next').on('click', function () {
+$('.slider__help-city-next').on('click', function() {
     $('.help-city__content').slick('slickNext');
 });
-$('.slider__help-city-prev').on('click', function () {
+$('.slider__help-city-prev').on('click', function() {
     $('.help-city__content').slick('slickPrev');
 });
 
