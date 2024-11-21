@@ -22,7 +22,7 @@
         max-width: 237px;
     }
 
-    @include respond-to(sx) {
+    @include respond-to(xs) {
         max-width: none;
     }
 }

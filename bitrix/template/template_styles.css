@@ -11446,11 +11446,6 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
     max-width: 237px;
   }
 }
-@media (max-width: 550px) {
-  .dm-comitet-elem {
-    max-width: none;
-  }
-}
 
 .dm-comitet-elem:hover {
   background-color: var(--services-hover);
