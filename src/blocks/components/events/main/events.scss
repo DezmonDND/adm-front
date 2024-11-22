@@ -8,27 +8,34 @@ body.tmp-duma .main-events .main-events__container .main-title {
     .filters {
         margin-top: 48px;
 
-        @include respond-to(md) {
+        @include respond-to(sm) {
             margin-top: 24px;
+            display: none;
         }
     }
 
-    .events__filters {
-        display: none;
-
-        @include respond-to(sm) {
-            display: flex;
-            margin-bottom: 33px;
-        }
-
-        .events__filter-button {
-            width: 100%;
-            justify-content: center;
+    .dm-calendar__btn {
+        @include respond-to(md) {
+            margin-bottom: 0;
         }
     }
 
     .events__container {
+        position: relative;
         @include main-blocks-paddings;
+
+        .events__calendar {
+            display: none;
+
+            &_active {
+                display: flex;
+                position: absolute;
+                top: 120px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+        }
 
         .events__selects {
             display: flex;

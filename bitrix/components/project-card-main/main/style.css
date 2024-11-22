@@ -88,6 +88,7 @@
   }
 }
 .main-project-card .main-project-card__content .main-project-card__description .main-project-card__text {
+  margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;

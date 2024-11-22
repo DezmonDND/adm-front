@@ -1,4 +1,11 @@
-mixin search-by-site()
+include ../chronicle/calendar/calendar
+include ../search/_search
+include ../filters-popup/filters-popup
+include ../../libs/inputs/_inputs.pug 
+include ../../libs/buttons/_buttons.pug 
+include ../../libs/select/_select.pug 
+
+mixin search-by-site(data={})
     .search-by-site
         +input({
             placeholder: 'Поиск по наименованию или номеру',
@@ -19,11 +26,11 @@ mixin search-by-site()
             +button({ type: 'button',  event: 'toggleCalendar();', class: 'search-by-site__button', icon: 'calendar-number-outline', iconPostion: 'left', text: "Период публикации"})    
             +button({ type: 'button',  size: 'm', event: 'console.log(1);', class: 'button_blue', text: "Искать"})
             .search-by-site__calendar 
-                +chronicle-calendar('calendar')
+                +chronicle-calendar(data.calendar_1_id)
         .search-by-site__filters
             +search(
                 {name: 'laws', size: 'm', placeholder: 'Тема или тип документа', type: 'search'},
                     false, 'm', 'getValues()', 'search-by-site',)
             .dm-filter__btn
                 +button({ type: 'button', event: 'toggleFilters()', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})             
-        +filters-popup()
+        +filters-popup(data.calendar_2_id)

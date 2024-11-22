@@ -4,6 +4,7 @@ include ../../components/pagination/_navigation.pug
 include ../../components/news/news-main-card/news-main-card
 include ../../components/filters/filters
 include ../../components/slider/_slider
+include ../../components/filters-popup/filters-popup
 include ../../libs/buttons/_buttons.pug
 include ../../libs/select/_select.pug
 include ../../libs/checkbox/_checkbox.pug
@@ -19,8 +20,13 @@ mixin events()
                             title: 'Анонсы и события',
                             link_text: 'Все события'
                         })
-                        .events__filters
-                            +button({ type: 'button', size: 'm', class: 'button_white events__filter-button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
+                        .dm-filter__btn
+                            +button({ type: 'button', event: 'toggleFilters()', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})             
+                        +filters-popup('events-calendar-popup')
+                        .dm-calendar__btn
+                            +button({ type: 'button',  event: 'toggleAdmCalendar();', class: 'button_white dm-calendar__button', icon: 'calendar-number-outline', iconPostion: 'left', text: "Календарь"})
+                        .events__calendar 
+                            +chronicle-calendar('events-calendar')
                         +calendar([
                             {
                             date: '18',

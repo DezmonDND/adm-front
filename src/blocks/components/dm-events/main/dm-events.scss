@@ -2,4 +2,21 @@
 
 .dm-events {
     @include main-blocks-paddings;
+
+    .dm-events__container {
+        position: relative;
+
+        .dm-events__calendar {
+            display: none;
+
+            &_active {
+                display: flex;
+                position: absolute;
+                top: 120px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+        }
+    }
 }

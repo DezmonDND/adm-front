@@ -11,3 +11,17 @@
     padding: 0 0 20px;
   }
 }
+.dm-events .dm-events__container {
+  position: relative;
+}
+.dm-events .dm-events__container .dm-events__calendar {
+  display: none;
+}
+.dm-events .dm-events__container .dm-events__calendar_active {
+  display: flex;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}

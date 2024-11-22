@@ -9,10 +9,38 @@
               <h1 class="main-title__title">Анонсы и события</h1><a class="main-title__link" href="/">Все события</a>
             </div>
           </div>
-          <div class="events__filters">
-            <button class="button button_white events__filter-button button_size_m  button_icon-left button_without-event"><span class="button_span">Фильтры</span>
+          <div class="dm-filter__btn">
+            <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()"><span class="button_span">Фильтры</span>
               <ion-icon class="icon" name="funnel-outline"></ion-icon>
             </button>
+          </div>
+          <div class="filters-popup">
+            <div class="filters-popup__container"> 
+              <div class="filters-popup__top-content"> <span class="filters-popup__title">Фильтры</span>
+                <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();">
+                  <ion-icon class="icon" name="close-outline"></ion-icon>
+                </button>
+              </div>
+              <div class="filters-popup__tags"><span class="filters-popup__title">Раздел</span>
+                <div class="tabs-tag"><a class="tab-button " value="Кино">Кино</a><a class="tab-button " value="Концерты">Концерты</a><a class="tab-button " value="Выставки">Выставки</a><a class="tab-button " value="Театр">Театр</a><a class="tab-button " value="Детям">Детям</a><a class="tab-button " value="Конференции">Конференции</a>
+                </div>
+              </div>
+              <div class="filters-popup__calendar"><span class="filters-popup__title">Выберите период публикации                  </span>
+                <div class="calendar-dm" id="events-calendar-popup"></div>
+              </div>
+              <div class="filters-popup__buttons">             
+                <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);"><span class="button_span">Искать</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="dm-calendar__btn">
+            <button class="button button_white dm-calendar__button    " onclick="toggleAdmCalendar();"><span class="button_span">Календарь</span>
+              <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="events__calendar"> 
+            <div class="calendar-dm" id="events-calendar"></div>
           </div>
           <div class="calendar">
             <div class="calendar__links">
@@ -61,9 +89,6 @@
                 <div class="calendar__icon"><span>2</span></div>
               </div>
             </div>
-            <button class="button button_white calendar__button   button_icon-left button_without-event"><span class="button_span">Календарь</span>
-              <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
-            </button>
           </div>
           <div class="filters">
             <div class="filters_container">

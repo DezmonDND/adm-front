@@ -21,16 +21,4 @@ const options = {
     },
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    const calendar = new VanillaCalendar('#calendar', options);
-    const calendarPopup = new VanillaCalendar('#calendar-popup', options);
 
-    calendar.init();
-    calendarPopup.init();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const calendarDuma = new VanillaCalendar('#calendar-duma', options);
-
-    calendarDuma.init();
-});

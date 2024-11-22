@@ -1,4 +1,7 @@
-mixin filters-popup()
+include ../tabs/tags/_tabs-tag
+include ../chronicle/calendar/calendar
+
+mixin filters-popup(calendar_id)
     .filters-popup
         .filters-popup__container 
             .filters-popup__top-content 
@@ -17,6 +20,6 @@ mixin filters-popup()
                     )
             .filters-popup__calendar
                 span.filters-popup__title Выберите период публикации                  
-                +chronicle-calendar('calendar-popup') 
+                +chronicle-calendar(calendar_id) 
             .filters-popup__buttons              
                 +button({ type: 'button',  size: 'm', event: 'console.log(1);', class: 'button_blue filters-popup__btn', text: "Искать"})    
