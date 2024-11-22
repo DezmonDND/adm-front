@@ -26,93 +26,15 @@
         border-radius: 6px;
         background-size: 16px;
     }
-}
 
-.select_m {
-    padding: 11px 20px;
-    background-size: 20px;
-}
-
-.select-icon-left {
-    background: url(../../icons/folder_icon.svg) center no-repeat;
-    background-position: 5%;
-    padding: 18px 20px 18px 50px;
-}
-
-.select_multiple_container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 4px;
-
-
-    .select_multiple {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 13px 50px 13px 16px;
-        white-space: normal;
-
-        &:hover {
-            border: 1px solid #858C9C;
-        }
-
-        .select_multiple_options {
-            display: flex;
-            gap: 4px;
-            overflow: hidden;
-            scrollbar-width: none;
-
-            .select_multiple_option {
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 16px;
-                border-radius: 100px;
-                background-color: #E7EDFB;
-                padding: 6px 10px 6px 20px;
-                display: flex;
-                gap: 8px;
-                align-items: center;
-
-                .select__delete-button {
-                    all: unset;
-                    width: 23px;
-                    height: 23px;
-                    cursor: pointer;
-                    padding: 0;
-                    background-image: url(../icons/close-btn_icon.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: 23px;
-                    border-radius: 50%;
-
-                    &:hover {
-                        background-image: url(../icons/close-hover_icon.svg);
-                    }
-                }
-            }
-        }
+    &_m {
+        padding: 11px 20px;
+        background-size: 20px;
     }
 
-    .select_multiple-menu {
-        display: none;
-        flex-direction: column;
-        gap: 5px;
-        list-style: none;
-        box-shadow: 0 4px 4px rgba($main-text, .08);
-        padding: 12px 0;
-
-        .select_multiple-list-item {
-            padding: 14px 20px;
-            font-size: 16px;
-            line-height: 24px;
-
-            &:hover {
-                background-color: #E3E4E7;
-                cursor: pointer;
-            }
-        }
+    &-icon-left {
+        background: url(../../icons/folder_icon.svg) center no-repeat;
+        background-position: 5%;
+        padding: 18px 20px 18px 50px;
     }
 }

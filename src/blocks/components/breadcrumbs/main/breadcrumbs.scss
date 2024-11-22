@@ -18,6 +18,11 @@
         gap: 8px;
         overflow: scroll;
         scrollbar-width: none;
+
+        .breadcrumb_link {
+            color: $tertiary-text;
+            text-wrap: nowrap;
+        }
     }
 
     .span {

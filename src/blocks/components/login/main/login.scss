@@ -99,7 +99,7 @@
 .login__content-main__confirm-email span {
     color: $primary-color;
     cursor: pointer;
-    @include tab-text1();
+    @include caption-4;
 }
 
 .login__content-main__confirm-delim {

@@ -23,10 +23,9 @@ body.tmp-duma .slider .slider__link {
     gap: 12px;
     font-size: 34px;
 
-    @media (max-width: 1000px) {
-        font-size: 23px;
+    @include respond-to(md) {
+        font-size: 24px;
         padding-bottom: 5px;
-
     }
 
     .slider__link {

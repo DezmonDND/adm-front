@@ -1,10 +1,10 @@
 @use '../../../assets/styles/vars.scss' as *;
 
 
-.ms {
+.multi-select {
     max-width: 866px;
     position: relative;
-    border: 1px solid #C6CBD9;
+    border: 1px solid $input-color-default;
     border-radius: 8px;
     padding: 14px 50px 14px 16px;
     background: url(../../icons/select-down_icon.svg) center no-repeat;
@@ -12,7 +12,6 @@
     background-size: 20px;
     outline: none;
     cursor: pointer;
-
 
     &:hover {
         border-color: $input-color-hover;
@@ -23,80 +22,79 @@
         border-radius: 6px;
         background-size: 16px;
     }
-}
 
-.ms__input {
-    display: none;
-}
-
-.ms__chose {
-    min-height: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    list-style: none;
-    appearance: none;
-    outline: none;
-    flex: 1 1 100px;
-    height: 100%;
-    background-color: $content-color;
-    margin: 0;
-
-    @include respond-to(md) {
-        min-height: 26px;
+    &__input {
+        display: none;
     }
-}
 
-.ms__chose-item {
-    background: $fourth-text-inverse;
-    border-radius: 100px;
-    padding: 5px 20px;
-    margin: 0;
-    @include caption-2;
-}
+    &__chose {
+        min-height: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        appearance: none;
+        outline: none;
+        flex: 1 1 100px;
+        height: 100%;
+        background-color: $content-color;
+        margin: 0;
 
-.ms__dropdown {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 104%;
-    left: 0;
-    z-index: 20;
-    width: 100%;
-    box-shadow: 0 4px 4px rgba(#000448, .08);
-    background-color: #fff;
-    padding: 12px 0;
-    overflow: hidden;
-    border-radius: 8px;
-    margin: 0;
-}
+        @include respond-to(md) {
+            min-height: 26px;
+        }
 
-.ms__dropdown_hidden {
-    display: none;
-}
+        &-item {
+            background: $event-color;
+            border-radius: 100px;
+            padding: 5px 20px;
+            margin: 0;
+            @include caption-2;
+        }
+    }
 
-.ms__dropdown-item {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 16px 20px;
-    font-size: 16px;
-    line-height: 24px;
-}
+    &__dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 104%;
+        left: 0;
+        z-index: 20;
+        width: 100%;
+        box-shadow: 0 4px 4px rgba(#000448, .08);
+        background-color: $content-color;
+        padding: 12px 0;
+        overflow: hidden;
+        border-radius: 8px;
+        margin: 0;
 
+        &_hidden {
+            display: none;
+        }
 
-.ms__dropdown-item_chose {
-    background-color: rgba(227, 228, 231, 1);
-}
+        &-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            margin: 0;
+            cursor: pointer;
+            @include text-2;
 
-.ms__dropdown-item_hidden {
-    display: none;
-}
+            &:hover {
+                background-color: $services-hover;
+            }
 
-.ms__dropdown-item_current {
-    background-color: rgba(227, 228, 231, 1);
-}
+            &_chose {
+                background-color: $services-active;
+            }
 
-.ms__dropdown-item:hover {
-    background-color: rgba(242, 243, 245, 1);
+            &_hidden {
+                display: none;
+            }
+
+            &_current {
+                background-color: $services-active;
+            }
+        }
+    }
 }

@@ -131,7 +131,7 @@ $breakpoint-xs: 550px;
     }
 
     @include respond-to(sm) {
-        padding: 0 27px;
+        padding: 0 24px;
     }
 }
 
@@ -384,14 +384,13 @@ $breakpoint-xs: 550px;
     text-transform: uppercase;
 }
 
-// Устарело все что ниже. Удалить
 // Start - Title
 @mixin title-1 {
     font-weight: $font-weight-semi-bold;
     font-size: 32px;
     line-height: 38px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         font-size: 16px;
         line-height: 20px;
     }
@@ -402,7 +401,7 @@ $breakpoint-xs: 550px;
     font-size: 28px;
     line-height: 36px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         font-size: 14px;
         line-height: 18px;
     }
@@ -413,7 +412,7 @@ $breakpoint-xs: 550px;
     font-size: 24px;
     line-height: 28px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         font-size: 12px;
         line-height: 16px;
     }
@@ -424,7 +423,7 @@ $breakpoint-xs: 550px;
     font-size: 20px;
     line-height: 24px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         font-size: 10px;
         line-height: 14px;
     }
@@ -435,7 +434,7 @@ $breakpoint-xs: 550px;
     font-size: 16px;
     line-height: 20px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         // Спросить, что тут должно быть
     }
 }
@@ -445,152 +444,7 @@ $breakpoint-xs: 550px;
     font-size: 14px;
     line-height: 16px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         // Спросить, что тут должно быть
     }
-}
-
-/*** Finish - Title ***/
-
-// Finish - Title
-
-@mixin desc-h1 {
-    @include heading-h1();
-}
-
-@mixin desc-h2 {
-    @include heading-h2();
-}
-
-@mixin desc-h3 {
-    @include heading-h3();
-}
-
-@mixin desc-h4 {
-    @include heading-h4();
-}
-
-@mixin desc-h5 {
-    @include heading-h5();
-}
-
-@mixin desc-h6 {
-    @include heading-h6();
-}
-
-@mixin mob-h3() {
-    font-size: 14px;
-    line-height: 16px;
-}
-
-@mixin desc-title {
-    font-size: 14px;
-    line-height: 20px;
-}
-
-@mixin desc-title5 {
-    @include title-5();
-}
-
-@mixin desc-text1 {
-    @include text-1();
-}
-
-@mixin desc-text2 {
-    @include text-2();
-}
-
-@mixin desc-text3 {
-    @include text-3();
-}
-
-@mixin desc-text4 {
-    @include text-3();
-}
-
-@mixin desc-calender {
-    font-size: 18px;
-    line-height: 24px;
-}
-
-@mixin desc-label1 {
-    font-size: 28px;
-    line-height: 36px;
-}
-
-@mixin desc-label2 {
-    font-size: 11px;
-    line-height: 14px;
-}
-
-@mixin desc-ser-label {
-    font-size: 13px;
-    line-height: 18px;
-}
-
-@mixin desc-tags-label {
-    font-size: 11px;
-    line-height: 14px;
-}
-
-@mixin desc-link {
-    font-size: 20px;
-    line-height: 32px;
-}
-
-// Планшет
-@mixin tab-h1 {
-    font-size: 20px;
-    line-height: 28px;
-}
-
-@mixin tab-h2 {
-    font-size: 16px;
-    line-height: 22px;
-}
-
-@mixin tab-h3 {
-    font-size: 14px;
-    line-height: 20px;
-}
-
-@mixin tab-h4 {
-    font-size: 12px;
-    line-height: 18px;
-}
-
-@mixin tab-title1 {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-@mixin tab-title2 {
-    font-size: 12px;
-    line-height: 18px;
-}
-
-@mixin tab-text1 {
-    font-size: 13px;
-    line-height: 18px;
-}
-
-@mixin tab-text2 {
-    font-size: 11px;
-    line-height: 16px;
-}
-
-@mixin tab-text3 {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-@mixin tab-link {
-    font-size: 12px;
-    line-height: 16px;
-}
-
-// Мобильный
-@mixin mob-h1 {
-    font-size: 24px;
-    line-height: 32px;
 }

@@ -1,101 +1,89 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-.main-services {
-    max-width: 1440px;
+.services {
     width: 100%;
     background-color: $cards-background;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         padding-bottom: 20px;
     }
 
-    .main-services__container {
+    .services__container {
         display: flex;
         flex-direction: column;
-        gap: 47px;
+        gap: 48px;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             margin-top: 2px;
-            gap: 19px;
+            gap: 20px;
         }
 
-        .main-services__search {
+        .services__search {
             display: grid;
             grid-template-columns: repeat(2, calc((100% - 24px)/2));
             gap: 24px;
 
-            @media (max-width: 1000px) {
+            @include respond-to(md) {
                 gap: 8px;
                 grid-template-columns: repeat(2, calc((100% - 8px)/2));
             }
 
-            @media (max-width: 600px) {
+            @include respond-to(sm) {
                 display: flex;
                 flex-direction: column;
-                gap: 25px;
+                gap: 24px;
             }
 
-            .main-services__search-content {
+            .services__search-content {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
 
-                @media (max-width: 600px) {
-                    gap: 11px;
-                }
-
-                .main-services__label {
+                .services__label {
                     padding: 0;
                     @include heading-h3;
                 }
 
-                .search-main-services {
+                .search-services {
                     width: 100%;
                     max-width: none;
-
-                    .search__button_l {
-                        @media (max-width: 1000px) {
-                            width: 48px;
-                            height: 48px;
-                        }
-                    }
                 }
             }
         }
 
-        .main-services__buttons {
+        .services__buttons {
             display: flex;
             flex-direction: column;
 
-            .main-services__buttons-title {
+            .services__buttons-title {
                 margin-bottom: 24px;
                 padding: 0;
                 @include heading-h3;
 
-                @media (max-width: 1000px) {
+                @include respond-to(md) {
                     margin-bottom: 16px;
                 }
 
-                @media (max-width: 600px) {
-                    margin-bottom: 19px;
+                @include respond-to(sm) {
+                    margin-bottom: 20px;
                 }
             }
 
-            .main-services__buttons-container {
+            .services__buttons-container {
                 display: flex;
                 gap: 24px;
 
-                @media (max-width: 1000px) {
+                @include respond-to(md) {
                     gap: 8px;
                 }
 
-                @media (max-width: 600px) {
+                @include respond-to(sm) {
                     flex-direction: column;
                     align-items: center;
                 }
 
-                .main-services__button {
+                .services__button {
                     justify-content: center;
                     width: calc(100% - 40px);
                 }

@@ -12,12 +12,12 @@
         flex-direction: row-reverse;
         align-items: center;
         gap: 8px;
-        cursor: pointer;
         padding: $padding-button-m;
         background-repeat: no-repeat;
         border: 1px solid $primary-color;
         color: $primary-color;
         border-radius: 8px;
+        cursor: pointer;
 
         @include respond-to(sm) {
             padding: $padding-button-s;
@@ -40,11 +40,5 @@
     .add-file-button__desc {
         color: $tertiary-text;
         @include text-2;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .custom-file-upload label {
-        padding-left: 41px;
     }
 }

@@ -1,11 +1,15 @@
 mixin textarea(options, error)
     .textarea__container
-        textarea(class=`textarea ${options.size ? `textarea-${options.size}` : ''} ${error ? 'textarea-error' : ''}` 
+        - const hasSize = options.size ? `textarea-${options.size}` : ''
+        - const hasError = error ? 'textarea-error' : ''
+        - const hasCounterClass = options.cls ? `${options.cls}_counter` : ''
+
+        textarea(class=`textarea ${hasSize} ${hasError}` 
             placeholder=options.placeholder
             name=options.name
             maxlength=options.value 
             oninput='getLength(this)')
-        div(class=`counter ${options.cls ? `${options.cls}_counter` : ''}`)
+        div(class=`counter ${hasCounterClass}`)
             span.current 0
             span /
             span.max #{options.value} 

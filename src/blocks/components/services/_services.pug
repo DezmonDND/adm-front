@@ -6,26 +6,26 @@ mixin services()
     .full-width-container
         .full-width-background
             .full-width-content                           
-                .main-services 
+                .services 
                     +main-title({
                         href: '/',
                         title: 'Полезные сервисы для вас',
                     })
-                    .main-services__container
-                        .main-services__search
-                            .main-services__search-content
-                                h3(class='main-services__label') Поиск законопроектов
+                    .services__container
+                        .services__search
+                            .services__search-content
+                                h3(class='services__label') Поиск законопроектов
                                 +search(
                                     {name: 'laws', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
-                                        false, 'l', 'getValues()', 'main-services',) 
-                            .main-services__search-content        
-                                h3(class='main-services__label') Поиск правовых актов        
+                                        false, 'l', 'getValues()', 'services',) 
+                            .services__search-content        
+                                h3(class='services__label') Поиск правовых актов        
                                 +search(
                                     {name: 'acts', size: 'l', placeholder: 'Поиск по наименованию или номеру', type: 'search'},
-                                        false, 'l', 'getValues()', 'main-services',)         
-                        .main-services__buttons
-                            h3.main-services__buttons-title Связаться
-                            .main-services__buttons-container
-                                +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: 'console.log(1);', text: 'Электронное обращение' })
-                                +button({ type: 'button', size: 'l', class: 'button_blue main-services__button', event: 'console.log(1);', text: 'Личный прием' })   
+                                        false, 'l', 'getValues()', 'services',)         
+                        .services__buttons
+                            h3.services__buttons-title Связаться
+                            .services__buttons-container
+                                +button({ type: 'button', size: 'l', class: 'button_blue services__button', event: 'console.log(1);', text: 'Электронное обращение' })
+                                +button({ type: 'button', size: 'l', class: 'button_blue services__button', event: 'console.log(1);', text: 'Личный прием' })   
             

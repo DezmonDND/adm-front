@@ -55,7 +55,7 @@
                 color: $tertiary-text;
                 padding: 9px;
                 cursor: default;
-                @include desc-label1;
+                @include lead-1;
 
                 &_active {
                     border-radius: 50%;

@@ -1,7 +1,9 @@
 mixin checkbox(options)
-    if options.label 
-        input(type=`${options.sort}` id=`${options.id}` name=`${options.name}` class=`сheckbox сheckbox-label ${options.sort === 'radio' ? 'radio' : ''}` checked=options.status)
+    - const hasClass = options.sort === 'radio' ? 'radio' : ''
+    - const hasLabel = options.label ? 'сheckbox-label' : ''
+
+    input(type=`${options.sort}` id=`${options.id}` name=`${options.name}` class=`сheckbox ${hasLabel} ${hasClass}` checked=options.status)
+    if options.label    
         label(for=`${options.id}` class='сheckbox__label') #{options.label}
     else   
-        input(type=`${options.sort}` id=`${options.id}` name=`${options.name}` class=`сheckbox ${options.sort === 'radio' ? 'radio' : ''}` checked=options.status)
         label(for=`${options.id}`) 

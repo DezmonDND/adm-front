@@ -34,10 +34,6 @@
         }
     }
 
-    .textarea-m {
-        max-width: 520px;
-    }
-
     .counter {
         display: flex;
         gap: 2px;
@@ -45,12 +41,6 @@
         position: absolute;
         bottom: 8px;
         right: 8px;
-        font-size: 13px;
-        line-height: 18px;
-
-        @include respond-to(md) {
-            font-size: 10px;
-            line-height: 16px;
-        }
+        @include lead-6;
     }
 }
