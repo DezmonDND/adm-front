@@ -3,15 +3,18 @@
 .people-care-card {
     max-width: 421px;
     width: 100%;
-    min-height: 320px;
+    max-height: 320px;
     border-radius: 12px;
     background-repeat: no-repeat;
     align-content: end;
     position: relative;
     overflow: hidden;
+    margin-right: 24px;
 
     @include respond-to(md) {
-        min-height: 214px;
+        margin-right: 8px;
+        max-width: 237px;
+        max-height: 214px;
     }
 
     &_bg-health {
@@ -86,11 +89,22 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
+            z-index: 1;
 
             .people-care-card__title {
+                padding: 0;
                 color: $content-color;
                 z-index: 1;
                 @include heading-h2;
+
+                @media (max-width: 1199px) {
+                    font-size: calc(24px * var(--scale));
+                    line-height: calc(28px * var(--lh));
+                }
+
+                @include respond-to(md) {
+                    @include heading-h2;
+                }
             }
 
             .people-care-card__desc {

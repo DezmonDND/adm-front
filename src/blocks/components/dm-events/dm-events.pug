@@ -1,0 +1,19 @@
+include ../title/main/_main-title
+include ../filters/filters
+include ../chronicle/chronicle
+include ../../libs/buttons/_buttons
+
+mixin dm-events()
+    .dm-events
+        .dm-events__container 
+            +main-title({
+                href: '/',
+                title: 'Хроника и анонсы событий',
+                link_text: 'Все события'
+            })
+            .dm-filter__btn
+                +button({ type: 'button', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
+            .dm-calendar__btn
+                +button({ type: 'button', class: 'button_white dm-calendar__button', iconPosition: 'left', icon: 'calendar-number-outline', text: "Календарь"})                    
+            +filters()
+            +chronicle()

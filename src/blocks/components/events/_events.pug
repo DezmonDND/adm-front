@@ -12,8 +12,8 @@ mixin events()
     .full-width-container
         .full-width-background
             .full-width-content                                
-                .main-events
-                    .main-events__container 
+                .events
+                    .events__container 
                         +main-title({
                             href: '/',
                             title: 'Анонсы и события',
@@ -125,7 +125,7 @@ mixin events()
                             },
                         ])         
                         +filters()                                                            
-                        .main-events__news
+                        .events__news
                             +main-news-card(
                             {
                                 image: 'image_1.jpg',
@@ -246,7 +246,7 @@ mixin events()
                                     ]
                             },
                             )
-                        .main-events__navigation
+                        .events__navigation
                             +navigation({
                                 first_page: '1',
                                 end_page: '7',

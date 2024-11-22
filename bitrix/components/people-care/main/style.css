@@ -1,0 +1,36 @@
+.people-care {
+  padding: 0 0 48px;
+}
+@media (max-width: 992px) {
+  .people-care {
+    padding: 0 0 20px;
+  }
+}
+@media (max-width: 992px) {
+  .people-care .main-title .main-title__container .slider {
+    display: none;
+  }
+}
+.people-care .people-care__container .slick-slide {
+  height: 320px;
+}
+@media (max-width: 992px) {
+  .people-care .people-care__container .slick-slide {
+    height: 214px;
+  }
+}
+@media (max-width: 768px) {
+  .people-care .people-care__container .slick-slide {
+    height: 250px;
+  }
+}
+.people-care .people-care__container .people-care__slider {
+  display: none;
+}
+@media (max-width: 992px) {
+  .people-care .people-care__container .people-care__slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

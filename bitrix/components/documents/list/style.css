@@ -1,0 +1,38 @@
+.doc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.doc-list .doc-line {
+  padding: 20px;
+  background: var(--grey-adm);
+  border-radius: 12px;
+  color: var(--second-text);
+  text-decoration: none;
+}
+.doc-list .doc-line:hover {
+  background: var(--services-hover);
+}
+.doc-list .doc-line .ident {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .doc-list .doc-line .ident {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
+}
+.doc-list .doc-line .name {
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .doc-list .doc-line .name {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}

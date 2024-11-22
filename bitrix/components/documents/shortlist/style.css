@@ -1,0 +1,52 @@
+.short-filelist .file-line {
+  text-decoration: none;
+  padding: 19px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: var(--grey-adm);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.short-filelist .file-line .file-line-icon {
+  width: 20px;
+}
+@media (max-width: 992px) {
+  .short-filelist .file-line .file-line-icon {
+    font-size: 16px;
+  }
+}
+.short-filelist .file-line .file-line-span {
+  width: calc(100% - 24px);
+}
+.short-filelist .file-line {
+  color: var(--second-text);
+  font-weight: 400;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .short-filelist .file-line {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
+}
+.short-filelist .file-line:last-child {
+  margin-bottom: 0;
+}
+.short-filelist .file-line:hover {
+  background: var(--services-hover);
+}
+@media (max-width: 992px) {
+  .short-filelist .file-line {
+    padding: 13px 16px;
+  }
+}
+
+body.tmp-duma .short-filelist ion-icon {
+  color: var(--secondary-color);
+}
+
+.toggle-content-footer .file-line {
+  margin-bottom: 0;
+}

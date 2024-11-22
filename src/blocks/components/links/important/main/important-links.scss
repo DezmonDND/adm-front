@@ -20,11 +20,20 @@ body.tmp-duma .important-links .main-title .main-title__container {
         margin-bottom: 0;
     }
 
-    .usefull-links__navigation {
+    .important-links__navigation {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 20px 0 20px;
+
+        @include respond-to(md) {
+            display: none;
+        }
+    }
+
+    .important-links__slider {
+        margin-bottom: 20px;
+        @include main-slider;
     }
 
     .important-links__container {
@@ -36,15 +45,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
         margin-top: 4px;
 
         @include respond-to(md) {
-            gap: 8px;
-            margin-top: 3px;
-            padding-bottom: 0;
-        }
-
-        @include respond-to(sm) {
-            overflow-x: scroll;
-            scrollbar-width: none;
-            grid-template-columns: repeat(2, 250px);
+            display: block;
         }
 
         .important-link {
@@ -68,19 +69,12 @@ body.tmp-duma .important-links .main-title .main-title__container {
             @include respond-to(md) {
                 border-radius: 8px;
                 padding: 14px 16px;
-
-                &:nth-child(n+4) {
-                    display: none;
-                }
+                margin-right: 8px;
             }
 
             @include respond-to(sm) {
                 border-radius: 8px;
                 padding: 16px 20px;
-
-                &:nth-child(n+3) {
-                    display: none;
-                }
             }
 
             .important-link__icon {
@@ -96,6 +90,10 @@ body.tmp-duma .important-links .main-title .main-title__container {
             }
 
             .important-link__title {
+                display: flex !important;
+                align-items: center;
+                min-height: 32px;
+                @include visible-lines(2);
                 @include lead-4;
             }
         }

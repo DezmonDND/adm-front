@@ -1,0 +1,40 @@
+.dm-archive .dm-archive__container .dm-archive__list .hearing-item {
+  background-color: var(--content-color);
+  margin-right: 24px;
+  max-width: 644px;
+  max-height: 474px;
+}
+@media (max-width: 992px) {
+  .dm-archive .dm-archive__container .dm-archive__list .hearing-item {
+    max-width: 360px;
+    max-height: 260px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .dm-archive .dm-archive__container .dm-archive__list .hearing-item {
+    max-width: 336px;
+    max-height: 276px;
+  }
+}
+.dm-archive .dm-archive__container .dm-archive__list .hearing-item .hearing-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.dm-archive .dm-archive__container .dm-archive__list .hearing-item .hearing-item-content .hearing-item-title {
+  height: unset;
+}
+.dm-archive .dm-archive__container .dm-archive__link .dm-archive__image {
+  min-width: 644px;
+  width: 100%;
+  max-height: 362px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+.dm-archive .dm-archive__slider {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px;
+}

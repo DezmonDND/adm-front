@@ -1,0 +1,536 @@
+<!DOCTYPE html >
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="./css/template-styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/other.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Duma</title>
+  </head>
+  <body class="tmp-duma">
+    <header class="header-duma">
+      <div class="mobile-menu">
+        <div class="menu menu_duma-bg">
+          <div class="menu__container">
+            <div class="menu__content"> 
+              <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                  <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+                  <ion-icon class="icon" name="close-outline"></ion-icon>
+                </button>
+              </div>
+              <form class="search search-header-mobile">
+                <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+                  <ion-icon class="icon" name="search-outline"></ion-icon>
+                </button>
+              </form>
+              <ul class="menu__list"> 
+                <li><a class="menu__item" href="/">О думе города</a></li>
+                <li><a class="menu__item" href="/">Состав и структура</a></li>
+                <li><a class="menu__item" href="/">Документы</a></li>
+                <li><a class="menu__item" href="/">Деятельность</a></li>
+                <li><a class="menu__item" href="/">Обратная связь</a></li>
+              </ul>
+            </div>
+            <div class="menu__socials"> 
+              <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+                <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-duma__container">
+        <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+            <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+            <ion-icon class="icon" name="menu-outline"></ion-icon>
+          </button>
+          <form class="search search-header-duma">
+            <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+              <ion-icon class="icon" name="search-outline"></ion-icon>
+            </button>
+          </form>
+          <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
+              <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <button class="button button_blue button_size_s   " onclick="anotherFunction()"><span class="button_span">Служебный вход</span>
+            </button>
+          </div>
+        </div>
+        <div class="header__bottom-content">  
+          <div class="header_links"><a class="header__link" href="/">О Думе города</a><a class="header__link" href="/">Состав и структура</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Деятельность</a><a class="header__link" href="/">Обратная связь</a>
+          </div>
+          <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="overlay hidden"></div>
+    <div class="login hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideLogin()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Введите номер телефона</span></div>
+            <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input     " placeholder="Номер телефона" value=""/>
+          </div>
+          <div class="login__content-main__confirm-standart">
+            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            </button>
+          </div>
+          <div class="login__content-main__confirm-delim"> 
+            <div class="delim-line"></div><span> или </span>
+            <div class="delim-line"> </div>
+          </div>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="login login-code hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideCode()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Введите код</span></div>
+            <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input     " placeholder="Код" value=""/>
+          </div>
+          <!-- Если код неверный то инпут меняется на этот-->
+          <div class="login__content-main__input wrong-code">
+            <input class="input     " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="login login-email hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideEmail()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Войти по почте</span></div>
+            <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input     " placeholder="Электронная почта" value=""/>
+          </div>
+          <div class="login__content-main__confirm-standart">
+            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            </button>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="main-title">
+        <div class="main-title__container">
+          <h1 class="main-title__title">Главные новости</h1><a class="main-title__link" href="/">Все новости</a>
+        </div>
+      </div>
+      <div class="tabs">
+        <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Самые важные</a><a class="tab-button " href="/">Реализация нацпроектов</a><a class="tab-button " href="/">Деятельность администрации</a><a class="tab-button " href="/">Областная дума</a>
+        </div>
+      </div>
+      <div class="news"> 
+        <div class="news__container">
+          <div class="news-card-with-image__list">
+            <div class="news-card-with-image">
+              <div class="news-card-with-image__container"><img class="news-card-with-image__image" src="./resources/news_image.png"/>
+                <div class="news-card-with-image__dots"> 
+                  <div class="news-card-with-image__dot"></div>
+                  <div class="news-card-with-image__dot"></div>
+                </div>
+                <div class="news-card-with-image__content"> <span class="news-card-with-image__date">23 сентября 2024 </span>
+                  <h1 class="news-card-with-image__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-card-with-image__button button_size_l  " href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                    <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <div class="news-card-with-image">
+              <div class="news-card-with-image__container"><img class="news-card-with-image__image" src="./resources/news_image-2.jpg"/>
+                <div class="news-card-with-image__dots"> 
+                  <div class="news-card-with-image__dot"></div>
+                  <div class="news-card-with-image__dot"></div>
+                </div>
+                <div class="news-card-with-image__content"> <span class="news-card-with-image__date">01 ноября 2024 </span>
+                  <h1 class="news-card-with-image__title">Еще одна новость про город</h1><a class="button button_link button_blue news-card-with-image__button button_size_l  " href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                    <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__list"><a class="news-card-without-image" href="/">   
+              <div class="news-card-without-image__container"> 
+                <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
+                  <ion-icon class="icon dm-card-without-image__icon news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
+                </div><span class="news-card-without-image__date">23 сентября 2024</span>
+              </div></a><a class="news-card-without-image" href="/">   
+              <div class="news-card-without-image__container"> 
+                <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
+                  <ion-icon class="icon dm-card-without-image__icon news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
+                </div><span class="news-card-without-image__date">23 сентября 2024</span>
+              </div></a><a class="news-card-without-image" href="/">   
+              <div class="news-card-without-image__container"> 
+                <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
+                  <ion-icon class="icon dm-card-without-image__icon news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
+                </div><span class="news-card-without-image__date">23 сентября 2024</span>
+              </div></a><a class="news-card-without-image" href="/">   
+              <div class="news-card-without-image__container"> 
+                <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
+                  <ion-icon class="icon dm-card-without-image__icon news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
+                </div><span class="news-card-without-image__date">23 сентября 2024</span>
+              </div></a>
+          </div>
+        </div>
+      </div>
+      <div class="dm-events">
+        <div class="dm-events__container"> 
+          <div class="main-title">
+            <div class="main-title__container">
+              <h1 class="main-title__title">Хроника и анонсы событий</h1><a class="main-title__link" href="/">Все события</a>
+            </div>
+          </div>
+          <div class="dm-filter__btn">
+            <button class="button button_white dm-filter__button button_size_m  button_icon-left button_without-event"><span class="button_span">Фильтры</span>
+              <ion-icon class="icon" name="funnel-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="dm-calendar__btn">
+            <button class="button button_white dm-calendar__button   button_icon-left button_without-event"><span class="button_span">Календарь</span>
+              <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="filters">
+            <div class="filters_container">
+              <select class="select filters__select select-icon-right">
+                <option class="select__option" value="Все события">Все события</option>
+                <option class="select__option" value="Театр">Театр</option>
+                <option class="select__option" value="Детям">Детям</option>
+                <option class="select__option" value="Выставки">Выставки</option>
+                <option class="select__option" value="Концерты">Концерты</option>
+              </select>
+              <select class="select filters__select select-icon-right">
+                <option class="select__option" value="Любая тематика">Любая тематика</option>
+                <option class="select__option" value="Любая тематика">Любая тематика</option>
+              </select>
+              <select class="select filters__select select-icon-right">
+                <option class="select__option" value="Место проведения">Место проведения</option>
+                <option class="select__option" value="Место проведения">Место проведения</option>
+              </select>
+            </div>
+            <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
+            <label class="сheckbox__label" for="10">С пушкинской картой</label>
+          </div>
+          <div class="chronicle">
+            <div class="chronicle__container"> 
+              <div class="chronicle__list">
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
+                  </div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
+                  </div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
+                  </div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
+                  </div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
+                  </div>
+                </div>
+                <div class="event">
+                  <div class="event__container">           
+                    <div class="event__info"> 
+                      <div class="event__time-block"> 
+                        <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
+                      </div>
+                      <div class="event__location"> <span class="event__place">Здание №1</span>
+                        <div class="event__icon-dot"></div><span class="event__place">408 каб</span>
+                      </div>
+                    </div>
+                    <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
+                  </div>
+                </div>
+                <div class="chronicle__slider">
+                  <div class="navigation"> <a class="navigation__link">
+                      <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
+                    <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">2</span></div><a class="navigation__link">
+                      <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chronicle__calendar">
+                <div class="calendar-dm" id="calendar-duma"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-archive">
+        <div class="full-width-container">
+          <div class="full-width-background">
+            <div class="full-width-content">
+              <div class="dm-archive__container"> 
+                <div class="main-title">
+                  <div class="main-title__container">
+                    <div class="tabs">
+                      <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Архив трансляций</a><a class="tab-button " href="/">Фото</a><a class="tab-button "></a><a class="tab-button "></a>
+                      </div>
+                    </div><a class="main-title__link" href="/">Все видео и фото</a>
+                  </div>
+                </div>
+                <div class="tabs">
+                  <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Самые важные</a><a class="tab-button " href="/">Заседания</a><a class="tab-button " href="/">Публичные слушания</a>
+                  </div>
+                </div>
+                <div class="dm-archive__list">   <a class="hearing-item" href="/hearing-detail.html">
+                    <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
+                      <div class="hearing-item-bg"></div>
+                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                        <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="hearing-item-content">
+                      <div class="hearing-item-title"><span>Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818)</span></div>
+                      <div class="hearing-item-labels">
+                        <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
+                      </div>
+                    </div></a><a class="hearing-item" href="/hearing-detail.html">
+                    <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
+                      <div class="hearing-item-bg"></div>
+                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                        <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="hearing-item-content">
+                      <div class="hearing-item-title"><span>Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818)</span></div>
+                      <div class="hearing-item-labels">
+                        <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
+                      </div>
+                    </div></a><a class="hearing-item" href="/hearing-detail.html">
+                    <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
+                      <div class="hearing-item-bg"></div>
+                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                        <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="hearing-item-content">
+                      <div class="hearing-item-title"><span>Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818)</span></div>
+                      <div class="hearing-item-labels">
+                        <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
+                      </div>
+                    </div></a><a class="hearing-item" href="/hearing-detail.html">
+                    <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
+                      <div class="hearing-item-bg"></div>
+                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                        <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="hearing-item-content">
+                      <div class="hearing-item-title"><span>Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818)</span></div>
+                      <div class="hearing-item-labels">
+                        <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="dm-archive__slider">
+                  <div class="slider"><a class="slider__link slider__dm-archive-prev">
+                      <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__dm-archive-next">
+                      <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="solve-problems">
+        <div class="main-title">
+          <div class="main-title__container">
+            <h1 class="main-title__title">Решаем проблемы вместе</h1>
+          </div>
+        </div>
+        <div class="solve-problems__container"><img class="solve-problems__banner" src="/local/templates/surgut/img/banner_1.png" alt="Баннер"/></div>
+      </div>
+      <div class="dm-city-projects"> 
+        <div class="main-title">
+          <div class="main-title__container">
+            <h1 class="main-title__title">Проекты Думы города</h1>
+            <div class="slider"><a class="slider__link slider__dm-city-projects-prev">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__dm-city-projects-next">
+                <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="dm-city-projects__container">
+          <div class="dm-city-projects__card-list"> 
+            <div class="people-care-card people-care-card_bg-dm-1"><img class="people-care-card__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg"/>
+              <div class="people-care-card__container">
+                <div class="people-care-card__text-block">
+                  <h2 class="people-care-card__title">ДУМАющий Сургут</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                  <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+              </div>
+            </div>
+            <div class="people-care-card people-care-card_bg-dm-2"><img class="people-care-card__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg"/>
+              <div class="people-care-card__container">
+                <div class="people-care-card__text-block">
+                  <h2 class="people-care-card__title">Видео проекты</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                  <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+              </div>
+            </div>
+            <div class="people-care-card people-care-card_bg-dm-3"><img class="people-care-card__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg"/>
+              <div class="people-care-card__container">
+                <div class="people-care-card__text-block">
+                  <h2 class="people-care-card__title">Опросы</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                  <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+              </div>
+            </div>
+            <div class="people-care-card people-care-card_bg-dm-3"><img class="people-care-card__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg"/>
+              <div class="people-care-card__container">
+                <div class="people-care-card__text-block">
+                  <h2 class="people-care-card__title">Опросы</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                  <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+          <div class="dm-city-projects__slider">
+            <div class="slider"><a class="slider__link slider__dm-city-projects-prev">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__dm-city-projects-next">
+                <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="usefull-links">
+        <div class="main-title">
+          <div class="main-title__container">
+            <h1 class="main-title__title">Полезные ссылки</h1>
+          </div>
+        </div>
+        <div class="usefull-links__container"><a class="usefull-link" href="/">
+            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Оплата ЖКХ услуг  </span></a><a class="usefull-link" href="/">
+            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Виртуальная приемная </span></a><a class="usefull-link" href="/">
+            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Пособия и налоги </span></a><a class="usefull-link" href="/">
+            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Расписание общественного транспорта </span></a><a class="usefull-link" href="/">
+            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Выплаты пенсионерам </span></a><a class="usefull-link" href="/">
+            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Запись на публичные слушания </span></a><a class="usefull-link" href="/">
+            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Социальные услуги </span></a><a class="usefull-link" href="/">
+            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Работа в России </span></a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_container-top">
+          <div class="footer__header"> 
+            <div class="footer__header-links"><a class="footer__main-links" href="/"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                <div class="footer__header-links__block"> <span class="footer__title">Администрация Сургута</span><span class="footer__link">Официальный портал</span></div></a>
+              <div class="footer__social-links"><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/vk-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/ok-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/tg-footer_icon.svg"/></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
+        <div class="footer__categories">
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">О Сургуте </h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Сургут сегодня            </a><a class="footer__categorie-link" href="/">История Сургута            </a><a class="footer__categorie-link" href="/">Официальные символы            </a><a class="footer__categorie-link" href="/">Устав Сургута            </a><a class="footer__categorie-link" href="/">Генплан            </a><a class="footer__categorie-link" href="/">Стратегия развития            </a><a class="footer__categorie-link" href="/">Инвестиционный паспорт Сургута            </a><a class="footer__categorie-link" href="/">Инвестору            </a><a class="footer__categorie-link" href="/">Общественные советы города Сургута            </a><a class="footer__categorie-link" href="/">Ими гордится Сургут            </a><a class="footer__categorie-link" href="/">Справочная информация            </a><a class="footer__categorie-link" href="/">Интерактивные карты Сургута            </a><a class="footer__categorie-link" href="/">Градостроительная деятельность            </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Городская власть</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Глава города             </a><a class="footer__categorie-link" href="/">Дума города             </a><a class="footer__categorie-link" href="/">Администрация             </a><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a><a class="footer__categorie-link" href="/">Законодательная карта             </a><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a><a class="footer__categorie-link" href="/">Государственные органы             </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Документы</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Важные документы для горожан            </a><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a><a class="footer__categorie-link" href="/">Решения Думы города            </a><a class="footer__categorie-link" href="/">Постановления Главы города            </a><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a><a class="footer__categorie-link" href="/">Постановления Администрации города            </a><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Муниципальные программы            </a><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Категория</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="./ionicons/ionicons.js"></script>
+  </body>
+</html>

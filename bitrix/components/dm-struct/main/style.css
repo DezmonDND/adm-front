@@ -1,0 +1,210 @@
+.dm-struct-card {
+  display: flex;
+  background-color: var(--content-color);
+  max-width: 584px;
+  width: 100%;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .dm-struct-card {
+    max-width: unset;
+  }
+}
+
+.dm-struct-card:hover span {
+  color: var(--primary-color-hover);
+}
+
+.dm-struct-card:active span {
+  color: var(--primary-color-active);
+}
+
+.dm-struct-card__container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dm-struct-card__container span {
+  color: var(--second-text);
+  font-weight: 400;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .dm-struct-card__container span {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
+}
+
+.dm-struct__main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-adm);
+  border-radius: 20px;
+}
+
+.dm-struct__main-container {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+@media (max-width: 992px) {
+  .dm-struct__main-container {
+    padding: 20px;
+    gap: 8px;
+  }
+}
+
+.dm-struct__main-first,
+.dm-struct__main-second,
+.dm-struct__main-third,
+.dm-struct__main-fourth {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.dm-struct__main-second {
+  display: flex;
+  position: relative;
+  padding-top: 24px;
+  box-sizing: border-box;
+}
+.dm-struct__main-second::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: repeating-linear-gradient(to right, var(--primary-color-green), var(--primary-color-green) 60px, transparent 60px, transparent 80px);
+}
+@media (max-width: 992px) {
+  .dm-struct__main-second {
+    gap: 8px;
+    padding-top: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .dm-struct__main-second {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.dm-struct__main-third {
+  display: flex;
+  position: relative;
+  padding: 24px 0px;
+}
+.dm-struct__main-third::before, .dm-struct__main-third::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: repeating-linear-gradient(to right, var(--primary-color-green), var(--primary-color-green) 60px, transparent 60px, transparent 80px);
+}
+.dm-struct__main-third::before {
+  top: 0;
+}
+.dm-struct__main-third::after {
+  bottom: 0;
+}
+@media (max-width: 992px) {
+  .dm-struct__main-third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12px 0px;
+    gap: 8px;
+  }
+  .dm-struct__main-third .dm-struct-card {
+    max-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .dm-struct__main-third {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dm-struct__bottom {
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+@media (max-width: 992px) {
+  .dm-struct__bottom {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+}
+
+.dm-struct__bottom p,
+.dm-struct__bottom a,
+.dm-struct__bottom span {
+  color: var(--main-text);
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .dm-struct__bottom p,
+  .dm-struct__bottom a,
+  .dm-struct__bottom span {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+
+@media (max-width: 992px) {
+  .dm-struct__bottom ul {
+    margin-left: 28px;
+  }
+}
+
+.dm-struct__bottom a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.dm-struct__bottom a:hover {
+  color: var(--primary-color-hover);
+  border-bottom: 1px solid var(--primary-color-hover);
+}
+
+.dm-struct__bottom a:active {
+  color: var(--primary-color-active);
+  border-bottom: 1px solid var(--primary-color-active);
+}
+
+.dm-struct__text {
+  color: var(--second-text);
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .dm-struct__text {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+
+.dm-struct__com-content {
+  margin: 16px 0 16px;
+}

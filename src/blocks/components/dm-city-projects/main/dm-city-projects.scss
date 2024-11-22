@@ -1,0 +1,46 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-city-projects {
+    padding: 0 0 48px;
+
+    @media (max-width: 1000px) {
+        padding: 0 0 20px;
+    }
+
+    .main-title {
+
+        .main-title__container {
+            .slider {
+                @include respond-to(md) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .dm-city-projects__container {
+        .dm-city-projects__card-list {
+            display: flex;
+
+            .people-care-card {
+                min-height: 320px !important;
+                margin-right: 24px;
+
+                @include respond-to(md) {
+                    margin-right: 8px;
+                    min-height: 214px !important;
+                }
+            }
+        }
+
+        .dm-city-projects__slider {
+            display: none;
+
+            @include respond-to(md) {
+                display: flex;
+                justify-content: center;
+                padding-top: 24px;
+            }
+        }
+    }
+}

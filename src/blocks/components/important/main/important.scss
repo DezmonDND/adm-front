@@ -4,20 +4,30 @@
     display: flex;
     flex-direction: column;
 
-    .important-inf__container {
-        display: flex;
-        gap: 20px;
-        overflow-x: scroll;
-        scrollbar-width: none;
-
-        .important-inf__banner {
-            max-width: 873px;
-            width: 100%;
-
-            @include respond-to(md) {
-                max-width: 482px;
+    .main-title {
+        .main-title__container {
+            .slider {
+                @include respond-to(md) {
+                    display: none;
+                }
             }
         }
     }
-}
 
+    .important-inf__container {
+        .important-inf__banner {
+            max-width: 873px;
+            width: 100%;
+            margin-right: 24px;
+
+            @include respond-to(md) {
+                max-width: 482px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .important-inf__slider {
+        @include main-slider;
+    }
+}

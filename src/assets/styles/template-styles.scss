@@ -92,7 +92,6 @@
 @use '../../blocks/components/citizens/citizens-list/citizens-list.scss';
 @use '../../blocks/components/chronicle/main/chronicle.scss';
 @use '../../blocks/components/chronicle/calendar/calendar-dm.scss';
-@use '../../blocks/components/hearing/archive-dm/archive-dm.scss';
 @use '../../blocks/components/dm-comitet/main/dm-comitet.scss';
 @use '../../blocks/components/dm-applications/main/dm-applications.scss';
 @use '../../blocks/libs/add-file-button/add-file-button.scss';
@@ -106,10 +105,14 @@
 @use '../../blocks/components/dm-unions/main/dm-unions.scss';
 @use '../../blocks/components/dm-meeting/main/dm-meeting.scss';
 @use '../../blocks/components/filters/filters.scss';
+@use '../../blocks/components/slider/slick.scss';
+@use '../../blocks/components/dm-city-projects/main/dm-city-projects.scss';
 @use '../../blocks/components/search-by-site/search-by-site.scss';
 @use '../../blocks/components/filters-popup/filters-popup.scss';
 @use '../../blocks/components/chronicle/calendar/vanilla-calendar.min.css';
 @use '../../blocks/components/sorting/sorting.scss';
+@use '../../blocks/components/dm-archive/main/dm-archive.scss';
+@use '../../blocks/components/dm-events/main/dm-events.scss';
 
 * {
     font-family: 'Inter', sans-serif;

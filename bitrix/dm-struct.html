@@ -1,0 +1,233 @@
+<!DOCTYPE html >
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="./css/template-styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/other.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Duma</title>
+  </head>
+  <body class="tmp-duma">
+    <header class="header-duma">
+      <div class="mobile-menu">
+        <div class="menu menu_duma-bg">
+          <div class="menu__container">
+            <div class="menu__content"> 
+              <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                  <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+                  <ion-icon class="icon" name="close-outline"></ion-icon>
+                </button>
+              </div>
+              <form class="search search-header-mobile">
+                <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+                  <ion-icon class="icon" name="search-outline"></ion-icon>
+                </button>
+              </form>
+              <ul class="menu__list"> 
+                <li><a class="menu__item" href="/">О думе города</a></li>
+                <li><a class="menu__item" href="/">Состав и структура</a></li>
+                <li><a class="menu__item" href="/">Документы</a></li>
+                <li><a class="menu__item" href="/">Деятельность</a></li>
+                <li><a class="menu__item" href="/">Обратная связь</a></li>
+              </ul>
+            </div>
+            <div class="menu__socials"> 
+              <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+                <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-duma__container">
+        <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+            <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+            <ion-icon class="icon" name="menu-outline"></ion-icon>
+          </button>
+          <form class="search search-header-duma">
+            <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+              <ion-icon class="icon" name="search-outline"></ion-icon>
+            </button>
+          </form>
+          <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
+              <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <button class="button button_blue button_size_s   " onclick="anotherFunction()"><span class="button_span">Служебный вход</span>
+            </button>
+          </div>
+        </div>
+        <div class="header__bottom-content">  
+          <div class="header_links"><a class="header__link" href="/">О Думе города</a><a class="header__link" href="/">Состав и структура</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Деятельность</a><a class="header__link" href="/">Обратная связь</a>
+          </div>
+          <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="overlay hidden"></div>
+    <div class="login hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideLogin()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Введите номер телефона</span></div>
+            <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input     " placeholder="Номер телефона" value=""/>
+          </div>
+          <div class="login__content-main__confirm-standart">
+            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            </button>
+          </div>
+          <div class="login__content-main__confirm-delim"> 
+            <div class="delim-line"></div><span> или </span>
+            <div class="delim-line"> </div>
+          </div>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="login login-code hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideCode()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Введите код</span></div>
+            <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input     " placeholder="Код" value=""/>
+          </div>
+          <!-- Если код неверный то инпут меняется на этот-->
+          <div class="login__content-main__input wrong-code">
+            <input class="input     " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="login login-email hidden">
+      <div class="login__content">
+        <div class="login__content-top"><span>Вход          </span>
+          <ion-icon class="icon" name="close-outline" onclick="hideEmail()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Войти по почте</span></div>
+            <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
+          </div>
+          <div class="login__content-main__input">
+            <input class="input     " placeholder="Электронная почта" value=""/>
+          </div>
+          <div class="login__content-main__confirm-standart">
+            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            </button>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Администрация</a><span class="span">/</span><span class="breadcrumb_link">Заместители</span>
+        </div>
+      </div>
+      <div class="title"> 
+        <div class="title__container"> 
+          <h2 class="title__name">Структура Думы города</h2>
+        </div>
+      </div>
+      <div class="dm-struct">
+        <div class="dm-struct__main"> 
+          <div class="dm-struct__main-container">
+            <div class="dm-struct__main-first"><a class="dm-struct-card" href="#">    
+                <div class="dm-struct-card__container"> <span>Председатель Думы</span></div></a>
+            </div>
+            <div class="dm-struct__main-second"><a class="dm-struct-card" href="#">    
+                <div class="dm-struct-card__container"> <span>Заместитель председателя Думы</span></div></a><a class="dm-struct-card" href="#">    
+                <div class="dm-struct-card__container"> <span>Заместитель председателя Думы</span></div></a>
+            </div>
+            <div class="dm-struct__main-third"><a class="dm-struct-card" href="#">    
+                <div class="dm-struct-card__container"> <span>Комитет по бюджету, налогам, финансам и имуществу</span></div></a><a class="dm-struct-card" href="#">    
+                <div class="dm-struct-card__container"> <span>Комитет по городскому хозяйству и перспективному развитию города</span></div></a><a class="dm-struct-card" href="#">    
+                <div class="dm-struct-card__container"> <span>Комитет по социальной политике</span></div></a><a class="dm-struct-card" href="#">    
+                <div class="dm-struct-card__container"> <span>Комитет по нормотворчеству, информационной политике и правопорядку</span></div></a>
+            </div>
+            <div class="dm-struct__main-fourth"><a class="dm-struct-card" href="#">    
+                <div class="dm-struct-card__container"> <span>Аппарат Думы Сургута</span></div></a>
+            </div>
+          </div>
+        </div>
+        <div class="dm-struct__bottom">
+          <p>
+              Согласно <a href="#">статье 3 Регламента Думы города </a>структуру Думы составляют органы и структурные подразделения Думы города.</p>
+          <p>К органам Думы относятся:</p>
+          <ul> 
+            <li> <a href="#">Председатель Думы</a></li>
+            <li> <a href="#">заместитель Председателя Думы</a></li>
+            <li> <a href="#">заместитель Председателя Думы</a></li>
+            <li> <a href="#">постоянные комитеты Думы  </a></li>
+            <li> <span>временные комиссии Думы  </span></li>
+          </ul>
+          <p>Структурным подразделением Думы является аппарат Думы.</p>
+          <ul> 
+            <li> <a href="#">Положение об аппарате Думы города</a></li>
+            <li> <a href="#">Структура аппарата Дума города</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_container-top">
+          <div class="footer__header"> 
+            <div class="footer__header-links"><a class="footer__main-links" href="/"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                <div class="footer__header-links__block"> <span class="footer__title">Администрация Сургута</span><span class="footer__link">Официальный портал</span></div></a>
+              <div class="footer__social-links"><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/vk-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/ok-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/tg-footer_icon.svg"/></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
+        <div class="footer__categories">
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">О Сургуте </h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Сургут сегодня            </a><a class="footer__categorie-link" href="/">История Сургута            </a><a class="footer__categorie-link" href="/">Официальные символы            </a><a class="footer__categorie-link" href="/">Устав Сургута            </a><a class="footer__categorie-link" href="/">Генплан            </a><a class="footer__categorie-link" href="/">Стратегия развития            </a><a class="footer__categorie-link" href="/">Инвестиционный паспорт Сургута            </a><a class="footer__categorie-link" href="/">Инвестору            </a><a class="footer__categorie-link" href="/">Общественные советы города Сургута            </a><a class="footer__categorie-link" href="/">Ими гордится Сургут            </a><a class="footer__categorie-link" href="/">Справочная информация            </a><a class="footer__categorie-link" href="/">Интерактивные карты Сургута            </a><a class="footer__categorie-link" href="/">Градостроительная деятельность            </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Городская власть</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Глава города             </a><a class="footer__categorie-link" href="/">Дума города             </a><a class="footer__categorie-link" href="/">Администрация             </a><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a><a class="footer__categorie-link" href="/">Законодательная карта             </a><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a><a class="footer__categorie-link" href="/">Государственные органы             </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Документы</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Важные документы для горожан            </a><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a><a class="footer__categorie-link" href="/">Решения Думы города            </a><a class="footer__categorie-link" href="/">Постановления Главы города            </a><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a><a class="footer__categorie-link" href="/">Постановления Администрации города            </a><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Муниципальные программы            </a><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a>
+            </li>
+          </ul>
+          <ul class="footer__category-content">
+            <h5 class="footer__categorie-title">Категория</h5>
+            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="./ionicons/ionicons.js"></script>
+  </body>
+</html>

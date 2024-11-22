@@ -1,0 +1,33 @@
+body.tmp-duma .slider .slider__link {
+  color: var(--primary-color-green);
+}
+body.tmp-duma .slider .slider__link:hover {
+  color: var(--primary-color-green-hover);
+}
+body.tmp-duma .slider .slider__link:active {
+  color: var(--primary-color-green-click);
+}
+
+.slider {
+  display: flex;
+  gap: 12px;
+  font-size: 34px;
+}
+@media (max-width: 992px) {
+  .slider {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+}
+.slider .slider__link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.slider .slider__link:hover {
+  color: var(--primary-color-hover);
+}
+.slider .slider__link:active {
+  color: var(--primary-color-active);
+}

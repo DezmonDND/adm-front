@@ -4,6 +4,14 @@ body.tmp-duma .news {
     margin-top: 0;
 }
 
+body.tmp-duma .news .news__container .news__list {
+    gap: 24px;
+
+    @include respond-to(md) {
+        gap: 8px;
+    }
+}
+
 .news {
     display: flex;
     width: 100%;
@@ -29,6 +37,10 @@ body.tmp-duma .news {
 
         @include respond-to(sm) {
             flex-direction: column;
+        }
+
+        .news-card-with-image__list {
+            display: flex;
         }
 
         .news__list {

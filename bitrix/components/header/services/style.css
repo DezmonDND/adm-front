@@ -1,0 +1,57 @@
+.header-services {
+  display: flex;
+  background-color: var(--cards-background);
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.header-services .header-services__container {
+  display: flex;
+  gap: 5px;
+  max-width: 1440px;
+  width: 100%;
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .header-services .header-services__container {
+    padding: 12px 0;
+    gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .header-services .header-services__container {
+    padding: 8px 0;
+  }
+}
+.header-services .header-services__container .header-services__button {
+  background-color: var(--cards-background);
+  color: var(--main-text);
+  padding: 4px 18px;
+  gap: 12px;
+  border-color: transparent;
+}
+.header-services .header-services__container .header-services__button .button_span {
+  font-weight: 500;
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
+}
+@media (max-width: 992px) {
+  .header-services .header-services__container .header-services__button .button_span {
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
+}
+.header-services .header-services__container .header-services__button:hover {
+  background-color: var(--services-hover);
+}
+.header-services .header-services__container .header-services__button:active {
+  background-color: var(--services-active);
+}
+.header-services .header-services__container .header-services__button .icon {
+  color: var(--icons-color);
+  font-size: 45px;
+}
+@media (max-width: 992px) {
+  .header-services .header-services__container .header-services__button .icon {
+    font-size: 40px;
+  }
+}

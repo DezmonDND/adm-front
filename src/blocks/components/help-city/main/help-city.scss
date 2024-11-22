@@ -1,25 +1,19 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-.main-help-city {
+.help-city {
     margin: 0 0 48px;
 
     @include respond-to(md) {
         margin: 0 0 20px;
     }
 
-    .main-help-city__content {
-        display: flex;
-        gap: 24px;
+    .help-city__content {
+        .main-project-card {
+            margin-right: 24px;
 
-        @include respond-to(md) {
-            gap: 8px;
-        }
-
-        @include respond-to(sm) {
-            display: grid;
-            grid-template-columns: repeat(2, 336px);
-            overflow-y: scroll;
-            scrollbar-width: none;
+            @include respond-to(md) {
+                margin-right: 8px;
+            }
         }
     }
 

@@ -1,0 +1,76 @@
+.reception .reception__form {
+  max-width: 866px;
+  margin-top: 24px;
+}
+@media (max-width: 992px) {
+  .reception .reception__form {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .reception .reception__form {
+    margin-top: 12px;
+  }
+}
+.reception .reception__form .files-list {
+  margin-top: 28px;
+}
+.reception .reception__form .reception__content .reception__main_title {
+  padding: 0;
+  font-weight: 500;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .reception .reception__form .reception__content .reception__main_title {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.reception .reception__form .reception__content .reception_add-author-btn {
+  margin: 32px 0 40px;
+}
+.reception .reception__form .reception__content .reception__new-user_title {
+  margin-top: 6px;
+  padding: 0;
+  font-weight: 500;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .reception .reception__form .reception__content .reception__new-user_title {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.reception .reception__form .reception__content .reception__email_title {
+  padding: 0;
+  font-weight: 500;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .reception .reception__form .reception__content .reception__email_title {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.reception .reception__form .reception__content .reception__feedback_title {
+  padding: 40px 0 24px;
+  font-weight: 500;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .reception .reception__form .reception__content .reception__feedback_title {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.reception .reception__form .reception__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 24px;
+}
