@@ -1,91 +1,87 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .services {
-    width: 100%;
-    background-color: $cards-background;
-    padding-bottom: 48px;
+    .services__content {
+        @include main-blocks-paddings;
 
-    @include respond-to(md) {
-        padding-bottom: 20px;
-    }
-
-    .services__container {
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-
-        @include respond-to(md) {
-            margin-top: 2px;
-            gap: 20px;
-        }
-
-        .services__search {
-            display: grid;
-            grid-template-columns: repeat(2, calc((100% - 24px)/2));
-            gap: 24px;
-
-            @include respond-to(md) {
-                gap: 8px;
-                grid-template-columns: repeat(2, calc((100% - 8px)/2));
-            }
-
-            @include respond-to(sm) {
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-            }
-
-            .services__search-content {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-
-                .services__label {
-                    padding: 0;
-                    @include heading-h3;
-                }
-
-                .search-services {
-                    width: 100%;
-                    max-width: none;
-                }
-            }
-        }
-
-        .services__buttons {
+        .services__container {
             display: flex;
             flex-direction: column;
+            gap: 48px;
 
-            .services__buttons-title {
-                margin-bottom: 24px;
-                padding: 0;
-                @include heading-h3;
-
-                @include respond-to(md) {
-                    margin-bottom: 16px;
-                }
-
-                @include respond-to(sm) {
-                    margin-bottom: 20px;
-                }
+            @include respond-to(md) {
+                margin-top: 2px;
+                gap: 20px;
             }
 
-            .services__buttons-container {
-                display: flex;
+            .services__search {
+                display: grid;
+                grid-template-columns: repeat(2, calc((100% - 24px)/2));
                 gap: 24px;
 
                 @include respond-to(md) {
                     gap: 8px;
+                    grid-template-columns: repeat(2, calc((100% - 8px)/2));
                 }
 
                 @include respond-to(sm) {
+                    display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    gap: 24px;
                 }
 
-                .services__button {
-                    justify-content: center;
-                    width: calc(100% - 40px);
+                .services__search-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .services__label {
+                        padding: 0;
+                        @include heading-h3;
+                    }
+
+                    .search-services {
+                        width: 100%;
+                        max-width: none;
+                    }
+                }
+            }
+
+            .services__buttons {
+                display: flex;
+                flex-direction: column;
+
+                .services__buttons-title {
+                    margin-bottom: 24px;
+                    padding: 0;
+                    @include heading-h3;
+
+                    @include respond-to(md) {
+                        margin-bottom: 16px;
+                    }
+
+                    @include respond-to(sm) {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .services__buttons-container {
+                    display: flex;
+                    gap: 24px;
+
+                    @include respond-to(md) {
+                        gap: 8px;
+                    }
+
+                    @include respond-to(sm) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .services__button {
+                        justify-content: center;
+                        width: calc(100% - 40px);
+                    }
                 }
             }
         }

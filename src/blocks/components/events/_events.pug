@@ -1,7 +1,7 @@
 include ../../components/title/main/_main-title.pug
 include ../../components/calendar/_calendar.pug
 include ../../components/pagination/_navigation.pug
-include ../../components/news/card-main/card-main
+include ../../components/news/news-main-card/news-main-card
 include ../../components/filters/filters
 include ../../components/slider/_slider
 include ../../libs/buttons/_buttons.pug
@@ -9,10 +9,10 @@ include ../../libs/select/_select.pug
 include ../../libs/checkbox/_checkbox.pug
 
 mixin events()
-    .full-width-container
-        .full-width-background
-            .full-width-content                                
-                .events
+    .events
+        .full-width-container
+            .full-width-background
+                .full-width-content                                             
                     .events__container 
                         +main-title({
                             href: '/',
@@ -124,9 +124,9 @@ mixin events()
                             day_class: 'active',
                             },
                         ])         
-                        +filters()                                                            
+                        +filters({ checkbox: true })                                                            
                         .events__news
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_1.jpg',
                                 date: '10 июня 2023',
@@ -141,7 +141,7 @@ mixin events()
                                     ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_2.jpg',
                                 date: '10 июня 2023',
@@ -156,7 +156,7 @@ mixin events()
                                     ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_3.jpg',
                                 date: '10 июня 2023',
@@ -171,7 +171,7 @@ mixin events()
                                     ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_5.png',
                                 date: '10 июня 2023',
@@ -186,7 +186,7 @@ mixin events()
                                     ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_1.jpg',
                                 date: '10 июня 2023',
@@ -201,7 +201,7 @@ mixin events()
                                     ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_2.jpg',
                                 date: '10 июня 2023',
@@ -216,7 +216,7 @@ mixin events()
                                     ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_3.jpg',
                                 date: '10 июня 2023',
@@ -231,7 +231,7 @@ mixin events()
                                     ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_5.png',
                                 date: '10 июня 2023',
@@ -251,3 +251,5 @@ mixin events()
                                 first_page: '1',
                                 end_page: '7',
                                     })
+                        .events__slider
+                            +slider({ class: 'events' })            

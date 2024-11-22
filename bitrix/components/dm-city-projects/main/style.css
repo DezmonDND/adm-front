@@ -1,7 +1,12 @@
 .dm-city-projects {
   padding: 0 0 48px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
+  .dm-city-projects {
+    padding: 0 0 24px;
+  }
+}
+@media (max-width: 768px) {
   .dm-city-projects {
     padding: 0 0 20px;
   }
@@ -31,6 +36,5 @@
   .dm-city-projects .dm-city-projects__container .dm-city-projects__slider {
     display: flex;
     justify-content: center;
-    padding-top: 24px;
   }
 }

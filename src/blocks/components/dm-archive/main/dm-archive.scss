@@ -2,6 +2,15 @@
 
 .dm-archive {
     .dm-archive__container {
+        @include main-blocks-paddings;
+
+        .main-title__container {
+            @include respond-to(sm) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
         .dm-archive__list {
             .hearing-item {
                 background-color: $content-color;
@@ -47,6 +56,5 @@
     .dm-archive__slider {
         display: flex;
         justify-content: center;
-        padding: 20px 0 20px;
     }
 }

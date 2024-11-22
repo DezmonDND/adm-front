@@ -1,11 +1,7 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .help-city {
-    margin: 0 0 48px;
-
-    @include respond-to(md) {
-        margin: 0 0 20px;
-    }
+@include main-blocks-paddings;
 
     .help-city__content {
         .main-project-card {
@@ -23,7 +19,6 @@
         @include respond-to(md) {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
         }
     }
 }

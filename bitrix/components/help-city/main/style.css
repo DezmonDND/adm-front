@@ -1,9 +1,14 @@
 .help-city {
-  margin: 0 0 48px;
+  padding: 0 0 48px;
 }
 @media (max-width: 992px) {
   .help-city {
-    margin: 0 0 20px;
+    padding: 0 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .help-city {
+    padding: 0 0 20px;
   }
 }
 .help-city .help-city__content .main-project-card {
@@ -21,7 +26,6 @@
   .help-city .help-city__navigation {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
 }
 

@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
 .dm-events {
-    display: flex;
+    @include main-blocks-paddings;
 }

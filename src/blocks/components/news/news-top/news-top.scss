@@ -1,18 +1,6 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-body.tmp-duma .news {
-    margin-top: 0;
-}
-
-body.tmp-duma .news .news__container .news__list {
-    gap: 24px;
-
-    @include respond-to(md) {
-        gap: 8px;
-    }
-}
-
-.news {
+.news-top {
     display: flex;
     width: 100%;
     margin: 24px 0 48px;
@@ -25,7 +13,32 @@ body.tmp-duma .news .news__container .news__list {
         margin: 20px 0 20px;
     }
 
-    .news__container {
+    .slick-list {
+        max-width: 867px;
+        width: 100%;
+
+        @media (max-width: 1439px) {
+            max-width: 600px;
+        }
+
+        @media (max-width: 1170px) {
+            max-width: 448px;
+        }
+
+        @include respond-to(md) {
+            max-width: 500px;
+        }
+
+        @media (max-width: 910px) {
+            max-width: 360px;
+        }
+
+        @include respond-to(sm) {
+            max-width: none;
+        }
+    }
+
+    &__container {
         display: flex;
         width: 100%;
         gap: 24px;
@@ -39,11 +52,11 @@ body.tmp-duma .news .news__container .news__list {
             flex-direction: column;
         }
 
-        .news-card-with-image__list {
+        .news-top__card-list {
             display: flex;
         }
 
-        .news__list {
+        .news-top__links-list {
             display: flex;
             flex-direction: column;
             gap: 8px;

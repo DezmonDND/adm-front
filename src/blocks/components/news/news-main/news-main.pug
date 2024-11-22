@@ -1,14 +1,14 @@
-include ../card-main/card-main
+include ../news-main-card/news-main-card
 include ../../slider/_slider
 include ../../title/main/_main-title
 include ../../tabs/main/_tabs
 
 mixin news-main()
-    .full-width-container
-        .full-width-background
-            .full-width-content            
-                .main-news 
-                    .main-news__container 
+    .news-main
+        .full-width-container
+            .full-width-background
+                .full-width-content                        
+                    .news-main__container 
                         +main-title({
                             href: '/',
                             title: 'Главные новости',
@@ -21,8 +21,8 @@ mixin news-main()
                                 { title: 'Деятельность администрации', href: '/' },
                                 { title: 'Областная дума', href: '/' },
                             ])
-                        .main-news__card-list 
-                            +main-news-card(
+                        .news-main__card-list 
+                            +news-main-card(
                             {
                                 image: 'image_1.jpg',
                                 date: '10 июня 2023',
@@ -37,7 +37,7 @@ mixin news-main()
                                 ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_2.jpg',
                                 date: '10 июня 2023',
@@ -58,7 +58,7 @@ mixin news-main()
                                 ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_3.jpg',
                                 date: '10 июня 2023',
@@ -73,7 +73,7 @@ mixin news-main()
                                 ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_4.jpg',
                                 date: '10 июня 2023',
@@ -88,7 +88,7 @@ mixin news-main()
                                 ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_1.jpg',
                                 date: '10 июня 2023',
@@ -103,7 +103,7 @@ mixin news-main()
                                 ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_2.jpg',
                                 date: '10 июня 2023',
@@ -124,7 +124,7 @@ mixin news-main()
                                 ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_3.jpg',
                                 date: '10 июня 2023',
@@ -139,7 +139,7 @@ mixin news-main()
                                 ]
                             },
                             )
-                            +main-news-card(
+                            +news-main-card(
                             {
                                 image: 'image_4.jpg',
                                 date: '10 июня 2023',
@@ -154,5 +154,5 @@ mixin news-main()
                                 ]
                             },
                             )
-                    .main-news__slider
-                        +slider({ class: 'main-news' })    
+                        .news-main__slider
+                            +slider({ class: 'news-main' })    

@@ -12,11 +12,12 @@ body.tmp-duma .slider .slider__link:active {
   display: flex;
   gap: 12px;
   font-size: 34px;
+  padding-top: 32px;
 }
 @media (max-width: 992px) {
   .slider {
     font-size: 24px;
-    padding-bottom: 5px;
+    padding-top: 24px;
   }
 }
 .slider .slider__link {

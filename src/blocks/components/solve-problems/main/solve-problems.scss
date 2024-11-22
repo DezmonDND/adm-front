@@ -3,11 +3,7 @@
 .solve-problems {
     display: flex;
     flex-direction: column;
-    margin-bottom: 48px;
-
-    @include respond-to(md) {
-        margin-bottom: 20px;
-    }
+    @include main-blocks-paddings;
 
     .solve-problems__container {
         .solve-problems__banner {

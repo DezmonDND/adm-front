@@ -72,10 +72,12 @@
 @use '../../blocks/components/solve-problems/main/solve-problems.scss';
 @use '../../blocks/components/links/important/main/important-links.scss';
 @use '../../blocks/components/links/usefull/main/usefull-links.scss';
-@use '../../blocks/components/news/card-with-image/with-image.scss';
-@use '../../blocks/components/news/card-without-image/without-image.scss';
+@use '../../blocks/components/news/news-top-link/news-top-link.scss';
+@use '../../blocks/components/news/news-top-card/news-top-card.scss';
 @use '../../blocks/components/news/news-main/news-main.scss';
 @use '../../blocks/components/news/news-top/news-top.scss';
+@use '../../blocks/components/news/dm-news-top/dm-news-top.scss';
+@use '../../blocks/components/news/news-main-card/news-main-card.scss';
 @use '../../blocks/components/init-projects/init-card/init-card.scss';
 @use '../../blocks/components/init-projects/main/init-projects.scss';
 @use '../../blocks/components/monuments/main/monuments.scss';

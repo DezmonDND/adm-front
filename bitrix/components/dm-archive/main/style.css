@@ -1,3 +1,22 @@
+.dm-archive .dm-archive__container {
+  padding: 0 0 48px;
+}
+@media (max-width: 992px) {
+  .dm-archive .dm-archive__container {
+    padding: 0 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .dm-archive .dm-archive__container {
+    padding: 0 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .dm-archive .dm-archive__container .main-title__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .dm-archive .dm-archive__container .dm-archive__list .hearing-item {
   background-color: var(--content-color);
   margin-right: 24px;
@@ -36,5 +55,4 @@
 .dm-archive .dm-archive__slider {
   display: flex;
   justify-content: center;
-  padding: 20px 0 20px;
 }

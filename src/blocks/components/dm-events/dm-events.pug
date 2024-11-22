@@ -15,5 +15,5 @@ mixin dm-events()
                 +button({ type: 'button', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
             .dm-calendar__btn
                 +button({ type: 'button', class: 'button_white dm-calendar__button', iconPosition: 'left', icon: 'calendar-number-outline', text: "Календарь"})                    
-            +filters()
+            +filters({ checkbox: true })
             +chronicle()
