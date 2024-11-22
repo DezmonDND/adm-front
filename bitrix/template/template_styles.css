@@ -772,6 +772,11 @@ body.tmp-duma .pag-button_active:hover {
     border-radius: 4px;
   }
 }
+@media (max-width: 550px) {
+  .pag-button {
+    padding: 6px 12px;
+  }
+}
 .pag-button:hover {
   background-color: var(--event-color);
   border-color: transparent;
@@ -1213,6 +1218,11 @@ body.tmp-duma .main-title .main-title__container .tabs {
 @media (max-width: 768px) {
   .pagination {
     gap: 8px;
+  }
+}
+@media (max-width: 550px) {
+  .pagination {
+    gap: 4px;
   }
 }
 .pagination .pagination__pages {
@@ -2447,6 +2457,12 @@ body.tmp-duma .main-title .main-title__container .tabs {
     line-height: 20px;
   }
 }
+@media (max-width: 550px) {
+  .hearing-preview-title {
+    bottom: 12px;
+    left: 12px;
+  }
+}
 .hearing-preview-play {
   position: absolute;
   top: 328px;
@@ -2502,6 +2518,34 @@ body.tmp-duma .main-title .main-title__container .tabs {
     margin-left: +2px;
   }
 }
+@media (max-width: 550px) {
+  .hearing-preview-play {
+    top: 79px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .hearing-preview-play:hover {
+    background-color: var(--primary-color-hover);
+  }
+  .hearing-preview-play-icon {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 6.4px solid white;
+    border-top: 4.288px solid transparent;
+    border-bottom: 4.288px solid transparent;
+    border-radius: 2px;
+    margin-left: +1.6px;
+  }
+}
 .hearing-preview .live_stream {
   position: absolute;
   top: 40px;
@@ -2516,6 +2560,11 @@ body.tmp-duma .main-title .main-title__container .tabs {
 }
 .hearing-preview .live_stream_s {
   display: none;
+}
+@media (max-width: 550px) {
+  .hearing-preview .live_stream_s {
+    display: flex;
+  }
 }
 .hearing-preview .live_stream_l {
   display: flex;
@@ -3587,7 +3636,6 @@ body.tmp-duma .main-events .main-events__container .main-title {
   display: grid;
   grid-template-columns: repeat(4, calc((100% - 72px) / 4));
   gap: 24px;
-  margin-bottom: 56px;
 }
 @media (max-width: 992px) {
   .afisha-events .afisha-events__container .afisha-events__news {
@@ -3598,6 +3646,11 @@ body.tmp-duma .main-events .main-events__container .main-title {
 @media (max-width: 768px) {
   .afisha-events .afisha-events__container .afisha-events__news {
     gap: 12px;
+    grid-template-columns: repeat(2, calc((100% - 12px) / 2));
+  }
+}
+@media (max-width: 550px) {
+  .afisha-events .afisha-events__container .afisha-events__news {
     grid-template-columns: 100%;
     justify-items: center;
   }
@@ -4642,6 +4695,18 @@ body.tmp-duma .short-filelist ion-icon {
   max-width: 400px;
   width: 100%;
 }
+@media (max-width: 550px) {
+  .login {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: unset;
+    border-radius: 0;
+    overflow: hidden;
+  }
+}
 
 .login__content {
   display: flex;
@@ -4913,6 +4978,20 @@ body.tmp-duma .short-filelist ion-icon {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+}
+@media (max-width: 550px) {
+  .project-generation__top-btns {
+    display: none;
+  }
+  .project-generation__top-btns.mb {
+    display: flex;
+    width: 100%;
+  }
+  .project-generation__top-btns.mb .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 .subscribe {
@@ -11262,6 +11341,11 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
     max-width: 237px;
   }
 }
+@media (max-width: 550px) {
+  .dm-comitet-elem {
+    max-width: none;
+  }
+}
 
 .dm-comitet-elem:hover {
   background-color: var(--services-hover);
@@ -15203,6 +15287,23 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
 
 .dm-events {
   display: flex;
+}
+
+.adm-all-news {
+  display: flex;
+  flex-direction: column;
+}
+.adm-all-news .main-news-card {
+  margin: 0;
+  max-width: none;
+}
+.adm-all-news .pagination {
+  align-self: flex-start;
+}
+@media (max-width: 992px) {
+  .adm-all-news .pagination {
+    align-self: center;
+  }
 }
 
 * {

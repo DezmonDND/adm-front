@@ -10,7 +10,6 @@
             display: grid;
             grid-template-columns: repeat(4, calc((100% - 72px)/4));
             gap: 24px;
-            margin-bottom: 56px;
 
             @include respond-to(md) {
                 gap: 8px;
@@ -19,6 +18,10 @@
 
             @include respond-to(sm) {
                 gap: 12px;
+                grid-template-columns: repeat(2, calc((100% - 12px)/2));
+            }
+
+            @include respond-to(xs) {     
                 grid-template-columns: 100%;
                 justify-items: center;
             }

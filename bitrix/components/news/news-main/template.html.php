@@ -46,7 +46,7 @@
               <div class="main-news-card__container">
                 <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
                   <div class="main-news-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Экономика</span>
+                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
                     </button>
                   </div>
                 </div>

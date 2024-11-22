@@ -64,6 +64,12 @@
     line-height: 20px;
   }
 }
+@media (max-width: 550px) {
+  .hearing-preview-title {
+    bottom: 12px;
+    left: 12px;
+  }
+}
 .hearing-preview-play {
   position: absolute;
   top: 328px;
@@ -119,6 +125,34 @@
     margin-left: +2px;
   }
 }
+@media (max-width: 550px) {
+  .hearing-preview-play {
+    top: 79px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .hearing-preview-play:hover {
+    background-color: var(--primary-color-hover);
+  }
+  .hearing-preview-play-icon {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 6.4px solid white;
+    border-top: 4.288px solid transparent;
+    border-bottom: 4.288px solid transparent;
+    border-radius: 2px;
+    margin-left: +1.6px;
+  }
+}
 .hearing-preview .live_stream {
   position: absolute;
   top: 40px;
@@ -133,6 +167,11 @@
 }
 .hearing-preview .live_stream_s {
   display: none;
+}
+@media (max-width: 550px) {
+  .hearing-preview .live_stream_s {
+    display: flex;
+  }
 }
 .hearing-preview .live_stream_l {
   display: flex;

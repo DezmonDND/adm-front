@@ -1,0 +1,20 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+.adm-all-news {
+    display: flex;
+    flex-direction: column;
+
+    .main-news-card {
+        margin: 0;
+        max-width: none;
+    }
+
+    .pagination {
+        align-self: flex-start;
+
+        @include respond-to(md) {
+            align-self: center;
+        }
+
+    }
+}

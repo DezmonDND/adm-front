@@ -16,6 +16,11 @@
     gap: 8px;
   }
 }
+@media (max-width: 550px) {
+  .pagination {
+    gap: 4px;
+  }
+}
 .pagination .pagination__pages {
   display: flex;
   gap: 8px;

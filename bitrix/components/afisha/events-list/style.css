@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: repeat(4, calc((100% - 72px) / 4));
   gap: 24px;
-  margin-bottom: 56px;
 }
 @media (max-width: 992px) {
   .afisha-events .afisha-events__container .afisha-events__news {
@@ -16,6 +15,11 @@
 @media (max-width: 768px) {
   .afisha-events .afisha-events__container .afisha-events__news {
     gap: 12px;
+    grid-template-columns: repeat(2, calc((100% - 12px) / 2));
+  }
+}
+@media (max-width: 550px) {
+  .afisha-events .afisha-events__container .afisha-events__news {
     grid-template-columns: 100%;
     justify-items: center;
   }

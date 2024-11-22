@@ -21,6 +21,18 @@
   max-width: 400px;
   width: 100%;
 }
+@media (max-width: 550px) {
+  .login {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: unset;
+    border-radius: 0;
+    overflow: hidden;
+  }
+}
 
 .login__content {
   display: flex;

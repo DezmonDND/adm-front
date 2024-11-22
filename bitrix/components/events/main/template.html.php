@@ -83,8 +83,6 @@
                 <option class="select__option" value="Место проведения">Место проведения</option>
               </select>
             </div>
-            <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
-            <label class="сheckbox__label" for="10">С пушкинской картой</label>
           </div>
           <div class="events__news"><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="main-news-card__container">

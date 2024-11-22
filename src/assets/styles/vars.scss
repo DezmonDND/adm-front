@@ -126,8 +126,8 @@ $breakpoint-xs: 550px;
         }
     }
 
-    @else if $breakpoint ==sx {
-        @media (max-width: $breakpoint-sx) {
+    @else if $breakpoint ==xs {
+        @media (max-width: $breakpoint-xs) {
             @content;
         }
     }
