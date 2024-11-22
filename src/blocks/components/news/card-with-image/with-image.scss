@@ -1,13 +1,26 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .news-card-with-image {
+        .news-card-with-image__container {
+
+            .news-card-with-image__image {
+                height: 462px;
+
+                @include respond-to (md) {
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
 .news-card-with-image {
     display: flex;
     position: relative;
     max-width: 867px;
     width: 100%;
     border-radius: 12px;
-    height: 608px;
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,26 +38,96 @@
         border-radius: 12px;
     }
 
-    @include respond-to(sm) {
-        min-height: 264px;
-    }
-
     .news-card-with-image__container {
         display: flex;
-        align-items: end;
-        padding: 40px;
+        position: relative;
+        width: 100%;
 
         @include respond-to(md) {
-            padding: 20px;
+            height: 220px;
         }
 
+        .news-card-with-image__image {
+            max-width: 867px;
+            width: 100%;
+            height: 576px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 12px;
+
+            @include respond-to(md) {
+                height: 220px;
+            }
+        }
+
+        .news-card-with-image__dots {
+            display: flex;
+            gap: 12px;
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            z-index: 1;
+            position: absolute;
+
+            ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 0 4px;
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        color: #000000;
+                        background-color: #000000;
+                        border: 2px solid $fourth-text-inverse;
+                        cursor: pointer;
+                    }
+
+                    &.slick-active {
+                        button {
+                            border-color: $fourth-text;
+                        }
+                    }
+                }
+            }
+        }
 
         .news-card-with-image__content {
             display: flex;
             flex-direction: column;
             align-items: baseline;
-            max-width: 627px;
+            max-width: 500px;
             width: 100%;
+            position: absolute;
+            left: 40px;
+            bottom: 40px;
+            right: 40px;
+
+            @media (max-width: 1170px) {
+                max-width: 368px;
+            }
+
+            @include respond-to(md) {
+                left: 20px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            @media (max-width: 910px) {
+                max-width: 320px;
+            }
+
+            @include respond-to(sm) {
+                max-width: 296px;
+            }
 
             .news-card-with-image__date {
                 z-index: 1;
@@ -65,5 +148,30 @@
                 z-index: 1;
             }
         }
+    }
+}
+
+.news .news__container .news-card-with-image__list .slick-list {
+    max-width: 867px;
+    width: 100%;
+
+    @media (max-width: 1439px) {
+        max-width: 600px;
+    }
+
+    @media (max-width: 1170px) {
+        max-width: 448px;
+    }
+
+    @include respond-to(md) {
+        max-width: 500px;
+    }
+
+    @media (max-width: 910px) {
+        max-width: 360px;
+    }
+
+    @include respond-to(sm) {
+        max-width: none;
     }
 }

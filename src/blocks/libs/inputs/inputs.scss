@@ -1,5 +1,8 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+$desk-text3: 16px;
+$desk-text3-lh: 24px;
+
 .input {
     box-sizing: border-box;
     padding: 19px 20px;
@@ -50,11 +53,6 @@
     border-radius: 4px;
     max-width: 332px;
     padding: 18px 20px 18px 45px;
-}
-
-.input-xl {
-    border-radius: 4px;
-    max-width: 1232px;
 }
 
 @media screen and (max-width: 1000px) {

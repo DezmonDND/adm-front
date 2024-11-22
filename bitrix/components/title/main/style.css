@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 .main-title .main-title__container .main-title__title {
   font-weight: 500;

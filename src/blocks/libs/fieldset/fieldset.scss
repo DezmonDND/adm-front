@@ -50,15 +50,13 @@
             }
         }
 
-        .fieldset__textarea {}
-
         .fieldset__span {
             font-size: 13px;
             line-height: 18px;
         }
 
         .fieldset_error {
-            color: #D10404;
+            color: $interview-end-color;
         }
     }
 
@@ -66,27 +64,6 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
-
-        .fieldset__checkboxes {}
-    }
-
-}
-
-@media screen and (max-width: 1000px) {
-    .fieldset {
-        .fieldset__title {
-
-        }
-
-        .fieldset__answers {
-
-
-            .fieldset__textarea {}
-        }
-
-        .fieldset__answers_checkboxes {
-            .fieldset__checkboxes {}
-        }
     }
 }
 
@@ -94,20 +71,8 @@
     .fieldset {
         gap: 16px;
 
-        .fieldset__title {
-
-        }
-
         .fieldset__answers {
             gap: 8px;
-
-
-
-            .fieldset__textarea {}
-        }
-
-        .fieldset__answers_checkboxes {
-            .fieldset__checkboxes {}
         }
     }
 }

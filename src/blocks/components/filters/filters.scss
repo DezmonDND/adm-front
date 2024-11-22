@@ -39,17 +39,13 @@
             width: 100%;
 
             &:last-of-type {
-
                 grid-column: span 2;
             }
 
             @include respond-to(md) {
                 border-radius: 4px;
                 padding: 7px 20px 7px 12px;
-
             }
-
-
         }
     }
 }

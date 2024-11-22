@@ -1,7 +1,15 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 body.tmp-duma .news {
-margin-top: 0;
+    margin-top: 0;
+}
+
+body.tmp-duma .news .news__container .news__list {
+    gap: 24px;
+
+    @include respond-to(md) {
+        gap: 8px;
+    }
 }
 
 .news {
@@ -29,6 +37,10 @@ margin-top: 0;
 
         @include respond-to(sm) {
             flex-direction: column;
+        }
+
+        .news-card-with-image__list {
+            display: flex;
         }
 
         .news__list {

@@ -1,103 +1,214 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const carouselElems = document.querySelector('.events-read-elems');
-    if(carouselElems) {
-        let events = [...carouselElems.children];
-        const dots = document.querySelector('.events-read').querySelectorAll('.events-control-dot');
+// Скрывать стрелки, если слайдов мало
 
-        let slidesToShow = window.innerWidth <= 768 ? (window.innerWidth <= 390 ? 1 : 2) : 4;
-        let currentIndex = slidesToShow;
-        let isTransitioning = false;
-        const transitionDuration = 0.3; // Скорость анимации в секундах
+function updateArrowsVisibility(slick, nextArrowSelector, prevArrowSelector) {
+    const slideCount = slick.slideCount;
+    const visibleSlides = slick.options.slidesToShow;
+    const shouldHide = slideCount <= visibleSlides;
 
-        // Переменные для обработки свайпа
-        let startX = 0;
-        let endX = 0;
+    $(nextArrowSelector).toggle(!shouldHide);
+    $(prevArrowSelector).toggle(!shouldHide);
+}
 
-        // Клонируем элементы для создания бесконечного эффекта
-        events.slice(-slidesToShow).forEach(event => {
-            carouselElems.insertBefore(event.cloneNode(true), carouselElems.firstChild);
-        });
-        events.slice(0, slidesToShow).forEach(event => {
-            carouselElems.appendChild(event.cloneNode(true));
-        });
+// Инициализировать слайдер
 
-        const updatedEvents = [...carouselElems.children];
-        let eventWidth = updatedEvents[0].clientWidth + 20;
+function initSlider(selector, nextArrow, prevArrow, options) {
+    $(selector)
+        .on('init', function (event, slick) {
+            updateArrowsVisibility(slick, nextArrow, prevArrow);
+        })
+        .on('breakpoint', function (event, slick) {
+            updateArrowsVisibility(slick, nextArrow, prevArrow);
+        })
+        .slick(options);
 
-        // Устанавливаем начальное смещение
-        carouselElems.style.transform = `translateX(${-eventWidth * currentIndex}px)`;
-        updateDots();
+    $(nextArrow).on('click', function () {
+        $(selector).slick('slickNext');
+    });
+    $(prevArrow).on('click', function () {
+        $(selector).slick('slickPrev');
+    });
+}
 
-        const left = document.getElementById('left-news');
-        const right = document.getElementById('right-news');
+// Главная новость
 
-        left.addEventListener('click', () => {
-            if (!isTransitioning) shiftSlide(-1);
-        });
-        
-        right.addEventListener('click', () => {
-            if (!isTransitioning) shiftSlide(1);
-        });
-
-        // Добавляем поддержку свайпа
-        carouselElems.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-        });
-
-        carouselElems.addEventListener('touchmove', (e) => {
-            endX = e.touches[0].clientX;
-        });
-
-        carouselElems.addEventListener('touchend', () => {
-            const swipeDistance = startX - endX;
-            if (Math.abs(swipeDistance) > 50) { // Порог для распознавания свайпа
-                if (swipeDistance > 0 && !isTransitioning) {
-                    shiftSlide(1); // Свайп влево
-                } else if (swipeDistance < 0 && !isTransitioning) {
-                    shiftSlide(-1); // Свайп вправо
-                }
-            }
-            startX = 0;
-            endX = 0;
-        });
-
-        window.addEventListener('resize', () => {
-            slidesToShow = window.innerWidth <= 768 ? (window.innerWidth <= 390 ? 1 : 2) : 4;
-            eventWidth = updatedEvents[0].clientWidth + 20;
-            carouselElems.style.transform = `translateX(${-eventWidth * currentIndex}px)`;
-            updateDots();
-        });
-
-        function shiftSlide(direction) {
-            if (isTransitioning) return;
-            isTransitioning = true;
-
-            carouselElems.style.transition = `transform ${transitionDuration}s ease-in-out`;
-            currentIndex += direction;
-
-            carouselElems.style.transform = `translateX(${-eventWidth * currentIndex}px)`;
-            updateDots();
-
-            setTimeout(() => handleTransitionEnd(), transitionDuration * 1000);
-        }
-
-        function handleTransitionEnd() {
-            if (currentIndex === 0) {
-                carouselElems.style.transition = 'none';
-                currentIndex = updatedEvents.length - 2 * slidesToShow;
-                carouselElems.style.transform = `translateX(${-eventWidth * currentIndex}px)`;
-            } else if (currentIndex === updatedEvents.length - slidesToShow) {
-                carouselElems.style.transition = 'none';
-                currentIndex = slidesToShow;
-                carouselElems.style.transform = `translateX(${-eventWidth * currentIndex}px)`;
-            }
-            isTransitioning = false;
-        }
-
-        function updateDots() {
-            dots.forEach(dot => dot.classList.remove('active'));
-            const activeDotIndex = (currentIndex - slidesToShow) % dots.length;
-            dots[activeDotIndex].classList.add('active');
-        }
-    }
+$('.news-card-with-image__list').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    appendDots: $('.news-card-with-image__dots'),
+    adaptiveHeight: true,
+    variableWidth: false,
 });
+
+// Слайдеры для всех разрешений
+
+const sliders = [
+    // Главные новости
+    {
+        selector: '.main-news__card-list',
+        nextArrow: '.slider__main-news-next',
+        prevArrow: '.slider__main-news-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true,
+            responsive: [
+                { breakpoint: 768, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        },
+    },
+    // Анонсы и события
+    {
+        selector: '.events__news',
+        nextArrow: '.slider__events-next',
+        prevArrow: '.slider__events-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true,
+            responsive: [
+                { breakpoint: 768, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        },
+    },
+    // Самое важное
+    {
+        selector: '.important-links__container',
+        nextArrow: '.slider__important-links-next',
+        prevArrow: '.slider__important-links-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [
+                { breakpoint: 768, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        },
+    },
+    // Помогите городу стать лучше
+    {
+        selector: '.help-city__content',
+        nextArrow: '.slider__help-city-next',
+        prevArrow: '.slider__help-city-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [
+                { breakpoint: 850, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        },
+    },
+    // Важная информация для жителей
+    {
+        selector: '.important-inf__container',
+        nextArrow: '.slider__important-inf-next',
+        prevArrow: '.slider__important-inf-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [{ breakpoint: 500, settings: { slidesToShow: 1 } }],
+        },
+    },
+    // С заботой о жителях
+    {
+        selector: '.people-care__card-list',
+        nextArrow: '.slider__people-care-next',
+        prevArrow: '.slider__people-care-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true,
+            responsive: [
+                { breakpoint: 896, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        },
+    },
+    // Проекты Думы города
+    {
+        selector: '.dm-city-projects__card-list',
+        nextArrow: '.slider__dm-city-projects-next',
+        prevArrow: '.slider__dm-city-projects-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true,
+            adaptiveHeight: true,
+            responsive: [
+                { breakpoint: 768, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        },
+    },
+    // Архив трансляций
+    {
+        selector: '.archive-dm__container',
+        nextArrow: '.slider__archive-dm-next',
+        prevArrow: '.slider__archive-dm-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true,
+            responsive: [{ breakpoint: 500, settings: { slidesToShow: 1 } }],
+        },
+    },
+];
+
+// Создать экземпляр слайдера
+
+sliders.forEach((slider) => {
+    initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
+});
+
+// Разобрать слайдеры
+
+const breakpoint = 993;
+let slidersInitialized = true;
+
+// Отфильтровать слайдеры для разрешения ниже sm
+
+const slidersToManage = sliders.filter(
+    (slider) =>
+        slider.selector === '.main-news__card-list' ||
+        slider.selector === '.events__news' ||
+        slider.selector === '.important-links__container'
+);
+
+$(window)
+    .on('resize', function () {
+        const currentWidth = window.innerWidth;
+
+        if (currentWidth < breakpoint && !slidersInitialized) {
+            slidersToManage.forEach(initSlider);
+            slidersInitialized = true;
+        } else if (currentWidth >= breakpoint && slidersInitialized) {
+            slidersToManage.forEach((slider) => destroySlider(slider.selector));
+            slidersInitialized = false;
+        }
+    })
+    .trigger('resize');
+
+    function destroySlider(selector) {
+        $(selector).slick('unslick');
+    }

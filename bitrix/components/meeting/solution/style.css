@@ -1,6 +1,6 @@
 /*** Finish - Title ***/
 .solution-head {
-  padding: 16px 0;
+  padding: 8px 0;
   font-weight: 400;
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
@@ -13,11 +13,12 @@
 }
 
 .solution-fields {
-  padding: 24px 0;
+  padding: 16px 0;
   display: flex;
   flex-direction: row;
+  gap: 24px;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .solution-fields {
     flex-direction: column;
     gap: 24px;
@@ -54,5 +55,10 @@
   .solution-fields .field .label {
     font-size: calc(12px * var(--scale));
     line-height: calc(16px * var(--lh));
+  }
+}
+@media (max-width: 992px) {
+  .solution-fields .field .label {
+    margin-bottom: 8px;
   }
 }

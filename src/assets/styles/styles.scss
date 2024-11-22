@@ -74,7 +74,8 @@ b {
         }
 
         h1 {
-            @include heading-h1;
+            margin-bottom: 20px;
+            @include heading-h2;
         }
     }
 

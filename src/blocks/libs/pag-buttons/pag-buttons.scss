@@ -1,5 +1,24 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .pag-button {
+        &:hover {
+            background-color: $event-color;
+        }
+
+        &:active {
+            background-color: $event-color-hover;
+        }
+    }
+
+    .pag-button_active {   
+        &:hover {
+            color: $content-color;
+            background-color: $primary-color-hover;
+        }
+    }
+}
+
 @mixin without-event {
     color: $primary-color-disabled;
     border-color: $primary-color-disabled;
@@ -76,14 +95,14 @@
 .pag-button_left {
     flex-direction: row-reverse;
     background-image: url(../icons/arrow-left_icon.svg);
-    background-position: 9%;
+    background-position: 11%;
     background-repeat: no-repeat;
     padding-left: 35px;
 }
 
 .pag-button_right {
     background-image: url(../icons/arrow-right_icon.svg);
-    background-position: 91%;
+    background-position: 89%;
     background-repeat: no-repeat;
     padding-right: 35px;
 }

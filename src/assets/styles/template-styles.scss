@@ -109,6 +109,12 @@
 @use '../../blocks/components/filters/filters.scss';
 @use '../../blocks/components/projects/projects-detail/projects-detail.scss';
 @use '../../blocks/components/button-popup/button-popup.scss';
+@use '../../blocks/components/slider/slick.scss';
+@use '../../blocks/components/dm-city-projects/main/dm-city-projects.scss';
+@use '../../blocks/components/search-by-site/search-by-site.scss';
+@use '../../blocks/components/filters-popup/filters-popup.scss';
+@use '../../blocks/components/chronicle/calendar/vanilla-calendar.min.css';
+@use '../../blocks/components/sorting/sorting.scss';
 
 * {
     font-family: 'Inter', sans-serif;

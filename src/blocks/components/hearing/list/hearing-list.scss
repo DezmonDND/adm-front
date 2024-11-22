@@ -12,6 +12,10 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
 body.tmp-duma .hearing-item img{
     height: auto;
     max-height: 362px;
+
+    @include respond-to(md) {
+        max-height: 172px;
+    }
 }
 
 .hearing-list {
@@ -49,6 +53,7 @@ body.tmp-duma .hearing-item img{
     display: flex;
     border-radius: 12px;
     background: $fourth-text-inverse;
+    color: $main-text;
     @include title-4;
 
     @media (max-width: 1000px) {

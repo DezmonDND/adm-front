@@ -7,6 +7,7 @@
         padding-top: 24px;
     }
 }
+
 .dm-deputies-alphabet__row {
     display: flex;
     gap: 180px;
@@ -30,33 +31,32 @@
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-   
+
     @include respond-to(md) {
-        .dm-comitet-elem {
-            width: unset;
-        }
-        gap: 8px;;
-    }
-    @include respond-to(sm) {
-        .dm-comitet-elem {
-            width: 100%;
-        }
+        gap: 8px;
+        ;
     }
 }
 
 .dm-deputies-alphabet__letter {
+    align-self: start;
+}
+
+.dm-deputies-alphabet__letter span {
     font-size: 64px;
     color: $main-text;
     font-weight: 500;
+
     @include respond-to(md) {
         ::before {
             content: 'На букву ';
         }
+
         font-weight: 600 !important;
         @include heading-h2();
     }
 }
 
-.dm-deputies__search .search{
+.dm-deputies__search .search {
     max-width: unset;
 }

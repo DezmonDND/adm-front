@@ -38,11 +38,11 @@
 }
 
 .ms__chose-item {
-    @include text-3;
     background: rgba(231, 237, 251, 1);
     border-radius: 100px;
     padding: 12px 20px;
     margin: 0;
+    @include text-3;
 }
 
 .ms__dropdown {

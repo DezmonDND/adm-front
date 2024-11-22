@@ -21,7 +21,7 @@
                 </button>
               </div>
               <form class="search search-header-mobile">
-                <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+                <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
                 <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
@@ -49,7 +49,7 @@
             <ion-icon class="icon" name="menu-outline"></ion-icon>
           </button>
           <form class="search search-header-duma">
-            <input class="input  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
+            <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
             <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
               <ion-icon class="icon" name="search-outline"></ion-icon>
             </button>
@@ -80,7 +80,7 @@
             <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Номер телефона" value=""/>
+            <input class="input     " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
             <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
@@ -108,11 +108,11 @@
             <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Код" value=""/>
+            <input class="input     " placeholder="Код" value=""/>
           </div>
           <!-- Если код неверный то инпут меняется на этот-->
           <div class="login__content-main__input wrong-code">
-            <input class="input    " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+            <input class="input     " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -130,7 +130,7 @@
             <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input    " placeholder="Электронная почта" value=""/>
+            <input class="input     " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
             <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
@@ -152,11 +152,29 @@
       </div>
       <div class="news"> 
         <div class="news__container">
-          <div class="news-card-with-image" style="background-image: url(./resources/news_image.png);">
-            <div class="news-card-with-image__container">
-              <div class="news-card-with-image__content"> <span class="news-card-with-image__date">23 сентября 2024</span>
-                <h1 class="news-card-with-image__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-card-with-image__button button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
-                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+          <div class="news-card-with-image__list">
+            <div class="news-card-with-image">
+              <div class="news-card-with-image__container"><img class="news-card-with-image__image" src="./resources/news_image.png"/>
+                <div class="news-card-with-image__dots"> 
+                  <div class="news-card-with-image__dot"></div>
+                  <div class="news-card-with-image__dot"></div>
+                </div>
+                <div class="news-card-with-image__content"> <span class="news-card-with-image__date">23 сентября 2024 </span>
+                  <h1 class="news-card-with-image__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-card-with-image__button button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+                    <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <div class="news-card-with-image">
+              <div class="news-card-with-image__container"><img class="news-card-with-image__image" src="./resources/news_image-2.jpg"/>
+                <div class="news-card-with-image__dots"> 
+                  <div class="news-card-with-image__dot"></div>
+                  <div class="news-card-with-image__dot"></div>
+                </div>
+                <div class="news-card-with-image__content"> <span class="news-card-with-image__date">01 ноября 2024 </span>
+                  <h1 class="news-card-with-image__title">Еще одна новость про город</h1><a class="button button_link button_blue news-card-with-image__button button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+                    <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                </div>
               </div>
             </div>
           </div>
@@ -312,30 +330,7 @@
                 </div>
               </div>
               <div class="chronicle__calendar">
-                <div class="calendar-dm" id="calendar">
-                  <div class="calendar-dm-header"> 
-                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="prevMonth()" title="">
-                      <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
-                    </button><span class="calendar-dm-date" id="month-year"></span>
-                    <button class="button button_white calendar-dm-button  button_without-text  " onclick="nextMonth()" title="">
-                      <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-                    </button>
-                  </div>
-                  <table id="calendar">
-                    <thead> 
-                      <tr> 
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
-                      </tr>
-                    </thead>
-                    <tbody></tbody>
-                  </table>
-                </div>
+                <div class="calendar-dm" id="calendar-duma"></div>
               </div>
             </div>
           </div>
@@ -358,8 +353,7 @@
                 </div>
               </div>
               <div class="archive-dm">
-                <div class="archive-dm__container"> 
-                  <div class="hearing-item">
+                <div class="archive-dm__container"> <a class="hearing-item" href="/hearing-detail.html">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
                       <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
@@ -371,9 +365,7 @@
                       <div class="hearing-item-labels">
                         <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="hearing-item">
+                    </div></a><a class="hearing-item" href="/hearing-detail.html">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
                       <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
@@ -385,9 +377,7 @@
                       <div class="hearing-item-labels">
                         <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="hearing-item">
+                    </div></a><a class="hearing-item" href="/hearing-detail.html">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
                       <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
@@ -399,15 +389,25 @@
                       <div class="hearing-item-labels">
                         <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
                       </div>
+                    </div></a><a class="hearing-item" href="/hearing-detail.html">
+                    <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
+                      <div class="hearing-item-bg"></div>
+                      <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
+                        <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
+                      </button>
                     </div>
-                  </div>
+                    <div class="hearing-item-content">
+                      <div class="hearing-item-title"><span>Постановления Администрации города от 01.06.2022 № 2816,01.06.2022 № 2817,01.06.2022 № 2818)</span></div>
+                      <div class="hearing-item-labels">
+                        <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Дата публикации</span><span class="hearing-item-span-desc">3 дня назад</span></div>
+                      </div>
+                    </div></a>
                 </div>
-              </div>
-              <div class="usefull-links__navigation">
-                <div class="navigation"> <a class="navigation__link">
-                    <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
-                  <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">2</span></div><a class="navigation__link">
-                    <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                <div class="archive-dm__slider">
+                  <div class="slider"><a class="slider__link slider__archive-dm-prev">
+                      <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__archive-dm-next">
+                      <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -422,17 +422,18 @@
         </div>
         <div class="solve-problems__container"><img class="solve-problems__banner" src="/local/templates/surgut/img/banner_1.png" alt="Баннер"/></div>
       </div>
-      <div class="main-people-care"> 
+      <div class="dm-city-projects"> 
         <div class="main-title">
           <div class="main-title__container">
             <h1 class="main-title__title">Проекты Думы города</h1>
-            <div class="slider"><a class="slider__link">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link">
-                <ion-icon name="arrow-forward-outline"> </ion-icon></a></div>
+            <div class="slider"><a class="slider__link slider__dm-city-projects-prev">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__dm-city-projects-next">
+                <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+            </div>
           </div>
         </div>
-        <div class="main-people-care__container">
-          <div class="main-people-care__card-list"> 
+        <div class="dm-city-projects__container">
+          <div class="dm-city-projects__card-list"> 
             <div class="people-care-card people-care-card_bg-dm-1"><img class="people-care-card__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg"/>
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
@@ -457,11 +458,20 @@
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
+            <div class="people-care-card people-care-card_bg-dm-3"><img class="people-care-card__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg"/>
+              <div class="people-care-card__container">
+                <div class="people-care-card__text-block">
+                  <h2 class="people-care-card__title">Опросы</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+                  <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+              </div>
+            </div>
           </div>
-          <div class="people-care__slider">
-            <div class="slider"><a class="slider__link">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link">
-                <ion-icon name="arrow-forward-outline"> </ion-icon></a></div>
+          <div class="dm-city-projects__slider">
+            <div class="slider"><a class="slider__link slider__dm-city-projects-prev">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__dm-city-projects-next">
+                <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+            </div>
           </div>
         </div>
       </div>

@@ -11,6 +11,11 @@ body.tmp-duma .hearing-item img {
   height: auto;
   max-height: 362px;
 }
+@media (max-width: 992px) {
+  body.tmp-duma .hearing-item img {
+    max-height: 172px;
+  }
+}
 
 .hearing-list {
   padding: 40px 0 0 0;
@@ -56,6 +61,7 @@ body.tmp-duma .hearing-item img {
   display: flex;
   border-radius: 12px;
   background: var(--fourth-text-inverse);
+  color: var(--main-text);
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;

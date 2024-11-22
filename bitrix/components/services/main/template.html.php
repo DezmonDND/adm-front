@@ -13,7 +13,7 @@
             <div class="main-services__search-content">
               <h3 class="main-services__label">Поиск законопроектов</h3>
               <form class="search search-main-services">
-                <input class="input  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="laws" value=""/>
+                <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="laws" value=""/>
                 <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
@@ -22,7 +22,7 @@
             <div class="main-services__search-content">       
               <h3 class="main-services__label">Поиск правовых актов        </h3>
               <form class="search search-main-services">
-                <input class="input  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="acts" value=""/>
+                <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="acts" value=""/>
                 <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>

@@ -11,23 +11,6 @@
         gap: 11px;
         cursor: pointer;
 
-        .files-list__delete-button {
-            all: unset;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 23px;
-            height: 23px;
-            cursor: pointer;
-            padding: 0;
-            background-color: $cards-background;
-            border-radius: 50%;
-
-            &:hover {
-                color: $primary-color;
-            }
-        }
-
         .files-list__document-description {
             display: flex;
             align-items: center;
@@ -47,5 +30,22 @@
                 @include lead-5;
             }
         }
+    }
+}
+
+.files-list__delete-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    padding: 0;
+    background-color: $cards-background;
+    border-radius: 50%;
+
+    &:hover {
+        color: $primary-color;
     }
 }
