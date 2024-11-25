@@ -87,6 +87,7 @@ async function clean() {
 
 function scripts() {
     return src([
+        './src/assets/js/lib/*.js', // Все библиотеки
         './src/blocks/libs/**/*.js', // Все JS файлы из libs
         './src/blocks/components/**/*.js', // Все JS файлы из components
     ])
@@ -100,9 +101,7 @@ function copyResources() {
 }
 
 function copyIcons() {
-    src('./src/assets/icons/**/*').pipe(dest('./public/icons'));
-    src('./src/assets/ionicons/**/*').pipe(dest('./public/ionicons'));
-    return;
+    return src('./src/assets/icons/**/*').pipe(dest('./public/icons'));
 }
 
 function copyImage() {
@@ -114,7 +113,7 @@ function copyFont() {
 }
 
 function copyJS() {
-    return src('./src/assets/js/*').pipe(dest('./public/js'));
+    return src('./src/assets/js/**/*').pipe(dest('./public/js/'));
 }
 
 exports.browsersync = browsersync;
@@ -169,6 +168,10 @@ class BitrixBuilder {
             js: {
                 src: './src/assets/js/*',
                 dest: './bitrix/template/js',
+            },
+            js_lib: {
+                src: './src/assets/js/lib/**/*',
+                dest: './bitrix/template/js/lib',
             },
         };
     }
@@ -263,7 +266,7 @@ class BitrixBuilder {
         ])
             .pipe(plumber({ errorHandler: (err) => console.error(err.message) })) // Обработка ошибок
             .pipe(concat('script.js')) // Объединяем все в один файл script.js
-            .pipe(dest(this.publicTemplatePath)); // Сохраняем результат в ./public/js/
+            .pipe(dest(this.publicTemplatePath + '/js')); // Сохраняем результат в ./public/js/
     }
 
     templateStyles() {
