@@ -15510,7 +15510,13 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
 }
 
 .board-detail {
+  padding-top: 24px;
   border-radius: 12px;
+}
+@media (max-width: 992px) {
+  .board-detail {
+    padding-top: 16px;
+  }
 }
 .board-detail .board-detail__container {
   display: flex;

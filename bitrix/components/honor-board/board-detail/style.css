@@ -1,6 +1,12 @@
 /*** Finish - Title ***/
 .board-detail {
+  padding-top: 24px;
   border-radius: 12px;
+}
+@media (max-width: 992px) {
+  .board-detail {
+    padding-top: 16px;
+  }
 }
 .board-detail .board-detail__container {
   display: flex;
