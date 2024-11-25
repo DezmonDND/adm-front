@@ -1,3 +1,5 @@
+@use '../../../assets/styles/vars.scss' as *;
+
 .user-profile {
     display: flex;
     align-items: center;
@@ -32,9 +34,7 @@
         .user-profile__name {
             margin: 0;
             padding: 0;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 38px;
+            @include heading-h2;
         }
 
         .user-profile_job {
@@ -50,6 +50,7 @@
     .user-profile {
         margin: 33px 0 0;
         padding: 0;
+
         .user-profile__button {
             .user-profile__avatar {
                 max-width: 64px;
@@ -73,6 +74,7 @@
 @media screen and (max-width:600px) {
     .user-profile {
         gap: 24px;
+
         .user-profile__button {
             .user-profile__avatar {}
         }

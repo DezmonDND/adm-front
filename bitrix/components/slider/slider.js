@@ -31,13 +31,13 @@ function initSlider(selector, nextArrow, prevArrow, options) {
 
 // Главная новость
 
-$('.news-card-with-image__list').slick({
+$('.news-top__card-list').slick({
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    appendDots: $('.news-card-with-image__dots'),
+    appendDots: $('.news-top-card__dots'),
     adaptiveHeight: true,
     variableWidth: false,
 });
@@ -47,9 +47,9 @@ $('.news-card-with-image__list').slick({
 const sliders = [
     // Главные новости
     {
-        selector: '.main-news__card-list',
-        nextArrow: '.slider__main-news-next',
-        prevArrow: '.slider__main-news-prev',
+        selector: '.news-main__card-list',
+        nextArrow: '.slider__news-main-next',
+        prevArrow: '.slider__news-main-prev',
         options: {
             infinite: true,
             slidesToShow: 3,
@@ -161,9 +161,9 @@ const sliders = [
     },
     // Архив трансляций
     {
-        selector: '.archive-dm__container',
-        nextArrow: '.slider__archive-dm-next',
-        prevArrow: '.slider__archive-dm-prev',
+        selector: '.dm-archive__list',
+        nextArrow: '.slider__dm-archive-next',
+        prevArrow: '.slider__dm-archive-prev',
         options: {
             infinite: true,
             slidesToShow: 3,
@@ -190,7 +190,7 @@ let slidersInitialized = true;
 
 const slidersToManage = sliders.filter(
     (slider) =>
-        slider.selector === '.main-news__card-list' ||
+        slider.selector === '.news-main__card-list' ||
         slider.selector === '.events__news' ||
         slider.selector === '.important-links__container'
 );

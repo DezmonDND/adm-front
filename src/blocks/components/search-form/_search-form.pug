@@ -5,11 +5,11 @@ mixin search-form(isFull, input_options_full, input_options, error, value, iconP
             div(class=`search-form`)
                 +input(input_options, error)
                 +select(size, value, iconPosition)
-                +calender()
+                +calendar()
                 +button(options)
     else
         form(class=`search-form`)
             +input(input_options, error)
             +select(size, value, iconPosition)
-            +calender()
+            +calendar()
             +button(options)

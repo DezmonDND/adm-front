@@ -1,7 +1,6 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .citizens-list {
-
     .citizens-list__container {
         .citizens-list__desc {
             margin-bottom: 24px;
@@ -20,6 +19,5 @@
                 gap: 8px;
             }
         }
-
     }
 }

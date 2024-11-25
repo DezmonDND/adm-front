@@ -114,38 +114,38 @@ $(document).ready(function () {
     });
 });
 
-const msDropdownList = document.querySelector('.ms__dropdown');
-const msDropdownItems = document.querySelectorAll('.ms__dropdown-item');
+const msDropdownList = document.querySelector('.multi-select__dropdown');
+const msDropdownItems = document.querySelectorAll('.multi-select__dropdown-item');
 const multiSelect = document.querySelector('input[name="multiSelect"]');
-const msInput = document.querySelector('.ms__input');
-const msChose = document.querySelector('.ms__chose');
+const msInput = document.querySelector('.multi-select__input');
+const msChose = document.querySelector('.multi-select__chose');
 let visibleDropdownItems;
 let counter = -1;
 let selectedValues = [];
 
 msChose &&
     msChose.addEventListener('click', (event) => {
-        if (!event.target.closest('.ms__chose-item')) {
-            msDropdownList.classList.remove('ms__dropdown_hidden');
+        if (!event.target.closest('.multi-select__chose-item')) {
+            msDropdownList.classList.remove('multi-select__dropdown_hidden');
         }
     });
 
 document.addEventListener('click', (event) => {
-    if (!event.target.closest('.ms') && msDropdownList) {
-        msDropdownList.classList.add('ms__dropdown_hidden');
+    if (!event.target.closest('.multi-select') && msDropdownList) {
+        msDropdownList.classList.add('multi-select__dropdown_hidden');
     }
 
-    if (event.target.closest('.ms__chose-item')) {
+    if (event.target.closest('.multi-select__chose-item')) {
         searchSelectedElement(event.target.textContent);
     }
 });
 
 msDropdownList &&
     msDropdownList.addEventListener('click', (event) => {
-        if (event.target.classList.contains('ms__dropdown-item_chose')) {
+        if (event.target.classList.contains('multi-select__dropdown-item_chose')) {
             searchSelectedElement(event.target.textContent);
-        } else if (event.target.classList.contains('ms__dropdown-item')) {
-            createNewElement('li', ['ms__chose-item'], event, msChose);
+        } else if (event.target.classList.contains('multi-select__dropdown-item')) {
+            createNewElement('li', ['multi-select__chose-item'], event, msChose);
             selectedValues.push(event.target.dataset.value);
             updateMultiSelectValue();
         }
@@ -158,13 +158,13 @@ function createNewElement(tag, styles, event, parent) {
     newElement.classList.add(...styles);
     newElement.textContent = event.target.textContent;
     parent.prepend(newElement);
-    event.target.classList.add('ms__dropdown-item_chose');
+    event.target.classList.add('multi-select__dropdown-item_chose');
 }
 
 function searchSelectedElement(text) {
     msDropdownItems.forEach((item) => {
         if (text.toLowerCase() === item.textContent.toLowerCase()) {
-            item.classList.remove('ms__dropdown-item_chose');
+            item.classList.remove('multi-select__dropdown-item_chose');
             deleteElement(text);
             const index = selectedValues.indexOf(item.dataset.value);
             if (index > -1) {
@@ -176,7 +176,7 @@ function searchSelectedElement(text) {
 }
 
 function deleteElement(text) {
-    const msChoseItems = document.querySelectorAll('.ms__chose-item');
+    const msChoseItems = document.querySelectorAll('.multi-select__chose-item');
     msChoseItems.forEach((item) => {
         if (text.toLowerCase() === item.textContent.toLowerCase()) {
             item.remove();

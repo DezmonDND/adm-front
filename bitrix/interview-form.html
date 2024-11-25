@@ -207,15 +207,21 @@
         <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Опросы</a><span class="span">/</span><span class="breadcrumb_link">Создание агломераций на территории Ханты-Мансийского автономного округа-Югры</span>
         </div>
       </div>
-      <div class="interview-full">
-        <div class="interview-full__container"> 
-          <div class="interview-full__info"> 
-            <button class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span>
-            </button><span class="interview-full__date">до 29 сентября</span><span class="interview-full__votes">319 голосов</span>
-          </div>
-          <div class="interview-full__description"> 
-            <h2 class="interview-full__title">Cоздание агломераций на территории Ханты-Мансийского автономного округа – Югры</h2>
-            <p class="interview-full__text">Просим Вас принять участие в опросе и высказать своё мнение о создании агломерации на территории автономного округа. Создание агломераций предусмотрено Стратегией социально-экономического развития Ханты-Мансийского автономного округа – Югры до 2020 года и на период до 2030 года и позволит решить ряд важнейших задач, среди них: повышение эффективности использования ресурсов и человеческого капитала; развитие межмуниципального сотрудничества по приоритетным направлениям, выравнивание экономического потенциала городов и районов, развитие промышленных и социальных объектов и другие.Ваше мнение позволит оценить степень востребованности подобных изменений.</p>
+      <div class="full-width-container">
+        <div class="full-width-background">
+          <div class="full-width-content"> 
+            <div class="interview-full">
+              <div class="interview-full__container"> 
+                <div class="interview-full__info"> 
+                  <button class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span>
+                  </button><span class="interview-full__date">до 29 сентября</span><span class="interview-full__votes">319 голосов</span>
+                </div>
+                <div class="interview-full__description"> 
+                  <h2 class="interview-full__title">Cоздание агломераций на территории Ханты-Мансийского автономного округа – Югры</h2>
+                  <p class="interview-full__text">Просим Вас принять участие в опросе и высказать своё мнение о создании агломерации на территории автономного округа. Создание агломераций предусмотрено Стратегией социально-экономического развития Ханты-Мансийского автономного округа – Югры до 2020 года и на период до 2030 года и позволит решить ряд важнейших задач, среди них: повышение эффективности использования ресурсов и человеческого капитала; развитие межмуниципального сотрудничества по приоритетным направлениям, выравнивание экономического потенциала городов и районов, развитие промышленных и социальных объектов и другие.Ваше мнение позволит оценить степень востребованности подобных изменений.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -278,21 +284,21 @@
         <fieldset class="fieldset">
           <h3 class="fieldset__title reception__sender_title">Кому направляете электронную анкету</h3>
           <div class="fieldset__answers">
-            <div class="ms">
-              <ul class="ms__chose">
+            <div class="multi-select">
+              <ul class="multi-select__chose">
                 <li>
-                  <input class="input ms__input" id="name" name="multiSelect" value="" type="text"/>
+                  <input class="input multi-select__input" id="name" name="multiSelect" value="" type="text"/>
                 </li>
               </ul>
-              <ul class="ms__dropdown ms__dropdown_hidden" id="multiSelectDropdown">
-                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
-                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
-                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
+              <ul class="multi-select__dropdown multi-select__dropdown_hidden" id="multiSelectDropdown">
+                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
+                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
+                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
               </ul>
             </div>
           </div>
         </fieldset>
-        <button class="button button_blue button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить форму</span>
+        <button class="button button_blue interview-form__button button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить форму</span>
           <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
         </button>
       </form>
@@ -342,7 +348,7 @@
     </footer>
     <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="./ionicons/ionicons.js"></script>
   </body>
 </html>

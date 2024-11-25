@@ -1,0 +1,13 @@
+include ../../../libs/buttons/_buttons
+
+mixin news-top-card(data)
+    .news-top-card
+        .news-top-card__container
+            img(src=`../resources/${data.image}`).news-top-card__image
+            .news-top-card__dots 
+                .news-top-card__dot
+                .news-top-card__dot
+            .news-top-card__content 
+                span.news-top-card__date #{data.title} 
+                h1.news-top-card__title #{data.desc}
+                +button({ type: 'link', size: 'l', class: 'button_blue news-top-card__button', href: '/contact', icon: 'arrow-forward-outline', text: 'Подробнее' })                

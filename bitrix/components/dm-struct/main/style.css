@@ -1,4 +1,3 @@
-/*** Finish - Title ***/
 .dm-struct-card {
   display: flex;
   background-color: var(--content-color);
@@ -145,12 +144,10 @@
 
 .dm-struct__bottom {
   padding-top: 48px;
-  padding-bottom: 64px;
 }
 @media (max-width: 992px) {
   .dm-struct__bottom {
     padding-top: 24px;
-    padding-bottom: 48px;
   }
 }
 

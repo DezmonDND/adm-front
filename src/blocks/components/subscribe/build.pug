@@ -4,33 +4,33 @@ include ../../libs/inputs/_inputs.pug
 include ../../libs/fieldset/_fieldset.pug 
 
 +title({
-            title: 'Подписка на главное'
-            })
-        .subscribe 
-            .subscribe__title 
-                span Введите вашу электронную почту
-                +input({placeholder: 'Электронная почта'})
-            .subscribe__subtitle
-                +fieldset(
-                {
-                    type: 'checkbox',
-                    title: 'На какие темы вы хотите подписаться?', 
-                    checkboxes: [
-                        { 
-                            id: 1, 
-                            label: 'Название темы',
-                            sort: 'checkbox',
-                        },
-                        { 
-                            id: 2,
-                            label: 'Название темы',
-                            sort: 'checkbox',
-                        },
-                        { 
-                            id: 3, 
-                            label: 'Название темы',
-                            sort: 'checkbox', 
-                        },
-                        ],
-                })
-            +button({ type: 'link', size: 'l', class: 'button_blue', icon: 'arrow-forward-outline', text: `Подписаться` })  
+    title: 'Подписка на главное'
+    })
+.subscribe 
+    .subscribe__title 
+        span Введите вашу электронную почту
+        +input({placeholder: 'Электронная почта'})
+    .subscribe__subtitle
+        +fieldset(
+        {
+            type: 'checkbox',
+            title: 'На какие темы вы хотите подписаться?', 
+            checkboxes: [
+                { 
+                    id: 1, 
+                    label: 'Название темы',
+                    sort: 'checkbox',
+                },
+                { 
+                    id: 2,
+                    label: 'Название темы',
+                    sort: 'checkbox',
+                },
+                { 
+                    id: 3, 
+                    label: 'Название темы',
+                    sort: 'checkbox', 
+                },
+                ],
+        })
+    +button({ type: 'link', size: 'l', class: 'button_blue', icon: 'arrow-forward-outline', text: `Подписаться` })  

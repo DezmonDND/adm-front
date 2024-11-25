@@ -1,0 +1,22 @@
+.dm-news-top .main-title {
+  padding-bottom: 32px;
+}
+.dm-news-top .news-top .news-top-card__image {
+  height: 462px;
+}
+@media (max-width: 992px) {
+  .dm-news-top .news-top .news-top-card__image {
+    height: 220px;
+  }
+}
+.dm-news-top .news-top .news-top__links-list {
+  gap: 24px;
+}
+@media (max-width: 992px) {
+  .dm-news-top .news-top .news-top__links-list {
+    gap: 8px;
+  }
+}
+.dm-news-top .news-top .news-top__links-list .news-top-link:nth-child(n+4) {
+  display: none;
+}

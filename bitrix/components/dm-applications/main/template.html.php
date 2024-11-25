@@ -64,7 +64,7 @@
       <div class="files-list"></div>
       <div class="dm-applications__divider"> </div>
       <div class="dm-applications__agreement">
-        <input class="сheckbox " type="checkbox" id="accept" name="accept"/>
+        <input class="сheckbox  " type="checkbox" id="accept" name="accept"/>
         <label for="accept"> </label>
         <p class="dm-applications__desc"><span class="dm-applications__span">Согласие на обработку персональных данных:</span> нажимая на кнопку "Отправить" выражаю согласие на обработку, в том числе с помощью средств автоматизации, моих персональных данных. <a class="dm-applications__link" href="/">С Политикой Думы города Сургута в отношении обработки персональных данных</a> ознакомлен.           </p>
       </div>

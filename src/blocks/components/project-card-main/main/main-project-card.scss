@@ -20,23 +20,19 @@
     }
 
     .main-project-card__content {
-        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: baseline;
         height: 100%;
         justify-content: space-between;
-
-        @media screen and (max-width: 1000px) {
-            padding: 16px;
-        }
+        @include content-paddings;
 
         .main-project-card__dates {
             display: flex;
             align-items: center;
             gap: 20px;
 
-            @media screen and (max-width: 1000px) {
+            @include respond-to(md) {
                 gap: 4px;
             }
 
@@ -69,6 +65,7 @@
             }
 
             .main-project-card__text {
+                margin: 0;
                 @include visible-lines(3);
                 @include text-2;
             }

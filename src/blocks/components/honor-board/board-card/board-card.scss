@@ -1,14 +1,13 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .board-card {
-
     border-radius: 12px;
     background-color: $cards-background;
 
     .board-card__container {
         display: flex;
         gap: 40px;
-        padding: 20px;
+        @include content-paddings;
 
         @include respond-to(md) {
             gap: 20px;
@@ -52,6 +51,7 @@
             }
 
             .board-card__about {
+                margin: 0;
                 @include lead-2;
             }
         }

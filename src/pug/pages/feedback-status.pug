@@ -15,7 +15,7 @@ block content
         .feedback-status
             .feedback-status__container 
                 .feedback-status__title Введите выданный номер обращения
-                form.feedback-status__form
-                +search(
-                {name: 'number', size: 'l', placeholder: 'Номер обращения', type: 'search'},
-                    false, 'l', 'getValues()', 'feedbacks',)   
+                .feedback-status__form
+                    +search(
+                    {name: 'number', size: 'l', placeholder: 'Номер обращения', type: 'search'},
+                        false, 'l', 'getValues()', 'feedbacks',)   

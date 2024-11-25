@@ -1,7 +1,17 @@
-/*** Finish - Title ***/
 .important-inf {
   display: flex;
   flex-direction: column;
+  padding: 0 0 48px;
+}
+@media (max-width: 992px) {
+  .important-inf {
+    padding: 0 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .important-inf {
+    padding: 0 0 20px;
+  }
 }
 @media (max-width: 992px) {
   .important-inf .main-title .main-title__container .slider {
@@ -26,6 +36,5 @@
   .important-inf .important-inf__slider {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
 }

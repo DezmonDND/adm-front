@@ -1,0 +1,13 @@
+include ../../../libs/buttons/_buttons
+
+mixin news-main-card(data = [])
+    a(href='/' title=`${data.title}`).news-main-card
+        .news-main-card__container
+            .news-main-card__image-block 
+                img(class='news-main-card__image' src=`../resources/${data.image}` alt='Изображения')
+                .news-main-card__tags
+                    each tag in data.tags 
+                        +button(tag) 
+            .news-main-card__content 
+                span.news-main-card__date #{data.date}
+                span.news-main-card__title #{data.title}

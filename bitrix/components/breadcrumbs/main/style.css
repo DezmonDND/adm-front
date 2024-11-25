@@ -1,9 +1,8 @@
-/*** Finish - Title ***/
 .breadcrumbs {
   display: flex;
   align-items: center;
   color: var(--tertiary-text);
-  padding: 24px 0 8px;
+  padding: 20px 0 20px;
   gap: 3px;
   box-sizing: border-box;
   font-size: calc(12px * var(--scale));
@@ -18,7 +17,7 @@
 }
 @media (max-width: 768px) {
   .breadcrumbs {
-    padding: 16px 0 4px;
+    padding: 8px 0 8px;
   }
 }
 .breadcrumbs .breadcrumbs__container {
@@ -26,6 +25,10 @@
   gap: 8px;
   overflow: scroll;
   scrollbar-width: none;
+}
+.breadcrumbs .breadcrumbs__container .breadcrumb_link {
+  color: var(--tertiary-text);
+  text-wrap: nowrap;
 }
 .breadcrumbs .span {
   color: var(--tertiary-text);

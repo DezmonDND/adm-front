@@ -6,23 +6,23 @@
   align-self: flex-start;
   margin-top: 48px;
 }
-.pagination .pagination__pages {
-  display: flex;
-  gap: 8px;
-}
-
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .pagination {
     align-self: center;
+    margin-top: 32px;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
   .pagination {
     gap: 8px;
   }
 }
-@media screen and (max-width: 370px) {
+@media (max-width: 550px) {
   .pagination {
     gap: 4px;
   }
+}
+.pagination .pagination__pages {
+  display: flex;
+  gap: 8px;
 }

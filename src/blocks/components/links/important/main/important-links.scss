@@ -9,22 +9,17 @@ body.tmp-duma .important-links .main-title .main-title__container {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 15px;
+        gap: 16px;
     }
 }
 
 .important-links {
-    margin-bottom: 20px;
-
-    @media (max-width: 1000px) {
-        margin-bottom: 0;
-    }
+    @include main-blocks-paddings;
 
     .important-links__navigation {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 20px 0 20px;
 
         @include respond-to(md) {
             display: none;
@@ -32,31 +27,28 @@ body.tmp-duma .important-links .main-title .main-title__container {
     }
 
     .important-links__slider {
-        margin-bottom: 20px;
         @include main-slider;
     }
 
     .important-links__container {
         display: grid;
-        grid-template-columns: repeat(3, 32%);
-        gap: 24px;
-        padding: 0 0 31px;
+        grid-template-columns: repeat(3, calc((100% - 48px)/3));
         justify-content: center;
-        margin-top: 4px;
+        gap: 24px;
 
         @include respond-to(md) {
             display: block;
         }
 
         .important-link {
+            box-sizing: border-box;
             background-color: $cards-background;
             border-radius: 20px;
             text-decoration: none;
             color: $main-text;
-            padding: 20px;
-            display: flex;
-            gap: 20px;
             align-items: center;
+            min-height: 88px;
+            @include content-paddings;
 
             &:hover {
                 color: $primary-color-hover;
@@ -68,33 +60,31 @@ body.tmp-duma .important-links .main-title .main-title__container {
 
             @include respond-to(md) {
                 border-radius: 8px;
-                padding: 14px 16px;
                 margin-right: 8px;
+                min-height: 64px;
             }
 
-            @include respond-to(sm) {
-                border-radius: 8px;
-                padding: 16px 20px;
-            }
-
-            .important-link__icon {
-                width: 56px;
-                height: 56px;
-                object-fit: cover;
-                object-position: center;
-
-                @include respond-to(md) {
-                    width: 24px;
-                    height: 24px;
-                }
-            }
-
-            .important-link__title {
-                display: flex !important;
+            .important-link__container {
+                display: flex;
                 align-items: center;
-                min-height: 32px;
-                @include visible-lines(2);
-                @include lead-4;
+                gap: 20px;
+
+                .important-link__icon {
+                    width: 56px;
+                    height: 56px;
+                    object-fit: cover;
+                    object-position: center;
+
+                    @include respond-to(md) {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                .important-link__title {
+                    @include visible-lines(2);
+                    @include lead-4;
+                }
             }
         }
     }

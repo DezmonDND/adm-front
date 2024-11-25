@@ -1,8 +1,5 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-$desk-text3: 16px;
-$desk-text3-lh: 24px;
-
 .input {
     box-sizing: border-box;
     padding: 19px 20px;
@@ -11,6 +8,11 @@ $desk-text3-lh: 24px;
     border: 1px solid $input-color-default;
     outline: none;
     @include caption-2;
+
+    @include respond-to(md) {
+        padding: 13px 16px;
+        border-radius: 6px;
+    }
 
     &:hover {
         border-color: $input-color-hover;
@@ -24,50 +26,18 @@ $desk-text3-lh: 24px;
         color: $tertiary-text;
     }
 
-    @include respond-to(md) {
-        padding: 13px 16px;
+    &_s {
+        padding: 11px 16px;
         border-radius: 6px;
     }
-}
 
-.input-error {
-    border: 1px solid $interview-end-color;
-}
-
-.input-search {
-    width: calc(100% - 44px);
-    margin: 0;
-    border-radius: 8px 0 0 8px !important;
-    padding: 9px 20px;
-}
-
-.input-search-l {
-    width: calc(100% - 60px);
-    padding: 17px 20px;
-}
-
-.input-xs {
-    background: url(../icons/input_icon.svg) center no-repeat;
-    background-position: 5%;
-    margin: 0;
-    border-radius: 4px;
-    max-width: 332px;
-    padding: 18px 20px 18px 45px;
-}
-
-@media screen and (max-width: 1000px) {
-    .input-search-l {
-        width: calc(100% - 48px);
-        padding: 11px 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .input-virtual-reception_input {
-        padding: 10px 13px;
-        border-radius: 4px;
-        font-size: 12px;
-        line-height: 18px;
+    &-search {
+        width: calc(100% - 44px);
+        border-radius: 8px 0 0 8px !important;
+        padding: 9px 20px;
     }
 
+    &-error {
+        border: 1px solid $interview-end-color;
+    }
 }

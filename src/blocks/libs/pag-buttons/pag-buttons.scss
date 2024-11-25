@@ -9,12 +9,12 @@ body.tmp-duma {
         &:active {
             background-color: $event-color-hover;
         }
-    }
 
-    .pag-button_active {   
-        &:hover {
-            color: $content-color;
-            background-color: $primary-color-hover;
+        &_active {
+            &:hover {
+                color: $content-color;
+                background-color: $primary-color-hover;
+            }
         }
     }
 }
@@ -23,18 +23,14 @@ body.tmp-duma {
     color: $primary-color-disabled;
     border-color: $primary-color-disabled;
     background-color: $content-color;
-    cursor: default;
     pointer-events: none;
+    cursor: default;
 }
 
-.pag-button_right,
-.pag-button_left {
-    all: unset;
+@mixin pag-button-direction {
     color: $second-text;
     border: 1px solid $num-button-text;
-    padding: 12px 25px;
     border-radius: 8px;
-    font-weight: 600;
     @include heading-h5;
 }
 
@@ -48,11 +44,19 @@ body.tmp-duma {
     text-decoration: none;
     @include heading-h5;
 
-    &:hover {
-        cursor: pointer;
-        background-color: $event-color-hover;
-        border-color: transparent;
+    @include respond-to(md) {
+        padding: 10px 15px;
+        border-radius: 4px;
+    }
 
+    @include respond-to(xs) {
+        padding: 6px 12px;
+    }
+
+    &:hover {
+        background-color: $event-color;
+        border-color: transparent;
+        cursor: pointer;
     }
 
     &:active {
@@ -60,16 +64,56 @@ body.tmp-duma {
         background-color: $num-button-text-click;
     }
 
-    &:focus {
-        color: $content-color;
-        background-color: $primary-color;
-    }
-
-    .pag-button__icon {
+    &__icon {
         object-fit: cover;
         object-position: center;
         width: 20px;
         height: 20px;
+    }
+
+    &__span {
+        @include respond-to(md) {
+            display: none;
+        }
+    }
+
+    &_left {
+        all: unset;
+        flex-direction: row-reverse;
+        background-image: url(../icons/arrow-left_icon.svg);
+        background-position: 11%;
+        background-repeat: no-repeat;
+        padding: 12px 21px 12px 35px;
+        @include pag-button-direction;
+
+        @include respond-to(md) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &_right {
+        all: unset;
+        background-image: url(../icons/arrow-right_icon.svg);
+        background-position: 89%;
+        background-repeat: no-repeat;
+        padding: 12px 35px 12px 21px;
+        @include pag-button-direction;
+
+        @include respond-to(md) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &_active {
+        background-color: $primary-color;
+        color: $content-color;
+        border: 1px solid transparent;
+
+        &:hover {
+            color: $main-text;
+        }
     }
 }
 
@@ -77,8 +121,12 @@ body.tmp-duma {
     display: flex;
     gap: 12px;
     align-items: center;
-    padding: 12px 21px;
     cursor: pointer;
+
+    @include respond-to(md) {
+        padding: 0;
+        border: none;
+    }
 
     &:hover {
         cursor: pointer;
@@ -90,96 +138,32 @@ body.tmp-duma {
         border-color: transparent;
         background-color: $num-button-text-click;
     }
-}
 
-.pag-button_left {
-    flex-direction: row-reverse;
-    background-image: url(../icons/arrow-left_icon.svg);
-    background-position: 11%;
-    background-repeat: no-repeat;
-    padding-left: 35px;
-}
-
-.pag-button_right {
-    background-image: url(../icons/arrow-right_icon.svg);
-    background-position: 89%;
-    background-repeat: no-repeat;
-    padding-right: 35px;
-}
-
-.pag-button_active {
-    background-color: $primary-color;
-    color: $content-color;
-    border: 1px solid transparent;
-
-    &:hover {
-        color: $main-text;
-    }
-}
-
-.pag-button-with-icon_left_disabled {
-    background-image: url(../icons/arrow-left_icon_disabled.svg);
-    color: $primary-color-disabled;
-    border-color: $primary-color-disabled;
-    background-color: $content-color;
-
-    &:disabled {
-        @include without-event();
-    }
-}
-
-.pag-button-with-icon_right_disabled {
-    background-image: url(../icons/arrow-right_icon_disabled.svg);
-    color: $primary-color-disabled;
-    border-color: $primary-color-disabled;
-    background-color: $content-color;
-
-    &:disabled {
-        @include without-event();
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .pag-button {
-        padding: 10px 15px;
-        border-radius: 4px;
-
-        .pag-button__title {
-            display: none;
+    &_disabled {
+        @include respond-to(md) {
+            background-color: $content-color;
         }
     }
 
-    .pag-button-with-icon {
-        padding: 0;
-        border: none;
-
-        .pag-button__title {
-            display: none;
-        }
-    }
-
-    .pag-button-with-icon_disabled {
+    &_left_disabled {
+        background-image: url(../icons/arrow-left_icon_disabled.svg);
+        color: $primary-color-disabled;
+        border-color: $primary-color-disabled;
         background-color: $content-color;
+
+        &:disabled {
+            @include without-event();
+        }
     }
 
-    .pag-button_left {
-        width: 20px;
-        height: 20px;
-    }
+    &_right_disabled {
+        background-image: url(../icons/arrow-right_icon_disabled.svg);
+        color: $primary-color-disabled;
+        border-color: $primary-color-disabled;
+        background-color: $content-color;
 
-    .pag-button_right {
-        width: 20px;
-        height: 20px;
+        &:disabled {
+            @include without-event();
+        }
     }
-
-    .pag-button__span {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 370px) {
-    .pag-button {
-        padding: 6px 12px;
-    }
-
 }

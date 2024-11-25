@@ -100,7 +100,9 @@ function copyResources() {
 }
 
 function copyIcons() {
-    return src('./src/assets/icons/**/*').pipe(dest('./public/icons'));
+    src('./src/assets/icons/**/*').pipe(dest('./public/icons'));
+    src('./src/assets/ionicons/**/*').pipe(dest('./public/ionicons'));
+    return;
 }
 
 function copyImage() {

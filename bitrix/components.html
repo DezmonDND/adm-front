@@ -408,16 +408,16 @@
       </div>
       <hr/>
       <h4>Другое</h4>
-      <div class="ms">
-        <ul class="ms__chose">
+      <div class="multi-select">
+        <ul class="multi-select__chose">
           <li>
-            <input class="input ms__input" id="name" name="multiSelect" value="" type="text"/>
+            <input class="input multi-select__input" id="name" name="multiSelect" value="" type="text"/>
           </li>
         </ul>
-        <ul class="ms__dropdown ms__dropdown_hidden" id="multiSelectDropdown">
-          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
-          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
-          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
+        <ul class="multi-select__dropdown multi-select__dropdown_hidden" id="multiSelectDropdown">
+          <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
+          <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
+          <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
         </ul>
       </div>
       <123></123><a class="button button_link    " href="/" title="" attributes="{}"><span class="button_span">Example</span>
@@ -470,9 +470,9 @@
       </button>
       <button class="button button_green button_radius    button_without-event" title=""><span class="button_span">Завершен</span>
       </button>
-      <input class="сheckbox radio" type="radio" id="radio" name="undefined"/>
+      <input class="сheckbox  radio" type="radio" id="radio" name="undefined"/>
       <label for="radio"> </label>
-      <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
+      <input class="сheckbox  " type="checkbox" id="1" name="undefined" checked="checked"/>
       <label for="1"> </label>
       <input class="input input_l   input-search-l " placeholder="Введите ваш ответ" value=""/>
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
@@ -522,7 +522,10 @@
             <option class="select__option" value="Филатов">Филатов</option>
             <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
           </select>
-          <button class="calender" type="button">Период публикации</button>
+          <div class="calendar">
+            <div class="calendar__links">
+            </div>
+          </div>
           <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
           </button>
         </div>
@@ -534,13 +537,16 @@
           <option class="select__option" value="Филатов">Филатов</option>
           <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
         </select>
-        <button class="calender" type="button">Период публикации</button>
+        <div class="calendar">
+          <div class="calendar__links">
+          </div>
+        </div>
         <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
         </button>
       </form><a class="tab-button " value="Самые важные">Самые важные</a>
       <div class="project-card"> 
         <div class="project-card__content"> 
-          <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
+          <input class="сheckbox  " type="checkbox" id="1" name="undefined" checked="checked"/>
           <label for="1"> </label>
           <div class="project-card__info"> 
             <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
@@ -585,7 +591,7 @@
     </footer>
     <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="./ionicons/ionicons.js"></script>
   </body>
 </html>

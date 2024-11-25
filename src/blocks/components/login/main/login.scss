@@ -23,15 +23,15 @@
     max-width: 400px;
     width: 100%;
 
-    @media (max-width:500px) {
+    @include respond-to(xs) {
         height: 110vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         box-sizing: border-box;
         max-width: unset;
-        border-radius:0;
-        overflow:hidden;
+        border-radius: 0;
+        overflow: hidden;
     }
 }
 
@@ -74,20 +74,22 @@
     gap: 16px;
 }
 
-.login__content-main__title span{
+.login__content-main__title span {
     font-weight: 600;
     color: $main-text;
     @include heading-h5();
-
 }
 
 .login__content-main__subtitle span {
-    
+
     color: $second-text;
     @include text-3();
 }
 
-.login__content-main__confirm-standart .button, .login__content-main__confirm-gos .button,  .login__content-main__confirm-email, .login__content-main__confirm-delim {
+.login__content-main__confirm-standart .button,
+.login__content-main__confirm-gos .button,
+.login__content-main__confirm-email,
+.login__content-main__confirm-delim {
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -97,7 +99,7 @@
 .login__content-main__confirm-email span {
     color: $primary-color;
     cursor: pointer;
-    @include tab-text1();
+    @include caption-4;
 }
 
 .login__content-main__confirm-delim {
@@ -108,15 +110,13 @@
 }
 
 .delim-line {
-
-    flex: 1; 
+    flex: 1;
     height: 1px;
-    background-color: $fourth-text-inverse; 
+    background-color: $fourth-text-inverse;
     max-width: 150px;
 }
 
-
-.login-code .login__content-main__input{
+.login-code .login__content-main__input {
     display: flex;
 }
 
@@ -126,7 +126,8 @@
     flex-direction: column;
 }
 
-.wrong-code input, .wrong-code input:hover {
+.wrong-code input,
+.wrong-code input:hover {
     border-color: $interview-end-color;
     color: $interview-end-color;
 }
@@ -135,7 +136,7 @@
     color: $interview-end-color;
 }
 
-.wrong-code span{
+.wrong-code span {
     color: $interview-end-color;
     @include heading-h6();
 }
@@ -143,4 +144,3 @@
 .hidden {
     display: none !important;
 }
-

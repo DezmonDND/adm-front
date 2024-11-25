@@ -1,4 +1,3 @@
-/*** Finish - Title ***/
 .dm-unions__content {
   display: flex;
   flex-direction: column;
@@ -33,11 +32,11 @@
 .dm-unions-elem__container {
   display: flex;
   gap: 24px;
-  padding: 20px;
   align-items: center;
   width: 100%;
+  padding: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dm-unions-elem__container {
     padding: 16px;
   }
@@ -109,17 +108,20 @@
   }
 }
 
-.dm-unions-elem__info-currency, .dm-unions-elem__info-head {
+.dm-unions-elem__info-currency,
+.dm-unions-elem__info-head {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 @media (max-width: 768px) {
-  .dm-unions-elem__info-currency, .dm-unions-elem__info-head {
+  .dm-unions-elem__info-currency,
+  .dm-unions-elem__info-head {
     gap: 4px;
   }
 }
 
-.dm-unions-elem__info-currency span:first-child, .dm-unions-elem__info-head span:first-child {
+.dm-unions-elem__info-currency span:first-child,
+.dm-unions-elem__info-head span:first-child {
   color: var(--tertiary-text);
 }

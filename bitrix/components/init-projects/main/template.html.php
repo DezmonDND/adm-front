@@ -1,5 +1,8 @@
 
-<div class="init-projects"> <img class="init-projects__map" src="/local/templates/surgut/img/map.png" alt="Изображение"/>
+<div class="init-projects"> 
+  <div class="init-projects__map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b282a3890b57f3edc0ace8ef27e29dc87c6b0f49529581fb5faabd9e13f1429&amp;amp;source=constructor" width="100%" height="444px" frameborder="0"></iframe>
+  </div>
   <div class="init-projects__list"> 
     <div class="init-card"> 
       <div class="init-card__container"><img class="init-card__image" src="./resources/image_1.jpg"/>

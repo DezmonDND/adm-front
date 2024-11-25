@@ -1,14 +1,9 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .dm-city-projects {
-    padding: 0 0 48px;
-
-    @media (max-width: 1000px) {
-        padding: 0 0 20px;
-    }
+    @include main-blocks-paddings;
 
     .main-title {
-
         .main-title__container {
             .slider {
                 @include respond-to(md) {
@@ -39,7 +34,6 @@
             @include respond-to(md) {
                 display: flex;
                 justify-content: center;
-                padding-top: 24px;
             }
         }
     }

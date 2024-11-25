@@ -61,14 +61,14 @@
         max-height: 320px;
         opacity: 0.35;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             max-width: 140px;
             top: 45px;
             right: 13px;
             bottom: 28px;
         }
 
-        @media (max-width: 600px) {
+        @include respond-to(sm) {
             right: 28px;
         }
     }
@@ -80,7 +80,7 @@
         gap: 32px;
         padding: 32px;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             padding: 16px;
             gap: 13px;
         }

@@ -4,6 +4,10 @@
     display: flex;
     margin: 40px 64px 60px;
 
+    @include respond-to(md) {
+        margin: 16px 20px 40px;
+    }
+
     .thanks__container {
         display: flex;
         flex-direction: column;
@@ -13,89 +17,29 @@
         width: 100%;
         background-color: $cards-background;
         border-radius: 20px;
-        padding: 38px;
+        padding: 40px;
+
+        @include respond-to(md) {
+            padding: 20px;
+            gap: 24px;
+        }
 
         .thanks__description {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 24px;
+
+            @include respond-to(md) {
+                gap: 12px;
+            }
 
             .thanks__title {
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 38px;
                 padding: 0;
+                @include heading-h2;
             }
 
             .thanks__text {
-                font-size: 16px;
-                line-height: 24px;
-            }
-        }
-
-        .button_thanks {
-            padding: 13px 25px;
-            font-size: 14px;
-            line-height: 18px;
-        }
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .thanks {
-        margin: 16px 20px 40px;
-
-        .thanks__container {
-            padding: 32px;
-
-            .thanks__description {
-                .thanks__title {
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 28px;
-                }
-
-                .thanks__text {
-                    font-size: 16px;
-                    line-height: 24px;
-                }
-            }
-
-            .button_thanks {
-                padding: 8px 20px;
-                font-size: 14px;
-                line-height: 16px;
-            }
-        }
-
-    }
-
-}
-
-
-@media screen and (max-width: 600px) {
-    .thanks {
-        .thanks__container {
-            padding: 20px 28px;
-            gap: 0;
-
-            .thanks__icon {
-                width: 40px;
-            }
-
-            .thanks__description {
-                margin: 12px 0 24px;
-                gap: 12px;
-
-                .thanks__title {
-                    font-size: 20px;
-                    line-height: 24px;
-                }
-
-                .thanks__text {
-                    font-size: 12px;
-                    line-height: 18px;
-                }
+                @include text-2;
             }
         }
     }

@@ -8,7 +8,10 @@
       <option class="select__option" value="Филатов">Филатов</option>
       <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
     </select>
-    <button class="calender" type="button">Период публикации</button>
+    <div class="calendar">
+      <div class="calendar__links">
+      </div>
+    </div>
     <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
     </button>
   </div>

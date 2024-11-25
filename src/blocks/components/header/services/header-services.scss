@@ -14,15 +14,14 @@
         width: 100%;
         padding: 20px 0;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             padding: 12px 0;
             gap: 12px;
         }
 
-        @media (max-width: 600px) {
+        @include respond-to(sm) {
             padding: 8px 0;
         }
-
 
         .header-services__button {
             background-color: $cards-background;
@@ -47,7 +46,7 @@
                 color: $icons-color;
                 font-size: 45px;
 
-                @media (max-width: 1000px) {
+                @include respond-to(md) {
                     font-size: 40px;
                 }
             }

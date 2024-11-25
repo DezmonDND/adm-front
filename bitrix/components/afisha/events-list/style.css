@@ -1,4 +1,3 @@
-/*** Finish - Title ***/
 .afisha-events .afisha-events__container .calendar {
   margin-bottom: 20px;
 }
@@ -6,17 +5,21 @@
   display: grid;
   grid-template-columns: repeat(4, calc((100% - 72px) / 4));
   gap: 24px;
-  margin-bottom: 56px;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .afisha-events .afisha-events__container .afisha-events__news {
     gap: 8px;
     grid-template-columns: repeat(3, calc((100% - 24px) / 3));
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
   .afisha-events .afisha-events__container .afisha-events__news {
     gap: 12px;
+    grid-template-columns: repeat(2, calc((100% - 12px) / 2));
+  }
+}
+@media (max-width: 550px) {
+  .afisha-events .afisha-events__container .afisha-events__news {
     grid-template-columns: 100%;
     justify-items: center;
   }

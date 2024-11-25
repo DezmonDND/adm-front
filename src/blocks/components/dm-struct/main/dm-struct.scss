@@ -146,11 +146,9 @@
 
 .dm-struct__bottom {
     padding-top: 48px;
-    padding-bottom: 64px;
 
     @include respond-to(md) {
         padding-top: 24px;
-        padding-bottom: 48px;
     }
 }
 

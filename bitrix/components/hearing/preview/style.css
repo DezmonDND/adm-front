@@ -1,4 +1,3 @@
-/*** Finish - Title ***/
 .hearing-preview {
   max-height: 738px;
   position: relative;
@@ -8,12 +7,12 @@
   margin-bottom: 20px;
   border-radius: 12px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hearing-preview {
     max-height: 410px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hearing-preview {
     max-height: 189px;
   }
@@ -46,7 +45,7 @@
 }
 .hearing-preview-title {
   max-width: 890px;
-  color: #fff;
+  color: var(--content-color);
   position: absolute;
   bottom: 44px;
   left: 40px;
@@ -55,18 +54,17 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
   font-weight: 500;
   font-size: 32px;
   line-height: 38px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hearing-preview-title {
     font-size: 16px;
     line-height: 20px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 550px) {
   .hearing-preview-title {
     bottom: 12px;
     left: 12px;
@@ -99,7 +97,7 @@
   border-radius: 2px;
   margin-left: +4.1px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hearing-preview-play {
     top: 185px;
     background-color: var(--primary-color);
@@ -127,7 +125,7 @@
     margin-left: +2px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 550px) {
   .hearing-preview-play {
     top: 79px;
     background-color: var(--primary-color);
@@ -161,7 +159,7 @@
   left: 40px;
   color: #d10404;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hearing-preview .live_stream {
     top: 10px;
     left: 10px;
@@ -170,7 +168,7 @@
 .hearing-preview .live_stream_s {
   display: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 550px) {
   .hearing-preview .live_stream_s {
     display: flex;
   }
@@ -178,7 +176,7 @@
 .hearing-preview .live_stream_l {
   display: flex;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hearing-preview .live_stream_l {
     display: none;
   }

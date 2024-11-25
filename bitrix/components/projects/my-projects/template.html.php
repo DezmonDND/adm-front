@@ -11,7 +11,7 @@
     <div class="projects-array__list">
       <div class="project-card"> 
         <div class="project-card__content"> 
-          <input class="сheckbox " type="checkbox" id="1" name="undefined" checked="checked"/>
+          <input class="сheckbox  " type="checkbox" id="1" name="undefined" checked="checked"/>
           <label for="1"> </label>
           <div class="project-card__info"> 
             <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
@@ -22,7 +22,7 @@
       </div>
       <div class="project-card"> 
         <div class="project-card__content"> 
-          <input class="сheckbox " type="checkbox" id="2" name="undefined" checked="checked"/>
+          <input class="сheckbox  " type="checkbox" id="2" name="undefined" checked="checked"/>
           <label for="2"> </label>
           <div class="project-card__info"> 
             <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
@@ -33,7 +33,7 @@
       </div>
       <div class="project-card"> 
         <div class="project-card__content"> 
-          <input class="сheckbox " type="checkbox" id="3" name="undefined" checked="checked"/>
+          <input class="сheckbox  " type="checkbox" id="3" name="undefined" checked="checked"/>
           <label for="3"> </label>
           <div class="project-card__info"> 
             <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>

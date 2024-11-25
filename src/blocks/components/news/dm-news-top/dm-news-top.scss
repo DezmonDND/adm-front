@@ -1,0 +1,32 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-news-top {
+    .main-title {
+        padding-bottom: 32px;
+    }
+
+    .news-top {
+        .news-top-card__image {
+            height: 462px;
+
+            @include respond-to (md) {
+                height: 220px;
+            }
+        }
+
+        .news-top__links-list {
+            gap: 24px;
+
+            @include respond-to(md) {
+                gap: 8px;
+            }
+
+            .news-top-link {
+                &:nth-child(n+4) {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
