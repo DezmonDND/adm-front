@@ -3,10 +3,10 @@
 @mixin flex {
     display: flex;
     align-items: center;
-    cursor: pointer;
     font-size: 30px;
+    cursor: pointer;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         font-size: 20px;
     }
 }

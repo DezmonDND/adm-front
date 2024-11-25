@@ -7,16 +7,9 @@
     background-color: $cards-background;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
-    padding: 0 32px;
 
     @include respond-to(md) {
         border-radius: 8px;
-    }
-
-    @include respond-to(sm) {
-        padding: 10px 20px;
-        margin-top: 7px;
     }
 
     .interview-full__container {
@@ -25,22 +18,21 @@
         max-width: 866px;
         width: 100%;
         gap: 10px;
-        padding: 40px;
+        padding: 32px 0;
 
         @include respond-to(md) {
-            padding: 28px;
+            padding: 24px 0;
             gap: 24px;
         }
 
         @include respond-to(sm) {
-            padding: 10px 0;
             gap: 20px;
         }
 
         .interview-full__info {
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 24px;
 
             @include respond-to(md) {
                 gap: 20px;
@@ -78,15 +70,6 @@
                 @include text-2;
             }
         }
-    }
-}
-
-.tag_interview-full {
-    padding: 2px 24px;
-    @include heading-h5;
-
-    @include respond-to(md) {
-        padding: 4px 17px;
     }
 }
 

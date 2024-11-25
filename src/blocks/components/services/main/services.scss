@@ -10,7 +10,6 @@
             gap: 48px;
 
             @include respond-to(md) {
-                margin-top: 2px;
                 gap: 20px;
             }
 

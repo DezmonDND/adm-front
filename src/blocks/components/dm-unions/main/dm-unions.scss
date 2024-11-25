@@ -33,13 +33,9 @@
 .dm-unions-elem__container {
     display: flex;
     gap: 24px;
-    padding: 20px;
     align-items: center;
     width: 100%;
-
-    @include respond-to (sm) {
-        padding: 16px;
-    }
+    @include content-paddings;
 }
 
 .dm-unions-elem__right {

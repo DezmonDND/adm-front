@@ -8,8 +8,8 @@
     color: $main-text;
     min-width: 420px;
     width: 100%;
-    padding: 20px 20px;
     box-sizing: border-box;
+    @include content-paddings;
 
     &:hover {
         background-color: $services-hover;
@@ -21,7 +21,6 @@
 
     @include respond-to(md) {
         min-width: 360px;
-        padding: 16px;
 
         &:nth-child(n+3) {
             display: none;

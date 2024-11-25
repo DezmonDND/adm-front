@@ -3,13 +3,13 @@
 .short-filelist {
     .file-line {
         text-decoration: none;
-        padding: 19px 20px;
         display: flex;
         gap: 12px;
         align-items: center;
         background-color: $grey-adm;
         border-radius: 8px;
         margin-bottom: 12px;
+        @include content-paddings;
 
         .file-line-icon {
             width: 20px;
@@ -34,10 +34,6 @@
 
         &:hover {
             background: $services-hover;
-        }
-
-        @include respond-to(md) {
-            padding: 13px 16px;
         }
     }
 }

@@ -41,16 +41,12 @@
         }
 
         .interview__content {
-            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: baseline;
             height: 100%;
             justify-content: space-between;
-
-            @include respond-to(md) {
-                padding: 16px;
-            }
+            @include content-paddings;
 
             .iinterview__dates {
                 display: flex;

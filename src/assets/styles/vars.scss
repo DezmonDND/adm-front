@@ -132,7 +132,8 @@ $breakpoint-xs: 550px;
     }
 }
 
-// Mixin Container Padding
+// Mixin Container Paddings
+// Для main
 @mixin main-padding {
     padding: 0 64px;
 
@@ -145,6 +146,7 @@ $breakpoint-xs: 550px;
     }
 }
 
+// Для всех блоков на главной
 @mixin main-blocks-paddings {
     padding: 0 0 48px;
 
@@ -154,6 +156,15 @@ $breakpoint-xs: 550px;
 
     @include respond-to(sm) {
         padding: 0 0 20px;
+    }
+}
+
+// Для всего контента (карточки, ссылки)
+@mixin content-paddings {
+    padding: 20px;
+
+    @include respond-to(md) {
+        padding: 16px;
     }
 }
 

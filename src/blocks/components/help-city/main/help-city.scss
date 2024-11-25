@@ -1,7 +1,7 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .help-city {
-@include main-blocks-paddings;
+    @include main-blocks-paddings;
 
     .help-city__content {
         .main-project-card {

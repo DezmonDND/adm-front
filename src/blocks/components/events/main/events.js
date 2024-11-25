@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const calendarAdmEvents = new VanillaCalendar('#events-calendar', options);
-    const calendarAdmEventsPopup = new VanillaCalendar('#events-calendar-popup', options);
-
-    calendarAdmEvents.init();
-    calendarAdmEventsPopup.init();
+    const calendarAdmEvents = initializeCalendar('#events-calendar', options);
+    const calendarAdmEventsPopup = initializeCalendar('#events-calendar-popup', options);
 });
 
 function toggleAdmCalendar() {

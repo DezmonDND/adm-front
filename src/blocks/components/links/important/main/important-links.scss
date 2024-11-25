@@ -9,7 +9,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 15px;
+        gap: 16px;
     }
 }
 
@@ -48,7 +48,7 @@ body.tmp-duma .important-links .main-title .main-title__container {
             color: $main-text;
             align-items: center;
             min-height: 88px;
-            padding: 20px;
+            @include content-paddings;
 
             &:hover {
                 color: $primary-color-hover;
@@ -62,7 +62,6 @@ body.tmp-duma .important-links .main-title .main-title__container {
                 border-radius: 8px;
                 margin-right: 8px;
                 min-height: 64px;
-                padding: 16px;
             }
 
             .important-link__container {
@@ -87,7 +86,6 @@ body.tmp-duma .important-links .main-title .main-title__container {
                     @include lead-4;
                 }
             }
-
         }
     }
 }

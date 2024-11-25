@@ -3,7 +3,6 @@
 .biography {
     display: flex;
     align-items: center;
-    padding: 24px 0 0;
     width: 100%;
     box-sizing: border-box;
 
@@ -91,9 +90,6 @@
 
             @include respond-to(md) {
                 width: auto;
-            }
-
-            @include respond-to(sm) {
                 padding: 20px;
             }
 
@@ -139,6 +135,10 @@
                     flex-direction: column;
                     gap: 24px;
                     margin-top: 26px;
+
+                    @include respond-to(md) {
+                        margin-top: 0;
+                    }
 
                     .biography__more-contacts-content {
                         display: flex;

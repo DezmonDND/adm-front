@@ -4,14 +4,13 @@
     width: 100%;
     border-radius: 8px;
     background-color: $grey-adm;
-    padding-top: 8px;
 }
 
 .dm-finance-elem__container {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    @include content-paddings;
 
     @include respond-to(md) {
         gap: 16px;

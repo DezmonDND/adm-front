@@ -2,10 +2,10 @@
 
 .duma-filelist {
     .file-line {
-        padding: 18px 20px;
         background-color: $grey-adm;
         border-radius: 8px;
         margin-bottom: 12px;
+        @include content-paddings;
 
         & {
             color: $second-text;
@@ -86,10 +86,6 @@
 
         &:hover {
             background: $services-hover;
-        }
-
-        @media (max-width: 768px) {
-            padding: 16px 20px;
         }
     }
 }

@@ -9,7 +9,6 @@ body.tmp-duma .usefull-links {
 }
 
 .usefull-links {
-
     .usefull-links__container {
         display: grid;
         grid-template-columns: repeat(4, calc((100% - 72px)/4));
@@ -34,7 +33,7 @@ body.tmp-duma .usefull-links {
             color: $main-text;
             background-color: $cards-background;
             border-radius: 8px;
-            padding: 20px;
+            @include content-paddings;
 
             &:hover {
                 background-color: $services-hover;
@@ -47,7 +46,6 @@ body.tmp-duma .usefull-links {
             @include respond-to(md) {
                 box-sizing: border-box;
                 min-height: 64px;
-                padding: 16px;
             }
 
             @include respond-to(sm) {
@@ -80,6 +78,4 @@ body.tmp-duma .usefull-links {
             }
         }
     }
-
-
 }

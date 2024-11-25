@@ -13,9 +13,13 @@
 
     .sorting__select {
         max-width: 182px;
-        padding: 12px 20px;
+        padding: 11px 20px;
         background-position: 96%;
         border-radius: 4px;
         @include caption-2;
+
+        @include respond-to(md) {
+            padding: 7px 16px;
+        }
     }
 }

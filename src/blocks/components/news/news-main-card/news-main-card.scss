@@ -24,7 +24,6 @@
     }
 
     &__container {
-
         .news-main-card__image-block {
             position: relative;
 
@@ -62,12 +61,8 @@
         .news-main-card__content {
             display: flex;
             flex-direction: column;
-            padding: 20px;
             gap: 8px;
-
-            @include respond-to(md) {
-                padding: 16px;
-            }
+            @include content-paddings;
 
             .news-main-card__date {
                 color: $tertiary-text;

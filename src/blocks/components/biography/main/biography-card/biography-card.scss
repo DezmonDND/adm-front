@@ -9,13 +9,12 @@
 
     .biography-card__container {
         display: flex;
-        padding: 20px;
         gap: 40px;
         width: 100%;
+        @include content-paddings;
 
         @include respond-to(sm) {
             gap: 20px;
-            padding: 12px;
             align-items: center;
         }
 

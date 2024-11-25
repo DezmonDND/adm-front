@@ -37,41 +37,6 @@ body.tmp-duma .main-events .main-events__container .main-title {
             }
         }
 
-        .events__selects {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 25px 0 35px;
-
-            @include respond-to(md) {
-                flex-direction: column;
-                gap: 19px;
-                align-items: flex-start;
-                margin: 25px 0 31px;
-            }
-
-            @include respond-to(sm) {
-                display: none;
-            }
-
-            .events__selects-container {
-                display: grid;
-                grid-template-columns: 23% 27% 30% 16%;
-                gap: 12px;
-                max-width: 902px;
-                width: 100%;
-
-                @include respond-to(md) {
-                    gap: 4px;
-                }
-
-                .events__select {
-                    padding: 6px 12px;
-                    border-radius: 4px;
-                }
-            }
-        }
-
         .events__news {
             display: grid;
             grid-template-columns: repeat(4, calc((100% - 72px)/4));

@@ -9,11 +9,7 @@
         display: flex;
         align-items: center;
         gap: 24px;
-        padding: 20px;
-
-        @include respond-to(md) {
-            padding: 16px;
-        }
+        @include content-paddings;
 
         .project-card__info {
             display: flex;

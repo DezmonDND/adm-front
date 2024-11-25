@@ -21,4 +21,11 @@ const options = {
     },
 };
 
+function initializeCalendar(selector, options) {
+    const element = document.querySelector(selector);
 
+    if (element) {
+        const calendar = new VanillaCalendar(element, options);
+        return calendar.init();
+    }
+}
