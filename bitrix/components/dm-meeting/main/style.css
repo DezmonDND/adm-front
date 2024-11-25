@@ -5,10 +5,15 @@
 }
 
 .dm-meeting-elem__container {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 20px;
+}
+@media (max-width: 992px) {
+  .dm-meeting-elem__container {
+    padding: 16px;
+  }
 }
 @media (max-width: 992px) {
   .dm-meeting-elem__container {

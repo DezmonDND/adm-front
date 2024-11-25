@@ -8,9 +8,9 @@
     .event-card__container {
         display: flex;
         flex-direction: column;
-        max-width: 738px;
+        max-width: 766px;
         width: 100%;
-        padding: 40px 0 40px;
+        padding: 32px 0 32px;
 
         @include respond-to(md) {
             padding: 20px;
@@ -26,7 +26,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
-                margin: 24px 0 64px;
+                margin: 24px 0 48px;
 
                 @include respond-to(md) {
                     margin-bottom: 32px;
@@ -60,6 +60,10 @@
             .event-card__buttons {
                 display: flex;
                 gap: 8px;
+
+                .event-card__button {
+                    position: relative;
+                }
             }
         }
     }

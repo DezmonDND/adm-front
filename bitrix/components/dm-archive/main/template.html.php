@@ -19,7 +19,7 @@
           <div class="dm-archive__list">   <a class="hearing-item" href="/hearing-detail.html">
               <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                 <div class="hearing-item-bg"></div>
-                <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
                   <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
                 </button>
               </div>
@@ -31,7 +31,7 @@
               </div></a><a class="hearing-item" href="/hearing-detail.html">
               <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                 <div class="hearing-item-bg"></div>
-                <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
                   <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
                 </button>
               </div>
@@ -43,7 +43,7 @@
               </div></a><a class="hearing-item" href="/hearing-detail.html">
               <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                 <div class="hearing-item-bg"></div>
-                <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
                   <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
                 </button>
               </div>
@@ -55,7 +55,7 @@
               </div></a><a class="hearing-item" href="/hearing-detail.html">
               <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                 <div class="hearing-item-bg"></div>
-                <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event"><span class="button_span">Видеозапись</span>
+                <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
                   <ion-icon class="icon" name="caret-forward-outline"></ion-icon>
                 </button>
               </div>

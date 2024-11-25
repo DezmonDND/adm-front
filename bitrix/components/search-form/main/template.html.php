@@ -12,7 +12,7 @@
       <div class="calendar__links">
       </div>
     </div>
-    <button class="button button_blue button_size_xs   button_without-event"><span class="button_span">Искать</span>
+    <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
     </button>
   </div>
 </form>

@@ -42,12 +42,12 @@
   }
 }
 .interviews_array .interview .interview__content {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   height: 100%;
   justify-content: space-between;
+  padding: 20px;
 }
 @media (max-width: 992px) {
   .interviews_array .interview .interview__content {

@@ -26,6 +26,6 @@
         </div>
       </div>
     </fieldset>
-  </div><a class="button button_link button_blue button_size_l  " href="/" attributes="{}"><span class="button_span">Подписаться</span>
+  </div><a class="button button_link button_blue button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подписаться</span>
     <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
 </div>

@@ -7,7 +7,7 @@ body.tmp-duma .important-links .main-title {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 15px;
+    gap: 16px;
   }
 }
 
@@ -64,6 +64,11 @@ body.tmp-duma .important-links .main-title {
   min-height: 88px;
   padding: 20px;
 }
+@media (max-width: 992px) {
+  .important-links .important-links__container .important-link {
+    padding: 16px;
+  }
+}
 .important-links .important-links__container .important-link:hover {
   color: var(--primary-color-hover);
 }
@@ -75,7 +80,6 @@ body.tmp-duma .important-links .main-title {
     border-radius: 8px;
     margin-right: 8px;
     min-height: 64px;
-    padding: 16px;
   }
 }
 .important-links .important-links__container .important-link .important-link__container {

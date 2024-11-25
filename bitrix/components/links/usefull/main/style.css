@@ -34,6 +34,11 @@ body.tmp-duma .usefull-links {
   border-radius: 8px;
   padding: 20px;
 }
+@media (max-width: 992px) {
+  .usefull-links .usefull-links__container .usefull-link {
+    padding: 16px;
+  }
+}
 .usefull-links .usefull-links__container .usefull-link:hover {
   background-color: var(--services-hover);
 }
@@ -44,7 +49,6 @@ body.tmp-duma .usefull-links {
   .usefull-links .usefull-links__container .usefull-link {
     box-sizing: border-box;
     min-height: 64px;
-    padding: 16px;
   }
 }
 @media (max-width: 768px) {

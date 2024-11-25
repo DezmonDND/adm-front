@@ -18,7 +18,6 @@
 }
 @media (max-width: 992px) {
   .services .services__content .services__container {
-    margin-top: 2px;
     gap: 20px;
   }
 }

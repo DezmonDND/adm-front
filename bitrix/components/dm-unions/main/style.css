@@ -32,11 +32,11 @@
 .dm-unions-elem__container {
   display: flex;
   gap: 24px;
-  padding: 20px;
   align-items: center;
   width: 100%;
+  padding: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dm-unions-elem__container {
     padding: 16px;
   }

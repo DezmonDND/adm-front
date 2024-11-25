@@ -2,12 +2,12 @@
 <div class="dm-afisha">
   <div class="dm-afisha__container">
     <div class="dm-filter__btn">
-      <button class="button button_white dm-filter__button button_size_m  button_icon-left button_without-event"><span class="button_span">Фильтры</span>
+      <button class="button button_white dm-filter__button button_size_m  button_icon-left button_without-event" title=""><span class="button_span">Фильтры</span>
         <ion-icon class="icon" name="funnel-outline"></ion-icon>
       </button>
     </div>
     <div class="dm-calendar__btn">
-      <button class="button button_white dm-calendar__button   button_icon-left button_without-event"><span class="button_span">Календарь</span>
+      <button class="button button_white dm-calendar__button   button_icon-left button_without-event" title=""><span class="button_span">Календарь</span>
         <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
       </button>
     </div>

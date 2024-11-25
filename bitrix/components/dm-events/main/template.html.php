@@ -7,14 +7,14 @@
       </div>
     </div>
     <div class="dm-filter__btn">
-      <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()"><span class="button_span">Фильтры</span>
+      <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()" title=""><span class="button_span">Фильтры</span>
         <ion-icon class="icon" name="funnel-outline"></ion-icon>
       </button>
     </div>
     <div class="filters-popup">
       <div class="filters-popup__container"> 
         <div class="filters-popup__top-content"> <span class="filters-popup__title">Фильтры</span>
-          <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();">
+          <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();" title="">
             <ion-icon class="icon" name="close-outline"></ion-icon>
           </button>
         </div>
@@ -26,13 +26,13 @@
           <div class="calendar-dm" id="calendar-dm-events-popup"></div>
         </div>
         <div class="filters-popup__buttons">             
-          <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);"><span class="button_span">Искать</span>
+          <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);" title=""><span class="button_span">Искать</span>
           </button>
         </div>
       </div>
     </div>
     <div class="dm-calendar__btn">
-      <button class="button button_white dm-calendar__button    " onclick="toggleDumaCalendar();"><span class="button_span">Календарь</span>
+      <button class="button button_white dm-calendar__button    " onclick="toggleDumaCalendar();" title=""><span class="button_span">Календарь</span>
         <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
       </button>
     </div>

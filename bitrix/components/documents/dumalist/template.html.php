@@ -7,7 +7,7 @@
     <div class="fields">
       <div class="field">Действует ✓</div>
       <div class="field">Не является нормативным правовым актом</div>
-      <div class="field"><a class="button button_link button_blue button_size_m  button_icon-left" href="/" attributes="{}"><span class="button_span">Текст документа</span>
+      <div class="field"><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Текст документа</span>
           <ion-icon class="icon" name="document-text"></ion-icon></a>
       </div>
     </div>
@@ -19,7 +19,7 @@
     <div class="fields">
       <div class="field">Действует ✓</div>
       <div class="field">Не является нормативным правовым актом</div>
-      <div class="field"><a class="button button_link button_blue button_size_m  button_icon-left" href="/" attributes="{}"><span class="button_span">Текст документа</span>
+      <div class="field"><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Текст документа</span>
           <ion-icon class="icon" name="document-text"></ion-icon></a>
       </div>
     </div>
@@ -31,7 +31,7 @@
     <div class="fields">
       <div class="field">Действует ✓</div>
       <div class="field">Не является нормативным правовым актом</div>
-      <div class="field"><a class="button button_link button_blue button_size_m  button_icon-left" href="/" attributes="{}"><span class="button_span">Текст документа</span>
+      <div class="field"><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Текст документа</span>
           <ion-icon class="icon" name="document-text"></ion-icon></a>
       </div>
     </div>

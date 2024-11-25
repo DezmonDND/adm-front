@@ -8,10 +8,10 @@
     <div class="title__container"> 
       <h2 class="title__name">Новости</h2>
       <div class="title__buttons">
-        <button class="button button_white button_white_no-border   button_icon-left " onclick="1"><span class="button_span">RSS</span>
+        <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title=""><span class="button_span">RSS</span>
           <ion-icon class="icon" name="logo-rss"></ion-icon>
         </button>
-        <button class="button button_white button_white_no-border   button_icon-left " onclick="1"><span class="button_span">Подписаться на главное</span>
+        <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title=""><span class="button_span">Подписаться на главное</span>
           <ion-icon class="icon" name="mail"></ion-icon>
         </button>
       </div>
@@ -46,7 +46,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">история</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
                 </button>
               </div>
             </div>
@@ -55,9 +55,9 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Медицина</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
                 </button>
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Награды</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
                 </button>
               </div>
             </div>
@@ -66,7 +66,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -75,7 +75,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -84,7 +84,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">история</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
                 </button>
               </div>
             </div>
@@ -93,9 +93,9 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Медицина</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
                 </button>
-                <button class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event"><span class="button_span">Награды</span>
+                <button class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
                 </button>
               </div>
             </div>
@@ -104,7 +104,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -113,7 +113,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -122,7 +122,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -131,7 +131,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -140,7 +140,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -149,7 +149,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -158,7 +158,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -167,7 +167,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -176,7 +176,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -185,7 +185,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -194,7 +194,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -203,7 +203,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -212,7 +212,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -221,7 +221,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -230,7 +230,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -239,7 +239,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -248,7 +248,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>
@@ -257,7 +257,7 @@
           <div class="news-main-card__container">
             <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
               <div class="news-main-card__tags">
-                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                 </button>
               </div>
             </div>

@@ -16,13 +16,13 @@
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
                 <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -40,7 +40,7 @@
             </div>
             <div class="menu__socials"> 
               <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
                 <ion-icon class="icon" name="eye-outline"></ion-icon></a>
             </div>
           </div>
@@ -83,10 +83,10 @@
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()"><span class="button_span">Версия для слабовидящих</span>
+          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
             <ion-icon class="icon" name="eye-outline"></ion-icon>
           </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -94,13 +94,13 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
         <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
         </div>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
@@ -112,7 +112,7 @@
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -120,7 +120,7 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
@@ -145,14 +145,14 @@
             <input class="input     " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -195,7 +195,7 @@
             <input class="input     " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -207,13 +207,13 @@
         <div class="full-width-background">
           <div class="full-width-content">
             <div class="header-services">
-              <div class="header-services__container"> <a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Информация про мобилизацию</span>
-                  <ion-icon class="icon" name="people"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Доступная среда</span>
-                  <ion-icon class="icon" name="flower-sharp"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Коммунальная техника онлайн</span>
-                  <ion-icon class="icon" name="settings-sharp"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Общественный транспорт с 20.05.23</span>
-                  <ion-icon class="icon" name="bus"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Информация дольщикам</span>
-                  <ion-icon class="icon" name="shield-checkmark"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Открытый бюджет</span>
-                  <ion-icon class="icon" name="wallet"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Ветхное или аварийное жильё</span>
+              <div class="header-services__container"> <a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Информация про мобилизацию</span>
+                  <ion-icon class="icon" name="people"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Доступная среда</span>
+                  <ion-icon class="icon" name="flower-sharp"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Коммунальная техника онлайн</span>
+                  <ion-icon class="icon" name="settings-sharp"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Общественный транспорт с 20.05.23</span>
+                  <ion-icon class="icon" name="bus"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Информация дольщикам</span>
+                  <ion-icon class="icon" name="shield-checkmark"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Открытый бюджет</span>
+                  <ion-icon class="icon" name="wallet"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Ветхное или аварийное жильё</span>
                   <ion-icon class="icon" name="home"></ion-icon></a>
               </div>
             </div>
@@ -230,7 +230,7 @@
                   <div class="news-top-card__dot"></div>
                 </div>
                 <div class="news-top-card__content"> <span class="news-top-card__date">23 сентября 2024 </span>
-                  <h1 class="news-top-card__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                  <h1 class="news-top-card__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                     <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                 </div>
               </div>
@@ -242,7 +242,7 @@
                   <div class="news-top-card__dot"></div>
                 </div>
                 <div class="news-top-card__content"> <span class="news-top-card__date">01 ноября 2024 </span>
-                  <h1 class="news-top-card__title">Еще одна новость про город</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                  <h1 class="news-top-card__title">Еще одна новость про город</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                     <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                 </div>
               </div>
@@ -290,7 +290,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">история</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
                           </button>
                         </div>
                       </div>
@@ -299,9 +299,9 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Медицина</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
                           </button>
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Награды</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
                           </button>
                         </div>
                       </div>
@@ -310,7 +310,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                           </button>
                         </div>
                       </div>
@@ -319,7 +319,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                           </button>
                         </div>
                       </div>
@@ -328,7 +328,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">история</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
                           </button>
                         </div>
                       </div>
@@ -337,9 +337,9 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Медицина</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
                           </button>
-                          <button class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event"><span class="button_span">Награды</span>
+                          <button class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
                           </button>
                         </div>
                       </div>
@@ -348,7 +348,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                           </button>
                         </div>
                       </div>
@@ -357,7 +357,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Экономика</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Экономика</span>
                           </button>
                         </div>
                       </div>
@@ -394,14 +394,14 @@
                   </div>
                 </div>
                 <div class="dm-filter__btn">
-                  <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()"><span class="button_span">Фильтры</span>
+                  <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()" title=""><span class="button_span">Фильтры</span>
                     <ion-icon class="icon" name="funnel-outline"></ion-icon>
                   </button>
                 </div>
                 <div class="filters-popup">
                   <div class="filters-popup__container"> 
                     <div class="filters-popup__top-content"> <span class="filters-popup__title">Фильтры</span>
-                      <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();">
+                      <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();" title="">
                         <ion-icon class="icon" name="close-outline"></ion-icon>
                       </button>
                     </div>
@@ -413,13 +413,13 @@
                       <div class="calendar-dm" id="events-calendar-popup"></div>
                     </div>
                     <div class="filters-popup__buttons">             
-                      <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);"><span class="button_span">Искать</span>
+                      <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);" title=""><span class="button_span">Искать</span>
                       </button>
                     </div>
                   </div>
                 </div>
                 <div class="dm-calendar__btn">
-                  <button class="button button_white dm-calendar__button    " onclick="toggleAdmCalendar();"><span class="button_span">Календарь</span>
+                  <button class="button button_white dm-calendar__button    " onclick="toggleAdmCalendar();" title=""><span class="button_span">Календарь</span>
                     <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
                   </button>
                 </div>
@@ -499,7 +499,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
@@ -508,7 +508,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
@@ -517,7 +517,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
@@ -526,7 +526,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
@@ -535,7 +535,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
@@ -544,7 +544,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
@@ -553,7 +553,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
@@ -562,7 +562,7 @@
                     <div class="news-main-card__container">
                       <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
                         <div class="news-main-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
@@ -603,7 +603,7 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">Лицам с ограниченными возможностями здоровья</h2>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
@@ -611,7 +611,7 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">Бюджет для граждан Сургута</h2>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
@@ -619,7 +619,7 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">Национальные проекты</h2>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
@@ -627,7 +627,7 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">Национальные проекты</h2>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
@@ -656,7 +656,7 @@
                       <h3 class="services__label">Поиск законопроектов</h3>
                       <form class="search search-services">
                         <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="laws" value=""/>
-                        <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1">
+                        <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
                           <ion-icon class="icon" name="search-outline"></ion-icon>
                         </button>
                       </form>
@@ -665,7 +665,7 @@
                       <h3 class="services__label">Поиск правовых актов        </h3>
                       <form class="search search-services">
                         <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="acts" value=""/>
-                        <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1">
+                        <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
                           <ion-icon class="icon" name="search-outline"></ion-icon>
                         </button>
                       </form>
@@ -674,9 +674,9 @@
                   <div class="services__buttons">
                     <h3 class="services__buttons-title">Связаться</h3>
                     <div class="services__buttons-container">
-                      <button class="button button_blue services__button button_size_l   " onclick="console.log(1);"><span class="button_span">Электронное обращение</span>
+                      <button class="button button_blue services__button button_size_l   " onclick="console.log(1);" title=""><span class="button_span">Электронное обращение</span>
                       </button>
-                      <button class="button button_blue services__button button_size_l   " onclick="console.log(1);"><span class="button_span">Личный прием</span>
+                      <button class="button button_blue services__button button_size_l   " onclick="console.log(1);" title=""><span class="button_span">Личный прием</span>
                       </button>
                     </div>
                   </div>
@@ -740,56 +740,56 @@
           <div class="main-project-card">
             <div class="main-project-card__content">
               <div class="main-project-card__info"> 
-                <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
+                <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
                 </div>
                 <div class="main-project-card__description"> 
                   <h3 class="main-project-card__title" title="Уровень благоустройства города">Уровень благоустройства города</h3>
                   <p class="main-project-card__text">Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры </p>
                 </div>
                 <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
-              </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+              </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Участвовать</span>
                 <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
             </div>
           </div>
           <div class="main-project-card">
             <div class="main-project-card__content">
               <div class="main-project-card__info"> 
-                <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
+                <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
                 </div>
                 <div class="main-project-card__description"> 
                   <h3 class="main-project-card__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
                   <p class="main-project-card__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
                 </div>
                 <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
-              </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+              </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Участвовать</span>
                 <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
             </div>
           </div>
           <div class="main-project-card">
             <div class="main-project-card__content">
               <div class="main-project-card__info"> 
-                <div class="main-project-card__dates"> <a class="button button_link button_red button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Завершен</span></a><span class="main-project-card__date">до 29 сентября</span>
+                <div class="main-project-card__dates"> <a class="button button_link button_red button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">Завершен</span></a><span class="main-project-card__date">до 29 сентября</span>
                 </div>
                 <div class="main-project-card__description"> 
                   <h3 class="main-project-card__title" title="Работа местных властей и общественные инициативы">Работа местных властей и общественные инициативы</h3>
                   <p class="main-project-card__text">Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры </p>
                 </div>
                 <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
-              </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+              </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Участвовать</span>
                 <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
             </div>
           </div>
           <div class="main-project-card">
             <div class="main-project-card__content">
               <div class="main-project-card__info"> 
-                <div class="main-project-card__dates"> <a class="button button_link button_red button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Завершен</span></a><span class="main-project-card__date">до 29 сентября</span>
+                <div class="main-project-card__dates"> <a class="button button_link button_red button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">Завершен</span></a><span class="main-project-card__date">до 29 сентября</span>
                 </div>
                 <div class="main-project-card__description"> 
                   <h3 class="main-project-card__title" title="Работа местных властей и общественные инициативы">Работа местных властей и общественные инициативы</h3>
                   <p class="main-project-card__text">Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры </p>
                 </div>
                 <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
-              </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+              </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Участвовать</span>
                 <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
             </div>
           </div>

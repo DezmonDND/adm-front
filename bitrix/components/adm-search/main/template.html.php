@@ -10,10 +10,10 @@
       <option class="select__option" value="Раздел 4">Раздел 4</option>
       <option class="select__option" value="Раздел 5">Раздел 5</option>
     </select>
-    <button class="button search-by-site__button    " onclick="toggleCalendar();"><span class="button_span">Период публикации</span>
+    <button class="button search-by-site__button    " onclick="toggleCalendar();" title=""><span class="button_span">Период публикации</span>
       <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
     </button>
-    <button class="button button_blue button_size_m   " onclick="console.log(1);"><span class="button_span">Искать</span>
+    <button class="button button_blue button_size_m   " onclick="console.log(1);" title=""><span class="button_span">Искать</span>
     </button>
     <div class="search-by-site__calendar"> 
       <div class="calendar-dm" id="calendar"></div>
@@ -22,12 +22,12 @@
   <div class="search-by-site__filters">
     <form class="search search-search-by-site">
       <input class="input input_m  input-search input-search-m " placeholder="Тема или тип документа" name="laws" value=""/>
-      <button class="button button_blue search__button search__button_m  button_without-text  " onclick="1">
+      <button class="button button_blue search__button search__button_m  button_without-text  " onclick="1" title="">
         <ion-icon class="icon" name="search-outline"></ion-icon>
       </button>
     </form>
     <div class="dm-filter__btn">
-      <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()"><span class="button_span">Фильтры</span>
+      <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()" title=""><span class="button_span">Фильтры</span>
         <ion-icon class="icon" name="funnel-outline"></ion-icon>
       </button>
     </div>
@@ -35,7 +35,7 @@
   <div class="filters-popup">
     <div class="filters-popup__container"> 
       <div class="filters-popup__top-content"> <span class="filters-popup__title">Фильтры</span>
-        <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();">
+        <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();" title="">
           <ion-icon class="icon" name="close-outline"></ion-icon>
         </button>
       </div>
@@ -47,7 +47,7 @@
         <div class="calendar-dm" id="calendar-popup"></div>
       </div>
       <div class="filters-popup__buttons">             
-        <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);"><span class="button_span">Искать</span>
+        <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);" title=""><span class="button_span">Искать</span>
         </button>
       </div>
     </div>
@@ -57,21 +57,21 @@
     <div class="project-card__content"> 
       <div class="project-card__info"> 
         <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event"><span class="button_span">Новости ОФПС</span>
+        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
         </button>
       </div>
     </div></a><a class="project-card project-card_link" href="/"> 
     <div class="project-card__content"> 
       <div class="project-card__info"> 
         <h4 class="project-card__title">В Сургуте стартовала оперативно-профилактическая акция «Дети России»</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event"><span class="button_span">Новости ОФПС</span>
+        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
         </button>
       </div>
     </div></a><a class="project-card project-card_link" href="/"> 
     <div class="project-card__content"> 
       <div class="project-card__info"> 
         <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event"><span class="button_span">Новости ОФПС</span>
+        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
         </button>
       </div>
     </div></a>
