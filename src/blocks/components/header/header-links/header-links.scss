@@ -13,6 +13,10 @@ body.tmp-duma {
         &:active {
             border-color: $primary-color-green-click;
         }
+
+        &_active {
+            border-color: $primary-color-green-hover;
+        }
     }
 }
 

@@ -10440,6 +10440,9 @@ body.tmp-duma .header__link:hover {
 body.tmp-duma .header__link:active {
   border-color: var(--primary-color-green-click);
 }
+body.tmp-duma .header__link_active {
+  border-color: var(--primary-color-green-hover);
+}
 
 .header_links {
   display: flex;
