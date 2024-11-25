@@ -13,7 +13,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 27px;
+    margin: 0 0 24px;
 
     @include respond-to(sm) {
         margin: 8px 0 16px;
@@ -40,31 +40,9 @@ body.tmp-duma .main-title .main-title__container .tabs {
             }
 
             &_active {
-                border-bottom: 2px solid #22232c;
-                color: #22232c;
-            }
-
-            &_l {
-                @include desc-h1();
-            }
-
-            &_m {
-                @include desc-h4();
-            }
-
-            &_s {
-                @include desc-h5();
-            }
-
-            &_xs {
-                @include mob-h3();
+                border-bottom: 2px solid $second-text;
+                color: $second-text;
             }
         }
     }
-}
-
-@media screen and (max-width: 1000px) {}
-
-@media screen and (max-width: 600px) {
-    .tabs {}
 }

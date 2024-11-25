@@ -1,132 +1,40 @@
-/*** Finish - Title ***/
-.main-news {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1440px;
-  width: 100%;
-}
-.main-news .main-news__slider {
-  margin-bottom: 20px;
+.news-main .news-main__slider {
   display: none;
 }
 @media (max-width: 992px) {
-  .main-news .main-news__slider {
+  .news-main .news-main__slider {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
 }
-.main-news .main-news__container .main-news__card-list {
+.news-main .news-main__container {
+  padding: 0 0 48px;
+}
+@media (max-width: 992px) {
+  .news-main .news-main__container {
+    padding: 0 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .news-main .news-main__container {
+    padding: 0 0 20px;
+  }
+}
+.news-main .news-main__container .news-main__card-list {
   gap: 24px;
   row-gap: 20px;
   display: grid;
   grid-template-columns: repeat(4, calc((100% - 72px) / 4));
   justify-content: space-between;
   margin-top: 0;
-  padding-bottom: 44px;
 }
 @media (max-width: 1280px) {
-  .main-news .main-news__container .main-news__card-list {
+  .news-main .news-main__container .news-main__card-list {
     grid-template-columns: repeat(3, calc((100% - 72px) / 3));
   }
 }
 @media (max-width: 992px) {
-  .main-news .main-news__container .main-news__card-list {
+  .news-main .news-main__container .news-main__card-list {
     display: block;
-    padding-bottom: 0;
-  }
-}
-
-.main-news-card {
-  max-width: 310px;
-  background-color: var(--cards-background);
-  border-radius: 12px;
-  text-decoration: none;
-  color: var(--main-text);
-}
-.main-news-card:hover {
-  color: var(--primary-color-hover);
-}
-.main-news-card:active {
-  color: var(--primary-color-active);
-}
-@media (max-width: 992px) {
-  .main-news-card {
-    margin-right: 8px;
-  }
-}
-@media (max-width: 768px) {
-  .main-news-card {
-    max-width: 250px;
-  }
-}
-.main-news-card .main-news-card__container .main-news-card__image-block {
-  position: relative;
-}
-.main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__image {
-  width: 100%;
-  height: 181px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 12px 12px 0 0;
-}
-@media (max-width: 992px) {
-  .main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__image {
-    max-height: 145px;
-  }
-}
-.main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__tags {
-  display: flex;
-  gap: 8px;
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
-@media (max-width: 992px) {
-  .main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__tags {
-    top: 8px;
-    left: 8px;
-  }
-}
-.main-news-card .main-news-card__container .main-news-card__image-block .main-news-card__tags .news-card__tag {
-  padding: 4px 12px;
-  font-weight: 500;
-  font-size: calc(11px * var(--scale));
-  line-height: calc(14px * var(--lh));
-  text-transform: uppercase;
-}
-.main-news-card .main-news-card__container .main-news-card__content {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 8px;
-}
-@media (max-width: 992px) {
-  .main-news-card .main-news-card__container .main-news-card__content {
-    padding: 16px;
-  }
-}
-.main-news-card .main-news-card__container .main-news-card__content .main-news-card__date {
-  color: var(--tertiary-text);
-  font-weight: 300;
-  font-size: calc(14px * var(--scale));
-  line-height: calc(18px * var(--lh));
-}
-@media (max-width: 992px) {
-  .main-news-card .main-news-card__container .main-news-card__content .main-news-card__date {
-    font-size: calc(10px * var(--scale));
-    line-height: calc(14px * var(--lh));
-  }
-}
-.main-news-card .main-news-card__container .main-news-card__content .main-news-card__title {
-  font-weight: 500;
-  font-size: calc(16px * var(--scale));
-  line-height: calc(20px * var(--lh));
-}
-@media (max-width: 992px) {
-  .main-news-card .main-news-card__container .main-news-card__content .main-news-card__title {
-    font-size: calc(12px * var(--scale));
-    line-height: calc(16px * var(--lh));
   }
 }

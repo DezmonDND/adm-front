@@ -1,0 +1,8 @@
+include ../../../libs/buttons/_buttons
+
+mixin projects-detail()
+    .projects-detail__container
+        .projects-detail__about
+            h3.projects-detail__title Дополнительная информация
+            p.projects-detail__desc Предваряя <strong>акцент</strong> в <b>неважный жирный текст</b> города состоялась <s>встреча</s> с представителями <i>делегаций</i> Муслюмовского <u>муниципального района</u> (Республика Татарстан), Дома дружбы народов Республики Башкортостан и города Сибай. Гости приехали с двухдневным визитом в наш город для участия в Сабантуе.дерации разделяет муниципальные #[a(href='/').link правовые] акты на #[a(href='/').link нормативные] и ненормативные
+        +button({ type: 'link', iconPosition: 'left', href: '/init-projects-all.html', class: 'button_white', icon: 'arrow-back-outline', text: 'Вернуться к инициативным проектам'})

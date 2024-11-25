@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    
+
     @include respond-to(sm) {
         flex-direction: column;
     }
@@ -24,10 +24,6 @@
         .label {
             color: $tertiary-text;
             @include caption-2;
-        }
-
-        .field__desc {
-
         }
     }
 }

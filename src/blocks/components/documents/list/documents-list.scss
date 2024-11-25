@@ -5,13 +5,12 @@
     flex-direction: column;
     gap: 16px;
 
-
     .doc-line {
-        padding: 20px;
         background: $grey-adm;
         border-radius: 12px;
         color: $second-text;
         text-decoration: none;
+        @include content-paddings;
 
         &:hover {
             background: $services-hover;
@@ -24,7 +23,6 @@
 
         .name {
             @include text-2;
-
         }
     }
 }

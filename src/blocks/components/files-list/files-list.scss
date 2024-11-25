@@ -1,5 +1,17 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .files-list {
+        .files-list__document {
+            .files-list__document-description {
+                .files-list__icon {
+                    color: $primary-color-green;
+                }
+            }
+        }
+    }
+}
+
 .files-list {
     display: flex;
     flex-direction: column;
@@ -15,18 +27,18 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            padding: 16px 12px;
             border-radius: 8px;
-            background-color: #FAFAFA;
+            background-color: $cards-background;
             width: 100%;
+            @include content-paddings;
 
             .files-list__icon {
                 color: $primary-color;
-                font-size: 24px;
+                font-size: 20px;
             }
 
             .files-list__document-title {
-                font-weight: 500;
+                width: calc(100% - 32px);
                 @include lead-5;
             }
         }
@@ -38,14 +50,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 23px;
-    height: 23px;
-    cursor: pointer;
-    padding: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    border: 1px solid transparent;
     background-color: $cards-background;
     border-radius: 50%;
+    cursor: pointer;
 
     &:hover {
+        border: 1px solid transparent;
+        background-color: $cards-background;
         color: $primary-color;
     }
 }

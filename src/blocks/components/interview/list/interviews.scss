@@ -1,55 +1,5 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-@mixin desc-h5() {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-@mixin desc-h3() {
-    font-size: 24px;
-    line-height: 28px;
-}
-
-@mixin desc-text3 {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-@mixin desc-text4 {
-    font-size: 14px;
-    line-height: 20px;
-}
-
-@mixin desc-title5 {
-    font-size: 14px;
-    line-height: 16px;
-}
-
-@mixin mob-h4() {
-    font-size: 12px;
-    line-height: 14px;
-}
-
-@mixin mob-text2 {
-    font-size: 12px;
-    line-height: 18px;
-}
-
-@mixin mob-title3 {
-    font-size: 12px;
-    line-height: 14px;
-}
-
-@mixin mob-h2() {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-@mixin desc-label-services {
-    font-size: 13px;
-    line-height: 18px;
-}
-
 .interview__info {
     display: flex;
     flex-direction: column;
@@ -57,13 +7,22 @@
 
 .interviews_array {
     display: grid;
-    grid-template-columns: repeat(3, 32%);
-    max-width: 1311px;
+    grid-template-columns: repeat(3, calc((100% - 48px)/3));
     width: 100%;
     align-items: center;
     justify-content: center;
     gap: 24px;
-    margin: 40px 0 40px;
+    margin-top: 24px;
+
+    @include respond-to(md) {
+        gap: 12px;
+        grid-template-columns: repeat(2, calc((100% - 24px)/2));
+        margin-top: 16px;
+    }
+
+    @include respond-to(sm) {
+        grid-template-columns: 100%;
+    }
 
     .interview {
         display: flex;
@@ -71,60 +30,60 @@
         align-items: baseline;
         width: 100%;
         border-radius: 20px;
-        background-color: #F9F9F9;
+        background-color: $cards-background;
         justify-content: space-between;
         height: 100%;
         min-height: 428px;
 
+        @include respond-to(md) {
+            border-radius: 8px;
+            min-height: 288px;
+        }
+
         .interview__content {
-            padding: 13px 32px 36px;
             display: flex;
             flex-direction: column;
             align-items: baseline;
-            gap: 28px;
             height: 100%;
             justify-content: space-between;
+            @include content-paddings;
 
             .iinterview__dates {
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 8px;
 
                 .iinterview__date {
-                    @include desc-h5();
-                    font-weight: 600;
                     border-radius: 100px;
                     background-color: $content-color;
                     padding: 4px 16px;
+                    @include heading-h5;
                 }
             }
 
             .iinterview__description {
                 display: flex;
                 flex-direction: column;
-                gap: 23px;
+                gap: 16px;
                 height: 100%;
                 overflow: hidden;
-                margin-top: 20px;
+                margin-top: 24px;
 
+                @include respond-to(md) {
+                    margin-top: 16px;
+                    gap: 8px;
+                }
 
                 .iinterview__title {
-                    @include desc-h3();
-                    font-weight: 600;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
                     padding: 0;
+                    @include visible-lines(2);
+                    @include heading-h3;
                 }
 
                 .interview__text {
-                    @include desc-text3();
-                    font-weight: 400;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
+                    margin: 0;
+                    @include visible-lines(3);
+                    @include text-2;
                 }
             }
         }
@@ -137,95 +96,13 @@
 
             .iinterview__votes {
                 color: $tertiary-text;
-                @include desc-text4();
-                font-weight: 400;
+                @include caption-2;
             }
 
             .iinterview__user-status {
-                font-weight: 500;
-                @include desc-title5();
                 color: $primary-color;
+                @include caption-2;
             }
         }
     }
-}
-
-@media screen and (max-width: 1000px) {
-    .interviews_array {
-        grid-template-columns: repeat(2, 50%);
-        gap: 8px;
-        margin: 22px 0 40px;
-
-        .interview {
-            border-radius: 8px;
-            min-height: 288px;
-
-            .interview__content {
-                padding: 12px 24px 19px;
-                gap: 25px;
-
-                .iinterview__dates {
-                    gap: 9px;
-
-                    .iinterview__date {
-                        @include mob-h4();
-                    }
-                }
-
-                .iinterview__description {
-                    gap: 12px;
-                    margin-top: 14px;
-
-                    .iinterview__title {
-                        @include mob-h2();
-                        margin-top: 0;
-                    }
-
-                    .interview__text {
-                        @include desc-label-services();
-                    }
-                }
-
-                .iinterview__infos {
-                    margin-top: 13px;
-
-                    .iinterview__votes {
-                        @include mob-text2();
-                    }
-
-                    .iinterview__user-status {
-                        @include mob-title3();
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .interviews_array {
-        grid-template-columns: 100%;
-
-        .interview {
-            .interview__content {
-                gap: 0;
-                padding: 12px 20px 19px;
-
-                .interview__info {
-                    .iinterview__dates {
-                        .tag_interviews-array {
-                            font-size: 12px;
-                            line-height: 16px;
-                            padding: 4px 16px;
-                        }
-                    }
-                }
-
-                .iinterview__description {
-                    margin: 13 0 0;
-                }
-            }
-        }
-    }
-
 }

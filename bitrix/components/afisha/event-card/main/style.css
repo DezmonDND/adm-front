@@ -1,4 +1,3 @@
-/*** Finish - Title ***/
 .event-card {
   background-color: var(--cards-background);
   display: flex;
@@ -7,11 +6,11 @@
 .event-card .event-card__container {
   display: flex;
   flex-direction: column;
-  max-width: 738px;
+  max-width: 766px;
   width: 100%;
-  padding: 40px 0 40px;
+  padding: 32px 0 32px;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .event-card .event-card__container {
     padding: 20px;
   }
@@ -24,14 +23,15 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin: 24px 0 64px;
+  margin: 24px 0 48px;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .event-card .event-card__container .event-card__info .event-card__description {
     margin-bottom: 32px;
   }
 }
 .event-card .event-card__container .event-card__info .event-card__description .event-card__title {
+  padding: 0;
   font-weight: 500;
   font-size: calc(32px * var(--scale));
   line-height: calc(38px * var(--lh));
@@ -43,6 +43,7 @@
   }
 }
 .event-card .event-card__container .event-card__info .event-card__description .event-card__text {
+  margin: 0;
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(24px * var(--lh));
@@ -83,4 +84,7 @@
 .event-card .event-card__container .event-card__info .event-card__buttons {
   display: flex;
   gap: 8px;
+}
+.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button {
+  position: relative;
 }

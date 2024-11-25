@@ -16,13 +16,13 @@
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
                 <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -40,7 +40,7 @@
             </div>
             <div class="menu__socials"> 
               <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
                 <ion-icon class="icon" name="eye-outline"></ion-icon></a>
             </div>
           </div>
@@ -83,10 +83,10 @@
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()"><span class="button_span">Версия для слабовидящих</span>
+          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
             <ion-icon class="icon" name="eye-outline"></ion-icon>
           </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -94,13 +94,13 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
         <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
         </div>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
@@ -112,7 +112,7 @@
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -120,7 +120,7 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
@@ -145,14 +145,14 @@
             <input class="input     " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -195,7 +195,7 @@
             <input class="input     " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -207,15 +207,21 @@
         <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Опросы</a><span class="span">/</span><span class="breadcrumb_link">Создание агломераций на территории Ханты-Мансийского автономного округа-Югры</span>
         </div>
       </div>
-      <div class="interview-full">
-        <div class="interview-full__container"> 
-          <div class="interview-full__info"> 
-            <button class="button button_green button_radius button_size_xs   button_without-event"><span class="button_span">Идет</span>
-            </button><span class="interview-full__date">до 29 сентября</span><span class="interview-full__votes">319 голосов</span>
-          </div>
-          <div class="interview-full__description"> 
-            <h2 class="interview-full__title">Cоздание агломераций на территории Ханты-Мансийского автономного округа – Югры</h2>
-            <p class="interview-full__text">Просим Вас принять участие в опросе и высказать своё мнение о создании агломерации на территории автономного округа. Создание агломераций предусмотрено Стратегией социально-экономического развития Ханты-Мансийского автономного округа – Югры до 2020 года и на период до 2030 года и позволит решить ряд важнейших задач, среди них: повышение эффективности использования ресурсов и человеческого капитала; развитие межмуниципального сотрудничества по приоритетным направлениям, выравнивание экономического потенциала городов и районов, развитие промышленных и социальных объектов и другие.Ваше мнение позволит оценить степень востребованности подобных изменений.</p>
+      <div class="full-width-container">
+        <div class="full-width-background">
+          <div class="full-width-content"> 
+            <div class="interview-full">
+              <div class="interview-full__container"> 
+                <div class="interview-full__info"> 
+                  <button class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span>
+                  </button><span class="interview-full__date">до 29 сентября</span><span class="interview-full__votes">319 голосов</span>
+                </div>
+                <div class="interview-full__description"> 
+                  <h2 class="interview-full__title">Cоздание агломераций на территории Ханты-Мансийского автономного округа – Югры</h2>
+                  <p class="interview-full__text">Просим Вас принять участие в опросе и высказать своё мнение о создании агломерации на территории автономного округа. Создание агломераций предусмотрено Стратегией социально-экономического развития Ханты-Мансийского автономного округа – Югры до 2020 года и на период до 2030 года и позволит решить ряд важнейших задач, среди них: повышение эффективности использования ресурсов и человеческого капитала; развитие межмуниципального сотрудничества по приоритетным направлениям, выравнивание экономического потенциала городов и районов, развитие промышленных и социальных объектов и другие.Ваше мнение позволит оценить степень востребованности подобных изменений.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -278,21 +284,21 @@
         <fieldset class="fieldset">
           <h3 class="fieldset__title reception__sender_title">Кому направляете электронную анкету</h3>
           <div class="fieldset__answers">
-            <div class="ms">
-              <ul class="ms__chose">
+            <div class="multi-select">
+              <ul class="multi-select__chose">
                 <li>
-                  <input class="input ms__input" id="name" name="multiSelect" value="" type="text"/>
+                  <input class="input multi-select__input" id="name" name="multiSelect" value="" type="text"/>
                 </li>
               </ul>
-              <ul class="ms__dropdown ms__dropdown_hidden" id="multiSelectDropdown">
-                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
-                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
-                <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
+              <ul class="multi-select__dropdown multi-select__dropdown_hidden" id="multiSelectDropdown">
+                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
+                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
+                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
               </ul>
             </div>
           </div>
         </fieldset>
-        <button class="button button_blue button_size_l   " onclick="getValues(event)"><span class="button_span">Отправить форму</span>
+        <button class="button button_blue interview-form__button button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить форму</span>
           <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
         </button>
       </form>
@@ -302,7 +308,7 @@
         <div class="thanks__description"> 
           <h2 class="thanks__title">Благодарим вас за принятие участия в опросе!</h2>
           <p class="thanks__text">Ваш вклад помогает городу становиться лучше. Примите участие и в других опросах - вместе мы сделаем город Сургут лучше!</p>
-        </div><a class="button button_link button_blue button_thanks   " href="/" attributes="{}"><span class="button_span">Перейти к опросам</span></a>
+        </div><a class="button button_link button_blue button_thanks   " href="/" title="" attributes="{}"><span class="button_span">Перейти к опросам</span></a>
       </div>
     </div>
     <footer class="footer">
@@ -340,9 +346,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./js/lib/ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="./js/lib/ionicons/ionicons.js"></script>
   </body>
 </html>

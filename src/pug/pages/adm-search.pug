@@ -11,40 +11,5 @@ block content
         +title({
             title: 'Поиск по всем разделам сайта'
             })
-        +search-by-site()  
-        .adm-search
-            +project_card(false, {
-                title: 'Дети – цветы жизни!',
-                date: '23 сентября 2024',
-                href: '/',
-                tag: {
-                    size: "xs",
-                    type: 'button',
-                    text: 'Новости ОФПС',
-                    class: 'button_blue button_radius',
-                    }
-                    })     
-            +project_card(false, {
-                title: 'В Сургуте стартовала оперативно-профилактическая акция «Дети России»',
-                date: '23 сентября 2024',
-                href: '/',
-                tag: {
-                    size: "xs",
-                    type: 'button',
-                    text: 'Новости ОФПС',
-                    class: 'button_blue button_radius',
-                    }
-                    })
-            +project_card(false, {
-                title: 'Дети – цветы жизни!',
-                date: '23 сентября 2024',
-                href: '/',
-                tag: {
-                    size: "xs",
-                    type: 'button',
-                    text: 'Новости ОФПС',
-                    class: 'button_blue button_radius',
-                    }
-                    }) 
-            .adm-search__pagination 
-                +pagination(6,4,2)
+        +adm-search()    
+

@@ -14,14 +14,14 @@
         <input class="input     " placeholder="Номер телефона" value=""/>
       </div>
       <div class="login__content-main__confirm-standart">
-        <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+        <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
         </button>
       </div>
       <div class="login__content-main__confirm-delim"> 
         <div class="delim-line"></div><span> или </span>
         <div class="delim-line"> </div>
       </div>
-      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
       </div>
       <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
     </div>

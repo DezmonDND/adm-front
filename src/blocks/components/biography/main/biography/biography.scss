@@ -1,10 +1,14 @@
+@use '../../../../../assets/styles/vars.scss' as *;
+
 .biography {
     display: flex;
     align-items: center;
-    max-width: 1440px;
-    padding: 24px 0 0;
     width: 100%;
     box-sizing: border-box;
+
+    @include respond-to(md) {
+        padding-top: 12px;
+    }
 
     .biography__container {
         display: flex;
@@ -13,7 +17,13 @@
         gap: 24px;
         width: 100%;
 
-        @media screen and (max-width: 600px) {
+        @include respond-to(md) {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 12px;
+        }
+
+        @include respond-to(sm) {
             gap: 12px;
         }
 
@@ -24,6 +34,10 @@
             max-width: 309px;
             width: 100%;
 
+            @include respond-to(md) {
+                max-width: none;
+            }
+
             .biography__avatar {
                 max-width: 309px;
                 width: 100%;
@@ -32,19 +46,23 @@
                 border-radius: 12px;
                 object-fit: cover;
                 object-position: center;
+
+                @include respond-to(md) {
+                    display: none;
+                }
             }
 
             .biography__contacts {
                 display: flex;
                 flex-direction: column;
+                gap: 32px;
                 padding: 20px;
                 border-radius: 20px;
-                background-color: #fafafa;
+                background-color: $cards-background;
 
-                @media screen and (max-width: 1000px) {
+                @include respond-to(sm) {
                     flex-direction: row;
                     flex-wrap: wrap;
-
                 }
 
                 .biography__phones {
@@ -53,13 +71,12 @@
                     gap: 9px;
 
                     .biography__phones-title {
+                        padding: 0;
                         font-weight: 600;
                     }
 
-                    .biography__phone {}
-
                     .biography__link {
-                        color: #000000;
+                        color: $main-text;
                     }
                 }
             }
@@ -68,12 +85,12 @@
         .biography__info {
             padding: 40px;
             border-radius: 20px;
-            background-color: #fafafa;
+            background-color: $cards-background;
             width: 100%;
 
-            @media screen and (max-width: 600px) {
+            @include respond-to(md) {
+                width: auto;
                 padding: 20px;
-                ;
             }
 
             .biography__info-content {
@@ -83,16 +100,18 @@
                 max-width: 760px;
 
                 .biography__user {
+                    @include respond-to(md) {
+                        display: none;
+                    }
+
                     .biography__name {
-                        font-weight: 600;
-                        font-size: 40px;
-                        line-height: 48px;
+                        padding: 0;
                         margin-bottom: 12px;
+                        @include heading-h1;
                     }
 
                     .biography__job {
-                        font-size: 20px;
-                        line-height: 30px;
+                        @include text-1;
                     }
                 }
 
@@ -101,10 +120,13 @@
                     flex-direction: column;
                     gap: 7px;
 
+                    p {
+                        margin: 0;
+                        @include text-2;
+                    }
+
                     .biography__description-span {
                         font-weight: 600;
-                        font-size: 16px;
-                        line-height: 24px;
                     }
                 }
 
@@ -114,134 +136,22 @@
                     gap: 24px;
                     margin-top: 26px;
 
+                    @include respond-to(md) {
+                        margin-top: 0;
+                    }
+
                     .biography__more-contacts-content {
                         display: flex;
                         flex-direction: column;
                         gap: 4px;
 
-                        .biography__more-contacts-title {
-                            font-weight: 600;
-                            font-size: 16px;
-                            line-height: 24px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .biography {
-
-        .biography__container {
-            display: flex;
-            flex-direction: column-reverse;
-
-            .biography__contacts-content {
-                max-width: none;
-
-                .biography__avatar {
-                    display: none;
-                }
-
-                .biography__contacts {
-
-
-                    .biography__phones {
-
-                        .biography__phones-title {}
-
-                        .biography__phone {}
-
-                        .biography__link {}
-                    }
-                }
-            }
-
-
-            .biography__info {
-                width: auto;
-
-
-                .biography__info-content {
-
-
-                    .biography__user {
-                        display: none;
-
-                        .biography__name {}
-
-                        .biography__job {}
-                    }
-
-                    .biography__description {
-                        .biography__description-span {}
-                    }
-
-                    .biography__more-contacts {
-
-
-                        .biography__more-contacts-content {
+                        @include respond-to(md) {
                             display: none;
-
-                            .biography__more-contacts-title {}
                         }
-                    }
-                }
-            }
-        }
-    }
 
-}
-
-@media screen and (max-width: 600px) {
-    .biography {
-
-        .biography__container {
-
-            .biography__contacts-content {
-
-                .biography__avatar {}
-
-                .biography__contacts {
-
-
-                    .biography__phones {
-
-                        .biography__phones-title {}
-
-                        .biography__phone {}
-
-                        .biography__link {}
-                    }
-                }
-            }
-
-
-            .biography__info {
-
-
-                .biography__info-content {
-
-
-                    .biography__user {
-                        .biography__name {}
-
-                        .biography__job {}
-                    }
-
-                    .biography__description {
-                        .biography__description-span {}
-                    }
-
-                    .biography__more-contacts {
-
-
-                        .biography__more-contacts-content {
-
-
-                            .biography__more-contacts-title {}
+                        .biography__more-contacts-title {
+                            padding: 0;
+                            @include heading-h5;
                         }
                     }
                 }

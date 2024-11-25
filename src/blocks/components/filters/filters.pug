@@ -1,4 +1,7 @@
-mixin filters()
+include ../../libs/select/_select.pug
+include ../../libs/checkbox/_checkbox.pug
+
+mixin filters(data={})
     .filters
         .filters_container
             +select('right', [
@@ -16,10 +19,11 @@ mixin filters()
                 { value: 'Место проведения', text: 'Место проведения' },
                 { value: 'Место проведения', text: 'Место проведения' }
                 ], 'single', 'filters__select')
-        +checkbox({
-            label: 'С пушкинской картой',
-            id: '10',
-            name: 'with-card',
-            status: true,
-            sort: 'checkbox'
-        })                  
+        if data.checkbox        
+            +checkbox({
+                label: 'С пушкинской картой',
+                id: '10',
+                name: 'with-card',
+                status: true,
+                sort: 'checkbox'
+            })                  

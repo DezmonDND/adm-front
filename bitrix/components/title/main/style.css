@@ -1,9 +1,8 @@
-/*** Finish - Title ***/
 .main-title {
   box-sizing: border-box;
   padding: 48px 0 48px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .main-title {
     padding: 20px 0 20px;
   }

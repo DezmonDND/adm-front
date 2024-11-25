@@ -17,10 +17,10 @@
     -->
     <!--else-->
     <button class="hearing-preview-play" onclick="$('.hearing-preview').addClass('hearing-preview-on'); $('.hearing-preview video')[0].play();"><span class="hearing-preview-play-icon"></span></button>
-    <button class="button live_stream live_stream_l button_white button_white_no-border button_radius   button_icon-left button_without-event"><span class="button_span">Прямая трансляция</span>
+    <button class="button live_stream live_stream_l button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">Прямая трансляция</span>
       <ion-icon class="icon" name="radio-button-on-outline"></ion-icon>
     </button>
-    <button class="button live_stream live_stream_s button_white button_white_no-border button_radius  button_without-text button_icon-left button_without-event">
+    <button class="button live_stream live_stream_s button_white button_white_no-border button_radius  button_without-text button_icon-left button_without-event" title="">
       <ion-icon class="icon" name="radio-button-on-outline"></ion-icon>
     </button>
   </div>
@@ -40,7 +40,7 @@
               <div class="hearing-detail-description-label">Время</div>18:00
             </div>
             <div class="hearing-detail-description-meta-item">
-              <button class="button button_white button_size_s  button_icon-left " onclick="console.log(&quot;Шаринг&quot;)"><span class="button_span">Поделиться</span>
+              <button class="button button_white button_size_s  button_icon-left " onclick="console.log(&quot;Шаринг&quot;)" title=""><span class="button_span">Поделиться</span>
                 <ion-icon class="icon" name="link"></ion-icon>
               </button>
             </div>

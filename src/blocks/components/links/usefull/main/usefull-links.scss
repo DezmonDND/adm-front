@@ -9,41 +9,31 @@ body.tmp-duma .usefull-links {
 }
 
 .usefull-links {
-    margin-top: 48px;
-
-    @media (max-width: 1000px) {
-        margin-top: 20px;
-    }
-
     .usefull-links__container {
         display: grid;
         grid-template-columns: repeat(4, calc((100% - 72px)/4));
         gap: 24px;
         justify-content: center;
-        margin-top: 6px;
 
-        @media (max-width: 1000px) {
+        @include respond-to(md) {
             gap: 8px;
             grid-template-columns: repeat(3, calc((100% - 16px)/3));
             margin-top: 0;
             padding: 0 0 4px;
         }
 
-        @media (max-width: 600px) {
+        @include respond-to(sm) {
             display: flex;
             flex-direction: column;
         }
 
         .usefull-link {
             display: flex;
-            flex-direction: row-reverse;
             text-decoration: none;
             color: $main-text;
-            gap: 8px;
             background-color: $cards-background;
             border-radius: 8px;
-            padding: 20px;
-            justify-content: space-between;
+            @include content-paddings;
 
             &:hover {
                 background-color: $services-hover;
@@ -53,31 +43,39 @@ body.tmp-duma .usefull-links {
                 background-color: $services-active;
             }
 
-            @media (max-width: 1000px) {
+            @include respond-to(md) {
                 box-sizing: border-box;
                 min-height: 64px;
-                gap: 12px;
-                padding: 16px;
             }
 
-            @media (max-width: 600px) {
+            @include respond-to(sm) {
                 min-height: unset;
                 padding: 12px 20px;
                 align-items: center;
                 min-height: 48px;
             }
 
-            .usefull-link__icon {
-                color: $primary-color;
-            }
+            .usefull-link__container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                width: 100%;
+                gap: 8px;
 
-            .usefull-link__title {
-                width: calc(100% - 32px);
-                @include visible-lines(2);
-                @include heading-h5;
+                @include respond-to(md) {
+                    gap: 12px;
+                }
+
+                .usefull-link__icon {
+                    color: $primary-color;
+                }
+
+                .usefull-link__title {
+                    width: calc(100% - 32px);
+                    @include visible-lines(2);
+                    @include heading-h5;
+                }
             }
         }
     }
-
-
 }

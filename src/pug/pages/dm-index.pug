@@ -2,78 +2,10 @@ extends ../dm-layout
 
 block content
     main.main
-        +news-top({
-            title: {
-                href: '/',
-                title: 'Главные новости',
-                link_text: 'Все новости',
-                },
-            tabs: [
-                { isActive: true, title: 'Самые важные', href: '/' },
-                { title: 'Реализация нацпроектов', href: '/' },
-                { title: 'Деятельность администрации', href: '/' },
-                { title: 'Областная дума', href: '/' },
-            ]  ,  
-            cards: [
-                {
-                    icon: 'arrow-forward-outline',
-                    classIcon: 'dm-card-without-image__icon', 
-                },
-                {
-                    icon: 'arrow-forward-outline', 
-                    classIcon: 'dm-card-without-image__icon',
-                },
-                {
-                    icon: 'arrow-forward-outline',
-                    classIcon: 'dm-card-without-image__icon', 
-                },
-                {
-                    icon: 'arrow-forward-outline', 
-                    classIcon: 'dm-card-without-image__icon',
-                }
-            ]})                                       
-        .main-events
-            .main-events__container 
-                +main-title({
-                    href: '/',
-                    title: 'Хроника и анонсы событий',
-                    link_text: 'Все события'
-                })
-                .dm-filter__btn
-                    +button({ type: 'button', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
-                .dm-calendar__btn
-                    +button({ type: 'button', class: 'button_white dm-calendar__button', iconPosition: 'left', icon: 'calendar-number-outline', text: "Календарь"})                    
-                +filters()
-                +chronicle()                                                       
-        .important-links
-            .full-width-container
-                .full-width-background
-                    .full-width-content 
-                        +main-title({
-                            href: '/',
-                            title: 'Архив трансляций',
-                            link_text: 'Все видео и фото',
-                            type: 'tabs',
-                            tabs: [
-                                { isActive: true, title: 'Архив трансляций', href: '/' },
-                                { title: 'Фото', href: '/' },
-                                '', 'dm-title-tabs'
-                            ]
-                        })
-                        +tabs( 
-                            [
-                                { isActive: true, title: 'Самые важные', href: '/' },
-                                { title: 'Заседания', href: '/' },
-                                { title: 'Публичные слушания', href: '/' },
-                            ])
-                        +archive-dm()
-        .solve-problems
-            +main-title({
-                href: '/',
-                title: 'Решаем проблемы вместе',
-            })   
-            .solve-problems__container
-                img.solve-problems__banner(src='../img/banner_1.png' alt='Баннер')                                  
+        +dm-news-top()                                       
+        +dm-events()                                                       
+        +dm-archive()
+        +solve-problems()                                 
         +dm-city-projects()
         +usefull-links({
             links: [

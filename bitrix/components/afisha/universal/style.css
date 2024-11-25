@@ -1,18 +1,16 @@
-.afisha-universal {
+.afisha .filters {
+  margin-top: 16px;
+}
+.afisha .afisha-universal {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.afisha-universal .afisha-universal__content {
+.afisha .afisha-universal .afisha-universal__content {
   width: 100%;
 }
-.afisha-universal .afisha-universal__content .afisha-universal__events-list {
+.afisha .afisha-universal .afisha-universal__content .afisha-universal__events-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 64px;
-}
-
-.afisha-universal__selects {
-  margin: 20px 0;
 }
