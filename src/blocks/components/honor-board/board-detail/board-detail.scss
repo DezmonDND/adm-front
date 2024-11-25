@@ -1,8 +1,12 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .board-detail {
-
+    padding-top: 24px;
     border-radius: 12px;
+
+    @include respond-to(md) {
+        padding-top: 16px;
+    }
 
     .board-detail__container {
         display: flex;
