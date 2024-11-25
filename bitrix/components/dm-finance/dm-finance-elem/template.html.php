@@ -9,7 +9,7 @@
           <ion-icon name="checkmark-outline"></ion-icon>
         </div>
         <div class="dm-finance-elem__doc"> <a href="#">(№ 352-VII ДГ от 31.05.2023)</a></div>
-      </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Подробнее</span></a>
+      </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
     </div>
   </div>
 </div>

@@ -8,7 +8,7 @@
   <div class="toggle-container service-info">
     <div class="toggle-header">Информация по услуге</div>
     <div class="toggle-content">
-      <button class="button button_blue button_radius button_tag-label button_size_s   button_without-event"><span class="button_span">Государственная</span>
+      <button class="button button_blue button_radius button_tag-label button_size_s   button_without-event" title=""><span class="button_span">Государственная</span>
       </button><br/>Государственная регистрация расторжения брака производится органом, осуществляющим государственную регистрацию актов гражданского состояния, посредством составления соответствующей записи акта гражданского состояния, на основании которой выдается свидетельство о государственной регистрации акта гражданского состояния.
     </div>
   </div>

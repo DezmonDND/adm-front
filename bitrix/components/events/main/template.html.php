@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="events__filters">
-      <button class="button button_white events__filter-button button_size_m  button_icon-left button_without-event"><span class="button_span">Фильтры</span>
+      <button class="button button_white events__filter-button button_size_m  button_icon-left button_without-event" title=""><span class="button_span">Фильтры</span>
         <ion-icon class="icon" name="funnel-outline"></ion-icon>
       </button>
     </div>
@@ -58,7 +58,7 @@
           <div class="calendar__icon"><span>2</span></div>
         </div>
       </div>
-      <button class="button button_white calendar__button   button_icon-left button_without-event"><span class="button_span">Календарь</span>
+      <button class="button button_white calendar__button   button_icon-left button_without-event" title=""><span class="button_span">Календарь</span>
         <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
       </button>
     </div>
@@ -91,7 +91,7 @@
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
             <div class="main-news-card__tags">
-              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
               </button>
             </div>
           </div>
@@ -100,7 +100,7 @@
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
             <div class="main-news-card__tags">
-              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
               </button>
             </div>
           </div>
@@ -109,7 +109,7 @@
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
             <div class="main-news-card__tags">
-              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
               </button>
             </div>
           </div>
@@ -118,7 +118,7 @@
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_5.png" alt="Изображения"/>
             <div class="main-news-card__tags">
-              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
               </button>
             </div>
           </div>
@@ -127,7 +127,7 @@
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
             <div class="main-news-card__tags">
-              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
               </button>
             </div>
           </div>
@@ -136,7 +136,7 @@
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
             <div class="main-news-card__tags">
-              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
               </button>
             </div>
           </div>
@@ -145,7 +145,7 @@
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
             <div class="main-news-card__tags">
-              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
               </button>
             </div>
           </div>
@@ -154,7 +154,7 @@
         <div class="main-news-card__container">
           <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_5.png" alt="Изображения"/>
             <div class="main-news-card__tags">
-              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+              <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
               </button>
             </div>
           </div>

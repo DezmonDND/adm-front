@@ -9,10 +9,12 @@ mixin button(options)
     - const classHasText = options.text ? '' : 'button_without-text'
     - const classIconPosition = options.iconPosition ? 'button_icon-'+options.iconPosition : ''
     - const classHasEvent = options.event ? '' : 'button_without-event'
+    - const hasTitle = options.title ? options.title : ''
     
     if options.type === 'link'
-        a.button.button_link( href='/' class=[options.class, classSize, classHasText, classIconPosition].join(' ') attributes=(options.target ? { target: '_blank' } : {}))
+        a.button.button_link(href='/' title=hasTitle class=[options.class, classSize, classHasText, classIconPosition].join(' ') attributes=(options.target ? { target: '_blank' } : {}))
             +icon(options.icon, options.text)
+
     if options.type === 'button'
-        button.button(onclick=options.event class=[options.class, classSize, classHasText, classIconPosition, classHasEvent].join(' ') disabled=options.disabled)
+        button.button(onclick=options.event title=hasTitle class=[options.class, classSize, classHasText, classIconPosition, classHasEvent].join(' ') disabled=options.disabled)
             +icon(options.icon, options.text)

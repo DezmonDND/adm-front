@@ -13,7 +13,7 @@
             <div class="dm-meeting__part"><span>Приняли участие</span><span>22 депутата</span></div>
             <div class="dm-meeting__accept"><span>Всего принято</span><span>23 решения</span></div>
           </div>
-        </div><a class="button button_link button_blue button_size_m  button_icon-left" href="/" attributes="{}"><span class="button_span">Видеозапись</span>
+        </div><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Видеозапись</span>
           <ion-icon class="icon" name="play"></ion-icon></a>
       </div>
     </div>
@@ -38,7 +38,7 @@
                 </div>
               </div>
               <div class="dm-meeting-elem__doc"><a href="#">(№ 352-VII ДГ от 31.05.2023)</a></div>
-            </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Подробнее</span></a>
+            </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
                 </div>
               </div>
               <div class="dm-meeting-elem__doc"><a href="#">(№ 352-VII ДГ от 31.05.2023)</a></div>
-            </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Подробнее</span></a>
+            </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="dm-meeting-elem__doc"><a href="#">(№ 352-VII ДГ от 31.05.2023)</a></div>
-            </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Подробнее</span></a>
+            </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@
                 </div>
               </div>
               <div class="dm-meeting-elem__doc"><a href="#">(№ 352-VII ДГ от 31.05.2023)</a></div>
-            </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Подробнее</span></a>
+            </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
           </div>
         </div>
       </div>

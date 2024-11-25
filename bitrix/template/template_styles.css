@@ -3942,9 +3942,9 @@ body.tmp-duma .main-events .main-events__container .main-title {
 .event-card .event-card__container {
   display: flex;
   flex-direction: column;
-  max-width: 738px;
+  max-width: 766px;
   width: 100%;
-  padding: 40px 0 40px;
+  padding: 32px 0 32px;
 }
 @media screen and (max-width: 1000px) {
   .event-card .event-card__container {
@@ -3959,7 +3959,7 @@ body.tmp-duma .main-events .main-events__container .main-title {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin: 24px 0 64px;
+  margin: 24px 0 48px;
 }
 @media screen and (max-width: 1000px) {
   .event-card .event-card__container .event-card__info .event-card__description {
@@ -3967,6 +3967,7 @@ body.tmp-duma .main-events .main-events__container .main-title {
   }
 }
 .event-card .event-card__container .event-card__info .event-card__description .event-card__title {
+  padding: 0;
   font-weight: 500;
   font-size: calc(32px * var(--scale));
   line-height: calc(38px * var(--lh));
@@ -3978,6 +3979,7 @@ body.tmp-duma .main-events .main-events__container .main-title {
   }
 }
 .event-card .event-card__container .event-card__info .event-card__description .event-card__text {
+  margin: 0;
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(24px * var(--lh));
@@ -4018,6 +4020,9 @@ body.tmp-duma .main-events .main-events__container .main-title {
 .event-card .event-card__container .event-card__info .event-card__buttons {
   display: flex;
   gap: 8px;
+}
+.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button {
+  position: relative;
 }
 
 body.tmp-duma .navigation .navigation__link {
@@ -13682,6 +13687,103 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
     border-radius: 4px;
     padding: 7px 20px 7px 12px;
   }
+}
+
+.projects-detail .full-width-container .full-width-content .event-card .event-card__container .event-card__info .event-card__description {
+  margin: 0 0 24px;
+}
+@media (max-width: 768px) {
+  .projects-detail .full-width-container .full-width-content .event-card .event-card__container .event-card__info .event-card__buttons .button_blue {
+    display: none;
+  }
+}
+.projects-detail .projects-detail__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 766px;
+  width: 100%;
+  margin: 32px auto 0;
+}
+.projects-detail .projects-detail__container .projects-detail__about {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.projects-detail .projects-detail__container .projects-detail__about .projects-detail__title {
+  padding: 0;
+  font-weight: 500;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .projects-detail .projects-detail__container .projects-detail__about .projects-detail__title {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.projects-detail .projects-detail__container .projects-detail__about .projects-detail__desc {
+  margin: 0;
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .projects-detail .projects-detail__container .projects-detail__about .projects-detail__desc {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+
+.button_share:hover ~ .button-popup__content {
+  display: flex;
+}
+
+.button-popup__content {
+  display: none;
+  position: absolute;
+  top: 43px;
+  left: -60%;
+  z-index: 1;
+}
+.button-popup__content:hover {
+  display: flex;
+}
+
+.button-popup {
+  display: flex;
+  max-width: 367px;
+  background-color: var(--content-color);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+.button-popup .button-popup__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.button-popup .button-popup__container .header__socials {
+  gap: 20px;
+}
+.button-popup .button-popup__container .header__socials .header__social-icon {
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+}
+
+.button-popup::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid var(--content-color);
+  left: 50%;
+  top: -4px;
 }
 
 /* Slider */

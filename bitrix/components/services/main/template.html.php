@@ -14,7 +14,7 @@
               <h3 class="main-services__label">Поиск законопроектов</h3>
               <form class="search search-main-services">
                 <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="laws" value=""/>
-                <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1">
+                <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -23,7 +23,7 @@
               <h3 class="main-services__label">Поиск правовых актов        </h3>
               <form class="search search-main-services">
                 <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="acts" value=""/>
-                <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1">
+                <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -32,9 +32,9 @@
           <div class="main-services__buttons">
             <h3 class="main-services__buttons-title">Связаться</h3>
             <div class="main-services__buttons-container">
-              <button class="button button_blue main-services__button button_size_l   " onclick="console.log(1);"><span class="button_span">Электронное обращение</span>
+              <button class="button button_blue main-services__button button_size_l   " onclick="console.log(1);" title=""><span class="button_span">Электронное обращение</span>
               </button>
-              <button class="button button_blue main-services__button button_size_l   " onclick="console.log(1);"><span class="button_span">Личный прием</span>
+              <button class="button button_blue main-services__button button_size_l   " onclick="console.log(1);" title=""><span class="button_span">Личный прием</span>
               </button>
             </div>
           </div>
