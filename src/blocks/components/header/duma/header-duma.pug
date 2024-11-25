@@ -10,6 +10,7 @@ include ../../../libs/inputs/_inputs.pug
 include ../../login/main/login
 include ../../login/code/login-code
 include ../../login/email/login-email
+include ../dm-second-menu/dm-second-menu
 
 mixin header-duma()
     header.header-duma
@@ -52,24 +53,24 @@ mixin header-duma()
             .header__bottom-content   
                 +header-links([
                     {
-                        href: '/',
                         title: 'О Думе города',
+                        onclick: 'toggleSecondMenu(event)'
                     },
                     {
-                        href: '/',
                         title: 'Состав и структура',
+                        onclick: 'toggleSecondMenu(event)'
                     },
                     {
-                        href: '/',
                         title: 'Документы',
+                        onclick: 'toggleSecondMenu(event)'
                     },
                     {
-                        href: '/',
                         title: 'Деятельность',
+                        onclick: 'toggleSecondMenu(event)'
                     },
                     {
-                        href: '/',
                         title: 'Обратная связь',
+                        onclick: 'toggleSecondMenu(event)'
                     },
                     ]) 
                 +header-socials([
@@ -81,7 +82,11 @@ mixin header-duma()
                         href: '/',
                         class: 'ok_icon-duma'
                     },
-                    ])  
+                    ])
+        +about-dm-links({ class: 'dm-second-menu_about' }) 
+        +struct-dm-links({ class: 'dm-second-menu_struct' }) 
+        +doc-dm-links({ class: 'dm-second-menu_doc' })   
+        +actions-dm-links({ class: 'dm-second-menu_actions' })        
     +login()  
     +login-code()   
     +login-email()                         
