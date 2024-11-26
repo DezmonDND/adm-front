@@ -1,0 +1,11 @@
+
+
+mixin board-detail(data)
+    .board-detail
+        .board-detail__container
+            img(class=`board-detail__image` src=`../resources/${data.image}` alt='Фотография')
+            .board-detail__desc 
+                .board-detail__desc-info
+                    span.board-detail__date #{data.date}
+                    p.board-detail__about #{data.about}
+                +button({ type: 'button', class: 'button_white',event: 'anotherFunction()', text: `Поделиться`, icon: `link-outline`, iconPosition: 'left' })
