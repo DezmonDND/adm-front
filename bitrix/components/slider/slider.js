@@ -118,10 +118,10 @@ const sliders = [
         prevArrow: '.slider__important-inf-prev',
         options: {
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            responsive: [{ breakpoint: 500, settings: { slidesToShow: 1 } }],
+            variableWidth: true,
         },
     },
     // С заботой о жителях
