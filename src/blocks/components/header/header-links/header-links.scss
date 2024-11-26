@@ -16,6 +16,7 @@ body.tmp-duma {
 
         &_active {
             border-color: $primary-color-green-hover;
+            color: inherit;
         }
     }
 }
@@ -37,7 +38,7 @@ body.tmp-duma {
         @include lead-6;
 
         &_active {
-            border-bottom: 1px solid $primary-color-green-hover;
+            color: $primary-color-active;
         }
 
         &:hover {

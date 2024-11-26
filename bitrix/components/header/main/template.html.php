@@ -88,7 +88,7 @@
         <ion-icon class="icon" name="search-outline"></ion-icon>
       </button>
     </form>
-    <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
+    <div class="header_links"><a class="header__link" onclick="toggleSecondMenu(event)">О Сургуте</a><a class="header__link" onclick="toggleSecondMenu(event)">Городская власть</a><a class="header__link" onclick="toggleSecondMenu(event)">Документы</a><a class="header__link" onclick="toggleSecondMenu(event)">Контакты</a>
     </div>
     <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
       <ion-icon class="icon" name="menu-outline"></ion-icon>
@@ -117,6 +117,54 @@
   </div>
   <div class="header-visibility__bottom-content">
     <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+    </div>
+  </div>
+  <div class="dm-second-menu_adm-about dm-second-menu">
+    <div class="dm-second-menu__content">
+      <div class="dm-second-menu__col">
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">О Сургуте</a><a class="dm-second-menu__link" href="/">Сургуту 430 лет </a><a class="dm-second-menu__link" href="/">Сургут сегодня </a>
+        </div>
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Публичные слушания</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+        </div>
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
+        </div>
+      </div>
+      <div class="dm-second-menu__col">
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
+        </div>
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dm-second-menu_adm-power dm-second-menu">
+    <div class="dm-second-menu__content">
+      <div class="dm-second-menu__col">
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Городская власть</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+        </div>
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dm-second-menu_adm-docs dm-second-menu">
+    <div class="dm-second-menu__content">
+      <div class="dm-second-menu__col">
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Документы</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+        </div>
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dm-second-menu_adm-contacts dm-second-menu">
+    <div class="dm-second-menu__content">
+      <div class="dm-second-menu__col">
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Контакты</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+        </div>
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+        </div>
+      </div>
     </div>
   </div>
 </header>

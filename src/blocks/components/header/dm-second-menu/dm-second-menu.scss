@@ -2,26 +2,55 @@
 
 @mixin link {
     &:hover {
-        color: $primary-color-green-hover;
+        color: $primary-color-hover;
     }
 
     &:active {
-        color: $primary-color-green-click;
+        color: $primary-color-active;
+    }
+}
+
+body.tmp-duma {
+    .dm-second-menu {
+        background-color: $cards-background;
+        top: 144px;
+        border-top: none;
+
+        .dm-second-menu__col {
+            .dm-second-menu__links {
+
+                .dm-second-menu__title,
+                .dm-second-menu__link {
+                    &:hover {
+                        color: $primary-color-green-hover;
+                    }
+
+                    &:active {
+                        color: $primary-color-green-click;
+                    }
+                }
+            }
+        }
     }
 }
 
 .dm-second-menu {
     width: 100%;
     position: absolute;
-    top: 144px;
-    background-color: $cards-background;
+    top: 130px;
+    background-color: $content-color;
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    border-top: 1px solid rgba(233, 233, 233, 1);
 
+    &_adm-about,
+    &_adm-power,
+    &_adm-docs,
+    &_adm-contacts,
     &_about,
     &_struct,
     &_doc,
