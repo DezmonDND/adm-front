@@ -1,0 +1,22 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+
+.table-blue th{
+    background-color: $primary-color-disabled;
+}
+
+.project-table {
+    th:first-child, 
+    td:first-child {
+        width: 5%; 
+        text-align: center;
+    }
+    th:last-child, 
+    td:last-child {
+        width: 25%; 
+    }
+    th:nth-child(2), 
+    td:nth-child(2) {
+        width: 70%; 
+    }
+}
