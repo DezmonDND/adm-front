@@ -22,18 +22,33 @@
     
 }
 
-.about-title {
+.about p, .about span {
+    @include text-2();
+}
+
+
+.about .about-title {
     padding-top: 32px;
     padding-bottom: 16px;
     margin: 0;
 
+    @include respond-to(md) {
+        padding-top: 24px;
+        padding-bottom: 8px;
+    }
+
     @include heading-h3();
 }
 
-.about-subtitle {
+.about .about-subtitle {
     padding-top: 16px;
     padding-bottom: 16px;
     margin: 0;
+
+    @include respond-to(md) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 
     @include lead-3();
 }
@@ -46,7 +61,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 50%
+    min-width: 50%;
+    box-sizing: border-box;
 }
 
 .about-info-row {
@@ -54,12 +70,23 @@
     justify-content: space-between;
     gap: 24px;
     align-items: center;
+
+    @include respond-to(sm) {
+        flex-direction: column;
+    }
+
 }
 
 .about-info {
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    .about-info-row:last-child {
+        @include respond-to(sm) {
+            flex-direction: column-reverse;
+        }
+    }
 }
 
 .about-card-left {
@@ -68,17 +95,21 @@
     gap: 8px;
 }
 
-.about-card-fact {
+.about .about-card-fact {
     font-size: 64px;
     color: $primary-color;
     font-weight: $font-weight-semi-bold;
+    line-height: unset;
+    @include respond-to(md) {
+        font-size: 40px;
+    }
 }
 
 .about-info-row:last-child .about-info-text {
     text-align: end;
 }
 
-.about-card-title {
+.about .about-card-title {
     font-size: 16px;
     font-weight: 600;
 }
@@ -100,12 +131,16 @@
     flex-direction: column;
     gap: 40px;
     margin-top: 24px;
+    box-sizing: border-box;
 }
 
 .about-organ-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include respond-to(sm) {
+        flex-direction: column;
+    }
 }
 
 .about-organ-top-left {
@@ -127,6 +162,9 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
+    @include respond-to(sm) {
+        flex-direction: column;
+    }
 }
 
 .about-organ-bot-elem {
@@ -232,6 +270,10 @@
     gap: 32px;
     align-items: flex-start;
     border-radius: 20px;
+    box-sizing: border-box;
+    @include respond-to(sm) {
+        flex-direction: column-reverse;
+    }
 }
 
 .about-symbols-list  {
@@ -250,4 +292,18 @@
     border-radius: 20px;
     margin-top: 24px;
     margin-bottom: 24px;
+    box-sizing: border-box;
+    @include respond-to(sm) {
+        flex-direction: column-reverse;
+    }
+}
+
+.about .tab-button {
+    @include lead-5();
+}
+
+.about-video {
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 420px
 }
