@@ -6,12 +6,6 @@ $(document).ready(function () {
         arrows: false,
         adaptiveHeight: true,
         variableWidth: false,
-        init: function (event, slick) {
-            updateSlideCount(slick);
-        },
-        beforeChange: function (event, slick, currentSlide, nextSlide) {
-            updateSlideCount(slick);
-        },
     });
 });
 
@@ -22,9 +16,10 @@ $('.slider__afisha-event-prev').on('click', function () {
     $('.afisha-event__banner-list').slick('slickPrev');
 });
 
-function updateSlideCount(slick) {
-    console.log("Slick object:", slick);
-    const currentSlide = slick.slickCurrentSlide;
-    const totalSlides = slick.slideCount;
-    $('.afisha-event__comment').text(`${currentSlide + 1}/${totalSlides}`);
-}
+$('.afisha-event__banner-list').on('init', function (event, slick) {
+    $('.slider__counter').text(parseInt(slick.currentSlide + 1) + ' / ' + slick.slideCount);
+});
+
+$('.afisha-event__banner-list').on('afterChange', function (event, slick, currentSlide) {
+    $('.slider__counter').text(parseInt(slick.currentSlide + 1) + ' / ' + slick.slideCount);
+});

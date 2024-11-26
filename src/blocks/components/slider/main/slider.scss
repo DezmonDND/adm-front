@@ -20,6 +20,7 @@ body.tmp-duma .slider .slider__link {
 
 .slider {
     display: flex;
+    align-items: center;
     gap: 12px;
     font-size: 34px;
     padding-top: 32px;
@@ -27,6 +28,10 @@ body.tmp-duma .slider .slider__link {
     @include respond-to(md) {
         font-size: 24px;
         padding-top: 24px;
+    }
+
+    .slider__counter {
+        @include lead-3;
     }
 
     .slider__link {

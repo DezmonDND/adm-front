@@ -10,7 +10,7 @@
       <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочее">Прочее</a>
       </div>
       <div class="slider"><a class="slider__link slider__help-city-prev">
-          <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__help-city-next">
+          <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__help-city-next">
           <ion-icon name="arrow-forward-outline"> </ion-icon></a>
       </div>
     </div>
@@ -75,7 +75,7 @@
   </div>
   <div class="help-city__navigation"> 
     <div class="slider"><a class="slider__link slider__help-city-prev">
-        <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__help-city-next">
+        <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__help-city-next">
         <ion-icon name="arrow-forward-outline"> </ion-icon></a>
     </div>
   </div>

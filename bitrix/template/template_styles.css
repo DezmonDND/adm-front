@@ -3944,6 +3944,7 @@ body.tmp-duma .slider .slider__link:active {
 
 .slider {
   display: flex;
+  align-items: center;
   gap: 12px;
   font-size: 34px;
   padding-top: 32px;
@@ -3952,6 +3953,17 @@ body.tmp-duma .slider .slider__link:active {
   .slider {
     font-size: 24px;
     padding-top: 24px;
+  }
+}
+.slider .slider__counter {
+  font-weight: 400;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .slider .slider__counter {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 .slider .slider__link {

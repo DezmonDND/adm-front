@@ -194,7 +194,7 @@
           </div>
           <div class="events__slider">
             <div class="slider"><a class="slider__link slider__events-prev">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__events-next">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__events-next">
                 <ion-icon name="arrow-forward-outline"> </ion-icon></a>
             </div>
           </div>
