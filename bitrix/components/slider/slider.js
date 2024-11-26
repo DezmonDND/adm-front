@@ -14,14 +14,10 @@ function updateArrowsVisibility(slick, nextArrowSelector, prevArrowSelector) {
 function initSlider(selector, nextArrow, prevArrow, options) {
     $(selector)
         .on('init', function (event, slick) {
-            $(document).ready(function () {
-                updateArrowsVisibility(slick, nextArrow, prevArrow);
-            });
+            updateArrowsVisibility(slick, nextArrow, prevArrow);
         })
         .on('breakpoint', function (event, slick) {
-            $(document).ready(function () {
-                updateArrowsVisibility(slick, nextArrow, prevArrow);
-            });
+            updateArrowsVisibility(slick, nextArrow, prevArrow);
         })
         .slick(options);
 
