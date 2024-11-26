@@ -58,24 +58,24 @@ mixin header(sort)
             .header__top-links
                 +header-links([
                     {
-                        href: '/',
                         title: 'Быстрый доступ',
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     {
-                        href: '/',
                         title: 'Публичные слушания',
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     {
-                        href: '/',
                         title: 'Противодействие коррупции',
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     {
-                        href: '/',
                         title: 'Пресс-центр',
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     {
-                        href: '/',
                         title: 'Обращения граждан',
+                        onclick: 'toggleSecondMenu(event)',
                     },
                 ])
                 +header-socials([
@@ -244,11 +244,11 @@ mixin header(sort)
             ]
         })
         +second-menu({
-            class: 'dm-second-menu_adm-docs',
+            class: 'dm-second-menu_adm-documents',
             columns: [
                 {
                     links: [
-                        { title: 'Документы', type: 'title' , items: [
+                        { title: 'Контакты', type: 'title' , items: [
                             { title: 'Заседания Думы города', type: 'link' },
                             { title: 'Заседания постоянных комитетов', type: 'link' },
                             { title: 'Депутатские слушания', type: 'link' },
@@ -258,7 +258,7 @@ mixin header(sort)
                     ],
                 },
             ]
-        })
+        }) 
         +second-menu({
             class: 'dm-second-menu_adm-contacts',
             columns: [
@@ -274,7 +274,192 @@ mixin header(sort)
                     ],
                 },
             ]
-        })             
+        })  
+        +second-menu({
+            class: 'dm-second-menu_adm-quick',
+            columns: [
+                {
+                    links: [
+                        { title: 'Категория быстрого доступа 1', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ], 
+                },
+                {
+                    links: [
+                            { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ]
+                }
+            ]
+        }) 
+        +second-menu({
+            class: 'dm-second-menu_adm-public',
+            columns: [
+                {
+                    links: [
+                        { title: 'Категория быстрого доступа 2', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ], 
+                },
+                {
+                    links: [
+                            { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ]
+                }
+            ]
+        })
+        +second-menu({
+            class: 'dm-second-menu_adm-corruption',
+            columns: [
+                {
+                    links: [
+                        { title: 'Категория быстрого доступа 3', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ], 
+                },
+                {
+                    links: [
+                            { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ]
+                }
+            ]
+        })
+        +second-menu({
+            class: 'dm-second-menu_adm-press',
+            columns: [
+                {
+                    links: [
+                        { title: 'Категория быстрого доступа 4', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ], 
+                },
+                {
+                    links: [
+                            { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ]
+                }
+            ]
+        })
+        +second-menu({
+            class: 'dm-second-menu_adm-citizens',
+            columns: [
+                {
+                    links: [
+                        { title: 'Категория быстрого доступа 5', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ], 
+                },
+                {
+                    links: [
+                            { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                        { title: 'Категория быстрого доступа', type: 'title' , items: [
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                            { title: 'Подкатегория', type: 'link' },
+                        ]},
+                    ]
+                }
+            ]
+        })          
     +login()  
     +login-code()   
     +login-email()

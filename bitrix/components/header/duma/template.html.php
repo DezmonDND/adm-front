@@ -123,6 +123,16 @@
       </div>
     </div>
   </div>
+  <div class="dm-second-menu_feedbacks dm-second-menu">
+    <div class="dm-second-menu__content">
+      <div class="dm-second-menu__col">
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Обратная связь</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+        </div>
+        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 <div class="overlay hidden"></div>
 <div class="login hidden">

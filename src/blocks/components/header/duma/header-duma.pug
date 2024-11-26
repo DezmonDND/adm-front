@@ -54,23 +54,23 @@ mixin header-duma()
                 +header-links([
                     {
                         title: 'О Думе города',
-                        onclick: 'toggleSecondMenu(event)'
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     {
                         title: 'Состав и структура',
-                        onclick: 'toggleSecondMenu(event)'
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     {
                         title: 'Документы',
-                        onclick: 'toggleSecondMenu(event)'
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     {
                         title: 'Деятельность',
-                        onclick: 'toggleSecondMenu(event)'
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     {
                         title: 'Обратная связь',
-                        onclick: 'toggleSecondMenu(event)'
+                        onclick: 'toggleSecondMenu(event)',
                     },
                     ]) 
                 +header-socials([
@@ -179,7 +179,23 @@ mixin header-duma()
                     ],
                 },
             ]
-        })       
+        }) 
+        +second-menu({
+            class: 'dm-second-menu_feedbacks',
+            columns: [
+                {
+                    links: [
+                        { title: 'Обратная связь', type: 'title' , items: [
+                            { title: 'Заседания Думы города', type: 'link' },
+                            { title: 'Заседания постоянных комитетов', type: 'link' },
+                            { title: 'Депутатские слушания', type: 'link' },
+                            { title: 'Публичные слушания', type: 'link' },
+                        ]},
+                        { title: 'Антикоррупционная деятельность', type: 'title' },
+                    ],
+                },
+            ]
+        })      
     +login()  
     +login-code()   
     +login-email()                         

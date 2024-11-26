@@ -15575,7 +15575,7 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   box-sizing: border-box;
   border-top: 1px solid rgb(233, 233, 233);
 }
-.dm-second-menu_adm-about, .dm-second-menu_adm-power, .dm-second-menu_adm-docs, .dm-second-menu_adm-contacts, .dm-second-menu_about, .dm-second-menu_struct, .dm-second-menu_doc, .dm-second-menu_actions {
+.dm-second-menu_adm-about, .dm-second-menu_adm-power, .dm-second-menu_adm-documents, .dm-second-menu_adm-contacts, .dm-second-menu_adm-quick, .dm-second-menu_adm-public, .dm-second-menu_adm-corruption, .dm-second-menu_adm-press, .dm-second-menu_adm-citizens, .dm-second-menu_about, .dm-second-menu_struct, .dm-second-menu_doc, .dm-second-menu_feedbacks, .dm-second-menu_actions {
   display: none;
 }
 .dm-second-menu_active {
