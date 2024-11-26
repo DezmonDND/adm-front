@@ -68,7 +68,7 @@
           </div>
           <div class="dm-archive__slider">
             <div class="slider"><a class="slider__link slider__dm-archive-prev">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__dm-archive-next">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-archive-next">
                 <ion-icon name="arrow-forward-outline"> </ion-icon></a>
             </div>
           </div>

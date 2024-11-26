@@ -4,7 +4,7 @@
     <div class="main-title__container">
       <h1 class="main-title__title">Проекты Думы города</h1>
       <div class="slider"><a class="slider__link slider__dm-city-projects-prev">
-          <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__dm-city-projects-next">
+          <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-city-projects-next">
           <ion-icon name="arrow-forward-outline"> </ion-icon></a>
       </div>
     </div>
@@ -46,7 +46,7 @@
     </div>
     <div class="dm-city-projects__slider">
       <div class="slider"><a class="slider__link slider__dm-city-projects-prev">
-          <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__dm-city-projects-next">
+          <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-city-projects-next">
           <ion-icon name="arrow-forward-outline"> </ion-icon></a>
       </div>
     </div>
