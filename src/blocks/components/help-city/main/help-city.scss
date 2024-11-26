@@ -3,12 +3,31 @@
 .help-city {
     @include main-blocks-paddings;
 
+    .help-city__tabs {
+        @include respond-to(md) {
+            display: none;
+        }
+    }
+
     .help-city__content {
+
+        .slick-slide {
+            height: 428px;
+
+            @include respond-to(md) {
+                height: 288px;
+            }
+        }
+
         .main-project-card {
             margin-right: 24px;
 
             @include respond-to(md) {
                 margin-right: 8px;
+            }
+
+            .main-project-card__content {
+                box-sizing: border-box;
             }
         }
     }
@@ -20,11 +39,5 @@
             display: flex;
             justify-content: center;
         }
-    }
-}
-
-.help-city__tabs {
-    @include respond-to(md) {
-        display: none;
     }
 }
