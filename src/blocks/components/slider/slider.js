@@ -31,15 +31,17 @@ function initSlider(selector, nextArrow, prevArrow, options) {
 
 // Главная новость
 
-$('.news-top__card-list').slick({
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    appendDots: $('.news-top-card__dots'),
-    adaptiveHeight: true,
-    variableWidth: false,
+$(document).ready(function () {
+    $('.news-top__card-list').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        appendDots: $('.news-top-card__dots'),
+        adaptiveHeight: true,
+        variableWidth: false,
+    });
 });
 
 // Слайдеры для всех разрешений
@@ -118,10 +120,10 @@ const sliders = [
         prevArrow: '.slider__important-inf-prev',
         options: {
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            responsive: [{ breakpoint: 500, settings: { slidesToShow: 1 } }],
+            variableWidth: true,
         },
     },
     // С заботой о жителях
@@ -177,8 +179,10 @@ const sliders = [
 
 // Создать экземпляр слайдера
 
-sliders.forEach((slider) => {
-    initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
+$(document).ready(function () {
+    sliders.forEach((slider) => {
+        initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
+    });
 });
 
 // Разобрать слайдеры
@@ -192,7 +196,7 @@ const slidersToManage = sliders.filter(
     (slider) =>
         slider.selector === '.news-main__card-list' ||
         slider.selector === '.events__news' ||
-        slider.selector === '.important-links__container'
+        slider.selector === '.important-links__container',
 );
 
 $(window)
@@ -200,15 +204,19 @@ $(window)
         const currentWidth = window.innerWidth;
 
         if (currentWidth < breakpoint && !slidersInitialized) {
-            slidersToManage.forEach(initSlider);
-            slidersInitialized = true;
+            $(document).ready(function () {
+                slidersToManage.forEach(initSlider);
+                slidersInitialized = true;
+            });
         } else if (currentWidth >= breakpoint && slidersInitialized) {
-            slidersToManage.forEach((slider) => destroySlider(slider.selector));
-            slidersInitialized = false;
+            $(document).ready(function () {
+                slidersToManage.forEach((slider) => destroySlider(slider.selector));
+                slidersInitialized = false;
+            });
         }
     })
     .trigger('resize');
 
-    function destroySlider(selector) {
-        $(selector).slick('unslick');
-    }
+function destroySlider(selector) {
+    $(selector).slick('unslick');
+}
