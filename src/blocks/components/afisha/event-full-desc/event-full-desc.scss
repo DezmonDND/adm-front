@@ -119,6 +119,10 @@
 
                 .slider {
                     padding-top: 0;
+
+                    .slider__counter {
+                        min-width: 43px;
+                    }
                 }
             }
         }

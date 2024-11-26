@@ -3931,6 +3931,9 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 .afisha-event .afisha-event__container .afisha-event__banner .afisha-event__navigation .slider {
   padding-top: 0;
 }
+.afisha-event .afisha-event__container .afisha-event__banner .afisha-event__navigation .slider .slider__counter {
+  min-width: 43px;
+}
 
 body.tmp-duma .slider .slider__link {
   color: var(--primary-color-green);
