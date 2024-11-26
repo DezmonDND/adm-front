@@ -3902,9 +3902,15 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   flex-direction: column;
   gap: 28px;
 }
-.afisha-event .afisha-event__container .afisha-event__banner .afisha-event__image {
+.afisha-event .afisha-event__container .afisha-event__banner .afisha-event__banner-list {
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.afisha-event .afisha-event__container .afisha-event__banner .afisha-event__banner-list .afisha-event__image {
   max-width: 755px;
   width: 100%;
+  margin-right: 8px;
 }
 .afisha-event .afisha-event__container .afisha-event__banner .afisha-event__navigation {
   display: flex;
@@ -3921,6 +3927,9 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
+}
+.afisha-event .afisha-event__container .afisha-event__banner .afisha-event__navigation .slider {
+  padding-top: 0;
 }
 
 body.tmp-duma .slider .slider__link {
