@@ -6,11 +6,30 @@
     border-radius: 12px;
     position: relative;
 
+    .fc-toolbar-chunk {
+        &:last-of-type {
+            .fc-button-group {
+                background-color: $cards-background;
+
+                .fc-button-primary {
+                    font-size: 24px;
+                    padding: 0;
+
+                    &_active {
+                        border: transparent;
+                    }
+                }
+            }
+        }
+    }
+
     .fc-button-group {
         background-color: $event-color;
         padding: 4px;
         border-radius: 8px;
         gap: 2px;
+
+
 
         .fc-button-primary {
             border-radius: 8px;
@@ -24,6 +43,7 @@
         .fc-prev-button,
         .fc-next-button {
             color: $primary-color;
+            background-color: $cards-background;
         }
     }
 }
@@ -76,12 +96,104 @@
     @include caption-5;
 }
 
+.fc-event-title {
+    text-overflow: ellipsis;
+}
+
 .fc-scroller {
     scrollbar-width: none;
 }
 
 .fc-daygrid-event-dot {
-border: calc(var(--fc-daygrid-event-dot-width)/4) solid $primary-color;
+    border: calc(var(--fc-daygrid-event-dot-width)/4) solid $primary-color;
+}
 
+.fc-daygrid-day-events {
+    padding-right: 4px;
+}
 
+.fc-day-today {
+    background-color: $primary-color;
+    border-radius: 100px;
+
+    .fc-col-header-cell-cushion {
+        color: $content-color;
+    }
+}
+
+.fc .fc-timegrid-col.fc-day-today {
+    background-color: $content-color;
+}
+
+.fc-timeGridWeek-view.fc-view.fc-timegrid {
+    background-color: $content-color;
+    padding: 12px 20px;
+    border-radius: 20px;
+
+    .fc-col-header-cell-cushion {
+        padding: 10px 0;
+    }
+
+    .fc-event {
+        color: $main-text;
+        border: none;
+        background-color: $content-color;
+
+        .fc-event-main-frame {
+            color: $main-text;
+            @include caption-5;
+
+            .fc-event-title-container {
+                overflow: hidden;
+                text-wrap: nowrap;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+            }
+        }
+    }
+}
+
+.fc .fc-timegrid-slot-minor {
+    border-color: transparent;
+}
+
+.fc-col-header-cell {
+    border-color: transparent !important;
+}
+
+.fc-theme-standard th {
+    border-color: transparent;
+}
+
+.hearing-calendar__select {
+    border-radius: 4px;
+    border-color: transparent;
+    scrollbar-width: none;
+    background-color: $content-color;
+    cursor: pointer;
+}
+
+.fc-view-harness {
+    @include respond-to(md) {
+
+        height: 350px !important;
+    }
+}
+
+.fc-popover {
+    border-radius: inherit;
+}
+
+.hearing-calendar__container {
+    @include respond-to(sm) {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .hearing-calendar {
+        @include respond-to(sm) {
+            width: 720px;
+        }
+    }
 }
