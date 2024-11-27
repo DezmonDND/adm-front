@@ -10,7 +10,7 @@ document.querySelectorAll('.content-card').forEach((card) => {
     }
 
     // Создаем ссылку с кнопкой "Поделиться"
-    const shareButton = document.createElement('a');
+    const shareButton = document.createElement('button');
     shareButton.className =
         'button button_link button_white button_size_m button_icon-left social_share';
     shareButton.href = '/';
