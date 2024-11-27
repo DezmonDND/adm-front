@@ -10238,6 +10238,18 @@ body.tmp-duma .usefull-links {
   }
 }
 
+.init-projects-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.init-projects-title .title {
+  width: unset;
+}
+.init-projects-title button {
+  margin: 16px 0px 24px;
+}
+
 .init-projects {
   display: flex;
   flex-direction: column;
@@ -15864,6 +15876,14 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   gap: 12px;
 }
 
+.profile-anket-draft-right .button_red:hover {
+  border: 1px solid #E80000;
+  background-color: #E80000;
+}
+.profile-anket-draft-right .button_red:active {
+  border: 1px solid #A50505;
+  background-color: #A50505;
+}
 @media (max-width: 768px) {
   .profile-anket-draft-right {
     width: 100%;
@@ -15898,6 +15918,87 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
     font-size: calc(10px * var(--scale));
     line-height: calc(14px * var(--lh));
   }
+}
+
+.login-projects {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--content-color);
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .login-projects {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: unset;
+    border-radius: 0;
+    overflow: hidden;
+  }
+}
+.login-projects .login__content-top {
+  justify-content: flex-end;
+}
+.login-projects .login__content-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login-projects.hidden {
+  display: none !important;
+}
+
+.delete-project {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--content-color);
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .delete-project {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: unset;
+    border-radius: 0;
+    overflow: hidden;
+  }
+}
+.delete-project .login__content-top {
+  justify-content: flex-end;
+}
+.delete-project .login__content-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.delete-project .login__content-main__confirm-email span {
+  color: red;
+}
+
+.delete-project.hidden {
+  display: none !important;
 }
 
 * {

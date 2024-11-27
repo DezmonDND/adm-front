@@ -220,7 +220,7 @@
             <div class="profile-anket-draft-subtitle"><span>Нажимая на кнопку “удалить”, вы безвозвратно удалите анкету инициативного проекта </span></div>
           </div>
           <div class="profile-anket-draft-right">
-            <button class="button button_red button_size_m    " onclick="someFunction()" title=""><span class="button_span">Удалить</span>
+            <button class="button button_red button_size_m    " onclick="showDeleteProject()" title=""><span class="button_span">Удалить</span>
             </button>
           </div>
         </div>
@@ -344,6 +344,21 @@
         </form>
       </div>
     </main>
+    <div class="overlay hidden"></div>
+    <div class="delete-project hidden">
+      <div class="login__content">
+        <div class="login__content-top">
+          <ion-icon class="icon" name="close-outline" onclick="hideDeleteProject()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Вы точно хотите удалить данный инициативный проект?</span></div>
+            <div class="login__content-main__subtitle"><span>Ваши данные будут стерты, без возможности восстановления</span></div>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="">Удалить</span></div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_container-top">
