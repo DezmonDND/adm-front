@@ -224,7 +224,7 @@
             </button>
           </div>
         </div>
-        <form class="interview-form profile-anket">
+        <div class="interview-form profile-anket">
           <div class="profile-anket-item">
             <div class="profile-anket-item-title"> <span>1. Основные данные</span></div>
             <fieldset class="fieldset ">
@@ -324,24 +324,21 @@
             </fieldset>
           </div>
           <hr/>
-          <div class="profile-anket-item">
+          <div class="profile-anket-item fieldset-container">
             <div class="profile-anket-item-title"> <span>4. Мероприятия по реализации инициативного проекта</span></div>
             <fieldset class="fieldset ">
-              <div class="fieldset__title-remove">
-                <h3 class="fieldset__title ">Название мероприятия и предполагаемая сумма денег </h3>
-                <ion-icon class="fieldset__title-remove-btn" name="close-outline"></ion-icon>
-              </div>
+              <h3 class="fieldset__title ">Название мероприятия и предполагаемая сумма денег </h3>
               <div class="fieldset__answers">
                 <input class="input  input-interview-full   " placeholder="Введите название мероприятия и сумму (руб, с двумя знаками после запятой)" name="answer1" value=""/>
               </div>
             </fieldset>
           </div>
-          <button class="button button_white button_size_m   button_without-event" title=""><span class="button_span">Добавить мероприятие</span>
+          <button class="button button_white add-event-btn button_size_m   button_without-event" title=""><span class="button_span">Добавить мероприятие</span>
             <ion-icon class="icon" name="add-outline"></ion-icon>
           </button>
           <button class="button button_blue interview-form__button button_size_m   " onclick="getValues(event)" title=""><span class="button_span">Подать инициативный проект</span>
           </button>
-        </form>
+        </div>
       </div>
     </main>
     <footer class="footer">
