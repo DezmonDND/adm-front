@@ -15715,23 +15715,55 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   border-radius: 50%;
 }
 
-.fc-event-time,
-.fc-event-title {
+.fc-event-time {
   font-weight: 400 !important;
   font-weight: 300;
-  font-size: calc(10px * var(--scale));
-  line-height: calc(14px * var(--lh));
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
 }
 @media (max-width: 992px) {
-  .fc-event-time,
-  .fc-event-title {
-    font-size: calc(8px * var(--scale));
-    line-height: calc(12px * var(--lh));
+  .fc-event-time {
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }
 
 .fc-event-title {
+  font-weight: 600 !important;
   text-overflow: ellipsis;
+  font-weight: 300;
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
+}
+@media (max-width: 992px) {
+  .fc-event-title {
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
+}
+
+.fc-timegrid-event .fc-event-time {
+  font-weight: 300;
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
+}
+@media (max-width: 992px) {
+  .fc-timegrid-event .fc-event-time {
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
+}
+
+.fc-timegrid-event-short .fc-event-title {
+  font-weight: 300;
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
+}
+@media (max-width: 992px) {
+  .fc-timegrid-event-short .fc-event-title {
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
 }
 
 .fc-scroller {
@@ -15774,13 +15806,13 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
 .fc-timeGridWeek-view.fc-view.fc-timegrid .fc-event .fc-event-main-frame {
   color: var(--main-text);
   font-weight: 300;
-  font-size: calc(10px * var(--scale));
-  line-height: calc(14px * var(--lh));
+  font-size: calc(12px * var(--scale));
+  line-height: calc(16px * var(--lh));
 }
 @media (max-width: 992px) {
   .fc-timeGridWeek-view.fc-view.fc-timegrid .fc-event .fc-event-main-frame {
-    font-size: calc(8px * var(--scale));
-    line-height: calc(12px * var(--lh));
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
   }
 }
 .fc-timeGridWeek-view.fc-view.fc-timegrid .fc-event .fc-event-main-frame .fc-event-title-container {
@@ -15829,6 +15861,26 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
 @media (max-width: 768px) {
   .hearing-calendar__container .hearing-calendar {
     width: 720px;
+  }
+}
+
+.fc-timegrid-event {
+  margin-bottom: 2px;
+}
+
+.fc-toolbar-title {
+  padding: 0;
+}
+
+.fc .fc-toolbar-title {
+  font-weight: 500;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .fc .fc-toolbar-title {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 

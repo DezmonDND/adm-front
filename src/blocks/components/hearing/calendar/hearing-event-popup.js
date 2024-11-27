@@ -69,3 +69,12 @@ function closeHearingEventPopup() {
         calendar.removeChild(popup);
     }
 }
+
+function handleOutsideClick(event) {
+    const popup = document.querySelector('.hearing-event-popup');
+
+}
+
+document.body.addEventListener('click', (event) => {
+    handleOutsideClick(event);
+});

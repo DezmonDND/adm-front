@@ -4,6 +4,36 @@ const options = {
         selection: {
             day: 'multiple-ranged',
         },
+        selectionDatesMode: 'multiple-ranged',
+        onClickDate(self) {
+            console.log(self);
+        },
+    },
+    actions: {
+        clickDay(e, dates) {
+            let values = dates.selectedDates;
+            let newDates = [];
+            if (values.length > 0) {
+                const from = document.getElementById('from');
+                const to = document.getElementById('to');
+
+                const dates = {
+                    from: values[0],
+                    to: values[values.length - 1],
+                };
+                newDates = dates;
+
+                if (from && to) {
+                    from.value = new Date(dates.from).toLocaleDateString()
+                    to.value = new Date (dates.to).toLocaleDateString()
+                    console.log(from.value);
+                    console.log(to.value);
+                }
+            } else {
+                console.log('Нет выбранных дат');
+            }
+            console.log(newDates);
+        },
     },
     CSSClasses: {
         daySelectedFirst: 'calendar-day_selected-first',

@@ -90,14 +90,23 @@
     }
 }
 
-.fc-event-time,
-.fc-event-title {
+.fc-event-time {
     font-weight: 400 !important;
-    @include caption-5;
+    @include caption-4;
 }
 
 .fc-event-title {
+    font-weight: 600 !important;
     text-overflow: ellipsis;
+    @include caption-4;
+}
+
+.fc-timegrid-event .fc-event-time {
+    @include caption-4;
+}
+
+.fc-timegrid-event-short .fc-event-title {
+    @include caption-4;
 }
 
 .fc-scroller {
@@ -141,7 +150,7 @@
 
         .fc-event-main-frame {
             color: $main-text;
-            @include caption-5;
+            @include caption-4;
 
             .fc-event-title-container {
                 overflow: hidden;
@@ -196,4 +205,17 @@
             width: 720px;
         }
     }
+}
+
+.fc-timegrid-event {
+    margin-bottom: 2px;
+}
+
+.fc-toolbar-title {
+    padding: 0;
+    
+}
+
+.fc .fc-toolbar-title {
+    @include heading-h3;
 }

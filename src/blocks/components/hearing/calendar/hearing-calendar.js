@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
         firstDay: 1,
         headerToolbar: {
             left: 'timeGridWeek,dayGridMonth',
-            center: '',
+            center: 'title',
             right: 'prev,next',
         },
         buttonText: {
@@ -88,50 +88,50 @@ document.addEventListener('DOMContentLoaded', function () {
                 slotDuration: '00:30:00',
             },
         },
-        datesSet(dateInfo) {
-            AddMySelectToFullCalendar();
-        },
+        // datesSet(dateInfo) {
+        //     AddMySelectToFullCalendar();
+        // },
     });
     calendar.render();
 });
 
-function AddMySelectToFullCalendar() {
-    if ($('select[id=mySelect]').length < 1) {
-        const selectHTML = `
-            <select id="mySelect" class='select select_m hearing-calendar__select'>
-            </select>
-        `;
+// function AddMySelectToFullCalendar() {
+//     if ($('select[id=mySelect]').length < 1) {
+//         const selectHTML = `
+//             <select id="mySelect" class='select select_m hearing-calendar__select'>
+//             </select>
+//         `;
 
-        const secondChunk = $('.fc-toolbar-chunk:eq(1)');
-        secondChunk.prepend(selectHTML);
-        $('#mySelect').on('change', function () {
-            console.log(this.value);
-        });
-    }
-    createMonthSelect();
-}
+//         const secondChunk = $('.fc-toolbar-chunk:eq(1)');
+//         secondChunk.prepend(selectHTML);
+//         $('#mySelect').on('change', function () {
+//             console.log(this.value);
+//         });
+//     }
+//     createMonthSelect();
+// }
 
-function createMonthSelect() {
-    const months = [
-        'Январь',
-        'Февраль',
-        'Март',
-        'Апрель',
-        'Май',
-        'Июнь',
-        'Июль',
-        'Август',
-        'Сентябрь',
-        'Октябрь',
-        'Ноябрь',
-        'Декабрь',
-    ];
+// function createMonthSelect() {
+//     const months = [
+//         'Январь',
+//         'Февраль',
+//         'Март',
+//         'Апрель',
+//         'Май',
+//         'Июнь',
+//         'Июль',
+//         'Август',
+//         'Сентябрь',
+//         'Октябрь',
+//         'Ноябрь',
+//         'Декабрь',
+//     ];
 
-    const select = document.getElementById('mySelect');
-    months.forEach((month, index) => {
-        const option = document.createElement('option');
-        option.value = index + 1;
-        option.text = month;
-        select.appendChild(option);
-    });
-}
+//     const select = document.getElementById('mySelect');
+//     months.forEach((month, index) => {
+//         const option = document.createElement('option');
+//         option.value = index + 1;
+//         option.text = month;
+//         select.appendChild(option);
+//     });
+// }
