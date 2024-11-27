@@ -1,5 +1,11 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-print {
+    .project-generation__top-btns {
+        display: none;
+    }
+}
+
 .project-generation__container {
     color: $main-text;
 }

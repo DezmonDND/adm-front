@@ -86,9 +86,9 @@
                 align-items: center;
 
                 a {
-                    @include text-2();
                     color: $main-text;
                     text-decoration: underline;
+                    @include text-2();
                 }
 
                 span{

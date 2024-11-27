@@ -1,5 +1,19 @@
 @use '../../../../../assets/styles/vars.scss' as *;
 
+body.tmp-print {
+    .event-card {
+        .event-card__container {
+            .event-card__tags {
+                display: none;
+            }
+
+            .event-card__buttons {
+                display: none;
+            }
+        }
+    }
+}
+
 .event-card {
     background-color: $cards-background;
     display: flex;

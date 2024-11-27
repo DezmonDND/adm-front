@@ -8,21 +8,22 @@
     flex-direction: column-reverse !important;
 }
 
-.about .event-card__buttons a:first-child, 
+.about .event-card__buttons a:first-child,
 .about .event-card__buttons a:last-child {
     display: none;
 }
 
-.about-content { 
+.about-content {
     max-width: 866px;
     margin: 40px auto 40px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+
 }
 
-.about p, .about span {
+.about p,
+.about span {
     @include text-2();
 }
 
@@ -31,29 +32,29 @@
     padding-top: 32px;
     padding-bottom: 16px;
     margin: 0;
+    @include heading-h3();
 
     @include respond-to(md) {
         padding-top: 24px;
         padding-bottom: 8px;
     }
 
-    @include heading-h3();
 }
 
 .about .about-subtitle {
     padding-top: 16px;
     padding-bottom: 16px;
     margin: 0;
+    @include lead-3();
 
     @include respond-to(md) {
         padding-top: 8px;
         padding-bottom: 8px;
     }
 
-    @include lead-3();
 }
 
-.about-card  {
+.about-card {
     width: 100%;
     background-color: $grey-adm;
     padding: 20px;
@@ -100,6 +101,7 @@
     color: $primary-color;
     font-weight: $font-weight-semi-bold;
     line-height: unset;
+
     @include respond-to(md) {
         font-size: 40px;
     }
@@ -114,7 +116,8 @@
     font-weight: 600;
 }
 
-.about-card-subtitle, .about-info-text  {
+.about-card-subtitle,
+.about-info-text {
     font-size: 16px;
 }
 
@@ -138,6 +141,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     @include respond-to(sm) {
         flex-direction: column;
     }
@@ -162,6 +166,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
+
     @include respond-to(sm) {
         flex-direction: column;
     }
@@ -188,7 +193,7 @@
 }
 
 
-.about-timeline  {
+.about-timeline {
     padding: 40px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -198,6 +203,7 @@
 .about-timeline-item {
     width: 100%;
     position: relative;
+
     &:after {
         content: '';
         display: block;
@@ -206,7 +212,8 @@
         width: 50%;
         position: absolute;
         bottom: 30px;
-        }
+    }
+
     &:before {
         content: '';
         display: block;
@@ -216,7 +223,7 @@
         position: absolute;
         bottom: 30px;
         left: 50%;
-        }
+    }
 }
 
 
@@ -231,6 +238,7 @@
     text-align: center;
     position: relative;
 }
+
 .about-timeline-item p {
     margin: 0;
 }
@@ -240,7 +248,7 @@
 }
 
 
-.about-timeline-item p:last-child{
+.about-timeline-item p:last-child {
     padding-top: 12px;
     color: $primary-color;
     @include lead-6();
@@ -271,12 +279,13 @@
     align-items: flex-start;
     border-radius: 20px;
     box-sizing: border-box;
+
     @include respond-to(sm) {
         flex-direction: column-reverse;
     }
 }
 
-.about-symbols-list  {
+.about-symbols-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -293,6 +302,7 @@
     margin-top: 24px;
     margin-bottom: 24px;
     box-sizing: border-box;
+
     @include respond-to(sm) {
         flex-direction: column-reverse;
     }

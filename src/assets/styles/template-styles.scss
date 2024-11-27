@@ -148,6 +148,28 @@ body {
     background-color: $content-color;
 }
 
+body.tmp-print {
+    .header {
+        display: none;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
 .main {
     box-sizing: border-box;
     max-width: 1440px;
