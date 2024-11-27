@@ -3,6 +3,9 @@
 .profile-anket-main {
     max-width: 866px;
     width: 100% ;
+    .button_without-event {
+        pointer-events: all;
+    }
 }
 
 .profile-anket-item {

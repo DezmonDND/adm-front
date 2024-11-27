@@ -19,7 +19,7 @@ block content
                         span Нажимая на кнопку “удалить”, вы безвозвратно удалите анкету инициативного проекта 
                 .profile-anket-draft-right
                     +button({ size: 'm ', type: 'button', class: 'button_red', event: 'someFunction()', text: 'Удалить' })
-            form.interview-form.profile-anket
+            .interview-form.profile-anket
                 .profile-anket-item
                     .profile-anket-item-title 
                         span 1. Основные данные
@@ -170,10 +170,9 @@ block content
                                 ],
                         })  
                 hr 
-                .profile-anket-item
+                .profile-anket-item.fieldset-container
                     .profile-anket-item-title 
                         span 4. Мероприятия по реализации инициативного проекта
-                   
                     +fieldset(
                     {
                         type: '',
@@ -187,8 +186,8 @@ block content
                                 sort: `interview-full`,
                             },
                             ],
-                        canRemove: true
+                        canRemove: false
                     })
-                +button({ type: 'button', size: 'm', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Добавить мероприятие'})
+                +button({ type: 'button', size: 'm',  class: 'button_white add-event-btn', icon: 'add-outline', text: 'Добавить мероприятие'})
                 +button({ size: 'm', type: 'button', class: 'button_blue interview-form__button', event: 'getValues(event)', text: `Подать инициативный проект` }) 
                 
