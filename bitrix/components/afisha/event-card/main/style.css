@@ -1,3 +1,10 @@
+body.tmp-print .event-card .event-card__container .event-card__tags {
+  display: none;
+}
+body.tmp-print .event-card .event-card__container .event-card__buttons {
+  display: none;
+}
+
 .event-card {
   background-color: var(--cards-background);
   display: flex;

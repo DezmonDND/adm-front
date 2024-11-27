@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
   </head>
-  <body>
+  <body class="tmp-print">
     <header class="header"> 
       <div class="mobile-menu">
         <div class="menu menu_main-bg">
@@ -349,9 +349,21 @@
         <div class="project-generation__top">
           <div class="project-generation__top-container"><span>Документ инициативного проекта сгенерирован</span>
             <div class="project-generation__top-btns">
-              <button class="button button_white   button_icon-left " onclick="anotherFunction()" title=""><span class="button_span">Поделиться</span>
-                <ion-icon class="icon" name="link-outline"></ion-icon>
-              </button>
+              <div class="event-card__button">
+                <button class="button button_white   button_icon-left " onclick="anotherFunction()" title=""><span class="button_span">Поделиться</span>
+                  <ion-icon class="icon" name="link-outline"></ion-icon>
+                </button>
+                <div class="button-popup__content">
+                  <div class="button-popup">
+                    <div class="button-popup__container">   
+                      <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+                      </div>
+                      <button class="button button_white share_button button_size_s   " onclick="getLink(event)" title=""><span class="button_span">Скопировать ссылку</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <button class="button button_blue   button_icon-left " onclick="anotherFunction()" title=""><span class="button_span">Версия для печати</span>
                 <ion-icon class="icon" name="print-outline"></ion-icon>
               </button>
@@ -360,7 +372,7 @@
               </button>
             </div>
             <div class="project-generation__top-btns mb"> 
-              <button class="button button_white   button_icon-left " onclick="anotherFunction()" title=""><span class="button_span">Поделиться</span>
+              <button class="button button_white   button_icon-left " onclick="getLink()" title=""><span class="button_span">Поделиться</span>
                 <ion-icon class="icon" name="link-outline"></ion-icon>
               </button>
               <button class="button button_white   button_icon-left " onclick="anotherFunction()" title=""><span class="button_span">Скачать документ</span>

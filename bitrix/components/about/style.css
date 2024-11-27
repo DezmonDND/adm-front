@@ -19,13 +19,15 @@
   width: 100%;
 }
 
-.about p, .about span {
+.about p,
+.about span {
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
-  .about p, .about span {
+  .about p,
+  .about span {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
@@ -41,14 +43,14 @@
 }
 @media (max-width: 992px) {
   .about .about-title {
-    padding-top: 24px;
-    padding-bottom: 8px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 @media (max-width: 992px) {
   .about .about-title {
-    font-size: calc(16px * var(--scale));
-    line-height: calc(20px * var(--lh));
+    padding-top: 24px;
+    padding-bottom: 8px;
   }
 }
 
@@ -62,14 +64,14 @@
 }
 @media (max-width: 992px) {
   .about .about-subtitle {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 @media (max-width: 992px) {
   .about .about-subtitle {
-    font-size: calc(14px * var(--scale));
-    line-height: calc(18px * var(--lh));
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 
@@ -135,7 +137,8 @@
   font-weight: 600;
 }
 
-.about-card-subtitle, .about-info-text {
+.about-card-subtitle,
+.about-info-text {
   font-size: 16px;
 }
 
