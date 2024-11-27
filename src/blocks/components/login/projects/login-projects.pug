@@ -1,0 +1,16 @@
+
+
+mixin login-projects()
+    .overlay.hidden
+    .login-projects.hidden
+        .login__content
+            .login__content-top
+                ion-icon(name = "close-outline", class = 'icon', onclick = 'hideLoginProjects()')
+            .login__content-main
+                .login__content-main__text
+                    .login__content-main__title
+                        span Подать инициативный проект могут только авторизованные пользователи
+                    .login__content-main__subtitle
+                        span Вы можете войти или зарегистрироваться на нашем сайте, чтобы иметь возможность подавать и отслеживать свои инициативные проекты
+                .login__content-main__confirm-email
+                    span(onclick = 'showLogin()') Войти или зарегистрироваться

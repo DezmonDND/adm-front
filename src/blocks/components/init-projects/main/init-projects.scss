@@ -1,5 +1,19 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+.init-projects-title  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        width: unset;
+    }
+
+    button {
+        margin: 16px 0px 24px;
+    }
+}
+
 .init-projects {
     display: flex;
     flex-direction: column;
