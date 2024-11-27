@@ -15194,6 +15194,73 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
   background-size: contain;
 }
 
+.share-menu.mobile-share {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: unset;
+  width: 100%;
+  background: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  height: 150px;
+  box-sizing: border-box;
+  justify-content: stretch;
+}
+.share-menu.mobile-share .share-content {
+  margin-top: unset;
+  display: flex;
+  flex-direction: column;
+  max-width: unset;
+  box-shadow: unset;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 0;
+}
+.share-menu.mobile-share .mobile-share-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-text);
+}
+.share-menu.mobile-share .mobile-share-header span {
+  font-weight: 500;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .share-menu.mobile-share .mobile-share-header span {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
+  }
+}
+.share-menu.mobile-share .mobile-share-header ion-icon {
+  background-color: var(--grey-adm);
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+}
+.share-menu.mobile-share hr {
+  width: 100vh;
+  margin: 20px 0px;
+}
+.share-menu.mobile-share .header__socials {
+  justify-content: center;
+}
+.share-menu.mobile-share .header__socials a {
+  width: 20px;
+  height: 20px;
+}
+.share-menu.mobile-share .header__socials ion-icon {
+  font-size: 20px;
+}
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;

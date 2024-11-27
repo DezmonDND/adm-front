@@ -1,3 +1,80 @@
+$(document).ready(function () {
+    // Инициализация всех popup-блоков
+    $('.popup-fade').each(function () {
+        const $popupFade = $(this);
+
+        // Добавляем структуру popup, если она ещё не существует
+        if ($popupFade.find('.popup').length === 0) {
+            // Оборачиваем контент в .popup и .popup-content
+            const content = $popupFade.html();
+            $popupFade.empty().append(`
+          <div class="popup">
+            <a class="popup-close" href="#"><ion-icon name="close"></ion-icon></a>
+            <div class="popup-content">${content}</div>
+          </div>
+        `);
+        }
+    });
+
+    // Открытие popup
+    $('.popup-open').click(function () {
+        var popupId = $(this).data('popup-id');
+        const $popup = $('#' + popupId);
+        $popup.fadeIn();
+
+        // Запуск видео при открытии popup
+        const video = $popup.find('video').get(0);
+        if (video) {
+            video.play();
+        }
+
+        return false;
+    });
+
+    // Закрытие popup при нажатии на кнопку закрытия
+    $(document).on('click', '.popup-close', function () {
+        const $popupFade = $(this).closest('.popup-fade');
+        $popupFade.fadeOut();
+
+        // Остановка видео при закрытии popup
+        const video = $popupFade.find('video').get(0);
+        if (video) {
+            video.pause();
+            video.currentTime = 0; // Сбросить время воспроизведения на начало
+        }
+
+        return false;
+    });
+
+    // Закрытие popup при нажатии на ESC
+    $(document).keydown(function (e) {
+        if (e.keyCode === 27) {
+            e.stopPropagation();
+            $('.popup-fade').fadeOut();
+
+            // Остановка всех видео в закрытых popup
+            $('.popup-fade video').each(function () {
+                this.pause();
+                this.currentTime = 0;
+            });
+        }
+    });
+
+    // Закрытие popup при клике вне контента
+    $('.popup-fade').click(function (e) {
+        if ($(e.target).closest('.popup').length === 0) {
+            $(this).fadeOut();
+
+            // Остановка видео при закрытии popup
+            const video = $(this).find('video').get(0);
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+        }
+    });
+});
+
 // Находим все элементы с классом `content-card`
 document.querySelectorAll('.content-card').forEach((card) => {
     // Создаем контейнер внутри карточки
@@ -10,7 +87,7 @@ document.querySelectorAll('.content-card').forEach((card) => {
     }
 
     // Создаем ссылку с кнопкой "Поделиться"
-    const shareButton = document.createElement('a');
+    const shareButton = document.createElement('button');
     shareButton.className =
         'button button_link button_white button_size_m button_icon-left social_share';
     shareButton.href = '/';
@@ -112,80 +189,83 @@ function updateMultiSelectValue(e) {
     getValues(e);
 }
 
-$(document).ready(function () {
-    // Инициализация всех popup-блоков
-    $('.popup-fade').each(function () {
-        const $popupFade = $(this);
+document.querySelectorAll('.social_share').forEach(button => {
+    const share = document.createElement('div');
+    share.className = 'share-menu';
+    if (window.innerWidth <= 992) {
+        share.classList.add('mobile-share')
+        share.innerHTML = `
+        <div class="share-content">
+            <div class ="mobile-share-header">
+                <span>Поделиться</span>
+                <ion-icon class="icon md hydrated mobile-share-header-close" name="close-outline"role="img"></ion-icon>
+            </div>
+            <hr>
+            <div class="header__socials">
+                <button class="button button_link button_white  button_without-text"> 
+                    <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                </button>
+                <button class="button button_link button_white  button_without-text"> 
+                    <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                </button>
+                <button class="button button_link button_white  button_without-text"> 
+                    <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                </button>
+                <button class="button button_link button_white  button_without-text" id="copyLink" attributes="{}"><ion-icon class="icon md hydrated" name="link-outline" role="img"></ion-icon></button>
+            </div>
+        </div>
+    `
+    } else {
+        share.innerHTML = `
+        <div class="share-content">
+            <div class="header__socials">
+                <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+            </div>
+            <button id="copyLink" class="button button_white button_size_s">
+                <span class="button_span">Скопировать ссылку</span>
+            </button>
+        </div>
+    `
+    }
+    
+    share.style.display = 'none'; 
+    share.style.position = 'absolute'; 
+    share.style.zIndex = '1000';
 
-        // Добавляем структуру popup, если она ещё не существует
-        if ($popupFade.find('.popup').length === 0) {
-            // Оборачиваем контент в .popup и .popup-content
-            const content = $popupFade.html();
-            $popupFade.empty().append(`
-          <div class="popup">
-            <a class="popup-close" href="#"><ion-icon name="close"></ion-icon></a>
-            <div class="popup-content">${content}</div>
-          </div>
-        `);
+    button.style.position = 'relative'; 
+    button.appendChild(share);
+    button.addEventListener('click', (e) => {
+        if(window.innerWidth <= 992) {
+            document.querySelector('.overlay').classList.remove('hidden');
+        }
+        share.style.display = 'flex';
+    });
+
+    share.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    const closeMobile = share.querySelector('.mobile-share-header-close');
+    if (closeMobile) closeMobile.addEventListener('click', (e) => {
+        e.stopPropagation();
+        share.style.display = 'none'; 
+        share.classList.remove('mobile-menu')
+        document.querySelector('.overlay').classList.add('hidden');
+    })
+
+    document.addEventListener('click', (e) => {
+        if (!share.contains(e.target) && !button.contains(e.target)) {
+            share.style.display = 'none';
+            share.classList.remove('mobile-menu');
+            document.querySelector('.overlay').classList.add('hidden');
         }
     });
 
-    // Открытие popup
-    $('.popup-open').click(function () {
-        var popupId = $(this).data('popup-id');
-        const $popup = $('#' + popupId);
-        $popup.fadeIn();
-
-        // Запуск видео при открытии popup
-        const video = $popup.find('video').get(0);
-        if (video) {
-            video.play();
-        }
-
-        return false;
-    });
-
-    // Закрытие popup при нажатии на кнопку закрытия
-    $(document).on('click', '.popup-close', function () {
-        const $popupFade = $(this).closest('.popup-fade');
-        $popupFade.fadeOut();
-
-        // Остановка видео при закрытии popup
-        const video = $popupFade.find('video').get(0);
-        if (video) {
-            video.pause();
-            video.currentTime = 0; // Сбросить время воспроизведения на начало
-        }
-
-        return false;
-    });
-
-    // Закрытие popup при нажатии на ESC
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.popup-fade').fadeOut();
-
-            // Остановка всех видео в закрытых popup
-            $('.popup-fade video').each(function () {
-                this.pause();
-                this.currentTime = 0;
-            });
-        }
-    });
-
-    // Закрытие popup при клике вне контента
-    $('.popup-fade').click(function (e) {
-        if ($(e.target).closest('.popup').length === 0) {
-            $(this).fadeOut();
-
-            // Остановка видео при закрытии popup
-            const video = $(this).find('video').get(0);
-            if (video) {
-                video.pause();
-                video.currentTime = 0;
-            }
-        }
+    share.querySelector('#copyLink').addEventListener('click', (e) => {
+        e.preventDefault();
+        navigator.clipboard.writeText(window.location.href)
     });
 });
 
@@ -199,40 +279,19 @@ function selectOption(element) {
   element.classList.toggle("select_multiple-option_selected");
 }
 
-document.querySelectorAll('.social_share').forEach(button => {
-    const share = document.createElement('div');
-    share.className = 'share-menu';
-    share.innerHTML = `
-        <div  class = "share-content">
-            <div class="header__socials">
-                <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
-                <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com"></a>
-                <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com"></a>
-            </div>
-            <button id = 'copyLink' class="button button_white button_size_s">
-                <span class="button_span">Скопировать ссылку </span>
-            </button>
-        </div>
-    `;
-    share.style.display = 'none'; 
-    share.style.position = 'absolute'; 
-    share.style.zIndex = '1000';
+function getLength() {
+  const textarea = document.querySelector(".textarea");
+  const counterCurrent = document.querySelector(".current");
+  const counterMax = document.querySelector(".max");
 
-    button.style.position = 'relative'; 
-    button.appendChild(share);
-
-    button.addEventListener('mouseenter', () => {
-        share.style.display = 'block';
-    });
-
-    button.addEventListener('mouseleave', () => {
-        share.style.display = 'none';
-    });
-
-    share.querySelector('#copyLink').addEventListener('click', () => {
-        navigator.clipboard.writeText(window.location.href)
-    });
-});
+  const textLength = textarea.value.length;
+  counterCurrent.textContent = textLength;
+  if (textLength > Number(counterMax.textContent)) {
+    textarea.style.borderColor = "#D10404";
+  } else {
+    textarea.style.borderColor = "";
+  }
+}
 
 $(document).ready(function () {
     $('.toggle-container').each(function () {
@@ -294,17 +353,3 @@ $(document).ready(function () {
         });
     });
 });
-
-function getLength() {
-  const textarea = document.querySelector(".textarea");
-  const counterCurrent = document.querySelector(".current");
-  const counterMax = document.querySelector(".max");
-
-  const textLength = textarea.value.length;
-  counterCurrent.textContent = textLength;
-  if (textLength > Number(counterMax.textContent)) {
-    textarea.style.borderColor = "#D10404";
-  } else {
-    textarea.style.borderColor = "";
-  }
-}
