@@ -6,7 +6,9 @@ mixin adm-search()
     +search-by-site({
         calendar_1_id: 'calendar',
         calendar_2_id: 'calendar-popup',
-    })  
+    })
+    input(id="from" name="from" value style='display: none;')  
+    input(id="to" name="to" value style='display: none;')
     .adm-search
         +project_card(false, {
             title: 'Дети – цветы жизни!',

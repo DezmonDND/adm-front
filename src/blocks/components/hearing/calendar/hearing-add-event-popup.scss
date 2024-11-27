@@ -1,0 +1,77 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.hearing-add-event-popup {
+    display: none;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+    background-color: $content-color;
+
+    &_open {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+    .hearing-add-event-popup__container {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+
+        .hearing-add-event-popup__title-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+
+            .hearing-add-event-popup__title {
+                @include heading-h5;
+            }
+        }
+
+        .hearing-add-event-popup__content {
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+
+            .hearing-add-event-popup__time {
+                display: flex;
+                gap: 8px;
+
+                .hearing-add-event-popup__fields {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    .hearing-add-event-popup__label {
+                        @include lead-6
+                    }
+                }
+            }
+
+            .hearing-add-event-popup__desc {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .hearing-add-event-popup__fields {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    &:last-of-type {
+                        margin-bottom: 16px;
+                    }
+
+                    .hearing-add-event-popup__label {
+                        @include lead-6
+                    }
+                }
+            }
+        }
+    }
+}
