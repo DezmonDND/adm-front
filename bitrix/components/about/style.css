@@ -12,7 +12,7 @@
 }
 
 .about-content {
-  max-width: 755px;
+  max-width: 866px;
   margin: 40px auto 40px;
   display: flex;
   flex-direction: column;
@@ -402,7 +402,8 @@
 }
 
 .about-video {
-  border-radius: 8px;
-  overflow: hidden;
   max-height: 420px;
+}
+.about-video video {
+  border-radius: 8px;
 }
