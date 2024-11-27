@@ -55,6 +55,8 @@ const hearingEventPopupHTML = (event) => {
 };
 
 function openHearingEventPopup(info) {
+    closeHearingEventPopup();
+
     const calendar = document.querySelector('.hearing-calendar');
     const popup = hearingEventPopupHTML(info);
     calendar.appendChild(popup);
@@ -70,11 +72,13 @@ function closeHearingEventPopup() {
     }
 }
 
-function handleOutsideClick(event) {
-    const popup = document.querySelector('.hearing-event-popup');
+const div = document.querySelector('.hearing-event-popup');
 
-}
-
-document.body.addEventListener('click', (event) => {
-    handleOutsideClick(event);
+jQuery(function ($) {
+    $(document).mouseup(function (e) {
+        var div = $('.hearing-event-popup');
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+            div.hide();
+        }
+    });
 });
