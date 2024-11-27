@@ -60,7 +60,7 @@
 @use '../../blocks/components/phonebook/main/phonebook.scss';
 @use '../../blocks/components/login/main/login.scss';
 @use '../../blocks/components/projects/project-generation/project-generation.scss';
-@use '../../blocks/components/subscribe/subscribe.scss';
+@use '../../blocks/components/subscribe/default/subscribe.scss';
 @use './bootstrap-grid.scss';
 @use '../../blocks/components/header/services/header-services.scss';
 @use '../../blocks/components/people-care-card/main/people-care-card.scss';
@@ -122,6 +122,8 @@
 @use '../../blocks/components/hearing/calendar/hearing-calendar.scss';
 @use '../../blocks/components/hearing/calendar/hearing-event-popup.scss';
 @use '../../blocks/components/hearing/calendar/hearing-add-event-popup.scss';
+@use '../../blocks/components/honor-board/board-detail/board-detail.scss';
+@use '../../blocks/components/projects/project-table/project-table.scss';
 
 * {
     font-family: 'Inter', sans-serif;

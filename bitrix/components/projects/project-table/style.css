@@ -1,0 +1,17 @@
+.table-blue th {
+  background-color: var(--primary-color-disabled);
+}
+
+.project-table th:first-child,
+.project-table td:first-child {
+  width: 5%;
+  text-align: center;
+}
+.project-table th:last-child,
+.project-table td:last-child {
+  width: 25%;
+}
+.project-table th:nth-child(2),
+.project-table td:nth-child(2) {
+  width: 70%;
+}
