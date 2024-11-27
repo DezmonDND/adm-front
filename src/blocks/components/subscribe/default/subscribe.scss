@@ -1,0 +1,73 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.subscribe {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        span {
+            color: $main-text;
+            @include heading-h3();
+        }
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        span {
+            color: $tertiary-text;
+            @include caption-2();
+        }
+    }
+
+    &__agree {
+        background: $cards-background;
+        padding: 20px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__lineform {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+.subscribe__fields {
+    display: flex;
+    gap: 20px;
+
+    @include respond-to(md) {
+        flex-direction: column;
+    }
+}
+
+.subscribe__field {
+    width: 50%;
+
+    &__heading {
+        @include heading-h4;
+    }
+
+    @include respond-to(md) {
+        width: 100%;
+    }
+
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
