@@ -39,7 +39,7 @@ $(document).ready(function () {
         arrows: false,
         dots: true,
         appendDots: $('.news-top-card__dots'),
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         variableWidth: false,
     });
 });
