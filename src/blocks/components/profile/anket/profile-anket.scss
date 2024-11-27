@@ -60,6 +60,16 @@
 
 .profile-anket-draft-right {
 
+    .button_red:hover {
+        border: 1px solid #E80000;
+        background-color: #E80000;
+    }
+
+    .button_red:active {
+        border: 1px solid #A50505;
+        background-color: #A50505;
+    }
+
     @include respond-to(sm) {
         width: 100%;
         button {
