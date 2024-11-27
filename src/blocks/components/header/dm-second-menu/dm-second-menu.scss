@@ -1,0 +1,111 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+@mixin link {
+    &:hover {
+        color: $primary-color-hover;
+    }
+
+    &:active {
+        color: $primary-color-active;
+    }
+}
+
+body.tmp-duma {
+    .dm-second-menu {
+        background-color: $cards-background;
+        top: 144px;
+        border-top: none;
+
+        .dm-second-menu__col {
+            .dm-second-menu__links {
+
+                .dm-second-menu__title,
+                .dm-second-menu__link {
+                    &:hover {
+                        color: $primary-color-green-hover;
+                    }
+
+                    &:active {
+                        color: $primary-color-green-click;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dm-second-menu {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    background-color: $content-color;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(233, 233, 233, 1);
+
+    &_adm-about,
+    &_adm-power,
+    &_adm-documents,
+    &_adm-contacts,
+    &_adm-quick,
+    &_adm-public,
+    &_adm-corruption,
+    &_adm-press,
+    &_adm-citizens,
+    &_about,
+    &_struct,
+    &_doc,
+    &_feedbacks,
+    &_actions {
+        display: none;
+    }
+
+    &_active {
+        display: flex;
+    }
+
+    .dm-second-menu__content {
+        display: flex;
+        gap: 24px;
+        padding: 40px 174px;
+        max-width: 1440px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .dm-second-menu__col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+
+            .dm-second-menu__links {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .dm-second-menu__title {
+                    color: $main-text;
+                    font-weight: 500;
+                    @include lead-5;
+                    @include link;
+                }
+
+                .dm-second-menu__link {
+                    color: $main-text;
+                    @include text-3;
+                    @include link;
+
+                    &:first-of-type {
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
