@@ -303,7 +303,9 @@
 }
 
 .about-video {
-    border-radius: 8px;
-    overflow: hidden;
-    max-height: 420px
+    max-height: 420px;
+
+    video {
+        border-radius: 8px;
+    }
 }
