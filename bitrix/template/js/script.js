@@ -1,3 +1,44 @@
+// Находим все элементы с классом `content-card`
+$(document).ready(function () {
+    document.querySelectorAll('.content-card').forEach((card) => {
+        // Создаем контейнер внутри карточки
+        const container = document.createElement('div');
+        container.className = 'content-card__container';
+
+        // Перемещаем текущие дочерние элементы в контейнер
+        while (card.firstChild) {
+            container.appendChild(card.firstChild);
+        }
+
+        // Создаем ссылку с кнопкой "Поделиться"
+        const shareButton = document.createElement('a');
+        shareButton.className =
+            'button button_link button_white button_size_m button_icon-left social_share';
+        shareButton.href = '/';
+        shareButton.setAttribute('attributes', '{}');
+
+        // Создаем содержимое кнопки
+        const buttonSpan = document.createElement('span');
+        buttonSpan.className = 'button_span';
+        buttonSpan.textContent = 'Поделиться';
+
+        const icon = document.createElement('ion-icon');
+        icon.className = 'icon md hydrated';
+        icon.setAttribute('name', 'link-outline');
+        icon.setAttribute('role', 'img');
+
+        // Собираем структуру кнопки
+        shareButton.appendChild(buttonSpan);
+        shareButton.appendChild(icon);
+
+        // Добавляем кнопку в контейнер
+        container.appendChild(shareButton);
+
+        // Добавляем контейнер в карточку
+        card.appendChild(container);
+    });
+});
+
 $(document).ready(function () {
     // Инициализация всех popup-блоков
     $('.popup-fade').each(function () {
@@ -75,6 +116,16 @@ $(document).ready(function () {
     });
 });
 
+function openSelect() {
+  const selectMenu = document.querySelector(".select_multiple-menu");
+  selectMenu.style.display =
+    selectMenu.style.display === "none" ? "flex" : "none";
+}
+
+function selectOption(element) {
+  element.classList.toggle("select_multiple-option_selected");
+}
+
 const msDropdownList = document.querySelector('.multi-select__dropdown');
 const msDropdownItems = document.querySelectorAll('.multi-select__dropdown-item');
 const multiSelect = document.querySelector('input[name="multiSelect"]');
@@ -150,30 +201,6 @@ function updateMultiSelectValue(e) {
     getValues(e);
 }
 
-function openSelect() {
-  const selectMenu = document.querySelector(".select_multiple-menu");
-  selectMenu.style.display =
-    selectMenu.style.display === "none" ? "flex" : "none";
-}
-
-function selectOption(element) {
-  element.classList.toggle("select_multiple-option_selected");
-}
-
-function getLength() {
-  const textarea = document.querySelector(".textarea");
-  const counterCurrent = document.querySelector(".current");
-  const counterMax = document.querySelector(".max");
-
-  const textLength = textarea.value.length;
-  counterCurrent.textContent = textLength;
-  if (textLength > Number(counterMax.textContent)) {
-    textarea.style.borderColor = "#D10404";
-  } else {
-    textarea.style.borderColor = "";
-  }
-}
-
 $(document).ready(function () {
     $('.toggle-container').each(function () {
         // Находим основные элементы
@@ -235,43 +262,16 @@ $(document).ready(function () {
     });
 });
 
-// Находим все элементы с классом `content-card`
-$(document).ready(function () {
-    document.querySelectorAll('.content-card').forEach((card) => {
-        // Создаем контейнер внутри карточки
-        const container = document.createElement('div');
-        container.className = 'content-card__container';
+function getLength() {
+  const textarea = document.querySelector(".textarea");
+  const counterCurrent = document.querySelector(".current");
+  const counterMax = document.querySelector(".max");
 
-        // Перемещаем текущие дочерние элементы в контейнер
-        while (card.firstChild) {
-            container.appendChild(card.firstChild);
-        }
-
-        // Создаем ссылку с кнопкой "Поделиться"
-        const shareButton = document.createElement('a');
-        shareButton.className =
-            'button button_link button_white button_size_m button_icon-left social_share';
-        shareButton.href = '/';
-        shareButton.setAttribute('attributes', '{}');
-
-        // Создаем содержимое кнопки
-        const buttonSpan = document.createElement('span');
-        buttonSpan.className = 'button_span';
-        buttonSpan.textContent = 'Поделиться';
-
-        const icon = document.createElement('ion-icon');
-        icon.className = 'icon md hydrated';
-        icon.setAttribute('name', 'link-outline');
-        icon.setAttribute('role', 'img');
-
-        // Собираем структуру кнопки
-        shareButton.appendChild(buttonSpan);
-        shareButton.appendChild(icon);
-
-        // Добавляем кнопку в контейнер
-        container.appendChild(shareButton);
-
-        // Добавляем контейнер в карточку
-        card.appendChild(container);
-    });
-});
+  const textLength = textarea.value.length;
+  counterCurrent.textContent = textLength;
+  if (textLength > Number(counterMax.textContent)) {
+    textarea.style.borderColor = "#D10404";
+  } else {
+    textarea.style.borderColor = "";
+  }
+}
