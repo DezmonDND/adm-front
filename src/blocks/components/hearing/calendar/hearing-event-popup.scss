@@ -1,0 +1,61 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.hearing-event-popup {
+    display: none;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+    height: 320px;
+    background-color: $content-color;
+
+    &_open {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+    .hearing-event-popup__container {
+        .hearing-event-popup__top-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+
+            .hearing-event-popup__title {
+                @include heading-h5;
+            }
+
+            .hearing-event-popup__buttons {
+                display: flex;
+                gap: 12px;
+
+                .hearing-event-popup__share-button {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .hearing-event-popup__bottom-content {
+            display: flex;
+            box-sizing: border-box;
+            gap: 24px;
+            padding: 8px 16px;
+            max-height: 264px;
+
+            .hearing-event-popup__desc-title {
+                color: $tertiary-text;
+                @include caption-4;
+            }
+
+            .hearing-event-popup__desc-text {
+                box-sizing: border-box;
+                overflow-y: scroll;
+                scrollbar-width: none;
+                @include text-3;
+            }
+        }
+    }
+}
