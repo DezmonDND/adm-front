@@ -72,7 +72,6 @@ function closeHearingEventPopup() {
 
 function handleOutsideClick(event) {
     const popup = document.querySelector('.hearing-event-popup');
-
 }
 
 document.body.addEventListener('click', (event) => {
