@@ -37,7 +37,12 @@ mixin fieldset(field)
                 +select(field.iconPosition, field.options, 'multiple')            
     else
         fieldset(class=`fieldset ${field.cls ? `fieldset_${field.cls}` : ""}`)
-            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            if field.canRemove 
+                .fieldset__title-remove
+                    h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+                    ion-icon(name= 'close-outline' ).fieldset__title-remove-btn
+            else 
+                h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
                 each input in field.inputs
                     +input(input, input.error)

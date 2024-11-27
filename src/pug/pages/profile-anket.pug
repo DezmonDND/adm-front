@@ -11,10 +11,18 @@ block content
         )
         .profile-anket-main
             +title({title: 'Анкета для выдвижения инициативного проекта', description: 'Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных.'})    
+            .profile-anket-draft
+                .profile-anket-draft-left
+                    .profile-anket-draft-title
+                        span У вас есть сохраненная версия незаполненной анкеты
+                    .profile-anket-draft-subtitle
+                        span Вы можете удалить черновик анкеты или зарегистрироваться, чтобы не потерять данные
+                .profile-anket-draft-right
+                    +button({ size: 'm ', type: 'button', class: 'button_red', event: 'someFunction()', text: 'Удалить' })
             form.interview-form.profile-anket
                 .profile-anket-item
                     .profile-anket-item-title 
-                        span 1.Основные данные
+                        span 1. Основные данные
                     +fieldset(
                     {
                         type: '',
@@ -67,7 +75,7 @@ block content
                                     id: 1, 
                                     label: 'Да', 
                                     sort: 'radio',
-                                    status: false,
+                                    status: true,
                                     name: 'radio'
                                     },
                                 { 
@@ -78,40 +86,43 @@ block content
                                     name: 'radio'
                                     },
                                 ],
-                        })  
-                    +fieldset(
-                        {
-                            type: 'textarea',
-                            title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств инициатора проекта',
-                            span: 'Вспомогательный текст',
-                            error: false,
-                            options: {
-                                placeholder: 'Введите ваш ответ',
-                                value: '900'
-                                    }
-                        })
-                    +fieldset(
-                        {
-                            type: 'textarea',
-                            title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств граждан',
-                            span: 'Вспомогательный текст',
-                            error: false,
-                            options: {
-                                placeholder: 'Введите ваш ответ',
-                                value: '900'
-                                    }
-                        })
-                    +fieldset(
-                        {
-                            type: 'textarea',
-                            title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств иных юридических лиц и индивидуальных предпринимателей',
-                            span: 'Вспомогательный текст',
-                            error: false,
-                            options: {
-                                placeholder: 'Введите ваш ответ',
-                                value: '900'
-                                    }
-                        })
+                        }) 
+                    .profile-anket-item-subtitle 
+                        span Необходимо заполнить минимум одно из следующих полей:
+                    .profile-anket-item-with-descr
+                        +fieldset(
+                            {
+                                type: 'textarea',
+                                title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств инициатора проекта',
+                                span: 'Вспомогательный текст',
+                                error: false,
+                                options: {
+                                    placeholder: 'Введите ваш ответ',
+                                    value: '900'
+                                        }
+                            })
+                        +fieldset(
+                            {
+                                type: 'textarea',
+                                title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств граждан',
+                                span: 'Вспомогательный текст',
+                                error: false,
+                                options: {
+                                    placeholder: 'Введите ваш ответ',
+                                    value: '900'
+                                        }
+                            })
+                        +fieldset(
+                            {
+                                type: 'textarea',
+                                title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств иных юридических лиц и индивидуальных предпринимателей',
+                                span: 'Вспомогательный текст',
+                                error: false,
+                                options: {
+                                    placeholder: 'Введите ваш ответ',
+                                    value: '900'
+                                        }
+                            })
                 hr
                 .profile-anket-item
                     .profile-anket-item-title 
@@ -139,7 +150,7 @@ block content
                                     id: 1, 
                                     label: 'Инициативная группа граждан', 
                                     sort: 'radio',
-                                    status: false,
+                                    status: true,
                                     name: 'radio'
                                     },
                                 { 
@@ -162,6 +173,7 @@ block content
                 .profile-anket-item
                     .profile-anket-item-title 
                         span 4. Мероприятия по реализации инициативного проекта
+                   
                     +fieldset(
                     {
                         type: '',
@@ -174,8 +186,9 @@ block content
                                 name: `answer1`, 
                                 sort: `interview-full`,
                             },
-                            ] 
+                            ],
+                        canRemove: true
                     })
-                    +button({ type: 'button', size: 'm', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Добавить мероприятие'})
+                +button({ type: 'button', size: 'm', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Добавить мероприятие'})
                 +button({ size: 'm', type: 'button', class: 'button_blue interview-form__button', event: 'getValues(event)', text: `Подать инициативный проект` }) 
                 
