@@ -6,7 +6,7 @@
 .event-card .event-card__container {
   display: flex;
   flex-direction: column;
-  max-width: 766px;
+  max-width: 866px;
   width: 100%;
   padding: 32px 0 32px;
 }
