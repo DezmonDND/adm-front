@@ -3,7 +3,7 @@
 .afisha-event {
     .afisha-event__container {
         .afisha-event__content {
-            max-width: 866px;
+            max-width: 755px;
             margin: 40px auto 40px;
             display: flex;
             flex-direction: column;
@@ -96,9 +96,16 @@
             flex-direction: column;
             gap: 28px;
 
-            .afisha-event__image {
-                max-width: 866px;
-                width: 100%;
+            .afisha-event__banner-list {
+                display: flex;
+                overflow: scroll;
+                scrollbar-width: none;
+
+                .afisha-event__image {
+                    max-width: 755px;
+                    width: 100%;
+                    margin-right: 8px;
+                }
             }
 
             .afisha-event__navigation {
@@ -108,6 +115,14 @@
 
                 .afisha-event__comment {
                     @include text-3;
+                }
+
+                .slider {
+                    padding-top: 0;
+
+                    .slider__counter {
+                        min-width: 43px;
+                    }
                 }
             }
         }

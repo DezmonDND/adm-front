@@ -77,7 +77,7 @@
       </div>
       <div class="header__top-content">
         <div class="header__top-links">
-          <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+          <div class="header_links"><a class="header__link" onclick="toggleSecondMenu(event)">Быстрый доступ</a><a class="header__link" onclick="toggleSecondMenu(event)">Публичные слушания</a><a class="header__link" onclick="toggleSecondMenu(event)">Противодействие коррупции</a><a class="header__link" onclick="toggleSecondMenu(event)">Пресс-центр</a><a class="header__link" onclick="toggleSecondMenu(event)">Обращения граждан</a>
           </div>
           <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
           </div>
@@ -98,7 +98,7 @@
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
-        <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
+        <div class="header_links"><a class="header__link" onclick="toggleSecondMenu(event)">О Сургуте</a><a class="header__link" onclick="toggleSecondMenu(event)">Городская власть</a><a class="header__link" onclick="toggleSecondMenu(event)">Документы</a><a class="header__link" onclick="toggleSecondMenu(event)">Контакты</a>
         </div>
         <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
@@ -127,6 +127,144 @@
       </div>
       <div class="header-visibility__bottom-content">
         <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-about dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">О Сургуте</a><a class="dm-second-menu__link" href="/">Сургуту 430 лет </a><a class="dm-second-menu__link" href="/">Сургут сегодня </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Публичные слушания</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-power dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Городская власть</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-documents dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Документы</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-contacts dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Контакты</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-quick dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 1</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-public dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 2</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-corruption dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 3</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-press dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 4</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-citizens dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 5</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -366,7 +504,7 @@
                 </div>
                 <div class="news-main__slider">
                   <div class="slider"><a class="slider__link slider__news-main-prev">
-                      <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__news-main-next">
+                      <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__news-main-next">
                       <ion-icon name="arrow-forward-outline"> </ion-icon></a>
                   </div>
                 </div>
@@ -578,7 +716,7 @@
                 </div>
                 <div class="events__slider">
                   <div class="slider"><a class="slider__link slider__events-prev">
-                      <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__events-next">
+                      <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__events-next">
                       <ion-icon name="arrow-forward-outline"> </ion-icon></a>
                   </div>
                 </div>
@@ -592,7 +730,7 @@
           <div class="main-title__container">
             <h1 class="main-title__title">С заботой о жителях</h1>
             <div class="slider"><a class="slider__link slider__people-care-prev">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__people-care-next">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__people-care-next">
                 <ion-icon name="arrow-forward-outline"> </ion-icon></a>
             </div>
           </div>
@@ -634,7 +772,7 @@
           </div>
           <div class="people-care__slider">
             <div class="slider"><a class="slider__link slider__people-care-prev">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__people-care-next">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__people-care-next">
                 <ion-icon name="arrow-forward-outline"> </ion-icon></a>
             </div>
           </div>
@@ -715,7 +853,7 @@
         </div>
         <div class="important-links__slider">           
           <div class="slider"><a class="slider__link slider__important-links-prev">
-              <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__important-links-next">
+              <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__important-links-next">
               <ion-icon name="arrow-forward-outline"> </ion-icon></a>
           </div>
         </div>
@@ -731,7 +869,7 @@
             <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочее">Прочее</a>
             </div>
             <div class="slider"><a class="slider__link slider__help-city-prev">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__help-city-next">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__help-city-next">
                 <ion-icon name="arrow-forward-outline"> </ion-icon></a>
             </div>
           </div>
@@ -796,7 +934,7 @@
         </div>
         <div class="help-city__navigation"> 
           <div class="slider"><a class="slider__link slider__help-city-prev">
-              <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__help-city-next">
+              <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__help-city-next">
               <ion-icon name="arrow-forward-outline"> </ion-icon></a>
           </div>
         </div>
@@ -806,7 +944,7 @@
           <div class="main-title__container">
             <h1 class="main-title__title">Важная информация для жителей</h1>
             <div class="slider"><a class="slider__link slider__important-inf-prev">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__important-inf-next">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__important-inf-next">
                 <ion-icon name="arrow-forward-outline"> </ion-icon></a>
             </div>
           </div>
@@ -814,7 +952,7 @@
         <div class="important-inf__container"><img class="important-inf__banner" src="/local/templates/surgut/img/banner.png" alt="Баннер"/><img class="important-inf__banner" src="/local/templates/surgut/img/banner.png" alt="Баннер"/><img class="important-inf__banner" src="/local/templates/surgut/img/banner.png" alt="Баннер"/></div>
         <div class="important-inf__slider"> 
           <div class="slider"><a class="slider__link slider__important-inf-prev">
-              <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link slider__important-inf-next">
+              <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__important-inf-next">
               <ion-icon name="arrow-forward-outline"> </ion-icon></a>
           </div>
         </div>

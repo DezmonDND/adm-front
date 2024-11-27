@@ -50,7 +50,7 @@
 @use '../../blocks/components/pagination/main/navigation.scss';
 @use '../../blocks/components/afisha/universal/universal.scss';
 @use '../../blocks/components/afisha/event/main/event.scss';
-@use '../../blocks/components/afisha/event-full-desc/full-desc.scss';
+@use '../../blocks/components/afisha/event-full-desc/event-full-desc.scss';
 @use '../../blocks/components/slider/main/slider.scss';
 @use '../../blocks/components/administration/service/adm-service.scss';
 @use '../../blocks/components/documents/dumalist/documents-dumalist.scss';
@@ -60,7 +60,7 @@
 @use '../../blocks/components/phonebook/main/phonebook.scss';
 @use '../../blocks/components/login/main/login.scss';
 @use '../../blocks/components/projects/project-generation/project-generation.scss';
-@use '../../blocks/components/subscribe/subscribe.scss';
+@use '../../blocks/components/subscribe/default/subscribe.scss';
 @use './bootstrap-grid.scss';
 @use '../../blocks/components/header/services/header-services.scss';
 @use '../../blocks/components/people-care-card/main/people-care-card.scss';
@@ -119,7 +119,10 @@
 @use '../../blocks/components/dm-events/main/dm-events.scss';
 @use '../../blocks/components/adm-all-news/adm-all-news.scss';
 @use '../../blocks/components/hearing/hearing-card/hearing-card.scss';
+@use '../../blocks/components/header/dm-second-menu/dm-second-menu.scss';
 @use '../../blocks/components/honor-board/board-detail/board-detail.scss';
+@use '../../blocks/components/projects/project-table/project-table.scss';
+@use '../../blocks/components/dm-about/dm-about.scss';
 @use '../../blocks/components/about/about.scss';
 
 * {
