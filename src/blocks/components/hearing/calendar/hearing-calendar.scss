@@ -1,0 +1,87 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.hearing-calendar {
+    background-color: $cards-background;
+    padding: 32px;
+    border-radius: 12px;
+    position: relative;
+
+    .fc-button-group {
+        background-color: $event-color;
+        padding: 4px;
+        border-radius: 8px;
+        gap: 2px;
+
+        .fc-button-primary {
+            border-radius: 8px;
+            padding: 9px 16px;
+            border: none;
+            color: $main-text;
+            background-color: $event-color;
+            @include caption-3;
+        }
+
+        .fc-prev-button,
+        .fc-next-button {
+            color: $primary-color;
+        }
+    }
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+    border-radius: 8px;
+    padding: 9px 16px;
+    border: none;
+    color: $main-text;
+    background-color: $content-color;
+    box-shadow: unset !important;
+    @include caption-3;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: none;
+}
+
+.fc .fc-col-header-cell-cushion {
+    padding: 20px 0;
+    color: $tertiary-text;
+    @include lead-6;
+}
+
+.fc-dayGridMonth-view {
+    background-color: $content-color;
+    border-radius: 20px;
+    padding: 12px 20px;
+}
+
+.fc .fc-daygrid-day-number {
+    color: $fourth-text;
+    @include tags-label;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: $content-color;
+
+    .fc-daygrid-day-number {
+        background-color: $primary-color;
+        color: $content-color;
+        border-radius: 50%;
+    }
+}
+
+.fc-event-time,
+.fc-event-title {
+    font-weight: 400 !important;
+    @include caption-5;
+}
+
+.fc-scroller {
+    scrollbar-width: none;
+}
+
+.fc-daygrid-event-dot {
+border: calc(var(--fc-daygrid-event-dot-width)/4) solid $primary-color;
+
+
+}
