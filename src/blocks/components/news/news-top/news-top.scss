@@ -38,6 +38,41 @@
             @include respond-to(sm) {
                 width: 100%;
             }
+
+            .slick-dots {
+                display: flex;
+                margin-left: 0;
+                position: absolute;
+                bottom: 40px;
+                right: 40px;
+                gap: 12px;
+                list-style: none;
+
+                li {
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        color: #000000;
+                        background-color: #000000;
+                        border: 2px solid $tertiary-text;
+                        cursor: pointer;
+
+                        &:hover {
+                            border-color: $fourth-text;
+                        }
+                    }
+
+                    &.slick-active {
+                        button {
+                            border-color: $content-color;
+                        }
+                    }
+                }
+            }
         }
 
         .news-top__links-list {
