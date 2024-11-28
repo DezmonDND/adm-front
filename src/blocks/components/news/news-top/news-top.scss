@@ -13,31 +13,6 @@
         margin: 20px 0 20px;
     }
 
-    .slick-list {
-        max-width: 867px;
-        width: 100%;
-
-        @media (max-width: 1439px) {
-            max-width: 600px;
-        }
-
-        @media (max-width: 1170px) {
-            max-width: 448px;
-        }
-
-        @include respond-to(md) {
-            max-width: 500px;
-        }
-
-        @media (max-width: 910px) {
-            max-width: 360px;
-        }
-
-        @include respond-to(sm) {
-            max-width: none;
-        }
-    }
-
     &__container {
         display: flex;
         width: 100%;
@@ -54,21 +29,64 @@
 
         .news-top__card-list {
             display: flex;
+            width: 66%;
+
+            @include respond-to(md) {
+                width: 49%;
+            }
+
+            @include respond-to(sm) {
+                width: 100%;
+            }
+
+            .slick-dots {
+                display: flex;
+                margin-left: 0;
+                position: absolute;
+                bottom: 40px;
+                right: 40px;
+                gap: 12px;
+                list-style: none;
+
+                li {
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        color: #000000;
+                        background-color: #000000;
+                        border: 2px solid $tertiary-text;
+                        cursor: pointer;
+
+                        &:hover {
+                            border-color: $fourth-text;
+                        }
+                    }
+
+                    &.slick-active {
+                        button {
+                            border-color: $content-color;
+                        }
+                    }
+                }
+            }
         }
 
         .news-top__links-list {
             display: flex;
             flex-direction: column;
             gap: 8px;
-            max-width: 420px;
-            width: 100%;
+            width: 32%;
 
             @include respond-to(md) {
-                max-width: 360px;
+                width: 49%;
             }
 
             @include respond-to(sm) {
-                max-width: none;
+                width: 100%;
             }
         }
     }

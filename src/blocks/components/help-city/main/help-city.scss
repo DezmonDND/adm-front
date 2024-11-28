@@ -10,6 +10,8 @@
     }
 
     .help-city__content {
+        display: flex;
+        overflow: hidden;
 
         .slick-slide {
             height: 428px;

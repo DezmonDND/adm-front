@@ -14,6 +14,11 @@
     }
 
     .people-care__container {
+        .people-care__card-list {
+            display: flex;
+            overflow: hidden;
+        }
+
         .slick-slide {
             height: 320px;
 
