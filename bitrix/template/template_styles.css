@@ -9242,6 +9242,10 @@ body.tmp-print .project-generation__top-btns {
     display: none;
   }
 }
+.people-care .people-care__container .people-care__card-list {
+  display: flex;
+  overflow: hidden;
+}
 .people-care .people-care__container .slick-slide {
   height: 320px;
 }
@@ -9282,6 +9286,10 @@ body.tmp-print .project-generation__top-btns {
   .help-city .help-city__tabs {
     display: none;
   }
+}
+.help-city .help-city__content {
+  display: flex;
+  overflow: hidden;
 }
 .help-city .help-city__content .slick-slide {
   height: 428px;
@@ -9474,9 +9482,14 @@ body.tmp-print .project-generation__top-btns {
     display: none;
   }
 }
+.important-inf .important-inf__container {
+  display: flex;
+  overflow: hidden;
+}
 .important-inf .important-inf__container .important-inf__banner {
+  object-fit: cover;
+  object-position: center;
   max-width: 873px;
-  width: 100%;
   max-height: 325px;
   margin-right: 24px;
 }

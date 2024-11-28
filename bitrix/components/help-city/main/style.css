@@ -16,6 +16,10 @@
     display: none;
   }
 }
+.help-city .help-city__content {
+  display: flex;
+  overflow: hidden;
+}
 .help-city .help-city__content .slick-slide {
   height: 428px;
 }
