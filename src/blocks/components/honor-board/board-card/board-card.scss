@@ -47,10 +47,12 @@
             }
 
             .board-card__date {
+                color: $second-text;
                 @include caption-2;
             }
 
             .board-card__about {
+                color: $main-text;
                 margin: 0;
                 @include lead-2;
             }
