@@ -180,7 +180,7 @@ let slidersInitialized = true;
 const slidersToManage = sliders.filter(
     (slider) =>
         slider.selector === '.news-main__card-list' ||
-        slider.selector === '.important-links__container',
+        slider.selector === '.events__news'
 );
 
 $(window)
