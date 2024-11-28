@@ -1,6 +1,6 @@
 
 <div class="search-by-site">
-  <input class="input input_s input-search-by-site  input-search-s " placeholder="Поиск по наименованию или номеру" name="siteSearch" value=""/>
+  <input class="input input_s input-search-by-site  input-search-s " placeholder="Поиск по наименованию или номеру" name="siteSearch" value="" id="siteSearch"/>
   <div class="search-by-site__buttons">
     <select class="select search-by-site__select select_m select-icon-xs">
       <option class="select__option" value="Раздел">Раздел</option>
@@ -21,7 +21,7 @@
   </div>
   <div class="search-by-site__filters">
     <form class="search search-search-by-site">
-      <input class="input input_m  input-search input-search-m " placeholder="Тема или тип документа" name="laws" value=""/>
+      <input class="input input_m  input-search input-search-m " placeholder="Тема или тип документа" name="laws" value="" id="laws"/>
       <button class="button button_blue search__button search__button_m  button_without-text  " onclick="1" title="">
         <ion-icon class="icon" name="search-outline"></ion-icon>
       </button>

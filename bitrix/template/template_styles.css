@@ -16132,6 +16132,7 @@ body.tmp-duma .dm-second-menu {
   background-color: var(--cards-background);
   top: 144px;
   border-top: none;
+  border-color: var(--event-color-hover);
 }
 body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-second-menu__title:hover,
 body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-second-menu__link:hover {
@@ -16154,6 +16155,10 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   justify-content: center;
   box-sizing: border-box;
   border-top: 1px solid rgb(233, 233, 233);
+  border-bottom: 1px solid rgb(233, 233, 233);
+  max-height: 80vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 .dm-second-menu_adm-about, .dm-second-menu_adm-power, .dm-second-menu_adm-documents, .dm-second-menu_adm-contacts, .dm-second-menu_adm-quick, .dm-second-menu_adm-public, .dm-second-menu_adm-corruption, .dm-second-menu_adm-press, .dm-second-menu_adm-citizens, .dm-second-menu_about, .dm-second-menu_struct, .dm-second-menu_doc, .dm-second-menu_feedbacks, .dm-second-menu_actions {
   display: none;
@@ -16168,6 +16173,12 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   max-width: 1440px;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
+}
+.dm-second-menu .dm-second-menu__content .dm-second-menu__button-close {
+  position: absolute;
+  top: 40px;
+  right: 64px;
 }
 .dm-second-menu .dm-second-menu__content .dm-second-menu__col {
   display: flex;

@@ -22,15 +22,15 @@
       <fieldset class="fieldset ">
         <h3 class="fieldset__title reception__job_title">Наименование вашей организации (юридического лица)</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input   " placeholder="Наименование организации" name="companyName" value=""/>
+          <input class="input  input-virtual-reception_input   " placeholder="Наименование организации" name="companyName" value="" id="companyName"/>
         </div>
       </fieldset>
       <fieldset class="fieldset fieldset_user-contacts">
         <h3 class="fieldset__title reception__user_title">Ваши данные</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input   " placeholder="Фамилия" name="firstName" value=""/>
-          <input class="input  input-virtual-reception_input   " placeholder="Имя" name="secondName" value=""/>
-          <input class="input  input-virtual-reception_input   " placeholder="Отчество" name="thirdName" value=""/>
+          <input class="input  input-virtual-reception_input   " placeholder="Фамилия" name="firstName" value="" id="firstName"/>
+          <input class="input  input-virtual-reception_input   " placeholder="Имя" name="secondName" value="" id="secondName"/>
+          <input class="input  input-virtual-reception_input   " placeholder="Отчество" name="thirdName" value="" id="thirdName"/>
         </div>
       </fieldset>
       <button class="button button_white reception_add-author-btn   button_icon-left " onclick="addFormField(event)" title=""><span class="button_span">Добавить соавтора</span>
@@ -39,8 +39,8 @@
       <fieldset class="fieldset ">
         <h3 class="fieldset__title reception__email_title">Данные для контакта</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input   " placeholder="your_email@mail.ru" name="email" value=""/>
-          <input class="input  input-virtual-reception_input   " placeholder="892343567" name="phone" value=""/>
+          <input class="input  input-virtual-reception_input   " placeholder="your_email@mail.ru" name="email" value="" id="email"/>
+          <input class="input  input-virtual-reception_input   " placeholder="892343567" name="phone" value="" id="phone"/>
         </div>
       </fieldset>
       <fieldset class="fieldset">

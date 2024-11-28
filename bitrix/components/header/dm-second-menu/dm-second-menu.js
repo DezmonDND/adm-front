@@ -52,20 +52,48 @@ function toggleSecondMenu(event) {
         }
     }
 }
-
-document.body.addEventListener('click', (event) => {
-    if (!event.target.closest('.header__link')) {
-        const dropdowns = document.querySelectorAll('.dm-second-menu');
-        dropdowns.forEach((dropdown) => {
-            if (
-                dropdown.classList.contains('dm-second-menu_active') &&
-                !dropdown.contains(event.target)
-            ) {
-                dropdown.classList.remove('dm-second-menu_active');
-                document
-                    .querySelector('.header__link_active')
-                    .classList.remove('header__link_active');
-            }
-        });
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', (event) => {
+        if (!event.target.closest('.header__link')) {
+            const dropdowns = document.querySelectorAll('.dm-second-menu');
+            dropdowns.forEach((dropdown) => {
+                if (
+                    dropdown.classList.contains('dm-second-menu_active') &&
+                    !dropdown.contains(event.target)
+                ) {
+                    dropdown.classList.remove('dm-second-menu_active');
+                    document
+                        .querySelector('.header__link_active')
+                        .classList.remove('header__link_active');
+                }
+            });
+        }
+    });
 });
+
+function closeSecondMenu() {
+    const openedSecondMenu = document.querySelector('.dm-second-menu_active');
+
+    if (openedSecondMenu) {
+        openedSecondMenu.classList.remove('dm-second-menu_active');
+    }
+}
+
+const secondMenuCloseButton = () => {
+    const secondMenus = document.querySelectorAll('.dm-second-menu');
+
+    secondMenus.forEach((menu) => {
+        const menuContent = menu.querySelector('.dm-second-menu__content');
+        const closeButton = document.createElement('button');
+        const closeButtonIcon = document.createElement('ion-icon');
+
+        closeButtonIcon.className = 'icon';
+        closeButtonIcon.name = 'close-outline';
+        closeButton.appendChild(closeButtonIcon);
+        closeButton.className = 'button files-list__delete-button dm-second-menu__button-close';
+        closeButton.addEventListener('click', closeSecondMenu);
+        menuContent.appendChild(closeButton);
+    });
+};
+
+document.addEventListener('DOMContentLoaded', secondMenuCloseButton);
