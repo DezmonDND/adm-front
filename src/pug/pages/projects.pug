@@ -21,24 +21,21 @@ block content
             { title: 'Мои инициативные проекты', href: '/' , value: 'Мои инициативные проекты'},
             { title: 'Мои обращения', href: '/' , value: 'Мои обращения'},
             ]) 
-        +projects_array( true, 'projects', [
+        +projects_array( false , 'projects', [
             {
                 title: 'Название инициативного проекта',
                 date: 'Создан 23 сентября 2024',
                 sort: 'project-card',
                 status: 'Не заполнен',
                 isGoing: false,
+                href:'#',
                 tag: {
                     size: "xs",
                     type: 'button',
                     text: 'Не заполнен',
                     class: 'button_blue button_radius',
                 },
-                checkbox: {
-                    id: '1',
-                    sort: 'checkbox',
-                    status: true,
-                }
+               
             },
             {
                 title: 'Название инициативного проекта',
@@ -46,23 +43,21 @@ block content
                 sort: 'project-card',
                 status: 'Не заполнен',
                 isGoing: false,
+                href:'#',
                 tag: {
                     size: "xs",
                     type: 'button',
                     text: 'Выполнен',
                     class: 'button_red button_radius',
                 },
-                checkbox: {
-                    id: '2',
-                    sort: 'checkbox',
-                    status: true,
-                }
+                
             },
             {
                 title: 'Название инициативного проекта',
                 date: 'Создан 23 сентября 2024',
                 sort: 'project-card',
                 status: 'Не заполнен',
+                href:'#',
                 isGoing: false,
                 tag: {
                     size: "xs",
@@ -70,10 +65,6 @@ block content
                     text: 'Выполнен',
                     class: 'button_green button_radius',
                 },
-                checkbox: {
-                    id: '3',
-                    sort: 'checkbox',
-                    status: true,
-                }
+               
             }   
         ])          

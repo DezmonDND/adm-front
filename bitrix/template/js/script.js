@@ -1,3 +1,78 @@
+const msDropdownList = document.querySelector('.multi-select__dropdown');
+const msDropdownItems = document.querySelectorAll('.multi-select__dropdown-item');
+const multiSelect = document.querySelector('input[name="multiSelect"]');
+const msInput = document.querySelector('.multi-select__input');
+const msChose = document.querySelector('.multi-select__chose');
+let visibleDropdownItems;
+let counter = -1;
+let selectedValues = [];
+
+msChose &&
+    msChose.addEventListener('click', (event) => {
+        if (!event.target.closest('.multi-select__chose-item')) {
+            msDropdownList.classList.remove('multi-select__dropdown_hidden');
+        }
+    });
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.multi-select') && msDropdownList) {
+        msDropdownList.classList.add('multi-select__dropdown_hidden');
+    }
+
+    if (event.target.closest('.multi-select__chose-item')) {
+        searchSelectedElement(event.target.textContent);
+    }
+});
+
+msDropdownList &&
+    msDropdownList.addEventListener('click', (event) => {
+        if (event.target.classList.contains('multi-select__dropdown-item_chose')) {
+            searchSelectedElement(event.target.textContent);
+        } else if (event.target.classList.contains('multi-select__dropdown-item')) {
+            createNewElement('li', ['multi-select__chose-item'], event, msChose);
+            selectedValues.push(event.target.dataset.value);
+            updateMultiSelectValue();
+        }
+        msInput.value = '';
+        msInput.focus();
+    });
+
+function createNewElement(tag, styles, event, parent) {
+    const newElement = document.createElement(tag);
+    newElement.classList.add(...styles);
+    newElement.textContent = event.target.textContent;
+    parent.prepend(newElement);
+    event.target.classList.add('multi-select__dropdown-item_chose');
+}
+
+function searchSelectedElement(text) {
+    msDropdownItems.forEach((item) => {
+        if (text.toLowerCase() === item.textContent.toLowerCase()) {
+            item.classList.remove('multi-select__dropdown-item_chose');
+            deleteElement(text);
+            const index = selectedValues.indexOf(item.dataset.value);
+            if (index > -1) {
+                selectedValues.splice(index, 1);
+            }
+            updateMultiSelectValue();
+        }
+    });
+}
+
+function deleteElement(text) {
+    const msChoseItems = document.querySelectorAll('.multi-select__chose-item');
+    msChoseItems.forEach((item) => {
+        if (text.toLowerCase() === item.textContent.toLowerCase()) {
+            item.remove();
+        }
+    });
+}
+
+function updateMultiSelectValue(e) {
+    multiSelect.value = selectedValues.join(', ');
+    getValues(e);
+}
+
 // Находим все элементы с классом `content-card`
 $(document).ready(function () {
     document.querySelectorAll('.content-card').forEach((card) => {
@@ -10,12 +85,12 @@ $(document).ready(function () {
             container.appendChild(card.firstChild);
         }
 
-        // Создаем ссылку с кнопкой "Поделиться"
-        const shareButton = document.createElement('a');
-        shareButton.className =
-            'button button_link button_white button_size_m button_icon-left social_share';
-        shareButton.href = '/';
-        shareButton.setAttribute('attributes', '{}');
+    // Создаем ссылку с кнопкой "Поделиться"
+    const shareButton = document.createElement('button');
+    shareButton.className =
+        'button button_link button_white button_size_m button_icon-left social_share';
+    shareButton.href = '/';
+    shareButton.setAttribute('attributes', '{}');
 
         // Создаем содержимое кнопки
         const buttonSpan = document.createElement('span');
@@ -116,81 +191,6 @@ $(document).ready(function () {
     });
 });
 
-const msDropdownList = document.querySelector('.multi-select__dropdown');
-const msDropdownItems = document.querySelectorAll('.multi-select__dropdown-item');
-const multiSelect = document.querySelector('input[name="multiSelect"]');
-const msInput = document.querySelector('.multi-select__input');
-const msChose = document.querySelector('.multi-select__chose');
-let visibleDropdownItems;
-let counter = -1;
-let selectedValues = [];
-
-msChose &&
-    msChose.addEventListener('click', (event) => {
-        if (!event.target.closest('.multi-select__chose-item')) {
-            msDropdownList.classList.remove('multi-select__dropdown_hidden');
-        }
-    });
-
-document.addEventListener('click', (event) => {
-    if (!event.target.closest('.multi-select') && msDropdownList) {
-        msDropdownList.classList.add('multi-select__dropdown_hidden');
-    }
-
-    if (event.target.closest('.multi-select__chose-item')) {
-        searchSelectedElement(event.target.textContent);
-    }
-});
-
-msDropdownList &&
-    msDropdownList.addEventListener('click', (event) => {
-        if (event.target.classList.contains('multi-select__dropdown-item_chose')) {
-            searchSelectedElement(event.target.textContent);
-        } else if (event.target.classList.contains('multi-select__dropdown-item')) {
-            createNewElement('li', ['multi-select__chose-item'], event, msChose);
-            selectedValues.push(event.target.dataset.value);
-            updateMultiSelectValue();
-        }
-        msInput.value = '';
-        msInput.focus();
-    });
-
-function createNewElement(tag, styles, event, parent) {
-    const newElement = document.createElement(tag);
-    newElement.classList.add(...styles);
-    newElement.textContent = event.target.textContent;
-    parent.prepend(newElement);
-    event.target.classList.add('multi-select__dropdown-item_chose');
-}
-
-function searchSelectedElement(text) {
-    msDropdownItems.forEach((item) => {
-        if (text.toLowerCase() === item.textContent.toLowerCase()) {
-            item.classList.remove('multi-select__dropdown-item_chose');
-            deleteElement(text);
-            const index = selectedValues.indexOf(item.dataset.value);
-            if (index > -1) {
-                selectedValues.splice(index, 1);
-            }
-            updateMultiSelectValue();
-        }
-    });
-}
-
-function deleteElement(text) {
-    const msChoseItems = document.querySelectorAll('.multi-select__chose-item');
-    msChoseItems.forEach((item) => {
-        if (text.toLowerCase() === item.textContent.toLowerCase()) {
-            item.remove();
-        }
-    });
-}
-
-function updateMultiSelectValue(e) {
-    multiSelect.value = selectedValues.join(', ');
-    getValues(e);
-}
-
 function openSelect() {
   const selectMenu = document.querySelector(".select_multiple-menu");
   selectMenu.style.display =
@@ -274,4 +274,96 @@ $(document).ready(function () {
             header.find('.toggle-arrow').toggleClass('rotated');
         });
     });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const socialShareButtons = document.querySelectorAll('.social_share');
+        
+        if (socialShareButtons.length === 0) {
+            return;
+        }
+
+        socialShareButtons.forEach(button => {
+            const share = document.createElement('div');
+            share.className = 'share-menu';
+
+            if (window.innerWidth <= 992) {
+                share.classList.add('mobile-share');
+                share.innerHTML = `
+                <div class="share-content">
+                    <div class ="mobile-share-header">
+                        <span>Поделиться</span>
+                        <ion-icon class="icon md hydrated mobile-share-header-close" name="close-outline" role="img"></ion-icon>
+                    </div>
+                    <hr>
+                    <div class="header__socials">
+                        <button class="button button_link button_white button_without-text"> 
+                            <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                        </button>
+                        <button class="button button_link button_white button_without-text"> 
+                            <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                        </button>
+                        <button class="button button_link button_white button_without-text"> 
+                            <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                        </button>
+                        <button class="button button_link button_white button_without-text" id="copyLink" attributes="{}">
+                            <ion-icon class="icon md hydrated" name="link-outline" role="img"></ion-icon>
+                        </button>
+                    </div>
+                </div>`;
+            } else {
+                share.innerHTML = `
+                <div class="share-content">
+                    <div class="header__socials">
+                        <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                        <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                        <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                    </div>
+                    <button id="copyLink" class="button button_white button_size_s">
+                        <span class="button_span">Скопировать ссылку</span>
+                    </button>
+                </div>`;
+            }
+
+            share.style.display = 'none';
+            share.style.position = 'absolute';
+            share.style.zIndex = '1000';
+
+            button.style.position = 'relative';
+            button.appendChild(share);
+
+            button.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    document.querySelector('.overlay').classList.remove('hidden');
+                }
+                share.style.display = 'flex';
+            });
+
+            share.addEventListener('click', (e) => e.stopPropagation());
+
+            const closeMobile = share.querySelector('.mobile-share-header-close');
+            if (closeMobile) {
+                closeMobile.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    share.style.display = 'none';
+                    share.classList.remove('mobile-menu');
+                    document.querySelector('.overlay').classList.add('hidden');
+                });
+            }
+
+            document.addEventListener('click', (e) => {
+                if (!share.contains(e.target) && !button.contains(e.target)) {
+                    share.style.display = 'none';
+                    share.classList.remove('mobile-menu');
+                    document.querySelector('.overlay').classList.add('hidden');
+                }
+            });
+
+            share.querySelector('#copyLink').addEventListener('click', (e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText(window.location.href);
+            });
+        });
+    }, 500); 
 });

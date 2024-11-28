@@ -38,8 +38,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        appendDots: $('.news-top-card__dots'),
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         variableWidth: false,
     });
 });
@@ -71,13 +70,14 @@ const sliders = [
         prevArrow: '.slider__events-prev',
         options: {
             infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             arrows: false,
             variableWidth: true,
             responsive: [
-                { breakpoint: 768, settings: { slidesToShow: 2 } },
-                { breakpoint: 500, settings: { slidesToShow: 1 } },
+                { breakpoint: 992, settings: { slidesToShow: 3, slidesToScroll: 3 } },
+                { breakpoint: 768, settings: { slidesToShow: 2, slidesToScroll: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1, slidesToScroll: 1 } },
             ],
         },
     },

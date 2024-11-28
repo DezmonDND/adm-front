@@ -1,0 +1,195 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Специальное событие'},
+                { sort: '', href: '/', text: 'В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй'},
+            ],
+        )
+        .profile-anket-main
+            +title({title: 'Анкета для выдвижения инициативного проекта', description: 'Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных.'})    
+            .profile-anket-draft
+                .profile-anket-draft-left
+                    .profile-anket-draft-title
+                        span Ваша анкета инициативного проекта будет всегда доступна в личном кабинете
+                    .profile-anket-draft-subtitle
+                        span Нажимая на кнопку “удалить”, вы безвозвратно удалите анкету инициативного проекта 
+                .profile-anket-draft-right
+                    +button({ size: 'm ', type: 'button', class: 'button_red', event: 'showDeleteProject()', text: 'Удалить' })
+            form.interview-form.profile-anket
+                .profile-anket-item
+                    .profile-anket-item-title 
+                        span 1. Основные данные
+                    +fieldset(
+                    {
+                        type: '',
+                        title: 'Как называется ваш проект?',
+                        span: 'Вспомогательный текст',
+                        error: false,
+                        inputs: [
+                            {
+                                placeholder: `Наименование организации`,
+                                name: `answer1`, 
+                                sort: `interview-full`,
+                            },
+                            ] 
+                    })
+                    +fieldset(
+                    {
+                        type: 'textarea',
+                        title: 'Опишите проблему или задачу, которую вы хотите решить. Почему эта проблема важна для жителей города Сургута или его части?',
+                        span: 'Вспомогательный текст',
+                        error: false,
+                        options: {
+                            placeholder: 'Описание проблемы, решение которой имеет приоритетное значение для жителей города Сургута или его части (в том числе обоснование её актуальности и приоритетности для жителей соответствующей территории',
+                            value: '900'
+                                }
+                    })
+                    +fieldset(
+                    {
+                        type: '',
+                        title: 'Сколько человек непосредственно выиграют от реализации вашего проекта??',
+                        span: 'Вспомогательный текст',
+                        error: false,
+                        inputs: [
+                            {
+                                placeholder: `Предполагаемое количество прямых благополучателей (целое число)`,
+                                name: `answer3`, 
+                                sort: `interview-full`,
+                            },
+                            ] 
+                    })
+                hr
+                .profile-anket-item
+                    .profile-anket-item-title 
+                        span 2. Финансовое участие заинтересованных лиц
+                    +fieldset(
+                        {
+                            type: 'radio',
+                            title: 'Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
+                            checkboxes: [
+                                { 
+                                    id: 1, 
+                                    label: 'Да', 
+                                    sort: 'radio',
+                                    status: true,
+                                    name: 'radio'
+                                    },
+                                { 
+                                    id: 2, 
+                                    label: 'Нет', 
+                                    sort: 'radio',
+                                    status: false,
+                                    name: 'radio'
+                                    },
+                                ],
+                        }) 
+                    .profile-anket-item-subtitle 
+                        span Необходимо заполнить минимум одно из следующих полей:
+                    .profile-anket-item-with-descr
+                        +fieldset(
+                            {
+                                type: 'textarea',
+                                title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств инициатора проекта',
+                                span: 'Вспомогательный текст',
+                                error: false,
+                                options: {
+                                    placeholder: 'Введите ваш ответ',
+                                    value: '900'
+                                        }
+                            })
+                        +fieldset(
+                            {
+                                type: 'textarea',
+                                title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств граждан',
+                                span: 'Вспомогательный текст',
+                                error: false,
+                                options: {
+                                    placeholder: 'Введите ваш ответ',
+                                    value: '900'
+                                        }
+                            })
+                        +fieldset(
+                            {
+                                type: 'textarea',
+                                title: 'Планируемый объём инициативных платежей, формируемый за счёт денежных средств иных юридических лиц и индивидуальных предпринимателей',
+                                span: 'Вспомогательный текст',
+                                error: false,
+                                options: {
+                                    placeholder: 'Введите ваш ответ',
+                                    value: '900'
+                                        }
+                            })
+                hr
+                .profile-anket-item
+                    .profile-anket-item-title 
+                        span 3. Информация об иницииативном проекте
+                    +fieldset(
+                    {
+                        type: '',
+                        title: 'Количество человек в инициативной группе граждан',
+                        span: 'Вспомогательный текст',
+                        error: false,
+                        inputs: [
+                            {
+                                placeholder: `Введите целое число`,
+                                name: `answer1`, 
+                                sort: `interview-full`,
+                            },
+                            ] 
+                    })
+                    +fieldset(
+                        {
+                            type: 'radio',
+                            title: 'Кто является инициатором проекта?', 
+                            checkboxes: [
+                                { 
+                                    id: 1, 
+                                    label: 'Инициативная группа граждан', 
+                                    sort: 'radio',
+                                    status: true,
+                                    name: 'radio'
+                                    },
+                                { 
+                                    id: 2, 
+                                    label: 'Юридическое лицо, индивидуальный предприниматель', 
+                                    sort: 'radio',
+                                    status: false,
+                                    name: 'radio'
+                                    },
+                                { 
+                                    id: 3, 
+                                    label: 'Территориальное обсщественное самоуправление', 
+                                    sort: 'radio',
+                                    status: false,
+                                    name: 'radio'
+                                    },
+                                ],
+                        })  
+                hr 
+                .profile-anket-item
+                    .profile-anket-item-title 
+                        span 4. Мероприятия по реализации инициативного проекта
+                   
+                    +fieldset(
+                    {
+                        type: '',
+                        title: 'Название мероприятия и предполагаемая сумма денег ',
+                        span: 'Вспомогательный текст',
+                        error: false,
+                        inputs: [
+                            {
+                                placeholder: `Введите название мероприятия и сумму (руб, с двумя знаками после запятой)`,
+                                name: `answer1`, 
+                                sort: `interview-full`,
+                            },
+                            ],
+                        canRemove: true
+                    })
+                +button({ type: 'button', size: 'm', href: '/about', class: 'button_white', icon: 'add-outline', text: 'Добавить мероприятие'})
+                +button({ size: 'm', type: 'button', class: 'button_blue interview-form__button', event: 'getValues(event)', text: `Подать инициативный проект` }) 
+    +delete-project()
+                

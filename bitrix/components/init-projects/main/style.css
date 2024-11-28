@@ -1,3 +1,15 @@
+.init-projects-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.init-projects-title .title {
+  width: unset;
+}
+.init-projects-title button {
+  margin: 16px 0px 24px;
+}
+
 .init-projects {
   display: flex;
   flex-direction: column;
