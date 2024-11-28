@@ -10991,6 +10991,7 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   }
 }
 .board-card .board-card__container .board-card__desc .board-card__date {
+  color: var(--second-text);
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
@@ -11002,6 +11003,7 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   }
 }
 .board-card .board-card__container .board-card__desc .board-card__about {
+  color: var(--main-text);
   margin: 0;
   font-weight: 400;
   font-size: calc(24px * var(--scale));
@@ -11012,6 +11014,14 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
     font-size: calc(16px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
+}
+
+.board-card:hover .board-card__desc .board-card__about {
+  color: var(--primary-color-hover);
+}
+
+.board-card:active .board-card__desc .board-card__about {
+  color: var(--primary-color-active);
 }
 
 .board-list .board-list__container {
