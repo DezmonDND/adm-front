@@ -7,7 +7,6 @@
     border-radius: 12px;
     text-decoration: none;
     color: $main-text;
-    min-width: 420px;
     width: 100%;
     box-sizing: border-box;
     @include content-paddings;
@@ -21,8 +20,6 @@
     }
 
     @include respond-to(md) {
-        min-width: 360px;
-
         &:nth-child(n+3) {
             display: none;
         }

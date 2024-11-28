@@ -13,31 +13,6 @@
         margin: 20px 0 20px;
     }
 
-    .slick-list {
-        max-width: 867px;
-        width: 100%;
-
-        @media (max-width: 1439px) {
-            max-width: 600px;
-        }
-
-        @media (max-width: 1170px) {
-            max-width: 448px;
-        }
-
-        @include respond-to(md) {
-            max-width: 500px;
-        }
-
-        @media (max-width: 910px) {
-            max-width: 360px;
-        }
-
-        @include respond-to(sm) {
-            max-width: none;
-        }
-    }
-
     &__container {
         display: flex;
         width: 100%;
@@ -54,21 +29,29 @@
 
         .news-top__card-list {
             display: flex;
+            width: 66%;
+
+            @include respond-to(md) {
+                width: 49%;
+            }
+
+            @include respond-to(sm) {
+                width: 100%;
+            }
         }
 
         .news-top__links-list {
             display: flex;
             flex-direction: column;
             gap: 8px;
-            max-width: 420px;
-            width: 100%;
+            width: 32%;
 
             @include respond-to(md) {
-                max-width: 360px;
+                width: 49%;
             }
 
             @include respond-to(sm) {
-                max-width: none;
+                width: 100%;
             }
         }
     }
