@@ -1,4 +1,4 @@
-let counterReception = 1;
+let counterReception = 2;
 
 function addFormField(e) {
     const formField = document.querySelector('.fieldset');
@@ -39,7 +39,7 @@ function addFormField(e) {
       ${newFormFieldData.inputs
           .map(
               (input) => `
-          <input class="input" type="text" placeholder="${input.placeholder}" name="${input.name}">
+          <input class="input" type="text" placeholder="${input.placeholder}" name="${input.name}" id="${input.name}">
       `,
           )
           .join('')}
