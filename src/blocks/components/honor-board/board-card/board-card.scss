@@ -4,6 +4,8 @@
     border-radius: 12px;
     background-color: $cards-background;
 
+    
+
     .board-card__container {
         display: flex;
         gap: 40px;
@@ -56,6 +58,22 @@
                 margin: 0;
                 @include lead-2;
             }
+        }
+    }
+}
+
+.board-card:hover{
+    .board-card__desc {
+        .board-card__about {
+            color: $primary-color-hover;
+        }
+    }
+}
+
+.board-card:active{
+    .board-card__desc {
+        .board-card__about {
+            color: $primary-color-active;
         }
     }
 }
