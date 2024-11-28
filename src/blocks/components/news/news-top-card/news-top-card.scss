@@ -50,29 +50,16 @@
             display: flex;
             flex-direction: column;
             align-items: baseline;
-            max-width: 500px;
-            width: 100%;
+            max-width: 780px;
             position: absolute;
             left: 40px;
             bottom: 40px;
             right: 40px;
 
-            @media (max-width: 1170px) {
-                max-width: 368px;
-            }
-
             @include respond-to(md) {
                 left: 20px;
                 bottom: 20px;
                 right: 20px;
-            }
-
-            @media (max-width: 910px) {
-                max-width: 320px;
-            }
-
-            @include respond-to(sm) {
-                max-width: 296px;
             }
 
             .news-top-card__date {
@@ -83,6 +70,7 @@
             .news-top-card__title {
                 margin: 8px 0 32px;
                 z-index: 1;
+                @include visible-lines(2);
                 @include heading-h1;
 
                 @include respond-to(md) {

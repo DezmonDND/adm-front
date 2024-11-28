@@ -73,9 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function closeSecondMenu() {
     const openedSecondMenu = document.querySelector('.dm-second-menu_active');
+    const activeLink = document.querySelector('.header__link_active');
 
-    if (openedSecondMenu) {
+    if (openedSecondMenu && activeLink) {
         openedSecondMenu.classList.remove('dm-second-menu_active');
+        activeLink.classList.remove('header__link_active');
     }
 }
 

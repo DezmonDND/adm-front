@@ -1,12 +1,11 @@
 const options = {
     settings: {
         lang: 'ru-RU',
+        visibility: {
+            theme: 'light',
+        },
         selection: {
             day: 'multiple-ranged',
-        },
-        selectionDatesMode: 'multiple-ranged',
-        onClickDate(self) {
-            console.log(self);
         },
     },
     actions: {
@@ -24,8 +23,8 @@ const options = {
                 newDates = dates;
 
                 if (from && to) {
-                    from.value = new Date(dates.from).toLocaleDateString()
-                    to.value = new Date (dates.to).toLocaleDateString()
+                    from.value = new Date(dates.from).toLocaleDateString();
+                    to.value = new Date(dates.to).toLocaleDateString();
                     console.log(from.value);
                     console.log(to.value);
                 }
