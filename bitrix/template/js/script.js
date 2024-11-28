@@ -1,77 +1,55 @@
+// Находим все элементы с классом `content-card`
 $(document).ready(function () {
-    // Инициализация всех popup-блоков
-    $('.popup-fade').each(function () {
-        const $popupFade = $(this);
+    document.querySelectorAll('.content-card').forEach((card) => {
 
-        // Добавляем структуру popup, если она ещё не существует
-        if ($popupFade.find('.popup').length === 0) {
-            // Оборачиваем контент в .popup и .popup-content
-            const content = $popupFade.html();
-            $popupFade.empty().append(`
-          <div class="popup">
-            <a class="popup-close" href="#"><ion-icon name="close"></ion-icon></a>
-            <div class="popup-content">${content}</div>
-          </div>
-        `);
-        }
-    });
+        const fullWidthContainer = document.createElement('div');
+        fullWidthContainer.className = 'full-width-container';
 
-    // Открытие popup
-    $('.popup-open').click(function () {
-        var popupId = $(this).data('popup-id');
-        const $popup = $('#' + popupId);
-        $popup.fadeIn();
+        const fullWidthBackground = document.createElement('div');
+        fullWidthBackground.className = 'full-width-background';
 
-        // Запуск видео при открытии popup
-        const video = $popup.find('video').get(0);
-        if (video) {
-            video.play();
+        const fullWidthContent = document.createElement('div');
+        fullWidthContent.className = 'full-width-content';
+
+        card.parentNode.insertBefore(fullWidthContainer, card); 
+        fullWidthContent.appendChild(card); 
+        fullWidthBackground.appendChild(fullWidthContent); // 
+        fullWidthContainer.appendChild(fullWidthBackground);
+        // Создаем контейнер внутри карточки
+        const container = document.createElement('div');
+        container.className = 'content-card__container';
+
+        // Перемещаем текущие дочерние элементы в контейнер
+        while (card.firstChild) {
+            container.appendChild(card.firstChild);
         }
 
-        return false;
-    });
+    // Создаем ссылку с кнопкой "Поделиться"
+    const shareButton = document.createElement('button');
+    shareButton.className =
+        'button button_link button_white button_size_m button_icon-left social_share';
+    shareButton.href = '/';
+    shareButton.setAttribute('attributes', '{}');
 
-    // Закрытие popup при нажатии на кнопку закрытия
-    $(document).on('click', '.popup-close', function () {
-        const $popupFade = $(this).closest('.popup-fade');
-        $popupFade.fadeOut();
+        // Создаем содержимое кнопки
+        const buttonSpan = document.createElement('span');
+        buttonSpan.className = 'button_span';
+        buttonSpan.textContent = 'Поделиться';
 
-        // Остановка видео при закрытии popup
-        const video = $popupFade.find('video').get(0);
-        if (video) {
-            video.pause();
-            video.currentTime = 0; // Сбросить время воспроизведения на начало
-        }
+        const icon = document.createElement('ion-icon');
+        icon.className = 'icon md hydrated';
+        icon.setAttribute('name', 'link-outline');
+        icon.setAttribute('role', 'img');
 
-        return false;
-    });
+        // Собираем структуру кнопки
+        shareButton.appendChild(buttonSpan);
+        shareButton.appendChild(icon);
 
-    // Закрытие popup при нажатии на ESC
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.popup-fade').fadeOut();
+        // Добавляем кнопку в контейнер
+        container.appendChild(shareButton);
 
-            // Остановка всех видео в закрытых popup
-            $('.popup-fade video').each(function () {
-                this.pause();
-                this.currentTime = 0;
-            });
-        }
-    });
-
-    // Закрытие popup при клике вне контента
-    $('.popup-fade').click(function (e) {
-        if ($(e.target).closest('.popup').length === 0) {
-            $(this).fadeOut();
-
-            // Остановка видео при закрытии popup
-            const video = $(this).find('video').get(0);
-            if (video) {
-                video.pause();
-                video.currentTime = 0;
-            }
-        }
+        // Добавляем контейнер в карточку
+        card.appendChild(container);
     });
 });
 
@@ -237,6 +215,28 @@ function selectOption(element) {
   element.classList.toggle("select_multiple-option_selected");
 }
 
+function getLength(event) {
+    const textarea = event.target;
+    const counterCurrent = textarea.parentNode.querySelector('.current');
+    const counterMax = textarea.parentNode.querySelector('.max');
+
+    if (counterCurrent && counterMax) {
+        const textLength = textarea.value.length;
+        counterCurrent.textContent = textLength;
+        if (textLength > Number(counterMax.textContent)) {
+            textarea.style.borderColor = '#D10404';
+        } else {
+            textarea.style.borderColor = '';
+        }
+    }
+}
+
+const textareas = document.querySelectorAll('.textarea');
+
+textareas.forEach((textarea) => {
+    textarea.addEventListener('input', getLength);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         const socialShareButtons = document.querySelectorAll('.social_share');
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (socialShareButtons.length === 0) {
             return;
         }
-
+        const url = window.location.href;
         socialShareButtons.forEach(button => {
             const share = document.createElement('div');
             share.className = 'share-menu';
@@ -260,13 +260,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <hr>
                     <div class="header__socials">
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                            <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                            <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                            <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http:${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text" id="copyLink" attributes="{}">
                             <ion-icon class="icon md hydrated" name="link-outline" role="img"></ion-icon>
@@ -277,9 +277,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 share.innerHTML = `
                 <div class="share-content">
                     <div class="header__socials">
-                        <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
-                        <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
-                        <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                        <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=${url}" target="_blank"></a>
+                        <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=${url} target="_blank"></a>
+                        <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=${url}" target="_blank"></a>
                     </div>
                     <button id="copyLink" class="button button_white button_size_s">
                         <span class="button_span">Скопировать ссылку</span>
@@ -323,32 +323,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             share.querySelector('#copyLink').addEventListener('click', (e) => {
                 e.preventDefault();
-                navigator.clipboard.writeText(window.location.href);
+                navigator.clipboard.writeText(url);
             });
         });
     }, 500); 
-});
-
-function getLength(event) {
-    const textarea = event.target;
-    const counterCurrent = textarea.parentNode.querySelector('.current');
-    const counterMax = textarea.parentNode.querySelector('.max');
-
-    if (counterCurrent && counterMax) {
-        const textLength = textarea.value.length;
-        counterCurrent.textContent = textLength;
-        if (textLength > Number(counterMax.textContent)) {
-            textarea.style.borderColor = '#D10404';
-        } else {
-            textarea.style.borderColor = '';
-        }
-    }
-}
-
-const textareas = document.querySelectorAll('.textarea');
-
-textareas.forEach((textarea) => {
-    textarea.addEventListener('input', getLength);
 });
 
 $(document).ready(function () {
