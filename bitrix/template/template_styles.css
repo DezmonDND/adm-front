@@ -3723,6 +3723,8 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 200px;
+  width: 100%;
   gap: 8px;
 }
 @media (max-width: 768px) {
@@ -3730,14 +3732,16 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
     box-sizing: border-box;
     flex-direction: row;
     gap: 35px;
-    width: 100%;
-    padding-right: 20px;
+    max-width: none;
+    width: 90%;
+    align-self: flex-start;
   }
 }
 .event .event__container .event__time-block {
   display: flex;
   gap: 12px;
   align-items: center;
+  text-wrap: nowrap;
   font-weight: 400;
   font-size: calc(24px * var(--scale));
   line-height: calc(28px * var(--lh));
@@ -3753,9 +3757,9 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 }
 .event .event__container .event__location {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 8px;
-  text-wrap: nowrap;
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
@@ -3766,7 +3770,35 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
     line-height: calc(16px * var(--lh));
   }
 }
+@media (max-width: 768px) {
+  .event .event__container .event__location {
+    flex-direction: row;
+  }
+}
+.event .event__container .event__location .event__place {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .event .event__container .event__location .event__place {
+    width: 70%;
+  }
+}
+.event .event__container .event__location .event__cabinet {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .event .event__container .event__location .event__cabinet {
+    width: 28%;
+  }
+}
 .event .event__container .event__location .event__icon-dot {
+  display: none;
   width: 4px;
   height: 4px;
   background-color: var(--primary-color);
@@ -3775,7 +3807,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 .event .event__container .event__description {
   max-width: 955px;
   width: 100%;
-  margin: 0 20px 0 64px;
+  margin: 0 20px 0 40px;
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(24px * var(--lh));

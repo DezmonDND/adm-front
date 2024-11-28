@@ -30,14 +30,17 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 200px;
+            width: 100%;
             gap: 8px;
 
             @include respond-to(sm) {
                 box-sizing: border-box;
                 flex-direction: row;
                 gap: 35px;
-                width: 100%;
-                padding-right: 20px;
+                max-width: none;
+                width: 90%;
+                align-self: flex-start;
             }
         }
 
@@ -45,6 +48,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
             display: flex;
             gap: 12px;
             align-items: center;
+            text-wrap: nowrap;
             @include lead-2;
 
             .event__icon {
@@ -54,12 +58,33 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 
         .event__location {
             display: flex;
+            flex-direction: column;
             align-items: center;
             gap: 8px;
-            text-wrap: nowrap;
             @include caption-2;
 
+            @include respond-to(sm) {
+                flex-direction: row
+            }
+
+            .event__place {
+                @include visible-lines(1);
+
+                @include respond-to(sm) {
+                    width: 70%;
+                }
+            }
+
+            .event__cabinet {
+                @include visible-lines(1);
+
+                @include respond-to(sm) {
+                    width: 28%;
+                }
+            }
+
             .event__icon-dot {
+                display: none;
                 width: 4px;
                 height: 4px;
                 background-color: $primary-color;
@@ -70,7 +95,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
         .event__description {
             max-width: 955px;
             width: 100%;
-            margin: 0 20px 0 64px;
+            margin: 0 20px 0 40px;
             @include text-2;
 
             @include respond-to(sm) {
