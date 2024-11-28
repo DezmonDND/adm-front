@@ -9,4 +9,5 @@ function toggleCalendar() {
 
 function toggleFilters() {
     document.querySelector('.filters-popup').classList.toggle('filters-popup_open');
+    document.querySelector('body').classList.toggle('overlay_mobile-menu');
 }

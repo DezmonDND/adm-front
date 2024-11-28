@@ -17,13 +17,13 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 32px;
+        gap: 64px;
+        @include content-paddings;
 
         @include respond-to(sm) {
             position: relative;
             flex-direction: column;
             gap: 16px;
-            padding: 16px 20px;
         }
 
         .event__info {
@@ -37,10 +37,11 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
             @include respond-to(sm) {
                 box-sizing: border-box;
                 flex-direction: row;
-                gap: 35px;
                 max-width: none;
-                width: 90%;
                 align-self: flex-start;
+                justify-content: space-between;
+                gap: 35px;
+
             }
         }
 
@@ -64,7 +65,9 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
             @include caption-2;
 
             @include respond-to(sm) {
-                flex-direction: row
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
             }
 
             .event__place {
@@ -82,7 +85,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
                 @include visible-lines(1);
 
                 @include respond-to(sm) {
-                    width: 28%;
+                    width: unset;
                 }
             }
 
@@ -98,7 +101,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
         .event__description {
             max-width: 955px;
             width: 100%;
-            margin: 0 20px 0 40px;
+            margin: 0;
             @include text-2;
 
             @include respond-to(sm) {
@@ -107,6 +110,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
         }
 
         .event__number {
+            display: none;
             color: $tertiary-text;
             @include caption-1;
 
