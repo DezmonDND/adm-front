@@ -1,7 +1,5 @@
 function getLength(event) {
     const textarea = event.target;
-    console.log(event.target);
-
     const counterCurrent = textarea.parentNode.querySelector('.current');
     const counterMax = textarea.parentNode.querySelector('.max');
 

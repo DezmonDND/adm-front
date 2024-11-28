@@ -87,6 +87,9 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.event .event__container .event__location .event__place:hover {
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .event .event__container .event__location .event__place {
     width: 70%;
