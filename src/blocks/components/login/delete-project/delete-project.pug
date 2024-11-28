@@ -1,0 +1,15 @@
+
+mixin delete-project()
+    .overlay.hidden
+    .delete-project.hidden
+        .login__content
+            .login__content-top
+                ion-icon(name = "close-outline", class = 'icon', onclick = 'hideDeleteProject()')
+            .login__content-main
+                .login__content-main__text
+                    .login__content-main__title
+                        span Вы точно хотите удалить данный инициативный проект?
+                    .login__content-main__subtitle
+                        span Ваши данные будут стерты, без возможности восстановления
+                .login__content-main__confirm-email
+                    span(onclick = '') Удалить
