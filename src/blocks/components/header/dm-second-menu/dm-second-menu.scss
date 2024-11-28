@@ -15,6 +15,7 @@ body.tmp-duma {
         background-color: $cards-background;
         top: 144px;
         border-top: none;
+        border-color: $event-color-hover;    
 
         .dm-second-menu__col {
             .dm-second-menu__links {
@@ -46,6 +47,10 @@ body.tmp-duma {
     justify-content: center;
     box-sizing: border-box;
     border-top: 1px solid rgba(233, 233, 233, 1);
+    border-bottom: 1px solid rgba(233, 233, 233, 1);
+    max-height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
 
     &_adm-about,
     &_adm-power,
@@ -75,6 +80,13 @@ body.tmp-duma {
         max-width: 1440px;
         width: 100%;
         box-sizing: border-box;
+        position: relative;
+
+        .dm-second-menu__button-close {
+            position: absolute;
+            top: 40px;
+            right: 64px;
+        }
 
         .dm-second-menu__col {
             display: flex;

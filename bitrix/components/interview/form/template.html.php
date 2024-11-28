@@ -33,7 +33,7 @@
   <fieldset class="fieldset ">
     <h3 class="fieldset__title ">3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
     <div class="fieldset__answers">
-      <input class="input  input-interview-full   " placeholder="Введите ваш ответ" name="answer3" value=""/>
+      <input class="input  input-interview-full   " placeholder="Введите ваш ответ" name="answer3" value="" id="answer3"/>
     </div>
   </fieldset>
   <fieldset class="fieldset">
