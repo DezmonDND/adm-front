@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  max-width: 766px;
+  max-width: 866px;
   width: 100%;
   margin: 32px auto 0;
 }

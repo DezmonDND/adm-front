@@ -1,5 +1,19 @@
 @use '../../../../../assets/styles/vars.scss' as *;
 
+body.tmp-print {
+    .event-card {
+        .event-card__container {
+            .event-card__tags {
+                display: none;
+            }
+
+            .event-card__buttons {
+                display: none;
+            }
+        }
+    }
+}
+
 .event-card {
     background-color: $cards-background;
     display: flex;
@@ -8,7 +22,7 @@
     .event-card__container {
         display: flex;
         flex-direction: column;
-        max-width: 766px;
+        max-width: 866px;
         width: 100%;
         padding: 32px 0 32px;
 
