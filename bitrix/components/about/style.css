@@ -1,5 +1,6 @@
 .about .event-card .event-card__container .event-card__description {
   flex-direction: column-reverse;
+  margin: 0 0 32px;
 }
 .about .event-card .event-card__container .event-card__buttons .button {
   display: none;
@@ -223,6 +224,19 @@
   gap: 12px;
 }
 
+.about-history-elem__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 75%;
+}
+
+@media (max-width: 768px) {
+  .about-card-img {
+    display: none;
+  }
+}
+
 .about-organ-bot-elem span:last-child {
   font-weight: 300;
   font-size: calc(16px * var(--scale));
@@ -265,31 +279,54 @@
   padding: 40px 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 40px;
+  row-gap: 43px;
+  position: relative;
+}
+
+.about-timeline__line {
+  position: absolute;
+  top: 159px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 72%;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .about-timeline__line {
+    top: 151px;
+  }
+}
+@media (max-width: 768px) {
+  .about-timeline__line {
+    display: none;
+  }
 }
 
 .about-timeline-item {
   width: 100%;
   position: relative;
 }
-.about-timeline-item:after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: var(--tertiary-text-dark-bg);
-  width: 50%;
-  position: absolute;
-  bottom: 30px;
-}
-.about-timeline-item:before {
-  content: "";
-  display: block;
-  height: 1px;
-  background: var(--tertiary-text-dark-bg);
-  width: 50%;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
+@media (max-width: 768px) {
+  .about-timeline-item:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: var(--tertiary-text-dark-bg);
+    width: 50%;
+    position: absolute;
+    bottom: 30px;
+  }
+  .about-timeline-item:before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: var(--tertiary-text-dark-bg);
+    width: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+  }
 }
 
 .about-timeline-container {
@@ -383,6 +420,10 @@
   margin-top: 24px;
   margin-bottom: 24px;
   box-sizing: border-box;
+  position: relative;
+}
+.about-history-elem span {
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .about-history-elem {
