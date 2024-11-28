@@ -128,9 +128,10 @@
 @use '../../blocks/components/dm-about/dm-about.scss';
 @use '../../blocks/components/about/about.scss';
 @use '../../blocks/components/profile/settings/profile-settings.scss';
-@use '../../blocks/components/profile/anket/profile-anket.scss';
+@use '../../blocks/components/profile/anket/profile-anket.scss';    
 @use '../../blocks/components/login/projects/login-projects.scss';
 @use '../../blocks/components/login/delete-project/delete-project.scss';
+@use '../../blocks/libs/share/share.scss';
 
 * {
     font-family: 'Inter', sans-serif;

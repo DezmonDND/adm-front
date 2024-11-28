@@ -1,16 +1,25 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-.about .event-card__tags {
-    display: none !important;
-}
+.about {
+    .event-card {
+        .event-card__container {
+            .event-card__description {
+                flex-direction: column-reverse;
+                margin: 0 0 32px;
+            }
 
-.about .event-card__description {
-    flex-direction: column-reverse !important;
-}
+            .event-card__buttons {
+                .button {
+                    display: none;
+                }
 
-.about .event-card__buttons a:first-child,
-.about .event-card__buttons a:last-child {
-    display: none;
+                .button_share,
+                .share_button {
+                    display: flex;
+                }
+            }
+        }
+    }
 }
 
 .about-content {
@@ -178,6 +187,19 @@
     gap: 12px;
 }
 
+.about-history-elem__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 75%;
+}
+
+.about-card-img {
+    @include respond-to(sm) {
+        display: none;
+    }
+}
+
 .about-organ-bot-elem span:last-child {
     @include text-2();
 }
@@ -197,33 +219,56 @@
     padding: 40px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 40px;
+    row-gap: 43px;
+    position: relative;
+}
+
+.about-timeline__line {
+    position: absolute;
+    top: 159px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 72%;
+    width: 100%;
+
+    @include respond-to(md) {
+        top: 151px;
+    }
+
+    @include respond-to(sm) {
+        display: none;
+    }
 }
 
 .about-timeline-item {
     width: 100%;
     position: relative;
 
-    &:after {
-        content: '';
-        display: block;
-        height: 1px;
-        background: $tertiary-text-dark-bg;
-        width: 50%;
-        position: absolute;
-        bottom: 30px;
+    @include respond-to(sm) {
+
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            background: $tertiary-text-dark-bg;
+            width: 50%;
+            position: absolute;
+            bottom: 30px;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            height: 1px;
+            background: $tertiary-text-dark-bg;
+            width: 50%;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+        }
     }
 
-    &:before {
-        content: '';
-        display: block;
-        height: 1px;
-        background: $tertiary-text-dark-bg;
-        width: 50%;
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-    }
 }
 
 
@@ -302,6 +347,11 @@
     margin-top: 24px;
     margin-bottom: 24px;
     box-sizing: border-box;
+    position: relative;
+
+    span {
+        z-index: 1;
+    }
 
     @include respond-to(sm) {
         flex-direction: column-reverse;

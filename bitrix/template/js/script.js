@@ -10,12 +10,12 @@ $(document).ready(function () {
             container.appendChild(card.firstChild);
         }
 
-        // Создаем ссылку с кнопкой "Поделиться"
-        const shareButton = document.createElement('a');
-        shareButton.className =
-            'button button_link button_white button_size_m button_icon-left social_share';
-        shareButton.href = '/';
-        shareButton.setAttribute('attributes', '{}');
+    // Создаем ссылку с кнопкой "Поделиться"
+    const shareButton = document.createElement('button');
+    shareButton.className =
+        'button button_link button_white button_size_m button_icon-left social_share';
+    shareButton.href = '/';
+    shareButton.setAttribute('attributes', '{}');
 
         // Создаем содержимое кнопки
         const buttonSpan = document.createElement('span');
@@ -191,27 +191,6 @@ function updateMultiSelectValue(e) {
     getValues(e);
 }
 
-function getLength(event) {
-  const textarea = event.target;
-  const counterCurrent = textarea.parentNode.querySelector('.current');
-  const counterMax = textarea.parentNode.querySelector('.max');
-
-  if (counterCurrent && counterMax) {
-      const textLength = textarea.value.length;
-      counterCurrent.textContent = textLength;
-      if (textLength > Number(counterMax.textContent)) {
-          textarea.style.borderColor = '#D10404';
-      } else {
-          textarea.style.borderColor = '';
-      }
-  }
-}
-
-const textareas = document.querySelectorAll('.textarea');
-
-textareas.forEach((textarea) => {
-  textarea.addEventListener('input', getLength);
-});
 function openSelect() {
   const selectMenu = document.querySelector(".select_multiple-menu");
   selectMenu.style.display =
@@ -220,6 +199,112 @@ function openSelect() {
 
 function selectOption(element) {
   element.classList.toggle("select_multiple-option_selected");
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const socialShareButtons = document.querySelectorAll('.social_share');
+        
+        if (socialShareButtons.length === 0) {
+            return;
+        }
+
+        socialShareButtons.forEach(button => {
+            const share = document.createElement('div');
+            share.className = 'share-menu';
+
+            if (window.innerWidth <= 992) {
+                share.classList.add('mobile-share');
+                share.innerHTML = `
+                <div class="share-content">
+                    <div class ="mobile-share-header">
+                        <span>Поделиться</span>
+                        <ion-icon class="icon md hydrated mobile-share-header-close" name="close-outline" role="img"></ion-icon>
+                    </div>
+                    <hr>
+                    <div class="header__socials">
+                        <button class="button button_link button_white button_without-text"> 
+                            <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                        </button>
+                        <button class="button button_link button_white button_without-text"> 
+                            <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                        </button>
+                        <button class="button button_link button_white button_without-text"> 
+                            <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                        </button>
+                        <button class="button button_link button_white button_without-text" id="copyLink" attributes="{}">
+                            <ion-icon class="icon md hydrated" name="link-outline" role="img"></ion-icon>
+                        </button>
+                    </div>
+                </div>`;
+            } else {
+                share.innerHTML = `
+                <div class="share-content">
+                    <div class="header__socials">
+                        <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                        <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                        <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                    </div>
+                    <button id="copyLink" class="button button_white button_size_s">
+                        <span class="button_span">Скопировать ссылку</span>
+                    </button>
+                </div>`;
+            }
+
+            share.style.display = 'none';
+            share.style.position = 'absolute';
+            share.style.zIndex = '1000';
+
+            button.style.position = 'relative';
+            button.appendChild(share);
+
+            button.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    document.querySelector('.overlay').classList.remove('hidden');
+                }
+                share.style.display = 'flex';
+            });
+
+            share.addEventListener('click', (e) => e.stopPropagation());
+
+            const closeMobile = share.querySelector('.mobile-share-header-close');
+            if (closeMobile) {
+                closeMobile.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    share.style.display = 'none';
+                    share.classList.remove('mobile-menu');
+                    document.querySelector('.overlay').classList.add('hidden');
+                });
+            }
+
+            document.addEventListener('click', (e) => {
+                if (!share.contains(e.target) && !button.contains(e.target)) {
+                    share.style.display = 'none';
+                    share.classList.remove('mobile-menu');
+                    document.querySelector('.overlay').classList.add('hidden');
+                }
+            });
+
+            share.querySelector('#copyLink').addEventListener('click', (e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText(window.location.href);
+            });
+        });
+    }, 500); 
+});
+
+function getLength() {
+  const textarea = document.querySelector(".textarea");
+  const counterCurrent = document.querySelector(".current");
+  const counterMax = document.querySelector(".max");
+
+  const textLength = textarea.value.length;
+  counterCurrent.textContent = textLength;
+  if (textLength > Number(counterMax.textContent)) {
+    textarea.style.borderColor = "#D10404";
+  } else {
+    textarea.style.borderColor = "";
+  }
 }
 
 $(document).ready(function () {

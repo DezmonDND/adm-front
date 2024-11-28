@@ -10,12 +10,12 @@ $(document).ready(function () {
             container.appendChild(card.firstChild);
         }
 
-        // Создаем ссылку с кнопкой "Поделиться"
-        const shareButton = document.createElement('a');
-        shareButton.className =
-            'button button_link button_white button_size_m button_icon-left social_share';
-        shareButton.href = '/';
-        shareButton.setAttribute('attributes', '{}');
+    // Создаем ссылку с кнопкой "Поделиться"
+    const shareButton = document.createElement('button');
+    shareButton.className =
+        'button button_link button_white button_size_m button_icon-left social_share';
+    shareButton.href = '/';
+    shareButton.setAttribute('attributes', '{}');
 
         // Создаем содержимое кнопки
         const buttonSpan = document.createElement('span');
