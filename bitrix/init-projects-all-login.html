@@ -351,7 +351,7 @@
             <h2 class="title__name">Инициативные проекты</h2>
           </div>
         </div>
-        <button class="button button_blue button_size_m   " onclick="addProject()" title=""><span class="button_span">Подать инициативный проект</span>
+        <button class="button button_blue button_size_m   " onclick="showLoginProjects()" title=""><span class="button_span">Подать инициативный проект</span>
         </button>
       </div>
       <div class="init-projects"> 
@@ -482,6 +482,21 @@
         </div>
       </div>
     </main>
+    <div class="overlay hidden"></div>
+    <div class="login-projects hidden">
+      <div class="login__content">
+        <div class="login__content-top">
+          <ion-icon class="icon" name="close-outline" onclick="hideLoginProjects()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Подать инициативный проект могут только авторизованные пользователи</span></div>
+            <div class="login__content-main__subtitle"><span>Вы можете войти или зарегистрироваться на нашем сайте, чтобы иметь возможность подавать и отслеживать свои инициативные проекты</span></div>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showLogin()">Войти или зарегистрироваться</span></div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_container-top">

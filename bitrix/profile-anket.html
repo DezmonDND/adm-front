@@ -342,143 +342,140 @@
     </div>
     <main class="main">
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Инициативные проекты</span>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Специальное событие</a><span class="span">/</span><span class="breadcrumb_link">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</span>
         </div>
       </div>
-      <div class="init-projects-title"> 
+      <div class="profile-anket-main">
         <div class="title"> 
           <div class="title__container"> 
-            <h2 class="title__name">Инициативные проекты</h2>
+            <h2 class="title__name">Анкета для выдвижения инициативного проекта</h2>
+            <div class="title__description">Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных.               </div>
           </div>
         </div>
-        <button class="button button_blue button_size_m   " onclick="addProject()" title=""><span class="button_span">Подать инициативный проект</span>
-        </button>
-      </div>
-      <div class="init-projects"> 
-        <div class="init-projects__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b282a3890b57f3edc0ace8ef27e29dc87c6b0f49529581fb5faabd9e13f1429&amp;amp;source=constructor" width="100%" height="444px" frameborder="0"></iframe>
+        <div class="profile-anket-draft">
+          <div class="profile-anket-draft-left">
+            <div class="profile-anket-draft-title"><span>Ваша анкета инициативного проекта будет всегда доступна в личном кабинете</span></div>
+            <div class="profile-anket-draft-subtitle"><span>Нажимая на кнопку “удалить”, вы безвозвратно удалите анкету инициативного проекта </span></div>
+          </div>
+          <div class="profile-anket-draft-right">
+            <button class="button button_red button_size_m    " onclick="someFunction()" title=""><span class="button_span">Удалить</span>
+            </button>
+          </div>
         </div>
-        <div class="init-projects__list"> 
-          <div class="init-card"> 
-            <div class="init-card__container"><img class="init-card__image" src="./resources/image_1.jpg"/>
-              <div class="init-card__description">
-                <h4 class="init-card__title">Наименование инциативного проекта</h4>
-                <div class="init-card__content">
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Дата внесения </span><span class="init-card__text">23 сентября 2024 </span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Общая стоимость</span><span class="init-card__text">2 978 321,00</span></div>
-                  </div>
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Срок реализации</span><span class="init-card__text">2 года</span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Инициатор</span><span class="init-card__text">Дума города Сургута</span></div>
-                  </div>
-                  <div class="init-card__columns">              
-                    <div class="init-card__row"><span class="init-card__name">Территория реализации</span><span class="init-card__text">Ханты-Мансийский автономный округ – Югра       </span></div>
-                  </div>
+        <div class="interview-form profile-anket">
+          <div class="profile-anket-item">
+            <div class="profile-anket-item-title"> <span>1. Основные данные</span></div>
+            <fieldset class="fieldset ">
+              <h3 class="fieldset__title ">Как называется ваш проект?</h3>
+              <div class="fieldset__answers">
+                <input class="input  input-interview-full   " placeholder="Наименование организации" name="answer1" value=""/>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset">
+              <h3 class="fieldset__title ">Опишите проблему или задачу, которую вы хотите решить. Почему эта проблема важна для жителей города Сургута или его части?</h3>
+              <div class="fieldset__answers">
+                <div class="textarea__container">
+                  <textarea class="textarea  " placeholder="Описание проблемы, решение которой имеет приоритетное значение для жителей города Сургута или его части (в том числе обоснование её актуальности и приоритетности для жителей соответствующей территории" maxlength="900" oninput="getLength(this)"></textarea>
+                  <div class="counter "><span class="current">0</span><span>/</span><span class="max">900 </span></div>
                 </div>
               </div>
-            </div>
+            </fieldset>
+            <fieldset class="fieldset ">
+              <h3 class="fieldset__title ">Сколько человек непосредственно выиграют от реализации вашего проекта??</h3>
+              <div class="fieldset__answers">
+                <input class="input  input-interview-full   " placeholder="Предполагаемое количество прямых благополучателей (целое число)" name="answer3" value=""/>
+              </div>
+            </fieldset>
           </div>
-          <div class="init-card"> 
-            <div class="init-card__container"><img class="init-card__image" src="./resources/image_1.jpg"/>
-              <div class="init-card__description">
-                <h4 class="init-card__title">Наименование инциативного проекта</h4>
-                <div class="init-card__content">
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Дата внесения </span><span class="init-card__text">23 сентября 2024 </span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Общая стоимость</span><span class="init-card__text">2 978 321,00</span></div>
-                  </div>
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Срок реализации</span><span class="init-card__text">2 года</span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Инициатор</span><span class="init-card__text">Дума города Сургута</span></div>
-                  </div>
-                  <div class="init-card__columns">              
-                    <div class="init-card__row"><span class="init-card__name">Территория реализации</span><span class="init-card__text">Ханты-Мансийский автономный округ – Югра       </span></div>
-                  </div>
+          <hr/>
+          <div class="profile-anket-item">
+            <div class="profile-anket-item-title"> <span>2. Финансовое участие заинтересованных лиц</span></div>
+            <fieldset class="undefined fieldset">
+              <h3 class="fieldset__title ">Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?</h3>
+              <div class="fieldset__answers_checkboxes">
+                <div class="fieldset__checkboxes">
+                  <input class="сheckbox сheckbox-label radio" type="radio" id="1" name="radio" checked="checked"/>
+                  <label class="сheckbox__label" for="1">Да</label>
+                </div>
+                <div class="fieldset__checkboxes">
+                  <input class="сheckbox сheckbox-label radio" type="radio" id="2" name="radio"/>
+                  <label class="сheckbox__label" for="2">Нет</label>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="init-card"> 
-            <div class="init-card__container"><img class="init-card__image" src="./resources/image_1.jpg"/>
-              <div class="init-card__description">
-                <h4 class="init-card__title">Наименование инциативного проекта</h4>
-                <div class="init-card__content">
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Дата внесения </span><span class="init-card__text">23 сентября 2024 </span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Общая стоимость</span><span class="init-card__text">2 978 321,00</span></div>
-                  </div>
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Срок реализации</span><span class="init-card__text">2 года</span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Инициатор</span><span class="init-card__text">Дума города Сургута</span></div>
-                  </div>
-                  <div class="init-card__columns">              
-                    <div class="init-card__row"><span class="init-card__name">Территория реализации</span><span class="init-card__text">Ханты-Мансийский автономный округ – Югра       </span></div>
+            </fieldset>
+            <div class="profile-anket-item-subtitle"> <span>Необходимо заполнить минимум одно из следующих полей:</span></div>
+            <div class="profile-anket-item-with-descr">
+              <fieldset class="fieldset">
+                <h3 class="fieldset__title ">Планируемый объём инициативных платежей, формируемый за счёт денежных средств инициатора проекта</h3>
+                <div class="fieldset__answers">
+                  <div class="textarea__container">
+                    <textarea class="textarea  " placeholder="Введите ваш ответ" maxlength="900" oninput="getLength(this)"></textarea>
+                    <div class="counter "><span class="current">0</span><span>/</span><span class="max">900 </span></div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="init-card"> 
-            <div class="init-card__container"><img class="init-card__image" src="./resources/image_1.jpg"/>
-              <div class="init-card__description">
-                <h4 class="init-card__title">Наименование инциативного проекта</h4>
-                <div class="init-card__content">
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Дата внесения </span><span class="init-card__text">23 сентября 2024 </span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Общая стоимость</span><span class="init-card__text">2 978 321,00</span></div>
-                  </div>
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Срок реализации</span><span class="init-card__text">2 года</span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Инициатор</span><span class="init-card__text">Дума города Сургута</span></div>
-                  </div>
-                  <div class="init-card__columns">              
-                    <div class="init-card__row"><span class="init-card__name">Территория реализации</span><span class="init-card__text">Ханты-Мансийский автономный округ – Югра       </span></div>
+              </fieldset>
+              <fieldset class="fieldset">
+                <h3 class="fieldset__title ">Планируемый объём инициативных платежей, формируемый за счёт денежных средств граждан</h3>
+                <div class="fieldset__answers">
+                  <div class="textarea__container">
+                    <textarea class="textarea  " placeholder="Введите ваш ответ" maxlength="900" oninput="getLength(this)"></textarea>
+                    <div class="counter "><span class="current">0</span><span>/</span><span class="max">900 </span></div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="init-card"> 
-            <div class="init-card__container"><img class="init-card__image" src="./resources/image_1.jpg"/>
-              <div class="init-card__description">
-                <h4 class="init-card__title">Наименование инциативного проекта</h4>
-                <div class="init-card__content">
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Дата внесения </span><span class="init-card__text">23 сентября 2024 </span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Общая стоимость</span><span class="init-card__text">2 978 321,00</span></div>
-                  </div>
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Срок реализации</span><span class="init-card__text">2 года</span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Инициатор</span><span class="init-card__text">Дума города Сургута</span></div>
-                  </div>
-                  <div class="init-card__columns">              
-                    <div class="init-card__row"><span class="init-card__name">Территория реализации</span><span class="init-card__text">Ханты-Мансийский автономный округ – Югра       </span></div>
+              </fieldset>
+              <fieldset class="fieldset">
+                <h3 class="fieldset__title ">Планируемый объём инициативных платежей, формируемый за счёт денежных средств иных юридических лиц и индивидуальных предпринимателей</h3>
+                <div class="fieldset__answers">
+                  <div class="textarea__container">
+                    <textarea class="textarea  " placeholder="Введите ваш ответ" maxlength="900" oninput="getLength(this)"></textarea>
+                    <div class="counter "><span class="current">0</span><span>/</span><span class="max">900 </span></div>
                   </div>
                 </div>
-              </div>
+              </fieldset>
             </div>
           </div>
-          <div class="init-card"> 
-            <div class="init-card__container"><img class="init-card__image" src="./resources/image_1.jpg"/>
-              <div class="init-card__description">
-                <h4 class="init-card__title">Наименование инциативного проекта</h4>
-                <div class="init-card__content">
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Дата внесения </span><span class="init-card__text">23 сентября 2024 </span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Общая стоимость</span><span class="init-card__text">2 978 321,00</span></div>
-                  </div>
-                  <div class="init-card__columns">
-                    <div class="init-card__row"> <span class="init-card__name">Срок реализации</span><span class="init-card__text">2 года</span></div>
-                    <div class="init-card__row"> <span class="init-card__name">Инициатор</span><span class="init-card__text">Дума города Сургута</span></div>
-                  </div>
-                  <div class="init-card__columns">              
-                    <div class="init-card__row"><span class="init-card__name">Территория реализации</span><span class="init-card__text">Ханты-Мансийский автономный округ – Югра       </span></div>
-                  </div>
+          <hr/>
+          <div class="profile-anket-item">
+            <div class="profile-anket-item-title"> <span>3. Информация об иницииативном проекте</span></div>
+            <fieldset class="fieldset ">
+              <h3 class="fieldset__title ">Количество человек в инициативной группе граждан</h3>
+              <div class="fieldset__answers">
+                <input class="input  input-interview-full   " placeholder="Введите целое число" name="answer1" value=""/>
+              </div>
+            </fieldset>
+            <fieldset class="undefined fieldset">
+              <h3 class="fieldset__title ">Кто является инициатором проекта?</h3>
+              <div class="fieldset__answers_checkboxes">
+                <div class="fieldset__checkboxes">
+                  <input class="сheckbox сheckbox-label radio" type="radio" id="1" name="radio" checked="checked"/>
+                  <label class="сheckbox__label" for="1">Инициативная группа граждан</label>
+                </div>
+                <div class="fieldset__checkboxes">
+                  <input class="сheckbox сheckbox-label radio" type="radio" id="2" name="radio"/>
+                  <label class="сheckbox__label" for="2">Юридическое лицо, индивидуальный предприниматель</label>
+                </div>
+                <div class="fieldset__checkboxes">
+                  <input class="сheckbox сheckbox-label radio" type="radio" id="3" name="radio"/>
+                  <label class="сheckbox__label" for="3">Территориальное обсщественное самоуправление</label>
                 </div>
               </div>
-            </div>
+            </fieldset>
           </div>
+          <hr/>
+          <div class="profile-anket-item fieldset-container">
+            <div class="profile-anket-item-title"> <span>4. Мероприятия по реализации инициативного проекта</span></div>
+            <fieldset class="fieldset ">
+              <h3 class="fieldset__title ">Название мероприятия и предполагаемая сумма денег </h3>
+              <div class="fieldset__answers">
+                <input class="input  input-interview-full   " placeholder="Введите название мероприятия и сумму (руб, с двумя знаками после запятой)" name="answer1" value=""/>
+              </div>
+            </fieldset>
+          </div>
+          <button class="button button_white add-event-btn button_size_m   button_without-event" title=""><span class="button_span">Добавить мероприятие</span>
+            <ion-icon class="icon" name="add-outline"></ion-icon>
+          </button>
+          <button class="button button_blue interview-form__button button_size_m   " onclick="getValues(event)" title=""><span class="button_span">Подать инициативный проект</span>
+          </button>
         </div>
       </div>
     </main>
