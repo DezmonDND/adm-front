@@ -16,6 +16,10 @@
     display: none;
   }
 }
+.people-care .people-care__container .people-care__card-list {
+  display: flex;
+  overflow: hidden;
+}
 .people-care .people-care__container .slick-slide {
   height: 320px;
 }

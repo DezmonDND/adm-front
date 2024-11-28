@@ -38,10 +38,12 @@ body.tmp-duma .main-events .main-events__container .main-title {
         }
 
         .events__news {
-            display: grid;
-            grid-template-columns: repeat(4, calc((100% - 72px)/4));
-            gap: 24px;
-            row-gap: 20px;
+            // display: grid;
+            // grid-template-columns: repeat(4, calc((100% - 72px)/4));
+            // gap: 24px;
+            // row-gap: 20px;
+            display: flex;
+            overflow: hidden;
 
             @include respond-to(md) {
                 gap: 8px;
@@ -51,10 +53,18 @@ body.tmp-duma .main-events .main-events__container .main-title {
             @include respond-to(md) {
                 display: block;
             }
+
+            .news-main-card {
+                margin-right: 24px;
+
+                @include respond-to(md) {
+                    margin-right: 8px;
+                }
+            }
         }
 
         .events__navigation {
-            display: flex;
+            display: none;
             justify-content: center;
 
             @include respond-to(md) {
@@ -63,7 +73,8 @@ body.tmp-duma .main-events .main-events__container .main-title {
         }
 
         .events__slider {
-            @include main-slider;
+            display: flex;
+            justify-content: center;
         }
     }
 }
