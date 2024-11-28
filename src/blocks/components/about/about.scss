@@ -1,16 +1,24 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-.about .event-card__tags {
-    display: none !important;
-}
+.about {
+    .event-card {
+        .event-card__container {
+            .event-card__description {
+                flex-direction: column-reverse;
+            }
 
-.about .event-card__description {
-    flex-direction: column-reverse !important;
-}
+            .event-card__buttons {
+                .button {
+                    display: none;
+                }
 
-.about .event-card__buttons a:first-child,
-.about .event-card__buttons a:last-child {
-    display: none;
+                .button_share,
+                .share_button {
+                    display: flex;
+                }
+            }
+        }
+    }
 }
 
 .about-content {
