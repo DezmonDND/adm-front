@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (socialShareButtons.length === 0) {
             return;
         }
-
+        const url = window.location.href;
         socialShareButtons.forEach(button => {
             const share = document.createElement('div');
             share.className = 'share-menu';
@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <hr>
                     <div class="header__socials">
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                            <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                            <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                            <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http:${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text" id="copyLink" attributes="{}">
                             <ion-icon class="icon md hydrated" name="link-outline" role="img"></ion-icon>
@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 share.innerHTML = `
                 <div class="share-content">
                     <div class="header__socials">
-                        <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
-                        <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
-                        <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                        <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=${url}" target="_blank"></a>
+                        <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=${url} target="_blank"></a>
+                        <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=${url}" target="_blank"></a>
                     </div>
                     <button id="copyLink" class="button button_white button_size_s">
                         <span class="button_span">Скопировать ссылку</span>
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             share.querySelector('#copyLink').addEventListener('click', (e) => {
                 e.preventDefault();
-                navigator.clipboard.writeText(window.location.href);
+                navigator.clipboard.writeText(url);
             });
         });
     }, 500); 
