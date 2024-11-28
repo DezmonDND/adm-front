@@ -191,6 +191,27 @@ function updateMultiSelectValue(e) {
     getValues(e);
 }
 
+function getLength(event) {
+  const textarea = event.target;
+  const counterCurrent = textarea.parentNode.querySelector('.current');
+  const counterMax = textarea.parentNode.querySelector('.max');
+
+  if (counterCurrent && counterMax) {
+      const textLength = textarea.value.length;
+      counterCurrent.textContent = textLength;
+      if (textLength > Number(counterMax.textContent)) {
+          textarea.style.borderColor = '#D10404';
+      } else {
+          textarea.style.borderColor = '';
+      }
+  }
+}
+
+const textareas = document.querySelectorAll('.textarea');
+
+textareas.forEach((textarea) => {
+  textarea.addEventListener('input', getLength);
+});
 function openSelect() {
   const selectMenu = document.querySelector(".select_multiple-menu");
   selectMenu.style.display =
@@ -261,17 +282,3 @@ $(document).ready(function () {
         });
     });
 });
-
-function getLength() {
-  const textarea = document.querySelector(".textarea");
-  const counterCurrent = document.querySelector(".current");
-  const counterMax = document.querySelector(".max");
-
-  const textLength = textarea.value.length;
-  counterCurrent.textContent = textLength;
-  if (textLength > Number(counterMax.textContent)) {
-    textarea.style.borderColor = "#D10404";
-  } else {
-    textarea.style.borderColor = "";
-  }
-}
