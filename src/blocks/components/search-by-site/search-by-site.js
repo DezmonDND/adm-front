@@ -1,7 +1,10 @@
-const calendar = document.querySelector('.search-by-site__calendar');
-
 function toggleCalendar() {
-    calendar.classList.toggle('search-by-site__calendar_active');
+    const calendarId = document.getElementById('calendar');
+    const calendar = document.querySelector('.search-by-site__calendar');
+
+    if (calendarId) {
+        calendar.classList.toggle('search-by-site__calendar_active');
+    }
 }
 
 function toggleFilters() {
