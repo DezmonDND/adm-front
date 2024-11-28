@@ -9585,11 +9585,6 @@ body.tmp-duma .important-links .main-title {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 992px) {
-  .important-links .important-links__navigation {
-    display: none;
-  }
-}
 .important-links .important-links__slider {
   display: none;
 }
@@ -9607,7 +9602,13 @@ body.tmp-duma .important-links .main-title {
 }
 @media (max-width: 992px) {
   .important-links .important-links__container {
-    display: block;
+    gap: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .important-links .important-links__container {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 .important-links .important-links__container .important-link {
