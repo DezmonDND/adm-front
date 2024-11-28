@@ -48,7 +48,14 @@
                 gap: 12px;
                 list-style: none;
 
+                @include respond-to(md) {
+                    bottom: 20px;
+                    right: 20px;
+                }
+
                 li {
+                    margin: 0;
+
                     button {
                         display: flex;
                         align-items: center;
@@ -56,13 +63,18 @@
                         width: 16px;
                         height: 16px;
                         border-radius: 50%;
-                        color: #000000;
+                        color: transparent;
                         background-color: #000000;
                         border: 2px solid $tertiary-text;
                         cursor: pointer;
 
                         &:hover {
                             border-color: $fourth-text;
+                        }
+
+                        @include respond-to(sm) {
+                            width: 12px;
+                            height: 12px;
                         }
                     }
 
