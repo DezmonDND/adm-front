@@ -7,8 +7,7 @@ mixin textarea(options, error)
         textarea(class=`textarea ${hasSize} ${hasError}` 
             placeholder=options.placeholder
             name=options.name
-            maxlength=options.value 
-            oninput='getLength(this)')
+            maxlength=options.value)
         div(class=`counter ${hasCounterClass}`)
             span.current 0
             span /

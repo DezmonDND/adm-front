@@ -17,27 +17,31 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 32px;
+        gap: 64px;
+        @include content-paddings;
 
         @include respond-to(sm) {
             position: relative;
             flex-direction: column;
             gap: 16px;
-            padding: 16px 20px;
         }
 
         .event__info {
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 200px;
+            width: 100%;
             gap: 8px;
 
             @include respond-to(sm) {
                 box-sizing: border-box;
                 flex-direction: row;
+                max-width: none;
+                align-self: flex-start;
+                justify-content: space-between;
                 gap: 35px;
-                width: 100%;
-                padding-right: 20px;
+
             }
         }
 
@@ -45,6 +49,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
             display: flex;
             gap: 12px;
             align-items: center;
+            text-wrap: nowrap;
             @include lead-2;
 
             .event__icon {
@@ -54,12 +59,38 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 
         .event__location {
             display: flex;
+            flex-direction: column;
             align-items: center;
             gap: 8px;
-            text-wrap: nowrap;
             @include caption-2;
 
+            @include respond-to(sm) {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .event__place {
+
+                &:hover {
+                    cursor: pointer;
+                }
+                @include visible-lines(1);
+                @include respond-to(sm) {
+                    width: 70%;
+                }
+            }
+
+            .event__cabinet {
+                @include visible-lines(1);
+
+                @include respond-to(sm) {
+                    width: unset;
+                }
+            }
+
             .event__icon-dot {
+                display: none;
                 width: 4px;
                 height: 4px;
                 background-color: $primary-color;
@@ -70,7 +101,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
         .event__description {
             max-width: 955px;
             width: 100%;
-            margin: 0 20px 0 64px;
+            margin: 0;
             @include text-2;
 
             @include respond-to(sm) {
@@ -79,6 +110,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
         }
 
         .event__number {
+            display: none;
             color: $tertiary-text;
             @include caption-1;
 
