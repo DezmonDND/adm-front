@@ -1,8 +1,7 @@
-/*** Finish - Title ***/
 .calendar {
   display: flex;
 }
-@media screen and (max-width: 660px) {
+@media (max-width: 768px) {
   .calendar {
     display: none;
   }
@@ -10,7 +9,7 @@
 .calendar .calendar__button {
   display: none;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .calendar .calendar__button {
     display: flex;
     width: 100%;
@@ -25,7 +24,7 @@
   scrollbar-width: none;
   gap: 20px;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 992px) {
   .calendar .calendar__links {
     display: none;
   }
@@ -55,8 +54,15 @@
   color: var(--tertiary-text);
   padding: 9px;
   cursor: default;
-  font-size: 28px;
-  line-height: 36px;
+  font-weight: 400;
+  font-size: calc(28px * var(--scale));
+  line-height: calc(34px * var(--lh));
+}
+@media (max-width: 992px) {
+  .calendar .calendar__links .calendar__link-content .calendar__link {
+    font-size: calc(18px * var(--scale));
+    line-height: calc(22px * var(--lh));
+  }
 }
 .calendar .calendar__links .calendar__link-content .calendar__link_active {
   border-radius: 50%;

@@ -1,276 +1,261 @@
 include ../../components/title/main/_main-title.pug
 include ../../components/calendar/_calendar.pug
 include ../../components/pagination/_navigation.pug
-include ../../components/news/card-main/card-main
+include ../../components/news/news-main-card/news-main-card
+include ../../components/filters/filters
+include ../../components/slider/_slider
+include ../../components/filters-popup/filters-popup
 include ../../libs/buttons/_buttons.pug
 include ../../libs/select/_select.pug
 include ../../libs/checkbox/_checkbox.pug
-include ../../components/slider/_slider
 
 mixin events()
-    .main-events
-        .main-events__container 
-            +main-title({
-                href: '/',
-                title: 'Анонсы и события',
-                link_text: 'Все события'
-            })
-            .events__filters
-                +button({ type: 'button', size: 'm', class: 'button_white events__filter-button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})     
-            +calendar([
-                {
-                date: '18',
-                day: 'Вт',
-                class: 'clicked',
-                events: '2',
-                day_class: 'clicked',
-                },
-                {
-                date: '19',
-                day: 'Ср',
-                },
-                {
-                date: '20',
-                day: 'Чт',
-                class: 'active',
-                events: '2',
-                day_class: 'active',
-                },
-                {
-                date: '21',
-                day: 'Пт',
-                class: 'active',
-                events: '2',
-                day_class: 'active',
-                },
-                {
-                date: '22',
-                day: 'Сб',
-                },
-                {
-                date: '23',
-                day: 'Вс',
-                },
-                {
-                date: '24',
-                day: 'Пр',
-                class: 'active',
-                events: '2',
-                day_class: 'active',
-                },
-                {
-                date: '25',
-                day: 'Вт',
-                class: 'active',
-                events: '2',
-                day_class: 'active',
-                },
-                {
-                date: '26',
-                day: 'Ср',
-                },
-                {
-                date: '27',
-                day: 'Чт',
-                class: 'active',
-                events: '2',
-                day_class: 'active',
-                },
-                {
-                date: '28',
-                day: 'Пт',
-                class: 'active',
-                events: '2',
-                day_class: 'active',
-                },
-                {
-                date: '29',
-                day: 'Сб',
-                },
-                {
-                date: '30',
-                day: 'Вс',
-                },
-                {
-                date: '1',
-                day: 'Пн',
-                class: 'without-events',
-                day_class: 'without-events',
-                divider: true,
-                },
-                {
-                date: '2',
-                day: 'Вт',
-                class: 'active',
-                events: '2',
-                day_class: 'active',
-                },
-                {
-                date: '3',
-                day: 'Ср',
-                class: '',
-                class: 'without-events',
-                day_class: 'without-events',
-                },
-                {
-                date: '4',
-                day: 'Чт',
-                class: 'active',
-                events: '2',
-                day_class: 'active',
-                },
-            ])         
-            .main-events__selects
-                .main-events__selects-container
-                    +select('right', [
-                        { value: 'Все события', text: 'Все события' },
-                        { value: 'Театр', text: 'Театр' },
-                        { value: 'Детям', text: 'Детям' },
-                        { value: 'Выставки', text: 'Выставки' },
-                        { value: 'Концерты', text: 'Концерты' }
-                        ], 'single', 'events__select')
-                    +select('right', [
-                        { value: 'Любая тематика', text: 'Любая тематика' },
-                        { value: 'Любая тематика', text: 'Любая тематика' }
-                        ], 'single', 'events__select')
-                    +select('right', [
-                        { value: 'Место проведения', text: 'Место проведения' },
-                        { value: 'Место проведения', text: 'Место проведения' }
-                        ], 'single', 'events__select')
-                    +select('right', [
-                        { value: 'Июнь', text: 'Июнь' },
-                        { value: 'Июнь', text: 'Июнь' }
-                        ], 'single', 'events__select') 
-                +checkbox({
-                    label: 'С пушкинской картой',
-                    id: '10',
-                    name: 'with-card',
-                    status: true,
-                    sort: 'checkbox'
-                })                                                              
-            .main-events__news
-                +main-news-card(
-                {
-                    image: 'image_1.jpg',
-                    date: '10 июня 2023',
-                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                    tags: [
-                        {
-                            type: 'button',
-                            size: 'xs', 
-                            class: 'button_blue button_radius news-card__tag', 
-                            text: 'Кино',
-                        },                   
-                        ]
-                },
-                )
-                +main-news-card(
-                {
-                    image: 'image_2.jpg',
-                    date: '10 июня 2023',
-                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                    tags: [
-                        {
-                            type: 'button',
-                            size: 'xs', 
-                            class: 'button_blue button_radius news-card__tag', 
-                            text: 'Кино',
-                        },                   
-                        ]
-                },
-                )
-                +main-news-card(
-                {
-                    image: 'image_3.jpg',
-                    date: '10 июня 2023',
-                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                    tags: [
-                        {
-                            type: 'button',
-                            size: 'xs', 
-                            class: 'button_blue button_radius news-card__tag', 
-                            text: 'Кино',
-                        },                   
-                        ]
-                },
-                )
-                +main-news-card(
-                {
-                    image: 'image_5.png',
-                    date: '10 июня 2023',
-                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                    tags: [
-                        {
-                            type: 'button',
-                            size: 'xs', 
-                            class: 'button_blue button_radius news-card__tag', 
-                            text: 'Кино',
-                        },                   
-                        ]
-                },
-                )
-                +main-news-card(
-                {
-                    image: 'image_1.jpg',
-                    date: '10 июня 2023',
-                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                    tags: [
-                        {
-                            type: 'button',
-                            size: 'xs', 
-                            class: 'button_blue button_radius news-card__tag', 
-                            text: 'Кино',
-                        },                   
-                        ]
-                },
-                )
-                +main-news-card(
-                {
-                    image: 'image_2.jpg',
-                    date: '10 июня 2023',
-                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                    tags: [
-                        {
-                            type: 'button',
-                            size: 'xs', 
-                            class: 'button_blue button_radius news-card__tag', 
-                            text: 'Кино',
-                        },                   
-                        ]
-                },
-                )
-                +main-news-card(
-                {
-                    image: 'image_3.jpg',
-                    date: '10 июня 2023',
-                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                    tags: [
-                        {
-                            type: 'button',
-                            size: 'xs', 
-                            class: 'button_blue button_radius news-card__tag', 
-                            text: 'Кино',
-                        },                   
-                        ]
-                },
-                )
-                +main-news-card(
-                {
-                    image: 'image_5.png',
-                    date: '10 июня 2023',
-                    title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                    tags: [
-                        {
-                            type: 'button',
-                            size: 'xs', 
-                            class: 'button_blue button_radius news-card__tag', 
-                            text: 'Кино',
-                        },                   
-                        ]
-                },
-                )
-            .main-events__navigation
-                +navigation({
-                    first_page: '1',
-                    end_page: '7',
+    .events
+        .full-width-container
+            .full-width-background
+                .full-width-content                                             
+                    .events__container 
+                        +main-title({
+                            href: '/',
+                            title: 'Анонсы и события',
+                            link_text: 'Все события'
                         })
+                        .dm-filter__btn
+                            +button({ type: 'button', event: 'toggleFilters()', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})             
+                        +filters-popup('events-calendar-popup')
+                        .dm-calendar__btn
+                            +button({ type: 'button',  event: 'toggleAdmCalendar();', class: 'button_white dm-calendar__button', icon: 'calendar-number-outline', iconPostion: 'left', text: "Календарь"})
+                        .events__calendar 
+                            +chronicle-calendar('events-calendar')
+                        +calendar([
+                            {
+                            date: '18',
+                            day: 'Вт',
+                            class: 'clicked',
+                            events: '2',
+                            day_class: 'clicked',
+                            },
+                            {
+                            date: '19',
+                            day: 'Ср',
+                            },
+                            {
+                            date: '20',
+                            day: 'Чт',
+                            class: 'active',
+                            events: '2',
+                            day_class: 'active',
+                            },
+                            {
+                            date: '21',
+                            day: 'Пт',
+                            class: 'active',
+                            events: '2',
+                            day_class: 'active',
+                            },
+                            {
+                            date: '22',
+                            day: 'Сб',
+                            },
+                            {
+                            date: '23',
+                            day: 'Вс',
+                            },
+                            {
+                            date: '24',
+                            day: 'Пр',
+                            class: 'active',
+                            events: '2',
+                            day_class: 'active',
+                            },
+                            {
+                            date: '25',
+                            day: 'Вт',
+                            class: 'active',
+                            events: '2',
+                            day_class: 'active',
+                            },
+                            {
+                            date: '26',
+                            day: 'Ср',
+                            },
+                            {
+                            date: '27',
+                            day: 'Чт',
+                            class: 'active',
+                            events: '2',
+                            day_class: 'active',
+                            },
+                            {
+                            date: '28',
+                            day: 'Пт',
+                            class: 'active',
+                            events: '2',
+                            day_class: 'active',
+                            },
+                            {
+                            date: '29',
+                            day: 'Сб',
+                            },
+                            {
+                            date: '30',
+                            day: 'Вс',
+                            },
+                            {
+                            date: '1',
+                            day: 'Пн',
+                            class: 'without-events',
+                            day_class: 'without-events',
+                            divider: true,
+                            },
+                            {
+                            date: '2',
+                            day: 'Вт',
+                            class: 'active',
+                            events: '2',
+                            day_class: 'active',
+                            },
+                            {
+                            date: '3',
+                            day: 'Ср',
+                            class: '',
+                            class: 'without-events',
+                            day_class: 'without-events',
+                            },
+                            {
+                            date: '4',
+                            day: 'Чт',
+                            class: 'active',
+                            events: '2',
+                            day_class: 'active',
+                            },
+                        ])         
+                        +filters({ checkbox: true })                                                            
+                        .events__news
+                            +news-main-card(
+                            {
+                                image: 'image_1.jpg',
+                                date: '10 июня 2023',
+                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                tags: [
+                                    {
+                                        type: 'button',
+                                        size: 'xs', 
+                                        class: 'button_blue button_radius news-card__tag', 
+                                        text: 'Кино',
+                                    },                   
+                                    ]
+                            },
+                            )
+                            +news-main-card(
+                            {
+                                image: 'image_2.jpg',
+                                date: '10 июня 2023',
+                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                tags: [
+                                    {
+                                        type: 'button',
+                                        size: 'xs', 
+                                        class: 'button_blue button_radius news-card__tag', 
+                                        text: 'Кино',
+                                    },                   
+                                    ]
+                            },
+                            )
+                            +news-main-card(
+                            {
+                                image: 'image_3.jpg',
+                                date: '10 июня 2023',
+                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                tags: [
+                                    {
+                                        type: 'button',
+                                        size: 'xs', 
+                                        class: 'button_blue button_radius news-card__tag', 
+                                        text: 'Кино',
+                                    },                   
+                                    ]
+                            },
+                            )
+                            +news-main-card(
+                            {
+                                image: 'image_5.png',
+                                date: '10 июня 2023',
+                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                tags: [
+                                    {
+                                        type: 'button',
+                                        size: 'xs', 
+                                        class: 'button_blue button_radius news-card__tag', 
+                                        text: 'Кино',
+                                    },                   
+                                    ]
+                            },
+                            )
+                            +news-main-card(
+                            {
+                                image: 'image_1.jpg',
+                                date: '10 июня 2023',
+                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                tags: [
+                                    {
+                                        type: 'button',
+                                        size: 'xs', 
+                                        class: 'button_blue button_radius news-card__tag', 
+                                        text: 'Кино',
+                                    },                   
+                                    ]
+                            },
+                            )
+                            +news-main-card(
+                            {
+                                image: 'image_2.jpg',
+                                date: '10 июня 2023',
+                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                tags: [
+                                    {
+                                        type: 'button',
+                                        size: 'xs', 
+                                        class: 'button_blue button_radius news-card__tag', 
+                                        text: 'Кино',
+                                    },                   
+                                    ]
+                            },
+                            )
+                            +news-main-card(
+                            {
+                                image: 'image_3.jpg',
+                                date: '10 июня 2023',
+                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                tags: [
+                                    {
+                                        type: 'button',
+                                        size: 'xs', 
+                                        class: 'button_blue button_radius news-card__tag', 
+                                        text: 'Кино',
+                                    },                   
+                                    ]
+                            },
+                            )
+                            +news-main-card(
+                            {
+                                image: 'image_5.png',
+                                date: '10 июня 2023',
+                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                                tags: [
+                                    {
+                                        type: 'button',
+                                        size: 'xs', 
+                                        class: 'button_blue button_radius news-card__tag', 
+                                        text: 'Кино',
+                                    },                   
+                                    ]
+                            },
+                            )
+                        .events__navigation
+                            +navigation({
+                                first_page: '1',
+                                end_page: '7',
+                                    })
+                        .events__slider
+                            +slider({ class: 'events' })            

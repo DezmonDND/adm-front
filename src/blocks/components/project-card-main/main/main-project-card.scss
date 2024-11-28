@@ -10,32 +10,29 @@
     justify-content: space-between;
     height: 428px;
 
-    @media screen and (max-width: 1000px) {
+    @include respond-to (md) {
         height: 288px;
+        max-width: 360px;
+    }
 
-        &:nth-child(n+3) {
-            display: none;
-        }
+    @include respond-to(sm) {
+        max-width: none;
     }
 
     .main-project-card__content {
-        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: baseline;
         height: 100%;
         justify-content: space-between;
-
-        @media screen and (max-width: 1000px) {
-            padding: 16px;
-        }
+        @include content-paddings;
 
         .main-project-card__dates {
             display: flex;
             align-items: center;
             gap: 20px;
 
-            @media screen and (max-width: 1000px) {
+            @include respond-to(md) {
                 gap: 4px;
             }
 
@@ -55,10 +52,10 @@
             margin-top: 20px;
             min-height: 169px;
 
-            @media screen and (max-width: 1000px) {
+            @include respond-to(md) {
                 margin-top: 18px;
                 gap: 8px;
-                min-height: 108px;
+                min-height: 124px;
             }
 
             .main-project-card__title {
@@ -68,6 +65,7 @@
             }
 
             .main-project-card__text {
+                margin: 0;
                 @include visible-lines(3);
                 @include text-2;
             }

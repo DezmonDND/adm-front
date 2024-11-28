@@ -5,10 +5,26 @@
 }
 
 .сheckbox.сheckbox-label+label {
-    padding-left: 32px;
+    padding: 8px 0 8px 32px;
 
     &:before {
         left: 10px;
+    }
+
+    @include respond-to(md) {
+        padding-left: 35px;
+
+        &:before {
+            left: 12px;
+        }
+    }
+
+    @include respond-to(sm) {
+        padding-left: 30px;
+
+        &:before {
+            left: 8px;
+        }
     }
 }
 
@@ -21,6 +37,15 @@
     height: 21px;
     padding-left: 21px;
     @include text-2;
+
+    @include respond-to(sm) {
+        height: 16px;
+
+        &:before {
+            width: 16px;
+            height: 16px;
+        }
+    }
 
     &:before {
         content: "";
@@ -44,7 +69,6 @@
 
 .сheckbox:not(:disabled):not(:checked)+label:hover::before {
     border-color: $primary-color;
-
 }
 
 .сheckbox:disabled+label {
@@ -62,7 +86,7 @@
 }
 
 .сheckbox:checked+label:hover::before {
-    border-color: #80A6F7;
+    border-color: $event-color-hover;
 }
 
 .radio+label:before {
@@ -71,38 +95,10 @@
 
 .radio:checked+label::before {
     background-color: $content-color;
+    border-color: transparent;
     background-image: url(../../icons/radiobtns_icon.svg);
 }
 
 .checkbox__label {
     @include text-2;
-}
-
-@media screen and (max-width: 1000px) {
-    .сheckbox.сheckbox-label+label {
-        padding-left: 35px;
-
-        &:before {
-            left: 12px;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .сheckbox+label {
-        height: 16px;
-
-        &:before {
-            width: 16px;
-            height: 16px;
-        }
-    }
-
-    .сheckbox.сheckbox-label+label {
-        padding-left: 30px;
-
-        &:before {
-            left: 8px;
-        }
-    }
 }

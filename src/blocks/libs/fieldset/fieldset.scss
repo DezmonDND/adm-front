@@ -7,6 +7,10 @@
     border: none;
     width: 100%;
 
+    @include respond-to(sm) {
+        gap: 16px;
+    }
+
     .fieldset_new-author {
         display: flex;
         justify-content: space-between;
@@ -31,7 +35,12 @@
     }
 
     .fieldset__title {
-        @include heading-h3;
+        padding: 24px 0 0;
+        @include heading-h4;
+
+        @include respond-to(md) {
+            padding: 16px 0 0;
+        }
     }
 
     .fieldset__answers {
@@ -39,13 +48,15 @@
         flex-direction: column;
         gap: 12px;
 
+        @include respond-to(sm) {
+            gap: 8px;
+        }
+
         .container {
             .reception_counter {
                 display: none;
             }
         }
-
-        .fieldset__textarea {}
 
         .fieldset__span {
             font-size: 13px;
@@ -53,59 +64,17 @@
         }
 
         .fieldset_error {
-            color: #D10404;
+            color: $interview-end-color;
         }
     }
 
     .fieldset__answers_checkboxes {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
 
-        .fieldset__checkboxes {}
-    }
-
-}
-
-@media screen and (max-width: 1000px) {
-    .fieldset {
-        .fieldset__title {
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        .fieldset__answers {
-
-
-            .fieldset__textarea {}
-        }
-
-        .fieldset__answers_checkboxes {
-            .fieldset__checkboxes {}
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .fieldset {
-        gap: 16px;
-
-        .fieldset__title {
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 16px;
-        }
-
-        .fieldset__answers {
-            gap: 8px;
-
-
-
-            .fieldset__textarea {}
-        }
-
-        .fieldset__answers_checkboxes {
-            .fieldset__checkboxes {}
+        @include respond-to(md) {
+            gap: 16px;
         }
     }
 }

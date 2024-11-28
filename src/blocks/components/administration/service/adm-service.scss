@@ -21,7 +21,7 @@
     display: flex;
     gap: 24px;
 
-    @media (max-width: 576px) {
+    @include respond-to(sm) {
         gap: 20px;
         flex-direction: column;
     }
@@ -30,7 +30,7 @@
         width: 33%;
         box-sizing: border-box;
 
-        @media (max-width: 576px) {
+        @include respond-to(sm) {
             width: 100%;
         }
     }
@@ -41,7 +41,7 @@
         display: flex;
         gap: 24px;
 
-        @media (max-width: 576px) {
+        @include respond-to(sm) {
             gap: 20px;
             flex-direction: column;
         }
@@ -50,6 +50,4 @@
             width: 300px;
         }
     }
-
-
 }

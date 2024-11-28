@@ -5,19 +5,17 @@
     max-width: 1305px;
     width: 100%;
     border-radius: 12px;
-    background-color: #fafafa;
+    background-color: $cards-background;
 
     .biography-card__container {
         display: flex;
-        padding: 20px;
         gap: 40px;
         width: 100%;
+        @include content-paddings;
 
-        @media screen and (max-width: 600px) {
+        @include respond-to(sm) {
             gap: 20px;
-            padding: 12px;
             align-items: center;
-
         }
 
         .biography-card__avatar {
@@ -28,11 +26,10 @@
             border-radius: 12px;
             height: 100%;
 
-            @media screen and (max-width: 600px) {
+            @include respond-to(sm) {
                 max-width: 100px;
                 max-height: 115px;
             }
-
         }
 
         .biography-card__user-info {
@@ -41,6 +38,7 @@
             padding: 24px 0;
 
             .biography-card__name {
+                padding: 0;
                 @include lead-1;
             }
 
@@ -48,9 +46,8 @@
                 margin: 20px 0 60px;
                 @include caption-1;
 
-                @media screen and (max-width: 600px) {
+                @include respond-to(sm) {
                     margin: 12px 0 0;
-
                 }
             }
 
@@ -59,11 +56,10 @@
                 font-size: 20px;
                 line-height: 32px;
                 text-decoration: none;
-                color: #004cc4;
+                color: $primary-color;
 
-                @media screen and (max-width: 600px) {
+                @include respond-to(sm) {
                     display: none;
-
                 }
             }
         }
@@ -72,45 +68,17 @@
 
 .biography-card_full-page {
     display: none;
-}
 
-@media screen and (max-width: 1000px) {
-    .biography-card {
-
-        .biography-card__container {
-
-            .biography-card__avatar {}
-
-            .biography-card__user-info {
-
-                .biography-card__name {}
-
-                .biography-card__job {}
-
-                .biography-card__link {}
-            }
-        }
-    }
-
-    .biography-card_full-page {
+    @include respond-to(md) {
         display: flex;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .biography-card {
+    .biography-card__container {
+        align-items: center;
 
-        .biography-card__container {
-
-            .biography-card__avatar {}
-
-            .biography-card__user-info {
-
-                .biography-card__name {}
-
-                .biography-card__job {}
-
-                .biography-card__link {}
+        .biography-card__user-info {
+            .biography-card__job {
+                margin-bottom: 0;
             }
         }
     }

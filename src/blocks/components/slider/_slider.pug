@@ -1,6 +1,9 @@
-mixin slider() 
+mixin slider(data={}) 
     .slider
-        a(class=`slider__link`)
+        -const hasLinkClass = data.class ? `${data.class}` : ''
+
+        a(class=`slider__link slider__${hasLinkClass}-prev`)
             ion-icon(name='arrow-back-outline')
-        a(class=`slider__link`)
+        span.slider__counter    
+        a(class=`slider__link slider__${hasLinkClass}-next`)
             ion-icon(name='arrow-forward-outline') 

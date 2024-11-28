@@ -16,13 +16,14 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
     .event__container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 20px 32px;
 
         @include respond-to(sm) {
             position: relative;
             flex-direction: column;
-            padding: 16px 20px;
             gap: 16px;
+            padding: 16px 20px;
         }
 
         .event__info {

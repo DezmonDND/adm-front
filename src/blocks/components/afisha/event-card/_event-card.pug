@@ -1,22 +1,31 @@
 include ../../../libs/buttons/_buttons
+include ../../button-popup/button-popup
 
-mixin event-card(data)   
-    .event-card
-        .event-card__container 
-            .event-card__info 
-                .event-card__tags
-                    +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: "История"})
-                    +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: "Награды"})
-                    +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: "Экономика"})
-                .event-card__description 
-                    h2.event-card__title #{data.title}
-                    p.event-card__text #{data.description}
-                    .event-card__dates    
-                        span.event-card__date #{data.date}
-                        span.event-card__last-date #{data.last_date}
-                .event-card__buttons 
-                    +button({ size: 'm', type: 'link', class: 'button_blue', href: '/about', icon: 'print-outline', text: 'Версия для печати', iconPosition: 'left' })
-                    +button({ size: 'm', type: 'link', class: 'button_white', href: '/about', icon: 'link-outline', text: 'Поделиться', iconPosition: 'left' })
-                    +button({ size: 'm', type: 'link', class: 'button_white', href: '/about', icon: 'download-outline' })  
-            
+mixin event-card(data) 
+    .full-width-container
+        .full-width-background
+            .full-width-content 
+                .event-card
+                    .event-card__container 
+                        .event-card__info
+                            if data.tags 
+                                .event-card__tags
+                                    +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: "История"})
+                                    +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: "Награды"})
+                                    +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: "Экономика"})
+                            .event-card__description 
+                                h2.event-card__title #{data.title}
+                                if data.description
+                                    p.event-card__text #{data.description}
+                                if data.date || data.last_date    
+                                    .event-card__dates    
+                                        span.event-card__date #{data.date}
+                                        span.event-card__last-date #{data.last_date}
+                            .event-card__buttons 
+                                +button({ size: 'm', type: 'link', class: 'button_blue', href: '/about', icon: 'print-outline', text: 'Версия для печати', iconPosition: 'left' })
+                                .event-card__button
+                                    +button({ size: 'm', type: 'link', class: 'button_white button_share', href: '/about', icon: 'link-outline', text: 'Поделиться', iconPosition: 'left' })
+                                    +button-popup()
+                                +button({ size: 'm', type: 'link', class: 'button_white', href: '/about', icon: 'download-outline' }) 
+
 

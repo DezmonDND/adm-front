@@ -1,4 +1,7 @@
-mixin filters()
+include ../../libs/select/_select.pug
+include ../../libs/checkbox/_checkbox.pug
+
+mixin filters(data={})
     .filters
         .filters_container
             +select('right', [
@@ -7,23 +10,20 @@ mixin filters()
                 { value: 'Детям', text: 'Детям' },
                 { value: 'Выставки', text: 'Выставки' },
                 { value: 'Концерты', text: 'Концерты' }
-                ], 'single', 'events__select')
+                ], 'single', 'filters__select')
             +select('right', [
                 { value: 'Любая тематика', text: 'Любая тематика' },
                 { value: 'Любая тематика', text: 'Любая тематика' }
-                ], 'single', 'events__select')
+                ], 'single', 'filters__select')
             +select('right', [
                 { value: 'Место проведения', text: 'Место проведения' },
                 { value: 'Место проведения', text: 'Место проведения' }
-                ], 'single', 'events__select')
-            +select('right', [
-                { value: 'Июнь', text: 'Июнь' },
-                { value: 'Июнь', text: 'Июнь' }
-                ], 'single', 'events__select') 
-        +checkbox({
-            label: 'С пушкинской картой',
-            id: '10',
-            name: 'with-card',
-            status: true,
-            sort: 'checkbox'
-        })                  
+                ], 'single', 'filters__select')
+        if data.checkbox        
+            +checkbox({
+                label: 'С пушкинской картой',
+                id: '10',
+                name: 'with-card',
+                status: true,
+                sort: 'checkbox'
+            })                  

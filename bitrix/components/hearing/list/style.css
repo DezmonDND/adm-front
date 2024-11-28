@@ -1,21 +1,17 @@
-/*** Finish - Title ***/
-body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-title {
-  display: none;
-}
-
-body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-item-labels-item .hearing-item-span-desc {
-  color: var(--tertiary-text);
-}
-
 body.tmp-duma .hearing-item img {
   height: auto;
   max-height: 362px;
 }
+@media (max-width: 992px) {
+  body.tmp-duma .hearing-item img {
+    max-height: 172px;
+  }
+}
 
 .hearing-list {
-  padding: 40px 0 0 0;
+  padding: 24px 0 0 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hearing-list {
     padding: 16px 0 0 0;
   }
@@ -32,141 +28,25 @@ body.tmp-duma .hearing-item img {
     line-height: calc(20px * var(--lh));
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hearing-list h3 {
     margin-bottom: 16px;
   }
 }
 
 .hearing-list-items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 24px;
+  grid-template-columns: repeat(2, calc((100% - 24px) / 2));
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .hearing-list-items {
-    gap: 12px;
+    grid-template-columns: repeat(2, calc((100% - 8px) / 2));
+    gap: 8px;
   }
 }
-
-.hearing-item {
-  flex: 0 0 calc(50% - 12px);
-  box-sizing: border-box;
-  flex-direction: column;
-  display: flex;
-  border-radius: 12px;
-  background: var(--fourth-text-inverse);
-  color: var(--main-text);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
-@media (max-width: 1000px) {
-  .hearing-item {
-    font-size: 10px;
-    line-height: 14px;
+@media (max-width: 768px) {
+  .hearing-list-items {
+    grid-template-columns: 100%;
   }
-}
-@media (max-width: 1000px) {
-  .hearing-item {
-    flex: 0 0 100%;
-  }
-}
-.hearing-item-title {
-  height: 100px;
-  display: block;
-  overflow: hidden;
-}
-.hearing-item-title span {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-weight: 400;
-  font-size: calc(18px * var(--scale));
-  line-height: calc(22px * var(--lh));
-}
-@media (max-width: 992px) {
-  .hearing-item-title span {
-    font-size: calc(12px * var(--scale));
-    line-height: calc(16px * var(--lh));
-  }
-}
-@media (max-width: 1000px) {
-  .hearing-item-title {
-    height: 104px;
-  }
-}
-.hearing-item-content {
-  flex: 1;
-  padding: 20px;
-}
-@media (max-width: 1000px) {
-  .hearing-item-content {
-    padding: 16px;
-  }
-}
-.hearing-item img {
-  height: 362px;
-  width: 100%;
-  object-fit: cover;
-}
-@media (max-width: 1000px) {
-  .hearing-item img {
-    height: 188px;
-  }
-}
-.hearing-item-labels {
-  display: flex;
-}
-.hearing-item-labels-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.hearing-item-labels-item .hearing-item-span-title {
-  color: var(--tertiary-text);
-  font-weight: 300;
-  font-size: calc(14px * var(--scale));
-  line-height: calc(18px * var(--lh));
-}
-@media (max-width: 992px) {
-  .hearing-item-labels-item .hearing-item-span-title {
-    font-size: calc(10px * var(--scale));
-    line-height: calc(14px * var(--lh));
-  }
-}
-.hearing-item-labels-item .hearing-item-span-desc {
-  font-weight: 400;
-  font-size: calc(18px * var(--scale));
-  line-height: calc(22px * var(--lh));
-}
-@media (max-width: 992px) {
-  .hearing-item-labels-item .hearing-item-span-desc {
-    font-size: calc(12px * var(--scale));
-    line-height: calc(16px * var(--lh));
-  }
-}
-.hearing-item-labels-item:first-child {
-  padding-right: 24px;
-}
-.hearing-item-link {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
-}
-.hearing-item-link .hearing-card_button {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  padding: 4px 12px;
-}
-.hearing-item-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  top: 0;
 }

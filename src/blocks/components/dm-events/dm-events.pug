@@ -1,0 +1,24 @@
+include ../title/main/_main-title
+include ../filters/filters
+include ../chronicle/chronicle
+include ../../libs/buttons/_buttons
+include ../chronicle/calendar/calendar
+include ../filters-popup/filters-popup
+
+mixin dm-events()
+    .dm-events
+        .dm-events__container 
+            +main-title({
+                href: '/',
+                title: 'Хроника и анонсы событий',
+                link_text: 'Все события'
+            })
+            .dm-filter__btn
+                +button({ type: 'button', event: 'toggleFilters()', size: 'm', class: 'button_white dm-filter__button', icon: 'funnel-outline', iconPosition: 'left', text: 'Фильтры'})             
+            +filters-popup('calendar-dm-events-popup')
+            .dm-calendar__btn
+                +button({ type: 'button',  event: 'toggleDumaCalendar();', class: 'button_white dm-calendar__button', icon: 'calendar-number-outline', iconPostion: 'left', text: "Календарь"})    
+            .dm-events__calendar
+                +chronicle-calendar('calendar-dm-events')
+            +filters({ checkbox: true })
+            +chronicle()

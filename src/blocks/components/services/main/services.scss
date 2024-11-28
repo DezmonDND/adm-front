@@ -1,103 +1,86 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-.main-services {
-    max-width: 1440px;
-    width: 100%;
-    background-color: $cards-background;
-    padding-bottom: 50px;
+.services {
+    .services__content {
+        @include main-blocks-paddings;
 
-    @media (max-width: 1000px) {
-        padding-bottom: 20px;
-    }
+        .services__container {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
 
-    .main-services__container {
-        display: flex;
-        flex-direction: column;
-        gap: 47px;
-
-        @media (max-width: 1000px) {
-            margin-top: 2px;
-            gap: 19px;
-        }
-
-        .main-services__search {
-            display: grid;
-            grid-template-columns: repeat(2, calc((100% - 24px)/2));
-            gap: 24px;
-
-            @media (max-width: 1000px) {
-                gap: 8px;
-                grid-template-columns: repeat(2, calc((100% - 8px)/2));
+            @include respond-to(md) {
+                gap: 20px;
             }
 
-            @media (max-width: 600px) {
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
-            }
+            .services__search {
+                display: grid;
+                grid-template-columns: repeat(2, calc((100% - 24px)/2));
+                gap: 24px;
 
-            .main-services__search-content {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-
-                @media (max-width: 600px) {
-                    gap: 11px;
+                @include respond-to(md) {
+                    gap: 8px;
+                    grid-template-columns: repeat(2, calc((100% - 8px)/2));
                 }
 
-                .main-services__label {
-                    padding: 0;
-                    @include heading-h3;
+                @include respond-to(sm) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
                 }
 
-                .search-main-services {
-                    width: 100%;
-                    max-width: none;
+                .services__search-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
 
-                    .search__button_l {
-                        @media (max-width: 1000px) {
-                            width: 48px;
-                            height: 48px;
-                        }
+                    .services__label {
+                        padding: 0;
+                        @include heading-h3;
+                    }
+
+                    .search-services {
+                        width: 100%;
+                        max-width: none;
                     }
                 }
             }
-        }
 
-        .main-services__buttons {
-            display: flex;
-            flex-direction: column;
-
-            .main-services__buttons-title {
-                margin-bottom: 24px;
-                padding: 0;
-                @include heading-h3;
-
-                @media (max-width: 1000px) {
-                    margin-bottom: 16px;
-                }
-
-                @media (max-width: 600px) {
-                    margin-bottom: 19px;
-                }
-            }
-
-            .main-services__buttons-container {
+            .services__buttons {
                 display: flex;
-                gap: 24px;
+                flex-direction: column;
 
-                @media (max-width: 1000px) {
-                    gap: 8px;
+                .services__buttons-title {
+                    margin-bottom: 24px;
+                    padding: 0;
+                    @include heading-h3;
+
+                    @include respond-to(md) {
+                        margin-bottom: 16px;
+                    }
+
+                    @include respond-to(sm) {
+                        margin-bottom: 20px;
+                    }
                 }
 
-                @media (max-width: 600px) {
-                    flex-direction: column;
-                    align-items: center;
-                }
+                .services__buttons-container {
+                    display: flex;
+                    gap: 24px;
 
-                .main-services__button {
-                    justify-content: center;
-                    width: calc(100% - 40px);
+                    @include respond-to(md) {
+                        gap: 8px;
+                    }
+
+                    @include respond-to(sm) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .services__button {
+                        justify-content: center;
+                        width: calc(100% - 40px);
+                    }
                 }
             }
         }

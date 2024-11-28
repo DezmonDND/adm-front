@@ -4,7 +4,6 @@
     filter: invert(44%) sepia(59%) saturate(7476%) hue-rotate(210deg) brightness(89%) contrast(105%);
 }
 
-
 .header-duma {
     display: flex;
     flex-direction: column;
@@ -83,10 +82,9 @@
 
     .header__bottom-content {
         display: flex;
-        align-items: center;
         max-width: 1312px;
         width: 100%;
-        padding: 20px 0;
+        padding: 20px 0 0;
         gap: 60px;
 
         @include respond-to(md) {

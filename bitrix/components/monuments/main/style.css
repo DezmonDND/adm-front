@@ -1,4 +1,3 @@
-/*** Finish - Title ***/
 .monuments-elem {
   margin-top: 24px;
 }
@@ -79,25 +78,32 @@
   gap: 8px;
 }
 
-.monuments-elem__addr, .monuments-elem__author {
+.monuments-elem__addr,
+.monuments-elem__author {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.monuments-elem span, .monuments-elem__addr span, .monuments-elem__author span {
+.monuments-elem span,
+.monuments-elem__addr span,
+.monuments-elem__author span {
   font-weight: 300;
   font-size: calc(14px * var(--scale));
   line-height: calc(18px * var(--lh));
 }
 @media (max-width: 992px) {
-  .monuments-elem span, .monuments-elem__addr span, .monuments-elem__author span {
+  .monuments-elem span,
+  .monuments-elem__addr span,
+  .monuments-elem__author span {
     font-size: calc(10px * var(--scale));
     line-height: calc(14px * var(--lh));
   }
 }
 
-.monuments-elem__date span:first-child, .monuments-elem__addr span:first-child, .monuments-elem__author span:first-child {
+.monuments-elem__date span:first-child,
+.monuments-elem__addr span:first-child,
+.monuments-elem__author span:first-child {
   color: var(--tertiary-text);
 }
 

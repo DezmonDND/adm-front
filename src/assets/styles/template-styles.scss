@@ -12,7 +12,6 @@
 @use '../../blocks/libs//checkbox/checkbox.scss';
 @use '../../blocks/libs/switch/switch.scss';
 @use '../../blocks/libs/search-button/search-button.scss';
-@use '../../blocks/libs/calender/calender.scss';
 @use '../../blocks/libs/tab-buttons/tab-buttons.scss';
 @use '../../blocks/libs/pag-buttons/pag-buttons.scss';
 @use '../../blocks/libs/fullwidth/fullwidth.scss';
@@ -34,7 +33,7 @@
 @use '../../blocks/components/title/title.scss';
 @use '../../blocks/libs/fieldset/fieldset.scss';
 @use '../../blocks/components/feedbacks/feedbacks.scss';
-@use '../../blocks/components/reception/reception.scss';
+@use '../../blocks/components/reception/main/reception.scss';
 @use '../../blocks/components/hearing/preview/hearing-preview.scss';
 @use '../../blocks/components/hearing/list/hearing-list.scss';
 @use '../../blocks/components/hearing/detail/hearing-detail.scss';
@@ -51,7 +50,7 @@
 @use '../../blocks/components/pagination/main/navigation.scss';
 @use '../../blocks/components/afisha/universal/universal.scss';
 @use '../../blocks/components/afisha/event/main/event.scss';
-@use '../../blocks/components/afisha/event-full-desc/full-desc.scss';
+@use '../../blocks/components/afisha/event-full-desc/event-full-desc.scss';
 @use '../../blocks/components/slider/main/slider.scss';
 @use '../../blocks/components/administration/service/adm-service.scss';
 @use '../../blocks/components/documents/dumalist/documents-dumalist.scss';
@@ -61,7 +60,7 @@
 @use '../../blocks/components/phonebook/main/phonebook.scss';
 @use '../../blocks/components/login/main/login.scss';
 @use '../../blocks/components/projects/project-generation/project-generation.scss';
-@use '../../blocks/components/subscribe/subscribe.scss';
+@use '../../blocks/components/subscribe/default/subscribe.scss';
 @use './bootstrap-grid.scss';
 @use '../../blocks/components/header/services/header-services.scss';
 @use '../../blocks/components/people-care-card/main/people-care-card.scss';
@@ -73,10 +72,12 @@
 @use '../../blocks/components/solve-problems/main/solve-problems.scss';
 @use '../../blocks/components/links/important/main/important-links.scss';
 @use '../../blocks/components/links/usefull/main/usefull-links.scss';
-@use '../../blocks/components/news/card-with-image/with-image.scss';
-@use '../../blocks/components/news/card-without-image/without-image.scss';
+@use '../../blocks/components/news/news-top-link/news-top-link.scss';
+@use '../../blocks/components/news/news-top-card/news-top-card.scss';
 @use '../../blocks/components/news/news-main/news-main.scss';
 @use '../../blocks/components/news/news-top/news-top.scss';
+@use '../../blocks/components/news/dm-news-top/dm-news-top.scss';
+@use '../../blocks/components/news/news-main-card/news-main-card.scss';
 @use '../../blocks/components/init-projects/init-card/init-card.scss';
 @use '../../blocks/components/init-projects/main/init-projects.scss';
 @use '../../blocks/components/monuments/main/monuments.scss';
@@ -93,7 +94,6 @@
 @use '../../blocks/components/citizens/citizens-list/citizens-list.scss';
 @use '../../blocks/components/chronicle/main/chronicle.scss';
 @use '../../blocks/components/chronicle/calendar/calendar-dm.scss';
-@use '../../blocks/components/hearing/archive-dm/archive-dm.scss';
 @use '../../blocks/components/dm-comitet/main/dm-comitet.scss';
 @use '../../blocks/components/dm-applications/main/dm-applications.scss';
 @use '../../blocks/libs/add-file-button/add-file-button.scss';
@@ -107,10 +107,26 @@
 @use '../../blocks/components/dm-unions/main/dm-unions.scss';
 @use '../../blocks/components/dm-meeting/main/dm-meeting.scss';
 @use '../../blocks/components/filters/filters.scss';
+@use '../../blocks/components/projects/projects-detail/projects-detail.scss';
+@use '../../blocks/components/button-popup/button-popup.scss';
+@use '../../blocks/components/slider/slick.scss';
+@use '../../blocks/components/dm-city-projects/main/dm-city-projects.scss';
 @use '../../blocks/components/search-by-site/search-by-site.scss';
 @use '../../blocks/components/filters-popup/filters-popup.scss';
 @use '../../blocks/components/chronicle/calendar/vanilla-calendar.min.css';
 @use '../../blocks/components/sorting/sorting.scss';
+@use '../../blocks/components/dm-archive/main/dm-archive.scss';
+@use '../../blocks/components/dm-events/main/dm-events.scss';
+@use '../../blocks/components/adm-all-news/adm-all-news.scss';
+@use '../../blocks/components/hearing/hearing-card/hearing-card.scss';
+@use '../../blocks/components/hearing/calendar/hearing-calendar.scss';
+@use '../../blocks/components/hearing/calendar/hearing-event-popup.scss';
+@use '../../blocks/components/hearing/calendar/hearing-add-event-popup.scss';
+@use '../../blocks/components/header/dm-second-menu/dm-second-menu.scss';
+@use '../../blocks/components/honor-board/board-detail/board-detail.scss';
+@use '../../blocks/components/projects/project-table/project-table.scss';
+@use '../../blocks/components/dm-about/dm-about.scss';
+@use '../../blocks/components/about/about.scss';
 @use '../../blocks/libs/share/share.scss';
 
 * {
@@ -133,6 +149,28 @@ body {
     background-color: $content-color;
 }
 
+body.tmp-print {
+    .header {
+        display: none;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
 .main {
     box-sizing: border-box;
     max-width: 1440px;
@@ -140,34 +178,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-bottom: 60px;
-
-    & {
-        @include main-padding;
-    }
-
-
-    .main__title {
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 38px;
-    }
-
-    .main__description {
-        max-width: 866px;
-        margin-bottom: 40px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
-
-.main__title {
-    margin: 20px 0 20px;
-}
-
-.main__interviews {
-    display: flex;
-    margin: 40px 0 40px;
+    @include main-padding;
 }
 
 .components {
@@ -176,43 +187,6 @@ body {
     align-items: baseline;
     gap: 20px;
     margin: 20px 0 20px;
-}
-
-@media screen and (max-width: 1000px) {
-    .main {
-
-        .main__description {
-            margin-bottom: 30px;
-        }
-
-        .main__title {
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 28px;
-            margin-bottom: 18px;
-        }
-
-        .interview-form {
-            margin-top: 32px;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .main {
-
-        .main__title {
-            font-size: 20px;
-            line-height: 24px;
-            margin: 11px 0 16px;
-        }
-
-        .main__description {
-            font-size: 12px;
-            line-height: 18px;
-            margin-bottom: 32px;
-        }
-    }
 }
 
 .grey-block {

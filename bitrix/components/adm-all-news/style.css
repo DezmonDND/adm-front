@@ -1,0 +1,16 @@
+.adm-all-news {
+  display: flex;
+  flex-direction: column;
+}
+.adm-all-news .news-main-card {
+  margin: 0;
+  max-width: none;
+}
+.adm-all-news .pagination {
+  align-self: flex-start;
+}
+@media (max-width: 992px) {
+  .adm-all-news .pagination {
+    align-self: center;
+  }
+}

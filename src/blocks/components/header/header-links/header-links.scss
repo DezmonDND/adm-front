@@ -1,5 +1,26 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .header__link {
+        padding-bottom: 20px;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: $main-text;
+            border-color: $primary-color-green-hover;
+        }
+
+        &:active {
+            border-color: $primary-color-green-click;
+        }
+
+        &_active {
+            border-color: $primary-color-green-hover;
+            color: inherit;
+        }
+    }
+}
+
 .header_links {
     display: flex;
     align-items: center;
@@ -13,7 +34,12 @@
     .header__link {
         text-decoration: none;
         color: $main-text;
+        cursor: pointer;
         @include lead-6;
+
+        &_active {
+            color: $primary-color-active;
+        }
 
         &:hover {
             color: $primary-color;

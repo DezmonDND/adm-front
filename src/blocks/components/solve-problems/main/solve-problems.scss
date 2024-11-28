@@ -1,12 +1,9 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
 .solve-problems {
     display: flex;
     flex-direction: column;
-    margin-bottom: 48px;
-
-
-    @media (max-width: 1000px) {
-        margin-bottom: 20px;
-    }
+    @include main-blocks-paddings;
 
     .solve-problems__container {
         .solve-problems__banner {

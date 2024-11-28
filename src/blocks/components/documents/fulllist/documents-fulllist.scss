@@ -5,7 +5,6 @@
     flex-direction: column;
     gap: 16px;
 
-
     .doc-line {
         padding: 20px;
         background: $grey-adm;
@@ -24,7 +23,6 @@
             gap: 8px;
             margin-bottom: 8px;
             align-items: center;
-
             color: $tertiary-text;
             @include caption-2;
 
@@ -44,7 +42,6 @@
                 flex-wrap: wrap;
             }
         }
-
 
         .doc-field {
             &:nth-child(1) {
@@ -94,8 +91,6 @@
                     a {
                         flex-basis: inherit;
                         justify-content: center;
-
-
                     }
                 }
 

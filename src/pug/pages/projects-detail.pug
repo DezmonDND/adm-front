@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Специальное событие'},
+                { sort: '', href: '/', text: 'В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй'},
+            ],
+            )
+        .projects-detail    
+            +event-card({
+                title: 'Документ инициативного проекта сгенерирован',
+            })   
+            +projects-detail() 

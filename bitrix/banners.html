@@ -16,13 +16,13 @@
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
                 <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -40,7 +40,7 @@
             </div>
             <div class="menu__socials"> 
               <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
                 <ion-icon class="icon" name="eye-outline"></ion-icon></a>
             </div>
           </div>
@@ -77,16 +77,16 @@
       </div>
       <div class="header__top-content">
         <div class="header__top-links">
-          <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+          <div class="header_links"><a class="header__link" onclick="toggleSecondMenu(event)">Быстрый доступ</a><a class="header__link" onclick="toggleSecondMenu(event)">Публичные слушания</a><a class="header__link" onclick="toggleSecondMenu(event)">Противодействие коррупции</a><a class="header__link" onclick="toggleSecondMenu(event)">Пресс-центр</a><a class="header__link" onclick="toggleSecondMenu(event)">Обращения граждан</a>
           </div>
           <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()"><span class="button_span">Версия для слабовидящих</span>
+          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
             <ion-icon class="icon" name="eye-outline"></ion-icon>
           </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -94,13 +94,13 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
-        <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
+        <div class="header_links"><a class="header__link" onclick="toggleSecondMenu(event)">О Сургуте</a><a class="header__link" onclick="toggleSecondMenu(event)">Городская власть</a><a class="header__link" onclick="toggleSecondMenu(event)">Документы</a><a class="header__link" onclick="toggleSecondMenu(event)">Контакты</a>
         </div>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
@@ -112,7 +112,7 @@
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -120,13 +120,151 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
       </div>
       <div class="header-visibility__bottom-content">
         <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-about dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">О Сургуте</a><a class="dm-second-menu__link" href="/">Сургуту 430 лет </a><a class="dm-second-menu__link" href="/">Сургут сегодня </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Публичные слушания</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-power dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Городская власть</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-documents dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Документы</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-contacts dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Контакты</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-quick dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 1</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-public dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 2</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-corruption dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 3</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-press dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 4</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-citizens dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 5</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -145,14 +283,14 @@
             <input class="input     " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -195,7 +333,7 @@
             <input class="input     " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -238,9 +376,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./js/lib/ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="./js/lib/ionicons/ionicons.js"></script>
   </body>
 </html>

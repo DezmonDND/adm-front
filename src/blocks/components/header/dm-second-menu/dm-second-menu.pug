@@ -1,0 +1,11 @@
+mixin second-menu(data)
+    div(class=`${data.class}`).dm-second-menu
+        .dm-second-menu__content
+            each column in data.columns
+                .dm-second-menu__col
+                    each link in column.links
+                        .dm-second-menu__links
+                            a(href='/', class=`dm-second-menu__${link.type}`) #{link.title}
+                            if link.items
+                                each item in link.items
+                                    a(href='/', class=`dm-second-menu__${item.type}`) #{item.title} 

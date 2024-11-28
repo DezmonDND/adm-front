@@ -1,5 +1,5 @@
-include ../card-with-image/card-with-image
-include ../card-without-image/card-without-image
+include ../news-top-card/news-top-card
+include ../news-top-link/news-top-link
 include ../../slider/_slider
 include ../../title/main/_main-title
 include ../../tabs/main/_tabs
@@ -9,13 +9,20 @@ mixin news-top(data)
         +main-title(data.title)  
     if data.tabs
         +tabs(data.tabs)
-    .news 
-        .news__container
-            +news-card-with-image()
-            .news__list
-                each card in data.cards    
-                    +news-card-without-image({
-                        icon: card.icon,
-                        classIcon: card.classIcon,
-                    })
+    .news-top 
+        .news-top__container
+            .news-top__card-list
+                +news-top-card({
+                    title: '23 сентября 2024',
+                    desc: 'Сургут и Гомель стали городами побратимами',
+                    image: 'news_image.png'
+                })
+                +news-top-card({
+                    title: '01 ноября 2024',
+                    desc: 'Еще одна новость про город',
+                    image: 'news_image-2.jpg'
+                })
+            .news-top__links-list
+                each link in data.links    
+                    +news-top-link(link)
 

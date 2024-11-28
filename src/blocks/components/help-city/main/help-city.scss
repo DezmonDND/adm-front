@@ -1,41 +1,43 @@
-.main-help-city {
-    margin: 0 0 48px;
+@use '../../../../assets/styles/vars.scss' as *;
 
-    @media screen and (max-width: 1000px) {
-        margin: 0 0 20px;
+.help-city {
+    @include main-blocks-paddings;
+
+    .help-city__tabs {
+        @include respond-to(md) {
+            display: none;
+        }
     }
 
-    .main-help-city__content {
-        display: flex;
-        gap: 24px;
+    .help-city__content {
 
-        @media screen and (max-width: 1000px) {
-            gap: 8px;
+        .slick-slide {
+            height: 428px;
+
+            @include respond-to(md) {
+                height: 288px;
+            }
         }
 
-        @media (max-width: 600px) {
-            display: grid;
-            grid-template-columns: repeat(2, 336px);
-            overflow-y: scroll;
-            scrollbar-width: none;
+        .main-project-card {
+            margin-right: 24px;
 
+            @include respond-to(md) {
+                margin-right: 8px;
+            }
+
+            .main-project-card__content {
+                box-sizing: border-box;
+            }
         }
     }
 
     .help-city__navigation {
         display: none;
 
-        @media screen and (max-width: 1000px) {
+        @include respond-to(md) {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
         }
-    }
-}
-
-.help-city__tabs {
-    @media (max-width: 1000px) {
-        display: none;
-
     }
 }

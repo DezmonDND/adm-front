@@ -1,5 +1,19 @@
 @use '../../../../../assets/styles/vars.scss' as *;
 
+body.tmp-print {
+    .event-card {
+        .event-card__container {
+            .event-card__tags {
+                display: none;
+            }
+
+            .event-card__buttons {
+                display: none;
+            }
+        }
+    }
+}
+
 .event-card {
     background-color: $cards-background;
     display: flex;
@@ -8,17 +22,15 @@
     .event-card__container {
         display: flex;
         flex-direction: column;
-        max-width: 738px;
+        max-width: 866px;
         width: 100%;
-        padding: 40px 0 40px;
+        padding: 32px 0 32px;
 
-        @media screen and (max-width: 1000px) {
+        @include respond-to(md) {
             padding: 20px;
         }
 
         .event-card__info {
-
-
             .event-card__tags {
                 display: flex;
                 gap: 8px;
@@ -28,17 +40,19 @@
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
-                margin: 24px 0 64px;
+                margin: 24px 0 48px;
 
-                @media screen and (max-width: 1000px) {
+                @include respond-to(md) {
                     margin-bottom: 32px;
                 }
 
                 .event-card__title {
+                    padding: 0;
                     @include heading-h2;
                 }
 
                 .event-card__text {
+                    margin: 0;
                     @include text-2;
                 }
 
@@ -49,20 +63,21 @@
 
                     .event-card__dates {
                         @include caption-2;
-
                     }
 
                     .event-card__last-date {
                         @include caption-2;
                     }
-
                 }
             }
-
 
             .event-card__buttons {
                 display: flex;
                 gap: 8px;
+
+                .event-card__button {
+                    position: relative;
+                }
             }
         }
     }

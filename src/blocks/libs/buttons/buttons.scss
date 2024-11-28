@@ -203,39 +203,3 @@
         @include tags-label;
     }
 }
-
-// Не в кнопках должно быть
-@media screen and (max-width: 600px) {
-    .button_interview {
-        margin-top: 12px;
-    }
-
-    .button_add-author {
-        margin: 27px 0 35px;
-    }
-
-    .virtual-reception__send-button {
-        padding: 12px 20px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .button_interview {
-        font-size: 14px;
-        line-height: 18px;
-        padding: 12px 24px;
-    }
-
-    .button_add-author {
-        border-radius: 4px;
-        margin: 35px 0 40px;
-        padding: 6px 17px 6px 37px;
-        background-position: 8%;
-    }
-
-    .virtual-reception__send-button {
-        padding: 12px 27px;
-        font-size: 14px;
-        line-height: 18px;
-    }
-}

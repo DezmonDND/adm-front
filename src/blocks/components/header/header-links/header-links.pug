@@ -1,4 +1,4 @@
 mixin header-links(data = [])
     .header_links
         each link in data
-            a(href=link.href).header__link #{link.title}
+            a(href=link.href onclick=link.onclick).header__link #{link.title}

@@ -1,0 +1,39 @@
+include ../news-top-card/news-top-card
+include ../news-top-link/news-top-link
+include ../../slider/_slider
+include ../../title/main/_main-title
+include ../../tabs/main/_tabs
+include ../news-top/news-top
+
+mixin dm-news-top()
+    .dm-news-top
+        +news-top({
+            title: {
+                href: '/',
+                title: 'Главные новости',
+                link_text: 'Все новости',
+                },
+            tabs: [
+                { isActive: true, title: 'Самые важные', href: '/' },
+                { title: 'Реализация нацпроектов', href: '/' },
+                { title: 'Деятельность администрации', href: '/' },
+                { title: 'Областная дума', href: '/' },
+            ],  
+            links: [
+                {
+                    icon: 'arrow-forward-outline',
+                    classIcon: 'dm-news-top-link__icon', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                    classIcon: 'dm-news-top-link__icon',
+                },
+                {
+                    icon: 'arrow-forward-outline',
+                    classIcon: 'dm-news-top-link__icon', 
+                },
+                {
+                    icon: 'arrow-forward-outline', 
+                    classIcon: 'dm-news-top-link__icon',
+                }
+            ]})       

@@ -1,15 +1,19 @@
-/*** Finish - Title ***/
 .doc-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 .doc-list .doc-line {
-  padding: 20px;
   background: var(--grey-adm);
   border-radius: 12px;
   color: var(--second-text);
   text-decoration: none;
+  padding: 20px;
+}
+@media (max-width: 992px) {
+  .doc-list .doc-line {
+    padding: 16px;
+  }
 }
 .doc-list .doc-line:hover {
   background: var(--services-hover);

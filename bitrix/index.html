@@ -16,13 +16,13 @@
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
                 <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -40,7 +40,7 @@
             </div>
             <div class="menu__socials"> 
               <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" attributes="{}">
+              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
                 <ion-icon class="icon" name="eye-outline"></ion-icon></a>
             </div>
           </div>
@@ -77,16 +77,16 @@
       </div>
       <div class="header__top-content">
         <div class="header__top-links">
-          <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+          <div class="header_links"><a class="header__link" onclick="toggleSecondMenu(event)">Быстрый доступ</a><a class="header__link" onclick="toggleSecondMenu(event)">Публичные слушания</a><a class="header__link" onclick="toggleSecondMenu(event)">Противодействие коррупции</a><a class="header__link" onclick="toggleSecondMenu(event)">Пресс-центр</a><a class="header__link" onclick="toggleSecondMenu(event)">Обращения граждан</a>
           </div>
           <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()"><span class="button_span">Версия для слабовидящих</span>
+          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
             <ion-icon class="icon" name="eye-outline"></ion-icon>
           </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -94,13 +94,13 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
-        <div class="header_links"><a class="header__link" href="/">О Сургуте</a><a class="header__link" href="/">Городская власть</a><a class="header__link" href="/">Документы</a><a class="header__link" href="/">Контакты</a>
+        <div class="header_links"><a class="header__link" onclick="toggleSecondMenu(event)">О Сургуте</a><a class="header__link" onclick="toggleSecondMenu(event)">Городская власть</a><a class="header__link" onclick="toggleSecondMenu(event)">Документы</a><a class="header__link" onclick="toggleSecondMenu(event)">Контакты</a>
         </div>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
@@ -112,7 +112,7 @@
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()"><span class="button_span">Войти</span>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -120,13 +120,151 @@
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
           <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value=""/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1">
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
       </div>
       <div class="header-visibility__bottom-content">
         <div class="header_links"><a class="header__link" href="/">Быстрый доступ</a><a class="header__link" href="/">Публичные слушания</a><a class="header__link" href="/">Противодействие коррупции</a><a class="header__link" href="/">Пресс-центр</a><a class="header__link" href="/">Обращения граждан</a>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-about dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">О Сургуте</a><a class="dm-second-menu__link" href="/">Сургуту 430 лет </a><a class="dm-second-menu__link" href="/">Сургут сегодня </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Публичные слушания</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-power dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Городская власть</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-documents dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Документы</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-contacts dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Контакты</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-quick dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 1</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-public dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 2</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-corruption dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 3</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-press dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 4</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dm-second-menu_adm-citizens dm-second-menu">
+        <div class="dm-second-menu__content">
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 5</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
+          <div class="dm-second-menu__col">
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+            <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -145,14 +283,14 @@
             <input class="input     " placeholder="Номер телефона" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -195,7 +333,7 @@
             <input class="input     " placeholder="Электронная почта" value=""/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()"><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -207,58 +345,76 @@
         <div class="full-width-background">
           <div class="full-width-content">
             <div class="header-services">
-              <div class="header-services__container"> <a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Информация про мобилизацию</span>
-                  <ion-icon class="icon" name="people"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Доступная среда</span>
-                  <ion-icon class="icon" name="flower-sharp"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Коммунальная техника онлайн</span>
-                  <ion-icon class="icon" name="settings-sharp"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Общественный транспорт с 20.05.23</span>
-                  <ion-icon class="icon" name="bus"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Информация дольщикам</span>
-                  <ion-icon class="icon" name="shield-checkmark"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Открытый бюджет</span>
-                  <ion-icon class="icon" name="wallet"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" attributes="{}"><span class="button_span">Ветхное или аварийное жильё</span>
+              <div class="header-services__container"> <a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Информация про мобилизацию</span>
+                  <ion-icon class="icon" name="people"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Доступная среда</span>
+                  <ion-icon class="icon" name="flower-sharp"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Коммунальная техника онлайн</span>
+                  <ion-icon class="icon" name="settings-sharp"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Общественный транспорт с 20.05.23</span>
+                  <ion-icon class="icon" name="bus"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Информация дольщикам</span>
+                  <ion-icon class="icon" name="shield-checkmark"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Открытый бюджет</span>
+                  <ion-icon class="icon" name="wallet"></ion-icon></a><a class="button button_link button_radius header-services__button   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Ветхное или аварийное жильё</span>
                   <ion-icon class="icon" name="home"></ion-icon></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="news"> 
-        <div class="news__container">
-          <div class="news-card-with-image" style="background-image: url(./resources/news_image.png);">
-            <div class="news-card-with-image__container">
-              <div class="news-card-with-image__content"> <span class="news-card-with-image__date">23 сентября 2024</span>
-                <h1 class="news-card-with-image__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-card-with-image__button button_size_l  " href="/" attributes="{}"><span class="button_span">Подробнее</span>
-                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+      <div class="news-top"> 
+        <div class="news-top__container">
+          <div class="news-top__card-list">
+            <div class="news-top-card">
+              <div class="news-top-card__container"><img class="news-top-card__image" src="./resources/news_image.png"/>
+                <div class="news-top-card__dots"> 
+                  <div class="news-top-card__dot"></div>
+                  <div class="news-top-card__dot"></div>
+                </div>
+                <div class="news-top-card__content"> <span class="news-top-card__date">23 сентября 2024 </span>
+                  <h1 class="news-top-card__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+                    <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <div class="news-top-card">
+              <div class="news-top-card__container"><img class="news-top-card__image" src="./resources/news_image-2.jpg"/>
+                <div class="news-top-card__dots"> 
+                  <div class="news-top-card__dot"></div>
+                  <div class="news-top-card__dot"></div>
+                </div>
+                <div class="news-top-card__content"> <span class="news-top-card__date">01 ноября 2024 </span>
+                  <h1 class="news-top-card__title">Еще одна новость про город</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+                    <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="news__list"><a class="news-card-without-image" href="/">   
-              <div class="news-card-without-image__container"> 
-                <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
-                  <ion-icon class="icon  news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
-                </div><span class="news-card-without-image__date">23 сентября 2024</span>
-              </div></a><a class="news-card-without-image" href="/">   
-              <div class="news-card-without-image__container"> 
-                <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
-                  <ion-icon class="icon  news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
-                </div><span class="news-card-without-image__date">23 сентября 2024</span>
-              </div></a><a class="news-card-without-image" href="/">   
-              <div class="news-card-without-image__container"> 
-                <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
-                  <ion-icon class="icon  news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
-                </div><span class="news-card-without-image__date">23 сентября 2024</span>
-              </div></a><a class="news-card-without-image" href="/">   
-              <div class="news-card-without-image__container"> 
-                <div class="news-card-without-image__content"><span class="news-card-without-image__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
-                  <ion-icon class="icon  news-card-without-image__icon" name="arrow-forward-outline"></ion-icon>
-                </div><span class="news-card-without-image__date">23 сентября 2024</span>
+          <div class="news-top__links-list"><a class="news-top-link" href="/">   
+              <div class="news-top-link__container"> 
+                <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
+                  <ion-icon class="icon  news-top-link__icon" name="arrow-forward-outline"></ion-icon>
+                </div><span class="news-top-link__date">23 сентября 2024</span>
+              </div></a><a class="news-top-link" href="/">   
+              <div class="news-top-link__container"> 
+                <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
+                  <ion-icon class="icon  news-top-link__icon" name="arrow-forward-outline"></ion-icon>
+                </div><span class="news-top-link__date">23 сентября 2024</span>
+              </div></a><a class="news-top-link" href="/">   
+              <div class="news-top-link__container"> 
+                <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
+                  <ion-icon class="icon  news-top-link__icon" name="arrow-forward-outline"></ion-icon>
+                </div><span class="news-top-link__date">23 сентября 2024</span>
+              </div></a><a class="news-top-link" href="/">   
+              <div class="news-top-link__container"> 
+                <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника</span>
+                  <ion-icon class="icon  news-top-link__icon" name="arrow-forward-outline"></ion-icon>
+                </div><span class="news-top-link__date">23 сентября 2024</span>
               </div></a>
           </div>
         </div>
       </div>
-      <div class="full-width-container">
-        <div class="full-width-background">
-          <div class="full-width-content">           
-            <div class="main-news"> 
-              <div class="main-news__container"> 
+      <div class="news-main">
+        <div class="full-width-container">
+          <div class="full-width-background">
+            <div class="full-width-content">                       
+              <div class="news-main__container"> 
                 <div class="main-title">
                   <div class="main-title__container">
                     <h1 class="main-title__title">Главные новости</h1><a class="main-title__link" href="/">Все новости</a>
@@ -268,83 +424,89 @@
                   <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Самые важные</a><a class="tab-button " href="/">Реализация нацпроектов</a><a class="tab-button " href="/">Деятельность администрации</a><a class="tab-button " href="/">Областная дума</a>
                   </div>
                 </div>
-                <div class="main-news__card-list"> <a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">история</span>
+                <div class="news-main__card-list"> <a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Медицина</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
                           </button>
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Награды</span>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Экономика</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">история</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Медицина</span>
-                          </button>
-                          <button class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event"><span class="button_span">Награды</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Пожары</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
+                          </button>
+                          <button class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Экономика</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Экономика</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
                     </div></a>
+                </div>
+                <div class="news-main__slider">
+                  <div class="slider"><a class="slider__link slider__news-main-prev">
+                      <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__news-main-next">
+                      <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -359,20 +521,48 @@
         </div>
         <div class="solve-problems__container"><img class="solve-problems__banner" src="/local/templates/surgut/img/banner_1.png" alt="Баннер"/></div>
       </div>
-      <div class="full-width-container">
-        <div class="full-width-background">
-          <div class="full-width-content">                               
-            <div class="main-events">
-              <div class="main-events__container"> 
+      <div class="events">
+        <div class="full-width-container">
+          <div class="full-width-background">
+            <div class="full-width-content">                                            
+              <div class="events__container"> 
                 <div class="main-title">
                   <div class="main-title__container">
                     <h1 class="main-title__title">Анонсы и события</h1><a class="main-title__link" href="/">Все события</a>
                   </div>
                 </div>
-                <div class="events__filters">
-                  <button class="button button_white events__filter-button button_size_m  button_icon-left button_without-event"><span class="button_span">Фильтры</span>
+                <div class="dm-filter__btn">
+                  <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()" title=""><span class="button_span">Фильтры</span>
                     <ion-icon class="icon" name="funnel-outline"></ion-icon>
                   </button>
+                </div>
+                <div class="filters-popup">
+                  <div class="filters-popup__container"> 
+                    <div class="filters-popup__top-content"> <span class="filters-popup__title">Фильтры</span>
+                      <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();" title="">
+                        <ion-icon class="icon" name="close-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="filters-popup__tags"><span class="filters-popup__title">Раздел</span>
+                      <div class="tabs-tag"><a class="tab-button " value="Кино">Кино</a><a class="tab-button " value="Концерты">Концерты</a><a class="tab-button " value="Выставки">Выставки</a><a class="tab-button " value="Театр">Театр</a><a class="tab-button " value="Детям">Детям</a><a class="tab-button " value="Конференции">Конференции</a>
+                      </div>
+                    </div>
+                    <div class="filters-popup__calendar"><span class="filters-popup__title">Выберите период публикации                  </span>
+                      <div class="calendar-dm" id="events-calendar-popup"></div>
+                    </div>
+                    <div class="filters-popup__buttons">             
+                      <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);" title=""><span class="button_span">Искать</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="dm-calendar__btn">
+                  <button class="button button_white dm-calendar__button    " onclick="toggleAdmCalendar();" title=""><span class="button_span">Календарь</span>
+                    <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
+                  </button>
+                </div>
+                <div class="events__calendar"> 
+                  <div class="calendar-dm" id="events-calendar"></div>
                 </div>
                 <div class="calendar">
                   <div class="calendar__links">
@@ -421,114 +611,113 @@
                       <div class="calendar__icon"><span>2</span></div>
                     </div>
                   </div>
-                  <button class="button button_white calendar__button   button_icon-left button_without-event"><span class="button_span">Календарь</span>
-                    <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
-                  </button>
                 </div>
-                <div class="main-events__selects">
-                  <div class="main-events__selects-container">
-                    <select class="select events__select select-icon-right">
+                <div class="filters">
+                  <div class="filters_container">
+                    <select class="select filters__select select-icon-right">
                       <option class="select__option" value="Все события">Все события</option>
                       <option class="select__option" value="Театр">Театр</option>
                       <option class="select__option" value="Детям">Детям</option>
                       <option class="select__option" value="Выставки">Выставки</option>
                       <option class="select__option" value="Концерты">Концерты</option>
                     </select>
-                    <select class="select events__select select-icon-right">
+                    <select class="select filters__select select-icon-right">
                       <option class="select__option" value="Любая тематика">Любая тематика</option>
                       <option class="select__option" value="Любая тематика">Любая тематика</option>
                     </select>
-                    <select class="select events__select select-icon-right">
+                    <select class="select filters__select select-icon-right">
                       <option class="select__option" value="Место проведения">Место проведения</option>
                       <option class="select__option" value="Место проведения">Место проведения</option>
-                    </select>
-                    <select class="select events__select select-icon-right">
-                      <option class="select__option" value="Июнь">Июнь</option>
-                      <option class="select__option" value="Июнь">Июнь</option>
                     </select>
                   </div>
                   <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
                   <label class="сheckbox__label" for="10">С пушкинской картой</label>
                 </div>
-                <div class="main-events__news"><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                <div class="events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_5.png" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                    </div></a><a class="main-news-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                    <div class="main-news-card__container">
-                      <div class="main-news-card__image-block"> <img class="main-news-card__image" src="./resources/image_5.png" alt="Изображения"/>
-                        <div class="main-news-card__tags">
-                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event"><span class="button_span">Кино</span>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                    </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+                    <div class="news-main-card__container">
+                      <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
+                        <div class="news-main-card__tags">
+                          <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span>
                           </button>
                         </div>
                       </div>
-                      <div class="main-news-card__content"> <span class="main-news-card__date">10 июня 2023</span><span class="main-news-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
+                      <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
                     </div></a>
                 </div>
-                <div class="main-events__navigation">
+                <div class="events__navigation">
                   <div class="navigation"> <a class="navigation__link">
                       <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
                     <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">7</span></div><a class="navigation__link">
                       <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+                  </div>
+                </div>
+                <div class="events__slider">
+                  <div class="slider"><a class="slider__link slider__events-prev">
+                      <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__events-next">
+                      <ion-icon name="arrow-forward-outline"> </ion-icon></a>
                   </div>
                 </div>
               </div>
@@ -536,19 +725,23 @@
           </div>
         </div>
       </div>
-      <div class="main-people-care"> 
+      <div class="people-care"> 
         <div class="main-title">
           <div class="main-title__container">
             <h1 class="main-title__title">С заботой о жителях</h1>
+            <div class="slider"><a class="slider__link slider__people-care-prev">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__people-care-next">
+                <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+            </div>
           </div>
         </div>
-        <div class="main-people-care__container">
-          <div class="main-people-care__card-list"> 
+        <div class="people-care__container">
+          <div class="people-care__card-list"> 
             <div class="people-care-card people-care-card_bg-health"><img class="people-care-card__icon" src="./resources/hands-services.svg"/>
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
-                  <h2 class="people-care-card__title">Лицам с ограниченными возможностями здоровья</h2>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                  <h2 class="people-care-card__title">Лицам с ограниченными возможностями здоровья</h2>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
@@ -556,7 +749,7 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">Бюджет для граждан Сургута</h2>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
@@ -564,55 +757,66 @@
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
                   <h2 class="people-care-card__title">Национальные проекты</h2>
-                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" attributes="{}"><span class="button_span">Подробнее</span>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+                  <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+              </div>
+            </div>
+            <div class="people-care-card people-care-card_bg-projects"><img class="people-care-card__icon" src="./resources/people_icon-services.svg"/>
+              <div class="people-care-card__container">
+                <div class="people-care-card__text-block">
+                  <h2 class="people-care-card__title">Национальные проекты</h2>
+                </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
                   <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
               </div>
             </div>
           </div>
           <div class="people-care__slider">
-            <div class="slider"><a class="slider__link">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link">
-                <ion-icon name="arrow-forward-outline"> </ion-icon></a></div>
+            <div class="slider"><a class="slider__link slider__people-care-prev">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__people-care-next">
+                <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="full-width-container">
-        <div class="full-width-background">
-          <div class="full-width-content">                          
-            <div class="main-services"> 
-              <div class="main-title">
-                <div class="main-title__container">
-                  <h1 class="main-title__title">Полезные сервисы для вас</h1>
-                </div>
-              </div>
-              <div class="main-services__container">
-                <div class="main-services__search">
-                  <div class="main-services__search-content">
-                    <h3 class="main-services__label">Поиск законопроектов</h3>
-                    <form class="search search-main-services">
-                      <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="laws" value=""/>
-                      <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1">
-                        <ion-icon class="icon" name="search-outline"></ion-icon>
-                      </button>
-                    </form>
-                  </div>
-                  <div class="main-services__search-content">       
-                    <h3 class="main-services__label">Поиск правовых актов        </h3>
-                    <form class="search search-main-services">
-                      <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="acts" value=""/>
-                      <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1">
-                        <ion-icon class="icon" name="search-outline"></ion-icon>
-                      </button>
-                    </form>
+      <div class="services">
+        <div class="full-width-container">
+          <div class="full-width-background">
+            <div class="full-width-content">
+              <div class="services__content">                                         
+                <div class="main-title">
+                  <div class="main-title__container">
+                    <h1 class="main-title__title">Полезные сервисы для вас</h1>
                   </div>
                 </div>
-                <div class="main-services__buttons">
-                  <h3 class="main-services__buttons-title">Связаться</h3>
-                  <div class="main-services__buttons-container">
-                    <button class="button button_blue main-services__button button_size_l   " onclick="getValues()"><span class="button_span">Электронное обращение</span>
-                    </button>
-                    <button class="button button_blue main-services__button button_size_l   " onclick="getValues()"><span class="button_span">Личный прием</span>
-                    </button>
+                <div class="services__container">
+                  <div class="services__search">
+                    <div class="services__search-content">
+                      <h3 class="services__label">Поиск законопроектов</h3>
+                      <form class="search search-services">
+                        <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="laws" value=""/>
+                        <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
+                          <ion-icon class="icon" name="search-outline"></ion-icon>
+                        </button>
+                      </form>
+                    </div>
+                    <div class="services__search-content">       
+                      <h3 class="services__label">Поиск правовых актов        </h3>
+                      <form class="search search-services">
+                        <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="acts" value=""/>
+                        <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
+                          <ion-icon class="icon" name="search-outline"></ion-icon>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="services__buttons">
+                    <h3 class="services__buttons-title">Связаться</h3>
+                    <div class="services__buttons-container">
+                      <button class="button button_blue services__button button_size_l   " onclick="console.log(1);" title=""><span class="button_span">Электронное обращение</span>
+                      </button>
+                      <button class="button button_blue services__button button_size_l   " onclick="console.log(1);" title=""><span class="button_span">Личный прием</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -626,80 +830,112 @@
             <h1 class="main-title__title">Самое важное</h1>
           </div>
         </div>
-        <div class="important-links__container"><a class="important-link" href="/"><img class="important-link__icon" src="/local/templates/surgut/icons/circle_icon_main.svg" alt="Иконка"/><span class="important-link__title">Лицам с ограниченными возможностями </span></a><a class="important-link" href="/"><img class="important-link__icon" src="/local/templates/surgut/icons/arrow-in-cub_icon_main.svg" alt="Иконка"/><span class="important-link__title">Афиша на Культуре.РФ </span></a><a class="important-link" href="/"><img class="important-link__icon" src="/local/templates/surgut/icons/arrow-in-cub_icon_main.svg" alt="Иконка"/><span class="important-link__title">Инициативые проекты </span></a><a class="important-link" href="/"><img class="important-link__icon" src="/local/templates/surgut/icons/arrow-in-cub_icon_main.svg" alt="Иконка"/><span class="important-link__title">Бюджет для граждан Сургута </span></a><a class="important-link" href="/"><img class="important-link__icon" src="/local/templates/surgut/icons/circle_icon_main.svg" alt="Иконка"/><span class="important-link__title">Налоговая политика </span></a><a class="important-link" href="/"><img class="important-link__icon" src="/local/templates/surgut/icons/arrow-in-cub_icon_main.svg" alt="Иконка"/><span class="important-link__title">Национальные проекты </span></a>
+        <div class="important-links__container"><a class="important-link" href="/">
+            <div class="important-link__container"><img class="important-link__icon" src="/local/templates/surgut/icons/circle_icon_main.svg" alt="Иконка"/><span class="important-link__title">Лицам с ограниченными возможностями </span>
+            </div></a><a class="important-link" href="/">
+            <div class="important-link__container"><img class="important-link__icon" src="/local/templates/surgut/icons/arrow-in-cub_icon_main.svg" alt="Иконка"/><span class="important-link__title">Афиша на Культуре.РФ </span>
+            </div></a><a class="important-link" href="/">
+            <div class="important-link__container"><img class="important-link__icon" src="/local/templates/surgut/icons/arrow-in-cub_icon_main.svg" alt="Иконка"/><span class="important-link__title">Инициативые проекты </span>
+            </div></a><a class="important-link" href="/">
+            <div class="important-link__container"><img class="important-link__icon" src="/local/templates/surgut/icons/arrow-in-cub_icon_main.svg" alt="Иконка"/><span class="important-link__title">Бюджет для граждан Сургута </span>
+            </div></a><a class="important-link" href="/">
+            <div class="important-link__container"><img class="important-link__icon" src="/local/templates/surgut/icons/circle_icon_main.svg" alt="Иконка"/><span class="important-link__title">Налоговая политика </span>
+            </div></a><a class="important-link" href="/">
+            <div class="important-link__container"><img class="important-link__icon" src="/local/templates/surgut/icons/arrow-in-cub_icon_main.svg" alt="Иконка"/><span class="important-link__title">Национальные проекты </span>
+            </div></a>
         </div>
-        <div class="usefull-links__navigation">
+        <div class="important-links__navigation">
           <div class="navigation"> <a class="navigation__link">
               <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
             <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">7</span></div><a class="navigation__link">
               <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
           </div>
         </div>
-      </div>
-      <div class="main-title">
-        <div class="main-title__container">
-          <h1 class="main-title__title">Помогите городу стать лучше</h1><a class="main-title__link" href="/">Все опросы</a>
-        </div>
-      </div>
-      <div class="help-city__tabs">
-        <div class="tabs">
-          <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочее">Прочее</a>
+        <div class="important-links__slider">           
+          <div class="slider"><a class="slider__link slider__important-links-prev">
+              <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__important-links-next">
+              <ion-icon name="arrow-forward-outline"> </ion-icon></a>
           </div>
-          <div class="slider"><a class="slider__link">
-              <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link">
-              <ion-icon name="arrow-forward-outline"> </ion-icon></a></div>
         </div>
       </div>
-      <div class="main-help-city"> 
-        <div class="main-help-city__content"> 
+      <div class="help-city"> 
+        <div class="main-title">
+          <div class="main-title__container">
+            <h1 class="main-title__title">Помогите городу стать лучше</h1><a class="main-title__link" href="/">Все опросы</a>
+          </div>
+        </div>
+        <div class="help-city__tabs">
+          <div class="tabs">
+            <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочее">Прочее</a>
+            </div>
+            <div class="slider"><a class="slider__link slider__help-city-prev">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__help-city-next">
+                <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="help-city__content"> 
           <div class="main-project-card">
             <div class="main-project-card__content">
               <div class="main-project-card__info"> 
-                <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
+                <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
                 </div>
                 <div class="main-project-card__description"> 
                   <h3 class="main-project-card__title" title="Уровень благоустройства города">Уровень благоустройства города</h3>
                   <p class="main-project-card__text">Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры </p>
                 </div>
                 <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
-              </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+              </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Участвовать</span>
                 <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
             </div>
           </div>
           <div class="main-project-card">
             <div class="main-project-card__content">
               <div class="main-project-card__info"> 
-                <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
+                <div class="main-project-card__dates"> <a class="button button_link button_green button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">Идет</span></a><span class="main-project-card__date">до 29 сентября</span>
                 </div>
                 <div class="main-project-card__description"> 
                   <h3 class="main-project-card__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
                   <p class="main-project-card__text">Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг</p>
                 </div>
                 <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
-              </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+              </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Участвовать</span>
                 <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
             </div>
           </div>
           <div class="main-project-card">
             <div class="main-project-card__content">
               <div class="main-project-card__info"> 
-                <div class="main-project-card__dates"> <a class="button button_link button_red button_radius button_size_xs  " href="/" attributes="{}"><span class="button_span">Завершен</span></a><span class="main-project-card__date">до 29 сентября</span>
+                <div class="main-project-card__dates"> <a class="button button_link button_red button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">Завершен</span></a><span class="main-project-card__date">до 29 сентября</span>
                 </div>
                 <div class="main-project-card__description"> 
                   <h3 class="main-project-card__title" title="Работа местных властей и общественные инициативы">Работа местных властей и общественные инициативы</h3>
                   <p class="main-project-card__text">Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры </p>
                 </div>
                 <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
-              </div><a class="button button_link button_blue button_size_m  " href="/" attributes="{}"><span class="button_span">Участвовать</span>
+              </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Участвовать</span>
+                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="main-project-card">
+            <div class="main-project-card__content">
+              <div class="main-project-card__info"> 
+                <div class="main-project-card__dates"> <a class="button button_link button_red button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">Завершен</span></a><span class="main-project-card__date">до 29 сентября</span>
+                </div>
+                <div class="main-project-card__description"> 
+                  <h3 class="main-project-card__title" title="Работа местных властей и общественные инициативы">Работа местных властей и общественные инициативы</h3>
+                  <p class="main-project-card__text">Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры </p>
+                </div>
+                <div class="main-project-card__infos"> <span class="main-project-card__votes">319 голосов</span><span class="main-project-card__user-status">Вы участвовали</span></div>
+              </div><a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Участвовать</span>
                 <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
             </div>
           </div>
         </div>
         <div class="help-city__navigation"> 
-          <div class="navigation"> <a class="navigation__link">
-              <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
-            <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">2</span></div><a class="navigation__link">
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+          <div class="slider"><a class="slider__link slider__help-city-prev">
+              <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__help-city-next">
+              <ion-icon name="arrow-forward-outline"> </ion-icon></a>
           </div>
         </div>
       </div>
@@ -707,12 +943,19 @@
         <div class="main-title">
           <div class="main-title__container">
             <h1 class="main-title__title">Важная информация для жителей</h1>
-            <div class="slider"><a class="slider__link">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><a class="slider__link">
-                <ion-icon name="arrow-forward-outline"> </ion-icon></a></div>
+            <div class="slider"><a class="slider__link slider__important-inf-prev">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__important-inf-next">
+                <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+            </div>
           </div>
         </div>
         <div class="important-inf__container"><img class="important-inf__banner" src="/local/templates/surgut/img/banner.png" alt="Баннер"/><img class="important-inf__banner" src="/local/templates/surgut/img/banner.png" alt="Баннер"/><img class="important-inf__banner" src="/local/templates/surgut/img/banner.png" alt="Баннер"/></div>
+        <div class="important-inf__slider"> 
+          <div class="slider"><a class="slider__link slider__important-inf-prev">
+              <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__important-inf-next">
+              <ion-icon name="arrow-forward-outline"> </ion-icon></a>
+          </div>
+        </div>
       </div>
       <div class="usefull-links">
         <div class="main-title">
@@ -721,14 +964,30 @@
           </div>
         </div>
         <div class="usefull-links__container"><a class="usefull-link" href="/">
-            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Оплата ЖКХ услуг  </span></a><a class="usefull-link" href="/">
-            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Виртуальная приемная </span></a><a class="usefull-link" href="/">
-            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Пособия и налоги </span></a><a class="usefull-link" href="/">
-            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Расписание общественного транспорта </span></a><a class="usefull-link" href="/">
-            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Выплаты пенсионерам </span></a><a class="usefull-link" href="/">
-            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Запись на публичные слушания </span></a><a class="usefull-link" href="/">
-            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Социальные услуги </span></a><a class="usefull-link" href="/">
-            <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Работа в России </span></a>
+            <div class="usefull-link__container">
+              <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Оплата ЖКХ услуг  </span>
+            </div></a><a class="usefull-link" href="/">
+            <div class="usefull-link__container">
+              <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Виртуальная приемная </span>
+            </div></a><a class="usefull-link" href="/">
+            <div class="usefull-link__container">
+              <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Пособия и налоги </span>
+            </div></a><a class="usefull-link" href="/">
+            <div class="usefull-link__container">
+              <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Расписание общественного транспорта </span>
+            </div></a><a class="usefull-link" href="/">
+            <div class="usefull-link__container">
+              <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Выплаты пенсионерам </span>
+            </div></a><a class="usefull-link" href="/">
+            <div class="usefull-link__container">
+              <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Запись на публичные слушания </span>
+            </div></a><a class="usefull-link" href="/">
+            <div class="usefull-link__container">
+              <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Социальные услуги </span>
+            </div></a><a class="usefull-link" href="/">
+            <div class="usefull-link__container">
+              <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Работа в России </span>
+            </div></a>
         </div>
       </div>
     </main>
@@ -767,9 +1026,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./js/lib/ionicons/ionicons.esm.js"></script>
+    <script nomodule="nomodule" src="./js/lib/ionicons/ionicons.js"></script>
   </body>
 </html>

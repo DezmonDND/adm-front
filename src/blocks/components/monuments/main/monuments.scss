@@ -2,10 +2,12 @@
 
 .monuments-elem {
     margin-top: 24px;
+
     @include respond-to(md) {
         margin-top: 8px;
     }
 }
+
 .monuments-elem__container {
     display: flex;
     gap: 40px;
@@ -15,6 +17,7 @@
     @include respond-to(md) {
         gap: 20px;
     }
+
     @include respond-to(sm) {
         flex-direction: column;
         padding: 20px 0px;
@@ -29,6 +32,7 @@
     border-radius: 12px;
     height: 100%;
     max-height: 200px;
+
     @include respond-to(sm) {
         max-width: unset;
     }
@@ -39,6 +43,7 @@
     flex-direction: column;
     gap: 24px;
     width: 100%;
+
     @include respond-to(md) {
         gap: 16px;
     }
@@ -48,14 +53,15 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
+
     @include respond-to(sm) {
         flex-direction: column;
     }
-
 }
 
 .monuments-elem__descr div {
     width: 50%;
+
     @include respond-to(sm) {
         width: 100%;
     }
@@ -67,22 +73,26 @@
     gap: 8px;
 }
 
-.monuments-elem__addr, .monuments-elem__author {
+.monuments-elem__addr,
+.monuments-elem__author {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-
-.monuments-elem span, .monuments-elem__addr  span, .monuments-elem__author span{
+.monuments-elem span,
+.monuments-elem__addr span,
+.monuments-elem__author span {
     @include caption-3();
 }
 
-.monuments-elem__date span:first-child, .monuments-elem__addr  span:first-child, .monuments-elem__author  span:first-child{
+.monuments-elem__date span:first-child,
+.monuments-elem__addr span:first-child,
+.monuments-elem__author span:first-child {
     color: $tertiary-text;
 }
 
-.monuments-elem__title span{
+.monuments-elem__title span {
     font-weight: 600;
     @include heading-h4();
 }

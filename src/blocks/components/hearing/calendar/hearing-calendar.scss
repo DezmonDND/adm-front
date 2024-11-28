@@ -1,0 +1,221 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.hearing-calendar {
+    background-color: $cards-background;
+    padding: 32px;
+    border-radius: 12px;
+    position: relative;
+
+    .fc-toolbar-chunk {
+        &:last-of-type {
+            .fc-button-group {
+                background-color: $cards-background;
+
+                .fc-button-primary {
+                    font-size: 24px;
+                    padding: 0;
+
+                    &_active {
+                        border: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .fc-button-group {
+        background-color: $event-color;
+        padding: 4px;
+        border-radius: 8px;
+        gap: 2px;
+
+
+
+        .fc-button-primary {
+            border-radius: 8px;
+            padding: 9px 16px;
+            border: none;
+            color: $main-text;
+            background-color: $event-color;
+            @include caption-3;
+        }
+
+        .fc-prev-button,
+        .fc-next-button {
+            color: $primary-color;
+            background-color: $cards-background;
+        }
+    }
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+    border-radius: 8px;
+    padding: 9px 16px;
+    border: none;
+    color: $main-text;
+    background-color: $content-color;
+    box-shadow: unset !important;
+    @include caption-3;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: none;
+}
+
+.fc .fc-col-header-cell-cushion {
+    padding: 20px 0;
+    color: $tertiary-text;
+    @include lead-6;
+}
+
+.fc-dayGridMonth-view {
+    background-color: $content-color;
+    border-radius: 20px;
+    padding: 12px 20px;
+}
+
+.fc .fc-daygrid-day-number {
+    color: $fourth-text;
+    @include tags-label;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: $content-color;
+
+    .fc-daygrid-day-number {
+        background-color: $primary-color;
+        color: $content-color;
+        border-radius: 50%;
+    }
+}
+
+.fc-event-time {
+    font-weight: 400 !important;
+    @include caption-4;
+}
+
+.fc-event-title {
+    font-weight: 600 !important;
+    text-overflow: ellipsis;
+    @include caption-4;
+}
+
+.fc-timegrid-event .fc-event-time {
+    @include caption-4;
+}
+
+.fc-timegrid-event-short .fc-event-title {
+    @include caption-4;
+}
+
+.fc-scroller {
+    scrollbar-width: none;
+}
+
+.fc-daygrid-event-dot {
+    border: calc(var(--fc-daygrid-event-dot-width)/4) solid $primary-color;
+}
+
+.fc-daygrid-day-events {
+    padding-right: 4px;
+}
+
+.fc-day-today {
+    background-color: $primary-color;
+    border-radius: 100px;
+
+    .fc-col-header-cell-cushion {
+        color: $content-color;
+    }
+}
+
+.fc .fc-timegrid-col.fc-day-today {
+    background-color: $content-color;
+}
+
+.fc-timeGridWeek-view.fc-view.fc-timegrid {
+    background-color: $content-color;
+    padding: 12px 20px;
+    border-radius: 20px;
+
+    .fc-col-header-cell-cushion {
+        padding: 10px 0;
+    }
+
+    .fc-event {
+        color: $main-text;
+        border: none;
+        background-color: $content-color;
+
+        .fc-event-main-frame {
+            color: $main-text;
+            @include caption-4;
+
+            .fc-event-title-container {
+                overflow: hidden;
+                text-wrap: nowrap;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+            }
+        }
+    }
+}
+
+.fc .fc-timegrid-slot-minor {
+    border-color: transparent;
+}
+
+.fc-col-header-cell {
+    border-color: transparent !important;
+}
+
+.fc-theme-standard th {
+    border-color: transparent;
+}
+
+.hearing-calendar__select {
+    border-radius: 4px;
+    border-color: transparent;
+    scrollbar-width: none;
+    background-color: $content-color;
+    cursor: pointer;
+}
+
+.fc-view-harness {
+    @include respond-to(md) {
+
+        height: 350px !important;
+    }
+}
+
+.fc-popover {
+    border-radius: inherit;
+}
+
+.hearing-calendar__container {
+    @include respond-to(sm) {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .hearing-calendar {
+        @include respond-to(sm) {
+            width: 720px;
+        }
+    }
+}
+
+.fc-timegrid-event {
+    margin-bottom: 2px;
+}
+
+.fc-toolbar-title {
+    padding: 0;
+    
+}
+
+.fc .fc-toolbar-title {
+    @include heading-h3;
+}

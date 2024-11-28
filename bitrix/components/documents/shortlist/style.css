@@ -1,13 +1,17 @@
-/*** Finish - Title ***/
 .short-filelist .file-line {
   text-decoration: none;
-  padding: 19px 20px;
   display: flex;
   gap: 12px;
   align-items: center;
   background-color: var(--grey-adm);
   border-radius: 8px;
   margin-bottom: 12px;
+  padding: 20px;
+}
+@media (max-width: 992px) {
+  .short-filelist .file-line {
+    padding: 16px;
+  }
 }
 .short-filelist .file-line .file-line-icon {
   width: 20px;
@@ -37,11 +41,6 @@
 }
 .short-filelist .file-line:hover {
   background: var(--services-hover);
-}
-@media (max-width: 992px) {
-  .short-filelist .file-line {
-    padding: 13px 16px;
-  }
 }
 
 body.tmp-duma .short-filelist ion-icon {

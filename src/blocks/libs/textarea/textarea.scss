@@ -1,9 +1,5 @@
 @use '../../../assets/styles/vars.scss' as *;
 
-$desk-text3: 16px;
-$desk-text3-lh: 24px;
-
-
 .textarea__container {
     box-sizing: border-box;
     width: 100%;
@@ -16,58 +12,35 @@ $desk-text3-lh: 24px;
         height: 200px;
         padding: 20px 16px;
         border-radius: 8px;
-        font-size: $desk-text3;
-        line-height: $desk-text3-lh;
         border: 1px solid $input-color-default;
         outline: none;
         resize: none;
-        cursor: pointer;
+        @include caption-2;
 
         &:hover {
-            border-color: #858C9C;
+            border-color: $input-color-hover;
         }
 
-
         &:focus {
-            border: 1px solid #78A4F4;
+            border: 1px solid $input-color-focus;
         }
 
         &::placeholder {
             color: $tertiary-text;
         }
-    }
 
-    .textarea-m {
-        max-width: 520px;
+        @include respond-to(md) {
+            padding: 15px 16px;
+        }
     }
 
     .counter {
         display: flex;
         gap: 2px;
-        font-size: $desk-text3;
-        line-height: $desk-text3-lh;
         color: $tertiary-text;
         position: absolute;
         bottom: 8px;
         right: 8px;
-        font-size: 13px;
-        line-height: 18px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .textarea__container {
-        margin: 14px 0 7px;
-
-        .textarea {
-            font-size: 12px;
-            line-height: 18px;
-            padding: 15px 16px;
-        }
-
-        .counter {
-            font-size: 10px;
-            line-height: 16px;
-        }
+        @include lead-6;
     }
 }

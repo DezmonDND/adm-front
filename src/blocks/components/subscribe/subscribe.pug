@@ -1,0 +1,126 @@
+mixin subscribe()
+    .subscribe 
+        .subscribe__subtitle
+            +fieldset(
+            {
+                type: 'checkbox',
+                title: 'На какие темы вы хотите подписаться?', 
+                checkboxes: [
+                    { 
+                        id: 1, 
+                        label: 'Название темы',
+                        sort: 'checkbox',
+                    },
+                    { 
+                        id: 2,
+                        label: 'Название темы',
+                        sort: 'checkbox',
+                    },
+                    { 
+                        id: 3, 
+                        label: 'Название темы',
+                        sort: 'checkbox', 
+                    },
+                    ],
+            })
+        .subscribe__title 
+            span Введите вашу электронную почту
+        .subscribe__lineform
+            +input({placeholder: 'Электронная почта'})
+            +button({ type: 'button', size: 'l', class: 'button_blue', icon: 'arrow-forward-outline', text: `Подписаться` })  
+            
+        .subscribe__agree
+            .subscribe__title 
+                span Подтверждение подписки
+            .subscribe__subtitle 
+                span Если вы еще не получили письмо с кодом подтверждения, вы можете повторно 
+                    a(href="#") запросить код
+            .subscribe__lineform
+                +input({placeholder: 'Введите код подтверждения подписки'})
+                +button({ type: 'button', size: 'l', class: 'button_blue', icon: 'checkmark-done-outline', text: `Подтвердить` })  
+            .subscribe__subtitle
+                span Дата генерации кода подтверждения: 26.11.2024 15:40:36
+        
+        .subscribe__title 
+            span Настройки подписки
+        .subscribe__subtitle 
+            span После добавления или изменения адреса подписки вам будет выслан код подтверждения.
+            span Подписка будет не активной до ввода кода подтверждения.
+        .subscribe__fields
+            .subscribe__field
+                +fieldset(
+                    {
+                        type: 'checkbox',
+                        title: 'На какие темы вы хотите подписаться?', 
+                        checkboxes: [
+                            { 
+                                id: 1, 
+                                label: 'Название темы',
+                                sort: 'checkbox',
+                            },
+                            { 
+                                id: 2,
+                                label: 'Название темы',
+                                sort: 'checkbox',
+                            },
+                            { 
+                                id: 3, 
+                                label: 'Название темы',
+                                sort: 'checkbox', 
+                            },
+                            ],
+                    })
+            .subscribe__field
+                +fieldset(
+                    {
+                        type: 'radio',
+                        title: 'Предпочтительный формат', 
+                        checkboxes: [
+                            { 
+                                id: 1, 
+                                label: 'Текст',
+                                sort: 'checkbox',
+                            },
+                            { 
+                                id: 2,
+                                label: 'HTML',
+                                sort: 'checkbox',
+                            }
+                            ],
+                    })
+        .subscribe__field__heading Ваш E-mail
+        .subscribe__lineform
+            +input({placeholder: 'Электронная почта'})
+            +button({ type: 'button', size: 'l', class: 'button_blue', text: `Применить` })  
+        hr
+        .subscribe__title 
+            span Состояние подписки
+        .subscribe__subtitle 
+            span Подписка подтверждена:	Да
+            span Подписка активна:	Да
+            span Идентификатор подписки:	1 
+            span Дата добавления:	26.11.2024 14:32:47 
+            span Дата модификации:	26.11.2024 15:21:28 
+            span Дата модификации:	26.11.2024 15:21:28 
+        
+        hr
+        .subscribe__title 
+            span Отмена подписки
+        .subscribe__subtitle 
+            span Ваша подписка подтверждена и активна
+            span Если вы хотите отписаться от рассылок, нажмите на кнопку Отписаться.
+        +button({ type: 'button', size: 'l', class: 'button button_red', text: `Отписаться` })  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 48px 0 48px;
 
-    @media (max-width: 1000px) {
+    @include respond-to(md) {
         padding: 20px 0 20px;
     }
 
@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 10px;
 
         .main-title__title {
             @include heading-h1;

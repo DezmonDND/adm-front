@@ -58,21 +58,21 @@
   <fieldset class="fieldset">
     <h3 class="fieldset__title reception__sender_title">Кому направляете электронную анкету</h3>
     <div class="fieldset__answers">
-      <div class="ms">
-        <ul class="ms__chose">
+      <div class="multi-select">
+        <ul class="multi-select__chose">
           <li>
-            <input class="input ms__input" id="name" name="multiSelect" value="" type="text"/>
+            <input class="input multi-select__input" id="name" name="multiSelect" value="" type="text"/>
           </li>
         </ul>
-        <ul class="ms__dropdown ms__dropdown_hidden" id="multiSelectDropdown">
-          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
-          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
-          <li class="ms__dropdown-item ms__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
+        <ul class="multi-select__dropdown multi-select__dropdown_hidden" id="multiSelectDropdown">
+          <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
+          <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
+          <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
         </ul>
       </div>
     </div>
   </fieldset>
-  <button class="button button_blue button_size_l   " onclick="getValues(event)"><span class="button_span">Отправить форму</span>
+  <button class="button button_blue interview-form__button button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить форму</span>
     <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
   </button>
 </form>

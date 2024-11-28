@@ -1,37 +1,33 @@
-.main-people-care {
-    padding: 0 0 48px;
+@use '../../../../assets/styles/vars.scss' as *;
 
-    @media (max-width: 1000px) {
-        padding: 0 0 20px;
+.people-care {
+    @include main-blocks-paddings;
+
+    .main-title {
+        .main-title__container {
+            .slider {
+                @include respond-to(md) {
+                    display: none;
+                }
+            }
+        }
     }
 
-    .main-people-care__container {
-        .main-people-care__card-list {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: repeat(3, calc((100% - 48px)/3));
-            gap: 24px;
+    .people-care__container {
+        .slick-slide {
+            height: 320px;
 
-            @media (max-width: 1000px) {
-                gap: 8px;
-                grid-template-columns: repeat(3, calc((100% - 16px)/3));
+            @include respond-to(md) {
+                height: 214px;
             }
 
-            @media (max-width: 600px) {
-                grid-template-columns: repeat(3, 250px);
-                overflow-y: scroll;
-                scrollbar-width: none;
+            @include respond-to(sm) {
+                height: 250px;
             }
         }
 
         .people-care__slider {
-            display: none;
-
-            @media (max-width: 1000px) {
-                display: flex;
-                justify-content: center;
-                padding-top: 24px;
-            }
+            @include main-slider;
         }
     }
 }

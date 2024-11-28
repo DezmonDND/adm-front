@@ -1,0 +1,74 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.news-top-link {
+    display: flex;
+    background-color: $cards-background;
+    border-radius: 12px;
+    text-decoration: none;
+    color: $main-text;
+    min-width: 420px;
+    width: 100%;
+    box-sizing: border-box;
+    @include content-paddings;
+
+    &:hover {
+        background-color: $services-hover;
+    }
+
+    &:active {
+        background-color: $services-active;
+    }
+
+    @include respond-to(md) {
+        min-width: 360px;
+
+        &:nth-child(n+3) {
+            display: none;
+        }
+    }
+
+    @include respond-to(sm) {
+        &:nth-child(3n) {
+            display: block;
+        }
+
+        max-width: none;
+        min-width: auto;
+    }
+
+    .news-top-link__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+        @include respond-to(md) {
+            gap: 12px;
+        }
+
+        .news-top-link__content {
+            display: flex;
+            gap: 20px;
+
+            .news-top-link__title {
+                width: calc(100% - 44px);
+                @include visible-lines(3);
+                @include heading-h5;
+            }
+
+            .news-top-link__icon {
+                font-size: 24px;
+                color: $primary-color;
+            }
+
+            .dm-news-top-link__icon {
+                color: $primary-color-green;
+            }
+        }
+
+        .news-top-link__date {
+            color: $tertiary-text;
+            @include caption-3;
+        }
+    }
+}

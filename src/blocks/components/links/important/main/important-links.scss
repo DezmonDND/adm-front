@@ -9,53 +9,46 @@ body.tmp-duma .important-links .main-title .main-title__container {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 15px;
+        gap: 16px;
     }
 }
 
 .important-links {
-    margin-bottom: 20px;
+    @include main-blocks-paddings;
 
-    @media (max-width: 1000px) {
-        margin-bottom: 0;
-    }
-
-    .usefull-links__navigation {
+    .important-links__navigation {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 20px 0 20px;
+
+        @include respond-to(md) {
+            display: none;
+        }
+    }
+
+    .important-links__slider {
+        @include main-slider;
     }
 
     .important-links__container {
         display: grid;
-        grid-template-columns: repeat(3, 32%);
-        gap: 24px;
-        padding: 0 0 31px;
+        grid-template-columns: repeat(3, calc((100% - 48px)/3));
         justify-content: center;
-        margin-top: 4px;
+        gap: 24px;
 
-        @media (max-width: 1000px) {
-            gap: 8px;
-            margin-top: 3px;
-            padding-bottom: 0;
-        }
-
-        @media (max-width: 600px) {
-            overflow-x: scroll;
-            scrollbar-width: none;
-            grid-template-columns: repeat(2, 250px);
+        @include respond-to(md) {
+            display: block;
         }
 
         .important-link {
+            box-sizing: border-box;
             background-color: $cards-background;
             border-radius: 20px;
             text-decoration: none;
             color: $main-text;
-            padding: 20px;
-            display: flex;
-            gap: 20px;
             align-items: center;
+            min-height: 88px;
+            @include content-paddings;
 
             &:hover {
                 color: $primary-color-hover;
@@ -65,38 +58,33 @@ body.tmp-duma .important-links .main-title .main-title__container {
                 color: $primary-color-active;
             }
 
-            @media (max-width: 1000px) {
+            @include respond-to(md) {
                 border-radius: 8px;
-                padding: 14px 16px;
-
-                &:nth-child(n+4) {
-                    display: none;
-                }
+                margin-right: 8px;
+                min-height: 64px;
             }
 
-            @media (max-width: 600px) {
-                border-radius: 8px;
-                padding: 16px 20px;
+            .important-link__container {
+                display: flex;
+                align-items: center;
+                gap: 20px;
 
-                &:nth-child(n+3) {
-                    display: none;
+                .important-link__icon {
+                    width: 56px;
+                    height: 56px;
+                    object-fit: cover;
+                    object-position: center;
+
+                    @include respond-to(md) {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
-            }
 
-            .important-link__icon {
-                width: 56px;
-                height: 56px;
-                object-fit: cover;
-                object-position: center;
-
-                @media (max-width: 1000px) {
-                    width: 24px;
-                    height: 24px;
+                .important-link__title {
+                    @include visible-lines(2);
+                    @include lead-4;
                 }
-            }
-
-            .important-link__title {
-                @include lead-4;
             }
         }
     }
