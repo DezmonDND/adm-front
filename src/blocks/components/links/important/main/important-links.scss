@@ -21,9 +21,6 @@ body.tmp-duma .important-links .main-title .main-title__container {
         align-items: center;
         justify-content: center;
 
-        @include respond-to(md) {
-            display: none;
-        }
     }
 
     .important-links__slider {
@@ -37,7 +34,12 @@ body.tmp-duma .important-links .main-title .main-title__container {
         gap: 24px;
 
         @include respond-to(md) {
-            display: block;
+            gap: 8px;
+        }
+
+        @include respond-to(sm) {
+            grid-template-columns: 1fr;
+            gap: 8px;
         }
 
         .important-link {

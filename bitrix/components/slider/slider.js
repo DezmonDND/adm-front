@@ -81,22 +81,7 @@ const sliders = [
             ],
         },
     },
-    // Самое важное
-    {
-        selector: '.important-links__container',
-        nextArrow: '.slider__important-links-next',
-        prevArrow: '.slider__important-links-prev',
-        options: {
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            responsive: [
-                { breakpoint: 768, settings: { slidesToShow: 2 } },
-                { breakpoint: 500, settings: { slidesToShow: 1 } },
-            ],
-        },
-    },
+    
     // Помогите городу стать лучше
     {
         selector: '.help-city__content',
@@ -195,7 +180,7 @@ let slidersInitialized = true;
 const slidersToManage = sliders.filter(
     (slider) =>
         slider.selector === '.news-main__card-list' ||
-        slider.selector === '.important-links__container',
+        slider.selector === '.events__news'
 );
 
 $(window)
