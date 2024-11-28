@@ -48,51 +48,53 @@ const EVENTS = [
 
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('hearing-calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        locale: 'ru',
-        firstDay: 1,
-        headerToolbar: {
-            left: 'timeGridWeek,dayGridMonth',
-            center: 'title',
-            right: 'prev,next',
-        },
-        buttonText: {
-            month: 'Месяц',
-            week: 'Неделя',
-        },
-        moreLinkContent: function (arg) {
-            return `+${arg.num} еще `;
-        },
-        slotLabelFormat: [
-            {
-                hour: 'numeric',
-                minute: '2-digit',
-                omitZeroMinute: false,
-                meridiem: 'short',
+    if (calendarEl) {
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            locale: 'ru',
+            firstDay: 1,
+            headerToolbar: {
+                left: 'timeGridWeek,dayGridMonth',
+                center: 'title',
+                right: 'prev,next',
             },
-        ],
-        allDaySlot: false,
-        contentHeight: 600,
-        dayMaxEvents: true,
-        editable: true,
-        selectable: true,
-        dayMaxEvents: true,
-        events: EVENTS,
-        displayEventEnd: false,
-        eventClick: function (info) {
-            openHearingEventPopup(info.event);
-        },
-        views: {
-            timeGridWeek: {
-                slotDuration: '00:30:00',
+            buttonText: {
+                month: 'Месяц',
+                week: 'Неделя',
             },
-        },
-        // datesSet(dateInfo) {
-        //     AddMySelectToFullCalendar();
-        // },
-    });
-    calendar.render();
+            moreLinkContent: function (arg) {
+                return `+${arg.num} еще `;
+            },
+            slotLabelFormat: [
+                {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    omitZeroMinute: false,
+                    meridiem: 'short',
+                },
+            ],
+            allDaySlot: false,
+            contentHeight: 600,
+            dayMaxEvents: true,
+            editable: true,
+            selectable: true,
+            dayMaxEvents: true,
+            events: EVENTS,
+            displayEventEnd: false,
+            eventClick: function (info) {
+                openHearingEventPopup(info.event);
+            },
+            views: {
+                timeGridWeek: {
+                    slotDuration: '00:30:00',
+                },
+            },
+            // datesSet(dateInfo) {
+            //     AddMySelectToFullCalendar();
+            // },
+        });
+        calendar.render();
+    }
 });
 
 // function AddMySelectToFullCalendar() {
