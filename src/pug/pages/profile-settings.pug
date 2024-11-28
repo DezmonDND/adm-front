@@ -1,0 +1,78 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Специальное событие'},
+                { sort: '', href: '/', text: 'В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй'},
+            ],
+        )
+        +user_profile({
+            icon: 'user_avatar.png',
+            name: 'Валентинов Георгий Викторович',
+            onclick: 'changeAvatar()',
+        })
+        +tabs([
+            { title: 'Настройки', href: '/' , value: 'Настройки',  isActive: true},
+            { title: 'Мои подписки', href: '/' , value: 'Мои подписки'},
+            { title: 'Мои инициативные проекты', href: '/' , value: 'Мои инициативные проекты'},
+            { title: 'Мои обращения', href: '/' , value: 'Мои обращения'},
+            ]) 
+        .profile-settings
+            .profile-settings-title
+                span ФИО
+            .profile-settings-inputs
+                +input({size: 'm', type:'text', placeholder:'Фамилия'})
+                +input({size: 'm', type:'text', placeholder:'Имя'})
+                +input({size: 'm', type:'text', placeholder:'Отчество'})
+            .profile-settings-title
+                span Почта для получения актуальной информации
+            .profile-settings-inputs
+                +input({size: 'm', type:'text', placeholder:'Электронная почта'})
+            +button({ size: 'm ', type: 'button', class: 'button_blue', event: 'someFunction()', text: 'Сохранить' })
+            hr
+            .profile-settings-title
+                span Настройте главную страницу под свои интересы
+            .profile-settings-interests 
+                .profile-settings-interest-elem
+                    .profile-settings-interest-elem-left
+                        img(src = './resources/lk1.svg')
+                        .profile-settings-interest-elem-mid
+                            .profile-settings-interest-elem-mid-title
+                                span Мне интересны новости и события, связанные с моим городом
+                            .profile-settings-interest-elem-mid-subtitle
+                                span Для вас будут отображаться только самые актуальные новости и информация, посвященные городу
+                    .profile-settings-interest-elem-right
+                        +button({ size: 'm ', type: 'button', class: 'button_blue', event: 'someFunction()', text: 'Выбрать' })
+                .profile-settings-interest-elem
+                    .profile-settings-interest-elem-left
+                        img(src = './resources/lk2.svg')
+                        .profile-settings-interest-elem-mid
+                            .profile-settings-interest-elem-mid-title
+                                span Мне интересно активное участие в жизни города
+                            .profile-settings-interest-elem-mid-subtitle
+                                span Для вас будет отображаться вся доступная информация, связанная со льготами, социальной помощью
+                    .profile-settings-interest-elem-right
+                        +button({ size: 'm ', type: 'button', class: 'button_blue', event: 'someFunction()', text: 'Выбрать' })
+                .profile-settings-interest-elem
+                    .profile-settings-interest-elem-left
+                        img(src = './resources/lk3.svg')
+                        .profile-settings-interest-elem-mid
+                            .profile-settings-interest-elem-mid-title
+                                span Мне интересны преференции от государства
+                            .profile-settings-interest-elem-mid-subtitle
+                                span Для вас будет отображаться вся доступная информация, связанная со льготами, социальной помощью
+                    .profile-settings-interest-elem-right
+                        +button({ size: 'm ', type: 'button', class: 'button_blue', event: 'someFunction()', text: 'Выбрать' })
+                .profile-settings-interest-elem
+                    .profile-settings-interest-elem-left
+                        img(src = './resources/lk4.svg')
+                        .profile-settings-interest-elem-mid
+                            .profile-settings-interest-elem-mid-title
+                                span Мне интересно все (по умолчанию)
+                            .profile-settings-interest-elem-mid-subtitle
+                                span Для вас будет отображаться вся доступная информация, включающая актуальные новости и события, полезные сервисы и ссылки, и многое другое
+                    .profile-settings-interest-elem-right
+                        +button({ size: 'm ', type: 'button', class: 'button_blue', disabled:'disabled', event: 'someFunction()', text: 'Выбрать' })

@@ -77,4 +77,18 @@
             gap: 16px;
         }
     }
+
+    .fieldset__title-remove {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .fieldset__title-remove-btn {
+        margin: 24px 0 0;
+        background-color: $grey-adm;
+        border-radius: 50%;
+        padding: 4px;
+        cursor: pointer;
+    }
 }

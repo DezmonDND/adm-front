@@ -16,6 +16,15 @@
         .projects-array__edit-buttons {
             display: flex;
             justify-content: space-between;
+
+            button {
+                @include respond-to(sm) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center
+                }
+            }
+            
         }
 
         .projects-array__list {

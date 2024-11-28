@@ -2,10 +2,8 @@
 <div class="projects-array">
   <div class="projects-array__content projects-array__content">
     <div class="projects-array__edit-buttons">
-      <button class="button button_blue button_size_m  button_icon-left " onclick="addProject()" title=""><span class="button_span">Добавить проект</span>
+      <button class="button button_blue button_size_m  button_icon-left " onclick="addProject()" title=""><span class="button_span">Добавить инициативный проект</span>
         <ion-icon class="icon" name="add-outline"></ion-icon>
-      </button>
-      <button class="button button_white button_size_m   " onclick="editProject()" title=""><span class="button_span">Редактировать</span>
       </button>
     </div>
     <div class="projects-array__list">

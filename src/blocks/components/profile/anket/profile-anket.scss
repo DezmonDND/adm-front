@@ -1,0 +1,93 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.profile-anket-main {
+    max-width: 866px;
+    width: 100% ;
+    .button_without-event {
+        pointer-events: all;
+    }
+}
+
+.profile-anket-item {
+    width: 100%;
+}
+
+.profile-anket-item-title span{
+    @include heading-h3();
+}
+
+.profile-anket-main hr {
+    width: 100%;
+}
+
+.profile-anket-item-title {
+    padding-top: 32px;
+}
+
+.profile-anket-item-subtitle  {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.profile-anket-item-subtitle span {
+    @include lead-3();
+}
+
+.profile-anket-item-with-descr .fieldset__title {
+    @include caption-2();
+}
+
+.profile-anket-draft {
+    width: 100%;
+    background-color: $grey-adm;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+
+    @include respond-to(sm) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+.profile-anket-draft-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-anket-draft-right {
+
+    .button_red:hover {
+        border: 1px solid #E80000;
+        background-color: #E80000;
+    }
+
+    .button_red:active {
+        border: 1px solid #A50505;
+        background-color: #A50505;
+    }
+
+    @include respond-to(sm) {
+        width: 100%;
+        button {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}   
+
+.profile-anket-draft-title span {
+    @include heading-h5();
+}
+
+.profile-anket-draft-subtitle {
+    @include caption-4();
+}
