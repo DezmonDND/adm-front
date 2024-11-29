@@ -65,7 +65,7 @@
 
 .header-visibility-close ion-icon {
   font-size: 28px;
-  color: #004CC4;
+  color: var(--primary-color);
 }
 
 .header-visibility-elem-right {
@@ -193,6 +193,11 @@
   justify-content: space-between;
   gap: 20px;
   display: none;
+}
+@media (max-width: 992px) {
+  .header-visibility__top-content {
+    display: none !important;
+  }
 }
 
 .header-visibility__top-links {
@@ -340,6 +345,10 @@
 
 .visibility .people-care-card {
   max-height: unset !important;
+}
+
+.visibility .slick-track {
+  display: flex;
 }
 
 .visibility .people-care-card .people-care-card__icon {
@@ -515,6 +524,10 @@
 
 .dark-theme .footer__categorie-link:hover, .blue-theme .footer__categorie-link:hover {
   color: var(--primary-color) !important;
+}
+
+.dark-theme .mobile-menu .menu .menu__container .menu__socials .header__social-icon {
+  background-color: var(--content-color);
 }
 
 .blue-theme .input {

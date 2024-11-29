@@ -10827,6 +10827,17 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   text-decoration: none;
   color: var(--main-text);
 }
+.mobile-menu .menu .menu__container .menu__bot {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.mobile-menu .menu .menu__container .menu__bot .button__login {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
 .mobile-menu .menu .menu__container .menu__socials {
   display: flex;
   align-items: center;
@@ -12564,7 +12575,7 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
 
 .header-visibility-close ion-icon {
   font-size: 28px;
-  color: #004CC4;
+  color: var(--primary-color);
 }
 
 .header-visibility-elem-right {
@@ -12692,6 +12703,11 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
   justify-content: space-between;
   gap: 20px;
   display: none;
+}
+@media (max-width: 992px) {
+  .header-visibility__top-content {
+    display: none !important;
+  }
 }
 
 .header-visibility__top-links {
@@ -12839,6 +12855,10 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
 
 .visibility .people-care-card {
   max-height: unset !important;
+}
+
+.visibility .slick-track {
+  display: flex;
 }
 
 .visibility .people-care-card .people-care-card__icon {
@@ -13014,6 +13034,10 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
 
 .dark-theme .footer__categorie-link:hover, .blue-theme .footer__categorie-link:hover {
   color: var(--primary-color) !important;
+}
+
+.dark-theme .mobile-menu .menu .menu__container .menu__socials .header__social-icon {
+  background-color: var(--content-color);
 }
 
 .blue-theme .input {
