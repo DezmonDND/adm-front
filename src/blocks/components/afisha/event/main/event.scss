@@ -71,6 +71,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
             }
 
             .event__place {
+                position: relative;
 
                 &:hover {
                     cursor: pointer;

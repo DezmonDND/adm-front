@@ -89,6 +89,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   }
 }
 .event .event__container .event__location .event__place {
+  position: relative;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;

@@ -69,7 +69,12 @@
                 <div class="event__time-block"> 
                   <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
                 </div>
-                <div class="event__location"> <span class="event__place" title="Улица Комсомольская 45 Улица Комсомольская 45 Улица Комсомольская 45">Улица Комсомольская 45 Улица Комсомольская 45 Улица Комсомольская 45</span>
+                <div class="event__location"> 
+                  <div class="event__place" title="Улица Комсомольская 45 Улица Комсомольская 45 Улица Комсомольская 45">Улица Комсомольская 45 Улица Комсомольская 45 Улица Комсомольская 45
+                    <div class="modal-title">
+                      <div class="modal-title__container"> <span class="modal-title__text">Улица Комсомольская 45 Улица Комсомольская 45 Улица Комсомольская 45</span></div>
+                    </div>
+                  </div>
                   <div class="event__icon-dot"></div><span class="event__cabinet">408 каб</span>
                 </div>
               </div>
@@ -82,7 +87,12 @@
                 <div class="event__time-block"> 
                   <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
                 </div>
-                <div class="event__location"> <span class="event__place" title="Здание №1">Здание №1</span>
+                <div class="event__location"> 
+                  <div class="event__place" title="Здание №1">Здание №1
+                    <div class="modal-title">
+                      <div class="modal-title__container"> <span class="modal-title__text">Здание №1</span></div>
+                    </div>
+                  </div>
                   <div class="event__icon-dot"></div><span class="event__cabinet">408 каб</span>
                 </div>
               </div>
@@ -95,7 +105,12 @@
                 <div class="event__time-block"> 
                   <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
                 </div>
-                <div class="event__location"> <span class="event__place" title="Здание №1">Здание №1</span>
+                <div class="event__location"> 
+                  <div class="event__place" title="Здание №1">Здание №1
+                    <div class="modal-title">
+                      <div class="modal-title__container"> <span class="modal-title__text">Здание №1</span></div>
+                    </div>
+                  </div>
                   <div class="event__icon-dot"></div><span class="event__cabinet">408 каб</span>
                 </div>
               </div>
@@ -108,7 +123,12 @@
                 <div class="event__time-block"> 
                   <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
                 </div>
-                <div class="event__location"> <span class="event__place" title="Здание №1">Здание №1</span>
+                <div class="event__location"> 
+                  <div class="event__place" title="Здание №1">Здание №1
+                    <div class="modal-title">
+                      <div class="modal-title__container"> <span class="modal-title__text">Здание №1</span></div>
+                    </div>
+                  </div>
                   <div class="event__icon-dot"></div><span class="event__cabinet">408 каб</span>
                 </div>
               </div>
@@ -121,7 +141,12 @@
                 <div class="event__time-block"> 
                   <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
                 </div>
-                <div class="event__location"> <span class="event__place" title="Здание №1">Здание №1</span>
+                <div class="event__location"> 
+                  <div class="event__place" title="Здание №1">Здание №1
+                    <div class="modal-title">
+                      <div class="modal-title__container"> <span class="modal-title__text">Здание №1</span></div>
+                    </div>
+                  </div>
                   <div class="event__icon-dot"></div><span class="event__cabinet">408 каб</span>
                 </div>
               </div>
@@ -134,7 +159,12 @@
                 <div class="event__time-block"> 
                   <ion-icon class="event__icon" name="time"></ion-icon><span class="event__time">11 : 00</span>
                 </div>
-                <div class="event__location"> <span class="event__place" title="Здание №1">Здание №1</span>
+                <div class="event__location"> 
+                  <div class="event__place" title="Здание №1">Здание №1
+                    <div class="modal-title">
+                      <div class="modal-title__container"> <span class="modal-title__text">Здание №1</span></div>
+                    </div>
+                  </div>
                   <div class="event__icon-dot"></div><span class="event__cabinet">408 каб</span>
                 </div>
               </div>

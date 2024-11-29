@@ -3,6 +3,7 @@
 @use '_variables';
 @use '../styles/vars.scss' as *;
 
+@use './bootstrap-grid.scss';
 @use '../../blocks/libs/inputs/inputs.scss';
 @use '../../blocks/libs/buttons/buttons.scss';
 @use '../../blocks//libs/links/links.scss';
@@ -17,6 +18,10 @@
 @use '../../blocks/libs/fullwidth/fullwidth.scss';
 @use '../../blocks/libs/modal/modal.scss';
 @use '../../blocks/libs/toggle/toggle.scss';
+@use '../../blocks/libs/add-file-button/add-file-button.scss';
+@use '../../blocks/libs/fieldset/fieldset.scss';
+@use '../../blocks/libs/multiselect/multi-select.scss';
+@use '../../blocks/libs/share/share.scss';
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
 @use '../../blocks/components/tabs/main/tabs.scss';
@@ -31,7 +36,6 @@
 @use '../../blocks/components/projects/project-card.scss';
 @use '../../blocks/components/projects/projects-array.scss';
 @use '../../blocks/components/title/title.scss';
-@use '../../blocks/libs/fieldset/fieldset.scss';
 @use '../../blocks/components/feedbacks/feedbacks.scss';
 @use '../../blocks/components/reception/main/reception.scss';
 @use '../../blocks/components/hearing/preview/hearing-preview.scss';
@@ -39,7 +43,6 @@
 @use '../../blocks/components/hearing/detail/hearing-detail.scss';
 @use '../../blocks/components/biography/main/biography-card/biography-card.scss';
 @use '../../blocks/components/biography/main/biography/biography.scss';
-@use '../../blocks/libs/multiselect/multi-select.scss';
 @use '../../blocks/components/title/main/main-title.scss';
 @use '../../blocks/components/services/main/services.scss';
 @use '../../blocks/components/administration/struct/adm-struct.scss';
@@ -61,7 +64,6 @@
 @use '../../blocks/components/login/main/login.scss';
 @use '../../blocks/components/projects/project-generation/project-generation.scss';
 @use '../../blocks/components/subscribe/default/subscribe.scss';
-@use './bootstrap-grid.scss';
 @use '../../blocks/components/header/services/header-services.scss';
 @use '../../blocks/components/people-care-card/main/people-care-card.scss';
 @use '../../blocks/components/people-care/main/people-care.scss';
@@ -96,7 +98,6 @@
 @use '../../blocks/components/chronicle/calendar/calendar-dm.scss';
 @use '../../blocks/components/dm-comitet/main/dm-comitet.scss';
 @use '../../blocks/components/dm-applications/main/dm-applications.scss';
-@use '../../blocks/libs/add-file-button/add-file-button.scss';
 @use '../../blocks/components/files-list/files-list.scss';
 @use '../../blocks/components/dm-struct/main/dm-struct.scss';
 @use '../../blocks/components/dm-deputies/dm-deputies-alphabet/dm-deputies-alphabet.scss';
@@ -131,7 +132,7 @@
 @use '../../blocks/components/profile/anket/profile-anket.scss';    
 @use '../../blocks/components/login/projects/login-projects.scss';
 @use '../../blocks/components/login/delete-project/delete-project.scss';
-@use '../../blocks/libs/share/share.scss';
+@use '../../blocks/components/modal-title/modal-title.scss';
 
 * {
     font-family: 'Inter', sans-serif;
