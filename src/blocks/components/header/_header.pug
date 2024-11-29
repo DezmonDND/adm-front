@@ -59,28 +59,18 @@ mixin header(sort)
                 +header-links([
                     {
                         title: 'Быстрый доступ',
-                        onclick: 'toggleSecondMenu(event)',
-                        value: 'menu-6'
                     },
                     {
                         title: 'Публичные слушания',
-                        onclick: 'toggleSecondMenu(event)',
-                        value: 'menu-7'
                     },
                     {
                         title: 'Противодействие коррупции',
-                        onclick: 'toggleSecondMenu(event)',
-                        value: 'menu-8'
                     },
                     {
                         title: 'Пресс-центр',
-                        onclick: 'toggleSecondMenu(event)',
-                        value: 'menu-9'
                     },
                     {
                         title: 'Обращения граждан',
-                        onclick: 'toggleSecondMenu(event)',
-                        value: 'menu-10'
                     },
                 ])
                 +header-socials([
@@ -112,23 +102,15 @@ mixin header(sort)
             +header-links([
                 {
                     title: 'О Сургуте',
-                    onclick: 'toggleSecondMenu(event)',
-                    value: 'menu-11'
                 },
                 {
                     title: 'Городская власть',
-                    onclick: 'toggleSecondMenu(event)',
-                    value: 'menu-12'
                 },
                 {
                     title: 'Документы',
-                    onclick: 'toggleSecondMenu(event)',
-                    value: 'menu-3'
                 },
                 {
                     title: 'Контакты',
-                    onclick: 'toggleSecondMenu(event)',
-                    value: 'menu-13'
                 },
                 ])        
             +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })        
@@ -200,275 +182,6 @@ mixin header(sort)
                     title: 'Обращения граждан',
                 },
                 ])   
-        +second-menu({
-            class: 'dm-second-menu_adm-about',
-            columns: [
-                {
-                    links: [
-                        { title: 'О Сургуте', type: 'title', items: [
-                            { title: 'Сургуту 430 лет', type: 'link' },
-                            { title: 'Сургут сегодня', type: 'link' },
-                        ]},
-                        { title: 'Публичные слушания', type: 'title', items: [
-                            { title: 'Структура аппарата', type: 'link' },
-                            { title: 'Информация о кадровом обеспечении', type: 'link' },
-                            { title: 'Телефонный справочник', type: 'link' },
-                        ]},
-                        { title: 'Противодействия коррупции', type: 'title', items: [
-                            { title: 'Положение', type: 'link' },
-                            { title: 'Состав', type: 'link' },
-                        ]},
-                    ],
-                },
-                {
-                    links: [
-                        { title: 'Противодействия коррупции', type: 'title', items: [
-                            { title: 'Комитет по бюджету, налогам, финансам и имуществу', type: 'link' },
-                            { title: 'Комитет по городскому хозяйству и перспективному развитию города', type: 'link' },
-                            { title: 'Комитет по социальной политике', type: 'link' },
-                            { title: 'Комитет по нормотворчеству, информационной политике и правопорядку', type: 'link' },
-                        ]},
-                        { title: 'Депутатские объединения в Думе города', type: 'title', items: [
-                            { title: 'Информация о кадровом обеспечении', type: 'link' },
-                            { title: 'Телефонный справочник', type: 'link' },
-                        ]},
-                    ],
-                },
-            ]
-        }) 
-        +second-menu({
-            class: 'dm-second-menu_adm-power',
-            columns: [
-                {
-                    links: [
-                        { title: 'Городская власть', type: 'title' , items: [
-                            { title: 'Заседания Думы города', type: 'link' },
-                            { title: 'Заседания постоянных комитетов', type: 'link' },
-                            { title: 'Депутатские слушания', type: 'link' },
-                            { title: 'Публичные слушания', type: 'link' },
-                        ]},
-                        { title: 'Антикоррупционная деятельность', type: 'title' },
-                    ],
-                },
-            ]
-        })
-        +second-menu({
-            class: 'dm-second-menu_adm-documents',
-            columns: [
-                {
-                    links: [
-                        { title: 'Документы', type: 'title' , items: [
-                            { title: 'Заседания Думы города', type: 'link' },
-                            { title: 'Заседания постоянных комитетов', type: 'link' },
-                            { title: 'Депутатские слушания', type: 'link' },
-                            { title: 'Публичные слушания', type: 'link' },
-                        ]},
-                        { title: 'Антикоррупционная деятельность', type: 'title' },
-                    ],
-                },
-            ]
-        }) 
-        +second-menu({
-            class: 'dm-second-menu_adm-contacts',
-            columns: [
-                {
-                    links: [
-                        { title: 'Контакты', type: 'title' , items: [
-                            { title: 'Заседания Думы города', type: 'link' },
-                            { title: 'Заседания постоянных комитетов', type: 'link' },
-                            { title: 'Депутатские слушания', type: 'link' },
-                            { title: 'Публичные слушания', type: 'link' },
-                        ]},
-                        { title: 'Антикоррупционная деятельность', type: 'title' },
-                    ],
-                },
-            ]
-        })  
-        +second-menu({
-            class: 'dm-second-menu_adm-quick',
-            columns: [
-                {
-                    links: [
-                        { title: 'Категория быстрого доступа 1', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ], 
-                },
-                {
-                    links: [
-                            { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ]
-                }
-            ]
-        }) 
-        +second-menu({
-            class: 'dm-second-menu_adm-public',
-            columns: [
-                {
-                    links: [
-                        { title: 'Категория быстрого доступа 2', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ], 
-                },
-                {
-                    links: [
-                            { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ]
-                }
-            ]
-        })
-        +second-menu({
-            class: 'dm-second-menu_adm-corruption',
-            columns: [
-                {
-                    links: [
-                        { title: 'Категория быстрого доступа 3', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ], 
-                },
-                {
-                    links: [
-                            { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ]
-                }
-            ]
-        })
-        +second-menu({
-            class: 'dm-second-menu_adm-press',
-            columns: [
-                {
-                    links: [
-                        { title: 'Категория быстрого доступа 4', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ], 
-                },
-                {
-                    links: [
-                            { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ]
-                }
-            ]
-        })
-        +second-menu({
-            class: 'dm-second-menu_adm-citizens',
-            columns: [
-                {
-                    links: [
-                        { title: 'Категория быстрого доступа 5', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ], 
-                },
-                {
-                    links: [
-                            { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                        { title: 'Категория быстрого доступа', type: 'title' , items: [
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                            { title: 'Подкатегория', type: 'link' },
-                        ]},
-                    ]
-                }
-            ]
-        })          
     +login()  
     +login-code()   
     +login-email()

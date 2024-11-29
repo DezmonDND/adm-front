@@ -53,7 +53,7 @@
     <div class="header__bottom-content">  
       <ul class="header_links">
         <li class="header__link"><span>О Думе города</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -72,10 +72,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Состав и структура</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -94,10 +94,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Документы</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -116,10 +116,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Деятельность</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -138,10 +138,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Обратная связь</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -160,7 +160,7 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
       </ul>
       <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>

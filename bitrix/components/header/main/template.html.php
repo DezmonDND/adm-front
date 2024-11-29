@@ -69,7 +69,7 @@
     <div class="header__top-links">
       <ul class="header_links">
         <li class="header__link"><span>Быстрый доступ</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -88,10 +88,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Публичные слушания</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -110,10 +110,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Противодействие коррупции</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -132,10 +132,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Пресс-центр</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -154,10 +154,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Обращения граждан</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -176,7 +176,7 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
       </ul>
       <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
@@ -200,7 +200,7 @@
     </form>
     <ul class="header_links">
       <li class="header__link"><span>О Сургуте</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -219,10 +219,10 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
       <li class="header__link"><span>Городская власть</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -241,10 +241,10 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
       <li class="header__link"><span>Документы</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -263,10 +263,10 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
       <li class="header__link"><span>Контакты</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -285,7 +285,7 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
     </ul>
     <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
@@ -296,7 +296,7 @@
     <div class="header-visibility__top-links">
       <ul class="header_links">
         <li class="header__link"><span>О Сургуте</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -315,10 +315,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Городская власть</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -337,10 +337,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Документы</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -359,10 +359,10 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
         <li class="header__link"><span>Контакты</span>
-          <ul class="dm-second-menu">
+          <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
                 <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -381,7 +381,7 @@
                 </div>
               </div>
             </div>
-          </ul>
+          </div>
         </li>
       </ul>
       <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
@@ -404,7 +404,7 @@
   <div class="header-visibility__bottom-content">
     <ul class="header_links">
       <li class="header__link"><span>Быстрый доступ</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -423,10 +423,10 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
       <li class="header__link"><span>Публичные слушания</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -445,10 +445,10 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
       <li class="header__link"><span>Противодействие коррупции</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -467,10 +467,10 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
       <li class="header__link"><span>Пресс-центр</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -489,10 +489,10 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
       <li class="header__link"><span>Обращения граждан</span>
-        <ul class="dm-second-menu">
+        <div class="dm-second-menu">
           <div class="dm-second-menu__content">
             <div class="dm-second-menu__col">
               <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
@@ -511,148 +511,10 @@
               </div>
             </div>
           </div>
-        </ul>
+        </div>
       </li>
     </ul>
   </div>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">О Сургуте</a><a class="dm-second-menu__link" href="/">Сургуту 430 лет </a><a class="dm-second-menu__link" href="/">Сургут сегодня </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Публичные слушания</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
-        </div>
-      </div>
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Противодействия коррупции</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-        </div>
-      </div>
-    </div>
-  </ul>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Городская власть</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
-        </div>
-      </div>
-    </div>
-  </ul>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Документы</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
-        </div>
-      </div>
-    </div>
-  </ul>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Контакты</a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a>
-        </div>
-      </div>
-    </div>
-  </ul>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 1</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-    </div>
-  </ul>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 2</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-    </div>
-  </ul>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 3</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-    </div>
-  </ul>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 4</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-    </div>
-  </ul>
-  <ul class="dm-second-menu">
-    <div class="dm-second-menu__content">
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа 5</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-      <div class="dm-second-menu__col">
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-        <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Категория быстрого доступа</a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a><a class="dm-second-menu__link" href="/">Подкатегория </a>
-        </div>
-      </div>
-    </div>
-  </ul>
 </header>
 <div class="overlay hidden"></div>
 <div class="login hidden">
