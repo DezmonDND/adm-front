@@ -1,4 +1,43 @@
+include ../dm-second-menu/dm-second-menu
+
 mixin header-links(data = [])
-    .header_links
+    ul.header_links
         each link in data
-            a(href=link.href onclick=link.onclick).header__link #{link.title}
+            li.header__link
+                span #{link.title}
+                +second-menu({
+                    columns: [
+                        {
+                            links: [
+                                { title: 'Структура', type: 'title', items: [
+                                    { title: 'Председатель', type: 'link' },
+                                    { title: 'Руководство', type: 'link' },
+                                ]},
+                                { title: 'Депутаты', type: 'title' },
+                                { title: 'Аппарат Думы города', type: 'title', items: [
+                                    { title: 'Структура аппарата', type: 'link' },
+                                    { title: 'Информация о кадровом обеспечении', type: 'link' },
+                                    { title: 'Телефонный справочник', type: 'link' },
+                                ]},
+                                { title: 'Молодежная палата', type: 'title', items: [
+                                    { title: 'Положение', type: 'link' },
+                                    { title: 'Состав', type: 'link' },
+                                ]},
+                            ],
+                        },
+                        {
+                            links: [
+                                { title: 'Постоянные комитеты', type: 'title', items: [
+                                    { title: 'Комитет по бюджету, налогам, финансам и имуществу', type: 'link' },
+                                    { title: 'Комитет по городскому хозяйству и перспективному развитию города', type: 'link' },
+                                    { title: 'Комитет по социальной политике', type: 'link' },
+                                    { title: 'Комитет по нормотворчеству, информационной политике и правопорядку', type: 'link' },
+                                ]},
+                                { title: 'Депутатские объединения в Думе города', type: 'title', items: [
+                                    { title: 'Информация о кадровом обеспечении', type: 'link' },
+                                    { title: 'Телефонный справочник', type: 'link' },
+                                ]},
+                            ],
+                        },
+                    ]
+                })   

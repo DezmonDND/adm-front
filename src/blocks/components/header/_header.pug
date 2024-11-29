@@ -60,22 +60,27 @@ mixin header(sort)
                     {
                         title: 'Быстрый доступ',
                         onclick: 'toggleSecondMenu(event)',
+                        value: 'menu-6'
                     },
                     {
                         title: 'Публичные слушания',
                         onclick: 'toggleSecondMenu(event)',
+                        value: 'menu-7'
                     },
                     {
                         title: 'Противодействие коррупции',
                         onclick: 'toggleSecondMenu(event)',
+                        value: 'menu-8'
                     },
                     {
                         title: 'Пресс-центр',
                         onclick: 'toggleSecondMenu(event)',
+                        value: 'menu-9'
                     },
                     {
                         title: 'Обращения граждан',
                         onclick: 'toggleSecondMenu(event)',
+                        value: 'menu-10'
                     },
                 ])
                 +header-socials([
@@ -107,19 +112,23 @@ mixin header(sort)
             +header-links([
                 {
                     title: 'О Сургуте',
-                    onclick: 'toggleSecondMenu(event)'
+                    onclick: 'toggleSecondMenu(event)',
+                    value: 'menu-11'
                 },
                 {
                     title: 'Городская власть',
-                    onclick: 'toggleSecondMenu(event)'
+                    onclick: 'toggleSecondMenu(event)',
+                    value: 'menu-12'
                 },
                 {
                     title: 'Документы',
                     onclick: 'toggleSecondMenu(event)',
+                    value: 'menu-3'
                 },
                 {
                     title: 'Контакты',
-                    onclick: 'toggleSecondMenu(event)'
+                    onclick: 'toggleSecondMenu(event)',
+                    value: 'menu-13'
                 },
                 ])        
             +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })        
