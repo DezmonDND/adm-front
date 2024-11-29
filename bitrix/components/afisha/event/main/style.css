@@ -90,18 +90,24 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 }
 .event .event__container .event__location .event__place {
   position: relative;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .event .event__container .event__location .event__place:hover {
   cursor: pointer;
+}
+.event .event__container .event__location .event__place:hover > .modal-title {
+  display: block;
 }
 @media (max-width: 768px) {
   .event .event__container .event__location .event__place {
     width: 70%;
   }
+}
+.event .event__container .event__location .event__place .event__place-text {
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .event .event__container .event__location .event__cabinet {
   display: -webkit-box;

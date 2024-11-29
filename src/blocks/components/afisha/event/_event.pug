@@ -8,7 +8,8 @@ mixin event(data)
                     ion-icon(name=`time`).event__icon
                     span.event__time #{data.time}
                 .event__location 
-                    div(title=`${data.building}`).event__place #{data.building}
+                    .event__place
+                        span.event__place-text #{data.building}
                         +modal-title(data.building)
                     .event__icon-dot
                     span.event__cabinet #{data.cabinet}

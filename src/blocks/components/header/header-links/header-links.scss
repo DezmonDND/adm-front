@@ -47,5 +47,9 @@ body.tmp-duma {
         &:hover {
             color: $primary-color;
         }
+
+        span {
+            font-weight: 400;
+        }
     }
 }

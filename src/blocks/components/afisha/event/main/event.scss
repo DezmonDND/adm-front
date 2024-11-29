@@ -76,9 +76,18 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
                 &:hover {
                     cursor: pointer;
                 }
-                @include visible-lines(1);
+
+                &:hover > .modal-title {
+                    display: block;
+                }
+
                 @include respond-to(sm) {
                     width: 70%;
+                }
+
+                .event__place-text {
+                    position: relative;
+                    @include visible-lines(1);
                 }
             }
 

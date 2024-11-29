@@ -59,18 +59,23 @@ mixin header(sort)
                 +header-links([
                     {
                         title: 'Быстрый доступ',
+                        menu: true
                     },
                     {
                         title: 'Публичные слушания',
+                        menu: true
                     },
                     {
                         title: 'Противодействие коррупции',
+                        menu: true
                     },
                     {
                         title: 'Пресс-центр',
+                        menu: true
                     },
                     {
                         title: 'Обращения граждан',
+                        menu: true
                     },
                 ])
                 +header-socials([
@@ -102,15 +107,19 @@ mixin header(sort)
             +header-links([
                 {
                     title: 'О Сургуте',
+                    menu: true
                 },
                 {
                     title: 'Городская власть',
+                    menu: true
                 },
                 {
                     title: 'Документы',
+                    menu: true
                 },
                 {
                     title: 'Контакты',
+                    href: '/'
                 },
                 ])        
             +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })        

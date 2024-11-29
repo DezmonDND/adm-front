@@ -139,29 +139,7 @@
               </div>
             </div>
           </div>
-        </li>
-        <li class="header__link"><span>Обратная связь</span>
-          <div class="dm-second-menu">
-            <div class="dm-second-menu__content">
-              <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
-                </div>
-              </div>
-              <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
+        </li><a class="header__link" href="/">Обратная связь          </a>
       </ul>
       <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
       </div>

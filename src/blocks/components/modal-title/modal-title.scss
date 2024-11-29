@@ -3,6 +3,13 @@
 .modal-title {
     background-color: $content-color;
     border-radius: 4px;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    max-width: 347px;
+    width: 174%;
+    z-index: 10;
+    display: none;
 
     .modal-title__container {
         padding: 12px;
