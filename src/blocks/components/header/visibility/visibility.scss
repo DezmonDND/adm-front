@@ -188,6 +188,10 @@
   justify-content: space-between;
   gap: 20px;
   display: none;
+
+  @include respond-to(md) {
+    display: none !important;
+  }
 }
 
 .header-visibility__top-links {
@@ -519,6 +523,10 @@
 
 .dark-theme .footer__categorie-link:hover, .blue-theme .footer__categorie-link:hover {
   color: $primary-color !important;
+}
+
+.dark-theme .mobile-menu .menu .menu__container .menu__socials .header__social-icon {
+  background-color: $content-color;
 }
 
 // ГОЛУБАЯ ТЕМА
