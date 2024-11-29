@@ -1,1 +1,127 @@
 @use '../../../assets/styles/vars.scss' as *;
+
+.dm-reception {
+    .dm-reception__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .dm-applications__list {
+            background-color: $cards-background;
+            border-radius: 20px;
+            padding: 40px 40px 40px 60px;
+            margin: 0;
+
+            @include respond-to(md) {
+                padding: 32px 32px 32px 52px;
+            }
+
+            @include respond-to(sm) {
+                padding: 24px 24px 24px 44px;
+            }
+        }
+
+        .dm-reception__form {
+            background-color: $cards-background;
+            border-radius: 20px;
+            padding: 40px;
+
+            @include respond-to(md) {
+                padding: 32px;
+            }
+
+            @include respond-to(sm) {
+                padding: 24px;
+            }
+
+            .dm-reception__title {
+                padding: 0;
+                margin-bottom: 32px;
+                @include heading-h3;
+            }
+
+            .dm-reception__fileds {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                @include respond-to(md) {
+                    gap: 12px;
+                }
+
+                .dm-reception__name-inputs {
+                    display: flex;
+                    gap: 12px;
+
+                    @include respond-to(sm) {
+                        flex-direction: column;
+                    }
+                }
+
+                .dm-reception__inputs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    @include respond-to(md) {
+                        gap: 12px;
+                    }
+                }
+
+                .dm-reception__required {
+                    margin-top: 8px;
+                    color: $tertiary-text;
+                    @include caption-2;
+                }
+            }
+
+            .dm-applications__buttons {
+                .files-list {
+                    margin: 16px 0;
+
+                    .files-list__document-description {
+                        background-color: $content-color;
+                    }
+
+                    .files-list__delete-button {
+                        background-color: $content-color;
+                    }
+                }
+
+                .add-file-button {
+                    @include respond-to(sm) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 12px;
+                    }
+                }
+
+                .dm-applications__divider {
+                    margin-bottom: 32px;
+                }
+
+                .dm-reception__button-desc {
+                    display: flex;
+                    align-items: center;
+                    gap: 42px;
+
+                    @include respond-to(sm) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 12px;
+                    }
+
+                    .dm-reception__warning {
+                        max-width: 303px;
+                        color: $tertiary-text;
+                        @include text-2;
+                    }
+                }
+            }
+        }
+    }
+
+    .span_red {
+        color: $interview-end-color;
+    }
+}
