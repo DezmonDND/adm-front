@@ -81,7 +81,7 @@ const sliders = [
             ],
         },
     },
-    
+
     // Помогите городу стать лучше
     {
         selector: '.help-city__content',
@@ -177,10 +177,7 @@ let slidersInitialized = true;
 
 // Отфильтровать слайдеры для разрешения ниже sm
 
-const slidersToManage = sliders.filter(
-    (slider) =>
-        slider.selector === '.news-main__card-list'
-);
+const slidersToManage = sliders.filter((slider) => slider.selector === '.news-main__card-list');
 
 $(window)
     .on('resize', function () {
@@ -203,3 +200,17 @@ $(window)
 function destroySlider(selector) {
     $(selector).slick('unslick');
 }
+
+// Найти и собрать слайдер по селектору
+
+function findAndCreateSlider(selector) {
+    const slider = sliders.find((slider) => slider.selector === selector);
+
+    if (slider) {
+        initSlider(selector, slider.nextArrow, slider.prevArrow, slider.options);
+    } else {
+        console.log(`Слайдер ${selector} не найден в массиве слайдеров`);
+    }
+}
+
+findAndCreateSlider('news-top__card-list');
