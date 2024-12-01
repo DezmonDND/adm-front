@@ -10318,6 +10318,60 @@ body.tmp-duma .usefull-links {
 .init-card .init-card__container .init-card__description .init-card__content .init-card__columns:last-of-type {
   grid-template-columns: 100%;
 }
+.init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail {
+    gap: 12px;
+  }
+}
+.init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail .icon {
+  font-size: 24px;
+  color: var(--icons-color);
+}
+@media (max-width: 992px) {
+  .init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail .icon {
+    font-size: 16px;
+  }
+}
+.init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail .init-card__row-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: calc(100% - 40px);
+}
+@media (max-width: 992px) {
+  .init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail .init-card__row-desc {
+    gap: 4px;
+    width: calc(100% - 28px);
+  }
+}
+.init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail .init-card__row-desc .init-card__name {
+  color: var(--tertiary-text);
+  font-weight: 300;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(18px * var(--lh));
+}
+@media (max-width: 992px) {
+  .init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail .init-card__row-desc .init-card__name {
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
+}
+.init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail .init-card__row-desc .init-card__text {
+  font-weight: 400;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row-detail .init-card__row-desc .init-card__text {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
+}
 .init-card .init-card__container .init-card__description .init-card__content .init-card__columns .init-card__row {
   display: flex;
   flex-direction: column;
@@ -10359,24 +10413,25 @@ body.tmp-duma .usefull-links {
   margin: 16px 0px 24px;
 }
 
+.init-projects__map {
+  width: 100%;
+  height: 444px;
+}
+.init-projects__map iframe {
+  height: 100%;
+  border-radius: 8px;
+}
+@media (max-width: 992px) {
+  .init-projects__map {
+    height: 303px;
+  }
+}
+
 .init-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-}
-.init-projects .init-projects__map {
-  width: 100%;
-  height: 444px;
-}
-.init-projects .init-projects__map iframe {
-  height: 100%;
-  border-radius: 8px;
-}
-@media (max-width: 992px) {
-  .init-projects .init-projects__map {
-    height: 303px;
-  }
 }
 .init-projects .init-projects__list {
   display: grid;
@@ -10392,6 +10447,87 @@ body.tmp-duma .usefull-links {
 @media (max-width: 768px) {
   .init-projects .init-projects__list {
     grid-template-columns: 100%;
+  }
+}
+
+.init-project-detail .init-project-detail__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.init-project-detail .init-project-detail__container .init-card {
+  box-sizing: border-box;
+  max-width: 1312px;
+  width: 100%;
+  padding: 20px;
+}
+@media (max-width: 992px) {
+  .init-project-detail .init-project-detail__container .init-card {
+    padding: 16px;
+  }
+}
+.init-project-detail .init-project-detail__container .init-card .init-card__container {
+  display: grid;
+  grid-template-columns: repeat(2, calc((100% - 40px) / 2));
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .init-project-detail .init-project-detail__container .init-card .init-card__container {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .init-project-detail .init-project-detail__container .init-card .init-card__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.init-project-detail .init-project-detail__container .init-card .init-card__container .init-card__description {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.init-project-detail .init-project-detail__container .init-card .init-card__container .init-card__description .init-card__content {
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .init-project-detail .init-project-detail__container .init-card .init-card__container .init-card__description .init-card__content {
+    gap: 20px;
+  }
+}
+.init-project-detail .init-project-detail__container .init-card .init-card__container .init-card__description .init-card__content .init-card__columns {
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .init-project-detail .init-project-detail__container .init-card .init-card__container .init-card__description .init-card__content .init-card__columns {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.init-project-detail .init-project-detail__container .init-card .init-card__container .init-card__image {
+  max-width: 600px;
+  border-radius: 12px;
+  max-height: 322px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 992px) {
+  .init-project-detail .init-project-detail__container .init-card .init-card__container .init-card__image {
+    max-height: 174px;
+  }
+}
+.init-project-detail .init-project-detail__container .init-card .init-card__container .init-project-detail__desc {
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .init-project-detail .init-project-detail__container .init-card .init-card__container .init-project-detail__desc {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
 }
 

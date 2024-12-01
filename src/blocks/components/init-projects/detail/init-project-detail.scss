@@ -1,0 +1,73 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.init-project-detail {
+    .init-project-detail__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        .init-card {
+            box-sizing: border-box;
+            max-width: 1312px;
+            width: 100%;
+            @include content-paddings;
+
+            .init-card__container {
+                display: grid;
+                grid-template-columns: repeat(2, calc((100% - 40px)/2));
+                gap: 40px;
+                align-items: center;
+
+                @include respond-to(md) {
+                    gap: 20px;
+                }
+
+                @include respond-to(sm) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                } 
+
+                .init-card__description {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+
+                    .init-card__content {
+                        gap: 40px;
+
+                        @include respond-to(md) {
+                            gap: 20px;
+                        }
+
+                        .init-card__columns {
+                            gap: 20px;
+
+                            @include respond-to(sm) {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+
+                .init-card__image {
+                    max-width: 600px;
+                    border-radius: 12px;
+                    max-height: 322px;
+                    object-fit: cover;
+                    object-position: center;
+
+                    @include respond-to(md) {
+                        max-height: 174px
+                    }
+                }
+
+                .init-project-detail__desc {
+                    @include text-2;
+                }
+            }
+        }
+    }
+}
