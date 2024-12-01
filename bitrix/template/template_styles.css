@@ -17878,3 +17878,26 @@ hr {
 .upper-text {
   text-transform: uppercase;
 }
+
+[id^=wait_comp_] {
+  background-color: white !important;
+  border: 1px solid var(--event-color) !important;
+  border-radius: 1000px !important;
+  color: var(--primary-color) !important;
+  font-size: 0px !important;
+  background-position-x: 25px !important;
+  padding-left: 55px !important;
+}
+
+[id^=wait_comp_]::after {
+  content: "Загрузка" !important;
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  [id^=wait_comp_]::after {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
+}
