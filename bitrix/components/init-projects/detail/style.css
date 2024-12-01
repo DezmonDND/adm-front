@@ -4,6 +4,14 @@
   align-items: center;
   gap: 24px;
 }
+@media (max-width: 992px) {
+  .init-project-detail .init-project-detail__container {
+    gap: 16px;
+  }
+}
+.init-project-detail .init-project-detail__container .title {
+  margin: 0;
+}
 .init-project-detail .init-project-detail__container .init-card {
   box-sizing: border-box;
   max-width: 1312px;
