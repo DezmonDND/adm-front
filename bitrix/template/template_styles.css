@@ -17799,6 +17799,117 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   color: #d10404;
 }
 
+.scheme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 992px) {
+  .scheme-container {
+    gap: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .scheme-container {
+    gap: 48px;
+  }
+}
+
+.scheme-elems {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+@media (max-width: 992px) {
+  .scheme-elems {
+    gap: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .scheme-elems {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+}
+
+.scheme-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .scheme-col {
+    gap: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .scheme-col::before, .scheme-col::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    margin-top: -20px;
+    background: repeating-linear-gradient(to right, var(--event-color-hover), var(--event-color-hover) 60px, transparent 60px, transparent 80px);
+  }
+}
+
+.scheme-el {
+  padding: 16px 8px;
+  background-color: var(--event-color);
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .scheme-el {
+    width: 100%;
+  }
+}
+
+.scheme-el span {
+  color: var(--second-text);
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+@media (max-width: 992px) {
+  .scheme-el span {
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .scheme-el span {
+    font-size: 11px;
+  }
+}
+
+.scheme-title {
+  width: 100%;
+  padding: 16px 8px;
+  background-color: var(--event-color);
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.scheme-title span {
+  color: var(--second-text);
+  font-weight: 400;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(18px * var(--lh));
+}
+@media (max-width: 992px) {
+  .scheme-title span {
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
+}
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
