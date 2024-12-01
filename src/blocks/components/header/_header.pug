@@ -124,6 +124,44 @@ mixin header(sort)
                 ])        
             +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })        
         .header-visibility__top-content 
+            +menu('menu_main-bg', [
+            {
+                href: '/',
+                title: 'Быстрый доступ'
+            },
+            {
+                href: '/',
+                title: 'Публичные слушания'
+            },
+            {
+                href: '/',
+                title: 'Противодействие коррупции'
+            },
+            {
+                href: '/',
+                title: 'Пресс-центр'
+            },
+            {
+                href: '/',
+                title: 'Обращения граждан'
+            },
+            {
+                href: '/',
+                title: 'О Сургуте'
+            },
+            {
+                href: '/',
+                title: 'Городская власть'
+            },
+            {
+                href: '/',
+                title: 'Документы'
+            },
+            {
+                href: '/',
+                title: 'Контакты'
+            }
+        ])
             .header-visibility__top-links
                 +header-links([
                     {
@@ -168,6 +206,7 @@ mixin header(sort)
             +search(
                 {name: 'number', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
                     false, 's', 'getValues()', 'header',) 
+            +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })   
         .header-visibility__bottom-content
             +header-links([
                 {

@@ -1,3 +1,39 @@
+include ../../libs/textarea/_textarea.pug 
+include ../../libs/inputs/_inputs.pug 
+include ../../libs/buttons/_buttons.pug 
+include ../../libs/add-file-button/add-file-button
+
 mixin dm-reception()
     .dm-reception
-        
+        .dm-reception__container
+            ul.dm-applications__list 
+                li.dm-applications__item Обращения рассматриваются в соответствии с Федеральным законом от 02.05.2006 #[a(href='/').link № 59-ФЗ "О порядке рассмотрения обращений граждан Российской Федерации"];
+                li.dm-applications__item Обращения подлежат обязательной регистрации в течение трех дней с момента поступления #[a(href='/').link отделом по организационному и документационному обеспечению Думы города];
+                li.dm-applications__item Ответ на обращение направляется по электронной почте;
+                li.dm-applications__item Ответ может быть продублирован обычной почтой по почтовому адресу, указанному в анкете, если в форме отмечено соответствующее поле;
+                li.dm-applications__item Длина текста электронного обращения не должна превышать 20 тысяч символов;
+                li.dm-applications__item Электронное обращение может содержать вложенный файл, размером не более 2,5мб.
+                li.dm-applications__item Обращения, содержащие в электронном виде материалы большего объема, следует направлять #[a(href='/').link иным способом];
+                li.dm-applications__item Информация о персональных данных авторов обращений, направленных в электронном виде, #[a(href='/').link хранится и обрабатывается] с соблюдением требований российского законодательства о персональных данных. 
+            form.dm-reception__form  
+                h3.dm-reception__title Форма отправки обращения  
+                .dm-reception__fileds
+                    .dm-reception__name-inputs
+                        +input({ placeholder: 'Фамилия*', name: 'first_name' })
+                        +input({ placeholder: 'Имя*', name: 'second_name' })
+                        +input({ placeholder: 'Отчество*', name: 'third_name' })
+                    .dm-reception__inputs    
+                        +input({ placeholder: 'Регион и населенный пункт*', name: 'city' })
+                        +input({ placeholder: 'Почтовый адрес', name: 'post_adress' })
+                        +input({ placeholder: 'Электронная почта*', name: 'email' })
+                        +textarea({ placeholder: 'Ваше обращение / вопрос*', name: 'question', value: '20000' })    
+                    span.dm-reception__required #[span.span_red *] - поля, обязательные для заполнения
+                .dm-applications__buttons
+                    .files-list
+                    +add-file-button({
+                        desc: 'Принимаются файлы размером не более 2,5 МБ '
+                    })
+                    .dm-applications__divider
+                    .dm-reception__button-desc   
+                        +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })    
+                        span.dm-reception__warning Перед отправкой проверьте, правильно ли вы заполнили поля

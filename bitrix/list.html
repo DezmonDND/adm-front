@@ -38,10 +38,16 @@
                 <li><a class="menu__item" href="/">Контакты</a></li>
               </ul>
             </div>
-            <div class="menu__socials"> 
-              <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
-                <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <div class="menu__bot">
+              <div class="menu__socials"> 
+                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                </div>
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <ion-icon class="icon" name="eye-outline"></ion-icon>
+                </button>
+              </div>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              </button>
             </div>
           </div>
         </div>
@@ -281,6 +287,48 @@
         </button>
       </div>
       <div class="header-visibility__top-content"> 
+        <div class="mobile-menu">
+          <div class="menu menu_main-bg">
+            <div class="menu__container">
+              <div class="menu__content"> 
+                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                    <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                    <ion-icon class="icon" name="close-outline"></ion-icon>
+                  </button>
+                </div>
+                <form class="search search-header-mobile">
+                  <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
+                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                    <ion-icon class="icon" name="search-outline"></ion-icon>
+                  </button>
+                </form>
+                <ul class="menu__list"> 
+                  <li><a class="menu__item" href="/">Быстрый доступ</a></li>
+                  <li><a class="menu__item" href="/">Публичные слушания</a></li>
+                  <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
+                  <li><a class="menu__item" href="/">Пресс-центр</a></li>
+                  <li><a class="menu__item" href="/">Обращения граждан</a></li>
+                  <li><a class="menu__item" href="/">О Сургуте</a></li>
+                  <li><a class="menu__item" href="/">Городская власть</a></li>
+                  <li><a class="menu__item" href="/">Документы</a></li>
+                  <li><a class="menu__item" href="/">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="menu__bot">
+                <div class="menu__socials"> 
+                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                  </div>
+                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                    <ion-icon class="icon" name="eye-outline"></ion-icon>
+                  </button>
+                </div>
+                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="header-visibility__top-links">
           <ul class="header_links"><a class="header__link" href="/">О Сургуте          </a><a class="header__link" href="/">Городская власть          </a><a class="header__link" href="/">Документы          </a><a class="header__link" href="/">Контакты          </a>
           </ul>
@@ -300,6 +348,9 @@
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </button>
       </div>
       <div class="header-visibility__bottom-content">
         <ul class="header_links"><a class="header__link" href="/">Быстрый доступ          </a><a class="header__link" href="/">Публичные слушания          </a><a class="header__link" href="/">Противодействие коррупции          </a><a class="header__link" href="/">Пресс-центр          </a><a class="header__link" href="/">Обращения граждан          </a>
@@ -421,7 +472,8 @@
             <li>         <a href="administration-struct.html" target="_blank">Структурное подразделение</a></li>
             <li> <a href="administration-service-list.html" target="_blank">Услуги населению</a></li>
             <li> <a href="administration-service.html" target="_blank">Детальная страница услуги</a></li>
-            <li> <a href="phonebook.html" target="_blank">Телефонный справочник               </a></li>
+            <li> <a href="phonebook.html" target="_blank">Телефонный справочник   </a></li>
+            <li> <a href="scheme.html" target="_blank">Схема подчиненности структурных подразделений Администрации города            </a></li>
           </ul>
           <h4>Личный кабинет   </h4>
           <ul>    
@@ -484,7 +536,7 @@
             <li> <a href="dm-deputies-alphabet.html" target="_blank">Депутаты по алфавиту</a></li>
             <li> <a href="dm-deputies-comitets.html" target="_blank">Депутаты по комитетам</a></li>
             <li> <a href="dm-unions.html" target="_blank">Объединения</a></li>
-            <li> <a href="dm-reception.html" target="_blank">Виртуальная приемная  </a></li>
+            <li> <a href="dm-reception.html" target="_blank">Виртуальная приемная             </a></li>
           </ul>
           <h4>Афиши</h4>
           <ul>

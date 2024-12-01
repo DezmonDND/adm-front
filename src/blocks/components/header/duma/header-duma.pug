@@ -11,6 +11,7 @@ include ../../login/main/login
 include ../../login/code/login-code
 include ../../login/email/login-email
 include ../dm-second-menu/dm-second-menu
+include ../visibility/visibility
 
 mixin header-duma()
     header.header-duma
@@ -36,6 +37,7 @@ mixin header-duma()
                 title: 'Обратная связь'
             },
         ])
+        +visibility()
         .header-duma__container
             .header__top-content 
                 +logo({
@@ -48,7 +50,7 @@ mixin header-duma()
                     {name: 'number', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
                         false, 's', 'getValues()', 'header-duma',) 
                 .header__buttons  
-                    +button({ type: 'link', href: '/', class: 'button_white button__eye', icon: 'eye-outline', size: 'xs', iconPosition: 'left', text: 'Версия для слабовидящих'})               
+                    +button({ type: 'button', event:'visibility()', class: 'button_white button__eye', icon: 'eye-outline', size: 'xs', iconPosition: 'left', text: 'Версия для слабовидящих'})               
                     +button({ type: 'button', class: 'button_blue', event: 'anotherFunction()', icon: '', size: 's', text: 'Служебный вход' })             
             .header__bottom-content   
                 +header-links([

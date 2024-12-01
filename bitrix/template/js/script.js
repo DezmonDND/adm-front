@@ -1,6 +1,20 @@
 // Находим все элементы с классом `content-card`
 $(document).ready(function () {
     document.querySelectorAll('.content-card').forEach((card) => {
+
+        const fullWidthContainer = document.createElement('div');
+        fullWidthContainer.className = 'full-width-container';
+
+        const fullWidthBackground = document.createElement('div');
+        fullWidthBackground.className = 'full-width-background';
+
+        const fullWidthContent = document.createElement('div');
+        fullWidthContent.className = 'full-width-content';
+
+        card.parentNode.insertBefore(fullWidthContainer, card); 
+        fullWidthContent.appendChild(card); 
+        fullWidthBackground.appendChild(fullWidthContent); // 
+        fullWidthContainer.appendChild(fullWidthBackground);
         // Создаем контейнер внутри карточки
         const container = document.createElement('div');
         container.className = 'content-card__container';
@@ -201,6 +215,28 @@ function selectOption(element) {
   element.classList.toggle("select_multiple-option_selected");
 }
 
+function getLength(event) {
+    const textarea = event.target;
+    const counterCurrent = textarea.parentNode.querySelector('.current');
+    const counterMax = textarea.parentNode.querySelector('.max');
+
+    if (counterCurrent && counterMax) {
+        const textLength = textarea.value.length;
+        counterCurrent.textContent = textLength;
+        if (textLength > Number(counterMax.textContent)) {
+            textarea.style.borderColor = '#D10404';
+        } else {
+            textarea.style.borderColor = '';
+        }
+    }
+}
+
+const textareas = document.querySelectorAll('.textarea');
+
+textareas.forEach((textarea) => {
+    textarea.addEventListener('input', getLength);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         const socialShareButtons = document.querySelectorAll('.social_share');
@@ -208,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (socialShareButtons.length === 0) {
             return;
         }
-
+        const url = window.location.href;
         socialShareButtons.forEach(button => {
             const share = document.createElement('div');
             share.className = 'share-menu';
@@ -224,13 +260,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <hr>
                     <div class="header__socials">
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
+                            <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
+                            <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text"> 
-                            <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                            <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http:${url}" target="_blank"></a>
                         </button>
                         <button class="button button_link button_white button_without-text" id="copyLink" attributes="{}">
                             <ion-icon class="icon md hydrated" name="link-outline" role="img"></ion-icon>
@@ -241,9 +277,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 share.innerHTML = `
                 <div class="share-content">
                     <div class="header__socials">
-                        <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=http://mysite.com" target="_blank"></a>
-                        <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=http://mysite.com" target="_blank"></a>
-                        <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=http://mysite.com" target="_blank"></a>
+                        <a class="vk_icon header__social-icon" href="https://vk.com/share.php?url=${url}" target="_blank"></a>
+                        <a class="ok_icon header__social-icon" href="https://connect.ok.ru/offer?url=${url} target="_blank"></a>
+                        <a class="tg_icon header__social-icon" href="https://telegram.me/share/url?url=${url}" target="_blank"></a>
                     </div>
                     <button id="copyLink" class="button button_white button_size_s">
                         <span class="button_span">Скопировать ссылку</span>
@@ -287,32 +323,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             share.querySelector('#copyLink').addEventListener('click', (e) => {
                 e.preventDefault();
-                navigator.clipboard.writeText(window.location.href);
+                navigator.clipboard.writeText(url);
             });
         });
     }, 500); 
-});
-
-function getLength(event) {
-    const textarea = event.target;
-    const counterCurrent = textarea.parentNode.querySelector('.current');
-    const counterMax = textarea.parentNode.querySelector('.max');
-
-    if (counterCurrent && counterMax) {
-        const textLength = textarea.value.length;
-        counterCurrent.textContent = textLength;
-        if (textLength > Number(counterMax.textContent)) {
-            textarea.style.borderColor = '#D10404';
-        } else {
-            textarea.style.borderColor = '';
-        }
-    }
-}
-
-const textareas = document.querySelectorAll('.textarea');
-
-textareas.forEach((textarea) => {
-    textarea.addEventListener('input', getLength);
 });
 
 $(document).ready(function () {

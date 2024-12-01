@@ -1,6 +1,20 @@
 // Находим все элементы с классом `content-card`
 $(document).ready(function () {
     document.querySelectorAll('.content-card').forEach((card) => {
+
+        const fullWidthContainer = document.createElement('div');
+        fullWidthContainer.className = 'full-width-container';
+
+        const fullWidthBackground = document.createElement('div');
+        fullWidthBackground.className = 'full-width-background';
+
+        const fullWidthContent = document.createElement('div');
+        fullWidthContent.className = 'full-width-content';
+
+        card.parentNode.insertBefore(fullWidthContainer, card); 
+        fullWidthContent.appendChild(card); 
+        fullWidthBackground.appendChild(fullWidthContent); // 
+        fullWidthContainer.appendChild(fullWidthBackground);
         // Создаем контейнер внутри карточки
         const container = document.createElement('div');
         container.className = 'content-card__container';
