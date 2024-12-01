@@ -23,15 +23,20 @@ const options = {
                 newDates = dates;
 
                 const button = document.querySelector('.search-by-site__button');
+                const buttonIcon = button.querySelector('.icon ');
 
                 if (from && to) {
                     from.value = new Date(dates.from).toLocaleDateString();
                     to.value = new Date(dates.to).toLocaleDateString();
 
+                    buttonIcon.name = 'calendar-outline';
+
                     if (from.value !== 'Invalid Date' && from.value !== 'Invalid Date') {
-                        button.textContent = `Период с ${from.value} по ${to.value}`;
+                        button.textContent = `Дата начала ${from.value} Дата окончания ${to.value}`;
+                        button.appendChild(buttonIcon)
                     } else {
                         button.textContent = `Период публикации`;
+                        button.appendChild(buttonIcon)
                     }
                 } else {
                 }
