@@ -70,6 +70,10 @@
   }
 }
 
+.scheme-el:hover, .scheme-title:hover {
+  background-color: var(--event-color-hover);
+}
+
 .scheme-el span {
   color: var(--second-text);
   font-size: 10px;

@@ -17871,6 +17871,10 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   }
 }
 
+.scheme-el:hover, .scheme-title:hover {
+  background-color: var(--event-color-hover);
+}
+
 .scheme-el span {
   color: var(--second-text);
   font-size: 10px;
