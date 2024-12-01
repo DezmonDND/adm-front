@@ -43,6 +43,10 @@
                     justify-content: center;
                     padding: 0;
 
+                    @include respond-to(sm) {
+                        align-self: flex-start;
+                    }
+
                     .init-card__content {
                         gap: 40px;
 
@@ -53,7 +57,7 @@
                         .init-card__columns {
                             gap: 20px;
 
-                            @include respond-to(sm) {
+                            @include respond-to(xs) {
                                 display: flex;
                                 flex-direction: column;
                             }
@@ -69,6 +73,7 @@
                     object-position: center;
 
                     @include respond-to(md) {
+                        max-width: none;
                         max-height: 174px
                     }
                 }

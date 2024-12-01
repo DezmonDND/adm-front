@@ -1,0 +1,11 @@
+mixin profile-card(data)
+    .profile-settings-interest-elem
+        .profile-settings-interest-elem-left
+            ion-icon(name=`${data.icon}` class=`icon`)
+            .profile-settings-interest-elem-mid
+                .profile-settings-interest-elem-mid-title
+                    span #{data.title}
+                .profile-settings-interest-elem-mid-subtitle
+                    span #{data.desc}
+        .profile-settings-interest-elem-right
+            +button({ size: 'm ', type: 'button', class: 'button_blue', event: 'someFunction()', text: 'Выбрать', disabled: data.disabled })
