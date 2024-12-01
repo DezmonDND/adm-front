@@ -65,6 +65,40 @@ body {
         --secondary-color: #a78818;
     }
 
+    &.tmp-duma.dark-theme {
+        --main-text: #ffffff; //primary
+        --main-text-dark-bg: #ffffff;
+        --second-text: #ffffff;
+        --tertiary-text: #ffffff;
+        --tertiary-text-dark-bg: #ffffff;
+        --fourth-text: #ffffff;
+        --fourth-text-inverse: #ffffff;
+
+
+        --icons-color: #ffff;
+        --content-color: #242433;
+        --services-hover: #242433;
+        --services-active: #242433;
+        // Фон
+        --cards-background: #242433;
+        --grey-adm: #242433;
+
+        // Календарь
+        --event-color: #e9e4d2;
+        --event-color-hover: #bfb797;
+
+        // Кнопки
+        --primary-color: #ffffff;
+        --primary-color-hover: #242433;
+        --primary-color-active: #242433;
+        --primary-color-disabled: #242433;
+
+        --primary-color-green: #a78818;
+        --primary-color-green-hover: #c9a41d;
+        --primary-color-green-click: #856b0f;
+        --primary-color-green-disabled: #bda964;
+    }
+
     &.dark-theme {
         --main-text: #ffffff; //primary
         --main-text-dark-bg: #ffffff;
@@ -96,6 +130,36 @@ body {
         --primary-color-green-hover: #242433;
         --primary-color-green-click: #242433;
         --primary-color-green-disabled: #242433;
+    }
+
+    &.tmp-duma.blue-theme {
+        --main-text: #0a3866; //primary
+        --main-text-dark-bg: #0a3866;
+        --second-text: #0a3866;
+        --tertiary-text: #0a3866;
+        --tertiary-text-dark-bg: #0a3866;
+        --fourth-text: #0a3866;
+        --fourth-text-inverse: #0a3866;
+
+        --icons-color: #0a3866;
+        --content-color: #b2d9ff;
+        --services-hover: #b2d9ff;
+        --services-active: #b2d9ff;
+        --cards-background: #b2d9ff;
+        --grey-adm: #b2d9ff;
+
+        --event-color: #e9e4d2;
+        --event-color-hover: #bfb797;
+
+        --primary-color: #0a3866;
+        --primary-color-hover: #b2d9ff;
+        --primary-color-active: #b2d9ff;
+        --primary-color-disabled: #b2d9ff;
+
+        --primary-color-green: #a78818;
+        --primary-color-green-hover: #c9a41d;
+        --primary-color-green-click: #856b0f;
+        --primary-color-green-disabled: #bda964;
     }
 
     &.blue-theme {
