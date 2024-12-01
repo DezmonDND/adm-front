@@ -1,0 +1,97 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.scheme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    @include respond-to(md) {
+        gap: 32px;
+    }
+    @include respond-to(sm) {
+        gap: 48px;
+    }
+}
+
+.scheme-elems {
+    // display: flex;
+    // justify-content: space-between;
+    gap: 10px;
+    // width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    @include respond-to(md) {
+        gap: 5px;
+    }
+    @include respond-to(sm) {
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        width: 100%;
+    }
+}
+
+.scheme-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    @include respond-to(md) {
+        gap: 5px;
+    }
+    @include respond-to(sm) {
+        &::before,
+        &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        margin-top: -20px;
+        background: repeating-linear-gradient(to right,
+                $event-color-hover,
+                $event-color-hover 60px,
+                transparent 60px,
+                transparent 80px);
+        }
+    }
+}
+
+.scheme-el {
+    // max-width: 130px;
+    padding: 16px 8px;
+    background-color: $event-color;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    @include respond-to(sm) {
+        width: 100%;
+    }
+}
+
+.scheme-el span {
+    color: $second-text;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+    @include respond-to(md) {
+        font-size: 8px;
+    }
+    @include respond-to(sm) {
+        font-size: 11px;
+    }
+}
+
+.scheme-title {
+    width: 100%;
+    padding: 16px 8px;
+    background-color: $event-color;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.scheme-title span{
+    color: $second-text;
+    @include lead-6();
+}
