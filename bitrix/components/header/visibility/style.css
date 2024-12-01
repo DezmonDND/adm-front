@@ -9,6 +9,36 @@
   max-width: 100vw;
 }
 
+.header-duma .header-visibility {
+  position: relative;
+  display: none;
+  width: 100%;
+  left: unset;
+  right: unset;
+  margin-left: unset;
+  margin-right: unset;
+}
+
+.visibility .dm-archive .dm-archive__container .dm-archive__list .hearing-item {
+  max-height: 700px;
+}
+
+body.dark-theme.visibility .vanilla-calendar-header__content button, body.blue-theme.visibility .vanilla-calendar-header__content button {
+  color: var(--primary-color) !important;
+}
+
+body.dark-theme.visibility .calendar-day__btn, body.blue-theme.visibility .calendar-day__btn {
+  color: var(--primary-color);
+}
+
+body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visibility .vanilla-calendar-day__btn_prev {
+  color: #94a3b8;
+}
+
+.visibility .event .event__container .event__location .event__place {
+  max-width: 200px;
+}
+
 .header-visibility.active {
   display: block;
 }

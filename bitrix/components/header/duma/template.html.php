@@ -38,6 +38,35 @@
       </div>
     </div>
   </div>
+  <div class="header-visibility">
+    <div class="header-visibility-container">
+      <div class="header-visibility-elems">
+        <div class="header-visibility-elem">
+          <div class="header-visibility-elem-left"><span>Размер шрифта:</span></div>
+          <div class="header-visibility-elem-right"><span class="font-size-1" onclick="setFontSize(1, this)"> А </span><span class="font-size-15" onclick="setFontSize(1.5, this)"> А </span><span class="font-size-2" onclick="setFontSize(2, this)"> А</span></div>
+        </div>
+        <div class="header-visibility-elem">
+          <div class="header-visibility-elem-left"><span>Межбуквенный интервал:</span></div>
+          <div class="header-visibility-elem-right"><span class="letter-spacing-0" onclick="setLetterSpacing(0, this)">А</span><span class="letter-spacing-6" onclick="setLetterSpacing(0.06, this)">А </span><span class="letter-spacing-12" onclick="setLetterSpacing(0.12, this)">А</span></div>
+        </div>
+        <div class="header-visibility-elem">
+          <div class="header-visibility-elem-left"><span>Межстрочный интервал:</span></div>
+          <div class="header-visibility-elem-right"><span class="line-height-12" onclick="setLineHeight(1.5, this)">А</span><span class="line-height-15" onclick="setLineHeight(2, this)">А </span><span class="line-height-2" onclick="setLineHeight(2.5, this)">А</span></div>
+        </div>
+        <div class="header-visibility-elem"> 
+          <div class="header-visibility-elem-left"><span>Цвет сайта:</span></div>
+          <div class="header-visibility-elem-right">
+            <button class="theme-light" onclick="setTheme(`light`, this)">A </button>
+            <button class="theme-dark" onclick="setTheme(`dark`, this)">A</button>
+            <button class="theme-blue" onclick="setTheme(`blue`, this)">A</button>
+          </div>
+        </div>
+      </div>
+      <div class="header-visibility-close">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
   <div class="header-duma__container">
     <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
         <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
@@ -50,8 +79,10 @@
           <ion-icon class="icon" name="search-outline"></ion-icon>
         </button>
       </form>
-      <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
-          <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+      <div class="header__buttons"> 
+        <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+          <ion-icon class="icon" name="eye-outline"></ion-icon>
+        </button>
         <button class="button button_blue button_size_s   " onclick="anotherFunction()" title=""><span class="button_span">Служебный вход</span>
         </button>
       </div>
