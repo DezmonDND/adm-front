@@ -16275,23 +16275,35 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
 .hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content {
   display: flex;
   box-sizing: border-box;
-  gap: 24px;
-  padding: 8px 16px;
+  padding: 8px 16px 16px;
   max-height: 264px;
+  overflow-y: hidden;
 }
-.hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__desc-title {
+.hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__bottom-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__bottom-info .hearing-event-popup__bottom-text-block {
+  display: flex;
+  gap: 24px;
+}
+.hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__bottom-info .hearing-event-popup__desc-title {
   color: var(--tertiary-text);
+  min-width: 80px;
   font-weight: 300;
   font-size: calc(12px * var(--scale));
   line-height: calc(16px * var(--lh));
 }
 @media (max-width: 992px) {
-  .hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__desc-title {
+  .hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__bottom-info .hearing-event-popup__desc-title {
     font-size: calc(10px * var(--scale));
     line-height: calc(14px * var(--lh));
   }
 }
-.hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__desc-text {
+.hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__bottom-info .hearing-event-popup__desc-text {
   box-sizing: border-box;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -16300,7 +16312,7 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
-  .hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__desc-text {
+  .hearing-event-popup .hearing-event-popup__container .hearing-event-popup__bottom-content .hearing-event-popup__bottom-info .hearing-event-popup__desc-text {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }

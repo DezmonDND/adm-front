@@ -205,6 +205,16 @@ function updateMultiSelectValue(e) {
     getValues(e);
 }
 
+function openSelect() {
+  const selectMenu = document.querySelector(".select_multiple-menu");
+  selectMenu.style.display =
+    selectMenu.style.display === "none" ? "flex" : "none";
+}
+
+function selectOption(element) {
+  element.classList.toggle("select_multiple-option_selected");
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         const socialShareButtons = document.querySelectorAll('.social_share');
