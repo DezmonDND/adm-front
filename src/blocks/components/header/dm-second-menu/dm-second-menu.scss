@@ -15,7 +15,7 @@ body.tmp-duma {
         background-color: $cards-background;
         top: 144px;
         border-top: none;
-        border-color: $event-color-hover;    
+        border-color: $event-color-hover;
 
         .dm-second-menu__col {
             .dm-second-menu__links {
@@ -51,23 +51,8 @@ body.tmp-duma {
     max-height: 80vh;
     overflow-y: scroll;
     scrollbar-width: none;
-
-    &_adm-about,
-    &_adm-power,
-    &_adm-documents,
-    &_adm-contacts,
-    &_adm-quick,
-    &_adm-public,
-    &_adm-corruption,
-    &_adm-press,
-    &_adm-citizens,
-    &_about,
-    &_struct,
-    &_doc,
-    &_feedbacks,
-    &_actions {
-        display: none;
-    }
+    margin: 0;
+    display: none;
 
     &_active {
         display: flex;

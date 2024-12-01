@@ -8,36 +8,22 @@ body.tmp-print {
 
 .project-generation__container {
     color: $main-text;
-}
 
-.project-generation__top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .event-card {
+        .event-card__container {
+            .event-card__description {
+                margin: 0 0 32px;
+            }
 
-.project-generation__top-container {
-    max-width: 867px;
-    padding: 32px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    width: 100%;
-}
-
-.project-generation__top-container span {
-    @include heading-h2();
-}
-
-.project-generation__top-container button span {
-    font-size: unset;
-    font-weight: unset;
-    line-height: unset;
-}
-
-.project-generation__top-btns {
-    display: flex;
-    gap: 8px;
+            .event-card__buttons {
+                .button_without-text {
+                    @include respond-to(sm) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .project-generation__main {
@@ -85,11 +71,6 @@ body.tmp-print {
 }
 
 @include respond-to(sm) {
-    .project-generation__top-container {
-        padding: 24px 0px;
-        gap: 24px;
-    }
-
     .project-generation__main-container {
         padding: 32px 0px;
         padding-top: 24px;
@@ -97,22 +78,5 @@ body.tmp-print {
         display: flex;
         flex-direction: column;
         gap: 16px;
-    }
-}
-
-@include respond-to(xs) {
-    .project-generation__top-btns {
-        display: none;
-    }
-
-    .project-generation__top-btns.mb {
-        display: flex;
-        width: 100%;
-    }
-
-    .project-generation__top-btns.mb .button {
-        width: 100%;
-        display: flex;
-        justify-content: center;
     }
 }

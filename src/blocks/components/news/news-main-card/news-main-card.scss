@@ -70,6 +70,7 @@
             }
 
             .news-main-card__title {
+                @include visible-lines(5);
                 @include heading-h5;
             }
         }
