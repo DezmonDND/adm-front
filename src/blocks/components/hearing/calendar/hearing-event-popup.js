@@ -41,15 +41,37 @@ const hearingEventPopupHTML = (event) => {
     bottomContent.className = 'hearing-event-popup__bottom-content';
     container.appendChild(bottomContent);
 
-    const descTitle = document.createElement('div');
-    descTitle.className = 'hearing-event-popup__desc-title';
-    descTitle.textContent = 'Описание';
-    bottomContent.appendChild(descTitle);
+    const bottomInfoBlock = document.createElement('div');
+    bottomInfoBlock.className = 'hearing-event-popup__bottom-info';
+    bottomContent.appendChild(bottomInfoBlock);
 
-    const descText = document.createElement('div');
-    descText.className = 'hearing-event-popup__desc-text';
-    descText.textContent = event.extendedProps.description;
-    bottomContent.appendChild(descText);
+    function createDescPair(titleText, contentText, link = null) {
+        const bottomTextBlock = document.createElement('div');
+        bottomTextBlock.className = 'hearing-event-popup__bottom-text-block';
+        bottomInfoBlock.appendChild(bottomTextBlock);
+
+        const descTitle = document.createElement('div');
+        descTitle.className = 'hearing-event-popup__desc-title';
+        descTitle.textContent = titleText;
+        bottomTextBlock.appendChild(descTitle);
+
+        if (link) {          
+            const linkEl = document.createElement('a');
+            linkEl.className = 'link hearing-event-popup__desc-text';
+            linkEl.href = link;
+            linkEl.textContent = contentText;
+            bottomTextBlock.appendChild(linkEl);
+        } else {
+            const descText = document.createElement('div');
+            descText.className = 'hearing-event-popup__desc-text';
+            descText.textContent = contentText;
+            bottomTextBlock.appendChild(descText);
+        }
+    }
+
+    createDescPair('Описание', event.extendedProps.description);
+    createDescPair('Время и дата', event.extendedProps.place);
+    createDescPair('Место', event.extendedProps.link_text, event.extendedProps.link);
 
     return popup;
 };
