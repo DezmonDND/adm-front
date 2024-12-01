@@ -15905,6 +15905,8 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
 }
 
 .fc .fc-daygrid-day-number {
+  width: 22px;
+  text-align: center;
   color: var(--fourth-text);
   font-weight: 500;
   font-size: calc(11px * var(--scale));
@@ -15986,7 +15988,7 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
 
 .fc-day-today {
   background-color: var(--primary-color);
-  border-radius: 100px;
+  border-radius: 100px !important;
 }
 .fc-day-today .fc-col-header-cell-cushion {
   color: var(--content-color);
