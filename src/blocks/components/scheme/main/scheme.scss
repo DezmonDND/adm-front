@@ -69,6 +69,10 @@
     }
 }
 
+.scheme-el:hover, .scheme-title:hover {
+    background-color: $event-color-hover;
+}
+
 .scheme-el span {
     color: $second-text;
     font-size: 10px;
