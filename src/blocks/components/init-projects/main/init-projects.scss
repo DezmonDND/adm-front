@@ -1,6 +1,6 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-.init-projects-title  {
+.init-projects-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,25 +14,26 @@
     }
 }
 
+.init-projects__map {
+    width: 100%;
+    height: 444px;
+
+    iframe {
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    @include respond-to(md) {
+        height: 303px;
+    }
+}
+
 .init-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
 
-    .init-projects__map {
-        width: 100%;
-        height: 444px;
-
-        iframe {
-            height: 100%;
-            border-radius: 8px;
-        }
-
-        @include respond-to(md) {
-            height: 303px;
-        }
-    }
 
     .init-projects__list {
         display: grid;

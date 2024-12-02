@@ -6,8 +6,8 @@
 @use './bootstrap-grid.scss';
 @use '../../blocks/libs/inputs/inputs.scss';
 @use '../../blocks/libs/buttons/buttons.scss';
-@use '../../blocks//libs/links/links.scss';
-@use '../../blocks//libs/linkslist/linkslist.scss';
+@use '../../blocks/libs/links/links.scss';
+@use '../../blocks/libs/linkslist/linkslist.scss';
 @use '../../blocks/libs/textarea/textarea.scss';
 @use '../../blocks/libs/select/select.scss';
 @use '../../blocks/libs//checkbox/checkbox.scss';
@@ -82,6 +82,7 @@
 @use '../../blocks/components/news/news-main-card/news-main-card.scss';
 @use '../../blocks/components/init-projects/init-card/init-card.scss';
 @use '../../blocks/components/init-projects/main/init-projects.scss';
+@use '../../blocks/components/init-projects/detail/init-project-detail.scss';
 @use '../../blocks/components/monuments/main/monuments.scss';
 @use '../../blocks/components/header/duma/header-duma.scss';
 @use '../../blocks/components/header/header-links/header-links.scss';

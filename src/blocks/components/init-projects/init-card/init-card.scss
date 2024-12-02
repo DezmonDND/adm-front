@@ -44,6 +44,46 @@
                         grid-template-columns: 100%;
                     }
 
+                    .init-card__row-detail {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+
+                        @include respond-to(md) {
+                            gap: 12px;
+                        }
+
+                        .icon {
+                            font-size: 24px;
+                            color: $icons-color;
+
+                            @include respond-to(md) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .init-card__row-desc {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            width: calc(100% - 40px);
+
+                            @include respond-to(md) {
+                                gap: 4px;
+                                width: calc(100% - 28px);
+                            }
+
+                            .init-card__name {
+                                color: $tertiary-text;
+                                @include caption-3;
+                            }
+
+                            .init-card__text {
+                                @include lead-5;
+                            }
+                        }
+                    }
+
                     .init-card__row {
                         display: flex;
                         flex-direction: column;
