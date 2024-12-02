@@ -1,0 +1,105 @@
+@use '../../../assets/styles/vars.scss' as *;
+
+body.tmp-duma {
+    .select2-container--default .select2-selection--single {
+        border-color: $primary-color-green;
+    }
+    
+}
+
+.select2-container .select2-selection--single {
+    height: 100% !important;
+    max-height: 60px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: unset !important;
+    @include caption-2;
+}
+
+.select2-container--default .select2-selection--single {
+    border-radius: 8px !important;
+
+    @include respond-to(md) {
+        border-radius: 6px !important;
+    }
+}
+
+.select2-search__field {
+    display: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 19px 44px 19px 19px !important;
+
+    @include respond-to(md) {
+        padding: 13px 34px 13px 16px !important;
+    }
+}
+
+.select2-selection__arrow {
+    right: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    border-width: 8px 8px 0 8px !important;
+    border-color: $secondary-color transparent transparent transparent;
+
+    @include respond-to(md) {
+        right: 16px !important;
+    }
+}
+
+.select2-container--open .select2-dropdown--below {
+    border: none !important;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 8px;
+    top: 4px;
+
+    @include respond-to(md) {
+        border-radius: 6px;
+    }
+}
+
+.select2-results__option {
+    color: $main-text !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    @include text-2;
+
+    @include respond-to(md) {
+        padding: 13px 16px !important;
+    }
+
+    &:hover {
+        color: $main-text !important;
+        background-color: $services-hover !important;
+    }
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: $services-active !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border-color: $input-color-default !important;
+
+    &:hover {
+        border-color: $input-color-hover !important;
+    }
+}
+
+.select2-container--open .select2-dropdown--below {
+    padding: 8px 0 8px !important;
+}
+
+.select2-search--dropdown {
+    padding: 0 !important;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: $services-hover !important;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    scrollbar-width: none;
+}

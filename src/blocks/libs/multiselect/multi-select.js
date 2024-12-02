@@ -7,35 +7,37 @@ let visibleDropdownItems;
 let counter = -1;
 let selectedValues = [];
 
-msChose &&
-    msChose.addEventListener('click', (event) => {
-        if (!event.target.closest('.multi-select__chose-item')) {
-            msDropdownList.classList.remove('multi-select__dropdown_hidden');
+document.addEventListener('DOMContentLoaded', () => {
+    msChose &&
+        msChose.addEventListener('click', (event) => {
+            if (!event.target.closest('.multi-select__chose-item')) {
+                msDropdownList.classList.remove('multi-select__dropdown_hidden');
+            }
+        });
+        
+    document.addEventListener('click', (event) => {
+        if (!event.target.closest('.multi-select') && msDropdownList) {
+            msDropdownList.classList.add('multi-select__dropdown_hidden');
         }
-    });
 
-document.addEventListener('click', (event) => {
-    if (!event.target.closest('.multi-select') && msDropdownList) {
-        msDropdownList.classList.add('multi-select__dropdown_hidden');
-    }
-
-    if (event.target.closest('.multi-select__chose-item')) {
-        searchSelectedElement(event.target.textContent);
-    }
-});
-
-msDropdownList &&
-    msDropdownList.addEventListener('click', (event) => {
-        if (event.target.classList.contains('multi-select__dropdown-item_chose')) {
+        if (event.target.closest('.multi-select__chose-item')) {
             searchSelectedElement(event.target.textContent);
-        } else if (event.target.classList.contains('multi-select__dropdown-item')) {
-            createNewElement('li', ['multi-select__chose-item'], event, msChose);
-            selectedValues.push(event.target.dataset.value);
-            updateMultiSelectValue();
         }
-        msInput.value = '';
-        msInput.focus();
     });
+
+    msDropdownList &&
+        msDropdownList.addEventListener('click', (event) => {
+            if (event.target.classList.contains('multi-select__dropdown-item_chose')) {
+                searchSelectedElement(event.target.textContent);
+            } else if (event.target.classList.contains('multi-select__dropdown-item')) {
+                createNewElement('li', ['multi-select__chose-item'], event, msChose);
+                selectedValues.push(event.target.dataset.value);
+                updateMultiSelectValue();
+            }
+            msInput.value = '';
+            msInput.focus();
+        });
+});
 
 function createNewElement(tag, styles, event, parent) {
     const newElement = document.createElement(tag);

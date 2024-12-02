@@ -7,3 +7,7 @@ function openSelect() {
 function selectOption(element) {
   element.classList.toggle("select_multiple-option_selected");
 }
+
+$(document).ready(function() {
+  $('.select').select2();
+});
