@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 msDropdownList.classList.remove('multi-select__dropdown_hidden');
             }
         });
-        
+
     document.addEventListener('click', (event) => {
         if (!event.target.closest('.multi-select') && msDropdownList) {
             msDropdownList.classList.add('multi-select__dropdown_hidden');

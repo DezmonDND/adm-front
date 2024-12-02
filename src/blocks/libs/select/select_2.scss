@@ -4,7 +4,7 @@ body.tmp-duma {
     .select2-container--default .select2-selection--single {
         border-color: $primary-color-green;
     }
-    
+
 }
 
 .select2-container .select2-selection--single {
@@ -100,6 +100,99 @@ body.tmp-duma {
     background-color: $services-hover !important;
 }
 
-.select2-container--default .select2-results > .select2-results__options {
+.select2-container--default .select2-results>.select2-results__options {
     scrollbar-width: none;
+}
+
+//  Multi
+
+.select2-container--default .select2-selection--multiple.select2-selection--clearable {
+    padding: 14px 50px 14px 16px !important;
+    border-radius: 8px !important;
+    height: 100% !important;
+    max-height: 60px;
+
+    @include respond-to(md) {
+        border-radius: 6px;
+    }
+}
+
+.select2-container--default .select2-selection--multiple {
+    padding: 0 !important;
+    max-height: 60px !important;
+    height: 100vh !important;
+    border-radius: 8px !important;
+    border-color: $input-color-default !important;
+
+    &:hover {
+        border-color: $input-color-hover !important;
+    }
+
+    @include respond-to(md) {
+        border-radius: 6px;
+    }
+}
+
+.select2-selection__clear {
+    margin: 0 !important;
+    right: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 20px !important;
+    height: unset !important;
+
+    &:hover {
+        color: $primary-color-hover !important;
+    }
+
+    @include respond-to(md) {
+        right: 16px;
+    }
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+    margin: 0;
+}
+
+.select2-selection__choice {
+    margin: 0 !important;
+}
+
+.select2-selection__choice__display {
+    @include caption-2;
+}
+
+.select2-selection__choice {
+    background-color: $event-color !important;
+    border-radius: 100px !important;
+    padding: 5px 40px 5px 20px !important;
+    border-color: transparent !important;
+    margin-right: 4px !important;
+}
+
+.select2-selection__choice__remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $main-text !important;
+    background-color: $content-color !important;
+    border-radius: 50% !important;
+    border-color: transparent !important;
+    padding: 0 !important;
+    right: 10px;
+    left: unset !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    width: 20px !important;
+        height: 20px !important;
+
+    &:hover {
+        color: $primary-color-hover !important;
+    }
+
+    span {
+       display: flex;
+       align-items: center;
+        font-size: 20px !important;
+    }
 }
