@@ -431,78 +431,80 @@
     </div>
     <main class="main">
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Опросы</span>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Инициативные проекты</a><span class="span">/</span><span class="breadcrumb_link">Наименование инициативного проекта</span>
         </div>
       </div>
-      <div class="reception">
-        <div class="title"> 
-          <div class="title__container"> 
-            <h2 class="title__name">Виртуальная приемная</h2>
-            <div class="title__description">Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства персональных данных.               </div>
+      <div class="init-project-detail">   
+        <div class="init-project-detail__container"> 
+          <div class="title"> 
+            <div class="title__container"> 
+              <h2 class="title__name">Наименование инициативного проекта</h2>
+            </div>
           </div>
-        </div>
-        <form class="reception__form">
-          <div class="reception__content"> 
-            <h3 class="reception__main_title">Основные данные</h3>
-            <fieldset class="fieldset">
-              <h3 class="fieldset__title reception__sender_title">Кому направляете электронную анкету</h3>
-              <div class="fieldset__answers">
-                <select class="select select-icon-right">
-                  <option class="select__option" value="Филатов Андрей Сергеевич, Глава города Сургута">Филатов Андрей Сергеевич, Глава города Сургута</option>
-                  <option class="select__option" value="Филатов">Филатов</option>
-                  <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
-                </select>
-              </div>
-            </fieldset>
-            <fieldset class="fieldset ">
-              <h3 class="fieldset__title reception__job_title">Наименование вашей организации (юридического лица)</h3>
-              <div class="fieldset__answers">
-                <input class="input  input-virtual-reception_input   " placeholder="Наименование организации" name="companyName" value="" id="companyName"/>
-              </div>
-            </fieldset>
-            <fieldset class="fieldset fieldset_user-contacts">
-              <h3 class="fieldset__title reception__user_title">Ваши данные</h3>
-              <div class="fieldset__answers">
-                <input class="input  input-virtual-reception_input   " placeholder="Фамилия" name="firstName" value="" id="firstName"/>
-                <input class="input  input-virtual-reception_input   " placeholder="Имя" name="secondName" value="" id="secondName"/>
-                <input class="input  input-virtual-reception_input   " placeholder="Отчество" name="thirdName" value="" id="thirdName"/>
-              </div>
-            </fieldset>
-            <button class="button button_white reception_add-author-btn   button_icon-left " onclick="addFormField(event)" title=""><span class="button_span">Добавить соавтора</span>
-              <ion-icon class="icon" name="people"></ion-icon>
-            </button>
-            <fieldset class="fieldset ">
-              <h3 class="fieldset__title reception__email_title">Данные для контакта</h3>
-              <div class="fieldset__answers">
-                <input class="input  input-virtual-reception_input   " placeholder="your_email@mail.ru" name="email" value="" id="email"/>
-                <input class="input  input-virtual-reception_input   " placeholder="892343567" name="phone" value="" id="phone"/>
-              </div>
-            </fieldset>
-            <fieldset class="fieldset">
-              <h3 class="fieldset__title reception__feedback_title">Обращение</h3>
-              <div class="fieldset__answers">
-                <div class="textarea__container">
-                  <textarea class="textarea  " placeholder="Введите ваш ответ" name="feedback" maxlength="none"></textarea>
-                  <div class="counter reception_counter"><span class="current">0</span><span>/</span><span class="max">none </span></div>
+          <div class="init-projects__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b282a3890b57f3edc0ace8ef27e29dc87c6b0f49529581fb5faabd9e13f1429&amp;amp;source=constructor" width="100%" height="444px" frameborder="0"></iframe>
+          </div>
+          <div class="init-card"> 
+            <div class="init-card__container"><img class="init-card__image" src="./resources/image_1.jpg"/>
+              <div class="init-card__description">
+                <div class="init-card__content">
+                  <div class="init-card__columns">
+                    <div class="init-card__row-detail">
+                      <ion-icon class="icon" name="calendar-number"> </ion-icon>
+                      <div class="init-card__row-desc"><span class="init-card__name">Дата внесения </span><span class="init-card__text">23 сентября 2024 </span></div>
+                    </div>
+                    <div class="init-card__row-detail">
+                      <ion-icon class="icon" name="people"></ion-icon>
+                      <div class="init-card__row-desc"><span class="init-card__name">Срок реализации</span><span class="init-card__text">2 года</span></div>
+                    </div>
+                  </div>
+                  <div class="init-card__columns">
+                    <div class="init-card__row-detail"> 
+                      <ion-icon class="icon" name="calendar"></ion-icon>
+                      <div class="init-card__row-desc"><span class="init-card__name">Инициатор</span><span class="init-card__text">Дума города Сургута Дума города Сургута</span></div>
+                    </div>
+                    <div class="init-card__row-detail"> 
+                      <ion-icon class="icon" name="wallet"></ion-icon>
+                      <div class="init-card__row-desc"><span class="init-card__name">Общая стоимость</span><span class="init-card__text">2 978 321,00 рублей</span></div>
+                    </div>
+                  </div>
+                  <div class="init-card__columns">              
+                    <div class="init-card__row-detail">
+                      <ion-icon class="icon" name="location"></ion-icon>
+                      <div class="init-card__row-desc"><span class="init-card__name">Территория реализации</span><span class="init-card__text">Ханты-Мансийский автономный округ – Югра       </span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </fieldset>
-          </div>
-          <div class="files-list"></div>
-          <div class="reception__buttons">
-            <div class="add-file-button" onclick="addDocument()">
-              <label for="file" id="file-label">Вложить документ
-                <ion-icon class="add-file-button__icon" name="add-outline"></ion-icon>
-                <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>
-              </label>
             </div>
-            <button class="button button_blue button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить обращение</span>
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-            </button>
           </div>
-        </form>
+          <div class="init-project-detail__desc"> 
+            <p><a class="link" href="/">Ваш инициативный проект</a> сформирован. Вы вправе обратиться с данным инициативным проектом в письменном виде в МКУ “Наш город” за оказанием информационной и консультационной помощи по дальнейшим этапам работы с проектом и вопросами:   </p>
+            <ul> 
+              <li>составления и оформления инициативного проекта;</li>
+              <li>определения части территории города Сургута, на которой могут реализовываться инициативные проекты;</li>
+              <li>организации и проведения собраний (конференций), опроса граждан и (или) сбора подписных листов, подтверждающих поддержку инициативного проекта</li>
+            </ul>
+            <p>По адресу г. Сургут, ул. Дзержиинского, д.5, телефон 8 (3462) 28-27-08    </p>
+          </div>
+        </div>
       </div>
     </main>
+    <div class="overlay hidden"></div>
+    <div class="login-projects hidden">
+      <div class="login__content">
+        <div class="login__content-top">
+          <ion-icon class="icon" name="close-outline" onclick="hideLoginProjects()"></ion-icon>
+        </div>
+        <div class="login__content-main">
+          <div class="login__content-main__text">
+            <div class="login__content-main__title"><span>Подать инициативный проект могут только авторизованные пользователи</span></div>
+            <div class="login__content-main__subtitle"><span>Вы можете войти или зарегистрироваться на нашем сайте, чтобы иметь возможность подавать и отслеживать свои инициативные проекты</span></div>
+          </div>
+          <div class="login__content-main__confirm-email"><span onclick="showLogin()">Войти или зарегистрироваться</span></div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_container-top">

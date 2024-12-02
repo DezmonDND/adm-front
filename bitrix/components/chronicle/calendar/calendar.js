@@ -22,21 +22,17 @@ const options = {
                 };
                 newDates = dates;
 
-                const button = document.querySelector('.search-by-site__button');
-                const buttonIcon = button.querySelector('.icon ');
+                const button = document.querySelector('.adm-all-news__calendar-button');
+                const buttonText = button.querySelector('.button_span')
 
                 if (from && to) {
                     from.value = new Date(dates.from).toLocaleDateString();
                     to.value = new Date(dates.to).toLocaleDateString();
 
-                    buttonIcon.name = 'calendar-outline';
-
                     if (from.value !== 'Invalid Date' && from.value !== 'Invalid Date') {
-                        button.textContent = `Дата начала ${from.value} Дата окончания ${to.value}`;
-                        button.appendChild(buttonIcon)
+                        buttonText.textContent = `Дата начала ${from.value} Дата окончания ${to.value}`;
                     } else {
-                        button.textContent = `Период публикации`;
-                        button.appendChild(buttonIcon)
+                        buttonText.textContent = `Период публикации`;
                     }
                 } else {
                 }

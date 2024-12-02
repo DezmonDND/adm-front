@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { href: '/', text: 'Главная' },
+                { href: '/', text: 'Инициативные проекты'},
+                { href: '/', text: 'Наименование инициативного проекта'},
+            ],
+            )
+        +init-project-detail()    
+    +login-projects()

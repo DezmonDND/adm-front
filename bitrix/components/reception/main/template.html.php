@@ -47,8 +47,8 @@
         <h3 class="fieldset__title reception__feedback_title">Обращение</h3>
         <div class="fieldset__answers">
           <div class="textarea__container">
-            <textarea class="textarea  " placeholder="Введите ваш ответ" name="feedback" maxlength="900"></textarea>
-            <div class="counter reception_counter"><span class="current">0</span><span>/</span><span class="max">900 </span></div>
+            <textarea class="textarea  " placeholder="Введите ваш ответ" name="feedback" maxlength="none"></textarea>
+            <div class="counter reception_counter"><span class="current">0</span><span>/</span><span class="max">none </span></div>
           </div>
         </div>
       </fieldset>

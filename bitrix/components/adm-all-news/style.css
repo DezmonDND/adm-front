@@ -8,8 +8,17 @@
 }
 .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button {
   border-radius: 4px;
-  max-width: 420px;
+  max-width: 480px;
   width: max-content;
+}
+@media (max-width: 410px) {
+  .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button {
+    width: calc(100% - 34px);
+  }
+}
+.adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button .button_span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-content {
   display: none;
