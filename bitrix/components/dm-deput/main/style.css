@@ -16,6 +16,8 @@
   object-fit: cover;
   max-height: 364px;
   object-position: top;
+  width: 100%;
+  border-radius: 8px;
 }
 .dm-deput .dm-deput-container .dm-deput-left .dm-deput-info-text {
   width: 100%;
