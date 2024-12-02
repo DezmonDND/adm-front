@@ -452,25 +452,18 @@
           <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" value="Областная дума">Областная дума</a>
           </div>
         </div>
-        <div class="filters">
-          <div class="filters_container">
-            <select class="select filters__select select-icon-right">
-              <option class="select__option" value="Все события">Все события</option>
-              <option class="select__option" value="Театр">Театр</option>
-              <option class="select__option" value="Детям">Детям</option>
-              <option class="select__option" value="Выставки">Выставки</option>
-              <option class="select__option" value="Концерты">Концерты</option>
-            </select>
-            <select class="select filters__select select-icon-right">
-              <option class="select__option" value="Любая тематика">Любая тематика</option>
-              <option class="select__option" value="Любая тематика">Любая тематика</option>
-            </select>
-            <select class="select filters__select select-icon-right">
-              <option class="select__option" value="Место проведения">Место проведения</option>
-              <option class="select__option" value="Место проведения">Место проведения</option>
-            </select>
+        <input id="from" name="from" value="value" style="display: none;"/>
+        <input id="to" name="to" value="value" style="display: none;"/>
+        <div class="adm-all-news__calendar">
+          <button class="button search-by-site__button adm-all-news__calendar-button    " onclick="toggleAdmAllNewsCalendar();" title=""><span class="button_span">Период публикации</span>
+            <ion-icon class="icon" name="calendar-outline"></ion-icon>
+          </button>
+          <div class="adm-all-news__calendar-content">
+            <div class="calendar-dm" id="calendar-all-news"></div>
           </div>
         </div>
+        <input id="from" name="from" value="value" style="display: none;"/>
+        <input id="to" name="to" value="value" style="display: none;"/>
         <div class="afisha-events">
           <div class="afisha-events__container">                                                           
             <div class="afisha-events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">

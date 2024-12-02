@@ -22,16 +22,23 @@ const options = {
                 };
                 newDates = dates;
 
+                const button = document.querySelector('.adm-all-news__calendar-button');
+                const buttonText = button.querySelector('.button_span')
+
                 if (from && to) {
                     from.value = new Date(dates.from).toLocaleDateString();
                     to.value = new Date(dates.to).toLocaleDateString();
-                    console.log(from.value);
-                    console.log(to.value);
+
+                    if (from.value !== 'Invalid Date' && from.value !== 'Invalid Date') {
+                        buttonText.textContent = `Дата начала ${from.value} Дата окончания ${to.value}`;
+                    } else {
+                        buttonText.textContent = `Период публикации`;
+                    }
+                } else {
                 }
             } else {
                 console.log('Нет выбранных дат');
             }
-            console.log(newDates);
         },
     },
     CSSClasses: {
