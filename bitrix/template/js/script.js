@@ -130,6 +130,16 @@ $(document).ready(function () {
     });
 });
 
+function openSelect() {
+  const selectMenu = document.querySelector(".select_multiple-menu");
+  selectMenu.style.display =
+    selectMenu.style.display === "none" ? "flex" : "none";
+}
+
+function selectOption(element) {
+  element.classList.toggle("select_multiple-option_selected");
+}
+
 const msDropdownList = document.querySelector('.multi-select__dropdown');
 const msDropdownItems = document.querySelectorAll('.multi-select__dropdown-item');
 const multiSelect = document.querySelector('input[name="multiSelect"]');
@@ -296,16 +306,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 500); 
 });
-
-function openSelect() {
-  const selectMenu = document.querySelector(".select_multiple-menu");
-  selectMenu.style.display =
-    selectMenu.style.display === "none" ? "flex" : "none";
-}
-
-function selectOption(element) {
-  element.classList.toggle("select_multiple-option_selected");
-}
 
 $(document).ready(function () {
     $('.toggle-container').each(function () {
