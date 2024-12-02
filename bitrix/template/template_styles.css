@@ -7238,7 +7238,7 @@ body.tmp-duma .hearing-item img {
   height: 100%;
   border-radius: 12px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 @media (max-width: 992px) {
   .biography .biography__container .biography__contacts-content .biography__avatar {
@@ -11798,7 +11798,7 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
   max-width: 72px;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border-radius: 12px;
   height: 100%;
   max-height: 72px;
@@ -18197,6 +18197,11 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
 }
 .dm-deput .dm-deput-container .dm-deput-left {
   max-width: 310px;
+}
+.dm-deput .dm-deput-container .dm-deput-left img {
+  object-fit: cover;
+  max-height: 364px;
+  object-position: top;
 }
 .dm-deput .dm-deput-container .dm-deput-left .dm-deput-info-text {
   width: 100%;
