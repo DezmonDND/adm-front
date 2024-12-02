@@ -138,6 +138,8 @@
 @use '../../blocks/components/profile/card/profile-card.scss';
 @use '../../blocks/components/dm-reception/dm-reception.scss';
 @use '../../blocks/components/scheme/main/scheme.scss';
+@use '../../blocks/components/page404/page404.scss';
+@use '../../blocks/components/dm-deput/main/dm-deput.scss';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -213,4 +215,19 @@ hr {
 
 .upper-text {
     text-transform: uppercase;
+}
+
+[id^="wait_comp_"] {
+    background-color: #FFFF !important;
+    border: 1px solid $event-color !important;
+    border-radius: 1000px !important;
+    color: $primary-color !important;
+    font-size: 0px !important;
+    background-position-x: 25px !important;
+    padding-left: 55px !important;
+}
+
+[id^="wait_comp_"]::after {
+    content: 'Загрузка' !important;
+    @include caption-2();
 }
