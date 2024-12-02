@@ -13,6 +13,12 @@
     
         .dm-deput-left {
             max-width: 310px;
+
+            img {
+                object-fit: cover;
+                max-height: 364px;
+                object-position: top;
+            }
     
             .dm-deput-info-text {
                 width: 100%;
