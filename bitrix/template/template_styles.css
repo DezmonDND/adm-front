@@ -6760,6 +6760,9 @@ body.tmp-duma .main-title .main-title__container .tabs {
     line-height: calc(20px * var(--lh));
   }
 }
+.reception .reception__form .reception_counter {
+  display: none;
+}
 .reception .reception__form .reception__buttons {
   display: flex;
   flex-direction: column;
