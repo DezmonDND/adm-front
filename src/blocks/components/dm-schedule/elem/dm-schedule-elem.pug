@@ -1,0 +1,30 @@
+
+
+mixin dm-schedule-elem(item = {})
+    .dm-schedule-elem 
+        .dm-schedule-top
+            span= item.name
+        .dm-schedule-elem-block
+            span= item.list
+        hr
+        .dm-schedule-elem-block
+            .dm-schedule-elem-block-item 
+                span.subtitle Глава округа
+                a(href='#')= item.head
+            .dm-schedule-elem-block-item 
+                span.subtitle Место работы
+                span= item.work
+            .dm-schedule-elem-block-item 
+                span.subtitle Должность
+                span= item.status
+        hr
+        .dm-schedule-elem-block
+            .dm-schedule-elem-block-item 
+                span.subtitle Адрес места ведения приема избирателей
+                span= item.addr
+            .dm-schedule-elem-block-item 
+                span.subtitle Место работы
+                span= item.date
+            .dm-schedule-elem-block-item 
+                span.subtitle Должность
+                span= item.phone
