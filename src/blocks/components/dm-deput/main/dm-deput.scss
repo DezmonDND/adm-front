@@ -2,17 +2,37 @@
 
 .dm-deput {
 
-    @include respond-to(md) {
-        display: none;
-    }
     .dm-deput-container {
         display: flex;
         align-items: top;   
         width: 100%;
         gap: 24px;
+
+
+        @include respond-to(md) {
+            flex-direction: column;
+            gap: 8px;
+        }
+        
     
         .dm-deput-left {
             max-width: 310px;
+
+            @include respond-to(md) {
+                max-width: unset;
+                width: 100%;
+            }
+
+            .dm-deput-left-info {
+                display: flex;
+                flex-direction: column;
+                @include respond-to(md){
+                    :last-child {
+                        margin-top: 0;
+                        order: 2;
+                    }
+                }
+            }
 
             img {
                 object-fit: cover;
@@ -31,6 +51,34 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+
+               
+                @include respond-to(md) {
+                    width: 100%;
+                    background-color: $grey-adm;
+                    padding: 16px;
+                    border-radius: 12px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    order: 4;
+            
+                    .dm-deput-info-text-info {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+            
+                        @include text-2();
+            
+                        @include respond-to(sm) {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+            
+                    .dm-deput-info-text-title span  {
+                        @include heading-h5();
+                    }
+                }
     
                 .dm-deput-info-text-title span  {
                     @include heading-h5();
@@ -53,11 +101,33 @@
                 display: flex;
                 flex-direction: column;
                 gap: 32px;
+
+                @include respond-to(md) {
+                    margin-top: 8px;
+                    width: 100%;
+                    background-color: $grey-adm;
+                    padding: 16px;
+                    border-radius: 12px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+            
+                    .dm-deput-top {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                    }
+                }
     
                 .dm-deput-top {
                     display: flex;
                     flex-direction: column;
                     gap: 12px;
+
+                    @include respond-to(md) {
+                        display: none
+                    }
     
                     .dm-deput-name span{
                         @include lead-1();
@@ -75,14 +145,9 @@
 
 }
 
-.dm-deput-md {
-    display: none;
+.dm-deput-card {
+    width: 100%;
     @include respond-to(md) {
-        display: block;
-    }
-    
-    .dm-deput-card {
-        width: 100%;
         border-radius: 8px;
         background-color: var(--cards-background);
         padding: 16px 100px 16px 16px;
@@ -91,79 +156,59 @@
         align-items: center;
         gap: 20px;
         height: 155px;
-        .dm-deput-card-info {
+
+        .dm-deput-card-img  {
+            min-width: 100px;
+            max-width: 100px;
+            min-height: 115px;
+            max-height: 115px;
+            border-radius: 8px;
+         }
+     
+         .dm-deput-card-img img {
+             width: 100%;
+             height: 100%;
+             border-radius: 8px;
+             object-fit: cover;
+        }
+    }
+    
+    
+    .dm-deput-card-info {
+
+        @include respond-to(md) {
             display: flex;
             flex-direction: column;
             gap: 16px;
-        }
 
-        @include respond-to(sm) {
-            padding-right: 16px;
-            height: 180px;
-            align-items: flex-start;
+            .dm-deput-name span{
+                @include lead-1();
+            }
 
-        }
-    }
-    .dm-deput-card-img  {
-       min-width: 100px;
-       max-width: 100px;
-       min-height: 115px;
-       max-height: 115px;
-       border-radius: 8px;
-    }
-
-    .dm-deput-card-img img {
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-        object-fit: cover;
-   }
-    .dm-deput-name span{
-        @include lead-1();
-    }
-    .dm-deput-status span {
-        color: $second-text;
-        @include caption-2();
-    }
-    .dm-deput-info-text {
-        width: 100%;
-        background-color: $grey-adm;
-        padding: 16px;
-        border-radius: 12px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-
-        .dm-deput-info-text-info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-
-            @include text-2();
-
-            @include respond-to(sm) {
-                grid-template-columns: 1fr;
+            .dm-deput-status span {
+                color: $second-text;
+                @include caption-2();
             }
         }
-
-        .dm-deput-info-text-title span  {
-            @include heading-h5();
-        }
+        
     }
-    .dm-deput-right-info {
-        margin-top: 8px;
-        width: 100%;
-        background-color: $grey-adm;
-        padding: 16px;
-        border-radius: 12px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
 
-        .dm-deput-top {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
+    @include respond-to(sm) {
+        padding-right: 16px;
+        height: unset;
+        align-items: flex-start;
+
     }
 }
+
+.dm-deput-card-info {
+    display: none;
+
+    @include respond-to(md) {
+        display: block;
+    }
+
+}
+
+
+    
