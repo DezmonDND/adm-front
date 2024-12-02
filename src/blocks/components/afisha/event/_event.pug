@@ -1,3 +1,5 @@
+include ../../modal-title/modal-title
+
 mixin event(data)
     .event
         .event__container            
@@ -6,7 +8,9 @@ mixin event(data)
                     ion-icon(name=`time`).event__icon
                     span.event__time #{data.time}
                 .event__location 
-                    span(title=`${data.building}`).event__place #{data.building}
+                    .event__place
+                        span.event__place-text #{data.building}
+                        +modal-title(data.building)
                     .event__icon-dot
                     span.event__cabinet #{data.cabinet}
             p.event__description #{data.description}

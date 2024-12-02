@@ -1,0 +1,13 @@
+
+
+mixin scheme(items = [])
+    .scheme 
+        .scheme-container
+            a(href = '#').scheme-title
+                span= 'Глава города'
+            .scheme-elems
+                each item in items 
+                    .scheme-col
+                        each el in item
+                            a(href='#').scheme-el 
+                               span= el

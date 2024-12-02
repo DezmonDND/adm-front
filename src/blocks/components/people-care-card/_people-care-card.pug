@@ -3,7 +3,7 @@ include ../../libs/buttons/_buttons.pug
 mixin people-care-card(data)
     div(class=`people-care-card ${data.background}`)
         if data.image
-            img(src=`../resources/${data.image}` class='people-care-card__icon')
+            ion-icon(name=`${data.image}` class=`icon people-care-card__icon`)
         else
             img(src='../icons/footer-logo_icon.svg' class='people-care-card__logo')      
         .people-care-card__container
