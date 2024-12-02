@@ -18391,6 +18391,90 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   gap: 12px;
 }
 
+.dm-schedule-top a {
+  color: var(--primary-color);
+}
+
+.dm-schedule-elem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--grey-adm);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 24px;
+  box-sizing: border-box;
+}
+@media (max-width: 992px) {
+  .dm-schedule-elem {
+    padding: 16px;
+    gap: 16px;
+    margin-top: 16px;
+  }
+}
+.dm-schedule-elem hr {
+  margin: 0;
+}
+.dm-schedule-elem span, .dm-schedule-elem a {
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .dm-schedule-elem span, .dm-schedule-elem a {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.dm-schedule-elem a {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+.dm-schedule-elem .dm-schedule-top span {
+  font-weight: 400;
+  font-size: calc(24px * var(--scale));
+  line-height: calc(28px * var(--lh));
+}
+@media (max-width: 992px) {
+  .dm-schedule-elem .dm-schedule-top span {
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.dm-schedule-elem .dm-schedule-elem-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .dm-schedule-elem .dm-schedule-elem-block {
+    gap: 16px;
+  }
+}
+.dm-schedule-elem .dm-schedule-elem-block .dm-schedule-elem-block-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 992px) {
+  .dm-schedule-elem .dm-schedule-elem-block .dm-schedule-elem-block-item {
+    gap: 8px;
+  }
+}
+.dm-schedule-elem .dm-schedule-elem-block .dm-schedule-elem-block-item .subtitle {
+  color: var(--tertiary-text);
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .dm-schedule-elem .dm-schedule-elem-block .dm-schedule-elem-block-item .subtitle {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
+}
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
