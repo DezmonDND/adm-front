@@ -51,7 +51,7 @@
       <div class="afisha-event__quote">
         <q class="afisha-event__quote-text">Мы приехали большой делегацией из Муслюмовского района. Привезли красивые концертные номера и традиционную атрибутику, которые олицетворяют татарскую культуру. Сабантуй уже давно перешел в разряд межнационального культурного общения и дружбы народов. Очень приятно оказаться в Сургуте в этот день. Отрадно, что здесь относятся с трепетом к традициям населения города. Мы с удовольствием приняли приглашение приехать в Сургут</q><span class="afisha-event__quote-author">Альберт Хузин, Глава Муслюмовского муниципального района.         </span>
       </div>
-      <div class="afisha-event__preview"><img class="afisha-event__link-image" src="/resources/hearing.jpg"/><a class="afisha-event__item-play" href="/hearing-detail.html">
+      <div class="afisha-event__preview"><img class="afisha-event__link-image" src="/resources/hearing.jpg" alt="Превью"/><a class="afisha-event__item-play" href="/hearing-detail.html">
           <ion-icon class="icon" name="play"></ion-icon></a></div>
       <div class="afisha-event__main-text"> 
         <h4 class="afisha-event__title">Еще один заголовок                  </h4>
@@ -61,7 +61,7 @@
         <p class="afisha-event__text">Сабантуй один из самых массовых народных праздников в нашем городе. Его традиционно посещает большое количество сургутян. Мероприятие окрашено яркой национальной палитрой, дружественной атмосферой и взаимопониманием. Праздник уже давно стал народным. Его отмечают не только татары и башкиры, но и все жители Сургута.</p>
       </div>
       <div class="afisha-event__banner"> 
-        <div class="afisha-event__banner-list"><img class="afisha-event__image" src="/local/templates/surgut/img/banner.png"/><img class="afisha-event__image" src="/local/templates/surgut/img/banner.png"/></div>
+        <div class="afisha-event__banner-list"><img class="afisha-event__image" src="/local/templates/surgut/img/banner.png" alt="Баннер события"/><img class="afisha-event__image" src="/local/templates/surgut/img/banner_4.jpg" alt="Баннер события"/></div>
         <div class="afisha-event__navigation"> <span class="afisha-event__comment">Небольшой комментарий к фотографии</span>
           <div class="slider"><a class="slider__link slider__afisha-event-prev">
               <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__afisha-event-next">

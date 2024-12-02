@@ -105,6 +105,17 @@
                     max-width: 755px;
                     width: 100%;
                     margin-right: 8px;
+                    max-height: 480px;
+                    object-fit: contain;
+                    object-position: center;
+
+                    @include respond-to(md) {
+                        max-height: 270px;
+                    }
+
+                    @include respond-to(sm) {
+                        max-height: 125px;
+                    }
                 }
             }
 

@@ -29,7 +29,7 @@ mixin fieldset(field)
         fieldset.fieldset
             h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
-                +select(field.iconPosition, field.options, field.type, field.name)           
+                +select(field.name, field.type, field.iconPosition, field.options )           
     else
         fieldset(class=`fieldset ${field.cls ? `fieldset_${field.cls}` : ""}`)
             if field.canRemove 

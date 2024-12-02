@@ -94,23 +94,27 @@ block content
             +fieldset(
                 {
                     type: 'select', 
+                    name: 'blank',
                     title: 'Кому направляете электронную анкету', 
                     cls_title: 'reception__sender', 
+                    iconPosition: 'right',
                     options: [
                         { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
                         { text: 'Филатов', value: 'Филатов' }, 
                         { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
-                    iconPosition: 'right'})
+                })
             +fieldset(
                 {
                     type: 'multiple', 
+                    name: 'sender',
                     title: 'Кому направляете электронную анкету', 
                     cls_title: 'reception__sender', 
+                    iconPosition: 'right', 
                     options: [
                         { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
                         { text: 'Филатов', value: 'Филатов' }, 
                         { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
-                    iconPosition: 'right', name: 'sender' })  
+                })  
             +button({ size: 'l', type: 'button', class: 'button_blue interview-form__button', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить форму` }) 
     +thanks({
         title: 'Благодарим вас за принятие участия в опросе!',

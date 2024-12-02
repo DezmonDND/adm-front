@@ -1,4 +1,4 @@
-mixin select(iconPosition, options, type, cls, size, name)
+mixin select(name, type, iconPosition, options, cls, size)
   if type === 'multiple'
     select.select.select_multiple(name=`${name}[]` multiple='multiple')
       if options

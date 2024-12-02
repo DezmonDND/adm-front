@@ -4,6 +4,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.select_multiple').select2({
+        placeholder: 'Выберите получателя',
         allowClear: true,
     });
 });
