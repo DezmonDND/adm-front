@@ -1,0 +1,19 @@
+extends ../dm-layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Администрация'},
+                { sort: '', href: '/', text: 'Заместители'},
+            ]
+        )
+        +title({
+                title: 'Депутат Думы'
+        })
+        +dm-deput({
+            name:'Слепов Максим Николаевич',
+            status:'Председатель Думы города VII созыва, председатель постоянного комитета Думы города по бюджету, налогам, финансам и имуществу',
+            img:'slepov.png'
+        })

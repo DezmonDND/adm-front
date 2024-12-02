@@ -53,82 +53,15 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    // Инициализация всех popup-блоков
-    $('.popup-fade').each(function () {
-        const $popupFade = $(this);
+function openSelect() {
+  const selectMenu = document.querySelector(".select_multiple-menu");
+  selectMenu.style.display =
+    selectMenu.style.display === "none" ? "flex" : "none";
+}
 
-        // Добавляем структуру popup, если она ещё не существует
-        if ($popupFade.find('.popup').length === 0) {
-            // Оборачиваем контент в .popup и .popup-content
-            const content = $popupFade.html();
-            $popupFade.empty().append(`
-          <div class="popup">
-            <a class="popup-close" href="#"><ion-icon name="close"></ion-icon></a>
-            <div class="popup-content">${content}</div>
-          </div>
-        `);
-        }
-    });
-
-    // Открытие popup
-    $('.popup-open').click(function () {
-        var popupId = $(this).data('popup-id');
-        const $popup = $('#' + popupId);
-        $popup.fadeIn();
-
-        // Запуск видео при открытии popup
-        const video = $popup.find('video').get(0);
-        if (video) {
-            video.play();
-        }
-
-        return false;
-    });
-
-    // Закрытие popup при нажатии на кнопку закрытия
-    $(document).on('click', '.popup-close', function () {
-        const $popupFade = $(this).closest('.popup-fade');
-        $popupFade.fadeOut();
-
-        // Остановка видео при закрытии popup
-        const video = $popupFade.find('video').get(0);
-        if (video) {
-            video.pause();
-            video.currentTime = 0; // Сбросить время воспроизведения на начало
-        }
-
-        return false;
-    });
-
-    // Закрытие popup при нажатии на ESC
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.popup-fade').fadeOut();
-
-            // Остановка всех видео в закрытых popup
-            $('.popup-fade video').each(function () {
-                this.pause();
-                this.currentTime = 0;
-            });
-        }
-    });
-
-    // Закрытие popup при клике вне контента
-    $('.popup-fade').click(function (e) {
-        if ($(e.target).closest('.popup').length === 0) {
-            $(this).fadeOut();
-
-            // Остановка видео при закрытии popup
-            const video = $(this).find('video').get(0);
-            if (video) {
-                video.pause();
-                video.currentTime = 0;
-            }
-        }
-    });
-});
+function selectOption(element) {
+  element.classList.toggle("select_multiple-option_selected");
+}
 
 const msDropdownList = document.querySelector('.multi-select__dropdown');
 const msDropdownItems = document.querySelectorAll('.multi-select__dropdown-item');
@@ -205,15 +138,82 @@ function updateMultiSelectValue(e) {
     getValues(e);
 }
 
-function openSelect() {
-  const selectMenu = document.querySelector(".select_multiple-menu");
-  selectMenu.style.display =
-    selectMenu.style.display === "none" ? "flex" : "none";
-}
+$(document).ready(function () {
+    // Инициализация всех popup-блоков
+    $('.popup-fade').each(function () {
+        const $popupFade = $(this);
 
-function selectOption(element) {
-  element.classList.toggle("select_multiple-option_selected");
-}
+        // Добавляем структуру popup, если она ещё не существует
+        if ($popupFade.find('.popup').length === 0) {
+            // Оборачиваем контент в .popup и .popup-content
+            const content = $popupFade.html();
+            $popupFade.empty().append(`
+          <div class="popup">
+            <a class="popup-close" href="#"><ion-icon name="close"></ion-icon></a>
+            <div class="popup-content">${content}</div>
+          </div>
+        `);
+        }
+    });
+
+    // Открытие popup
+    $('.popup-open').click(function () {
+        var popupId = $(this).data('popup-id');
+        const $popup = $('#' + popupId);
+        $popup.fadeIn();
+
+        // Запуск видео при открытии popup
+        const video = $popup.find('video').get(0);
+        if (video) {
+            video.play();
+        }
+
+        return false;
+    });
+
+    // Закрытие popup при нажатии на кнопку закрытия
+    $(document).on('click', '.popup-close', function () {
+        const $popupFade = $(this).closest('.popup-fade');
+        $popupFade.fadeOut();
+
+        // Остановка видео при закрытии popup
+        const video = $popupFade.find('video').get(0);
+        if (video) {
+            video.pause();
+            video.currentTime = 0; // Сбросить время воспроизведения на начало
+        }
+
+        return false;
+    });
+
+    // Закрытие popup при нажатии на ESC
+    $(document).keydown(function (e) {
+        if (e.keyCode === 27) {
+            e.stopPropagation();
+            $('.popup-fade').fadeOut();
+
+            // Остановка всех видео в закрытых popup
+            $('.popup-fade video').each(function () {
+                this.pause();
+                this.currentTime = 0;
+            });
+        }
+    });
+
+    // Закрытие popup при клике вне контента
+    $('.popup-fade').click(function (e) {
+        if ($(e.target).closest('.popup').length === 0) {
+            $(this).fadeOut();
+
+            // Остановка видео при закрытии popup
+            const video = $(this).find('video').get(0);
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+        }
+    });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
@@ -307,6 +307,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500); 
 });
 
+function getLength(event) {
+    const textarea = event.target;
+    const counterCurrent = textarea.parentNode.querySelector('.current');
+    const counterMax = textarea.parentNode.querySelector('.max');
+
+    if (counterCurrent && counterMax) {
+        const textLength = textarea.value.length;
+        counterCurrent.textContent = textLength;
+        if (textLength > Number(counterMax.textContent)) {
+            textarea.style.borderColor = '#D10404';
+        } else {
+            textarea.style.borderColor = '';
+        }
+    }
+}
+
+const textareas = document.querySelectorAll('.textarea');
+
+textareas.forEach((textarea) => {
+    textarea.addEventListener('input', getLength);
+});
+
 $(document).ready(function () {
     $('.toggle-container').each(function () {
         // Находим основные элементы
@@ -366,26 +388,4 @@ $(document).ready(function () {
             header.find('.toggle-arrow').toggleClass('rotated');
         });
     });
-});
-
-function getLength(event) {
-    const textarea = event.target;
-    const counterCurrent = textarea.parentNode.querySelector('.current');
-    const counterMax = textarea.parentNode.querySelector('.max');
-
-    if (counterCurrent && counterMax) {
-        const textLength = textarea.value.length;
-        counterCurrent.textContent = textLength;
-        if (textLength > Number(counterMax.textContent)) {
-            textarea.style.borderColor = '#D10404';
-        } else {
-            textarea.style.borderColor = '';
-        }
-    }
-}
-
-const textareas = document.querySelectorAll('.textarea');
-
-textareas.forEach((textarea) => {
-    textarea.addEventListener('input', getLength);
 });

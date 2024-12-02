@@ -41,6 +41,7 @@
 
 .dm-deputies-alphabet__letter {
   align-self: start;
+  min-width: 60px;
 }
 
 .dm-deputies-alphabet__letter span {
