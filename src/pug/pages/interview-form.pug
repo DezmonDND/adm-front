@@ -110,11 +110,7 @@ block content
                         { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
                         { text: 'Филатов', value: 'Филатов' }, 
                         { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
-                    iconPosition: 'right'})  
-            select(multiple="multiple" name="vote_multiselect_37[]").select.select_multi  
-                option(value='104') Первый  
-                option(value='105') Второй 
-                option(value='106') Третий          
+                    iconPosition: 'right', name: 'sender' })  
             +button({ size: 'l', type: 'button', class: 'button_blue interview-form__button', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить форму` }) 
     +thanks({
         title: 'Благодарим вас за принятие участия в опросе!',
