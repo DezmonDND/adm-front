@@ -7,9 +7,9 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 }
 
 .event {
-  width: 100%;
   background-color: var(--cards-background);
   border-radius: 12px;
+  color: var(--main-text);
 }
 .event .event__container {
   display: flex;

@@ -15,7 +15,7 @@
       </div>
     </div>
   </div>
-  <div class="help-city__content"> 
+  <div class="help-city__content" id="help-city__content"> 
     <div class="main-project-card">
       <div class="main-project-card__content">
         <div class="main-project-card__info"> 

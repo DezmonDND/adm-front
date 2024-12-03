@@ -31,7 +31,12 @@
             border-color: transparent;
 
             .button_span {
+                width: calc(100% - 32px);
                 @include heading-h6;
+
+                @include respond-to(md) {
+                    width: calc(100% - 45px);
+                }
             }
 
             &:hover {
@@ -43,10 +48,12 @@
             }
 
             .icon {
+                width: 32px;
                 color: $icons-color;
                 font-size: 45px;
 
                 @include respond-to(md) {
+                    width: 24px;
                     font-size: 40px;
                 }
             }

@@ -3,10 +3,7 @@
   <input class="input input_xl  input-text input-search-xl " placeholder="Название законопроекта" value=""/>
   <div class="search-form">
     <input class="input input_xs  input-text input-search-xs " placeholder="Номер регистрации" value=""/>
-    <select class="select select-icon-xs">
-      <option class="select__option" value="Раздел">Раздел</option>
-      <option class="select__option" value="Филатов">Филатов</option>
-      <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
+    <select class="select select-icon-left" name="xs">
     </select>
     <div class="calendar">
       <div class="calendar__links">

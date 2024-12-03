@@ -1,9 +1,9 @@
 mixin init-card(data={})
-    .init-card 
-        .init-card__container
-            img(class=`init-card__image` src='../resources/image_1.jpg')
-            .init-card__description
-                if data.detail
+    if data.detail
+        .init-card 
+            .init-card__container
+                img(class=`init-card__image` src='../resources/image_1.jpg' alt='Обложка проекта')
+                .init-card__description
                     .init-card__content
                         .init-card__columns
                             .init-card__row-detail
@@ -33,7 +33,11 @@ mixin init-card(data={})
                                 .init-card__row-desc
                                     span.init-card__name Территория реализации
                                     span.init-card__text Ханты-Мансийский автономный округ – Югра       
-                else 
+    else 
+        a(href='/').init-card 
+            .init-card__container
+                img(class=`init-card__image` src='../resources/image_1.jpg' alt='Обложка проекта')
+                .init-card__description
                     h4.init-card__title Наименование инциативного проекта
                     .init-card__content
                         .init-card__columns

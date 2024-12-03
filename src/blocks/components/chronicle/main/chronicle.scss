@@ -2,15 +2,18 @@
 
 .chronicle {
     display: flex;
+    justify-content: space-between;
 
     .chronicle__container {
         display: flex;
         gap: 24px;
+        width: 100%;
 
         .chronicle__list {
             display: flex;
             flex-direction: column;
             gap: 12px;
+            width: 100%;
 
             .chronicle__slider {
                 display: flex;

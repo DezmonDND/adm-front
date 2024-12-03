@@ -501,7 +501,7 @@
         <fieldset class="fieldset">
           <h3 class="fieldset__title reception__sender_title">Кому направляете электронную анкету</h3>
           <div class="fieldset__answers">
-            <select class="select select-icon-right">
+            <select class="select select-icon-right" name="blank">
               <option class="select__option" value="Филатов Андрей Сергеевич, Глава города Сургута">Филатов Андрей Сергеевич, Глава города Сургута</option>
               <option class="select__option" value="Филатов">Филатов</option>
               <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
@@ -511,18 +511,11 @@
         <fieldset class="fieldset">
           <h3 class="fieldset__title reception__sender_title">Кому направляете электронную анкету</h3>
           <div class="fieldset__answers">
-            <div class="multi-select">
-              <ul class="multi-select__chose">
-                <li>
-                  <input class="input multi-select__input" id="name" name="multiSelect" value="" type="text"/>
-                </li>
-              </ul>
-              <ul class="multi-select__dropdown multi-select__dropdown_hidden" id="multiSelectDropdown">
-                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич">Филатов Андрей Сергеевич</li>
-                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей Сергеевич, Глава">Филатов Андрей Сергеевич, Глава </li>
-                <li class="multi-select__dropdown-item multi-select__dropdown-item_visible" data-value="Филатов Андрей, Глава города Сургута">Филатов Андрей, Глава города Сургута</li>
-              </ul>
-            </div>
+            <select class="select select_multiple" name="sender[]" multiple="multiple">
+              <option class="select__option" value="Филатов Андрей Сергеевич, Глава города Сургута">Филатов Андрей Сергеевич, Глава города Сургута</option>
+              <option class="select__option" value="Филатов">Филатов</option>
+              <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
+            </select>
           </div>
         </fieldset>
         <button class="button button_blue interview-form__button button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить форму</span>

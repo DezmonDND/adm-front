@@ -10,6 +10,8 @@
 @use '../../blocks/libs/linkslist/linkslist.scss';
 @use '../../blocks/libs/textarea/textarea.scss';
 @use '../../blocks/libs/select/select.scss';
+@use '../../blocks/libs/select/select2.min.css';
+@use '../../blocks/libs/select/select_2.scss';
 @use '../../blocks/libs//checkbox/checkbox.scss';
 @use '../../blocks/libs/switch/switch.scss';
 @use '../../blocks/libs/search-button/search-button.scss';
@@ -20,7 +22,6 @@
 @use '../../blocks/libs/toggle/toggle.scss';
 @use '../../blocks/libs/add-file-button/add-file-button.scss';
 @use '../../blocks/libs/fieldset/fieldset.scss';
-@use '../../blocks/libs/multiselect/multi-select.scss';
 @use '../../blocks/libs/share/share.scss';
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';

@@ -25,16 +25,11 @@ mixin fieldset(field)
                 +textarea(field.options, field.error).fieldset__textarea
                 if field.error
                     span(class=`fieldset__span ${field.error ? 'fieldset_error' : ''}`) #{field.span}              
-    else if field.type === 'select'
+    else if field.type === 'select' || field.type === 'multiple'
         fieldset.fieldset
             h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
             .fieldset__answers
-                +select(field.iconPosition, field.options, 'select')
-    else if field.type === 'multiple'
-        fieldset.fieldset
-            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
-            .fieldset__answers
-                +select(field.iconPosition, field.options, 'multiple')            
+                +select(field.name, field.type, field.iconPosition, field.options )           
     else
         fieldset(class=`fieldset ${field.cls ? `fieldset_${field.cls}` : ""}`)
             if field.canRemove 

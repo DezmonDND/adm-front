@@ -1,14 +1,17 @@
 .chronicle {
   display: flex;
+  justify-content: space-between;
 }
 .chronicle .chronicle__container {
   display: flex;
   gap: 24px;
+  width: 100%;
 }
 .chronicle .chronicle__container .chronicle__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 .chronicle .chronicle__container .chronicle__list .chronicle__slider {
   display: flex;

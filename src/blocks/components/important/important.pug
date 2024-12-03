@@ -10,11 +10,16 @@ mixin important-inf()
                 class: 'important-inf'
             },
         })   
-        .important-inf__container
-            img.important-inf__banner(src='../img/banner_3.png' alt='Баннер')
-            img.important-inf__banner(src='../img/banner_2.png' alt='Баннер') 
-            img.important-inf__banner(src='../img/banner.png' alt='Баннер') 
-            img.important-inf__banner(src='../img/banner.png' alt='Баннер')
-            img.important-inf__banner(src='../img/banner.png' alt='Баннер')
+        .important-inf__container(id='important-inf__container')
+            a(href='/')
+                img.important-inf__banner(src='../img/banner_3.png' alt='Баннер')
+            a(href='/')
+                img.important-inf__banner(src='../img/banner_2.png' alt='Баннер') 
+            a(href='/')
+                img.important-inf__banner(src='../img/banner.png' alt='Баннер') 
+            a(href='/')
+                img.important-inf__banner(src='../img/banner.png' alt='Баннер')
+            a(href='/')
+                img.important-inf__banner(src='../img/banner.png' alt='Баннер')
         .important-inf__slider 
             +slider({ class: 'important-inf' })

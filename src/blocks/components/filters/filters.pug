@@ -4,18 +4,18 @@ include ../../libs/checkbox/_checkbox.pug
 mixin filters(data={})
     .filters
         .filters_container
-            +select('right', [
+            +select('events', '', 'right', [
                 { value: 'Все события', text: 'Все события' },
                 { value: 'Театр', text: 'Театр' },
                 { value: 'Детям', text: 'Детям' },
                 { value: 'Выставки', text: 'Выставки' },
                 { value: 'Концерты', text: 'Концерты' }
                 ], 'single', 'filters__select')
-            +select('right', [
+            +select('thema', '', 'right', [
                 { value: 'Любая тематика', text: 'Любая тематика' },
                 { value: 'Любая тематика', text: 'Любая тематика' }
                 ], 'single', 'filters__select')
-            +select('right', [
+            +select('thema', 'place', 'right', [
                 { value: 'Место проведения', text: 'Место проведения' },
                 { value: 'Место проведения', text: 'Место проведения' }
                 ], 'single', 'filters__select')

@@ -215,9 +215,25 @@
 
 .fc-toolbar-title {
     padding: 0;
-    
+
 }
 
 .fc .fc-toolbar-title {
     @include heading-h3;
+}
+
+.fc-button {
+    box-shadow: none !important;
+}
+
+.fc-prev-button,
+.fc-next-button {
+    &:hover {
+        color: $primary-color-hover !important;
+    }
+
+    &:active {
+        background-color: transparent !important;
+        color: $primary-color-active !important;
+    }
 }
