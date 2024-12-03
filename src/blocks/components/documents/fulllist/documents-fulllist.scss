@@ -84,6 +84,7 @@
                 display: flex;
                 gap: 8px;
                 margin-left: auto;
+                justify-content: end;
 
                 @include respond-to(md) {
                     flex: 0 0 100%;
