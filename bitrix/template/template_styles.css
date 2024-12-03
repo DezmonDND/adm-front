@@ -10225,13 +10225,13 @@ body.tmp-print .project-generation__top-btns {
   background: linear-gradient(#f97a7c 0%, #5280ea 100%);
 }
 .people-care-card_bg-dm-1 {
-  background: linear-gradient(244.39deg, #0d6cba 25.53%, #cccac5 104.75%);
+  background: linear-gradient(143.52deg, #EDDAB7 5.24%, #40330F 90.43%);
 }
 .people-care-card_bg-dm-2 {
-  background: linear-gradient(256.37deg, #255ba0 35.08%, #15b3e7 111.88%);
+  background: linear-gradient(143.52deg, #87CCB6 5.24%, #085195 90.43%);
 }
 .people-care-card_bg-dm-3 {
-  background: linear-gradient(254.18deg, #255ba0 35.1%, #15e7d9 121.05%);
+  background: linear-gradient(143.52deg, #8ABAD3 5.24%, #0A4B89 90.43%);
 }
 .people-care-card .people-care-card__logo {
   position: absolute;
@@ -10258,6 +10258,13 @@ body.tmp-print .project-generation__top-btns {
   .people-care-card .people-care-card__icon {
     right: 28px;
   }
+}
+.people-care-card .people-care-card__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 .people-care-card .people-care-card__container {
   display: flex;
@@ -10823,10 +10830,12 @@ body.tmp-duma .usefull-links {
   flex-direction: row-reverse;
   width: 100%;
   gap: 8px;
+  min-height: 40px;
 }
 @media (max-width: 992px) {
   .usefull-links .usefull-links__container .usefull-link .usefull-link__container {
     gap: 12px;
+    min-height: unset;
   }
 }
 .usefull-links .usefull-links__container .usefull-link .usefull-link__container .usefull-link__icon {
@@ -12479,6 +12488,12 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   display: flex;
   gap: 24px;
   width: 100%;
+  min-height: 332px;
+}
+@media (max-width: 992px) {
+  .chronicle .chronicle__container {
+    min-height: unset;
+  }
 }
 .chronicle .chronicle__container .chronicle__list {
   display: flex;
@@ -15049,6 +15064,7 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
   display: block;
   margin: 0;
   padding: 0;
+  width: initial !important;
 }
 .slick-list:focus {
   outline: none;
