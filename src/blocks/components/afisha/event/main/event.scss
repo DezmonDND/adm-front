@@ -9,9 +9,9 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 }
 
 .event {
-    width: 100%;
     background-color: $cards-background;
     border-radius: 12px;
+    color: $main-text;
 
     .event__container {
         display: flex;

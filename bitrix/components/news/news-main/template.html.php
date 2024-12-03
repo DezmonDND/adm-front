@@ -13,7 +13,7 @@
             <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Самые важные</a><a class="tab-button " href="/">Реализация нацпроектов</a><a class="tab-button " href="/">Деятельность администрации</a><a class="tab-button " href="/">Областная дума</a>
             </div>
           </div>
-          <div class="news-main__card-list"> <a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+          <div class="news-main__card-list" id="news-main__card-list"> <a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags">

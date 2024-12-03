@@ -13,18 +13,18 @@
     </div>
     <div class="filters">
       <div class="filters_container">
-        <select class="select filters__select select-icon-right">
+        <select class="select single select_filters__select select-icon-right" name="events">
           <option class="select__option" value="Все события">Все события</option>
           <option class="select__option" value="Театр">Театр</option>
           <option class="select__option" value="Детям">Детям</option>
           <option class="select__option" value="Выставки">Выставки</option>
           <option class="select__option" value="Концерты">Концерты</option>
         </select>
-        <select class="select filters__select select-icon-right">
+        <select class="select single select_filters__select select-icon-right" name="thema">
           <option class="select__option" value="Любая тематика">Любая тематика</option>
           <option class="select__option" value="Любая тематика">Любая тематика</option>
         </select>
-        <select class="select filters__select select-icon-right">
+        <select class="select single select_filters__select select-icon-right" name="thema">
           <option class="select__option" value="Место проведения">Место проведения</option>
           <option class="select__option" value="Место проведения">Место проведения</option>
         </select>
@@ -32,8 +32,7 @@
     </div>
     <div class="chronicle">
       <div class="chronicle__container"> 
-        <div class="chronicle__list">
-          <div class="event">
+        <div class="chronicle__list"><a class="event" href="/">
             <div class="event__container">           
               <div class="event__info"> 
                 <div class="event__time-block"> 
@@ -49,9 +48,7 @@
                 </div>
               </div>
               <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-            </div>
-          </div>
-          <div class="event">
+            </div></a><a class="event" href="/">
             <div class="event__container">           
               <div class="event__info"> 
                 <div class="event__time-block"> 
@@ -67,9 +64,7 @@
                 </div>
               </div>
               <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-            </div>
-          </div>
-          <div class="event">
+            </div></a><a class="event" href="/">
             <div class="event__container">           
               <div class="event__info"> 
                 <div class="event__time-block"> 
@@ -85,9 +80,7 @@
                 </div>
               </div>
               <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-            </div>
-          </div>
-          <div class="event">
+            </div></a><a class="event" href="/">
             <div class="event__container">           
               <div class="event__info"> 
                 <div class="event__time-block"> 
@@ -103,9 +96,7 @@
                 </div>
               </div>
               <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-            </div>
-          </div>
-          <div class="event">
+            </div></a><a class="event" href="/">
             <div class="event__container">           
               <div class="event__info"> 
                 <div class="event__time-block"> 
@@ -121,9 +112,7 @@
                 </div>
               </div>
               <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-            </div>
-          </div>
-          <div class="event">
+            </div></a><a class="event" href="/">
             <div class="event__container">           
               <div class="event__info"> 
                 <div class="event__time-block"> 
@@ -139,8 +128,7 @@
                 </div>
               </div>
               <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-            </div>
-          </div>
+            </div></a>
           <div class="chronicle__slider">
             <div class="navigation"> <a class="navigation__link">
                 <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>

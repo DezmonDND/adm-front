@@ -3,12 +3,33 @@
 .init-card {
     background-color: $cards-background;
     border-radius: 12px;
+    color: $main-text;
+
+    &:hover .init-card__title {
+        color: $primary-color;
+    }  
+
+    &:active .init-card__title {
+        color: $primary-color-active;
+    } 
 
     .init-card__container {
         .init-card__image {
             max-width: 421px;
             width: 100%;
-            border-radius: 12px 12px 0 0
+            border-radius: 12px 12px 0 0;
+            max-height: 237px;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+
+            @include respond-to(md) {
+                max-height: 220px;
+            }
+
+            @include respond-to(sm) {
+                max-height: 189px;
+            }
         }
 
         .init-card__title {

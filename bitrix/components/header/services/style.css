@@ -30,6 +30,7 @@
   border-color: transparent;
 }
 .header-services .header-services__container .header-services__button .button_span {
+  width: calc(100% - 32px);
   font-weight: 500;
   font-size: calc(12px * var(--scale));
   line-height: calc(16px * var(--lh));
@@ -40,6 +41,11 @@
     line-height: calc(14px * var(--lh));
   }
 }
+@media (max-width: 992px) {
+  .header-services .header-services__container .header-services__button .button_span {
+    width: calc(100% - 45px);
+  }
+}
 .header-services .header-services__container .header-services__button:hover {
   background-color: var(--services-hover);
 }
@@ -47,11 +53,13 @@
   background-color: var(--services-active);
 }
 .header-services .header-services__container .header-services__button .icon {
+  width: 32px;
   color: var(--icons-color);
   font-size: 45px;
 }
 @media (max-width: 992px) {
   .header-services .header-services__container .header-services__button .icon {
+    width: 24px;
     font-size: 40px;
   }
 }

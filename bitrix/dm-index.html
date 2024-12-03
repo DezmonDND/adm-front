@@ -278,7 +278,7 @@
         </div>
         <div class="news-top"> 
           <div class="news-top__container">
-            <div class="news-top__card-list">
+            <div class="news-top__card-list" id="news-top__card-list">
               <div class="news-top-card">
                 <div class="news-top-card__container"><img class="news-top-card__image" src="./resources/news_image.png"/>
                   <div class="news-top-card__dots"> 
@@ -371,18 +371,18 @@
           </div>
           <div class="filters">
             <div class="filters_container">
-              <select class="select filters__select select-icon-right">
+              <select class="select single select_filters__select select-icon-right" name="events">
                 <option class="select__option" value="Все события">Все события</option>
                 <option class="select__option" value="Театр">Театр</option>
                 <option class="select__option" value="Детям">Детям</option>
                 <option class="select__option" value="Выставки">Выставки</option>
                 <option class="select__option" value="Концерты">Концерты</option>
               </select>
-              <select class="select filters__select select-icon-right">
+              <select class="select single select_filters__select select-icon-right" name="thema">
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
               </select>
-              <select class="select filters__select select-icon-right">
+              <select class="select single select_filters__select select-icon-right" name="thema">
                 <option class="select__option" value="Место проведения">Место проведения</option>
                 <option class="select__option" value="Место проведения">Место проведения</option>
               </select>
@@ -392,8 +392,7 @@
           </div>
           <div class="chronicle">
             <div class="chronicle__container"> 
-              <div class="chronicle__list">
-                <div class="event">
+              <div class="chronicle__list"><a class="event" href="/">
                   <div class="event__container">           
                     <div class="event__info"> 
                       <div class="event__time-block"> 
@@ -409,9 +408,7 @@
                       </div>
                     </div>
                     <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                  </div>
-                </div>
-                <div class="event">
+                  </div></a><a class="event" href="/">
                   <div class="event__container">           
                     <div class="event__info"> 
                       <div class="event__time-block"> 
@@ -427,9 +424,7 @@
                       </div>
                     </div>
                     <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                  </div>
-                </div>
-                <div class="event">
+                  </div></a><a class="event" href="/">
                   <div class="event__container">           
                     <div class="event__info"> 
                       <div class="event__time-block"> 
@@ -445,9 +440,7 @@
                       </div>
                     </div>
                     <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                  </div>
-                </div>
-                <div class="event">
+                  </div></a><a class="event" href="/">
                   <div class="event__container">           
                     <div class="event__info"> 
                       <div class="event__time-block"> 
@@ -463,9 +456,7 @@
                       </div>
                     </div>
                     <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                  </div>
-                </div>
-                <div class="event">
+                  </div></a><a class="event" href="/">
                   <div class="event__container">           
                     <div class="event__info"> 
                       <div class="event__time-block"> 
@@ -481,9 +472,7 @@
                       </div>
                     </div>
                     <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                  </div>
-                </div>
-                <div class="event">
+                  </div></a><a class="event" href="/">
                   <div class="event__container">           
                     <div class="event__info"> 
                       <div class="event__time-block"> 
@@ -499,8 +488,7 @@
                       </div>
                     </div>
                     <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                  </div>
-                </div>
+                  </div></a>
                 <div class="chronicle__slider">
                   <div class="navigation"> <a class="navigation__link">
                       <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
@@ -533,7 +521,7 @@
                   <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Самые важные</a><a class="tab-button " href="/">Заседания</a><a class="tab-button " href="/">Публичные слушания</a>
                   </div>
                 </div>
-                <div class="dm-archive__list">   <a class="hearing-item" href="/hearing-detail.html">
+                <div class="dm-archive__list" id="dm-archive__list">   <a class="hearing-item" href="/hearing-detail.html">
                     <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                       <div class="hearing-item-bg"></div>
                       <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
@@ -613,7 +601,7 @@
           </div>
         </div>
         <div class="dm-city-projects__container">
-          <div class="dm-city-projects__card-list"> 
+          <div class="dm-city-projects__card-list" id="dm-city-projects__card-list"> 
             <div class="people-care-card people-care-card_bg-dm-1"><img class="people-care-card__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg"/>
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">

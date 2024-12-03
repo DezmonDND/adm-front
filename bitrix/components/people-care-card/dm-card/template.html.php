@@ -1,6 +1,6 @@
 
 <div class="main-people-care__container">
-  <div class="main-people-care__card-list"> 
+  <div class="main-people-care__card-list" id="people-care__card-list"> 
     <div class="people-care-card people-care-card_bg-dm-1"><img class="people-care-card__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg"/>
       <div class="people-care-card__container">
         <div class="people-care-card__text-block">

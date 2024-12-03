@@ -29,26 +29,27 @@ function initSlider(selector, nextArrow, prevArrow, options) {
     });
 }
 
-// Главная новость
-
-$(document).ready(function () {
-    $('.news-top__card-list').slick({
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
-        adaptiveHeight: false,
-        variableWidth: false,
-    });
-});
-
 // Слайдеры для всех разрешений
 
 const sliders = [
+    // Главная новость
+    {
+        selector: '#news-top__card-list',
+        options: {
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            adaptiveHeight: false,
+            variableWidth: false,
+            autoplay: true,
+            infinite: true,
+        },
+    },
     // Главные новости
     {
-        selector: '.news-main__card-list',
+        selector: '#news-main__card-list',
         nextArrow: '.slider__news-main-next',
         prevArrow: '.slider__news-main-prev',
         options: {
@@ -65,7 +66,7 @@ const sliders = [
     },
     // Анонсы и события
     {
-        selector: '.events__news',
+        selector: '#events__news',
         nextArrow: '.slider__events-next',
         prevArrow: '.slider__events-prev',
         options: {
@@ -84,7 +85,7 @@ const sliders = [
 
     // Помогите городу стать лучше
     {
-        selector: '.help-city__content',
+        selector: '#help-city__content',
         nextArrow: '.slider__help-city-next',
         prevArrow: '.slider__help-city-prev',
         options: {
@@ -100,7 +101,7 @@ const sliders = [
     },
     // Важная информация для жителей
     {
-        selector: '.important-inf__container',
+        selector: '#important-inf__container',
         nextArrow: '.slider__important-inf-next',
         prevArrow: '.slider__important-inf-prev',
         options: {
@@ -113,7 +114,7 @@ const sliders = [
     },
     // С заботой о жителях
     {
-        selector: '.people-care__card-list',
+        selector: '#people-care__card-list',
         nextArrow: '.slider__people-care-next',
         prevArrow: '.slider__people-care-prev',
         options: {
@@ -130,7 +131,7 @@ const sliders = [
     },
     // Проекты Думы города
     {
-        selector: '.dm-city-projects__card-list',
+        selector: '#dm-city-projects__card-list',
         nextArrow: '.slider__dm-city-projects-next',
         prevArrow: '.slider__dm-city-projects-prev',
         options: {
@@ -148,7 +149,7 @@ const sliders = [
     },
     // Архив трансляций
     {
-        selector: '.dm-archive__list',
+        selector: '#dm-archive__list',
         nextArrow: '.slider__dm-archive-next',
         prevArrow: '.slider__dm-archive-prev',
         options: {
@@ -177,7 +178,7 @@ let slidersInitialized = true;
 
 // Отфильтровать слайдеры для разрешения ниже sm
 
-const slidersToManage = sliders.filter((slider) => slider.selector === '.news-main__card-list');
+const slidersToManage = sliders.filter((slider) => slider.selector === '#news-main__card-list');
 
 $(window)
     .on('resize', function () {

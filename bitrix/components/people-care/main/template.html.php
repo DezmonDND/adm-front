@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="people-care__container">
-    <div class="people-care__card-list"> 
+    <div class="people-care__card-list" id="people-care__card-list"> 
       <div class="people-care-card people-care-card_bg-health">
         <ion-icon class="icon people-care-card__icon" name="medkit-outline"></ion-icon>
         <div class="people-care-card__container">
