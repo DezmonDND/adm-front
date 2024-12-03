@@ -1,0 +1,30 @@
+extends ../layout
+
+block content
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'О Сургуте'},
+                { sort: '', href: '/', text: 'Шаблонная страница с текстом'},
+            ]
+        )
+        .about
+            .about-content
+                +about-info()
+                +about-partners() 
+                +about-symbols() 
+                +about-history()
+                +about-today()
+                +about-organs()
+                +linkslist(
+                    [
+                        {title:"Памятные даты Сургута на 2021 год",  href:"#"},
+                        {title:"Памятные даты Сургута на 2020 год", href:"#"},
+                        {title:"Памятные даты Сургута на 2019 год", href:"#"},
+                        {title:"Памятные даты Сургута на 2018 год", href:"#"},
+                        {title:"Памятные даты Сургута на 2017 год", href:"#"},
+                        {title:"Памятные даты Сургута на 2016 год", href:"#"},
+                        {title:"Памятные даты Сургута на 2015 год", href:"#"},
+                    ]
+                )                      
