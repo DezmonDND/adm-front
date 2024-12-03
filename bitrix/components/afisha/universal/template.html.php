@@ -84,8 +84,7 @@
   </div>
   <div class="afisha-universal"> 
     <div class="afisha-universal__content">
-      <div class="afisha-universal__events-list"> 
-        <div class="event">
+      <div class="afisha-universal__events-list"> <a class="event" href="/">
           <div class="event__container">           
             <div class="event__info"> 
               <div class="event__time-block"> 
@@ -101,9 +100,7 @@
               </div>
             </div>
             <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-          </div>
-        </div>
-        <div class="event">
+          </div></a><a class="event" href="/">
           <div class="event__container">           
             <div class="event__info"> 
               <div class="event__time-block"> 
@@ -119,9 +116,7 @@
               </div>
             </div>
             <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-          </div>
-        </div>
-        <div class="event">
+          </div></a><a class="event" href="/">
           <div class="event__container">           
             <div class="event__info"> 
               <div class="event__time-block"> 
@@ -137,9 +132,7 @@
               </div>
             </div>
             <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-          </div>
-        </div>
-        <div class="event">
+          </div></a><a class="event" href="/">
           <div class="event__container">           
             <div class="event__info"> 
               <div class="event__time-block"> 
@@ -155,9 +148,7 @@
               </div>
             </div>
             <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-          </div>
-        </div>
-        <div class="event">
+          </div></a><a class="event" href="/">
           <div class="event__container">           
             <div class="event__info"> 
               <div class="event__time-block"> 
@@ -173,9 +164,7 @@
               </div>
             </div>
             <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-          </div>
-        </div>
-        <div class="event">
+          </div></a><a class="event" href="/">
           <div class="event__container">           
             <div class="event__info"> 
               <div class="event__time-block"> 
@@ -191,8 +180,7 @@
               </div>
             </div>
             <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-          </div>
-        </div>
+          </div></a>
       </div>
     </div>
     <div class="navigation"> <a class="navigation__link">

@@ -18,7 +18,7 @@ mixin help-city()
                 { title: 'Администрация', href: '/' , value: 'Администрация'},
                 { title: 'Прочее', href: '/' , value: 'Прочее'},
                 ], { class: 'help-city' } )
-        .help-city__content 
+        .help-city__content(id='help-city__content') 
             +main-project-card({
                 date: 'до 29 сентября',
                 title: 'Уровень благоустройства города',

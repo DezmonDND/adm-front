@@ -16,7 +16,7 @@
             <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Самые важные</a><a class="tab-button " href="/">Заседания</a><a class="tab-button " href="/">Публичные слушания</a>
             </div>
           </div>
-          <div class="dm-archive__list">   <a class="hearing-item" href="/hearing-detail.html">
+          <div class="dm-archive__list" id="dm-archive__list">   <a class="hearing-item" href="/hearing-detail.html">
               <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
                 <div class="hearing-item-bg"></div>
                 <button class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>

@@ -11,7 +11,7 @@
   </div>
   <div class="news-top"> 
     <div class="news-top__container">
-      <div class="news-top__card-list">
+      <div class="news-top__card-list" id="news-top__card-list">
         <div class="news-top-card">
           <div class="news-top-card__container"><img class="news-top-card__image" src="./resources/news_image.png"/>
             <div class="news-top-card__dots"> 

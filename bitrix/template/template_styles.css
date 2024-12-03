@@ -8790,9 +8790,9 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 }
 
 .event {
-  width: 100%;
   background-color: var(--cards-background);
   border-radius: 12px;
+  color: var(--main-text);
 }
 .event .event__container {
   display: flex;
@@ -10123,6 +10123,7 @@ body.tmp-print .project-generation__top-btns {
   border-color: transparent;
 }
 .header-services .header-services__container .header-services__button .button_span {
+  width: calc(100% - 32px);
   font-weight: 500;
   font-size: calc(12px * var(--scale));
   line-height: calc(16px * var(--lh));
@@ -10133,6 +10134,11 @@ body.tmp-print .project-generation__top-btns {
     line-height: calc(14px * var(--lh));
   }
 }
+@media (max-width: 992px) {
+  .header-services .header-services__container .header-services__button .button_span {
+    width: calc(100% - 45px);
+  }
+}
 .header-services .header-services__container .header-services__button:hover {
   background-color: var(--services-hover);
 }
@@ -10140,11 +10146,13 @@ body.tmp-print .project-generation__top-btns {
   background-color: var(--services-active);
 }
 .header-services .header-services__container .header-services__button .icon {
+  width: 32px;
   color: var(--icons-color);
   font-size: 45px;
 }
 @media (max-width: 992px) {
   .header-services .header-services__container .header-services__button .icon {
+    width: 24px;
     font-size: 40px;
   }
 }
@@ -12428,15 +12436,18 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
 
 .chronicle {
   display: flex;
+  justify-content: space-between;
 }
 .chronicle .chronicle__container {
   display: flex;
   gap: 24px;
+  width: 100%;
 }
 .chronicle .chronicle__container .chronicle__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 .chronicle .chronicle__container .chronicle__list .chronicle__slider {
   display: flex;

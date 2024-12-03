@@ -111,7 +111,7 @@
             <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
             <label class="сheckbox__label" for="10">С пушкинской картой</label>
           </div>
-          <div class="events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+          <div class="events__news" id="events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags">
