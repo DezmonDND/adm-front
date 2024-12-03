@@ -8,7 +8,7 @@ $(document).ready(function () {
             adaptiveHeight: true,
             variableWidth: false,
         });
-    }, 8000);
+    }, 3000);
 
     $('.slider__afisha-event-next').on('click', function () {
         $('#afisha-event__banner-list').slick('slickNext');
