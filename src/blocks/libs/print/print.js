@@ -7,4 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         url.searchParams.append("print", "Y")
         window.open(url.toString(), '_blank')
     }))
+
+    let params = new URLSearchParams(document.location.search);
+    let print = params.get("print");
+    if (print === 'Y') {
+        window.print();
+    }
 })
