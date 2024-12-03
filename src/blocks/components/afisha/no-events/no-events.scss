@@ -1,0 +1,32 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.no-events {
+    padding: 32px;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include respond-to(md) {
+        position: unset;
+        top: unset;
+        transform: unset;
+    }
+
+    .no-events__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        .no-events__icon {
+            font-size: 80px;
+            color: $event-color-hover
+        }
+
+        .no-events__text {
+            @include caption-1;
+        }
+    }
+}

@@ -12,6 +12,7 @@
   flex-direction: column;
   gap: 12px;
   width: 100%;
+  position: relative;
 }
 .chronicle .chronicle__container .chronicle__list .chronicle__slider {
   display: flex;

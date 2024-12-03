@@ -8701,6 +8701,43 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
   position: relative;
 }
 
+.no-events {
+  padding: 32px;
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 992px) {
+  .no-events {
+    position: unset;
+    top: unset;
+    transform: unset;
+  }
+}
+.no-events .no-events__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.no-events .no-events__container .no-events__icon {
+  font-size: 80px;
+  color: var(--event-color-hover);
+}
+.no-events .no-events__container .no-events__text {
+  font-weight: 300;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .no-events .no-events__container .no-events__text {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
+  }
+}
+
 body.tmp-duma .navigation .navigation__link {
   color: var(--primary-color-green);
 }
@@ -12448,6 +12485,7 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   flex-direction: column;
   gap: 12px;
   width: 100%;
+  position: relative;
 }
 .chronicle .chronicle__container .chronicle__list .chronicle__slider {
   display: flex;
