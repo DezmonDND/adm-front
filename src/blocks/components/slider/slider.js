@@ -29,23 +29,22 @@ function initSlider(selector, nextArrow, prevArrow, options) {
     });
 }
 
-// Главная новость
-
-$(document).ready(function () {
-    $('.news-top__card-list').slick({
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
-        adaptiveHeight: false,
-        variableWidth: false,
-    });
-});
-
 // Слайдеры для всех разрешений
 
 const sliders = [
+    // Главная новость
+    {
+        selector: '.news-top__card-list',
+        options: {
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            adaptiveHeight: false,
+            variableWidth: false,
+        },
+    },
     // Главные новости
     {
         selector: '.news-main__card-list',
