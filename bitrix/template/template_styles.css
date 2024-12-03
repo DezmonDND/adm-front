@@ -17384,6 +17384,20 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   }
 }
 
+.fc-button {
+  box-shadow: none !important;
+}
+
+.fc-prev-button:hover,
+.fc-next-button:hover {
+  color: var(--primary-color-hover) !important;
+}
+.fc-prev-button:active,
+.fc-next-button:active {
+  background-color: transparent !important;
+  color: var(--primary-color-active) !important;
+}
+
 .hearing-event-popup {
   display: none;
   max-width: 400px;
