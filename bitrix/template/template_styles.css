@@ -19533,20 +19533,20 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   }
 }
 .about-symbols .about-symbols__title {
-  padding: 32px 0 16px;
   font-weight: 500;
   font-size: calc(24px * var(--scale));
   line-height: calc(28px * var(--lh));
-}
-@media (max-width: 992px) {
-  .about-symbols .about-symbols__title {
-    padding: 24px 0 8px;
-  }
+  padding: 32px 0 16px;
 }
 @media (max-width: 992px) {
   .about-symbols .about-symbols__title {
     font-size: calc(16px * var(--scale));
     line-height: calc(20px * var(--lh));
+  }
+}
+@media (max-width: 992px) {
+  .about-symbols .about-symbols__title {
+    padding: 24px 0 8px;
   }
 }
 .about-symbols .about-symbols-list {
@@ -19636,20 +19636,20 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
 }
 .about-history .about-history__container .about-history__title {
   margin: 0;
+  padding: 32px 0 16px;
   font-weight: 500;
   font-size: calc(40px * var(--scale));
   line-height: calc(48px * var(--lh));
-  padding: 32px 0 16px;
+}
+@media (max-width: 992px) {
+  .about-history .about-history__container .about-history__title {
+    padding: 24px 0 8px;
+  }
 }
 @media (max-width: 992px) {
   .about-history .about-history__container .about-history__title {
     font-size: calc(20px * var(--scale));
     line-height: calc(24px * var(--lh));
-  }
-}
-@media (max-width: 992px) {
-  .about-history .about-history__container .about-history__title {
-    padding: 24px 0 8px;
   }
 }
 .about-history .about-history__container .about-history__container-title {

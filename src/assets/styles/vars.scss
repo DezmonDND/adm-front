@@ -88,31 +88,6 @@ $breakpoint-md: 992px;
 $breakpoint-sm: 768px;
 $breakpoint-xs: 550px;
 
-@mixin about-paddings-title {
-    padding: 32px 0 16px;
-
-    @include respond-to(md) {
-        padding: 24px 0 8px;
-    }
-}
-
-@mixin more-button {
-    background-color: transparent;
-    border-color: transparent;
-    color: $tertiary-text;
-    padding: 0;
-
-    &:hover {
-        text-decoration: underline;
-        color: $primary-color-hover;
-    }
-
-    &:active {
-        text-decoration: underline;
-        color: $primary-color-active;
-    }
-}
-
 // Mixin colors
 @mixin dm-icon-color {
     filter: invert(55%) sepia(88%) saturate(3553%) hue-rotate(28deg) brightness(99%) contrast(81%);
@@ -158,6 +133,31 @@ $breakpoint-xs: 550px;
 }
 
 // Mixin Container Paddings
+@mixin about-paddings-title {
+    padding: 32px 0 16px;
+
+    @include respond-to(md) {
+        padding: 24px 0 8px;
+    }
+}
+
+@mixin more-button {
+    background-color: transparent;
+    border-color: transparent;
+    color: $tertiary-text;
+    padding: 0;
+
+    &:hover {
+        text-decoration: underline;
+        color: $primary-color-hover;
+    }
+
+    &:active {
+        text-decoration: underline;
+        color: $primary-color-active;
+    }
+}
+
 // Для main
 @mixin main-padding {
     padding: 0 64px;

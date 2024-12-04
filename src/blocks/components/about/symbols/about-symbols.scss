@@ -4,8 +4,8 @@
     @include about-blocks-paddings;
 
     .about-symbols__title {
-        @include about-paddings-title;
         @include heading-h3;
+        @include about-paddings-title;
     }
 
     .about-symbols-list {
