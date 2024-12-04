@@ -1,6 +1,17 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .monument-card {
+    color: $main-text;
+    cursor: pointer;
+
+    &:hover .monument-card__title {
+        color: $primary-color;
+    }
+
+    &:active .monument-card__title {
+        color: $primary-color-active;
+    }
+
     .monument-card__container {
         display: flex;
         flex-direction: column;

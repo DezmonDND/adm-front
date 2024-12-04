@@ -3,6 +3,15 @@
 .photo-chronicle-card {
     background-color: $cards-background;
     border-radius: 12px;
+    color: $main-text;
+
+    &:hover .photo-chronicle-card__title {
+        color: $primary-color;
+    }
+
+    &:active .photo-chronicle-card__title {
+        color: $primary-color-active;
+    }
 
     .photo-chronicle-card__container {
         .photo-chronicle-card__image {

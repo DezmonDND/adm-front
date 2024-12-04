@@ -1,8 +1,6 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-partners {
-
-
     .full-width-content {
         position: relative;
         overflow: hidden;
@@ -50,16 +48,10 @@
 
 .about-partners__row {
     animation: scroll 15s infinite linear;
-    // animation: startLine 15s linear, marquee 15s linear 15s infinite;
-
 
     &:hover {
         animation-play-state: paused;
     }
-}
-
-.about-partners__row:hover .about-partner-card {
-    cursor: pointer;
 }
 
 @keyframes scroll {
@@ -71,23 +63,3 @@
         transform: translate(-120%)
     }
 }
-
-// @keyframes startLine {
-//     0% {
-//         transform: translateX(-100%);
-//     }
-
-//     100% {
-//         transform: translateX(-50%);
-//     }
-// }
-
-// @keyframes marquee {
-//     0% {
-//         transform: translateX(-50%);
-//     }
-
-//     100% {
-//         transform: translateX(0%);
-//     }
-// }

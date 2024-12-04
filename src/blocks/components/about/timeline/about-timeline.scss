@@ -2,8 +2,8 @@
 
 .about-timeline {
     .about-timeline__title {
-        @include about-paddings-title;
         @include heading-h3;
+        @include about-paddings-title;
     }
 
     .about-timeline-item {
@@ -49,7 +49,6 @@
             left: 50%;
         }
     }
-
 }
 
 

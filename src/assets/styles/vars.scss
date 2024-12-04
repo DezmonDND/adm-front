@@ -101,6 +101,16 @@ $breakpoint-xs: 550px;
     border-color: transparent;
     color: $tertiary-text;
     padding: 0;
+
+    &:hover {
+        text-decoration: underline;
+        color: $primary-color-hover;
+    }
+
+    &:active {
+        text-decoration: underline;
+        color: $primary-color-active;
+    }
 }
 
 // Mixin colors

@@ -7,10 +7,6 @@
         .about-citizens__tabs {
             .tabs-tag {
                 margin-bottom: 32px;
-                .tab-button_active {
-                    background-color: $services-active;
-                    color: $main-text;
-                }
             }
         }
 
@@ -38,6 +34,7 @@
                 max-height: 236px;
                 object-fit: cover;
                 object-position: center;
+                cursor: pointer;
 
                 @include respond-to(sm) {
                     min-width: 197px;
@@ -57,7 +54,17 @@
                 gap: 12px;
                 border-radius: 8px;
                 background-color: $cards-background;
+                color: $main-text;
                 @include content-paddings;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $services-hover;
+                }
+    
+                &:active {
+                    background-color: $services-active;
+                }
 
                 .files-list__icon {
                     color: $primary-color;

@@ -13,6 +13,16 @@
         padding: 12px;
     }
 
+    &:hover .about-partner-card__title {
+        cursor: pointer;
+        color: $primary-color;
+    }
+
+    &:active .about-partner-card__title {
+        cursor: pointer;
+        color: $primary-color-active;
+    }
+
 
     .about-partner-card__content {
         display: flex;

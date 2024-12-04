@@ -11,6 +11,11 @@ mixin about-partners()
                         .about-partners__list
                             .about-partners__row
                                 +about-partner-card({
+                                    title: 'Чаоян',
+                                    image: 'china.svg',
+                                    caption: 'Китай',
+                                }) 
+                                +about-partner-card({
                                     title: 'Залаэгерсег',
                                     image: 'flag_hungary.svg',
                                     caption: 'Венгрия',
@@ -35,10 +40,15 @@ mixin about-partners()
                                     image: 'moldova.svg',
                                     caption: 'Республика Молдова',
                                 })  
-                            .about-partners__row    
+                            .about-partners__row 
+                                +about-partner-card({
+                                    title: 'Суздаль',
+                                    image: 'suzdal.svg',
+                                    caption: 'Владимирская область',
+                                })    
                                 +about-partner-card({
                                     title: 'Петрозаводск',
-                                    image: 'flag_hungary.svg',
+                                    image: 'petrozavodsk.svg',
                                     caption: 'Республика Карелия',
                                 }) 
                                 +about-partner-card({
@@ -60,4 +70,29 @@ mixin about-partners()
                                     title: 'Альметьевск',
                                     image: 'tatarstan.svg',
                                     caption: 'Республика Татарстан',
+                                }) 
+                                +about-partner-card({
+                                    title: 'Сибай',
+                                    image: 'sibai.svg',
+                                    caption: 'Республика Башкортостан',
+                                }) 
+                                +about-partner-card({
+                                    title: 'Калининский район',
+                                    image: 'kalinin.svg',
+                                    caption: 'Санкт-Петербург',
+                                }) 
+                                +about-partner-card({
+                                    title: 'Салават',
+                                    image: 'salavat.svg',
+                                    caption: 'Республика Башкортостан',
+                                }) 
+                                +about-partner-card({
+                                    title: 'Омск',
+                                    image: 'omsk.svg',
+                                    caption: 'Омская область',
+                                }) 
+                                +about-partner-card({
+                                    title: 'Сочи',
+                                    image: 'sochi.svg',
+                                    caption: 'Краснодарский край',
                                 }) 

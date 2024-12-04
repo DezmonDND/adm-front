@@ -42,7 +42,16 @@
             gap: 12px;
             border-radius: 8px;
             background-color: $cards-background;
+            color: $main-text;
             @include content-paddings;
+
+            &:hover {
+                background-color: $services-hover;
+            }
+
+            &:active {
+                background-color: $services-active;
+            }
 
             .files-list__icon {
                 color: $primary-color;
