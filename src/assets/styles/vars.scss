@@ -88,6 +88,21 @@ $breakpoint-md: 992px;
 $breakpoint-sm: 768px;
 $breakpoint-xs: 550px;
 
+@mixin about-paddings-title {
+    padding: 32px 0 16px;
+
+    @include respond-to(md) {
+        padding: 24px 0 8px;
+    }
+}
+
+@mixin more-button {
+    background-color: transparent;
+    border-color: transparent;
+    color: $tertiary-text;
+    padding: 0;
+}
+
 // Mixin colors
 @mixin dm-icon-color {
     filter: invert(55%) sepia(88%) saturate(3553%) hue-rotate(28deg) brightness(99%) contrast(81%);

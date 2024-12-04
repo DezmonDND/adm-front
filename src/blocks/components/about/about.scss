@@ -1,6 +1,10 @@
 @use '../../../assets/styles/vars.scss' as *;
 
 .about {
+    .toggle-container {
+        margin: 8px 0 8px;
+    }
+
     .event-card {
         .event-card__container {
             .event-card__description {

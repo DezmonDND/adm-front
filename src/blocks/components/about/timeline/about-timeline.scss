@@ -2,12 +2,8 @@
 
 .about-timeline {
     .about-timeline__title {
-        padding: 32px 0 16px;
+        @include about-paddings-title;
         @include heading-h3;
-    }
-
-    .about-timeline__content {
-
     }
 
     .about-timeline-item {
@@ -17,10 +13,7 @@
     }
 
     .about-timeline__button {
-        background-color: transparent;
-        border-color: transparent;
-        color: $tertiary-text;
-        padding: 0;
+        @include more-button;
     }
 }
 
@@ -30,38 +23,16 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 43px;
     position: relative;
-}
 
-.about-timeline__line {
-    filter: invert(80%) sepia(8%) saturate(1145%) hue-rotate(186deg) brightness(103%) contrast(101%);
-    position: absolute;
-    top: 159px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 72%;
-    width: 100%;
-
-    @include respond-to(md) {
-        top: 151px;
-    }
-
-    @include respond-to(sm) {
-        display: none;
-    }
-}
-
-.about-timeline-item {
-    width: 100%;
-    position: relative;
-
-    @include respond-to(sm) {
+    .about-timeline-item {
+        width: 100%;
+        position: relative;
 
         &:after {
             content: '';
             display: block;
             height: 1px;
-            background: $tertiary-text-dark-bg;
+            background: $primary-color-disabled;
             width: 50%;
             position: absolute;
             bottom: 30px;
@@ -71,7 +42,7 @@
             content: '';
             display: block;
             height: 1px;
-            background: $tertiary-text-dark-bg;
+            background: $primary-color-disabled;
             width: 50%;
             position: absolute;
             bottom: 30px;
@@ -80,6 +51,7 @@
     }
 
 }
+
 
 
 .about-timeline-container {
@@ -123,4 +95,6 @@
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }

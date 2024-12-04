@@ -2,13 +2,6 @@ extends ../layout
 
 block content
     main.main
-        +breadcrumbs(
-            [
-                { sort: '', href: '/', text: 'Главная' },
-                { sort: '', href: '/', text: 'О Сургуте'},
-                { sort: '', href: '/', text: 'Шаблонная страница с текстом'},
-            ]
-        )
         .about
             .about-content
                 +about-info()

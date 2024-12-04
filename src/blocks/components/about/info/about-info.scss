@@ -21,6 +21,13 @@
         flex-direction: column;
     }
 
+    .about-info-text {
+        display: none;
+
+        @include respond-to(sm) {
+            display: block;
+        }
+    }
 }
 
 .about-info {

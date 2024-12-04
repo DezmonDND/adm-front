@@ -1,7 +1,12 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-monuments {
-    @include about-blocks-paddings;
+   padding: 16px 0 16px;
+
+    .main-title {
+        padding-top: 0;
+        padding-bottom: 24px;
+    }
 
     .about-monuments__container {
         display: grid;

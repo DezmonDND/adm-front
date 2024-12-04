@@ -4,7 +4,7 @@
     @include about-blocks-paddings;
 
     .about-symbols__title {
-        padding: 32px 0 16px;
+        @include about-paddings-title;
         @include heading-h3;
     }
 
@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
+        margin: 16px 0 24px;
 
         .about-symbols-elem {
             width: 100%;
@@ -34,6 +35,7 @@
         flex-direction: column;
         gap: 16px;
         margin-top: 8px;
+
         .files-list__document-description {
             display: flex;
             align-items: center;

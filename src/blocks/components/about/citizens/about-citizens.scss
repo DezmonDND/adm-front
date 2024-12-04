@@ -1,11 +1,12 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-citizens {
-    @include about-blocks-paddings;
+    padding-top: 32px;
 
     .about-citizens__container {
         .about-citizens__tabs {
             .tabs-tag {
+                margin-bottom: 32px;
                 .tab-button_active {
                     background-color: $services-active;
                     color: $main-text;

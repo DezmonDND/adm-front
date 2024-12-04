@@ -1,9 +1,11 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-other-info {
-    @include main-blocks-paddings;
-    
-    .about-other-info__container {
 
+    .about-other-info__container {
+        .title {
+            margin: 0;
+            padding: 32px 0 16px;
+        }
     }
 }

@@ -1,7 +1,11 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-photo-chronicle {
-    @include main-blocks-paddings;
+    padding: 16px 0 16px;
+
+    .main-title {
+        padding: 0 0 16px;
+    }
 
     .about-photo-chronicle__container {
         display: grid;
