@@ -2,7 +2,8 @@ mixin about-partners()
     .about-partners   
         .full-width-container
             .full-width-background
-                .full-width-content 
+                .full-width-content
+                    img(src='../resources/about_partners_bg.svg').about-partners__bg
                     .about-partners__container
                         +title({
                             title: 'Партнеры и города побратимы'
@@ -16,39 +17,24 @@ mixin about-partners()
                                 }) 
                                 +about-partner-card({
                                     title: 'Катерини',
-                                    image: 'flag_hungary.svg',
+                                    image: 'greece.svg',
                                     caption: 'Греция',
                                 }) 
                                 +about-partner-card({
                                     title: 'Порвоо',
-                                    image: 'flag_hungary.svg',
+                                    image: 'finland.svg',
                                     caption: 'Финляндия',
                                 }) 
                                 +about-partner-card({
                                     title: 'Гомель',
-                                    image: 'flag_hungary.svg',
+                                    image: 'belarus.svg',
                                     caption: 'Республика Беларусь',
                                 }) 
                                 +about-partner-card({
                                     title: 'Кишинев',
-                                    image: 'flag_hungary.svg',
+                                    image: 'moldova.svg',
                                     caption: 'Республика Молдова',
-                                }) 
-                                +about-partner-card({
-                                    title: 'Кишинев',
-                                    image: 'flag_hungary.svg',
-                                    caption: 'Республика Молдова',
-                                }) 
-                                +about-partner-card({
-                                    title: 'Кишинев',
-                                    image: 'flag_hungary.svg',
-                                    caption: 'Республика Молдова',
-                                }) 
-                                +about-partner-card({
-                                    title: 'Кишинев',
-                                    image: 'flag_hungary.svg',
-                                    caption: 'Республика Молдова',
-                                }) 
+                                })  
                             .about-partners__row    
                                 +about-partner-card({
                                     title: 'Петрозаводск',
@@ -57,21 +43,21 @@ mixin about-partners()
                                 }) 
                                 +about-partner-card({
                                     title: 'Тобольск',
-                                    image: 'flag_hungary.svg',
+                                    image: 'tumen.svg',
                                     caption: 'Тюменская область',
                                 }) 
                                 +about-partner-card({
                                     title: 'Новосибирск',
-                                    image: 'flag_hungary.svg',
+                                    image: 'novosibirsk.svg',
                                     caption: 'Новосибирская область',
                                 }) 
                                 +about-partner-card({
                                     title: 'Псков',
-                                    image: 'flag_hungary.svg',
+                                    image: 'pskov.svg',
                                     caption: 'Псковская областть',
                                 }) 
                                 +about-partner-card({
                                     title: 'Альметьевск',
-                                    image: 'flag_hungary.svg',
+                                    image: 'tatarstan.svg',
                                     caption: 'Республика Татарстан',
                                 }) 

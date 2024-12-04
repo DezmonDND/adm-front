@@ -2,6 +2,18 @@
 
 .about-partners {
 
+    .full-width-content {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .about-partners__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+
     .about-partners__container {
         padding: 40px 0;
 
@@ -9,6 +21,7 @@
             display: flex;
             flex-direction: column;
             gap: 24px;
+            position: relative;
 
             .about-partners__row {
                 display: flex;
@@ -21,7 +34,9 @@
 }
 
 .about-partners__row {
-    animation: scroll 10s infinite linear;
+    animation: scroll 15s infinite linear;
+    // animation: startLine 15s linear, marquee 15s linear 15s infinite;
+
 
     &:hover {
         animation-play-state: paused;
@@ -34,10 +49,30 @@
 
 @keyframes scroll {
     0% {
-        transform: translate(25%);
+        transform: translate(100%);
     }
 
     100% {
-        transform: translate(-50%)
+        transform: translate(-120%)
     }
 }
+
+// @keyframes startLine {
+//     0% {
+//         transform: translateX(-100%);
+//     }
+
+//     100% {
+//         transform: translateX(-50%);
+//     }
+// }
+
+// @keyframes marquee {
+//     0% {
+//         transform: translateX(-50%);
+//     }
+
+//     100% {
+//         transform: translateX(0%);
+//     }
+// }

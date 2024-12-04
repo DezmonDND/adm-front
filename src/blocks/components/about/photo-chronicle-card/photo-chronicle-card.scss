@@ -7,10 +7,15 @@
     .photo-chronicle-card__container {
         .photo-chronicle-card__image {
             max-width: 272px;
+            width: 100%;
             max-height: 152px;
             object-fit: cover;
             object-position: center;
             border-radius: 12px 12px 0 0;
+
+            @include respond-to(sm) {
+                min-width: 237px;
+            }
         }
 
         .photo-chronicle-card__about {

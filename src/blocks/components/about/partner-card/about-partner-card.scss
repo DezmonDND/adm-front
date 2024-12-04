@@ -1,11 +1,17 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-partner-card {
+    display: flex;
+    align-items: center;
     background-color: $content-color;
     padding: 20px 32px;
     border-radius: 12px;
     min-width: max-content;
     color: $main-text;
+
+    @include respond-to(md) {
+        padding: 12px;
+    }
 
 
     .about-partner-card__content {
@@ -20,6 +26,10 @@
             object-fit: cover;
             object-position: center;
             border-radius: 50%;
+
+            @include respond-to(md) {
+                max-width: 44px;
+            }
         }
 
         .about-partner-card__desc {

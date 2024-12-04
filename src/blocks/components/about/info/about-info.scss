@@ -80,6 +80,11 @@
         align-items: center;
         gap: 40px;
 
+        @include respond-to(md) {
+            align-items: center;
+            justify-content: center;
+        }
+
         .about-info__map-image {
             border-radius: 50%;
             border: 1px solid $primary-color;
@@ -92,6 +97,10 @@
             display: flex;
             flex-direction: column;
             gap: 32px;
+
+            @include respond-to(md) {
+                display: none;
+            }
 
             .about-info__map-title {
                 @include text-2;

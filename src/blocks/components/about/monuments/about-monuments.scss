@@ -7,5 +7,17 @@
         display: grid;
         gap: 24px;
         grid-template-columns: repeat(3, calc((100% - 48px)/3));
+
+        @include respond-to(md) {
+            gap: 8px;
+            grid-template-columns: repeat(3, calc((100% - 16px)/3));
+        }
+
+        @include respond-to(sm) {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: scroll;
+            scrollbar-width: none;
+        }
     }
 }
