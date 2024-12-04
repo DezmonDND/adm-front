@@ -1,0 +1,19 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-video {
+    max-height: 420px;
+
+    video {
+        border-radius: 8px;
+    }
+}
+
+.about-video-list {
+    display: flex;
+    gap: 40px;
+
+    .about-subtitle {
+        display: flex;
+        flex-direction: column;
+    }
+}

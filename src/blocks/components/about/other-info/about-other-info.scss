@@ -1,0 +1,9 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-other-info {
+    @include main-blocks-paddings;
+    
+    .about-other-info__container {
+
+    }
+}

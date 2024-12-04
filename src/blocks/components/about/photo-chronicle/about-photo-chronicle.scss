@@ -1,0 +1,11 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-photo-chronicle {
+    @include main-blocks-paddings;
+
+    .about-photo-chronicle__container {
+        display: grid;
+        grid-template-columns: repeat(3, calc((100% - 48px)/3));
+        gap: 24px;
+    }
+}

@@ -1,0 +1,34 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.photo-chronicle-card {
+    background-color: $cards-background;
+    border-radius: 12px;
+
+    .photo-chronicle-card__container {
+        .photo-chronicle-card__image {
+            max-width: 272px;
+            max-height: 152px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .photo-chronicle-card__about {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            @include content-paddings;
+
+            .photo-chronicle-card__caption {
+                color: $tertiary-text;
+                @include caption-3;
+            }
+
+            .photo-chronicle-card__title {
+                padding: 0;
+                @include visible-lines(2);
+                @include heading-h5;
+            }
+        }
+    }
+}

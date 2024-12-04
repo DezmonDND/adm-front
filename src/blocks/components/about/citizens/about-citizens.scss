@@ -1,0 +1,24 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-citizens {
+    @include main-blocks-paddings;
+    .about-citizens__container {
+        .about-citizens__tabs {
+
+        }
+
+        .about-citizens__list {
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(4, calc((100% - 72px)/4));
+            .about-citizens__image {
+                border-radius: 12px;
+                max-width: 198px;
+                width: 100%;
+                max-height: 236px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}

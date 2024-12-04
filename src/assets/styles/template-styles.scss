@@ -143,6 +143,19 @@
 @use '../../blocks/components/dm-deput/main/dm-deput.scss';
 @use '../../blocks/components/dm-schedule/main/dm-schedule.scss';
 @use '../../blocks/components/about/partner-card/about-partner-card.scss';
+@use '../../blocks/components/about/info/about-info.scss';
+@use '../../blocks/components/about/partners/about-partners.scss';
+@use '../../blocks/components/about/symbols/about-symbols.scss';
+@use '../../blocks/components/about/history/about-history.scss';
+@use '../../blocks/components/about/timeline/about-timeline.scss';
+@use '../../blocks/components/about/video-list/about-video-list.scss';
+@use '../../blocks/components/about/today/about-today.scss';
+@use '../../blocks/components/about/monument-card/monument-card.scss';
+@use '../../blocks/components/about/monuments/about-monuments.scss';
+@use '../../blocks/components/about/photo-chronicle-card/photo-chronicle-card.scss';
+@use '../../blocks/components/about/photo-chronicle/about-photo-chronicle.scss';
+@use '../../blocks/components/about/citizens/about-citizens.scss';
+@use '../../blocks/components/about/other-info/about-other-info.scss';
 
 * {
     font-family: 'Inter', sans-serif;

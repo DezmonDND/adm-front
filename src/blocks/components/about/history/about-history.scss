@@ -1,0 +1,61 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-history {
+
+    .full-width-container {
+        .full-width-background {
+            background-color: $event-color;
+        }
+    }
+
+    .about-history__container {
+        max-width: 866px;
+        margin: auto;
+
+        .about-history__button {
+            background-color: transparent;
+            border-color: transparent;
+            color: $tertiary-text;
+            padding: 0;
+        }
+
+
+
+        .about-history__hidden {
+            display: none;
+
+            &_open {
+                display: block;
+            }
+        }
+    }
+}
+
+.about-history-elem__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 75%;
+}
+
+.about-history-elem {
+    width: 100%;
+    background-color: $grey-adm;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    border-radius: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    position: relative;
+
+    span {
+        z-index: 1;
+    }
+
+    @include respond-to(sm) {
+        flex-direction: column-reverse;
+    }
+}

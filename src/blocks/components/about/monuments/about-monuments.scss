@@ -1,0 +1,11 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-monuments {
+    @include main-blocks-paddings;
+
+    .about-monuments__container {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(3, calc((100% - 48px)/3));
+    }
+}
