@@ -1,19 +1,30 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-.about-video {
-    max-height: 420px;
 
-    video {
-        border-radius: 8px;
-    }
-}
 
 .about-video-list {
-    display: flex;
+    display: grid;
     gap: 40px;
+    grid-template-columns: repeat(2, calc((100% - 40px)/2));
+    margin-top: 64px;
+    align-items: flex-start;
 
-    .about-subtitle {
+    .about-video-list__desc {
         display: flex;
         flex-direction: column;
+        gap: 16px;
+
+        .about-video-list__title {
+            padding: 0;
+            @include heading-h4;
+        }
+
+        .about-video-list__text {
+            @include text-2;
+        }
+    }
+
+    .about-video {
+        max-height: 420px;
     }
 }

@@ -4,7 +4,9 @@
     background-color: $content-color;
     padding: 20px 32px;
     border-radius: 12px;
-    max-width: max-content;
+    min-width: max-content;
+    color: $main-text;
+
 
     .about-partner-card__content {
         display: flex;

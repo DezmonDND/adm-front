@@ -1,77 +1,77 @@
 mixin about-timeline()
     .about-timeline
-        p.about-subtitle История руководителей
-            .about-timeline__content
-                img(src = "../resources/about_line.svg").about-timeline__line
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h1.png")
-                        p Пешев Леонид Васильевич
-                        .about-timeline-dot
-                        p 1965
-                .about-timeline-item
-                    .about-timeline-container
-                        img(src = "./resources/h2.png")
-                        p Мунарев Петр Александрович
-                        .about-timeline-dot
-                        p 1965 - 1973
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h3.png")
-                        p Мачехин Герман Семенович
-                        .about-timeline-dot
-                        p 1973 - 1974
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h4.png")
-                        p Мелихов Юрий Михайлович
-                        .about-timeline-dot
-                        p 1974 - 1977
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h5.png")
-                        p Чинчевич Александр Владимирович
-                        .about-timeline-dot
-                        p 1977 - 1979
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h6.png")
-                        p Аникин Николай Григорьевич
-                        .about-timeline-dot
-                        p 1979 - 1981
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h7.png")
-                        p Марчук Олег Данилович
-                        .about-timeline-dot
-                        p 1981 - 1988
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h8.png")
-                        p Рокецкий Леонид Юлианович
-                        .about-timeline-dot
-                        p 1988 - 1990
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h9.png")
-                        p Сидоров Александр Леонидович
-                        .about-timeline-dot
-                        p 1990 - 2010
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h10.png")
-                        p Попов Дмитрий Валерьевич
-                        .about-timeline-dot
-                        p 2010 - 2016
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h11.png")
-                        p Шувалов Вадим Николаевич
-                        .about-timeline-dot
-                        p 2016 - 2020 
-                .about-timeline-item 
-                    .about-timeline-container
-                        img(src = "./resources/h12.png")
-                        p Филатов Андрей Сергеевич
-                        .about-timeline-dot
-                        p 2021 - 2024
+        h3.about-timeline__title История руководителей
+        .about-timeline__content
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h1.png")
+                    p Пешев Леонид Васильевич
+                    .about-timeline-dot
+                    p 1965
+            .about-timeline-item
+                .about-timeline-container
+                    img(src = "./resources/h2.png")
+                    p Мунарев Петр Александрович
+                    .about-timeline-dot
+                    p 1965 - 1973
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h3.png")
+                    p Мачехин Герман Семенович
+                    .about-timeline-dot
+                    p 1973 - 1974
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h4.png")
+                    p Мелихов Юрий Михайлович
+                    .about-timeline-dot
+                    p 1974 - 1977
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h5.png")
+                    p Чинчевич Александр Владимирович
+                    .about-timeline-dot
+                    p 1977 - 1979
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h6.png")
+                    p Аникин Николай Григорьевич
+                    .about-timeline-dot
+                    p 1979 - 1981       
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h7.png")
+                    p Марчук Олег Данилович
+                    .about-timeline-dot
+                    p 1981 - 1988
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h8.png")
+                    p Рокецкий Леонид Юлианович
+                    .about-timeline-dot
+                    p 1988 - 1990
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h9.png")
+                    p Сидоров Александр Леонидович
+                    .about-timeline-dot
+                    p 1990 - 2010
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h10.png")
+                    p Попов Дмитрий Валерьевич
+                    .about-timeline-dot
+                    p 2010 - 2016
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h11.png")
+                    p Шувалов Вадим Николаевич
+                    .about-timeline-dot
+                    p 2016 - 2020 
+            .about-timeline-item 
+                .about-timeline-container
+                    img(src = "./resources/h12.png")
+                    p Филатов Андрей Сергеевич
+                    .about-timeline-dot
+                    p 2021 - 2024
+        +button({ type: 'button',  event: 'showMoreTimeline()', class: 'button_blue about-timeline__button', text: "Рарзвернуть..."})        

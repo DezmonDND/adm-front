@@ -1,6 +1,13 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-today {
+
+    .about-today__button {
+        background-color: transparent;
+        border-color: transparent;
+        color: $tertiary-text;
+        padding: 0;
+    }
     .about-today__hidden {
         display: none;
 

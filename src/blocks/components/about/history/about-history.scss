@@ -2,6 +2,10 @@
 
 .about-history {
 
+    .about-history-elem {
+        background-color: $primary-color-disabled;
+    }
+
     .full-width-container {
         .full-width-background {
             background-color: $event-color;
@@ -11,6 +15,16 @@
     .about-history__container {
         max-width: 866px;
         margin: auto;
+        @include about-blocks-paddings;
+
+        .about-history__title {
+            margin: 32px 0 16px;
+            @include heading-h1;
+        }
+
+        .about-history__container-title {
+            @include heading-h3;
+        }
 
         .about-history__button {
             background-color: transparent;
@@ -18,8 +32,6 @@
             color: $tertiary-text;
             padding: 0;
         }
-
-
 
         .about-history__hidden {
             display: none;

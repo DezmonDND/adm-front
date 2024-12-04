@@ -13,3 +13,14 @@ function showMoreToday() {
     button.style.display = 'none';
     content.classList.add('about-today__hidden_open');
 }
+
+function showMoreTimeline() {
+    const button = document.querySelector('.about-timeline__button');
+    const content = document.querySelectorAll('.about-timeline-item');
+
+    button.style.display = 'none';
+    
+    content.forEach((el) => {
+        el.style.display = 'block';
+    });
+}

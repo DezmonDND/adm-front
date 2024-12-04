@@ -1,7 +1,7 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-monuments {
-    @include main-blocks-paddings;
+    @include about-blocks-paddings;
 
     .about-monuments__container {
         display: grid;

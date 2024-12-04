@@ -1,5 +1,29 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+.about-timeline {
+    .about-timeline__title {
+        padding: 32px 0 16px;
+        @include heading-h3;
+    }
+
+    .about-timeline__content {
+
+    }
+
+    .about-timeline-item {
+        &:nth-child(n+7) {
+            display: none;
+        }
+    }
+
+    .about-timeline__button {
+        background-color: transparent;
+        border-color: transparent;
+        color: $tertiary-text;
+        padding: 0;
+    }
+}
+
 .about-timeline__content {
     padding: 40px 20px;
     display: grid;

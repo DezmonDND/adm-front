@@ -5,6 +5,39 @@
     .about-partners__container {
         padding: 40px 0;
 
-        .about-partners__list {}
+        .about-partners__list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .about-partners__row {
+                display: flex;
+                gap: 24px;
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.about-partners__row {
+    animation: scroll 10s infinite linear;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+.about-partners__row:hover .about-partner-card {
+    cursor: pointer;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(25%);
+    }
+
+    100% {
+        transform: translate(-50%)
     }
 }

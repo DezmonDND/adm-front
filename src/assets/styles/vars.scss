@@ -159,6 +159,19 @@ $breakpoint-xs: 550px;
     }
 }
 
+// Для всех блоков Коротко о Сургуте
+@mixin about-blocks-paddings {
+    padding: 32px 0 64px;
+
+    @include respond-to(md) {
+        padding: 0 0 48px;
+    }
+
+    @include respond-to(sm) {
+        padding: 0 0 32px;
+    }
+}
+
 // Для всего контента (карточки, ссылки)
 @mixin content-paddings {
     padding: 20px;

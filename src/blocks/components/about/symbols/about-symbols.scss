@@ -1,7 +1,13 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-symbols {
-    @include main-blocks-paddings;
+    @include about-blocks-paddings;
+
+    .about-symbols__title {
+        padding: 32px 0 16px;
+        @include heading-h3;
+    }
+
     .about-symbols-list {
         display: flex;
         flex-direction: column;
@@ -21,6 +27,31 @@
                 flex-direction: column-reverse;
             }
         }
+    }
 
+    .about-symbols__documents {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 8px;
+        .files-list__document-description {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-radius: 8px;
+            background-color: $cards-background;
+            width: 100%;
+            @include content-paddings;
+
+            .files-list__icon {
+                color: $primary-color;
+                font-size: 20px;
+            }
+
+            .files-list__document-title {
+                width: calc(100% - 32px);
+                @include lead-5;
+            }
+        }
     }
 }

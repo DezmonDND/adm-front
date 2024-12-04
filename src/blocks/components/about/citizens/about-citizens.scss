@@ -1,16 +1,23 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .about-citizens {
-    @include main-blocks-paddings;
+    @include about-blocks-paddings;
+
     .about-citizens__container {
         .about-citizens__tabs {
-
+            .tabs-tag {
+                .tab-button_active {
+                    background-color: $services-active;
+                    color: $main-text;
+                }
+            }
         }
 
         .about-citizens__list {
             display: grid;
             gap: 24px;
             grid-template-columns: repeat(4, calc((100% - 72px)/4));
+
             .about-citizens__image {
                 border-radius: 12px;
                 max-width: 198px;
@@ -18,6 +25,32 @@
                 max-height: 236px;
                 object-fit: cover;
                 object-position: center;
+            }
+        }
+
+        .about-citizens__documents {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 32px;
+
+            .files-list__document-description {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                border-radius: 8px;
+                background-color: $cards-background;
+                @include content-paddings;
+
+                .files-list__icon {
+                    color: $primary-color;
+                    font-size: 20px;
+                }
+
+                .files-list__document-title {
+                    width: calc(100% - 32px);
+                    @include lead-5;
+                }
             }
         }
     }
