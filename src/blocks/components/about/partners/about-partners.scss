@@ -12,11 +12,14 @@
         position: absolute;
         bottom: 0;
         right: 0;
-
     }
 
     .about-partners__container {
         padding: 40px 0;
+
+        @include respond-to(md) {
+            padding: 32px 0;
+        }
 
         .title {
             position: relative;
@@ -24,6 +27,9 @@
             margin: 0 auto 80px;
             z-index: 2;
 
+            @include respond-to(md) {
+                margin: 0 auto 40px;
+            }
         }
 
         .about-partners__list {

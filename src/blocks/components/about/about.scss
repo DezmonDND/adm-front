@@ -1,8 +1,16 @@
 @use '../../../assets/styles/vars.scss' as *;
 
 .about {
+    @include respond-to(sm) {
+        margin-top: 32px;
+    }
+
     .toggle-container {
         margin: 8px 0 8px;
+
+        .toggle-arrow {
+            color: $primary-color;
+        }
     }
 
     .event-card {

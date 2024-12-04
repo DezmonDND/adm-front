@@ -1,7 +1,5 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
-
-
 .about-video-list {
     display: grid;
     gap: 40px;
@@ -10,6 +8,10 @@
     align-items: flex-start;
 
     @include respond-to(md) {
+        margin-top: 32px;
+    }
+
+    @include respond-to(sm) {
         display: flex;
         flex-direction: column;
         gap: 24px;
