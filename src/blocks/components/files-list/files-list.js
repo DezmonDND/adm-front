@@ -1,5 +1,11 @@
 window.onload = function () {
-    addDocument();
+    const inputs = document.querySelectorAll('.input__add-document');
+
+    inputs.forEach((input) => {
+        input.addEventListener('input', function() {            
+            addDocument(this.id);
+        });
+    });
 };
 
 function addDocument(id) {

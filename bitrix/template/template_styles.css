@@ -19569,7 +19569,10 @@ hr {
   }
 }
 
-.generate_buttons {
+.generate_form {
+  max-width: 866px;
+}
+.generate_form .generate_buttons {
   display: flex;
   gap: 24px;
   margin-top: 24px;

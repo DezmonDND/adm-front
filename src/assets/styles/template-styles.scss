@@ -234,8 +234,12 @@ hr {
     @include caption-2();
 }
 
-.generate_buttons {
-    display: flex;
-    gap: 24px;
-    margin-top: 24px;
+.generate_form {
+    max-width: 866px;
+
+    .generate_buttons {
+        display: flex;
+        gap: 24px;
+        margin-top: 24px;
+    }
 }
