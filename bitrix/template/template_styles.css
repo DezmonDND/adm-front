@@ -17826,6 +17826,25 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   width: 70%;
 }
 
+.dm-about .dm-about-persons {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.dm-about .dm-about-persons ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+@media (max-width: 768px) {
+  .dm-about .dm-about-persons .dm-comitet-elem {
+    min-width: 310px;
+    max-width: 310px;
+  }
+}
 .dm-about a {
   color: var(--primary-color);
 }
@@ -17844,6 +17863,9 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   width: 100%;
 }
 .dm-about .dm-about-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -18002,6 +18024,97 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
 }
 .dm-about .links-list-item {
   color: var(--main-text);
+}
+
+.dm-about-block-img {
+  width: 100%;
+  max-height: 370px;
+  padding: 24px 0px;
+}
+.dm-about-block-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.dm-about-history-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dm-about-history-margin {
+  margin-top: 48px;
+}
+
+.dm-about-history-button, .dm-about-power-button {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--tertiary-text);
+  padding: 0;
+}
+.dm-about-history-button:hover, .dm-about-power-button:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  color: var(--primary-color-hover);
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+.dm-about-history-button:active, .dm-about-power-button:active {
+  background-color: transparent;
+  text-decoration: underline;
+  color: var(--primary-color-active);
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.dm-about-history-content {
+  max-width: 866px;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 60px;
+}
+
+.dm-about-history-hidden {
+  display: none;
+}
+
+.dm-about-history-hidden-open {
+  display: block;
+}
+
+.dm-about-power-hidden {
+  display: none;
+}
+
+.dm-about-power-hidden-open {
+  display: block;
+}
+
+.dm-about-mail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dm-about-mail-elem p:first-child {
+  font-weight: 500;
+}
+
+.dm-about-geo {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 630px;
+}
+@media (max-width: 768px) {
+  .dm-about-geo {
+    height: 390px;
+  }
 }
 
 .about .event-card .event-card__container .event-card__description {
