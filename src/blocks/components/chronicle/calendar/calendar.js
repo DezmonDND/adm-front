@@ -23,14 +23,19 @@ const options = {
                 newDates = dates;
 
                 const button = document.querySelector('.adm-all-news__calendar-button');
-                const buttonText = button.querySelector('.button_span')
+                const buttonText = button.querySelector('.button_span');
+                const submitNews = document.getElementById('submit-news');
 
                 if (from && to) {
                     from.value = new Date(dates.from).toLocaleDateString();
                     to.value = new Date(dates.to).toLocaleDateString();
 
+                    if (from.value !== to.value && submitNews) {
+                        submitNews.click();
+                    }
+
                     if (from.value !== 'Invalid Date' && from.value !== 'Invalid Date') {
-                        buttonText.textContent = `Дата начала ${from.value} Дата окончания ${to.value}`;
+                        buttonText.textContent = `Дата c ${from.value} по ${to.value}`;
                     } else {
                         buttonText.textContent = `Период публикации`;
                     }
