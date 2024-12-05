@@ -6035,6 +6035,11 @@ body.tmp-duma .pag-button_active:hover {
   align-items: center;
   padding: 20px;
 }
+@media (max-width: 992px) {
+  .toggle-container .toggle-header {
+    padding: 16px;
+  }
+}
 .toggle-container .toggle-header .toggle-arrow {
   margin-left: auto;
   transition: transform 0.3s ease;
@@ -6071,6 +6076,11 @@ body.tmp-duma .pag-button_active:hover {
 .toggle-container .toggle-content-container {
   padding: 0 20px;
 }
+@media (max-width: 992px) {
+  .toggle-container .toggle-content-container {
+    padding: 0 16px;
+  }
+}
 .toggle-container .toggle-content.closed {
   padding-top: 0;
   padding-bottom: 0;
@@ -6078,6 +6088,12 @@ body.tmp-duma .pag-button_active:hover {
 .toggle-container.open .toggle-content-container {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .toggle-container.open .toggle-content-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 .toggle-container.open .toggle-header .toggle-arrow {
   transform: rotate(180deg);
@@ -18037,6 +18053,15 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   display: flex;
 }
 
+.about-organs hr {
+  margin: 20px 0 20px;
+}
+@media (max-width: 992px) {
+  .about-organs hr {
+    margin: 16px 0 16px;
+  }
+}
+
 .about-content {
   max-width: 866px;
   margin: auto;
@@ -18103,14 +18128,15 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
 
 .about-organ {
   width: 100%;
-  background-color: var(--grey-adm);
-  padding: 20px;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 24px;
   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .about-organ {
+    gap: 20px;
+  }
 }
 
 .about-organ-top {
@@ -18128,6 +18154,11 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media (max-width: 768px) {
+  .about-organ-top-left {
+    gap: 8px;
+  }
 }
 
 .about-organ-title span {
@@ -18163,6 +18194,7 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
 @media (max-width: 768px) {
   .about-organ-bot {
     flex-direction: column;
+    gap: 16px;
   }
 }
 
@@ -18170,6 +18202,11 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media (max-width: 768px) {
+  .about-organ-bot-elem {
+    gap: 4px;
+  }
 }
 
 @media (max-width: 768px) {
