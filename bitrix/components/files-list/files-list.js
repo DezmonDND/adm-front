@@ -1,12 +1,12 @@
-window.onload = function () {
-    const inputs = document.querySelectorAll('.input__add-document');
+// window.onload = function () {
+//     const inputs = document.querySelectorAll('.input__add-document');
 
-    inputs.forEach((input) => {
-        input.addEventListener('input', function() {            
-            addDocument(this.id);
-        });
-    });
-};
+//     inputs.forEach((input) => {
+//         input.addEventListener('input', function() {            
+//             addDocument(this.id);
+//         });
+//     });
+// };
 
 function addDocument(id) {
     const input = document.getElementById(id);
@@ -170,4 +170,4 @@ function replaceClass() {
     }
 }
 
-replaceClass();
+// replaceClass();
