@@ -2,6 +2,27 @@
 
 .dm-about {
 
+    .dm-about-persons {
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        overflow-x: scroll;
+        ::-webkit-scrollbar { 
+            width: 0px;  
+            background: transparent;  
+        }
+        -ms-overflow-style: none;  
+        scrollbar-width: none;
+
+        @include respond-to(sm) {
+            .dm-comitet-elem {
+                min-width: 310px;
+                max-width: 310px;
+            }
+        }
+        
+    }
     a {
         color: $primary-color;
     }
@@ -28,6 +49,9 @@
     }
 
     .dm-about-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding-top: 16px;
         padding-bottom: 16px;
 
@@ -161,5 +185,93 @@
 
     .links-list-item {
         color: $main-text;
+    }
+}
+
+.dm-about-block-img {
+    width: 100%;
+    max-height: 370px;
+    padding: 24px 0px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.dm-about-history-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dm-about-history-margin {
+    margin-top: 48px;
+}
+
+.dm-about-history-button, .dm-about-power-button {
+    background-color: transparent;
+    border-color: transparent;
+    color: $tertiary-text;
+    padding: 0;
+
+    &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+        color: $primary-color-hover;
+        border: 1px solid transparent;
+        text-decoration: none;
+    }
+
+    &:active {
+        background-color: transparent;
+        text-decoration: underline;
+        color: $primary-color-active;
+        border: 1px solid transparent;
+        text-decoration: none;
+    }
+}
+.dm-about-history-content {
+    max-width: 866px;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 60px;
+}
+.dm-about-history-hidden {
+    display: none
+}
+.dm-about-history-hidden-open {
+    display: block;
+}
+
+.dm-about-power-hidden {
+    display: none
+}
+.dm-about-power-hidden-open {
+    display: block;
+}
+
+.dm-about-mail  {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dm-about-mail-elem p:first-child {
+    font-weight: 500;
+}
+
+.dm-about-geo {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 630px;
+
+    @include respond-to(sm) {
+        height: 390px;
     }
 }
