@@ -28,6 +28,13 @@
         width: 100%;
         position: relative;
 
+        &_open {
+            &:nth-child(n+7) {
+
+                display: block;
+            }
+        }
+
         &:after {
             content: '';
             display: block;

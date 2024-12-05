@@ -3,5 +3,5 @@ mixin about-partner-card(data)
         .about-partner-card__content 
             img(src=`../resources/${data.image}`).about-partner-card__image
             .about-partner-card__desc 
-                h4.about-partner-card__title #{data.title}
+                h4(title=data.text).about-partner-card__title #{data.title}
                 span.about-partner-card__caption #{data.caption}

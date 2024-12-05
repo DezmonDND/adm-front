@@ -3,7 +3,6 @@
 .about-partners {
     .full-width-content {
         position: relative;
-        overflow: hidden;
     }
 
     .about-partners__bg {
@@ -35,6 +34,11 @@
             flex-direction: column;
             gap: 24px;
             position: relative;
+            width: 100vw;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            left: 50%;
+            right: 50%;
 
             .about-partners__row {
                 display: flex;
@@ -43,23 +47,5 @@
                 width: 100%;
             }
         }
-    }
-}
-
-.about-partners__row {
-    animation: scroll 15s infinite linear;
-
-    &:hover {
-        animation-play-state: paused;
-    }
-}
-
-@keyframes scroll {
-    0% {
-        transform: translate(100%);
-    }
-
-    100% {
-        transform: translate(-120%)
     }
 }
