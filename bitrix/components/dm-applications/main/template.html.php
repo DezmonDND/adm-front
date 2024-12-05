@@ -55,7 +55,7 @@
       </fieldset>
     </form>
     <div class="dm-applications__buttons">
-      <div class="add-file-button" onclick="addDocument()">
+      <div class="add-file-button" onclick="addDocument(event)">
         <label for="file" id="file-label">Вложить документ
           <ion-icon class="add-file-button__icon" name="add-outline"></ion-icon>
           <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>

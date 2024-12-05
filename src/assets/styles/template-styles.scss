@@ -233,3 +233,9 @@ hr {
     content: 'Загрузка' !important;
     @include caption-2();
 }
+
+.generate_buttons {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}

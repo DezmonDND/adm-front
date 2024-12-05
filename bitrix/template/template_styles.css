@@ -19568,3 +19568,9 @@ hr {
     line-height: calc(16px * var(--lh));
   }
 }
+
+.generate_buttons {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
