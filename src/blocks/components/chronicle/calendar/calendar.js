@@ -59,7 +59,7 @@ function getDates() {
     const urlParams = new URLSearchParams(new URL(href).search);
     const fromParam = urlParams.get('from');
     const toParam = urlParams.get('to');
-    const button = document.querySelector('.adm-all-news__calendar-button');
+    const button = document.querySelector('.search-by-site__button');
 
     if (button) {
         const buttonText = button.querySelector('.button_span');
@@ -71,22 +71,25 @@ function getDates() {
 }
 
 function writeDates(from, to, dates) {
-    const button = document.querySelector('.adm-all-news__calendar-button');
-    const buttonText = button.querySelector('.button_span');
-    const submitNews = document.getElementById('submit-news');
+    const button = document.querySelector('.search-by-site__button');
 
-    if (from && to) {
-        from.value = new Date(dates.from).toLocaleDateString();
-        to.value = new Date(dates.to).toLocaleDateString();
+    if (button) {
+        const buttonText = button.querySelector('.button_span');
+        const submitNews = document.getElementById('submit-news');
 
-        if (from.value !== to.value && submitNews) {
-            submitNews.click();
-        }
+        if (from && to) {
+            from.value = new Date(dates.from).toLocaleDateString();
+            to.value = new Date(dates.to).toLocaleDateString();
 
-        if (from.value !== 'Invalid Date' && from.value !== 'Invalid Date') {
-            buttonText.textContent = `Дата c ${from.value} по ${to.value}`;
-        } else {
-            buttonText.textContent = `Период публикации`;
+            if (from.value !== to.value && submitNews) {
+                submitNews.click();
+            }
+
+            if (from.value !== 'Invalid Date' && from.value !== 'Invalid Date') {
+                buttonText.textContent = `Дата c ${from.value} по ${to.value}`;
+            } else {
+                buttonText.textContent = `Период публикации`;
+            }
         }
     }
 }

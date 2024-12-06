@@ -5451,7 +5451,7 @@ body.tmp-duma .select2-container--default .select2-selection--single {
 }
 
 .select2-container--default .select2-results > .select2-results__options {
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 .select2-container--default .select2-selection--multiple.select2-selection--clearable {
@@ -14915,6 +14915,22 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
     padding: 7px 20px 7px 12px;
   }
 }
+.filters .select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 11px 34px 11px 16px !important;
+  box-sizing: border-box;
+}
+.filters .select2-container--default .select2-selection--single {
+  border-radius: 4px !important;
+}
+.filters .select2-selection__arrow {
+  right: 16px !important;
+}
+.filters .select2-container--open .select2-dropdown--below {
+  border-radius: 6px;
+}
+.filters .select2-results__option {
+  padding: 13px 16px !important;
+}
 
 .projects-detail .full-width-container .full-width-content .event-card .event-card__container .event-card__info .event-card__description {
   margin: 0 0 24px;
@@ -15184,11 +15200,21 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
     display: none;
   }
 }
+@media (max-width: 992px) {
+  .search-by-site .search-by-site__buttons .button {
+    padding: 11px 16px;
+  }
+}
 .search-by-site .search-by-site__buttons .search-by-site__calendar {
   display: none;
   position: absolute;
   top: 50px;
-  right: 60px;
+  right: 80px;
+}
+@media (max-width: 992px) {
+  .search-by-site .search-by-site__buttons .search-by-site__calendar {
+    right: 60px;
+  }
 }
 .search-by-site .search-by-site__buttons .search-by-site__calendar_active {
   display: block;
