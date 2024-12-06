@@ -87,9 +87,9 @@ function replaceClass() {
                 const newButton = document.createElement('div');
                 newButton.className = 'add-file-button';
                 newButton.innerHTML = `
-                <label for="${input.id}" id="file-label${input.id}">Вложить документ
+                <label for="${input.name}" id="file-label${input.name}">Вложить документ
                     <ion-icon class="add-file-button__icon md hydrated" name="add-outline" role="img"></ion-icon>
-                    <input class="input__add-document" type="file" id="${input.id}" name="${input.name}" multiple="multiple">
+                    <input class="input__add-document" type="file" id="${input.name}" name="${input.name}" multiple="multiple">
                 </label>
                 <span class="add-file-button__desc">Принимаются файлы размером не более 2,5 МБ </span>
                 `;
@@ -100,7 +100,7 @@ function replaceClass() {
 
                 answers.appendChild(newButton);
 
-                const filesListId = `files-list-${input.id}`;
+                const filesListId = `files-list-${input.name}`;
                 const filesList = document.createElement('div');
                 filesList.id = filesListId;
                 filesList.classList.add('files-list');
@@ -134,7 +134,7 @@ function replaceClass() {
                 const newCalendar = document.createElement('div');
                 newCalendar.classList.add('adm-all-news__calendar');
                 newCalendar.innerHTML = `
-                        <button class="calendar-icon button search-by-site__button adm-all-news__calendar-button" onclick="${calendar.onclick}" title="${calendar.alt}">
+                        <button class="calendar-icon button search-by-site__button adm-all-news__calendar-button" onclick=${calendar.getAttribute('onclick')} title="${calendar.alt}" type='button'>
                             <span class="button_span">Выбрать дату в календаре</span>
                             <ion-icon class="icon md hydrated" name="calendar-outline" role="img"></ion-icon>
                         </button>           
