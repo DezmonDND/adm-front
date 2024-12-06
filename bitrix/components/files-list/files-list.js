@@ -89,7 +89,7 @@ function replaceClass() {
                 newButton.innerHTML = `
                 <label for="${input.name}" id="file-label${input.name}">Вложить документ
                     <ion-icon class="add-file-button__icon md hydrated" name="add-outline" role="img"></ion-icon>
-                    <input class="input__add-document" type="file" id="${input.name}" name="${input.name}" multiple="multiple">
+                    <input class="input__add-document" type="file" id="${input.name}" name="${input.name}" multiple="${input.multiple}">
                 </label>
                 <span class="add-file-button__desc">Принимаются файлы размером не более 2,5 МБ </span>
                 `;
