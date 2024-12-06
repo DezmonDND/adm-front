@@ -55,6 +55,17 @@ p {
 a {
     font-weight: $font-weight-medium;
     text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+        text-decoration: underline;
+        color: $primary-color-hover;
+    }
+
+    &:active {
+        text-decoration: underline;
+        color: $primary-color-active;
+    }
 }
 
 b {
