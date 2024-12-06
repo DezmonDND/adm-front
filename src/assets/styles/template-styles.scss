@@ -191,7 +191,8 @@ body.tmp-print {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
+    flex-grow: 1;
     @include main-padding;
 }
 
