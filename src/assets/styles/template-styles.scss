@@ -142,6 +142,9 @@
 @use '../../blocks/components/page404/page404.scss';
 @use '../../blocks/components/dm-deput/main/dm-deput.scss';
 @use '../../blocks/components/dm-schedule/main/dm-schedule.scss';
+@use '../../blocks/components/telephone/elem/telephone-elem.scss';
+@use '../../blocks/components/telephone/main/telephone.scss';
+@use '../../blocks/components/telephone/detail/telephone-detail.scss';
 
 * {
     font-family: 'Inter', sans-serif;
