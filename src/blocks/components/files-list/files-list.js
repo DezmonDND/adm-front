@@ -133,14 +133,17 @@ function replaceClass() {
             if (calendar) {
                 const newCalendar = document.createElement('div');
                 newCalendar.classList.add('adm-all-news__calendar');
+                const onclickFunction = new Function(calendar.getAttribute('onclick'));
+
                 newCalendar.innerHTML = `
-                        <button class="calendar-icon button search-by-site__button adm-all-news__calendar-button" onclick=${calendar.getAttribute('onclick')} title="${calendar.alt}" type='button'>
+                        <button class="calendar-icon button search-by-site__button adm-all-news__calendar-button" title="${calendar.alt}" type='button'>
                             <span class="button_span">Выбрать дату в календаре</span>
                             <ion-icon class="icon md hydrated" name="calendar-outline" role="img"></ion-icon>
                         </button>           
                 `;
                 calendar.remove();
                 answers.appendChild(newCalendar);
+                newCalendar.addEventListener('click', onclickFunction);
             }
 
             const inputs = fieldset.querySelectorAll('.fieldset__answers input');
