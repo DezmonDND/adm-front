@@ -7,6 +7,10 @@
         .about-citizens__tabs {
             .tabs-tag {
                 margin-bottom: 32px;
+
+                .tab-button {
+                    @include lead-5();
+                }
             }
         }
 

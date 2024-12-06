@@ -156,6 +156,9 @@
 @use '../../blocks/components/about/photo-chronicle/about-photo-chronicle.scss';
 @use '../../blocks/components/about/citizens/about-citizens.scss';
 @use '../../blocks/components/about/other-info/about-other-info.scss';
+@use '../../blocks/components/about/organs/about-organs.scss';
+@use '../../blocks/components/about/organ-card/about-organ-card.scss';
+@use '../../blocks/components/about/agency/about-agency.scss';
 
 * {
     font-family: 'Inter', sans-serif;

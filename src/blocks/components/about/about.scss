@@ -5,15 +5,35 @@
         margin-top: 32px;
     }
 
+    li {
+        @include text-2;
+    }
+
+    p,
+    span {
+        @include text-2;
+    }
+
+    .about-content {
+        max-width: 866px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .toggle-container {
         margin: 8px 0 8px;
 
-        &:hover {
-            background-color: $services-hover;
-        }
+        .toggle-header {
+            &:hover {
+                border-radius: 12px;
+                background-color: $services-hover;
+            }
 
-        &:active {
-            background-color: $services-active;
+            &:active {
+                background-color: $services-active;
+            }
         }
 
         .toggle-arrow {
@@ -40,147 +60,4 @@
             }
         }
     }
-}
-
-
-.about-organs {
-    hr {
-        margin: 20px 0 20px;
-
-        @include respond-to(md) {
-            margin: 16px 0 16px;
-        }
-    }
-}
-
-.about-content {
-    max-width: 866px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-
-.about p,
-.about span {
-    @include text-2();
-}
-
-
-.about .about-title {
-    padding-top: 32px;
-    padding-bottom: 16px;
-    margin: 0;
-    @include heading-h3();
-
-    @include respond-to(md) {
-        padding-top: 24px;
-        padding-bottom: 8px;
-    }
-
-}
-
-.about .about-subtitle {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin: 0;
-    @include lead-3();
-
-    @include respond-to(md) {
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-
-}
-
-.about-organ {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    box-sizing: border-box;
-
-    @include respond-to(sm) {
-        gap: 20px;
-    }
-}
-
-.about-organ-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    @include respond-to(sm) {
-        flex-direction: column;
-    }
-}
-
-.about-organ-top-left {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    @include respond-to(sm) {
-        gap: 8px;
-    }
-}
-
-.about-organ-title span {
-    @include lead-3();
-}
-
-.about-organ-subtitle span {
-    @include caption-2();
-}
-
-.about-organ-bot {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 24px;
-
-    @include respond-to(sm) {
-        flex-direction: column;
-        gap: 16px;
-    }
-}
-
-.about-organ-bot-elem {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    @include respond-to(sm) {
-        gap: 4px;
-    }
-}
-
-
-
-.about-card-img {
-    @include respond-to(sm) {
-        display: none;
-    }
-}
-
-.about-organ-bot-elem span:last-child {
-    @include text-2();
-}
-
-.about-organ-bot-elem span:first-child {
-    color: $tertiary-text;
-    @include caption-2();
-}
-
-.about-organ-ref {
-    color: $primary-color;
-    @include text-link-2();
-}
-
-
-
-
-.about .tab-button {
-    @include lead-5();
 }

@@ -1,82 +1,43 @@
+include ../organ-card/about-organ-card
+
 mixin about-organs()
-    .toggle-container
-        .toggle-header Органы местного самоуправления
-        .toggle-content
-            .about-organs
-                .about-organ
-                    .about-organ-top
-                        .about-organ-top-left
-                            .about-organ-title
-                                span Слепов Максим Николаевич
-                            .about-organ-subtitle
-                                span Глава города Сургута
-                        .about-organ-top-right 
-                            a.about-organ-ref(href='#') Перейти на страницу
-                    .about-organ-bot
-                        .about-organ-bot-elem
-                            span Адрес
-                            span 628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Энгельса, 8.
-                        .about-organ-bot-elem
-                            span Телефон
-                            span (3462) 52-20-01, факс (3462) 52-21-82
-                        .about-organ-bot-elem
-                            span E-mail
-                            span gorod@admsurgut.ru
-                hr            
-                .about-organ
-                    .about-organ-top
-                        .about-organ-top-left
-                            .about-organ-title
-                                span Администрация города Сургута
-                        .about-organ-top-right 
-                            a.about-organ-ref(href='#') Перейти на страницу
-                    .about-organ-bot
-                        .about-organ-bot-elem
-                            span Адрес
-                            span 628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Энгельса, 8.
-                        .about-organ-bot-elem
-                            span Телефон
-                            span факс (3462) 52-21-82
-                        .about-organ-bot-elem
-                            span E-mail
-                            span gorod@admsurgut.ru
-                hr
-                .about-organ
-                    .about-organ-top
-                        .about-organ-top-left
-                            .about-organ-title
-                                span Дума города Сургута 
-                            .about-organ-subtitle
-                                span Председатель: Олейников Александр Игоревич
-                        .about-organ-top-right 
-                            a.about-organ-ref(href='#') Перейти на страницу
-                    .about-organ-bot
-                        .about-organ-bot-elem
-                            span Адрес
-                            span 628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Восход, 4.
-                        .about-organ-bot-elem
-                            span Телефон
-                            span (3462) 52-83-74, факс (3462) 52-80-15
-                        .about-organ-bot-elem
-                            span E-mail
-                            span duma@admsurgut.ru
-                hr
-                .about-organ
-                    .about-organ-top
-                        .about-organ-top-left
-                            .about-organ-title
-                                span Контрольно-счетная палата 
-                            .about-organ-subtitle
-                                span Председатель: Жуков Владислав Игоревич
-                        .about-organ-top-right 
-                            a.about-organ-ref(href='#') Перейти на страницу
-                    .about-organ-bot
-                        .about-organ-bot-elem
-                            span Адрес
-                            span 628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Восход, 4.
-                        .about-organ-bot-elem
-                            span Телефон
-                            span (3462) 52-83-43
-                        .about-organ-bot-elem
-                            span E-mail
-                            span ksp@admsurgut.ru
+    .about-organs
+        .toggle-container
+            .toggle-header Органы местного самоуправления
+            .toggle-content
+                .about-organs-container
+                    +about-organ-card({
+                        name: 'Слепов Максим Николаевич',
+                        job: 'Глава города Сургута',
+                        link: '#',
+                        address: '628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Энгельса, 8.',
+                        phone: '(3462) 52-20-01, факс (3462) 52-21-82',
+                        email: 'gorod@admsurgut.ru',
+                    })
+                    hr
+                    +about-organ-card({
+                        name: 'Администрация города Сургута',
+                        job: '',
+                        link: '#',
+                        address: '628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Энгельса, 8.',
+                        phone: 'факс (3462) 52-21-82',
+                        email: 'gorod@admsurgut.ru',
+                    })
+                    hr
+                    +about-organ-card({
+                        name: 'Дума города Сургута',
+                        job: 'Председатель: Олейников Александр Игоревич',
+                        link: '#',
+                        address: '628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Восход, 4.',
+                        phone: '(3462) 52-83-74, факс (3462) 52-80-15',
+                        email: 'duma@admsurgut.ru',
+                    })
+                    hr
+                    +about-organ-card({
+                        name: 'Контрольно-счетная палата',
+                        job: 'Председатель: Жуков Владислав Игоревич',
+                        link: '#',
+                        address: '628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Восход, 4.',
+                        phone: '(3462) 52-83-43',
+                        email: 'ksp@admsurgut.ru',
+                    })
