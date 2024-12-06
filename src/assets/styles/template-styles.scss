@@ -242,4 +242,21 @@ hr {
         gap: 24px;
         margin-top: 24px;
     }
+
+    .search-by-site__button {
+        max-width: unset;
+        width: unset;
+    }
+}
+
+img.calendar-icon {
+    vertical-align: top;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin: 0 0 0 1px;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    position: relative;
+
 }

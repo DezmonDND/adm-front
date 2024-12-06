@@ -2,7 +2,7 @@
 //     const inputs = document.querySelectorAll('.input__add-document');
 
 //     inputs.forEach((input) => {
-//         input.addEventListener('input', function() {            
+//         input.addEventListener('input', function() {
 //             addDocument(this.id);
 //         });
 //     });
@@ -120,6 +120,7 @@ function replaceClass() {
         fieldsets.forEach((fieldset) => {
             const textarea = fieldset.querySelector('textarea');
             const answers = fieldset.querySelector('.fieldset__answers');
+            const calendar = fieldset.querySelector('.calendar-icon');
 
             if (textarea) {
                 const container = document.createElement('div');
@@ -127,6 +128,19 @@ function replaceClass() {
                 container.className = 'textarea__container';
                 container.appendChild(textarea);
                 answers.insertBefore(container, textarea.nextSibling);
+            }
+
+            if (calendar) {
+                const newCalendar = document.createElement('div');
+                newCalendar.classList.add('adm-all-news__calendar');
+                newCalendar.innerHTML = `
+                        <button class="calendar-icon button search-by-site__button adm-all-news__calendar-button" onclick="${calendar.onclick}" title="${calendar.alt}">
+                            <span class="button_span">Выбрать дату в календаре</span>
+                            <ion-icon class="icon md hydrated" name="calendar-outline" role="img"></ion-icon>
+                        </button>           
+                `;
+                calendar.remove();
+                answers.appendChild(newCalendar);
             }
 
             const inputs = fieldset.querySelectorAll('.fieldset__answers input');
