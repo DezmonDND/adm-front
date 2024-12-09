@@ -34,8 +34,10 @@ mixin event-full-desc()
                     p.afisha-event__text Сабантуй один из самых массовых народных праздников в нашем городе. Его традиционно посещает большое количество сургутян. Мероприятие окрашено яркой национальной палитрой, дружественной атмосферой и взаимопониманием. Праздник уже давно стал народным. Его отмечают не только татары и башкиры, но и все жители Сургута.
                 .afisha-event__banner 
                     .afisha-event__banner-list(id='afisha-event__banner-list')
-                        img(src='../img/banner.png' class='afisha-event__image' alt='Баннер события')
-                        img(src='../img/banner_4.jpg' class='afisha-event__image' alt='Баннер события')
+                        a(href='../img/banner.png' class="swipebox" title="Первый слайд")
+                            img(src='../img/banner.png' class='afisha-event__image' alt='Баннер события' onclick='showBigImage()')
+                        a(href='../img/banner_3.png' class="swipebox" title="Второй слайд")
+                            img(src='../img/banner_3.png' class='afisha-event__image' alt='Баннер события' onclick='showBigImage()')
                     .afisha-event__navigation 
                         span.afisha-event__comment Небольшой комментарий к фотографии
                         +slider({ class: 'afisha-event' })

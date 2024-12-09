@@ -159,6 +159,8 @@
 @use '../../blocks/components/about/organs/about-organs.scss';
 @use '../../blocks/components/about/organ-card/about-organ-card.scss';
 @use '../../blocks/components/about/agency/about-agency.scss';
+@use '../../blocks/components/news/news-top/jquery.fancybox.min.css';
+@use '../../blocks/components/afisha/event-full-desc/swipebox.scss';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -249,4 +251,13 @@ hr {
 [id^="wait_comp_"]::after {
     content: 'Загрузка' !important;
     @include caption-2();
+}
+
+.images {
+    max-width: 1000px;
+    margin: auto;
+
+    .news-top-card__image {
+        max-width: 800px;
+    }
 }
