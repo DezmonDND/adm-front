@@ -9,6 +9,10 @@
     box-sizing: border-box;
     border-radius: 12px;
 
+    &.active > .tepelhone-elem-title .telephone-elem-expand {
+        transform: rotate(180deg);
+    }
+
     @include respond-to(sm) {
         padding: 10px;
     }
@@ -78,10 +82,15 @@
                 // padding: 20px 0px 20px 20px;
                 padding: 20px 0px;
                 display: grid;
-                grid-template-columns: 1fr 0.5fr 1fr;
+                grid-template-columns: 3fr 1fr 2fr;
                 box-sizing: border-box;
                 justify-content: space-between;
                 gap: 24px;
+                overflow: scroll;
+
+                @include respond-to(md) {
+                    overflow: unset;
+                }
 
                 @include respond-to(sm) {
                     display: flex;
@@ -102,7 +111,7 @@
                         display: flex;
                         flex-direction: column;
                         gap: 12px;
-
+                      
                         span:first-child {
                             color:  $tertiary-text;
                             @include caption-2(); 
@@ -118,5 +127,39 @@
         }
     }
 
-   
+}
+
+.telephone-elem-row-el-fio {
+    max-width: 200px;
+    width: 100%;
+
+    span {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+}
+.telephone-elem-row-el-status {
+    width: 180px;
+    min-width: 180px;
+}
+.telephone-elem-row-el-addr {
+    width: 180px;
+}
+.telephone-elem-row-el-cab {
+    width: 68px;
+}
+.telephone-elem-row-el-phone {
+    width: 240px;
+}
+.telephone-elem-row-el-mail {
+    width: 240px;
+}
+
+.telephone-elem-row-item-first {
+    min-width: 330px;
+
+    @include respond-to(md) {
+        min-width: unset;
+    }
 }

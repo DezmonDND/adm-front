@@ -14,25 +14,25 @@ mixin telephone-elem(item)
                 .telephone-elem-phones 
                     each phone in item.phones
                         .telephone-elem-phones-row 
-                            .telephone-elem-row-item
-                                .telephone-elem-row-el
+                            .telephone-elem-row-item.telephone-elem-row-item-first
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-fio')
                                     span ФИО
                                     span= phone.name ? phone.name : '-'
-                                .telephone-elem-row-el
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-status')
                                     span Должность
                                     span= phone.status ? phone.status : '-'
                             .telephone-elem-row-item
-                                .telephone-elem-row-el
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-addr')
                                     span Адрес
                                     span= phone.addr ? phone.addr : '-'
-                                .telephone-elem-row-el
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-cab')
                                     span Кабинет
                                     span= phone.cab ? phone.cab : '-'
                             .telephone-elem-row-item
-                                .telephone-elem-row-el
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-phone')
                                     span Телефон
                                     span= phone.num ? phone.num : '-'
-                                .telephone-elem-row-el
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-mail')
                                     span Электронная почта
                                     span= phone.mail ? phone.mail : '-'
                         hr
