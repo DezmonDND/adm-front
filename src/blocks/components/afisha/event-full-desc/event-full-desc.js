@@ -8,7 +8,7 @@ $(document).ready(function () {
             adaptiveHeight: true,
             variableWidth: false,
         });
-    }, 8000);
+    }, 3000);
 
     $('.slider__afisha-event-next').on('click', function () {
         $('#afisha-event__banner-list').slick('slickNext');
@@ -25,3 +25,15 @@ $(document).ready(function () {
         $('.slider__counter').text(parseInt(slick.currentSlide + 1) + ' / ' + slick.slideCount);
     });
 });
+
+function showBigImage() {
+    const main = document.querySelector('main');
+    main.style.overflow = 'hidden';
+
+    $('#afisha-event__banner-list').swipebox({
+        hideBarsDelay: 0,
+        afterClose: function () {
+            main.style.overflow = 'unset';
+        },
+    });
+}
