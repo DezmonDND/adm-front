@@ -19567,13 +19567,23 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   }
 }
 .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:first-child, .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:last-child {
-  width: 40%;
+  width: 35%;
+}
+@media (max-width: 768px) {
+  .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:first-child, .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:last-child {
+    width: 100%;
+  }
 }
 .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  width: 20%;
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
   .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item {
@@ -19619,6 +19629,12 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   -ms-hyphens: auto;
   hyphens: auto;
 }
+@media (max-width: 992px) {
+  .telephone-elem-row-el-fio {
+    width: unset;
+    max-width: unset;
+  }
+}
 
 .telephone-elem-row-el-status {
   width: 50%;
@@ -19630,6 +19646,11 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
     max-width: unset;
   }
 }
+.telephone-elem-row-el-status span {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
 
 .telephone-elem-row-el-addr {
   width: 50%;
@@ -19639,6 +19660,11 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
     width: unset;
     max-width: unset;
   }
+}
+.telephone-elem-row-el-addr span {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .telephone-elem-row-el-cab {
