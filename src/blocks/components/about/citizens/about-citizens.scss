@@ -62,8 +62,9 @@
                 @include content-paddings;
 
                 &:hover {
-                    cursor: pointer;
+                    text-decoration: none;
                     background-color: $services-hover;
+                    cursor: pointer;
                 }
     
                 &:active {

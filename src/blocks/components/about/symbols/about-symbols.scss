@@ -46,6 +46,7 @@
             @include content-paddings;
 
             &:hover {
+                text-decoration: none;
                 background-color: $services-hover;
             }
 

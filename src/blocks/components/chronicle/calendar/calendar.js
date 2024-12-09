@@ -11,7 +11,7 @@ const options = {
     actions: {
         clickDay(e, dates) {
             let values = dates.selectedDates;
-            let newDates = [];
+
             if (values.length > 0) {
                 const from = document.getElementById('from');
                 const to = document.getElementById('to');
@@ -22,20 +22,7 @@ const options = {
                 };
                 newDates = dates;
 
-                const button = document.querySelector('.adm-all-news__calendar-button');
-                const buttonText = button.querySelector('.button_span')
-
-                if (from && to) {
-                    from.value = new Date(dates.from).toLocaleDateString();
-                    to.value = new Date(dates.to).toLocaleDateString();
-
-                    if (from.value !== 'Invalid Date' && from.value !== 'Invalid Date') {
-                        buttonText.textContent = `Дата начала ${from.value} Дата окончания ${to.value}`;
-                    } else {
-                        buttonText.textContent = `Период публикации`;
-                    }
-                } else {
-                }
+                writeDates(from, to, dates);
             } else {
                 console.log('Нет выбранных дат');
             }
@@ -65,3 +52,46 @@ function initializeCalendar(selector, options) {
         return calendar.init();
     }
 }
+
+function getDates() {
+    const href = window.location.href;
+    // const href = 'https://dev15-surg-duma.mebot24.ru/novosti/?tag=&from=02.12.2024&to=08.12.2024';
+    const urlParams = new URLSearchParams(new URL(href).search);
+    const fromParam = urlParams.get('from');
+    const toParam = urlParams.get('to');
+    const button = document.querySelector('.search-by-site__button');
+
+    if (button) {
+        const buttonText = button.querySelector('.button_span');
+
+        if (fromParam && toParam) {
+            buttonText.textContent = `Дата c ${fromParam} по ${toParam}`;
+        }
+    }
+}
+
+function writeDates(from, to, dates) {
+    const button = document.querySelector('.search-by-site__button');
+
+    if (button) {
+        const buttonText = button.querySelector('.button_span');
+        const submitNews = document.getElementById('submit-news');
+
+        if (from && to) {
+            from.value = new Date(dates.from).toLocaleDateString();
+            to.value = new Date(dates.to).toLocaleDateString();
+
+            if (from.value !== to.value && submitNews) {
+                submitNews.click();
+            }
+
+            if (from.value !== 'Invalid Date' && from.value !== 'Invalid Date') {
+                buttonText.textContent = `Дата c ${from.value} по ${to.value}`;
+            } else {
+                buttonText.textContent = `Период публикации`;
+            }
+        }
+    }
+}
+
+getDates();

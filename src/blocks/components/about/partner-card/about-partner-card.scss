@@ -9,6 +9,10 @@
     min-width: max-content;
     color: $main-text;
 
+    &:hover {
+        text-decoration: none;
+    }
+
     @include respond-to(md) {
         padding: 12px;
     }
@@ -21,6 +25,7 @@
     &:active .about-partner-card__title {
         cursor: pointer;
         color: $primary-color-active;
+
     }
 
 

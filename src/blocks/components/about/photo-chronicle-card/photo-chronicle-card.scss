@@ -5,6 +5,10 @@
     border-radius: 12px;
     color: $main-text;
 
+    &:hover {
+        text-decoration: none;
+    }
+
     &:hover .photo-chronicle-card__title {
         color: $primary-color;
     }
