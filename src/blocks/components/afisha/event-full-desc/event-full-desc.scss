@@ -144,20 +144,6 @@
     }
 }
 
-// .afisha-event__banner-list_full-window {
-//     top: 0;
-//     right: 0;
-//     position: absolute !important;
-//     background-color: #000000;
-//     opacity: 0.5;
-//     width: 100vw;
-//     height: 100vh;
-// }
-
-// .swipebox-close {
-//     background-image: url(../icons/close-hover_icon.svg) !important;
-// }
-
 #swipebox-bottom-bar {
     position: absolute;
     top: 50%;
@@ -167,14 +153,12 @@
     transition: none;
 }
 
-/* Navigation Bar: override position when is active */
 #swipebox-bottom-bar.visible-bars {
     -webkit-transform: translate3d(0px, -25px, 0px);
     transform: translate3d(0px, -25px, 0px);
     background: transparent;
 }
 
-/* Navigation arrows: horizontal position */
 #swipebox-arrows {
     max-width: 100% !important;
     width: 99%;
