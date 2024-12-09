@@ -10969,7 +10969,7 @@ body.tmp-duma .usefull-links {
 }
 
 .news-top-card {
-  display: flex;
+  display: none;
   position: relative;
   max-width: 867px;
   width: 100%;
@@ -11143,6 +11143,7 @@ body.tmp-duma .usefull-links {
 }
 .news-top__container .news-top__card-list {
   display: flex;
+  overflow: hidden;
   width: 66%;
 }
 @media (max-width: 992px) {
