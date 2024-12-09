@@ -429,279 +429,371 @@
         </div>
       </div>
     </div>
-    <main class="main">
-      <div class="adm-all-news">
-        <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-          <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Новости</span>
-          </div>
+    <main class="main"> 
+      <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Подписка</a><span class="span">/</span><span class="breadcrumb_link">Подписка на главное</span>
         </div>
-        <div class="title"> 
-          <div class="title__container"> 
-            <h2 class="title__name">Новости</h2>
-            <div class="title__buttons">
-              <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title=""><span class="button_span">RSS</span>
-                <ion-icon class="icon" name="logo-rss"></ion-icon>
+      </div>
+      <div class="title"> 
+        <div class="title__container"> 
+          <h2 class="title__name">Телефонный справочник</h2>
+        </div>
+      </div>
+      <div class="telephone">
+        <div class="telephone-search"> 
+          <div class="telephone-search-top">
+            <input class="input     " placeholder="ФИО" name="fio" value="" id="fio"/>
+          </div>
+          <div class="telephone-search-mid"> 
+            <input class="input     " placeholder="Должность" name="status" value="" id="status"/>
+            <input class="input     " placeholder="Подразделение" name="division" value="" id="division"/>
+            <input class="input     " placeholder="Телефон" name="phone" value="" id="phone"/>
+          </div>
+          <div class="telephone-search-bot"> 
+            <input class="input     " placeholder="Контекстный поиск" name="first_name" value="" id="first_name"/>
+            <div class="telephone-search-bot-btns"> 
+              <button class="button button_white button_size_l   button_without-event" title=""><span class="button_span">Сбросить</span>
               </button>
-              <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title=""><span class="button_span">Подписаться на главное</span>
-                <ion-icon class="icon" name="mail"></ion-icon>
+              <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Искать</span>
               </button>
             </div>
           </div>
         </div>
-        <div class="tabs">
-          <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" value="Областная дума">Областная дума</a>
-          </div>
-        </div>
-        <input id="from" name="from" value="value" style="display: none;"/>
-        <input id="to" name="to" value="value" style="display: none;"/>
-        <div class="adm-all-news__filters">
-          <select class="select single select_filters__select select-icon-right" name="events">
-            <option class="select__option" value="Все события">Все события</option>
-            <option class="select__option" value="Театр">Театр</option>
-            <option class="select__option" value="Детям">Детям</option>
-            <option class="select__option" value="Выставки">Выставки</option>
-            <option class="select__option" value="Концерты">Концерты</option>
-          </select>
-          <div class="adm-all-news__calendar">
-            <button class="button search-by-site__button adm-all-news__calendar-button    " onclick="toggleAdmAllNewsCalendar();" title=""><span class="button_span">Период публикации</span>
-              <ion-icon class="icon" name="calendar-outline"></ion-icon>
-            </button>
-            <div class="adm-all-news__calendar-content">
-              <div class="calendar-dm" id="calendar-all-news"></div>
+        <div class="telephone-elem">
+          <div class="tepelhone-elem-title"> 
+            <div class="telephone-elem-title-left"><span>Муниципальные учреждения</span><a href="#">Перейти</a></div>
+            <div class="telephone-elem-title-right">
+              <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
             </div>
           </div>
-          <input id="from" name="from" value="value" style="display: none;"/>
-          <input id="to" name="to" value="value" style="display: none;"/>
-        </div>
-        <div class="afisha-events">
-          <div class="afisha-events__container">                                                           
-            <div class="afisha-events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
-                      </button>
+          <hr/>
+          <div class="telephone-elem-main">
+            <div class="telephone-elem-items"> 
+              <div class="telephone-elem">
+                <div class="tepelhone-elem-title"> 
+                  <div class="telephone-elem-title-left"><span>Муниципальные предприятия и учреждения департамента городского хозяйства</span><a href="#">Перейти</a></div>
+                  <div class="telephone-elem-title-right">
+                    <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                  </div>
+                </div>
+                <hr/>
+                <div class="telephone-elem-main">
+                  <div class="telephone-elem-items"> 
+                    <div class="telephone-elem">
+                      <div class="tepelhone-elem-title"> 
+                        <div class="telephone-elem-title-left"><span>Муниципальное казенное учреждение «Казна городского хозяйства» (МКУ «КГХ»)</span><a href="#">Перейти</a></div>
+                        <div class="telephone-elem-title-right">
+                          <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                        </div>
+                      </div>
+                      <hr/>
+                      <div class="telephone-elem-main">
+                        <div class="telephone-elem-phones"> 
+                          <div class="telephone-elem-phones-row"> 
+                            <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                            </div>
+                          </div>
+                          <hr/>
+                          <div class="telephone-elem-phones-row"> 
+                            <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                            </div>
+                          </div>
+                          <hr/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="telephone-elem">
+                      <div class="tepelhone-elem-title"> 
+                        <div class="telephone-elem-title-left"><span>Cургутское городское муниципальное унитарное предприятие «Горводоканал» (СГМУП «ГВК»)</span><a href="#">Перейти</a></div>
+                        <div class="telephone-elem-title-right">
+                          <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                        </div>
+                      </div>
+                      <hr/>
+                      <div class="telephone-elem-main">
+                        <div class="telephone-elem-phones"> 
+                          <div class="telephone-elem-phones-row"> 
+                            <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                            </div>
+                          </div>
+                          <hr/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="telephone-elem">
+                      <div class="tepelhone-elem-title"> 
+                        <div class="telephone-elem-title-left"><span>Cургутское городское муниципальное унитарное предприятие «Горводоканал» (СГМУП «ГВК»)</span><a href="#">Перейти</a></div>
+                        <div class="telephone-elem-title-right">
+                          <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                        </div>
+                      </div>
+                      <hr/>
+                      <div class="telephone-elem-main">
+                      </div>
+                    </div>
+                    <div class="telephone-elem">
+                      <div class="tepelhone-elem-title"> 
+                        <div class="telephone-elem-title-left"><span>Cургутское городское муниципальное унитарное предприятие «Горводоканал» (СГМУП «ГВК»)</span><a href="#">Перейти</a></div>
+                        <div class="telephone-elem-title-right">
+                          <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                        </div>
+                      </div>
+                      <hr/>
+                      <div class="telephone-elem-main">
+                        <div class="telephone-elem-phones"> 
+                          <div class="telephone-elem-phones-row"> 
+                            <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                            </div>
+                          </div>
+                          <hr/>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
-                      </button>
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
-                      </button>
+                </div>
+              </div>
+              <div class="telephone-elem">
+                <div class="tepelhone-elem-title"> 
+                  <div class="telephone-elem-title-left"><span>Учреждения департамента архитектуры и градостроительства</span><a href="#">Перейти</a></div>
+                  <div class="telephone-elem-title-right">
+                    <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                  </div>
+                </div>
+                <hr/>
+                <div class="telephone-elem-main">
+                </div>
+              </div>
+              <div class="telephone-elem">
+                <div class="tepelhone-elem-title"> 
+                  <div class="telephone-elem-title-left"><span>Центр организационного обеспечения деятельности</span><a href="#">Перейти</a></div>
+                  <div class="telephone-elem-title-right">
+                    <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                  </div>
+                </div>
+                <hr/>
+                <div class="telephone-elem-main">
+                  <div class="telephone-elem-phones"> 
+                    <div class="telephone-elem-phones-row"> 
+                      <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                      </div>
+                      <div class="telephone-elem-row-item">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                      </div>
+                      <div class="telephone-elem-row-item">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                      </div>
+                    </div>
+                    <hr/>
+                    <div class="telephone-elem-phones-row"> 
+                      <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                      </div>
+                      <div class="telephone-elem-row-item">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                      </div>
+                      <div class="telephone-elem-row-item">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                      </div>
+                    </div>
+                    <hr/>
+                  </div>
+                  <div class="telephone-elem-items"> 
+                    <div class="telephone-elem">
+                      <div class="tepelhone-elem-title"> 
+                        <div class="telephone-elem-title-left"><span>Отдел финансовых расчетов</span><a href="#">Перейти</a></div>
+                        <div class="telephone-elem-title-right">
+                          <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                        </div>
+                      </div>
+                      <hr/>
+                      <div class="telephone-elem-main">
+                        <div class="telephone-elem-phones"> 
+                          <div class="telephone-elem-phones-row"> 
+                            <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                            </div>
+                          </div>
+                          <hr/>
+                          <div class="telephone-elem-phones-row"> 
+                            <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>-</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                            </div>
+                            <div class="telephone-elem-row-item">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                            </div>
+                          </div>
+                          <hr/>
+                        </div>
+                        <div class="telephone-elem-items"> 
+                          <div class="telephone-elem">
+                            <div class="tepelhone-elem-title"> 
+                              <div class="telephone-elem-title-left"><span>Бухгалтерия</span><a href="#">Перейти</a></div>
+                              <div class="telephone-elem-title-right">
+                                <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                              </div>
+                            </div>
+                            <hr/>
+                            <div class="telephone-elem-main">
+                              <div class="telephone-elem-phones"> 
+                                <div class="telephone-elem-phones-row"> 
+                                  <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                                  </div>
+                                  <div class="telephone-elem-row-item">
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                                  </div>
+                                  <div class="telephone-elem-row-item">
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                                  </div>
+                                </div>
+                                <hr/>
+                                <div class="telephone-elem-phones-row"> 
+                                  <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                                  </div>
+                                  <div class="telephone-elem-row-item">
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                                  </div>
+                                  <div class="telephone-elem-row-item">
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                                  </div>
+                                </div>
+                                <hr/>
+                              </div>
+                              <div class="telephone-elem-items"> 
+                                <div class="telephone-elem">
+                                  <div class="tepelhone-elem-title"> 
+                                    <div class="telephone-elem-title-left"><span>Отдел расчетов с подотчетными лицами</span><a href="#">Перейти</a></div>
+                                    <div class="telephone-elem-title-right">
+                                      <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                                    </div>
+                                  </div>
+                                  <hr/>
+                                  <div class="telephone-elem-main">
+                                    <div class="telephone-elem-phones"> 
+                                      <div class="telephone-elem-phones-row"> 
+                                        <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                                        </div>
+                                        <div class="telephone-elem-row-item">
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                                        </div>
+                                        <div class="telephone-elem-row-item">
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                                        </div>
+                                      </div>
+                                      <hr/>
+                                      <div class="telephone-elem-phones-row"> 
+                                        <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                                        </div>
+                                        <div class="telephone-elem-row-item">
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
+                                        </div>
+                                        <div class="telephone-elem-row-item">
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                                          <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                                        </div>
+                                      </div>
+                                      <hr/>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="telephone-elem">
+                                  <div class="tepelhone-elem-title"> 
+                                    <div class="telephone-elem-title-left"><span>Отдел расчетов с персоналом</span><a href="#">Перейти</a></div>
+                                    <div class="telephone-elem-title-right">
+                                      <ion-icon class="telephone-elem-expand" name="chevron-down-outline" onclick="toggleHiddenPhone(this)"></ion-icon>
+                                    </div>
+                                  </div>
+                                  <hr/>
+                                  <div class="telephone-elem-main">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
-                      </button>
-                      <button class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
-                <div class="news-main-card__container">
-                  <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
-                    <div class="news-main-card__tags">
-                      <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-                </div></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="pagination">
-          <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/2">2</a><a class="pag-button" href="/2/3">3</a><a class="pag-button pag-button_active" href="/2/4">4</a><a class="pag-button" href="/2/5">5</a><a class="pag-button" href="/2/6">6</a><a class="pag-button" href="/2/7">7</a>
-          <button class="pag-button-with-icon pag-button_right" href="/2/7"> <span class="pag-button__span">Вперед</span></button>
         </div>
       </div>
     </main>

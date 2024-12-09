@@ -112,6 +112,15 @@ p {
 a {
   font-weight: 400;
   text-decoration: none;
+  color: var(--primary-color);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-color-hover);
+}
+a:active {
+  text-decoration: underline;
+  color: var(--primary-color-active);
 }
 
 b {
