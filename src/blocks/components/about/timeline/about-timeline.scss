@@ -29,6 +29,10 @@
             p {
                 margin: 0;
 
+                @include respond-to(md) {
+                    max-width: 96px;
+                }
+
                 &:nth-last-child(-n+3) {
                     @include heading-h6();
                 }
@@ -79,8 +83,8 @@
                 position: relative;
 
                 img {
-                    width: 64px;
-                    height: 64px;
+                    width: 96px;
+                    height: 96px;
                     border-radius: 50%;
                     object-fit: cover;
                     object-position: center;

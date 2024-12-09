@@ -159,6 +159,8 @@
 @use '../../blocks/components/about/organs/about-organs.scss';
 @use '../../blocks/components/about/organ-card/about-organ-card.scss';
 @use '../../blocks/components/about/agency/about-agency.scss';
+@use '../../blocks/components/telephone/elem/telephone-elem.scss';
+@use '../../blocks/components/telephone/main/telephone.scss';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -252,8 +254,29 @@ hr {
     @include caption-2();
 }
 
-.generate_buttons {
-    display: flex;
-    gap: 24px;
-    margin-top: 24px;
+.generate_form {
+    max-width: 866px;
+
+    .generate_buttons {
+        display: flex;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .search-by-site__button {
+        max-width: unset;
+        width: unset;
+    }
+}
+
+img.calendar-icon {
+    vertical-align: top;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin: 0 0 0 1px;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    position: relative;
+
 }
