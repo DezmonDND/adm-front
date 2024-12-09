@@ -94,13 +94,21 @@
                 }
 
                 .telephone-elem-row-item:first-child, .telephone-elem-row-item:last-child {
-                    width: 40%;
+                    width: 35%;
+
+                    @include respond-to(sm) {
+                        width: 100%;
+                    }
                 }
                 .telephone-elem-row-item {
                     display: flex;
                     align-items: flex-start;
                     gap: 24px;
-                    width: 20%;
+                    width: 30%;
+
+                    @include respond-to(sm) {
+                        width: 100%;
+                    }
 
                    @include respond-to(md){
                     flex-direction: column;
@@ -137,6 +145,11 @@
         -ms-hyphens: auto;
         hyphens: auto;
     }
+
+    @include respond-to(md) {
+        width: unset;
+        max-width: unset;
+    }
 }
 .telephone-elem-row-el-status {
     width: 50%;
@@ -146,12 +159,25 @@
         width: unset;
         max-width: unset;
     }
+
+    
+    span {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
 }
 .telephone-elem-row-el-addr {
     width: 50%;
     @include respond-to(md) {
         width: unset;
         max-width: unset;
+    }
+
+    span {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
 }
 .telephone-elem-row-el-cab {
