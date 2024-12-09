@@ -63,11 +63,26 @@ b {
 
 // Стили статической страницы
 .content {
+
+    .content__link {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+
+    .glyphicon-save {
+        &::before {
+            content: unset;
+        }
+    }
+
     &-card {
         background-color: var(--cards-background);
 
         &__container {
-            margin: 0;
+            margin: 24px 0;
             max-width: 738px;
             width: 100%;
             padding: 40px 0 40px;

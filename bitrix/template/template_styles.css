@@ -6364,9 +6364,15 @@ body.tmp-duma .pag-button_active:hover {
 }
 .breadcrumbs .breadcrumbs__container {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  overflow: scroll;
-  scrollbar-width: none;
+}
+@media (max-width: 992px) {
+  .breadcrumbs .breadcrumbs__container {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
 }
 .breadcrumbs .breadcrumbs__container .breadcrumb_link {
   color: var(--tertiary-text);
@@ -6421,8 +6427,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
 }
 .tabs .tabs__container {
   display: flex;
-  overflow: auto;
-  scrollbar-width: none;
+  flex-wrap: wrap;
   text-wrap: nowrap;
   gap: 16px;
   box-sizing: border-box;
@@ -6434,6 +6439,13 @@ body.tmp-duma .main-title .main-title__container .tabs {
   .tabs .tabs__container {
     font-size: calc(14px * var(--scale));
     line-height: calc(18px * var(--lh));
+  }
+}
+@media (max-width: 992px) {
+  .tabs .tabs__container {
+    flex-wrap: nowrap;
+    overflow: auto;
+    scrollbar-width: none;
   }
 }
 .tabs .tabs__container .tab-button {

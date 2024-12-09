@@ -118,11 +118,21 @@ b {
   font-weight: 600;
 }
 
+.content .content__link {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.content .glyphicon-save::before {
+  content: unset;
+}
 .content-card {
   background-color: var(--cards-background);
 }
 .content-card__container {
-  margin: 0;
+  margin: 24px 0;
   max-width: 738px;
   width: 100%;
   padding: 40px 0 40px;
