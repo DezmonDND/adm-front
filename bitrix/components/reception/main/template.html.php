@@ -53,7 +53,7 @@
         </div>
       </fieldset>
     </div>
-    <div class="files-list"></div>
+    <div class="files-list" id="files-list-file"></div>
     <div class="reception__buttons">
       <div class="add-file-button" onclick="addDocument(event)">
         <label for="file" id="file-label">Вложить документ
