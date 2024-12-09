@@ -5451,7 +5451,7 @@ body.tmp-duma .select2-container--default .select2-selection--single {
 }
 
 .select2-container--default .select2-results > .select2-results__options {
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 .select2-container--default .select2-selection--multiple.select2-selection--clearable {
@@ -7045,7 +7045,6 @@ body.tmp-duma .main-title .main-title__container .tabs {
   flex-direction: column;
   border-radius: 40px;
   background-color: var(--cards-background);
-  align-items: center;
   justify-content: center;
 }
 @media (max-width: 992px) {
@@ -7149,7 +7148,6 @@ body.tmp-duma .main-title .main-title__container .tabs {
   gap: 24px;
   max-width: 864px;
   width: 100%;
-  margin: auto;
   align-items: baseline;
 }
 @media (max-width: 992px) {
@@ -8613,7 +8611,6 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 .event-card {
   background-color: var(--cards-background);
   display: flex;
-  justify-content: center;
 }
 .event-card .event-card__container {
   display: flex;
@@ -8989,7 +8986,7 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 
 .afisha-event .afisha-event__container .afisha-event__content {
   max-width: 755px;
-  margin: 40px auto 40px;
+  margin: 40px 0 40px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -14916,10 +14913,11 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
   }
 }
 .filters .select2-container .select2-selection--single .select2-selection__rendered {
-  padding: 13px 34px 13px 16px !important;
+  padding: 11px 34px 11px 16px !important;
+  box-sizing: border-box;
 }
 .filters .select2-container--default .select2-selection--single {
-  border-radius: 6px !important;
+  border-radius: 4px !important;
 }
 .filters .select2-selection__arrow {
   right: 16px !important;
@@ -14945,7 +14943,7 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
   gap: 32px;
   max-width: 866px;
   width: 100%;
-  margin: 32px auto 0;
+  margin: 32px 0 0;
 }
 .projects-detail .projects-detail__container .projects-detail__about {
   display: flex;
@@ -15199,11 +15197,21 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
     display: none;
   }
 }
+@media (max-width: 992px) {
+  .search-by-site .search-by-site__buttons .button {
+    padding: 11px 16px;
+  }
+}
 .search-by-site .search-by-site__buttons .search-by-site__calendar {
   display: none;
   position: absolute;
   top: 50px;
-  right: 60px;
+  right: 80px;
+}
+@media (max-width: 992px) {
+  .search-by-site .search-by-site__buttons .search-by-site__calendar {
+    right: 60px;
+  }
 }
 .search-by-site .search-by-site__buttons .search-by-site__calendar_active {
   display: block;
@@ -16988,9 +16996,30 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
   display: flex;
   flex-direction: column;
 }
+.adm-all-news .adm-all-news__filters {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.adm-all-news .adm-all-news__filters .select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 11px 34px 11px 16px !important;
+  box-sizing: border-box;
+}
+.adm-all-news .adm-all-news__filters .select2-container--default .select2-selection--single {
+  border-radius: 4px !important;
+}
+.adm-all-news .adm-all-news__filters .select2-selection__arrow {
+  right: 16px !important;
+}
+.adm-all-news .adm-all-news__filters .select2-container--open .select2-dropdown--below {
+  border-radius: 6px;
+}
+.adm-all-news .adm-all-news__filters .select2-results__option {
+  padding: 13px 16px !important;
+}
 .adm-all-news .adm-all-news__calendar {
   position: relative;
-  margin-bottom: 32px;
 }
 .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button {
   border-radius: 4px;
@@ -17837,7 +17866,6 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
 }
 .dm-about .dm-about-container {
   display: flex;
-  justify-content: center;
 }
 .dm-about .dm-about-content {
   max-width: 866px;
