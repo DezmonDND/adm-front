@@ -50,32 +50,32 @@
                 <div class="telephone-elem-main">
                   <div class="telephone-elem-phones"> 
                     <div class="telephone-elem-phones-row"> 
-                      <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                        <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                      <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                        <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                        <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                       </div>
                     </div>
                     <hr/>
                     <div class="telephone-elem-phones-row"> 
-                      <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                        <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                      <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                        <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                        <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                       </div>
                     </div>
                     <hr/>
@@ -93,17 +93,17 @@
                 <div class="telephone-elem-main">
                   <div class="telephone-elem-phones"> 
                     <div class="telephone-elem-phones-row"> 
-                      <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                        <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                      <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                        <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                        <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                       </div>
                     </div>
                     <hr/>
@@ -132,17 +132,17 @@
                 <div class="telephone-elem-main">
                   <div class="telephone-elem-phones"> 
                     <div class="telephone-elem-phones-row"> 
-                      <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                        <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                      <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                        <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                        <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                       </div>
                     </div>
                     <hr/>
@@ -174,32 +174,32 @@
           <div class="telephone-elem-main">
             <div class="telephone-elem-phones"> 
               <div class="telephone-elem-phones-row"> 
-                <div class="telephone-elem-row-item">
-                  <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                  <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                  <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                 </div>
                 <div class="telephone-elem-row-item">
-                  <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                  <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                 </div>
                 <div class="telephone-elem-row-item">
-                  <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                  <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                 </div>
               </div>
               <hr/>
               <div class="telephone-elem-phones-row"> 
-                <div class="telephone-elem-row-item">
-                  <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                  <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                  <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                 </div>
                 <div class="telephone-elem-row-item">
-                  <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                  <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                 </div>
                 <div class="telephone-elem-row-item">
-                  <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                  <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                  <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                 </div>
               </div>
               <hr/>
@@ -216,32 +216,32 @@
                 <div class="telephone-elem-main">
                   <div class="telephone-elem-phones"> 
                     <div class="telephone-elem-phones-row"> 
-                      <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                        <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                      <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                        <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                        <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                       </div>
                     </div>
                     <hr/>
                     <div class="telephone-elem-phones-row"> 
-                      <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>ФИО</span><span>-</span></div>
-                        <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                      <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                        <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>-</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                        <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                       </div>
                       <div class="telephone-elem-row-item">
-                        <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                        <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                        <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                       </div>
                     </div>
                     <hr/>
@@ -258,32 +258,32 @@
                       <div class="telephone-elem-main">
                         <div class="telephone-elem-phones"> 
                           <div class="telephone-elem-phones-row"> 
-                            <div class="telephone-elem-row-item">
-                              <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                              <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                            <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                             </div>
                             <div class="telephone-elem-row-item">
-                              <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                              <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                             </div>
                             <div class="telephone-elem-row-item">
-                              <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                              <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                             </div>
                           </div>
                           <hr/>
                           <div class="telephone-elem-phones-row"> 
-                            <div class="telephone-elem-row-item">
-                              <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                              <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                            <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                              <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                             </div>
                             <div class="telephone-elem-row-item">
-                              <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                              <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                             </div>
                             <div class="telephone-elem-row-item">
-                              <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                              <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                              <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                             </div>
                           </div>
                           <hr/>
@@ -300,32 +300,32 @@
                             <div class="telephone-elem-main">
                               <div class="telephone-elem-phones"> 
                                 <div class="telephone-elem-phones-row"> 
-                                  <div class="telephone-elem-row-item">
-                                    <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                                    <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                                  <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                                   </div>
                                   <div class="telephone-elem-row-item">
-                                    <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                                    <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                                   </div>
                                   <div class="telephone-elem-row-item">
-                                    <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                                    <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                                   </div>
                                 </div>
                                 <hr/>
                                 <div class="telephone-elem-phones-row"> 
-                                  <div class="telephone-elem-row-item">
-                                    <div class="telephone-elem-row-el"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
-                                    <div class="telephone-elem-row-el"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
+                                  <div class="telephone-elem-row-item telephone-elem-row-item-first">
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-fio"><span>ФИО</span><span>Малыхин Виталий Викторович</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-status"><span>Должность</span><span>Заместитель Главы города Сургута</span></div>
                                   </div>
                                   <div class="telephone-elem-row-item">
-                                    <div class="telephone-elem-row-el"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
-                                    <div class="telephone-elem-row-el"><span>Кабинет</span><span>311</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-addr"><span>Адрес</span><span>пр. Набережный, 14 ул. Майская, 10</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-cab"><span>Кабинет</span><span>311</span></div>
                                   </div>
                                   <div class="telephone-elem-row-item">
-                                    <div class="telephone-elem-row-el"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
-                                    <div class="telephone-elem-row-el"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-phone"><span>Телефон</span><span>+7 (3462) 52-66-66</span></div>
+                                    <div class="telephone-elem-row-el telephone-elem-row-el-mail"><span>Электронная почта</span><span>gorod@admsurgut.ru, khisamova_af@admsurgut.ru</span></div>
                                   </div>
                                 </div>
                                 <hr/>
