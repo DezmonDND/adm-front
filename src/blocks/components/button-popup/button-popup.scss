@@ -1,5 +1,17 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+
+body.tmp-duma {
+    .button-popup__content {
+        top: 20px;
+        left: -163px;
+
+        @include respond-to(md) {
+            left: -152px;
+        }
+    }
+}
+
 .button_share:hover~.button-popup__content {
     display: flex;
 }

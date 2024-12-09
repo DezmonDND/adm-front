@@ -5,15 +5,35 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
   display: none;
 }
 
+body.tmp-duma .event-card .event-card__container {
+  padding-top: 20px;
+}
+body.tmp-duma .event-card .event-card__container .event-card__description {
+  margin-bottom: 0;
+}
+body.tmp-duma .event-card .event-card__container .event-card__dates {
+  align-items: center;
+}
+body.tmp-duma .event-card .event-card__container .event-card__buttons {
+  gap: 20px;
+}
+body.tmp-duma .event-card .event-card__container .event-card__buttons .button_white {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+body.tmp-duma .event-card .event-card__container .event-card__buttons .button_white .icon {
+  font-size: 20px;
+}
+
 .event-card {
   background-color: var(--cards-background);
   display: flex;
-  justify-content: center;
 }
 .event-card .event-card__container {
   display: flex;
   flex-direction: column;
-  max-width: 866px;
+  max-width: 978px;
   width: 100%;
   padding: 32px 0 32px;
 }

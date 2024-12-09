@@ -14,15 +14,46 @@ body.tmp-print {
     }
 }
 
+body.tmp-duma {
+    .event-card {
+        .event-card__container {
+            padding-top: 20px;
+
+            .event-card__description {
+                margin-bottom: 0;
+            }
+
+            .event-card__tags {}
+
+            .event-card__dates {
+                align-items: center;
+            }
+
+            .event-card__buttons {
+                gap: 20px;
+
+                .button_white {
+                    border-color: transparent;
+                    background-color: transparent;
+                    padding: 0;
+
+                    .icon {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .event-card {
     background-color: $cards-background;
     display: flex;
-    justify-content: center;
 
     .event-card__container {
         display: flex;
         flex-direction: column;
-        max-width: 866px;
+        max-width: 978px;
         width: 100%;
         padding: 32px 0 32px;
 

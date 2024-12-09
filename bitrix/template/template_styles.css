@@ -8610,15 +8610,35 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
   display: none;
 }
 
+body.tmp-duma .event-card .event-card__container {
+  padding-top: 20px;
+}
+body.tmp-duma .event-card .event-card__container .event-card__description {
+  margin-bottom: 0;
+}
+body.tmp-duma .event-card .event-card__container .event-card__dates {
+  align-items: center;
+}
+body.tmp-duma .event-card .event-card__container .event-card__buttons {
+  gap: 20px;
+}
+body.tmp-duma .event-card .event-card__container .event-card__buttons .button_white {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+body.tmp-duma .event-card .event-card__container .event-card__buttons .button_white .icon {
+  font-size: 20px;
+}
+
 .event-card {
   background-color: var(--cards-background);
   display: flex;
-  justify-content: center;
 }
 .event-card .event-card__container {
   display: flex;
   flex-direction: column;
-  max-width: 866px;
+  max-width: 978px;
   width: 100%;
   padding: 32px 0 32px;
 }
@@ -8987,9 +9007,16 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   }
 }
 
+body.tmp-duma .afisha-event .afisha-event__content {
+  max-width: 978px;
+}
+body.tmp-duma .afisha-event .afisha-event__content .afisha-event__banner .afisha-event__image {
+  max-width: 978px;
+}
+
 .afisha-event .afisha-event__container .afisha-event__content {
   max-width: 755px;
-  margin: 40px auto 40px;
+  margin: 40px 0 40px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -14974,6 +15001,16 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
   .projects-detail .projects-detail__container .projects-detail__about .projects-detail__desc {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
+  }
+}
+
+body.tmp-duma .button-popup__content {
+  top: 20px;
+  left: -163px;
+}
+@media (max-width: 992px) {
+  body.tmp-duma .button-popup__content {
+    left: -152px;
   }
 }
 

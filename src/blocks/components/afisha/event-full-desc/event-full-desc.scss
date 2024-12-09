@@ -1,10 +1,27 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+
+    .afisha-event {
+
+        .afisha-event__content {
+            max-width: 978px;
+
+            .afisha-event__banner {
+
+                .afisha-event__image {
+                    max-width: 978px;
+                }
+            }
+        }
+    }
+}
+
 .afisha-event {
     .afisha-event__container {
         .afisha-event__content {
             max-width: 755px;
-            margin: 40px auto 40px;
+            margin: 40px 0 40px;
             display: flex;
             flex-direction: column;
             gap: 40px;
