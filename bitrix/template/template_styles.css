@@ -8614,8 +8614,20 @@ body.tmp-duma .event-card .event-card__container {
 body.tmp-duma .event-card .event-card__container .event-card__description {
   margin-bottom: 0;
 }
-body.tmp-duma .event-card .event-card__container .event-card__dates {
+@media (max-width: 768px) {
+  body.tmp-duma .event-card .event-card__container .event-card__description {
+    gap: 16px;
+  }
+}
+body.tmp-duma .event-card .event-card__container .event-card__description .event-card__dates {
   align-items: center;
+}
+@media (max-width: 550px) {
+  body.tmp-duma .event-card .event-card__container .event-card__description .event-card__dates {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
 }
 body.tmp-duma .event-card .event-card__container .event-card__buttons {
   gap: 20px;
@@ -8627,6 +8639,11 @@ body.tmp-duma .event-card .event-card__container .event-card__buttons .button_wh
 }
 body.tmp-duma .event-card .event-card__container .event-card__buttons .button_white .icon {
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  body.tmp-duma .event-card .event-card__container .event-card__buttons .button_print {
+    display: none;
+  }
 }
 
 .event-card {
@@ -8689,13 +8706,13 @@ body.tmp-duma .event-card .event-card__container .event-card__buttons .button_wh
   gap: 32px;
   color: var(--tertiary-text);
 }
-.event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates {
+.event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__date {
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
-  .event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__date {
     font-size: calc(12px * var(--scale));
     line-height: calc(16px * var(--lh));
   }
@@ -9188,6 +9205,7 @@ body.tmp-duma .slider .slider__link:active {
 .slider {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   font-size: 34px;
   padding-top: 32px;
@@ -9199,6 +9217,7 @@ body.tmp-duma .slider .slider__link:active {
   }
 }
 .slider .slider__counter {
+  text-align: center;
   font-weight: 400;
   font-size: calc(20px * var(--scale));
   line-height: calc(24px * var(--lh));

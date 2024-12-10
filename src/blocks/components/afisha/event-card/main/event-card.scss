@@ -20,14 +20,26 @@ body.tmp-duma {
             padding-top: 20px;
 
             .event-card__description {
+
+                @include respond-to(sm) {
+                    gap: 16px;
+                }
+
                 margin-bottom: 0;
+                .event-card__dates {
+                    align-items: center;
+    
+                    @include respond-to(xs) {
+                        flex-direction: column;
+                        gap: 8px;
+                        align-items: flex-start;
+                    }
+                }
             }
 
             .event-card__tags {}
 
-            .event-card__dates {
-                align-items: center;
-            }
+        
 
             .event-card__buttons {
                 gap: 20px;
@@ -39,6 +51,12 @@ body.tmp-duma {
 
                     .icon {
                         font-size: 20px;
+                    }
+                }
+
+                .button_print {
+                    @include respond-to(sm) {
+                        display: none;
                     }
                 }
             }
@@ -92,7 +110,7 @@ body.tmp-duma {
                     gap: 32px;
                     color: $tertiary-text;
 
-                    .event-card__dates {
+                    .event-card__date {
                         @include caption-2;
                     }
 
