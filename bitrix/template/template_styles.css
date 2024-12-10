@@ -6208,6 +6208,10 @@ body.tmp-duma .pag-button_active:hover {
     padding: 16px 0 0;
   }
 }
+.fieldset .fieldset__req::after {
+  content: " *";
+  color: red;
+}
 .fieldset .fieldset__answers {
   display: flex;
   flex-direction: column;
@@ -20739,4 +20743,8 @@ img.calendar-icon {
   box-sizing: content-box;
   border: 1px solid transparent;
   position: relative;
+}
+
+.error-input {
+  border: 1px solid red !important;
 }

@@ -2,7 +2,7 @@
 <div class="subscribe"> 
   <div class="subscribe__subtitle">
     <fieldset class="undefined fieldset">
-      <h3 class="fieldset__title ">На какие темы вы хотите подписаться?</h3>
+      <h3 class="fieldset__title  ">На какие темы вы хотите подписаться?</h3>
       <div class="fieldset__answers_checkboxes">
         <div class="fieldset__checkboxes">
           <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
@@ -42,7 +42,7 @@
   <div class="subscribe__fields">
     <div class="subscribe__field">
       <fieldset class="undefined fieldset">
-        <h3 class="fieldset__title ">На какие темы вы хотите подписаться?</h3>
+        <h3 class="fieldset__title  ">На какие темы вы хотите подписаться?</h3>
         <div class="fieldset__answers_checkboxes">
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
@@ -61,7 +61,7 @@
     </div>
     <div class="subscribe__field">
       <fieldset class="undefined fieldset">
-        <h3 class="fieldset__title ">Предпочтительный формат</h3>
+        <h3 class="fieldset__title  ">Предпочтительный формат</h3>
         <div class="fieldset__answers_checkboxes">
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
