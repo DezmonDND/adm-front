@@ -10997,7 +10997,7 @@ body.tmp-duma .usefull-links {
 }
 
 .news-top-card {
-  display: flex;
+  display: none;
   position: relative;
   max-width: 867px;
   width: 100%;
