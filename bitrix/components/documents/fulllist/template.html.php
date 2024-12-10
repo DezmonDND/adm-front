@@ -18,8 +18,8 @@
       <div class="doc-field">
         <div class="label">Окончание экспертизы</div>20.06.2023
       </div>
-      <div class="doc-field files"><a class="button button_link button_white button_size_m  button_icon-left" href="/" title="" attributes="{&quot;target&quot;:&quot;_blank&quot;}"><span class="button_span">Результаты экспертизы</span>
-          <ion-icon class="icon" name="download"></ion-icon></a><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{&quot;target&quot;:&quot;_blank&quot;}"><span class="button_span">Скачать</span>
+      <div class="doc-field files"><a class="button button_link button_white button_size_m  button_icon-left" href="/" title="" target="_blank"><span class="button_span">Результаты экспертизы</span>
+          <ion-icon class="icon" name="download"></ion-icon></a><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" target="_blank"><span class="button_span">Скачать</span>
           <ion-icon class="icon" name="download"></ion-icon></a>
       </div>
     </div>
@@ -42,8 +42,8 @@
       <div class="doc-field">
         <div class="label">Окончание экспертизы</div>20.06.2023
       </div>
-      <div class="doc-field files"><a class="button button_link button_white button_size_m  button_icon-left" href="/" title="" attributes="{&quot;target&quot;:&quot;_blank&quot;}"><span class="button_span">Результаты экспертизы</span>
-          <ion-icon class="icon" name="download"></ion-icon></a><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{&quot;target&quot;:&quot;_blank&quot;}"><span class="button_span">Скачать</span>
+      <div class="doc-field files"><a class="button button_link button_white button_size_m  button_icon-left" href="/" title="" target="_blank"><span class="button_span">Результаты экспертизы</span>
+          <ion-icon class="icon" name="download"></ion-icon></a><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" target="_blank"><span class="button_span">Скачать</span>
           <ion-icon class="icon" name="download"></ion-icon></a>
       </div>
     </div>
@@ -66,8 +66,8 @@
       <div class="doc-field">
         <div class="label">Окончание экспертизы</div>20.06.2023
       </div>
-      <div class="doc-field files"><a class="button button_link button_white button_size_m  button_icon-left" href="/" title="" attributes="{&quot;target&quot;:&quot;_blank&quot;}"><span class="button_span">Результаты экспертизы</span>
-          <ion-icon class="icon" name="download"></ion-icon></a><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{&quot;target&quot;:&quot;_blank&quot;}"><span class="button_span">Скачать</span>
+      <div class="doc-field files"><a class="button button_link button_white button_size_m  button_icon-left" href="/" title="" target="_blank"><span class="button_span">Результаты экспертизы</span>
+          <ion-icon class="icon" name="download"></ion-icon></a><a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" target="_blank"><span class="button_span">Скачать</span>
           <ion-icon class="icon" name="download"></ion-icon></a>
       </div>
     </div>

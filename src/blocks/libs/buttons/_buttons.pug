@@ -12,7 +12,12 @@ mixin button(options)
     - const hasTitle = options.title ? options.title : ''
     
     if options.type === 'link'
-        a.button.button_link(href='/' title=hasTitle class=[options.class, classSize, classHasText, classIconPosition].join(' ') attributes=(options.target ? { target: '_blank' } : {}))
+        a.button.button_link(
+            href="/"
+            title=hasTitle
+            class=[options.class, classSize, classHasText, classIconPosition].join(' ')
+            target=(options.target ? '_blank' : false)
+        )
             +icon(options.icon, options.text)
 
     if options.type === 'button'
