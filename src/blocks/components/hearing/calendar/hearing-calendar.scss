@@ -6,6 +6,22 @@
     border-radius: 12px;
     position: relative;
 
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .link {
+        color: $primary-color;
+
+        &:hover {
+            color: $primary-color-hover;
+        }
+    }
+
     .fc-toolbar-chunk {
         &:last-of-type {
             .fc-button-group {
@@ -28,8 +44,6 @@
         padding: 4px;
         border-radius: 8px;
         gap: 2px;
-
-
 
         .fc-button-primary {
             border-radius: 8px;
@@ -76,6 +90,8 @@
 }
 
 .fc .fc-daygrid-day-number {
+    width: 22px;
+    text-align: center;
     color: $fourth-text;
     @include tags-label;
 }
@@ -87,6 +103,10 @@
         background-color: $primary-color;
         color: $content-color;
         border-radius: 50%;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -123,7 +143,7 @@
 
 .fc-day-today {
     background-color: $primary-color;
-    border-radius: 100px;
+    border-radius: 100px !important;
 
     .fc-col-header-cell-cushion {
         color: $content-color;
@@ -213,9 +233,31 @@
 
 .fc-toolbar-title {
     padding: 0;
-    
+
 }
 
 .fc .fc-toolbar-title {
     @include heading-h3;
+}
+
+.fc-button {
+    box-shadow: none !important;
+}
+
+.fc-prev-button,
+.fc-next-button {
+    &:hover {
+        color: $primary-color-hover !important;
+    }
+
+    &:active {
+        background-color: transparent !important;
+        color: $primary-color-active !important;
+    }
+}
+
+.fc-timeGridWeek-view.fc-view.fc-timegrid .fc-col-header-cell-cushion {
+    &:hover {
+        text-decoration: none;
+    }
 }

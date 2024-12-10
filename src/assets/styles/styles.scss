@@ -55,6 +55,17 @@ p {
 a {
     font-weight: $font-weight-medium;
     text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+        text-decoration: underline;
+        color: $primary-color-hover;
+    }
+
+    &:active {
+        text-decoration: underline;
+        color: $primary-color-active;
+    }
 }
 
 b {
@@ -63,11 +74,29 @@ b {
 
 // Стили статической страницы
 .content {
+    .content__link {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+
+        .icon {
+            min-width: 14px;
+        }
+    }
+
+    .glyphicon-save {
+        &::before {
+            content: unset;
+        }
+    }
+
     &-card {
         background-color: var(--cards-background);
 
         &__container {
-            margin: 0 auto;
+            margin: 0;
             max-width: 738px;
             width: 100%;
             padding: 40px 0 40px;
@@ -80,11 +109,9 @@ b {
     }
 
     &-page {
+        margin-top: 24px;
         max-width: 755px;
-        margin: 0px auto;
     }
-
-
 }
 
 table {
@@ -93,29 +120,36 @@ table {
     border-spacing: 0;
     border-radius: 12px;
 }
-th, td {
+
+th,
+td {
     text-align: left;
     padding: 20px 15px;
     border: 1px solid $tertiary-text-dark-bg;
     @include text-2();
 }
+
 th {
     background-color: $grey-adm;
     border-right: none;
     border-left: none;
     @include lead-5();
 }
-th:first-child{
+
+th:first-child {
     border-left: 1px solid $tertiary-text-dark-bg;
     border-top-left-radius: 12px;
 }
+
 th:last-child {
     border-right: 1px solid $tertiary-text-dark-bg;
     border-top-right-radius: 12px;
 }
+
 tr:last-child td:first-child {
     border-bottom-left-radius: 12px;
 }
+
 tr:last-child td:last-child {
     border-bottom-right-radius: 12px;
 }

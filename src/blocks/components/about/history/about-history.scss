@@ -1,0 +1,75 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-history {
+    .about-history-elem {
+        background-color: $primary-color-disabled;
+    }
+
+    .full-width-container {
+        .full-width-background {
+            background-color: $event-color;
+        }
+    }
+
+    .about-history__container {
+        max-width: 866px;
+        margin: auto;
+        @include about-blocks-paddings;
+
+        .about-history__title {
+            margin: 0;
+            @include heading-h1;
+            @include about-paddings-title;
+        }
+
+        .about-history__container-title {
+            @include heading-h3;
+        }
+
+        .about-history__button {
+            @include more-button;
+        }
+
+        .about-history__hidden {
+            display: none;
+
+            &_open {
+                display: block;
+            }
+        }
+    }
+}
+
+.about-history-elem__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 75%;
+}
+
+.about-history-elem {
+    width: 100%;
+    background-color: $grey-adm;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    border-radius: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    span {
+        z-index: 1;
+    }
+
+    @include respond-to(md) {
+        padding: 20px;
+    }
+
+    @include respond-to(sm) {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,4 +1,4 @@
-include ../_form.pug 
+include ./interview-form.pug 
 include ../../../libs/fieldset/_fieldset.pug 
 include ../../../libs/checkbox/_checkbox.pug
 include ../../../libs/textarea/_textarea.pug 
@@ -6,93 +6,96 @@ include ../../../libs/inputs/_inputs.pug
 include ../../../libs/buttons/_buttons.pug 
 include ../../../libs/select/_select.pug 
 
-form.interview-form
-    +fieldset(
-        {
-            type: 'radio',
-            title: '1. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
-            checkboxes: [
-                { 
-                    id: 1, 
-                    label: 'Да', 
-                    sort: 'radio',
-                    status: false,
-                    name: 'radio'
-                    },
-                { 
-                    id: 2, 
-                    label: 'Нет', 
-                    sort: 'radio',
-                    status: false,
-                    name: 'radio'
-                    },
-                ],
-        })  
-    +fieldset(
-        {
-            type: 'checkbox',
-            title: '2. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
-            checkboxes: [
-                { 
-                    id: 3, 
-                    label: 'Первый вариант',
-                    sort: 'checkbox',
-                },
-                { 
-                    id: 4,
-                    label: 'Второй вариант',
-                    sort: 'checkbox',
-                },
-                { 
-                    id: 5, 
-                    label: 'Третий вариант',
-                    sort: 'checkbox', 
-                },
-                ],
-        })
-    +fieldset(
-        {
-            type: '',
-            title: '3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
-            span: 'Вспомогательный текст',
-            error: false,
-            inputs: [
-                {
-                    placeholder: `Введите ваш ответ`,
-                    name: `answer3`, 
-                    sort: `interview-full`,
-                },
-                ] 
-        })
-    +fieldset(
-        {
-            type: 'textarea',
-            title: '4. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
-            span: 'Вспомогательный текст',
-            error: false,
-            options: {
-                placeholder: 'Введите ваш ответ',
-                value: '900'
-                    }
-        })
-    +fieldset(
-        {
-            type: 'select', 
-            title: 'Кому направляете электронную анкету', 
-            cls_title: 'reception__sender', 
-            options: [
-                { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
-                { text: 'Филатов', value: 'Филатов' }, 
-                { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
-            iconPosition: 'right'})
-    +fieldset(
-        {
-            type: 'multiple', 
-            title: 'Кому направляете электронную анкету', 
-            cls_title: 'reception__sender', 
-            options: [
-                { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
-                { text: 'Филатов', value: 'Филатов' }, 
-                { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
-            iconPosition: 'right'})        
-    +button({ size: 'l', type: 'button', class: 'button_blue interview-form__button', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить форму` })
+//- form.interview-form
+    //- +fieldset(
+    //-     {
+    //-         type: 'radio',
+    //-         title: '1. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
+    //-         checkboxes: [
+    //-             { 
+    //-                 id: 1, 
+    //-                 label: 'Да', 
+    //-                 sort: 'radio',
+    //-                 status: false,
+    //-                 name: 'radio'
+    //-                 },
+    //-             { 
+    //-                 id: 2, 
+    //-                 label: 'Нет', 
+    //-                 sort: 'radio',
+    //-                 status: false,
+    //-                 name: 'radio'
+    //-                 },
+    //-             ],
+    //-     })  
+    //- +fieldset(
+    //-     {
+    //-         type: 'checkbox',
+    //-         title: '2. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?', 
+    //-         checkboxes: [
+    //-             { 
+    //-                 id: 3, 
+    //-                 label: 'Первый вариант',
+    //-                 sort: 'checkbox',
+    //-             },
+    //-             { 
+    //-                 id: 4,
+    //-                 label: 'Второй вариант',
+    //-                 sort: 'checkbox',
+    //-             },
+    //-             { 
+    //-                 id: 5, 
+    //-                 label: 'Третий вариант',
+    //-                 sort: 'checkbox', 
+    //-             },
+    //-             ],
+    //-     })
+    //- +fieldset(
+    //-     {
+    //-         type: '',
+    //-         title: '3. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+    //-         span: 'Вспомогательный текст',
+    //-         error: false,
+    //-         inputs: [
+    //-             {
+    //-                 placeholder: `Введите ваш ответ`,
+    //-                 name: `answer3`, 
+    //-                 sort: `interview-full`,
+    //-             },
+    //-             ] 
+    //-     })
+    //- +fieldset(
+    //-     {
+    //-         type: 'textarea',
+    //-         title: '4. Предполагается возможность финансового участия соответствующих заинтересованных лиц в реализации инициативного проекта?',
+    //-         span: 'Вспомогательный текст',
+    //-         error: false,
+    //-         options: {
+    //-             placeholder: 'Введите ваш ответ',
+    //-             value: '900'
+    //-                 }
+    //-     })
+    //- +fieldset(
+    //-     {
+    //-         type: 'select', 
+    //-         title: 'Кому направляете электронную анкету', 
+    //-         cls_title: 'reception__sender', 
+    //-         name: 'blank',
+    //-         options: [
+    //-             { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
+    //-             { text: 'Филатов', value: 'Филатов' }, 
+    //-             { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
+    //-         iconPosition: 'right'})
+    //- +fieldset(
+    //-     {
+    //-         type: 'multiple', 
+    //-         title: 'Кому направляете электронную анкету', 
+    //-         cls_title: 'reception__sender', 
+    //-         options: [
+    //-             { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
+    //-             { text: 'Филатов', value: 'Филатов' }, 
+    //-             { text: 'Глава города Сургута', value: 'Глава города Сургута' }], 
+    //-         iconPosition: 'right',
+    //-         name: 'sander'
+    //-         })        
+    //- +button({ size: 'l', type: 'button', class: 'button_blue interview-form__button', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить форму` })

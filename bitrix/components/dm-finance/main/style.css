@@ -105,6 +105,9 @@
     line-height: calc(20px * var(--lh));
   }
 }
+.dm-finance-elem__doc a:hover {
+  text-decoration: none;
+}
 
 .dm-finance__content {
   display: flex;

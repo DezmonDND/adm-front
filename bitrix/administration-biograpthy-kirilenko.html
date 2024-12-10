@@ -38,10 +38,16 @@
                 <li><a class="menu__item" href="/">Контакты</a></li>
               </ul>
             </div>
-            <div class="menu__socials"> 
-              <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
-                <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <div class="menu__bot">
+              <div class="menu__socials"> 
+                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                </div>
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <ion-icon class="icon" name="eye-outline"></ion-icon>
+                </button>
+              </div>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              </button>
             </div>
           </div>
         </div>
@@ -282,6 +288,48 @@
         </button>
       </div>
       <div class="header-visibility__top-content"> 
+        <div class="mobile-menu">
+          <div class="menu menu_main-bg">
+            <div class="menu__container">
+              <div class="menu__content"> 
+                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                    <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                    <ion-icon class="icon" name="close-outline"></ion-icon>
+                  </button>
+                </div>
+                <form class="search search-header-mobile">
+                  <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
+                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                    <ion-icon class="icon" name="search-outline"></ion-icon>
+                  </button>
+                </form>
+                <ul class="menu__list"> 
+                  <li><a class="menu__item" href="/">Быстрый доступ</a></li>
+                  <li><a class="menu__item" href="/">Публичные слушания</a></li>
+                  <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
+                  <li><a class="menu__item" href="/">Пресс-центр</a></li>
+                  <li><a class="menu__item" href="/">Обращения граждан</a></li>
+                  <li><a class="menu__item" href="/">О Сургуте</a></li>
+                  <li><a class="menu__item" href="/">Городская власть</a></li>
+                  <li><a class="menu__item" href="/">Документы</a></li>
+                  <li><a class="menu__item" href="/">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="menu__bot">
+                <div class="menu__socials"> 
+                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                  </div>
+                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                    <ion-icon class="icon" name="eye-outline"></ion-icon>
+                  </button>
+                </div>
+                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="header-visibility__top-links">
           <ul class="header_links">
             <li class="header__link"> <a href="/">О Сургуте          </a></li>
@@ -305,6 +353,9 @@
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </button>
       </div>
       <div class="header-visibility__bottom-content">
         <ul class="header_links">
@@ -338,7 +389,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -432,29 +483,24 @@
                 </div>
               </div>
               <div class="biography__description"> 
-                <p>Родился 1 июня 1973 года в Курске, в 1988 году после окончания 8-го класса вместе с родителями переехал в Югру. Здесь получил первое образование в <span class="biography__description-span">Нижневартовском нефтяном техникуме</span> по специальности «Бурение нефтяных и газовых скважин». </p>
-                <p>В 2004 году закончил Уральскую академию государственной службы по специальности «Государственное и муниципальное управление». Имеет квалификационную степень в сфере управления <span class="biography__description-span">MBA (Master of Business Administration)</span> Российской академии народного хозяйства и государственной службы при Президенте Российской Федерации. </p>
-                <p class="biography__description-span"> Кандидат социологических наук. </p>
-                <p>До 2012 года занимался предпринимательской деятельностью. </p>
-                <p>Начиная с 2006 года дважды избирался депутатом муниципального уровня и дважды – депутатом Думы Югры. </p>
-                <p>С 2013 по 2015 год работал заместителем Губернатора ХМАО – Югры. </p>
-                <p>Курировал внутриполитический блок. </p>
-                <p>С 2016 по 2021 год возглавлял Комитет по бюджету, финансам и налоговой политике Думы Югры. </p>
-                <p>27 февраля 2021 года избран Главой города Сургута. </p>
-                <p class="biography__description-span">Член партии «ЕДИНАЯ РОССИЯ».</p>
-                <p>Женат, воспитывает двоих сыновей. </p>
+                <p>Максим Николаевич Слепов родился 20 сентября 1973 года в Волгограде.</p>
+                <p>В 1997 году окончил Тюменскую государственную медицинскую академию по специальности «Лечебное дело». В 2004 году получил второе высшее образование в Московском государственном социальном университете по специальности «Государственное и муниципальное управление».</p>
+                <p>В 2005-2008 годах прошёл обучение в Академии народного хозяйства при Правительстве Российской Федерации по программе подготовки руководящих кадров «Президент», в 2005-2007 годах – по программе MBA «Мастер делового администрирования».</p>
+                <p>Начал работать в Сургуте в 1998 году врачом-нефрологом в Окружном кардиологическом диспансере «Центр диагностики и сердечно-сосудистой хирургии». Трудился на руководящих должностях в Центре диагностики и сердечно-сосудистой хирургии, Сургутском филиале Окружного фонда обязательного медицинского страхования. В 2007-2024 годах возглавлял Сургутскую городскую клиническую поликлинику № 1. Имеет высшую квалификационную категорию по специальности «Организация здравоохранения», кандидат медицинских наук.</p>
+                <p>В 2011 году был избран депутатом городской Думы, работал в составе Дум города Сургута V, VI и VII созывов. С 2021 по 2024 годы – Председатель Думы города, председатель постоянного комитета Думы города по бюджету, налогам, финансам и имуществу.</p>
+                <p>3 июля 2024 года избран Главой города Сургута.</p>
+                <p>С 2005 года является членом Всероссийской политической партии «ЕДИНАЯ РОССИЯ».</p>
+                <p>Удостоен Нагрудного знака «Отличник здравоохранения», Почётных грамот Министерства здравоохранения РФ, Департамента здравоохранения ХМАО-Югры, ТФОМС Югры. Имеет Почётные грамоты и Благодарственные письма Тюменской областной Думы, Думы Ханты-Мансийского автономного округа – Югры, Думы города Сургута.</p>
+                <p>В 2010 и 2013 годах занесён на Доску Почёта города Сургута, в 2017 году награждён Благодарностью Главы города Сургута, в 2022 – знаком «За заслуги перед городом Сургутом».</p>
+                <p>Женат, воспитывает четверых детей. </p>
                 <div class="biography__more-contacts">
                   <div class="biography__more-contacts-content">
                     <h5 class="biography__more-contacts-title">Помощник Главы города</h5>
-                    <p>Журавская Татьяна Владимировна, 8 (3462) 522-400</p>
+                    <p>Клечкина-Юшкова Наталья Викторовна<br/>+7(3462) 52-24-04<br/>e-mail: klechkina_nv@admsurgut.ru</p>
                   </div>
                   <div class="biography__more-contacts-content">
                     <h5 class="biography__more-contacts-title">Советник Главы города</h5>
-                    <p>Ванькова Мария Николаевна, 8 (3462) 522-275</p>
-                  </div>
-                  <div class="biography__more-contacts-content">
-                    <h5 class="biography__more-contacts-title">Советник Главы города</h5>
-                    <p>Фомагин Валерий Борисович, 8 (3462) 522-404        </p>
+                    <p>Мачтакова Анна Яковлевна<br/>+7 (3462) 52-20-17<br/>e-mail: Machtakova_aya@admsurgut.ru      </p>
                   </div>
                 </div>
               </div>

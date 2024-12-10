@@ -2,15 +2,24 @@
 
 .chronicle {
     display: flex;
+    justify-content: space-between;
 
     .chronicle__container {
         display: flex;
         gap: 24px;
+        width: 100%;
+        min-height: 332px;
+
+        @include respond-to(md) {
+            min-height: unset;
+        }
 
         .chronicle__list {
             display: flex;
             flex-direction: column;
             gap: 12px;
+            width: 100%;
+            position: relative;
 
             .chronicle__slider {
                 display: flex;

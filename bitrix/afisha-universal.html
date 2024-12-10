@@ -38,10 +38,16 @@
                 <li><a class="menu__item" href="/">Контакты</a></li>
               </ul>
             </div>
-            <div class="menu__socials"> 
-              <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
-                <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <div class="menu__bot">
+              <div class="menu__socials"> 
+                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                </div>
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <ion-icon class="icon" name="eye-outline"></ion-icon>
+                </button>
+              </div>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              </button>
             </div>
           </div>
         </div>
@@ -282,6 +288,48 @@
         </button>
       </div>
       <div class="header-visibility__top-content"> 
+        <div class="mobile-menu">
+          <div class="menu menu_main-bg">
+            <div class="menu__container">
+              <div class="menu__content"> 
+                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                    <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                    <ion-icon class="icon" name="close-outline"></ion-icon>
+                  </button>
+                </div>
+                <form class="search search-header-mobile">
+                  <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
+                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                    <ion-icon class="icon" name="search-outline"></ion-icon>
+                  </button>
+                </form>
+                <ul class="menu__list"> 
+                  <li><a class="menu__item" href="/">Быстрый доступ</a></li>
+                  <li><a class="menu__item" href="/">Публичные слушания</a></li>
+                  <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
+                  <li><a class="menu__item" href="/">Пресс-центр</a></li>
+                  <li><a class="menu__item" href="/">Обращения граждан</a></li>
+                  <li><a class="menu__item" href="/">О Сургуте</a></li>
+                  <li><a class="menu__item" href="/">Городская власть</a></li>
+                  <li><a class="menu__item" href="/">Документы</a></li>
+                  <li><a class="menu__item" href="/">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="menu__bot">
+                <div class="menu__socials"> 
+                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                  </div>
+                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                    <ion-icon class="icon" name="eye-outline"></ion-icon>
+                  </button>
+                </div>
+                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="header-visibility__top-links">
           <ul class="header_links">
             <li class="header__link"> <a href="/">О Сургуте          </a></li>
@@ -305,6 +353,9 @@
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </button>
       </div>
       <div class="header-visibility__bottom-content">
         <ul class="header_links">
@@ -338,7 +389,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -453,18 +504,18 @@
         </div>
         <div class="filters">
           <div class="filters_container">
-            <select class="select filters__select select-icon-right">
+            <select class="select single select_filters__select select-icon-right" name="events">
               <option class="select__option" value="Все события">Все события</option>
               <option class="select__option" value="Театр">Театр</option>
               <option class="select__option" value="Детям">Детям</option>
               <option class="select__option" value="Выставки">Выставки</option>
               <option class="select__option" value="Концерты">Концерты</option>
             </select>
-            <select class="select filters__select select-icon-right">
+            <select class="select single select_filters__select select-icon-right" name="thema">
               <option class="select__option" value="Любая тематика">Любая тематика</option>
               <option class="select__option" value="Любая тематика">Любая тематика</option>
             </select>
-            <select class="select filters__select select-icon-right">
+            <select class="select single select_filters__select select-icon-right" name="thema">
               <option class="select__option" value="Место проведения">Место проведения</option>
               <option class="select__option" value="Место проведения">Место проведения</option>
             </select>
@@ -474,8 +525,7 @@
         </div>
         <div class="afisha-universal"> 
           <div class="afisha-universal__content">
-            <div class="afisha-universal__events-list"> 
-              <div class="event">
+            <div class="afisha-universal__events-list"> <a class="event" href="/">
                 <div class="event__container">           
                   <div class="event__info"> 
                     <div class="event__time-block"> 
@@ -491,9 +541,7 @@
                     </div>
                   </div>
                   <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                </div>
-              </div>
-              <div class="event">
+                </div></a><a class="event" href="/">
                 <div class="event__container">           
                   <div class="event__info"> 
                     <div class="event__time-block"> 
@@ -509,9 +557,7 @@
                     </div>
                   </div>
                   <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                </div>
-              </div>
-              <div class="event">
+                </div></a><a class="event" href="/">
                 <div class="event__container">           
                   <div class="event__info"> 
                     <div class="event__time-block"> 
@@ -527,9 +573,7 @@
                     </div>
                   </div>
                   <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                </div>
-              </div>
-              <div class="event">
+                </div></a><a class="event" href="/">
                 <div class="event__container">           
                   <div class="event__info"> 
                     <div class="event__time-block"> 
@@ -545,9 +589,7 @@
                     </div>
                   </div>
                   <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                </div>
-              </div>
-              <div class="event">
+                </div></a><a class="event" href="/">
                 <div class="event__container">           
                   <div class="event__info"> 
                     <div class="event__time-block"> 
@@ -563,9 +605,7 @@
                     </div>
                   </div>
                   <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                </div>
-              </div>
-              <div class="event">
+                </div></a><a class="event" href="/">
                 <div class="event__container">           
                   <div class="event__info"> 
                     <div class="event__time-block"> 
@@ -581,8 +621,7 @@
                     </div>
                   </div>
                   <p class="event__description">Комиссия по регламенту, депутатской этике, реализации депутатских полномочий, вопросам информационной политики и взаимодействия с институтами гражданского общества</p><span class="event__number">2           </span>
-                </div>
-              </div>
+                </div></a>
             </div>
           </div>
           <div class="navigation"> <a class="navigation__link">

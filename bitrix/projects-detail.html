@@ -38,10 +38,16 @@
                 <li><a class="menu__item" href="/">Контакты</a></li>
               </ul>
             </div>
-            <div class="menu__socials"> 
-              <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
-                <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <div class="menu__bot">
+              <div class="menu__socials"> 
+                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                </div>
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <ion-icon class="icon" name="eye-outline"></ion-icon>
+                </button>
+              </div>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              </button>
             </div>
           </div>
         </div>
@@ -282,6 +288,48 @@
         </button>
       </div>
       <div class="header-visibility__top-content"> 
+        <div class="mobile-menu">
+          <div class="menu menu_main-bg">
+            <div class="menu__container">
+              <div class="menu__content"> 
+                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                    <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                    <ion-icon class="icon" name="close-outline"></ion-icon>
+                  </button>
+                </div>
+                <form class="search search-header-mobile">
+                  <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
+                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                    <ion-icon class="icon" name="search-outline"></ion-icon>
+                  </button>
+                </form>
+                <ul class="menu__list"> 
+                  <li><a class="menu__item" href="/">Быстрый доступ</a></li>
+                  <li><a class="menu__item" href="/">Публичные слушания</a></li>
+                  <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
+                  <li><a class="menu__item" href="/">Пресс-центр</a></li>
+                  <li><a class="menu__item" href="/">Обращения граждан</a></li>
+                  <li><a class="menu__item" href="/">О Сургуте</a></li>
+                  <li><a class="menu__item" href="/">Городская власть</a></li>
+                  <li><a class="menu__item" href="/">Документы</a></li>
+                  <li><a class="menu__item" href="/">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="menu__bot">
+                <div class="menu__socials"> 
+                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                  </div>
+                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                    <ion-icon class="icon" name="eye-outline"></ion-icon>
+                  </button>
+                </div>
+                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="header-visibility__top-links">
           <ul class="header_links">
             <li class="header__link"> <a href="/">О Сургуте          </a></li>
@@ -305,6 +353,9 @@
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </button>
       </div>
       <div class="header-visibility__bottom-content">
         <ul class="header_links">
@@ -338,7 +389,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -403,9 +454,9 @@
                     <div class="event-card__description"> 
                       <h2 class="event-card__title">Документ инициативного проекта сгенерирован</h2>
                     </div>
-                    <div class="event-card__buttons"> <a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Версия для печати</span>
+                    <div class="event-card__buttons"> <a class="button button_link button_blue button_print button_size_m  button_icon-left" href="/" title=""><span class="button_span">Версия для печати</span>
                         <ion-icon class="icon" name="print-outline"></ion-icon></a>
-                      <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Поделиться</span>
+                      <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  button_icon-left" href="/" title=""><span class="button_span">Поделиться</span>
                           <ion-icon class="icon" name="link-outline"></ion-icon></a>
                         <div class="button-popup__content">
                           <div class="button-popup">
@@ -417,8 +468,7 @@
                             </div>
                           </div>
                         </div>
-                      </div><a class="button button_link button_white button_size_m button_without-text " href="/" title="" attributes="{}">
-                        <ion-icon class="icon" name="download-outline"></ion-icon></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -430,7 +480,7 @@
           <div class="projects-detail__about">
             <h3 class="projects-detail__title">Дополнительная информация</h3>
             <p class="projects-detail__desc">Предваряя <strong>акцент</strong> в <b>неважный жирный текст</b> города состоялась <s>встреча</s> с представителями <i>делегаций</i> Муслюмовского <u>муниципального района</u> (Республика Татарстан), Дома дружбы народов Республики Башкортостан и города Сибай. Гости приехали с двухдневным визитом в наш город для участия в Сабантуе.дерации разделяет муниципальные <a class="link" href="/">правовые</a> акты на <a class="link" href="/">нормативные</a> и ненормативные</p>
-          </div><a class="button button_link button_white   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Вернуться к инициативным проектам</span>
+          </div><a class="button button_link button_white   button_icon-left" href="/" title=""><span class="button_span">Вернуться к инициативным проектам</span>
             <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
         </div>
       </div>

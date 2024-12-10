@@ -1,0 +1,42 @@
+
+
+mixin telephone-elem(item)
+    .telephone-elem
+        .tepelhone-elem-title 
+            .telephone-elem-title-left
+                span= item.title
+                a(href = '#') Перейти
+            .telephone-elem-title-right
+                ion-icon.telephone-elem-expand(name = 'chevron-down-outline', onclick ='toggleHiddenPhone(this)')
+        hr
+        .telephone-elem-main
+            if item.phones
+                .telephone-elem-phones 
+                    each phone in item.phones
+                        .telephone-elem-phones-row 
+                            .telephone-elem-row-item.telephone-elem-row-item-first
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-fio')
+                                    span ФИО
+                                    span= phone.name ? phone.name : '-'
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-status')
+                                    span Должность
+                                    span= phone.status ? phone.status : '-'
+                            .telephone-elem-row-item
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-addr')
+                                    span Адрес
+                                    span= phone.addr ? phone.addr : '-'
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-cab')
+                                    span Кабинет
+                                    span= phone.cab ? phone.cab : '-'
+                            .telephone-elem-row-item
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-phone')
+                                    span Телефон
+                                    span= phone.num ? phone.num : '-'
+                                .telephone-elem-row-el(class = 'telephone-elem-row-el-mail')
+                                    span Электронная почта
+                                    span= phone.mail ? phone.mail : '-'
+                        hr
+            if item.items
+                .telephone-elem-items  
+                    each el in item.items
+                        +telephone-elem(el)

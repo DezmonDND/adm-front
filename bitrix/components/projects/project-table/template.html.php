@@ -1,6 +1,6 @@
 
-<table>
-  <thead class="project-table">
+<table class="project-table ">
+  <thead>
     <tr></tr>
     <th>№</th>
     <th>Наименование и цели инициативного проекта</th>

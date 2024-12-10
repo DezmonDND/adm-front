@@ -1,14 +1,24 @@
 .chronicle {
   display: flex;
+  justify-content: space-between;
 }
 .chronicle .chronicle__container {
   display: flex;
   gap: 24px;
+  width: 100%;
+  min-height: 332px;
+}
+@media (max-width: 992px) {
+  .chronicle .chronicle__container {
+    min-height: unset;
+  }
 }
 .chronicle .chronicle__container .chronicle__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
+  position: relative;
 }
 .chronicle .chronicle__container .chronicle__list .chronicle__slider {
   display: flex;

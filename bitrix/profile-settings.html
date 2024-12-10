@@ -38,10 +38,16 @@
                 <li><a class="menu__item" href="/">Контакты</a></li>
               </ul>
             </div>
-            <div class="menu__socials"> 
-              <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
-                <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <div class="menu__bot">
+              <div class="menu__socials"> 
+                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                </div>
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <ion-icon class="icon" name="eye-outline"></ion-icon>
+                </button>
+              </div>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              </button>
             </div>
           </div>
         </div>
@@ -282,6 +288,48 @@
         </button>
       </div>
       <div class="header-visibility__top-content"> 
+        <div class="mobile-menu">
+          <div class="menu menu_main-bg">
+            <div class="menu__container">
+              <div class="menu__content"> 
+                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                    <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                    <ion-icon class="icon" name="close-outline"></ion-icon>
+                  </button>
+                </div>
+                <form class="search search-header-mobile">
+                  <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
+                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                    <ion-icon class="icon" name="search-outline"></ion-icon>
+                  </button>
+                </form>
+                <ul class="menu__list"> 
+                  <li><a class="menu__item" href="/">Быстрый доступ</a></li>
+                  <li><a class="menu__item" href="/">Публичные слушания</a></li>
+                  <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
+                  <li><a class="menu__item" href="/">Пресс-центр</a></li>
+                  <li><a class="menu__item" href="/">Обращения граждан</a></li>
+                  <li><a class="menu__item" href="/">О Сургуте</a></li>
+                  <li><a class="menu__item" href="/">Городская власть</a></li>
+                  <li><a class="menu__item" href="/">Документы</a></li>
+                  <li><a class="menu__item" href="/">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="menu__bot">
+                <div class="menu__socials"> 
+                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                  </div>
+                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                    <ion-icon class="icon" name="eye-outline"></ion-icon>
+                  </button>
+                </div>
+                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="header-visibility__top-links">
           <ul class="header_links">
             <li class="header__link"> <a href="/">О Сургуте          </a></li>
@@ -305,6 +353,9 @@
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </button>
       </div>
       <div class="header-visibility__bottom-content">
         <ul class="header_links">
@@ -338,7 +389,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -420,7 +471,8 @@
         <div class="profile-settings-title"><span>Настройте главную страницу под свои интересы</span></div>
         <div class="profile-settings-interests"> 
           <div class="profile-settings-interest-elem">
-            <div class="profile-settings-interest-elem-left"><img src="/resources/lk1.svg"/>
+            <div class="profile-settings-interest-elem-left">
+              <ion-icon class="icon" name="heart-circle-outline"></ion-icon>
               <div class="profile-settings-interest-elem-mid">
                 <div class="profile-settings-interest-elem-mid-title"><span>Мне интересны новости и события, связанные с моим городом</span></div>
                 <div class="profile-settings-interest-elem-mid-subtitle"><span>Для вас будут отображаться только самые актуальные новости и информация, посвященные городу</span></div>
@@ -432,7 +484,8 @@
             </div>
           </div>
           <div class="profile-settings-interest-elem">
-            <div class="profile-settings-interest-elem-left"><img src="/resources/lk2.svg"/>
+            <div class="profile-settings-interest-elem-left">
+              <ion-icon class="icon" name="people"></ion-icon>
               <div class="profile-settings-interest-elem-mid">
                 <div class="profile-settings-interest-elem-mid-title"><span>Мне интересно активное участие в жизни города</span></div>
                 <div class="profile-settings-interest-elem-mid-subtitle"><span>Для вас будет отображаться вся доступная информация, связанная со льготами, социальной помощью</span></div>
@@ -444,7 +497,8 @@
             </div>
           </div>
           <div class="profile-settings-interest-elem">
-            <div class="profile-settings-interest-elem-left"><img src="/resources/lk3.svg"/>
+            <div class="profile-settings-interest-elem-left">
+              <ion-icon class="icon" name="analytics"></ion-icon>
               <div class="profile-settings-interest-elem-mid">
                 <div class="profile-settings-interest-elem-mid-title"><span>Мне интересны преференции от государства</span></div>
                 <div class="profile-settings-interest-elem-mid-subtitle"><span>Для вас будет отображаться вся доступная информация, связанная со льготами, социальной помощью</span></div>
@@ -456,7 +510,8 @@
             </div>
           </div>
           <div class="profile-settings-interest-elem">
-            <div class="profile-settings-interest-elem-left"><img src="/resources/lk4.svg"/>
+            <div class="profile-settings-interest-elem-left">
+              <ion-icon class="icon" name="person"></ion-icon>
               <div class="profile-settings-interest-elem-mid">
                 <div class="profile-settings-interest-elem-mid-title"><span>Мне интересно все (по умолчанию)</span></div>
                 <div class="profile-settings-interest-elem-mid-subtitle"><span>Для вас будет отображаться вся доступная информация, включающая актуальные новости и события, полезные сервисы и ссылки, и многое другое</span></div>

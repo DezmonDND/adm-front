@@ -7,9 +7,17 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
 }
 
 .event {
-  width: 100%;
   background-color: var(--cards-background);
   border-radius: 12px;
+  color: var(--main-text);
+}
+.event:hover {
+  text-decoration: none;
+  color: var(--main-text);
+  background-color: var(--services-hover);
+}
+.event:active {
+  background-color: var(--services-active);
 }
 .event .event__container {
   display: flex;

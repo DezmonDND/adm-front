@@ -92,18 +92,18 @@
           </div>
           <div class="filters">
             <div class="filters_container">
-              <select class="select filters__select select-icon-right">
+              <select class="select single select_filters__select select-icon-right" name="events">
                 <option class="select__option" value="Все события">Все события</option>
                 <option class="select__option" value="Театр">Театр</option>
                 <option class="select__option" value="Детям">Детям</option>
                 <option class="select__option" value="Выставки">Выставки</option>
                 <option class="select__option" value="Концерты">Концерты</option>
               </select>
-              <select class="select filters__select select-icon-right">
+              <select class="select single select_filters__select select-icon-right" name="thema">
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
               </select>
-              <select class="select filters__select select-icon-right">
+              <select class="select single select_filters__select select-icon-right" name="thema">
                 <option class="select__option" value="Место проведения">Место проведения</option>
                 <option class="select__option" value="Место проведения">Место проведения</option>
               </select>
@@ -111,7 +111,7 @@
             <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
             <label class="сheckbox__label" for="10">С пушкинской картой</label>
           </div>
-          <div class="events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+          <div class="events__news" id="events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags">

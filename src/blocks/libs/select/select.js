@@ -1,9 +1,18 @@
-function openSelect() {
-  const selectMenu = document.querySelector(".select_multiple-menu");
-  selectMenu.style.display =
-    selectMenu.style.display === "none" ? "flex" : "none";
-}
+$(document).ready(function () {
+    replaceClass();
 
-function selectOption(element) {
-  element.classList.toggle("select_multiple-option_selected");
-}
+    const inputs = document.querySelectorAll('.input__add-document');
+
+    inputs.forEach((input) => {
+        input.addEventListener('input', function() {            
+            addDocument(this.id);
+        });
+    });
+
+    $('.select').select2();
+
+    $('.select_multiple').select2({
+        placeholder: 'Выберите получателя',
+        allowClear: true,
+    });
+});

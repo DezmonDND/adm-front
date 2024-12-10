@@ -4,7 +4,8 @@
     .afisha-event__container {
         .afisha-event__content {
             max-width: 755px;
-            margin: 40px auto 40px;
+            // margin: 40px auto 40px;
+            margin: 40px 0 40px;
             display: flex;
             flex-direction: column;
             gap: 40px;
@@ -101,10 +102,25 @@
                 overflow: scroll;
                 scrollbar-width: none;
 
+                a {
+                    color: $main-text;
+                }
+
                 .afisha-event__image {
                     max-width: 755px;
                     width: 100%;
                     margin-right: 8px;
+                    max-height: 480px;
+                    object-fit: contain;
+                    object-position: center;
+
+                    @include respond-to(md) {
+                        max-height: 270px;
+                    }
+
+                    @include respond-to(sm) {
+                        max-height: 125px;
+                    }
                 }
             }
 

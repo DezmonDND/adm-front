@@ -1,0 +1,46 @@
+.telephone {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.telephone .telephone-search {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.telephone .telephone-search .telephone-search-mid {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .telephone .telephone-search .telephone-search-mid {
+    flex-direction: column;
+  }
+}
+.telephone .telephone-search .telephone-search-bot {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .telephone .telephone-search .telephone-search-bot {
+    flex-direction: column;
+  }
+}
+.telephone .telephone-search .telephone-search-bot-btns {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .telephone .telephone-search .telephone-search-bot-btns {
+    width: 100%;
+  }
+  .telephone .telephone-search .telephone-search-bot-btns button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

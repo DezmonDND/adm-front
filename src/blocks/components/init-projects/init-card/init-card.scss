@@ -3,12 +3,38 @@
 .init-card {
     background-color: $cards-background;
     border-radius: 12px;
+    color: $main-text;
+
+    &:hover {
+        color: $main-text;
+        text-decoration: none;
+    }
+
+    &:hover .init-card__title {
+        color: $primary-color;
+    }  
+
+    &:active .init-card__title {
+        color: $primary-color-active;
+    } 
 
     .init-card__container {
         .init-card__image {
             max-width: 421px;
             width: 100%;
-            border-radius: 12px 12px 0 0
+            border-radius: 12px 12px 0 0;
+            max-height: 237px;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+
+            @include respond-to(md) {
+                max-height: 220px;
+            }
+
+            @include respond-to(sm) {
+                max-height: 189px;
+            }
         }
 
         .init-card__title {
@@ -42,6 +68,46 @@
 
                     &:last-of-type {
                         grid-template-columns: 100%;
+                    }
+
+                    .init-card__row-detail {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+
+                        @include respond-to(md) {
+                            gap: 12px;
+                        }
+
+                        .icon {
+                            font-size: 24px;
+                            color: $icons-color;
+
+                            @include respond-to(md) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .init-card__row-desc {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            width: calc(100% - 40px);
+
+                            @include respond-to(md) {
+                                gap: 4px;
+                                width: calc(100% - 28px);
+                            }
+
+                            .init-card__name {
+                                color: $tertiary-text;
+                                @include caption-3;
+                            }
+
+                            .init-card__text {
+                                @include lead-5;
+                            }
+                        }
                     }
 
                     .init-card__row {

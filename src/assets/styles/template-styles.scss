@@ -6,10 +6,12 @@
 @use './bootstrap-grid.scss';
 @use '../../blocks/libs/inputs/inputs.scss';
 @use '../../blocks/libs/buttons/buttons.scss';
-@use '../../blocks//libs/links/links.scss';
-@use '../../blocks//libs/linkslist/linkslist.scss';
+@use '../../blocks/libs/links/links.scss';
+@use '../../blocks/libs/linkslist/linkslist.scss';
 @use '../../blocks/libs/textarea/textarea.scss';
 @use '../../blocks/libs/select/select.scss';
+@use '../../blocks/libs/select/select2.min.css';
+@use '../../blocks/libs/select/select_2.scss';
 @use '../../blocks/libs//checkbox/checkbox.scss';
 @use '../../blocks/libs/switch/switch.scss';
 @use '../../blocks/libs/search-button/search-button.scss';
@@ -20,7 +22,6 @@
 @use '../../blocks/libs/toggle/toggle.scss';
 @use '../../blocks/libs/add-file-button/add-file-button.scss';
 @use '../../blocks/libs/fieldset/fieldset.scss';
-@use '../../blocks/libs/multiselect/multi-select.scss';
 @use '../../blocks/libs/share/share.scss';
 @use '../../blocks/components/breadcrumbs/main/breadcrumbs.scss';
 @use '../../blocks/components/search-form/main/search-form.scss';
@@ -29,12 +30,12 @@
 @use '../../blocks/components/pagination/default/pagination.scss';
 @use '../../blocks/components/footer/main/footer.scss';
 @use '../../blocks/components/header/main/header.scss';
-@use '../../blocks/components/interview/list/interviews.scss';
+@use '../../blocks/components/interview/list/interviews-list.scss';
 @use '../../blocks/components/interview/form/interviews-form.scss';
 @use '../../blocks/components/thanks/thanks.scss';
 @use '../../blocks/components/user-profile/user-profile.scss';
-@use '../../blocks/components/projects/project-card.scss';
-@use '../../blocks/components/projects/projects-array.scss';
+@use '../../blocks/components/projects/project-card/project-card.scss';
+@use '../../blocks/components/projects/projects-array/projects-array.scss';
 @use '../../blocks/components/title/title.scss';
 @use '../../blocks/components/feedbacks/feedbacks.scss';
 @use '../../blocks/components/reception/main/reception.scss';
@@ -50,6 +51,7 @@
 @use '../../blocks/components/calendar/main/calendar.scss';
 @use '../../blocks/components/afisha/events-list/events-list.scss';
 @use '../../blocks/components/afisha/event-card/main/event-card.scss';
+@use '../../blocks/components/afisha/no-events/no-events.scss';
 @use '../../blocks/components/pagination/main/navigation.scss';
 @use '../../blocks/components/afisha/universal/universal.scss';
 @use '../../blocks/components/afisha/event/main/event.scss';
@@ -82,6 +84,7 @@
 @use '../../blocks/components/news/news-main-card/news-main-card.scss';
 @use '../../blocks/components/init-projects/init-card/init-card.scss';
 @use '../../blocks/components/init-projects/main/init-projects.scss';
+@use '../../blocks/components/init-projects/detail/init-project-detail.scss';
 @use '../../blocks/components/monuments/main/monuments.scss';
 @use '../../blocks/components/header/duma/header-duma.scss';
 @use '../../blocks/components/header/header-links/header-links.scss';
@@ -129,11 +132,36 @@
 @use '../../blocks/components/dm-about/dm-about.scss';
 @use '../../blocks/components/about/about.scss';
 @use '../../blocks/components/profile/settings/profile-settings.scss';
-@use '../../blocks/components/profile/anket/profile-anket.scss';    
+@use '../../blocks/components/profile/anket/profile-anket.scss';
 @use '../../blocks/components/login/projects/login-projects.scss';
 @use '../../blocks/components/login/delete-project/delete-project.scss';
 @use '../../blocks/components/modal-title/modal-title.scss';
+@use '../../blocks/components/profile/card/profile-card.scss';
 @use '../../blocks/components/dm-reception/dm-reception.scss';
+@use '../../blocks/components/scheme/main/scheme.scss';
+@use '../../blocks/components/page404/page404.scss';
+@use '../../blocks/components/dm-deput/main/dm-deput.scss';
+@use '../../blocks/components/dm-schedule/main/dm-schedule.scss';
+@use '../../blocks/components/about/partner-card/about-partner-card.scss';
+@use '../../blocks/components/about/info/about-info.scss';
+@use '../../blocks/components/about/partners/about-partners.scss';
+@use '../../blocks/components/about/symbols/about-symbols.scss';
+@use '../../blocks/components/about/history/about-history.scss';
+@use '../../blocks/components/about/timeline/about-timeline.scss';
+@use '../../blocks/components/about/video-list/about-video-list.scss';
+@use '../../blocks/components/about/today/about-today.scss';
+@use '../../blocks/components/about/monument-card/monument-card.scss';
+@use '../../blocks/components/about/monuments/about-monuments.scss';
+@use '../../blocks/components/about/photo-chronicle-card/photo-chronicle-card.scss';
+@use '../../blocks/components/about/photo-chronicle/about-photo-chronicle.scss';
+@use '../../blocks/components/about/citizens/about-citizens.scss';
+@use '../../blocks/components/about/other-info/about-other-info.scss';
+@use '../../blocks/components/about/organs/about-organs.scss';
+@use '../../blocks/components/about/organ-card/about-organ-card.scss';
+@use '../../blocks/components/about/agency/about-agency.scss';
+@use '../../blocks/components/telephone/elem/telephone-elem.scss';
+@use '../../blocks/components/telephone/main/telephone.scss';
+@use '../../blocks/components/afisha/event-full-desc/jquery.fancybox.min.css';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -183,7 +211,8 @@ body.tmp-print {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
+    flex-grow: 1;
     @include main-padding;
 }
 
@@ -209,4 +238,38 @@ hr {
 
 .upper-text {
     text-transform: uppercase;
+}
+
+[id^="wait_comp_"] {
+    background-color: #FFFF !important;
+    border: 1px solid $event-color !important;
+    border-radius: 1000px !important;
+    color: $primary-color !important;
+    font-size: 0px !important;
+    background-position-x: 25px !important;
+    padding-left: 55px !important;
+}
+
+[id^="wait_comp_"]::after {
+    content: 'Загрузка' !important;
+    @include caption-2();
+}
+
+.generate_form {
+    max-width: 866px;
+
+    .generate_buttons {
+        display: flex;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .search-by-site__button {
+        max-width: unset;
+        width: unset;
+
+        &:hover {
+            color: $main-text;
+        }
+    }
 }

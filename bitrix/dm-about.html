@@ -34,11 +34,46 @@
                 <li><a class="menu__item" href="/">Обратная связь</a></li>
               </ul>
             </div>
-            <div class="menu__socials"> 
-              <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-              </div><a class="button button_link button_white button__eye button_size_xs button_without-text " href="/" title="" attributes="{}">
-                <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+            <div class="menu__bot">
+              <div class="menu__socials"> 
+                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                </div>
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <ion-icon class="icon" name="eye-outline"></ion-icon>
+                </button>
+              </div>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-visibility">
+        <div class="header-visibility-container">
+          <div class="header-visibility-elems">
+            <div class="header-visibility-elem">
+              <div class="header-visibility-elem-left"><span>Размер шрифта:</span></div>
+              <div class="header-visibility-elem-right"><span class="font-size-1" onclick="setFontSize(1, this)"> А </span><span class="font-size-15" onclick="setFontSize(1.5, this)"> А </span><span class="font-size-2" onclick="setFontSize(2, this)"> А</span></div>
+            </div>
+            <div class="header-visibility-elem">
+              <div class="header-visibility-elem-left"><span>Межбуквенный интервал:</span></div>
+              <div class="header-visibility-elem-right"><span class="letter-spacing-0" onclick="setLetterSpacing(0, this)">А</span><span class="letter-spacing-6" onclick="setLetterSpacing(0.06, this)">А </span><span class="letter-spacing-12" onclick="setLetterSpacing(0.12, this)">А</span></div>
+            </div>
+            <div class="header-visibility-elem">
+              <div class="header-visibility-elem-left"><span>Межстрочный интервал:</span></div>
+              <div class="header-visibility-elem-right"><span class="line-height-12" onclick="setLineHeight(1.5, this)">А</span><span class="line-height-15" onclick="setLineHeight(2, this)">А </span><span class="line-height-2" onclick="setLineHeight(2.5, this)">А</span></div>
+            </div>
+            <div class="header-visibility-elem"> 
+              <div class="header-visibility-elem-left"><span>Цвет сайта:</span></div>
+              <div class="header-visibility-elem-right">
+                <button class="theme-light" onclick="setTheme(`light`, this)">A </button>
+                <button class="theme-dark" onclick="setTheme(`dark`, this)">A</button>
+                <button class="theme-blue" onclick="setTheme(`blue`, this)">A</button>
+              </div>
+            </div>
+          </div>
+          <div class="header-visibility-close">
+            <ion-icon name="close-outline"></ion-icon>
           </div>
         </div>
       </div>
@@ -54,8 +89,10 @@
               <ion-icon class="icon" name="search-outline"></ion-icon>
             </button>
           </form>
-          <div class="header__buttons"> <a class="button button_link button_white button__eye button_size_xs  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Версия для слабовидящих</span>
-              <ion-icon class="icon" name="eye-outline"></ion-icon></a>
+          <div class="header__buttons"> 
+            <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+              <ion-icon class="icon" name="eye-outline"></ion-icon>
+            </button>
             <button class="button button_blue button_size_s   " onclick="anotherFunction()" title=""><span class="button_span">Служебный вход</span>
             </button>
           </div>
@@ -179,7 +216,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -244,9 +281,9 @@
                     <div class="event-card__description"> 
                       <h2 class="event-card__title">Общие сведения</h2>
                     </div>
-                    <div class="event-card__buttons"> <a class="button button_link button_blue button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Версия для печати</span>
+                    <div class="event-card__buttons"> <a class="button button_link button_blue button_print button_size_m  button_icon-left" href="/" title=""><span class="button_span">Версия для печати</span>
                         <ion-icon class="icon" name="print-outline"></ion-icon></a>
-                      <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Поделиться</span>
+                      <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  button_icon-left" href="/" title=""><span class="button_span">Поделиться</span>
                           <ion-icon class="icon" name="link-outline"></ion-icon></a>
                         <div class="button-popup__content">
                           <div class="button-popup">
@@ -258,8 +295,7 @@
                             </div>
                           </div>
                         </div>
-                      </div><a class="button button_link button_white button_size_m button_without-text " href="/" title="" attributes="{}">
-                        <ion-icon class="icon" name="download-outline"></ion-icon></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -331,7 +367,7 @@
               <hr/>
               <div class="dm-about-finance-elem-bot">
                 <div class="dm-about-finance-elem-bot-left"><span>Утверждены решением Думы ✓</span><a href="#">(№ 205-VI ДГ от 26.12.2017)</a></div>
-                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
+                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title=""><span class="button_span">Подробнее</span></a>
                 </div>
               </div>
             </div>
@@ -340,7 +376,7 @@
               <hr/>
               <div class="dm-about-finance-elem-bot">
                 <div class="dm-about-finance-elem-bot-left"><span>Утверждены решением Думы ✓</span><a href="#">(№ 205-VI ДГ от 26.12.2017)</a></div>
-                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
+                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title=""><span class="button_span">Подробнее</span></a>
                 </div>
               </div>
             </div>
@@ -349,7 +385,7 @@
               <hr/>
               <div class="dm-about-finance-elem-bot">
                 <div class="dm-about-finance-elem-bot-left"><span>Утверждены решением Думы ✓</span><a href="#">(№ 205-VI ДГ от 26.12.2017)</a></div>
-                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
+                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title=""><span class="button_span">Подробнее</span></a>
                 </div>
               </div>
             </div>
@@ -358,7 +394,7 @@
               <hr/>
               <div class="dm-about-finance-elem-bot">
                 <div class="dm-about-finance-elem-bot-left"><span>Утверждены решением Думы ✓</span><a href="#">(№ 205-VI ДГ от 26.12.2017)</a></div>
-                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
+                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title=""><span class="button_span">Подробнее</span></a>
                 </div>
               </div>
             </div>
@@ -367,7 +403,7 @@
               <hr/>
               <div class="dm-about-finance-elem-bot">
                 <div class="dm-about-finance-elem-bot-left"><span>Утверждены решением Думы ✓</span><a href="#">(№ 205-VI ДГ от 26.12.2017)</a></div>
-                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
+                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title=""><span class="button_span">Подробнее</span></a>
                 </div>
               </div>
             </div>
@@ -376,7 +412,7 @@
               <hr/>
               <div class="dm-about-finance-elem-bot">
                 <div class="dm-about-finance-elem-bot-left"><span>Утверждены решением Думы ✓</span><a href="#">(№ 205-VI ДГ от 26.12.2017)</a></div>
-                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Подробнее</span></a>
+                <div class="dm-about-finance-elem-bot-right"> <a class="button button_link button_blue button_size_m  " href="/" title=""><span class="button_span">Подробнее</span></a>
                 </div>
               </div>
             </div>

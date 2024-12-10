@@ -97,12 +97,12 @@ mixin reception()
                         error: false,
                         options: {
                             placeholder: 'Введите ваш ответ',
-                            value: '900',
+                            value: 'none',
                             cls: 'reception',
                             name: 'feedback',
                                 }
                     })
-            .files-list
+            .files-list(id='files-list-file')
             .reception__buttons
                 +add-file-button()
                 +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })

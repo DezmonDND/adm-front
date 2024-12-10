@@ -2,22 +2,22 @@ include ../_people-care-card
 
 mixin dm-people-care-card()
     .main-people-care__container
-        .main-people-care__card-list 
+        .main-people-care__card-list(id='people-care__card-list') 
             +people-care-card({
                 title: 'ДУМАющий Сургут',
-                logo: true,
                 background: 'people-care-card_bg-dm-1',
-                desc: 'совместный проект «Сургутской трибуны» и Думы города' 
+                desc: 'совместный проект «Сургутской трибуны» и Думы города',
+                bg_image: 'dm_people_care_1.svg' 
             })
             +people-care-card({
                 title: 'Видео проекты',
-                logo: true,
                 background: 'people-care-card_bg-dm-2',
-                desc: 'совместный проект «Сургутской трибуны» и Думы города' 
+                desc: 'совместный проект «Сургутской трибуны» и Думы города',
+                bg_image: 'dm_people_care_2.svg'  
             })
             +people-care-card({
                 title: 'Опросы',
-                logo: true,
                 background: 'people-care-card_bg-dm-3',
-                desc: 'совместный проект «Сургутской трибуны» и Думы города'  
+                desc: 'совместный проект «Сургутской трибуны» и Думы города',
+                bg_image: 'dm_people_care_3.svg' 
             }) 

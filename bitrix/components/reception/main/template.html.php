@@ -47,15 +47,15 @@
         <h3 class="fieldset__title reception__feedback_title">Обращение</h3>
         <div class="fieldset__answers">
           <div class="textarea__container">
-            <textarea class="textarea  " placeholder="Введите ваш ответ" name="feedback" maxlength="900"></textarea>
-            <div class="counter reception_counter"><span class="current">0</span><span>/</span><span class="max">900 </span></div>
+            <textarea class="textarea  " placeholder="Введите ваш ответ" name="feedback" maxlength="none"></textarea>
+            <div class="counter reception_counter"><span class="current">0</span><span>/</span><span class="max">none </span></div>
           </div>
         </div>
       </fieldset>
     </div>
-    <div class="files-list"></div>
+    <div class="files-list" id="files-list-file"></div>
     <div class="reception__buttons">
-      <div class="add-file-button" onclick="addDocument()">
+      <div class="add-file-button" onclick="addDocument(event)">
         <label for="file" id="file-label">Вложить документ
           <ion-icon class="add-file-button__icon" name="add-outline"></ion-icon>
           <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>

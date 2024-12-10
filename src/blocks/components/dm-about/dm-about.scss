@@ -5,6 +5,7 @@
     a {
         color: $primary-color;
     }
+
     .event-card__buttons {
 
         a {
@@ -18,14 +19,15 @@
 
     .dm-about-container {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
     }
-    .dm-about-content{
+
+    .dm-about-content {
         max-width: 866px;
         width: 100%;
     }
 
-    .dm-about-title  {
+    .dm-about-title {
         padding-top: 16px;
         padding-bottom: 16px;
 
@@ -55,7 +57,8 @@
             align-items: flex-start;
         }
     }
-    ol > li::marker {
+
+    ol>li::marker {
         font-weight: bold;
     }
 
@@ -91,7 +94,7 @@
                     @include text-2();
                 }
 
-                span{
+                span {
                     @include lead-3();
                 }
 
@@ -99,17 +102,17 @@
                     flex-direction: column;
                     align-items: flex-start;
                 }
-    
+
             }
 
             .dm-about-finance-elem-bot-right {
                 a {
-                    color:$content-color;
+                    color: $content-color;
                 }
 
                 @include respond-to(sm) {
                     width: 100%;
-                    
+
                     a {
                         width: 100%;
                         box-sizing: border-box;
@@ -136,13 +139,13 @@
         padding-top: 24px;
     }
 
-    .dm-finance-quote  {
+    .dm-finance-quote {
         .dm-finance-quote-top {
             padding: 8px 16px;
 
             @include text-1();
         }
-        
+
         .dm-finance-quote-bot {
             padding-top: 8px;
             padding-bottom: 8px;
@@ -156,7 +159,7 @@
         padding-top: 16px;
     }
 
-    .links-list-item  {
+    .links-list-item {
         color: $main-text;
     }
 }

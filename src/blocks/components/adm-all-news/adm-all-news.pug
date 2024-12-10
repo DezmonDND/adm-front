@@ -4,6 +4,8 @@ include ../tabs/main/_tabs
 include ../filters/filters
 include ../afisha/events-list/events-list
 include ../pagination/_pagination
+include ../chronicle/calendar/calendar
+include ../../libs/buttons/_buttons.pug 
 
 mixin adm-all-news()
     .adm-all-news
@@ -29,7 +31,22 @@ mixin adm-all-news()
             { title: 'Реализация нацпроектов', href: '/' , value: 'Реализация нацпроектов'},
             { title: 'Деятельность администрации', href: '/' , value: 'Деятельность администрации'},
             { title: 'Областная дума', href: '/' , value: 'Областная дума'},
-            ]) 
-        +filters()    
+            ])
+        input(id="from" name="from" value style='display: none;')  
+        input(id="to" name="to" value style='display: none;')     
+        .adm-all-news__filters
+            +select('events', '', 'right', [
+                { value: 'Все события', text: 'Все события' },
+                { value: 'Театр', text: 'Театр' },
+                { value: 'Детям', text: 'Детям' },
+                { value: 'Выставки', text: 'Выставки' },
+                { value: 'Концерты', text: 'Концерты' }
+                ], 'single', 'filters__select')
+            .adm-all-news__calendar
+                +button({ type: 'button',  event: 'toggleAdmAllNewsCalendar();', class: 'search-by-site__button adm-all-news__calendar-button', icon: 'calendar-outline', iconPostion: 'left', text: "Период публикации"})
+                .adm-all-news__calendar-content
+                    +chronicle-calendar('calendar-all-news')
+            input(id="from" name="from" value style='display: none;')  
+            input(id="to" name="to" value style='display: none;')     
         +afisha-events()
         +pagination(7,4,2)
