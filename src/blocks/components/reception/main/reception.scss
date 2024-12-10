@@ -1,6 +1,11 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .reception {
+
+    hr {
+        margin: 0;
+        width: 100%;
+    }
     .reception__form {
         max-width: 866px;
         margin-top: 24px;
@@ -54,6 +59,70 @@
             align-items: baseline;
             gap: 12px;
             margin-top: 24px;
+        }
+    }
+}
+
+.reception__agreement {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    font-weight: 300;
+
+    span, a {
+        @include text-3();
+        color: $tertiary-text !important; 
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+.reception__submit {
+    margin-top: 48px;
+}
+
+.reception__cap {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    align-items: flex-start;
+
+    @include respond-to(md){
+        flex-direction: column;
+    }
+
+    .reception__cap-inp {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        height: 80px;
+
+        @include respond-to(md) {
+            width: 100%;
+        }
+
+        input {
+            width: 240px;
+            height: 60px;
+    
+            @include respond-to(md) {
+                width: 100%;
+            }
+        }
+    }
+
+    .reception__cap-captcha {
+        min-width: 240px;
+        min-height: 60px;
+        max-width: 240px;
+        max-height: 60px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-width: 240px;
+            height: 60px;
         }
     }
 }

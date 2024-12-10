@@ -112,5 +112,24 @@ mixin reception()
                     })
             .files-list(id='files-list-file')
             .reception__buttons
-                +add-file-button()
-                +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })
+                +add-file-button({
+                    desc: 'Принимаются файлы размером не более 2,5 МБ '
+                })
+                hr
+                h4 Введите код CAPTCHA
+                .reception__cap
+                    .reception__cap-inp
+                        +input({placeholder: 'Код CAPTCHA',
+                                    name: 'captcha', 
+                                    sort: 'virtual-reception_input',
+                                    required:true})
+                    .reception__cap-captcha
+                        img(src="./resources/captcha.png", alt="captcha")
+                .reception__submit
+                    +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })   
+                .reception__agreement
+                    span Нажимая на кнопку, я соглашаюсь с
+                        a(href='#')  правилами обработки персональных данных 
+                        | и даю свое согласие на 
+                        a(href='#') обработку персональных данных
+                
