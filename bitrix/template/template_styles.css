@@ -17791,7 +17791,7 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   position: absolute;
   top: 130px;
   background-color: var(--content-color);
-  z-index: 1;
+  z-index: 1010;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
