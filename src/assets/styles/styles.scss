@@ -74,6 +74,24 @@ b {
 
 // Стили статической страницы
 .content {
+    .content__link {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+
+        .icon {
+            min-width: 14px;
+        }
+    }
+
+    .glyphicon-save {
+        &::before {
+            content: unset;
+        }
+    }
+
     &-card {
         background-color: var(--cards-background);
 
@@ -91,6 +109,7 @@ b {
     }
 
     &-page {
+        margin-top: 24px;
         max-width: 755px;
         margin: 0;
     }

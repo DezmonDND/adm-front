@@ -6384,9 +6384,15 @@ body.tmp-duma .pag-button_active:hover {
 }
 .breadcrumbs .breadcrumbs__container {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  overflow: scroll;
-  scrollbar-width: none;
+}
+@media (max-width: 992px) {
+  .breadcrumbs .breadcrumbs__container {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
 }
 .breadcrumbs .breadcrumbs__container .breadcrumb_link {
   color: var(--tertiary-text);
@@ -6441,8 +6447,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
 }
 .tabs .tabs__container {
   display: flex;
-  overflow: auto;
-  scrollbar-width: none;
+  flex-wrap: wrap;
   text-wrap: nowrap;
   gap: 16px;
   box-sizing: border-box;
@@ -6454,6 +6459,13 @@ body.tmp-duma .main-title .main-title__container .tabs {
   .tabs .tabs__container {
     font-size: calc(14px * var(--scale));
     line-height: calc(18px * var(--lh));
+  }
+}
+@media (max-width: 992px) {
+  .tabs .tabs__container {
+    flex-wrap: nowrap;
+    overflow: auto;
+    scrollbar-width: none;
   }
 }
 .tabs .tabs__container .tab-button {
@@ -10016,8 +10028,8 @@ body.tmp-print .project-generation__top-btns {
 
 .project-generation__main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .project-generation__main-container,
@@ -10061,7 +10073,6 @@ body.tmp-print .project-generation__top-btns {
 
 .project-generation_bottom {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -17103,6 +17114,7 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
 .adm-all-news .news-main-card {
   margin: 0;
   max-width: none;
+  width: 100%;
 }
 .adm-all-news .pagination {
   align-self: flex-start;

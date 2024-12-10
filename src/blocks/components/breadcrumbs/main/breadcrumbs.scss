@@ -15,9 +15,15 @@
 
     .breadcrumbs__container {
         display: flex;
+        flex-wrap: wrap;
         gap: 8px;
-        overflow: scroll;
-        scrollbar-width: none;
+        
+
+        @include respond-to(md) {
+            flex-wrap: nowrap;
+            overflow: scroll;
+            scrollbar-width: none;
+        }
 
         .breadcrumb_link {
             color: $tertiary-text;
