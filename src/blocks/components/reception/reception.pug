@@ -21,6 +21,7 @@ mixin reception()
                         type: 'select', 
                         title: 'Кому направляете электронную анкету', 
                         cls_title: 'reception__sender', 
+                        required:true,
                         options: [
                             { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
                             { text: 'Филатов', value: 'Филатов' }, 
@@ -48,17 +49,20 @@ mixin reception()
                         type: '',
                         title: 'Ваши данные',
                         span: 'Вспомогательный текст',
+                        required:true,
                         error: false,
                         inputs: [
                             {
                                 placeholder: 'Фамилия',
                                 name: 'firstName', 
                                 sort: 'virtual-reception_input',
+                                required:true,
                             },
                             {
                                 placeholder: 'Имя',
                                 name: 'secondName',
                                 sort: 'virtual-reception_input',
+                                required:true,
                             },
                             {
                                 placeholder: 'Отчество',
@@ -74,17 +78,20 @@ mixin reception()
                         type: '',
                         title: 'Данные для контакта',
                         span: 'Вспомогательный текст',
+                        required:true,
                         error: false,
                         inputs: [
                             {
                                 placeholder: 'your_email@mail.ru',
                                 name: 'email', 
                                 sort: 'virtual-reception_input',
+                                required:true,
                             },
                             {
                                 placeholder: '892343567',
                                 name: 'phone',
                                 sort: 'virtual-reception_input',
+                                required:true,
                             },
                             ]    
                     })
@@ -100,6 +107,7 @@ mixin reception()
                             value: 'none',
                             cls: 'reception',
                             name: 'feedback',
+                            required:true,
                                 }
                     })
             .files-list(id='files-list-file')
