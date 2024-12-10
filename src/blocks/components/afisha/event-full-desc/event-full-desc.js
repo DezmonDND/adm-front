@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    const slidesContainer = document.getElementById('afisha-event__banner-list');
-
     setTimeout(() => {
         $('#afisha-event__banner-list').slick({
             infinite: true,
@@ -11,16 +9,6 @@ $(document).ready(function () {
             variableWidth: false,
         });
     }, 3000);
-
-    setTimeout(() => {
-        if (slidesContainer) {
-            const slides = slidesContainer.querySelectorAll('a');
-
-            slides.forEach((slide) => {
-                slide.style.display = 'block';
-            });
-        }
-    }, 3100);
     
     $('.slider__afisha-event-next').on('click', function () {
         $('#afisha-event__banner-list').slick('slickNext');

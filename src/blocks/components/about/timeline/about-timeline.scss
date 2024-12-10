@@ -1,0 +1,109 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-timeline {
+    .about-timeline__title {
+        @include heading-h3;
+        @include about-paddings-title;
+    }
+
+    .about-timeline__content {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 43px;
+        position: relative;
+
+        @include respond-to(sm) {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 32px;
+        }
+
+        .about-timeline-item {
+            width: 100%;
+            position: relative;
+
+            &:nth-child(n+7) {
+                display: none;
+            }
+
+            p {
+                margin: 0;
+
+                @include respond-to(md) {
+                    max-width: 96px;
+                }
+
+                &:nth-last-child(-n+3) {
+                    @include heading-h6();
+                }
+
+                &:last-child {
+                    padding-top: 12px;
+                    color: $primary-color;
+                    @include lead-6();
+                }
+            }
+
+            &_open {
+                &:nth-child(n+7) {
+                    display: block;
+                }
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                height: 1px;
+                background: $primary-color-disabled;
+                width: 50%;
+                position: absolute;
+                bottom: 30px;
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                height: 1px;
+                background: $primary-color-disabled;
+                width: 50%;
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+            }
+
+            .about-timeline-container {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+                max-width: 132px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                position: relative;
+
+                img {
+                    width: 96px;
+                    height: 96px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                .about-timeline-dot {
+                    width: 12px;
+                    height: 12px;
+                    background: $primary-color;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 24px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+
+    .about-timeline__button {
+        @include more-button;
+    }
+}

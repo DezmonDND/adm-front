@@ -1,0 +1,86 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-citizens {
+    padding-top: 32px;
+
+    .about-citizens__container {
+        .about-citizens__tabs {
+            .tabs-tag {
+                margin-bottom: 32px;
+
+                .tab-button {
+                    @include lead-5();
+                }
+            }
+        }
+
+        .about-citizens__list {
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(4, calc((100% - 72px)/4));
+
+            @include respond-to(md) {
+                grid-template-columns: repeat(4, calc((100% - 24px)/4));
+                gap: 8px;
+            }
+
+            @include respond-to(sm) {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                scrollbar-width: none;
+            }
+
+            .about-citizens__image {
+                border-radius: 12px;
+                max-width: 198px;
+                width: 100%;
+                max-height: 236px;
+                object-fit: cover;
+                object-position: center;
+                cursor: pointer;
+
+                @include respond-to(sm) {
+                    min-width: 197px;
+                }
+            }
+        }
+
+        .about-citizens__documents {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 32px;
+
+            .files-list__document-description {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                border-radius: 8px;
+                background-color: $cards-background;
+                color: $main-text;
+                @include content-paddings;
+
+                &:hover {
+                    text-decoration: none;
+                    background-color: $services-hover;
+                    cursor: pointer;
+                }
+    
+                &:active {
+                    background-color: $services-active;
+                }
+
+                .files-list__icon {
+                    color: $primary-color;
+                    font-size: 20px;
+                }
+
+                .files-list__document-title {
+                    width: calc(100% - 32px);
+                    @include lead-5;
+                }
+            }
+        }
+    }
+}
