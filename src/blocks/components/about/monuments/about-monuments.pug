@@ -1,0 +1,14 @@
+include ../monument-card/monument-card
+include ../../title/main/_main-title
+
+mixin about-monuments()
+    .about-monuments
+        +main-title({
+            href: '/',
+            title: 'Памятники Сургута',
+            link_text: 'Все памятники',
+        })
+        .about-monuments__container
+            +monument-card()
+            +monument-card()
+            +monument-card()

@@ -1,0 +1,16 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-today {
+
+    .about-today__button {
+        @include more-button;
+    }
+
+    .about-today__hidden {
+        display: none;
+
+        &_open {
+            display: block;
+        }
+    }
+}

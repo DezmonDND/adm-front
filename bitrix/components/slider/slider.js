@@ -45,6 +45,7 @@ const sliders = [
             variableWidth: false,
             autoplay: true,
             infinite: true,
+            pauseOnHover: true
         },
     },
     // Главные новости
