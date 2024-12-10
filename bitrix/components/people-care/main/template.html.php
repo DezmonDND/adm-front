@@ -16,7 +16,7 @@
         <div class="people-care-card__container">
           <div class="people-care-card__text-block">
             <h2 class="people-care-card__title">Лицам с ограниченными возможностями здоровья</h2>
-          </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+          </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title=""><span class="button_span">Подробнее</span>
             <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
         </div>
       </div>
@@ -25,7 +25,7 @@
         <div class="people-care-card__container">
           <div class="people-care-card__text-block">
             <h2 class="people-care-card__title">Бюджет для граждан Сургута</h2>
-          </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+          </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title=""><span class="button_span">Подробнее</span>
             <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
         </div>
       </div>
@@ -34,7 +34,7 @@
         <div class="people-care-card__container">
           <div class="people-care-card__text-block">
             <h2 class="people-care-card__title">Национальные проекты</h2>
-          </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+          </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title=""><span class="button_span">Подробнее</span>
             <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
         </div>
       </div>
@@ -43,7 +43,7 @@
         <div class="people-care-card__container">
           <div class="people-care-card__text-block">
             <h2 class="people-care-card__title">Национальные проекты</h2>
-          </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Подробнее</span>
+          </div><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title=""><span class="button_span">Подробнее</span>
             <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
         </div>
       </div>

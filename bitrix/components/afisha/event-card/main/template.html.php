@@ -10,9 +10,9 @@
               <p class="event-card__text">18 июня на Центральной площади города отметили традиционный татарский и башкирский праздник. В Сургуте в этом году Сабантуй прошел в 35-й, юбилейный, раз. В мероприятии приняли участие 15 тысяч человек.</p>
               <div class="event-card__dates">   <span class="event-card__date">от 21 января 2024</span><span class="event-card__last-date">последнее обновление: 23 января 2024</span></div>
             </div>
-            <div class="event-card__buttons"> <a class="button button_link button_blue button_print button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Версия для печати</span>
+            <div class="event-card__buttons"> <a class="button button_link button_blue button_print button_size_m  button_icon-left" href="/" title=""><span class="button_span">Версия для печати</span>
                 <ion-icon class="icon" name="print-outline"></ion-icon></a>
-              <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Поделиться</span>
+              <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  button_icon-left" href="/" title=""><span class="button_span">Поделиться</span>
                   <ion-icon class="icon" name="link-outline"></ion-icon></a>
                 <div class="button-popup__content">
                   <div class="button-popup">
