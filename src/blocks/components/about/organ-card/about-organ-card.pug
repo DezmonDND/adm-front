@@ -1,0 +1,21 @@
+mixin about-organ-card(data)
+    .about-organ
+        .about-organ-top
+            .about-organ-top-left
+                .about-organ-title
+                    span #{data.name}
+                if data.job    
+                    .about-organ-subtitle
+                        span #{data.job}
+            .about-organ-top-right 
+                a.link.about-organ-ref(href=data.link) Перейти на страницу
+        .about-organ-bot
+            .about-organ-bot-elem
+                span Адрес
+                span #{data.address}
+            .about-organ-bot-elem
+                span Телефон
+                span #{data.phone}
+            .about-organ-bot-elem
+                span E-mail
+                span #{data.email}

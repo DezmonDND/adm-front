@@ -13,6 +13,7 @@ $(document).ready(function () {
     $('.slider__afisha-event-next').on('click', function () {
         $('#afisha-event__banner-list').slick('slickNext');
     });
+
     $('.slider__afisha-event-prev').on('click', function () {
         $('#afisha-event__banner-list').slick('slickPrev');
     });
@@ -23,5 +24,13 @@ $(document).ready(function () {
 
     $('#afisha-event__banner-list').on('afterChange', function (event, slick, currentSlide) {
         $('.slider__counter').text(parseInt(slick.currentSlide + 1) + ' / ' + slick.slideCount);
+    });
+
+    const selector = '.slick-slide:not(.slick-cloned)';
+
+    $('[data-fancybox="afisha-event__banner-list"]').fancybox({
+        selector: selector,
+        backFocus: false,
+        loop: true,
     });
 });

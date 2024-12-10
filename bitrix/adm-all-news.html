@@ -379,7 +379,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -454,16 +454,25 @@
         </div>
         <input id="from" name="from" value="value" style="display: none;"/>
         <input id="to" name="to" value="value" style="display: none;"/>
-        <div class="adm-all-news__calendar">
-          <button class="button search-by-site__button adm-all-news__calendar-button    " onclick="toggleAdmAllNewsCalendar();" title=""><span class="button_span">Период публикации</span>
-            <ion-icon class="icon" name="calendar-outline"></ion-icon>
-          </button>
-          <div class="adm-all-news__calendar-content">
-            <div class="calendar-dm" id="calendar-all-news"></div>
+        <div class="adm-all-news__filters">
+          <select class="select single select_filters__select select-icon-right" name="events">
+            <option class="select__option" value="Все события">Все события</option>
+            <option class="select__option" value="Театр">Театр</option>
+            <option class="select__option" value="Детям">Детям</option>
+            <option class="select__option" value="Выставки">Выставки</option>
+            <option class="select__option" value="Концерты">Концерты</option>
+          </select>
+          <div class="adm-all-news__calendar">
+            <button class="button search-by-site__button adm-all-news__calendar-button    " onclick="toggleAdmAllNewsCalendar();" title=""><span class="button_span">Период публикации</span>
+              <ion-icon class="icon" name="calendar-outline"></ion-icon>
+            </button>
+            <div class="adm-all-news__calendar-content">
+              <div class="calendar-dm" id="calendar-all-news"></div>
+            </div>
           </div>
+          <input id="from" name="from" value="value" style="display: none;"/>
+          <input id="to" name="to" value="value" style="display: none;"/>
         </div>
-        <input id="from" name="from" value="value" style="display: none;"/>
-        <input id="to" name="to" value="value" style="display: none;"/>
         <div class="afisha-events">
           <div class="afisha-events__container">                                                           
             <div class="afisha-events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">

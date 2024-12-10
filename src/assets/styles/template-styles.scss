@@ -142,6 +142,26 @@
 @use '../../blocks/components/page404/page404.scss';
 @use '../../blocks/components/dm-deput/main/dm-deput.scss';
 @use '../../blocks/components/dm-schedule/main/dm-schedule.scss';
+@use '../../blocks/components/about/partner-card/about-partner-card.scss';
+@use '../../blocks/components/about/info/about-info.scss';
+@use '../../blocks/components/about/partners/about-partners.scss';
+@use '../../blocks/components/about/symbols/about-symbols.scss';
+@use '../../blocks/components/about/history/about-history.scss';
+@use '../../blocks/components/about/timeline/about-timeline.scss';
+@use '../../blocks/components/about/video-list/about-video-list.scss';
+@use '../../blocks/components/about/today/about-today.scss';
+@use '../../blocks/components/about/monument-card/monument-card.scss';
+@use '../../blocks/components/about/monuments/about-monuments.scss';
+@use '../../blocks/components/about/photo-chronicle-card/photo-chronicle-card.scss';
+@use '../../blocks/components/about/photo-chronicle/about-photo-chronicle.scss';
+@use '../../blocks/components/about/citizens/about-citizens.scss';
+@use '../../blocks/components/about/other-info/about-other-info.scss';
+@use '../../blocks/components/about/organs/about-organs.scss';
+@use '../../blocks/components/about/organ-card/about-organ-card.scss';
+@use '../../blocks/components/about/agency/about-agency.scss';
+@use '../../blocks/components/telephone/elem/telephone-elem.scss';
+@use '../../blocks/components/telephone/main/telephone.scss';
+@use '../../blocks/components/afisha/event-full-desc/jquery.fancybox.min.css';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -191,7 +211,8 @@ body.tmp-print {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
+    flex-grow: 1;
     @include main-padding;
 }
 
@@ -232,4 +253,23 @@ hr {
 [id^="wait_comp_"]::after {
     content: 'Загрузка' !important;
     @include caption-2();
+}
+
+.generate_form {
+    max-width: 866px;
+
+    .generate_buttons {
+        display: flex;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .search-by-site__button {
+        max-width: unset;
+        width: unset;
+
+        &:hover {
+            color: $main-text;
+        }
+    }
 }

@@ -30,8 +30,8 @@
         </div><span class="dm-reception__required"><span class="span_red">*</span> - поля, обязательные для заполнения</span>
       </div>
       <div class="dm-applications__buttons">
-        <div class="files-list"></div>
-        <div class="add-file-button" onclick="addDocument()">
+        <div class="files-list" id="files-list-file"></div>
+        <div class="add-file-button" onclick="addDocument(event)">
           <label for="file" id="file-label">Вложить документ
             <ion-icon class="add-file-button__icon" name="add-outline"></ion-icon>
             <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>

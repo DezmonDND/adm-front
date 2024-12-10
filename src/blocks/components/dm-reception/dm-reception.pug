@@ -29,7 +29,7 @@ mixin dm-reception()
                         +textarea({ placeholder: 'Ваше обращение / вопрос*', name: 'question', value: '20000' })    
                     span.dm-reception__required #[span.span_red *] - поля, обязательные для заполнения
                 .dm-applications__buttons
-                    .files-list
+                    .files-list(id='files-list-file')
                     +add-file-button({
                         desc: 'Принимаются файлы размером не более 2,5 МБ '
                     })

@@ -13,6 +13,16 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
     border-radius: 12px;
     color: $main-text;
 
+    &:hover {
+        text-decoration: none;
+        color: $main-text;
+        background-color: $services-hover;
+    }
+
+    &:active {
+        background-color: $services-active;
+    }
+
     .event__container {
         display: flex;
         align-items: center;

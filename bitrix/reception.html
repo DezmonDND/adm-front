@@ -379,7 +379,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -488,9 +488,9 @@
               </div>
             </fieldset>
           </div>
-          <div class="files-list"></div>
+          <div class="files-list" id="files-list-file"></div>
           <div class="reception__buttons">
-            <div class="add-file-button" onclick="addDocument()">
+            <div class="add-file-button" onclick="addDocument(event)">
               <label for="file" id="file-label">Вложить документ
                 <ion-icon class="add-file-button__icon" name="add-outline"></ion-icon>
                 <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>

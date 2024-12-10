@@ -1,0 +1,82 @@
+extends ../layout
+
+block content
+    main.main 
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Подписка'},
+                { sort: '', href: '/', text: 'Подписка на главное'},
+            ],
+            )
+        <div class="generate_form">
+            <form name="SIMPLE_FORM_2" action="/virtualnaya-priemnaya/test.php" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="18ae7cd2ed4b745b9c31902f63399bc7"><input type="hidden" name="WEB_FORM_ID" value="2">
+                <div class="title">
+                    <div class="title__container">
+                        <h2 class="title__name">Тестовая форма</h2>
+                        <div class="title__description"></div>
+                    </div>
+                </div>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Текст вопроса						<font color="red"><span class="form-required starrequired">*</span></font>					</h3>
+                    <div class="fieldset__answers">
+                        <input type="text" class="inputtext" name="form_text_15" value="">					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Вопрос						<font color="red"><span class="form-required starrequired">*</span></font>					</h3>
+                    <div class="fieldset__answers">
+                        <textarea name="form_textarea_16" cols="40" rows="5" class="inputtextarea"></textarea>					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Текст вопроса											</h3>
+                    <div class="fieldset__answers">
+                        <label><input type="radio" id="17" name="form_radio_SIMPLE_QUESTION_948" value="17"></label><label for="17">1</label><br><label><input type="radio" id="18" name="form_radio_SIMPLE_QUESTION_948" value="18"></label><label for="18">2</label>					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Текст вопроса											</h3>
+                    <div class="fieldset__answers">
+                        <input name="form_file_19" class="inputfile" size="0" type="file"><span class="bx-input-file-desc"></span>					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Вопрос											</h3>
+                    <div class="fieldset__answers">
+                        <input type="checkbox" id="20" name="form_checkbox_SIMPLE_QUESTION_115[]" value="20"><label for="20">4</label><br><input type="checkbox" id="21" name="form_checkbox_SIMPLE_QUESTION_115[]" value="21"><label for="21">5</label>					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Вопрос											</h3>
+                    <div class="fieldset__answers">
+                        <select class="inputselect" name="form_dropdown_SIMPLE_QUESTION_759" id="form_dropdown_SIMPLE_QUESTION_759"><option value="22">435</option><option value="23">234</option></select>					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Вопрос											</h3>
+                    <div class="fieldset__answers">
+                        <select class="inputselect" multiple="" name="form_multiselect_SIMPLE_QUESTION_192[]" id="form_multiselect_SIMPLE_QUESTION_192[]" size="0"><option value="24">аваывы</option><option value="25">апр</option></select>					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Вопрос											</h3>
+                    <div class="fieldset__answers">
+                        <input type="text" name="form_date_26" id="form_date_4SiO5Q10" value="" size="0"><img alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'form_date_4SiO5Q10', form: 'SIMPLE_FORM_2', bTime: false, currentTime: '1733494089', bHideTime: true});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0"> (DD.MM.YYYY)					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Вопрос											</h3>
+                    <div class="fieldset__answers">
+                        <input name="form_image_27" class="inputfile" size="0" type="file"><span class="bx-input-file-desc"></span>					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Вопрос											</h3>
+                    <div class="fieldset__answers">
+                        <input type="text" class="inputtext" name="form_email_28" value="" size="0">					</div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="fieldset__title reception__sender_title">Вопрос											</h3>
+                    <div class="fieldset__answers">
+                        <input type="text" class="inputtext" name="form_url_29" value="" size="0">					</div>
+                </fieldset>
+                <div class="generate_buttons">
+                    <input type="submit" name="web_form_submit" value="Сохранить">
+                    <input type="reset" value="Сбросить">
+                </div>
+                <p class="">
+                    <font color="red"><span class="form-required starrequired">*</span></font> - обязательные поля		</p>
+        </form>		
+    </div>    

@@ -28,6 +28,16 @@
     border-radius: 12px;
     text-decoration: none;
     color: $second-text;
+
+    &:hover {
+        text-decoration: none;
+        color: $main-text;
+        background-color: $services-hover;
+    }
+
+    &:active {
+        background-color: $services-active;
+    }
 }
 
 .dm-unions-elem__container {

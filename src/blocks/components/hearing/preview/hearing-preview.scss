@@ -61,6 +61,11 @@
             bottom: 12px;
             left: 12px;
         }
+
+        &:hover {
+            color: $content-color;
+            text-decoration: none;
+        }
     }
 
     &-play {
