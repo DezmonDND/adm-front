@@ -11,6 +11,10 @@ function getValues(e) {
 
   inputs.forEach((input) => {
     input.classList.remove("error-input");
+    const errorSpan = input.nextElementSibling;
+    if (errorSpan && errorSpan.classList.contains("error-message")) {
+      errorSpan.remove();
+    }
   });
 
   inputs.forEach((input) => {
@@ -31,6 +35,14 @@ function getValues(e) {
 
   errors.forEach((input) => {
     input.classList.add("error-input");
+
+    const errorSpan = document.createElement("span");
+    errorSpan.classList.add("error-message");
+    errorSpan.textContent = "Обязательное поле";
+    
+    if (!input.nextElementSibling || !input.nextElementSibling.classList.contains("error-message")) {
+      input.insertAdjacentElement("afterend", errorSpan);
+    }
   });
 
   console.log("Собранные значения:", values);
@@ -43,8 +55,13 @@ document.addEventListener("input", (e) => {
   const input = e.target;
   if (input.classList.contains("error-input") && input.value.trim()) {
     input.classList.remove("error-input");
+    const errorSpan = input.nextElementSibling;
+    if (errorSpan && errorSpan.classList.contains("error-message")) {
+      errorSpan.remove();
+    }
   }
 });
+
 
 
 function isValid(input) {

@@ -7541,6 +7541,10 @@ body.tmp-duma .main-title .main-title__container .tabs {
   max-width: none;
 }
 
+.reception hr {
+  margin: 0;
+  width: 100%;
+}
 .reception .reception__form {
   max-width: 866px;
   margin-top: 24px;
@@ -7619,6 +7623,76 @@ body.tmp-duma .main-title .main-title__container .tabs {
   align-items: baseline;
   gap: 12px;
   margin-top: 24px;
+}
+
+.reception__agreement {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  font-weight: 300;
+}
+.reception__agreement span, .reception__agreement a {
+  font-weight: 300;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(20px * var(--lh));
+  color: var(--tertiary-text) !important;
+}
+@media (max-width: 992px) {
+  .reception__agreement span, .reception__agreement a {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.reception__agreement a {
+  text-decoration: underline;
+}
+
+.reception__submit {
+  margin-top: 48px;
+}
+
+.reception__cap {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  align-items: flex-start;
+}
+@media (max-width: 992px) {
+  .reception__cap {
+    flex-direction: column;
+  }
+}
+.reception__cap .reception__cap-inp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 80px;
+}
+@media (max-width: 992px) {
+  .reception__cap .reception__cap-inp {
+    width: 100%;
+  }
+}
+.reception__cap .reception__cap-inp input {
+  width: 240px;
+  height: 60px;
+}
+@media (max-width: 992px) {
+  .reception__cap .reception__cap-inp input {
+    width: 100%;
+  }
+}
+.reception__cap .reception__cap-captcha {
+  min-width: 240px;
+  min-height: 60px;
+  max-width: 240px;
+  max-height: 60px;
+}
+.reception__cap .reception__cap-captcha img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 240px;
+  height: 60px;
 }
 
 .hearing-preview {
@@ -21640,4 +21714,26 @@ hr {
 }
 .generate_form .search-by-site__button:hover {
   color: var(--main-text);
+}
+
+.error-input {
+  border: 1px solid #d10404 !important;
+}
+
+.error-input::placeholder {
+  color: #d10404 !important;
+}
+
+.error-message {
+  color: #d10404;
+  height: 1em;
+  font-weight: 300;
+  font-size: calc(10px * var(--scale));
+  line-height: calc(14px * var(--lh));
+}
+@media (max-width: 992px) {
+  .error-message {
+    font-size: calc(8px * var(--scale));
+    line-height: calc(12px * var(--lh));
+  }
 }
