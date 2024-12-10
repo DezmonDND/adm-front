@@ -9186,26 +9186,6 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   min-width: 43px;
 }
 
-#swipebox-bottom-bar {
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  left: 0;
-  right: 0;
-  transition: none;
-}
-
-#swipebox-bottom-bar.visible-bars {
-  -webkit-transform: translate3d(0px, -25px, 0px);
-  transform: translate3d(0px, -25px, 0px);
-  background: transparent;
-}
-
-#swipebox-arrows {
-  max-width: 100% !important;
-  width: 99%;
-}
-
 body.tmp-duma .slider .slider__link {
   color: var(--primary-color-green);
 }
