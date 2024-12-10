@@ -1,7 +1,8 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
 .news-top-card {
-    display: flex;
+    display: none;
+    // display: flex;
     position: relative;
     max-width: 867px;
     width: 100%;

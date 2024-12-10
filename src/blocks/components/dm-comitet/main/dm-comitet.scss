@@ -18,6 +18,10 @@
     border-radius: 12px;
     text-decoration: none;
 
+    &:hover {
+        text-decoration: none;
+    }
+
     @include respond-to(md) {
         max-width: 237px;
     }

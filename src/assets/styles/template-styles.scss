@@ -161,6 +161,7 @@
 @use '../../blocks/components/about/agency/about-agency.scss';
 @use '../../blocks/components/telephone/elem/telephone-elem.scss';
 @use '../../blocks/components/telephone/main/telephone.scss';
+@use '../../blocks/components/afisha/event-full-desc/jquery.fancybox.min.css';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -266,17 +267,9 @@ hr {
     .search-by-site__button {
         max-width: unset;
         width: unset;
+
+        &:hover {
+            color: $main-text;
+        }
     }
-}
-
-img.calendar-icon {
-    vertical-align: top;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    margin: 0 0 0 1px;
-    box-sizing: content-box;
-    border: 1px solid transparent;
-    position: relative;
-
 }
