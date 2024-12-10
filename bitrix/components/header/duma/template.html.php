@@ -176,7 +176,8 @@
               </div>
             </div>
           </div>
-        </li><a class="header__link" href="/">Обратная связь          </a>
+        </li>
+        <li class="header__link"> <a href="/">Обратная связь          </a></li>
       </ul>
       <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
       </div>
@@ -205,7 +206,7 @@
         <div class="delim-line"></div><span> или </span>
         <div class="delim-line"> </div>
       </div>
-      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
       </div>
       <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
     </div>

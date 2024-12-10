@@ -61,9 +61,11 @@ body.tmp-duma .usefull-links {
                 flex-direction: row-reverse;
                 width: 100%;
                 gap: 8px;
+                min-height: 40px;
 
                 @include respond-to(md) {
                     gap: 12px;
+                    min-height: unset;
                 }
 
                 .usefull-link__icon {

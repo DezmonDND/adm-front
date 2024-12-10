@@ -2,14 +2,38 @@
   display: flex;
   flex-direction: column;
 }
+.adm-all-news .adm-all-news__filters {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.adm-all-news .adm-all-news__filters .select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 11px 34px 11px 16px !important;
+  box-sizing: border-box;
+}
+.adm-all-news .adm-all-news__filters .select2-container--default .select2-selection--single {
+  border-radius: 4px !important;
+}
+.adm-all-news .adm-all-news__filters .select2-selection__arrow {
+  right: 16px !important;
+}
+.adm-all-news .adm-all-news__filters .select2-container--open .select2-dropdown--below {
+  border-radius: 6px;
+}
+.adm-all-news .adm-all-news__filters .select2-results__option {
+  padding: 13px 16px !important;
+}
 .adm-all-news .adm-all-news__calendar {
   position: relative;
-  margin-bottom: 32px;
 }
 .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button {
   border-radius: 4px;
   max-width: 480px;
   width: max-content;
+}
+.adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button:hover {
+  color: var(--main-text);
 }
 @media (max-width: 410px) {
   .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button {
@@ -35,6 +59,7 @@
 .adm-all-news .news-main-card {
   margin: 0;
   max-width: none;
+  width: 100%;
 }
 .adm-all-news .pagination {
   align-self: flex-start;

@@ -15,6 +15,11 @@
         margin-bottom: 12px;
         border-radius: 1000px;
         @include lead-3;
+
+        &:hover {
+            color: $main-text;
+            background: $fourth-text;
+        }
     }
 
     .tab-button_active {

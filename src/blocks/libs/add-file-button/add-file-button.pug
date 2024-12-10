@@ -1,5 +1,5 @@
 mixin add-file-button(data={})
-    .add-file-button(onclick='addDocument()')
+    .add-file-button(onclick='addDocument(event)')
         label(for="file" id="file-label") Вложить документ
             ion-icon(name="add-outline" class='add-file-button__icon')
             input(type="file" id="file" name="files" class='input__add-document' multiple)

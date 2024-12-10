@@ -1,0 +1,75 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.monument-card {
+    color: $main-text;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        color: $main-text;
+    }
+
+    &:hover .monument-card__title {
+        color: $primary-color;
+    }
+
+    &:active .monument-card__title {
+        color: $primary-color-active;
+    }
+
+    .monument-card__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .monument-card__image {
+            max-width: 272px;
+            width: 100%;
+            max-height: 142px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+
+            @include respond-to(sm) {
+                min-width: 257px;
+            }
+        }
+
+        .monument-card__about {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .monument-card__title {
+                padding: 0;
+                @include visible-lines(2);
+                @include heading-h5;
+            }
+
+            .monument-card__desc {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .monument-card__desc-block {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    &:first-of-type {
+                        flex-direction: row;
+                    }
+
+                    .monument-card__desc-title {
+                        color: $tertiary-text;
+                        @include caption-4;
+                    }
+
+                    .monument-card__desc-about {
+                        @include caption-4;
+                    }
+                }
+            }
+        }
+    }
+}

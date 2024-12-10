@@ -186,7 +186,8 @@
                   </div>
                 </div>
               </div>
-            </li><a class="header__link" href="/">Обратная связь          </a>
+            </li>
+            <li class="header__link"> <a href="/">Обратная связь          </a></li>
           </ul>
           <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
           </div>
@@ -215,7 +216,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -306,8 +307,8 @@
               </div><span class="dm-reception__required"><span class="span_red">*</span> - поля, обязательные для заполнения</span>
             </div>
             <div class="dm-applications__buttons">
-              <div class="files-list"></div>
-              <div class="add-file-button" onclick="addDocument()">
+              <div class="files-list" id="files-list-file"></div>
+              <div class="add-file-button" onclick="addDocument(event)">
                 <label for="file" id="file-label">Вложить документ
                   <ion-icon class="add-file-button__icon" name="add-outline"></ion-icon>
                   <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>

@@ -6,6 +6,12 @@
   display: flex;
   gap: 24px;
   width: 100%;
+  min-height: 332px;
+}
+@media (max-width: 992px) {
+  .chronicle .chronicle__container {
+    min-height: unset;
+  }
 }
 .chronicle .chronicle__container .chronicle__list {
   display: flex;

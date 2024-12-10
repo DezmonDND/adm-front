@@ -76,6 +76,8 @@
     border: 1px solid $primary-color;
 
     &:hover {
+        color: $content-color;
+        text-decoration: none;
         background-color: $primary-color-hover;
         border: 1px solid $primary-color-hover;
     }

@@ -1,6 +1,46 @@
 @use '../../../assets/styles/vars.scss' as *;
 
 .about {
+    @include respond-to(sm) {
+        margin-top: 32px;
+    }
+
+    li {
+        @include text-2;
+    }
+
+    p,
+    span {
+        @include text-2;
+    }
+
+    .about-content {
+        max-width: 866px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .toggle-container {
+        margin: 8px 0 8px;
+
+        .toggle-header {
+            &:hover {
+                border-radius: 12px;
+                background-color: $services-hover;
+            }
+
+            &:active {
+                background-color: $services-active;
+            }
+        }
+
+        .toggle-arrow {
+            color: $primary-color;
+        }
+    }
+
     .event-card {
         .event-card__container {
             .event-card__description {
@@ -19,353 +59,5 @@
                 }
             }
         }
-    }
-}
-
-.about-content {
-    max-width: 866px;
-    margin: 40px auto 40px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-
-.about p,
-.about span {
-    @include text-2();
-}
-
-
-.about .about-title {
-    padding-top: 32px;
-    padding-bottom: 16px;
-    margin: 0;
-    @include heading-h3();
-
-    @include respond-to(md) {
-        padding-top: 24px;
-        padding-bottom: 8px;
-    }
-
-}
-
-.about .about-subtitle {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin: 0;
-    @include lead-3();
-
-    @include respond-to(md) {
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-
-}
-
-.about-card {
-    width: 100%;
-    background-color: $grey-adm;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 50%;
-    box-sizing: border-box;
-}
-
-.about-info-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    align-items: center;
-
-    @include respond-to(sm) {
-        flex-direction: column;
-    }
-
-}
-
-.about-info {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    .about-info-row:last-child {
-        @include respond-to(sm) {
-            flex-direction: column-reverse;
-        }
-    }
-}
-
-.about-card-left {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.about .about-card-fact {
-    font-size: 64px;
-    color: $primary-color;
-    font-weight: $font-weight-semi-bold;
-    line-height: unset;
-
-    @include respond-to(md) {
-        font-size: 40px;
-    }
-}
-
-.about-info-row:last-child .about-info-text {
-    text-align: end;
-}
-
-.about .about-card-title {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.about-card-subtitle,
-.about-info-text {
-    font-size: 16px;
-}
-
-.about li {
-    @include text-2();
-}
-
-.about-organ {
-    width: 100%;
-    background-color: $grey-adm;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 24px;
-    box-sizing: border-box;
-}
-
-.about-organ-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    @include respond-to(sm) {
-        flex-direction: column;
-    }
-}
-
-.about-organ-top-left {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.about-organ-title span {
-    @include lead-3();
-}
-
-.about-organ-subtitle span {
-    @include caption-2();
-}
-
-.about-organ-bot {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 24px;
-
-    @include respond-to(sm) {
-        flex-direction: column;
-    }
-}
-
-.about-organ-bot-elem {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.about-history-elem__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 75%;
-}
-
-.about-card-img {
-    @include respond-to(sm) {
-        display: none;
-    }
-}
-
-.about-organ-bot-elem span:last-child {
-    @include text-2();
-}
-
-.about-organ-bot-elem span:first-child {
-    color: $tertiary-text;
-    @include caption-2();
-}
-
-.about-organ-ref {
-    color: $primary-color;
-    @include text-link-2();
-}
-
-
-.about-timeline {
-    padding: 40px 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 43px;
-    position: relative;
-}
-
-.about-timeline__line {
-    position: absolute;
-    top: 159px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 72%;
-    width: 100%;
-
-    @include respond-to(md) {
-        top: 151px;
-    }
-
-    @include respond-to(sm) {
-        display: none;
-    }
-}
-
-.about-timeline-item {
-    width: 100%;
-    position: relative;
-
-    @include respond-to(sm) {
-
-        &:after {
-            content: '';
-            display: block;
-            height: 1px;
-            background: $tertiary-text-dark-bg;
-            width: 50%;
-            position: absolute;
-            bottom: 30px;
-        }
-
-        &:before {
-            content: '';
-            display: block;
-            height: 1px;
-            background: $tertiary-text-dark-bg;
-            width: 50%;
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-        }
-    }
-
-}
-
-
-.about-timeline-container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-    max-width: 132px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-}
-
-.about-timeline-item p {
-    margin: 0;
-}
-
-.about-timeline-item p:nth-last-child(-n+3) {
-    @include heading-h6();
-}
-
-
-.about-timeline-item p:last-child {
-    padding-top: 12px;
-    color: $primary-color;
-    @include lead-6();
-}
-
-.about-timeline-dot {
-    width: 12px;
-    height: 12px;
-    background: $primary-color;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 24px;
-    z-index: 2;
-}
-
-.about-timeline-container img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-
-.about-symbols-elem {
-    width: 100%;
-    background-color: $grey-adm;
-    padding: 32px;
-    display: flex;
-    gap: 32px;
-    align-items: flex-start;
-    border-radius: 20px;
-    box-sizing: border-box;
-
-    @include respond-to(sm) {
-        flex-direction: column-reverse;
-    }
-}
-
-.about-symbols-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.about-history-elem {
-    width: 100%;
-    background-color: $grey-adm;
-    padding: 32px;
-    display: flex;
-    gap: 32px;
-    align-items: flex-start;
-    border-radius: 20px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    box-sizing: border-box;
-    position: relative;
-
-    span {
-        z-index: 1;
-    }
-
-    @include respond-to(sm) {
-        flex-direction: column-reverse;
-    }
-}
-
-.about .tab-button {
-    @include lead-5();
-}
-
-.about-video {
-    max-height: 420px;
-
-    video {
-        border-radius: 8px;
     }
 }

@@ -1,0 +1,217 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.telephone-elem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $grey-adm;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    &.active > .tepelhone-elem-title .telephone-elem-expand {
+        transform: rotate(180deg);
+    }
+
+    @include respond-to(sm) {
+        padding: 10px;
+    }
+    hr {
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+
+        @include respond-to(sm) {
+            margin-top: 10px;
+        }
+    }
+
+    .telephone-elem {
+        padding-bottom: 0;
+    }
+
+    .tepelhone-elem-title  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        span {
+            color: $second-text;
+            @include heading-h5;
+        }
+
+        ion-icon {
+            color: $primary-color;
+            cursor: pointer;
+        }
+
+        .telephone-elem-title-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            a {
+                color: $primary-color;
+
+                @include text-link-2();
+            }
+        }
+        
+    }
+
+    .telephone-elem-main {
+        display: none;
+        
+        &.active{
+            display: block;
+        }
+        .telephone-elem {
+            padding: 20px 0px 0px 20px;
+
+            @include respond-to(sm) {
+                padding: 10px 0px 0px 10px;
+            }
+        }
+
+        .telephone-elem-phones {
+            display: flex;
+            flex-direction: column;
+    
+    
+            .telephone-elem-phones-row {
+                // padding: 20px 0px 20px 20px;
+                padding: 20px 0px;
+                display: flex;
+                box-sizing: border-box;
+                // justify-content: space-between;
+                gap: 24px;
+
+
+                @include respond-to(sm) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+
+                .telephone-elem-row-item:first-child, .telephone-elem-row-item:last-child {
+                    width: 35%;
+
+                    @include respond-to(sm) {
+                        width: 100%;
+                    }
+                }
+                .telephone-elem-row-item {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 24px;
+                    width: 30%;
+
+                    @include respond-to(sm) {
+                        width: 100%;
+                    }
+
+                   @include respond-to(md){
+                    flex-direction: column;
+                   }
+
+                    .telephone-elem-row-el {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                      
+                        span:first-child {
+                            color:  $tertiary-text;
+                            @include caption-2(); 
+                        }
+        
+                        span:last-child {
+                            color: $second-text;
+                            @include text-2();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.telephone-elem-row-el-fio {
+    max-width: 200px;
+    width: 50%;
+
+    span {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+    @include respond-to(md) {
+        width: unset;
+        max-width: unset;
+    }
+}
+.telephone-elem-row-el-status {
+    width: 50%;
+    max-width: 180px;
+
+    @include respond-to(md) {
+        width: unset;
+        max-width: unset;
+    }
+
+    
+    span {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+}
+.telephone-elem-row-el-addr {
+    width: 50%;
+    @include respond-to(md) {
+        width: unset;
+        max-width: unset;
+    }
+
+    span {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+}
+.telephone-elem-row-el-cab {
+    width: 50%;
+    @include respond-to(md) {
+        width: unset;
+        max-width: unset;
+    }
+}
+.telephone-elem-row-el-phone {
+    width: 40%;
+    @include respond-to(md) {
+        width: unset;
+        max-width: unset;
+    }
+}
+.telephone-elem-row-el-mail {
+    width: 60%;
+    max-width: 200px;
+    @include respond-to(md) {
+        width: unset;
+        max-width: unset;
+    }
+
+    span {
+        overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+}
+
+.telephone-elem-row-item-first {
+    @include respond-to(md) {
+        min-width: unset;
+    }
+}

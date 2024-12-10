@@ -8,7 +8,6 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 .event-card {
   background-color: var(--cards-background);
   display: flex;
-  justify-content: center;
 }
 .event-card .event-card__container {
   display: flex;

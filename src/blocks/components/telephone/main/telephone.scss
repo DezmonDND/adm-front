@@ -1,0 +1,45 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.telephone {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .telephone-search  {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .telephone-search-mid  {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+
+            @include respond-to(sm) {
+                flex-direction: column;
+            }
+        }
+
+        .telephone-search-bot { 
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            @include respond-to(sm) {
+                flex-direction: column;
+            }
+        }
+
+        .telephone-search-bot-btns {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            @include respond-to(sm) {
+                width: 100%;
+                button {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

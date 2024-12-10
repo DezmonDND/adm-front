@@ -23,6 +23,19 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
         flex: 0 0 100%;
     }
 
+    &:hover {
+        color: $main-text;
+        text-decoration: none;
+    }
+
+    &:hover .hearing-item-title {
+        color: $primary-color;
+    }
+
+    &:active .hearing-item-title {
+        color: $primary-color-active;
+    }
+
     &-title {
         span {
             @include visible-lines(5);

@@ -1,0 +1,27 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-photo-chronicle {
+    padding: 16px 0 16px;
+
+    .main-title {
+        padding: 0 0 16px;
+    }
+
+    .about-photo-chronicle__container {
+        display: grid;
+        grid-template-columns: repeat(3, calc((100% - 48px)/3));
+        gap: 24px;
+
+        @include respond-to(md) {
+            gap: 8px;
+            grid-template-columns: repeat(3, calc((100% - 16px)/3));
+        }
+
+        @include respond-to(md) {
+            display:  flex;
+            flex-wrap: nowrap;
+            overflow: scroll;
+            scrollbar-width: none;
+        }
+    }
+}

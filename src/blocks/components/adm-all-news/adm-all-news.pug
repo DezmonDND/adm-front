@@ -34,12 +34,19 @@ mixin adm-all-news()
             ])
         input(id="from" name="from" value style='display: none;')  
         input(id="to" name="to" value style='display: none;')     
-        //- +filters()
-        .adm-all-news__calendar
-            +button({ type: 'button',  event: 'toggleAdmAllNewsCalendar();', class: 'search-by-site__button adm-all-news__calendar-button', icon: 'calendar-outline', iconPostion: 'left', text: "Период публикации"})
-            .adm-all-news__calendar-content
-                +chronicle-calendar('calendar-all-news')
-        input(id="from" name="from" value style='display: none;')  
-        input(id="to" name="to" value style='display: none;')     
+        .adm-all-news__filters
+            +select('events', '', 'right', [
+                { value: 'Все события', text: 'Все события' },
+                { value: 'Театр', text: 'Театр' },
+                { value: 'Детям', text: 'Детям' },
+                { value: 'Выставки', text: 'Выставки' },
+                { value: 'Концерты', text: 'Концерты' }
+                ], 'single', 'filters__select')
+            .adm-all-news__calendar
+                +button({ type: 'button',  event: 'toggleAdmAllNewsCalendar();', class: 'search-by-site__button adm-all-news__calendar-button', icon: 'calendar-outline', iconPostion: 'left', text: "Период публикации"})
+                .adm-all-news__calendar-content
+                    +chronicle-calendar('calendar-all-news')
+            input(id="from" name="from" value style='display: none;')  
+            input(id="to" name="to" value style='display: none;')     
         +afisha-events()
         +pagination(7,4,2)

@@ -13,6 +13,14 @@
     }
 }
 
+.scheme {
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
 .scheme-elems {
     // display: flex;
     // justify-content: space-between;
