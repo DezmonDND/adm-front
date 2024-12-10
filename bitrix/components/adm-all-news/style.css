@@ -35,6 +35,7 @@
 .adm-all-news .news-main-card {
   margin: 0;
   max-width: none;
+  width: 100%;
 }
 .adm-all-news .pagination {
   align-self: flex-start;

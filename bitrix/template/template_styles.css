@@ -17031,6 +17031,7 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
 .adm-all-news .news-main-card {
   margin: 0;
   max-width: none;
+  width: 100%;
 }
 .adm-all-news .pagination {
   align-self: flex-start;
