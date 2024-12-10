@@ -1,0 +1,52 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-partners {
+    .full-width-content {
+        position: relative;
+    }
+
+    .about-partners__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+    }
+
+    .about-partners__container {
+        padding: 40px 0;
+
+        @include respond-to(md) {
+            padding: 32px 0;
+        }
+
+        .title {
+            position: relative;
+            max-width: 866px;
+            margin: 0 auto 80px;
+            z-index: 2;
+
+            @include respond-to(md) {
+                margin: 0 auto 40px;
+            }
+        }
+
+        .about-partners__list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            position: relative;
+            width: 100vw;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            left: 50%;
+            right: 50%;
+
+            .about-partners__row {
+                display: flex;
+                gap: 24px;
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+        }
+    }
+}

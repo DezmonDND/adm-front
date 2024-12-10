@@ -12,6 +12,8 @@
     @include content-paddings;
 
     &:hover {
+        text-decoration: none;
+        color: $main-text;
         background-color: $services-hover;
     }
 
