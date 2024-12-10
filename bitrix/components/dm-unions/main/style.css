@@ -28,6 +28,14 @@
   text-decoration: none;
   color: var(--second-text);
 }
+.dm-unions-elem:hover {
+  text-decoration: none;
+  color: var(--main-text);
+  background-color: var(--services-hover);
+}
+.dm-unions-elem:active {
+  background-color: var(--services-active);
+}
 
 .dm-unions-elem__container {
   display: flex;

@@ -5804,6 +5804,8 @@ body.tmp-duma .pag-button_active:hover {
   }
 }
 .pag-button:hover {
+  color: var(--main-text);
+  text-decoration: none;
   background-color: var(--event-color);
   border-color: transparent;
   cursor: pointer;
@@ -7389,6 +7391,8 @@ body.tmp-duma .main-title .main-title__container .tabs {
   color: var(--main-text);
 }
 .project-card_link:hover {
+  text-decoration: none;
+  color: var(--main-text);
   background-color: var(--services-hover);
 }
 .project-card_link:active {
@@ -7684,6 +7688,10 @@ body.tmp-duma .main-title .main-title__container .tabs {
     bottom: 12px;
     left: 12px;
   }
+}
+.hearing-preview-title:hover {
+  color: var(--content-color);
+  text-decoration: none;
 }
 .hearing-preview-play {
   position: absolute;
@@ -8863,6 +8871,14 @@ body.tmp-duma .event .event__container .event__location .event__icon-dot {
   background-color: var(--cards-background);
   border-radius: 12px;
   color: var(--main-text);
+}
+.event:hover {
+  text-decoration: none;
+  color: var(--main-text);
+  background-color: var(--services-hover);
+}
+.event:active {
+  background-color: var(--services-active);
 }
 .event .event__container {
   display: flex;
@@ -11352,6 +11368,10 @@ body.tmp-duma .usefull-links {
   border-radius: 12px;
   color: var(--main-text);
 }
+.init-card:hover {
+  color: var(--main-text);
+  text-decoration: none;
+}
 .init-card:hover .init-card__title {
   color: var(--primary-color);
 }
@@ -12254,6 +12274,9 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
   border-radius: 12px;
   background-color: var(--cards-background);
 }
+.board-card:hover {
+  text-decoration: none;
+}
 .board-card .board-card__container {
   display: flex;
   gap: 40px;
@@ -12745,6 +12768,9 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
   border-radius: 12px;
   text-decoration: none;
 }
+.dm-comitet-elem:hover {
+  text-decoration: none;
+}
 @media (max-width: 992px) {
   .dm-comitet-elem {
     max-width: 237px;
@@ -13028,6 +13054,9 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
   justify-content: center;
   text-decoration: none;
   max-width: 50%;
+}
+.dm-struct-card:hover {
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .dm-struct-card {
@@ -13492,6 +13521,9 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
+}
+.dm-finance-elem__doc a:hover {
+  text-decoration: none;
 }
 
 .dm-finance__content {
@@ -14475,6 +14507,14 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
   text-decoration: none;
   color: var(--second-text);
 }
+.dm-unions-elem:hover {
+  text-decoration: none;
+  color: var(--main-text);
+  background-color: var(--services-hover);
+}
+.dm-unions-elem:active {
+  background-color: var(--services-active);
+}
 
 .dm-unions-elem__container {
   display: flex;
@@ -15240,6 +15280,9 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
   .search-by-site .search-by-site__buttons {
     display: none;
   }
+}
+.search-by-site .search-by-site__buttons .search-by-site__button:hover {
+  color: var(--main-text);
 }
 @media (max-width: 992px) {
   .search-by-site .search-by-site__buttons .button {
@@ -17070,6 +17113,9 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
   max-width: 480px;
   width: max-content;
 }
+.adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button:hover {
+  color: var(--main-text);
+}
 @media (max-width: 410px) {
   .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button {
     width: calc(100% - 34px);
@@ -17135,6 +17181,16 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   .hearing-item {
     flex: 0 0 100%;
   }
+}
+.hearing-item:hover {
+  color: var(--main-text);
+  text-decoration: none;
+}
+.hearing-item:hover .hearing-item-title {
+  color: var(--primary-color);
+}
+.hearing-item:active .hearing-item-title {
+  color: var(--primary-color-active);
 }
 .hearing-item-title span {
   display: -webkit-box;
@@ -17238,6 +17294,18 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   border-radius: 12px;
   position: relative;
 }
+.hearing-calendar a {
+  color: inherit;
+}
+.hearing-calendar a:hover {
+  text-decoration: none;
+}
+.hearing-calendar .link {
+  color: var(--primary-color);
+}
+.hearing-calendar .link:hover {
+  color: var(--primary-color-hover);
+}
 .hearing-calendar .fc-toolbar-chunk:last-of-type .fc-button-group {
   background-color: var(--cards-background);
 }
@@ -17337,6 +17405,9 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
   background-color: var(--primary-color);
   color: var(--content-color);
   border-radius: 50%;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number:hover {
+  text-decoration: none;
 }
 
 .fc-event-time {
@@ -17520,6 +17591,10 @@ body.tmp-duma .hearing-item .hearing-item-content .hearing-item-labels .hearing-
 .fc-next-button:active {
   background-color: transparent !important;
   color: var(--primary-color-active) !important;
+}
+
+.fc-timeGridWeek-view.fc-view.fc-timegrid .fc-col-header-cell-cushion:hover {
+  text-decoration: none;
 }
 
 .hearing-event-popup {
@@ -18658,6 +18733,10 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   .scheme-container {
     gap: 48px;
   }
+}
+
+.scheme a:hover {
+  text-decoration: none;
 }
 
 .scheme-elems {
@@ -21538,4 +21617,7 @@ hr {
 .generate_form .search-by-site__button {
   max-width: unset;
   width: unset;
+}
+.generate_form .search-by-site__button:hover {
+  color: var(--main-text);
 }

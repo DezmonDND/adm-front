@@ -267,5 +267,9 @@ hr {
     .search-by-site__button {
         max-width: unset;
         width: unset;
+
+        &:hover {
+            color: $main-text;
+        }
     }
 }
