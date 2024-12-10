@@ -28,8 +28,8 @@ body.tmp-print {
 
 .project-generation__main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .project-generation__main-container,
@@ -58,7 +58,6 @@ body.tmp-print {
 
 .project-generation_bottom {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
