@@ -19368,6 +19368,7 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   position: absolute;
   bottom: 0;
   right: 0;
+  height: 100%;
 }
 .about-partners .about-partners__container {
   padding: 40px 0;
