@@ -36,10 +36,15 @@
     .adm-all-news__calendar {
         position: relative;
 
+
         .adm-all-news__calendar-button {
             border-radius: 4px;
             max-width: 480px;
             width: max-content;
+
+            &:hover {
+                color: $main-text;
+            }
 
             @media (max-width: 410px) {
                 width: calc(100% - 34px);

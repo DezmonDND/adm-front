@@ -120,6 +120,9 @@
   overflow: scroll;
   scrollbar-width: none;
 }
+.afisha-event .afisha-event__container .afisha-event__banner .afisha-event__banner-list a {
+  color: var(--main-text);
+}
 .afisha-event .afisha-event__container .afisha-event__banner .afisha-event__banner-list .afisha-event__image {
   max-width: 755px;
   width: 100%;

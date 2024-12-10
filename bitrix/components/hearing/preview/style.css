@@ -70,6 +70,10 @@
     left: 12px;
   }
 }
+.hearing-preview-title:hover {
+  color: var(--content-color);
+  text-decoration: none;
+}
 .hearing-preview-play {
   position: absolute;
   top: 328px;

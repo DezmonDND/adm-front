@@ -102,6 +102,10 @@
                 overflow: scroll;
                 scrollbar-width: none;
 
+                a {
+                    color: $main-text;
+                }
+
                 .afisha-event__image {
                     max-width: 755px;
                     width: 100%;

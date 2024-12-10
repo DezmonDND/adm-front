@@ -5,6 +5,11 @@
     border-radius: 12px;
     color: $main-text;
 
+    &:hover {
+        color: $main-text;
+        text-decoration: none;
+    }
+
     &:hover .init-card__title {
         color: $primary-color;
     }  
