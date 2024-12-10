@@ -69,6 +69,10 @@ b {
         align-items: center;
         justify-content: flex-end;
         gap: 12px;
+
+        .icon {
+            min-width: 14px;
+        }
     }
 
     .glyphicon-save {
