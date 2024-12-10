@@ -6398,7 +6398,6 @@ body.tmp-duma .pag-button_active:hover {
 }
 .breadcrumbs .breadcrumbs__container .breadcrumb_link {
   color: var(--tertiary-text);
-  text-wrap: nowrap;
 }
 .breadcrumbs .span {
   color: var(--tertiary-text);
@@ -11908,6 +11907,9 @@ body.tmp-duma .header__link_active {
   border-color: var(--primary-color-green-hover);
   color: inherit;
 }
+body.tmp-duma .header__link a:hover {
+  color: inherit;
+}
 
 .header_links {
   display: flex;
@@ -11945,6 +11947,12 @@ body.tmp-duma .header__link_active {
 }
 .header_links .header__link span {
   font-weight: 400;
+}
+.header_links .header__link a {
+  color: var(--main-text);
+}
+.header_links .header__link a:hover {
+  color: var(--primary-color);
 }
 
 body.tmp-duma .header__socials {

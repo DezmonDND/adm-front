@@ -42,5 +42,6 @@ mixin header-links(data = [])
                             },
                         ]
                     }) 
-            else 
-                a(href=link.href).header__link #{link.title}          
+            else
+                li.header__link 
+                    a(href=link.href) #{link.title}          
