@@ -60,7 +60,7 @@
   }
 }
 .reception .reception__form .reception__content .reception__feedback_title {
-  padding: 40px 0 24px;
+  padding: 40px 0 0;
   font-weight: 500;
   font-size: calc(24px * var(--scale));
   line-height: calc(28px * var(--lh));
@@ -85,17 +85,19 @@
 .reception__agreement {
   display: flex;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 16px;
   font-weight: 300;
 }
-.reception__agreement span, .reception__agreement a {
+.reception__agreement span,
+.reception__agreement a {
   font-weight: 300;
   font-size: calc(14px * var(--scale));
   line-height: calc(20px * var(--lh));
   color: var(--tertiary-text) !important;
 }
 @media (max-width: 992px) {
-  .reception__agreement span, .reception__agreement a {
+  .reception__agreement span,
+  .reception__agreement a {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
@@ -105,34 +107,30 @@
 }
 
 .reception__submit {
-  margin-top: 48px;
+  margin-top: 24px;
 }
 
 .reception__cap {
   display: flex;
+  align-items: center;
   gap: 8px;
   width: 100%;
   align-items: flex-start;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .reception__cap {
     flex-direction: column;
   }
 }
 .reception__cap .reception__cap-inp {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 8px;
-  height: 80px;
-}
-@media (max-width: 992px) {
-  .reception__cap .reception__cap-inp {
-    width: 100%;
-  }
 }
 .reception__cap .reception__cap-inp input {
   width: 240px;
-  height: 60px;
 }
 @media (max-width: 992px) {
   .reception__cap .reception__cap-inp input {
@@ -140,14 +138,23 @@
   }
 }
 .reception__cap .reception__cap-captcha {
-  min-width: 240px;
-  min-height: 60px;
-  max-width: 240px;
-  max-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+@media (max-width: 992px) {
+  .reception__cap .reception__cap-captcha {
+    align-self: flex-start;
+  }
 }
 .reception__cap .reception__cap-captcha img {
   object-fit: cover;
   width: 100%;
-  max-width: 240px;
-  height: 60px;
+  height: 100vh;
+  max-height: 60px;
+}
+@media (max-width: 992px) {
+  .reception__cap .reception__cap-captcha img {
+    max-height: 44px;
+  }
 }

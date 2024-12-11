@@ -21,7 +21,7 @@
   </div>
   <div class="subscribe__title"> <span>Введите вашу электронную почту</span></div>
   <div class="subscribe__lineform">
-    <input class="input     " placeholder="Электронная почта" value=""/>
+    <input class="input      " placeholder="Электронная почта" value=""/>
     <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подписаться</span>
       <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
     </button>
@@ -30,7 +30,7 @@
     <div class="subscribe__title"> <span>Подтверждение подписки</span></div>
     <div class="subscribe__subtitle"> <span>Если вы еще не получили письмо с кодом подтверждения, вы можете повторно <a href="#">запросить код</a></span></div>
     <div class="subscribe__lineform">
-      <input class="input     " placeholder="Введите код подтверждения подписки" value=""/>
+      <input class="input      " placeholder="Введите код подтверждения подписки" value=""/>
       <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подтвердить</span>
         <ion-icon class="icon" name="checkmark-done-outline"></ion-icon>
       </button>
@@ -77,7 +77,7 @@
   </div>
   <div class="subscribe__field__heading">Ваш E-mail</div>
   <div class="subscribe__lineform">
-    <input class="input     " placeholder="Электронная почта" value=""/>
+    <input class="input      " placeholder="Электронная почта" value=""/>
     <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Применить</span>
     </button>
   </div>

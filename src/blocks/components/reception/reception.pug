@@ -88,9 +88,10 @@ mixin reception()
                                 required:true,
                             },
                             {
-                                placeholder: '892343567',
+                                placeholder: 'Номер телефона',
                                 name: 'phone',
                                 sort: 'virtual-reception_input',
+                                class: 'phone_sms',
                                 required:true,
                             },
                             ]    
@@ -103,7 +104,7 @@ mixin reception()
                         span: '',
                         error: false,
                         options: {
-                            placeholder: 'Введите ваш ответ',
+                            placeholder: 'Содержание вашего обращения',
                             value: 'none',
                             cls: 'reception',
                             name: 'feedback',

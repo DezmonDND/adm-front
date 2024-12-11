@@ -27,16 +27,16 @@
       <fieldset class="fieldset fieldset_user-contacts">
         <h3 class="fieldset__title reception__user_title  fieldset__req">Ваши данные (от кого)</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input   " placeholder="Фамилия" name="firstName" value="" id="firstName" required="required"/>
-          <input class="input  input-virtual-reception_input   " placeholder="Имя" name="secondName" value="" id="secondName" required="required"/>
-          <input class="input  input-virtual-reception_input   " placeholder="Отчество" name="thirdName" value="" id="thirdName"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Фамилия" name="firstName" value="" id="firstName" required="required"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Имя" name="secondName" value="" id="secondName" required="required"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Отчество" name="thirdName" value="" id="thirdName"/>
         </div>
       </fieldset>
       <div class="dm-applications__divider"></div>
       <fieldset class="fieldset ">
         <h3 class="fieldset__title dm-applications__title  fieldset__req">Почтовый адрес для контакта</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input   " placeholder="Пример: some@mail.ru" name="companyName" value="" id="companyName" required="required"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Пример: some@mail.ru" name="companyName" value="" id="companyName" required="required"/>
         </div>
       </fieldset>
       <div class="dm-applications__get-answer">      
