@@ -1,12 +1,5 @@
-body.tmp-duma .afisha-event .afisha-event__content {
-  max-width: 978px;
-}
-body.tmp-duma .afisha-event .afisha-event__content .afisha-event__banner .afisha-event__image {
-  max-width: 978px;
-}
-
 .afisha-event .afisha-event__container .afisha-event__content {
-  max-width: 755px;
+  max-width: 978px;
   margin: 40px 0 40px;
   display: flex;
   flex-direction: column;
@@ -131,7 +124,7 @@ body.tmp-duma .afisha-event .afisha-event__content .afisha-event__banner .afisha
   color: var(--main-text);
 }
 .afisha-event .afisha-event__container .afisha-event__banner .afisha-event__banner-list .afisha-event__image {
-  max-width: 755px;
+  max-width: 978px;
   width: 100%;
   margin-right: 8px;
   max-height: 480px;
