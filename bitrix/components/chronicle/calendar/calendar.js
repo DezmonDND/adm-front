@@ -94,4 +94,6 @@ function writeDates(from, to, dates) {
     }
 }
 
-getDates();
+$(document).ready(function () {
+    getDates();
+});

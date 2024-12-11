@@ -49,6 +49,7 @@ function getValues(e) {
     });
 
     console.log('Собранные значения:', values);
+    
     if (errors.length) {
         console.error('Ошибки:', errors);
     }

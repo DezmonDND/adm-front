@@ -34,7 +34,6 @@
 }
 .breadcrumbs .breadcrumbs__container .breadcrumb_link {
   color: var(--tertiary-text);
-  text-wrap: nowrap;
 }
 .breadcrumbs .span {
   color: var(--tertiary-text);

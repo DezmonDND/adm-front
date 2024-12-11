@@ -8,8 +8,6 @@
     <div class="calendar">
       <div class="calendar__links">
       </div>
-    </div>
-    <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
-    </button>
+    </div><span class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span></span>
   </div>
 </form>

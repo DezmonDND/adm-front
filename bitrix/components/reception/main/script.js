@@ -64,4 +64,4 @@ function deleteFormField(button) {
     fieldset.remove();
 }
 
-$('.phone_sms').inputmask({ mask: '+7 (999) 999-99-99' });
+$(".phone_sms").inputmask({"mask": "+7 (999) 999-99-99"});
