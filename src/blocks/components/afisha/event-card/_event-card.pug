@@ -41,17 +41,25 @@ mixin dm-event-card(data)
                                     +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: "Награды"})
                                     +button({ type: 'button', size: 'xs', class: 'button_blue button_radius', text: "Экономика"})
                             .event-card__description 
-                                h2.event-card__title #{data.title}
+                                .event-card__title-content
+                                    h2.event-card__title #{data.title}
+                                    .event-card__title-button
+                                        +button({ size: 'm', type: 'link', class: 'button_white button_share', href: '/about', icon: 'link-outline' })
                                 if data.description
                                     p.event-card__text #{data.description}
+                                if data.department 
+                                    .event-card__department 
+                                        span.event-card__department-title Департамент:
+                                        span.event-card__department-desc #{data.department}  
                                 if data.date || data.last_date    
-                                    .event-card__dates    
-                                        span.event-card__date #{data.date}
-                                        span.event-card__last-date #{data.last_date}
+                                    .event-card__dates
+                                        .event-card__dates-content    
+                                            span.event-card__date #{data.date}
+                                            span.event-card__last-date #{data.last_date}
                                         .event-card__buttons 
-                                            +button({ size: 'm', type: 'link', class: 'button_white button_print', href: '/', icon: 'print-outline' })
+                                            +button({ size: 'm', type: 'link', class: 'button_white button_print', href: '/', icon: 'print-outline', text: 'Версия для печати'})
                                             .event-card__button
-                                                +button({ size: 'm', type: 'link', class: 'button_white button_share', href: '/about', icon: 'link-outline' })
+                                                +button({ size: 'm', type: 'link', class: 'button_white button_share', href: '/about', icon: 'link-outline', text: 'Поделиться' })
                                                 +button-popup()
                                 
 

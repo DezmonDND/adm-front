@@ -16,6 +16,9 @@
   border-radius: 12px;
   text-decoration: none;
 }
+.dm-comitet-elem:hover {
+  text-decoration: none;
+}
 @media (max-width: 992px) {
   .dm-comitet-elem {
     max-width: 237px;

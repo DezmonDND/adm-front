@@ -270,7 +270,8 @@
             </div>
           </div>
         </div>
-      </li><a class="header__link" href="/">Контакты          </a>
+      </li>
+      <li class="header__link"> <a href="/">Контакты          </a></li>
     </ul>
     <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
       <ion-icon class="icon" name="menu-outline"></ion-icon>
@@ -320,7 +321,11 @@
       </div>
     </div>
     <div class="header-visibility__top-links">
-      <ul class="header_links"><a class="header__link" href="/">О Сургуте          </a><a class="header__link" href="/">Городская власть          </a><a class="header__link" href="/">Документы          </a><a class="header__link" href="/">Контакты          </a>
+      <ul class="header_links">
+        <li class="header__link"> <a href="/">О Сургуте          </a></li>
+        <li class="header__link"> <a href="/">Городская власть          </a></li>
+        <li class="header__link"> <a href="/">Документы          </a></li>
+        <li class="header__link"> <a href="/">Контакты          </a></li>
       </ul>
       <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
       </div>
@@ -343,7 +348,12 @@
     </button>
   </div>
   <div class="header-visibility__bottom-content">
-    <ul class="header_links"><a class="header__link" href="/">Быстрый доступ          </a><a class="header__link" href="/">Публичные слушания          </a><a class="header__link" href="/">Противодействие коррупции          </a><a class="header__link" href="/">Пресс-центр          </a><a class="header__link" href="/">Обращения граждан          </a>
+    <ul class="header_links">
+      <li class="header__link"> <a href="/">Быстрый доступ          </a></li>
+      <li class="header__link"> <a href="/">Публичные слушания          </a></li>
+      <li class="header__link"> <a href="/">Противодействие коррупции          </a></li>
+      <li class="header__link"> <a href="/">Пресс-центр          </a></li>
+      <li class="header__link"> <a href="/">Обращения граждан          </a></li>
     </ul>
   </div>
 </header>
@@ -369,7 +379,7 @@
         <div class="delim-line"></div><span> или </span>
         <div class="delim-line"> </div>
       </div>
-      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
       </div>
       <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
     </div>

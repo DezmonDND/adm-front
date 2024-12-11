@@ -280,7 +280,8 @@
                 </div>
               </div>
             </div>
-          </li><a class="header__link" href="/">Контакты          </a>
+          </li>
+          <li class="header__link"> <a href="/">Контакты          </a></li>
         </ul>
         <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
@@ -330,7 +331,11 @@
           </div>
         </div>
         <div class="header-visibility__top-links">
-          <ul class="header_links"><a class="header__link" href="/">О Сургуте          </a><a class="header__link" href="/">Городская власть          </a><a class="header__link" href="/">Документы          </a><a class="header__link" href="/">Контакты          </a>
+          <ul class="header_links">
+            <li class="header__link"> <a href="/">О Сургуте          </a></li>
+            <li class="header__link"> <a href="/">Городская власть          </a></li>
+            <li class="header__link"> <a href="/">Документы          </a></li>
+            <li class="header__link"> <a href="/">Контакты          </a></li>
           </ul>
           <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
           </div>
@@ -353,7 +358,12 @@
         </button>
       </div>
       <div class="header-visibility__bottom-content">
-        <ul class="header_links"><a class="header__link" href="/">Быстрый доступ          </a><a class="header__link" href="/">Публичные слушания          </a><a class="header__link" href="/">Противодействие коррупции          </a><a class="header__link" href="/">Пресс-центр          </a><a class="header__link" href="/">Обращения граждан          </a>
+        <ul class="header_links">
+          <li class="header__link"> <a href="/">Быстрый доступ          </a></li>
+          <li class="header__link"> <a href="/">Публичные слушания          </a></li>
+          <li class="header__link"> <a href="/">Противодействие коррупции          </a></li>
+          <li class="header__link"> <a href="/">Пресс-центр          </a></li>
+          <li class="header__link"> <a href="/">Обращения граждан          </a></li>
         </ul>
       </div>
     </header>
@@ -379,7 +389,7 @@
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -443,7 +453,7 @@
         </div>
         <div class="col-6">
           <h5>type: 'link', size: 'm', class: 'button_blue', href: '/about'</h5>
-          <h5>Если нужно открывать в новом окне, то передавать target=true</h5><a class="button button_link button_blue   " href="/" title="" attributes="{}"><span class="button_span">Ccылка</span></a>
+          <h5>Если нужно открывать в новом окне, то передавать target=true</h5><a class="button button_link button_blue   " href="/" title=""><span class="button_span">Ccылка</span></a>
         </div>
         <div class="col-6">
           <h5>type: 'button',  size: 'm',  event: 'console.log(1);', class: 'button_blue', text: "Кнопка"</h5>
@@ -455,62 +465,60 @@
           <h4>Цвета кнопок (добавляем в класс)</h4>
         </div>
         <div class="col-3">
-          <h5>button_blue (default)</h5><a class="button button_link button_blue   " href="/" title="" attributes="{}"><span class="button_span">Синяя</span></a>
+          <h5>button_blue (default)</h5><a class="button button_link button_blue   " href="/" title=""><span class="button_span">Синяя</span></a>
         </div>
         <div class="col-3">
-          <h5>button_green</h5><a class="button button_link button_green   " href="/" title="" attributes="{}"><span class="button_span">Зеленая</span></a>
+          <h5>button_green</h5><a class="button button_link button_green   " href="/" title=""><span class="button_span">Зеленая</span></a>
         </div>
         <div class="col-3">
-          <h5>button_red</h5><a class="button button_link button_red   " href="/" title="" attributes="{}"><span class="button_span">Красная</span></a>
+          <h5>button_red</h5><a class="button button_link button_red   " href="/" title=""><span class="button_span">Красная</span></a>
         </div>
         <div class="col-3">
-          <h5>button_white</h5><a class="button button_link button_white   " href="/" title="" attributes="{}"><span class="button_span">Белая</span></a>
+          <h5>button_white</h5><a class="button button_link button_white   " href="/" title=""><span class="button_span">Белая</span></a>
         </div>
         <div class="col-12">
           <h4>Размеры кнопок</h4>
         </div>
         <div class="col-3">
-          <h5> Size: l</h5><a class="button button_link button_blue button_size_l  " href="/" title="" attributes="{}"><span class="button_span">Большая</span></a>
+          <h5> Size: l</h5><a class="button button_link button_blue button_size_l  " href="/" title=""><span class="button_span">Большая</span></a>
         </div>
         <div class="col-3">
-          <h5> Size: m (default)</h5><a class="button button_link button_green button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Средняя</span></a>
+          <h5> Size: m (default)</h5><a class="button button_link button_green button_size_m  " href="/" title=""><span class="button_span">Средняя</span></a>
         </div>
         <div class="col-3">
-          <h5> Size: s</h5><a class="button button_link button_red button_size_s  " href="/" title="" attributes="{}"><span class="button_span">Маленькая</span></a>
+          <h5> Size: s</h5><a class="button button_link button_red button_size_s  " href="/" title=""><span class="button_span">Маленькая</span></a>
         </div>
         <div class="col-3">
-          <h5> Size: xs</h5><a class="button button_link button_red button_radius button_size_xs  " href="/" title="" attributes="{}"><span class="button_span">для тегов</span></a>
+          <h5> Size: xs</h5><a class="button button_link button_red button_radius button_size_xs  " href="/" title=""><span class="button_span">для тегов</span></a>
         </div>
         <div class="col-12">
           <h4>Кнопки с иконками</h4>
         </div>
         <div class="col-4">
-          <h5>iconPosition: 'left'</h5><a class="button button_link button_white   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Example</span>
+          <h5>iconPosition: 'left'</h5><a class="button button_link button_white   button_icon-left" href="/" title=""><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-4">
-          <h5>iconPosition: 'right'</h5><a class="button button_link button_white   button_icon-right" href="/" title="" attributes="{}"><span class="button_span">Example</span>
+          <h5>iconPosition: 'right'</h5><a class="button button_link button_white   button_icon-right" href="/" title=""><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-4">
-          <h5>Без текста</h5><a class="button button_link button_white  button_without-text " href="/" title="" attributes="{}">
+          <h5>Без текста</h5><a class="button button_link button_white  button_without-text " href="/" title="">
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-12">
           <h4>Дополнительные опции</h4>
         </div>
         <div class="col-4">
-          <h5>Закругленная кнопка - class: button_radius</h5><a class="button button_link button_white button_radius   " href="/" title="" attributes="{}"><span class="button_span">Example</span>
+          <h5>Закругленная кнопка - class: button_radius</h5><a class="button button_link button_white button_radius   " href="/" title=""><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-4">
-          <h5>Кнопка без обводки(для белой) - class: button_white_no-border</h5><a class="button button_link button_white button_white_no-border button_radius   " href="/" title="" attributes="{}"><span class="button_span">Example</span>
+          <h5>Кнопка без обводки(для белой) - class: button_white_no-border</h5><a class="button button_link button_white button_white_no-border button_radius   " href="/" title=""><span class="button_span">Example</span>
             <ion-icon class="icon" name="add-outline"></ion-icon></a>
         </div>
         <div class="col-4">
-          <h5>Только для тегов с особенным шрифтом - class: button_tag-label</h5>
-          <button class="button button_blue button_radius button_tag-label button_size_s   button_without-event" title=""><span class="button_span">Государственная</span>
-          </button>
+          <h5>Только для тегов с особенным шрифтом - class: button_tag-label</h5><span class="button button_blue button_radius button_tag-label button_size_s   button_without-event" title=""><span class="button_span">Государственная</span></span>
         </div>
       </div>
       <hr/>
@@ -634,41 +642,19 @@
         </video>
       </div>
       <hr/>
-      <h4>Другое</h4><a class="button button_link    " href="/" title="" attributes="{}"><span class="button_span">Example</span>
-        <ion-icon class="icon" name="add-outline"></ion-icon></a>
-      <button class="button     button_without-event" title=""><span class="button_span">Example</span>
-        <ion-icon class="icon" name="add-outline"></ion-icon>
-      </button>
-      <button class="button button_white button_size_l   button_without-event" title=""><span class="button_span">Example</span>
-        <ion-icon class="icon" name="add-outline"></ion-icon>
-      </button>
-      <button class="button button_white button_size_m   button_without-event" title=""><span class="button_span">Example</span>
-        <ion-icon class="icon" name="add-outline"></ion-icon>
-      </button>
-      <button class="button button_white button_size_s   button_without-event" title=""><span class="button_span">Example</span>
-        <ion-icon class="icon" name="add-outline"></ion-icon>
-      </button>
-      <button class="button button_white button_size_s button_without-text  button_without-event" title="">
-        <ion-icon class="icon" name="add-outline"></ion-icon>
-      </button>
-      <button class="button button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">RSS</span>
-        <ion-icon class="icon" name="logo-rss"></ion-icon>
-      </button>
-      <button class="button button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">Прямая трансляция</span>
-        <ion-icon class="icon" name="radio-button-on-outline"></ion-icon>
-      </button><a class="button button_link button_white button_white_no-border button_radius   button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Подписаться на главное</span>
-        <ion-icon class="icon" name="mail"></ion-icon></a>
-      <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span>
-      </button>
-      <button class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Не определен</span>
-      </button>
-      <button class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span>
-      </button>
-      <123></123><a class="button button_link button_blue button_size_l  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">О нас</span>
-        <ion-icon class="icon" name="add-outline"></ion-icon></a>
-      <button class="button button_blue button_size_m  button_icon-left button_without-event" title="" disabled="disabled"><span class="button_span">О нас</span>
-        <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
-      </button><a class="button button_link button_green button_size_s  " href="/" title="" attributes="{}"><span class="button_span">Контакты</span>
+      <h4>Другое</h4><a class="button button_link    " href="/" title=""><span class="button_span">Example</span>
+        <ion-icon class="icon" name="add-outline"></ion-icon></a><span class="button     button_without-event" title=""><span class="button_span">Example</span>
+        <ion-icon class="icon" name="add-outline"></ion-icon></span><span class="button button_white button_size_l   button_without-event" title=""><span class="button_span">Example</span>
+        <ion-icon class="icon" name="add-outline"></ion-icon></span><span class="button button_white button_size_m   button_without-event" title=""><span class="button_span">Example</span>
+        <ion-icon class="icon" name="add-outline"></ion-icon></span><span class="button button_white button_size_s   button_without-event" title=""><span class="button_span">Example</span>
+        <ion-icon class="icon" name="add-outline"></ion-icon></span><span class="button button_white button_size_s button_without-text  button_without-event" title="">
+        <ion-icon class="icon" name="add-outline"></ion-icon></span><span class="button button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">RSS</span>
+        <ion-icon class="icon" name="logo-rss"></ion-icon></span><span class="button button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">Прямая трансляция</span>
+        <ion-icon class="icon" name="radio-button-on-outline"></ion-icon></span><a class="button button_link button_white button_white_no-border button_radius   button_icon-left" href="/" title=""><span class="button_span">Подписаться на главное</span>
+        <ion-icon class="icon" name="mail"></ion-icon></a><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span></span><span class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Не определен</span></span><span class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span></span>
+      <123></123><a class="button button_link button_blue button_size_l  button_icon-left" href="/" title=""><span class="button_span">О нас</span>
+        <ion-icon class="icon" name="add-outline"></ion-icon></a><span class="button button_blue button_size_m  button_icon-left button_without-event" title=""><span class="button_span">О нас</span>
+        <ion-icon class="icon" name="arrow-back-outline"></ion-icon></span><a class="button button_link button_green button_size_s  " href="/" title=""><span class="button_span">Контакты</span>
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
       <button class="button button_blue button_size_l   " onclick="someFunction()" title=""><span class="button_span">Далее</span>
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
@@ -677,13 +663,7 @@
         <ion-icon class="icon" name="download-outline"></ion-icon>
       </button>
       <button class="button button_white button_size_m   " onclick="getValues()" title=""><span class="button_span">Готово</span>
-      </button>
-      <button class="button tag-button-blue    button_without-event" title=""><span class="button_span">Идет</span>
-      </button>
-      <button class="button button_red button_radius    button_without-event" title=""><span class="button_span">Не определен</span>
-      </button>
-      <button class="button button_green button_radius    button_without-event" title=""><span class="button_span">Завершен</span>
-      </button>
+      </button><span class="button tag-button-blue    button_without-event" title=""><span class="button_span">Идет</span></span><span class="button button_red button_radius    button_without-event" title=""><span class="button_span">Не определен</span></span><span class="button button_green button_radius    button_without-event" title=""><span class="button_span">Завершен</span></span>
       <input class="сheckbox  radio" type="radio" id="radio" name="undefined"/>
       <label for="radio"> </label>
       <input class="сheckbox  " type="checkbox" id="1" name="undefined" checked="checked"/>
@@ -727,9 +707,7 @@
           <div class="calendar">
             <div class="calendar__links">
             </div>
-          </div>
-          <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
-          </button>
+          </div><span class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span></span>
         </div>
       </form>
       <form class="search-form">
@@ -739,9 +717,7 @@
         <div class="calendar">
           <div class="calendar__links">
           </div>
-        </div>
-        <button class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span>
-        </button>
+        </div><span class="button button_blue button_size_xs   button_without-event" title=""><span class="button_span">Искать</span></span>
       </form><a class="tab-button " value="Самые важные">Самые важные</a>
       <div class="project-card"> 
         <div class="project-card__content"> 
@@ -765,26 +741,67 @@
         </div>
         <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
         <div class="footer__categories">
-          <ul class="footer__category-content">
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">О Сургуте </h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Сургут сегодня            </a><a class="footer__categorie-link" href="/">История Сургута            </a><a class="footer__categorie-link" href="/">Официальные символы            </a><a class="footer__categorie-link" href="/">Устав Сургута            </a><a class="footer__categorie-link" href="/">Генплан            </a><a class="footer__categorie-link" href="/">Стратегия развития            </a><a class="footer__categorie-link" href="/">Инвестиционный паспорт Сургута            </a><a class="footer__categorie-link" href="/">Инвестору            </a><a class="footer__categorie-link" href="/">Общественные советы города Сургута            </a><a class="footer__categorie-link" href="/">Ими гордится Сургут            </a><a class="footer__categorie-link" href="/">Справочная информация            </a><a class="footer__categorie-link" href="/">Интерактивные карты Сургута            </a><a class="footer__categorie-link" href="/">Градостроительная деятельность            </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links">
+              <li><a class="footer__categorie-link" href="/">Сургут сегодня            </a></li>
+              <li><a class="footer__categorie-link" href="/">История Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/">Официальные символы            </a></li>
+              <li><a class="footer__categorie-link" href="/">Устав Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/">Генплан            </a></li>
+              <li><a class="footer__categorie-link" href="/">Стратегия развития            </a></li>
+              <li><a class="footer__categorie-link" href="/">Инвестиционный паспорт Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/">Инвестору            </a></li>
+              <li><a class="footer__categorie-link" href="/">Общественные советы города Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/">Ими гордится Сургут            </a></li>
+              <li><a class="footer__categorie-link" href="/">Справочная информация            </a></li>
+              <li><a class="footer__categorie-link" href="/">Интерактивные карты Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/">Градостроительная деятельность            </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Городская власть</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Глава города             </a><a class="footer__categorie-link" href="/">Дума города             </a><a class="footer__categorie-link" href="/">Администрация             </a><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a><a class="footer__categorie-link" href="/">Законодательная карта             </a><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a><a class="footer__categorie-link" href="/">Государственные органы             </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links">
+              <li><a class="footer__categorie-link" href="/">Глава города             </a></li>
+              <li><a class="footer__categorie-link" href="/">Дума города             </a></li>
+              <li><a class="footer__categorie-link" href="/">Администрация             </a></li>
+              <li><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a></li>
+              <li><a class="footer__categorie-link" href="/">Законодательная карта             </a></li>
+              <li><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a></li>
+              <li><a class="footer__categorie-link" href="/">Государственные органы             </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Документы</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Важные документы для горожан            </a><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a><a class="footer__categorie-link" href="/">Решения Думы города            </a><a class="footer__categorie-link" href="/">Постановления Главы города            </a><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a><a class="footer__categorie-link" href="/">Постановления Администрации города            </a><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Муниципальные программы            </a><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links">
+              <li><a class="footer__categorie-link" href="/">Важные документы для горожан            </a></li>
+              <li><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a></li>
+              <li><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a></li>
+              <li><a class="footer__categorie-link" href="/">Решения Думы города            </a></li>
+              <li><a class="footer__categorie-link" href="/">Постановления Главы города            </a></li>
+              <li><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a></li>
+              <li><a class="footer__categorie-link" href="/">Постановления Администрации города            </a></li>
+              <li><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a></li>
+              <li><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a></li>
+              <li><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a></li>
+              <li><a class="footer__categorie-link" href="/">Муниципальные программы            </a></li>
+              <li><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a></li>
+              <li><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Категория</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a>
-            </li>
-          </ul>
+            <ul class="footer__categorie-links">
+              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

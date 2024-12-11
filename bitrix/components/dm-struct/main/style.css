@@ -9,6 +9,9 @@
   text-decoration: none;
   max-width: 50%;
 }
+.dm-struct-card:hover {
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .dm-struct-card {
     max-width: unset;

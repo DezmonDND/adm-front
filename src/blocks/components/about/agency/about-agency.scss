@@ -1,0 +1,14 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-agency {
+    margin-top: 8px;
+
+    .about-history-elem {
+        background-color: $services-hover;
+
+        .about-history-elem__img {
+            opacity: .07;
+            filter: invert(99%) sepia(59%) saturate(0%) hue-rotate(124deg) brightness(109%) contrast(96%);
+        }
+    }
+}

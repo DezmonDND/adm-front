@@ -58,23 +58,17 @@
 <div class="adm-search"><a class="project-card project-card_link" href="/"> 
     <div class="project-card__content"> 
       <div class="project-card__info"> 
-        <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
-        </button>
+        <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span></span>
       </div>
     </div></a><a class="project-card project-card_link" href="/"> 
     <div class="project-card__content"> 
       <div class="project-card__info"> 
-        <h4 class="project-card__title">В Сургуте стартовала оперативно-профилактическая акция «Дети России»</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
-        </button>
+        <h4 class="project-card__title">В Сургуте стартовала оперативно-профилактическая акция «Дети России»</h4><span class="project-card__date">23 сентября 2024</span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span></span>
       </div>
     </div></a><a class="project-card project-card_link" href="/"> 
     <div class="project-card__content"> 
       <div class="project-card__info"> 
-        <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
-        </button>
+        <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span></span>
       </div>
     </div></a>
   <div class="adm-search__pagination"> 

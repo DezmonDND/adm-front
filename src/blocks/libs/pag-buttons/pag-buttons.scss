@@ -54,6 +54,8 @@ body.tmp-duma {
     }
 
     &:hover {
+        color: $main-text;
+        text-decoration: none;
         background-color: $event-color;
         border-color: transparent;
         cursor: pointer;

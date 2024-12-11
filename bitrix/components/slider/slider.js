@@ -45,6 +45,7 @@ const sliders = [
             variableWidth: false,
             autoplay: true,
             infinite: true,
+            pauseOnHover: true,
         },
     },
     // Главные новости
@@ -206,12 +207,13 @@ function destroySlider(selector) {
 
 function findAndCreateSlider(selector) {
     const slider = sliders.find((slider) => slider.selector === selector);
+    const currentSlider = document.getElementById(selector.substring(1));
 
-    if (slider) {
+    if (slider && !currentSlider) {
         initSlider(selector, slider.nextArrow, slider.prevArrow, slider.options);
     } else {
-        console.log(`Слайдер ${selector} не найден в массиве слайдеров`);
+        console.log(`Слайдер ${selector} не найден в массиве слайдеров или уже существует`);
     }
 }
 
-findAndCreateSlider('news-top__card-list');
+findAndCreateSlider('#events__news');

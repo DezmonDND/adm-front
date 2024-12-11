@@ -20,26 +20,53 @@ body.tmp-duma {
             padding-top: 20px;
 
             .event-card__description {
+                margin-bottom: 0;
 
                 @include respond-to(sm) {
                     gap: 16px;
                 }
 
-                margin-bottom: 0;
-                .event-card__dates {
+                .event-card__title-content {
+                    display: flex;
                     align-items: center;
-    
-                    @include respond-to(xs) {
-                        flex-direction: column;
-                        gap: 8px;
-                        align-items: flex-start;
+                    justify-content: space-between;
+                    
+                }
+
+                .event-card__department {
+                    display: flex;
+                    gap: 16px;
+                    margin: 8px 0;
+                    @include caption-2;
+
+                    @include respond-to(sm) {
+                        margin: 0;
+                    }
+
+                    .event-card__department-title {
+                        color: $tertiary-text;
                     }
                 }
+
+                .event-card__dates {
+
+                    .event-card__dates-content {
+
+                        @include respond-to(xs) {
+                            flex-direction: column;
+                            gap: 8px;
+                            align-items: flex-start;
+                        }
+                    }
+
+                    .event-card__buttons {
+                        @include respond-to(sm) {
+                            display: none;
+                        }
+                    }
+
+                }
             }
-
-            .event-card__tags {}
-
-        
 
             .event-card__buttons {
                 gap: 20px;
@@ -73,10 +100,10 @@ body.tmp-duma {
         flex-direction: column;
         max-width: 978px;
         width: 100%;
-        padding: 32px 0 32px;
+        padding: 32px 0;
 
         @include respond-to(md) {
-            padding: 20px;
+            padding: 20px 0;
         }
 
         .event-card__info {
@@ -90,6 +117,7 @@ body.tmp-duma {
                 flex-direction: column;
                 gap: 12px;
                 margin: 24px 0 48px;
+                position: relative;
 
                 @include respond-to(md) {
                     margin-bottom: 32px;
@@ -107,16 +135,23 @@ body.tmp-duma {
 
                 .event-card__dates {
                     display: flex;
-                    gap: 32px;
-                    color: $tertiary-text;
+                    align-items: center;
+                    justify-content: space-between;
 
-                    .event-card__date {
-                        @include caption-2;
+                    .event-card__dates-content {
+                        display: flex;
+                        gap: 32px;
+                        color: $tertiary-text;
+
+                        .event-card__date {
+                            @include caption-2;
+                        }
+
+                        .event-card__last-date {
+                            @include caption-2;
+                        }
                     }
 
-                    .event-card__last-date {
-                        @include caption-2;
-                    }
                 }
             }
 

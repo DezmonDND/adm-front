@@ -17,22 +17,26 @@ mixin people-care()
                 +people-care-card({
                     title: 'Лицам с ограниченными возможностями здоровья',
                     image: 'medkit-outline',
-                    background: 'people-care-card_bg-health' 
+                    background: 'people-care-card_bg-health',
+                    button: true, 
                 })
                 +people-care-card({
                     title: 'Бюджет для граждан Сургута',
                     image: 'wallet-outline',
                     background: 'people-care-card_bg-finance',
+                    button: true
                 })
                 +people-care-card({
                     title: 'Национальные проекты',
                     image: 'people-outline',
-                    background: 'people-care-card_bg-projects' 
+                    background: 'people-care-card_bg-projects',
+                    button: true 
                 }) 
                 +people-care-card({
                     title: 'Национальные проекты',
                     image: 'people-outline',
-                    background: 'people-care-card_bg-projects' 
+                    background: 'people-care-card_bg-projects',
+                    button: true 
                 }) 
             .people-care__slider
                 +slider({ class: 'people-care' })   

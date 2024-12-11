@@ -11,11 +11,7 @@
     </div>
     <div class="telephone-search-bot"> 
       <input class="input     " placeholder="Контекстный поиск" name="first_name" value="" id="first_name"/>
-      <div class="telephone-search-bot-btns"> 
-        <button class="button button_white button_size_l   button_without-event" title=""><span class="button_span">Сбросить</span>
-        </button>
-        <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Искать</span>
-        </button>
+      <div class="telephone-search-bot-btns"> <span class="button button_white button_size_l   button_without-event" title=""><span class="button_span">Сбросить</span></span><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Искать</span></span>
       </div>
     </div>
   </div>

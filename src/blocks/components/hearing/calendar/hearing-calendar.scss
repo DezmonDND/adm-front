@@ -6,6 +6,22 @@
     border-radius: 12px;
     position: relative;
 
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .link {
+        color: $primary-color;
+
+        &:hover {
+            color: $primary-color-hover;
+        }
+    }
+
     .fc-toolbar-chunk {
         &:last-of-type {
             .fc-button-group {
@@ -28,8 +44,6 @@
         padding: 4px;
         border-radius: 8px;
         gap: 2px;
-
-
 
         .fc-button-primary {
             border-radius: 8px;
@@ -89,6 +103,10 @@
         background-color: $primary-color;
         color: $content-color;
         border-radius: 50%;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -235,5 +253,11 @@
     &:active {
         background-color: transparent !important;
         color: $primary-color-active !important;
+    }
+}
+
+.fc-timeGridWeek-view.fc-view.fc-timegrid .fc-col-header-cell-cushion {
+    &:hover {
+        text-decoration: none;
     }
 }

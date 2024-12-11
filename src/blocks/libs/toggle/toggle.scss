@@ -9,7 +9,7 @@
         display: flex;
         cursor: pointer;
         align-items: center;
-        padding: 20px;
+        @include content-paddings;
 
         .toggle-arrow {
             margin-left: auto;
@@ -33,6 +33,10 @@
 
         &-container {
             padding: 0 20px;
+
+            @include respond-to(md) {
+                padding: 0 16px;
+            }
         }
 
         /* Закрытое состояние - убираем вертикальные отступы */
@@ -47,6 +51,11 @@
     &.open .toggle-content-container {
         padding-top: 20px;
         padding-bottom: 20px;
+
+        @include respond-to(md) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
     }
 
     &.open .toggle-header .toggle-arrow {

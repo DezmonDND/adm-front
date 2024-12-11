@@ -1,0 +1,26 @@
+mixin about-citizens()
+    .about-citizens
+        .about-citizens__container 
+            +title({
+                title: 'Почетные граждане Сургута'
+            })
+            .about-citizens__tabs 
+                +tabs-tag([
+                    { href: '#', title: 'Почетные граждане Сургута', onclick: '' , value: 'Почетные граждане Сургута'},
+                    { href: '#', title: 'Почетные граждане ХМАО-Югры', onclick: '' , value: 'Почетные граждане ХМАО-Югры'},
+                    { href: '#',title: 'Доска почета', onclick: '' , value: 'Доска почета'},
+                    { href: '#', title: 'За заслуги перед городом Сургутом', onclick: '' , value: 'За заслуги перед городом Сургутом' },
+                    ])
+            .about-citizens__list
+                a(href='/' value='1')
+                    img(src='../resources/board__image.png' alt='Фотография граждан').about-citizens__image
+                a(href='/' value='1')
+                    img(src='../resources/board__image.png' alt='Фотография граждан').about-citizens__image
+                a(href='/' value='1')
+                    img(src='../resources/board__image.png' alt='Фотография граждан').about-citizens__image
+                a(href='/' value='1')
+                    img(src='../resources/board__image.png' alt='Фотография граждан').about-citizens__image
+            .about-citizens__documents
+                a.files-list__document-description
+                    ion-icon(class='files-list__icon' name='document')
+                    span.files-list__document-title Книга почета.pdf       
