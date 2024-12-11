@@ -7,13 +7,7 @@
           <div class="event-card">
             <div class="event-card__container"> 
               <div class="event-card__info">
-                <div class="event-card__tags">
-                  <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">История</span>
-                  </button>
-                  <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
-                  </button>
-                  <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Экономика</span>
-                  </button>
+                <div class="event-card__tags"><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">История</span></span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Награды</span></span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Экономика</span></span>
                 </div>
                 <div class="event-card__description"> 
                   <h2 class="event-card__title">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</h2>

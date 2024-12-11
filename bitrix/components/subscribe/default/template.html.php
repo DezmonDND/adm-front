@@ -21,19 +21,15 @@
   </div>
   <div class="subscribe__title"> <span>Введите вашу электронную почту</span></div>
   <div class="subscribe__lineform">
-    <input class="input     " placeholder="Электронная почта" value=""/>
-    <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подписаться</span>
-      <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
-    </button>
+    <input class="input     " placeholder="Электронная почта" value=""/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подписаться</span>
+      <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></span>
   </div>
   <div class="subscribe__agree">
     <div class="subscribe__title"> <span>Подтверждение подписки</span></div>
     <div class="subscribe__subtitle"> <span>Если вы еще не получили письмо с кодом подтверждения, вы можете повторно <a href="#">запросить код</a></span></div>
     <div class="subscribe__lineform">
-      <input class="input     " placeholder="Введите код подтверждения подписки" value=""/>
-      <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подтвердить</span>
-        <ion-icon class="icon" name="checkmark-done-outline"></ion-icon>
-      </button>
+      <input class="input     " placeholder="Введите код подтверждения подписки" value=""/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подтвердить</span>
+        <ion-icon class="icon" name="checkmark-done-outline"></ion-icon></span>
     </div>
     <div class="subscribe__subtitle"><span>Дата генерации кода подтверждения: 26.11.2024 15:40:36</span></div>
   </div>
@@ -77,16 +73,12 @@
   </div>
   <div class="subscribe__field__heading">Ваш E-mail</div>
   <div class="subscribe__lineform">
-    <input class="input     " placeholder="Электронная почта" value=""/>
-    <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Применить</span>
-    </button>
+    <input class="input     " placeholder="Электронная почта" value=""/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Применить</span></span>
   </div>
   <hr/>
   <div class="subscribe__title"> <span>Состояние подписки</span></div>
   <div class="subscribe__subtitle"> <span>Подписка подтверждена:	Да</span><span>Подписка активна:	Да</span><span>Идентификатор подписки:	1 </span><span>Дата добавления:	26.11.2024 14:32:47 </span><span>Дата модификации:	26.11.2024 15:21:28 </span><span>Дата модификации:	26.11.2024 15:21:28 </span></div>
   <hr/>
   <div class="subscribe__title"> <span>Отмена подписки</span></div>
-  <div class="subscribe__subtitle"> <span>Ваша подписка подтверждена и активна</span><span>Если вы хотите отписаться от рассылок, нажмите на кнопку Отписаться.</span></div>
-  <button class="button button button_red button_size_l   button_without-event" title=""><span class="button_span">Отписаться</span>
-  </button>
+  <div class="subscribe__subtitle"> <span>Ваша подписка подтверждена и активна</span><span>Если вы хотите отписаться от рассылок, нажмите на кнопку Отписаться.</span></div><span class="button button button_red button_size_l   button_without-event" title=""><span class="button_span">Отписаться</span></span>
 </div>
