@@ -16,13 +16,9 @@
         span.hearing-preview-play-icon
     -->
     <!--else-->
-    <button class="hearing-preview-play" onclick="$('.hearing-preview').addClass('hearing-preview-on'); $('.hearing-preview video')[0].play();"><span class="hearing-preview-play-icon"></span></button>
-    <button class="button live_stream live_stream_l button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">Прямая трансляция</span>
-      <ion-icon class="icon" name="radio-button-on-outline"></ion-icon>
-    </button>
-    <button class="button live_stream live_stream_s button_white button_white_no-border button_radius  button_without-text button_icon-left button_without-event" title="">
-      <ion-icon class="icon" name="radio-button-on-outline"></ion-icon>
-    </button>
+    <button class="hearing-preview-play" onclick="$('.hearing-preview').addClass('hearing-preview-on'); $('.hearing-preview video')[0].play();"><span class="hearing-preview-play-icon"></span></button><span class="button live_stream live_stream_l button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">Прямая трансляция</span>
+      <ion-icon class="icon" name="radio-button-on-outline"></ion-icon></span><span class="button live_stream live_stream_s button_white button_white_no-border button_radius  button_without-text button_icon-left button_without-event" title="">
+      <ion-icon class="icon" name="radio-button-on-outline"></ion-icon></span>
   </div>
   <div class="full-width-container">
     <div class="full-width-background">

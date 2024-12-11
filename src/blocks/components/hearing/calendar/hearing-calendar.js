@@ -1,4 +1,4 @@
-const EVENTS = [
+const EVENTS_OLD = [
     {
         title: 'Публичные слушания от 01.10.2024',
         start: '2024-11-27T10:30:00',

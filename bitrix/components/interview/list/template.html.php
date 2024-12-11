@@ -3,9 +3,7 @@
   <div class="interview">
     <div class="interview__content">
       <div class="interview__info"> 
-        <div class="iinterview__dates"> 
-          <button class="button button_green button_size_xs   button_without-event" title=""><span class="button_span">Идет</span>
-          </button><span class="iinterview__date">до 29 сентября</span>
+        <div class="iinterview__dates"> <span class="button button_green button_size_xs   button_without-event" title=""><span class="button_span">Идет</span></span><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Уровень благоустройства города">Уровень благоустройства города</h3>
@@ -19,9 +17,7 @@
   <div class="interview">
     <div class="interview__content">
       <div class="interview__info"> 
-        <div class="iinterview__dates"> 
-          <button class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span>
-          </button><span class="iinterview__date">до 29 сентября</span>
+        <div class="iinterview__dates"> <span class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span></span><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
@@ -35,9 +31,7 @@
   <div class="interview">
     <div class="interview__content">
       <div class="interview__info"> 
-        <div class="iinterview__dates"> 
-          <button class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span>
-          </button><span class="iinterview__date">до 29 сентября</span>
+        <div class="iinterview__dates"> <span class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Идет</span></span><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
@@ -51,9 +45,7 @@
   <div class="interview">
     <div class="interview__content">
       <div class="interview__info"> 
-        <div class="iinterview__dates"> 
-          <button class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span>
-          </button><span class="iinterview__date">до 29 сентября</span>
+        <div class="iinterview__dates"> <span class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span></span><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
@@ -67,9 +59,7 @@
   <div class="interview">
     <div class="interview__content">
       <div class="interview__info"> 
-        <div class="iinterview__dates"> 
-          <button class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span>
-          </button><span class="iinterview__date">до 29 сентября</span>
+        <div class="iinterview__dates"> <span class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span></span><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Работа местных властей и общественные инициативы">Работа местных властей и общественные инициативы</h3>
@@ -83,9 +73,7 @@
   <div class="interview">
     <div class="interview__content">
       <div class="interview__info"> 
-        <div class="iinterview__dates"> 
-          <button class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span>
-          </button><span class="iinterview__date">до 29 сентября</span>
+        <div class="iinterview__dates"> <span class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Завершен</span></span><span class="iinterview__date">до 29 сентября</span>
         </div>
         <div class="iinterview__description"> 
           <h3 class="iinterview__title" title="Здравоохранение в Сургуте">Здравоохранение в Сургуте</h3>
