@@ -69,6 +69,11 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 .event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button .button_white .icon {
   font-size: 20px;
 }
+@media (max-width: 992px) {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__buttons {
+    display: none;
+  }
+}
 .event-card .event-card__container .event-card__info .event-card__description .event-card__department {
   display: flex;
   gap: 16px;
@@ -150,9 +155,6 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
   display: flex;
   gap: 20px;
 }
-.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button {
-  position: relative;
-}
 .event-card .event-card__container .event-card__info .event-card__buttons .button_white {
   border-color: transparent;
   background-color: transparent;
@@ -161,8 +163,16 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 .event-card .event-card__container .event-card__info .event-card__buttons .button_white .icon {
   font-size: 20px;
 }
+.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button .button_white {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button .button_white .icon {
+  font-size: 20px;
+}
 @media (max-width: 768px) {
-  .event-card .event-card__container .event-card__info .event-card__buttons .button_print {
+  .event-card .event-card__container .event-card__info .event-card__buttons .event-card__button .button_print {
     display: none;
   }
 }

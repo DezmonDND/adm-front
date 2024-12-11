@@ -74,6 +74,12 @@ body.tmp-print {
                     }
                 }
 
+                .event-card__buttons {
+                    @include respond-to(md) {
+                        display: none;
+                    }
+                }
+
                 .event-card__department {
                     display: flex;
                     gap: 16px;
@@ -130,10 +136,6 @@ body.tmp-print {
                 display: flex;
                 gap: 20px;
 
-                .event-card__button {
-                    position: relative;
-                }
-
                 .button_white {
                     border-color: transparent;
                     background-color: transparent;
@@ -144,9 +146,21 @@ body.tmp-print {
                     }
                 }
 
-                .button_print {
-                    @include respond-to(sm) {
-                        display: none;
+                .event-card__button {
+                    .button_white {
+                        border-color: transparent;
+                        background-color: transparent;
+                        padding: 0;
+
+                        .icon {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .button_print {
+                        @include respond-to(sm) {
+                            display: none;
+                        }
                     }
                 }
             }

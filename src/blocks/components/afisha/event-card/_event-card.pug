@@ -34,5 +34,11 @@ mixin event-card(data)
                                             .event-card__button
                                                 +button({ size: 'm', type: 'link', class: 'button_white button_share', href: '/about', icon: 'link-outline', text: 'Поделиться' })
                                                 +button-popup()
+                                else 
+                                    .event-card__buttons 
+                                        +button({ size: 'm', type: 'link', class: 'button_white button_print', href: '/', icon: 'print-outline', text: 'Версия для печати'})
+                                        .event-card__button
+                                            +button({ size: 'm', type: 'link', class: 'button_white button_share', href: '/about', icon: 'link-outline', text: 'Поделиться' })
+                                            +button-popup()               
 
 
