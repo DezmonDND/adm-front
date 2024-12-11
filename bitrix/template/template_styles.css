@@ -6764,6 +6764,11 @@ body.tmp-duma .main-title .main-title__container .tabs {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin: 0;
+  list-style: none;
+}
+.footer .footer__categories .footer__category-content .footer__categorie-links li {
+  margin: 0;
 }
 .footer .footer__categories .footer__category-content .footer__categorie-links .footer__categorie-link {
   text-decoration: none;
