@@ -14,8 +14,10 @@ function getLength(event) {
     }
 }
 
-const textareas = document.querySelectorAll('.textarea');
+$(document).ready(function () {
+    const textareas = document.querySelectorAll('.textarea');
 
-textareas.forEach((textarea) => {
-    textarea.addEventListener('input', getLength);
+    textareas.forEach((textarea) => {
+        textarea.addEventListener('input', getLength);
+    });
 });

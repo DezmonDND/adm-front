@@ -18,4 +18,6 @@ function replaceIcons() {
     }
 }
 
-replaceIcons();
+$(document).ready(function () {
+    replaceIcons();
+});
