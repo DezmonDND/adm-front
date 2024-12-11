@@ -15,7 +15,7 @@
     <form class="dm-applications__form"> 
       <h3 class="dm-applications__title">Основные данные</h3>
       <fieldset class="fieldset">
-        <h3 class="fieldset__title reception__sender_title">Адресат обращения</h3>
+        <h3 class="fieldset__title reception__sender_title fieldset__req">Адресат обращения</h3>
         <div class="fieldset__answers">
           <select class="select select-icon-right">
             <option class="select__option" value="Барсов Евгений Вячеславович">Барсов Евгений Вячеславович</option>
@@ -25,18 +25,18 @@
         </div>
       </fieldset>
       <fieldset class="fieldset fieldset_user-contacts">
-        <h3 class="fieldset__title reception__user_title">Ваши данные (от кого)</h3>
+        <h3 class="fieldset__title reception__user_title  fieldset__req">Ваши данные (от кого)</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input   " placeholder="Фамилия" name="firstName" value="" id="firstName"/>
-          <input class="input  input-virtual-reception_input   " placeholder="Имя" name="secondName" value="" id="secondName"/>
-          <input class="input  input-virtual-reception_input   " placeholder="Отчество" name="thirdName" value="" id="thirdName"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Фамилия" name="firstName" value="" id="firstName" required="required"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Имя" name="secondName" value="" id="secondName" required="required"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Отчество" name="thirdName" value="" id="thirdName"/>
         </div>
       </fieldset>
       <div class="dm-applications__divider"></div>
       <fieldset class="fieldset ">
-        <h3 class="fieldset__title dm-applications__title">Почтовый адрес для контакта</h3>
+        <h3 class="fieldset__title dm-applications__title  fieldset__req">Почтовый адрес для контакта</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input   " placeholder="Пример: some@mail.ru" name="companyName" value="" id="companyName"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Пример: some@mail.ru" name="companyName" value="" id="companyName" required="required"/>
         </div>
       </fieldset>
       <div class="dm-applications__get-answer">      
@@ -45,10 +45,10 @@
       </div>
       <div class="dm-applications__divider">    </div>
       <fieldset class="fieldset">
-        <h3 class="fieldset__title dm-applications__title">Обращение</h3>
+        <h3 class="fieldset__title dm-applications__title fieldset__req">Обращение</h3>
         <div class="fieldset__answers">
           <div class="textarea__container">
-            <textarea class="textarea  " placeholder="Введите ваше обращение (не больше 20 тысяч символов)" name="feedback" maxlength="20000"></textarea>
+            <textarea class="textarea  " placeholder="Введите ваше обращение (не больше 20 тысяч символов)" name="feedback" required="required" maxlength="20000"></textarea>
             <div class="counter reception_counter"><span class="current">0</span><span>/</span><span class="max">20000 </span></div>
           </div>
         </div>
