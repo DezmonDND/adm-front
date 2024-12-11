@@ -274,3 +274,19 @@ hr {
         }
     }
 }
+
+.error-input {
+    border: 1px solid $interview-end-color !important;
+}
+
+.error-input::placeholder {
+    color: $interview-end-color !important;
+}
+
+.error-message {
+    color: $interview-end-color;
+    height: 1em;
+    @include caption-5();
+}
+
+  

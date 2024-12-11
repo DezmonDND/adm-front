@@ -1,6 +1,6 @@
 
 <div class="search-by-site">
-  <input class="input input_s input-search-by-site  input-search-s " placeholder="Поиск по наименованию или номеру" name="siteSearch" value="" id="siteSearch"/>
+  <input class="input input_s input-search-by-site  input-search-s  " placeholder="Поиск по наименованию или номеру" name="siteSearch" value="" id="siteSearch"/>
   <div class="search-by-site__buttons">
     <select class="select left select_search-by-site__select select-icon-xs" name="section">
       <option class="select__option" value="Раздел">Раздел</option>
@@ -21,7 +21,7 @@
   </div>
   <div class="search-by-site__filters">
     <form class="search search-search-by-site">
-      <input class="input input_m  input-search input-search-m " placeholder="Тема или тип документа" name="laws" value="" id="laws"/>
+      <input class="input input_m  input-search input-search-m  " placeholder="Тема или тип документа" name="laws" value="" id="laws"/>
       <button class="button button_blue search__button search__button_m  button_without-text  " onclick="1" title="">
         <ion-icon class="icon" name="search-outline"></ion-icon>
       </button>
@@ -58,23 +58,17 @@
 <div class="adm-search"><a class="project-card project-card_link" href="/"> 
     <div class="project-card__content"> 
       <div class="project-card__info"> 
-        <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
-        </button>
+        <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span></span>
       </div>
     </div></a><a class="project-card project-card_link" href="/"> 
     <div class="project-card__content"> 
       <div class="project-card__info"> 
-        <h4 class="project-card__title">В Сургуте стартовала оперативно-профилактическая акция «Дети России»</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
-        </button>
+        <h4 class="project-card__title">В Сургуте стартовала оперативно-профилактическая акция «Дети России»</h4><span class="project-card__date">23 сентября 2024</span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span></span>
       </div>
     </div></a><a class="project-card project-card_link" href="/"> 
     <div class="project-card__content"> 
       <div class="project-card__info"> 
-        <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span>
-        <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span>
-        </button>
+        <h4 class="project-card__title">Дети – цветы жизни!</h4><span class="project-card__date">23 сентября 2024</span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Новости ОФПС</span></span>
       </div>
     </div></a>
   <div class="adm-search__pagination"> 

@@ -21,6 +21,7 @@ mixin reception()
                         type: 'select', 
                         title: 'Кому направляете электронную анкету', 
                         cls_title: 'reception__sender', 
+                        required:true,
                         options: [
                             { text: 'Филатов Андрей Сергеевич, Глава города Сургута', value: 'Филатов Андрей Сергеевич, Глава города Сургута', selected: true }, 
                             { text: 'Филатов', value: 'Филатов' }, 
@@ -48,17 +49,20 @@ mixin reception()
                         type: '',
                         title: 'Ваши данные',
                         span: 'Вспомогательный текст',
+                        required:true,
                         error: false,
                         inputs: [
                             {
                                 placeholder: 'Фамилия',
                                 name: 'firstName', 
                                 sort: 'virtual-reception_input',
+                                required:true,
                             },
                             {
                                 placeholder: 'Имя',
                                 name: 'secondName',
                                 sort: 'virtual-reception_input',
+                                required:true,
                             },
                             {
                                 placeholder: 'Отчество',
@@ -74,17 +78,21 @@ mixin reception()
                         type: '',
                         title: 'Данные для контакта',
                         span: 'Вспомогательный текст',
+                        required:true,
                         error: false,
                         inputs: [
                             {
                                 placeholder: 'your_email@mail.ru',
                                 name: 'email', 
                                 sort: 'virtual-reception_input',
+                                required:true,
                             },
                             {
-                                placeholder: '892343567',
+                                placeholder: 'Номер телефона',
                                 name: 'phone',
                                 sort: 'virtual-reception_input',
+                                class: 'phone_sms',
+                                required:true,
                             },
                             ]    
                     })
@@ -96,13 +104,33 @@ mixin reception()
                         span: '',
                         error: false,
                         options: {
-                            placeholder: 'Введите ваш ответ',
+                            placeholder: 'Содержание вашего обращения',
                             value: 'none',
                             cls: 'reception',
                             name: 'feedback',
+                            required:true,
                                 }
                     })
             .files-list(id='files-list-file')
             .reception__buttons
-                +add-file-button()
-                +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })
+                +add-file-button({
+                    desc: 'Принимаются файлы размером не более 2,5 МБ '
+                })
+                hr
+                h4 Введите код CAPTCHA
+                .reception__cap
+                    .reception__cap-inp
+                        +input({placeholder: 'Код CAPTCHA',
+                                    name: 'captcha', 
+                                    sort: 'virtual-reception_input',
+                                    required:true})
+                    .reception__cap-captcha
+                        img(src="./resources/captcha.png", alt="captcha")
+                .reception__submit
+                    +button({ type: 'button', size: 'l', class: 'button_blue', event: 'getValues(event)', icon: 'arrow-forward-outline', text: `Отправить обращение` })   
+                .reception__agreement
+                    span Нажимая на кнопку, я соглашаюсь с
+                        a(href='#')  правилами обработки персональных данных 
+                        | и даю свое согласие на 
+                        a(href='#') обработку персональных данных
+                

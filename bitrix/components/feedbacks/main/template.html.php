@@ -8,9 +8,7 @@
   <div class="feedback-status__container"> 
     <div class="feedback-status__title">Введите выданный номер обращения</div>
     <form class="feedback-status__form">
-      <input class="input     " placeholder="Номер обращения" value=""/>
-      <button class="button button_blue    button_without-event" title=""><span class="button_span">Искать</span>
-      </button>
+      <input class="input      " placeholder="Номер обращения" value=""/><span class="button button_blue    button_without-event" title=""><span class="button_span">Искать</span></span>
     </form>
   </div>
 </div>

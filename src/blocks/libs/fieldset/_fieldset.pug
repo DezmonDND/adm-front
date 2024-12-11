@@ -6,28 +6,28 @@ include ../inputs/_inputs
 mixin fieldset(field)
     if field.type === 'checkbox'
         fieldset(class=`${field.cls}`).fieldset
-            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""} ${field.required ? 'fieldset__req' : ''}`) #{field.title}
             .fieldset__answers_checkboxes
                 each checkbox in field.checkboxes
                     .fieldset__checkboxes
                         +checkbox(checkbox)
     else if field.type === 'radio'
         fieldset(class=`${field.cls}`).fieldset
-            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""} ${field.required ? 'fieldset__req' : ''}`) #{field.title}
             .fieldset__answers_checkboxes
                 each checkbox in field.checkboxes
                     .fieldset__checkboxes
                         +checkbox(checkbox)
     else if field.type === 'textarea'
         fieldset.fieldset
-            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""} ${field.required ? 'fieldset__req' : ''}`) #{field.title}
             .fieldset__answers
                 +textarea(field.options, field.error).fieldset__textarea
                 if field.error
                     span(class=`fieldset__span ${field.error ? 'fieldset_error' : ''}`) #{field.span}              
     else if field.type === 'select' || field.type === 'multiple'
         fieldset.fieldset
-            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+            h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""} ${field.required ? 'fieldset__req' : ''}`) #{field.title}
             .fieldset__answers
                 +select(field.name, field.type, field.iconPosition, field.options )           
     else
@@ -37,7 +37,7 @@ mixin fieldset(field)
                     h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
                     ion-icon(name= 'close-outline' ).fieldset__title-remove-btn
             else 
-                h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}`) #{field.title}
+                h3(class=`fieldset__title ${field.cls_title ? `${field.cls_title}_title` : ""}  ${field.required ? 'fieldset__req' : ''}`) #{field.title}
             .fieldset__answers
                 each input in field.inputs
                     +input(input, input.error)
