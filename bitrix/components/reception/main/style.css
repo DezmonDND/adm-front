@@ -124,7 +124,6 @@
 }
 .reception__cap .reception__cap-inp {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 8px;
@@ -140,7 +139,6 @@
 .reception__cap .reception__cap-captcha {
   display: flex;
   justify-content: center;
-  align-self: center;
 }
 @media (max-width: 992px) {
   .reception__cap .reception__cap-captcha {

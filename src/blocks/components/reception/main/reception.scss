@@ -98,7 +98,6 @@
 
     .reception__cap-inp {
         display: flex;
-        align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 8px;
@@ -115,7 +114,6 @@
     .reception__cap-captcha {
         display: flex;
         justify-content: center;
-        align-self: center;
 
         @include respond-to(md) {
             align-self: flex-start;
