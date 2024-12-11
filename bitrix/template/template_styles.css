@@ -11742,6 +11742,7 @@ body.tmp-duma .usefull-links {
   display: grid;
   grid-template-columns: repeat(3, calc((100% - 40px) / 3));
   gap: 20px;
+  width: 100%;
 }
 @media (max-width: 992px) {
   .init-projects .init-projects__list {
