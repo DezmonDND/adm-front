@@ -7277,12 +7277,24 @@ body.tmp-duma .main-title .main-title__container .tabs {
 .user-profile .user-profile__button {
   all: unset;
   cursor: pointer;
+  position: relative;
+}
+.user-profile .user-profile__button ion-icon {
+  position: absolute;
+  background-color: var(--primary-color);
+  color: var(--content-color);
+  padding: 4px;
+  border-radius: 50%;
+  right: 0;
 }
 .user-profile .user-profile__button:hover {
   opacity: 0.8;
 }
 .user-profile .user-profile__button .user-profile__avatar {
   max-width: 100px;
+  max-height: 100px;
+  width: 100px;
+  height: 100px;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -18372,6 +18384,17 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   gap: 16px;
 }
 
+.button_exit {
+  background-color: var(--content-color);
+  border: 1px solid #d10404;
+  color: #d10404;
+}
+.button_exit:hover {
+  background-color: #d10404;
+  border: 1px solid #d10404;
+  color: var(--content-color);
+}
+
 .profile-anket-main {
   max-width: 866px;
   width: 100%;
@@ -21769,6 +21792,48 @@ body.compensate-for-scrollbar {
     font-size: calc(10px * var(--scale));
     line-height: calc(14px * var(--lh));
   }
+}
+
+.exit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--content-color);
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .exit {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: unset;
+    border-radius: 0;
+    overflow: hidden;
+  }
+}
+.exit .login__content-top {
+  justify-content: flex-end;
+}
+.exit .login__content-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.exit .login__content-main__confirm-email span {
+  color: red;
+}
+
+.exit.hidden {
+  display: none !important;
 }
 
 * {
