@@ -185,7 +185,7 @@
           </div>
         </li>
       </ul>
-      <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+      <div class="header__socials"><a class="vk_icon header__social-icon" href="/" title="Ссылка на социальные сети Вконтакте"></a><a class="ok_icon  header__social-icon" href="/" title="Ссылка на социальные сети Одноклассники"></a><a class="tg_icon header__social-icon" href="/" title="Ссылка на социальные сети Телеграмм"></a>
       </div>
     </div>
     <div class="header__buttons"> 
@@ -327,7 +327,7 @@
         <li class="header__link"> <a href="/">Документы          </a></li>
         <li class="header__link"> <a href="/">Контакты          </a></li>
       </ul>
-      <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+      <div class="header__socials"><a class="vk_icon header__social-icon" href="/" title="Ссылка на социальные сети Вконтакте"></a><a class="ok_icon header__social-icon" href="/" title="Ссылка на социальные сети Одноклассники"></a><a class="tg_icon header__social-icon" href="/" title="Ссылка на социальные сети Телеграмм"></a>
       </div>
     </div>
     <div class="header__buttons"> 

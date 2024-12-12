@@ -3,4 +3,4 @@ mixin header-socials(data = [])
         each link in data
             - const hasIcon = link.class ? link.class : ''
 
-            a(href=link.href class=[hasIcon]).header__social-icon
+            a(href=link.href class=[hasIcon] title=link.title).header__social-icon
