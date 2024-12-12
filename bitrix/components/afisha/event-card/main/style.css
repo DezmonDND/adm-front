@@ -56,7 +56,7 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 .event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button {
     display: block;
   }

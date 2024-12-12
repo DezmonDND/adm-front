@@ -58,7 +58,7 @@ body.tmp-print {
                     .event-card__title-button {
                         display: none;
 
-                        @include respond-to(sm) {
+                        @include respond-to(md) {
                             display: block;
                         }
 

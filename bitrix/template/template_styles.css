@@ -8790,7 +8790,7 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 .event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button {
     display: block;
   }
@@ -10185,7 +10185,7 @@ body.tmp-print .project-generation__top-btns {
   color: var(--main-text);
 }
 .project-generation__container .event-card .event-card__container .event-card__description {
-  margin: 0 0 32px;
+  margin: 0;
 }
 @media (max-width: 768px) {
   .project-generation__container .event-card .event-card__container .event-card__buttons .button_without-text {
@@ -10201,7 +10201,7 @@ body.tmp-print .project-generation__top-btns {
 
 .project-generation__main-container,
 .project-generation__bottom-container {
-  max-width: 867px;
+  max-width: 978px;
   padding: 32px 0px;
   padding-top: 48px;
   width: 100%;
