@@ -49,22 +49,22 @@ const sliders = [
         },
     },
     // Главные новости
-    {
-        selector: '#news-main__card-list',
-        nextArrow: '.slider__news-main-next',
-        prevArrow: '.slider__news-main-prev',
-        options: {
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            variableWidth: true,
-            responsive: [
-                { breakpoint: 768, settings: { slidesToShow: 2 } },
-                { breakpoint: 500, settings: { slidesToShow: 1 } },
-            ],
-        },
-    },
+    // {
+    //     selector: '#news-main__card-list',
+    //     nextArrow: '.slider__news-main-next',
+    //     prevArrow: '.slider__news-main-prev',
+    //     options: {
+    //         infinite: true,
+    //         slidesToShow: 3,
+    //         slidesToScroll: 1,
+    //         arrows: false,
+    //         variableWidth: true,
+    //         responsive: [
+    //             { breakpoint: 768, settings: { slidesToShow: 2 } },
+    //             { breakpoint: 500, settings: { slidesToShow: 1 } },
+    //         ],
+    //     },
+    // },
     // Анонсы и события
     {
         selector: '#events__news',
@@ -83,7 +83,6 @@ const sliders = [
             ],
         },
     },
-
     // Помогите городу стать лучше
     {
         selector: '#help-city__content',
@@ -192,6 +191,7 @@ $(window)
             });
         } else if (currentWidth >= breakpoint && slidersInitialized) {
             $(document).ready(function () {
+                destroySlider('#news-main__card-list');
                 slidersToManage.forEach((slider) => destroySlider(slider.selector));
                 slidersInitialized = false;
             });
@@ -216,4 +216,36 @@ function findAndCreateSlider(selector) {
     }
 }
 
-findAndCreateSlider('#events__news');
+// Слайдер новостей
+const newsOptions = {
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    variableWidth: true,
+    responsive: [
+        { breakpoint: 768, settings: { slidesToShow: 2 } },
+        { breakpoint: 500, settings: { slidesToShow: 1 } },
+    ],
+};
+
+$('#news-main__card-list').slick(newsOptions);
+
+$('.slider__news-main-next').on('click', function () {
+    $('#news-main__card-list').slick('slickNext');
+});
+
+$('.slider__news-main-prev').on('click', function () {
+    $('#news-main__card-list').slick('slickPrev');
+});
+
+function reinitSlider(selector) {
+    const $slider = $(selector);
+
+    if ($slider.hasClass('slick-initialized')) {
+        $slider.slick('destroy');
+        $($slider).slick(newsOptions);
+    }
+}
+
+reinitSlider('#news-main__card-list');

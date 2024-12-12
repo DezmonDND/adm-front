@@ -53,22 +53,6 @@ $(document).ready(function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const btns = document.querySelectorAll('.button_print');
-
-    btns.forEach(btn => btn.addEventListener('click', (e) => {
-        e.preventDefault()
-        const url = new URL(window.location.href)
-        url.searchParams.append("print", "Y")
-        window.open(url.toString(), '_blank')
-    }))
-
-    let params = new URLSearchParams(document.location.search);
-    let print = params.get("print");
-    if (print === 'Y') {
-        window.print();
-    }
-})
 $(document).ready(function () {
     // Инициализация всех popup-блоков
     $('.popup-fade').each(function () {
@@ -146,6 +130,22 @@ $(document).ready(function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const btns = document.querySelectorAll('.button_print');
+
+    btns.forEach(btn => btn.addEventListener('click', (e) => {
+        e.preventDefault()
+        const url = new URL(window.location.href)
+        url.searchParams.append("print", "Y")
+        window.open(url.toString(), '_blank')
+    }))
+
+    let params = new URLSearchParams(document.location.search);
+    let print = params.get("print");
+    if (print === 'Y') {
+        window.print();
+    }
+})
 $(document).ready(function () {
     replaceClass();
 
@@ -259,6 +259,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500); 
 });
 
+function getLength(event) {
+    const textarea = event.target;
+    const counterCurrent = textarea.parentNode.querySelector('.current');
+    const counterMax = textarea.parentNode.querySelector('.max');
+
+    if (counterCurrent && counterMax) {
+        const textLength = textarea.value.length;
+        counterCurrent.textContent = textLength;
+        if (textLength > Number(counterMax.textContent)) {
+            textarea.style.borderColor = '#D10404';
+        } else {
+            textarea.style.borderColor = '';
+        }
+    }
+}
+
+$(document).ready(function () {
+    const textareas = document.querySelectorAll('.textarea');
+
+    textareas.forEach((textarea) => {
+        textarea.addEventListener('input', getLength);
+    });
+});
+
 $(document).ready(function () {
     $('.toggle-container').each(function () {
         // Находим основные элементы
@@ -317,29 +341,5 @@ $(document).ready(function () {
             // Переключаем иконку стрелки
             header.find('.toggle-arrow').toggleClass('rotated');
         });
-    });
-});
-
-function getLength(event) {
-    const textarea = event.target;
-    const counterCurrent = textarea.parentNode.querySelector('.current');
-    const counterMax = textarea.parentNode.querySelector('.max');
-
-    if (counterCurrent && counterMax) {
-        const textLength = textarea.value.length;
-        counterCurrent.textContent = textLength;
-        if (textLength > Number(counterMax.textContent)) {
-            textarea.style.borderColor = '#D10404';
-        } else {
-            textarea.style.borderColor = '';
-        }
-    }
-}
-
-$(document).ready(function () {
-    const textareas = document.querySelectorAll('.textarea');
-
-    textareas.forEach((textarea) => {
-        textarea.addEventListener('input', getLength);
     });
 });
