@@ -66,6 +66,9 @@
         .user-profile__button {
             .user-profile__avatar {
                 max-width: 64px;
+                max-height: 64px;
+                height: 64x;
+                width: 64px;
             }
         }
 
@@ -88,7 +91,12 @@
         gap: 24px;
 
         .user-profile__button {
-            .user-profile__avatar {}
+            .user-profile__avatar {
+                max-width: 50px;
+                max-height: 50px;
+                height: 50px;
+                width: 50px;
+            }
         }
 
         .user-profile__info {
