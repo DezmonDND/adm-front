@@ -44,6 +44,10 @@ body.tmp-duma .main-title .main-title__container .tabs {
                 border-bottom: 2px solid $tertiary-text;
             }
 
+            &:focus-visible {
+                @include focus-visible;
+            }
+
             &_active {
                 border-bottom: 2px solid $second-text;
                 color: $second-text;

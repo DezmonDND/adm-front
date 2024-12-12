@@ -7,13 +7,7 @@
           <div class="event-card">
             <div class="event-card__container"> 
               <div class="event-card__info">
-                <div class="event-card__tags">
-                  <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">История</span>
-                  </button>
-                  <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
-                  </button>
-                  <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Экономика</span>
-                  </button>
+                <div class="event-card__tags"><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">История</span></span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Награды</span></span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Экономика</span></span>
                 </div>
                 <div class="event-card__description"> 
                   <h2 class="event-card__title">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</h2>
@@ -60,7 +54,7 @@
         <p class="afisha-event__text">Сабантуй один из самых массовых народных праздников в нашем городе. Его традиционно посещает большое количество сургутян. Мероприятие окрашено яркой национальной палитрой, дружественной атмосферой и взаимопониманием. Праздник уже давно стал народным. Его отмечают не только татары и башкиры, но и все жители Сургута.</p>
       </div>
       <div class="afisha-event__banner"> 
-        <div class="afisha-event__banner-list" id="afisha-event__banner-list"><a href="../img/banner.png" title="Первый слайд" data-fancybox="afisha-event__banner-list"><img class="afisha-event__image" src="/local/templates/surgut/img/banner.png" alt="Баннер события"/></a><a href="../img/banner_3.png" title="Второй слайд" data-fancybox="afisha-event__banner-list"><img class="afisha-event__image" src="/local/templates/surgut/img/banner_3.png" alt="Баннер события"/></a></div>
+        <div class="afisha-event__banner-list" id="afisha-event__banner-list"><a href="../img/banner.png" title="Первый слайд" data-fancybox="afisha-event__banner-list" onclick="showGallery()"><img class="afisha-event__image" src="/local/templates/surgut/img/banner.png" alt="Баннер события"/></a><a href="../img/banner_3.png" title="Второй слайд" data-fancybox="afisha-event__banner-list" onclick="showGallery()"><img class="afisha-event__image" src="/local/templates/surgut/img/banner_3.png" alt="Баннер события"/></a></div>
         <div class="afisha-event__navigation"> <span class="afisha-event__comment">Небольшой комментарий к фотографии</span>
           <div class="slider"><a class="slider__link slider__afisha-event-prev">
               <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__afisha-event-next">

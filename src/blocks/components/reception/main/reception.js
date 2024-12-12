@@ -63,3 +63,5 @@ function deleteFormField(button) {
     const fieldset = button.closest('.fieldset');
     fieldset.remove();
 }
+
+$(".phone_sms").inputmask({"mask": "+7 (999) 999-99-99"});

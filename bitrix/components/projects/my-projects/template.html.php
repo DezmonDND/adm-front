@@ -12,9 +12,7 @@
           <input class="сheckbox  " type="checkbox" id="1" name="undefined" checked="checked"/>
           <label for="1"> </label>
           <div class="project-card__info"> 
-            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-            <button class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Не заполнен</span>
-            </button>
+            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span><span class="button button_blue button_radius button_size_xs   button_without-event" title=""><span class="button_span">Не заполнен</span></span>
           </div>
         </div>
       </div>
@@ -23,9 +21,7 @@
           <input class="сheckbox  " type="checkbox" id="2" name="undefined" checked="checked"/>
           <label for="2"> </label>
           <div class="project-card__info"> 
-            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-            <button class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Выполнен</span>
-            </button>
+            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span><span class="button button_red button_radius button_size_xs   button_without-event" title=""><span class="button_span">Выполнен</span></span>
           </div>
         </div>
       </div>
@@ -34,9 +30,7 @@
           <input class="сheckbox  " type="checkbox" id="3" name="undefined" checked="checked"/>
           <label for="3"> </label>
           <div class="project-card__info"> 
-            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span>
-            <button class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Выполнен</span>
-            </button>
+            <h4 class="project-card__title">Название инициативного проекта</h4><span class="project-card__date">Создан 23 сентября 2024</span><span class="button button_green button_radius button_size_xs   button_without-event" title=""><span class="button_span">Выполнен</span></span>
           </div>
         </div>
       </div>

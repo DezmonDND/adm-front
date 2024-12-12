@@ -1,0 +1,31 @@
+
+
+mixin balloon(data = {})
+    .balloon 
+        .balloon-title
+            .balloon-name 
+                span= data.name
+            .balloon-btns 
+                ion-icon(name = 'link-outline', onclick = '')
+                ion-icon(name = 'close', onclick = '')
+        .balloon-img 
+            img(src=`./resources/${data.img}`)
+        .balloon-info
+            .balloon-info-item
+                span Дата внесения
+                span= data.date
+            .balloon-info-item
+                span Срок реализации
+                span= data.term
+            .balloon-info-item
+                span Территория реализации
+                span= data.territory
+            .balloon-info-item
+                span Инициатор
+                span= data.initiator
+            .balloon-info-item
+                span Общая стоимость
+                span= data.cost
+            .balloon-info-item
+                span Статус проекта
+                span= data.status

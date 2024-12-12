@@ -15,14 +15,14 @@
       <h3 class="dm-reception__title">Форма отправки обращения  </h3>
       <div class="dm-reception__fileds">
         <div class="dm-reception__name-inputs">
-          <input class="input     " placeholder="Фамилия*" name="first_name" value="" id="first_name"/>
-          <input class="input     " placeholder="Имя*" name="second_name" value="" id="second_name"/>
-          <input class="input     " placeholder="Отчество*" name="third_name" value="" id="third_name"/>
+          <input class="input      " placeholder="Фамилия*" name="first_name" value="" id="first_name"/>
+          <input class="input      " placeholder="Имя*" name="second_name" value="" id="second_name"/>
+          <input class="input      " placeholder="Отчество*" name="third_name" value="" id="third_name"/>
         </div>
         <div class="dm-reception__inputs">   
-          <input class="input     " placeholder="Регион и населенный пункт*" name="city" value="" id="city"/>
-          <input class="input     " placeholder="Почтовый адрес" name="post_adress" value="" id="post_adress"/>
-          <input class="input     " placeholder="Электронная почта*" name="email" value="" id="email"/>
+          <input class="input      " placeholder="Регион и населенный пункт*" name="city" value="" id="city"/>
+          <input class="input      " placeholder="Почтовый адрес" name="post_adress" value="" id="post_adress"/>
+          <input class="input      " placeholder="Электронная почта*" name="email" value="" id="email"/>
           <div class="textarea__container">
             <textarea class="textarea  " placeholder="Ваше обращение / вопрос*" name="question" maxlength="20000"></textarea>
             <div class="counter "><span class="current">0</span><span>/</span><span class="max">20000 </span></div>

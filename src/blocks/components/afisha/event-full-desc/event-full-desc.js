@@ -25,7 +25,9 @@ $(document).ready(function () {
     $('#afisha-event__banner-list').on('afterChange', function (event, slick, currentSlide) {
         $('.slider__counter').text(parseInt(slick.currentSlide + 1) + ' / ' + slick.slideCount);
     });
+});
 
+function showGallery() {
     const selector = '.slick-slide:not(.slick-cloned)';
 
     $('[data-fancybox="afisha-event__banner-list"]').fancybox({
@@ -33,4 +35,4 @@ $(document).ready(function () {
         backFocus: false,
         loop: true,
     });
-});
+}

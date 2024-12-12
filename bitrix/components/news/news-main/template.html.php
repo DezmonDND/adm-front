@@ -16,76 +16,56 @@
           <div class="news-main__card-list" id="news-main__card-list"> <a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                  <div class="news-main-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
-                    </button>
+                  <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
               </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                  <div class="news-main-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
-                    </button>
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
-                    </button>
+                  <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span></span><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
               </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                  <div class="news-main-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                    </button>
+                  <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
               </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
-                  <div class="news-main-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                    </button>
+                  <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
               </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
-                  <div class="news-main-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span>
-                    </button>
+                  <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">история</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
               </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
-                  <div class="news-main-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span>
-                    </button>
-                    <button class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span>
-                    </button>
+                  <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Медицина</span></span><span class="button button_blue button_radius  news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Награды</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
               </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
-                  <div class="news-main-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span>
-                    </button>
+                  <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Пожары</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
               </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_4.jpg" alt="Изображения"/>
-                  <div class="news-main-card__tags">
-                    <button class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Экономика</span>
-                    </button>
+                  <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Экономика</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>

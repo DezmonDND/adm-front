@@ -22,23 +22,27 @@ mixin footer(links)
                     img(src=`../icons/mail-footer_icon.svg`).footer__email-icon
                     span.footer__email-title gorod@admsurgut.ru   
             .footer__categories
-                ul.footer__category-content
+                div.footer__category-content
                     h5.footer__categorie-title О Сургуте 
-                    li.footer__categorie-links
+                    ul.footer__categorie-links
                         each link in links.about
-                            a(href=`${link.href}`).footer__categorie-link #{link.title}            
-                ul.footer__category-content
+                            li
+                                a(href=`${link.href}`).footer__categorie-link #{link.title}            
+                div.footer__category-content
                     h5.footer__categorie-title Городская власть
-                    li.footer__categorie-links
+                    ul.footer__categorie-links
                         each link in links.city
-                            a(href=`${link.href}`).footer__categorie-link #{link.title}             
-                ul.footer__category-content
+                            li
+                                a(href=`${link.href}`).footer__categorie-link #{link.title}             
+                div.footer__category-content
                     h5.footer__categorie-title Документы
-                    li.footer__categorie-links
+                    ul.footer__categorie-links
                         each link in links.documents
-                            a(href=`${link.href}`).footer__categorie-link #{link.title}            
-                ul.footer__category-content
+                            li
+                                a(href=`${link.href}`).footer__categorie-link #{link.title}            
+                div.footer__category-content
                     h5.footer__categorie-title Категория
-                    li.footer__categorie-links
+                    ul.footer__categorie-links
                         each link in links.category
-                            a(href=`${link.href}`).footer__categorie-link #{link.title}                                    
+                            li
+                                a(href=`${link.href}`).footer__categorie-link #{link.title}                                    
