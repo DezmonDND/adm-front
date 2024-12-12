@@ -13,6 +13,10 @@
     max-width: 400px;
     width: 100%;
 
+    .login__content {
+        gap: 16px;
+    }
+
     @include respond-to(xs) {
         height: 110vh;
         display: flex;
