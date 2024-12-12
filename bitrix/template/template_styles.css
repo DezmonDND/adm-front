@@ -17292,12 +17292,17 @@ body.tmp-duma .button-popup__content {
   gap: 12px;
   margin-bottom: 32px;
 }
+@media (max-width: 550px) {
+  .adm-all-news .adm-all-news__filters {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .adm-all-news .adm-all-news__filters .select2-container .select2-selection--single .select2-selection__rendered {
   padding: 11px 34px 11px 16px !important;
-  box-sizing: border-box;
 }
 .adm-all-news .adm-all-news__filters .select2-container--default .select2-selection--single {
-  border-radius: 4px !important;
+  border-radius: 6px !important;
 }
 .adm-all-news .adm-all-news__filters .select2-selection__arrow {
   right: 16px !important;
@@ -17312,11 +17317,14 @@ body.tmp-duma .button-popup__content {
   position: relative;
 }
 .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button {
-  border-radius: 4px;
+  border-radius: 6px;
   max-width: 480px;
   width: max-content;
+  padding: 11px 16px;
+  border: 1px solid #c6cbd9;
 }
 .adm-all-news .adm-all-news__calendar .adm-all-news__calendar-button:hover {
+  border-color: #858c9c;
   color: var(--main-text);
 }
 @media (max-width: 410px) {
@@ -21705,24 +21713,49 @@ body.compensate-for-scrollbar {
     max-width: calc(100% - 10px);
   }
 }
+.baloon-container {
+  top: 2px;
+  left: 58px;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .baloon-container {
+    position: fixed;
+    z-index: 1010;
+    bottom: 0;
+  }
+}
+
 .balloon {
+  display: none;
   padding: 20px;
   height: 100%;
+  height: max-content;
   max-height: 444px;
   width: 100%;
   max-width: 400px;
   background-color: var(--content-color);
   border-radius: 12px;
   box-sizing: border-box;
-  display: flex;
   flex-direction: column;
   gap: 24px;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+  z-index: 1100;
 }
 @media (max-width: 768px) {
   .balloon {
-    max-height: 303px;
+    display: flex;
+    position: fixed;
+    max-width: unset;
+    max-height: 70%;
+    bottom: -100%;
+    opacity: 0;
+    transition: bottom 0.1s linear;
+    will-change: bottom;
   }
+}
+.balloon_active {
+  bottom: 0;
 }
 
 .balloon-title {
