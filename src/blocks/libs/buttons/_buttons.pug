@@ -9,7 +9,7 @@ mixin button(options)
     - const classHasText = options.text ? '' : 'button_without-text'
     - const classIconPosition = options.iconPosition ? 'button_icon-'+options.iconPosition : ''
     - const classHasEvent = options.event ? '' : 'button_without-event'
-    - const hasTitle = options.title ? options.title : ''
+    - const hasTitle = options.text ? options.text : 'Кнопка'
     
     if options.type === 'link'
         a.button.button_link(
