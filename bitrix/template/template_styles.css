@@ -4584,6 +4584,10 @@ body.blue-theme {
 .textarea__container .textarea::placeholder {
   color: var(--tertiary-text);
 }
+.textarea__container .textarea:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
+}
 @media (max-width: 992px) {
   .textarea__container .textarea {
     padding: 15px 16px;
@@ -5610,6 +5614,10 @@ body.tmp-duma .select2-container--default .select2-selection--single {
     line-height: calc(20px * var(--lh));
   }
 }
+.сheckbox + label:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
+}
 @media (max-width: 768px) {
   .сheckbox + label {
     height: 16px;
@@ -6144,6 +6152,10 @@ body.tmp-duma .pag-button_active:hover {
 .add-file-button label:hover {
   color: var(--primary-color-hover);
   border-color: var(--primary-color-hover);
+}
+.add-file-button label:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
 }
 .add-file-button input {
   display: none;
@@ -11258,6 +11270,10 @@ body.tmp-duma .usefull-links {
   width: 100%;
   gap: 24px;
   justify-content: center;
+}
+.news-top__container:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
 }
 @media (max-width: 992px) {
   .news-top__container {
@@ -21786,6 +21802,7 @@ a:focus-visible,
 button:focus-visible,
 li:focus-visible,
 input:focus-visible,
+textarea:focus-visible,
 select:focus-visible,
 span:focus-visible,
 div:focus-visible {
