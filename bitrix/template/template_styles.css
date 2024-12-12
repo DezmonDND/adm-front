@@ -12840,6 +12840,7 @@ body.tmp-duma .calendar-dm .vanilla-calendar-arrow_next::before {
 
 .calendar-dm {
   background-color: var(--content-color);
+  z-index: 1;
 }
 .calendar-dm .vanilla-calendar-header {
   margin-bottom: 20px;
