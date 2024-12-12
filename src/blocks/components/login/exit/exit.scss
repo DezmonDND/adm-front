@@ -1,0 +1,43 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.exit {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $content-color;
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+
+    @include respond-to(xs) {
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        max-width: unset;
+        border-radius: 0;
+        overflow: hidden;
+    }
+    .login__content-top {
+        justify-content: flex-end;
+    }
+    .login__content-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .login__content-main__confirm-email span{
+        color: red;
+    }
+}
+
+.exit.hidden {
+    display: none !important;
+}
+
