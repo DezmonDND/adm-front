@@ -7332,6 +7332,9 @@ body.tmp-duma .main-title .main-title__container .tabs {
   }
   .user-profile .user-profile__button .user-profile__avatar {
     max-width: 64px;
+    max-height: 64px;
+    height: 64x;
+    width: 64px;
   }
   .user-profile .user-profile__info .user-profile__name {
     font-size: 24px;
@@ -7345,6 +7348,12 @@ body.tmp-duma .main-title .main-title__container .tabs {
 @media screen and (max-width: 600px) {
   .user-profile {
     gap: 24px;
+  }
+  .user-profile .user-profile__button .user-profile__avatar {
+    max-width: 50px;
+    max-height: 50px;
+    height: 50px;
+    width: 50px;
   }
   .user-profile .user-profile__info .user-profile__name {
     font-size: 20px;
@@ -9999,13 +10008,13 @@ body.tmp-duma .short-filelist ion-icon {
   font-weight: 600;
   color: var(--main-text);
   font-weight: 500;
-  font-size: calc(16px * var(--scale));
-  line-height: calc(20px * var(--lh));
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .login__content-main__title span {
-    font-size: calc(12px * var(--scale));
-    line-height: calc(16px * var(--lh));
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 
@@ -10035,13 +10044,13 @@ body.tmp-duma .short-filelist ion-icon {
 .login__content-main__confirm-email span {
   color: var(--primary-color);
   cursor: pointer;
-  font-weight: 300;
   font-size: calc(12px * var(--scale));
-  line-height: calc(16px * var(--lh));
+  line-height: calc(14px * var(--lh));
+  font-weight: 500;
 }
 @media (max-width: 992px) {
   .login__content-main__confirm-email span {
-    font-size: calc(10px * var(--scale));
+    font-size: calc(11px * var(--scale));
     line-height: calc(14px * var(--lh));
   }
 }
@@ -21806,6 +21815,9 @@ body.compensate-for-scrollbar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 100%;
+}
+.exit .login__content {
+  gap: 16px;
 }
 @media (max-width: 550px) {
   .exit {
