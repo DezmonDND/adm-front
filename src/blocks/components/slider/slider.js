@@ -244,8 +244,12 @@ function reinitSlider(selector) {
 
     if ($slider.hasClass('slick-initialized')) {
         $slider.slick('destroy');
+        console.log(`Слайдер ${selector} разобран`);
         $($slider).slick(newsOptions);
+        console.log(`Слайдер ${selector} с опциями ${Object.entries(newsOptions)} собран`);
     }
 }
 
-reinitSlider('#news-main__card-list');
+$(document).ready(function () {
+    reinitSlider('#news-main__card-list');
+});
