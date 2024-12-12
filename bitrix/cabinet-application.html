@@ -445,7 +445,10 @@
         </div>
       </div>
       <div class="user-profile"> 
-        <button class="user-profile__button" onclick="changeAvatar()" type="button"> <img class="user-profile__avatar" src="/local/templates/surgut/img/user_avatar.png" alt="Аватар"/></button>
+        <label class="user-profile__button">
+          <input type="file" accept="image/*" hidden="hidden"/><img class="user-profile__avatar" src="/local/templates/surgut/img/user_avatar.png" alt="Аватар"/>
+          <ion-icon name="pencil-outline"></ion-icon>
+        </label>
         <div class="user-profile__info"> 
           <h2 class="user-profile__name">Валентинов Георгий Викторович</h2><span class="user-profile_job">     </span>
         </div>

@@ -445,7 +445,10 @@
         </div>
       </div>
       <div class="user-profile"> 
-        <button class="user-profile__button" onclick="changeAvatar()" type="button"> <img class="user-profile__avatar" src="/local/templates/surgut/img/user_avatar.png" alt="Аватар"/></button>
+        <label class="user-profile__button">
+          <input type="file" accept="image/*" hidden="hidden"/><img class="user-profile__avatar" src="/local/templates/surgut/img/user_avatar.png" alt="Аватар"/>
+          <ion-icon name="pencil-outline"></ion-icon>
+        </label>
         <div class="user-profile__info"> 
           <h2 class="user-profile__name">Валентинов Георгий Викторович</h2><span class="user-profile_job">     </span>
         </div>
@@ -521,6 +524,24 @@
               <button class="button button_blue button_size_m    " onclick="someFunction()" title="" disabled="disabled"><span class="button_span">Выбрать</span>
               </button>
             </div>
+          </div>
+        </div>
+        <hr/>
+        <button class="button button_red button_exit button_size_m   " onclick="showExit()" title=""><span class="button_span">Выйти из аккаунта</span>
+        </button>
+      </div>
+      <div class="overlay hidden"></div>
+      <div class="exit hidden">
+        <div class="login__content">
+          <div class="login__content-top">
+            <ion-icon class="icon" name="close-outline" onclick="hideExit()"></ion-icon>
+          </div>
+          <div class="login__content-main">
+            <div class="login__content-main__text">
+              <div class="login__content-main__title"><span>Вы действительно хотите выйти из аккаунта?</span></div>
+              <div class="login__content-main__subtitle"><span>Вы можете войти обратно в любой момент </span></div>
+            </div>
+            <div class="login__content-main__confirm-email"><span onclick="">Да, выйти из аккаунта</span></div>
           </div>
         </div>
       </div>
