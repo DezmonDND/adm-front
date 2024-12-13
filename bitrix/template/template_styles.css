@@ -12747,6 +12747,10 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
 body.tmp-duma .calendar-dm {
   background-color: var(--cards-background);
 }
+body.tmp-duma .calendar-dm:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
+}
 body.tmp-duma .calendar-dm .calendar-day_selected-first,
 body.tmp-duma .calendar-dm .calendar-day_selected-last {
   background-color: var(--primary-color-green);

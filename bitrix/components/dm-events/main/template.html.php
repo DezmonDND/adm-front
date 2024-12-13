@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="filters-popup__calendar"><span class="filters-popup__title">Выберите период публикации                  </span>
-          <div class="calendar-dm" id="calendar-dm-events-popup"></div>
+          <div class="calendar-dm" id="calendar-dm-events-popup" aria-label="Календарь для выбора дат" tabindex="0"></div>
         </div>
         <div class="filters-popup__buttons">             
           <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);" title="" role="button" aria-label="Искать"><span class="button_span">Искать</span>
@@ -37,7 +37,7 @@
       </button>
     </div>
     <div class="dm-events__calendar">
-      <div class="calendar-dm" id="calendar-dm-events"></div>
+      <div class="calendar-dm" id="calendar-dm-events" aria-label="Календарь для выбора дат" tabindex="0"></div>
     </div>
     <div class="filters">
       <div class="filters_container">
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="chronicle__calendar">
-          <div class="calendar-dm" id="calendar-duma"></div>
+          <div class="calendar-dm" id="calendar-duma" aria-label="Календарь для выбора дат" tabindex="0"></div>
         </div>
       </div>
     </div>

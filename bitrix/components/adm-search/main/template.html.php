@@ -16,7 +16,7 @@
     <button class="button button_blue button_size_m   " onclick="console.log(1);" title="" role="button" aria-label="Искать"><span class="button_span">Искать</span>
     </button>
     <div class="search-by-site__calendar"> 
-      <div class="calendar-dm" id="calendar"></div>
+      <div class="calendar-dm" id="calendar" aria-label="Календарь для выбора дат" tabindex="0"></div>
     </div>
   </div>
   <div class="search-by-site__filters">
@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="filters-popup__calendar"><span class="filters-popup__title">Выберите период публикации                  </span>
-        <div class="calendar-dm" id="calendar-popup"></div>
+        <div class="calendar-dm" id="calendar-popup" aria-label="Календарь для выбора дат" tabindex="0"></div>
       </div>
       <div class="filters-popup__buttons">             
         <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);" title="" role="button" aria-label="Искать"><span class="button_span">Искать</span>

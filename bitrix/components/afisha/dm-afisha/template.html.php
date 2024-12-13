@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="chronicle__calendar">
-          <div class="calendar-dm" id="calendar-duma"></div>
+          <div class="calendar-dm" id="calendar-duma" aria-label="Календарь для выбора дат" tabindex="0"></div>
         </div>
       </div>
     </div>
