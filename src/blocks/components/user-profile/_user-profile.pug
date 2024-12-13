@@ -1,7 +1,9 @@
 mixin user_profile(data)
     .user-profile 
-        button(onclick=data.onclick type='button').user-profile__button 
+        label.user-profile__button
+            input(type="file" accept="image/*" onchange=data.onFileChange hidden)
             img.user-profile__avatar(src=`./img/${data.icon}`, alt="Аватар")
+            ion-icon(name='pencil-outline')
         .user-profile__info 
             h2.user-profile__name #{data.name}
             span.user-profile_job #{data.job}     

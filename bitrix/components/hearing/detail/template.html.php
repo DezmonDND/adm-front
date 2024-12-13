@@ -5,7 +5,7 @@
   </div>
 </div>
 <div class="hearing-detail">
-  <div class="hearing-preview"><img src="/resources/hearing.jpg"/>
+  <div class="hearing-preview"><img src="/resources/hearing.jpg" alt="Изображение"/>
     <video width="100%" height="auto" poster="http://dumasurgut.ru/getattachment/9884c888-bc58-4c22-bc13-99920c9d6adc/46453.aspx" preload="auto" controls="controls">
       <source src="http://vs.dumasurgut.ru:8080/vod/2024/ps130524.mp4" type="video/mp4"/>
       <p style="color:whitesmoke; margin: 5px 5px;">Ваш браузер не может воспроизвести видео. Используйте современный браузер с поддержкой HTML5</p>
@@ -16,7 +16,7 @@
         span.hearing-preview-play-icon
     -->
     <!--else-->
-    <button class="hearing-preview-play" onclick="$('.hearing-preview').addClass('hearing-preview-on'); $('.hearing-preview video')[0].play();"><span class="hearing-preview-play-icon"></span></button><span class="button live_stream live_stream_l button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">Прямая трансляция</span>
+    <button class="hearing-preview-play" onclick="$('.hearing-preview').addClass('hearing-preview-on'); $('.hearing-preview video')[0].play();" aria-label="Воспроизвести"><span class="hearing-preview-play-icon"></span></button><span class="button live_stream live_stream_l button_white button_white_no-border button_radius   button_icon-left button_without-event" title=""><span class="button_span">Прямая трансляция</span>
       <ion-icon class="icon" name="radio-button-on-outline"></ion-icon></span><span class="button live_stream live_stream_s button_white button_white_no-border button_radius  button_without-text button_icon-left button_without-event" title="">
       <ion-icon class="icon" name="radio-button-on-outline"></ion-icon></span>
   </div>
@@ -36,7 +36,7 @@
               <div class="hearing-detail-description-label">Время</div>18:00
             </div>
             <div class="hearing-detail-description-meta-item">
-              <button class="button button_white button_size_s  button_icon-left " onclick="console.log(&quot;Шаринг&quot;)" title=""><span class="button_span">Поделиться</span>
+              <button class="button button_white button_size_s  button_icon-left " onclick="console.log(&quot;Шаринг&quot;)" title="" role="button" aria-label="Поделиться"><span class="button_span">Поделиться</span>
                 <ion-icon class="icon" name="link"></ion-icon>
               </button>
             </div>
@@ -46,8 +46,8 @@
     </div>
   </div>
   <div class="hearing-detail-links">
-    <div class="links-list"><a class="links-list-item" href="#">Назначающий НПА
-        <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Объявление с материалами
+    <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Назначающий НПА">Назначающий НПА
+        <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Объявление с материалами">Объявление с материалами
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
     </div>
   </div>

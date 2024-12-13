@@ -12,6 +12,15 @@
     .user-profile__button {
         all: unset;
         cursor: pointer;
+        position: relative;
+        ion-icon {
+            position: absolute;
+            background-color: $primary-color;
+            color: $content-color;
+            padding: 4px;
+            border-radius: 50%;
+            right: 0;
+        }
 
         &:hover {
             opacity: .8;
@@ -19,6 +28,9 @@
 
         .user-profile__avatar {
             max-width: 100px;
+            max-height: 100px;
+            width: 100px;
+            height: 100px;
             width: 100%;
             object-fit: cover;
             object-position: center;
@@ -54,6 +66,9 @@
         .user-profile__button {
             .user-profile__avatar {
                 max-width: 64px;
+                max-height: 64px;
+                height: 64x;
+                width: 64px;
             }
         }
 
@@ -76,7 +91,12 @@
         gap: 24px;
 
         .user-profile__button {
-            .user-profile__avatar {}
+            .user-profile__avatar {
+                max-width: 50px;
+                max-height: 50px;
+                height: 50px;
+                width: 50px;
+            }
         }
 
         .user-profile__info {

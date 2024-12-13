@@ -6,5 +6,5 @@ mixin input(options, error, value='')
     - const hasTypeSize = options.size ? `input-search-${options.size}` : ''
     - const hasError = error ? `input-error` : ''
 
-    input(placeholder=options.placeholder, name=options.name, value=value, id=options.name, required=options.required
+    input(placeholder=options.placeholder, name=options.name, value=value, id=options.name, required=options.required role='textbox'
         class=`input ${hasSize} ${hasClass} ${hasType} ${hasTypeSize} ${hasError} ${hasNewClass}`) 

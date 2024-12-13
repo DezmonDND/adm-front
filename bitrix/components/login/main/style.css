@@ -85,13 +85,13 @@
   font-weight: 600;
   color: var(--main-text);
   font-weight: 500;
-  font-size: calc(16px * var(--scale));
-  line-height: calc(20px * var(--lh));
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
 }
 @media (max-width: 992px) {
   .login__content-main__title span {
-    font-size: calc(12px * var(--scale));
-    line-height: calc(16px * var(--lh));
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
   }
 }
 
@@ -121,13 +121,13 @@
 .login__content-main__confirm-email span {
   color: var(--primary-color);
   cursor: pointer;
-  font-weight: 300;
   font-size: calc(12px * var(--scale));
-  line-height: calc(16px * var(--lh));
+  line-height: calc(14px * var(--lh));
+  font-weight: 500;
 }
 @media (max-width: 992px) {
   .login__content-main__confirm-email span {
-    font-size: calc(10px * var(--scale));
+    font-size: calc(11px * var(--scale));
     line-height: calc(14px * var(--lh));
   }
 }

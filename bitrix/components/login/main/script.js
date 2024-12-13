@@ -1,6 +1,6 @@
 function toggleModal(modalName, show = true) {
     // Прячем все модальные окна
-    ['login', 'login-code', 'login-email', 'login-projects', 'delete-project'].forEach((name) => {
+    ['login', 'login-code', 'login-email', 'login-projects', 'delete-project', 'exit'].forEach((name) => {
         if(document.querySelector(`.${name}`))
             document.querySelector(`.${name}`).classList.add('hidden');
     });
@@ -30,6 +30,9 @@ function showEmail() {
 function showDeleteProject() {
     toggleModal('delete-project');
 }
+function showExit() {
+    toggleModal('exit');
+}
 
 function hideLogin() {
     toggleModal('login', false);
@@ -45,6 +48,9 @@ function hideEmail() {
 }
 function hideDeleteProject() {
     toggleModal('delete-project', false);
+}
+function hideExit() {
+    toggleModal('exit', false)
 }
 
 const overlay = document.querySelector('.overlay');

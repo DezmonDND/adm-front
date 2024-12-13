@@ -2,10 +2,9 @@ mixin news-top-link(data)
     - const hasIconClass = data.classIcon ? data.classIcon : ''
     - const icon = data.icon ? data.icon : ''
 
-    a.news-top-link(href="/")    
+    a.news-top-link(href="/" role='link' aria-label='Медицинских работников города')    
         .news-top-link__container 
             .news-top-link__content
-                //- span(title=`Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника`).news-top-link__title Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника
                 span(title=`Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника`).news-top-link__title Медицинских работников города 
                 ion-icon(name=icon class=`icon ${hasIconClass}`).news-top-link__icon
             span.news-top-link__date 23 сентября 2024

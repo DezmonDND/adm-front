@@ -29,6 +29,10 @@
             color: $tertiary-text;
         }
 
+        &:focus-visible {
+            @include focus-visible;
+        }
+
         @include respond-to(md) {
             padding: 15px 16px;
         }

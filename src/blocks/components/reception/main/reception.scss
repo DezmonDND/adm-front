@@ -72,8 +72,8 @@
 
     span,
     a {
-        @include text-3();
         color: $tertiary-text !important;
+        @include text-3();
     }
 
     a {

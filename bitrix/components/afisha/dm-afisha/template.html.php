@@ -9,18 +9,18 @@
     </div>
     <div class="filters">
       <div class="filters_container">
-        <select class="select single select_filters__select select-icon-right" name="events">
+        <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
           <option class="select__option" value="Все события">Все события</option>
           <option class="select__option" value="Театр">Театр</option>
           <option class="select__option" value="Детям">Детям</option>
           <option class="select__option" value="Выставки">Выставки</option>
           <option class="select__option" value="Концерты">Концерты</option>
         </select>
-        <select class="select single select_filters__select select-icon-right" name="thema">
+        <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
           <option class="select__option" value="Любая тематика">Любая тематика</option>
           <option class="select__option" value="Любая тематика">Любая тематика</option>
         </select>
-        <select class="select single select_filters__select select-icon-right" name="thema">
+        <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
           <option class="select__option" value="Место проведения">Место проведения</option>
           <option class="select__option" value="Место проведения">Место проведения</option>
         </select>
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="chronicle__calendar">
-          <div class="calendar-dm" id="calendar-duma"></div>
+          <div class="calendar-dm" id="calendar-duma" aria-label="Календарь для выбора дат" tabindex="0"></div>
         </div>
       </div>
     </div>

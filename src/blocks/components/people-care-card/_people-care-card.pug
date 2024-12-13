@@ -1,13 +1,13 @@
 include ../../libs/buttons/_buttons.pug
 
 mixin people-care-card(data)
-    div(class=`people-care-card ${data.background}`)
+    div(class=`people-care-card ${data.background}` aria-label=data.title)
         if data.image
             ion-icon(name=`${data.image}` class=`icon people-care-card__icon`)
         if data.bg_image 
-            img(src=`../resources/${data.bg_image}` class='people-care-card__image')   
+            img(src=`../resources/${data.bg_image}` class='people-care-card__image' alt='Изображение')   
         if data.logo
-            img(src='../icons/footer-logo_icon.svg' class='people-care-card__logo')      
+            img(src='../icons/footer-logo_icon.svg' class='people-care-card__logo' alt='Логотип')      
         .people-care-card__container
             .people-care-card__text-block
                 h2.people-care-card__title #{data.title}

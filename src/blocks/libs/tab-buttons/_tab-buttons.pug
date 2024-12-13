@@ -1,2 +1,8 @@
 mixin tab-button(button)
-    a(class=`tab-button ${button.isActive ? 'tab-button_active' : ''}` href=button.href value=button.value) #{button.title}
+    a(
+        class=`tab-button ${button.isActive ? 'tab-button_active' : ''}` 
+        href=button.href 
+        value=button.value
+        role='tab'
+        aria-label=button.title
+    ) #{button.title}

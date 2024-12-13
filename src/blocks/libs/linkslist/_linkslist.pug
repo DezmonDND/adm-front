@@ -1,7 +1,7 @@
 mixin linkslist(items)
-    .links-list
+    .links-list(aria-label='Список')
         each item, index in items
-            a.links-list-item(href=item.href)
+            a.links-list-item(href=item.href role='link' aria-label=item.title)
                 | #{item.title}
                 if item.desc
                     span.links-list-item__desc #{item.desc}

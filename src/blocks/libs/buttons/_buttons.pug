@@ -9,20 +9,29 @@ mixin button(options)
     - const classHasText = options.text ? '' : 'button_without-text'
     - const classIconPosition = options.iconPosition ? 'button_icon-'+options.iconPosition : ''
     - const classHasEvent = options.event ? '' : 'button_without-event'
-    - const hasTitle = options.text ? options.text : 'Кнопка'
-    
+    - const hasTitle = options.title ? options.title : ''
+
     if options.type === 'link'
         a.button.button_link(
             href="/"
             title=hasTitle
             class=[options.class, classSize, classHasText, classIconPosition].join(' ')
             target=(options.target ? '_blank' : false)
+            role='link'
+            aria-label=options.aria_label || options.text
         )
             +icon(options.icon, options.text)
 
     if options.type === 'button'
         if options.event
-            button.button(onclick=options.event title=hasTitle class=[options.class, classSize, classHasText, classIconPosition, classHasEvent].join(' ') disabled=options.disabled)
+            button.button(
+                onclick=options.event 
+                title=hasTitle 
+                class=[options.class, classSize, classHasText, classIconPosition, classHasEvent].join(' ') 
+                disabled=options.disabled
+                role='button'
+                aria-label=options.aria_label || options.text
+            )
                 +icon(options.icon, options.text)
         else
             span.button(title=hasTitle class=[options.class, classSize, classHasText, classIconPosition, classHasEvent].join(' '))
