@@ -2,7 +2,7 @@
 <div class="hearing-list">
   <h3>Ближайшие публичные слушания</h3>
   <div class="hearing-list-items"><a class="hearing-item" href="/hearing-detail.html">
-      <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
+      <div class="hearing-item-link"><img src="/resources/hearing.jpg" alt="Изображение"/>
         <div class="hearing-item-bg"></div><span class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
           <ion-icon class="icon" name="caret-forward-outline"></ion-icon></span>
       </div>
@@ -13,7 +13,7 @@
           <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
         </div>
       </div></a><a class="hearing-item" href="/hearing-detail.html">
-      <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
+      <div class="hearing-item-link"><img src="/resources/hearing.jpg" alt="Изображение"/>
         <div class="hearing-item-bg"></div><span class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
           <ion-icon class="icon" name="caret-forward-outline"></ion-icon></span>
       </div>
@@ -24,7 +24,7 @@
           <div class="hearing-item-labels-item"><span class="hearing-item-span-title">Организатор</span><span class="hearing-item-span-desc">Наименование организации</span></div>
         </div>
       </div></a><a class="hearing-item" href="/hearing-detail.html">
-      <div class="hearing-item-link"><img src="/resources/hearing.jpg"/>
+      <div class="hearing-item-link"><img src="/resources/hearing.jpg" alt="Изображение"/>
         <div class="hearing-item-bg"></div><span class="button button_blue button_radius button_tag-label hearing-card_button button_size_s  button_icon-left button_without-event" title=""><span class="button_span">Видеозапись</span>
           <ion-icon class="icon" name="caret-forward-outline"></ion-icon></span>
       </div>

@@ -88,8 +88,8 @@
       </div>
     </div>
     <div class="header__bottom-content">  
-      <ul class="header_links" role="menu">
-        <li class="header__link" aria-expanded="false" aria-label="О Думе города" role="button">
+      <ul class="header_links">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="О Думе города" tabindex="-1">О Думе города</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
@@ -112,7 +112,7 @@
             </div>
           </div>
         </li>
-        <li class="header__link" aria-expanded="false" aria-label="Состав и структура" role="button">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="Состав и структура" tabindex="-1">Состав и структура</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
@@ -135,7 +135,7 @@
             </div>
           </div>
         </li>
-        <li class="header__link" aria-expanded="false" aria-label="Документы" role="button">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
@@ -158,7 +158,7 @@
             </div>
           </div>
         </li>
-        <li class="header__link" aria-expanded="false" aria-label="Деятельность" role="button">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="Деятельность" tabindex="-1">Деятельность</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">

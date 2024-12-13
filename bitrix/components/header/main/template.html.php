@@ -73,8 +73,8 @@
   </div>
   <div class="header__top-content">
     <div class="header__top-links">
-      <ul class="header_links" role="menu">
-        <li class="header__link" aria-expanded="false" aria-label="Быстрый доступ" role="button">
+      <ul class="header_links">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="Быстрый доступ" tabindex="-1">Быстрый доступ</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
@@ -97,7 +97,7 @@
             </div>
           </div>
         </li>
-        <li class="header__link" aria-expanded="false" aria-label="Публичные слушания" role="button">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="Публичные слушания" tabindex="-1">Публичные слушания</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
@@ -120,7 +120,7 @@
             </div>
           </div>
         </li>
-        <li class="header__link" aria-expanded="false" aria-label="Противодействие коррупции" role="button">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="Противодействие коррупции" tabindex="-1">Противодействие коррупции</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
@@ -143,7 +143,7 @@
             </div>
           </div>
         </li>
-        <li class="header__link" aria-expanded="false" aria-label="Пресс-центр" role="button">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="Пресс-центр" tabindex="-1">Пресс-центр</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
@@ -166,7 +166,7 @@
             </div>
           </div>
         </li>
-        <li class="header__link" aria-expanded="false" aria-label="Обращения граждан" role="button">
+        <li class="header__link" aria-expanded="false">
           <button style="all:unset" role="button" aria-label="Обращения граждан" tabindex="-1">Обращения граждан</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
@@ -209,8 +209,8 @@
         <ion-icon class="icon" name="search-outline"></ion-icon>
       </button>
     </form>
-    <ul class="header_links" role="menu">
-      <li class="header__link" aria-expanded="false" aria-label="О Сургуте" role="button">
+    <ul class="header_links">
+      <li class="header__link" aria-expanded="false">
         <button style="all:unset" role="button" aria-label="О Сургуте" tabindex="-1">О Сургуте</button>
         <div class="dm-second-menu">
           <div class="dm-second-menu__content">
@@ -233,7 +233,7 @@
           </div>
         </div>
       </li>
-      <li class="header__link" aria-expanded="false" aria-label="Городская власть" role="button">
+      <li class="header__link" aria-expanded="false">
         <button style="all:unset" role="button" aria-label="Городская власть" tabindex="-1">Городская власть</button>
         <div class="dm-second-menu">
           <div class="dm-second-menu__content">
@@ -256,7 +256,7 @@
           </div>
         </div>
       </li>
-      <li class="header__link" aria-expanded="false" aria-label="Документы" role="button">
+      <li class="header__link" aria-expanded="false">
         <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
         <div class="dm-second-menu">
           <div class="dm-second-menu__content">
@@ -329,7 +329,7 @@
       </div>
     </div>
     <div class="header-visibility__top-links">
-      <ul class="header_links" role="menu">
+      <ul class="header_links">
         <li class="header__link"> <a href="/">О Сургуте          </a></li>
         <li class="header__link"> <a href="/">Городская власть          </a></li>
         <li class="header__link"> <a href="/">Документы          </a></li>
@@ -356,7 +356,7 @@
     </button>
   </div>
   <div class="header-visibility__bottom-content">
-    <ul class="header_links" role="menu">
+    <ul class="header_links">
       <li class="header__link"> <a href="/">Быстрый доступ          </a></li>
       <li class="header__link"> <a href="/">Публичные слушания          </a></li>
       <li class="header__link"> <a href="/">Противодействие коррупции          </a></li>

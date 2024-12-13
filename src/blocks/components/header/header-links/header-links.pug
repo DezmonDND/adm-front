@@ -1,11 +1,11 @@
 include ../dm-second-menu/dm-second-menu
 
 mixin header-links(data = [])
-    ul.header_links(role="menu")
+    ul.header_links
         each link in data
             if link.menu
                 li.header__link(
-                    aria-expanded="false"
+                    aria-expanded="false",
                 )
                     button(
                         style='all:unset'

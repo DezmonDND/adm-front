@@ -5601,6 +5601,7 @@ body.tmp-duma .select2-container--default .select2-selection--single {
   display: flex;
   align-items: center;
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
   height: 21px;
   padding-left: 21px;

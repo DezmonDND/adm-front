@@ -13,7 +13,7 @@
     <div class="news-top__container">
       <div class="news-top__card-list" id="news-top__card-list">
         <div class="news-top-card">
-          <div class="news-top-card__container"><img class="news-top-card__image" src="./resources/news_image.png"/>
+          <div class="news-top-card__container"><img class="news-top-card__image" src="./resources/news_image.png" alt="Изображение"/>
             <div class="news-top-card__dots"> 
               <div class="news-top-card__dot"></div>
               <div class="news-top-card__dot"></div>
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="news-top-card">
-          <div class="news-top-card__container"><img class="news-top-card__image" src="./resources/news_image-3.jpg"/>
+          <div class="news-top-card__container"><img class="news-top-card__image" src="./resources/news_image-3.jpg" alt="Изображение"/>
             <div class="news-top-card__dots"> 
               <div class="news-top-card__dot"></div>
               <div class="news-top-card__dot"></div>

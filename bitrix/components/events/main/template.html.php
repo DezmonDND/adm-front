@@ -17,7 +17,7 @@
           <div class="filters-popup">
             <div class="filters-popup__container"> 
               <div class="filters-popup__top-content"> <span class="filters-popup__title">Фильтры</span>
-                <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();" title="" role="button">
+                <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();" title="" role="button" aria-label="Удалить">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
