@@ -28,8 +28,13 @@ function removeTabindex() {
     if (headerLinks) {
         headerLinks.forEach((link) => {
             const button = link.querySelector('button');
+            const navLink =link.querySelector('a');
             if (button) {
                 button.setAttribute('tabindex', '-1');
+            }
+
+            if (navLink) {
+                navLink.setAttribute('tabindex', '-1');
             }
         });
     }
