@@ -1,6 +1,6 @@
 include ../../../libs/tab-buttons/_tab-buttons
 
 mixin tabs-tag(tabs = [])
-  .tabs-tag
+  .tabs-tag(role='tablist')
     each tab in tabs
       +tab-button(tab)      

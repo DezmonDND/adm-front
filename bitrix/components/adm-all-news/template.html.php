@@ -1,30 +1,30 @@
 
 <div class="adm-all-news">
-  <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-    <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Новости</span>
+  <div class="breadcrumbs" aria-label="Страницы"><a class="breadcrumbs__icon-link" href="/"></a>
+    <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank" role="link" aria-label="Главная">Главная</a><span class="span" aria-current="page">/</span><span class="breadcrumb_link">Новости</span>
     </div>
   </div>
   <div class="title"> 
     <div class="title__container"> 
       <h2 class="title__name">Новости</h2>
       <div class="title__buttons">
-        <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title=""><span class="button_span">RSS</span>
+        <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title="" role="button" aria-label="RSS"><span class="button_span">RSS</span>
           <ion-icon class="icon" name="logo-rss"></ion-icon>
         </button>
-        <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title=""><span class="button_span">Подписаться на главное</span>
+        <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title="" role="button" aria-label="Подписаться на главное"><span class="button_span">Подписаться на главное</span>
           <ion-icon class="icon" name="mail"></ion-icon>
         </button>
       </div>
     </div>
   </div>
   <div class="tabs">
-    <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" value="Областная дума">Областная дума</a>
+    <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" value="Самые важные" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Реализация нацпроектов" role="tab" aria-label="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" value="Деятельность администрации" role="tab" aria-label="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" value="Областная дума" role="tab" aria-label="Областная дума">Областная дума</a>
     </div>
   </div>
   <input id="from" name="from" value="value" style="display: none;"/>
   <input id="to" name="to" value="value" style="display: none;"/>
   <div class="adm-all-news__filters">
-    <select class="select single select_filters__select select-icon-right" name="events">
+    <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
       <option class="select__option" value="Все события">Все события</option>
       <option class="select__option" value="Театр">Театр</option>
       <option class="select__option" value="Детям">Детям</option>
@@ -32,7 +32,7 @@
       <option class="select__option" value="Концерты">Концерты</option>
     </select>
     <div class="adm-all-news__calendar">
-      <button class="button search-by-site__button adm-all-news__calendar-button    " onclick="toggleAdmAllNewsCalendar();" title=""><span class="button_span">Период публикации</span>
+      <button class="button search-by-site__button adm-all-news__calendar-button    " onclick="toggleAdmAllNewsCalendar();" title="" role="button" aria-label="Период публикации"><span class="button_span">Период публикации</span>
         <ion-icon class="icon" name="calendar-outline"></ion-icon>
       </button>
       <div class="adm-all-news__calendar-content">
@@ -217,7 +217,7 @@
     </div>
   </div>
   <div class="pagination">
-    <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/2">2</a><a class="pag-button" href="/2/3">3</a><a class="pag-button pag-button_active" href="/2/4">4</a><a class="pag-button" href="/2/5">5</a><a class="pag-button" href="/2/6">6</a><a class="pag-button" href="/2/7">7</a>
-    <button class="pag-button-with-icon pag-button_right" href="/2/7"> <span class="pag-button__span">Вперед</span></button>
+    <button class="pag-button-with-icon pag-button_left" href="/2/1" role="button" aria-label="Назад"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/2" role="button" aria-label="Страница 2">2</a><a class="pag-button" href="/2/3" role="button" aria-label="Страница 3">3</a><a class="pag-button pag-button_active" href="/2/4" role="button" aria-label="Страница 4">4</a><a class="pag-button" href="/2/5" role="button" aria-label="Страница 5">5</a><a class="pag-button" href="/2/6" role="button" aria-label="Страница 6">6</a><a class="pag-button" href="/2/7" role="button" aria-label="Страница 7">7</a>
+    <button class="pag-button-with-icon pag-button_right" href="/2/7" role="button" aria-label="Вперед"> <span class="pag-button__span">Вперед</span></button>
   </div>
 </div>

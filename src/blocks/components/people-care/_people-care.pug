@@ -12,7 +12,7 @@ mixin people-care()
                 class: 'people-care'
             },
         })   
-        .people-care__container
+        .people-care__container(aria-label='Список карточек')
             .people-care__card-list(id='people-care__card-list') 
                 +people-care-card({
                     title: 'Лицам с ограниченными возможностями здоровья',

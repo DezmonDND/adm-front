@@ -9,7 +9,7 @@ mixin textarea(options, error)
             name=options.name
             required=options.required
             maxlength=options.value)
-        div(class=`counter ${hasCounterClass}`)
+        div(class=`counter ${hasCounterClass}` role='textbox')
             span.current 0
             span /
             span.max #{options.value} 

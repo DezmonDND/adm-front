@@ -25,6 +25,15 @@ function removeTabindex() {
     const toggleContainers = document.querySelectorAll('.toggle-container');
     const checkboxes = document.querySelectorAll('.сheckbox__label');
 
+    if (headerLinks) {
+        headerLinks.forEach((link) => {
+            const button = link.querySelector('button');
+            if (button) {
+                button.setAttribute('tabindex', '-1');
+            }
+        });
+    }
+
     if (headerButtonsContainer) {
         const buttons = headerButtonsContainer.querySelectorAll('.button');
         addAttribute(buttons);

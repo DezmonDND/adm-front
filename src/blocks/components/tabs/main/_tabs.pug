@@ -5,7 +5,7 @@ mixin tabs(tabs = [], slider, classFont)
   .tabs
     - const hasFontClass = classFont ? classFont : '' 
 
-    div(class=[hasFontClass]).tabs__container
+    div(class=[hasFontClass] role='tablist').tabs__container
       each tab in tabs
         +tab-button(tab)
     if slider

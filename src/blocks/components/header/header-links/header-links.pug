@@ -1,11 +1,20 @@
 include ../dm-second-menu/dm-second-menu
 
 mixin header-links(data = [])
-    ul.header_links
+    ul.header_links(role="menu")
         each link in data
             if link.menu
-                li.header__link
-                    span #{link.title}
+                li.header__link(
+                    aria-expanded="false"
+                    aria-label=link.title
+                    role='button'
+                )
+                    button(
+                        style='all:unset'
+                        role='button' 
+                        aria-label=link.title
+                        tabindex='-1'
+                        ) #{link.title}
                     +second-menu({
                         columns: [
                             {

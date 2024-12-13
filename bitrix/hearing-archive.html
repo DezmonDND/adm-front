@@ -14,15 +14,15 @@
         <div class="menu menu_main-bg">
           <div class="menu__container">
             <div class="menu__content"> 
-              <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+              <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
-                <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -40,13 +40,13 @@
             </div>
             <div class="menu__bot">
               <div class="menu__socials"> 
-                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
                 </div>
-                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
                   <ion-icon class="icon" name="eye-outline"></ion-icon>
                 </button>
               </div>
-              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
               </button>
             </div>
           </div>
@@ -83,8 +83,9 @@
       </div>
       <div class="header__top-content">
         <div class="header__top-links">
-          <ul class="header_links">
-            <li class="header__link"><span>Быстрый доступ</span>
+          <ul class="header_links" role="menu">
+            <li class="header__link" aria-expanded="false" aria-label="Быстрый доступ" role="button">
+              <button style="all:unset" role="button" aria-label="Быстрый доступ" tabindex="-1">Быстрый доступ</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -106,7 +107,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Публичные слушания</span>
+            <li class="header__link" aria-expanded="false" aria-label="Публичные слушания" role="button">
+              <button style="all:unset" role="button" aria-label="Публичные слушания" tabindex="-1">Публичные слушания</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -128,7 +130,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Противодействие коррупции</span>
+            <li class="header__link" aria-expanded="false" aria-label="Противодействие коррупции" role="button">
+              <button style="all:unset" role="button" aria-label="Противодействие коррупции" tabindex="-1">Противодействие коррупции</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -150,7 +153,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Пресс-центр</span>
+            <li class="header__link" aria-expanded="false" aria-label="Пресс-центр" role="button">
+              <button style="all:unset" role="button" aria-label="Пресс-центр" tabindex="-1">Пресс-центр</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -172,7 +176,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Обращения граждан</span>
+            <li class="header__link" aria-expanded="false" aria-label="Обращения граждан" role="button">
+              <button style="all:unset" role="button" aria-label="Обращения граждан" tabindex="-1">Обращения граждан</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -195,27 +200,28 @@
               </div>
             </li>
           </ul>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/" title="Ссылка на социальные сети Вконтакте"></a><a class="ok_icon  header__social-icon" href="/" title="Ссылка на социальные сети Одноклассники"></a><a class="tg_icon header__social-icon" href="/" title="Ссылка на социальные сети Телеграмм"></a>
+          <div class="header__socials"><a class="header__social-icon vk_icon" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon " href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a><a class="header__social-icon tg_icon" href="/" title="Ссылка на социальные сети Телеграмм" role="link"></a>
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title="" role="button" aria-label="Версия для слабовидящих"><span class="button_span">Версия для слабовидящих</span>
             <ion-icon class="icon" name="eye-outline"></ion-icon>
           </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+          <button class="button button_blue button_size_s   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
-      <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+      <div class="header__bottom-content"><a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
-        <ul class="header_links">
-          <li class="header__link"><span>О Сургуте</span>
+        <ul class="header_links" role="menu">
+          <li class="header__link" aria-expanded="false" aria-label="О Сургуте" role="button">
+            <button style="all:unset" role="button" aria-label="О Сургуте" tabindex="-1">О Сургуте</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -237,7 +243,8 @@
               </div>
             </div>
           </li>
-          <li class="header__link"><span>Городская власть</span>
+          <li class="header__link" aria-expanded="false" aria-label="Городская власть" role="button">
+            <button style="all:unset" role="button" aria-label="Городская власть" tabindex="-1">Городская власть</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -259,7 +266,8 @@
               </div>
             </div>
           </li>
-          <li class="header__link"><span>Документы</span>
+          <li class="header__link" aria-expanded="false" aria-label="Документы" role="button">
+            <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -283,7 +291,7 @@
           </li>
           <li class="header__link"> <a href="/">Контакты          </a></li>
         </ul>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
@@ -292,15 +300,15 @@
           <div class="menu menu_main-bg">
             <div class="menu__container">
               <div class="menu__content"> 
-                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                     <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
                     <ion-icon class="icon" name="close-outline"></ion-icon>
                   </button>
                 </div>
                 <form class="search search-header-mobile">
-                  <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                  <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                     <ion-icon class="icon" name="search-outline"></ion-icon>
                   </button>
                 </form>
@@ -318,47 +326,47 @@
               </div>
               <div class="menu__bot">
                 <div class="menu__socials"> 
-                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                  <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
                   </div>
-                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
                     <ion-icon class="icon" name="eye-outline"></ion-icon>
                   </button>
                 </div>
-                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
                 </button>
               </div>
             </div>
           </div>
         </div>
         <div class="header-visibility__top-links">
-          <ul class="header_links">
+          <ul class="header_links" role="menu">
             <li class="header__link"> <a href="/">О Сургуте          </a></li>
             <li class="header__link"> <a href="/">Городская власть          </a></li>
             <li class="header__link"> <a href="/">Документы          </a></li>
             <li class="header__link"> <a href="/">Контакты          </a></li>
           </ul>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/" title="Ссылка на социальные сети Вконтакте"></a><a class="ok_icon header__social-icon" href="/" title="Ссылка на социальные сети Одноклассники"></a><a class="tg_icon header__social-icon" href="/" title="Ссылка на социальные сети Телеграмм"></a>
+          <div class="header__socials"><a class="header__social-icon vk_icon" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a><a class="header__social-icon tg_icon" href="/" title="Ссылка на социальные сети Телеграмм" role="link"></a>
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
-      <div class="header-visibility__middle-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+      <div class="header-visibility__middle-content"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
       <div class="header-visibility__bottom-content">
-        <ul class="header_links">
+        <ul class="header_links" role="menu">
           <li class="header__link"> <a href="/">Быстрый доступ          </a></li>
           <li class="header__link"> <a href="/">Публичные слушания          </a></li>
           <li class="header__link"> <a href="/">Противодействие коррупции          </a></li>
@@ -379,17 +387,17 @@
             <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Номер телефона" value=""/>
+            <input class="input      " placeholder="Номер телефона" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" role="link" aria-label="Войти через госуслуги"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -407,11 +415,11 @@
             <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Код" value=""/>
+            <input class="input      " placeholder="Код" value="" role="textbox"/>
           </div>
           <!-- Если код неверный то инпут меняется на этот-->
           <div class="login__content-main__input wrong-code">
-            <input class="input      " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+            <input class="input      " placeholder="Код" value="" role="textbox"/><span>Неверный код, попробуйте еще раз</span>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -429,10 +437,10 @@
             <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Электронная почта" value=""/>
+            <input class="input      " placeholder="Электронная почта" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -440,25 +448,25 @@
       </div>
     </div>
     <main class="main">
-      <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Публичные слушания</span>
+      <div class="breadcrumbs" aria-label="Страницы"><a class="breadcrumbs__icon-link" href="/"></a>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank" role="link" aria-label="Главная">Главная</a><span class="span" aria-current="page">/</span><span class="breadcrumb_link">Публичные слушания</span>
         </div>
       </div>
       <div class="title"> 
         <div class="title__container"> 
           <h2 class="title__name">Публичные слушания</h2>
-          <div class="title__buttons"><a class="button button_link button_white button_white_no-border   button_icon-left" href="/" title="" target="_blank"><span class="button_span">RSS</span>
-              <ion-icon class="icon" name="logo-rss"></ion-icon></a><a class="button button_link button_white button_white_no-border   button_icon-left" href="/" title="" target="_blank"><span class="button_span">Подписаться на главное</span>
+          <div class="title__buttons"><a class="button button_link button_white button_white_no-border   button_icon-left" href="/" title="" target="_blank" role="link" aria-label="RSS"><span class="button_span">RSS</span>
+              <ion-icon class="icon" name="logo-rss"></ion-icon></a><a class="button button_link button_white button_white_no-border   button_icon-left" href="/" title="" target="_blank" role="link" aria-label="Подписаться на главное"><span class="button_span">Подписаться на главное</span>
               <ion-icon class="icon" name="mail"></ion-icon></a>
           </div>
         </div>
       </div>
       <div class="tabs">
-        <div class="tabs__container"><a class="tab-button " href="/hearing-main.html">Главная</a><a class="tab-button " href="/hearing-calendar.html">Календарь</a><a class="tab-button tab-button_active" href="/hearing-archive.html">Архив</a>
+        <div class="tabs__container" role="tablist"><a class="tab-button " href="/hearing-main.html" role="tab" aria-label="Главная">Главная</a><a class="tab-button " href="/hearing-calendar.html" role="tab" aria-label="Календарь">Календарь</a><a class="tab-button tab-button_active" href="/hearing-archive.html" role="tab" aria-label="Архив">Архив</a>
         </div>
       </div>
       <div class="sorting"><span class="sorting__desc">Сортировать дату публикации:</span>
-        <select class="select single select_sorting__select select-icon-right" name="sorting">
+        <select class="select single select_sorting__select select-icon-right" name="sorting" role="listbox">
           <option class="select__option" value="По убыванию">По убыванию</option>
           <option class="select__option" value="По возрастанию">По возрастанию</option>
         </select>
@@ -567,8 +575,8 @@
         </div>
       </div>
       <div class="pagination">
-        <button class="pag-button_left pag-button-with-icon pag-button-with-icon_left_disabled" disabled="disabled"><span class="pag-button__span">Назад</span></button><a class="pag-button pag-button_active" href="/2/1">1</a><a class="pag-button" href="/2/2">2</a><a class="pag-button" href="/2/3">3</a><span>...</span><a class="pag-button" href="/2/30">30</a>
-        <button class="pag-button-with-icon pag-button_right" href="/2/30"> <span class="pag-button__span">Вперед</span></button>
+        <button class="pag-button_left pag-button-with-icon pag-button-with-icon_left_disabled" disabled="disabled" role="button" aria-label="Назад"><span class="pag-button__span">Назад</span></button><a class="pag-button pag-button_active" href="/2/1" role="button" aria-label="Страница 1">1</a><a class="pag-button" href="/2/2" role="button" aria-label="Страница 2">2</a><a class="pag-button" href="/2/3" role="button" aria-label="Страница 3">3</a><span>...</span><a class="pag-button" href="/2/30" role="button" aria-label="Страница 30">30</a>
+        <button class="pag-button-with-icon pag-button_right" href="/2/30" role="button" aria-label="Вперед"> <span class="pag-button__span">Вперед</span></button>
       </div>
     </main>
     <footer class="footer">

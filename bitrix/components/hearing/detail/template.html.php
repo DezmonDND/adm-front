@@ -36,7 +36,7 @@
               <div class="hearing-detail-description-label">Время</div>18:00
             </div>
             <div class="hearing-detail-description-meta-item">
-              <button class="button button_white button_size_s  button_icon-left " onclick="console.log(&quot;Шаринг&quot;)" title=""><span class="button_span">Поделиться</span>
+              <button class="button button_white button_size_s  button_icon-left " onclick="console.log(&quot;Шаринг&quot;)" title="" role="button" aria-label="Поделиться"><span class="button_span">Поделиться</span>
                 <ion-icon class="icon" name="link"></ion-icon>
               </button>
             </div>
@@ -46,8 +46,8 @@
     </div>
   </div>
   <div class="hearing-detail-links">
-    <div class="links-list"><a class="links-list-item" href="#">Назначающий НПА
-        <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Объявление с материалами
+    <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Назначающий НПА">Назначающий НПА
+        <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Объявление с материалами">Объявление с материалами
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
     </div>
   </div>

@@ -1,7 +1,7 @@
 include ../../libs/buttons/_buttons.pug
 
 mixin people-care-card(data)
-    div(class=`people-care-card ${data.background}`)
+    div(class=`people-care-card ${data.background}` aria-label=data.title)
         if data.image
             ion-icon(name=`${data.image}` class=`icon people-care-card__icon`)
         if data.bg_image 

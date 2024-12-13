@@ -9,7 +9,7 @@
             <div class="news-top-card__dot"></div>
           </div>
           <div class="news-top-card__content"> <span class="news-top-card__date">23 сентября 2024 </span>
-            <h1 class="news-top-card__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title=""><span class="button_span">Подробнее</span>
+            <h1 class="news-top-card__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title="" role="link" aria-label="Подробнее"><span class="button_span">Подробнее</span>
               <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
           </div>
         </div>
@@ -21,28 +21,28 @@
             <div class="news-top-card__dot"></div>
           </div>
           <div class="news-top-card__content"> <span class="news-top-card__date">27 ноября 2024 </span>
-            <h1 class="news-top-card__title">Министр МЧС оценил в Югре текущий уровень оснащенности и готовности служб к оперативному реагированию</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title=""><span class="button_span">Подробнее</span>
+            <h1 class="news-top-card__title">Министр МЧС оценил в Югре текущий уровень оснащенности и готовности служб к оперативному реагированию</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title="" role="link" aria-label="Подробнее"><span class="button_span">Подробнее</span>
               <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="news-top__links-list"><a class="news-top-link" href="/">   
+    <div class="news-top__links-list"><a class="news-top-link" href="/" role="link" aria-label="Медицинских работников города">   
         <div class="news-top-link__container"> 
           <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города </span>
             <ion-icon class="icon  news-top-link__icon" name="arrow-forward-outline"></ion-icon>
           </div><span class="news-top-link__date">23 сентября 2024</span>
-        </div></a><a class="news-top-link" href="/">   
+        </div></a><a class="news-top-link" href="/" role="link" aria-label="Медицинских работников города">   
         <div class="news-top-link__container"> 
           <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города </span>
             <ion-icon class="icon  news-top-link__icon" name="arrow-forward-outline"></ion-icon>
           </div><span class="news-top-link__date">23 сентября 2024</span>
-        </div></a><a class="news-top-link" href="/">   
+        </div></a><a class="news-top-link" href="/" role="link" aria-label="Медицинских работников города">   
         <div class="news-top-link__container"> 
           <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города </span>
             <ion-icon class="icon  news-top-link__icon" name="arrow-forward-outline"></ion-icon>
           </div><span class="news-top-link__date">23 сентября 2024</span>
-        </div></a><a class="news-top-link" href="/">   
+        </div></a><a class="news-top-link" href="/" role="link" aria-label="Медицинских работников города">   
         <div class="news-top-link__container"> 
           <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города </span>
             <ion-icon class="icon  news-top-link__icon" name="arrow-forward-outline"></ion-icon>

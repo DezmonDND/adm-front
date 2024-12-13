@@ -8,6 +8,6 @@ mixin main-title(data)
             else    
                 h1.main-title__title #{data.title}
             if data.link_text
-                a(href=data.href class='main-title__link') #{data.link_text}
+                a(href=data.href class='main-title__link' role='link' aria-label=data.link_text) #{data.link_text}
             if data.slider
                 +slider(data.slider)  

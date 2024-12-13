@@ -1,8 +1,8 @@
 mixin link(sort, href, index, text, type, links)
     if type === 'link'
-        a(href=href target='_blank' class=`link link_${sort}`) #{text}
+        a(href=href target='_blank' class=`link link_${sort}` role='link' aria-label=text) #{text}
     if type === 'crumb'
         if index < links.length - 1
-            a(href=href target='_blank' class='link breadcrumb_link') #{text}
+            a(href=href target='_blank' class='link breadcrumb_link' role='link' aria-label=text) #{text}
         else
             span.breadcrumb_link #{text}

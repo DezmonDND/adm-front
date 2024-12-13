@@ -14,15 +14,15 @@
         <div class="menu menu_duma-bg">
           <div class="menu__container">
             <div class="menu__content"> 
-              <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+              <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
-                <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -36,13 +36,13 @@
             </div>
             <div class="menu__bot">
               <div class="menu__socials"> 
-                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
                 </div>
-                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
                   <ion-icon class="icon" name="eye-outline"></ion-icon>
                 </button>
               </div>
-              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
               </button>
             </div>
           </div>
@@ -78,28 +78,29 @@
         </div>
       </div>
       <div class="header-duma__container">
-        <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+        <div class="header__top-content"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
             <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button" aria-label="">
             <ion-icon class="icon" name="menu-outline"></ion-icon>
           </button>
           <form class="search search-header-duma">
-            <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+            <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
               <ion-icon class="icon" name="search-outline"></ion-icon>
             </button>
           </form>
           <div class="header__buttons"> 
-            <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+            <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title="" role="button" aria-label="Версия для слабовидящих"><span class="button_span">Версия для слабовидящих</span>
               <ion-icon class="icon" name="eye-outline"></ion-icon>
             </button>
-            <button class="button button_blue button_size_s   " onclick="anotherFunction()" title=""><span class="button_span">Служебный вход</span>
+            <button class="button button_blue button_size_s   " onclick="anotherFunction()" title="" role="button" aria-label="Служебный вход"><span class="button_span">Служебный вход</span>
             </button>
           </div>
         </div>
         <div class="header__bottom-content">  
-          <ul class="header_links">
-            <li class="header__link"><span>О Думе города</span>
+          <ul class="header_links" role="menu">
+            <li class="header__link" aria-expanded="false" aria-label="О Думе города" role="button">
+              <button style="all:unset" role="button" aria-label="О Думе города" tabindex="-1">О Думе города</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -121,7 +122,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Состав и структура</span>
+            <li class="header__link" aria-expanded="false" aria-label="Состав и структура" role="button">
+              <button style="all:unset" role="button" aria-label="Состав и структура" tabindex="-1">Состав и структура</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -143,7 +145,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Документы</span>
+            <li class="header__link" aria-expanded="false" aria-label="Документы" role="button">
+              <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -165,7 +168,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Деятельность</span>
+            <li class="header__link" aria-expanded="false" aria-label="Деятельность" role="button">
+              <button style="all:unset" role="button" aria-label="Деятельность" tabindex="-1">Деятельность</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -189,7 +193,7 @@
             </li>
             <li class="header__link"> <a href="/">Обратная связь          </a></li>
           </ul>
-          <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/" title="Ссылка на социальные сети Вконтакте"></a><a class="ok_icon-duma header__social-icon" href="/" title="Ссылка на социальные сети Одноклассники"></a>
+          <div class="header__socials"><a class="header__social-icon vk_icon-duma" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon-duma" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a>
           </div>
         </div>
       </div>
@@ -206,17 +210,17 @@
             <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Номер телефона" value=""/>
+            <input class="input      " placeholder="Номер телефона" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" role="link" aria-label="Войти через госуслуги"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -234,11 +238,11 @@
             <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Код" value=""/>
+            <input class="input      " placeholder="Код" value="" role="textbox"/>
           </div>
           <!-- Если код неверный то инпут меняется на этот-->
           <div class="login__content-main__input wrong-code">
-            <input class="input      " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+            <input class="input      " placeholder="Код" value="" role="textbox"/><span>Неверный код, попробуйте еще раз</span>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -256,10 +260,10 @@
             <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Электронная почта" value=""/>
+            <input class="input      " placeholder="Электронная почта" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -270,11 +274,11 @@
       <div class="dm-news-top">
         <div class="main-title">
           <div class="main-title__container">
-            <h1 class="main-title__title">Главные новости</h1><a class="main-title__link" href="/">Все новости</a>
+            <h1 class="main-title__title">Главные новости</h1><a class="main-title__link" href="/" role="link" aria-label="Все новости">Все новости</a>
           </div>
         </div>
         <div class="tabs">
-          <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Самые важные</a><a class="tab-button " href="/">Реализация нацпроектов</a><a class="tab-button " href="/">Деятельность администрации</a><a class="tab-button " href="/">Областная дума</a>
+          <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" role="tab" aria-label="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" role="tab" aria-label="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" role="tab" aria-label="Областная дума">Областная дума</a>
           </div>
         </div>
         <div class="news-top"> 
@@ -287,7 +291,7 @@
                     <div class="news-top-card__dot"></div>
                   </div>
                   <div class="news-top-card__content"> <span class="news-top-card__date">23 сентября 2024 </span>
-                    <h1 class="news-top-card__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title=""><span class="button_span">Подробнее</span>
+                    <h1 class="news-top-card__title">Сургут и Гомель стали городами побратимами</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title="" role="link" aria-label="Подробнее"><span class="button_span">Подробнее</span>
                       <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                   </div>
                 </div>
@@ -299,28 +303,28 @@
                     <div class="news-top-card__dot"></div>
                   </div>
                   <div class="news-top-card__content"> <span class="news-top-card__date">27 ноября 2024 </span>
-                    <h1 class="news-top-card__title">Министр МЧС оценил в Югре текущий уровень оснащенности и готовности служб к оперативному реагированию</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title=""><span class="button_span">Подробнее</span>
+                    <h1 class="news-top-card__title">Министр МЧС оценил в Югре текущий уровень оснащенности и готовности служб к оперативному реагированию</h1><a class="button button_link button_blue news-top-card__button button_size_l  " href="/" title="" role="link" aria-label="Подробнее"><span class="button_span">Подробнее</span>
                       <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="news-top__links-list"><a class="news-top-link" href="/">   
+            <div class="news-top__links-list"><a class="news-top-link" href="/" role="link" aria-label="Медицинских работников города">   
                 <div class="news-top-link__container"> 
                   <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города </span>
                     <ion-icon class="icon dm-news-top-link__icon news-top-link__icon" name="arrow-forward-outline"></ion-icon>
                   </div><span class="news-top-link__date">23 сентября 2024</span>
-                </div></a><a class="news-top-link" href="/">   
+                </div></a><a class="news-top-link" href="/" role="link" aria-label="Медицинских работников города">   
                 <div class="news-top-link__container"> 
                   <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города </span>
                     <ion-icon class="icon dm-news-top-link__icon news-top-link__icon" name="arrow-forward-outline"></ion-icon>
                   </div><span class="news-top-link__date">23 сентября 2024</span>
-                </div></a><a class="news-top-link" href="/">   
+                </div></a><a class="news-top-link" href="/" role="link" aria-label="Медицинских работников города">   
                 <div class="news-top-link__container"> 
                   <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города </span>
                     <ion-icon class="icon dm-news-top-link__icon news-top-link__icon" name="arrow-forward-outline"></ion-icon>
                   </div><span class="news-top-link__date">23 сентября 2024</span>
-                </div></a><a class="news-top-link" href="/">   
+                </div></a><a class="news-top-link" href="/" role="link" aria-label="Медицинских работников города">   
                 <div class="news-top-link__container"> 
                   <div class="news-top-link__content"><span class="news-top-link__title" title="Медицинских работников города Сургута отметили наградами в честь профессионального праздника Медицинских работников города Сургута отметили наградами в честь профессионального праздника">Медицинских работников города </span>
                     <ion-icon class="icon dm-news-top-link__icon news-top-link__icon" name="arrow-forward-outline"></ion-icon>
@@ -334,36 +338,36 @@
         <div class="dm-events__container"> 
           <div class="main-title">
             <div class="main-title__container">
-              <h1 class="main-title__title">Хроника и анонсы событий</h1><a class="main-title__link" href="/">Все события</a>
+              <h1 class="main-title__title">Хроника и анонсы событий</h1><a class="main-title__link" href="/" role="link" aria-label="Все события">Все события</a>
             </div>
           </div>
           <div class="dm-filter__btn">
-            <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()" title=""><span class="button_span">Фильтры</span>
+            <button class="button button_white dm-filter__button button_size_m  button_icon-left " onclick="toggleFilters()" title="" role="button" aria-label="Фильтры"><span class="button_span">Фильтры</span>
               <ion-icon class="icon" name="funnel-outline"></ion-icon>
             </button>
           </div>
           <div class="filters-popup">
             <div class="filters-popup__container"> 
               <div class="filters-popup__top-content"> <span class="filters-popup__title">Фильтры</span>
-                <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();" title="">
+                <button class="button button files-list__delete-button  button_without-text  " onclick="toggleFilters();" title="" role="button">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <div class="filters-popup__tags"><span class="filters-popup__title">Раздел</span>
-                <div class="tabs-tag"><a class="tab-button " value="Кино">Кино</a><a class="tab-button " value="Концерты">Концерты</a><a class="tab-button " value="Выставки">Выставки</a><a class="tab-button " value="Театр">Театр</a><a class="tab-button " value="Детям">Детям</a><a class="tab-button " value="Конференции">Конференции</a>
+                <div class="tabs-tag" role="tablist"><a class="tab-button " value="Кино" role="tab" aria-label="Кино">Кино</a><a class="tab-button " value="Концерты" role="tab" aria-label="Концерты">Концерты</a><a class="tab-button " value="Выставки" role="tab" aria-label="Выставки">Выставки</a><a class="tab-button " value="Театр" role="tab" aria-label="Театр">Театр</a><a class="tab-button " value="Детям" role="tab" aria-label="Детям">Детям</a><a class="tab-button " value="Конференции" role="tab" aria-label="Конференции">Конференции</a>
                 </div>
               </div>
               <div class="filters-popup__calendar"><span class="filters-popup__title">Выберите период публикации                  </span>
                 <div class="calendar-dm" id="calendar-dm-events-popup"></div>
               </div>
               <div class="filters-popup__buttons">             
-                <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);" title=""><span class="button_span">Искать</span>
+                <button class="button button_blue filters-popup__btn button_size_m   " onclick="console.log(1);" title="" role="button" aria-label="Искать"><span class="button_span">Искать</span>
                 </button>
               </div>
             </div>
           </div>
           <div class="dm-calendar__btn">
-            <button class="button button_white dm-calendar__button    " onclick="toggleDumaCalendar();" title=""><span class="button_span">Календарь</span>
+            <button class="button button_white dm-calendar__button    " onclick="toggleDumaCalendar();" title="" role="button" aria-label="Календарь"><span class="button_span">Календарь</span>
               <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
             </button>
           </div>
@@ -372,24 +376,24 @@
           </div>
           <div class="filters">
             <div class="filters_container">
-              <select class="select single select_filters__select select-icon-right" name="events">
+              <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
                 <option class="select__option" value="Все события">Все события</option>
                 <option class="select__option" value="Театр">Театр</option>
                 <option class="select__option" value="Детям">Детям</option>
                 <option class="select__option" value="Выставки">Выставки</option>
                 <option class="select__option" value="Концерты">Концерты</option>
               </select>
-              <select class="select single select_filters__select select-icon-right" name="thema">
+              <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
               </select>
-              <select class="select single select_filters__select select-icon-right" name="thema">
+              <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
                 <option class="select__option" value="Место проведения">Место проведения</option>
                 <option class="select__option" value="Место проведения">Место проведения</option>
               </select>
             </div>
             <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
-            <label class="сheckbox__label" for="10">С пушкинской картой</label>
+            <label class="сheckbox__label" for="10" role="checkbox">С пушкинской картой</label>
           </div>
           <div class="chronicle">
             <div class="chronicle__container"> 
@@ -416,13 +420,13 @@
                 <div class="main-title">
                   <div class="main-title__container">
                     <div class="tabs">
-                      <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Архив трансляций</a><a class="tab-button " href="/">Фото</a><a class="tab-button "></a><a class="tab-button "></a>
+                      <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" role="tab" aria-label="Архив трансляций">Архив трансляций</a><a class="tab-button " href="/" role="tab" aria-label="Фото">Фото</a><a class="tab-button " role="tab"></a><a class="tab-button " role="tab"></a>
                       </div>
-                    </div><a class="main-title__link" href="/">Все видео и фото</a>
+                    </div><a class="main-title__link" href="/" role="link" aria-label="Все видео и фото">Все видео и фото</a>
                   </div>
                 </div>
                 <div class="tabs">
-                  <div class="tabs__container"><a class="tab-button tab-button_active" href="/">Самые важные</a><a class="tab-button " href="/">Заседания</a><a class="tab-button " href="/">Публичные слушания</a>
+                  <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" role="tab" aria-label="Заседания">Заседания</a><a class="tab-button " href="/" role="tab" aria-label="Публичные слушания">Публичные слушания</a>
                   </div>
                 </div>
                 <div class="dm-archive__list" id="dm-archive__list">   <a class="hearing-item" href="/hearing-detail.html">
@@ -468,8 +472,8 @@
                     </div></a>
                 </div>
                 <div class="dm-archive__slider">
-                  <div class="slider"><a class="slider__link slider__dm-archive-prev">
-                      <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-archive-next">
+                  <div class="slider"><a class="slider__link slider__dm-archive-prev" role="button" aria-label="Назад">
+                      <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-archive-next" role="button" aria-label="Вперед">
                       <ion-icon name="arrow-forward-outline"> </ion-icon></a>
                   </div>
                 </div>
@@ -490,50 +494,50 @@
         <div class="main-title">
           <div class="main-title__container">
             <h1 class="main-title__title">Проекты Думы города</h1>
-            <div class="slider"><a class="slider__link slider__dm-city-projects-prev">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-city-projects-next">
+            <div class="slider"><a class="slider__link slider__dm-city-projects-prev" role="button" aria-label="Назад">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-city-projects-next" role="button" aria-label="Вперед">
                 <ion-icon name="arrow-forward-outline"> </ion-icon></a>
             </div>
           </div>
         </div>
         <div class="dm-city-projects__container">
           <div class="dm-city-projects__card-list" id="dm-city-projects__card-list"> 
-            <div class="people-care-card people-care-card_bg-dm-1"><img class="people-care-card__image" src="./resources/dm_people_care_1.svg"/>
+            <div class="people-care-card people-care-card_bg-dm-1" aria-label="ДУМАющий Сургут"><img class="people-care-card__image" src="./resources/dm_people_care_1.svg"/>
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
-                  <h2 class="people-care-card__title">ДУМАющий Сургут</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title=""><span class="button_span">Подробнее</span>
+                  <h2 class="people-care-card__title">ДУМАющий Сургут</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" role="link" aria-label="Подробнее"><span class="button_span">Подробнее</span>
                     <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
                 </div>
               </div>
             </div>
-            <div class="people-care-card people-care-card_bg-dm-2"><img class="people-care-card__image" src="./resources/dm_people_care_2.svg"/>
+            <div class="people-care-card people-care-card_bg-dm-2" aria-label="Видео проекты"><img class="people-care-card__image" src="./resources/dm_people_care_2.svg"/>
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
-                  <h2 class="people-care-card__title">Видео проекты</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title=""><span class="button_span">Подробнее</span>
+                  <h2 class="people-care-card__title">Видео проекты</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" role="link" aria-label="Подробнее"><span class="button_span">Подробнее</span>
                     <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
                 </div>
               </div>
             </div>
-            <div class="people-care-card people-care-card_bg-dm-3"><img class="people-care-card__image" src="./resources/dm_people_care_3.svg"/>
+            <div class="people-care-card people-care-card_bg-dm-3" aria-label="Опросы"><img class="people-care-card__image" src="./resources/dm_people_care_3.svg"/>
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
-                  <h2 class="people-care-card__title">Опросы</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title=""><span class="button_span">Подробнее</span>
+                  <h2 class="people-care-card__title">Опросы</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" role="link" aria-label="Подробнее"><span class="button_span">Подробнее</span>
                     <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
                 </div>
               </div>
             </div>
-            <div class="people-care-card people-care-card_bg-dm-1"><img class="people-care-card__image" src="./resources/dm_people_care_1.svg"/>
+            <div class="people-care-card people-care-card_bg-dm-1" aria-label="Опросы"><img class="people-care-card__image" src="./resources/dm_people_care_1.svg"/>
               <div class="people-care-card__container">
                 <div class="people-care-card__text-block">
-                  <h2 class="people-care-card__title">Опросы</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title=""><span class="button_span">Подробнее</span>
+                  <h2 class="people-care-card__title">Опросы</h2><span class="people-care-card__desc">совместный проект «Сургутской трибуны» и Думы города</span><a class="button button_link button_blue people-care-card__button button_size_m  button_icon-right" href="/" title="" role="link" aria-label="Подробнее"><span class="button_span">Подробнее</span>
                     <ion-icon class="icon" name="arrow-forward"></ion-icon></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="dm-city-projects__slider">
-            <div class="slider"><a class="slider__link slider__dm-city-projects-prev">
-                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-city-projects-next">
+            <div class="slider"><a class="slider__link slider__dm-city-projects-prev" role="button" aria-label="Назад">
+                <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__dm-city-projects-next" role="button" aria-label="Вперед">
                 <ion-icon name="arrow-forward-outline"> </ion-icon></a>
             </div>
           </div>
@@ -545,28 +549,28 @@
             <h1 class="main-title__title">Полезные ссылки</h1>
           </div>
         </div>
-        <div class="usefull-links__container"><a class="usefull-link" href="/">
+        <div class="usefull-links__container"><a class="usefull-link" href="/" role="link" aria-label="Оплата ЖКХ услуг ">
             <div class="usefull-link__container">
               <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Оплата ЖКХ услуг  </span>
-            </div></a><a class="usefull-link" href="/">
+            </div></a><a class="usefull-link" href="/" role="link" aria-label="Виртуальная приемная">
             <div class="usefull-link__container">
               <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Виртуальная приемная </span>
-            </div></a><a class="usefull-link" href="/">
+            </div></a><a class="usefull-link" href="/" role="link" aria-label="Пособия и налоги">
             <div class="usefull-link__container">
               <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Пособия и налоги </span>
-            </div></a><a class="usefull-link" href="/">
+            </div></a><a class="usefull-link" href="/" role="link" aria-label="Расписание общественного транспорта">
             <div class="usefull-link__container">
               <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Расписание общественного транспорта </span>
-            </div></a><a class="usefull-link" href="/">
+            </div></a><a class="usefull-link" href="/" role="link" aria-label="Выплаты пенсионерам">
             <div class="usefull-link__container">
               <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Выплаты пенсионерам </span>
-            </div></a><a class="usefull-link" href="/">
+            </div></a><a class="usefull-link" href="/" role="link" aria-label="Запись на публичные слушания">
             <div class="usefull-link__container">
               <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Запись на публичные слушания </span>
-            </div></a><a class="usefull-link" href="/">
+            </div></a><a class="usefull-link" href="/" role="link" aria-label="Социальные услуги">
             <div class="usefull-link__container">
               <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Социальные услуги </span>
-            </div></a><a class="usefull-link" href="/">
+            </div></a><a class="usefull-link" href="/" role="link" aria-label="Работа в России">
             <div class="usefull-link__container">
               <ion-icon class="icon usefull-link__icon" name="arrow-forward-outline"></ion-icon><span class="usefull-link__title">Работа в России </span>
             </div></a>

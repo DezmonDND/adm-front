@@ -12059,6 +12059,7 @@ body.tmp-duma .header__link a:hover {
   color: var(--main-text);
 }
 .header_links .header__link a:hover {
+  text-decoration: none;
   color: var(--primary-color);
 }
 
