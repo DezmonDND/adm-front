@@ -14,15 +14,15 @@
         <div class="menu menu_main-bg">
           <div class="menu__container">
             <div class="menu__content"> 
-              <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+              <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
-                <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -40,13 +40,13 @@
             </div>
             <div class="menu__bot">
               <div class="menu__socials"> 
-                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
                 </div>
-                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
                   <ion-icon class="icon" name="eye-outline"></ion-icon>
                 </button>
               </div>
-              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
               </button>
             </div>
           </div>
@@ -84,7 +84,8 @@
       <div class="header__top-content">
         <div class="header__top-links">
           <ul class="header_links">
-            <li class="header__link"><span>Быстрый доступ</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Быстрый доступ" tabindex="-1">Быстрый доступ</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -106,7 +107,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Публичные слушания</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Публичные слушания" tabindex="-1">Публичные слушания</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -128,7 +130,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Противодействие коррупции</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Противодействие коррупции" tabindex="-1">Противодействие коррупции</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -150,7 +153,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Пресс-центр</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Пресс-центр" tabindex="-1">Пресс-центр</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -172,7 +176,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Обращения граждан</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Обращения граждан" tabindex="-1">Обращения граждан</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -195,27 +200,28 @@
               </div>
             </li>
           </ul>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+          <div class="header__socials"><a class="header__social-icon vk_icon" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon " href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a><a class="header__social-icon tg_icon" href="/" title="Ссылка на социальные сети Телеграмм" role="link"></a>
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title="" role="button" aria-label="Версия для слабовидящих"><span class="button_span">Версия для слабовидящих</span>
             <ion-icon class="icon" name="eye-outline"></ion-icon>
           </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+          <button class="button button_blue button_size_s   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
-      <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+      <div class="header__bottom-content"><a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
         <ul class="header_links">
-          <li class="header__link"><span>О Сургуте</span>
+          <li class="header__link" aria-expanded="false">
+            <button style="all:unset" role="button" aria-label="О Сургуте" tabindex="-1">О Сургуте</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -237,7 +243,8 @@
               </div>
             </div>
           </li>
-          <li class="header__link"><span>Городская власть</span>
+          <li class="header__link" aria-expanded="false">
+            <button style="all:unset" role="button" aria-label="Городская власть" tabindex="-1">Городская власть</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -259,7 +266,8 @@
               </div>
             </div>
           </li>
-          <li class="header__link"><span>Документы</span>
+          <li class="header__link" aria-expanded="false">
+            <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -281,9 +289,9 @@
               </div>
             </div>
           </li>
-          <li class="header__link"> <a href="/">Контакты          </a></li>
+          <li class="header__link" role="link" aria-label="Контакты"> <a href="/" tabindex="-1">Контакты          </a></li>
         </ul>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
@@ -292,15 +300,15 @@
           <div class="menu menu_main-bg">
             <div class="menu__container">
               <div class="menu__content"> 
-                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                     <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
                     <ion-icon class="icon" name="close-outline"></ion-icon>
                   </button>
                 </div>
                 <form class="search search-header-mobile">
-                  <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                  <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                     <ion-icon class="icon" name="search-outline"></ion-icon>
                   </button>
                 </form>
@@ -318,13 +326,13 @@
               </div>
               <div class="menu__bot">
                 <div class="menu__socials"> 
-                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                  <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
                   </div>
-                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
                     <ion-icon class="icon" name="eye-outline"></ion-icon>
                   </button>
                 </div>
-                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
                 </button>
               </div>
             </div>
@@ -332,38 +340,38 @@
         </div>
         <div class="header-visibility__top-links">
           <ul class="header_links">
-            <li class="header__link"> <a href="/">О Сургуте          </a></li>
-            <li class="header__link"> <a href="/">Городская власть          </a></li>
-            <li class="header__link"> <a href="/">Документы          </a></li>
-            <li class="header__link"> <a href="/">Контакты          </a></li>
+            <li class="header__link" role="link" aria-label="О Сургуте"> <a href="/" tabindex="-1">О Сургуте          </a></li>
+            <li class="header__link" role="link" aria-label="Городская власть"> <a href="/" tabindex="-1">Городская власть          </a></li>
+            <li class="header__link" role="link" aria-label="Документы"> <a href="/" tabindex="-1">Документы          </a></li>
+            <li class="header__link" role="link" aria-label="Контакты"> <a href="/" tabindex="-1">Контакты          </a></li>
           </ul>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+          <div class="header__socials"><a class="header__social-icon vk_icon" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a><a class="header__social-icon tg_icon" href="/" title="Ссылка на социальные сети Телеграмм" role="link"></a>
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
-      <div class="header-visibility__middle-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+      <div class="header-visibility__middle-content"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
       <div class="header-visibility__bottom-content">
         <ul class="header_links">
-          <li class="header__link"> <a href="/">Быстрый доступ          </a></li>
-          <li class="header__link"> <a href="/">Публичные слушания          </a></li>
-          <li class="header__link"> <a href="/">Противодействие коррупции          </a></li>
-          <li class="header__link"> <a href="/">Пресс-центр          </a></li>
-          <li class="header__link"> <a href="/">Обращения граждан          </a></li>
+          <li class="header__link" role="link" aria-label="Быстрый доступ"> <a href="/" tabindex="-1">Быстрый доступ          </a></li>
+          <li class="header__link" role="link" aria-label="Публичные слушания"> <a href="/" tabindex="-1">Публичные слушания          </a></li>
+          <li class="header__link" role="link" aria-label="Противодействие коррупции"> <a href="/" tabindex="-1">Противодействие коррупции          </a></li>
+          <li class="header__link" role="link" aria-label="Пресс-центр"> <a href="/" tabindex="-1">Пресс-центр          </a></li>
+          <li class="header__link" role="link" aria-label="Обращения граждан"> <a href="/" tabindex="-1">Обращения граждан          </a></li>
         </ul>
       </div>
     </header>
@@ -379,17 +387,17 @@
             <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Номер телефона" value=""/>
+            <input class="input      " placeholder="Номер телефона" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" role="link" aria-label="Войти через госуслуги"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -407,11 +415,11 @@
             <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Код" value=""/>
+            <input class="input      " placeholder="Код" value="" role="textbox"/>
           </div>
           <!-- Если код неверный то инпут меняется на этот-->
           <div class="login__content-main__input wrong-code">
-            <input class="input      " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+            <input class="input      " placeholder="Код" value="" role="textbox"/><span>Неверный код, попробуйте еще раз</span>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -429,10 +437,10 @@
             <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input      " placeholder="Электронная почта" value=""/>
+            <input class="input      " placeholder="Электронная почта" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -441,31 +449,31 @@
     </div>
     <main class="main">
       <div class="adm-all-news">
-        <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-          <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Новости</span>
+        <div class="breadcrumbs" aria-label="Страницы"><a class="breadcrumbs__icon-link" href="/"></a>
+          <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank" role="link" aria-label="Главная">Главная</a><span class="span" aria-current="page">/</span><span class="breadcrumb_link">Новости</span>
           </div>
         </div>
         <div class="title"> 
           <div class="title__container"> 
             <h2 class="title__name">Новости</h2>
             <div class="title__buttons">
-              <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title=""><span class="button_span">RSS</span>
+              <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title="" role="button" aria-label="RSS"><span class="button_span">RSS</span>
                 <ion-icon class="icon" name="logo-rss"></ion-icon>
               </button>
-              <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title=""><span class="button_span">Подписаться на главное</span>
+              <button class="button button_white button_white_no-border   button_icon-left " onclick="1" title="" role="button" aria-label="Подписаться на главное"><span class="button_span">Подписаться на главное</span>
                 <ion-icon class="icon" name="mail"></ion-icon>
               </button>
             </div>
           </div>
         </div>
         <div class="tabs">
-          <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" value="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" value="Областная дума">Областная дума</a>
+          <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" value="Самые важные" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Реализация нацпроектов" role="tab" aria-label="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" value="Деятельность администрации" role="tab" aria-label="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" value="Областная дума" role="tab" aria-label="Областная дума">Областная дума</a>
           </div>
         </div>
         <input id="from" name="from" value="value" style="display: none;"/>
         <input id="to" name="to" value="value" style="display: none;"/>
         <div class="adm-all-news__filters">
-          <select class="select single select_filters__select select-icon-right" name="events">
+          <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
             <option class="select__option" value="Все события">Все события</option>
             <option class="select__option" value="Театр">Театр</option>
             <option class="select__option" value="Детям">Детям</option>
@@ -473,11 +481,11 @@
             <option class="select__option" value="Концерты">Концерты</option>
           </select>
           <div class="adm-all-news__calendar">
-            <button class="button search-by-site__button adm-all-news__calendar-button    " onclick="toggleAdmAllNewsCalendar();" title=""><span class="button_span">Период публикации</span>
+            <button class="button search-by-site__button adm-all-news__calendar-button    " onclick="toggleAdmAllNewsCalendar();" title="" role="button" aria-label="Период публикации"><span class="button_span">Период публикации</span>
               <ion-icon class="icon" name="calendar-outline"></ion-icon>
             </button>
             <div class="adm-all-news__calendar-content">
-              <div class="calendar-dm" id="calendar-all-news"></div>
+              <div class="calendar-dm" id="calendar-all-news" aria-label="Календарь для выбора дат" tabindex="0"></div>
             </div>
           </div>
           <input id="from" name="from" value="value" style="display: none;"/>
@@ -658,8 +666,8 @@
           </div>
         </div>
         <div class="pagination">
-          <button class="pag-button-with-icon pag-button_left" href="/2/1"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/2">2</a><a class="pag-button" href="/2/3">3</a><a class="pag-button pag-button_active" href="/2/4">4</a><a class="pag-button" href="/2/5">5</a><a class="pag-button" href="/2/6">6</a><a class="pag-button" href="/2/7">7</a>
-          <button class="pag-button-with-icon pag-button_right" href="/2/7"> <span class="pag-button__span">Вперед</span></button>
+          <button class="pag-button-with-icon pag-button_left" href="/2/1" role="button" aria-label="Назад"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/2" role="button" aria-label="Страница 2">2</a><a class="pag-button" href="/2/3" role="button" aria-label="Страница 3">3</a><a class="pag-button pag-button_active" href="/2/4" role="button" aria-label="Страница 4">4</a><a class="pag-button" href="/2/5" role="button" aria-label="Страница 5">5</a><a class="pag-button" href="/2/6" role="button" aria-label="Страница 6">6</a><a class="pag-button" href="/2/7" role="button" aria-label="Страница 7">7</a>
+          <button class="pag-button-with-icon pag-button_right" href="/2/7" role="button" aria-label="Вперед"> <span class="pag-button__span">Вперед</span></button>
         </div>
       </div>
     </main>
@@ -667,73 +675,73 @@
       <div class="footer_container">
         <div class="footer_container-top">
           <div class="footer__header"> 
-            <div class="footer__header-links"><a class="footer__main-links" href="/"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+            <div class="footer__header-links"><a class="footer__main-links" href="/" role="link" aria-label="Главная страница"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                 <div class="footer__header-links__block"> <span class="footer__title">Администрация Сургута</span><span class="footer__link">Официальный портал</span></div></a>
-              <div class="footer__social-links"><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/vk-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/ok-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/tg-footer_icon.svg"/></a></div>
+              <div class="footer__social-links" aria-label="Социальные сети"><a class="footer__link-icon" href="/" role="link" aria-label="Страница в социальных сетях Вконтакте"><img src="/local/templates/surgut/icons/vk-footer_icon.svg" alt="Иконка Вконтаке"/></a><a class="footer__link-icon" href="/" role="link" aria-label="Страница в социальных сетях Одноклассники"><img src="/local/templates/surgut/icons/ok-footer_icon.svg" alt="Иконка Одноклассники"/></a><a class="footer__link-icon" href="/" role="link" aria-label="Страница в мессенджере Телеграмм"><img src="/local/templates/surgut/icons/tg-footer_icon.svg" alt="Иконка Телеграмм"/></a></div>
             </div>
           </div>
         </div>
-        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
+        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank" role="link" aria-label="Адрес на карте">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru" role="link" aria-label="Написать обращение на электронную почту"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg" alt="Иконка"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
         <div class="footer__categories">
           <div class="footer__category-content">
             <h5 class="footer__categorie-title">О Сургуте </h5>
-            <ul class="footer__categorie-links">
-              <li><a class="footer__categorie-link" href="/">Сургут сегодня            </a></li>
-              <li><a class="footer__categorie-link" href="/">История Сургута            </a></li>
-              <li><a class="footer__categorie-link" href="/">Официальные символы            </a></li>
-              <li><a class="footer__categorie-link" href="/">Устав Сургута            </a></li>
-              <li><a class="footer__categorie-link" href="/">Генплан            </a></li>
-              <li><a class="footer__categorie-link" href="/">Стратегия развития            </a></li>
-              <li><a class="footer__categorie-link" href="/">Инвестиционный паспорт Сургута            </a></li>
-              <li><a class="footer__categorie-link" href="/">Инвестору            </a></li>
-              <li><a class="footer__categorie-link" href="/">Общественные советы города Сургута            </a></li>
-              <li><a class="footer__categorie-link" href="/">Ими гордится Сургут            </a></li>
-              <li><a class="footer__categorie-link" href="/">Справочная информация            </a></li>
-              <li><a class="footer__categorie-link" href="/">Интерактивные карты Сургута            </a></li>
-              <li><a class="footer__categorie-link" href="/">Градостроительная деятельность            </a></li>
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Сургут сегодня">Сургут сегодня            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="История Сургута">История Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Официальные символы">Официальные символы            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Устав Сургута">Устав Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Генплан">Генплан            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Стратегия развития">Стратегия развития            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Инвестиционный паспорт Сургута">Инвестиционный паспорт Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Инвестору">Инвестору            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Общественные советы города Сургута">Общественные советы города Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ими гордится Сургут">Ими гордится Сургут            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Справочная информация">Справочная информация            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Интерактивные карты Сургута">Интерактивные карты Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Градостроительная деятельность">Градостроительная деятельность            </a></li>
             </ul>
           </div>
           <div class="footer__category-content">
             <h5 class="footer__categorie-title">Городская власть</h5>
-            <ul class="footer__categorie-links">
-              <li><a class="footer__categorie-link" href="/">Глава города             </a></li>
-              <li><a class="footer__categorie-link" href="/">Дума города             </a></li>
-              <li><a class="footer__categorie-link" href="/">Администрация             </a></li>
-              <li><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a></li>
-              <li><a class="footer__categorie-link" href="/">Законодательная карта             </a></li>
-              <li><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a></li>
-              <li><a class="footer__categorie-link" href="/">Государственные органы             </a></li>
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Глава города">Глава города             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Дума города">Дума города             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Администрация">Администрация             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Контрольно-счётная палата">Контрольно-счётная палата             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Законодательная карта">Законодательная карта             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Территориальная избирательная комиссия">Территориальная избирательная комиссия             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Государственные органы">Государственные органы             </a></li>
             </ul>
           </div>
           <div class="footer__category-content">
             <h5 class="footer__categorie-title">Документы</h5>
-            <ul class="footer__categorie-links">
-              <li><a class="footer__categorie-link" href="/">Важные документы для горожан            </a></li>
-              <li><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a></li>
-              <li><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a></li>
-              <li><a class="footer__categorie-link" href="/">Решения Думы города            </a></li>
-              <li><a class="footer__categorie-link" href="/">Постановления Главы города            </a></li>
-              <li><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a></li>
-              <li><a class="footer__categorie-link" href="/">Постановления Администрации города            </a></li>
-              <li><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a></li>
-              <li><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a></li>
-              <li><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a></li>
-              <li><a class="footer__categorie-link" href="/">Муниципальные программы            </a></li>
-              <li><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a></li>
-              <li><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a></li>
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Важные документы для горожан">Важные документы для горожан            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Проекты документов: антикоррупционная экспертиза и общественное обсуждение">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Решения Думы города">Решения Думы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Главы города">Постановления Главы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Главы города">Распоряжения Главы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Администрации города">Постановления Администрации города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Администрации города">Распоряжения Администрации города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Мэра и администрации города до 12.04.2005 г.">Постановления Мэра и администрации города до 12.04.2005 г.            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Мэра и администрации города до 12.04.2005 г.">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Муниципальные программы">Муниципальные программы            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Порядок обжалования муниципальных правовых актов">Порядок обжалования муниципальных правовых актов            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Антимонопольный комплаенс">Антимонопольный комплаенс            </a></li>
             </ul>
           </div>
           <div class="footer__category-content">
             <h5 class="footer__categorie-title">Категория</h5>
-            <ul class="footer__categorie-links">
-              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
-              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
-              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
-              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
-              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
-              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
-              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
-              <li><a class="footer__categorie-link" href="/">Ссылка                                    </a></li>
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
             </ul>
           </div>
         </div>

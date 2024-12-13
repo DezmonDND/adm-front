@@ -12,7 +12,7 @@
       <fieldset class="fieldset">
         <h3 class="fieldset__title reception__sender_title fieldset__req">Кому направляете электронную анкету</h3>
         <div class="fieldset__answers">
-          <select class="select select-icon-right">
+          <select class="select select-icon-right" role="listbox">
             <option class="select__option" value="Филатов Андрей Сергеевич, Глава города Сургута">Филатов Андрей Сергеевич, Глава города Сургута</option>
             <option class="select__option" value="Филатов">Филатов</option>
             <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
@@ -22,25 +22,25 @@
       <fieldset class="fieldset ">
         <h3 class="fieldset__title reception__job_title  ">Наименование вашей организации (юридического лица)</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input    " placeholder="Наименование организации" name="companyName" value="" id="companyName"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Наименование организации" name="companyName" value="" id="companyName" role="textbox"/>
         </div>
       </fieldset>
       <fieldset class="fieldset fieldset_user-contacts">
         <h3 class="fieldset__title reception__user_title  fieldset__req">Ваши данные</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input    " placeholder="Фамилия" name="firstName" value="" id="firstName" required="required"/>
-          <input class="input  input-virtual-reception_input    " placeholder="Имя" name="secondName" value="" id="secondName" required="required"/>
-          <input class="input  input-virtual-reception_input    " placeholder="Отчество" name="thirdName" value="" id="thirdName"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Фамилия" name="firstName" value="" id="firstName" required="required" role="textbox"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Имя" name="secondName" value="" id="secondName" required="required" role="textbox"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Отчество" name="thirdName" value="" id="thirdName" role="textbox"/>
         </div>
       </fieldset>
-      <button class="button button_white reception_add-author-btn   button_icon-left " onclick="addFormField(event)" title=""><span class="button_span">Добавить соавтора</span>
+      <button class="button button_white reception_add-author-btn   button_icon-left " onclick="addFormField(event)" title="" role="button" aria-label="Добавить соавтора"><span class="button_span">Добавить соавтора</span>
         <ion-icon class="icon" name="people"></ion-icon>
       </button>
       <fieldset class="fieldset ">
         <h3 class="fieldset__title reception__email_title  fieldset__req">Данные для контакта</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input    " placeholder="your_email@mail.ru" name="email" value="" id="email" required="required"/>
-          <input class="input  input-virtual-reception_input    phone_sms" placeholder="Номер телефона" name="phone" value="" id="phone" required="required"/>
+          <input class="input  input-virtual-reception_input    " placeholder="your_email@mail.ru" name="email" value="" id="email" required="required" role="textbox"/>
+          <input class="input  input-virtual-reception_input    phone_sms" placeholder="Номер телефона" name="phone" value="" id="phone" required="required" role="textbox"/>
         </div>
       </fieldset>
       <fieldset class="fieldset">
@@ -48,14 +48,14 @@
         <div class="fieldset__answers">
           <div class="textarea__container">
             <textarea class="textarea  " placeholder="Содержание вашего обращения" name="feedback" required="required" maxlength="none"></textarea>
-            <div class="counter reception_counter"><span class="current">0</span><span>/</span><span class="max">none </span></div>
+            <div class="counter reception_counter" role="textbox"><span class="current">0</span><span>/</span><span class="max">none </span></div>
           </div>
         </div>
       </fieldset>
     </div>
     <div class="files-list" id="files-list-file"></div>
     <div class="reception__buttons">
-      <div class="add-file-button" onclick="addDocument(event)">
+      <div class="add-file-button" onclick="addDocument(event)" role="button" aria-label="Вложить документ">
         <label for="file" id="file-label">Вложить документ
           <ion-icon class="add-file-button__icon" name="add-outline"></ion-icon>
           <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>
@@ -65,12 +65,12 @@
       <h4>Введите код CAPTCHA</h4>
       <div class="reception__cap">
         <div class="reception__cap-inp">
-          <input class="input  input-virtual-reception_input    " placeholder="Код CAPTCHA" name="captcha" value="" id="captcha" required="required"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Код CAPTCHA" name="captcha" value="" id="captcha" required="required" role="textbox"/>
         </div>
         <div class="reception__cap-captcha"><img src="/resources/captcha.png" alt="captcha"/></div>
       </div>
       <div class="reception__submit">
-        <button class="button button_blue button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить обращение</span>
+        <button class="button button_blue button_size_l   " onclick="getValues(event)" title="" role="button" aria-label="Отправить обращение"><span class="button_span">Отправить обращение</span>
           <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
         </button>
       </div>

@@ -172,6 +172,17 @@
     font-weight: 300;
 }
 
+a:focus-visible,
+button:focus-visible,
+li:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+span:focus-visible,
+div:focus-visible {
+    @include focus-visible;
+}
+
 body {
     display: flex;
     margin: auto;

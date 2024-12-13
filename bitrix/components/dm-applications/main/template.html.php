@@ -17,7 +17,7 @@
       <fieldset class="fieldset">
         <h3 class="fieldset__title reception__sender_title fieldset__req">Адресат обращения</h3>
         <div class="fieldset__answers">
-          <select class="select select-icon-right">
+          <select class="select select-icon-right" role="listbox">
             <option class="select__option" value="Барсов Евгений Вячеславович">Барсов Евгений Вячеславович</option>
             <option class="select__option" value="Филатов">Филатов</option>
             <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
@@ -27,21 +27,21 @@
       <fieldset class="fieldset fieldset_user-contacts">
         <h3 class="fieldset__title reception__user_title  fieldset__req">Ваши данные (от кого)</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input    " placeholder="Фамилия" name="firstName" value="" id="firstName" required="required"/>
-          <input class="input  input-virtual-reception_input    " placeholder="Имя" name="secondName" value="" id="secondName" required="required"/>
-          <input class="input  input-virtual-reception_input    " placeholder="Отчество" name="thirdName" value="" id="thirdName"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Фамилия" name="firstName" value="" id="firstName" required="required" role="textbox"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Имя" name="secondName" value="" id="secondName" required="required" role="textbox"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Отчество" name="thirdName" value="" id="thirdName" role="textbox"/>
         </div>
       </fieldset>
       <div class="dm-applications__divider"></div>
       <fieldset class="fieldset ">
         <h3 class="fieldset__title dm-applications__title  fieldset__req">Почтовый адрес для контакта</h3>
         <div class="fieldset__answers">
-          <input class="input  input-virtual-reception_input    " placeholder="Пример: some@mail.ru" name="companyName" value="" id="companyName" required="required"/>
+          <input class="input  input-virtual-reception_input    " placeholder="Пример: some@mail.ru" name="companyName" value="" id="companyName" required="required" role="textbox"/>
         </div>
       </fieldset>
       <div class="dm-applications__get-answer">      
         <input class="сheckbox сheckbox-label " type="checkbox" id="contact" name="contact"/>
-        <label class="сheckbox__label" for="contact">Требование дать письменный ответ по почте</label>
+        <label class="сheckbox__label" for="contact" role="checkbox">Требование дать письменный ответ по почте</label>
       </div>
       <div class="dm-applications__divider">    </div>
       <fieldset class="fieldset">
@@ -49,13 +49,13 @@
         <div class="fieldset__answers">
           <div class="textarea__container">
             <textarea class="textarea  " placeholder="Введите ваше обращение (не больше 20 тысяч символов)" name="feedback" required="required" maxlength="20000"></textarea>
-            <div class="counter reception_counter"><span class="current">0</span><span>/</span><span class="max">20000 </span></div>
+            <div class="counter reception_counter" role="textbox"><span class="current">0</span><span>/</span><span class="max">20000 </span></div>
           </div>
         </div>
       </fieldset>
     </form>
     <div class="dm-applications__buttons">
-      <div class="add-file-button" onclick="addDocument(event)">
+      <div class="add-file-button" onclick="addDocument(event)" role="button" aria-label="Вложить документ">
         <label for="file" id="file-label">Вложить документ
           <ion-icon class="add-file-button__icon" name="add-outline"></ion-icon>
           <input class="input__add-document" type="file" id="file" name="files" multiple="multiple"/>
@@ -65,10 +65,10 @@
       <div class="dm-applications__divider"> </div>
       <div class="dm-applications__agreement">
         <input class="сheckbox  " type="checkbox" id="accept" name="accept"/>
-        <label for="accept"> </label>
+        <label for="accept" role="checkbox"> </label>
         <p class="dm-applications__desc"><span class="dm-applications__span">Согласие на обработку персональных данных:</span> нажимая на кнопку "Отправить" выражаю согласие на обработку, в том числе с помощью средств автоматизации, моих персональных данных. <a class="dm-applications__link" href="/">С Политикой Думы города Сургута в отношении обработки персональных данных</a> ознакомлен.           </p>
       </div>
-      <button class="button button_blue button_size_l   " onclick="getValues(event)" title=""><span class="button_span">Отправить обращение</span>
+      <button class="button button_blue button_size_l   " onclick="getValues(event)" title="" role="button" aria-label="Отправить обращение"><span class="button_span">Отправить обращение</span>
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
       </button>
     </div>

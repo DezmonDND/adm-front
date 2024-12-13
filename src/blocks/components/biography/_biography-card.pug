@@ -1,7 +1,7 @@
 mixin biography_card(data)
     div(class=`biography-card ${data.cls ? `biography-card_${data.cls}` : '' }`)
         .biography-card__container         
-            img(src=`../resources/${data.avatar}` class=`biography-card__avatar`)                                    
+            img(src=`../resources/${data.avatar}` class=`biography-card__avatar` alt='Изображение')                                    
             .biography-card__user-info
                 h2.biography-card__name #{data.name}
                 span.biography-card__job #{data.job}

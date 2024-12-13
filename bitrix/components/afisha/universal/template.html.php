@@ -1,6 +1,6 @@
 
-<div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-  <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><span class="breadcrumb_link">Универсальный модуль</span>
+<div class="breadcrumbs" aria-label="Страницы"><a class="breadcrumbs__icon-link" href="/"></a>
+  <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank" role="link" aria-label="Главная">Главная</a><span class="span" aria-current="page">/</span><span class="breadcrumb_link">Универсальный модуль</span>
   </div>
 </div>
 <div class="afisha">
@@ -10,77 +10,77 @@
     </div>
   </div>
   <div class="tabs">
-    <div class="tabs__container"><a class="tab-button tab-button_active" href="/" value="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Официальные выступления">Официальные выступления</a><a class="tab-button " href="/" value="Заседания">Заседания</a><a class="tab-button " href="/" value="Афиша">Афиша</a>
+    <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" value="Самые важные" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Официальные выступления" role="tab" aria-label="Официальные выступления">Официальные выступления</a><a class="tab-button " href="/" value="Заседания" role="tab" aria-label="Заседания">Заседания</a><a class="tab-button " href="/" value="Афиша" role="tab" aria-label="Афиша">Афиша</a>
     </div>
   </div>
-  <div class="calendar">
+  <div class="calendar" aria-label="Календарь событий">
     <div class="calendar__links">
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_clicked" href="/">18                        </a><span class="calendar__day calendar__day_clicked">Вт</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_clicked" href="/" role="link" aria-label="18 Вт">18                        </a><span class="calendar__day calendar__day_clicked" tabindex="-1">Вт</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link" href="/">19                        </a><span class="calendar__day">Ср</span>
+      <div class="calendar__link-content"><a class="calendar__link" href="/" role="link" aria-label="19 Ср">19                        </a><span class="calendar__day" tabindex="-1">Ср</span>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/">20                        </a><span class="calendar__day calendar__day_active">Чт</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/" role="link" aria-label="20 Чт">20                        </a><span class="calendar__day calendar__day_active" tabindex="-1">Чт</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/">21                        </a><span class="calendar__day calendar__day_active">Пт</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/" role="link" aria-label="21 Пт">21                        </a><span class="calendar__day calendar__day_active" tabindex="-1">Пт</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link" href="/">22                        </a><span class="calendar__day">Сб</span>
+      <div class="calendar__link-content"><a class="calendar__link" href="/" role="link" aria-label="22 Сб">22                        </a><span class="calendar__day" tabindex="-1">Сб</span>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link" href="/">23                        </a><span class="calendar__day">Вс</span>
+      <div class="calendar__link-content"><a class="calendar__link" href="/" role="link" aria-label="23 Вс">23                        </a><span class="calendar__day" tabindex="-1">Вс</span>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/">24                        </a><span class="calendar__day calendar__day_active">Пр</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/" role="link" aria-label="24 Пр">24                        </a><span class="calendar__day calendar__day_active" tabindex="-1">Пр</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/">25                        </a><span class="calendar__day calendar__day_active">Вт</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/" role="link" aria-label="25 Вт">25                        </a><span class="calendar__day calendar__day_active" tabindex="-1">Вт</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link" href="/">26                        </a><span class="calendar__day">Ср</span>
+      <div class="calendar__link-content"><a class="calendar__link" href="/" role="link" aria-label="26 Ср">26                        </a><span class="calendar__day" tabindex="-1">Ср</span>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/">27                        </a><span class="calendar__day calendar__day_active">Чт</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/" role="link" aria-label="27 Чт">27                        </a><span class="calendar__day calendar__day_active" tabindex="-1">Чт</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/">28                        </a><span class="calendar__day calendar__day_active">Пт</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/" role="link" aria-label="28 Пт">28                        </a><span class="calendar__day calendar__day_active" tabindex="-1">Пт</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link" href="/">29                        </a><span class="calendar__day">Сб</span>
+      <div class="calendar__link-content"><a class="calendar__link" href="/" role="link" aria-label="29 Сб">29                        </a><span class="calendar__day" tabindex="-1">Сб</span>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link" href="/">30                        </a><span class="calendar__day">Вс</span>
+      <div class="calendar__link-content"><a class="calendar__link" href="/" role="link" aria-label="30 Вс">30                        </a><span class="calendar__day" tabindex="-1">Вс</span>
       </div>
       <div class="calendar__divider"></div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_without-events" href="/">1                        </a><span class="calendar__day calendar__day_without-events">Пн</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_without-events" href="/" role="link" aria-label="1 Пн">1                        </a><span class="calendar__day calendar__day_without-events" tabindex="-1">Пн</span>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/">2                        </a><span class="calendar__day calendar__day_active">Вт</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/" role="link" aria-label="2 Вт">2                        </a><span class="calendar__day calendar__day_active" tabindex="-1">Вт</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_without-events" href="/">3                        </a><span class="calendar__day calendar__day_without-events">Ср</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_without-events" href="/" role="link" aria-label="3 Ср">3                        </a><span class="calendar__day calendar__day_without-events" tabindex="-1">Ср</span>
       </div>
-      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/">4                        </a><span class="calendar__day calendar__day_active">Чт</span>
+      <div class="calendar__link-content"><a class="calendar__link calendar__link_active" href="/" role="link" aria-label="4 Чт">4                        </a><span class="calendar__day calendar__day_active" tabindex="-1">Чт</span>
         <div class="calendar__icon"><span>2</span></div>
       </div>
     </div>
   </div>
   <div class="filters">
     <div class="filters_container">
-      <select class="select single select_filters__select select-icon-right" name="events">
+      <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
         <option class="select__option" value="Все события">Все события</option>
         <option class="select__option" value="Театр">Театр</option>
         <option class="select__option" value="Детям">Детям</option>
         <option class="select__option" value="Выставки">Выставки</option>
         <option class="select__option" value="Концерты">Концерты</option>
       </select>
-      <select class="select single select_filters__select select-icon-right" name="thema">
+      <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
         <option class="select__option" value="Любая тематика">Любая тематика</option>
         <option class="select__option" value="Любая тематика">Любая тематика</option>
       </select>
-      <select class="select single select_filters__select select-icon-right" name="thema">
+      <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
         <option class="select__option" value="Место проведения">Место проведения</option>
         <option class="select__option" value="Место проведения">Место проведения</option>
       </select>
     </div>
     <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
-    <label class="сheckbox__label" for="10">С пушкинской картой</label>
+    <label class="сheckbox__label" for="10" role="checkbox">С пушкинской картой</label>
   </div>
   <div class="afisha-universal"> 
     <div class="afisha-universal__content">
@@ -183,9 +183,9 @@
           </div></a>
       </div>
     </div>
-    <div class="navigation"> <a class="navigation__link">
+    <div class="navigation"> <a class="navigation__link" role="button" aria-label="Назад">
         <ion-icon class="icon" name="arrow-back-outline"></ion-icon></a>
-      <div class="navigation__pages"><span class="navigation__page">1</span><span class="navigation__page">/</span><span class="navigation__page">2</span></div><a class="navigation__link">
+      <div class="navigation__pages"><span class="navigation__page" aria-label="Страница 1" tabindex="0">1</span><span class="navigation__page">/</span><span class="navigation__page" aria-label="Из 2" tabindex="0">2</span></div><a class="navigation__link" role="button" aria-label="Вперед">
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
     </div>
   </div>

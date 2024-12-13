@@ -4584,6 +4584,10 @@ body.blue-theme {
 .textarea__container .textarea::placeholder {
   color: var(--tertiary-text);
 }
+.textarea__container .textarea:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
+}
 @media (max-width: 992px) {
   .textarea__container .textarea {
     padding: 15px 16px;
@@ -5597,6 +5601,7 @@ body.tmp-duma .select2-container--default .select2-selection--single {
   display: flex;
   align-items: center;
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
   height: 21px;
   padding-left: 21px;
@@ -5609,6 +5614,10 @@ body.tmp-duma .select2-container--default .select2-selection--single {
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
+}
+.сheckbox + label:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
 }
 @media (max-width: 768px) {
   .сheckbox + label {
@@ -6145,6 +6154,10 @@ body.tmp-duma .pag-button_active:hover {
   color: var(--primary-color-hover);
   border-color: var(--primary-color-hover);
 }
+.add-file-button label:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
+}
 .add-file-button input {
   display: none;
 }
@@ -6482,6 +6495,10 @@ body.tmp-duma .main-title .main-title__container .tabs {
 .tabs .tabs__container .tab-button:hover {
   cursor: pointer;
   border-bottom: 2px solid var(--tertiary-text);
+}
+.tabs .tabs__container .tab-button:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
 }
 .tabs .tabs__container .tab-button_active {
   border-bottom: 2px solid var(--second-text);
@@ -11360,6 +11377,10 @@ body.tmp-duma .usefull-links {
   gap: 24px;
   justify-content: center;
 }
+.news-top__container:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
+}
 @media (max-width: 992px) {
   .news-top__container {
     gap: 8px;
@@ -12146,6 +12167,7 @@ body.tmp-duma .header__link a:hover {
   color: var(--main-text);
 }
 .header_links .header__link a:hover {
+  text-decoration: none;
   color: var(--primary-color);
 }
 
@@ -12831,6 +12853,10 @@ body.tmp-duma .mobile-menu .menu .menu__container .menu__socials .button__eye {
 
 body.tmp-duma .calendar-dm {
   background-color: var(--cards-background);
+}
+body.tmp-duma .calendar-dm:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
 }
 body.tmp-duma .calendar-dm .calendar-day_selected-first,
 body.tmp-duma .calendar-dm .calendar-day_selected-last {
@@ -21774,6 +21800,7 @@ body.compensate-for-scrollbar {
   gap: 24px;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
   z-index: 1100;
+  position: absolute;
 }
 @media (max-width: 768px) {
   .balloon {
@@ -21788,7 +21815,14 @@ body.compensate-for-scrollbar {
   }
 }
 .balloon_active {
-  bottom: 0;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .balloon_active {
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 .balloon-title {
@@ -21946,6 +21980,18 @@ body.compensate-for-scrollbar {
   margin: 0;
   padding: 0;
   font-weight: 300;
+}
+
+a:focus-visible,
+button:focus-visible,
+li:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+span:focus-visible,
+div:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: -3px;
 }
 
 body {

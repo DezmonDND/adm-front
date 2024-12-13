@@ -26,6 +26,7 @@
   gap: 24px;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
   z-index: 1100;
+  position: absolute;
 }
 @media (max-width: 768px) {
   .balloon {
@@ -40,7 +41,14 @@
   }
 }
 .balloon_active {
-  bottom: 0;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .balloon_active {
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 .balloon-title {

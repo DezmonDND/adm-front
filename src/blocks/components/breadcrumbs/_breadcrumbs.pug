@@ -1,11 +1,11 @@
 include ../../libs/links/_links
 
 mixin breadcrumbs(links = [])
-  .breadcrumbs
+  .breadcrumbs(aria-label="Страницы")
     a(href='/').breadcrumbs__icon-link
     if links.length !== 0 
       .breadcrumbs__container
         each value, index in links 
           +link(value.sort, value.href, index, value.text, 'crumb', links)
           if index < links.length - 1
-            span.span /
+            span(aria-current="page").span /

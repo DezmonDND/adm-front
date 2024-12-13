@@ -4,6 +4,10 @@ body.tmp-duma {
     .calendar-dm {
         background-color: $cards-background;
 
+        &:focus-visible {
+            @include focus-visible;
+        }
+
         .calendar-day_selected-first,
         .calendar-day_selected-last {
             background-color: $primary-color-green;

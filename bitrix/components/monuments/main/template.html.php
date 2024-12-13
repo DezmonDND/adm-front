@@ -2,7 +2,7 @@
 <div class="monuments">
   <div class="monuments__content">
     <div class="monuments-elem"> 
-      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png"/>
+      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
         <div class="monuments-elem__info">
           <div class="monuments-elem__title"><span>Скульптурная композиция Первооткрывателям города Сургута</span></div>
           <div class="monuments-elem__date"><span>Год октрытия</span><span>8 сентября 1968г.</span></div>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="monuments-elem"> 
-      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png"/>
+      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
         <div class="monuments-elem__info">
           <div class="monuments-elem__title"><span>Скульптурная композиция Первооткрывателям города Сургута</span></div>
           <div class="monuments-elem__date"><span>Год октрытия</span><span>8 сентября 1968г.</span></div>
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="monuments-elem"> 
-      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png"/>
+      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
         <div class="monuments-elem__info">
           <div class="monuments-elem__title"><span>Скульптурная композиция Первооткрывателям города Сургута</span></div>
           <div class="monuments-elem__date"><span>Год октрытия</span><span>8 сентября 1968г.</span></div>
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="monuments-elem"> 
-      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png"/>
+      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
         <div class="monuments-elem__info">
           <div class="monuments-elem__title"><span>Скульптурная композиция Первооткрывателям города Сургута</span></div>
           <div class="monuments-elem__date"><span>Год октрытия</span><span>8 сентября 1968г.</span></div>
@@ -50,7 +50,7 @@
       </div>
     </div>
     <div class="monuments-elem"> 
-      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png"/>
+      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
         <div class="monuments-elem__info">
           <div class="monuments-elem__title"><span>Скульптурная композиция Первооткрывателям города Сургута</span></div>
           <div class="monuments-elem__date"><span>Год октрытия</span><span>8 сентября 1968г.</span></div>
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="monuments-elem"> 
-      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png"/>
+      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
         <div class="monuments-elem__info">
           <div class="monuments-elem__title"><span>Скульптурная композиция Первооткрывателям города Сургута</span></div>
           <div class="monuments-elem__date"><span>Год октрытия</span><span>8 сентября 1968г.</span></div>
@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="monuments-elem"> 
-      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png"/>
+      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
         <div class="monuments-elem__info">
           <div class="monuments-elem__title"><span>Скульптурная композиция Первооткрывателям города Сургута</span></div>
           <div class="monuments-elem__date"><span>Год октрытия</span><span>8 сентября 1968г.</span></div>
@@ -86,7 +86,7 @@
       </div>
     </div>
     <div class="monuments-elem"> 
-      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png"/>
+      <div class="monuments-elem__container"><img class="monuments-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
         <div class="monuments-elem__info">
           <div class="monuments-elem__title"><span>Скульптурная композиция Первооткрывателям города Сургута</span></div>
           <div class="monuments-elem__date"><span>Год октрытия</span><span>8 сентября 1968г.</span></div>

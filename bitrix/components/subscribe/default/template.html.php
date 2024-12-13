@@ -6,29 +6,29 @@
       <div class="fieldset__answers_checkboxes">
         <div class="fieldset__checkboxes">
           <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
-          <label class="сheckbox__label" for="1">Название темы</label>
+          <label class="сheckbox__label" for="1" role="checkbox">Название темы</label>
         </div>
         <div class="fieldset__checkboxes">
           <input class="сheckbox сheckbox-label " type="checkbox" id="2" name="undefined"/>
-          <label class="сheckbox__label" for="2">Название темы</label>
+          <label class="сheckbox__label" for="2" role="checkbox">Название темы</label>
         </div>
         <div class="fieldset__checkboxes">
           <input class="сheckbox сheckbox-label " type="checkbox" id="3" name="undefined"/>
-          <label class="сheckbox__label" for="3">Название темы</label>
+          <label class="сheckbox__label" for="3" role="checkbox">Название темы</label>
         </div>
       </div>
     </fieldset>
   </div>
   <div class="subscribe__title"> <span>Введите вашу электронную почту</span></div>
   <div class="subscribe__lineform">
-    <input class="input      " placeholder="Электронная почта" value=""/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подписаться</span>
+    <input class="input      " placeholder="Электронная почта" value="" role="textbox"/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подписаться</span>
       <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></span>
   </div>
   <div class="subscribe__agree">
     <div class="subscribe__title"> <span>Подтверждение подписки</span></div>
     <div class="subscribe__subtitle"> <span>Если вы еще не получили письмо с кодом подтверждения, вы можете повторно <a href="#">запросить код</a></span></div>
     <div class="subscribe__lineform">
-      <input class="input      " placeholder="Введите код подтверждения подписки" value=""/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подтвердить</span>
+      <input class="input      " placeholder="Введите код подтверждения подписки" value="" role="textbox"/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Подтвердить</span>
         <ion-icon class="icon" name="checkmark-done-outline"></ion-icon></span>
     </div>
     <div class="subscribe__subtitle"><span>Дата генерации кода подтверждения: 26.11.2024 15:40:36</span></div>
@@ -42,15 +42,15 @@
         <div class="fieldset__answers_checkboxes">
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
-            <label class="сheckbox__label" for="1">Название темы</label>
+            <label class="сheckbox__label" for="1" role="checkbox">Название темы</label>
           </div>
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="2" name="undefined"/>
-            <label class="сheckbox__label" for="2">Название темы</label>
+            <label class="сheckbox__label" for="2" role="checkbox">Название темы</label>
           </div>
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="3" name="undefined"/>
-            <label class="сheckbox__label" for="3">Название темы</label>
+            <label class="сheckbox__label" for="3" role="checkbox">Название темы</label>
           </div>
         </div>
       </fieldset>
@@ -61,11 +61,11 @@
         <div class="fieldset__answers_checkboxes">
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
-            <label class="сheckbox__label" for="1">Текст</label>
+            <label class="сheckbox__label" for="1" role="checkbox">Текст</label>
           </div>
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="2" name="undefined"/>
-            <label class="сheckbox__label" for="2">HTML</label>
+            <label class="сheckbox__label" for="2" role="checkbox">HTML</label>
           </div>
         </div>
       </fieldset>
@@ -73,7 +73,7 @@
   </div>
   <div class="subscribe__field__heading">Ваш E-mail</div>
   <div class="subscribe__lineform">
-    <input class="input      " placeholder="Электронная почта" value=""/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Применить</span></span>
+    <input class="input      " placeholder="Электронная почта" value="" role="textbox"/><span class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Применить</span></span>
   </div>
   <hr/>
   <div class="subscribe__title"> <span>Состояние подписки</span></div>
