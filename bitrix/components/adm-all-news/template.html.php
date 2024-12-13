@@ -24,7 +24,7 @@
   <input id="from" name="from" value="value" style="display: none;"/>
   <input id="to" name="to" value="value" style="display: none;"/>
   <div class="adm-all-news__filters">
-    <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
+    <select class="select single select_filters__select select-icon-right" name="events">
       <option class="select__option" value="Все события">Все события</option>
       <option class="select__option" value="Театр">Театр</option>
       <option class="select__option" value="Детям">Детям</option>

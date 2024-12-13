@@ -17,7 +17,7 @@
       <fieldset class="fieldset">
         <h3 class="fieldset__title reception__sender_title fieldset__req">Адресат обращения</h3>
         <div class="fieldset__answers">
-          <select class="select select-icon-right" role="listbox">
+          <select class="select select-icon-right">
             <option class="select__option" value="Барсов Евгений Вячеславович">Барсов Евгений Вячеславович</option>
             <option class="select__option" value="Филатов">Филатов</option>
             <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>
@@ -41,7 +41,7 @@
       </fieldset>
       <div class="dm-applications__get-answer">      
         <input class="сheckbox сheckbox-label " type="checkbox" id="contact" name="contact"/>
-        <label class="сheckbox__label" for="contact" role="checkbox">Требование дать письменный ответ по почте</label>
+        <label class="сheckbox__label" for="contact" aria-label="Флажок Требование дать письменный ответ по почте">Требование дать письменный ответ по почте</label>
       </div>
       <div class="dm-applications__divider">    </div>
       <fieldset class="fieldset">
@@ -65,7 +65,7 @@
       <div class="dm-applications__divider"> </div>
       <div class="dm-applications__agreement">
         <input class="сheckbox  " type="checkbox" id="accept" name="accept"/>
-        <label for="accept" role="checkbox"> </label>
+        <label for="accept" aria-label="Флажок"> </label>
         <p class="dm-applications__desc"><span class="dm-applications__span">Согласие на обработку персональных данных:</span> нажимая на кнопку "Отправить" выражаю согласие на обработку, в том числе с помощью средств автоматизации, моих персональных данных. <a class="dm-applications__link" href="/">С Политикой Думы города Сургута в отношении обработки персональных данных</a> ознакомлен.           </p>
       </div>
       <button class="button button_blue button_size_l   " onclick="getValues(event)" title="" role="button" aria-label="Отправить обращение"><span class="button_span">Отправить обращение</span>

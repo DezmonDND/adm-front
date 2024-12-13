@@ -2,7 +2,7 @@
 <div class="search-by-site">
   <input class="input input_s input-search-by-site  input-search-s  " placeholder="Поиск по наименованию или номеру" name="siteSearch" value="" id="siteSearch" role="textbox"/>
   <div class="search-by-site__buttons">
-    <select class="select left select_search-by-site__select select-icon-xs" name="section" role="listbox">
+    <select class="select left select_search-by-site__select select-icon-xs" name="section">
       <option class="select__option" value="Раздел">Раздел</option>
       <option class="select__option" value="Раздел 1">Раздел 1</option>
       <option class="select__option" value="Раздел 2">Раздел 2</option>

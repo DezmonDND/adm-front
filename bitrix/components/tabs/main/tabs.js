@@ -1,13 +1,87 @@
-function removeSlider(value) {
-    const slider = document.querySelector('.news-main__card-list');
+const slides_1 = [
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_1.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_1.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_1.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_1.jpg',
+    }
+]
 
-    let slides;
+const slides_2 = [
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_2.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_2.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_2.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_2.jpg',
+    }
+]
+
+const slides_3 = [
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_3.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_3.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_3.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_3.jpg',
+    }
+]
+
+const slides_4 = [
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_4.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_4.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_4.jpg',
+    },
+    {
+        title: 'Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане',
+        image: 'image_4.jpg',
+    }
+]
+
+function removeSlider() {
+    const slider = document.querySelector('.news-main__card-list');
 
     const slide = `
         <a class="news-main-card" href="/">
             <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> 
-                    <img class="news-main-card__image" src="../resources/image_1.jpg" alt="Изображения">
+                    <img class="news-main-card__image" src="../resources/${slide.image}" alt="Изображения">
                     <div class="news-main-card__tags">
                         <span class="button button_blue button_radius news-card__tag button_size_xs button_without-event" title="">
                             <span class="button_span">Кино</span>
@@ -16,65 +90,12 @@ function removeSlider(value) {
                 </div>
                 <div class="news-main-card__content"> 
                     <span class="news-main-card__date">10&nbsp;июня 2023</span>
-                    <span class="news-main-card__title">Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане</span>
+                    <span class="news-main-card__title">${slide.title}</span>
                 </div>
             </div>
         </a>
     `;
-    const slide2 = `
-        <a class="news-main-card" href="/">
-            <div class="news-main-card__container">
-                <div class="news-main-card__image-block"> 
-                    <img class="news-main-card__image" src="../resources/image_2.jpg" alt="Изображения">
-                    <div class="news-main-card__tags">
-                        <span class="button button_blue button_radius news-card__tag button_size_xs button_without-event" title="">
-                            <span class="button_span">Кино</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="news-main-card__content"> 
-                    <span class="news-main-card__date">10&nbsp;июня 2023</span>
-                    <span class="news-main-card__title">Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане</span>
-                </div>
-            </div>
-        </a>
-    `;
-    const slide3 = `
-        <a class="news-main-card" href="/">
-            <div class="news-main-card__container">
-                <div class="news-main-card__image-block"> 
-                    <img class="news-main-card__image" src="../resources/image_3.jpg" alt="Изображения">
-                    <div class="news-main-card__tags">
-                        <span class="button button_blue button_radius news-card__tag button_size_xs button_without-event" title="">
-                            <span class="button_span">Кино</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="news-main-card__content"> 
-                    <span class="news-main-card__date">10&nbsp;июня 2023</span>
-                    <span class="news-main-card__title">Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане</span>
-                </div>
-            </div>
-        </a>
-    `;
-    const slide4 = `
-        <a class="news-main-card" href="/">
-            <div class="news-main-card__container">
-                <div class="news-main-card__image-block"> 
-                    <img class="news-main-card__image" src="../resources/image_4.jpg" alt="Изображения">
-                    <div class="news-main-card__tags">
-                        <span class="button button_blue button_radius news-card__tag button_size_xs button_without-event" title="">
-                            <span class="button_span">Кино</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="news-main-card__content"> 
-                    <span class="news-main-card__date">10&nbsp;июня 2023</span>
-                    <span class="news-main-card__title">Памятный знак для&nbsp;будущего «Сургутского кремля» создадут горожане</span>
-                </div>
-            </div>
-        </a>
-    `;
+
     $('#news-main__card-list').slick('destroy');
     slider.innerHTML = '';
 

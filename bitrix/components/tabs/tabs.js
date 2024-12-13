@@ -1,19 +1,4 @@
 function removeTabindex() {
-    document.querySelectorAll('*').forEach((element) => {
-        document.querySelector('.mobile-menu').setAttribute('tabindex', '-1');
-        document.querySelector('.mobile-menu').setAttribute('aria-hidden', 'true');
-
-        const isHidden = window.getComputedStyle(element).display === 'none';
-
-        if (isHidden) {
-            element.setAttribute('tabindex', '-1');
-            element.setAttribute('aria-hidden', 'true');
-        } else if (element.hasAttribute('tabindex') && element.getAttribute('tabindex') === '-1') {
-            element.removeAttribute('tabindex');
-            element.setAttribute('aria-hidden', 'false');
-        }
-    });
-
     const headerLinks = document.querySelectorAll('.header__link');
     const headerButtonsContainer = document.querySelector('.header__buttons');
     const headerServices = document.querySelector('.header-services__container');

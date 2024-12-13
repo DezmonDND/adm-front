@@ -92,24 +92,24 @@
           </div>
           <div class="filters">
             <div class="filters_container">
-              <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
+              <select class="select single select_filters__select select-icon-right" name="events">
                 <option class="select__option" value="Все события">Все события</option>
                 <option class="select__option" value="Театр">Театр</option>
                 <option class="select__option" value="Детям">Детям</option>
                 <option class="select__option" value="Выставки">Выставки</option>
                 <option class="select__option" value="Концерты">Концерты</option>
               </select>
-              <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
+              <select class="select single select_filters__select select-icon-right" name="thema">
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
               </select>
-              <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
+              <select class="select single select_filters__select select-icon-right" name="thema">
                 <option class="select__option" value="Место проведения">Место проведения</option>
                 <option class="select__option" value="Место проведения">Место проведения</option>
               </select>
             </div>
             <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
-            <label class="сheckbox__label" for="10" role="checkbox">С пушкинской картой</label>
+            <label class="сheckbox__label" for="10" aria-label="Флажок С пушкинской картой">С пушкинской картой</label>
           </div>
           <div class="events__news" id="events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">

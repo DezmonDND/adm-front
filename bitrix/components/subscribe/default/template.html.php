@@ -6,15 +6,15 @@
       <div class="fieldset__answers_checkboxes">
         <div class="fieldset__checkboxes">
           <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
-          <label class="сheckbox__label" for="1" role="checkbox">Название темы</label>
+          <label class="сheckbox__label" for="1" aria-label="Флажок Название темы">Название темы</label>
         </div>
         <div class="fieldset__checkboxes">
           <input class="сheckbox сheckbox-label " type="checkbox" id="2" name="undefined"/>
-          <label class="сheckbox__label" for="2" role="checkbox">Название темы</label>
+          <label class="сheckbox__label" for="2" aria-label="Флажок Название темы">Название темы</label>
         </div>
         <div class="fieldset__checkboxes">
           <input class="сheckbox сheckbox-label " type="checkbox" id="3" name="undefined"/>
-          <label class="сheckbox__label" for="3" role="checkbox">Название темы</label>
+          <label class="сheckbox__label" for="3" aria-label="Флажок Название темы">Название темы</label>
         </div>
       </div>
     </fieldset>
@@ -42,15 +42,15 @@
         <div class="fieldset__answers_checkboxes">
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
-            <label class="сheckbox__label" for="1" role="checkbox">Название темы</label>
+            <label class="сheckbox__label" for="1" aria-label="Флажок Название темы">Название темы</label>
           </div>
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="2" name="undefined"/>
-            <label class="сheckbox__label" for="2" role="checkbox">Название темы</label>
+            <label class="сheckbox__label" for="2" aria-label="Флажок Название темы">Название темы</label>
           </div>
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="3" name="undefined"/>
-            <label class="сheckbox__label" for="3" role="checkbox">Название темы</label>
+            <label class="сheckbox__label" for="3" aria-label="Флажок Название темы">Название темы</label>
           </div>
         </div>
       </fieldset>
@@ -61,11 +61,11 @@
         <div class="fieldset__answers_checkboxes">
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="1" name="undefined"/>
-            <label class="сheckbox__label" for="1" role="checkbox">Текст</label>
+            <label class="сheckbox__label" for="1" aria-label="Флажок Текст">Текст</label>
           </div>
           <div class="fieldset__checkboxes">
             <input class="сheckbox сheckbox-label " type="checkbox" id="2" name="undefined"/>
-            <label class="сheckbox__label" for="2" role="checkbox">HTML</label>
+            <label class="сheckbox__label" for="2" aria-label="Флажок HTML">HTML</label>
           </div>
         </div>
       </fieldset>
