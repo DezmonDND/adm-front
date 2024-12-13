@@ -90,10 +90,10 @@
 }
 .reception__agreement span,
 .reception__agreement a {
+  color: var(--tertiary-text) !important;
   font-weight: 300;
   font-size: calc(14px * var(--scale));
   line-height: calc(20px * var(--lh));
-  color: var(--tertiary-text) !important;
 }
 @media (max-width: 992px) {
   .reception__agreement span,

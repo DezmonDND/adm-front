@@ -77,7 +77,7 @@
 .login__content-main__title span {
     font-weight: 600;
     color: $main-text;
-    @include heading-h5();
+    @include heading-h4();
 }
 
 .login__content-main__subtitle span {
@@ -99,7 +99,7 @@
 .login__content-main__confirm-email span {
     color: $primary-color;
     cursor: pointer;
-    @include caption-4;
+    @include text-link-2;
 }
 
 .login__content-main__confirm-delim {

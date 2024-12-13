@@ -49,6 +49,11 @@ function initializeCalendar(selector, options) {
 
     if (element) {
         const calendar = new VanillaCalendar(element, options);
+
+        element.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
         return calendar.init();
     }
 }
