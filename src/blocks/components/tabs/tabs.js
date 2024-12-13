@@ -69,7 +69,6 @@ function addAriaForIcons() {
 
     if (importantLinks) {
         importantLinks.forEach((link) => {
-            console.log(link);
 
             const image = link.querySelector('.important-link__icon');
             image.setAttribute('aria-hidden', 'true');
