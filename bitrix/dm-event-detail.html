@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="./css/other.css"/>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <title>Duma</title>
   </head>
-  <body>
-    <header class="header"> 
+  <body class="tmp-duma">
+    <header class="header-duma">
       <div class="mobile-menu">
-        <div class="menu menu_main-bg">
+        <div class="menu menu_duma-bg">
           <div class="menu__container">
             <div class="menu__content"> 
               <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
@@ -27,15 +27,11 @@
                 </button>
               </form>
               <ul class="menu__list"> 
-                <li><a class="menu__item" href="/">Быстрый доступ</a></li>
-                <li><a class="menu__item" href="/">Публичные слушания</a></li>
-                <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
-                <li><a class="menu__item" href="/">Пресс-центр</a></li>
-                <li><a class="menu__item" href="/">Обращения граждан</a></li>
-                <li><a class="menu__item" href="/">О Сургуте</a></li>
-                <li><a class="menu__item" href="/">Городская власть</a></li>
+                <li><a class="menu__item" href="/">О думе города</a></li>
+                <li><a class="menu__item" href="/">Состав и структура</a></li>
                 <li><a class="menu__item" href="/">Документы</a></li>
-                <li><a class="menu__item" href="/">Контакты</a></li>
+                <li><a class="menu__item" href="/">Деятельность</a></li>
+                <li><a class="menu__item" href="/">Обратная связь</a></li>
               </ul>
             </div>
             <div class="menu__bot">
@@ -81,10 +77,29 @@
           </div>
         </div>
       </div>
-      <div class="header__top-content">
-        <div class="header__top-links">
+      <div class="header-duma__container">
+        <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+            <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
+          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+            <ion-icon class="icon" name="menu-outline"></ion-icon>
+          </button>
+          <form class="search search-header-duma">
+            <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
+            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+              <ion-icon class="icon" name="search-outline"></ion-icon>
+            </button>
+          </form>
+          <div class="header__buttons"> 
+            <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+              <ion-icon class="icon" name="eye-outline"></ion-icon>
+            </button>
+            <button class="button button_blue button_size_s   " onclick="anotherFunction()" title=""><span class="button_span">Служебный вход</span>
+            </button>
+          </div>
+        </div>
+        <div class="header__bottom-content">  
           <ul class="header_links">
-            <li class="header__link"><span>Быстрый доступ</span>
+            <li class="header__link"><span>О Думе города</span>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -106,7 +121,7 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Публичные слушания</span>
+            <li class="header__link"><span>Состав и структура</span>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -128,7 +143,7 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Противодействие коррупции</span>
+            <li class="header__link"><span>Документы</span>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -150,7 +165,7 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Пресс-центр</span>
+            <li class="header__link"><span>Деятельность</span>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -172,199 +187,11 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Обращения граждан</span>
-              <div class="dm-second-menu">
-                <div class="dm-second-menu__content">
-                  <div class="dm-second-menu__col">
-                    <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
-                    </div>
-                    <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
-                    </div>
-                    <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                    </div>
-                    <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
-                    </div>
-                  </div>
-                  <div class="dm-second-menu__col">
-                    <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
-                    </div>
-                    <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
+            <li class="header__link"> <a href="/">Обратная связь          </a></li>
           </ul>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+          <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
           </div>
         </div>
-        <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
-            <ion-icon class="icon" name="eye-outline"></ion-icon>
-          </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
-          </button>
-        </div>
-      </div>
-      <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
-          <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-        <form class="search search-header">
-          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
-            <ion-icon class="icon" name="search-outline"></ion-icon>
-          </button>
-        </form>
-        <ul class="header_links">
-          <li class="header__link"><span>О Сургуте</span>
-            <div class="dm-second-menu">
-              <div class="dm-second-menu__content">
-                <div class="dm-second-menu__col">
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
-                  </div>
-                </div>
-                <div class="dm-second-menu__col">
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="header__link"><span>Городская власть</span>
-            <div class="dm-second-menu">
-              <div class="dm-second-menu__content">
-                <div class="dm-second-menu__col">
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
-                  </div>
-                </div>
-                <div class="dm-second-menu__col">
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="header__link"><span>Документы</span>
-            <div class="dm-second-menu">
-              <div class="dm-second-menu__content">
-                <div class="dm-second-menu__col">
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
-                  </div>
-                </div>
-                <div class="dm-second-menu__col">
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
-                  </div>
-                  <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="header__link"> <a href="/">Контакты          </a></li>
-        </ul>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
-          <ion-icon class="icon" name="menu-outline"></ion-icon>
-        </button>
-      </div>
-      <div class="header-visibility__top-content"> 
-        <div class="mobile-menu">
-          <div class="menu menu_main-bg">
-            <div class="menu__container">
-              <div class="menu__content"> 
-                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
-                    <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
-                    <ion-icon class="icon" name="close-outline"></ion-icon>
-                  </button>
-                </div>
-                <form class="search search-header-mobile">
-                  <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
-                    <ion-icon class="icon" name="search-outline"></ion-icon>
-                  </button>
-                </form>
-                <ul class="menu__list"> 
-                  <li><a class="menu__item" href="/">Быстрый доступ</a></li>
-                  <li><a class="menu__item" href="/">Публичные слушания</a></li>
-                  <li><a class="menu__item" href="/">Противодействие коррупции</a></li>
-                  <li><a class="menu__item" href="/">Пресс-центр</a></li>
-                  <li><a class="menu__item" href="/">Обращения граждан</a></li>
-                  <li><a class="menu__item" href="/">О Сургуте</a></li>
-                  <li><a class="menu__item" href="/">Городская власть</a></li>
-                  <li><a class="menu__item" href="/">Документы</a></li>
-                  <li><a class="menu__item" href="/">Контакты</a></li>
-                </ul>
-              </div>
-              <div class="menu__bot">
-                <div class="menu__socials"> 
-                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
-                  </div>
-                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
-                    <ion-icon class="icon" name="eye-outline"></ion-icon>
-                  </button>
-                </div>
-                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header-visibility__top-links">
-          <ul class="header_links">
-            <li class="header__link"> <a href="/">О Сургуте          </a></li>
-            <li class="header__link"> <a href="/">Городская власть          </a></li>
-            <li class="header__link"> <a href="/">Документы          </a></li>
-            <li class="header__link"> <a href="/">Контакты          </a></li>
-          </ul>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
-          </div>
-        </div>
-        <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
-          </button>
-        </div>
-      </div>
-      <div class="header-visibility__middle-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
-          <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-        <form class="search search-header">
-          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
-            <ion-icon class="icon" name="search-outline"></ion-icon>
-          </button>
-        </form>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
-          <ion-icon class="icon" name="menu-outline"></ion-icon>
-        </button>
-      </div>
-      <div class="header-visibility__bottom-content">
-        <ul class="header_links">
-          <li class="header__link"> <a href="/">Быстрый доступ          </a></li>
-          <li class="header__link"> <a href="/">Публичные слушания          </a></li>
-          <li class="header__link"> <a href="/">Противодействие коррупции          </a></li>
-          <li class="header__link"> <a href="/">Пресс-центр          </a></li>
-          <li class="header__link"> <a href="/">Обращения граждан          </a></li>
-        </ul>
       </div>
     </header>
     <div class="overlay hidden"></div>
@@ -441,7 +268,7 @@
     </div>
     <main class="main">
       <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Специальное событие</a><span class="span">/</span><span class="breadcrumb_link">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</span>
+        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Новости</a><span class="span">/</span><span class="breadcrumb_link">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</span>
         </div>
       </div>
       <div class="afisha-event">
@@ -462,6 +289,7 @@
                           </div>
                         </div>
                         <p class="event-card__text">18 июня на Центральной площади города отметили традиционный татарский и башкирский праздник. В Сургуте в этом году Сабантуй прошел в 35-й, юбилейный, раз. В мероприятии приняли участие 15 тысяч человек.</p>
+                        <div class="event-card__department"> <span class="event-card__department-title">Департамент:</span><span class="event-card__department-desc">Департамент городского хозяйства  </span></div>
                         <div class="event-card__dates">
                           <div class="event-card__dates-content">   <span class="event-card__date">от 21 января 2024</span><span class="event-card__last-date">последнее обновление: 23 января 2024</span></div>
                           <div class="event-card__buttons"> <a class="button button_link button_white button_print button_size_m  " href="/" title=""><span class="button_span">Версия для печати</span>

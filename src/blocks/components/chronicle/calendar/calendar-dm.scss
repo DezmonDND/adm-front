@@ -42,6 +42,7 @@ body.tmp-duma {
 
 .calendar-dm {
     background-color: $content-color;
+    z-index: 1;
 
     .vanilla-calendar-header {
         margin-bottom: 20px;
