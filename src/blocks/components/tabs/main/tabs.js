@@ -117,17 +117,20 @@ function filterAndCreateSlides(value) {
         slider.insertAdjacentHTML('beforeend', crateNewSlide(el));
     });
 
-    $('#news-main__card-list').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        variableWidth: true,
-        responsive: [
-            { breakpoint: 768, settings: { slidesToShow: 2 } },
-            { breakpoint: 500, settings: { slidesToShow: 1 } },
-        ],
-    });
+    if (window.innerWidth < 992) {
+
+        $('#news-main__card-list').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true,
+            responsive: [
+                { breakpoint: 768, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        });
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
