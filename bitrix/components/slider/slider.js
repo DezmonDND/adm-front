@@ -243,22 +243,8 @@ function reinitSlider(selector) {
     const $slider = $(selector);   
 
     if ($slider.hasClass('slick-initialized')) {
-        // $('#news-main__card-list').slick('destroy');
-        // $('#news-main__card-list').slick({
-        //     infinite: true,
-        //     slidesToShow: 3,
-        //     slidesToScroll: 1,
-        //     arrows: false,
-        //     variableWidth: true,
-        //     responsive: [
-        //         { breakpoint: 768, settings: { slidesToShow: 2 } },
-        //         { breakpoint: 500, settings: { slidesToShow: 1 } },
-        //     ],
-        // });
         $slider.slick('destroy');
-        console.log(`Слайдер ${selector} разобран`);
         $($slider).slick(newsOptions);
-        console.log(`Слайдер ${selector} с опциями ${Object.entries(newsOptions)} собран`);
     }
 }
 
