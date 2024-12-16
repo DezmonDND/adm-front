@@ -21832,7 +21832,8 @@ body.compensate-for-scrollbar {
   gap: 14px;
 }
 
-.balloon-name span {
+.balloon-name a {
+  color: var(--main-text);
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -21842,10 +21843,17 @@ body.compensate-for-scrollbar {
   line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
-  .balloon-name span {
+  .balloon-name a {
     font-size: calc(12px * var(--scale));
     line-height: calc(16px * var(--lh));
   }
+}
+.balloon-name a:hover {
+  text-decoration: none;
+  color: var(--primary-color-hover);
+}
+.balloon-name a:active {
+  color: var(--primary-color-active);
 }
 
 .balloon-btns {
@@ -21856,10 +21864,19 @@ body.compensate-for-scrollbar {
 .balloon-btns ion-icon {
   cursor: pointer;
 }
+.balloon-btns ion-icon:hover {
+  color: var(--primary-color-hover);
+}
 
 .balloon-img {
   width: 100%;
   height: 200px;
+  margin-bottom: 24px;
+}
+@media (max-width: 992px) {
+  .balloon-img {
+    margin-bottom: 12px;
+  }
 }
 .balloon-img img {
   width: 100%;
@@ -21927,6 +21944,18 @@ body.compensate-for-scrollbar {
   .balloon-info-item span:last-child {
     font-size: calc(10px * var(--scale));
     line-height: calc(14px * var(--lh));
+  }
+}
+
+.balloon-content {
+  max-height: 364px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-top: 24px;
+}
+@media (max-width: 992px) {
+  .balloon-content {
+    margin-top: 12px;
   }
 }
 

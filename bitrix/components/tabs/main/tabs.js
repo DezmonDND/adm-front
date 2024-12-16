@@ -360,37 +360,40 @@ function filterAndCreateSlides(value) {
 
 // Подчеркивать таб при клике и получать текущий id таба
 document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.tab-button');
+    const newsMain = document.querySelector('.news-main');
 
-    if (!tabs || tabs.length === 0) {
-        console.error('Вкладок не найдено.');
-        return;
-    }
+    if (newsMain) {
+        const tabs = newsMain.querySelectorAll('.tab-button');
 
-    tabs.forEach((tab) => {
-        tab.addEventListener('click', (e) => {
-            e.preventDefault();
+        if (!tabs || tabs.length === 0) {
+            return;
+        }
 
-            tabs.forEach((t) => t.classList.remove('tab-button_active'));
-            e.target.classList.add('tab-button_active');
-            window.sessionStorage.setItem('tabValue', e.target.textContent);
-            filterAndCreateSlides(e.target);
-        });
-    });
-
-    // Если в сессионном хранилище есть значение для таба, то подчеркиваем нужные таб
-    // и рисуем карточки по фильтру, если нет - то подчеркиваем 1 таб и карточки для него
-    const savedTabValue = window.sessionStorage.getItem('tabValue');
-
-    if (savedTabValue) {
         tabs.forEach((tab) => {
-            if (tab.textContent === savedTabValue) {
-                tab.classList.add('tab-button_active');
-                filterAndCreateSlides(tab);
-            }
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                tabs.forEach((t) => t.classList.remove('tab-button_active'));
+                e.target.classList.add('tab-button_active');
+                window.sessionStorage.setItem('tabValue', e.target.textContent);
+                filterAndCreateSlides(e.target);
+            });
         });
-    } else {
-        tabs[0].classList.add('tab-button_active');
-        filterAndCreateSlides(tabs[0]);
+
+        // Если в сессионном хранилище есть значение для таба, то подчеркиваем нужные таб
+        // и рисуем карточки по фильтру, если нет - то подчеркиваем 1 таб и карточки для него
+        const savedTabValue = window.sessionStorage.getItem('tabValue');
+
+        if (savedTabValue) {
+            tabs.forEach((tab) => {
+                if (tab.textContent === savedTabValue) {
+                    tab.classList.add('tab-button_active');
+                    filterAndCreateSlides(tab);
+                }
+            });
+        } else {
+            tabs[0].classList.add('tab-button_active');
+            filterAndCreateSlides(tabs[0]);
+        }
     }
 });
