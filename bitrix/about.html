@@ -289,7 +289,7 @@
               </div>
             </div>
           </li>
-          <li class="header__link" role="link" aria-label="Контакты"> <a href="/" tabindex="-1">Контакты          </a></li>
+          <li class="header__link" aria-label="Контакты"> <a href="/" tabindex="-1">Контакты          </a></li>
         </ul>
         <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
@@ -340,10 +340,10 @@
         </div>
         <div class="header-visibility__top-links">
           <ul class="header_links">
-            <li class="header__link" role="link" aria-label="О Сургуте"> <a href="/" tabindex="-1">О Сургуте          </a></li>
-            <li class="header__link" role="link" aria-label="Городская власть"> <a href="/" tabindex="-1">Городская власть          </a></li>
-            <li class="header__link" role="link" aria-label="Документы"> <a href="/" tabindex="-1">Документы          </a></li>
-            <li class="header__link" role="link" aria-label="Контакты"> <a href="/" tabindex="-1">Контакты          </a></li>
+            <li class="header__link" aria-label="О Сургуте"> <a href="/" tabindex="-1">О Сургуте          </a></li>
+            <li class="header__link" aria-label="Городская власть"> <a href="/" tabindex="-1">Городская власть          </a></li>
+            <li class="header__link" aria-label="Документы"> <a href="/" tabindex="-1">Документы          </a></li>
+            <li class="header__link" aria-label="Контакты"> <a href="/" tabindex="-1">Контакты          </a></li>
           </ul>
           <div class="header__socials"><a class="header__social-icon vk_icon" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a><a class="header__social-icon tg_icon" href="/" title="Ссылка на социальные сети Телеграмм" role="link"></a>
           </div>
@@ -356,7 +356,7 @@
       <div class="header-visibility__middle-content"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="adm-by-site-search" value="" id="adm-by-site-search" role="textbox"/>
           <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
@@ -367,11 +367,11 @@
       </div>
       <div class="header-visibility__bottom-content">
         <ul class="header_links">
-          <li class="header__link" role="link" aria-label="Быстрый доступ"> <a href="/" tabindex="-1">Быстрый доступ          </a></li>
-          <li class="header__link" role="link" aria-label="Публичные слушания"> <a href="/" tabindex="-1">Публичные слушания          </a></li>
-          <li class="header__link" role="link" aria-label="Противодействие коррупции"> <a href="/" tabindex="-1">Противодействие коррупции          </a></li>
-          <li class="header__link" role="link" aria-label="Пресс-центр"> <a href="/" tabindex="-1">Пресс-центр          </a></li>
-          <li class="header__link" role="link" aria-label="Обращения граждан"> <a href="/" tabindex="-1">Обращения граждан          </a></li>
+          <li class="header__link" aria-label="Быстрый доступ"> <a href="/" tabindex="-1">Быстрый доступ          </a></li>
+          <li class="header__link" aria-label="Публичные слушания"> <a href="/" tabindex="-1">Публичные слушания          </a></li>
+          <li class="header__link" aria-label="Противодействие коррупции"> <a href="/" tabindex="-1">Противодействие коррупции          </a></li>
+          <li class="header__link" aria-label="Пресс-центр"> <a href="/" tabindex="-1">Пресс-центр          </a></li>
+          <li class="header__link" aria-label="Обращения граждан"> <a href="/" tabindex="-1">Обращения граждан          </a></li>
         </ul>
       </div>
     </header>
@@ -463,9 +463,7 @@
                 <div class="about-card-right"><span class="about-card-fact">1594</span></div>
               </div><span class="about-info-text">Территория городского округа граничит с муниципальными образованиями: Сургутский муниципальный район, городское поселение Белый Яр, городское поселение Барсово, сельское поселение Солнечный.    </span>
               <div class="about-card"> 
-                <div class="about-card-left"><span class="about-card-title">День города </span>
-                  <n class="about-card-subtitle">Сургута</n>
-                </div>
+                <div class="about-card-left"><span class="about-card-title">День города </span><span class="about-card-subtitle">Сургута</span></div>
                 <div class="about-card-right"><span class="about-card-fact">12 июня</span></div>
               </div>
             </div>
@@ -473,7 +471,8 @@
               <div class="about-info__map-content"><img class="about-info__map-image" src="/local/templates/surgut/img/about_map.png"/>
                 <div class="about-info__map-desc-block"> 
                   <div class="about-info__map-title"><b>Муниципальное образование:</b> городской округ город Сургут Ханты-Мансийский автономный округ – Югра</div>
-                  <ul class="about-info__map-list"><b>Территория городского округа граничит с муниципальными образованиями:</b> 
+                  <ul class="about-info__map-list"> 
+                    <li><b>Территория городского округа граничит с муниципальными образованиями:</b> </li>
                     <li class="about-info__map-list-item">Сургутский муниципальный район  </li>
                     <li class="about-info__map-list-item">городское поселение Белый Яр</li>
                     <li class="about-info__map-list-item">городское поселение Барсово</li>
@@ -776,8 +775,8 @@
                           <p class="about-video-list__text">К 430-летию со дня основания города <b>Сургутский краеведческий музей подготовил цикл видеороликов </b>(7 видеороликов), направленных на знакомство горожан и гостей Сургута с его древней и современной историей, с уникальными городскими архитектурными объектами, отражающими становление и развитие северного города.</p>
                         </div>
                         <div class="about-video">
-                          <video id="video-player" controls="controls" width="100%" height="100%">
-                            <source id="video-source" src="/resources/SKM1.mp4" type="video/mp4"/>
+                          <video id="video-player-first" controls="controls">
+                            <source id="video-source-first" src="/resources/SKM1.mp4" type="video/mp4"/>
                           </video>
                         </div>
                       </div>
@@ -787,8 +786,8 @@
                           <p class="about-video-list__text">К 430-летию со дня основания города <b>Сургутский краеведческий музей подготовил цикл видеороликов </b>(7 видеороликов), направленных на знакомство горожан и гостей Сургута с его древней и современной историей, с уникальными городскими архитектурными объектами, отражающими становление и развитие северного города.</p>
                         </div>
                         <div class="about-video">
-                          <video id="video-player" controls="controls" width="100%" height="100%">
-                            <source id="video-source" src="/resources/SKM1.mp4" type="video/mp4"/>
+                          <video id="video-player-second" controls="controls">
+                            <source id="video-source-second" src="/resources/SKM1.mp4" type="video/mp4"/>
                           </video>
                         </div>
                       </div>
@@ -806,10 +805,10 @@
                 </div>
               </div>
               <div class="about-citizens__tabs"> 
-                <div class="tabs-tag" role="tablist"><a class="tab-button " href="#" value="Почетные граждане Сургута" role="tab" aria-label="Почетные граждане Сургута">Почетные граждане Сургута</a><a class="tab-button " href="#" value="Почетные граждане ХМАО-Югры" role="tab" aria-label="Почетные граждане ХМАО-Югры">Почетные граждане ХМАО-Югры</a><a class="tab-button " href="#" value="Доска почета" role="tab" aria-label="Доска почета">Доска почета</a><a class="tab-button " href="#" value="За заслуги перед городом Сургутом" role="tab" aria-label="За заслуги перед городом Сургутом">За заслуги перед городом Сургутом</a>
+                <div class="tabs-tag" role="tablist"><a class="tab-button " href="#" role="tab" aria-label="Почетные граждане Сургута">Почетные граждане Сургута</a><a class="tab-button " href="#" role="tab" aria-label="Почетные граждане ХМАО-Югры">Почетные граждане ХМАО-Югры</a><a class="tab-button " href="#" role="tab" aria-label="Доска почета">Доска почета</a><a class="tab-button " href="#" role="tab" aria-label="За заслуги перед городом Сургутом">За заслуги перед городом Сургутом</a>
                 </div>
               </div>
-              <div class="about-citizens__list"><a href="/" value="1"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/" value="1"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/" value="1"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/" value="1"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a></div>
+              <div class="about-citizens__list"><a href="/"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a></div>
               <div class="about-citizens__documents"><a class="files-list__document-description">
                   <ion-icon class="files-list__icon" name="document"></ion-icon><span class="files-list__document-title">Книга почета.pdf       </span></a></div>
             </div>

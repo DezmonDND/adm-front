@@ -1,6 +1,6 @@
 mixin select(name, type, iconPosition, options, cls, size)
   if type === 'multiple'
-    select.select.select_multiple(name=`${name}[]` multiple='multiple' role='listbox')
+    select.select.select_multiple(name=`${name}[]` multiple='multiple')
       if options
         each option in options
           option(class=`select__option` value=option.value)= option.text
@@ -9,7 +9,7 @@ mixin select(name, type, iconPosition, options, cls, size)
     - const hasSize = size ? `select_${size}` : ''
     - const classIconPosition = iconPosition ? `select-icon-${iconPosition}` : '';
 
-    select.select(class=[hasClass, hasSize, classIconPosition] name=name role='listbox')
+    select.select(class=[hasClass, hasSize, classIconPosition] name=name)
       if options
         each option in options
           option(class=`select__option` value=option.value)= option.text

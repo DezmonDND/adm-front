@@ -210,7 +210,7 @@ mixin header(sort)
                 about: 'Официальный портал',
             })
             +search(
-                {name: 'number', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
+                {name: 'adm-by-site-search', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
                     false, 's', 'getValues()', 'header',) 
             +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs' })   
         .header-visibility__bottom-content

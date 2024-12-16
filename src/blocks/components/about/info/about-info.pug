@@ -19,7 +19,7 @@ mixin about-info()
             .about-card 
                 .about-card-left
                     span.about-card-title День города 
-                    n.about-card-subtitle Сургута
+                    span.about-card-subtitle Сургута
                 .about-card-right
                     span.about-card-fact 12 июня
         .about-info__map   
@@ -27,7 +27,8 @@ mixin about-info()
                 img(src='../img/about_map.png').about-info__map-image
                 .about-info__map-desc-block  
                     .about-info__map-title #[b Муниципальное образование:] городской округ город Сургут Ханты-Мансийский автономный округ – Югра
-                    ul.about-info__map-list #[b Территория городского округа граничит с муниципальными образованиями:] 
+                    ul.about-info__map-list 
+                        li #[b Территория городского округа граничит с муниципальными образованиями:] 
                         li.about-info__map-list-item Сургутский муниципальный район  
                         li.about-info__map-list-item городское поселение Белый Яр
                         li.about-info__map-list-item городское поселение Барсово

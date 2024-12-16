@@ -12,7 +12,7 @@
       <fieldset class="fieldset">
         <h3 class="fieldset__title reception__sender_title fieldset__req">Кому направляете электронную анкету</h3>
         <div class="fieldset__answers">
-          <select class="select select-icon-right" role="listbox">
+          <select class="select select-icon-right">
             <option class="select__option" value="Филатов Андрей Сергеевич, Глава города Сургута">Филатов Андрей Сергеевич, Глава города Сургута</option>
             <option class="select__option" value="Филатов">Филатов</option>
             <option class="select__option" value="Глава города Сургута">Глава города Сургута</option>

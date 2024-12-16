@@ -60,7 +60,7 @@ function initializeCalendar(selector, options) {
 
 function getDates() {
     const href = window.location.href;
-    // const href = 'https://dev15-surg-duma.mebot24.ru/novosti/?tag=&from=02.12.2024&to=08.12.2024';
+    // const href = 'https://dev15-surg-duma.mebot24.ru/novosti/?tag=&from=01.12.2024&to=08.12.2024';
     const urlParams = new URLSearchParams(new URL(href).search);
     const fromParam = urlParams.get('from');
     const toParam = urlParams.get('to');
@@ -70,7 +70,9 @@ function getDates() {
         const buttonText = button.querySelector('.button_span');
 
         if (fromParam && toParam) {
-            buttonText.textContent = `Дата c ${fromParam} по ${toParam}`;
+            if (fromParam !== 'value' && toParam !== 'value') {
+                buttonText.textContent = `Дата c ${fromParam} по ${toParam}`;
+            }
         }
     }
 }
