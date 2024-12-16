@@ -20693,6 +20693,9 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
 .telephone-elem.active > .tepelhone-elem-title .telephone-elem-expand {
   transform: rotate(180deg);
 }
+.telephone-elem.active hr:first-of-type {
+  display: block;
+}
 @media (max-width: 768px) {
   .telephone-elem {
     padding: 10px;
@@ -20702,6 +20705,9 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   margin: 0;
   margin-top: 20px;
   width: 100%;
+}
+.telephone-elem hr:first-of-type {
+  display: none;
 }
 @media (max-width: 768px) {
   .telephone-elem hr {
@@ -20733,6 +20739,12 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   color: var(--primary-color);
   cursor: pointer;
 }
+.telephone-elem .tepelhone-elem-title ion-icon:hover {
+  color: var(--primary-color-hover);
+}
+.telephone-elem .tepelhone-elem-title ion-icon:active {
+  color: var(--primary-color-active);
+}
 .telephone-elem .tepelhone-elem-title .telephone-elem-title-left {
   display: flex;
   align-items: center;
@@ -20749,6 +20761,13 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
     font-size: calc(11px * var(--scale));
     line-height: calc(14px * var(--lh));
   }
+}
+.telephone-elem .tepelhone-elem-title .telephone-elem-title-left a:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+}
+.telephone-elem .tepelhone-elem-title .telephone-elem-title-left a:active {
+  color: var(--primary-color-active);
 }
 .telephone-elem .telephone-elem-main {
   display: none;
@@ -20781,11 +20800,13 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
     gap: 20px;
   }
 }
-.telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:first-child, .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:last-child {
+.telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:first-child,
+.telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:last-child {
   width: 35%;
 }
 @media (max-width: 768px) {
-  .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:first-child, .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:last-child {
+  .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:first-child,
+  .telephone-elem .telephone-elem-main .telephone-elem-phones .telephone-elem-phones-row .telephone-elem-row-item:last-child {
     width: 100%;
   }
 }
