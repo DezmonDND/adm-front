@@ -66,22 +66,6 @@ const sliders = [
             ],
         },
     },
-    // Помогите городу стать лучше
-    {
-        selector: '#help-city__content',
-        nextArrow: '.slider__help-city-next',
-        prevArrow: '.slider__help-city-prev',
-        options: {
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            responsive: [
-                { breakpoint: 850, settings: { slidesToShow: 2 } },
-                { breakpoint: 500, settings: { slidesToShow: 1 } },
-            ],
-        },
-    },
     // Важная информация для жителей
     {
         selector: '#important-inf__container',
@@ -164,6 +148,22 @@ const newsSliders = [
             ],
         },
     },
+    // Помогите городу стать лучше
+    {
+        selector: '#help-city__content',
+        nextArrow: '.slider__help-city-next',
+        prevArrow: '.slider__help-city-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [
+                { breakpoint: 850, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        },
+    },
 ];
 
 // Создать экземпляр слайдера
@@ -172,6 +172,12 @@ $(document).ready(function () {
     sliders.forEach((slider) => {
         initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
     });
+
+    newsSliders.forEach((slider) => {
+        initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
+    });
+
+    
 
     // Удалить пустые id
     const slides = document.querySelectorAll('.slick-slide');
@@ -216,7 +222,7 @@ function destroySlider(selector) {
     $(selector).slick('unslick');
 }
 
-// Найти и собрать слайдер по селектору (для главных новостей)
+// Найти и собрать слайдер по селектору (для главных новостей и опросов)
 // Поиск только по массиву newsSliders
 
 function findAndCreateSlider(selector) {

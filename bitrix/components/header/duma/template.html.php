@@ -74,7 +74,7 @@
         <ion-icon class="icon" name="menu-outline"></ion-icon>
       </button>
       <form class="search search-header-duma">
-        <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+        <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="dm-by-site-search" value="" id="dm-by-site-search" role="textbox"/>
         <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
           <ion-icon class="icon" name="search-outline"></ion-icon>
         </button>

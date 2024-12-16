@@ -81,5 +81,8 @@ function addImageAlt() {
         });
     }
 }
-addImageAlt();
-addButtonTitle();
+
+$(document).ready(function () {
+    addImageAlt();
+    addButtonTitle();
+});
