@@ -169,6 +169,16 @@ $(document).ready(function () {
     sliders.forEach((slider) => {
         initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
     });
+
+    // Удалить пустые id
+    const slides = document.querySelectorAll('.slick-slide');
+    if (slides) {
+        slides.forEach((slide) => {
+            if (slide.getAttribute('id') === '') {
+                slide.removeAttribute('id');
+            }
+        });
+    }
 });
 
 // Разобрать слайдеры
@@ -240,7 +250,7 @@ $('.slider__news-main-prev').on('click', function () {
 });
 
 function reinitSlider(selector) {
-    const $slider = $(selector);   
+    const $slider = $(selector);
 
     if ($slider.hasClass('slick-initialized')) {
         $slider.slick('destroy');
@@ -251,3 +261,20 @@ function reinitSlider(selector) {
 $(document).ready(function () {
     reinitSlider('#news-main__card-list');
 });
+
+// Удалить пустые id
+// document.addEventListener('DOMContentLoaded', () => {
+//     const slides = document.querySelectorAll('.slick-slide');
+
+//     console.log(slides);
+
+//     // if (slides) {
+//     //     slides.forEach((slide) => {
+//     //         // if (slide.getAttribute('id').value === '') {
+//     //         //     console.log(slide);
+
+//     //         slide.removeAttribute('id');
+//     //         // }
+//     //     });
+//     // }
+// });
