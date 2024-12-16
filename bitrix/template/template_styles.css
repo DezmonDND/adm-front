@@ -20705,6 +20705,8 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   margin: 0;
   margin-top: 20px;
   width: 100%;
+  border: 1px solid var(--fourth-text);
+  border-top: 0;
 }
 .telephone-elem hr:first-of-type {
   display: none;
