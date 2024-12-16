@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="tabs">
-    <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" value="Самые важные" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Официальные выступления" role="tab" aria-label="Официальные выступления">Официальные выступления</a><a class="tab-button " href="/" value="Заседания" role="tab" aria-label="Заседания">Заседания</a><a class="tab-button " href="/" value="Афиша" role="tab" aria-label="Афиша">Афиша</a>
+    <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" role="tab" aria-label="Официальные выступления">Официальные выступления</a><a class="tab-button " href="/" role="tab" aria-label="Заседания">Заседания</a><a class="tab-button " href="/" role="tab" aria-label="Афиша">Афиша</a>
     </div>
   </div>
   <div class="calendar" aria-label="Календарь событий">
@@ -63,24 +63,24 @@
   </div>
   <div class="filters">
     <div class="filters_container">
-      <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
+      <select class="select single select_filters__select select-icon-right" name="events">
         <option class="select__option" value="Все события">Все события</option>
         <option class="select__option" value="Театр">Театр</option>
         <option class="select__option" value="Детям">Детям</option>
         <option class="select__option" value="Выставки">Выставки</option>
         <option class="select__option" value="Концерты">Концерты</option>
       </select>
-      <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
+      <select class="select single select_filters__select select-icon-right" name="thema">
         <option class="select__option" value="Любая тематика">Любая тематика</option>
         <option class="select__option" value="Любая тематика">Любая тематика</option>
       </select>
-      <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
+      <select class="select single select_filters__select select-icon-right" name="thema">
         <option class="select__option" value="Место проведения">Место проведения</option>
         <option class="select__option" value="Место проведения">Место проведения</option>
       </select>
     </div>
     <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
-    <label class="сheckbox__label" for="10" role="checkbox">С пушкинской картой</label>
+    <label class="сheckbox__label" for="10" aria-label="Флажок С пушкинской картой">С пушкинской картой</label>
   </div>
   <div class="afisha-universal"> 
     <div class="afisha-universal__content">

@@ -1,7 +1,7 @@
 include ../../../libs/buttons/_buttons
 
 mixin news-main-card(data = [])
-    a(href='/' title=`${data.title}`).news-main-card
+    a(href='/' title=`${data.title}` role='link').news-main-card
         .news-main-card__container
             .news-main-card__image-block 
                 img(class='news-main-card__image' src=`../resources/${data.image}` alt='Изображения')

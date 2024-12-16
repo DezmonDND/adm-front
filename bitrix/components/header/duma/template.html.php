@@ -74,7 +74,7 @@
         <ion-icon class="icon" name="menu-outline"></ion-icon>
       </button>
       <form class="search search-header-duma">
-        <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+        <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="dm-by-site-search" value="" id="dm-by-site-search" role="textbox"/>
         <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
           <ion-icon class="icon" name="search-outline"></ion-icon>
         </button>
@@ -181,7 +181,7 @@
             </div>
           </div>
         </li>
-        <li class="header__link" role="link" aria-label="Обратная связь"> <a href="/" tabindex="-1">Обратная связь          </a></li>
+        <li class="header__link" aria-label="Обратная связь"> <a href="/" tabindex="-1">Обратная связь          </a></li>
       </ul>
       <div class="header__socials"><a class="header__social-icon vk_icon-duma" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon-duma" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a>
       </div>

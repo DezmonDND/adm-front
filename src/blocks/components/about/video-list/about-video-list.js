@@ -8,6 +8,19 @@ $(document).ready(function () {
         variableWidth: false,
     });
 
+    const slides = document.querySelectorAll('.slick-slide');
+    if (slides) {
+        slides.forEach((slide) => {
+            const video = slide.querySelector('video');
+            const source = slide.querySelector('source');
+            if (slide.getAttribute('id') === '') {
+                slide.removeAttribute('id');
+                video.removeAttribute('id');
+                source.removeAttribute('id');
+            }
+        });
+    }
+
     // $('.slider__afisha-event-next').on('click', function () {
     //     $('#about-video-list').slick('slickNext');
     // });

@@ -1,19 +1,4 @@
 function removeTabindex() {
-    document.querySelectorAll('*').forEach((element) => {
-        document.querySelector('.mobile-menu').setAttribute('tabindex', '-1');
-        document.querySelector('.mobile-menu').setAttribute('aria-hidden', 'true');
-
-        const isHidden = window.getComputedStyle(element).display === 'none';
-
-        if (isHidden) {
-            element.setAttribute('tabindex', '-1');
-            element.setAttribute('aria-hidden', 'true');
-        } else if (element.hasAttribute('tabindex') && element.getAttribute('tabindex') === '-1') {
-            element.removeAttribute('tabindex');
-            element.setAttribute('aria-hidden', 'false');
-        }
-    });
-
     const headerLinks = document.querySelectorAll('.header__link');
     const headerButtonsContainer = document.querySelector('.header__buttons');
     const headerServices = document.querySelector('.header-services__container');
@@ -28,7 +13,7 @@ function removeTabindex() {
     if (headerLinks) {
         headerLinks.forEach((link) => {
             const button = link.querySelector('button');
-            const navLink =link.querySelector('a');
+            const navLink = link.querySelector('a');
             if (button) {
                 button.setAttribute('tabindex', '-1');
             }
@@ -84,7 +69,6 @@ function addAriaForIcons() {
 
     if (importantLinks) {
         importantLinks.forEach((link) => {
-            console.log(link);
 
             const image = link.querySelector('.important-link__icon');
             image.setAttribute('aria-hidden', 'true');
@@ -98,5 +82,7 @@ function addAriaForIcons() {
     }
 }
 
-removeTabindex();
-addAriaForIcons();
+$(document).ready(function () {
+    removeTabindex();
+    addAriaForIcons();
+});

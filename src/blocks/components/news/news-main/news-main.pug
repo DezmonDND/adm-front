@@ -16,143 +16,143 @@ mixin news-main()
                         })
                         +tabs( 
                             [
-                                { isActive: true, title: 'Самые важные', href: '/' },
-                                { title: 'Реализация нацпроектов', href: '/' },
-                                { title: 'Деятельность администрации', href: '/' },
-                                { title: 'Областная дума', href: '/' },
+                                { title: 'Самые важные', href: '/', id: 'tab-1' },
+                                { title: 'Реализация нацпроектов', href: '/', id: 'tab-2' },
+                                { title: 'Деятельность администрации', href: '/', id: 'tab-3' },
+                                { title: 'Областная дума', href: '/', id: 'tab-4' },
                             ])
                         .news-main__card-list(id='news-main__card-list') 
-                            +news-main-card(
-                            {
-                                image: 'image_1.jpg',
-                                date: '10 июня 2023',
-                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                                tags: [
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'история',
-                                    }                     
-                                ]
-                            },
-                            )
-                            +news-main-card(
-                            {
-                                image: 'image_2.jpg',
-                                date: '10 июня 2023',
-                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                                tags: [
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'Медицина',
-                                    },
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'Награды',
-                                    }                      
-                                ]
-                            },
-                            )
-                            +news-main-card(
-                            {
-                                image: 'image_3.jpg',
-                                date: '10 июня 2023',
-                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                                tags: [
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'Пожары',
-                                    },                   
-                                ]
-                            },
-                            )
-                            +news-main-card(
-                            {
-                                image: 'image_4.jpg',
-                                date: '10 июня 2023',
-                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                                tags: [
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'Пожары',
-                                    },                   
-                                ]
-                            },
-                            )
-                            +news-main-card(
-                            {
-                                image: 'image_1.jpg',
-                                date: '10 июня 2023',
-                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                                tags: [
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'история',
-                                    }                     
-                                ]
-                            },
-                            )
-                            +news-main-card(
-                            {
-                                image: 'image_2.jpg',
-                                date: '10 июня 2023',
-                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                                tags: [
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'Медицина',
-                                    },
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius  news-card__tag', 
-                                        text: 'Награды',
-                                    }                      
-                                ]
-                            },
-                            )
-                            +news-main-card(
-                            {
-                                image: 'image_3.jpg',
-                                date: '10 июня 2023',
-                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                                tags: [
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'Пожары',
-                                    },                   
-                                ]
-                            },
-                            )
-                            +news-main-card(
-                            {
-                                image: 'image_4.jpg',
-                                date: '10 июня 2023',
-                                title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
-                                tags: [
-                                    {
-                                        type: 'button',
-                                        size: 'xs', 
-                                        class: 'button_blue button_radius news-card__tag', 
-                                        text: 'Экономика',
-                                    },                    
-                                ]
-                            },
-                            )
+                            //- +news-main-card(
+                            //- {
+                            //-     image: 'image_1.jpg',
+                            //-     date: '10 июня 2023',
+                            //-     title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                            //-     tags: [
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'история',
+                            //-         }                     
+                            //-     ]
+                            //- },
+                            //- )
+                            //- +news-main-card(
+                            //- {
+                            //-     image: 'image_2.jpg',
+                            //-     date: '10 июня 2023',
+                            //-     title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                            //-     tags: [
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'Медицина',
+                            //-         },
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'Награды',
+                            //-         }                      
+                            //-     ]
+                            //- },
+                            //- )
+                            //- +news-main-card(
+                            //- {
+                            //-     image: 'image_3.jpg',
+                            //-     date: '10 июня 2023',
+                            //-     title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                            //-     tags: [
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'Пожары',
+                            //-         },                   
+                            //-     ]
+                            //- },
+                            //- )
+                            //- +news-main-card(
+                            //- {
+                            //-     image: 'image_4.jpg',
+                            //-     date: '10 июня 2023',
+                            //-     title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                            //-     tags: [
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'Пожары',
+                            //-         },                   
+                            //-     ]
+                            //- },
+                            //- )
+                            //- +news-main-card(
+                            //- {
+                            //-     image: 'image_1.jpg',
+                            //-     date: '10 июня 2023',
+                            //-     title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                            //-     tags: [
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'история',
+                            //-         }                     
+                            //-     ]
+                            //- },
+                            //- )
+                            //- +news-main-card(
+                            //- {
+                            //-     image: 'image_2.jpg',
+                            //-     date: '10 июня 2023',
+                            //-     title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                            //-     tags: [
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'Медицина',
+                            //-         },
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius  news-card__tag', 
+                            //-             text: 'Награды',
+                            //-         }                      
+                            //-     ]
+                            //- },
+                            //- )
+                            //- +news-main-card(
+                            //- {
+                            //-     image: 'image_3.jpg',
+                            //-     date: '10 июня 2023',
+                            //-     title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                            //-     tags: [
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'Пожары',
+                            //-         },                   
+                            //-     ]
+                            //- },
+                            //- )
+                            //- +news-main-card(
+                            //- {
+                            //-     image: 'image_4.jpg',
+                            //-     date: '10 июня 2023',
+                            //-     title: 'Памятный знак для будущего «Сургутского кремля» создадут горожане',
+                            //-     tags: [
+                            //-         {
+                            //-             type: 'button',
+                            //-             size: 'xs', 
+                            //-             class: 'button_blue button_radius news-card__tag', 
+                            //-             text: 'Экономика',
+                            //-         },                    
+                            //-     ]
+                            //- },
+                            //- )
                         .news-main__slider
                             +slider({ class: 'news-main' })    

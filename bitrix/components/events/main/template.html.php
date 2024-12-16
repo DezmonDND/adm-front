@@ -22,7 +22,7 @@
                 </button>
               </div>
               <div class="filters-popup__tags"><span class="filters-popup__title">Раздел</span>
-                <div class="tabs-tag" role="tablist"><a class="tab-button " value="Кино" role="tab" aria-label="Кино">Кино</a><a class="tab-button " value="Концерты" role="tab" aria-label="Концерты">Концерты</a><a class="tab-button " value="Выставки" role="tab" aria-label="Выставки">Выставки</a><a class="tab-button " value="Театр" role="tab" aria-label="Театр">Театр</a><a class="tab-button " value="Детям" role="tab" aria-label="Детям">Детям</a><a class="tab-button " value="Конференции" role="tab" aria-label="Конференции">Конференции</a>
+                <div class="tabs-tag" role="tablist"><a class="tab-button " role="tab" aria-label="Кино">Кино</a><a class="tab-button " role="tab" aria-label="Концерты">Концерты</a><a class="tab-button " role="tab" aria-label="Выставки">Выставки</a><a class="tab-button " role="tab" aria-label="Театр">Театр</a><a class="tab-button " role="tab" aria-label="Детям">Детям</a><a class="tab-button " role="tab" aria-label="Конференции">Конференции</a>
                 </div>
               </div>
               <div class="filters-popup__calendar"><span class="filters-popup__title">Выберите период публикации                  </span>
@@ -92,75 +92,75 @@
           </div>
           <div class="filters">
             <div class="filters_container">
-              <select class="select single select_filters__select select-icon-right" name="events" role="listbox">
+              <select class="select single select_filters__select select-icon-right" name="events">
                 <option class="select__option" value="Все события">Все события</option>
                 <option class="select__option" value="Театр">Театр</option>
                 <option class="select__option" value="Детям">Детям</option>
                 <option class="select__option" value="Выставки">Выставки</option>
                 <option class="select__option" value="Концерты">Концерты</option>
               </select>
-              <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
+              <select class="select single select_filters__select select-icon-right" name="thema">
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
                 <option class="select__option" value="Любая тематика">Любая тематика</option>
               </select>
-              <select class="select single select_filters__select select-icon-right" name="thema" role="listbox">
+              <select class="select single select_filters__select select-icon-right" name="thema">
                 <option class="select__option" value="Место проведения">Место проведения</option>
                 <option class="select__option" value="Место проведения">Место проведения</option>
               </select>
             </div>
             <input class="сheckbox сheckbox-label " type="checkbox" id="10" name="with-card" checked="checked"/>
-            <label class="сheckbox__label" for="10" role="checkbox">С пушкинской картой</label>
+            <label class="сheckbox__label" for="10" aria-label="Флажок С пушкинской картой">С пушкинской картой</label>
           </div>
-          <div class="events__news" id="events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+          <div class="events__news" id="events__news"><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
                   <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_1.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_2.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_3.jpg" alt="Изображения"/>
                   <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span></span>
                   </div>
                 </div>
                 <div class="news-main-card__content"> <span class="news-main-card__date">10 июня 2023</span><span class="news-main-card__title">Памятный знак для будущего «Сургутского кремля» создадут горожане</span></div>
-              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане">
+              </div></a><a class="news-main-card" href="/" title="Памятный знак для будущего «Сургутского кремля» создадут горожане" role="link">
               <div class="news-main-card__container">
                 <div class="news-main-card__image-block"> <img class="news-main-card__image" src="./resources/image_5.png" alt="Изображения"/>
                   <div class="news-main-card__tags"><span class="button button_blue button_radius news-card__tag button_size_xs   button_without-event" title=""><span class="button_span">Кино</span></span>
