@@ -48,23 +48,6 @@ const sliders = [
             pauseOnHover: true,
         },
     },
-    // Главные новости
-    // {
-    //     selector: '#news-main__card-list',
-    //     nextArrow: '.slider__news-main-next',
-    //     prevArrow: '.slider__news-main-prev',
-    //     options: {
-    //         infinite: true,
-    //         slidesToShow: 3,
-    //         slidesToScroll: 1,
-    //         arrows: false,
-    //         variableWidth: true,
-    //         responsive: [
-    //             { breakpoint: 768, settings: { slidesToShow: 2 } },
-    //             { breakpoint: 500, settings: { slidesToShow: 1 } },
-    //         ],
-    //     },
-    // },
     // Анонсы и события
     {
         selector: '#events__news',
@@ -163,6 +146,26 @@ const sliders = [
     },
 ];
 
+const newsSliders = [
+    // Главные новости
+    {
+        selector: '#news-main__card-list',
+        nextArrow: '.slider__news-main-next',
+        prevArrow: '.slider__news-main-prev',
+        options: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true,
+            responsive: [
+                { breakpoint: 768, settings: { slidesToShow: 2 } },
+                { breakpoint: 500, settings: { slidesToShow: 1 } },
+            ],
+        },
+    },
+];
+
 // Создать экземпляр слайдера
 
 $(document).ready(function () {
@@ -213,10 +216,11 @@ function destroySlider(selector) {
     $(selector).slick('unslick');
 }
 
-// Найти и собрать слайдер по селектору
+// Найти и собрать слайдер по селектору (для главных новостей)
+// Поиск только по массиву newsSliders
 
 function findAndCreateSlider(selector) {
-    const slider = sliders.find((slider) => slider.selector === selector);
+    const slider = newsSliders.find((slider) => slider.selector === selector);
     const currentSlider = document.getElementById(selector.substring(1));
 
     if (slider && !currentSlider) {
@@ -261,20 +265,3 @@ function reinitSlider(selector) {
 $(document).ready(function () {
     reinitSlider('#news-main__card-list');
 });
-
-// Удалить пустые id
-// document.addEventListener('DOMContentLoaded', () => {
-//     const slides = document.querySelectorAll('.slick-slide');
-
-//     console.log(slides);
-
-//     // if (slides) {
-//     //     slides.forEach((slide) => {
-//     //         // if (slide.getAttribute('id').value === '') {
-//     //         //     console.log(slide);
-
-//     //         slide.removeAttribute('id');
-//     //         // }
-//     //     });
-//     // }
-// });
