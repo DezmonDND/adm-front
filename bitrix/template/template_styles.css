@@ -7514,6 +7514,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
 }
 .title .title__container .title__name {
   padding: 0;
+  margin: 0;
   font-weight: 500;
   font-size: calc(40px * var(--scale));
   line-height: calc(48px * var(--lh));
