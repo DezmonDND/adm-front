@@ -92,19 +92,19 @@ block content
          .col-6
             h5 Слайдер
             +tabs([
-               { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
-               { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
-               { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
-               { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+               { size: 'l', title: 'Самые важные', onclick: '' },
+               { size: 'l', title: 'Реализация нацпроектов', onclick: '' },
+               { size: 'l', title: 'Деятельность администрации', onclick: '' },
+               { size: 'l', title: 'Областная дума', onclick: '' },
                ]
             )
          .col-6
             h5 В виде тегов
             +tabs-tag([
-               { size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'},
-               { size: 'l', title: 'Реализация нацпроектов', onclick: '' , value: 'Реализация нацпроектов'},
-               { size: 'l', title: 'Деятельность администрации', onclick: '' , value: 'Деятельность администрации'},
-               { size: 'l', title: 'Областная дума', onclick: '' , value: 'Областная дума' },
+               { size: 'l', title: 'Самые важные', onclick: '' },
+               { size: 'l', title: 'Реализация нацпроектов', onclick: '' },
+               { size: 'l', title: 'Деятельность администрации', onclick: '' },
+               { size: 'l', title: 'Областная дума', onclick: '' },
                ]
             )
       hr
@@ -266,7 +266,7 @@ block content
       'left', 'xs',
       { type: 'button', class: 'button_blue', size: 'xs', text: 'Искать' },
       )    
-      +tab-button({ size: 'l', title: 'Самые важные', onclick: '' , value: 'Самые важные'})
+      +tab-button({ size: 'l', title: 'Самые важные', onclick: '' })
 
       +project_card( true, {
          title: 'Название инициативного проекта',

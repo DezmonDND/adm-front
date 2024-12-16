@@ -19721,6 +19721,9 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
     line-height: calc(20px * var(--lh));
   }
 }
+.about-info .about-info__map .about-info__map-content .about-info__map-desc-block .about-info__map-list li:first-of-type {
+  list-style: none;
+}
 .about-info .about-info__map .about-info__map-content .about-info__map-desc-block .about-info__map-list .about-info__map-list-item {
   margin-left: 20px;
 }
@@ -20163,6 +20166,10 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
     font-size: calc(14px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
+}
+.about-video-list .about-video-list__card video {
+  width: 100%;
+  height: 100%;
 }
 .about-video-list .slick-arrow {
   all: unset;

@@ -7,7 +7,7 @@
   </div>
   <div class="help-city__tabs">
     <div class="tabs">
-      <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" value="Национальные проекты" role="tab" aria-label="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" value="Администрация" role="tab" aria-label="Администрация">Администрация</a><a class="tab-button " href="/" value="Прочее" role="tab" aria-label="Прочее">Прочее</a>
+      <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" role="tab" aria-label="Национальные проекты">Национальные проекты</a><a class="tab-button " href="/" role="tab" aria-label="Администрация">Администрация</a><a class="tab-button " href="/" role="tab" aria-label="Прочее">Прочее</a>
       </div>
       <div class="slider"><a class="slider__link slider__help-city-prev" role="button" aria-label="Назад">
           <ion-icon name="arrow-back-outline"></ion-icon></a><span class="slider__counter">   </span><a class="slider__link slider__help-city-next" role="button" aria-label="Вперед">

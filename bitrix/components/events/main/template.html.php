@@ -22,7 +22,7 @@
                 </button>
               </div>
               <div class="filters-popup__tags"><span class="filters-popup__title">Раздел</span>
-                <div class="tabs-tag" role="tablist"><a class="tab-button " value="Кино" role="tab" aria-label="Кино">Кино</a><a class="tab-button " value="Концерты" role="tab" aria-label="Концерты">Концерты</a><a class="tab-button " value="Выставки" role="tab" aria-label="Выставки">Выставки</a><a class="tab-button " value="Театр" role="tab" aria-label="Театр">Театр</a><a class="tab-button " value="Детям" role="tab" aria-label="Детям">Детям</a><a class="tab-button " value="Конференции" role="tab" aria-label="Конференции">Конференции</a>
+                <div class="tabs-tag" role="tablist"><a class="tab-button " role="tab" aria-label="Кино">Кино</a><a class="tab-button " role="tab" aria-label="Концерты">Концерты</a><a class="tab-button " role="tab" aria-label="Выставки">Выставки</a><a class="tab-button " role="tab" aria-label="Театр">Театр</a><a class="tab-button " role="tab" aria-label="Детям">Детям</a><a class="tab-button " role="tab" aria-label="Конференции">Конференции</a>
                 </div>
               </div>
               <div class="filters-popup__calendar"><span class="filters-popup__title">Выберите период публикации                  </span>

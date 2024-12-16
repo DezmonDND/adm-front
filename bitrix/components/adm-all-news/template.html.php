@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="tabs">
-    <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" value="Самые важные" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" value="Реализация нацпроектов" role="tab" aria-label="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" value="Деятельность администрации" role="tab" aria-label="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" value="Областная дума" role="tab" aria-label="Областная дума">Областная дума</a>
+    <div class="tabs__container" role="tablist"><a class="tab-button tab-button_active" href="/" role="tab" aria-label="Самые важные">Самые важные</a><a class="tab-button " href="/" role="tab" aria-label="Реализация нацпроектов">Реализация нацпроектов</a><a class="tab-button " href="/" role="tab" aria-label="Деятельность администрации">Деятельность администрации</a><a class="tab-button " href="/" role="tab" aria-label="Областная дума">Областная дума</a>
     </div>
   </div>
   <input id="from" name="from" value="value" style="display: none;"/>
