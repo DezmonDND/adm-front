@@ -359,6 +359,7 @@ function filterAndCreateSlides(value) {
 }
 
 // Подчеркивать таб при клике и получать текущий id таба
+// Закомментировать для сайта
 // document.addEventListener('DOMContentLoaded', () => {
 //     const newsMain = document.querySelector('.news-main');
 

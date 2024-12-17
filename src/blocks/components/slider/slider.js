@@ -173,11 +173,12 @@ $(document).ready(function () {
         initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
     });
 
-    newsSliders.forEach((slider) => {
-        initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
-    });
+    // newsSliders.forEach((slider) => {
+    //     initSlider(slider.selector, slider.nextArrow, slider.prevArrow, slider.options);
+    // });
 
-    
+    // findAndCreateSlider('#news-main__card-list');
+    findAndCreateSlider('#help-city__content');
 
     // Удалить пустые id
     const slides = document.querySelectorAll('.slick-slide');
@@ -227,12 +228,12 @@ function destroySlider(selector) {
 
 function findAndCreateSlider(selector) {
     const slider = newsSliders.find((slider) => slider.selector === selector);
-    const currentSlider = document.getElementById(selector.substring(1));
+    // const currentSlider = document.getElementById(selector.substring(1));
 
-    if (slider && !currentSlider) {
+    if (slider) {
         initSlider(selector, slider.nextArrow, slider.prevArrow, slider.options);
     } else {
-        console.log(`Слайдер ${selector} не найден в массиве слайдеров или уже существует`);
+        console.log(`Слайдер ${selector} не найден в массиве слайдеров`);
     }
 }
 
