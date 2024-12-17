@@ -42,9 +42,11 @@
 
     &_active {
         display: flex;
+        width: max-content;
 
         @include respond-to(sm) {
             bottom: 0;
+            left: 0;
             width: 100%;
             opacity: 1;
         }
