@@ -19,6 +19,10 @@
         gap: 24px;
         justify-content: center;
 
+        &:focus-visible {
+            @include focus-visible;
+        }
+
         @include respond-to(md) {
             gap: 8px;
         }
@@ -29,6 +33,7 @@
 
         .news-top__card-list {
             display: flex;
+            overflow: hidden;
             width: 66%;
 
             @include respond-to(md) {

@@ -43,6 +43,13 @@
         }
     }
 
+    .fieldset__req {
+        &::after {
+            content: ' *';
+            color: red;
+        }
+    }
+
     .fieldset__answers {
         display: flex;
         flex-direction: column;

@@ -1,0 +1,26 @@
+mixin about-citizens()
+    .about-citizens
+        .about-citizens__container 
+            +title({
+                title: 'Почетные граждане Сургута'
+            })
+            .about-citizens__tabs 
+                +tabs-tag([
+                    { href: '#', title: 'Почетные граждане Сургута', onclick: '' },
+                    { href: '#', title: 'Почетные граждане ХМАО-Югры', onclick: '' },
+                    { href: '#',title: 'Доска почета', onclick: '' },
+                    { href: '#', title: 'За заслуги перед городом Сургутом', onclick: '' },
+                    ])
+            .about-citizens__list
+                a(href='/')
+                    img(src='../resources/board__image.png' alt='Фотография граждан').about-citizens__image
+                a(href='/')
+                    img(src='../resources/board__image.png' alt='Фотография граждан').about-citizens__image
+                a(href='/')
+                    img(src='../resources/board__image.png' alt='Фотография граждан').about-citizens__image
+                a(href='/')
+                    img(src='../resources/board__image.png' alt='Фотография граждан').about-citizens__image
+            .about-citizens__documents
+                a.files-list__document-description
+                    ion-icon(class='files-list__icon' name='document')
+                    span.files-list__document-title Книга почета.pdf       

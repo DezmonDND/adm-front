@@ -3,7 +3,7 @@ mixin main-link(data)
     - const hasIcon = data.class ? `${data.class}-link__icon` : ''
     - const hasTitle = data.class ? `${data.class}-link__title` : ''
 
-    a(href=data.href class=[hasClass])
+    a(href=data.href class=[hasClass] role='link' aria-label=data.title)
         div(class=`${hasClass}__container`)
             if data.icon
                 ion-icon(name=`${data.icon}` class=`icon ${hasIcon}`)

@@ -18,6 +18,13 @@ body.tmp-duma {
             border-color: $primary-color-green-hover;
             color: inherit;
         }
+
+        a {
+
+            &:hover {
+                color: inherit;
+            }
+        }
     }
 }
 
@@ -50,6 +57,15 @@ body.tmp-duma {
 
         span {
             font-weight: 400;
+        }
+
+        a {
+            color: $main-text;
+
+            &:hover {
+                text-decoration: none;
+                color: $primary-color;
+            }
         }
     }
 }

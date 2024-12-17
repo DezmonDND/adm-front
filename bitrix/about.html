@@ -14,15 +14,15 @@
         <div class="menu menu_main-bg">
           <div class="menu__container">
             <div class="menu__content"> 
-              <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+              <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
-                <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -40,13 +40,13 @@
             </div>
             <div class="menu__bot">
               <div class="menu__socials"> 
-                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
                 </div>
-                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
                   <ion-icon class="icon" name="eye-outline"></ion-icon>
                 </button>
               </div>
-              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
               </button>
             </div>
           </div>
@@ -84,7 +84,8 @@
       <div class="header__top-content">
         <div class="header__top-links">
           <ul class="header_links">
-            <li class="header__link"><span>Быстрый доступ</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Быстрый доступ" tabindex="-1">Быстрый доступ</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -106,7 +107,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Публичные слушания</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Публичные слушания" tabindex="-1">Публичные слушания</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -128,7 +130,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Противодействие коррупции</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Противодействие коррупции" tabindex="-1">Противодействие коррупции</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -150,7 +153,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Пресс-центр</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Пресс-центр" tabindex="-1">Пресс-центр</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -172,7 +176,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Обращения граждан</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Обращения граждан" tabindex="-1">Обращения граждан</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -195,27 +200,28 @@
               </div>
             </li>
           </ul>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+          <div class="header__socials"><a class="header__social-icon vk_icon" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon " href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a><a class="header__social-icon tg_icon" href="/" title="Ссылка на социальные сети Телеграмм" role="link"></a>
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+          <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title="" role="button" aria-label="Версия для слабовидящих"><span class="button_span">Версия для слабовидящих</span>
             <ion-icon class="icon" name="eye-outline"></ion-icon>
           </button>
-          <button class="button button_blue button_size_s   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+          <button class="button button_blue button_size_s   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
-      <div class="header__bottom-content"><a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+      <div class="header__bottom-content"><a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
         <ul class="header_links">
-          <li class="header__link"><span>О Сургуте</span>
+          <li class="header__link" aria-expanded="false">
+            <button style="all:unset" role="button" aria-label="О Сургуте" tabindex="-1">О Сургуте</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -237,7 +243,8 @@
               </div>
             </div>
           </li>
-          <li class="header__link"><span>Городская власть</span>
+          <li class="header__link" aria-expanded="false">
+            <button style="all:unset" role="button" aria-label="Городская власть" tabindex="-1">Городская власть</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -259,7 +266,8 @@
               </div>
             </div>
           </li>
-          <li class="header__link"><span>Документы</span>
+          <li class="header__link" aria-expanded="false">
+            <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
             <div class="dm-second-menu">
               <div class="dm-second-menu__content">
                 <div class="dm-second-menu__col">
@@ -280,9 +288,10 @@
                 </div>
               </div>
             </div>
-          </li><a class="header__link" href="/">Контакты          </a>
+          </li>
+          <li class="header__link" aria-label="Контакты"> <a href="/" tabindex="-1">Контакты          </a></li>
         </ul>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
@@ -291,15 +300,15 @@
           <div class="menu menu_main-bg">
             <div class="menu__container">
               <div class="menu__content"> 
-                <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+                <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                     <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                  <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
                     <ion-icon class="icon" name="close-outline"></ion-icon>
                   </button>
                 </div>
                 <form class="search search-header-mobile">
-                  <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                  <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+                  <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                     <ion-icon class="icon" name="search-outline"></ion-icon>
                   </button>
                 </form>
@@ -317,43 +326,52 @@
               </div>
               <div class="menu__bot">
                 <div class="menu__socials"> 
-                  <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                  <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
                   </div>
-                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                  <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
                     <ion-icon class="icon" name="eye-outline"></ion-icon>
                   </button>
                 </div>
-                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+                <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
                 </button>
               </div>
             </div>
           </div>
         </div>
         <div class="header-visibility__top-links">
-          <ul class="header_links"><a class="header__link" href="/">О Сургуте          </a><a class="header__link" href="/">Городская власть          </a><a class="header__link" href="/">Документы          </a><a class="header__link" href="/">Контакты          </a>
+          <ul class="header_links">
+            <li class="header__link" aria-label="О Сургуте"> <a href="/" tabindex="-1">О Сургуте          </a></li>
+            <li class="header__link" aria-label="Городская власть"> <a href="/" tabindex="-1">Городская власть          </a></li>
+            <li class="header__link" aria-label="Документы"> <a href="/" tabindex="-1">Документы          </a></li>
+            <li class="header__link" aria-label="Контакты"> <a href="/" tabindex="-1">Контакты          </a></li>
           </ul>
-          <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon  header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+          <div class="header__socials"><a class="header__social-icon vk_icon" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a><a class="header__social-icon tg_icon" href="/" title="Ссылка на социальные сети Телеграмм" role="link"></a>
           </div>
         </div>
         <div class="header__buttons"> 
-          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+          <button class="button button_blue button_header button_size_xs   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
-      <div class="header-visibility__middle-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+      <div class="header-visibility__middle-content"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
           <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
         <form class="search search-header">
-          <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+          <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="adm-by-site-search" value="" id="adm-by-site-search" role="textbox"/>
+          <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </button>
         </form>
-        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+        <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
           <ion-icon class="icon" name="menu-outline"></ion-icon>
         </button>
       </div>
       <div class="header-visibility__bottom-content">
-        <ul class="header_links"><a class="header__link" href="/">Быстрый доступ          </a><a class="header__link" href="/">Публичные слушания          </a><a class="header__link" href="/">Противодействие коррупции          </a><a class="header__link" href="/">Пресс-центр          </a><a class="header__link" href="/">Обращения граждан          </a>
+        <ul class="header_links">
+          <li class="header__link" aria-label="Быстрый доступ"> <a href="/" tabindex="-1">Быстрый доступ          </a></li>
+          <li class="header__link" aria-label="Публичные слушания"> <a href="/" tabindex="-1">Публичные слушания          </a></li>
+          <li class="header__link" aria-label="Противодействие коррупции"> <a href="/" tabindex="-1">Противодействие коррупции          </a></li>
+          <li class="header__link" aria-label="Пресс-центр"> <a href="/" tabindex="-1">Пресс-центр          </a></li>
+          <li class="header__link" aria-label="Обращения граждан"> <a href="/" tabindex="-1">Обращения граждан          </a></li>
         </ul>
       </div>
     </header>
@@ -369,17 +387,17 @@
             <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input     " placeholder="Номер телефона" value=""/>
+            <input class="input      " placeholder="Номер телефона" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" attributes="{}"><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" role="link" aria-label="Войти через госуслуги"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -397,11 +415,11 @@
             <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input     " placeholder="Код" value=""/>
+            <input class="input      " placeholder="Код" value="" role="textbox"/>
           </div>
           <!-- Если код неверный то инпут меняется на этот-->
           <div class="login__content-main__input wrong-code">
-            <input class="input     " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+            <input class="input      " placeholder="Код" value="" role="textbox"/><span>Неверный код, попробуйте еще раз</span>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -419,10 +437,10 @@
             <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input     " placeholder="Электронная почта" value=""/>
+            <input class="input      " placeholder="Электронная почта" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
@@ -430,44 +448,7 @@
       </div>
     </div>
     <main class="main">
-      <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-        <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">О Сургуте</a><span class="span">/</span><span class="breadcrumb_link">Шаблонная страница с текстом</span>
-        </div>
-      </div>
       <div class="about">
-        <div class="full-width-container">
-          <div class="full-width-background">
-            <div class="full-width-content"> 
-              <div class="event-card">
-                <div class="event-card__container"> 
-                  <div class="event-card__info">
-                    <div class="event-card__description"> 
-                      <h2 class="event-card__title">Коротко о Сургуте</h2>
-                      <div class="event-card__dates">   <span class="event-card__date">от 11 ноября 2024</span><span class="event-card__last-date">последнее обновление: 11 ноября 2024</span></div>
-                    </div>
-                    <div class="event-card__buttons"> <a class="button button_link button_blue button_print button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Версия для печати</span>
-                        <ion-icon class="icon" name="print-outline"></ion-icon></a>
-                      <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  button_icon-left" href="/" title="" attributes="{}"><span class="button_span">Поделиться</span>
-                          <ion-icon class="icon" name="link-outline"></ion-icon></a>
-                        <div class="button-popup__content">
-                          <div class="button-popup">
-                            <div class="button-popup__container">   
-                              <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
-                              </div>
-                              <button class="button button_white share_button button_size_s   " onclick="getLink(event)" title=""><span class="button_span">Скопировать ссылку</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div><a class="button button_link button_white button_size_m button_without-text " href="/" title="" attributes="{}">
-                        <ion-icon class="icon" name="download-outline"></ion-icon></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="about-content">
           <div class="about-info"> 
             <div class="about-info-row"> 
@@ -476,296 +457,567 @@
                 <div class="about-card-right"><img class="about-card-img" src="./resources/about_earth.svg"/></div>
               </div>
             </div>
-            <div class="about-info-row"> <span class="about-info-text">Муниципальное образование городской округ город Сургут Ханты-Мансийский автономный округ – Югра</span>
+            <div class="about-info-row"> <span class="about-info-text"><b>Муниципальное образование</b> городской округ город Сургут Ханты-Мансийский автономный округ – Югра</span>
               <div class="about-card"> 
                 <div class="about-card-left"><span class="about-card-title">Год основания </span><span class="about-card-subtitle">города Сургута</span></div>
                 <div class="about-card-right"><span class="about-card-fact">1594</span></div>
-              </div>
-            </div>
-            <div class="about-info-row"> 
+              </div><span class="about-info-text">Территория городского округа граничит с муниципальными образованиями: Сургутский муниципальный район, городское поселение Белый Яр, городское поселение Барсово, сельское поселение Солнечный.    </span>
               <div class="about-card"> 
                 <div class="about-card-left"><span class="about-card-title">День города </span><span class="about-card-subtitle">Сургута</span></div>
                 <div class="about-card-right"><span class="about-card-fact">12 июня</span></div>
-              </div><span class="about-info-text">Территория городского округа граничит с муниципальными образованиями: Сургутский муниципальный район, городское поселение Белый Яр, городское поселение Барсово, сельское поселение Солнечный.</span>
+              </div>
+            </div>
+            <div class="about-info__map">  
+              <div class="about-info__map-content"><img class="about-info__map-image" src="/local/templates/surgut/img/about_map.png"/>
+                <div class="about-info__map-desc-block"> 
+                  <div class="about-info__map-title"><b>Муниципальное образование:</b> городской округ город Сургут Ханты-Мансийский автономный округ – Югра</div>
+                  <ul class="about-info__map-list"> 
+                    <li><b>Территория городского округа граничит с муниципальными образованиями:</b> </li>
+                    <li class="about-info__map-list-item">Сургутский муниципальный район  </li>
+                    <li class="about-info__map-list-item">городское поселение Белый Яр</li>
+                    <li class="about-info__map-list-item">городское поселение Барсово</li>
+                    <li class="about-info__map-list-item">сельское поселение Солнечный   </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-partners">  
+            <div class="full-width-container">
+              <div class="full-width-background">
+                <div class="full-width-content"><img class="about-partners__bg" src="./resources/about_partners_bg.svg"/>
+                  <div class="about-partners__container">
+                    <div class="title"> 
+                      <div class="title__container"> 
+                        <h2 class="title__name">Города-побратимы и партнёры</h2>
+                      </div>
+                    </div>
+                    <div class="about-partners__list">
+                      <div class="about-partners__marquee" id="about-partners__row">
+                        <div class="about-partners__row"><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/china.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Чаоян</h4><span class="about-partner-card__caption">Китай</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/flag_hungary.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Залаэгерсег</h4><span class="about-partner-card__caption">Венгрия</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/greece.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Катерини</h4><span class="about-partner-card__caption">Греция</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/finland.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Порвоо</h4><span class="about-partner-card__caption">Финляндия</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/belarus.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Гомель</h4><span class="about-partner-card__caption">Республика Беларусь</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/moldova.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Кишинев</h4><span class="about-partner-card__caption">Республика Молдова</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/china.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Чаоян</h4><span class="about-partner-card__caption">Китай</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/flag_hungary.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Залаэгерсег</h4><span class="about-partner-card__caption">Венгрия</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/greece.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Катерини</h4><span class="about-partner-card__caption">Греция</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/finland.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Порвоо</h4><span class="about-partner-card__caption">Финляндия</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/belarus.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Гомель</h4><span class="about-partner-card__caption">Республика Беларусь</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/moldova.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-побратим">Кишинев</h4><span class="about-partner-card__caption">Республика Молдова</span>
+                              </div>
+                            </div></a>
+                        </div>
+                      </div>
+                      <div class="about-partners__marquee" id="about-partners__row-reverse">        
+                        <div class="about-partners__row"><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/suzdal.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Суздаль</h4><span class="about-partner-card__caption">Владимирская область</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/petrozavodsk.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Петрозаводск</h4><span class="about-partner-card__caption">Республика Карелия</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/tumen.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Тобольск</h4><span class="about-partner-card__caption">Тюменская область</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/novosibirsk.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Новосибирск</h4><span class="about-partner-card__caption">Новосибирская область</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/pskov.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Псков</h4><span class="about-partner-card__caption">Псковская областть</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/tatarstan.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Альметьевск</h4><span class="about-partner-card__caption">Республика Татарстан</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/sibai.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Сибай</h4><span class="about-partner-card__caption">Республика Башкортостан</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/kalinin.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Калининский район</h4><span class="about-partner-card__caption">Санкт-Петербург</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/salavat.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Салават</h4><span class="about-partner-card__caption">Республика Башкортостан</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/omsk.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Омск</h4><span class="about-partner-card__caption">Омская область</span>
+                              </div>
+                            </div></a><a class="about-partner-card" href="/">
+                            <div class="about-partner-card__content"> <img class="about-partner-card__image" src="./resources/sochi.svg"/>
+                              <div class="about-partner-card__desc"> 
+                                <h4 class="about-partner-card__title" title="Город-партнер">Сочи</h4><span class="about-partner-card__caption">Краснодарский край</span>
+                              </div>
+                            </div></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-symbols"> 
+            <h3 class="about-symbols__title">Официальные символы</h3>
+            <div class="about-symbols-list"> 
+              <div class="about-symbols-elem">
+                <div class="about-symbols-elem-text"><b>Герб города </b><span>Сургута утвержден </span><a class="link" href="#">решением городской Думы от 04.11.2003 № 273-III ГД. </a><span>Геральдическое описание герба муниципального образования город окружного значения Сургут гласит: «В золотом поле – черная с серебряным концом хвоста лисица, идущая по лазоревой земле»</span></div>
+                <div class="about-symbols-elem-img"><img src="/resources/gerb.png"/></div>
+              </div>
+              <div class="about-symbols-elem">
+                <div class="about-symbols-elem-text"><b>Флаг города </b><span>Сургута утвержден </span><a class="link" href="#">решением городской Думы от 25.04.2005 № 454- III ГД. </a><span>Флаг муниципального образования городской округ город Сургут представляет собой прямоугольное полотнище с соотношением ширины к длине 2:3, в центре которого на золотом фоне лисица с серебряным концом хвоста, идущая по лазоревой земле.</span></div>
+                <div class="about-symbols-elem-img"><img src="/resources/flag.png"/></div>
+              </div>
+            </div>
+            <hr/>
+            <h3 class="about-symbols__title">Документы  </h3>
+            <div class="about-symbols__documents"><a class="files-list__document-description" href="/">
+                <ion-icon class="files-list__icon" name="document"></ion-icon><span class="files-list__document-title">Устав города.pdf     </span></a></div>
+          </div>
+          <div class="about-history">
+            <div class="full-width-container">
+              <div class="full-width-background">
+                <div class="full-width-content">
+                  <div class="about-history__container">
+                    <h1 class="about-history__title">История города Сургута</h1>
+                    <h3 class="about-history__container-title">Сургут: История, События, Люди</h3>
+                    <p>Сургут - город окружного подчинения Ханты-Мансийского автономного округа - Югры, один из старейших городов Сибири, основанный вскоре после присоединения западносибирских земель к российскому государству в конце XVI века.</p>
+                    <p>
+                       Город стоит <b>на правом берегу </b>великой сибирской <b>реки Оби</b>, в среднем ее течении.
+                      <div class="about-history-elem"><img class="about-history-elem__img" src="/resources/about_earth_4.svg" alt="Фоновое изображение"/><span>Как и города Санкт-Петербург, Хельсинки, Осло, Сургут расположен <b>на шестидесятой северной широте. </b>Но в отличие от Европы <b>климат </b>здесь <b>резко континентальный. </b>Зима длится около 7 месяцев, среднемесячная температура января - 22°С, июля +17°С. Морозы зимой порой достигают -50°С.</span></div>
+                    </p>
+                    <div class="about-history__hidden">   
+                      <p>История основания Сургута уходит во времена Ивана Грозного и Ермака. Вскоре после открытия Ермаком Зауральских земель и присоединения их к Российскому государству там стали основываться опорные центры - Тюмень, Тобольск, Тара, Обской городок. В наказе царя Федора Иоанновича от 19 февраля 1594 года говорится о строительстве города в Сургуте: «Федору Борятинскому и Владимиру Аничкову...быть на службе в Сибири вверх по Оби реке, ставить город в Сургуте... А пришед князю Федору и Владимиру в Сургут, в котором месте пригоже, высмотря место крепкое, поставить город». Историк Г.Ф. Миллер по этому поводу писал: «На том месте, где заполезно усмотрено город Сургут построить, жил тогда остяцкий князец именем Бардок... Речка, которая не в дальнем расстоянии выше города впала в Обь, получила по нем звание Бардаковка».</p>
+                      <p>Точно установить дату, когда русские землепроходцы достигли этой местности сегодня, наверное, уже не удастся. Историки по этому поводу спорят не одно столетие, но достоверно известно, что в 1594 году в Сургуте уже развернулось строительство деревянной крепости, Троицкой церкви, других сооружений. В настоящее время по датировке царского указа принято годом основания Сургута считать 1594 год.</p>
+                      <p>Немало версий существует в объяснении <b>происхождения слова «Сургут». </b>Известный русский историк П.Н.Буцинский в книге <b>«К истории Сибири» </b>утверждает, что «целая область, где построен русский город, называлась Сургут. Откуда же произошло это название? Известно, что город был основан вблизи поселения хантыйского племени и за ним сохранилось местное название без перевода на русский язык. Такая традиция существовала у землепроходцев при основании всех городов Сибири. Исходя из этого можно предположить, что слово <b>«сургут» состоит из двух древнеюгорских «сор» и «кут», </b>которые дошли до нас в измененном виде. Слово <b>«сор»</b>переводится как <b>«заливная пойма реки», </b>слово <b>«кут» </b>на сургутском наречии означает <b>«рыба».</b> Следовательно, в соединении слово «соркут» в древнеюгорском языке могло означать целое понятие, связанное с образом жизни народа: ежегодным весенним кочевьем племен из таежных речек и охотничьих угодий в пойму Оби.</p>
+                      <p>В конце XVI века Сургут представлял собой небольшую крепость с двумя воротами, четырьмя глухими и одной проезжей башнями. В первые годы возвели здесь церковь, воеводский двор, жилые дома. Все строения были деревянными. В XVI и XVII веках население Сургута состояло в основном из казаков и стрельцов, город играл роль форпоста дальнейшего продвижения русских на восток и север для освоения новых территорий.</p>
+                      <div class="about-history-elem"> <span>В 1708 году Петр Первый назвал Сургут городом Сибирской губернии, а в 1782 году он стал уездным центром Тобольского наместничества - <b>17 марта 1785 года Екатерина II утвердила герб Сургута: </b>«В золотом поле черно-бурая лисица: в знак изобильной ловли оных в округе сего города».</span><img class="about-history-elem__img" src="/resources/about_earth_4.svg" alt="Фоновое изображение"/></div>
+                      <p>Самыми распространенными занятиями местных жителей были рыбная ловля, охота на пушных зверей и дичь. Они занимались выделкой кож и шкур, заготовкой кедрового ореха, ягод, грибов, пошивом обуви и одежды, кузнечным делом, держали много собак для охоты и езды. До конца XIX века большинство мужского населения города были служилыми людьми – казаками и получали небольшой денежный или продовольственный оклад.</p>
+                      <p>Возникший как военно-опорный пункт России в центре Западной Сибири, Сургут в середине XVII века становится заметным торговым городом. Здесь была сосредоточена администрация с соответствующей канцелярией. Сургутское духовенство «окормляло» русских жителей и занималось миссионерской деятельностью среди коренного населения.</p>
+                      <p>Главным видом транспорта был водный. На стругах приплыли сюда первые русские люди, основатели города. После создания паровых машин и пароходов вблизи Сургута оборудовали пристань. В 1900 году на пристань протянули 7-километровую телефонную линию. Это был первый сургутский телефон.</p>
+                      <p>К концу XVIII века относится возникновение в Сургуте ежегодных ярмарок: в обмен на пушнину и рыбу шли мука, табак, сукно, холст, бисер, платки, а также капканы, топоры, ножи, кружки и прочее.</p>
+                      <p>За столетия истории Сургута его посещали многие известные ученые и общественные деятели, этнографы, историки, экономисты из европейских и российских городов: писатель и дипломат Николай Спафарий, автор фундаментального труда по истории «Описание Сибирского царства» Герхард Миллер, путешественник и ученый Матиас Кастрен, этнограф и экономист С.К. Патканов, биолог и этнограф А.А. Дунин-Горкавич и многие другие.</p>
+                      <p>Здесь отбывали ссылку военнопленные различных войн, декабристы, народники и революционеры конца XIX – начала XX века. Многие из них оставили воспоминания и научные труды о сургутском крае.</p>
+                      <p>20 июля 1891 года на Белоярской пристани побывал 23-летний наследник Престола Николай Александрович Романов, совершавший поездку по Сибири и Дальнему Востоку.</p>
+                      <p>Не обошли стороной Сургут и бурные революционные события начала ХХ века. 16 апреля 1918 года в городе была установлена Советская власть. А в 1920 году Сургут стал одним из центров так называемого «кулацкого» восстания против большевиков, которое было жестоко подавлено регулярными частями Красной Армии.</p>
+                      <p>Осенью 1923 года Сургут потерял статус города и превратился в село, центр района, площадь которого превышала 180 тысяч квадратных километров.</p>
+                      <p>А в 1928 году в Сургуте открылось первое промышленное предприятие - консервная фабрика.</p>
+                      <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_5.svg" alt="Фоновое изображение"/><span>С полным основанием считается, что <b>Сургут рождался дважды. </b>Первое его рождение проходило под перезвон топоров наших далеких предков, а второе сопровождалось мощным гулом нефтяных фонтанов.</span></div>
+                      <p>В 30-е годы предприняты первые попытки разведки полезных ископаемых. Академик Иван Михайлович Губкин еще в начале 30-х годов утверждал, что в Западной Сибири есть нефть. Его гениальное пророчество оправдалось.</p>
+                      <p>Осенью 1957 года геологоразведочная экспедиция под руководством молодого инженера – геолога Фармана Салманова высадилась в Сургуте для поиска нефтяных месторождений. В Сургуте создана Юганская разведка структурно-поискового бурения. В тяжелейших бытовых условиях, при минимуме техники велось разведочное бурение. Четыре года поиски были безрезультатными, но затем открытия крупных месторождений последовали одно за другим.</p>
+                      <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_4.svg" alt="Фоновое изображение"/><span> <b>15 ноября 1962 года открыто Западно-Сургутское месторождение нефти.</b>В последующие годы на территории Сургутского района открыто больше тридцати месторождений. Первый и главный сургутский геолог <b>Фарман Курбанович Салманов</b>стал Героем Социалистического Труда, ученым с мировым именем, 28 июня 1968 года ему присвоено звание «Почетный гражданин Сургута».</span></div>
+                      <p>Именами первопроходцев-геологоразведчиков названы многие месторождения, открытые ими. Самое крупное - Федоровское - названо в честь Виктора Петровича Федорова, который в 60-е годы работал в Сургутской нефтеразведочной экспедиции.</p>
+                      <p>17 мая 1964 года началась промышленная эксплуатация Усть-Балыкского месторождения нефти, а 26 мая первая баржа с нефтью отправлена на Омский нефтеперерабатывающий завод.</p>
+                      <p>25 июня 1965 года Сургут преобразован в город окружного подчинения.</p>
+                    </div>
+                    <button class="button button_blue about-history__button    " onclick="showMoreHistory()" title="" role="button" aria-label="Подробнее..."><span class="button_span">Подробнее...</span>
+                    </button>
+                    <div class="about-timeline">
+                      <h3 class="about-timeline__title">История руководителей</h3>
+                      <div class="about-timeline__content">
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h1.png"/>
+                            <p>Пешев Леонид Васильевич</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1965</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item">
+                          <div class="about-timeline-container"><img src="/resources/h2.png"/>
+                            <p>Мунарев Петр Александрович</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1965 - 1973</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h3.png"/>
+                            <p>Мачехин Герман Семенович</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1973 - 1974</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h4.png"/>
+                            <p>Мелихов Юрий Михайлович</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1974 - 1977</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h5.png"/>
+                            <p>Чинчевич Александр Владимирович</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1977 - 1979</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h6.png"/>
+                            <p>Аникин Николай Григорьевич</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1979 - 1981       </p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h7.png"/>
+                            <p>Марчук Олег Данилович</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1981 - 1988</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h8.png"/>
+                            <p>Рокецкий Леонид Юлианович</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1988 - 1990</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h9.png"/>
+                            <p>Сидоров Александр Леонидович</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>1990 - 2010</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h10.png"/>
+                            <p>Попов Дмитрий Валерьевич</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>2010 - 2016</p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h11.png"/>
+                            <p>Шувалов Вадим Николаевич</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>2016 - 2020 </p>
+                          </div>
+                        </div>
+                        <div class="about-timeline-item"> 
+                          <div class="about-timeline-container"><img src="/resources/h12.png"/>
+                            <p>Филатов Андрей Сергеевич</p>
+                            <div class="about-timeline-dot"></div>
+                            <p>2021 - 2024</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="button button_blue about-timeline__button    " onclick="showMoreTimeline()" title="" role="button" aria-label="Рарзвернуть..."><span class="button_span">Рарзвернуть...</span>
+                      </button>
+                    </div>
+                    <div class="about-video-list" id="about-video-list">
+                      <div class="about-video-list__card">
+                        <div class="about-video-list__desc">
+                          <h4 class="about-video-list__title">Видеоролики к 430-летию со дня основания города Сургута</h4>
+                          <p class="about-video-list__text">К 430-летию со дня основания города <b>Сургутский краеведческий музей подготовил цикл видеороликов </b>(7 видеороликов), направленных на знакомство горожан и гостей Сургута с его древней и современной историей, с уникальными городскими архитектурными объектами, отражающими становление и развитие северного города.</p>
+                        </div>
+                        <div class="about-video">
+                          <video id="video-player-first" controls="controls">
+                            <source id="video-source-first" src="/resources/SKM1.mp4" type="video/mp4"/>
+                          </video>
+                        </div>
+                      </div>
+                      <div class="about-video-list__card">
+                        <div class="about-video-list__desc">
+                          <h4 class="about-video-list__title">Видеоролики к 430-летию со дня основания города Сургута</h4>
+                          <p class="about-video-list__text">К 430-летию со дня основания города <b>Сургутский краеведческий музей подготовил цикл видеороликов </b>(7 видеороликов), направленных на знакомство горожан и гостей Сургута с его древней и современной историей, с уникальными городскими архитектурными объектами, отражающими становление и развитие северного города.</p>
+                        </div>
+                        <div class="about-video">
+                          <video id="video-player-second" controls="controls">
+                            <source id="video-source-second" src="/resources/SKM1.mp4" type="video/mp4"/>
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-citizens">
+            <div class="about-citizens__container"> 
+              <div class="title"> 
+                <div class="title__container"> 
+                  <h2 class="title__name">Почетные граждане Сургута</h2>
+                </div>
+              </div>
+              <div class="about-citizens__tabs"> 
+                <div class="tabs-tag" role="tablist"><a class="tab-button " href="#" role="tab" aria-label="Почетные граждане Сургута">Почетные граждане Сургута</a><a class="tab-button " href="#" role="tab" aria-label="Почетные граждане ХМАО-Югры">Почетные граждане ХМАО-Югры</a><a class="tab-button " href="#" role="tab" aria-label="Доска почета">Доска почета</a><a class="tab-button " href="#" role="tab" aria-label="За заслуги перед городом Сургутом">За заслуги перед городом Сургутом</a>
+                </div>
+              </div>
+              <div class="about-citizens__list"><a href="/"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a><a href="/"><img class="about-citizens__image" src="./resources/board__image.png" alt="Фотография граждан"/></a></div>
+              <div class="about-citizens__documents"><a class="files-list__document-description">
+                  <ion-icon class="files-list__icon" name="document"></ion-icon><span class="files-list__document-title">Книга почета.pdf       </span></a></div>
             </div>
           </div>
           <hr/>
-          <div class="about-administration"> 
-            <p class="about-title">Администрация города Сургута</p>
-            <p class="about-subtitle">Географические координаты Администрации города и структурных подразделений:
-              <ul> 
-                <li>ул. Энгельса, 8, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область) 628408 - <b> 61.242159° с.ш., 73.394317° в.д.</b></li>
-                <li>ул. Гагарина, 11, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628408 - <b>61.239536° с.ш.,  73.390355° в.д.</b></li>
-                <li>ул. Восход, 4, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628404 - <b>61.252074° с.ш., 73.362822° в.д.</b></li>
-                <li>бульвар Свободы, 5, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628403 - <b>61.247756° с.ш., 73.400147° в.д.</b></li>
-                <li>ул. Просвещения, 19, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628408 - <b>61.235666° с.ш., 73.403597° в.д.</b></li>
-                <li>ул. Маяковского, 15, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628403 - <b>61.252386° с.ш., 73.415850° в.д.</b></li>
-                <li>проезд Советов, 4, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628408 - <b>61.242869° с.ш., 73.395781° в.д.</b></li>
-                <li>ул. Кукуевицкого, 12, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628416 - <b>61.254355° с.ш., 73.370925° в.д.</b></li>
-              </ul>
-            </p>
-            <p class="about-subtitle">История руководителей
-              <div class="about-timeline"> <img class="about-timeline__line" src="/resources/about_line.svg"/>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h1.png"/>
-                    <p>Пешев Леонид Васильевич</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1965</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item">
-                  <div class="about-timeline-container"><img src="/resources/h2.png"/>
-                    <p>Мунарев Петр Александрович</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1965 - 1973</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h3.png"/>
-                    <p>Мачехин Герман Семенович</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1973 - 1974</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h4.png"/>
-                    <p>Мелихов Юрий Михайлович</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1974 - 1977</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h5.png"/>
-                    <p>Чинчевич Александр Владимирович</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1977 - 1979</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h6.png"/>
-                    <p>Аникин Николай Григорьевич</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1979 - 1981</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h7.png"/>
-                    <p>Марчук Олег Данилович</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1981 - 1988</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h8.png"/>
-                    <p>Рокецкий Леонид Юлианович</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1988 - 1990</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h9.png"/>
-                    <p>Сидоров Александр Леонидович</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>1990 - 2010</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h10.png"/>
-                    <p>Попов Дмитрий Валерьевич</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>2010 - 2016</p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h11.png"/>
-                    <p>Шувалов Вадим Николаевич</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>2016 - 2020 </p>
-                  </div>
-                </div>
-                <div class="about-timeline-item"> 
-                  <div class="about-timeline-container"><img src="/resources/h12.png"/>
-                    <p>Филатов Андрей Сергеевич</p>
-                    <div class="about-timeline-dot"></div>
-                    <p>2021 - 2024</p>
-                  </div>
-                </div>
+          <div class="about-monuments">
+            <div class="main-title">
+              <div class="main-title__container">
+                <h1 class="main-title__title">Памятники Сургута</h1><a class="main-title__link" href="/" role="link" aria-label="Все памятники">Все памятники</a>
               </div>
-            </p>
-            <p class="about-subtitle">Органы местного самоуправления
-              <div class="about-organs">
-                <div class="about-organ">
-                  <div class="about-organ-top">
-                    <div class="about-organ-top-left">
-                      <div class="about-organ-title"><span>Слепов Максим Николаевич</span></div>
-                      <div class="about-organ-subtitle"><span>Глава города Сургута</span></div>
+            </div>
+            <div class="about-monuments__container"><a class="monument-card" href="/">
+                <div class="monument-card__container"> <img class="monument-card__image" src="./resources/monument_image.png" alt="Изображение памятника"/>
+                  <div class="monument-card__about"> 
+                    <h5 class="monument-card__title">Скульптурная композиция Первооткрывателям города Сургута</h5>
+                    <div class="monument-card__desc">
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Год открытия</span><span class="monument-card__desc-about">8 сентября 1968г.</span></div>
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Местоположение</span><span class="monument-card__desc-about">Нефтеюганское шоссе, 20, на территории БУ ХМАО – Югры «Окружная клиническая больница «Травматологический центр»</span></div>
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Автор проекта</span><span class="monument-card__desc-about">Автор проекта Стародумов В. Включает в себя памятники: «Борцам за Советскую власть» и «Сургутянам», павшим на фронтах ВОВ        </span></div>
                     </div>
-                    <div class="about-organ-top-right"> <a class="about-organ-ref" href="#">Перейти на страницу</a></div>
                   </div>
-                  <div class="about-organ-bot">
-                    <div class="about-organ-bot-elem"><span>Адрес</span><span>628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Энгельса, 8.</span></div>
-                    <div class="about-organ-bot-elem"><span>Телефон</span><span>(3462) 52-20-01, факс (3462) 52-21-82</span></div>
-                    <div class="about-organ-bot-elem"><span>E-mail</span><span>gorod@admsurgut.ru</span></div>
-                  </div>
-                </div>
-                <div class="about-organ">
-                  <div class="about-organ-top">
-                    <div class="about-organ-top-left">
-                      <div class="about-organ-title"><span>Администрация города Сургута</span></div>
+                </div></a><a class="monument-card" href="/">
+                <div class="monument-card__container"> <img class="monument-card__image" src="./resources/monument_image.png" alt="Изображение памятника"/>
+                  <div class="monument-card__about"> 
+                    <h5 class="monument-card__title">Скульптурная композиция Первооткрывателям города Сургута</h5>
+                    <div class="monument-card__desc">
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Год открытия</span><span class="monument-card__desc-about">8 сентября 1968г.</span></div>
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Местоположение</span><span class="monument-card__desc-about">Нефтеюганское шоссе, 20, на территории БУ ХМАО – Югры «Окружная клиническая больница «Травматологический центр»</span></div>
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Автор проекта</span><span class="monument-card__desc-about">Автор проекта Стародумов В. Включает в себя памятники: «Борцам за Советскую власть» и «Сургутянам», павшим на фронтах ВОВ        </span></div>
                     </div>
-                    <div class="about-organ-top-right"> <a class="about-organ-ref" href="#">Перейти на страницу</a></div>
                   </div>
-                  <div class="about-organ-bot">
-                    <div class="about-organ-bot-elem"><span>Адрес</span><span>628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Энгельса, 8.</span></div>
-                    <div class="about-organ-bot-elem"><span>Телефон</span><span>факс (3462) 52-21-82</span></div>
-                    <div class="about-organ-bot-elem"><span>E-mail</span><span>gorod@admsurgut.ru</span></div>
-                  </div>
-                </div>
-                <div class="about-organ">
-                  <div class="about-organ-top">
-                    <div class="about-organ-top-left">
-                      <div class="about-organ-title"><span>Дума города Сургута </span></div>
-                      <div class="about-organ-subtitle"><span>Председатель: Олейников Александр Игоревич</span></div>
+                </div></a><a class="monument-card" href="/">
+                <div class="monument-card__container"> <img class="monument-card__image" src="./resources/monument_image.png" alt="Изображение памятника"/>
+                  <div class="monument-card__about"> 
+                    <h5 class="monument-card__title">Скульптурная композиция Первооткрывателям города Сургута</h5>
+                    <div class="monument-card__desc">
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Год открытия</span><span class="monument-card__desc-about">8 сентября 1968г.</span></div>
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Местоположение</span><span class="monument-card__desc-about">Нефтеюганское шоссе, 20, на территории БУ ХМАО – Югры «Окружная клиническая больница «Травматологический центр»</span></div>
+                      <div class="monument-card__desc-block"><span class="monument-card__desc-title">Автор проекта</span><span class="monument-card__desc-about">Автор проекта Стародумов В. Включает в себя памятники: «Борцам за Советскую власть» и «Сургутянам», павшим на фронтах ВОВ        </span></div>
                     </div>
-                    <div class="about-organ-top-right"> <a class="about-organ-ref" href="#">Перейти на страницу</a></div>
                   </div>
-                  <div class="about-organ-bot">
-                    <div class="about-organ-bot-elem"><span>Адрес</span><span>628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Восход, 4.</span></div>
-                    <div class="about-organ-bot-elem"><span>Телефон</span><span>(3462) 52-83-74, факс (3462) 52-80-15</span></div>
-                    <div class="about-organ-bot-elem"><span>E-mail</span><span>duma@admsurgut.ru</span></div>
-                  </div>
-                </div>
-                <div class="about-organ">
-                  <div class="about-organ-top">
-                    <div class="about-organ-top-left">
-                      <div class="about-organ-title"><span>Контрольно-счетная палата </span></div>
-                      <div class="about-organ-subtitle"><span>Председатель: Жуков Владислав Игоревич</span></div>
-                    </div>
-                    <div class="about-organ-top-right"> <a class="about-organ-ref" href="#">Перейти на страницу</a></div>
-                  </div>
-                  <div class="about-organ-bot">
-                    <div class="about-organ-bot-elem"><span>Адрес</span><span>628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Восход, 4.</span></div>
-                    <div class="about-organ-bot-elem"><span>Телефон</span><span>(3462) 52-83-43</span></div>
-                    <div class="about-organ-bot-elem"><span>E-mail</span><span>ksp@admsurgut.ru</span></div>
-                  </div>
-                </div>
-              </div>
-            </p>
+                </div></a>
+            </div>
           </div>
           <hr/>
-          <div class="about-symbols"> 
-            <p class="about-title">Официальные символы
-              <div class="about-symbols-list"> 
-                <div class="about-symbols-elem">
-                  <div class="about-symbols-elem-text"><b>Герб города </b><span>Сургута утвержден </span><a href="#">решением городской Думы от 04.11.2003 № 273-III ГД. </a><span>Геральдическое описание герба муниципального образования город окружного значения Сургут гласит: «В золотом поле – черная с серебряным концом хвоста лисица, идущая по лазоревой земле»</span></div>
-                  <div class="about-symbols-elem-img"><img src="/resources/gerb.png"/></div>
-                </div>
-                <div class="about-symbols-elem">
-                  <div class="about-symbols-elem-text"><b>Флаг города </b><span>Сургута утвержден </span><a href="#">решением городской Думы от 25.04.2005 № 454- III ГД. </a><span>Флаг муниципального образования городской округ город Сургут представляет собой прямоугольное полотнище с соотношением ширины к длине 2:3, в центре которого на золотом фоне лисица с серебряным концом хвоста, идущая по лазоревой земле.</span></div>
-                  <div class="about-symbols-elem-img"><img src="/resources/flag.png"/></div>
-                </div>
+          <div class="about-photo-chronicle">
+            <div class="main-title">
+              <div class="main-title__container">
+                <h1 class="main-title__title">Фотохроника Сургута</h1><a class="main-title__link" href="/" role="link" aria-label="Вся фотохроника">Вся фотохроника</a>
               </div>
-            </p>
-          </div>
-          <hr/>
-          <div class="about-history">
-            <p class="about-title">Сургут: История, События, Люди
-              <p>Сургут - город окружного подчинения Ханты-Мансийского автономного округа - Югры, один из старейших городов Сибири, основанный вскоре после присоединения западносибирских земель к российскому государству в конце XVI века.</p>
-              <p>
-                 Город стоит <b>на правом берегу </b>великой сибирской <b>реки Оби</b>, в среднем ее течении.</p>
-              <div class="about-history-elem"><img class="about-history-elem__img" src="/resources/about_earth_2.svg"/><span>Как и города Санкт-Петербург, Хельсинки, Осло, Сургут расположен <b>на шестидесятой северной широте. </b>Но в отличие от Европы <b>климат </b>здесь <b>резко континентальный. </b>Зима длится около 7 месяцев, среднемесячная температура января - 22°С, июля +17°С. Морозы зимой порой достигают -50°С.</span></div>
-              <p>История основания Сургута уходит во времена Ивана Грозного и Ермака. Вскоре после открытия Ермаком Зауральских земель и присоединения их к Российскому государству там стали основываться опорные центры - Тюмень, Тобольск, Тара, Обской городок. В наказе царя Федора Иоанновича от 19 февраля 1594 года говорится о строительстве города в Сургуте: «Федору Борятинскому и Владимиру Аничкову...быть на службе в Сибири вверх по Оби реке, ставить город в Сургуте... А пришед князю Федору и Владимиру в Сургут, в котором месте пригоже, высмотря место крепкое, поставить город». Историк Г.Ф. Миллер по этому поводу писал: «На том месте, где заполезно усмотрено город Сургут построить, жил тогда остяцкий князец именем Бардок... Речка, которая не в дальнем расстоянии выше города впала в Обь, получила по нем звание Бардаковка».</p>
-              <p>Точно установить дату, когда русские землепроходцы достигли этой местности сегодня, наверное, уже не удастся. Историки по этому поводу спорят не одно столетие, но достоверно известно, что в 1594 году в Сургуте уже развернулось строительство деревянной крепости, Троицкой церкви, других сооружений. В настоящее время по датировке царского указа принято годом основания Сургута считать 1594 год.</p>
-              <p>Немало версий существует в объяснении <b>происхождения слова «Сургут». </b>Известный русский историк П.Н.Буцинский в книге <b>«К истории Сибири» </b>утверждает, что «целая область, где построен русский город, называлась Сургут. Откуда же произошло это название? Известно, что город был основан вблизи поселения хантыйского племени и за ним сохранилось местное название без перевода на русский язык. Такая традиция существовала у землепроходцев при основании всех городов Сибири. Исходя из этого можно предположить, что слово <b>«сургут» состоит из двух древнеюгорских «сор» и «кут», </b>которые дошли до нас в измененном виде. Слово <b>«сор»</b>переводится как <b>«заливная пойма реки», </b>слово <b>«кут» </b>на сургутском наречии означает <b>«рыба».</b> Следовательно, в соединении слово «соркут» в древнеюгорском языке могло означать целое понятие, связанное с образом жизни народа: ежегодным весенним кочевьем племен из таежных речек и охотничьих угодий в пойму Оби.</p>
-              <p>В конце XVI века Сургут представлял собой небольшую крепость с двумя воротами, четырьмя глухими и одной проезжей башнями. В первые годы возвели здесь церковь, воеводский двор, жилые дома. Все строения были деревянными. В XVI и XVII веках население Сургута состояло в основном из казаков и стрельцов, город играл роль форпоста дальнейшего продвижения русских на восток и север для освоения новых территорий.</p>
-              <div class="about-history-elem"> <span>В 1708 году Петр Первый назвал Сургут городом Сибирской губернии, а в 1782 году он стал уездным центром Тобольского наместничества - <b>17 марта 1785 года Екатерина II утвердила герб Сургута: </b>«В золотом поле черно-бурая лисица: в знак изобильной ловли оных в округе сего города».</span><img src="/resources/gerb2.png"/></div>
-              <p>Самыми распространенными занятиями местных жителей были рыбная ловля, охота на пушных зверей и дичь. Они занимались выделкой кож и шкур, заготовкой кедрового ореха, ягод, грибов, пошивом обуви и одежды, кузнечным делом, держали много собак для охоты и езды. До конца XIX века большинство мужского населения города были служилыми людьми – казаками и получали небольшой денежный или продовольственный оклад.</p>
-              <p>Возникший как военно-опорный пункт России в центре Западной Сибири, Сургут в середине XVII века становится заметным торговым городом. Здесь была сосредоточена администрация с соответствующей канцелярией. Сургутское духовенство «окормляло» русских жителей и занималось миссионерской деятельностью среди коренного населения.</p>
-              <p>Главным видом транспорта был водный. На стругах приплыли сюда первые русские люди, основатели города. После создания паровых машин и пароходов вблизи Сургута оборудовали пристань. В 1900 году на пристань протянули 7-километровую телефонную линию. Это был первый сургутский телефон.</p>
-              <p>К концу XVIII века относится возникновение в Сургуте ежегодных ярмарок: в обмен на пушнину и рыбу шли мука, табак, сукно, холст, бисер, платки, а также капканы, топоры, ножи, кружки и прочее.</p>
-              <p>За столетия истории Сургута его посещали многие известные ученые и общественные деятели, этнографы, историки, экономисты из европейских и российских городов: писатель и дипломат Николай Спафарий, автор фундаментального труда по истории «Описание Сибирского царства» Герхард Миллер, путешественник и ученый Матиас Кастрен, этнограф и экономист С.К. Патканов, биолог и этнограф А.А. Дунин-Горкавич и многие другие.</p>
-              <p>Здесь отбывали ссылку военнопленные различных войн, декабристы, народники и революционеры конца XIX – начала XX века. Многие из них оставили воспоминания и научные труды о сургутском крае.</p>
-              <p>20 июля 1891 года на Белоярской пристани побывал 23-летний наследник Престола Николай Александрович Романов, совершавший поездку по Сибири и Дальнему Востоку.</p>
-              <p>Не обошли стороной Сургут и бурные революционные события начала ХХ века. 16 апреля 1918 года в городе была установлена Советская власть. А в 1920 году Сургут стал одним из центров так называемого «кулацкого» восстания против большевиков, которое было жестоко подавлено регулярными частями Красной Армии.</p>
-              <p>Осенью 1923 года Сургут потерял статус города и превратился в село, центр района, площадь которого превышала 180 тысяч квадратных километров.</p>
-              <p>А в 1928 году в Сургуте открылось первое промышленное предприятие - консервная фабрика.</p>
-              <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_3.svg"/><span>С полным основанием считается, что <b>Сургут рождался дважды. </b>Первое его рождение проходило под перезвон топоров наших далеких предков, а второе сопровождалось мощным гулом нефтяных фонтанов.</span></div>
-              <p>В 30-е годы предприняты первые попытки разведки полезных ископаемых. Академик Иван Михайлович Губкин еще в начале 30-х годов утверждал, что в Западной Сибири есть нефть. Его гениальное пророчество оправдалось.</p>
-              <p>Осенью 1957 года геологоразведочная экспедиция под руководством молодого инженера – геолога Фармана Салманова высадилась в Сургуте для поиска нефтяных месторождений. В Сургуте создана Юганская разведка структурно-поискового бурения. В тяжелейших бытовых условиях, при минимуме техники велось разведочное бурение. Четыре года поиски были безрезультатными, но затем открытия крупных месторождений последовали одно за другим.</p>
-              <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_2.svg"/><span> <b>15 ноября 1962 года открыто Западно-Сургутское месторождение нефти.</b>В последующие годы на территории Сургутского района открыто больше тридцати месторождений. Первый и главный сургутский геолог <b>Фарман Курбанович Салманов</b>стал Героем Социалистического Труда, ученым с мировым именем, 28 июня 1968 года ему присвоено звание «Почетный гражданин Сургута».</span></div>
-              <p>Именами первопроходцев-геологоразведчиков названы многие месторождения, открытые ими. Самое крупное - Федоровское - названо в честь Виктора Петровича Федорова, который в 60-е годы работал в Сургутской нефтеразведочной экспедиции.</p>
-              <p>17 мая 1964 года началась промышленная эксплуатация Усть-Балыкского месторождения нефти, а 26 мая первая баржа с нефтью отправлена на Омский нефтеперерабатывающий завод.</p>
-              <p>25 июня 1965 года Сургут преобразован в город окружного подчинения.</p>
-            </p>
-            <p class="about-subtitle">Видеоролики к 430-летию со дня основания города Сургута
-              <p>К 430-летию со дня основания города <b>Сургутский краеведческий музей подготовил цикл видеороликов </b>(7 видеороликов), направленных на знакомство горожан и гостей Сургута с его древней и современной историей, с уникальными городскими архитектурными объектами, отражающими становление и развитие северного города.</p>
-              <p>Видеоролики содержат информацию о таких городских объектах, как: Памятник «Основателям Сургута», Достопримечательное место «Культурный слой Сургута», Памятный знак «Сургутский кремль», Мемориал Славы, Свято-Троицкий кафедральный собор; геральдическую символику Сургута; знакомят с уникальными объектами культурного наследия Ханты-Мансийского автономного округа – Югры: «Дом Г.С. Клепикова» и «Дом Ф.К. Салманова».</p>
-              <div class="tabs-tag"><a class="tab-button tab-button_active" href="#" value="SKM1.mp4">Видеоролик 1: “История основания”</a><a class="tab-button " href="#" value="SKM2.mp4">Видеоролик 2: “Здесь начинался Сургут”</a><a class="tab-button " href="#" value="SKM3.mp4">Видеоролик 3: “История Мемориала Славы”</a><a class="tab-button " href="#" value="SKM4.mp4">Видеоролик 4: “Сургут сквозь века”</a><a class="tab-button " href="#" value="SKM5.mp4">Видеоролик 5: “Геологи-первопроходцы”</a><a class="tab-button " href="#" value="SKM6.mp4">Видеоролик 6: “Памятники Сургута”</a><a class="tab-button " href="#" value="SKM7.mp4">Видеоролик 7: “Геральдическая символика Сургута”</a>
-              </div>
-              <div class="about-video">
-                <video id="video-player" controls="controls" width="100%" height="100%">
-                  <source id="video-source" src="/resources/SKM1.mp4" type="video/mp4"/>
-                </video>
-              </div>
-            </p>
+            </div>
+            <div class="about-photo-chronicle__container"><a class="photo-chronicle-card" href="/">
+                <div class="photo-chronicle-card__container"><img class="photo-chronicle-card__image" src="./resources/image_1.jpg" alt="Фотография события"/>
+                  <div class="photo-chronicle-card__about"> <span class="photo-chronicle-card__caption">30 марта 2015</span>
+                    <h5 class="photo-chronicle-card__title">Церемония награждения конкурса “Журналист года 2024”</h5>
+                  </div>
+                </div></a><a class="photo-chronicle-card" href="/">
+                <div class="photo-chronicle-card__container"><img class="photo-chronicle-card__image" src="./resources/image_1.jpg" alt="Фотография события"/>
+                  <div class="photo-chronicle-card__about"> <span class="photo-chronicle-card__caption">30 марта 2015</span>
+                    <h5 class="photo-chronicle-card__title">Церемония награждения конкурса “Журналист года 2024”</h5>
+                  </div>
+                </div></a><a class="photo-chronicle-card" href="/">
+                <div class="photo-chronicle-card__container"><img class="photo-chronicle-card__image" src="./resources/image_1.jpg" alt="Фотография события"/>
+                  <div class="photo-chronicle-card__about"> <span class="photo-chronicle-card__caption">30 марта 2015</span>
+                    <h5 class="photo-chronicle-card__title">Церемония награждения конкурса “Журналист года 2024”</h5>
+                  </div>
+                </div></a>
+            </div>
           </div>
           <hr/>
           <div class="about-today"> 
             <p class="about-title">Сургут сегодня
               <p>Развитие города обусловлено рядом благоприятных условий. Сургут занимает выгодное экономико-транспортно-географическое положение: он расположен на пересечении железнодорожной магистрали с мощной водной артерией - рекой Обью. Город превратился в значительный транспортный узел: через него проходят железная дорога, автомагистраль, здесь расположены международный аэропорт и речной порт. Развит трубопроводный транспорт (крупнейший узел нефте- и газопроводов).</p>
               <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_2.svg"/><span>Сегодня Сургут - крупнейший промышленный и культурный центр Ханты-Мансийского автономного округа - Югры, Тюменской области, один из главных центров нефтедобывающей промышленности России. Его называют <b>столицей нефтяного края, индустриальным и энергетическим сердцем Севера.</b></span></div>
-              <p>По насыщенности автомобильным транспортом Сургут занимает одно из ведущих мест в стране. В настоящее время в городе насчитывается около 200 тысяч единиц автотранспорта.</p>
-              <p> <b>Численность постоянного населения </b>города в настоящее время – <b>более 395 тысяч человек. </b>В демографической сфере сохраняется тенденция положительного прироста постоянной численности населения города на фоне снижения темпов естественного прироста, при этом уровень рождаемости более чем в 2 раза превышает уровень смертности.</p>
-              <p>Основным фактором экономической стабильности города остается развитие нефтедобывающей и энергетической отраслей. Системообразующим предприятием города является нефтяная компания «Сургутнефтегаз», занимающая одно из лидирующих мест среди нефтяных компаний не только в автономном округе, но и в России. Сфера деятельности компании: добыча и реализация нефти и газа, производство и сбыт нефтепродуктов и продуктов нефтехимии, разведка, обустройство и разработка нефтяных и нефтегазовых месторождений.</p>
-              <p>В городе также базируется одно из крупных газотранспортных предприятий Западной Сибири - <b>ООО «Газпром трансгаз Сургут», </b>дочернее предприятие публичного акционерного общества «Газпром». Административный центр компании находится в Сургуте. «Газпром трансгаз Сургут» эксплуатирует систему магистральных газопроводов от Заполярного месторождения до юга Тюменской области протяженностью более 6,3 тысяч км.</p>
-              <p>В Сургуте расположены филиалы крупнейших генерирующих компаний оптового рынка электроэнергии: публичного акционерного общества «ОГК-2» «Сургутская ГРЭС-1»; публичного акционерного общества «Юнипро» «Сургутская ГРЭС-2».</p>
-              <p>За 2021 год выработка электроэнергии по городу составила около <b>45 млрд. Квт.час</b>и теплоэнергии около <b>4 млн. Гкал.</b></p>
-              <p>Значительную роль в городе играет малый и средний бизнес. Оборот малого бизнеса за 2021 год составил около 190 млрд. рублей, <b>численность занятых в малом бизнесе – около 45 тыс. человек</b>или 28% от общей численности занятых на территории города. Это предприятия, представленные мини-пекарнями по производству хлеба и хлебобулочных изделий, цехами по производству кондитерских изделий, мясных полуфабрикатов, рыбной продукции, напитков и других товаров народного потребления, предприятиями по выполнению строительно-ремонтных работ, оказанию транспортных, бытовых и других платных услуг.</p>
-              <p>Среди предприятий пищевой промышленности наиболее крупными являются СГМУП «Сургутский хлебозавод», ООО «Мясокомбинат «Сургутский».</p>
-              <p>Значительные инвестиции осуществляются в строительство жилья и социальных объектов. За последние десять лет введено в эксплуатацию 2,5 млн. кв. метров жилья. Развитие инвестиционной деятельности осуществляется за счет собственных средств хозяйствующих субъектов, а также бюджетных средств.</p>
-              <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_2.svg"/><span>Значительные инвестиции осуществляются в строительство жилья и социальных объектов.<b>За последние десять лет введено в эксплуатацию 2,5 млн. кв. метров жилья. </b>Развитие инвестиционной деятельности осуществляется за счет собственных средств хозяйствующих субъектов, а также бюджетных средств. Жилищный фонд города составляет <b>8,6 млн. кв. метров, средняя обеспеченность населения жильем – </b>21,8 кв. м на человека.</span></div>
-            </p>
-            <p class="about-subtitle">Учреждения города Сургута
-              <p>В городе функционирует сеть различных по организационно-правовым формам образовательных учреждений, в том числе: 53 организации, реализующих программы дошкольного образования, 41 общеобразовательное учреждение, 2 спецшколы, 20 учреждений дополнительного образования, 8 учреждений среднего профессионального образования, 3 учреждения высшего профессионального образования.</p>
-              <p>В реализации мероприятий территориальной программы государственных гарантий бесплатного оказания гражданам медицинской помощи в Ханты-Мансийском автономном округе – Югре принимают участие 9 государственных и 1 частная медицинская организация, оказывающие населению круглосуточную стационарную помощь (мощность – 3 424 койки), 5 государственных амбулаторно-поликлинических учреждений на 4 893 посещения в смену, 2 государственные стоматологические клиники, городская станция скорой медицинской помощи, станция переливания крови, филиал центра медицинской профилактики, филиал врачебно-физкультурного диспансера, филиал центра по профилактике и борьбе со СПИД и инфекционными заболеваниями, центр лекарственного мониторинга, а также ряд частных медицинских организаций.</p>
-              <p>В 2021 году в ней принимали участие 23 негосударственных медицинских организации, в которых медицинская помощь оказывается по направлениям: стоматологические услуги, лабораторная, ультразвуковая диагностика и магнитно-резонансная томография, первичная медико-санитарная помощь (прием врачей узких специалистов), круглосуточная стационарная помощь, паллиативная помощь. Оплата оказанных медицинских услуг осуществляется в системе обязательного медицинского страхования по единым тарифам как для государственных, так и для частных медицинских организаций.</p>
-              <p>5 медицинских центров города оказывают специализированную, в том числе высокотехнологичную медицинскую помощь населению автономного округа.</p>
-              <p> <b>Социальное обслуживание </b>населения на территории города осуществляют 6 учреждений социального обслуживания, регионального подчинения:</p>
-              <ul> 
-                <li>«Геронтологический центр»;</li>
-                <li>«Сургутский комплексный центр социального обслуживания населения»;</li>
-                <li>«Сургутский реабилитационный центр для детей и подростков с ограниченными возможностями»;</li>
-                <li>«Сургутский социально-оздоровительный центр»;</li>
-                <li>«Сургутский центр социальной помощи семье и детям»;</li>
-                <li>«Сургутский многопрофильный реабилитационный центр для инвалидов».</li>
-              </ul>
-              <p>Сеть учреждений культуры и искусства города Сургута представлена 18 учреждениями, в том числе: 5 учреждениями культурно-досугового типа, 2 театрами, 6 кинотеатрами, 2 музеями, централизованной библиотечной системой, парком культуры и отдыха, городской концертной организацей.</p>
-              <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_3.svg"/><span>Одним из старейших музейных учреждений Ханты-Мансийского автономного округа – Югры  является <b>Сургутский краеведческий музей, </b>основанный в 1963 году по инициативе известного краеведа, Почетного гражданина города Сургута, ветерана Великой Отечественной войны <b>Флегонта Яковлевича Показаньева. </b>В основу первой экспозиции музея легли материалы по истории города и края, собранные Флегонтом Яковлевичем. Сургутский краеведческий музей является крупным учреждением с развернутой структурой. В его состав входят четыре подразделения, каждое из которых обладает неповторимым колоритом.</span></div>
-              <p>История Сургута конца XIX – начала XX веков представлена в музейном комплексе «Купеческая усадьба. Дом купца Г. С. Клепикова». Это старейшее здание Сургута и единственный в городе памятник истории и архитектуры конца XIX века, сохранившийся на своем историческом месте. Купеческий дом внесен в единый государственный реестр объектов культурного наследия (памятников истории и культуры) народов Российской Федерации.</p>
-              <p>Эпоха промышленного становления Сургута неразрывно связана с деятельностью Фармана Курбановича Салманова − первооткрывателя сибирской нефти. Мемориальный комплекс геологов-первопроходцев «Дом Ф.К. Салманова» является уникальным историческим местом, сохранившим атмосферу эпохи 1960-х годов. Это единственное музейное учреждение, посвященное выдающемуся геологу. Дом имеет статус объекта культурного (памятников истории и культуры) народов Российской Федерации.</p>
-              <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_3.svg"/><span> <b>Первый </b>в Ханты-Мансийском автономном округе – Югре <b>художественный музей был основан в 1992 году в Сургуте. </b>Сургутский художественный музей – это оснащенный современным специализированным оборудованием выставочный комплекс, досуговый и образовательный центр, деятельность которого отличает инновационный подход в подаче материала. В настоящее время собрание Сургутского художественного музея включает коллекции русского искусства рубежа XIX–XX веков и первой половины ХХ века, современного искусства Сибири, национального искусства народов Севера, коллекцию иронического искусства и археологические коллекции III−XV веков.</span></div>
-              <p>В городе так же функционирует 824 спортивных сооружения, в том числе: 177 спортивных залов, включая спортивные залы предприятий и учреждений города (общая площадь – 76 771 кв.м); 23 плавательных бассейна (общая площадь – 6039 кв.м. зеркала воды); 189 плоскостных спортсооружений (170 площадок, 16 полей, 3 спортивных ядра) (общая площадь – 143 336 кв.м); 8 лыжных баз; 21 сооружение для стрелковых видов спорта; 3 крытых сооружения с искусственным льдом; 1 легкоатлетический манеж; 284 других спортсооружений; 118 объектов городской и рекреационной инфраструктуры, приспособленных для занятий физической культурой и спортом.</p>
-              <p>Наиболее популярными видами спорта в городе являются: плавание, волейбол, компьютерный спорт, шахматы, футбол, фитнесс-аэробика, баскетбол, легкая атлетика, художественная гимнастика, спортивная борьба, лыжные гонки, тхэквондо, хоккей, настольный теннис.Наиболее популярными видами спорта в городе являются: плавание, волейбол, компьютерный спорт, шахматы, футбол, фитнесс-аэробика, баскетбол, легкая атлетика, художественная гимнастика, спортивная борьба, лыжные гонки, тхэквондо, хоккей, настольный теннис.</p>
-              <p>Всего численность систематически занимающихся физической культурой и спортом по городу составляет более 107 тысяч человек.</p>
-              <div class="about-history-elem"> <span> <b>Сургут - это молодежный город, </b>в котором проживает <b>более 116 тысяч молодых людей</b> в возрасте от 14 до 36 лет, что составляет около 30 % от общей численности постоянного населения города.</span></div>
-              <p>На сегодняшний день на территории города действует три учреждения по работе с молодёжью:</p>
-              <ul> 
-                <li>муниципальное автономное учреждение по работе с молодёжью «Наше время» - решает вопросы трудоустройства подростков и молодёжи на временные и постоянные рабочие места, в целях продуктивной занятости молодёжи. В структуру учреждения входят 9 структурных подразделений, расположенных в различных микрорайонах города.;</li>
-                <li>муниципальное бюджетное учреждение по работе с подростками и молодёжью по месту жительства «Вариант» - реализует мероприятия по досуговой занятости детей и молодёжи по месту жительства, программы дворовой педагогики. В настоящее время МБУ «Вариант» объединяет 11 молодёжно-подростковых клубов центров»;</li>
-                <li>муниципальное бюджетное учреждение «Центр специальной подготовки «Сибирский легион» - реализует мероприятия патриотического воспитания молодёжи, подготовки к службе в армии, развития военно-прикладных, технических и экстремальных видов спорта (4 структурных подразделения).</li>
-              </ul>
-              <p>С 2019 года «Молодежный ресурсный центр по поддержке добровольчества и молодежных некоммерческих организаций», созданный на базе муниципального бюджетного учреждения «Вариант», оказывает комплекс информационных, консультационных и методических услуг организациям и гражданам в сфере добровольческой (волонтерской) деятельности. В городе действует 45 волонтерских объединений, в добровольческую (волонтерскую) деятельность вовлечено более 46 тыс. человек.</p>
-              <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_2.svg"/><span> <b>Сургут</b>- это во многом уникальный российский город со своим обликом, характером и образом жизни. Город, заложенный четыре века назад и преображенный в течение нескольких последних десятилетий трудом приехавших сюда людей, может служить символом современного сибирского Севера - края сурового, но богатого и быстро развивающегося.</span></div>
+              <div class="about-today__hidden">
+                <p>По насыщенности автомобильным транспортом Сургут занимает одно из ведущих мест в стране. В настоящее время в городе насчитывается около 200 тысяч единиц автотранспорта.</p>
+                <p> <b>Численность постоянного населения </b>города в настоящее время – <b>более 395 тысяч человек. </b>В демографической сфере сохраняется тенденция положительного прироста постоянной численности населения города на фоне снижения темпов естественного прироста, при этом уровень рождаемости более чем в 2 раза превышает уровень смертности.</p>
+                <p>Основным фактором экономической стабильности города остается развитие нефтедобывающей и энергетической отраслей. Системообразующим предприятием города является нефтяная компания «Сургутнефтегаз», занимающая одно из лидирующих мест среди нефтяных компаний не только в автономном округе, но и в России. Сфера деятельности компании: добыча и реализация нефти и газа, производство и сбыт нефтепродуктов и продуктов нефтехимии, разведка, обустройство и разработка нефтяных и нефтегазовых месторождений.</p>
+                <p>В городе также базируется одно из крупных газотранспортных предприятий Западной Сибири - <b>ООО «Газпром трансгаз Сургут», </b>дочернее предприятие публичного акционерного общества «Газпром». Административный центр компании находится в Сургуте. «Газпром трансгаз Сургут» эксплуатирует систему магистральных газопроводов от Заполярного месторождения до юга Тюменской области протяженностью более 6,3 тысяч км.</p>
+                <p>В Сургуте расположены филиалы крупнейших генерирующих компаний оптового рынка электроэнергии: публичного акционерного общества «ОГК-2» «Сургутская ГРЭС-1»; публичного акционерного общества «Юнипро» «Сургутская ГРЭС-2».</p>
+                <p>За 2021 год выработка электроэнергии по городу составила около <b>45 млрд. Квт.час</b>и теплоэнергии около <b>4 млн. Гкал.</b></p>
+                <p>Значительную роль в городе играет малый и средний бизнес. Оборот малого бизнеса за 2021 год составил около 190 млрд. рублей, <b>численность занятых в малом бизнесе – около 45 тыс. человек</b>или 28% от общей численности занятых на территории города. Это предприятия, представленные мини-пекарнями по производству хлеба и хлебобулочных изделий, цехами по производству кондитерских изделий, мясных полуфабрикатов, рыбной продукции, напитков и других товаров народного потребления, предприятиями по выполнению строительно-ремонтных работ, оказанию транспортных, бытовых и других платных услуг.</p>
+                <p>Среди предприятий пищевой промышленности наиболее крупными являются СГМУП «Сургутский хлебозавод», ООО «Мясокомбинат «Сургутский».</p>
+                <p>Значительные инвестиции осуществляются в строительство жилья и социальных объектов. За последние десять лет введено в эксплуатацию 2,5 млн. кв. метров жилья. Развитие инвестиционной деятельности осуществляется за счет собственных средств хозяйствующих субъектов, а также бюджетных средств.</p>
+                <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_2.svg"/><span>Значительные инвестиции осуществляются в строительство жилья и социальных объектов.<b>За последние десять лет введено в эксплуатацию 2,5 млн. кв. метров жилья. </b>Развитие инвестиционной деятельности осуществляется за счет собственных средств хозяйствующих субъектов, а также бюджетных средств. Жилищный фонд города составляет <b>8,6 млн. кв. метров, средняя обеспеченность населения жильем – </b>21,8 кв. м на человека.</span></div>
+              </div>
+              <button class="button button_blue about-today__button    " onclick="showMoreToday()" title="" role="button" aria-label="Подробнее..."><span class="button_span">Подробнее...</span>
+              </button>
             </p>
           </div>
-          <div class="links-list"><a class="links-list-item" href="#">Памятные даты Сургута на 2021 год
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Памятные даты Сургута на 2020 год
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Памятные даты Сургута на 2019 год
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Памятные даты Сургута на 2018 год
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Памятные даты Сургута на 2017 год
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Памятные даты Сургута на 2016 год
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Памятные даты Сургута на 2015 год
-              <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+          <hr/>
+          <div class="about-agency">
+            <div class="toggle-container">               
+              <div class="toggle-header">Учреждения города Сургута</div>
+              <div class="toggle-content">
+                <p>В городе функционирует сеть различных по организационно-правовым формам образовательных учреждений, в том числе: 53 организации, реализующих программы дошкольного образования, 41 общеобразовательное учреждение, 2 спецшколы, 20 учреждений дополнительного образования, 8 учреждений среднего профессионального образования, 3 учреждения высшего профессионального образования.</p>
+                <p>В реализации мероприятий территориальной программы государственных гарантий бесплатного оказания гражданам медицинской помощи в Ханты-Мансийском автономном округе – Югре принимают участие 9 государственных и 1 частная медицинская организация, оказывающие населению круглосуточную стационарную помощь (мощность – 3 424 койки), 5 государственных амбулаторно-поликлинических учреждений на 4 893 посещения в смену, 2 государственные стоматологические клиники, городская станция скорой медицинской помощи, станция переливания крови, филиал центра медицинской профилактики, филиал врачебно-физкультурного диспансера, филиал центра по профилактике и борьбе со СПИД и инфекционными заболеваниями, центр лекарственного мониторинга, а также ряд частных медицинских организаций.</p>
+                <p>В 2021 году в ней принимали участие 23 негосударственных медицинских организации, в которых медицинская помощь оказывается по направлениям: стоматологические услуги, лабораторная, ультразвуковая диагностика и магнитно-резонансная томография, первичная медико-санитарная помощь (прием врачей узких специалистов), круглосуточная стационарная помощь, паллиативная помощь. Оплата оказанных медицинских услуг осуществляется в системе обязательного медицинского страхования по единым тарифам как для государственных, так и для частных медицинских организаций.</p>
+                <p>5 медицинских центров города оказывают специализированную, в том числе высокотехнологичную медицинскую помощь населению автономного округа.</p>
+                <p> <b>Социальное обслуживание </b>населения на территории города осуществляют 6 учреждений социального обслуживания, регионального подчинения:</p>
+                <ul> 
+                  <li>«Геронтологический центр»;</li>
+                  <li>«Сургутский комплексный центр социального обслуживания населения»;</li>
+                  <li>«Сургутский реабилитационный центр для детей и подростков с ограниченными возможностями»;</li>
+                  <li>«Сургутский социально-оздоровительный центр»;</li>
+                  <li>«Сургутский центр социальной помощи семье и детям»;</li>
+                  <li>«Сургутский многопрофильный реабилитационный центр для инвалидов».</li>
+                </ul>
+                <p>Сеть учреждений культуры и искусства города Сургута представлена 18 учреждениями, в том числе: 5 учреждениями культурно-досугового типа, 2 театрами, 6 кинотеатрами, 2 музеями, централизованной библиотечной системой, парком культуры и отдыха, городской концертной организацей.</p>
+                <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_3.svg"/><span>Одним из старейших музейных учреждений Ханты-Мансийского автономного округа – Югры  является <b>Сургутский краеведческий музей, </b>основанный в 1963 году по инициативе известного краеведа, Почетного гражданина города Сургута, ветерана Великой Отечественной войны <b>Флегонта Яковлевича Показаньева. </b>В основу первой экспозиции музея легли материалы по истории города и края, собранные Флегонтом Яковлевичем. Сургутский краеведческий музей является крупным учреждением с развернутой структурой. В его состав входят четыре подразделения, каждое из которых обладает неповторимым колоритом.</span></div>
+                <p>История Сургута конца XIX – начала XX веков представлена в музейном комплексе «Купеческая усадьба. Дом купца Г. С. Клепикова». Это старейшее здание Сургута и единственный в городе памятник истории и архитектуры конца XIX века, сохранившийся на своем историческом месте. Купеческий дом внесен в единый государственный реестр объектов культурного наследия (памятников истории и культуры) народов Российской Федерации.</p>
+                <p>Эпоха промышленного становления Сургута неразрывно связана с деятельностью Фармана Курбановича Салманова − первооткрывателя сибирской нефти. Мемориальный комплекс геологов-первопроходцев «Дом Ф.К. Салманова» является уникальным историческим местом, сохранившим атмосферу эпохи 1960-х годов. Это единственное музейное учреждение, посвященное выдающемуся геологу. Дом имеет статус объекта культурного (памятников истории и культуры) народов Российской Федерации.</p>
+                <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_3.svg"/><span> <b>Первый </b>в Ханты-Мансийском автономном округе – Югре <b>художественный музей был основан в 1992 году в Сургуте. </b>Сургутский художественный музей – это оснащенный современным специализированным оборудованием выставочный комплекс, досуговый и образовательный центр, деятельность которого отличает инновационный подход в подаче материала. В настоящее время собрание Сургутского художественного музея включает коллекции русского искусства рубежа XIX–XX веков и первой половины ХХ века, современного искусства Сибири, национального искусства народов Севера, коллекцию иронического искусства и археологические коллекции III−XV веков.</span></div>
+                <p>В городе так же функционирует 824 спортивных сооружения, в том числе: 177 спортивных залов, включая спортивные залы предприятий и учреждений города (общая площадь – 76 771 кв.м); 23 плавательных бассейна (общая площадь – 6039 кв.м. зеркала воды); 189 плоскостных спортсооружений (170 площадок, 16 полей, 3 спортивных ядра) (общая площадь – 143 336 кв.м); 8 лыжных баз; 21 сооружение для стрелковых видов спорта; 3 крытых сооружения с искусственным льдом; 1 легкоатлетический манеж; 284 других спортсооружений; 118 объектов городской и рекреационной инфраструктуры, приспособленных для занятий физической культурой и спортом.</p>
+                <p>Наиболее популярными видами спорта в городе являются: плавание, волейбол, компьютерный спорт, шахматы, футбол, фитнесс-аэробика, баскетбол, легкая атлетика, художественная гимнастика, спортивная борьба, лыжные гонки, тхэквондо, хоккей, настольный теннис.Наиболее популярными видами спорта в городе являются: плавание, волейбол, компьютерный спорт, шахматы, футбол, фитнесс-аэробика, баскетбол, легкая атлетика, художественная гимнастика, спортивная борьба, лыжные гонки, тхэквондо, хоккей, настольный теннис.</p>
+                <p>Всего численность систематически занимающихся физической культурой и спортом по городу составляет более 107 тысяч человек.</p>
+                <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_2.svg"/><span> <b>Сургут - это молодежный город, </b>в котором проживает <b>более 116 тысяч молодых людей</b> в возрасте от 14 до 36 лет, что составляет около 30 % от общей численности постоянного населения города.</span></div>
+                <p>На сегодняшний день на территории города действует три учреждения по работе с молодёжью:</p>
+                <ul> 
+                  <li>муниципальное автономное учреждение по работе с молодёжью «Наше время» - решает вопросы трудоустройства подростков и молодёжи на временные и постоянные рабочие места, в целях продуктивной занятости молодёжи. В структуру учреждения входят 9 структурных подразделений, расположенных в различных микрорайонах города.;</li>
+                  <li>муниципальное бюджетное учреждение по работе с подростками и молодёжью по месту жительства «Вариант» - реализует мероприятия по досуговой занятости детей и молодёжи по месту жительства, программы дворовой педагогики. В настоящее время МБУ «Вариант» объединяет 11 молодёжно-подростковых клубов центров»;</li>
+                  <li>муниципальное бюджетное учреждение «Центр специальной подготовки «Сибирский легион» - реализует мероприятия патриотического воспитания молодёжи, подготовки к службе в армии, развития военно-прикладных, технических и экстремальных видов спорта (4 структурных подразделения).</li>
+                </ul>
+                <p>С 2019 года «Молодежный ресурсный центр по поддержке добровольчества и молодежных некоммерческих организаций», созданный на базе муниципального бюджетного учреждения «Вариант», оказывает комплекс информационных, консультационных и методических услуг организациям и гражданам в сфере добровольческой (волонтерской) деятельности. В городе действует 45 волонтерских объединений, в добровольческую (волонтерскую) деятельность вовлечено более 46 тыс. человек.</p>
+                <div class="about-history-elem"> <img class="about-history-elem__img" src="/resources/about_earth_2.svg"/><span> <b>Сургут</b>- это во многом уникальный российский город со своим обликом, характером и образом жизни. Город, заложенный четыре века назад и преображенный в течение нескольких последних десятилетий трудом приехавших сюда людей, может служить символом современного сибирского Севера - края сурового, но богатого и быстро развивающегося.</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="about-organs">
+            <div class="toggle-container">
+              <div class="toggle-header">Органы местного самоуправления</div>
+              <div class="toggle-content">
+                <div class="about-organs-container">
+                  <div class="about-organ">
+                    <div class="about-organ-top">
+                      <div class="about-organ-top-left">
+                        <div class="about-organ-title"><span>Слепов Максим Николаевич</span></div>
+                        <div class="about-organ-subtitle"><span>Глава города Сургута</span></div>
+                      </div>
+                      <div class="about-organ-top-right"> <a class="link about-organ-ref" href="#">Перейти на страницу</a></div>
+                    </div>
+                    <div class="about-organ-bot">
+                      <div class="about-organ-bot-elem"><span>Адрес</span><span>628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Энгельса, 8.</span></div>
+                      <div class="about-organ-bot-elem"><span>Телефон</span><span>(3462) 52-20-01, факс (3462) 52-21-82</span></div>
+                      <div class="about-organ-bot-elem"><span>E-mail</span><span>gorod@admsurgut.ru</span></div>
+                    </div>
+                  </div>
+                  <hr/>
+                  <div class="about-organ">
+                    <div class="about-organ-top">
+                      <div class="about-organ-top-left">
+                        <div class="about-organ-title"><span>Администрация города Сургута</span></div>
+                      </div>
+                      <div class="about-organ-top-right"> <a class="link about-organ-ref" href="#">Перейти на страницу</a></div>
+                    </div>
+                    <div class="about-organ-bot">
+                      <div class="about-organ-bot-elem"><span>Адрес</span><span>628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Энгельса, 8.</span></div>
+                      <div class="about-organ-bot-elem"><span>Телефон</span><span>факс (3462) 52-21-82</span></div>
+                      <div class="about-organ-bot-elem"><span>E-mail</span><span>gorod@admsurgut.ru</span></div>
+                    </div>
+                  </div>
+                  <hr/>
+                  <div class="about-organ">
+                    <div class="about-organ-top">
+                      <div class="about-organ-top-left">
+                        <div class="about-organ-title"><span>Дума города Сургута</span></div>
+                        <div class="about-organ-subtitle"><span>Председатель: Олейников Александр Игоревич</span></div>
+                      </div>
+                      <div class="about-organ-top-right"> <a class="link about-organ-ref" href="#">Перейти на страницу</a></div>
+                    </div>
+                    <div class="about-organ-bot">
+                      <div class="about-organ-bot-elem"><span>Адрес</span><span>628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Восход, 4.</span></div>
+                      <div class="about-organ-bot-elem"><span>Телефон</span><span>(3462) 52-83-74, факс (3462) 52-80-15</span></div>
+                      <div class="about-organ-bot-elem"><span>E-mail</span><span>duma@admsurgut.ru</span></div>
+                    </div>
+                  </div>
+                  <hr/>
+                  <div class="about-organ">
+                    <div class="about-organ-top">
+                      <div class="about-organ-top-left">
+                        <div class="about-organ-title"><span>Контрольно-счетная палата</span></div>
+                        <div class="about-organ-subtitle"><span>Председатель: Жуков Владислав Игоревич</span></div>
+                      </div>
+                      <div class="about-organ-top-right"> <a class="link about-organ-ref" href="#">Перейти на страницу</a></div>
+                    </div>
+                    <div class="about-organ-bot">
+                      <div class="about-organ-bot-elem"><span>Адрес</span><span>628400, Тюменская обл., Ханты-Мансийский автономный округ - Югра, г. Сургут, ул. Восход, 4.</span></div>
+                      <div class="about-organ-bot-elem"><span>Телефон</span><span>(3462) 52-83-43</span></div>
+                      <div class="about-organ-bot-elem"><span>E-mail</span><span>ksp@admsurgut.ru</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+          <div class="about-other-info">
+            <div class="about-other-info__container">
+              <div class="title"> 
+                <div class="title__container"> 
+                  <h2 class="title__name">Другая информация</h2>
+                </div>
+              </div>
+              <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Раздел 1">Раздел 1
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Раздел 2">Раздел 2
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Раздел 3">Раздел 3
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -774,34 +1026,75 @@
       <div class="footer_container">
         <div class="footer_container-top">
           <div class="footer__header"> 
-            <div class="footer__header-links"><a class="footer__main-links" href="/"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+            <div class="footer__header-links"><a class="footer__main-links" href="/" role="link" aria-label="Главная страница"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                 <div class="footer__header-links__block"> <span class="footer__title">Администрация Сургута</span><span class="footer__link">Официальный портал</span></div></a>
-              <div class="footer__social-links"><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/vk-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/ok-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/tg-footer_icon.svg"/></a></div>
+              <div class="footer__social-links" aria-label="Социальные сети"><a class="footer__link-icon" href="/" role="link" aria-label="Страница в социальных сетях Вконтакте"><img src="/local/templates/surgut/icons/vk-footer_icon.svg" alt="Иконка Вконтаке"/></a><a class="footer__link-icon" href="/" role="link" aria-label="Страница в социальных сетях Одноклассники"><img src="/local/templates/surgut/icons/ok-footer_icon.svg" alt="Иконка Одноклассники"/></a><a class="footer__link-icon" href="/" role="link" aria-label="Страница в мессенджере Телеграмм"><img src="/local/templates/surgut/icons/tg-footer_icon.svg" alt="Иконка Телеграмм"/></a></div>
             </div>
           </div>
         </div>
-        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
+        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank" role="link" aria-label="Адрес на карте">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru" role="link" aria-label="Написать обращение на электронную почту"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg" alt="Иконка"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
         <div class="footer__categories">
-          <ul class="footer__category-content">
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">О Сургуте </h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Сургут сегодня            </a><a class="footer__categorie-link" href="/">История Сургута            </a><a class="footer__categorie-link" href="/">Официальные символы            </a><a class="footer__categorie-link" href="/">Устав Сургута            </a><a class="footer__categorie-link" href="/">Генплан            </a><a class="footer__categorie-link" href="/">Стратегия развития            </a><a class="footer__categorie-link" href="/">Инвестиционный паспорт Сургута            </a><a class="footer__categorie-link" href="/">Инвестору            </a><a class="footer__categorie-link" href="/">Общественные советы города Сургута            </a><a class="footer__categorie-link" href="/">Ими гордится Сургут            </a><a class="footer__categorie-link" href="/">Справочная информация            </a><a class="footer__categorie-link" href="/">Интерактивные карты Сургута            </a><a class="footer__categorie-link" href="/">Градостроительная деятельность            </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Сургут сегодня">Сургут сегодня            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="История Сургута">История Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Официальные символы">Официальные символы            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Устав Сургута">Устав Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Генплан">Генплан            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Стратегия развития">Стратегия развития            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Инвестиционный паспорт Сургута">Инвестиционный паспорт Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Инвестору">Инвестору            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Общественные советы города Сургута">Общественные советы города Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ими гордится Сургут">Ими гордится Сургут            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Справочная информация">Справочная информация            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Интерактивные карты Сургута">Интерактивные карты Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Градостроительная деятельность">Градостроительная деятельность            </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Городская власть</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Глава города             </a><a class="footer__categorie-link" href="/">Дума города             </a><a class="footer__categorie-link" href="/">Администрация             </a><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a><a class="footer__categorie-link" href="/">Законодательная карта             </a><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a><a class="footer__categorie-link" href="/">Государственные органы             </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Глава города">Глава города             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Дума города">Дума города             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Администрация">Администрация             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Контрольно-счётная палата">Контрольно-счётная палата             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Законодательная карта">Законодательная карта             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Территориальная избирательная комиссия">Территориальная избирательная комиссия             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Государственные органы">Государственные органы             </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Документы</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Важные документы для горожан            </a><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a><a class="footer__categorie-link" href="/">Решения Думы города            </a><a class="footer__categorie-link" href="/">Постановления Главы города            </a><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a><a class="footer__categorie-link" href="/">Постановления Администрации города            </a><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Муниципальные программы            </a><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Важные документы для горожан">Важные документы для горожан            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Проекты документов: антикоррупционная экспертиза и общественное обсуждение">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Решения Думы города">Решения Думы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Главы города">Постановления Главы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Главы города">Распоряжения Главы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Администрации города">Постановления Администрации города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Администрации города">Распоряжения Администрации города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Мэра и администрации города до 12.04.2005 г.">Постановления Мэра и администрации города до 12.04.2005 г.            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Мэра и администрации города до 12.04.2005 г.">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Муниципальные программы">Муниципальные программы            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Порядок обжалования муниципальных правовых актов">Порядок обжалования муниципальных правовых актов            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Антимонопольный комплаенс">Антимонопольный комплаенс            </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Категория</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a>
-            </li>
-          </ul>
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

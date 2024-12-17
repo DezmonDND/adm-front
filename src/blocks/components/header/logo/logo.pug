@@ -1,5 +1,10 @@
 mixin logo(data)
-    a(href=data.href).header__main-links
+    a.header__main-links(
+        href=data.href
+        role='link'
+        title='Главная'
+        aria-label='Главная страница'
+        )
         img(class=`header__logo` src=`../icons/footer-logo_icon.svg` alt='Логотип')
         .header__main-links__block 
             span.header__title #{data.title}

@@ -4,41 +4,45 @@ mixin footer(links)
             .footer_container-top
                 .footer__header 
                     .footer__header-links
-                        a(href=`/`).footer__main-links
+                        a(href=`/` role='link' aria-label='Главная страница').footer__main-links
                             img(class=`footer__logo` src=`../icons/footer-logo_icon.svg` alt='Логотип')
                             .footer__header-links__block 
                                 span.footer__title Администрация Сургута
                                 span.footer__link Официальный портал
-                        .footer__social-links
-                            a.footer__link-icon(href='/')
-                                img(src=`../icons/vk-footer_icon.svg`)
-                            a.footer__link-icon(href='/')
-                                img(src=`../icons/ok-footer_icon.svg`)
-                            a.footer__link-icon(href='/')
-                                img(src=`../icons/tg-footer_icon.svg`)
+                        .footer__social-links(aria-label='Социальные сети')
+                            a.footer__link-icon(href='/' role='link' aria-label='Страница в социальных сетях Вконтакте')
+                                img(src=`../icons/vk-footer_icon.svg` alt='Иконка Вконтаке')
+                            a.footer__link-icon(href='/' role='link' aria-label='Страница в социальных сетях Одноклассники')
+                                img(src=`../icons/ok-footer_icon.svg` alt='Иконка Одноклассники')
+                            a.footer__link-icon(href='/' role='link' aria-label='Страница в мессенджере Телеграмм')
+                                img(src=`../icons/tg-footer_icon.svg` alt='Иконка Телеграмм')
             .footer__contacts 
-                a(href='https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&z=17' target='_blank').footer__address 628400, г. Сургут, ул. Энгельса, 8
-                a(href='mailto:gorod@admsurgut.ru').footer__email 
-                    img(src=`../icons/mail-footer_icon.svg`).footer__email-icon
+                a(href='https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&z=17' target='_blank' role='link' aria-label='Адрес на карте').footer__address 628400, г. Сургут, ул. Энгельса, 8
+                a(href='mailto:gorod@admsurgut.ru' role='link' aria-label='Написать обращение на электронную почту').footer__email 
+                    img(src=`../icons/mail-footer_icon.svg` alt='Иконка').footer__email-icon
                     span.footer__email-title gorod@admsurgut.ru   
             .footer__categories
-                ul.footer__category-content
+                div.footer__category-content
                     h5.footer__categorie-title О Сургуте 
-                    li.footer__categorie-links
+                    ul.footer__categorie-links(role='group')
                         each link in links.about
-                            a(href=`${link.href}`).footer__categorie-link #{link.title}            
-                ul.footer__category-content
+                            li
+                                a(href=`${link.href}` role='link' aria-label=link.title).footer__categorie-link #{link.title}            
+                div.footer__category-content
                     h5.footer__categorie-title Городская власть
-                    li.footer__categorie-links
+                    ul.footer__categorie-links(role='group')
                         each link in links.city
-                            a(href=`${link.href}`).footer__categorie-link #{link.title}             
-                ul.footer__category-content
+                            li
+                                a(href=`${link.href}` role='link' aria-label=link.title).footer__categorie-link #{link.title}             
+                div.footer__category-content
                     h5.footer__categorie-title Документы
-                    li.footer__categorie-links
+                    ul.footer__categorie-links(role='group')
                         each link in links.documents
-                            a(href=`${link.href}`).footer__categorie-link #{link.title}            
-                ul.footer__category-content
+                            li
+                                a(href=`${link.href}` role='link' aria-label=link.title).footer__categorie-link #{link.title}            
+                div.footer__category-content
                     h5.footer__categorie-title Категория
-                    li.footer__categorie-links
+                    ul.footer__categorie-links(role='group')
                         each link in links.category
-                            a(href=`${link.href}`).footer__categorie-link #{link.title}                                    
+                            li
+                                a(href=`${link.href}` role='link' aria-label=link.title).footer__categorie-link #{link.title}                                    

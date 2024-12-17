@@ -1,0 +1,13 @@
+include ../photo-chronicle-card/photo-chronicle-card
+
+mixin about-photo-chronicle()
+    .about-photo-chronicle
+        +main-title({
+            href: '/',
+            title: 'Фотохроника Сургута',
+            link_text: 'Вся фотохроника',
+        })
+        .about-photo-chronicle__container
+            +photo-chronicle-card()
+            +photo-chronicle-card()
+            +photo-chronicle-card()

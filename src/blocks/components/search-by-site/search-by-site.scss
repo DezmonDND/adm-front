@@ -34,11 +34,27 @@
             display: none;
         }
 
+        .search-by-site__button {
+            &:hover {
+                color: $main-text;
+            }
+        }
+
+        .button {
+            @include respond-to(md) {
+                padding: 11px 16px;
+            }
+        }
+
         .search-by-site__calendar {
             display: none;
             position: absolute;
             top: 50px;
-            right: 60px;
+            right: 80px;
+
+            @include respond-to(md) {
+                right: 60px;
+            }
         }
 
         .search-by-site__calendar_active {

@@ -1,0 +1,68 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-symbols {
+    @include about-blocks-paddings;
+
+    .about-symbols__title {
+        @include about-paddings-title;
+        @include heading-h3;
+    }
+
+    .about-symbols-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: 16px 0 24px;
+
+        .about-symbols-elem {
+            width: 100%;
+            background-color: $grey-adm;
+            padding: 32px;
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+            border-radius: 20px;
+            box-sizing: border-box;
+
+            @include respond-to(sm) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .about-symbols__documents {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 8px;
+
+        .files-list__document-description {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-radius: 8px;
+            background-color: $cards-background;
+            color: $main-text;
+            @include content-paddings;
+
+            &:hover {
+                text-decoration: none;
+                background-color: $services-hover;
+            }
+
+            &:active {
+                background-color: $services-active;
+            }
+
+            .files-list__icon {
+                color: $primary-color;
+                font-size: 20px;
+            }
+
+            .files-list__document-title {
+                width: calc(100% - 32px);
+                @include lead-5;
+            }
+        }
+    }
+}

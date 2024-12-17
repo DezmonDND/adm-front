@@ -33,10 +33,15 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    -webkit-user-select: none;
     user-select: none;
     height: 21px;
     padding-left: 21px;
     @include text-2;
+
+    &:focus-visible {
+        @include focus-visible;
+    }
 
     @include respond-to(sm) {
         height: 16px;

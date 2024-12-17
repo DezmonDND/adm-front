@@ -1,9 +1,10 @@
 mixin input(options, error, value='')
     - const hasSize = options.size ? `input_${options.size}` : ''
     - const hasClass = options.sort ? `input-${options.sort}` : ''
+    - const hasNewClass = options.class ? options.class : ''
     - const hasType = options.type ? `input-${options.type}` : ''
     - const hasTypeSize = options.size ? `input-search-${options.size}` : ''
     - const hasError = error ? `input-error` : ''
 
-    input(placeholder=options.placeholder, name=options.name, value=value, id=options.name,
-        class=`input ${hasSize} ${hasClass} ${hasType} ${hasTypeSize} ${hasError}`) 
+    input(placeholder=options.placeholder, name=options.name, value=value, id=options.name, required=options.required role='textbox'
+        class=`input ${hasSize} ${hasClass} ${hasType} ${hasTypeSize} ${hasError} ${hasNewClass}`) 

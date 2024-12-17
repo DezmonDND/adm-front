@@ -26,6 +26,7 @@ mixin dm-applications(data)
                         type: 'select', 
                         title: 'Адресат обращения', 
                         cls_title: 'reception__sender', 
+                        required: true,
                         options: [
                             { text: 'Барсов Евгений Вячеславович', value: 'Барсов Евгений Вячеславович', selected: true }, 
                             { text: 'Филатов', value: 'Филатов' }, 
@@ -39,16 +40,19 @@ mixin dm-applications(data)
                         title: 'Ваши данные (от кого)',
                         span: 'Вспомогательный текст',
                         error: false,
+                        required: true,
                         inputs: [
                             {
                                 placeholder: 'Фамилия',
                                 name: 'firstName', 
                                 sort: 'virtual-reception_input',
+                                required: true
                             },
                             {
                                 placeholder: 'Имя',
                                 name: 'secondName',
                                 sort: 'virtual-reception_input',
+                                required: true
                             },
                             {
                                 placeholder: 'Отчество',
@@ -65,11 +69,13 @@ mixin dm-applications(data)
                         title: 'Почтовый адрес для контакта',
                         span: '',
                         error: false,
+                        required: true,
                         inputs: [
                             {
                                 placeholder: 'Пример: some@mail.ru',
                                 name: 'companyName', 
                                 sort: 'virtual-reception_input',
+                                required: true
                             },
                             ]    
                     }) 
@@ -88,18 +94,20 @@ mixin dm-applications(data)
                         title: 'Обращение',
                         span: '',
                         error: false,
+                        required: true,
                         options: {
                             placeholder: 'Введите ваше обращение (не больше 20 тысяч символов)',
                             value: '20000',
                             cls: 'reception',
                             name: 'feedback',
-                                }
+                            required: true
+                            }
                     })
             .dm-applications__buttons
                 +add-file-button({
                     desc: 'Принимаются файлы размером не более 2,5 МБ '
                 })
-                .files-list
+                .files-list(id='files-list-file')
                 .dm-applications__divider  
                 .dm-applications__agreement
                     +checkbox({

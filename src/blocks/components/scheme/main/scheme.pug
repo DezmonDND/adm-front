@@ -3,11 +3,11 @@
 mixin scheme(items = [])
     .scheme 
         .scheme-container
-            a(href = '#').scheme-title
+            a(href = 'https://dev-surgut.atlassys.tech/gorodskaya-vlast/glava-goroda').scheme-title
                 span= 'Глава города'
             .scheme-elems
                 each item in items 
                     .scheme-col
                         each el in item
-                            a(href='#').scheme-el 
-                               span= el
+                            a(href=el.link).scheme-el 
+                                span= el.title

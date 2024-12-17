@@ -1,7 +1,7 @@
 include ../../libs/buttons/_buttons.pug
 
 mixin calendar(data=[])
-    .calendar
+    .calendar(aria-label='Календарь событий')
         .calendar__links
             each link in data
                 if link.divider             
@@ -9,8 +9,8 @@ mixin calendar(data=[])
                 .calendar__link-content
                     - const hasLinkClass = link.class ? `calendar__link_${link.class}` : ''
                     - const hasDayClass = link.day_class ? `calendar__day_${link.day_class}` : ''
-                    a.calendar__link(href='/' class=[hasLinkClass]) #{link.date}                        
-                    span.calendar__day(class=[hasDayClass]) #{link.day}
+                    a.calendar__link(href='/' class=[hasLinkClass] role='link' aria-label=`${link.date} ${link.day}`) #{link.date}                        
+                    span.calendar__day(class=[hasDayClass] tabindex='-1') #{link.day}
                     if link.events
                         div.calendar__icon
                             span #{link.events}

@@ -5,46 +5,36 @@
         .full-width-content {
             .event-card {
                 .event-card__container {
-                    .event-card__info {
-                        .event-card__description {
-                            margin: 0 0 24px;
-                        }
-
-                        .event-card__buttons {
-                            .button_blue {
-                                @include respond-to(sm) {
-                                    display: none;
-                                }
-                            }
-                        }
+                    .event-card__description {
+                        margin-top: 0;
                     }
                 }
             }
         }
     }
+}
 
-    .projects-detail__container {
+.projects-detail__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 978px;
+    width: 100%;
+    margin: 32px 0 0;
+
+    .projects-detail__about {
         display: flex;
         flex-direction: column;
-        gap: 32px;
-        max-width: 866px;
-        width: 100%;
-        margin: 32px auto 0;
+        gap: 24px;
 
-        .projects-detail__about {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
+        .projects-detail__title {
+            padding: 0;
+            @include heading-h3;
+        }
 
-            .projects-detail__title {
-                padding: 0;
-                @include heading-h3;
-            }
-
-            .projects-detail__desc {
-                margin: 0;
-                @include text-2;
-            }
+        .projects-detail__desc {
+            margin: 0;
+            @include text-2;
         }
     }
 }

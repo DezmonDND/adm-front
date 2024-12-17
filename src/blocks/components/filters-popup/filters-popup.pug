@@ -6,7 +6,7 @@ mixin filters-popup(calendar_id)
         .filters-popup__container 
             .filters-popup__top-content 
                 span.filters-popup__title Фильтры
-                +button({ type: 'button',  event: 'toggleFilters();', class: 'button files-list__delete-button', icon: 'close-outline' })
+                +button({ type: 'button',  event: 'toggleFilters();', class: 'button files-list__delete-button', icon: 'close-outline', aria_label: 'Удалить' })
             .filters-popup__tags
                 span.filters-popup__title Раздел
                 +tabs-tag([

@@ -3,7 +3,7 @@ include ../../../libs/buttons/_buttons
 mixin hearing-card(item)
     a(href='/hearing-detail.html').hearing-item
         .hearing-item-link
-            img(src="./resources/hearing.jpg")
+            img(src="./resources/hearing.jpg" alt='Изображение')
             .hearing-item-bg
             +button({ type: 'button', size: 's', class: 'button_blue button_radius button_tag-label hearing-card_button', icon: 'caret-forward-outline', iconPosition: 'left', text: 'Видеозапись' })
         .hearing-item-content

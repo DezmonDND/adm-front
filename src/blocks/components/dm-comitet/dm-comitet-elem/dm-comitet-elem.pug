@@ -3,7 +3,7 @@
 mixin dm-comitet-elem(item)
     a(href = '#').dm-comitet-elem
         .dm-comitet-elem__container 
-            img(src=`../resources/${item.img}`).dm-comitet-elem__img
+            img(src=`../resources/${item.img}` alt='Изображение').dm-comitet-elem__img
             .dm-comitet-elem__info
                 .dm-comitet-elem__info-surname
                     span= item.surname

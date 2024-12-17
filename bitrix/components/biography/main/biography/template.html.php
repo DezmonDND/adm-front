@@ -1,7 +1,7 @@
 
 <div class="biography"> 
   <div class="biography__container">
-    <div class="biography__contacts-content">        <img class="biography__avatar" src="./resources/kirilenko_avatar.png"/>
+    <div class="biography__contacts-content">        <img class="biography__avatar" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
       <div class="biography__contacts"> 
         <div class="biography__phones">
           <h5 class="biography__phones-title">Секретарь приемной</h5><span class="biography__phone">тел. +7 (3462) 52-20-01</span><a class="biography__phone biography__link" href="mailto:priemnaya@admsurgut.ru">e-mail: priemnaya@admsurgut.ru  </a>

@@ -11,6 +11,10 @@
     text-decoration: none;
     max-width: 50%;
 
+    &:hover {
+        text-decoration: none;
+    }
+
     @include respond-to(sm) {
         max-width: unset;
     }

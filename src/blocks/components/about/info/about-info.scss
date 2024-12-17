@@ -1,0 +1,142 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+@mixin blue-title {
+    font-size: 64px;
+    color: $primary-color;
+    font-weight: $font-weight-bold;
+    line-height: unset;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include about-blocks-paddings;
+
+    .about-info-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: center;
+
+        &:last-child {
+            .about-info-text {
+                text-align: end;
+            }
+
+            @include respond-to(sm) {
+                flex-direction: column-reverse;
+            }
+        }
+
+        @include respond-to(sm) {
+            flex-direction: column;
+        }
+
+        .about-card {
+            width: 100%;
+            background-color: $grey-adm;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+
+            &-left {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .about-card-fact {
+                    @include blue-title;
+                }
+
+                .about-card-subtitle {
+                    @include lead-5;
+                }
+
+                .about-card-title {
+                    font-weight: $font-weight-bold;
+                    font-size: 16px;
+                }
+            }
+
+            &-right {
+                .about-card-fact {
+                    @include blue-title;
+
+                    @include respond-to(md) {
+                        font-size: 40px;
+                    }
+                }
+
+                .about-card-img {
+                    @include respond-to(sm) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .about-info-text {
+            display: none;
+
+            @include respond-to(sm) {
+                display: block;
+            }
+        }
+    }
+
+    .about-info__map {
+        margin-top: 24px;
+
+        .about-info__map-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            @include respond-to(md) {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .about-info__map-image {
+                border-radius: 50%;
+                border: 1px solid $primary-color;
+                max-width: 419px;
+                width: 100%;
+                max-height: 419px;
+            }
+
+            .about-info__map-desc-block {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                @include respond-to(md) {
+                    display: none;
+                }
+
+                .about-info__map-title {
+                    @include text-2;
+                }
+
+                .about-info__map-list {
+                    margin: 0;
+                    @include text-2;
+
+                    li {
+                        &:first-of-type {
+                            list-style: none;
+                        }
+                    }
+
+                    .about-info__map-list-item {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

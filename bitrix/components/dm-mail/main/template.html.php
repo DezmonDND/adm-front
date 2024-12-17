@@ -7,7 +7,7 @@
         <div class="dm-mail__mail"> <span>Почтовый адрес</span><span>ул. Восход, 4, г. Сургут, Ханты - Мансийский автономный округ Югра, Тюменская область, 628404, Россия</span></div>
         <div class="dm-mail__addr"><span>Адрес</span><span>ул. Энгельса, 8, г. Сургут, Ханты-Мансийский автономный округ – Югра (Тюменская область), 628408</span></div>
       </div>
-      <div class="links-list"><a class="links-list-item" href="#">Телефонный справочник
+      <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Телефонный справочник">Телефонный справочник
           <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
       </div>
     </div>

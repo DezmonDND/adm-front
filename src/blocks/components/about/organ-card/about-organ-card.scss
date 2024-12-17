@@ -1,0 +1,93 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.about-organ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-sizing: border-box;
+
+    @include respond-to(md) {
+        gap: 32px;
+    }
+
+    @include respond-to(sm) {
+        gap: 20px;
+    }
+
+    .about-organ-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include respond-to(sm) {
+            flex-direction: column;
+        }
+
+        .about-organ-top-left {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            @include respond-to(md) {
+                gap: 8px;
+            }
+
+            .about-organ-title {
+                span {
+                    @include lead-3();
+                }
+            }
+
+            .about-organ-subtitle {
+                span {
+                    @include caption-2();
+                }
+            }
+        }
+
+        .about-organ-ref {
+            @include text-link-2;
+        }
+    }
+
+    .about-organ-bot {
+        display: grid;
+        grid-template-columns: 48% 22% 24%;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+
+        @include respond-to(md) {
+            grid-template-columns: 37% 25% 28%;
+        }
+
+        @include respond-to(sm) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .about-organ-bot-elem {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            @include respond-to(md) {
+                gap: 8px;
+            }
+
+            @include respond-to(sm) {
+                gap: 4px;
+            }
+
+            span {
+                @include caption-2;
+
+                &:first-child {
+                    color: $tertiary-text;
+                }
+            }
+        }
+    }
+}

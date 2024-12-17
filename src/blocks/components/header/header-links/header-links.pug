@@ -4,8 +4,15 @@ mixin header-links(data = [])
     ul.header_links
         each link in data
             if link.menu
-                li.header__link
-                    span #{link.title}
+                li.header__link(
+                    aria-expanded="false",
+                )
+                    button(
+                        style='all:unset'
+                        role='button' 
+                        aria-label=link.title
+                        tabindex='-1'
+                        ) #{link.title}
                     +second-menu({
                         columns: [
                             {
@@ -42,5 +49,8 @@ mixin header-links(data = [])
                             },
                         ]
                     }) 
-            else 
-                a(href=link.href).header__link #{link.title}          
+            else
+                li.header__link(
+                    aria-label=link.title
+                    ) 
+                    a(href=link.href tabindex='-1') #{link.title}          

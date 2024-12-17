@@ -8,18 +8,17 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 .event-card {
   background-color: var(--cards-background);
   display: flex;
-  justify-content: center;
 }
 .event-card .event-card__container {
   display: flex;
   flex-direction: column;
-  max-width: 866px;
+  max-width: 978px;
   width: 100%;
-  padding: 32px 0 32px;
+  padding: 20px 0;
 }
 @media (max-width: 992px) {
   .event-card .event-card__container {
-    padding: 20px;
+    padding: 20px 0;
   }
 }
 .event-card .event-card__container .event-card__info .event-card__tags {
@@ -29,25 +28,72 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 .event-card .event-card__container .event-card__info .event-card__description {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin: 24px 0 48px;
+  gap: 20px;
+  margin: 24px 0 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .event-card .event-card__container .event-card__info .event-card__description {
-    margin-bottom: 32px;
+    gap: 16px;
   }
 }
-.event-card .event-card__container .event-card__info .event-card__description .event-card__title {
+.event-card .event-card__container .event-card__info .event-card__description .event-card__title-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title {
   padding: 0;
   font-weight: 500;
   font-size: calc(32px * var(--scale));
   line-height: calc(38px * var(--lh));
 }
 @media (max-width: 992px) {
-  .event-card .event-card__container .event-card__info .event-card__description .event-card__title {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title {
     font-size: calc(16px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
+}
+.event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button {
+  display: none;
+}
+@media (max-width: 992px) {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button {
+    display: block;
+  }
+}
+.event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button .button_white {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+.event-card .event-card__container .event-card__info .event-card__description .event-card__title-content .event-card__title-button .button_white .icon {
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__buttons {
+    display: none;
+  }
+}
+.event-card .event-card__container .event-card__info .event-card__description .event-card__department {
+  display: flex;
+  gap: 16px;
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__department {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
+}
+@media (max-width: 768px) {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__department {
+    margin: 0;
+  }
+}
+.event-card .event-card__container .event-card__info .event-card__description .event-card__department .event-card__department-title {
+  color: var(--tertiary-text);
 }
 .event-card .event-card__container .event-card__info .event-card__description .event-card__text {
   margin: 0;
@@ -63,35 +109,70 @@ body.tmp-print .event-card .event-card__container .event-card__buttons {
 }
 .event-card .event-card__container .event-card__info .event-card__description .event-card__dates {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates-content {
+  display: flex;
   gap: 32px;
   color: var(--tertiary-text);
 }
-.event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates {
+@media (max-width: 550px) {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates-content {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+.event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates-content .event-card__date {
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
-  .event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates-content .event-card__date {
     font-size: calc(12px * var(--scale));
     line-height: calc(16px * var(--lh));
   }
 }
-.event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__last-date {
+.event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates-content .event-card__last-date {
   font-weight: 300;
   font-size: calc(16px * var(--scale));
   line-height: calc(20px * var(--lh));
 }
 @media (max-width: 992px) {
-  .event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__last-date {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__dates-content .event-card__last-date {
     font-size: calc(12px * var(--scale));
     line-height: calc(16px * var(--lh));
+  }
+}
+@media (max-width: 768px) {
+  .event-card .event-card__container .event-card__info .event-card__description .event-card__dates .event-card__buttons {
+    display: none;
   }
 }
 .event-card .event-card__container .event-card__info .event-card__buttons {
   display: flex;
-  gap: 8px;
+  gap: 20px;
 }
-.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button {
-  position: relative;
+.event-card .event-card__container .event-card__info .event-card__buttons .button_white {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+.event-card .event-card__container .event-card__info .event-card__buttons .button_white .icon {
+  font-size: 20px;
+}
+.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button .button_white {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+.event-card .event-card__container .event-card__info .event-card__buttons .event-card__button .button_white .icon {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .event-card .event-card__container .event-card__info .event-card__buttons .event-card__button .button_print {
+    display: none;
+  }
 }

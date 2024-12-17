@@ -21,12 +21,17 @@ body.tmp-duma .main-title .main-title__container .tabs {
 
     .tabs__container {
         display: flex;
-        overflow: auto;
-        scrollbar-width: none;
+        flex-wrap: wrap;
         text-wrap: nowrap;
         gap: 16px;
         box-sizing: border-box;
         @include heading-h4;
+
+        @include respond-to(md) {
+            flex-wrap: nowrap;
+            overflow: auto;
+            scrollbar-width: none;
+        }
 
         .tab-button {
             all: unset;
@@ -37,6 +42,10 @@ body.tmp-duma .main-title .main-title__container .tabs {
             &:hover {
                 cursor: pointer;
                 border-bottom: 2px solid $tertiary-text;
+            }
+
+            &:focus-visible {
+                @include focus-visible;
             }
 
             &_active {

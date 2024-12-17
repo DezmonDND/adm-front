@@ -4,14 +4,54 @@
     display: flex;
     flex-direction: column;
 
-    .adm-all-news__calendar {
-        position: relative;
+
+    .adm-all-news__filters {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 12px;
         margin-bottom: 32px;
 
+        @include respond-to(xs) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .select2-container .select2-selection--single .select2-selection__rendered {
+            padding: 11px 34px 11px 16px !important;
+        }
+    
+        .select2-container--default .select2-selection--single {
+            border-radius: 6px !important;
+        }
+    
+        .select2-selection__arrow {
+            right: 16px !important;
+        }
+    
+        .select2-container--open .select2-dropdown--below {
+            border-radius: 6px;
+        }
+    
+        .select2-results__option {
+            padding: 13px 16px !important;
+        }
+    }
+
+    .adm-all-news__calendar {
+        position: relative;
+
+
         .adm-all-news__calendar-button {
-            border-radius: 4px;
+            border-radius: 6px;
             max-width: 480px;
             width: max-content;
+            padding: 11px 16px;
+            border: 1px solid $input-color-default;
+
+            &:hover {
+                border-color: $input-color-hover;
+                color: $main-text;
+            }
 
             @media (max-width: 410px) {
                 width: calc(100% - 34px);
@@ -41,6 +81,7 @@
     .news-main-card {
         margin: 0;
         max-width: none;
+        width: 100%;
     }
 
     .pagination {

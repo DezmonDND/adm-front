@@ -11,6 +11,7 @@ body.tmp-duma .slider .slider__link:active {
 .slider {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   font-size: 34px;
   padding-top: 32px;
@@ -22,6 +23,7 @@ body.tmp-duma .slider .slider__link:active {
   }
 }
 .slider .slider__counter {
+  text-align: center;
   font-weight: 400;
   font-size: calc(20px * var(--scale));
   line-height: calc(24px * var(--lh));

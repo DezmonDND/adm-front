@@ -1,15 +1,11 @@
 
 <div class="dm-afisha">
   <div class="dm-afisha__container">
-    <div class="dm-filter__btn">
-      <button class="button button_white dm-filter__button button_size_m  button_icon-left button_without-event" title=""><span class="button_span">Фильтры</span>
-        <ion-icon class="icon" name="funnel-outline"></ion-icon>
-      </button>
+    <div class="dm-filter__btn"><span class="button button_white dm-filter__button button_size_m  button_icon-left button_without-event" title=""><span class="button_span">Фильтры</span>
+        <ion-icon class="icon" name="funnel-outline"></ion-icon></span>
     </div>
-    <div class="dm-calendar__btn">
-      <button class="button button_white dm-calendar__button   button_icon-left button_without-event" title=""><span class="button_span">Календарь</span>
-        <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
-      </button>
+    <div class="dm-calendar__btn"><span class="button button_white dm-calendar__button   button_icon-left button_without-event" title=""><span class="button_span">Календарь</span>
+        <ion-icon class="icon" name="calendar-number-outline"></ion-icon></span>
     </div>
     <div class="filters">
       <div class="filters_container">
@@ -41,7 +37,7 @@
           </div>
         </div>
         <div class="chronicle__calendar">
-          <div class="calendar-dm" id="calendar-duma"></div>
+          <div class="calendar-dm" id="calendar-duma" aria-label="Календарь для выбора дат" tabindex="0"></div>
         </div>
       </div>
     </div>
