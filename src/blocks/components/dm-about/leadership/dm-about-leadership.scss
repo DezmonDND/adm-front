@@ -1,0 +1,24 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-about-persons {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    overflow-x: scroll;
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    @include respond-to(sm) {
+        .dm-comitet-elem {
+            min-width: 310px;
+            max-width: 310px;
+        }
+    }
+}

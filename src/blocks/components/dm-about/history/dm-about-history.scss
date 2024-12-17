@@ -1,0 +1,68 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-about-history {
+    &-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dm-about-history-content {
+            max-width: 866px;
+            width: 100%;
+            padding-top: 32px;
+            padding-bottom: 60px;
+
+            .dm-about-powers {
+                ol {
+                    // padding: 0;
+                    // margin-left: 24px;
+                    // list-style-type: none;
+                    // counter-reset: item;
+
+                    @include respond-to(md) {
+                        // margin-left: 16px;
+                        margin-left: 32px;
+                    }
+                }
+
+                li {
+                    padding-left: 8px;
+                    // &::before {
+                        // content: counter(item) ')';
+                        // counter-increment: item;
+                        // font-weight: 700;
+                        // padding-right: 12px;
+                    // }
+                }
+
+                // .dm-about-power-hidden {
+                //     ol {
+                //         counter-reset: item 5;
+                //     }
+                // }
+            }
+
+            .dm-about-history-hidden {
+                display: none
+            }
+
+            .dm-about-history-hidden-open {
+                display: block;
+            }
+
+            .dm-about-power-hidden {
+                display: none
+            }
+
+            .dm-about-power-hidden-open {
+                display: block;
+            }
+        }
+    }
+}
+
+.dm-about-history-button,
+.dm-about-power-button {
+    @include more-button;
+}

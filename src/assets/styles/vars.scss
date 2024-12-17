@@ -154,6 +154,8 @@ $breakpoint-xs: 550px;
     padding: 0;
 
     &:hover {
+        background-color: transparent;
+        border-color: transparent;
         text-decoration: underline;
         color: $primary-color-hover;
     }

@@ -62,7 +62,8 @@ body.tmp-print {
                             display: block;
                         }
 
-                        .button_white {
+                        .button_print,
+                        .button_share {
                             border-color: transparent;
                             background-color: transparent;
                             padding: 0;
@@ -136,7 +137,8 @@ body.tmp-print {
                 display: flex;
                 gap: 20px;
 
-                .button_white {
+                .button_print,
+                .button_share {
                     border-color: transparent;
                     background-color: transparent;
                     padding: 0;
@@ -147,7 +149,10 @@ body.tmp-print {
                 }
 
                 .event-card__button {
-                    .button_white {
+                    position: relative;
+
+                    .button_print,
+                    .button_share {
                         border-color: transparent;
                         background-color: transparent;
                         padding: 0;

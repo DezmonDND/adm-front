@@ -1,11 +1,26 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .about-symbols {
+        padding-top: 0;
+
+        .about-symbols__documents {
+            .files-list__icon {
+                color: $primary-color-green;
+            }
+        }
+    }
+}
+
 .about-symbols {
     @include about-blocks-paddings;
 
     .about-symbols__title {
-        @include about-paddings-title;
         @include heading-h3;
+
+        & {
+            @include about-paddings-title;
+        }
     }
 
     .about-symbols-list {

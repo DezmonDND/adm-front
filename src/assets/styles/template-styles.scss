@@ -164,6 +164,11 @@
 @use '../../blocks/components/afisha/event-full-desc/jquery.fancybox.min.css';
 @use '../../blocks/components/init-projects/balloon/balloon.scss';
 @use '../../blocks/components/login/exit/exit.scss';
+@use '../../blocks/components/dm-about/address/dm-about-address.scss';
+@use '../../blocks/components/dm-about/map/dm-about-map.scss';
+@use '../../blocks/components/dm-about/leadership/dm-about-leadership.scss';
+@use '../../blocks/components/dm-about/history/dm-about-history.scss';
+@use '../../blocks/components/dm-finance/dm-finance-elem/dm-finance-elem.scss';
 
 * {
     font-family: 'Inter', sans-serif;

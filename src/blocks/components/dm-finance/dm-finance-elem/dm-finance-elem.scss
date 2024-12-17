@@ -1,0 +1,93 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-about-finance-elem {
+    width: 100%;
+    background-color: $grey-adm;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    hr {
+        margin: 0;
+    }
+
+    .dm-about-finance-elem-bot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        .dm-about-finance-elem-bot-left {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            a {
+                color: $main-text;
+                text-decoration: underline;
+                @include text-2();
+            }
+
+            span {
+                @include lead-3();
+            }
+
+            @include respond-to(sm) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        .dm-about-finance-elem-bot-right {
+            a {
+                color: $content-color;
+            }
+
+            @include respond-to(sm) {
+                width: 100%;
+
+                a {
+                    width: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+        @include respond-to(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .dm-about-finance-elem-top {
+        span {
+            @include lead-3();
+        }
+    }
+}
+
+.dm-about-finance-docs {
+    padding-top: 24px;
+}
+
+.dm-finance-quote {
+    .dm-finance-quote-top {
+        padding: 8px 16px;
+
+        @include text-1();
+    }
+
+    .dm-finance-quote-bot {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: $tertiary-text;
+
+        @include caption-2();
+    }
+}
