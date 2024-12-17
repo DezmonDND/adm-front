@@ -13501,6 +13501,13 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
   margin: 16px 0 16px;
 }
 
+.dm-scheme .dm-struct__main-third {
+  padding-bottom: 0px;
+}
+.dm-scheme .dm-struct__main-third::after {
+  height: 0px;
+}
+
 .dm-deputies-alphabet {
   padding-top: 48px;
 }
