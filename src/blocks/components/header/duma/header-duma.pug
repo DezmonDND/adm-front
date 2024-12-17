@@ -47,7 +47,7 @@ mixin header-duma()
                 })
                 +button({ type: 'button', class: 'button_burger', event: 'toggleMenu()', icon: 'menu-outline', size: 'xs', text: '' })
                 +search(
-                    {name: 'number', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
+                    {name: 'dm-by-site-search', size: 's', placeholder: 'Поиск по сайту', type: 'search'},
                         false, 's', 'getValues()', 'header-duma',) 
                 .header__buttons  
                     +button({ type: 'button', event:'visibility()', class: 'button_white button__eye', icon: 'eye-outline', size: 'xs', iconPosition: 'left', text: 'Версия для слабовидящих'})               
@@ -78,11 +78,13 @@ mixin header-duma()
                 +header-socials([
                     {
                         href: '/',
-                        class: 'vk_icon-duma'
+                        class: 'vk_icon-duma',
+                        title: 'Ссылка на социальные сети Вконтакте',
                     },
                     {
                         href: '/',
-                        class: 'ok_icon-duma'
+                        class: 'ok_icon-duma',
+                        title: 'Ссылка на социальные сети Одноклассники',
                     },
                     ])     
     +login()  

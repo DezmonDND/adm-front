@@ -1,0 +1,25 @@
+extends ../layout
+
+block content   
+    main.main
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Доска почета'},
+                { sort: '', href: '/', text: '2021 год'},
+            ],
+            )
+        +title({
+            title: 'Балун'
+        })
+        +balloon({
+            name: 'Инициативный проект очень длинное название инициативный проект ',
+            href: '123',
+            date: '23 сентября 2024 года',
+            term: '2 года',
+            territory: 'Ханты-Мансийский автономный округ – Югра',
+            initiator: 'Дума города Сургута',
+            cost: '2 978 321,00',
+            status: 'Победитель конкурса',
+            img: 'image_1.jpg'
+        })

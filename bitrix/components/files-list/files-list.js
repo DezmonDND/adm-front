@@ -25,6 +25,7 @@ function addDocument(id) {
 
                 const button = document.createElement('button');
                 button.classList.add('button', 'files-list__delete-button');
+                button.setAttribute('aria-label', 'Удалить');
                 button.addEventListener('click', () => {
                     list.removeChild(listItem);
                 });

@@ -19,7 +19,10 @@
         .about-history__title {
             margin: 0;
             @include heading-h1;
-            @include about-paddings-title;
+
+            & {
+                @include about-paddings-title;
+            }
         }
 
         .about-history__container-title {

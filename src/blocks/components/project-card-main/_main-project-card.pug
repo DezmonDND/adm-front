@@ -5,7 +5,7 @@ mixin main-project-card(value)
         .main-project-card__content
             .main-project-card__info 
                 .main-project-card__dates 
-                    +button({ type: 'link', size: 'xs', class: `button_${value.tag_color} button_radius`, text: `${value.tag}`})
+                    +button({ type: 'button', size: 'xs', class: `button_${value.tag_color} button_radius`, text: `${value.tag}`})
                     span.main-project-card__date #{value.date}
                 .main-project-card__description 
                     h3(title=`${value.title}`).main-project-card__title #{value.title}

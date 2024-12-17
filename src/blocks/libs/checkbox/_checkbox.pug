@@ -4,6 +4,6 @@ mixin checkbox(options)
 
     input(type=`${options.sort}` id=`${options.id}` name=`${options.name}` class=`сheckbox ${hasLabel} ${hasClass}` checked=options.status)
     if options.label    
-        label(for=`${options.id}` class='сheckbox__label') #{options.label}
+        label(for=`${options.id}` class='сheckbox__label' aria-label=`Флажок ${options.label}`) #{options.label}
     else   
-        label(for=`${options.id}`) 
+        label(for=`${options.id}` aria-label='Флажок') 

@@ -1,0 +1,15 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-about-geo {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 630px;
+
+    @include respond-to(sm) {
+        height: 390px;
+    }
+}

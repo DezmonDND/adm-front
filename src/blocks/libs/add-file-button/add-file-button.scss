@@ -31,6 +31,10 @@
             color: $primary-color-hover;
             border-color: $primary-color-hover;
         }
+
+        &:focus-visible {
+            @include focus-visible;
+        }
     }
 
     input {

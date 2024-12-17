@@ -14,7 +14,7 @@ mixin telephone(items)
             .telephone-search-bot 
                 +input({ placeholder: 'Контекстный поиск', name: 'first_name' })
                 .telephone-search-bot-btns 
-                    +button({ size: 'l', type: 'button', class: 'button_white',  text: 'Сбросить' })
-                    +button({ size: 'l', type: 'button', class: 'button_blue',  text: 'Искать' })
+                    +button({ size: 'l', type: 'button', class: 'button_white', event: '1', text: 'Сбросить' })
+                    +button({ size: 'l', type: 'button', class: 'button_blue', event: '1', text: 'Искать' })
         each item in items
             +telephone-elem(item)

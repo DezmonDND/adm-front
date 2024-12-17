@@ -2,19 +2,19 @@
 <div class="telephone">
   <div class="telephone-search"> 
     <div class="telephone-search-top">
-      <input class="input     " placeholder="ФИО" name="fio" value="" id="fio"/>
+      <input class="input      " placeholder="ФИО" name="fio" value="" id="fio" role="textbox"/>
     </div>
     <div class="telephone-search-mid"> 
-      <input class="input     " placeholder="Должность" name="status" value="" id="status"/>
-      <input class="input     " placeholder="Подразделение" name="division" value="" id="division"/>
-      <input class="input     " placeholder="Телефон" name="phone" value="" id="phone"/>
+      <input class="input      " placeholder="Должность" name="status" value="" id="status" role="textbox"/>
+      <input class="input      " placeholder="Подразделение" name="division" value="" id="division" role="textbox"/>
+      <input class="input      " placeholder="Телефон" name="phone" value="" id="phone" role="textbox"/>
     </div>
     <div class="telephone-search-bot"> 
-      <input class="input     " placeholder="Контекстный поиск" name="first_name" value="" id="first_name"/>
+      <input class="input      " placeholder="Контекстный поиск" name="first_name" value="" id="first_name" role="textbox"/>
       <div class="telephone-search-bot-btns"> 
-        <button class="button button_white button_size_l   button_without-event" title=""><span class="button_span">Сбросить</span>
+        <button class="button button_white button_size_l   " onclick="1" title="" role="button" aria-label="Сбросить"><span class="button_span">Сбросить</span>
         </button>
-        <button class="button button_blue button_size_l   button_without-event" title=""><span class="button_span">Искать</span>
+        <button class="button button_blue button_size_l   " onclick="1" title="" role="button" aria-label="Искать"><span class="button_span">Искать</span>
         </button>
       </div>
     </div>

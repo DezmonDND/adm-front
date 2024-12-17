@@ -2,8 +2,8 @@ mixin slider(data={})
     .slider
         -const hasLinkClass = data.class ? `${data.class}` : ''
 
-        a(class=`slider__link slider__${hasLinkClass}-prev`)
+        a(class=`slider__link slider__${hasLinkClass}-prev` role='button' aria-label='Назад')
             ion-icon(name='arrow-back-outline')
         span.slider__counter    
-        a(class=`slider__link slider__${hasLinkClass}-next`)
+        a(class=`slider__link slider__${hasLinkClass}-next` role='button' aria-label='Вперед')
             ion-icon(name='arrow-forward-outline') 

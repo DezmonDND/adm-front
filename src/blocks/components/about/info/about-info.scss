@@ -126,6 +126,12 @@
                     margin: 0;
                     @include text-2;
 
+                    li {
+                        &:first-of-type {
+                            list-style: none;
+                        }
+                    }
+
                     .about-info__map-list-item {
                         margin-left: 20px;
                     }

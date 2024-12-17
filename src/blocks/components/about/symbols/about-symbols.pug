@@ -1,7 +1,9 @@
 include ../../title/_title
 
-mixin about-symbols()
+mixin about-symbols(data={})
     .about-symbols 
+        - const linkTitle = data.link_title ? data.link_title : 'Устав города.pdf'
+
         h3.about-symbols__title Официальные символы
         .about-symbols-list 
             .about-symbols-elem
@@ -25,4 +27,4 @@ mixin about-symbols()
         .about-symbols__documents
             a(href='/').files-list__document-description
                 ion-icon(class='files-list__icon' name='document')
-                span.files-list__document-title Устав города.pdf     
+                span.files-list__document-title #{linkTitle}   

@@ -31,3 +31,15 @@
     flex-direction: column;
     gap: 16px;
 }
+
+.button_exit {
+    background-color: $content-color;
+    border: 1px solid $interview-end-color;
+    color: $interview-end-color;
+
+    &:hover {
+        background-color: $interview-end-color;
+        border: 1px solid $interview-end-color;
+        color: $content-color;
+    }
+}

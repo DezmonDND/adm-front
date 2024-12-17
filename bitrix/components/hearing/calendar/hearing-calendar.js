@@ -1,6 +1,7 @@
-const EVENTS = [
+const EVENTS_OLD = [
     {
         title: 'Публичные слушания от 01.10.2024',
+        title_link: 'https://dev15-surg.mebot24.ru/publichnye-slushaniya/detail.php?ID=251811',
         start: '2024-11-27T10:30:00',
         end: '2024-11-27T11:00:00',
         description:
@@ -11,18 +12,21 @@ const EVENTS = [
         },
     {
         title: 'Публичные слушания',
+        title_link: '2',
         start: '2024-11-27T11:10:00',
         end: '2024-11-27T11:30:00',
         description: 'Описание',
     },
     {
         title: 'Публичные слушания',
+        title_link: '3',
         start: '2024-11-21T11:10:00',
         end: '2024-11-21T11:30:00',
         description: 'Описание',
     },
     {
         title: 'Публичные слушания',
+        title_link: '4',
         start: '2024-11-21T10:30:00',
         end: '2024-11-21T11:00:00',
         description:
@@ -30,12 +34,14 @@ const EVENTS = [
     },
     {
         title: 'Публичные слушания',
+        title_link: '5',
         start: '2024-11-15T11:10:00',
         end: '2024-11-15T11:30:00',
         description: 'Описание',
     },
     {
         title: 'Публичные слушания',
+        title_link: '6',
         start: '2024-11-15T10:30:00',
         end: '2024-11-15T11:00:00',
         description:
@@ -43,6 +49,7 @@ const EVENTS = [
     },
     {
         title: 'Публичные слушания',
+        title_link: '7',
         start: '2024-11-09T11:10:00',
         end: '2024-11-09T11:30:00',
         description: 'Описание',

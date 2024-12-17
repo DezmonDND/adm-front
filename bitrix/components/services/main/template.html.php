@@ -14,8 +14,8 @@
               <div class="services__search-content">
                 <h3 class="services__label">Поиск законопроектов</h3>
                 <form class="search search-services">
-                  <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="laws" value="" id="laws"/>
-                  <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
+                  <input class="input input_l  input-search input-search-l  " placeholder="Поиск по наименованию или номеру" name="laws" value="" id="laws" role="textbox"/>
+                  <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                     <ion-icon class="icon" name="search-outline"></ion-icon>
                   </button>
                 </form>
@@ -23,8 +23,8 @@
               <div class="services__search-content">       
                 <h3 class="services__label">Поиск правовых актов        </h3>
                 <form class="search search-services">
-                  <input class="input input_l  input-search input-search-l " placeholder="Поиск по наименованию или номеру" name="acts" value="" id="acts"/>
-                  <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="">
+                  <input class="input input_l  input-search input-search-l  " placeholder="Поиск по наименованию или номеру" name="acts" value="" id="acts" role="textbox"/>
+                  <button class="button button_blue search__button search__button_l  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                     <ion-icon class="icon" name="search-outline"></ion-icon>
                   </button>
                 </form>
@@ -33,9 +33,9 @@
             <div class="services__buttons">
               <h3 class="services__buttons-title">Связаться</h3>
               <div class="services__buttons-container">
-                <button class="button button_blue services__button button_size_l   " onclick="console.log(1);" title=""><span class="button_span">Электронное обращение</span>
+                <button class="button button_blue services__button button_size_l   " onclick="console.log(1);" title="" role="button" aria-label="Электронное обращение"><span class="button_span">Электронное обращение</span>
                 </button>
-                <button class="button button_blue services__button button_size_l   " onclick="console.log(1);" title=""><span class="button_span">Личный прием</span>
+                <button class="button button_blue services__button button_size_l   " onclick="console.log(1);" title="" role="button" aria-label="Личный прием"><span class="button_span">Личный прием</span>
                 </button>
               </div>
             </div>

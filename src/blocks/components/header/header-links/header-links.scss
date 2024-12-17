@@ -63,6 +63,7 @@ body.tmp-duma {
             color: $main-text;
 
             &:hover {
+                text-decoration: none;
                 color: $primary-color;
             }
         }

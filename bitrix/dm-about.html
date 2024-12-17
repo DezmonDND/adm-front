@@ -14,15 +14,15 @@
         <div class="menu menu_duma-bg">
           <div class="menu__container">
             <div class="menu__content"> 
-              <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+              <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                   <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+                <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
                   <ion-icon class="icon" name="close-outline"></ion-icon>
                 </button>
               </div>
               <form class="search search-header-mobile">
-                <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+                <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+                <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
                   <ion-icon class="icon" name="search-outline"></ion-icon>
                 </button>
               </form>
@@ -36,13 +36,13 @@
             </div>
             <div class="menu__bot">
               <div class="menu__socials"> 
-                <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+                <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
                 </div>
-                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+                <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
                   <ion-icon class="icon" name="eye-outline"></ion-icon>
                 </button>
               </div>
-              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+              <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
               </button>
             </div>
           </div>
@@ -78,28 +78,29 @@
         </div>
       </div>
       <div class="header-duma__container">
-        <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+        <div class="header__top-content"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
             <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+          <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button" aria-label="">
             <ion-icon class="icon" name="menu-outline"></ion-icon>
           </button>
           <form class="search search-header-duma">
-            <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+            <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="dm-by-site-search" value="" id="dm-by-site-search" role="textbox"/>
+            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
               <ion-icon class="icon" name="search-outline"></ion-icon>
             </button>
           </form>
           <div class="header__buttons"> 
-            <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+            <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title="" role="button" aria-label="Версия для слабовидящих"><span class="button_span">Версия для слабовидящих</span>
               <ion-icon class="icon" name="eye-outline"></ion-icon>
             </button>
-            <button class="button button_blue button_size_s   " onclick="anotherFunction()" title=""><span class="button_span">Служебный вход</span>
+            <button class="button button_blue button_size_s   " onclick="anotherFunction()" title="" role="button" aria-label="Служебный вход"><span class="button_span">Служебный вход</span>
             </button>
           </div>
         </div>
         <div class="header__bottom-content">  
           <ul class="header_links">
-            <li class="header__link"><span>О Думе города</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="О Думе города" tabindex="-1">О Думе города</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -121,7 +122,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Состав и структура</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Состав и структура" tabindex="-1">Состав и структура</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -143,7 +145,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Документы</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -165,7 +168,8 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"><span>Деятельность</span>
+            <li class="header__link" aria-expanded="false">
+              <button style="all:unset" role="button" aria-label="Деятельность" tabindex="-1">Деятельность</button>
               <div class="dm-second-menu">
                 <div class="dm-second-menu__content">
                   <div class="dm-second-menu__col">
@@ -187,9 +191,9 @@
                 </div>
               </div>
             </li>
-            <li class="header__link"> <a href="/">Обратная связь          </a></li>
+            <li class="header__link" aria-label="Обратная связь"> <a href="/" tabindex="-1">Обратная связь          </a></li>
           </ul>
-          <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
+          <div class="header__socials"><a class="header__social-icon vk_icon-duma" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon-duma" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a>
           </div>
         </div>
       </div>
@@ -206,17 +210,17 @@
             <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input     " placeholder="Номер телефона" value=""/>
+            <input class="input      " placeholder="Номер телефона" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-delim"> 
             <div class="delim-line"></div><span> или </span>
             <div class="delim-line"> </div>
           </div>
-          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
+          <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" role="link" aria-label="Войти через госуслуги"><span class="button_span">Войти через госуслуги</span></a>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -234,11 +238,11 @@
             <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input     " placeholder="Код" value=""/>
+            <input class="input      " placeholder="Код" value="" role="textbox"/>
           </div>
           <!-- Если код неверный то инпут меняется на этот-->
           <div class="login__content-main__input wrong-code">
-            <input class="input     " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+            <input class="input      " placeholder="Код" value="" role="textbox"/><span>Неверный код, попробуйте еще раз</span>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
         </div>
@@ -256,28 +260,28 @@
             <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
           </div>
           <div class="login__content-main__input">
-            <input class="input     " placeholder="Электронная почта" value=""/>
+            <input class="input      " placeholder="Электронная почта" value="" role="textbox"/>
           </div>
           <div class="login__content-main__confirm-standart">
-            <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+            <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
             </button>
           </div>
           <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>
         </div>
       </div>
     </div>
-    <main class="main dm-about">
-      <div class="full-width-container">
-        <div class="full-width-background"> 
-          <div class="full-width-content">
-            <div class="breadcrumbs"><a class="breadcrumbs__icon-link" href="/"></a>
-              <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank">Главная</a><span class="span">/</span><a class="link breadcrumb_link" href="/" target="_blank">Специальное событие</a><span class="span">/</span><span class="breadcrumb_link">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</span>
+    <main class="main"> 
+      <div class="dm-about"> 
+        <div class="full-width-container">
+          <div class="full-width-background"> 
+            <div class="full-width-content">
+              <div class="breadcrumbs" aria-label="Страницы"><a class="breadcrumbs__icon-link" href="/"></a>
+                <div class="breadcrumbs__container"><a class="link breadcrumb_link" href="/" target="_blank" role="link" aria-label="Главная">Главная</a><span class="span" aria-current="page">/</span><a class="link breadcrumb_link" href="/" target="_blank" role="link" aria-label="Специальное событие">Специальное событие</a><span class="span" aria-current="page">/</span><span class="breadcrumb_link">В Сургуте масштабно отметили юбилейный, 35-й праздник, Сабантуй</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="projects-detail">   
         <div class="full-width-container">
           <div class="full-width-background">
             <div class="full-width-content"> 
@@ -285,19 +289,24 @@
                 <div class="event-card__container"> 
                   <div class="event-card__info">
                     <div class="event-card__description"> 
-                      <h2 class="event-card__title">О Думе города</h2>
-                    </div>
-                    <div class="event-card__buttons"> <a class="button button_link button_blue button_print button_size_m  button_icon-left" href="/" title=""><span class="button_span">Версия для печати</span>
-                        <ion-icon class="icon" name="print-outline"></ion-icon></a>
-                      <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  button_icon-left" href="/" title=""><span class="button_span">Поделиться</span>
-                          <ion-icon class="icon" name="link-outline"></ion-icon></a>
-                        <div class="button-popup__content">
-                          <div class="button-popup">
-                            <div class="button-popup__container">   
-                              <div class="header__socials"><a class="vk_icon header__social-icon" href="/"></a><a class="ok_icon header__social-icon" href="/"></a><a class="tg_icon header__social-icon" href="/"></a>
+                      <div class="event-card__title-content">
+                        <h2 class="event-card__title">О Думе города</h2>
+                        <div class="event-card__title-button"><a class="button button_link button_white button_share button_size_m button_without-text " href="/" title="" role="link">
+                            <ion-icon class="icon" name="link-outline"></ion-icon></a>
+                        </div>
+                      </div>
+                      <div class="event-card__buttons"> <a class="button button_link button_white button_print button_size_m  " href="/" title="" role="link" aria-label="Версия для печати"><span class="button_span">Версия для печати</span>
+                          <ion-icon class="icon" name="print-outline"></ion-icon></a>
+                        <div class="event-card__button"><a class="button button_link button_white button_share button_size_m  " href="/" title="" role="link" aria-label="Поделиться"><span class="button_span">Поделиться</span>
+                            <ion-icon class="icon" name="link-outline"></ion-icon></a>
+                          <div class="button-popup__content">
+                            <div class="button-popup">
+                              <div class="button-popup__container">   
+                                <div class="header__socials"><a class="header__social-icon vk_icon" href="/" role="link"></a><a class="header__social-icon ok_icon" href="/" role="link"></a><a class="header__social-icon tg_icon" href="/" role="link"></a>
+                                </div>
+                                <button class="button button_white share_button button_size_s   " onclick="getLink(event)" title="" role="button" aria-label="Скопировать ссылку"><span class="button_span">Скопировать ссылку</span>
+                                </button>
                               </div>
-                              <button class="button button_white share_button button_size_s   " onclick="getLink(event)" title=""><span class="button_span">Скопировать ссылку</span>
-                              </button>
                             </div>
                           </div>
                         </div>
@@ -309,248 +318,249 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="dm-about-container"> 
-        <div class="dm-about-content">
-          <div class="dm-about-block">
-            <p>Представительным органом местного самоуправления является выборный коллегиальный орган местного самоуправления, обладающий правом представлять интересы населения и принимать от его имени решения, действующие на территории муниципального образования.</p>
-            <p>Дума города состоит из 25 депутатов, избираемых на муниципальных выборах по одномандатным или многомандатным избирательным округам в соответствии с решением Думы города сроком на 5 лет, и является представительным коллегиальным выборным органом местного самоуправления городского округа.</p>
-            <p>Дума города вправе осуществлять свои полномочия при условии избрания не менее 2/3 от установленной численности депутатов.</p>
-            <p>Дума города обладает правами юридического лица, которыми наделяется в соответствии с действующим законодательством. Компетенция Думы города определена <a href="#">статьей 31 главы III Устава города. </a>Полномочия Думы города начинаются со дня проведения первого заседания в соответствии с пунктом 3 <a href="#">статьи 32 Устава городской округ город Сургут</a> и прекращаются со дня начала работы Думы города нового созыва.</p>
-            <p>Полномочия депутата начинаются со дня его избрания и прекращаются со дня начала работы Думы города нового созыва. </p>
-            <p>Депутаты Думы города осуществляют свои полномочия преимущественно на непостоянной основе. На постоянной основе вправе осуществлять свою деятельность 2 депутата.</p>
-            <p>Персональный состав депутатов, осуществляющих свои полномочия на постоянной основе, определяется на первом заседании Думы города нового созыва при наличии депутатов, желающих занять эти должности.</p>
-            <div class="dm-about-block-img"><img src="/resources/dm-about.png"/></div>
-          </div>
-          <hr/>
-          <div class="dm-about-block">
-            <div class="dm-about-title"><span>Руководство думы города</span><a href="#">Все депутаты</a></div>
-            <div class="dm-about-persons"><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a><a class="dm-comitet-elem" href="#">
-                <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png"/>
-                  <div class="dm-comitet-elem__info">
-                    <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
-                    <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-          <hr/>
-          <div class="dm-about-block">
-            <div class="dm-about-title"> <span>Официальные символы города Сургута</span></div>
-            <div class="dm-about-symbol">
-              <div class="dm-about-symbol-left"><span>Герб города Сургута утвержден <a href="#">решением городской Думы от 04.11.2003 № 273-III ГД. </a>Геральдическое описание герба муниципального образования город окружного значения Сургут гласит: «В золотом поле – черная с серебряным концом хвоста лисица, идущая по лазоревой земле»</span></div>
-              <div class="dm-about-symbol-right"><img src="/resources/gerb.png"/></div>
-            </div>
-            <div class="dm-about-symbol">
-              <div class="dm-about-symbol-left"><span>Флаг города Сургута утвержден <a href="#">решением городской Думы от 25.04.2005 № 454- III ГД.  </a>Флаг муниципального образования городской округ город Сургут представляет собой прямоугольное полотнище с соотношением ширины к длине 2:3, в центре которого на золотом фоне лисица с серебряным концом хвоста, идущая по лазоревой земле.</span></div>
-              <div class="dm-about-symbol-right"><img src="/resources/flag.png"/></div>
-            </div>
-          </div>
-          <hr/>
-          <div class="dm-about-block"> 
-            <div class="dm-about-title"> <span>Документы</span></div>
-            <div class="dm-about-finance-docs">
-              <div class="short-filelist"><a class="file-line" href="#">
-                  <ion-icon class="file-line-icon" name="document"></ion-icon><span class="file-line-span">Дума Сургута: 20 лет вместе с городом.pdf</span></a>
+        <div class="dm-about-container"> 
+          <div class="dm-about-content">
+            <div class="dm-about-info">
+              <div class="dm-about-block">
+                <p>Представительным органом местного самоуправления является выборный коллегиальный орган местного самоуправления, обладающий правом представлять интересы населения и принимать от его имени решения, действующие на территории муниципального образования.</p>
+                <p>Дума города состоит из 25 депутатов, избираемых на муниципальных выборах по одномандатным или многомандатным избирательным округам в соответствии с решением Думы города сроком на 5 лет, и является представительным коллегиальным выборным органом местного самоуправления городского округа.</p>
+                <p>Дума города вправе осуществлять свои полномочия при условии избрания не менее 2/3 от установленной численности депутатов.</p>
+                <p>Дума города обладает правами юридического лица, которыми наделяется в соответствии с действующим законодательством. Компетенция Думы города определена <a href="#">статьей 31 главы III Устава города. </a>Полномочия Думы города начинаются со дня проведения первого заседания в соответствии с пунктом 3 <a href="#">статьи 32 Устава городской округ город Сургут</a> и прекращаются со дня начала работы Думы города нового созыва.</p>
+                <p>Полномочия депутата начинаются со дня его избрания и прекращаются со дня начала работы Думы города нового созыва. </p>
+                <p>Депутаты Думы города осуществляют свои полномочия преимущественно на непостоянной основе. На постоянной основе вправе осуществлять свою деятельность 2 депутата.</p>
+                <p>Персональный состав депутатов, осуществляющих свои полномочия на постоянной основе, определяется на первом заседании Думы города нового созыва при наличии депутатов, желающих занять эти должности.</p>
+                <div class="dm-about-block-img"><img src="/resources/dm-about.png" alt="Изображение Думы"/></div>
               </div>
             </div>
-          </div>
-          <div class="full-width-container dm-about-history-margin">
-            <div class="full-width-background"> 
-              <div class="full-width-content">
-                <div class="dm-about-history-container">
-                  <div class="dm-about-history-content">
-                    <div class="title"> 
-                      <div class="title__container"> 
-                        <h2 class="title__name">История Думы</h2>
-                      </div>
+            <hr/>
+            <div class="dm-about-block">
+              <div class="dm-about-title"><span>Руководство думы города</span><a href="#">Все депутаты</a></div>
+              <div class="dm-about-persons"><a class="dm-comitet-elem" href="#">
+                  <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
+                    <div class="dm-comitet-elem__info">
+                      <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                      <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                     </div>
-                    <div class="dm-about-history-elem">
-                      <div class="dm-about-title"><span>Историческая справка</span></div>
-                      <div class="dm-about-history">
-                        <p>В целях укрепления основ народовластия 26 октября 1993 года был принят Указ Президента Российской Федерации № 1760 "О реформе местного самоуправления в Российской Федерации", согласно которому деятельность городского Совета народных депутатов в городе прекращена, его функции были возложены на городскую администрацию.</p>
-                        <p>В соответствии с постановлением Главы Администрации Тюменской области на 6 марта 1994 года назначены выборы органов местного самоуправления области, а согласно Положению, утвержденному Малым Советом областного Совета народных депутатов от 24.12.1993 № 321 "Об основных началах проведения выборов в органы местного самоуправления", определено, что в городах Тюменской области с населением свыше 50 тыс. человек избирается в представительный орган муниципального образования в количестве до 15 представителей.</p>
-                      </div>
-                      <div class="dm-about-history-hidden"> 
-                        <p>Объявленные на 6 марта 1994 года на территории муниципального образования город Сургут выборы депутатов городской Думы не состоялись, в связи с тем, что явка избирателей оказалась ниже установленного законодательством показателя (менее 25%).</p>
-                        <p>22 сентября 1994 года, учитывая рекомендации Избирательной комиссии Ханты-Мансийского автономного округа, решением городской избирательной комиссии назначены новые выборы депутатов городской Думы на 20 ноября 1994 года.</p>
-                        <p>В соответствии со статьей 19 Положения о выборах в представительные органы местного самоуправления на территории Ханты-Мансийского автономного округа окружные избирательные комиссии по 13 городским избирательным округам зарегистрировали 55 кандидатов в депутаты городской Думы.</p>
-                        <p>20 ноября 1994 года состоялись выборы 13 депутатов городской Думы <a href="#">первого созыва,</a>которые проводились по мажоритарной избирательной системе по 13 одномандатным избирательным округам.</p>
-                        <p>Окружные избирательные комиссии по выборам депутатов городской Думы,  рассмотрев     итоговые  протоколы  участковых избирательных комиссий, признали выборы 20 ноября 1994 года состоявшимися. При числе зарегистрированных по городу Сургуту избирателей в количестве 167024 человек, в выборах приняло участие 117307 избирателей, процент голосования составил 69,8%.</p>
-                        <p>С целью повышения политической активности городского электората в день проведения выборов 20 ноября 1994 года городским управлением культуры было организовано и проведено 70 концертов художественной самодеятельности, подготовленных силами коллективов городских Домов культуры, педагогического колледжа, музыкальных и средних общеобразовательных школ, в которых приняло участие более 800 человек, 48 творческих коллективов. В этот день в городских кинотеатрах бесплатно демонстрировались художественны фильмы и бесплатно осуществляя перевозку пассажиров городской общественный транспорт.</p>
-                        <p>В начале декабря 1994 года было проведено первое организационное заседание представительного органа местного самоуправления города - городской Думы, которое открыл старейший по возрасту депутат Думы Соловьев Николай Васильевич.</p>
-                        <p>20 декабря 1994 года состоялось первое заседание представительного органа местного самоуправления города - городской Думы. На первом заседании городской Думы были приняты временные Положение о городской Думе и Регламент. В соответствии со статьей 1 временного Регламента городской Думы председательствовал на заседаниях Думы города глава местного самоуправления (глава администрации).</p>
-                        <p>22 февраля 1996 года депутатами городской Думы было принято историческое для города решение № 65, в соответствии с которым был утвержден первый Устав муниципального образования город Сургут, состоящий из 4-х разделов и 25 глав.</p>
-                        <p>Срок полномочий Думы первого созыва составил 2 года. Всего за первый созыв состоялось 18 заседаний городской Думы, принято 116 решений. Все депутаты работали на непостоянной основе.</p>
-                        <p>В августе 1996 года в соответствии с Законом Ханты-Мансийского автономного округа 15-оз "О выборах депутатов в представительные органы местного самоуправления муниципальных образований в Ханты-Мансийском автономном округе" была сформирована городская территориальная избирательная комиссия, на 27 октября 1996 года были назначены выборы депутатов городской Думы <a href="#">второго созыва </a>со сроком их полномочий 4 года и в городе началась активная подготовка к предстоящим выборам.</p>
-                        <p>12 марта 2006 года состоялись выборы депутатов Думы города четвертого созыва, которые дали старт новой системе муниципального устройства.</p>
-                        <p>Согласно Уставу муниципального образования городской округ город Сургут Дума города, в соответствии с решением, принятым городской Думой 18.02.2005 <a href="#">№ 425-III ГД, </a>является представительным коллегиальным выборным органом местного самоуправления городского округа, обладает правами юридического лица, состоит из 25 депутатов, избираемых на муниципальных выборах сроком на 5 лет.</p>
-                        <p>Вновь избранный депутатский состав Думы города обновился более чем на 80%. В состав Думы вошли 22 новичка. Трое депутатов уже имели опыт работы в городской Думе. Самому старшему депутату 69 лет, 2-м самым младшим - 31. Средний возраст Сургутского депутата - 48 лет. В Думу города избраны 19 мужчин и всего 6 женщин. Из 25 депутатов 6 человек являются работниками бюджетной сферы, 9 - представителями градообразующих предприятий города {ОАО "Сургутнефтегаз" (4), ООО "Газпром переработка" (4), ОАО "Тюменьэнерго" (1)}, 2 - представителями строительной отрасли, 2 - средств массовой информации.</p>
-                        <p>31 марта 2006 года состоялось первое организационное заседание Думы города IV созыва, проводимом под председательством старейшего депутата Назина Г.И., на котором тайным голосованием были избраны:
-                          <ul> 
-                            <li>Председатель Думы города - Кузьменко Юрий Понтилеевич;</li>
-                            <li>заместитель Председателя Думы города, работающий на постоянной основе - Савенков Алексей Исаевич;</li>
-                            <li>заместитель Председателя Думы города, работающий на непостоянной основе - Дьячков Евгений Вячеславович.</li>
-                          </ul>
-                        </p>
-                        <p>С 2006 года Дума города сформировала свой <a href="#">аппарат.    </a></p>
-                        <p>27 апреля 2006 года в соответствии с решением Думы города <a href="#">№ 11-IV ДГ </a>в соответствии с пунктом 7 статьи </p>
-                        <p>32 Устава города образованы <a href="#">постоянные комитеты </a>Думы города.</p>
-                      </div>
-                      <button class="button button_blue dm-about-history-button    " onclick="showDmHistory()" title=""><span class="button_span">Подробнее...</span>
-                      </button>
+                  </div></a><a class="dm-comitet-elem" href="#">
+                  <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
+                    <div class="dm-comitet-elem__info">
+                      <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                      <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
                     </div>
-                    <div class="dm-about-powers"> 
-                      <div class="dm-about-title"> <span>Полномочия Думы города Сургута</span></div>
-                      <div class="dm-about-power"> 
-                        <p>В соответствии с <a href="#">Уставом муниципального образования городской округ Сургут </a>к компетенции Думы города относится решение следующих вопросов:
-                          <ol>
-                            <li>принятие Устава городского округа Сургутб, внесение в него изменений и (или) дополнений</li>
-                            <li>утверждение местного бюджета и отчета о его исполнении</li>
-                            <li>установление, изменение и отмена местных налогов и сборов, включая установление налоговых льгот, в соответствии с законодательством Российской Федерации о налогах и сборах;</li>
-                            <li>утверждение стратегии социально-экономического развития муниципального образования;</li>
-                            <li>определение порядка управления и распоряжения имуществом, находящимся в муниципальной собственности;</li>
-                          </ol>
-                        </p>
+                  </div></a><a class="dm-comitet-elem" href="#">
+                  <div class="dm-comitet-elem__container"> <img class="dm-comitet-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/>
+                    <div class="dm-comitet-elem__info">
+                      <div class="dm-comitet-elem__info-surname"><span>Барсов</span></div>
+                      <div class="dm-comitet-elem__info-name"><span>Евгений Вячеславович</span></div>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+            <hr/>
+            <div class="about-symbols"> 
+              <h3 class="about-symbols__title">Официальные символы</h3>
+              <div class="about-symbols-list"> 
+                <div class="about-symbols-elem">
+                  <div class="about-symbols-elem-text"><b>Герб города </b><span>Сургута утвержден </span><a class="link" href="#">решением городской Думы от 04.11.2003 № 273-III ГД. </a><span>Геральдическое описание герба муниципального образования город окружного значения Сургут гласит: «В золотом поле – черная с серебряным концом хвоста лисица, идущая по лазоревой земле»</span></div>
+                  <div class="about-symbols-elem-img"><img src="/resources/gerb.png"/></div>
+                </div>
+                <div class="about-symbols-elem">
+                  <div class="about-symbols-elem-text"><b>Флаг города </b><span>Сургута утвержден </span><a class="link" href="#">решением городской Думы от 25.04.2005 № 454- III ГД. </a><span>Флаг муниципального образования городской округ город Сургут представляет собой прямоугольное полотнище с соотношением ширины к длине 2:3, в центре которого на золотом фоне лисица с серебряным концом хвоста, идущая по лазоревой земле.</span></div>
+                  <div class="about-symbols-elem-img"><img src="/resources/flag.png"/></div>
+                </div>
+              </div>
+              <hr/>
+              <h3 class="about-symbols__title">Документы  </h3>
+              <div class="about-symbols__documents"><a class="files-list__document-description" href="/">
+                  <ion-icon class="files-list__icon" name="document"></ion-icon><span class="files-list__document-title">Дума Сургута: 20 лет вместе с городом.pdf   </span></a></div>
+            </div>
+            <div class="dm-about-history">
+              <div class="full-width-container">
+                <div class="full-width-background"> 
+                  <div class="full-width-content">
+                    <div class="dm-about-history-container">
+                      <div class="dm-about-history-content">
+                        <div class="title"> 
+                          <div class="title__container"> 
+                            <h2 class="title__name">История Думы</h2>
+                          </div>
+                        </div>
+                        <div class="dm-about-history-elem">
+                          <div class="dm-about-title"><span>Историческая справка</span></div>
+                          <div class="dm-about-text">
+                            <p>В целях укрепления основ народовластия 26 октября 1993 года был принят Указ Президента Российской Федерации № 1760 "О реформе местного самоуправления в Российской Федерации", согласно которому деятельность городского Совета народных депутатов в городе прекращена, его функции были возложены на городскую администрацию.</p>
+                            <p>В соответствии с постановлением Главы Администрации Тюменской области на 6 марта 1994 года назначены выборы органов местного самоуправления области, а согласно Положению, утвержденному Малым Советом областного Совета народных депутатов от 24.12.1993 № 321 "Об основных началах проведения выборов в органы местного самоуправления", определено, что в городах Тюменской области с населением свыше 50 тыс. человек избирается в представительный орган муниципального образования в количестве до 15 представителей.</p>
+                          </div>
+                          <div class="dm-about-history-hidden"> 
+                            <p>Объявленные на 6 марта 1994 года на территории муниципального образования город Сургут выборы депутатов городской Думы не состоялись, в связи с тем, что явка избирателей оказалась ниже установленного законодательством показателя (менее 25%).</p>
+                            <p>22 сентября 1994 года, учитывая рекомендации Избирательной комиссии Ханты-Мансийского автономного округа, решением городской избирательной комиссии назначены новые выборы депутатов городской Думы на 20 ноября 1994 года.</p>
+                            <p>В соответствии со статьей 19 Положения о выборах в представительные органы местного самоуправления на территории Ханты-Мансийского автономного округа окружные избирательные комиссии по 13 городским избирательным округам зарегистрировали 55 кандидатов в депутаты городской Думы.</p>
+                            <p>20 ноября 1994 года состоялись выборы 13 депутатов городской Думы <a href="#">первого созыва,</a>которые проводились по мажоритарной избирательной системе по 13 одномандатным избирательным округам.</p>
+                            <p>Окружные избирательные комиссии по выборам депутатов городской Думы,  рассмотрев     итоговые  протоколы  участковых избирательных комиссий, признали выборы 20 ноября 1994 года состоявшимися. При числе зарегистрированных по городу Сургуту избирателей в количестве 167024 человек, в выборах приняло участие 117307 избирателей, процент голосования составил 69,8%.</p>
+                            <p>С целью повышения политической активности городского электората в день проведения выборов 20 ноября 1994 года городским управлением культуры было организовано и проведено 70 концертов художественной самодеятельности, подготовленных силами коллективов городских Домов культуры, педагогического колледжа, музыкальных и средних общеобразовательных школ, в которых приняло участие более 800 человек, 48 творческих коллективов. В этот день в городских кинотеатрах бесплатно демонстрировались художественны фильмы и бесплатно осуществляя перевозку пассажиров городской общественный транспорт.</p>
+                            <p>В начале декабря 1994 года было проведено первое организационное заседание представительного органа местного самоуправления города - городской Думы, которое открыл старейший по возрасту депутат Думы Соловьев Николай Васильевич.</p>
+                            <p>20 декабря 1994 года состоялось первое заседание представительного органа местного самоуправления города - городской Думы. На первом заседании городской Думы были приняты временные Положение о городской Думе и Регламент. В соответствии со статьей 1 временного Регламента городской Думы председательствовал на заседаниях Думы города глава местного самоуправления (глава администрации).</p>
+                            <p>22 февраля 1996 года депутатами городской Думы было принято историческое для города решение № 65, в соответствии с которым был утвержден первый Устав муниципального образования город Сургут, состоящий из 4-х разделов и 25 глав.</p>
+                            <p>Срок полномочий Думы первого созыва составил 2 года. Всего за первый созыв состоялось 18 заседаний городской Думы, принято 116 решений. Все депутаты работали на непостоянной основе.</p>
+                            <p>В августе 1996 года в соответствии с Законом Ханты-Мансийского автономного округа 15-оз "О выборах депутатов в представительные органы местного самоуправления муниципальных образований в Ханты-Мансийском автономном округе" была сформирована городская территориальная избирательная комиссия, на 27 октября 1996 года были назначены выборы депутатов городской Думы <a href="#">второго созыва </a>со сроком их полномочий 4 года и в городе началась активная подготовка к предстоящим выборам.</p>
+                            <p>12 марта 2006 года состоялись выборы депутатов Думы города четвертого созыва, которые дали старт новой системе муниципального устройства.</p>
+                            <p>Согласно Уставу муниципального образования городской округ город Сургут Дума города, в соответствии с решением, принятым городской Думой 18.02.2005 <a href="#">№ 425-III ГД, </a>является представительным коллегиальным выборным органом местного самоуправления городского округа, обладает правами юридического лица, состоит из 25 депутатов, избираемых на муниципальных выборах сроком на 5 лет.</p>
+                            <p>Вновь избранный депутатский состав Думы города обновился более чем на 80%. В состав Думы вошли 22 новичка. Трое депутатов уже имели опыт работы в городской Думе. Самому старшему депутату 69 лет, 2-м самым младшим - 31. Средний возраст Сургутского депутата - 48 лет. В Думу города избраны 19 мужчин и всего 6 женщин. Из 25 депутатов 6 человек являются работниками бюджетной сферы, 9 - представителями градообразующих предприятий города {ОАО "Сургутнефтегаз" (4), ООО "Газпром переработка" (4), ОАО "Тюменьэнерго" (1)}, 2 - представителями строительной отрасли, 2 - средств массовой информации.</p>
+                            <p>31 марта 2006 года состоялось первое организационное заседание Думы города IV созыва, проводимом под председательством старейшего депутата Назина Г.И., на котором тайным голосованием были избраны:
+                              <ul> 
+                                <li>Председатель Думы города - Кузьменко Юрий Понтилеевич;</li>
+                                <li>заместитель Председателя Думы города, работающий на постоянной основе - Савенков Алексей Исаевич;</li>
+                                <li>заместитель Председателя Думы города, работающий на непостоянной основе - Дьячков Евгений Вячеславович.</li>
+                              </ul>
+                            </p>
+                            <p>С 2006 года Дума города сформировала свой <a href="#">аппарат.    </a></p>
+                            <p>27 апреля 2006 года в соответствии с решением Думы города <a href="#">№ 11-IV ДГ </a>в соответствии с пунктом 7 статьи </p>
+                            <p>32 Устава города образованы <a href="#">постоянные комитеты </a>Думы города.</p>
+                          </div>
+                          <button class="button button_blue dm-about-history-button    " onclick="showDmHistory()" title="" role="button" aria-label="Подробнее..."><span class="button_span">Подробнее...</span>
+                          </button>
+                        </div>
+                        <div class="dm-about-powers"> 
+                          <div class="dm-about-title"> <span>Полномочия Думы города Сургута</span></div>
+                          <div class="dm-about-power"> 
+                            <p>В соответствии с <a href="#">Уставом муниципального образования городской округ Сургут </a>к компетенции Думы города относится решение следующих вопросов:
+                              <ol>
+                                <li>принятие Устава городского округа Сургутб, внесение в него изменений и (или) дополнений</li>
+                                <li>утверждение местного бюджета и отчета о его исполнении</li>
+                                <li>установление, изменение и отмена местных налогов и сборов, включая установление налоговых льгот, в соответствии с законодательством Российской Федерации о налогах и сборах;</li>
+                                <li>утверждение стратегии социально-экономического развития муниципального образования;</li>
+                                <li>определение порядка управления и распоряжения имуществом, находящимся в муниципальной собственности;</li>
+                              </ol>
+                            </p>
+                          </div>
+                          <div class="dm-about-power-hidden">
+                            <ol start="6">
+                              <li>определение порядка принятия решений о создании, реорганизации и ликвидации муниципальных предприятий, а также об установлении тарифов на услуги муниципальных предприятий и учреждений, выполнение работ, за исключением случаев, предусмотренных федеральными законами;</li>
+                              <li>определение порядка участия городского округа в организациях межмуниципального сотрудничества;</li>
+                              <li>определение порядка материально-технического и организационного обеспечения деятельности органов местного самоуправления городского округа;</li>
+                              <li>контроль за исполнением органами местного самоуправления городского округа и должностными лицами местного самоуправления городского округа полномочий по решению вопросов местного значения;</li>
+                              <li>принятие решения об удалении Главы города в отставку;</li>
+                              <li>утверждение правил благоустройства территории городского округа.</li>
+                              <li>утверждение описания и порядка использования официальных символов города Сургута;</li>
+                              <li>принятие решения об избрании Главы города в порядке, установленном настоящим Уставом;</li>
+                              <li>установление видов наград, почетных званий городского округа, порядка их вручения и присвоения;</li>
+                              <li>выдвижение инициативы изменения границ городского округа, преобразования городского округа;</li>
+                              <li>выражение согласия населения городского округа при изменении границ или преобразовании городского округа, выражение мнения населения при разделении городского округа в случаях, предусмотренных Федеральным законом от 06.10.2003 № 131-ФЗ «Об общих принципах организации местного самоуправления в Российской Федерации»;</li>
+                              <li>принятие решения о назначении местного референдума, выдвижение совместно с Главой города инициативы проведения местного референдума;</li>
+                              <li>назначение муниципальных выборов в сроки, предусмотренные настоящим Уставом;</li>
+                              <li>назначение голосования по отзыву депутата Думы города, Главы города; </li>
+                              <li>установление границ территорий, на которых осуществляется территориальное общественное самоуправление;</li>
+                              <li>выдвижение инициативы проведения собраний граждан;</li>
+                              <li>назначение собраний граждан, проводимых по инициативе населения городского округа или по собственной инициативе;</li>
+                              <li>выдвижение инициативы проведения конференций граждан; </li>
+                              <li>назначение конференций граждан, проводимых по инициативе населения городского округа или по собственной инициативе; </li>
+                              <li>выдвижение инициативы проведения опроса граждан по вопросам местного значения;</li>
+                              <li>установление порядка назначения и проведения опроса граждан в соответствии с законом Ханты-Мансийского автономного округа - Югры и настоящим Уставом; </li>
+                              <li>принятие решения о назначении опроса граждан, в установленном порядке; </li>
+                              <li>определение порядка организации и проведения публичных слушаний, выдвижение собственной инициативы проведения публичных слушаний;</li>
+                              <li>принятие решений по утверждению и изменению структуры органов местного самоуправления городского округа; </li>
+                              <li>утверждение структуры Администрации города по представлению Главы города;</li>
+                              <li>принятие решения об учреждении соответствующего органа Администрации города в форме муниципального казенного учреждения и утверждение Положения о нем по представлению Главы города;</li>
+                              <li>принятие в пределах своей компетенции муниципальных правовых актов, необходимых для реализации решения, принятого населением на местном референдуме;</li>
+                              <li>образование Контрольно-счетной палаты города;</li>
+                              <li>установление нормативов отчисления в доход местного бюджета части прибыли муниципальных предприятий, остающейся после уплаты налогов и сборов и осуществления иных обязательных платежей, а также части доходов казенных муниципальных учреждений от оказания ими платных услуг, остающейся после уплаты налогов и сборов;</li>
+                              <li>установление порядка привлечения заемных средств городского округа, в том числе путем выпуска муниципальных ценных бумаг;</li>
+                              <li>принятие решений об учреждении межмуниципальных хозяйственных обществ в форме непубличных акционерных обществ и обществ с ограниченной ответственностью для совместного решения вопросов местного значения;</li>
+                              <li>принятие решений об учреждении некоммерческих организаций в форме автономных некоммерческих организаций и фондов;</li>
+                              <li>определение размеров и условий оплаты труда лиц, замещающих муниципальные должности городского округа на постоянной основе, а также Председателя Контрольно-счетной палаты города;</li>
+                              <li>установление размера должностного оклада, а также размера ежемесячных и иных дополнительных выплат муниципальным служащим городского округа и порядка их осуществления в соответствии с законодательством Российской Федерации и Ханты-Мансийского автономного округа - Югры;</li>
+                              <li>определение размеров и условий оплаты труда лиц, не замещающих должности муниципальной службы и исполняющих обязанности по техническому обеспечению деятельности органов местного самоуправления городского округа;</li>
+                              <li>утверждение местных нормативов градостроительного проектирования городского округа;</li>
+                              <li>утверждение Положения о порядке проведения собраний и конференций граждан;</li>
+                              <li>утверждение программ комплексного развития систем коммунальной инфраструктуры городского округа, требования к которой устанавливаются Правительством Российской Федерации;</li>
+                              <li>утверждение программ комплексного развития транспортной инфраструктуры городского округа, программ комплексного развития социальной инфраструктуры городского округа, разрабатываемых Администрацией города;</li>
+                              <li>участие в процедуре принятия решения о временном осуществлении полномочий органов местного самоуправления городского округа органами государственной власти Ханты-Мансийского автономного округа - Югры;</li>
+                              <li>обращение с ходатайством о введении временной финансовой администрации на территории городского округа в установленном законодательством порядке;</li>
+                              <li>утверждение Регламента Думы города Сургута;</li>
+                              <li>утверждение положения об аппарате Думы города Сургута;</li>
+                              <li>обращение в избирательную комиссию Ханты-Мансийского автономного округа - Югры с ходатайством о возложении полномочий избирательной комиссии муниципального образования городской округ Сургут на территориальную избирательную комиссию в установленном законодательством порядке;</li>
+                              <li>определение уполномоченного органа местного самоуправления города Сургута по регистрации уставов территориального общественного самоуправления;</li>
+                              <li>установление гарантий и компенсаций для лиц, работающих и проживающих в районах Крайнего Севера и приравненных к ним местностях в организациях, финансируемых из местного бюджета; </li>
+                              <li>установление за счет средств местного бюджета (за исключением финансовых средств, передаваемых местному бюджету на осуществление целевых расходов) дополнительных мер социальной поддержки и социальной помощи для отдельных категорий граждан;</li>
+                              <li>установление дополнительных оснований и иных условий предоставления отсрочки и рассрочки по уплате местных налогов, пеней и штрафов;</li>
+                              <li>заслушивает ежегодные отчеты Главы города о результатах его деятельности и деятельности Администрации города, в том числе о решении вопросов, поставленных Думой города;</li>
+                              <li>устанавливает требования к ежегодным отчетам Главы города о результатах его деятельности и деятельности Администрации города, в том числе о решении вопросов, поставленных Думой города; </li>
+                              <li> установление порядка проведения конкурса по отбору кандидатур на должность Главы города, общего числа членов конкурсной комиссии в городском округе, назначение половины членов конкурсной комиссии;</li>
+                              <li>установление порядка назначения, перерасчета и выплаты пенсии за выслугу лет лицам, замещавшим муниципальные должности на постоянной основе и должности муниципальной службы городского округа; </li>
+                              <li>рассмотрение отчетов должностных лиц полиции в соответствии с законодательством; </li>
+                              <li>утверждение порядка осмотра зданий, сооружений в целях оценки их технического состояния и надлежащего технического обслуживания в соответствии с требованиями технических регламентов к конструктивным и другим характеристикам надежности и безопасности объектов, требованиями проектной документации указанных объектов; </li>
+                              <li>установление границ территории, на которой может быть создана народная дружина;</li>
+                              <li>утверждение Правил землепользования и застройки на территории города Сургута; </li>
+                              <li>определение последовательности и порядка разработки документов стратегического планирования и их содержания в соответствии с законодательством; </li>
+                              <li>согласовывает план мероприятий по реализации стратегии социально-экономического развития муниципального образования городской округ Сургут; </li>
+                              <li>утверждение порядка освобождения от должности лиц, замещающих муниципальные должности в органах местного самоуправления городского округа Сургут, в связи с утратой доверия;</li>
+                              <li>утверждение порядка проведения антикоррупционной экспертизы проектов нормативных правовых актов и действующих нормативных правовых актов Думы города; </li>
+                              <li>создание при Думе города комиссии по противодействию коррупции; </li>
+                              <li>установление порядка ведения перечня видов муниципального контроля и органов местного самоуправления, уполномоченных на их осуществление; </li>
+                              <li>утверждение порядка принятия решения о применении к депутату, члену выборного органа местного самоуправления, выборному должностному лицу местного самоуправления мер ответственности, указанных в Федеральном законе от 06.10.2003 № 131-ФЗ «Об общих принципах организации местного самоуправления в Российской Федерации», в соответствии с законом Ханты-Мансийского автономного округа – Югры;</li>
+                              <li>установление случаев и порядка предоставления бюджетам других муниципальных образований субсидий из бюджета города в целях софинансирования расходных обязательств, возникающих при выполнении полномочий органов местного самоуправления по решению вопросов местного значения; </li>
+                              <li>принятие муниципальных правовых актов в сфере противодействия коррупции в отношении лиц, замещающих муниципальные должности, за исключением вопросов, отнесенных к компетенции Главы города; </li>
+                              <li>принятие нормативных правовых актов, регулирующих условия и порядок заключения соглашений о защите и поощрении капиталовложений со стороны городского округа; </li>
+                              <li>определение порядка расчета и возврата сумм инициативных платежей, подлежащих возврату лицам (в том числе организациям), осуществившим их перечисление в местный бюджет;</li>
+                              <li>установление порядка определения части территории городского округа, на которой могут реализовываться инициативные проекты; </li>
+                              <li>установление порядка выдвижения, внесения, обсуждения, рассмотрения инициативных проектов, а также проведения их конкурсного отбора;</li>
+                              <li>принятие решения об удалении Главы города в отставку, в случаях, указанных в статье 33 Устава города;</li>
+                              <li>принятие решения о досрочном прекращении полномочий Главы города по основаниям, указанным в статье 33 Устава города; </li>
+                              <li>принятие решения об объявлении конкурса по отбору кандидатур на должность Главы города;</li>
+                              <li>назначение исполняющего обязанности Главы города в соответствии со статьёй 33 Устава города;</li>
+                              <li>утверждение Положения о территориальном общественном самоуправлении;</li>
+                              <li>установление порядка осуществления муниципальных заимствований.</li>
+                            </ol>
+                          </div>
+                          <button class="button button_blue dm-about-power-button    " onclick="showDmPowers()" title="" role="button" aria-label="Подробнее..."><span class="button_span">Подробнее...</span>
+                          </button>
+                        </div>
                       </div>
-                      <div class="dm-about-power-hidden">
-                        <ol start="6">
-                          <li>определение порядка принятия решений о создании, реорганизации и ликвидации муниципальных предприятий, а также об установлении тарифов на услуги муниципальных предприятий и учреждений, выполнение работ, за исключением случаев, предусмотренных федеральными законами;</li>
-                          <li>определение порядка участия городского округа в организациях межмуниципального сотрудничества;</li>
-                          <li>определение порядка материально-технического и организационного обеспечения деятельности органов местного самоуправления городского округа;</li>
-                          <li>контроль за исполнением органами местного самоуправления городского округа и должностными лицами местного самоуправления городского округа полномочий по решению вопросов местного значения;</li>
-                          <li>принятие решения об удалении Главы города в отставку;</li>
-                          <li>утверждение правил благоустройства территории городского округа.</li>
-                          <li>утверждение описания и порядка использования официальных символов города Сургута;</li>
-                          <li>принятие решения об избрании Главы города в порядке, установленном настоящим Уставом;</li>
-                          <li>установление видов наград, почетных званий городского округа, порядка их вручения и присвоения;</li>
-                          <li>выдвижение инициативы изменения границ городского округа, преобразования городского округа;</li>
-                          <li>выражение согласия населения городского округа при изменении границ или преобразовании городского округа, выражение мнения населения при разделении городского округа в случаях, предусмотренных Федеральным законом от 06.10.2003 № 131-ФЗ «Об общих принципах организации местного самоуправления в Российской Федерации»;</li>
-                          <li>принятие решения о назначении местного референдума, выдвижение совместно с Главой города инициативы проведения местного референдума;</li>
-                          <li>назначение муниципальных выборов в сроки, предусмотренные настоящим Уставом;</li>
-                          <li>назначение голосования по отзыву депутата Думы города, Главы города; </li>
-                          <li>установление границ территорий, на которых осуществляется территориальное общественное самоуправление;</li>
-                          <li>выдвижение инициативы проведения собраний граждан;</li>
-                          <li>назначение собраний граждан, проводимых по инициативе населения городского округа или по собственной инициативе;</li>
-                          <li>выдвижение инициативы проведения конференций граждан; </li>
-                          <li>назначение конференций граждан, проводимых по инициативе населения городского округа или по собственной инициативе; </li>
-                          <li>выдвижение инициативы проведения опроса граждан по вопросам местного значения;</li>
-                          <li>установление порядка назначения и проведения опроса граждан в соответствии с законом Ханты-Мансийского автономного округа - Югры и настоящим Уставом; </li>
-                          <li>принятие решения о назначении опроса граждан, в установленном порядке; </li>
-                          <li>определение порядка организации и проведения публичных слушаний, выдвижение собственной инициативы проведения публичных слушаний;</li>
-                          <li>принятие решений по утверждению и изменению структуры органов местного самоуправления городского округа; </li>
-                          <li>утверждение структуры Администрации города по представлению Главы города;</li>
-                          <li>принятие решения об учреждении соответствующего органа Администрации города в форме муниципального казенного учреждения и утверждение Положения о нем по представлению Главы города;</li>
-                          <li>принятие в пределах своей компетенции муниципальных правовых актов, необходимых для реализации решения, принятого населением на местном референдуме;</li>
-                          <li>образование Контрольно-счетной палаты города;</li>
-                          <li>установление нормативов отчисления в доход местного бюджета части прибыли муниципальных предприятий, остающейся после уплаты налогов и сборов и осуществления иных обязательных платежей, а также части доходов казенных муниципальных учреждений от оказания ими платных услуг, остающейся после уплаты налогов и сборов;</li>
-                          <li>установление порядка привлечения заемных средств городского округа, в том числе путем выпуска муниципальных ценных бумаг;</li>
-                          <li>принятие решений об учреждении межмуниципальных хозяйственных обществ в форме непубличных акционерных обществ и обществ с ограниченной ответственностью для совместного решения вопросов местного значения;</li>
-                          <li>принятие решений об учреждении некоммерческих организаций в форме автономных некоммерческих организаций и фондов;</li>
-                          <li>определение размеров и условий оплаты труда лиц, замещающих муниципальные должности городского округа на постоянной основе, а также Председателя Контрольно-счетной палаты города;</li>
-                          <li>установление размера должностного оклада, а также размера ежемесячных и иных дополнительных выплат муниципальным служащим городского округа и порядка их осуществления в соответствии с законодательством Российской Федерации и Ханты-Мансийского автономного округа - Югры;</li>
-                          <li>определение размеров и условий оплаты труда лиц, не замещающих должности муниципальной службы и исполняющих обязанности по техническому обеспечению деятельности органов местного самоуправления городского округа;</li>
-                          <li>утверждение местных нормативов градостроительного проектирования городского округа;</li>
-                          <li>утверждение Положения о порядке проведения собраний и конференций граждан;</li>
-                          <li>утверждение программ комплексного развития систем коммунальной инфраструктуры городского округа, требования к которой устанавливаются Правительством Российской Федерации;</li>
-                          <li>утверждение программ комплексного развития транспортной инфраструктуры городского округа, программ комплексного развития социальной инфраструктуры городского округа, разрабатываемых Администрацией города;</li>
-                          <li>участие в процедуре принятия решения о временном осуществлении полномочий органов местного самоуправления городского округа органами государственной власти Ханты-Мансийского автономного округа - Югры;</li>
-                          <li>обращение с ходатайством о введении временной финансовой администрации на территории городского округа в установленном законодательством порядке;</li>
-                          <li>утверждение Регламента Думы города Сургута;</li>
-                          <li>утверждение положения об аппарате Думы города Сургута;</li>
-                          <li>обращение в избирательную комиссию Ханты-Мансийского автономного округа - Югры с ходатайством о возложении полномочий избирательной комиссии муниципального образования городской округ Сургут на территориальную избирательную комиссию в установленном законодательством порядке;</li>
-                          <li>определение уполномоченного органа местного самоуправления города Сургута по регистрации уставов территориального общественного самоуправления;</li>
-                          <li>установление гарантий и компенсаций для лиц, работающих и проживающих в районах Крайнего Севера и приравненных к ним местностях в организациях, финансируемых из местного бюджета; </li>
-                          <li>установление за счет средств местного бюджета (за исключением финансовых средств, передаваемых местному бюджету на осуществление целевых расходов) дополнительных мер социальной поддержки и социальной помощи для отдельных категорий граждан;</li>
-                          <li>установление дополнительных оснований и иных условий предоставления отсрочки и рассрочки по уплате местных налогов, пеней и штрафов;</li>
-                          <li>заслушивает ежегодные отчеты Главы города о результатах его деятельности и деятельности Администрации города, в том числе о решении вопросов, поставленных Думой города;</li>
-                          <li>устанавливает требования к ежегодным отчетам Главы города о результатах его деятельности и деятельности Администрации города, в том числе о решении вопросов, поставленных Думой города; </li>
-                          <li> установление порядка проведения конкурса по отбору кандидатур на должность Главы города, общего числа членов конкурсной комиссии в городском округе, назначение половины членов конкурсной комиссии;</li>
-                          <li>установление порядка назначения, перерасчета и выплаты пенсии за выслугу лет лицам, замещавшим муниципальные должности на постоянной основе и должности муниципальной службы городского округа; </li>
-                          <li>рассмотрение отчетов должностных лиц полиции в соответствии с законодательством; </li>
-                          <li>утверждение порядка осмотра зданий, сооружений в целях оценки их технического состояния и надлежащего технического обслуживания в соответствии с требованиями технических регламентов к конструктивным и другим характеристикам надежности и безопасности объектов, требованиями проектной документации указанных объектов; </li>
-                          <li>установление границ территории, на которой может быть создана народная дружина;</li>
-                          <li>утверждение Правил землепользования и застройки на территории города Сургута; </li>
-                          <li>определение последовательности и порядка разработки документов стратегического планирования и их содержания в соответствии с законодательством; </li>
-                          <li>согласовывает план мероприятий по реализации стратегии социально-экономического развития муниципального образования городской округ Сургут; </li>
-                          <li>утверждение порядка освобождения от должности лиц, замещающих муниципальные должности в органах местного самоуправления городского округа Сургут, в связи с утратой доверия;</li>
-                          <li>утверждение порядка проведения антикоррупционной экспертизы проектов нормативных правовых актов и действующих нормативных правовых актов Думы города; </li>
-                          <li>создание при Думе города комиссии по противодействию коррупции; </li>
-                          <li>установление порядка ведения перечня видов муниципального контроля и органов местного самоуправления, уполномоченных на их осуществление; </li>
-                          <li>утверждение порядка принятия решения о применении к депутату, члену выборного органа местного самоуправления, выборному должностному лицу местного самоуправления мер ответственности, указанных в Федеральном законе от 06.10.2003 № 131-ФЗ «Об общих принципах организации местного самоуправления в Российской Федерации», в соответствии с законом Ханты-Мансийского автономного округа – Югры;</li>
-                          <li>установление случаев и порядка предоставления бюджетам других муниципальных образований субсидий из бюджета города в целях софинансирования расходных обязательств, возникающих при выполнении полномочий органов местного самоуправления по решению вопросов местного значения; </li>
-                          <li>принятие муниципальных правовых актов в сфере противодействия коррупции в отношении лиц, замещающих муниципальные должности, за исключением вопросов, отнесенных к компетенции Главы города; </li>
-                          <li>принятие нормативных правовых актов, регулирующих условия и порядок заключения соглашений о защите и поощрении капиталовложений со стороны городского округа; </li>
-                          <li>определение порядка расчета и возврата сумм инициативных платежей, подлежащих возврату лицам (в том числе организациям), осуществившим их перечисление в местный бюджет;</li>
-                          <li>установление порядка определения части территории городского округа, на которой могут реализовываться инициативные проекты; </li>
-                          <li>установление порядка выдвижения, внесения, обсуждения, рассмотрения инициативных проектов, а также проведения их конкурсного отбора;</li>
-                          <li>принятие решения об удалении Главы города в отставку, в случаях, указанных в статье 33 Устава города;</li>
-                          <li>принятие решения о досрочном прекращении полномочий Главы города по основаниям, указанным в статье 33 Устава города; </li>
-                          <li>принятие решения об объявлении конкурса по отбору кандидатур на должность Главы города;</li>
-                          <li>назначение исполняющего обязанности Главы города в соответствии со статьёй 33 Устава города;</li>
-                          <li>утверждение Положения о территориальном общественном самоуправлении;</li>
-                          <li>установление порядка осуществления муниципальных заимствований.</li>
-                        </ol>
-                      </div>
-                      <button class="button button_blue dm-about-power-button    " onclick="showDmPowers()" title=""><span class="button_span">Подробнее...</span>
-                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dm-about-block"> 
-            <div class="dm-about-title"> <span>Почтовый адрес</span></div>
-            <div class="dm-about-mail"> 
-              <p>Ул. Восход, 4, г. Сургут, Ханты-Мансийский автономный округ - Югра, Тюменская область, 628404, Россия.</p>
-              <div class="dm-about-mail-elem"> 
-                <p>Вы можете обратиться:</p>
-                <ul> 
-                  <li>Отдел регистрации и учета обращений граждан, организаций и делопроизводства - каб. 106 (тел. 52-80-19)</li>
-                  <li>Приемная Думы города - каб 201 (тел. 52-83-74)</li>
-                </ul>
-              </div>
-              <div class="dm-about-mail-elem"> 
-                <p>Время работы:</p>
-                <p>Пн-пт 9:00-17:12. Обед 12:30-13:30</p>
-              </div>
-              <div class="dm-about-mail-elem"> 
-                <p>Ближайшие остановки общественного транспорта::</p>
-                <ul> 
-                  <li>"Магазин Изумруд". Автобусы - 1, 2, 3, 6, 11, 14а, 23, 47, 119. Маршрутное такси 96.</li>
-                  <li>"Набережный проспект". Автобусы - 1, 3, 6, 7, 11, 14а, 23, 47, 119.</li>
-                </ul>
+            <div class="dm-about-block"> 
+              <div class="dm-about-title"> <span>Почтовый адрес</span></div>
+              <div class="dm-about-mail"> 
+                <p>Ул. Восход, 4, г. Сургут, Ханты-Мансийский автономный округ - Югра, Тюменская область, 628404, Россия.</p>
+                <div class="dm-about-mail-elem"> 
+                  <p>Вы можете обратиться:</p>
+                  <ul> 
+                    <li>Отдел регистрации и учета обращений граждан, организаций и делопроизводства - каб. 106 (тел. 52-80-19)</li>
+                    <li>Приемная Думы города - каб 201 (тел. 52-83-74)</li>
+                  </ul>
+                </div>
+                <div class="dm-about-mail-elem"> 
+                  <p>Время работы:</p>
+                  <p>Пн-пт 9:00-17:12. Обед 12:30-13:30</p>
+                </div>
+                <div class="dm-about-mail-elem"> 
+                  <p>Ближайшие остановки общественного транспорта::</p>
+                  <ul> 
+                    <li>"Магазин Изумруд". Автобусы - 1, 2, 3, 6, 11, 14а, 23, 47, 119. Маршрутное такси 96.</li>
+                    <li>"Набережный проспект". Автобусы - 1, 3, 6, 7, 11, 14а, 23, 47, 119.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="dm-about-block"> 
-            <div class="dm-about-geo">
-              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa65e03779dbb316f63969b3ec0916ac6a87857cd0ea34f3e5ca4e333ba59da38&amp;amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            <div class="dm-about-block"> 
+              <div class="dm-about-geo">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa65e03779dbb316f63969b3ec0916ac6a87857cd0ea34f3e5ca4e333ba59da38&amp;amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+              </div>
             </div>
-          </div>
-          <div class="dm-about-block">
-            <div class="dm-about-title"> <span>Другая информация</span></div>
-            <div class="links-list"><a class="links-list-item" href="#">Депутаты VI-го созыва
-                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Депутаты V-го созыва
-                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Депутаты IV-го созыва
-                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Депутаты III-го созыва
-                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Депутаты II-го созыва
-                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Депутаты I-го созыва
-                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">Территориальные органы общественного самоуправления
-                <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+            <div class="dm-about-block">
+              <div class="dm-about-title"> <span>Другая информация</span></div>
+              <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Депутаты VI-го созыва">Депутаты VI-го созыва
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Депутаты V-го созыва">Депутаты V-го созыва
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Депутаты IV-го созыва">Депутаты IV-го созыва
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Депутаты III-го созыва">Депутаты III-го созыва
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Депутаты II-го созыва">Депутаты II-го созыва
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Депутаты I-го созыва">Депутаты I-го созыва
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Территориальные органы общественного самоуправления">Территориальные органы общественного самоуправления
+                  <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
+              </div>
             </div>
           </div>
         </div>
@@ -560,34 +570,75 @@
       <div class="footer_container">
         <div class="footer_container-top">
           <div class="footer__header"> 
-            <div class="footer__header-links"><a class="footer__main-links" href="/"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+            <div class="footer__header-links"><a class="footer__main-links" href="/" role="link" aria-label="Главная страница"><img class="footer__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
                 <div class="footer__header-links__block"> <span class="footer__title">Администрация Сургута</span><span class="footer__link">Официальный портал</span></div></a>
-              <div class="footer__social-links"><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/vk-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/ok-footer_icon.svg"/></a><a class="footer__link-icon" href="/"><img src="/local/templates/surgut/icons/tg-footer_icon.svg"/></a></div>
+              <div class="footer__social-links" aria-label="Социальные сети"><a class="footer__link-icon" href="/" role="link" aria-label="Страница в социальных сетях Вконтакте"><img src="/local/templates/surgut/icons/vk-footer_icon.svg" alt="Иконка Вконтаке"/></a><a class="footer__link-icon" href="/" role="link" aria-label="Страница в социальных сетях Одноклассники"><img src="/local/templates/surgut/icons/ok-footer_icon.svg" alt="Иконка Одноклассники"/></a><a class="footer__link-icon" href="/" role="link" aria-label="Страница в мессенджере Телеграмм"><img src="/local/templates/surgut/icons/tg-footer_icon.svg" alt="Иконка Телеграмм"/></a></div>
             </div>
           </div>
         </div>
-        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
+        <div class="footer__contacts"> <a class="footer__address" href="https://yandex.ru/maps/973/surgut/house/ulitsa_engelsa_8/Y0oYdQ5kSkQAQFhrfX51c31lZw==/?ll=73.394317%2C61.242164&amp;z=17" target="_blank" role="link" aria-label="Адрес на карте">628400, г. Сургут, ул. Энгельса, 8</a><a class="footer__email" href="mailto:gorod@admsurgut.ru" role="link" aria-label="Написать обращение на электронную почту"> <img class="footer__email-icon" src="/local/templates/surgut/icons/mail-footer_icon.svg" alt="Иконка"/><span class="footer__email-title">gorod@admsurgut.ru   </span></a></div>
         <div class="footer__categories">
-          <ul class="footer__category-content">
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">О Сургуте </h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Сургут сегодня            </a><a class="footer__categorie-link" href="/">История Сургута            </a><a class="footer__categorie-link" href="/">Официальные символы            </a><a class="footer__categorie-link" href="/">Устав Сургута            </a><a class="footer__categorie-link" href="/">Генплан            </a><a class="footer__categorie-link" href="/">Стратегия развития            </a><a class="footer__categorie-link" href="/">Инвестиционный паспорт Сургута            </a><a class="footer__categorie-link" href="/">Инвестору            </a><a class="footer__categorie-link" href="/">Общественные советы города Сургута            </a><a class="footer__categorie-link" href="/">Ими гордится Сургут            </a><a class="footer__categorie-link" href="/">Справочная информация            </a><a class="footer__categorie-link" href="/">Интерактивные карты Сургута            </a><a class="footer__categorie-link" href="/">Градостроительная деятельность            </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Сургут сегодня">Сургут сегодня            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="История Сургута">История Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Официальные символы">Официальные символы            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Устав Сургута">Устав Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Генплан">Генплан            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Стратегия развития">Стратегия развития            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Инвестиционный паспорт Сургута">Инвестиционный паспорт Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Инвестору">Инвестору            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Общественные советы города Сургута">Общественные советы города Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ими гордится Сургут">Ими гордится Сургут            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Справочная информация">Справочная информация            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Интерактивные карты Сургута">Интерактивные карты Сургута            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Градостроительная деятельность">Градостроительная деятельность            </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Городская власть</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Глава города             </a><a class="footer__categorie-link" href="/">Дума города             </a><a class="footer__categorie-link" href="/">Администрация             </a><a class="footer__categorie-link" href="/">Контрольно-счётная палата             </a><a class="footer__categorie-link" href="/">Законодательная карта             </a><a class="footer__categorie-link" href="/">Территориальная избирательная комиссия             </a><a class="footer__categorie-link" href="/">Государственные органы             </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Глава города">Глава города             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Дума города">Дума города             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Администрация">Администрация             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Контрольно-счётная палата">Контрольно-счётная палата             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Законодательная карта">Законодательная карта             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Территориальная избирательная комиссия">Территориальная избирательная комиссия             </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Государственные органы">Государственные органы             </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Документы</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Важные документы для горожан            </a><a class="footer__categorie-link" href="/">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a><a class="footer__categorie-link" href="/">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a><a class="footer__categorie-link" href="/">Решения Думы города            </a><a class="footer__categorie-link" href="/">Постановления Главы города            </a><a class="footer__categorie-link" href="/">Распоряжения Главы города            </a><a class="footer__categorie-link" href="/">Постановления Администрации города            </a><a class="footer__categorie-link" href="/">Распоряжения Администрации города            </a><a class="footer__categorie-link" href="/">Постановления Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a><a class="footer__categorie-link" href="/">Муниципальные программы            </a><a class="footer__categorie-link" href="/">Порядок обжалования муниципальных правовых актов            </a><a class="footer__categorie-link" href="/">Антимонопольный комплаенс            </a>
-            </li>
-          </ul>
-          <ul class="footer__category-content">
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Важные документы для горожан">Важные документы для горожан            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Проекты документов: антикоррупционная экспертиза и общественное обсуждение">Проекты документов: антикоррупционная экспертиза и общественное обсуждение            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)">Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Решения Думы города">Решения Думы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Главы города">Постановления Главы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Главы города">Распоряжения Главы города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Администрации города">Постановления Администрации города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Администрации города">Распоряжения Администрации города            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Постановления Мэра и администрации города до 12.04.2005 г.">Постановления Мэра и администрации города до 12.04.2005 г.            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Распоряжения Мэра и администрации города до 12.04.2005 г.">Распоряжения Мэра и администрации города до 12.04.2005 г.            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Муниципальные программы">Муниципальные программы            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Порядок обжалования муниципальных правовых актов">Порядок обжалования муниципальных правовых актов            </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Антимонопольный комплаенс">Антимонопольный комплаенс            </a></li>
+            </ul>
+          </div>
+          <div class="footer__category-content">
             <h5 class="footer__categorie-title">Категория</h5>
-            <li class="footer__categorie-links"><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a><a class="footer__categorie-link" href="/">Ссылка                                    </a>
-            </li>
-          </ul>
+            <ul class="footer__categorie-links" role="group">
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+              <li><a class="footer__categorie-link" href="/" role="link" aria-label="Ссылка">Ссылка                                    </a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

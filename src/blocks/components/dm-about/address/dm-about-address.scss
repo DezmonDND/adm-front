@@ -1,0 +1,15 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.dm-about-mail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &-elem {
+        p {
+            &:first-child {
+                font-weight: 500;
+            }
+        }
+    }
+}

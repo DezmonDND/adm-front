@@ -1,5 +1,24 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+
+body.tmp-duma {
+    .button-popup__content {
+        left: -75px;
+
+        @include respond-to(md) {
+            left: -152px;
+        }
+
+        .header__social-icon {
+            
+            filter: invert(53%) sepia(33%) saturate(7147%) hue-rotate(186deg) brightness(96%) contrast(80%);
+            &:hover {
+                filter: invert(28%) sepia(100%) saturate(1168%) hue-rotate(185deg) brightness(97%) contrast(93%);
+            }
+        }
+    }
+}
+
 .button_share:hover~.button-popup__content {
     display: flex;
 }
@@ -7,7 +26,7 @@
 .button-popup__content {
     display: none;
     position: absolute;
-    top: 43px;
+    top: 15px;
     left: -60%;
     z-index: 1;
 

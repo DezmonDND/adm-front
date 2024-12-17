@@ -4,15 +4,15 @@
     <div class="menu menu_duma-bg">
       <div class="menu__container">
         <div class="menu__content"> 
-          <div class="menu__buttons"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+          <div class="menu__buttons"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
               <div class="header__main-links__block"> <span class="header__title">Администрация Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-            <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+            <button class="button button_close button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button">
               <ion-icon class="icon" name="close-outline"></ion-icon>
             </button>
           </div>
           <form class="search search-header-mobile">
-            <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+            <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="number" value="" id="number" role="textbox"/>
+            <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
               <ion-icon class="icon" name="search-outline"></ion-icon>
             </button>
           </form>
@@ -26,13 +26,13 @@
         </div>
         <div class="menu__bot">
           <div class="menu__socials"> 
-            <div class="header__socials"><a class="vk_icon-mobile header__social-icon" href="/"></a><a class="ok_icon-mobile header__social-icon" href="/"></a><a class="tg_icon-mobile header__social-icon" href="/"></a>
+            <div class="header__socials"><a class="header__social-icon vk_icon-mobile" href="/" role="link"></a><a class="header__social-icon ok_icon-mobile" href="/" role="link"></a><a class="header__social-icon tg_icon-mobile" href="/" role="link"></a>
             </div>
-            <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="">
+            <button class="button button_white button__eye button_size_xs button_without-text  " onclick="visibility()" title="" role="button">
               <ion-icon class="icon" name="eye-outline"></ion-icon>
             </button>
           </div>
-          <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title=""><span class="button_span">Войти</span>
+          <button class="button button_blue button__login button_size_m   " onclick="showLogin()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
           </button>
         </div>
       </div>
@@ -68,28 +68,29 @@
     </div>
   </div>
   <div class="header-duma__container">
-    <div class="header__top-content"> <a class="header__main-links" href="/"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
+    <div class="header__top-content"> <a class="header__main-links" href="/" role="link" title="Главная" aria-label="Главная страница"><img class="header__logo" src="/local/templates/surgut/icons/footer-logo_icon.svg" alt="Логотип"/>
         <div class="header__main-links__block"> <span class="header__title">Дума Сургута</span><span class="header__main-link">Официальный портал</span></div></a>
-      <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="">
+      <button class="button button_burger button_size_xs button_without-text  " onclick="toggleMenu()" title="" role="button" aria-label="">
         <ion-icon class="icon" name="menu-outline"></ion-icon>
       </button>
       <form class="search search-header-duma">
-        <input class="input input_s  input-search input-search-s " placeholder="Поиск по сайту" name="number" value="" id="number"/>
-        <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="">
+        <input class="input input_s  input-search input-search-s  " placeholder="Поиск по сайту" name="dm-by-site-search" value="" id="dm-by-site-search" role="textbox"/>
+        <button class="button button_blue search__button search__button_s  button_without-text  " onclick="1" title="" role="button" aria-label="Поиск">
           <ion-icon class="icon" name="search-outline"></ion-icon>
         </button>
       </form>
       <div class="header__buttons"> 
-        <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title=""><span class="button_span">Версия для слабовидящих</span>
+        <button class="button button_white button__eye button_size_xs  button_icon-left " onclick="visibility()" title="" role="button" aria-label="Версия для слабовидящих"><span class="button_span">Версия для слабовидящих</span>
           <ion-icon class="icon" name="eye-outline"></ion-icon>
         </button>
-        <button class="button button_blue button_size_s   " onclick="anotherFunction()" title=""><span class="button_span">Служебный вход</span>
+        <button class="button button_blue button_size_s   " onclick="anotherFunction()" title="" role="button" aria-label="Служебный вход"><span class="button_span">Служебный вход</span>
         </button>
       </div>
     </div>
     <div class="header__bottom-content">  
       <ul class="header_links">
-        <li class="header__link"><span>О Думе города</span>
+        <li class="header__link" aria-expanded="false">
+          <button style="all:unset" role="button" aria-label="О Думе города" tabindex="-1">О Думе города</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
@@ -111,7 +112,8 @@
             </div>
           </div>
         </li>
-        <li class="header__link"><span>Состав и структура</span>
+        <li class="header__link" aria-expanded="false">
+          <button style="all:unset" role="button" aria-label="Состав и структура" tabindex="-1">Состав и структура</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
@@ -133,7 +135,8 @@
             </div>
           </div>
         </li>
-        <li class="header__link"><span>Документы</span>
+        <li class="header__link" aria-expanded="false">
+          <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
@@ -155,7 +158,8 @@
             </div>
           </div>
         </li>
-        <li class="header__link"><span>Деятельность</span>
+        <li class="header__link" aria-expanded="false">
+          <button style="all:unset" role="button" aria-label="Деятельность" tabindex="-1">Деятельность</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
@@ -177,9 +181,9 @@
             </div>
           </div>
         </li>
-        <li class="header__link"> <a href="/">Обратная связь          </a></li>
+        <li class="header__link" aria-label="Обратная связь"> <a href="/" tabindex="-1">Обратная связь          </a></li>
       </ul>
-      <div class="header__socials"><a class="vk_icon-duma header__social-icon" href="/"></a><a class="ok_icon-duma header__social-icon" href="/"></a>
+      <div class="header__socials"><a class="header__social-icon vk_icon-duma" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon-duma" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a>
       </div>
     </div>
   </div>
@@ -196,17 +200,17 @@
         <div class="login__content-main__subtitle"><span>Мы отправим код или позвоним по номеру телефона. Отвечать на звонок не нужно. Код придет в виде СМС на мобильный телефон</span></div>
       </div>
       <div class="login__content-main__input">
-        <input class="input     " placeholder="Номер телефона" value=""/>
+        <input class="input      " placeholder="Номер телефона" value="" role="textbox"/>
       </div>
       <div class="login__content-main__confirm-standart">
-        <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+        <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
         </button>
       </div>
       <div class="login__content-main__confirm-delim"> 
         <div class="delim-line"></div><span> или </span>
         <div class="delim-line"> </div>
       </div>
-      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title=""><span class="button_span">Войти через госуслуги</span></a>
+      <div class="login__content-main__confirm-gos"><a class="button button_link button_white button_size_m  " href="/" title="" role="link" aria-label="Войти через госуслуги"><span class="button_span">Войти через госуслуги</span></a>
       </div>
       <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
     </div>
@@ -224,11 +228,11 @@
         <div class="login__content-main__subtitle"><span>Мы отправили код подтверждения на номер 22222</span></div>
       </div>
       <div class="login__content-main__input">
-        <input class="input     " placeholder="Код" value=""/>
+        <input class="input      " placeholder="Код" value="" role="textbox"/>
       </div>
       <!-- Если код неверный то инпут меняется на этот-->
       <div class="login__content-main__input wrong-code">
-        <input class="input     " placeholder="Код" value=""/><span>Неверный код, попробуйте еще раз</span>
+        <input class="input      " placeholder="Код" value="" role="textbox"/><span>Неверный код, попробуйте еще раз</span>
       </div>
       <div class="login__content-main__confirm-email"><span onclick="showEmail()">Войти по почте </span></div>
     </div>
@@ -246,10 +250,10 @@
         <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
       </div>
       <div class="login__content-main__input">
-        <input class="input     " placeholder="Электронная почта" value=""/>
+        <input class="input      " placeholder="Электронная почта" value="" role="textbox"/>
       </div>
       <div class="login__content-main__confirm-standart">
-        <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+        <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
         </button>
       </div>
       <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>

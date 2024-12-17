@@ -10,9 +10,10 @@ const hearingEventPopupHTML = (event) => {
     topContent.className = 'hearing-event-popup__top-content';
     container.appendChild(topContent);
 
-    const title = document.createElement('div');
+    const title = document.createElement('a');
     title.className = 'hearing-event-popup__title';
     title.textContent = event.title;
+    title.href = event.extendedProps.title_link;
     topContent.appendChild(title);
 
     const popupButtons = document.createElement('div');
@@ -25,7 +26,7 @@ const hearingEventPopupHTML = (event) => {
     shareButtonIcon.name = 'share-social-outline';
     shareButton.appendChild(shareButtonIcon);
     shareButton.className = 'button files-list__delete-button hearing-event-popup__share-button';
-    shareButton.addEventListener('click', getLink);
+    shareButton.addEventListener('click', getTitleLink);
     popupButtons.appendChild(shareButton);
 
     const closeButton = document.createElement('button');
@@ -55,7 +56,7 @@ const hearingEventPopupHTML = (event) => {
         descTitle.textContent = titleText;
         bottomTextBlock.appendChild(descTitle);
 
-        if (link) {          
+        if (link) {
             const linkEl = document.createElement('a');
             linkEl.className = 'link hearing-event-popup__desc-text';
             linkEl.href = link;
@@ -104,3 +105,9 @@ jQuery(function ($) {
         }
     });
 });
+
+function getTitleLink() {
+    const popup = document.querySelector('.hearing-event-popup__top-content');
+    const link = popup.querySelector('.hearing-event-popup__title');
+    window.navigator.clipboard.writeText(link.href);
+}

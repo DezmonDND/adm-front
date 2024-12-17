@@ -11,10 +11,10 @@
         <div class="login__content-main__subtitle"><span>Только для зарегистрированных пользователей</span></div>
       </div>
       <div class="login__content-main__input">
-        <input class="input     " placeholder="Электронная почта" value=""/>
+        <input class="input      " placeholder="Электронная почта" value="" role="textbox"/>
       </div>
       <div class="login__content-main__confirm-standart">
-        <button class="button button_blue button_size_m   " onclick="showCode()" title=""><span class="button_span">Войти</span>
+        <button class="button button_blue button_size_m   " onclick="showCode()" title="" role="button" aria-label="Войти"><span class="button_span">Войти</span>
         </button>
       </div>
       <div class="login__content-main__confirm-email"><span onclick="showLogin()">Вернуться на главный экран входа</span></div>

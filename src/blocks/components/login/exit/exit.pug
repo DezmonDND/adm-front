@@ -1,0 +1,15 @@
+
+mixin exit()
+    .overlay.hidden
+    .exit.hidden
+        .login__content
+            .login__content-top
+                ion-icon(name = "close-outline", class = 'icon', onclick = 'hideExit()')
+            .login__content-main
+                .login__content-main__text
+                    .login__content-main__title
+                        span Вы действительно хотите выйти из аккаунта?
+                    .login__content-main__subtitle
+                        span Вы можете войти обратно в любой момент 
+                .login__content-main__confirm-email
+                    span(onclick = '') Да, выйти из аккаунта

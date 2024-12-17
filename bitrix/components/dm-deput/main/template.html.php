@@ -10,8 +10,8 @@
         </div>
       </div>
       <div class="dm-deput-left-info">
-        <div class="links-list"><a class="links-list-item" href="#">Электронная приемная
-            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#">График приема по личным вопросам
+        <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Электронная приемная">Электронная приемная
+            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="График приема по личным вопросам">График приема по личным вопросам
             <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
         </div>
         <div class="dm-deput-info-text"> 
@@ -23,7 +23,7 @@
             <p>Шипук Ярослав Николаевич<br/>Тел.: 89222541324<br/>Тел.: 89495720774</p>
           </div>
         </div>
-        <div class="links-list"><a class="links-list-item" href="#">Избирательный округ №3
+        <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Избирательный округ №3">Избирательный округ №3
             <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
         </div>
       </div>

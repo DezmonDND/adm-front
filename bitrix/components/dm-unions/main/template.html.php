@@ -2,7 +2,7 @@
 <div class="dm-unions"> 
   <div class="dm-unions__content"><a class="dm-unions-elem" href="#">
       <div class="dm-unions-elem__container">
-        <div class="dm-unions-elem__left"><img class="dm-unions-elem__img" src="./resources/kirilenko_avatar.png"/></div>
+        <div class="dm-unions-elem__left"><img class="dm-unions-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/></div>
         <div class="dm-unions-elem__right">
           <div class="dm-unions-elem__top">
             <div class="dm-unions-elem__info-name"><span>Единая Россия</span></div>
@@ -15,7 +15,7 @@
         </div>
       </div></a><a class="dm-unions-elem" href="#">
       <div class="dm-unions-elem__container">
-        <div class="dm-unions-elem__left"><img class="dm-unions-elem__img" src="./resources/kirilenko_avatar.png"/></div>
+        <div class="dm-unions-elem__left"><img class="dm-unions-elem__img" src="./resources/kirilenko_avatar.png" alt="Изображение"/></div>
         <div class="dm-unions-elem__right">
           <div class="dm-unions-elem__top">
             <div class="dm-unions-elem__info-name"><span>ЛДПР</span></div>

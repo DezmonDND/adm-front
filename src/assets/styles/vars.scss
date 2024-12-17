@@ -93,6 +93,12 @@ $breakpoint-xs: 550px;
     filter: invert(55%) sepia(88%) saturate(3553%) hue-rotate(28deg) brightness(99%) contrast(81%);
 }
 
+// Фокус для таббинга
+@mixin focus-visible {
+    outline: 3px solid orange;
+    outline-offset: -3px;
+}
+
 // Mixin colors
 @mixin visible-lines($num) {
     display: -webkit-box;
@@ -148,6 +154,8 @@ $breakpoint-xs: 550px;
     padding: 0;
 
     &:hover {
+        background-color: transparent;
+        border-color: transparent;
         text-decoration: underline;
         color: $primary-color-hover;
     }
