@@ -14,11 +14,16 @@
         margin-right: 12px;
         margin-bottom: 12px;
         border-radius: 1000px;
+        cursor: pointer;
         @include lead-3;
 
         &:hover {
             color: $main-text;
             background: $fourth-text;
+        }
+
+        &:active {
+            background: $fourth-text-inverse;
         }
     }
 

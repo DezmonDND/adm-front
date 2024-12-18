@@ -6519,6 +6519,7 @@ body.tmp-duma .main-title .main-title__container .tabs {
   margin-right: 12px;
   margin-bottom: 12px;
   border-radius: 1000px;
+  cursor: pointer;
   font-weight: 400;
   font-size: calc(20px * var(--scale));
   line-height: calc(24px * var(--lh));
@@ -6532,6 +6533,9 @@ body.tmp-duma .main-title .main-title__container .tabs {
 .tabs-tag .tab-button:hover {
   color: var(--main-text);
   background: var(--fourth-text);
+}
+.tabs-tag .tab-button:active {
+  background: var(--fourth-text-inverse);
 }
 .tabs-tag .tab-button_active {
   background: var(--primary-color);
@@ -11392,7 +11396,6 @@ body.tmp-duma .usefull-links {
   }
 }
 .news-top__container .news-top__card-list {
-  display: flex;
   overflow: hidden;
   width: 66%;
 }
@@ -11764,6 +11767,21 @@ body.tmp-duma .usefull-links {
   position: relative;
   width: 100%;
   height: 450px;
+}
+.init-projects__map .leaflet-control-zoom a:hover {
+  text-decoration: none;
+}
+.init-projects__map .tabs-tag {
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  z-index: 1010;
+  margin: 0 20px;
+  left: 0;
+  right: 0;
+}
+.init-projects__map .tabs-tag .tab-button {
+  border-color: transparent;
 }
 .init-projects__map iframe {
   height: 100%;

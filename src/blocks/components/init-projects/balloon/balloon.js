@@ -1,3 +1,4 @@
+// Массив с данными проектов
 const INIT_PROJECTS = [
     {
         title: 'Общественное пространство "Городской Сад"',
@@ -11,6 +12,7 @@ const INIT_PROJECTS = [
         status: 'Победитель конкурса',
         lat: '61.252172',
         lng: '73.362732',
+        tag: 'Молодежная политика',
     },
     {
         title: 'Наименование инциативного проекта',
@@ -24,6 +26,7 @@ const INIT_PROJECTS = [
         status: 'Победитель конкурса',
         lat: '61.242086',
         lng: '73.394164',
+        tag: 'Муниципальные учреждения',
     },
     {
         title: 'Инициативный проект 3',
@@ -37,9 +40,70 @@ const INIT_PROJECTS = [
         status: 'Победитель конкурса',
         lat: '61.252086',
         lng: '73.404164',
+        tag: 'Спорт',
     },
 ];
 
+// Разметка для карточки проекта
+function createInitProjectHTML(project) {
+    return `
+<a class="init-card" href=${project.link} role="link" aria-label="Карточка инициативного проекта">
+	<div class="init-card__container">
+        <img alt="Изображение проекта" class="init-card__image" src="../resources/${project.image}">
+		<div class="init-card__description">
+			<h4 class="init-card__title">${project.title}</h4>
+			<div class="init-card__content">
+				<div class="init-card__columns">
+					<div class="init-card__row"> 
+                        <span class="init-card__name">Дата внесения</span>
+                        <span class="init-card__text">${project.addDate}</span>
+					</div>
+					<div class="init-card__row"> 
+                        <span class="init-card__name">Общая стоимость</span>
+                        <span class="init-card__text">${project.cost}</span>
+					</div>
+				</div>
+				<div class="init-card__columns">
+					<div class="init-card__row"> 
+                        <span class="init-card__name">Срок реализации</span>
+                        <span class="init-card__text">${project.timeLimit}</span>
+					</div>
+				</div>
+				<div class="init-card__columns">
+					<div class="init-card__row"> 
+                        <span class="init-card__name">Территория реализации</span>
+                        <span class="init-card__text">${project.area}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</a>
+`;
+}
+
+// Создать список проектов
+function createInitProjects() {
+    const projectsList = document.querySelector('.init-projects__list');
+
+    if (projectsList) {
+        INIT_PROJECTS.map((project) => {
+            projectsList.insertAdjacentHTML('beforeend', createInitProjectHTML(project));
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    createInitProjects();
+});
+
+// Закрыть попап на кнопку
+function closeBalloon() {
+    const balloon = document.querySelector('.balloon');
+    balloon.remove();
+}
+
+// Получить ссылку при клике по кнопке
 function getBalloonLink() {
     const balloon = document.querySelector('.balloon');
 
@@ -60,60 +124,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-function createInitProjectHTML(project) {
-    return `
-        <a class="init-card" href=${project.link}>
-        	<div class="init-card__container">
-                <img alt="Изображение проекта" class="init-card__image" src="../resources/${project.image}">
-        		<div class="init-card__description">
-        			<h4 class="init-card__title">${project.title}</h4>
-        			<div class="init-card__content">
-        				<div class="init-card__columns">
-        					<div class="init-card__row"> 
-                                <span class="init-card__name">Дата внесения</span>
-                                <span class="init-card__text">${project.addDate}</span>
-        					</div>
-        					<div class="init-card__row"> 
-                                <span class="init-card__name">Общая стоимость</span>
-                                <span class="init-card__text">${project.cost}</span>
-        					</div>
-        				</div>
-        				<div class="init-card__columns">
-        					<div class="init-card__row"> 
-                                <span class="init-card__name">Срок реализации</span>
-                                <span class="init-card__text">${project.timeLimit}</span>
-        					</div>
-        				</div>
-        				<div class="init-card__columns">
-        					<div class="init-card__row"> 
-                                <span class="init-card__name">Территория реализации</span>
-                                <span class="init-card__text">${project.area}</span>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </a>
-        `;
-}
+function initMap() {
+    const mapContainer = document.getElementById('map');
 
-function createInitProjects() {
-    const projectsList = document.querySelector('.init-projects__list');
+    if (mapContainer) {
+        // Разметка для балуна
+        function showBalloon(project) {
+            const map = document.querySelector('.init-projects__map');
 
-    if (projectsList) {
-        INIT_PROJECTS.map((project) => {
-            projectsList.insertAdjacentHTML('beforeend', createInitProjectHTML(project));
-        });
-    }
-}
-
-createInitProjects();
-
-function showBalloon(project) {
-    const map = document.querySelector('.init-projects__map');
-
-    if (map) {
-        const balloonHTML = `
+            if (map) {
+                const balloonHTML = `
             <div class="balloon"> 
                 <div class="balloon-title">
                     <div class="balloon-name"> 
@@ -156,76 +176,175 @@ function showBalloon(project) {
             </div>
         `;
 
-        const balloons = document.querySelectorAll('.balloon');
-        if (balloons) {
-            balloons.forEach((el) => {
-                el.remove();
+                const balloons = document.querySelectorAll('.balloon');
+                if (balloons) {
+                    balloons.forEach((el) => {
+                        el.remove();
+                    });
+                }
+
+                map.insertAdjacentHTML('beforeend', balloonHTML);
+            }
+        }
+
+        // Карта
+        const map = L.map('map').setView([61.252172, 73.362732], 13);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        // Удалить логотипы разработчика
+        var attributionControl = map.attributionControl;
+        attributionControl.remove();
+
+        // Кастомная иконка
+        const myIcon = L.divIcon({ className: 'my-div-icon' });
+
+        // Создать маркеры на карте для каждого балуна
+        function addMarkers() {
+            INIT_PROJECTS.map((project) => {
+                const markerOptions = {
+                    title: `${project.title}`,
+                    clickable: true,
+                    draggable: false,
+                    icon: myIcon,
+                };
+
+                const marker = L.marker([project.lat, project.lng], markerOptions).addTo(map);
+                marker.tagId = project.tag;
+                return marker;
             });
         }
 
-        map.insertAdjacentHTML('beforeend', balloonHTML);
-    }
-}
+        addMarkers();
 
-document.addEventListener('click', (e) => {});
+        // Открыть попап при клике по маркеру
+        document.addEventListener('DOMContentLoaded', (e) => {
+            const markers = document.querySelectorAll('.leaflet-marker-icon');
+            markers.forEach((marker) => {
+                marker.addEventListener('click', (e) => {
+                    const currentProject = INIT_PROJECTS.find(function findProject(el) {
+                        return el.title === e.target.getAttribute('title');
+                    });
 
-// Карта
-const map = L.map('map').setView([61.252172, 73.362732], 13);
-
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-}).addTo(map);
-
-const myIcon = L.divIcon({ className: 'my-div-icon' });
-
-function addMarkers() {
-    INIT_PROJECTS.map((project) => {
-        const markerOptions = {
-            title: `${project.title}`,
-            clickable: true,
-            draggable: false,
-            icon: myIcon,
-        };
-
-        return L.marker([project.lat, project.lng], markerOptions).addTo(map);
-    });
-}
-addMarkers();
-
-document.addEventListener('DOMContentLoaded', (e) => {
-    const markers = document.querySelectorAll('.leaflet-marker-icon');
-    markers.forEach((marker) => {
-        marker.addEventListener('click', (e) => {
-            const currentProject = INIT_PROJECTS.find(function findProject(el) {
-                return el.title === e.target.getAttribute('title');
+                    showBalloon(currentProject);
+                });
             });
-
-            showBalloon(currentProject);
         });
-    });
-});
 
-function closeBalloon() {
-    const balloon = document.querySelector('.balloon');
-    balloon.remove();
-}
+        // Закрыть попап при клике вне попапа
+        document.addEventListener('click', (e) => {
+            const balloon = document.querySelector('.balloon');
+            const markers = document.querySelectorAll('.leaflet-marker-icon');
 
-document.addEventListener('click', (e) => {
-    const balloon = document.querySelector('.balloon');
-    const markers = document.querySelectorAll('.leaflet-marker-icon');
+            if (balloon) {
+                let isClickInsideMarker = false;
 
-    if (balloon) {
-        let isClickInsideMarker = false;
+                markers.forEach((marker) => {
+                    if (marker.contains(e.target)) {
+                        isClickInsideMarker = true;
+                    }
+                });
 
-        markers.forEach((marker) => {
-            if (marker.contains(e.target)) {
-                isClickInsideMarker = true;
+                if (!balloon.contains(e.target) && !isClickInsideMarker) {
+                    balloon.remove();
+                }
             }
         });
 
-        if (!balloon.contains(e.target) && !isClickInsideMarker) {
-            balloon.remove();
+        // Создать панель тегов
+        // function createTagHTML(project) {
+        //     return `
+        //         <button class='tab-button' data-tag-value=${project.tag} onclick='1'>${project.tag}</button>
+        //     `;
+        // }
+
+        function createTagHTML(project) {
+            const button = document.createElement('button');
+            button.classList.add('tab-button');
+            button.setAttribute('data-tag-value', project.tag);
+            button.textContent = project.tag;
+            return button;
         }
+
+        function createTagsList() {
+            const map = document.querySelector('.init-projects__map');
+
+            if (map && INIT_PROJECTS) {
+                const tagList = document.createElement('div');
+                tagList.classList.add('tabs-tag');
+                map.appendChild(tagList);
+
+                INIT_PROJECTS.map((project) => {
+                    tagList.append(createTagHTML(project));
+                    // tagList.insertAdjacentHTML('beforeend', createTagHTML(project));
+                });
+            }
+        }
+
+        createTagsList();
+
+        // Получить все маркеры с карты
+        function getAllMarkersFromMap() {
+            const markers = [];
+            for (const layerId in map._layers) {
+                const layer = map._layers[layerId];
+                if (layer instanceof L.Marker) {
+                    markers.push(layer);
+                }
+            }
+            return markers;
+        }
+
+        let allMarkers = getAllMarkersFromMap();
+
+        // Отфильтровать балуны
+        function filterBalloons() {
+            const mapElement = document.querySelector('.init-projects__map');
+
+            if (mapElement) {
+                const tags = mapElement.querySelectorAll('.tab-button');
+                tags.forEach((tag) => {
+                    tag.classList.add('tab-button_active');
+                });
+
+                tags.forEach((tag) => {
+                    tag.addEventListener('click', (e) => {
+                        e.target.classList.toggle('tab-button_active');
+
+                        const filteredMarkers = allMarkers.filter((marker) => {
+                            return (
+                                marker.tagId.toLowerCase() ===
+                                e.target.dataset.tagValue.toLowerCase()
+                            );
+                        });
+
+                        filteredMarkers.forEach((marker) => {
+                            const markerElement = marker.getElement();
+
+                            if (markerElement) {
+                                markerElement.style.display = 'none';
+
+                                if (e.target.classList.contains('tab-button_active')) {
+                                    markerElement.style.display = 'block';
+                                }
+                            }
+                            // map.removeLayer(marker);
+                            // marker.setOpacity(0);
+
+                            // if (e.target.classList.contains('tab-button_active')) {
+                            //     // map.addLayer(marker);
+                            //     marker.setOpacity(1);
+                            // }
+                        });
+                    });
+                });
+            }
+        }
+
+        filterBalloons();
     }
-});
+}
+
+initMap();
