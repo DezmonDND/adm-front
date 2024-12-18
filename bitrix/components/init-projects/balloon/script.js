@@ -42,6 +42,76 @@ const INIT_PROJECTS = [
         lng: '73.404164',
         tag: 'Спорт',
     },
+    {
+        title: 'Инициативный проект 4',
+        addDate: '11 ноября 2024',
+        cost: '8 178 321,00',
+        timeLimit: '3 года',
+        initiator: 'Администрация',
+        area: 'Центр города',
+        image: 'image_6.jpg',
+        link: '3',
+        status: 'Победитель конкурса',
+        lat: '61.252086',
+        lng: '73.504164',
+        tag: 'транспортные остановки',
+    },
+    {
+        title: 'Инициативный проект 5',
+        addDate: '11 ноября 2024',
+        cost: '8 178 321,00',
+        timeLimit: '3 года',
+        initiator: 'Администрация',
+        area: 'Центр города',
+        image: 'image_2.jpg',
+        link: '3',
+        status: 'Победитель конкурса',
+        lat: '61.252086',
+        lng: '73.454164',
+        tag: 'образование',
+    },
+    {
+        title: 'Инициативный проект 6',
+        addDate: '11 ноября 2024',
+        cost: '8 178 321,00',
+        timeLimit: '3 года',
+        initiator: 'Администрация',
+        area: 'Центр города',
+        image: 'image_3.jpg',
+        link: '3',
+        status: 'Победитель конкурса',
+        lat: '61.252086',
+        lng: '73.304164',
+        tag: 'здравоохранение',
+    },
+    {
+        title: 'Инициативный проект 7',
+        addDate: '11 ноября 2024',
+        cost: '8 178 321,00',
+        timeLimit: '3 года',
+        initiator: 'Администрация',
+        area: 'Центр города',
+        image: 'image_4.jpg',
+        link: '3',
+        status: 'Победитель конкурса',
+        lat: '61.252086',
+        lng: '73.324164',
+        tag: 'культура',
+    },
+    {
+        title: 'Инициативный проект 8',
+        addDate: '11 ноября 2024',
+        cost: '8 178 321,00',
+        timeLimit: '3 года',
+        initiator: 'Администрация',
+        area: 'Центр города',
+        image: 'monument_image.png',
+        link: '3',
+        status: 'Победитель конкурса',
+        lat: '61.262086',
+        lng: '73.404164',
+        tag: 'Молодежная политика',
+    },
 ];
 
 // Разметка для карточки проекта
@@ -101,6 +171,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function closeBalloon() {
     const balloon = document.querySelector('.balloon');
     balloon.remove();
+    document.querySelector('body').classList.remove('balloon_overlay');
+    document.querySelector('header').classList.remove('balloon_overlay-opacity');
+    document.querySelector('.tabs-tag').classList.remove('balloon_overlay-opacity');
+    document.getElementById('map').classList.remove('balloon_overlay-opacity');
 }
 
 // Получить ссылку при клике по кнопке
@@ -188,7 +262,7 @@ function initMap() {
         }
 
         // Карта
-        const map = L.map('map').setView([61.252172, 73.362732], 13);
+        const map = L.map('map').setView([61.252172, 73.362732], 12);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
@@ -198,12 +272,36 @@ function initMap() {
         var attributionControl = map.attributionControl;
         attributionControl.remove();
 
-        // Кастомная иконка
-        const myIcon = L.divIcon({ className: 'my-div-icon' });
+        function getIcon(project) {
+            const tag = project.tag.toLowerCase();
+            if (tag === 'муниципальные учреждения') {
+                return 'municipal_init-icon.svg';
+            } else if (tag === 'инициативные проекты') {
+                return 'project_init-icon.svg';
+            } else if (tag === 'спорт') {
+                return 'sport_init-icon.svg';
+            } else if (tag === 'транспортные остановки') {
+                return 'bus_init-icon.svg';
+            } else if (tag === 'образование') {
+                return 'education_init-icon.svg';
+            } else if (tag === 'здравоохранение') {
+                return 'health_init-icon.svg';
+            } else if (tag === 'культура') {
+                return 'culture_init-icon.svg';
+            } else if (tag === 'молодежная политика') {
+                return 'jung-policy_init-icon.svg';
+            }
+        }
 
         // Создать маркеры на карте для каждого балуна
         function addMarkers() {
             INIT_PROJECTS.map((project) => {
+                // Кастомная иконка
+                const myIcon = L.icon({
+                    iconUrl: `../icons/${getIcon(project)}`,
+                    className: 'balloon-icon',
+                });
+
                 const markerOptions = {
                     title: `${project.title}`,
                     clickable: true,
@@ -229,6 +327,10 @@ function initMap() {
                     });
 
                     showBalloon(currentProject);
+                    // document.querySelector('body').classList.add('balloon_overlay');
+                    // document.querySelector('header').classList.add('balloon_overlay-opacity');
+                    // document.querySelector('.tabs-tag').classList.add('balloon_overlay-opacity');
+                    // document.getElementById('map').classList.add('balloon_overlay-opacity');
                 });
             });
         });
@@ -249,16 +351,13 @@ function initMap() {
 
                 if (!balloon.contains(e.target) && !isClickInsideMarker) {
                     balloon.remove();
+                    document.querySelector('body').classList.remove('balloon_overlay');
+                    document.querySelector('header').classList.remove('balloon_overlay-opacity');
+                    document.querySelector('.tabs-tag').classList.remove('balloon_overlay-opacity');
+                    document.getElementById('map').classList.remove('balloon_overlay-opacity');
                 }
             }
         });
-
-        // Создать панель тегов
-        // function createTagHTML(project) {
-        //     return `
-        //         <button class='tab-button' data-tag-value=${project.tag} onclick='1'>${project.tag}</button>
-        //     `;
-        // }
 
         function createTagHTML(project) {
             const button = document.createElement('button');
@@ -274,11 +373,29 @@ function initMap() {
             if (map && INIT_PROJECTS) {
                 const tagList = document.createElement('div');
                 tagList.classList.add('tabs-tag');
+                tagList.setAttribute('id', 'init-project-tags');
                 map.appendChild(tagList);
 
-                INIT_PROJECTS.map((project) => {
-                    tagList.append(createTagHTML(project));
-                    // tagList.insertAdjacentHTML('beforeend', createTagHTML(project));
+                const uniqueTags = [...new Set(INIT_PROJECTS.map((project) => project.tag))];
+
+                uniqueTags.forEach((tag) => {
+                    const button = createTagHTML({ tag });
+                    tagList.append(button);
+                });
+
+                $('#init-project-tags').slick({
+                    infinite: false,
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    adaptiveHeight: true,
+                    variableWidth: true,
+                    responsive: [
+                        { breakpoint: 1300, settings: { slidesToShow: 5 } },
+                        { breakpoint: 1100, settings: { slidesToShow: 4 } },
+                        { breakpoint: 992, settings: { slidesToShow: 3 } },
+                        { breakpoint: 500, settings: { slidesToShow: 1 } },
+                    ],
                 });
             }
         }
@@ -330,13 +447,6 @@ function initMap() {
                                     markerElement.style.display = 'block';
                                 }
                             }
-                            // map.removeLayer(marker);
-                            // marker.setOpacity(0);
-
-                            // if (e.target.classList.contains('tab-button_active')) {
-                            //     // map.addLayer(marker);
-                            //     marker.setOpacity(1);
-                            // }
                         });
                     });
                 });

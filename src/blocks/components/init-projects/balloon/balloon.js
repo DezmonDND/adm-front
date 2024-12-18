@@ -171,6 +171,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function closeBalloon() {
     const balloon = document.querySelector('.balloon');
     balloon.remove();
+    document.querySelector('body').classList.remove('balloon_overlay');
+    document.querySelector('header').classList.remove('balloon_overlay-opacity');
+    document.querySelector('.tabs-tag').classList.remove('balloon_overlay-opacity');
+    document.getElementById('map').classList.remove('balloon_overlay-opacity');
 }
 
 // Получить ссылку при клике по кнопке
@@ -323,6 +327,10 @@ function initMap() {
                     });
 
                     showBalloon(currentProject);
+                    // document.querySelector('body').classList.add('balloon_overlay');
+                    // document.querySelector('header').classList.add('balloon_overlay-opacity');
+                    // document.querySelector('.tabs-tag').classList.add('balloon_overlay-opacity');
+                    // document.getElementById('map').classList.add('balloon_overlay-opacity');
                 });
             });
         });
@@ -343,6 +351,10 @@ function initMap() {
 
                 if (!balloon.contains(e.target) && !isClickInsideMarker) {
                     balloon.remove();
+                    document.querySelector('body').classList.remove('balloon_overlay');
+                    document.querySelector('header').classList.remove('balloon_overlay-opacity');
+                    document.querySelector('.tabs-tag').classList.remove('balloon_overlay-opacity');
+                    document.getElementById('map').classList.remove('balloon_overlay-opacity');
                 }
             }
         });
@@ -378,6 +390,12 @@ function initMap() {
                     arrows: true,
                     adaptiveHeight: true,
                     variableWidth: true,
+                    responsive: [
+                        { breakpoint: 1300, settings: { slidesToShow: 5 } },
+                        { breakpoint: 1100, settings: { slidesToShow: 4 } },
+                        { breakpoint: 992, settings: { slidesToShow: 3 } },
+                        { breakpoint: 500, settings: { slidesToShow: 1 } },
+                    ],
                 });
             }
         }

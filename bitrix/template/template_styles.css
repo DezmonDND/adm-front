@@ -11777,11 +11777,21 @@ body.tmp-duma .usefull-links {
   bottom: 0;
   z-index: 1010;
   margin: 0 20px;
+  padding: 0 60px;
   left: 0;
   right: 0;
 }
 .init-projects__map .tabs-tag .tab-button {
-  border-color: transparent;
+  border: none;
+  font-weight: 400;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(20px * var(--lh));
+}
+@media (max-width: 992px) {
+  .init-projects__map .tabs-tag .tab-button {
+    font-size: calc(12px * var(--scale));
+    line-height: calc(16px * var(--lh));
+  }
 }
 .init-projects__map iframe {
   height: 100%;
@@ -11791,6 +11801,31 @@ body.tmp-duma .usefull-links {
   .init-projects__map {
     height: 303px;
   }
+}
+.init-projects__map .slick-arrow {
+  all: unset;
+  color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.0784313725);
+  width: 40px;
+  height: 40px;
+  background: url("./icons/slider_arrow.svg") no-repeat center;
+  background-color: var(--content-color);
+  z-index: 2;
+  bottom: 10px;
+  cursor: pointer;
+}
+.init-projects__map .slick-arrow:hover {
+  opacity: 0.9;
+}
+.init-projects__map .slick-prev {
+  left: 0;
+}
+.init-projects__map .slick-next {
+  right: 0;
+  background: url("./icons/slider_arrow_right.svg") no-repeat center;
+  background-color: var(--content-color);
 }
 
 .init-projects {
@@ -21873,6 +21908,12 @@ body.compensate-for-scrollbar {
     transition: bottom 0.1s linear;
     will-change: bottom;
     gap: 12px;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    border-radius: 12px 12px 0 0;
+    transition: all ease-in-out 0.2s;
   }
 }
 .balloon_active {
@@ -22022,12 +22063,31 @@ body.compensate-for-scrollbar {
   width: 100%;
   height: 450px;
 }
-#map .my-div-icon {
-  width: 25px !important;
-  height: 40px !important;
+@media (max-width: 992px) {
+  #map {
+    height: 303px;
+  }
+}
+#map .balloon-icon {
+  width: 32px;
+  height: 32px;
   object-fit: cover;
   object-position: center;
-  background-image: url("./icons/marker-icon.png");
+}
+#map .balloon-icon:hover {
+  opacity: 0.8;
+}
+
+.balloon_overlay {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.balloon_overlay-opacity {
+  opacity: 0.1;
 }
 
 .exit {

@@ -45,6 +45,14 @@
         transition: bottom .1s linear;
         will-change: bottom;
         gap: 12px;
+
+        // Для сборки
+        top: unset;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        border-radius: 12px 12px 0 0;
+        transition: all ease-in-out 0.2s;
     }
 
     &_active {
@@ -173,6 +181,10 @@
     width: 100%;
     height: 450px;
 
+    @include respond-to(md) {
+        height: 303px;
+    }
+
     .balloon-icon {
         width: 32px;
         height: 32px;
@@ -183,4 +195,16 @@
             opacity: 0.8;
         }
     }
+}
+
+.balloon_overlay {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.balloon_overlay-opacity {
+    opacity: 0.1;
 }
