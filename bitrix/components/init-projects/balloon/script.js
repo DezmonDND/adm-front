@@ -209,43 +209,45 @@ function initMap() {
             if (map) {
                 const balloonHTML = `
             <div class="balloon"> 
-                <div class="balloon-title">
-                    <div class="balloon-name"> 
-                        <a href=${project.link}>${project.title}</a>
+                <div class="balloon-content-container"> 
+                    <div class="balloon-title">
+                        <div class="balloon-name"> 
+                            <a href=${project.link}>${project.title}</a>
+                        </div>
+                        <div class="balloon-btns"> 
+                            <ion-icon name="link-outline" onclick="getBalloonLink()" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                            <ion-icon name="close" onclick="closeBalloon()" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+                        </div>
                     </div>
-                    <div class="balloon-btns"> 
-                        <ion-icon name="link-outline" onclick="getBalloonLink()" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
-                        <ion-icon name="close" onclick="closeBalloon()" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
-                    </div>
-                </div>
-                <div class="balloon-content">
-                    <div class="balloon-img">
-                        <img src="./resources/${project.image}" alt="Изображение проекта">
-                    </div><div class="balloon-info">
-                    <div class="balloon-info-item">
-                        <span>Дата внесения</span>
-                        <span>${project.addDate}</span>
-                    </div>
-                    <div class="balloon-info-item">
-                        <span>Срок реализации</span>
-                        <span>${project.timeLimit}</span>
-                    </div>
-                    <div class="balloon-info-item">
-                        <span>Территория реализации</span>
-                        <span>${project.area}</span>
-                    </div>
-                    <div class="balloon-info-item">
-                        <span>Инициатор</span>
-                        <span>${project.initiator}</span>
-                    </div>
-                    <div class="balloon-info-item">
-                        <span>Общая стоимость</span>
-                        <span>${project.cost}</span>
-                    </div>
-                    <div class="balloon-info-item">
-                        <span>Статус проекта</span>
-                        <span>${project.status}</span>
-                    </div>
+                    <div class="balloon-content">
+                        <div class="balloon-img">
+                            <img src="./resources/${project.image}" alt="Изображение проекта">
+                        </div><div class="balloon-info">
+                        <div class="balloon-info-item">
+                            <span>Дата внесения</span>
+                            <span>${project.addDate}</span>
+                        </div>
+                        <div class="balloon-info-item">
+                            <span>Срок реализации</span>
+                            <span>${project.timeLimit}</span>
+                        </div>
+                        <div class="balloon-info-item">
+                            <span>Территория реализации</span>
+                            <span>${project.area}</span>
+                        </div>
+                        <div class="balloon-info-item">
+                            <span>Инициатор</span>
+                            <span>${project.initiator}</span>
+                        </div>
+                        <div class="balloon-info-item">
+                            <span>Общая стоимость</span>
+                            <span>${project.cost}</span>
+                        </div>
+                        <div class="balloon-info-item">
+                            <span>Статус проекта</span>
+                            <span>${project.status}</span>
+                        </div>
+                    </div>    
                 </div>
             </div>
         `;
@@ -327,17 +329,31 @@ function initMap() {
                     });
 
                     showBalloon(currentProject);
-                    // document.querySelector('body').classList.add('balloon_overlay');
-                    // document.querySelector('header').classList.add('balloon_overlay-opacity');
-                    // document.querySelector('.tabs-tag').classList.add('balloon_overlay-opacity');
-                    // document.getElementById('map').classList.add('balloon_overlay-opacity');
+                    const balloon = document.querySelector('.balloon');
+
+                    if (window.innerWidth < 768) {
+                        setTimeout(() => {
+                            balloon.style.bottom = 0;
+                        });
+                    } else {
+                        setTimeout(() => {
+                            balloon.style.opacity = 1;
+                        });
+                    }
+
+                    if (window.innerWidth < 768) {
+                        document.querySelector('body').classList.add('balloon_overlay');
+                        document
+                            .querySelector('.init-projects__map')
+                            .classList.add('balloon_overlay-map');
+                    }
                 });
             });
         });
 
         // Закрыть попап при клике вне попапа
         document.addEventListener('click', (e) => {
-            const balloon = document.querySelector('.balloon');
+            const balloon = document.querySelector('.balloon-content-container');
             const markers = document.querySelectorAll('.leaflet-marker-icon');
 
             if (balloon) {
@@ -350,11 +366,11 @@ function initMap() {
                 });
 
                 if (!balloon.contains(e.target) && !isClickInsideMarker) {
-                    balloon.remove();
+                    balloon.closest('.balloon').remove();
                     document.querySelector('body').classList.remove('balloon_overlay');
-                    document.querySelector('header').classList.remove('balloon_overlay-opacity');
-                    document.querySelector('.tabs-tag').classList.remove('balloon_overlay-opacity');
-                    document.getElementById('map').classList.remove('balloon_overlay-opacity');
+                    document
+                        .querySelector('.init-projects__map')
+                        .classList.remove('balloon_overlay-map');
                 }
             }
         });
@@ -387,6 +403,7 @@ function initMap() {
                     infinite: false,
                     slidesToShow: 6,
                     slidesToScroll: 1,
+                    lazyLoad: 'progressive',
                     arrows: true,
                     adaptiveHeight: true,
                     variableWidth: true,
