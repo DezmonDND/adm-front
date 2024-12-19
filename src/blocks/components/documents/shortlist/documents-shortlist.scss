@@ -1,5 +1,14 @@
 @use '../../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .short-filelist {
+        .file-line {
+            .file-line-icon {
+                color: $primary-color-green;
+            }
+        }}
+}
+
 .short-filelist {
     .file-line {
         text-decoration: none;
@@ -12,6 +21,7 @@
         @include content-paddings;
 
         .file-line-icon {
+            color: $primary-color;
             width: 20px;
 
             @include respond-to(md) {

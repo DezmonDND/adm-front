@@ -15,8 +15,11 @@ $(document).ready(function () {
             const source = slide.querySelector('source');
             if (slide.getAttribute('id') === '') {
                 slide.removeAttribute('id');
-                video.removeAttribute('id');
-                source.removeAttribute('id');
+
+                if (video) {
+                    video.removeAttribute('id');
+                    source.removeAttribute('id');
+                } 
             }
         });
     }

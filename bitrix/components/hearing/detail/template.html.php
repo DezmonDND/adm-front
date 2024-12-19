@@ -46,8 +46,8 @@
     </div>
   </div>
   <div class="hearing-detail-links">
-    <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Назначающий НПА">Назначающий НПА
-        <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Объявление с материалами">Объявление с материалами
+    <div class="links-list" aria-label="Список"><a class="links-list-item" href="#" role="link" aria-label="Назначающий НПА"><span class="links-list-item-title">Назначающий НПА    </span>
+        <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a><a class="links-list-item" href="#" role="link" aria-label="Объявление с материалами"><span class="links-list-item-title">Объявление с материалами    </span>
         <ion-icon class="icon" name="arrow-forward-outline"></ion-icon></a>
     </div>
   </div>

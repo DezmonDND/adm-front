@@ -94,19 +94,17 @@
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Общие сведения</a><a class="dm-second-menu__link" href="/">Историческая справка </a><a class="dm-second-menu__link" href="/">Официальные символы </a><a class="dm-second-menu__link" href="/">Территориальные органы общественного самоуправления </a><a class="dm-second-menu__link" href="/">Почтовый адрес </a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">К сведению СМИ</a><a class="dm-second-menu__link" href="/">Аккредитация журналистов </a><a class="dm-second-menu__link" href="/">Обзор законодательства </a>
                 </div>
               </div>
               <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Полномочия</a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Финансы</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Новости</a>
                 </div>
               </div>
             </div>
@@ -117,42 +115,42 @@
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура Думы города</a><a class="dm-second-menu__link" href="/">Руководство </a><a class="dm-second-menu__link" href="/">Председатель Думы </a>
                 </div>
               </div>
               <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты Думы города VII созыва</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a>
                 </div>
               </div>
             </div>
           </div>
         </li>
         <li class="header__link" aria-expanded="false">
-          <button style="all:unset" role="button" aria-label="Документы" tabindex="-1">Документы</button>
+          <button style="all:unset" role="button" aria-label="Документы Думы" tabindex="-1">Документы Думы</button>
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постановления Председателя Думы</a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Регламент Думы города</a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Решения Думы</a>
                 </div>
               </div>
               <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Обработка персональных данных</a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Положение о помощниках депутата</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Положения об этике</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Устав города</a>
                 </div>
               </div>
             </div>
@@ -163,25 +161,45 @@
           <div class="dm-second-menu">
             <div class="dm-second-menu__content">
               <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Структура</a><a class="dm-second-menu__link" href="/">Председатель </a><a class="dm-second-menu__link" href="/">Руководство </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Антикоррупционная деятельность</a><a class="dm-second-menu__link" href="/">Антикоррупционная экспертиза </a><a class="dm-second-menu__link" href="/">Комиссия по соблюдению требований к служебному поведению муниципальных служащих и урегулированию конфликта интересов в Думе города </a><a class="dm-second-menu__link" href="/">Нормативные правовые и иные акты </a><a class="dm-second-menu__link" href="/">Сведения о доходах </a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутаты</a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Аппарат Думы города</a><a class="dm-second-menu__link" href="/">Структура аппарата </a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
-                </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Молодежная палата</a><a class="dm-second-menu__link" href="/">Положение </a><a class="dm-second-menu__link" href="/">Состав </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">План работы</a><a class="dm-second-menu__link" href="/">Депутатские слушания </a><a class="dm-second-menu__link" href="/">Публичные слушания </a><a class="dm-second-menu__link" href="/">Заседания Думы города </a><a class="dm-second-menu__link" href="/">Заседания постоянных комитетов </a>
                 </div>
               </div>
               <div class="dm-second-menu__col">
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Постоянные комитеты</a><a class="dm-second-menu__link" href="/">Комитет по бюджету, налогам, финансам и имуществу </a><a class="dm-second-menu__link" href="/">Комитет по городскому хозяйству и перспективному развитию города </a><a class="dm-second-menu__link" href="/">Комитет по социальной политике </a><a class="dm-second-menu__link" href="/">Комитет по нормотворчеству, информационной политике и правопорядку </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Деятельность Думы города в сфере наград</a>
                 </div>
-                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Депутатские объединения в Думе города</a><a class="dm-second-menu__link" href="/">Информация о кадровом обеспечении </a><a class="dm-second-menu__link" href="/">Телефонный справочник </a>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Муниципальные закупки</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Совет депутатов четырех Дум</a>
                 </div>
               </div>
             </div>
           </div>
         </li>
-        <li class="header__link" aria-label="Обратная связь"> <a href="/" tabindex="-1">Обратная связь          </a></li>
+        <li class="header__link" aria-expanded="false">
+          <button style="all:unset" role="button" aria-label="Обратная связь" tabindex="-1">Обратная связь</button>
+          <div class="dm-second-menu">
+            <div class="dm-second-menu__content">
+              <div class="dm-second-menu__col">
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Обращения граждан</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Обзор обращений</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Порядок обращения граждан</a>
+                </div>
+              </div>
+              <div class="dm-second-menu__col">
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Электронное обращение</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Информация о приеме избирателей по личным вопросам депутатами Думы города</a>
+                </div>
+                <div class="dm-second-menu__links"><a class="dm-second-menu__title" href="/">Узнай, кто твой депутат</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
       <div class="header__socials"><a class="header__social-icon vk_icon-duma" href="/" title="Ссылка на социальные сети Вконтакте" role="link"></a><a class="header__social-icon ok_icon-duma" href="/" title="Ссылка на социальные сети Одноклассники" role="link"></a>
       </div>

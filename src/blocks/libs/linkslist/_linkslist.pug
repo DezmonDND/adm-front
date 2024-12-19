@@ -2,7 +2,9 @@ mixin linkslist(items)
     .links-list(aria-label='Список')
         each item, index in items
             a.links-list-item(href=item.href role='link' aria-label=item.title)
-                | #{item.title}
+                if item.icon 
+                    ion-icon(name=item.icon class=`links-list-icon`)
+                span.links-list-item-title #{item.title}    
                 if item.desc
                     span.links-list-item__desc #{item.desc}
                 ion-icon(name=`arrow-forward-outline` class=`icon`)

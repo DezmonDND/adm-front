@@ -29,6 +29,17 @@
     order: 2;
   }
 }
+.dm-deput .dm-deput-container .dm-deput-left .dm-deput-left-info .links-list:first-of-type .links-list-item .links-list-icon {
+  font-size: 24px;
+}
+@media (max-width: 992px) {
+  .dm-deput .dm-deput-container .dm-deput-left .dm-deput-left-info .links-list:first-of-type .links-list-item .links-list-icon {
+    font-size: 16px;
+  }
+}
+.dm-deput .dm-deput-container .dm-deput-left .dm-deput-left-info .links-list:first-of-type .links-list-item .links-list-item-title {
+  width: calc(100% - 44px);
+}
 .dm-deput .dm-deput-container .dm-deput-left img {
   object-fit: cover;
   max-height: 364px;

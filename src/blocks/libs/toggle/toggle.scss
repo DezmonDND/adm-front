@@ -1,5 +1,15 @@
 @use '../../../assets/styles/vars.scss' as *;
 
+body.tmp-duma {
+    .toggle-container {
+        .toggle-header {
+            .toggle-arrow {
+                color: $primary-color-green;
+            }
+        }
+    }
+}
+
 .toggle-container {
     background-color: $grey-adm;
     border-radius: 12px;
@@ -11,7 +21,17 @@
         align-items: center;
         @include content-paddings;
 
+        &:hover {
+            border-radius: 12px;
+            background-color: $services-hover;
+        }
+
+        &:active {
+            background-color: $services-active;
+        }
+
         .toggle-arrow {
+            color: $primary-color;
             margin-left: auto;
             transition: transform 0.3s ease;
         }
