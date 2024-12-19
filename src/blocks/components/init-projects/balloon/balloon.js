@@ -172,9 +172,6 @@ function closeBalloon() {
     const balloon = document.querySelector('.balloon');
     balloon.remove();
     document.querySelector('body').classList.remove('balloon_overlay');
-    document.querySelector('header').classList.remove('balloon_overlay-opacity');
-    document.querySelector('.tabs-tag').classList.remove('balloon_overlay-opacity');
-    document.getElementById('map').classList.remove('balloon_overlay-opacity');
 }
 
 // Получить ссылку при клике по кнопке
@@ -375,11 +372,36 @@ function initMap() {
             }
         });
 
+        function getTagImage(project) {
+            const tag = project.tag.toLowerCase();
+            if (tag === 'муниципальные учреждения') {
+                return 'business';
+            } else if (tag === 'инициативные проекты') {
+                return 'bulb';
+            } else if (tag === 'спорт') {
+                return 'football';
+            } else if (tag === 'транспортные остановки') {
+                return 'bus';
+            } else if (tag === 'образование') {
+                return 'school';
+            } else if (tag === 'здравоохранение') {
+                return 'fitness';
+            } else if (tag === 'культура') {
+                return 'book';
+            } else if (tag === 'молодежная политика') {
+                return 'accessibility';
+            }
+        }
+
         function createTagHTML(project) {
             const button = document.createElement('button');
             button.classList.add('tab-button');
             button.setAttribute('data-tag-value', project.tag);
             button.textContent = project.tag;
+
+            const image = document.createElement('ion-icon');
+            image.name = getTagImage(project);
+            button.appendChild(image);
             return button;
         }
 
@@ -401,16 +423,16 @@ function initMap() {
 
                 $('#init-project-tags').slick({
                     infinite: false,
-                    slidesToShow: 6,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
                     lazyLoad: 'progressive',
                     arrows: true,
                     adaptiveHeight: true,
                     variableWidth: true,
                     responsive: [
-                        { breakpoint: 1300, settings: { slidesToShow: 5 } },
-                        { breakpoint: 1100, settings: { slidesToShow: 4 } },
-                        { breakpoint: 992, settings: { slidesToShow: 3 } },
+                        { breakpoint: 1300, settings: { slidesToShow: 4 } },
+                        { breakpoint: 1100, settings: { slidesToShow: 3 } },
+                        { breakpoint: 992, settings: { slidesToShow: 2 } },
                         { breakpoint: 500, settings: { slidesToShow: 1 } },
                     ],
                 });

@@ -11782,6 +11782,10 @@ body.tmp-duma .usefull-links {
   right: 0;
 }
 .init-projects__map .tabs-tag .tab-button {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 8px;
   border: none;
   font-weight: 400;
   font-size: calc(16px * var(--scale));

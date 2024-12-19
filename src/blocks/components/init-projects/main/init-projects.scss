@@ -38,6 +38,10 @@
         right: 0;
 
         .tab-button {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: 8px;
             border: none;
             @include lead-5;
         }
