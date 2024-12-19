@@ -18128,6 +18128,7 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   scrollbar-width: none;
   margin: 0;
   display: none;
+  cursor: auto;
 }
 .dm-second-menu_active {
   display: flex;
@@ -18156,6 +18157,7 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: fit-content;
 }
 .dm-second-menu .dm-second-menu__content .dm-second-menu__col .dm-second-menu__links .dm-second-menu__title {
   color: var(--main-text);
@@ -19853,20 +19855,22 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   }
 }
 .about-symbols .about-symbols__title {
-  padding: 32px 0 16px;
   font-weight: 500;
   font-size: calc(24px * var(--scale));
   line-height: calc(28px * var(--lh));
 }
 @media (max-width: 992px) {
   .about-symbols .about-symbols__title {
-    padding: 24px 0 8px;
+    font-size: calc(16px * var(--scale));
+    line-height: calc(20px * var(--lh));
   }
+}
+.about-symbols .about-symbols__title {
+  padding: 32px 0 16px;
 }
 @media (max-width: 992px) {
   .about-symbols .about-symbols__title {
-    font-size: calc(16px * var(--scale));
-    line-height: calc(20px * var(--lh));
+    padding: 24px 0 8px;
   }
 }
 .about-symbols .about-symbols-list {
@@ -19957,20 +19961,22 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
 }
 .about-history .about-history__container .about-history__title {
   margin: 0;
-  padding: 32px 0 16px;
   font-weight: 500;
   font-size: calc(40px * var(--scale));
   line-height: calc(48px * var(--lh));
 }
 @media (max-width: 992px) {
   .about-history .about-history__container .about-history__title {
-    padding: 24px 0 8px;
+    font-size: calc(20px * var(--scale));
+    line-height: calc(24px * var(--lh));
   }
+}
+.about-history .about-history__container .about-history__title {
+  padding: 32px 0 16px;
 }
 @media (max-width: 992px) {
   .about-history .about-history__container .about-history__title {
-    font-size: calc(20px * var(--scale));
-    line-height: calc(24px * var(--lh));
+    padding: 24px 0 8px;
   }
 }
 .about-history .about-history__container .about-history__container-title {
@@ -20044,13 +20050,15 @@ body.tmp-duma .dm-second-menu .dm-second-menu__col .dm-second-menu__links .dm-se
   font-weight: 500;
   font-size: calc(24px * var(--scale));
   line-height: calc(28px * var(--lh));
-  padding: 32px 0 16px;
 }
 @media (max-width: 992px) {
   .about-timeline .about-timeline__title {
     font-size: calc(16px * var(--scale));
     line-height: calc(20px * var(--lh));
   }
+}
+.about-timeline .about-timeline__title {
+  padding: 32px 0 16px;
 }
 @media (max-width: 992px) {
   .about-timeline .about-timeline__title {
