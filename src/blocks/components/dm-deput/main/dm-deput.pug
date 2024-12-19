@@ -14,7 +14,7 @@ mixin dm-deput(data)
                         .dm-deput-status
                             span= data.status
                 .dm-deput-left-info
-                    +linkslist([{title:"Электронная приемная",  href:"#"},{title:"График приема по личным вопросам", href:"#"},])
+                    +linkslist([{title:"Электронная приемная",  href:"#", icon: 'mail-unread-outline'},{title:"График приема по личным вопросам", href:"#", icon: 'calendar-outline'},])
                     .dm-deput-info-text 
                         .dm-deput-info-text-title   
                             span Помощники депутата
