@@ -15,8 +15,8 @@
         box-shadow: 0px 4px 12px 0px #00000014;
         background-color: $content-color;
         max-height: 262px;
-        overflow-y: scroll;
-        scrollbar-width: none;
+        overflow-y: auto;
+        scrollbar-width: thin;
 
         &_active {
             display: block;
