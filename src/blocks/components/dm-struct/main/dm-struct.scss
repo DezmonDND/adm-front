@@ -193,3 +193,10 @@
 .dm-struct__com-content {
     margin: 16px 0 16px;
 }
+
+.dm-scheme .dm-struct__main-third {
+    padding-bottom: 0px;
+    &::after {
+        height: 0px;
+    }
+}

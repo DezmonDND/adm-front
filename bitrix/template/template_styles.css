@@ -13501,6 +13501,13 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
   margin: 16px 0 16px;
 }
 
+.dm-scheme .dm-struct__main-third {
+  padding-bottom: 0px;
+}
+.dm-scheme .dm-struct__main-third::after {
+  height: 0px;
+}
+
 .dm-deputies-alphabet {
   padding-top: 48px;
 }
@@ -22033,6 +22040,72 @@ body.compensate-for-scrollbar {
 
 .exit.hidden {
   display: none !important;
+}
+
+.search-with-list {
+  display: flex;
+  position: relative;
+  max-width: unset;
+  width: 100%;
+}
+.search-with-list .search-results {
+  display: none;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.0784313725);
+  background-color: var(--content-color);
+  max-height: 262px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.search-with-list .search-results_active {
+  display: block;
+}
+.search-with-list .search-results .search-results__container {
+  display: flex;
+  flex-direction: column;
+}
+.search-with-list .search-results .search-results__container .search-results__element {
+  color: var(--main-text);
+  text-decoration: none;
+  width: fit-content;
+}
+.search-with-list .search-results .search-results__container .search-results__element:hover .search-results__element-title {
+  color: var(--primary-color-hover);
+}
+.search-with-list .search-results .search-results__container .search-results__element:active .search-results__element-title {
+  color: var(--primary-color-active);
+}
+.search-with-list .search-results .search-results__container .search-results__element .search-results__element-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 20px;
+}
+.search-with-list .search-results .search-results__container .search-results__element .search-results__element-container .search-results__element-title {
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .search-with-list .search-results .search-results__container .search-results__element .search-results__element-container .search-results__element-title {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.search-with-list .search-results .search-results__container .search-results__element .search-results__element-container .search-results__element-date {
+  color: var(--tertiary-text);
+  font-weight: 300;
+  font-size: calc(14px * var(--scale));
+  line-height: calc(18px * var(--lh));
+}
+@media (max-width: 992px) {
+  .search-with-list .search-results .search-results__container .search-results__element .search-results__element-container .search-results__element-date {
+    font-size: calc(10px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
 }
 
 * {
