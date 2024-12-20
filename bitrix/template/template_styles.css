@@ -5907,6 +5907,8 @@ body.tmp-duma .pag-button_active:hover {
   }
 }
 .pag-button-with-icon:hover {
+  text-decoration: none;
+  color: var(--main-text);
   cursor: pointer;
   background-color: var(--event-color);
   border-color: transparent;
@@ -5926,6 +5928,12 @@ body.tmp-duma .pag-button_active:hover {
   border-color: var(--primary-color-disabled);
   background-color: var(--content-color);
 }
+.pag-button-with-icon_left_disabled:hover {
+  cursor: inherit;
+  color: var(--primary-color-disabled);
+  border-color: var(--primary-color-disabled);
+  background-color: var(--content-color);
+}
 .pag-button-with-icon_left_disabled:disabled {
   color: var(--primary-color-disabled);
   border-color: var(--primary-color-disabled);
@@ -5935,6 +5943,12 @@ body.tmp-duma .pag-button_active:hover {
 }
 .pag-button-with-icon_right_disabled {
   background-image: url("./icons/arrow-right_icon_disabled.svg");
+  color: var(--primary-color-disabled);
+  border-color: var(--primary-color-disabled);
+  background-color: var(--content-color);
+}
+.pag-button-with-icon_right_disabled:hover {
+  cursor: inherit;
   color: var(--primary-color-disabled);
   border-color: var(--primary-color-disabled);
   background-color: var(--content-color);

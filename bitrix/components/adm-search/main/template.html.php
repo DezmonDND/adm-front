@@ -72,9 +72,7 @@
       </div>
     </div></a>
   <div class="adm-search__pagination"> 
-    <div class="pagination">
-      <button class="pag-button-with-icon pag-button_left" href="/2/1" role="button" aria-label="Назад"><span class="pag-button__span">Назад</span></button><a class="pag-button" href="/2/1" role="button" aria-label="Страница 1">1  </a><a class="pag-button" href="/2/2" role="button" aria-label="Страница 2">2  </a><a class="pag-button" href="/2/3" role="button" aria-label="Страница 3">3  </a><a class="pag-button pag-button_active" href="/2/4" role="button" aria-label="Страница 4">4</a><a class="pag-button" href="/2/5" role="button" aria-label="Страница 5">5  </a><a class="pag-button" href="/2/6" role="button" aria-label="Страница 6">6  </a>
-      <button class="pag-button-with-icon pag-button_right" href="/2/6" role="button" aria-label="Вперед"> <span class="pag-button__span">Вперед</span></button>
+    <div class="pagination"><a class="pag-button-with-icon pag-button_left" href="/2/1" role="button" aria-label="Назад"><span class="pag-button__span">Назад</span></a><a class="pag-button" href="/2/1" role="button" aria-label="Страница 1">1  </a><a class="pag-button" href="/2/2" role="button" aria-label="Страница 2">2  </a><a class="pag-button" href="/2/3" role="button" aria-label="Страница 3">3  </a><a class="pag-button pag-button_active" href="/2/4" role="button" aria-label="Страница 4">4</a><a class="pag-button" href="/2/5" role="button" aria-label="Страница 5">5  </a><a class="pag-button" href="/2/6" role="button" aria-label="Страница 6">6  </a><a class="pag-button-with-icon pag-button_right" href="/2/6" role="button" aria-label="Вперед"> <span class="pag-button__span">Вперед</span></a>
     </div>
   </div>
 </div>
