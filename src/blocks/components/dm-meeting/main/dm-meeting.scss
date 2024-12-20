@@ -126,6 +126,11 @@
     border-bottom: 1px solid $second-text;
     color: $second-text;
     @include text-2();
+
+    &:hover {
+        text-decoration: none;
+    }
+
 }
 
 .dm-meeting__list {

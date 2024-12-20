@@ -74,6 +74,24 @@ b {
 
 // Стили статической страницы
 .content {
+    .button_white {
+        border-color: transparent;
+        background-color: transparent;
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:active {
+            background-color: transparent;
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+    }
+
     .content__link {
         display: flex;
         flex-direction: row-reverse;

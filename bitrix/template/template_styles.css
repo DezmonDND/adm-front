@@ -15056,6 +15056,9 @@ body.dark-theme.visibility .vanilla-calendar-day__btn_prev, body.blue-theme.visi
     line-height: calc(20px * var(--lh));
   }
 }
+.dm-meeting-elem__doc a:hover {
+  text-decoration: none;
+}
 
 .dm-meeting__list {
   padding-top: 32px;

@@ -186,6 +186,9 @@
     line-height: calc(20px * var(--lh));
   }
 }
+.dm-meeting-elem__doc a:hover {
+  text-decoration: none;
+}
 
 .dm-meeting__list {
   padding-top: 32px;

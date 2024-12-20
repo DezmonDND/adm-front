@@ -127,6 +127,20 @@ b {
   font-weight: 600;
 }
 
+.content .button_white {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+.content .button_white:hover {
+  background-color: transparent;
+}
+.content .button_white:active {
+  background-color: transparent;
+}
+.content .button_white .icon {
+  font-size: 20px;
+}
 .content .content__link {
   display: flex;
   flex-direction: row-reverse;
