@@ -10,7 +10,7 @@
           <h5 class="biography__phones-title">Отдел делопроизводства</h5><span class="biography__phone">тел. +7 (3462) 52 21 57</span><span class="biography__phone">тел. +7 (3462) 52 21 75</span><span class="biography__phone">факс +7 (3462) 52-21-82</span><a class="biography__phone biography__link" href="mailto:gorod@admsurgut.ru">e-mail: gorod@admsurgut.ru</a>
         </div>
         <div class="biography__phones">
-          <h5 class="biography__phones-title">Страницы в социальных сетях</h5><a class="biography__phone biography__link" href="https://vk.com/filatov_surgut">https://vk.com/filatov_surgut</a><a class="biography__phone biography__link" href="https://t.me/filatov_surgut ">https://t.me/filatov_surgut   </a>
+          <h5 class="biography__phones-title">Страницы в социальных сетях</h5><a class="biography__phone biography__link"></a><a class="biography__phone biography__link">  </a>
         </div>
       </div>
     </div>
@@ -35,11 +35,11 @@
           <div class="biography__more-contacts">
             <div class="biography__more-contacts-content">
               <h5 class="biography__more-contacts-title">Помощник Главы города</h5>
-              <p>Клечкина-Юшкова Наталья Викторовна<br/>+7(3462) 52-24-04<br/>e-mail: klechkina_nv@admsurgut.ru</p>
+              <p>Клечкина-Юшкова Наталья Викторовна<br/>+7(3462) 52-24-04<br/><a class="biography__link" href="mailto:priemnaya@admsurgut.ru">e-mail: klechkina_nv@admsurgut.ru</a></p>
             </div>
             <div class="biography__more-contacts-content">
               <h5 class="biography__more-contacts-title">Советник Главы города</h5>
-              <p>Мачтакова Анна Яковлевна<br/>+7 (3462) 52-20-17<br/>e-mail: Machtakova_aya@admsurgut.ru      </p>
+              <p>Мачтакова Анна Яковлевна<br/>+7 (3462) 52-20-17<br/><a class="biography__link" href="mailto:Machtakova_aya@admsurgut.ru">e-mail: Machtakova_aya@admsurgut.ru      </a></p>
             </div>
           </div>
         </div>
