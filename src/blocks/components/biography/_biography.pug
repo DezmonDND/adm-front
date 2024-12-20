@@ -16,8 +16,8 @@ mixin biography(data)
                         a(href='mailto:gorod@admsurgut.ru').biography__phone.biography__link e-mail: gorod@admsurgut.ru
                     .biography__phones
                         h5.biography__phones-title Страницы в социальных сетях
-                        a(href='https://vk.com/filatov_surgut').biography__phone.biography__link https://vk.com/filatov_surgut
-                        a(href='https://t.me/filatov_surgut ').biography__phone.biography__link https://t.me/filatov_surgut   
+                        a(href=data.vk).biography__phone.biography__link #{data.vk}
+                        a(href=data.tg).biography__phone.biography__link #{data.tg}  
             .biography__info
                 .biography__info-content
                     .biography__user                        
@@ -42,11 +42,11 @@ mixin biography(data)
                                     br
                                     | +7(3462) 52-24-04
                                     br
-                                    | e-mail: klechkina_nv@admsurgut.ru
+                                    a.biography__link(href='mailto:priemnaya@admsurgut.ru') e-mail: klechkina_nv@admsurgut.ru
                             .biography__more-contacts-content
                                 h5.biography__more-contacts-title Советник Главы города
                                 p Мачтакова Анна Яковлевна
                                     br
                                     | +7 (3462) 52-20-17
                                     br
-                                    | e-mail: Machtakova_aya@admsurgut.ru      
+                                    a.biography__link(href='mailto:Machtakova_aya@admsurgut.ru') e-mail: Machtakova_aya@admsurgut.ru      

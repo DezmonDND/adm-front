@@ -8347,6 +8347,9 @@ body.tmp-duma .hearing-item img {
     line-height: calc(16px * var(--lh));
   }
 }
+.biography .biography__link {
+  color: var(--main-text);
+}
 
 .main-title {
   box-sizing: border-box;
