@@ -82,6 +82,12 @@
     display: none;
   }
 }
+.biography-card .biography-card__container .biography-card__user-info .biography-card__link:hover {
+  color: var(--primary-color-hover);
+}
+.biography-card .biography-card__container .biography-card__user-info .biography-card__link:active:hover {
+  color: var(--primary-color-active);
+}
 
 .biography-card_full-page {
   display: none;
