@@ -10,8 +10,10 @@ function closeLogoutPopup() {
 function showLogout() {
     const popup = document.querySelector('.profile-logout-popup');
 
-    popup.classList.add('profile-logout-popup_open');
-    document.querySelector('body').classList.add('overlay_mobile-menu');
+    if (popup) {
+        popup.classList.add('profile-logout-popup_open');
+        document.querySelector('body').classList.add('overlay_mobile-menu');
+    }
 }
 
 document.addEventListener('click', (e) => {
@@ -20,7 +22,7 @@ document.addEventListener('click', (e) => {
     if (
         openedPopup &&
         !e.target.closest('.profile-logout-popup__content') &&
-        !e.target.classList.contains('button_exit')
+        !e.target.closest('.button_exit')
     ) {
         openedPopup.classList.remove('profile-logout-popup_open');
         document.querySelector('body').classList.remove('overlay_mobile-menu');
