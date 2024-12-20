@@ -24,6 +24,7 @@
 
         @include respond-to(sm) {
             padding: 60px 30px 24px;
+            margin: 0 24px;
         }
 
         .profile-logout-popup__button-close {
@@ -59,6 +60,10 @@
                 align-self: unset;
                 color: $interview-end-color;
                 @include text-link-2;
+
+                &:hover {
+                    color: #e24545;
+                }
 
             }
         }
