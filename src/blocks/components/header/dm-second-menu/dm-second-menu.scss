@@ -54,6 +54,7 @@ body.tmp-duma {
     scrollbar-width: none;
     margin: 0;
     display: none;
+    cursor: auto;
 
     &_active {
         display: flex;
@@ -84,6 +85,7 @@ body.tmp-duma {
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
+                width: fit-content;
 
                 .dm-second-menu__title {
                     color: $main-text;

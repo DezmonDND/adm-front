@@ -18,6 +18,10 @@
         overflow-y: auto;
         scrollbar-width: thin;
 
+        @include respond-to(md) {
+            top: 50px;
+        }
+
         &_active {
             display: block;
         }
@@ -25,6 +29,12 @@
         .search-results__container {
             display: flex;
             flex-direction: column;
+            list-style: none;
+            margin: 0;
+
+            li {
+                margin: 0;
+            }
 
             .search-results__element {
                 color: $main-text;
