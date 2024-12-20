@@ -164,6 +164,7 @@
 @use '../../blocks/components/afisha/event-full-desc/jquery.fancybox.min.css';
 @use '../../blocks/components/init-projects/balloon/balloon.scss';
 @use '../../blocks/components/login/exit/exit.scss';
+@use '../../blocks/components/search/with-list/search-with-list.scss';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -175,7 +176,7 @@
 a:focus-visible,
 button:focus-visible,
 li:focus-visible,
-input:focus-visible,
+// input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 span:focus-visible,

@@ -1,7 +1,33 @@
 include ../../libs/inputs/_inputs.pug
 include ../../libs/search-button/_search-button.pug
 
-mixin search(input_options, error, size, event, sort)
+mixin search(input_options, error, size, event, sort, list)
     form(class=`search search-${sort}`)
         +input(input_options, error)
-        +search-button(size, event)      
+        +search-button(size, event)
+        if list
+            .search-results
+                ul.search-results__container 
+                    li
+                        a(href='#').search-results__element
+                            .search-results__element-container 
+                                span.search-results__element-title Николаев Николай Николаевич открыл дорогу в мир
+                                span.search-results__element-date 10 июня 2023
+                    li
+                        a(href='#').search-results__element
+                            .search-results__element-container 
+                                span.search-results__element-title Николаев Николай Николаевич открыл дорогу в мир
+                                span.search-results__element-date 10 июня 2023
+                    li
+                        a(href='#').search-results__element
+                            .search-results__element-container 
+                                span.search-results__element-title Николаев Николай Николаевич открыл дорогу в мир
+                                span.search-results__element-date 10 июня 2023   
+                    li
+                        a(href='#').search-results__element
+                            .search-results__element-container 
+                                span.search-results__element-title Николаев Николай Николаевич открыл дорогу в мир
+                                span.search-results__element-date 10 июня 2023                        
+
+
+

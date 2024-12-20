@@ -13,42 +13,243 @@ mixin header-links(data = [])
                         aria-label=link.title
                         tabindex='-1'
                         ) #{link.title}
-                    +second-menu({
-                        columns: [
-                            {
-                                links: [
-                                    { title: 'Структура', type: 'title', items: [
-                                        { title: 'Председатель', type: 'link' },
-                                        { title: 'Руководство', type: 'link' },
-                                    ]},
-                                    { title: 'Депутаты', type: 'title' },
-                                    { title: 'Аппарат Думы города', type: 'title', items: [
-                                        { title: 'Структура аппарата', type: 'link' },
-                                        { title: 'Информация о кадровом обеспечении', type: 'link' },
-                                        { title: 'Телефонный справочник', type: 'link' },
-                                    ]},
-                                    { title: 'Молодежная палата', type: 'title', items: [
-                                        { title: 'Положение', type: 'link' },
-                                        { title: 'Состав', type: 'link' },
-                                    ]},
-                                ],
-                            },
-                            {
-                                links: [
-                                    { title: 'Постоянные комитеты', type: 'title', items: [
-                                        { title: 'Комитет по бюджету, налогам, финансам и имуществу', type: 'link' },
-                                        { title: 'Комитет по городскому хозяйству и перспективному развитию города', type: 'link' },
-                                        { title: 'Комитет по социальной политике', type: 'link' },
-                                        { title: 'Комитет по нормотворчеству, информационной политике и правопорядку', type: 'link' },
-                                    ]},
-                                    { title: 'Депутатские объединения в Думе города', type: 'title', items: [
-                                        { title: 'Информация о кадровом обеспечении', type: 'link' },
-                                        { title: 'Телефонный справочник', type: 'link' },
-                                    ]},
-                                ],
-                            },
-                        ]
-                    }) 
+                    if link.title === 'О Думе города'  
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Общие сведения', type: 'title', items: [
+                                            { title: 'Историческая справка', type: 'link' },
+                                            { title: 'Официальные символы', type: 'link' },
+                                            { title: 'Территориальные органы общественного самоуправления', type: 'link' },
+                                            { title: 'Почтовый адрес', type: 'link' },
+                                        ]},
+                                        { title: 'К сведению СМИ', type: 'title', items: [
+                                            { title: 'Аккредитация журналистов', type: 'link' },
+                                            { title: 'Обзор законодательства', type: 'link' },
+                                        ]},
+                                    ],
+                                },
+                                {
+                                    links: [
+                                        { title: 'Полномочия', type: 'title' },
+                                        { title: 'Финансы', type: 'title' },
+                                        { title: 'Новости', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        })   
+                    if link.title === 'Состав и структура' 
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Аппарат Думы города', type: 'title', items: [
+                                            { title: 'Информация о кадровом обеспечении', type: 'link' },
+                                            { title: 'Телефонный справочник', type: 'link' },
+                                        ]},
+                                        { title: 'Структура Думы города', type: 'title', items: [
+                                            { title: 'Руководство', type: 'link' },
+                                            { title: 'Председатель Думы', type: 'link' },
+                                        ]},
+                                    ],
+                                },
+                                {
+                                    links: [
+                                        { title: 'Депутатские объединения в Думе города', type: 'title' },
+                                        { title: 'Депутаты Думы города VII созыва', type: 'title' },
+                                        { title: 'Постоянные комитеты', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        })
+                    if link.title === 'Документы Думы' 
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Постановления Председателя Думы', type: 'title' },
+                                        { title: 'Регламент Думы города', type: 'title' },
+                                        { title: 'Решения Думы', type: 'title' },
+                                    ],
+                                },
+                                {
+                                    links: [
+                                        { title: 'Обработка персональных данных', type: 'title' },
+                                        { title: 'Положение о помощниках депутата', type: 'title' },
+                                        { title: 'Положения об этике', type: 'title' },
+                                        { title: 'Устав города', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        })    
+                    if link.title === 'Деятельность'        
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Антикоррупционная деятельность', type: 'title', items: [
+                                            { title: 'Антикоррупционная экспертиза', type: 'link' },
+                                            { title: 'Комиссия по соблюдению требований к служебному поведению муниципальных служащих и урегулированию конфликта интересов в Думе города', type: 'link' },
+                                            { title: 'Нормативные правовые и иные акты', type: 'link' },
+                                            { title: 'Сведения о доходах', type: 'link' },
+                                        ]},
+                                        { title: 'План работы', type: 'title', items: [
+                                            { title: 'Депутатские слушания', type: 'link' },
+                                            { title: 'Публичные слушания', type: 'link' },
+                                            { title: 'Заседания Думы города', type: 'link' },
+                                            { title: 'Заседания постоянных комитетов', type: 'link' },
+                                        ]},
+                                    ],
+                                },
+                                {
+                                    links: [
+                                        { title: 'Постоянные комитеты', type: 'title', items: [
+                                            { title: 'Комитет по бюджету, налогам, финансам и имуществу', type: 'link' },
+                                            { title: 'Комитет по городскому хозяйству и перспективному развитию города', type: 'link' },
+                                            { title: 'Комитет по социальной политике', type: 'link' },
+                                            { title: 'Комитет по нормотворчеству, информационной политике и правопорядку', type: 'link' },
+                                        ]},
+                                    ],
+                                    links: [
+                                        { title: 'Деятельность Думы города в сфере наград', type: 'title' },
+                                        { title: 'Муниципальные закупки', type: 'title' },
+                                        { title: 'Совет депутатов четырех Дум', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        }) 
+                    if link.title === 'Обратная связь'
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Обращения граждан', type: 'title' },
+                                        { title: 'Обзор обращений', type: 'title' },
+                                        { title: 'Порядок обращения граждан', type: 'title' },
+                                    ],
+                                },
+                                {
+                                    links: [
+                                        { title: 'Электронное обращение', type: 'title' },
+                                        { title: 'Информация о приеме избирателей по личным вопросам депутатами Думы города', type: 'title' },
+                                        { title: 'Узнай, кто твой депутат', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        }) 
+                    if link.title === 'Быстрый доступ'
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Анонсы и события', type: 'title' },
+                                        { title: 'Телефонный справочник', type: 'title' },
+                                        { title: 'Инициативные проекты', type: 'title' },
+                                        { title: 'Поддержка мобилизованных граждан и членов их семей', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        }) 
+                    if link.title === 'Обращения граждан'
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Обращения граждан', type: 'title' },
+                                        { title: 'Порядок обращения граждан', type: 'title' },
+                                        { title: 'Личный прием', type: 'title' },
+                                        { title: 'Электронное обращение', type: 'title' },
+                                        { title: 'Обзор обращений', type: 'title' },
+                                        { title: 'Узнать статус обращения', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        }) 
+                    if link.title === 'О Сургуте'
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Сургут сегодня', type: 'title' },
+                                        { title: 'История Сургута', type: 'title' },
+                                    ],
+                                },
+                                {
+                                    links: [
+                                        { title: 'Официальные символы', type: 'title' },
+                                        { title: 'Устав Сургута', type: 'title' },
+                                        { title: 'Генплан', type: 'title' },
+                                        { title: 'Стратегия развития', type: 'title' },
+                                        { title: 'Инвестиционный паспорт город Сургута', type: 'title' },
+                                        { title: 'Общественные советы города Сургута', type: 'title' },
+                                        { title: 'Ими гордится Сургут', type: 'title' },
+                                        { title: 'Справочная информация', type: 'title' },
+                                        { title: 'Градостроительная деятельность', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        })            
+                    if link.title === 'Городская власть'
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Глава города', type: 'title', items: [
+                                            { title: 'Биография', type: 'link' },
+                                            { title: 'Полномочия', type: 'link' },
+                                            { title: 'Ежегодный доклад', type: 'link' },
+                                            { title: 'Должностной знак', type: 'link' },
+                                            { title: 'Виртуальная приемная', type: 'link' },
+                                            { title: 'Официальные выступления', type: 'link' },
+                                        ]},
+                                    ],
+                                },
+                                {
+                                    links: [
+                                        { title: 'Дума города', type: 'title' },
+                                        { title: 'Администрация', type: 'title' },
+                                        { title: 'Территориальная избирательная комиссия', type: 'title' },
+                                        { title: 'Государственные органы', type: 'title' },
+                                        { title: 'Правила землепользования и застройки г.Сургута', type: 'title' },
+                                        { title: 'Местные нормативы градостроительного проектирования', type: 'title' },
+                                        { title: 'Бюджет города Сургута', type: 'title' },
+                                        { title: 'Законодательная карта', type: 'title' },
+                                        { title: 'Бюджет', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        }) 
+                    if link.title === 'Документы'
+                        +second-menu({
+                            columns: [
+                                {
+                                    links: [
+                                        { title: 'Постановления', type: 'title', items: [
+                                            { title: 'Постановления Главы города', type: 'link' },
+                                            { title: 'Постановления Администрации города', type: 'link' },
+                                            { title: 'Постановления Мэра и администрации города до 12.04.2005 г.', type: 'link' },
+                                        ]},
+                                        { title: 'Распоряжения', type: 'title', items: [
+                                            { title: 'Распоряжения Главы города', type: 'link' },
+                                            { title: 'Распоряжения Администрации города', type: 'link' },
+                                            { title: 'Распоряжения Мэра и администрации города до 12.04.2005 г.', type: 'link' },
+                                        ]},
+                                    ],
+                                },
+                                {
+                                    links: [
+                                        { title: 'Важные документы для горожан', type: 'title' },
+                                        { title: 'Проекты документов: антикоррупционная экспертиза и общественное обсуждение', type: 'title' },
+                                        { title: 'Решения Думы города', type: 'title' },
+                                        { title: 'Муниципальные программы', type: 'title' },
+                                        { title: 'Порядок обжалования муниципальных правовых актов', type: 'title' },
+                                        { title: 'Антимонопольный комплаенс', type: 'title' },
+                                        { title: 'Оценка регулирующего воздействия и экспертиза муниципальных нормативных правовых актов (проектов)', type: 'title' },
+                                    ],
+                                },
+                            ]
+                        })                       
             else
                 li.header__link(
                     aria-label=link.title

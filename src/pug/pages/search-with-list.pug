@@ -1,0 +1,103 @@
+extends ../layout
+
+block content
+    main.main 
+        +breadcrumbs(
+            [
+                { sort: '', href: '/', text: 'Главная' },
+                { sort: '', href: '/', text: 'Подписка'},
+                { sort: '', href: '/', text: 'Подписка на главное'},
+            ],
+            )
+        +title({
+            title: 'Поиск с выпадающим списком'
+            })
+        +search(
+            {name: 'searchWithList', size: 'l', placeholder: 'Поиск по сайту', type: 'search'},
+                false, 'l', 'getValues()', 'with-list', 'list') 
+        +interviews_array([
+            {
+                date: 'до 29 сентября', 
+                title: 'Уровень благоустройства города', 
+                description: 'Оцените чистоту улиц, парков, освещения в районах города, а также доступность инфраструктуры', 
+                votes: '319 голосов', 
+                result: 'Вы участвовали', 
+                buttonText: 'Участвовать', 
+                tag: {
+                    size: "xs",
+                    type: 'button',
+                    class: 'button_green button_radius',
+                    text: 'Идет', 
+                    },
+            },
+            {
+                date: 'до 29 сентября', 
+                title: 'Здравоохранение в Сургуте', 
+                description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                votes: '319 голосов', 
+                result: 'Вы участвовали', 
+                buttonText: 'Участвовать', 
+                tag: {
+                    size: "xs",
+                    type: 'button',
+                    class: 'button_green button_radius',
+                    text: 'Идет', 
+                    },
+            },
+            {
+                date: 'до 29 сентября', 
+                title: 'Здравоохранение в Сургуте', 
+                description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                votes: '319 голосов', 
+                result: 'Вы участвовали', 
+                buttonText: 'Участвовать', 
+                tag: {
+                    size: "xs",
+                    type: 'button',
+                    class: 'button_green button_radius',
+                    text: 'Идет', 
+                    },
+            },
+            {
+                date: 'до 29 сентября', 
+                title: 'Здравоохранение в Сургуте', 
+                description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                votes: '319 голосов', 
+                result: 'Вы участвовали', 
+                buttonText: 'Результаты', 
+                tag: {
+                    size: "xs",
+                    type: 'button',
+                    class: 'button_red button_radius',
+                    text: 'Завершен', 
+                    },
+            },
+            {
+                date: 'до 29 сентября', 
+                title: 'Работа местных властей и общественные инициативы', 
+                description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                votes: '319 голосов', 
+                result: 'Вы участвовали', 
+                buttonText: 'Результаты', 
+                tag: {
+                    size: "xs",
+                    type: 'button',
+                    class: 'button_red button_radius',
+                    text: 'Завершен',
+                    },
+            },
+            {
+                date: 'до 29 сентября', 
+                title: 'Здравоохранение в Сургуте', 
+                description: 'Оцените уровень удовлетворенности доступностью медицинских учреждений и качеством медицинских услуг', 
+                votes: '319 голосов', 
+                result: 'Вы участвовали', 
+                buttonText: '',
+                tag: {
+                    size: "xs",
+                    type: 'button',
+                    class: 'button_red button_radius',
+                    text: 'Завершен', 
+                    },
+            },
+            ])                          
