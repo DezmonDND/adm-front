@@ -1,0 +1,9 @@
+mixin profile-logout-popup()
+    .profile-logout-popup
+        .profile-logout-popup__content
+            +button({ type: 'button',  event: 'closeLogoutPopup()', class: 'button files-list__delete-button dm-second-menu__button-close profile-logout-popup__button-close', icon: 'close-outline' })
+            .profile-logout-popup__container 
+                h4.profile-logout-popup__title Вы действительно хотите выйти из аккаунта?
+                span.profile-logout-popup__desc Вы можете войти обратно в любой момент
+                +button({ type: 'link', class: 'button_white profile-logout-popup__button-exit', href: '/about', text: "Да, выйти из аккаунта"})
+

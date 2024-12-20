@@ -13501,6 +13501,13 @@ body.tmp-duma .files-list .files-list__document .files-list__document-descriptio
   margin: 16px 0 16px;
 }
 
+.dm-scheme .dm-struct__main-third {
+  padding-bottom: 0px;
+}
+.dm-scheme .dm-struct__main-third::after {
+  height: 0px;
+}
+
 .dm-deputies-alphabet {
   padding-top: 48px;
 }
@@ -22033,6 +22040,87 @@ body.compensate-for-scrollbar {
 
 .exit.hidden {
   display: none !important;
+}
+
+.profile-logout-popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.profile-logout-popup_open {
+  display: flex;
+}
+.profile-logout-popup .profile-logout-popup__content {
+  background-color: var(--content-color);
+  position: relative;
+  padding: 64px 83px 24px;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .profile-logout-popup .profile-logout-popup__content {
+    padding: 60px 30px 24px;
+  }
+}
+.profile-logout-popup .profile-logout-popup__content .profile-logout-popup__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media (max-width: 768px) {
+  .profile-logout-popup .profile-logout-popup__content .profile-logout-popup__button-close {
+    top: 12px;
+    right: 12px;
+  }
+}
+.profile-logout-popup .profile-logout-popup__content .profile-logout-popup__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.profile-logout-popup .profile-logout-popup__content .profile-logout-popup__container .profile-logout-popup__title {
+  padding: 0;
+  font-weight: 500;
+  font-size: calc(20px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .profile-logout-popup .profile-logout-popup__content .profile-logout-popup__container .profile-logout-popup__title {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(18px * var(--lh));
+  }
+}
+.profile-logout-popup .profile-logout-popup__content .profile-logout-popup__container .profile-logout-popup__desc {
+  font-weight: 300;
+  font-size: calc(16px * var(--scale));
+  line-height: calc(24px * var(--lh));
+}
+@media (max-width: 992px) {
+  .profile-logout-popup .profile-logout-popup__content .profile-logout-popup__container .profile-logout-popup__desc {
+    font-size: calc(14px * var(--scale));
+    line-height: calc(20px * var(--lh));
+  }
+}
+.profile-logout-popup .profile-logout-popup__content .profile-logout-popup__container .profile-logout-popup__button-exit {
+  border: none;
+  align-self: unset;
+  color: #d10404;
+  font-size: calc(12px * var(--scale));
+  line-height: calc(14px * var(--lh));
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .profile-logout-popup .profile-logout-popup__content .profile-logout-popup__container .profile-logout-popup__button-exit {
+    font-size: calc(11px * var(--scale));
+    line-height: calc(14px * var(--lh));
+  }
 }
 
 * {

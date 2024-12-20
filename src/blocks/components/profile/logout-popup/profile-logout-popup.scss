@@ -1,0 +1,66 @@
+@use '../../../../assets/styles/vars.scss' as *;
+
+.profile-logout-popup {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+
+    &_open {
+        display: flex;
+    }
+
+    .profile-logout-popup__content {
+        background-color: $content-color;
+        position: relative;
+        padding: 64px 83px 24px;
+        border-radius: 12px;
+
+        @include respond-to(sm) {
+            padding: 60px 30px 24px;
+        }
+
+        .profile-logout-popup__button-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            @include respond-to(sm) {
+                top: 12px;
+                right: 12px;
+            }
+        }
+
+        .profile-logout-popup__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .profile-logout-popup__title {
+                padding: 0;
+                @include heading-h4;
+
+            }
+
+            .profile-logout-popup__desc {
+                @include text-2;
+
+            }
+
+            .profile-logout-popup__button-exit {
+                border: none;
+                align-self: unset;
+                color: $interview-end-color;
+                @include text-link-2;
+
+            }
+        }
+    }
+}

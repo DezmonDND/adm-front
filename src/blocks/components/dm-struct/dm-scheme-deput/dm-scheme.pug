@@ -1,0 +1,14 @@
+include ../dm-struct-card/dm-struct-card
+
+mixin dm-scheme()
+    .dm-scheme
+        .dm-struct__main 
+            .dm-struct__main-container
+                .dm-struct__main-first
+                    +dm-struct-card("Руководитель аппарата")
+                .dm-struct__main-second
+                    each item in ["Служба по связям с общественностью", "Служба протокола", "Финансово-аналитическая служба"]
+                        +dm-struct-card(item)
+                .dm-struct__main-third
+                    each item in ["Отдел юридического обеспечения и деятельности постоянных комитетов Думы города", "Отдел по организационному и документационному обеспечению Думы города"]
+                        +dm-struct-card(item)
